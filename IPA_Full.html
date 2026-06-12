@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Phát Âm Quốc Tế IPA - Thầy Danh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1e293b;
+            --accent-color: #2563eb;
+            --accent-hover: #1d4ed8;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --vowel-color: #eff6ff;
+            --vowel-border: #bfdbfe;
+            --diphthong-color: #f0fdf4;
+            --diphthong-border: #bbf7d0;
+            --consonant-color: #fff7ed;
+            --consonant-border: #fed7aa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+        }
+
+        header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        /* IPA CHART STYLES */
+        .ipa-chart-section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+            margin-bottom: 40px;
+            border: 1px solid var(--border-color);
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.4rem;
+            color: var(--accent-color);
+            margin: 40px 0 20px 0;
+            text-transform: uppercase;
+            font-weight: 800;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .chart-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .chart-category-title {
+            grid-column: 1 / -1;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 15px;
+            color: var(--text-muted);
+        }
+
+        .ipa-cell {
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .ipa-cell:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+
+        .ipa-cell.monophthong { background-color: var(--vowel-color); border-color: var(--vowel-border); }
+        .ipa-cell.diphthong { background-color: var(--diphthong-color); border-color: var(--diphthong-border); }
+        .ipa-cell.consonant { background-color: var(--consonant-color); border-color: var(--consonant-border); }
+
+        .ipa-symbol {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 4px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .ipa-keyword { font-size: 0.9rem; color: var(--text-muted); }
+
+        /* DETAILED SLIDES CODES */
+        .slide-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+            margin-bottom: 30px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .slide-header {
+            background-color: #f1f5f9;
+            padding: 15px 30px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .slide-header h3 { font-size: 1.2rem; color: var(--primary-color); }
+
+        .slide-body {
+            padding: 25px 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        @media (max-width: 992px) { .slide-body { grid-template-columns: 1fr; } }
+
+        .sound-detail-box {
+            background: #fafafa;
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .sound-detail-box.pair-2 { border-left-color: #10b981; }
+
+        .sound-title-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .sound-badge {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            font-family: "Times New Roman", Times, serif;
+            background: white;
+            padding: 0 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 0.05);
+        }
+
+        .sound-type {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background: #e2e8f0;
+        }
+
+        .info-group { margin-bottom: 15px; }
+        .info-label { font-weight: 700; font-size: 0.95rem; color: var(--primary-color); margin-bottom: 5px; }
+        .info-content { font-size: 1rem; color: var(--text-main); }
+
+        .example-list { list-style: none; }
+        .example-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px dashed var(--border-color);
+            align-items: center;
+        }
+        .example-item:last-child { border-bottom: none; }
+
+        .word-en { font-weight: 700; color: var(--accent-color); font-size: 1.1rem; }
+        .word-ipa { font-family: "Times New Roman", Times, serif; color: var(--text-muted); font-size: 1.1rem; }
+        
+        .speak-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-left: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .speak-btn:hover { background-color: #e0e7ff; transform: scale(1.1); }
+
+        .footer-credit {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>BẢNG PHÁT ÂM TIẾNG ANH IPA</h1>
+        <p>Thiết kế bài giảng trực quan đầy đủ khẩu hình, ví dụ & audio phát âm - Lớp Thầy Danh</p>
+    </header>
+
+    <!-- SECTION 1: FULL IPA CHART -->
+    <section class="ipa-chart-section">
+        <h2 class="section-title">📊 Bảng Hệ Thống 44 Âm IPA Toàn Diện</h2>
+        <div class="chart-grid">
+            
+            <!-- Monophthongs -->
+            <div class="chart-category-title">Nguyên âm đơn (Monophthongs) - 12 Âm</div>
+            <a href="#mono-i" class="ipa-cell monophthong"><div class="ipa-symbol">iː</div><div class="ipa-keyword">see</div></a>
+            <a href="#mono-i" class="ipa-cell monophthong"><div class="ipa-symbol">ɪ</div><div class="ipa-keyword">sit</div></a>
+            <a href="#mono-u" class="ipa-cell monophthong"><div class="ipa-symbol">ʊ</div><div class="ipa-keyword">good</div></a>
+            <a href="#mono-u" class="ipa-cell monophthong"><div class="ipa-symbol">uː</div><div class="ipa-keyword">too</div></a>
+            <a href="#mono-e" class="ipa-cell monophthong"><div class="ipa-symbol">e</div><div class="ipa-keyword">bed</div></a>
+            <a href="#mono-schwa" class="ipa-cell monophthong"><div class="ipa-symbol">ə</div><div class="ipa-keyword">about</div></a>
+            <a href="#mono-schwa" class="ipa-cell monophthong"><div class="ipa-symbol">ɜː</div><div class="ipa-keyword">bird</div></a>
+            <a href="#mono-o" class="ipa-cell monophthong"><div class="ipa-symbol">ɔː</div><div class="ipa-keyword">door</div></a>
+            <a href="#mono-e" class="ipa-cell monophthong"><div class="ipa-symbol">æ</div><div class="ipa-keyword">cat</div></a>
+            <a href="#mono-a" class="ipa-cell monophthong"><div class="ipa-symbol">ʌ</div><div class="ipa-keyword">up</div></a>
+            <a href="#mono-a" class="ipa-cell monophthong"><div class="ipa-symbol">ɑː</div><div class="ipa-keyword">far</div></a>
+            <a href="#mono-o" class="ipa-cell monophthong"><div class="ipa-symbol">ɒ</div><div class="ipa-keyword">on</div></a>
+
+            <!-- Diphthongs -->
+            <div class="chart-category-title">Nguyên âm đôi (Diphthongs) - 8 Âm</div>
+            <a href="#diph-1" class="ipa-cell diphthong"><div class="ipa-symbol">ɪə</div><div class="ipa-keyword">here</div></a>
+            <a href="#diph-2" class="ipa-cell diphthong"><div class="ipa-symbol">eɪ</div><div class="ipa-keyword">wait</div></a>
+            <a href="#diph-3" class="ipa-cell diphthong"><div class="ipa-symbol">ʊə</div><div class="ipa-keyword">tour</div></a>
+            <a href="#diph-2" class="ipa-cell diphthong"><div class="ipa-symbol">ɔɪ</div><div class="ipa-keyword">boy</div></a>
+            <a href="#diph-3" class="ipa-cell diphthong"><div class="ipa-symbol">əʊ</div><div class="ipa-keyword">show</div></a>
+            <a href="#diph-1" class="ipa-cell diphthong"><div class="ipa-symbol">eə</div><div class="ipa-keyword">hair</div></a>
+            <a href="#diph-4" class="ipa-cell diphthong"><div class="ipa-symbol">aɪ</div><div class="ipa-keyword">my</div></a>
+            <a href="#diph-4" class="ipa-cell diphthong"><div class="ipa-symbol">aʊ</div><div class="ipa-keyword">cow</div></a>
+
+            <!-- Consonants -->
+            <div class="chart-category-title">Phụ âm (Consonants) - 24 Âm</div>
+            <a href="#cons-pb" class="ipa-cell consonant"><div class="ipa-symbol">p</div><div class="ipa-keyword">pen</div></a>
+            <a href="#cons-pb" class="ipa-cell consonant"><div class="ipa-symbol">b</div><div class="ipa-keyword">boy</div></a>
+            <a href="#cons-td" class="ipa-cell consonant"><div class="ipa-symbol">t</div><div class="ipa-keyword">tea</div></a>
+            <a href="#cons-td" class="ipa-cell consonant"><div class="ipa-symbol">d</div><div class="ipa-keyword">dog</div></a>
+            <a href="#cons-chj" class="ipa-cell consonant"><div class="ipa-symbol">tʃ</div><div class="ipa-keyword">cheese</div></a>
+            <a href="#cons-chj" class="ipa-cell consonant"><div class="ipa-symbol">dʒ</div><div class="ipa-keyword">june</div></a>
+            <a href="#cons-kg" class="ipa-cell consonant"><div class="ipa-symbol">k</div><div class="ipa-keyword">car</div></a>
+            <a href="#cons-kg" class="ipa-cell consonant"><div class="ipa-symbol">g</div><div class="ipa-keyword">go</div></a>
+            
+            <a href="#cons-fv" class="ipa-cell consonant"><div class="ipa-symbol">f</div><div class="ipa-keyword">fly</div></a>
+            <a href="#cons-fv" class="ipa-cell consonant"><div class="ipa-symbol">v</div><div class="ipa-keyword">video</div></a>
+            <a href="#cons-th" class="ipa-cell consonant"><div class="ipa-symbol">θ</div><div class="ipa-keyword">think</div></a>
+            <a href="#cons-th" class="ipa-cell consonant"><div class="ipa-symbol">ð</div><div class="ipa-keyword">this</div></a>
+            <a href="#cons-sz" class="ipa-cell consonant"><div class="ipa-symbol">s</div><div class="ipa-keyword">see</div></a>
+            <a href="#cons-sz" class="ipa-cell consonant"><div class="ipa-symbol">z</div><div class="ipa-keyword">zoo</div></a>
+            <a href="#cons-shzh" class="ipa-cell consonant"><div class="ipa-symbol">ʃ</div><div class="ipa-keyword">shall</div></a>
+            <a href="#cons-shzh" class="ipa-cell consonant"><div class="ipa-symbol">ʒ</div><div class="ipa-keyword">vision</div></a>
+            
+            <a href="#cons-nasal" class="ipa-cell consonant"><div class="ipa-symbol">m</div><div class="ipa-keyword">man</div></a>
+            <a href="#cons-nasal" class="ipa-cell consonant"><div class="ipa-symbol">n</div><div class="ipa-keyword">now</div></a>
+            <a href="#cons-nasal2" class="ipa-cell consonant"><div class="ipa-symbol">ŋ</div><div class="ipa-keyword">sing</div></a>
+            <a href="#cons-nasal2" class="ipa-cell consonant"><div class="ipa-symbol">h</div><div class="ipa-keyword">hat</div></a>
+            <a href="#cons-lr" class="ipa-cell consonant"><div class="ipa-symbol">l</div><div class="ipa-keyword">love</div></a>
+            <a href="#cons-lr" class="ipa-cell consonant"><div class="ipa-symbol">r</div><div class="ipa-keyword">red</div></a>
+            <a href="#cons-wj" class="ipa-cell consonant"><div class="ipa-symbol">w</div><div class="ipa-keyword">wet</div></a>
+            <a href="#cons-wj" class="ipa-cell consonant"><div class="ipa-symbol">j</div><div class="ipa-keyword">yes</div></a>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- PHẦN 1: NGUYÊN ÂM ĐƠN (12 ÂM) -->
+    <!-- ========================================== -->
+    <h2 class="section-subtitle">I. Nguyên Âm Đơn (Monophthongs)</h2>
+
+    <!-- PAIR: /i:/ và /ɪ/ -->
+    <div class="slide-card" id="mono-i">
+        <div class="slide-header"><h3>Cặp Nguyên Âm "I": Dài & Ngắn</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/iː/</span><span class="sound-type" style="background: #dbeafe; color: #1e40af;">Âm dài</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Môi mở rộng sang hai bên như đang mỉm cười. Lưỡi nâng cao hướng về ngạc cứng. Kéo dài hơi.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">see</span><button class="speak-btn" onclick="speakWord('see')">🔊</button></div><span class="word-ipa">/siː/</span></li>
+                        <li class="example-item"><div><span class="word-en">meet</span><button class="speak-btn" onclick="speakWord('meet')">🔊</button></div><span class="word-ipa">/miːt/</span></li>
+                        <li class="example-item"><div><span class="word-en">piece</span><button class="speak-btn" onclick="speakWord('piece')">🔊</button></div><span class="word-ipa">/piːs/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ɪ/</span><span class="sound-type" style="background: #fee2e2; color: #991b1b;">Âm ngắn</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Môi mở tự nhiên, hẹp hơn /i:/. Phát âm ngắn, dứt khoát, lai giữa âm "i" và "e".</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">sit</span><button class="speak-btn" onclick="speakWord('sit')">🔊</button></div><span class="word-ipa">/sɪt/</span></li>
+                        <li class="example-item"><div><span class="word-en">hit</span><button class="speak-btn" onclick="speakWord('hit')">🔊</button></div><span class="word-ipa">/hɪt/</span></li>
+                        <li class="example-item"><div><span class="word-en">build</span><button class="speak-btn" onclick="speakWord('build')">🔊</button></div><span class="word-ipa">/bɪld/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAIR: /ʊ/ và /uː/ -->
+    <div class="slide-card" id="mono-u">
+        <div class="slide-header"><h3>Cặp Nguyên Âm "U": Ngắn & Dài</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ʊ/</span><span class="sound-type" style="background: #fee2e2; color: #991b1b;">Âm ngắn</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Môi hơi tròn và đưa ra trước nhẹ. Cơ môi thư giãn. Âm phát ra ngắn gọn, dứt khoát.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">good</span><button class="speak-btn" onclick="speakWord('good')">🔊</button></div><span class="word-ipa">/ɡʊd/</span></li>
+                        <li class="example-item"><div><span class="word-en">book</span><button class="speak-btn" onclick="speakWord('book')">🔊</button></div><span class="word-ipa">/bʊk/</span></li>
+                        <li class="example-item"><div><span class="word-en">put</span><button class="speak-btn" onclick="speakWord('put')">🔊</button></div><span class="word-ipa">/pʊt/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/uː/</span><span class="sound-type" style="background: #dbeafe; color: #1e40af;">Âm dài</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Chu môi tròn hẳn ra phía trước (như đang huýt sáo), cơ môi căng. Kéo dài âm.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">too</span><button class="speak-btn" onclick="speakWord('too')">🔊</button></div><span class="word-ipa">/tuː/</span></li>
+                        <li class="example-item"><div><span class="word-en">shoe</span><button class="speak-btn" onclick="speakWord('shoe')">🔊</button></div><span class="word-ipa">/ʃuː/</span></li>
+                        <li class="example-item"><div><span class="word-en">blue</span><button class="speak-btn" onclick="speakWord('blue')">🔊</button></div><span class="word-ipa">/bluː/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAIR: /e/ và /æ/ -->
+    <div class="slide-card" id="mono-e">
+        <div class="slide-header"><h3>Cặp Nguyên Âm E & A bẹt</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/e/</span><span class="sound-type" style="background: #fee2e2; color: #991b1b;">Âm ngắn</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Mở miệng vừa phải. Âm dứt khoát, gần giống âm "e" tiếng Việt.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">bed</span><button class="speak-btn" onclick="speakWord('bed')">🔊</button></div><span class="word-ipa">/bed/</span></li>
+                        <li class="example-item"><div><span class="word-en">pen</span><button class="speak-btn" onclick="speakWord('pen')">🔊</button></div><span class="word-ipa">/pen/</span></li>
+                        <li class="example-item"><div><span class="word-en">read (V2)</span><button class="speak-btn" onclick="speakWord('read')">🔊</button></div><span class="word-ipa">/red/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/æ/</span><span class="sound-type" style="background: #fee2e2; color: #991b1b;">Âm bẹt</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Mở miệng to hết cỡ cả chiều ngang và dọc. Chuẩn bị nói âm "A" nhưng phát ra âm "E".</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">cat</span><button class="speak-btn" onclick="speakWord('cat')">🔊</button></div><span class="word-ipa">/kæt/</span></li>
+                        <li class="example-item"><div><span class="word-en">bad</span><button class="speak-btn" onclick="speakWord('bad')">🔊</button></div><span class="word-ipa">/bæd/</span></li>
+                        <li class="example-item"><div><span class="word-en">apple</span><button class="speak-btn" onclick="speakWord('apple')">🔊</button></div><span class="word-ipa">/ˈæpl/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAIR: /ə/ và /ɜ:/ -->
+    <div class="slide-card" id="mono-schwa">
+        <div class="slide-header"><h3>Cặp Nguyên Âm Ơ: Ngắn (Schwa) & Dài</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ə/</span><span class="sound-type" style="background: #fee2e2; color: #991b1b;">Âm ngắn (Lười)</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Môi và lưỡi hoàn toàn thả lỏng. Âm rất nhẹ, thường xuất hiện ở âm tiết không nhấn trọng âm.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">teacher</span><button class="speak-btn" onclick="speakWord('teacher')">🔊</button></div><span class="word-ipa">/ˈtiː.tʃə/</span></li>
+                        <li class="example-item"><div><span class="word-en">about</span><button class="speak-btn" onclick="speakWord('about')">🔊</button></div><span class="word-ipa">/əˈbaʊt/</span></li>
+                        <li class="example-item"><div><span class="word-en">sofa</span><button class="speak-btn" onclick="speakWord('sofa')">🔊</button></div><span class="word-ipa">/ˈsəʊ.fə/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ɜː/</span><span class="sound-type" style="background: #dbeafe; color: #1e40af;">Âm dài</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Mở miệng tự nhiên, môi hơi căng. Kéo dài âm thanh, cong lưỡi nhẹ ở cuối thanh âm.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">bird</span><button class="speak-btn" onclick="speakWord('bird')">🔊</button></div><span class="word-ipa">/bɜːd/</span></li>
+                        <li class="example-item"><div><span class="word-en">work</span><button class="speak-btn" onclick="speakWord('work')">🔊</button></div><span class="word-ipa">/wɜːk/</span></li>
+                        <li class="example-item"><div><span class="word-en">girl</span><button class="speak-btn" onclick="speakWord('girl')">🔊</button></div><span class="word-ipa">/ɡɜːl/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAIR: /ʌ/ và /ɑ:/ -->
+    <div class="slide-card" id="mono-a">
+        <div class="slide-header"><h3>Cặp Nguyên Âm A: Ngắn & Dài</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ʌ/</span><span class="sound-type" style="background: #fee2e2; color: #991b1b;">Âm ngắn</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Mở miệng tự nhiên, phát âm rất ngắn, dứt khoát. Nghe na ná âm "ă" của tiếng Việt.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">up</span><button class="speak-btn" onclick="speakWord('up')">🔊</button></div><span class="word-ipa">/ʌp/</span></li>
+                        <li class="example-item"><div><span class="word-en">cup</span><button class="speak-btn" onclick="speakWord('cup')">🔊</button></div><span class="word-ipa">/kʌp/</span></li>
+                        <li class="example-item"><div><span class="word-en">but</span><button class="speak-btn" onclick="speakWord('but')">🔊</button></div><span class="word-ipa">/bʌt/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ɑː/</span><span class="sound-type" style="background: #dbeafe; color: #1e40af;">Âm dài</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Mở miệng to (như khi đi khám bác sĩ). Âm "a" phát ra tròn tiếng, từ cuống họng và kéo dài.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">far</span><button class="speak-btn" onclick="speakWord('far')">🔊</button></div><span class="word-ipa">/fɑː/</span></li>
+                        <li class="example-item"><div><span class="word-en">car</span><button class="speak-btn" onclick="speakWord('car')">🔊</button></div><span class="word-ipa">/kɑː/</span></li>
+                        <li class="example-item"><div><span class="word-en">star</span><button class="speak-btn" onclick="speakWord('star')">🔊</button></div><span class="word-ipa">/stɑː/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAIR: /ɒ/ và /ɔ:/ -->
+    <div class="slide-card" id="mono-o">
+        <div class="slide-header"><h3>Cặp Nguyên Âm O: Ngắn & Dài</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ɒ/</span><span class="sound-type" style="background: #fee2e2; color: #991b1b;">Âm ngắn</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Môi hơi tròn. Phát âm ngắn, dứt khoát, âm thanh nằm giữa "o" và "a".</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">on</span><button class="speak-btn" onclick="speakWord('on')">🔊</button></div><span class="word-ipa">/ɒn/</span></li>
+                        <li class="example-item"><div><span class="word-en">hot</span><button class="speak-btn" onclick="speakWord('hot')">🔊</button></div><span class="word-ipa">/hɒt/</span></li>
+                        <li class="example-item"><div><span class="word-en">box</span><button class="speak-btn" onclick="speakWord('box')">🔊</button></div><span class="word-ipa">/bɒks/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ɔː/</span><span class="sound-type" style="background: #dbeafe; color: #1e40af;">Âm dài</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Môi tròn và chu ra trước. Kéo dài âm thanh, lai giữa chữ "o" và "ô" tiếng Việt.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">door</span><button class="speak-btn" onclick="speakWord('door')">🔊</button></div><span class="word-ipa">/dɔː/</span></li>
+                        <li class="example-item"><div><span class="word-en">call</span><button class="speak-btn" onclick="speakWord('call')">🔊</button></div><span class="word-ipa">/kɔːl/</span></li>
+                        <li class="example-item"><div><span class="word-en">more</span><button class="speak-btn" onclick="speakWord('more')">🔊</button></div><span class="word-ipa">/mɔː/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- PHẦN 2: NGUYÊN ÂM ĐÔI (8 ÂM) -->
+    <!-- ========================================== -->
+    <h2 class="section-subtitle">II. Nguyên Âm Đôi (Diphthongs)</h2>
+
+    <!-- DIPHTHONGS 1: /ɪə/ & /eə/ -->
+    <div class="slide-card" id="diph-1">
+        <div class="slide-header"><h3>Chuyển dịch về âm /ə/ (1)</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ɪə/</span><span class="sound-type" style="background: #f3e8ff; color: #7e22ce;">Chuyển dịch ɪ → ə</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Từ âm /ɪ/ (môi mở) lướt nhanh sang âm lười /ə/ (thả lỏng). Trọng âm rơi vào /ɪ/.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">here</span><button class="speak-btn" onclick="speakWord('here')">🔊</button></div><span class="word-ipa">/hɪə/</span></li>
+                        <li class="example-item"><div><span class="word-en">near</span><button class="speak-btn" onclick="speakWord('near')">🔊</button></div><span class="word-ipa">/nɪə/</span></li>
+                        <li class="example-item"><div><span class="word-en">clear</span><button class="speak-btn" onclick="speakWord('clear')">🔊</button></div><span class="word-ipa">/klɪə/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/eə/</span><span class="sound-type" style="background: #f3e8ff; color: #7e22ce;">Chuyển dịch e → ə</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Phát âm /e/ miệng mở vừa phải, trượt dần về môi thả lỏng của âm /ə/.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">hair</span><button class="speak-btn" onclick="speakWord('hair')">🔊</button></div><span class="word-ipa">/heə/</span></li>
+                        <li class="example-item"><div><span class="word-en">bear</span><button class="speak-btn" onclick="speakWord('bear')">🔊</button></div><span class="word-ipa">/beə/</span></li>
+                        <li class="example-item"><div><span class="word-en">there</span><button class="speak-btn" onclick="speakWord('there')">🔊</button></div><span class="word-ipa">/ðeə/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIPHTHONGS 2: /eɪ/ & /ɔɪ/ -->
+    <div class="slide-card" id="diph-2">
+        <div class="slide-header"><h3>Chuyển dịch về âm /ɪ/</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/eɪ/</span><span class="sound-type" style="background: #f3e8ff; color: #7e22ce;">Chuyển dịch e → ɪ</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Bắt đầu /e/, lướt nhanh kéo khóe miệng sang hai bên thành /ɪ/. Khá giống vần "ây".</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">wait</span><button class="speak-btn" onclick="speakWord('wait')">🔊</button></div><span class="word-ipa">/weɪt/</span></li>
+                        <li class="example-item"><div><span class="word-en">say</span><button class="speak-btn" onclick="speakWord('say')">🔊</button></div><span class="word-ipa">/seɪ/</span></li>
+                        <li class="example-item"><div><span class="word-en">day</span><button class="speak-btn" onclick="speakWord('day')">🔊</button></div><span class="word-ipa">/deɪ/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ɔɪ/</span><span class="sound-type" style="background: #f3e8ff; color: #7e22ce;">Chuyển dịch ɔ → ɪ</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Từ /ɔ:/ tròn môi trượt sang /ɪ/ mỉm cười. Giống "oi" tiếng Việt nhưng sâu hơn.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">boy</span><button class="speak-btn" onclick="speakWord('boy')">🔊</button></div><span class="word-ipa">/bɔɪ/</span></li>
+                        <li class="example-item"><div><span class="word-en">coin</span><button class="speak-btn" onclick="speakWord('coin')">🔊</button></div><span class="word-ipa">/kɔɪn/</span></li>
+                        <li class="example-item"><div><span class="word-en">choice</span><button class="speak-btn" onclick="speakWord('choice')">🔊</button></div><span class="word-ipa">/tʃɔɪs/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIPHTHONGS 3: /ʊə/ & /əʊ/ -->
+    <div class="slide-card" id="diph-3">
+        <div class="slide-header"><h3>Chuyển dịch về âm /ə/ (2) & Chu tròn môi</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ʊə/</span><span class="sound-type" style="background: #f3e8ff; color: #7e22ce;">Chuyển dịch ʊ → ə</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Bắt đầu /ʊ/ chu môi, nhả môi từ từ về trạng thái thả lỏng của âm /ə/.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">tour</span><button class="speak-btn" onclick="speakWord('tour')">🔊</button></div><span class="word-ipa">/tʊə/</span></li>
+                        <li class="example-item"><div><span class="word-en">poor</span><button class="speak-btn" onclick="speakWord('poor')">🔊</button></div><span class="word-ipa">/pʊə/</span></li>
+                        <li class="example-item"><div><span class="word-en">sure</span><button class="speak-btn" onclick="speakWord('sure')">🔊</button></div><span class="word-ipa">/ʃʊə/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/əʊ/</span><span class="sound-type" style="background: #f3e8ff; color: #7e22ce;">Chuyển dịch ə → ʊ</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Từ trạng thái thả lỏng của /ə/ chuyển dần sang chu tròn môi /ʊ/. Giống âm "âu".</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">show</span><button class="speak-btn" onclick="speakWord('show')">🔊</button></div><span class="word-ipa">/ʃəʊ/</span></li>
+                        <li class="example-item"><div><span class="word-en">go</span><button class="speak-btn" onclick="speakWord('go')">🔊</button></div><span class="word-ipa">/ɡəʊ/</span></li>
+                        <li class="example-item"><div><span class="word-en">home</span><button class="speak-btn" onclick="speakWord('home')">🔊</button></div><span class="word-ipa">/həʊm/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIPHTHONGS 4: /aɪ/ & /aʊ/ -->
+    <div class="slide-card" id="diph-4">
+        <div class="slide-header"><h3>Chuyển dịch Mở Rộng (Âm "A" gốc)</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/aɪ/</span><span class="sound-type" style="background: #f3e8ff; color: #7e22ce;">Chuyển dịch a → ɪ</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Mở rộng miệng phát âm /a/, khép hẹp và dãn sang bên thành /ɪ/. Giống vần "ai".</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">my</span><button class="speak-btn" onclick="speakWord('my')">🔊</button></div><span class="word-ipa">/maɪ/</span></li>
+                        <li class="example-item"><div><span class="word-en">high</span><button class="speak-btn" onclick="speakWord('high')">🔊</button></div><span class="word-ipa">/haɪ/</span></li>
+                        <li class="example-item"><div><span class="word-en">like</span><button class="speak-btn" onclick="speakWord('like')">🔊</button></div><span class="word-ipa">/laɪk/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/aʊ/</span><span class="sound-type" style="background: #f3e8ff; color: #7e22ce;">Chuyển dịch a → ʊ</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Miệng mở rộng /a/ sau đó khép dần và tròn môi tạo âm /ʊ/. Giống vần "ao".</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">cow</span><button class="speak-btn" onclick="speakWord('cow')">🔊</button></div><span class="word-ipa">/kaʊ/</span></li>
+                        <li class="example-item"><div><span class="word-en">how</span><button class="speak-btn" onclick="speakWord('how')">🔊</button></div><span class="word-ipa">/haʊ/</span></li>
+                        <li class="example-item"><div><span class="word-en">mouse</span><button class="speak-btn" onclick="speakWord('mouse')">🔊</button></div><span class="word-ipa">/maʊs/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- PHẦN 3: PHỤ ÂM (24 ÂM) -->
+    <!-- ========================================== -->
+    <h2 class="section-subtitle">III. Phụ Âm (Consonants) - Cặp Âm</h2>
+
+    <!-- CONS: /p/ & /b/ -->
+    <div class="slide-card" id="cons-pb">
+        <div class="slide-header"><h3>Cặp Phụ Âm Bật Môi: P & B</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/p/</span><span class="sound-type" style="background: #e2e8f0; color: #334155;">Vô thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Mím chặt hai môi chặn luồng khí, bật mạnh ra. KHÔNG rung dây thanh quản.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">pen</span><button class="speak-btn" onclick="speakWord('pen')">🔊</button></div><span class="word-ipa">/pen/</span></li>
+                        <li class="example-item"><div><span class="word-en">park</span><button class="speak-btn" onclick="speakWord('park')">🔊</button></div><span class="word-ipa">/pɑːk/</span></li>
+                        <li class="example-item"><div><span class="word-en">up</span><button class="speak-btn" onclick="speakWord('up')">🔊</button></div><span class="word-ipa">/ʌp/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/b/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Khẩu hình như /p/, nhưng bật khí nhẹ hơn và PHẢI rung cổ họng khi phát âm.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">boy</span><button class="speak-btn" onclick="speakWord('boy')">🔊</button></div><span class="word-ipa">/bɔɪ/</span></li>
+                        <li class="example-item"><div><span class="word-en">bank</span><button class="speak-btn" onclick="speakWord('bank')">🔊</button></div><span class="word-ipa">/bæŋk/</span></li>
+                        <li class="example-item"><div><span class="word-en">job</span><button class="speak-btn" onclick="speakWord('job')">🔊</button></div><span class="word-ipa">/dʒɒb/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONS: /t/ & /d/ -->
+    <div class="slide-card" id="cons-td">
+        <div class="slide-header"><h3>Cặp Phụ Âm Đầu Lưỡi: T & D</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/t/</span><span class="sound-type" style="background: #e2e8f0; color: #334155;">Vô thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Đầu lưỡi chạm nướu trên, hạ nhanh xuống để bật hơi. KHÔNG rung cổ họng.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">tea</span><button class="speak-btn" onclick="speakWord('tea')">🔊</button></div><span class="word-ipa">/tiː/</span></li>
+                        <li class="example-item"><div><span class="word-en">time</span><button class="speak-btn" onclick="speakWord('time')">🔊</button></div><span class="word-ipa">/taɪm/</span></li>
+                        <li class="example-item"><div><span class="word-en">cat</span><button class="speak-btn" onclick="speakWord('cat')">🔊</button></div><span class="word-ipa">/kæt/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/d/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Đặt lưỡi như /t/, bật khí nhẹ hơn và RUNG rõ rệt ở dây thanh quản.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">dog</span><button class="speak-btn" onclick="speakWord('dog')">🔊</button></div><span class="word-ipa">/dɒɡ/</span></li>
+                        <li class="example-item"><div><span class="word-en">day</span><button class="speak-btn" onclick="speakWord('day')">🔊</button></div><span class="word-ipa">/deɪ/</span></li>
+                        <li class="example-item"><div><span class="word-en">bed</span><button class="speak-btn" onclick="speakWord('bed')">🔊</button></div><span class="word-ipa">/bed/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONS: /k/ & /g/ -->
+    <div class="slide-card" id="cons-kg">
+        <div class="slide-header"><h3>Cặp Phụ Âm Cuống Lưỡi: K & G</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/k/</span><span class="sound-type" style="background: #e2e8f0; color: #334155;">Vô thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Cuống lưỡi nâng chạm ngạc mềm chặn khí, sau đó hạ nhanh để bật hơi. KHÔNG rung cổ.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">car</span><button class="speak-btn" onclick="speakWord('car')">🔊</button></div><span class="word-ipa">/kɑː/</span></li>
+                        <li class="example-item"><div><span class="word-en">keep</span><button class="speak-btn" onclick="speakWord('keep')">🔊</button></div><span class="word-ipa">/kiːp/</span></li>
+                        <li class="example-item"><div><span class="word-en">back</span><button class="speak-btn" onclick="speakWord('back')">🔊</button></div><span class="word-ipa">/bæk/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/g/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Giống /k/ nhưng luồng khí bật ra yếu hơn và PHẢI rung cổ họng.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">go</span><button class="speak-btn" onclick="speakWord('go')">🔊</button></div><span class="word-ipa">/ɡəʊ/</span></li>
+                        <li class="example-item"><div><span class="word-en">get</span><button class="speak-btn" onclick="speakWord('get')">🔊</button></div><span class="word-ipa">/ɡet/</span></li>
+                        <li class="example-item"><div><span class="word-en">big</span><button class="speak-btn" onclick="speakWord('big')">🔊</button></div><span class="word-ipa">/bɪɡ/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONS: /f/ & /v/ -->
+    <div class="slide-card" id="cons-fv">
+        <div class="slide-header"><h3>Cặp Phụ Âm Răng Môi: F & V</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/f/</span><span class="sound-type" style="background: #e2e8f0; color: #334155;">Vô thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Răng cửa trên chạm nhẹ vào môi dưới. Thổi hơi liên tục qua khe hở. KHÔNG rung cổ.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">fly</span><button class="speak-btn" onclick="speakWord('fly')">🔊</button></div><span class="word-ipa">/flaɪ/</span></li>
+                        <li class="example-item"><div><span class="word-en">fan</span><button class="speak-btn" onclick="speakWord('fan')">🔊</button></div><span class="word-ipa">/fæn/</span></li>
+                        <li class="example-item"><div><span class="word-en">half</span><button class="speak-btn" onclick="speakWord('half')">🔊</button></div><span class="word-ipa">/hɑːf/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/v/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Giống hệt /f/. Thổi hơi qua khe hở và RUNG cổ họng (tạo âm giống tiếng ong).</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">video</span><button class="speak-btn" onclick="speakWord('video')">🔊</button></div><span class="word-ipa">/ˈvɪdiəʊ/</span></li>
+                        <li class="example-item"><div><span class="word-en">van</span><button class="speak-btn" onclick="speakWord('van')">🔊</button></div><span class="word-ipa">/væn/</span></li>
+                        <li class="example-item"><div><span class="word-en">have</span><button class="speak-btn" onclick="speakWord('have')">🔊</button></div><span class="word-ipa">/hæv/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONS: /θ/ & /ð/ -->
+    <div class="slide-card" id="cons-th">
+        <div class="slide-header"><h3>Cặp Phụ Âm Răng /θ/ & /ð/ (Khó Nhất)</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/θ/</span><span class="sound-type" style="background: #e2e8f0; color: #334155;">Vô thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Đặt mỏm lưỡi giữa hàm răng trên và dưới. Thổi hơi nhẹ qua kẽ răng. KHÔNG rung cổ.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">think</span><button class="speak-btn" onclick="speakWord('think')">🔊</button></div><span class="word-ipa">/θɪŋk/</span></li>
+                        <li class="example-item"><div><span class="word-en">bath</span><button class="speak-btn" onclick="speakWord('bath')">🔊</button></div><span class="word-ipa">/bɑːθ/</span></li>
+                        <li class="example-item"><div><span class="word-en">both</span><button class="speak-btn" onclick="speakWord('both')">🔊</button></div><span class="word-ipa">/bəʊθ/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ð/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Lưỡi kẹp giữa 2 răng như /θ/. Nén hơi lại và RUNG mạnh cổ họng khi phát âm.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">this</span><button class="speak-btn" onclick="speakWord('this')">🔊</button></div><span class="word-ipa">/ðɪs/</span></li>
+                        <li class="example-item"><div><span class="word-en">mother</span><button class="speak-btn" onclick="speakWord('mother')">🔊</button></div><span class="word-ipa">/ˈmʌðə/</span></li>
+                        <li class="example-item"><div><span class="word-en">breathe</span><button class="speak-btn" onclick="speakWord('breathe')">🔊</button></div><span class="word-ipa">/briːð/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONS: /s/ & /z/ -->
+    <div class="slide-card" id="cons-sz">
+        <div class="slide-header"><h3>Cặp Phụ Âm Xát Răng: S & Z</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/s/</span><span class="sound-type" style="background: #e2e8f0; color: #334155;">Vô thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Hai hàm răng khép hờ, mép kéo sang hai bên. Thổi hơi mạnh qua khe răng. KHÔNG rung.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">see</span><button class="speak-btn" onclick="speakWord('see')">🔊</button></div><span class="word-ipa">/siː/</span></li>
+                        <li class="example-item"><div><span class="word-en">so</span><button class="speak-btn" onclick="speakWord('so')">🔊</button></div><span class="word-ipa">/səʊ/</span></li>
+                        <li class="example-item"><div><span class="word-en">miss</span><button class="speak-btn" onclick="speakWord('miss')">🔊</button></div><span class="word-ipa">/mɪs/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/z/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Miệng như /s/ nhưng rung dây thanh quản (nghe như tiếng ong bay).</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">zoo</span><button class="speak-btn" onclick="speakWord('zoo')">🔊</button></div><span class="word-ipa">/zuː/</span></li>
+                        <li class="example-item"><div><span class="word-en">zero</span><button class="speak-btn" onclick="speakWord('zero')">🔊</button></div><span class="word-ipa">/ˈzɪərəʊ/</span></li>
+                        <li class="example-item"><div><span class="word-en">buzz</span><button class="speak-btn" onclick="speakWord('buzz')">🔊</button></div><span class="word-ipa">/bʌz/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONS: /ʃ/ & /ʒ/ -->
+    <div class="slide-card" id="cons-shzh">
+        <div class="slide-header"><h3>Cặp Phụ Âm Xát Sau Nướu: S dài & Z dài</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ʃ/</span><span class="sound-type" style="background: #e2e8f0; color: #334155;">Vô thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Môi chu tròn hẳn ra trước. Lưỡi nâng lên, thổi hơi mạnh (như "suỵt"). KHÔNG rung.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">she</span><button class="speak-btn" onclick="speakWord('she')">🔊</button></div><span class="word-ipa">/ʃiː/</span></li>
+                        <li class="example-item"><div><span class="word-en">show</span><button class="speak-btn" onclick="speakWord('show')">🔊</button></div><span class="word-ipa">/ʃəʊ/</span></li>
+                        <li class="example-item"><div><span class="word-en">wash</span><button class="speak-btn" onclick="speakWord('wash')">🔊</button></div><span class="word-ipa">/wɒʃ/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ʒ/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Chu môi như /ʃ/ nhưng rung cổ họng. Khá giống chữ "gi" tiếng Việt nhưng sâu hơn.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">vision</span><button class="speak-btn" onclick="speakWord('vision')">🔊</button></div><span class="word-ipa">/ˈvɪʒ.ən/</span></li>
+                        <li class="example-item"><div><span class="word-en">measure</span><button class="speak-btn" onclick="speakWord('measure')">🔊</button></div><span class="word-ipa">/ˈmeʒ.ə/</span></li>
+                        <li class="example-item"><div><span class="word-en">television</span><button class="speak-btn" onclick="speakWord('television')">🔊</button></div><span class="word-ipa">/ˈtel.ɪ.vɪʒ.ən/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONS: /tʃ/ & /dʒ/ -->
+    <div class="slide-card" id="cons-chj">
+        <div class="slide-header"><h3>Cặp Phụ Âm Bật Xát: CH & J</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/tʃ/</span><span class="sound-type" style="background: #e2e8f0; color: #334155;">Vô thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Kết hợp /t/ và /ʃ/. Chu môi ra trước, đầu lưỡi chạm ngạc, bật hơi dứt khoát. KHÔNG rung.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">cheese</span><button class="speak-btn" onclick="speakWord('cheese')">🔊</button></div><span class="word-ipa">/tʃiːz/</span></li>
+                        <li class="example-item"><div><span class="word-en">choose</span><button class="speak-btn" onclick="speakWord('choose')">🔊</button></div><span class="word-ipa">/tʃuːz/</span></li>
+                        <li class="example-item"><div><span class="word-en">catch</span><button class="speak-btn" onclick="speakWord('catch')">🔊</button></div><span class="word-ipa">/kætʃ/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/dʒ/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Kết hợp /d/ và /ʒ/. Khẩu hình y hệt /tʃ/ nhưng rung mạnh ở dây thanh quản.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">june</span><button class="speak-btn" onclick="speakWord('june')">🔊</button></div><span class="word-ipa">/dʒuːn/</span></li>
+                        <li class="example-item"><div><span class="word-en">job</span><button class="speak-btn" onclick="speakWord('job')">🔊</button></div><span class="word-ipa">/dʒɒb/</span></li>
+                        <li class="example-item"><div><span class="word-en">page</span><button class="speak-btn" onclick="speakWord('page')">🔊</button></div><span class="word-ipa">/peɪdʒ/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- PHẦN 4: PHỤ ÂM CÒN LẠI (8 ÂM ĐƠN LẺ) -->
+    <!-- ========================================== -->
+    <h2 class="section-subtitle">IV. Phụ Âm (Consonants) - Âm Mũi & Âm Lẻ</h2>
+
+    <!-- CONS: /m/ & /n/ -->
+    <div class="slide-card" id="cons-nasal">
+        <div class="slide-header"><h3>Phụ Âm Mũi: M & N</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/m/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh (Mũi)</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Hai môi mím lại. Luồng khí thoát ra hoàn toàn bằng đường mũi. Rung cổ họng.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">man</span><button class="speak-btn" onclick="speakWord('man')">🔊</button></div><span class="word-ipa">/mæn/</span></li>
+                        <li class="example-item"><div><span class="word-en">make</span><button class="speak-btn" onclick="speakWord('make')">🔊</button></div><span class="word-ipa">/meɪk/</span></li>
+                        <li class="example-item"><div><span class="word-en">some</span><button class="speak-btn" onclick="speakWord('some')">🔊</button></div><span class="word-ipa">/sʌm/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/n/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh (Mũi)</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Đầu lưỡi chạm nướu trên. Khí thoát ra đường mũi, rung cổ họng.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">now</span><button class="speak-btn" onclick="speakWord('now')">🔊</button></div><span class="word-ipa">/naʊ/</span></li>
+                        <li class="example-item"><div><span class="word-en">name</span><button class="speak-btn" onclick="speakWord('name')">🔊</button></div><span class="word-ipa">/neɪm/</span></li>
+                        <li class="example-item"><div><span class="word-en">sun</span><button class="speak-btn" onclick="speakWord('sun')">🔊</button></div><span class="word-ipa">/sʌn/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONS: /ŋ/ & /h/ -->
+    <div class="slide-card" id="cons-nasal2">
+        <div class="slide-header"><h3>Phụ Âm Mũi (NG) & Âm Thở (H)</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/ŋ/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh (Mũi)</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Cuống lưỡi nâng chạm ngạc mềm (như chuẩn bị nói /k/). Khí ra bằng mũi, rung cổ.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">sing</span><button class="speak-btn" onclick="speakWord('sing')">🔊</button></div><span class="word-ipa">/sɪŋ/</span></li>
+                        <li class="example-item"><div><span class="word-en">long</span><button class="speak-btn" onclick="speakWord('long')">🔊</button></div><span class="word-ipa">/lɒŋ/</span></li>
+                        <li class="example-item"><div><span class="word-en">ring</span><button class="speak-btn" onclick="speakWord('ring')">🔊</button></div><span class="word-ipa">/rɪŋ/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-1">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/h/</span><span class="sound-type" style="background: #e2e8f0; color: #334155;">Vô thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Mở miệng tự nhiên, đẩy nhẹ luồng hơi từ cổ họng ra (giống tiếng thở hắt). KHÔNG rung.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">hat</span><button class="speak-btn" onclick="speakWord('hat')">🔊</button></div><span class="word-ipa">/hæt/</span></li>
+                        <li class="example-item"><div><span class="word-en">hot</span><button class="speak-btn" onclick="speakWord('hot')">🔊</button></div><span class="word-ipa">/hɒt/</span></li>
+                        <li class="example-item"><div><span class="word-en">behind</span><button class="speak-btn" onclick="speakWord('behind')">🔊</button></div><span class="word-ipa">/bɪˈhaɪnd/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONS: /l/ & /r/ -->
+    <div class="slide-card" id="cons-lr">
+        <div class="slide-header"><h3>Phụ Âm Lỏng: L & R</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/l/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Đầu lưỡi cong lên chạm vào chân răng hàm trên. Khí đi qua 2 bên lưỡi. Rung cổ họng.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">love</span><button class="speak-btn" onclick="speakWord('love')">🔊</button></div><span class="word-ipa">/lʌv/</span></li>
+                        <li class="example-item"><div><span class="word-en">like</span><button class="speak-btn" onclick="speakWord('like')">🔊</button></div><span class="word-ipa">/laɪk/</span></li>
+                        <li class="example-item"><div><span class="word-en">call</span><button class="speak-btn" onclick="speakWord('call')">🔊</button></div><span class="word-ipa">/kɔːl/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/r/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Chu môi nhẹ. Đầu lưỡi cong lên hướng về vòm miệng (nhưng KHÔNG chạm). Rung cổ họng.</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">red</span><button class="speak-btn" onclick="speakWord('red')">🔊</button></div><span class="word-ipa">/red/</span></li>
+                        <li class="example-item"><div><span class="word-en">run</span><button class="speak-btn" onclick="speakWord('run')">🔊</button></div><span class="word-ipa">/rʌn/</span></li>
+                        <li class="example-item"><div><span class="word-en">right</span><button class="speak-btn" onclick="speakWord('right')">🔊</button></div><span class="word-ipa">/raɪt/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONS: /w/ & /j/ -->
+    <div class="slide-card" id="cons-wj">
+        <div class="slide-header"><h3>Bán Nguyên Âm: W & J</h3></div>
+        <div class="slide-body">
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/w/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Môi chu tròn hướng ra trước (giống /u:/). Lập tức mở môi và rung cổ họng. Giống "qu".</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">wet</span><button class="speak-btn" onclick="speakWord('wet')">🔊</button></div><span class="word-ipa">/wet/</span></li>
+                        <li class="example-item"><div><span class="word-en">win</span><button class="speak-btn" onclick="speakWord('win')">🔊</button></div><span class="word-ipa">/wɪn/</span></li>
+                        <li class="example-item"><div><span class="word-en">away</span><button class="speak-btn" onclick="speakWord('away')">🔊</button></div><span class="word-ipa">/əˈweɪ/</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sound-detail-box pair-2">
+                <div class="sound-title-row">
+                    <span class="sound-badge">/j/</span><span class="sound-type" style="background: #fef08a; color: #854d0e;">Hữu thanh</span>
+                </div>
+                <div class="info-group"><div class="info-label">Khẩu hình:</div><div class="info-content">Mặt lưỡi nâng cao áp sát ngạc cứng. Âm bật ra rất nhẹ, giống chữ "d" (miền Nam).</div></div>
+                <div class="info-group"><div class="info-label">Ví dụ minh họa:</div>
+                    <ul class="example-list">
+                        <li class="example-item"><div><span class="word-en">yes</span><button class="speak-btn" onclick="speakWord('yes')">🔊</button></div><span class="word-ipa">/jes/</span></li>
+                        <li class="example-item"><div><span class="word-en">you</span><button class="speak-btn" onclick="speakWord('you')">🔊</button></div><span class="word-ipa">/juː/</span></li>
+                        <li class="example-item"><div><span class="word-en">yellow</span><button class="speak-btn" onclick="speakWord('yellow')">🔊</button></div><span class="word-ipa">/ˈjel.əʊ/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-credit">
+        <p>© 2026 Lớp học phát âm chuẩn IPA Thầy Danh. Bản quyền giao diện được tối ưu hóa cho trình chiếu và học tập trực quan.</p>
+    </footer>
+</div>
+
+<script>
+    function speakWord(word) {
+        if ('speechSynthesis' in window) {
+            // Hủy các giọng đọc cũ để tránh đè âm thanh
+            window.speechSynthesis.cancel();
+
+            const utterance = new SpeechSynthesisUtterance(word);
+            
+            // Thiết lập ngôn ngữ tiếng Anh và tốc độ đọc thật chậm
+            utterance.lang = 'en-US'; 
+            utterance.rate = 0.6; 
+            
+            // Ép trình duyệt tìm giọng chuẩn tiếng Anh
+            const voices = window.speechSynthesis.getVoices();
+            const englishVoice = voices.find(voice => voice.lang.includes('en-') && (voice.name.includes('Google') || voice.name.includes('Natural') || voice.name.includes('Samantha') || voice.name.includes('Daniel')));
+            
+            if (englishVoice) {
+                utterance.voice = englishVoice;
+            }
+
+            window.speechSynthesis.speak(utterance);
+        } else {
+            alert('Trình duyệt của bạn không hỗ trợ tính năng phát âm.');
+        }
+    }
+
+    // Tải danh sách giọng đọc sớm để trình duyệt sẵn sàng
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+      speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+    }
+</script>
+
+</body>
+</html>
