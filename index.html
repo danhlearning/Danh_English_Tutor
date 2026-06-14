@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Học tiếng Anh cùng thầy Danh</title>
     
-    <!-- Nhúng font chữ Nunito từ Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
@@ -28,7 +27,6 @@
         }
 
         body {
-            /* Đổi sang font Nunito mềm mại */
             font-family: 'Nunito', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
@@ -45,7 +43,7 @@
         }
 
         .hero h1 {
-            font-size: 2.8rem; /* Tăng nhẹ kích thước để khoe nét chữ tròn */
+            font-size: 2.8rem;
             margin-bottom: 15px;
             font-weight: 800;
         }
@@ -70,7 +68,7 @@
 
         .card {
             background: white;
-            border-radius: 20px; /* Tăng độ bo tròn của viền thẻ cho đồng bộ với font */
+            border-radius: 20px;
             padding: 30px;
             text-align: center;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -145,36 +143,56 @@
             flex-wrap: wrap;
         }
 
+        /* Thiết kế nút mạng xã hội mới (Outline to Fill) */
         .btn-social {
             display: flex;
             align-items: center;
-            gap: 10px;
-            padding: 12px 30px;
+            gap: 12px;
+            padding: 10px 25px;
             border-radius: 50px;
             font-size: 1.15rem;
             font-weight: 700;
-            color: white;
             text-decoration: none;
-            transition: opacity 0.3s, transform 0.3s;
+            background-color: white;
+            transition: all 0.3s ease;
         }
 
-        .btn-social:hover {
-            opacity: 0.9;
-            transform: scale(1.05);
-        }
-
+        /* Zalo Button Style */
         .btn-zalo {
+            color: var(--zalo-color);
+            border: 2px solid var(--zalo-color);
+        }
+        .btn-zalo:hover {
             background-color: var(--zalo-color);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 104, 255, 0.3);
+        }
+        .zalo-logo {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px; /* Bo góc logo Zalo */
         }
 
+        /* Facebook Button Style */
         .btn-fb {
-            background-color: var(--fb-color);
+            color: var(--fb-color);
+            border: 2px solid var(--fb-color);
         }
-
-        .svg-icon {
-            width: 24px;
-            height: 24px;
-            fill: currentColor;
+        .btn-fb:hover {
+            background-color: var(--fb-color);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3);
+        }
+        .fb-icon {
+            width: 26px;
+            height: 26px;
+            fill: var(--fb-color);
+            transition: fill 0.3s;
+        }
+        .btn-fb:hover .fb-icon {
+            fill: white; /* Đổi màu icon thành trắng khi hover */
         }
 
         /* --- Footer --- */
@@ -196,7 +214,6 @@
     </header>
 
     <div class="container">
-        <!-- Đã cập nhật link flashcard.html -->
         <a href="flashcard.html" class="card">
             <div class="card-icon">📖</div>
             <h2>Luyện từ vựng</h2>
@@ -204,7 +221,6 @@
             <div class="btn-card">Bắt đầu học ➔</div>
         </a>
 
-        <!-- Đã cập nhật link ipa.html -->
         <a href="ipa.html" class="card">
             <div class="card-icon">🗣️</div>
             <h2>Hướng dẫn phát âm</h2>
@@ -212,7 +228,6 @@
             <div class="btn-card">Luyện giọng ngay ➔</div>
         </a>
 
-        <!-- Đã cập nhật link grammar.html -->
         <a href="grammar.html" class="card">
             <div class="card-icon">📝</div>
             <h2>Ngữ pháp</h2>
@@ -225,15 +240,12 @@
         <h2>Kết nối với thầy Danh</h2>
         <div class="social-buttons">
             <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
-                <svg class="svg-icon" viewBox="0 0 24 24">
-                    <path d="M21.543 14.65c-.416-.214-2.47-.132-2.903-.132-.218 0-.414.043-.61.127-.245.105-.487.276-.71.512-.34.358-.8.644-1.344.834-.564.197-1.196.297-1.854.297-1.332 0-2.585-.434-3.535-1.222-.95-.788-1.52-1.92-1.597-3.18-.04-.633.056-1.26.28-1.83.21-.54.516-1.026.897-1.425 1.05-1.106 2.72-1.82 4.606-1.97 1.834-.146 3.585.348 4.767 1.342 1.182.994 1.865 2.455 1.865 4.024 0 .96-.282 1.874-.79 2.65-.453.69-1.042 1.258-1.72 1.65l.557 2.05c.038.14.004.288-.088.396-.06.07-.144.11-.235.11-.03 0-.06-.004-.09-.012l-2.07-.63c.48.064.974.096 1.48.096h.002zM12.5 3c-5.24 0-9.5 3.582-9.5 8 0 2.42 1.33 4.59 3.42 6.02l-1.06 3.91c-.05.18.01.38.16.51.11.09.25.13.39.13.06 0 .12-.01.18-.03l3.96-1.2c.8.17 1.64.26 2.5.26.54 0 1.07-.03 1.59-.1-1.3-1.01-2.09-2.5-2.09-4.14 0-2.88 2.57-5.23 5.75-5.23 1.04 0 2.02.24 2.87.67C20.08 6.55 16.64 3 12.5 3z"/>
-                </svg>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
                 Zalo: 0911594794
             </a>
             
-            <!-- Đã cập nhật link Facebook cá nhân -->
             <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
-                <svg class="svg-icon" viewBox="0 0 24 24">
+                <svg class="fb-icon" viewBox="0 0 24 24">
                     <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
                 </svg>
                 Facebook
