@@ -33,27 +33,75 @@
             line-height: 1.6;
         }
 
-        /* --- Header / Hero Section --- */
+        /* --- Header / Hero Section MỚI --- */
         .hero {
             background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
             color: white;
-            text-align: center;
-            padding: 80px 20px;
+            padding: 60px 20px 80px 20px; /* Tăng padding dưới để đẩy card lên */
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
-        .hero h1 {
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap-reverse; /* Trên điện thoại: chữ dưới, ảnh trên */
+        }
+
+        .hero-text {
+            flex: 1;
+            text-align: left;
+            min-width: 300px;
+        }
+
+        .hero-text h1 {
             font-size: 2.8rem;
             margin-bottom: 15px;
             font-weight: 800;
+            line-height: 1.2;
         }
 
-        .hero p {
+        .hero-text p {
             font-size: 1.25rem;
             opacity: 0.95;
-            max-width: 600px;
-            margin: 0 auto;
             font-weight: 600;
+        }
+
+        .hero-image {
+            flex-shrink: 0;
+        }
+
+        /* Bo tròn ảnh đại diện và thêm hiệu ứng đổ bóng */
+        .profile-pic {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+        /* Căn giữa lại khi xem trên màn hình nhỏ (điện thoại) */
+        @media (max-width: 768px) {
+            .hero-content {
+                justify-content: center;
+                text-align: center;
+            }
+            .hero-text {
+                text-align: center;
+            }
+            .profile-pic {
+                width: 180px;
+                height: 180px;
+            }
         }
 
         /* --- Main Content (Cards) --- */
@@ -64,6 +112,8 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
+            position: relative; /* Đảm bảo card nằm đè lên nền xanh của header */
+            z-index: 10;
         }
 
         .card {
@@ -143,7 +193,6 @@
             flex-wrap: wrap;
         }
 
-        /* Thiết kế nút mạng xã hội mới (Outline to Fill) */
         .btn-social {
             display: flex;
             align-items: center;
@@ -157,7 +206,6 @@
             transition: all 0.3s ease;
         }
 
-        /* Zalo Button Style */
         .btn-zalo {
             color: var(--zalo-color);
             border: 2px solid var(--zalo-color);
@@ -171,10 +219,9 @@
         .zalo-logo {
             width: 28px;
             height: 28px;
-            border-radius: 6px; /* Bo góc logo Zalo */
+            border-radius: 6px;
         }
 
-        /* Facebook Button Style */
         .btn-fb {
             color: var(--fb-color);
             border: 2px solid var(--fb-color);
@@ -192,7 +239,7 @@
             transition: fill 0.3s;
         }
         .btn-fb:hover .fb-icon {
-            fill: white; /* Đổi màu icon thành trắng khi hover */
+            fill: white;
         }
 
         /* --- Footer --- */
@@ -209,8 +256,15 @@
 <body>
 
     <header class="hero">
-        <h1>Học tiếng Anh cùng thầy Danh</h1>
-        <p>Lộ trình tinh gọn - Nắm vững nền tảng - Tự tin giao tiếp. Chọn kỹ năng bạn muốn luyện tập hôm nay!</p>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Học tiếng Anh cùng thầy Danh</h1>
+                <p>Lộ trình tinh gọn - Nắm vững nền tảng - Tự tin giao tiếp. Chọn kỹ năng bạn muốn luyện tập hôm nay!</p>
+            </div>
+            <div class="hero-image">
+                <img src="avatar.jpg" alt="Thầy Danh" class="profile-pic">
+            </div>
+        </div>
     </header>
 
     <div class="container">
