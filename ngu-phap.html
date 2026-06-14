@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Tập 6 Thì Tiếng Anh</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --hover-color: #45a049;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 650px;
+        }
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            outline: none;
+            flex: 1;
+            min-width: 200px;
+        }
+        .progress {
+            font-weight: bold;
+            color: #666;
+            font-size: 16px;
+        }
+        .question-box {
+            background: #eef2f3;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .input-area {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: var(--primary-color);
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-check {
+            background-color: var(--primary-color);
+            color: white;
+            white-space: nowrap;
+        }
+        .btn-check:hover { background-color: var(--hover-color); }
+        .btn-next {
+            background-color: #2196F3;
+            color: white;
+            display: none;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .btn-next:hover { background-color: #0b7dda; }
+        .feedback {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .correct { color: #4CAF50; }
+        .incorrect { color: #f44336; }
+        .explanation {
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-left: 5px solid #ffeeba;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: none;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 Luyện Tập Ngữ Pháp</h1>
+    
+    <div class="controls">
+        <select id="tense-select" onchange="startQuiz()">
+            <option value="Present Simple">Thì Hiện tại đơn</option>
+            <option value="Present Continuous">Thì Hiện tại tiếp diễn</option>
+            <option value="Past Simple">Thì Quá khứ đơn</option>
+            <option value="Past Continuous">Thì Quá khứ tiếp diễn</option>
+            <option value="Future Simple">Thì Tương lai đơn</option>
+            <option value="Present Perfect">Thì Hiện tại hoàn thành</option>
+        </select>
+        <div class="progress" id="progress">Câu: 1/0</div>
+    </div>
+
+    <div class="question-box" id="question-text">
+        <!-- Câu hỏi sẽ hiển thị ở đây -->
+    </div>
+
+    <div class="input-area" id="input-area">
+        <input type="text" id="answer-input" placeholder="Nhập động từ đã chia..." autocomplete="off">
+        <button class="btn-check" id="check-btn" onclick="checkAnswer()">Kiểm tra</button>
+    </div>
+
+    <div id="feedback" class="feedback"></div>
+    <div id="explanation" class="explanation"></div>
+
+    <button class="btn-next" id="next-btn" onclick="nextQuestion()">Câu tiếp theo ➔</button>
+</div>
+
+<script>
+    const quizData = {
+        "Present Simple": [
+            { question: "1. I usually (go) ________ to school by bus.", answer: "go", explanation: "Dấu hiệu 'usually' (thường xuyên) chỉ thói quen ở hiện tại -> Dùng Hiện tại đơn. Với chủ ngữ 'I', động từ 'go' giữ nguyên." },
+            { question: "2. Water (boil) ________ at 100 degrees Celsius.", answer: "boils", explanation: "Đây là một sự thật hiển nhiên, chân lý -> Dùng Hiện tại đơn. Chủ ngữ 'Water' không đếm được (tương đương số ít) -> thêm 's'." },
+            { question: "3. The train (leave) ________ at 8 PM tonight.", answer: "leaves", explanation: "Mặc dù có 'tonight' (tương lai), nhưng đây là lịch trình cố định của tàu xe -> Dùng Hiện tại đơn. Chủ ngữ 'The train' số ít -> thêm 's'." },
+            { question: "4. She (not/like) ________ eating apples very much.", answer: "does not like / doesn't like", explanation: "Câu phủ định ở thì Hiện tại đơn. Chủ ngữ 'She' mượn trợ động từ 'does' + not + V(nguyên thể)." },
+            { question: "5. ________ (he/work) as a doctor in this hospital?", answer: "Does he work", explanation: "Câu nghi vấn Hiện tại đơn. Đảo trợ động từ 'Does' lên trước chủ ngữ số ít 'he', động từ 'work' giữ nguyên." },
+            { question: "6. My brother hardly ever (wash) ________ the dishes after dinner.", answer: "washes", explanation: "Dấu hiệu 'hardly ever' (hầu như không bao giờ) chỉ thói quen. Chủ ngữ 'My brother' số ít -> động từ tận cùng bằng 'sh' phải thêm 'es'." },
+            { question: "7. How often ________ (you/visit) your grandparents?", answer: "do you visit", explanation: "Câu hỏi tần suất 'How often' dùng thì Hiện tại đơn. Mượn trợ động từ 'do' cho chủ ngữ 'you'." },
+            { question: "8. The author (describe) ________ a very dystopian future in his new novel.", answer: "describes", explanation: "Khi tóm tắt nội dung một cuốn sách, bộ phim, ta thường dùng Hiện tại đơn. Chủ ngữ 'The author' số ít." },
+            { question: "9. Neither the manager nor the employees (want) ________ to work overtime.", answer: "want", explanation: "Cấu trúc 'Neither A nor B': Động từ chia theo chủ ngữ gần nhất là B ('the employees' - số nhiều) -> Động từ 'want' giữ nguyên." },
+            { question: "10. As soon as she (arrive) ________, we will start the meeting.", answer: "arrives", explanation: "Trong mệnh đề thời gian (bắt đầu bằng As soon as, When, Before...), dùng Hiện tại đơn để diễn tả hành động trong tương lai." }
+        ],
+        "Present Continuous": [
+            { question: "1. Be quiet! The baby (sleep) ________ in the bedroom.", answer: "is sleeping", explanation: "Dấu hiệu 'Be quiet!' cho thấy hành động đang diễn ra ngay lúc nói. Cấu trúc: S + am/is/are + V-ing." },
+            { question: "2. Look! The dog (run) ________ after the cat.", answer: "is running", explanation: "Dấu hiệu 'Look!' báo hiệu hành động đang xảy ra trước mắt. Lưu ý: 'run' phải gấp đôi phụ âm 'n' thành 'running'." },
+            { question: "3. We (not/watch) ________ TV at the moment.", answer: "are not watching / aren't watching", explanation: "Dấu hiệu 'at the moment' (ngay lúc này). Thêm 'not' sau động từ to be 'are'." },
+            { question: "4. ________ (you/listen) to me right now?", answer: "Are you listening", explanation: "Dấu hiệu 'right now'. Câu nghi vấn đảo to be lên trước chủ ngữ: Are + you + V-ing?" },
+            { question: "5. She (always/complain) ________ about her heavy workload!", answer: "is always complaining", explanation: "Dùng 'always' trong thì Hiện tại tiếp diễn để phàn nàn về một thói quen xấu gây khó chịu lặp đi lặp lại." },
+            { question: "6. They (build) ________ a new shopping mall in the city center.", answer: "are building", explanation: "Hành động đang diễn ra xung quanh thời điểm nói (không nhất thiết phải ngay lúc nói), một dự án đang dang dở." },
+            { question: "7. Thanks to the course, my English (improve) ________ day by day.", answer: "is improving", explanation: "Dấu hiệu 'day by day' diễn tả một sự thay đổi, phát triển đang diễn ra (tiếng Anh đang dần cải thiện)." },
+            { question: "8. What ________ (you/do) tonight after work?", answer: "are you doing", explanation: "Thì Hiện tại tiếp diễn còn được dùng để diễn tả một kế hoạch, dự định chắc chắn sẽ xảy ra trong tương lai gần (tonight)." },
+            { question: "9. The company (currently/negotiate) ________ a new contract.", answer: "is currently negotiating", explanation: "Dấu hiệu 'currently' (hiện tại, hiện nay) -> đi với thì Hiện tại tiếp diễn." },
+            { question: "10. I (think) ________ of moving to a new city for better opportunities.", answer: "am thinking", explanation: "Động từ 'think' khi mang nghĩa 'xem xét, cân nhắc' thì dùng được ở dạng V-ing. (Nếu 'think' mang nghĩa 'tin rằng' thì không dùng V-ing)." }
+        ],
+        "Past Simple": [
+            { question: "1. I (visit) ________ my grandmother yesterday.", answer: "visited", explanation: "Dấu hiệu 'yesterday' (hôm qua) -> Quá khứ đơn. Động từ có quy tắc thêm -ed." },
+            { question: "2. He (buy) ________ a new car last week.", answer: "bought", explanation: "Dấu hiệu 'last week' (tuần trước). 'buy' là động từ bất quy tắc, quá khứ là 'bought'." },
+            { question: "3. They (not/go) ________ to the party last night.", answer: "did not go / didn't go", explanation: "Câu phủ định Quá khứ đơn: mượn trợ động từ 'did' + not + V nguyên thể." },
+            { question: "4. ________ (she/finish) her homework before going out?", answer: "Did she finish", explanation: "Câu nghi vấn Quá khứ đơn: Đảo 'Did' lên trước chủ ngữ, động từ chính giữ nguyên thể." },
+            { question: "5. When I was a child, I often (play) ________ the piano.", answer: "played", explanation: "Diễn tả một thói quen trong quá khứ đã chấm dứt (When I was a child) -> Quá khứ đơn." },
+            { question: "6. William Shakespeare (write) ________ 'Romeo and Juliet'.", answer: "wrote", explanation: "Sự việc tác giả viết một tác phẩm đã xảy ra và chấm dứt hoàn toàn trong quá khứ. 'write' -> 'wrote'." },
+            { question: "7. The accident (happen) ________ while they were driving.", answer: "happened", explanation: "Hành động cắt ngang một hành động khác đang diễn ra (were driving) trong quá khứ -> Dùng Quá khứ đơn." },
+            { question: "8. Where ________ (you/spend) your last summer holiday?", answer: "did you spend", explanation: "Câu hỏi Wh- ở quá khứ: Từ để hỏi + did + S + V(nguyên thể)." },
+            { question: "9. She stepped into the room, looked around, and (sigh) ________ heavily.", answer: "sighed", explanation: "Các hành động xảy ra liên tiếp nhau trong quá khứ: stepped -> looked -> sighed." },
+            { question: "10. Although he (study) ________ very hard, he failed the final exam.", answer: "studied", explanation: "Động từ 'failed' ở vế sau cho thấy sự việc xảy ra ở quá khứ. 'study' đổi 'y' thành 'i' rồi thêm '-ed'." }
+        ],
+        "Past Continuous": [
+            { question: "1. I (sleep) ________ at 10 PM last night.", answer: "was sleeping", explanation: "Hành động đang diễn ra tại một thời điểm xác định cụ thể trong quá khứ (10 PM last night). S + was/were + V-ing." },
+            { question: "2. They (play) ________ football when it suddenly started to rain.", answer: "were playing", explanation: "Hành động đang diễn ra trong quá khứ (were playing) thì bị một hành động khác cắt ngang (started to rain)." },
+            { question: "3. She (not/cook) ________ dinner at that time yesterday.", answer: "was not cooking / wasn't cooking", explanation: "Câu phủ định QKTD: S + was/were + not + V-ing." },
+            { question: "4. What ________ (you/do) when I called you?", answer: "were you doing", explanation: "Hỏi ai đó ĐANG làm gì tại thời điểm bị hành động khác cắt ngang trong quá khứ." },
+            { question: "5. While I (read) ________ a book, my brother was playing video games.", answer: "was reading", explanation: "Hai hành động đang xảy ra song song cùng lúc trong quá khứ, thường nối bằng 'While'." },
+            { question: "6. We (have) ________ dinner when the lights went out.", answer: "were having", explanation: "Đang ăn tối thì mất điện. Động từ 'have' khi mang nghĩa 'ăn/uống/trải nghiệm' thì dùng được dạng V-ing." },
+            { question: "7. The sun (shine) ________ and the birds were singing when we woke up.", answer: "was shining", explanation: "Dùng để mô tả bối cảnh, cảnh vật đang diễn ra trong một câu chuyện ở quá khứ." },
+            { question: "8. ________ (she/cry) when you found her in the park?", answer: "Was she crying", explanation: "Câu nghi vấn QKTD: Was/Were + S + V-ing?" },
+            { question: "9. They (constantly/talk) ________ behind my back, which drove me crazy.", answer: "were constantly talking", explanation: "Cấu trúc 'was/were + constantly/always + V-ing' để phàn nàn về thói quen xấu lặp đi lặp lại trong quá khứ." },
+            { question: "10. At this exact time last year, we (travel) ________ through Europe.", answer: "were traveling / were travelling", explanation: "Hành động đang diễn ra tại một thời điểm cực kỳ chính xác (At this exact time) trong quá khứ." }
+        ],
+        "Future Simple": [
+            { question: "1. It looks heavy. I (help) ________ you with your bags.", answer: "will help", explanation: "Diễn tả một quyết định nảy sinh ngay tại thời điểm nói (thấy nặng nên đề nghị giúp). Dùng 'will' + V(nguyên thể)." },
+            { question: "2. They (travel) ________ to Japan next year.", answer: "will travel", explanation: "Dấu hiệu 'next year' -> Tương lai đơn. Hành động sẽ xảy ra trong tương lai." },
+            { question: "3. She (not/come) ________ to the meeting tomorrow.", answer: "will not come / won't come", explanation: "Câu phủ định của Tương lai đơn: S + will not (won't) + V." },
+            { question: "4. ________ (you/marry) me?", answer: "Will you marry", explanation: "Dùng để đưa ra lời đề nghị, yêu cầu hoặc hỏi ý kiến." },
+            { question: "5. I think our national team (win) ________ the match tonight.", answer: "will win", explanation: "Dấu hiệu 'I think' (tôi nghĩ) -> Phỏng đoán chủ quan trong tương lai không có căn cứ rõ ràng." },
+            { question: "6. Don't worry, I (not/tell) ________ anyone your secret.", answer: "will not tell / won't tell", explanation: "Dùng để đưa ra một lời hứa (hứa sẽ không kể)." },
+            { question: "7. Perhaps we (find) ________ a solution to this problem soon.", answer: "will find", explanation: "Dấu hiệu 'Perhaps' (có lẽ) diễn tả một dự đoán trong tương lai." },
+            { question: "8. What ________ (you/do) if it rains tomorrow?", answer: "will you do", explanation: "Mệnh đề chính trong câu điều kiện loại 1 (If + Hiện tại đơn, vế kia Tương lai đơn)." },
+            { question: "9. I promise I (have) ________ the report ready by Monday morning.", answer: "will have", explanation: "Dấu hiệu 'promise' (hứa hẹn) -> Dùng tương lai đơn." },
+            { question: "10. Hold on a second, I (get) ________ the door for you.", answer: "will get", explanation: "Quyết định tức thì ngay lúc nói (thấy có tiếng gõ cửa nên ra mở)." }
+        ],
+        "Present Perfect": [
+            { question: "1. I (just/finish) ________ my English homework.", answer: "have just finished", explanation: "Dấu hiệu 'just' (vừa mới) -> HTHT. Cấu trúc: S + have/has + just + V(pII). Vị trí của 'just' nằm giữa have và V(pII)." },
+            { question: "2. She (already/see) ________ that movie twice.", answer: "has already seen", explanation: "Dấu hiệu 'already' (đã...rồi) và 'twice' (hai lần). Nhấn mạnh trải nghiệm đã xảy ra. 'see' -> 'seen'." },
+            { question: "3. We (not/be) ________ to Paris yet.", answer: "have not been / haven't been", explanation: "Dấu hiệu 'yet' (chưa) thường dùng trong câu phủ định của thì Hiện tại hoàn thành." },
+            { question: "4. ________ (you/ever/eat) traditional Japanese sushi?", answer: "Have you ever eaten", explanation: "Dấu hiệu 'ever' (đã từng) dùng để hỏi về trải nghiệm từ trước đến nay." },
+            { question: "5. They (live) ________ in Ho Chi Minh City since 2010.", answer: "have lived", explanation: "Dấu hiệu 'since' + mốc thời gian (từ năm 2010 đến nay). Hành động bắt đầu ở QK và còn kéo dài đến hiện tại." },
+            { question: "6. He (work) ________ for this tech company for 5 years.", answer: "has worked", explanation: "Dấu hiệu 'for' + khoảng thời gian (được 5 năm) -> Dùng Hiện tại hoàn thành." },
+            { question: "7. I (never/meet) ________ such a generous person in my life.", answer: "have never met", explanation: "Dấu hiệu 'never' (chưa bao giờ) diễn tả trải nghiệm từ sinh ra tới nay." },
+            { question: "8. How many pages of this book ________ (you/read) so far?", answer: "have you read", explanation: "Dấu hiệu 'so far' (cho đến nay) -> Hành động đọc sách kéo dài từ quá khứ đến hiện tại." },
+            { question: "9. Scientists (recently/make) ________ significant breakthroughs.", answer: "have recently made", explanation: "Dấu hiệu 'recently' (gần đây) -> Hiện tại hoàn thành. Vị trí của 'recently' có thể đứng giữa have/has và V(pII)." },
+            { question: "10. This is the most challenging project I (ever/undertake) ________.", answer: "have ever undertaken", explanation: "Cấu trúc đi liền sau so sánh nhất (the most challenging) luôn dùng thì Hiện tại hoàn thành. 'undertake' -> 'undertaken'." }
+        ]
+    };
+
+    let currentTense = "";
+    let currentQuestionIndex = 0;
+    let questionsList = [];
+
+    // Khởi tạo bài tập khi chọn Thì
+    function startQuiz() {
+        const selectElement = document.getElementById("tense-select");
+        currentTense = selectElement.value;
+        questionsList = quizData[currentTense];
+        currentQuestionIndex = 0;
+        
+        document.getElementById("input-area").style.display = "flex";
+        loadQuestion();
+    }
+
+    // Tải câu hỏi lên giao diện
+    function loadQuestion() {
+        resetUI();
+        const currentQ = questionsList[currentQuestionIndex];
+        
+        document.getElementById("progress").innerText = `Câu: ${currentQuestionIndex + 1}/${questionsList.length}`;
+        document.getElementById("question-text").innerHTML = currentQ.question;
+    }
+
+    // Kiểm tra đáp án
+    function checkAnswer() {
+        const userAnswer = document.getElementById("answer-input").value.trim().toLowerCase();
+        const currentQ = questionsList[currentQuestionIndex];
+        
+        // Cắt các đáp án bằng dấu "/" và loại bỏ khoảng trắng dư thừa
+        const correctAnswers = currentQ.answer.toLowerCase().split("/").map(item => item.trim());
+        
+        const feedbackEl = document.getElementById("feedback");
+        const explanationEl = document.getElementById("explanation");
+        const nextBtn = document.getElementById("next-btn");
+        const checkBtn = document.getElementById("check-btn");
+
+        if (userAnswer === "") {
+            alert("Vui lòng nhập đáp án của bạn!");
+            return;
+        }
+
+        if (correctAnswers.includes(userAnswer)) {
+            feedbackEl.innerText = "✅ Chính xác!";
+            feedbackEl.className = "feedback correct";
+        } else {
+            // In hoa chữ cái đầu của đáp án để hiển thị đẹp hơn
+            const displayAnswer = currentQ.answer;
+            feedbackEl.innerText = `❌ Sai rồi! Đáp án đúng là: ${displayAnswer}`;
+            feedbackEl.className = "feedback incorrect";
+        }
+
+        // Hiện giải thích và nút Next
+        explanationEl.innerHTML = `<strong>💡 Giải thích:</strong> ${currentQ.explanation}`;
+        explanationEl.style.display = "block";
+        nextBtn.style.display = "block";
+        checkBtn.style.display = "none";
+        document.getElementById("answer-input").disabled = true;
+    }
+
+    // Chuyển câu tiếp theo
+    function nextQuestion() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questionsList.length) {
+            loadQuestion();
+        } else {
+            document.getElementById("question-text").innerHTML = "<strong>🎉 Chúc mừng! Bạn đã hoàn thành xuất sắc 10 câu hỏi của thì này! Hãy chọn thì khác để tiếp tục luyện tập nhé.</strong>";
+            document.getElementById("input-area").style.display = "none";
+            resetUI();
+        }
+    }
+
+    // Khôi phục giao diện cho câu hỏi mới
+    function resetUI() {
+        const inputEl = document.getElementById("answer-input");
+        if(inputEl) {
+            inputEl.value = "";
+            inputEl.disabled = false;
+            inputEl.focus();
+        }
+        
+        document.getElementById("feedback").innerText = "";
+        document.getElementById("explanation").style.display = "none";
+        document.getElementById("next-btn").style.display = "none";
+        
+        const checkBtn = document.getElementById("check-btn");
+        if(checkBtn) checkBtn.style.display = "block";
+    }
+
+    // Chạy auto lần đầu khi load trang
+    window.onload = startQuiz;
+
+    // Cho phép nhấn Enter để kiểm tra hoặc qua câu
+    document.getElementById("answer-input").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            if (document.getElementById("check-btn").style.display !== "none") {
+                checkAnswer();
+            } else {
+                nextQuestion();
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
