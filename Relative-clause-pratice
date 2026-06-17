@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Mệnh Đề Quan Hệ - Thầy Danh</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --zalo-color: #0068ff;
+            --fb-color: #1877f2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .top-nav {
+            padding: 15px 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-nav {
+            padding: 8px 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+
+        .btn-back {
+            background-color: #e2e8f0;
+            color: var(--text-main);
+        }
+        .btn-back:hover { background-color: #cbd5e1; }
+
+        .btn-theory {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-theory:hover { background-color: var(--primary-hover); }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            width: 100%;
+            max-width: 700px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .controls {
+            margin-bottom: 20px;
+            text-align: right;
+        }
+
+        .progress {
+            font-weight: 800;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .question-box {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 1.15rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        .input-area {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 12px 15px;
+            font-size: 1.1rem;
+            font-family: inherit;
+            border: 2px solid #cbd5e1;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--primary);
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: inherit;
+            transition: background 0.3s;
+        }
+
+        .btn-check {
+            background-color: var(--primary);
+            color: white;
+            white-space: nowrap;
+        }
+        .btn-check:hover { background-color: var(--primary-hover); }
+
+        .btn-next {
+            background-color: #0ea5e9;
+            color: white;
+            display: none;
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 50px;
+        }
+        .btn-next:hover { background-color: #0284c7; }
+
+        .feedback {
+            font-weight: 800;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        .correct { color: #16a34a; }
+        .incorrect { color: #dc2626; }
+
+        .explanation {
+            background: #fef3c7;
+            color: #b45309;
+            padding: 15px 20px;
+            border-left: 5px solid #f59e0b;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: none;
+            font-size: 1.05rem;
+            line-height: 1.5;
+        }
+
+        /* --- Contact Section --- */
+        .contact-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .contact-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-main);
+            font-weight: 800;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-social {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-zalo { color: var(--zalo-color); border: 2px solid var(--zalo-color); }
+        .btn-zalo:hover { background-color: var(--zalo-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 104, 255, 0.3); }
+        .zalo-logo { width: 24px; height: 24px; border-radius: 6px; }
+
+        .btn-fb { color: var(--fb-color); border: 2px solid var(--fb-color); }
+        .btn-fb:hover { background-color: var(--fb-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3); }
+        .fb-icon { width: 22px; height: 22px; fill: var(--fb-color); transition: fill 0.3s; }
+        .btn-fb:hover .fb-icon { fill: white; }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: var(--text-main);
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="grammar-index.html" class="btn-nav btn-back">⬅ Quay lại Trung tâm Ngữ pháp</a>
+        <a href="relative-clause-theory.html" class="btn-nav btn-theory">📖 Xem Lý thuyết</a>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>📝 Bài Tập Mệnh Đề Quan Hệ</h1>
+            
+            <div class="controls">
+                <div class="progress" id="progress">Câu: 1/60</div>
+            </div>
+
+            <div class="question-box" id="question-text">
+                </div>
+
+            <div class="input-area" id="input-area">
+                <input type="text" id="answer-input" placeholder="Nhập từ cần điền (vd: who, which...)" autocomplete="off">
+                <button class="btn-check" id="check-btn" onclick="checkAnswer()">Kiểm tra</button>
+            </div>
+
+            <div id="feedback" class="feedback"></div>
+            <div id="explanation" class="explanation"></div>
+
+            <button class="btn-next" id="next-btn" onclick="nextQuestion()">Câu tiếp theo ➔</button>
+        </div>
+    </div>
+
+    <section class="contact-section">
+        <h2>Kết nối với thầy Danh</h2>
+        <div class="social-buttons">
+            <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
+                Zalo: 0911594794
+            </a>
+            <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
+                <svg class="fb-icon" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+                Facebook
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Học tiếng Anh cùng thầy Danh.</p>
+    </footer>
+
+<script>
+    const quizData = [
+        // --- LEVEL 1: CƠ BẢN (1-20) ---
+        { q: "1. The girl _____ is standing there is my sister. [Cơ bản]", a: "who / that", e: "Thay thế cho 'The girl' (người) làm chủ ngữ, dùng 'who' hoặc 'that'." },
+        { q: "2. The book _____ I bought yesterday is very interesting. [Cơ bản]", a: "which / that", e: "Thay thế cho 'The book' (vật) làm tân ngữ, dùng 'which' hoặc 'that'." },
+        { q: "3. The man _____ car was stolen is at the police station. [Cơ bản]", a: "whose", e: "Chỉ sự sở hữu (xe của người đàn ông), dùng 'whose' + N." },
+        { q: "4. This is the house _____ I was born. [Cơ bản]", a: "where", e: "Chỉ nơi chốn (nhà), dùng 'where' (hoặc in which)." },
+        { q: "5. Do you remember the day _____ we first met? [Cơ bản]", a: "when", e: "Chỉ thời gian (ngày), dùng 'when'." },
+        { q: "6. The student _____ sits next to me is from Japan. [Cơ bản]", a: "who / that", e: "Thay thế cho 'The student' (người) làm chủ ngữ." },
+        { q: "7. I don't know the reason _____ she cried. [Cơ bản]", a: "why", e: "Bổ nghĩa cho 'the reason' (lý do), dùng 'why'." },
+        { q: "8. A doctor is a person _____ treats sick people. [Cơ bản]", a: "who / that", e: "'a person' (người) đóng vai trò chủ ngữ của 'treats'." },
+        { q: "9. The dog _____ is barking loudly belongs to my neighbor. [Cơ bản]", a: "which / that", e: "'The dog' (động vật) dùng 'which' hoặc 'that'." },
+        { q: "10. The woman _____ I saw yesterday is a famous actress. [Cơ bản]", a: "whom / who / that", e: "Thay thế cho người làm tân ngữ (tôi đã nhìn thấy cô ấy)." },
+        { q: "11. The computer _____ is on the desk is broken. [Cơ bản]", a: "which / that", e: "'The computer' (vật) làm chủ ngữ." },
+        { q: "12. I met a boy _____ father is a pilot. [Cơ bản]", a: "whose", e: "Sở hữu: bố của cậu bé (boy's father) -> whose father." },
+        { q: "13. 2020 was the year _____ the pandemic started. [Cơ bản]", a: "when", e: "Bổ nghĩa cho 'the year' (thời gian)." },
+        { q: "14. We visited the park _____ we used to play. [Cơ bản]", a: "where", e: "Bổ nghĩa cho 'the park' (nơi chốn)." },
+        { q: "15. Please give me the pen _____ is on the table. [Cơ bản]", a: "which / that", e: "'the pen' (vật)." },
+        { q: "16. The boy _____ won the prize is very smart. [Cơ bản]", a: "who / that", e: "'The boy' (người) làm chủ ngữ." },
+        { q: "17. That is the restaurant _____ they cook Italian food. [Cơ bản]", a: "where", e: "Nhà hàng là nơi chốn -> where." },
+        { q: "18. Tell me the reason _____ you were late. [Cơ bản]", a: "why", e: "Chỉ lý do -> why." },
+        { q: "19. The movies _____ we watched last night were scary. [Cơ bản]", a: "which / that", e: "'The movies' (vật) làm tân ngữ." },
+        { q: "20. I talked to the girl _____ bike was broken. [Cơ bản]", a: "whose", e: "Xe đạp của cô gái -> whose bike." },
+
+        // --- LEVEL 2: TRUNG BÌNH (21-40) - Dấu phẩy & Giới từ ---
+        { q: "21. Mr. Smith, _____ is my teacher, is very kind. [Trung bình]", a: "who", e: "Mệnh đề không xác định (có dấu phẩy) -> KHÔNG dùng 'that'. Chỉ người làm chủ ngữ -> 'who'." },
+        { q: "22. Paris, _____ is the capital of France, is beautiful. [Trung bình]", a: "which", e: "Có dấu phẩy, chỉ vật -> dùng 'which' (Không dùng that)." },
+        { q: "23. The man to _____ I was speaking is the CEO. [Trung bình]", a: "whom", e: "Đứng sau giới từ 'to', chỉ người -> BẮT BUỘC dùng 'whom'." },
+        { q: "24. The house in _____ I live is very old. [Trung bình]", a: "which", e: "Đứng sau giới từ 'in', chỉ vật -> BẮT BUỘC dùng 'which' (in which = where)." },
+        { q: "25. My mother, _____ I love very much, is a nurse. [Trung bình]", a: "whom / who", e: "Có dấu phẩy, chỉ người làm tân ngữ. (Không dùng that)." },
+        { q: "26. This is the chair on _____ I sat yesterday. [Trung bình]", a: "which", e: "Đứng sau giới từ 'on', chỉ vật -> 'which'." },
+        { q: "27. John, _____ brother is my classmate, has a new car. [Trung bình]", a: "whose", e: "Chỉ sự sở hữu trong mệnh đề có dấu phẩy." },
+        { q: "28. The meeting, _____ I attended yesterday, was long. [Trung bình]", a: "which", e: "Có dấu phẩy, thay cho sự việc." },
+        { q: "29. The person from _____ I received this gift is a secret. [Trung bình]", a: "whom", e: "Sau giới từ 'from', chỉ người -> 'whom'." },
+        { q: "30. Hanoi, _____ I was born, is a busy city. [Trung bình]", a: "where", e: "Có dấu phẩy, chỉ nơi chốn." },
+        { q: "31. The hotel at _____ we stayed was excellent. [Trung bình]", a: "which", e: "Sau giới từ 'at', chỉ vật/nơi -> 'which' (at which = where)." },
+        { q: "32. My new phone, _____ cost a lot of money, is already broken. [Trung bình]", a: "which", e: "Mệnh đề không xác định, chỉ vật -> 'which'." },
+        { q: "33. The people with _____ I work are very friendly. [Trung bình]", a: "whom", e: "Sau giới từ 'with', chỉ người." },
+        { q: "34. Sunflowers, _____ grow towards the sun, are beautiful. [Trung bình]", a: "which", e: "Có dấu phẩy, chỉ sự vật." },
+        { q: "35. Dr. Lee, _____ patients love him, is retiring. [Trung bình]", a: "whose", e: "Bệnh nhân của bác sĩ Lee -> 'whose patients'." },
+        { q: "36. The day on _____ we met was rainy. [Trung bình]", a: "which", e: "Sau giới từ 'on', chỉ thời gian -> 'which' (on which = when)." },
+        { q: "37. My dog, _____ is sleeping on the sofa, is lazy. [Trung bình]", a: "which", e: "Chỉ động vật, có dấu phẩy -> 'which'." },
+        { q: "38. The student to _____ you gave the book is here. [Trung bình]", a: "whom", e: "Sau giới từ 'to', chỉ người." },
+        { q: "39. Mount Everest, _____ is the highest mountain, is in Asia. [Trung bình]", a: "which", e: "Có dấu phẩy, danh từ riêng." },
+        { q: "40. The reason for _____ he resigned is unknown. [Trung bình]", a: "which", e: "Sau giới từ 'for' -> 'which' (for which = why)." },
+
+        // --- LEVEL 3: NÂNG CAO - Rút gọn TOEIC/IELTS (41-60) ---
+        // Yêu cầu học viên điền ĐỘNG TỪ đã được rút gọn (V-ing / V-ed / to V)
+        { q: "41. (Rút gọn) The man (stand) _____ at the door is my uncle. [Nâng cao]", a: "standing", e: "Chủ động: 'who is standing' rút gọn thành V-ing -> 'standing'." },
+        { q: "42. (Rút gọn) The house (build) _____ in 1990 is still beautiful. [Nâng cao]", a: "built", e: "Bị động: 'which was built' rút gọn thành V3/ed -> 'built'." },
+        { q: "43. (Rút gọn) He was the last person (leave) _____ the room. [Nâng cao]", a: "to leave", e: "Sau 'the last' rút gọn thành To V -> 'to leave'." },
+        { q: "44. (Rút gọn) The boy (play) _____ the piano is a prodigy. [Nâng cao]", a: "playing", e: "Chủ động: đang chơi đàn -> 'playing'." },
+        { q: "45. (Rút gọn) Books (write) _____ by Nguyen Nhat Anh are popular. [Nâng cao]", a: "written", e: "Bị động: được viết bởi -> 'written'." },
+        { q: "46. (Rút gọn) She is the only student (pass) _____ the exam. [Nâng cao]", a: "to pass", e: "Sau 'the only' rút gọn thành To V -> 'to pass'." },
+        { q: "47. (Rút gọn) The road (connect) _____ the two cities is being repaired. [Nâng cao]", a: "connecting", e: "Chủ động: con đường nối liền -> 'connecting'." },
+        { q: "48. (Rút gọn) The rules (apply) _____ to this game are simple. [Nâng cao]", a: "applied", e: "Bị động: luật được áp dụng -> 'applied'." },
+        { q: "49. (Rút gọn) Yuri Gagarin was the first man (fly) _____ into space. [Nâng cao]", a: "to fly", e: "Sau 'the first' rút gọn thành To V -> 'to fly'." },
+        { q: "50. (Rút gọn) Passengers (travel) _____ on this train must buy a ticket. [Nâng cao]", a: "traveling / travelling", e: "Chủ động: hành khách đang di chuyển -> 'traveling'." },
+        { q: "51. (Rút gọn) The song (sing) _____ by that girl is my favorite. [Nâng cao]", a: "sung", e: "Bị động: bài hát được hát ('sing' -> 'sang' -> 'sung')." },
+        { q: "52. (Rút gọn) Neil Armstrong was the first person (walk) _____ on the moon. [Nâng cao]", a: "to walk", e: "Sau 'the first' -> 'to walk'." },
+        { q: "53. (Rút gọn) The students (prepare) _____ for the IELTS test are nervous. [Nâng cao]", a: "preparing", e: "Chủ động: học sinh đang chuẩn bị -> 'preparing'." },
+        { q: "54. (Rút gọn) The money (steal) _____ from the bank was found. [Nâng cao]", a: "stolen", e: "Bị động: tiền bị đánh cắp ('steal' -> 'stole' -> 'stolen')." },
+        { q: "55. (Rút gọn) This is the second problem (solve) _____ today. [Nâng cao]", a: "to be solved", e: "Sau 'the second' (To V) nhưng mang nghĩa BỊ ĐỘNG (vấn đề ĐƯỢC giải quyết) -> 'to be solved'." },
+        { q: "56. (Rút gọn) The woman (wear) _____ the red dress is the manager. [Nâng cao]", a: "wearing", e: "Chủ động: người phụ nữ đang mặc -> 'wearing'." },
+        { q: "57. (Rút gọn) Goods (import) _____ from Japan are high quality. [Nâng cao]", a: "imported", e: "Bị động: Hàng hóa được nhập khẩu -> 'imported'." },
+        { q: "58. (Rút gọn) I have some letters (write) _____. [Nâng cao]", a: "to write", e: "Chỉ mục đích/bổn phận (có thư CẦN PHẢI viết) -> 'to write'." },
+        { q: "59. (Rút gọn) The ideas (present) _____ in the meeting were brilliant. [Nâng cao]", a: "presented", e: "Bị động: ý tưởng được trình bày -> 'presented'." },
+        { q: "60. (Rút gọn) Anyone (wish) _____ to join the club must sign here. [Nâng cao]", a: "wishing", e: "Chủ động: bất cứ ai mong muốn -> 'wishing'." }
+    ];
+
+    let currentQuestionIndex = 0;
+
+    function loadQuestion() {
+        const currentQ = quizData[currentQuestionIndex];
+        document.getElementById("progress").innerText = `Câu: ${currentQuestionIndex + 1}/${quizData.length}`;
+        
+        // Highlight phần trong ngoặc hoặc chỗ trống cho dễ nhìn
+        let questionHtml = currentQ.q.replace("_____", "<strong>_____</strong>");
+        document.getElementById("question-text").innerHTML = questionHtml;
+        
+        resetUI();
+    }
+
+    function checkAnswer() {
+        const userAnswer = document.getElementById("answer-input").value.trim().toLowerCase();
+        const currentQ = quizData[currentQuestionIndex];
+        
+        // Tách các đáp án đúng bằng dấu "/"
+        const correctAnswers = currentQ.a.toLowerCase().split("/").map(item => item.trim());
+        
+        const feedbackEl = document.getElementById("feedback");
+        const explanationEl = document.getElementById("explanation");
+        const nextBtn = document.getElementById("next-btn");
+        const checkBtn = document.getElementById("check-btn");
+
+        if (userAnswer === "") {
+            alert("Vui lòng nhập đáp án của bạn!");
+            return;
+        }
+
+        if (correctAnswers.includes(userAnswer)) {
+            feedbackEl.innerText = "✅ Chính xác!";
+            feedbackEl.className = "feedback correct";
+        } else {
+            feedbackEl.innerText = `❌ Sai rồi! Đáp án đúng có thể là: ${currentQ.a}`;
+            feedbackEl.className = "feedback incorrect";
+        }
+
+        explanationEl.innerHTML = `<strong>💡 Giải thích:</strong> ${currentQ.e}`;
+        explanationEl.style.display = "block";
+        nextBtn.style.display = "block";
+        checkBtn.style.display = "none";
+        document.getElementById("answer-input").disabled = true;
+    }
+
+    function nextQuestion() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < quizData.length) {
+            loadQuestion();
+        } else {
+            document.getElementById("question-text").innerHTML = "<strong>🎉 Tuyệt vời! Bạn đã hoàn thành toàn bộ 60 câu hỏi Mệnh đề quan hệ từ Cơ bản đến Nâng cao!</strong>";
+            document.getElementById("input-area").style.display = "none";
+            document.getElementById("progress").innerText = "Hoàn thành!";
+            resetUI();
+            document.getElementById("check-btn").style.display = "none";
+        }
+    }
+
+    function resetUI() {
+        const inputEl = document.getElementById("answer-input");
+        if(inputEl) {
+            inputEl.value = "";
+            inputEl.disabled = false;
+            inputEl.focus();
+        }
+        
+        document.getElementById("feedback").innerText = "";
+        document.getElementById("explanation").style.display = "none";
+        document.getElementById("next-btn").style.display = "none";
+        
+        const checkBtn = document.getElementById("check-btn");
+        if(checkBtn && currentQuestionIndex < quizData.length) {
+            checkBtn.style.display = "block";
+        }
+    }
+
+    // Chạy auto lần đầu khi load trang
+    window.onload = loadQuestion;
+
+    // Phím tắt Enter
+    document.getElementById("answer-input").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            if (document.getElementById("check-btn").style.display !== "none") {
+                checkAnswer();
+            } else {
+                nextQuestion();
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
