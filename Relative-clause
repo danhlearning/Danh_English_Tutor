@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lý thuyết Mệnh đề quan hệ - Thầy Danh</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #dbeafe;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #334155;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Styling for Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 700;
+            width: 15%;
+        }
+
+        td:nth-child(2) {
+            width: 35%;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+
+        .example-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .example-list li {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #cbd5e1;
+        }
+
+        .example-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        /* Styling for Examples */
+        .example-box {
+            background-color: var(--accent);
+            border-left: 5px solid var(--primary);
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .example-box p {
+            margin-bottom: 8px;
+        }
+
+        .example-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            font-weight: 700;
+            color: #b91c1c;
+        }
+        
+        .meaning {
+            font-style: italic;
+            color: #475569;
+            font-size: 1rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            background-color: var(--text-muted);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: #475569;
+        }
+
+        .btn-practice {
+            display: block;
+            text-align: center;
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-top: 40px;
+            transition: background 0.3s;
+        }
+
+        .btn-practice:hover {
+            background-color: var(--primary-hover);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            th, td {
+                display: block;
+                width: 100% !important;
+            }
+            th {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="btn-back">⬅ Quay lại Trang chủ</a>
+        
+        <div class="header">
+            <h1>📖 Lý Thuyết: Mệnh Đề Quan Hệ</h1>
+            <p>(Relative Clauses)</p>
+        </div>
+
+        <h2>I. Định nghĩa Mệnh đề quan hệ là gì?</h2>
+        <p><strong>Mệnh đề quan hệ (Relative Clause)</strong> là một mệnh đề phụ được dùng để bổ nghĩa cho danh từ đứng trước nó. Mệnh đề quan hệ đứng ngay sau danh từ mà nó bổ nghĩa và được bắt đầu bằng các đại từ hoặc trạng từ quan hệ.</p>
+        
+        <div class="example-box">
+            <p>1. The man <span class="highlight">who is standing over there</span> is my father.<br>
+            <span class="meaning">(Người đàn ông, người mà đang đứng đằng kia, là bố tôi.)</span></p>
+            
+            <p>2. The smartphone <span class="highlight">which I bought yesterday</span> is already broken.<br>
+            <span class="meaning">(Chiếc điện thoại thông minh cái mà tôi mua hôm qua đã bị hỏng rồi.)</span></p>
+        </div>
+
+        <h2>II. Các Đại Từ Quan Hệ (Relative Pronouns)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Đại từ</th>
+                    <th>Cách sử dụng</th>
+                    <th>Ví dụ minh họa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>WHO</strong></td>
+                    <td>Thay thế cho danh từ chỉ <strong>NGƯỜI</strong>, làm <strong>Chủ ngữ (S)</strong> hoặc Tân ngữ (O).</td>
+                    <td>
+                        <ul class="example-list">
+                            <li>The woman <strong>who</strong> lives next door is a doctor.<br><span class="meaning">(Người phụ nữ <strong>người mà</strong> sống ở nhà bên là một bác sĩ.)</span></li>
+                            <li>The architect <strong>who</strong> designed this building is very famous.<br><span class="meaning">(Kiến trúc sư <strong>người mà</strong> thiết kế tòa nhà này rất nổi tiếng.)</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>WHOM</strong></td>
+                    <td>Thay thế cho danh từ chỉ <strong>NGƯỜI</strong>, chỉ làm <strong>Tân ngữ (O)</strong>. Theo sau Whom luôn là một Mệnh đề (S + V).</td>
+                    <td>
+                        <ul class="example-list">
+                            <li>The boy <strong>whom</strong> we met yesterday is John.<br><span class="meaning">(Cậu bé <strong>người mà</strong> chúng ta gặp hôm qua là John.)</span></li>
+                            <li>The manager <strong>whom</strong> I spoke to was very helpful.<br><span class="meaning">(Người quản lý <strong>người mà</strong> tôi nói chuyện cùng đã giúp đỡ rất nhiều.)</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>WHICH</strong></td>
+                    <td>Thay thế cho danh từ chỉ <strong>VẬT, SỰ VẬT, SỰ VIỆC</strong>, làm Chủ ngữ hoặc Tân ngữ.</td>
+                    <td>
+                        <ul class="example-list">
+                            <li>The book <strong>which</strong> is on the table is mine.<br><span class="meaning">(Cuốn sách <strong>cái mà</strong> ở trên bàn là của tôi.)</span></li>
+                            <li>He bought a new car <strong>which</strong> is very fast.<br><span class="meaning">(Anh ấy đã mua một chiếc xe hơi mới <strong>chiếc mà</strong> chạy rất nhanh.)</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>THAT</strong></td>
+                    <td>Có thể thay thế cho <strong>WHO, WHOM, WHICH</strong> trong mệnh đề quan hệ xác định (không có dấu phẩy).</td>
+                    <td>
+                        <ul class="example-list">
+                            <li>I like the car <strong>that</strong> he bought last week.<br><span class="meaning">(Tôi thích chiếc xe <strong>mà</strong> anh ấy đã mua tuần trước.)</span></li>
+                            <li>Where is the pen <strong>that</strong> I gave you?<br><span class="meaning">(Cái bút <strong>mà</strong> tôi đưa bạn ở đâu rồi?)</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>WHOSE</strong></td>
+                    <td>Thay thế cho <strong>TÍNH TỪ SỞ HỮU</strong>. Luôn đứng giữa 2 danh từ (Danh từ 1 <strong>whose</strong> Danh từ 2).</td>
+                    <td>
+                        <ul class="example-list">
+                            <li>Do you know the girl <strong>whose</strong> mother is a singer?<br><span class="meaning">(Bạn có biết cô gái <strong>người mà có</strong> mẹ là ca sĩ không?)</span></li>
+                            <li>That is the man <strong>whose</strong> car was stolen.<br><span class="meaning">(Kia là người đàn ông <strong>người mà có</strong> chiếc xe bị đánh cắp.)</span></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>III. Các Trạng Từ Quan Hệ (Relative Adverbs)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Trạng từ</th>
+                    <th>Cách sử dụng</th>
+                    <th>Ví dụ minh họa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>WHEN</strong></td>
+                    <td>Thay thế cho từ chỉ <strong>THỜI GIAN</strong> (bằng in/on/at which).</td>
+                    <td>
+                        <ul class="example-list">
+                            <li>I will never forget the day <strong>when</strong> we first met.<br><span class="meaning">(Tôi sẽ không bao giờ quên ngày <strong>khi mà</strong> chúng ta gặp nhau lần đầu.)</span></li>
+                            <li>2020 was the year <strong>when</strong> the pandemic started.<br><span class="meaning">(2020 là năm <strong>khi mà</strong> đại dịch bắt đầu.)</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>WHERE</strong></td>
+                    <td>Thay thế cho từ chỉ <strong>NƠI CHỐN</strong> (bằng in/on/at/from which).</td>
+                    <td>
+                        <ul class="example-list">
+                            <li>This is the house <strong>where</strong> I was born.<br><span class="meaning">(Đây là ngôi nhà <strong>nơi mà</strong> tôi được sinh ra.)</span></li>
+                            <li>The restaurant <strong>where</strong> we had dinner is closing down.<br><span class="meaning">(Nhà hàng <strong>nơi mà</strong> chúng ta ăn tối sắp đóng cửa rồi.)</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>WHY</strong></td>
+                    <td>Thay thế cho <strong>LÝ DO</strong> (bằng for which), thường đi sau cụm "The reason".</td>
+                    <td>
+                        <ul class="example-list">
+                            <li>Tell me the reason <strong>why</strong> you are so sad.<br><span class="meaning">(Hãy nói cho tôi lý do <strong>tại sao</strong> bạn lại buồn như vậy.)</span></li>
+                            <li>I don't know the reason <strong>why</strong> she left early.<br><span class="meaning">(Tôi không biết lý do <strong>tại sao</strong> cô ấy lại rời đi sớm.)</span></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>IV. Phân loại Mệnh đề quan hệ</h2>
+        
+        <h3>1. Mệnh đề quan hệ xác định (Defining Relative Clause)</h3>
+        <p>Là mệnh đề bắt buộc phải có để câu có nghĩa hoàn chỉnh. Nếu bỏ đi, câu sẽ không rõ đối tượng đang được nhắc đến là ai/cái gì. <strong>Tuyệt đối KHÔNG dùng dấu phẩy (,)</strong>.</p>
+        <div class="example-box">
+            <p>1. The man <strong>who robbed the bank</strong> has been arrested.<br>
+            <span class="meaning">(Người đàn ông kẻ mà cướp ngân hàng đã bị bắt.) -> Nếu bỏ phần in đậm đi, ta sẽ không biết người đàn ông bị bắt là ai.</span></p>
+            <p>2. Students <strong>who cheat on exams</strong> will be punished.<br>
+            <span class="meaning">(Học sinh những người gian lận trong kỳ thi sẽ bị phạt.)</span></p>
+        </div>
+
+        <h3>2. Mệnh đề quan hệ không xác định (Non-defining Relative Clause)</h3>
+        <p>Là mệnh đề cung cấp thêm thông tin phụ, không bắt buộc phải có. Nếu bỏ đi, câu vẫn rõ nghĩa. <strong>Luôn dùng dấu phẩy (,)</strong> để ngăn cách với mệnh đề chính. <span class="highlight">Tuyệt đối KHÔNG dùng "THAT" trong mệnh đề này.</span></p>
+        <p>Thường dùng khi danh từ đứng trước đã rõ ràng: Tên riêng (Mr. John, Hanoi), Danh từ có tính từ sở hữu (My father, His dog), Danh từ có từ chỉ định (This/That/These/Those).</p>
+        <div class="example-box">
+            <p>1. My father<strong>, who is 50 years old,</strong> is a doctor.<br>
+            <span class="meaning">(Bố tôi, người năm nay 50 tuổi, là một bác sĩ.) -> Danh từ "My father" đã xác định rõ ràng, mệnh đề chỉ bổ sung thêm tuổi.</span></p>
+            <p>2. Paris<strong>, which is the capital of France,</strong> is very beautiful.<br>
+            <span class="meaning">(Paris, thủ đô của nước Pháp, thì rất đẹp.)</span></p>
+            <p>3. This laptop<strong>, which I bought last year,</strong> is still running fast.<br>
+            <span class="meaning">(Chiếc laptop này, cái mà tôi mua năm ngoái, vẫn chạy rất nhanh.)</span></p>
+        </div>
+
+        <h2>V. Rút gọn Mệnh đề quan hệ (Nâng cao cho TOEIC/IELTS)</h2>
+        <p>Trong văn phong trang trọng hoặc các bài thi, mệnh đề quan hệ thường được rút gọn theo 3 cách chính sau:</p>
+        
+        <h3>1. Rút gọn bằng V-ing (Mang nghĩa Chủ động)</h3>
+        <p>Dùng khi động từ trong mệnh đề quan hệ mang nghĩa chủ động. Bỏ đại từ quan hệ, đưa động từ chính về nguyên thể và thêm đuôi "-ing".</p>
+        <div class="example-box">
+            <p>Câu gốc: The man <strong>who is driving</strong> the bus is my uncle.</p>
+            <p>Rút gọn: The man <span class="highlight">driving</span> the bus is my uncle.<br>
+            <span class="meaning">(Người đàn ông lái chiếc xe buýt là chú của tôi.)</span></p>
+            <br>
+            <p>Câu gốc: Students <strong>who arrive</strong> late will not be allowed in.</p>
+            <p>Rút gọn: Students <span class="highlight">arriving</span> late will not be allowed in.<br>
+            <span class="meaning">(Những học sinh đến muộn sẽ không được phép vào.)</span></p>
+        </div>
+
+        <h3>2. Rút gọn bằng V-ed / V3 (Mang nghĩa Bị động)</h3>
+        <p>Dùng khi động từ trong mệnh đề quan hệ mang nghĩa bị động. Bỏ đại từ quan hệ, bỏ to be, chỉ giữ lại động từ ở dạng V-ed/V3 (Quá khứ phân từ).</p>
+        <div class="example-box">
+            <p>Câu gốc: The house <strong>which was built</strong> in 1990 is still beautiful.</p>
+            <p>Rút gọn: The house <span class="highlight">built</span> in 1990 is still beautiful.<br>
+            <span class="meaning">(Ngôi nhà được xây năm 1990 vẫn còn rất đẹp.)</span></p>
+            <br>
+            <p>Câu gốc: The books <strong>which are written</strong> by To Hoai are interesting.</p>
+            <p>Rút gọn: The books <span class="highlight">written</span> by To Hoai are interesting.<br>
+            <span class="meaning">(Những cuốn sách được viết bởi Tô Hoài rất thú vị.)</span></p>
+        </div>
+
+        <h3>3. Rút gọn bằng To V</h3>
+        <p>Dùng khi danh từ đứng trước có các cụm từ chỉ số thứ tự (the first, the second, the last), chỉ sự duy nhất (the only) hoặc so sánh nhất.</p>
+        <div class="example-box">
+            <p>Câu gốc: He was the last man <strong>who left</strong> the ship.</p>
+            <p>Rút gọn: He was the last man <span class="highlight">to leave</span> the ship.<br>
+            <span class="meaning">(Anh ấy là người đàn ông cuối cùng rời khỏi con tàu.)</span></p>
+            <br>
+            <p>Câu gốc: She is the best candidate <strong>who can be chosen</strong>.</p>
+            <p>Rút gọn: She is the best candidate <span class="highlight">to be chosen</span>.<br>
+            <span class="meaning">(Cô ấy là ứng viên xuất sắc nhất để được chọn.)</span></p>
+        </div>
+
+        <a href="grammar.html" class="btn-practice">Vào phòng Luyện tập Ngữ Pháp ➔</a>
+    </div>
+
+</body>
+</html>
