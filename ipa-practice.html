@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Tập Phát Âm IPA - Thầy Danh</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --ipa-color: #d946ef;
+            --zalo-color: #0068ff;
+            --fb-color: #1877f2;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .top-nav {
+            padding: 15px 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-nav {
+            padding: 8px 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            background-color: #e2e8f0;
+            color: var(--text-main);
+        }
+
+        .btn-nav:hover { background-color: #cbd5e1; }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--primary);
+            margin-bottom: 5px;
+            font-weight: 800;
+            font-size: 1.8rem;
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .controls { margin-bottom: 20px; text-align: right; }
+        .progress { font-weight: 800; color: var(--text-muted); font-size: 1.1rem; }
+
+        .ipa-box {
+            background: #fdf4ff;
+            border: 2px dashed #f0abfc;
+            padding: 30px 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        .ipa-text {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--ipa-color);
+            letter-spacing: 2px;
+        }
+
+        .input-area {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.5rem;
+            text-align: center;
+            font-family: inherit;
+            border: 2px solid #cbd5e1;
+            border-radius: 12px;
+            outline: none;
+            transition: border-color 0.3s;
+            font-weight: 700;
+        }
+
+        input[type="text"]:focus { border-color: var(--ipa-color); }
+
+        button {
+            padding: 15px 25px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 800;
+            font-family: inherit;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        .btn-check { background-color: var(--primary); color: white; }
+        .btn-check:hover { background-color: var(--primary-hover); }
+
+        .btn-next {
+            background-color: #0ea5e9;
+            color: white;
+            display: none;
+            margin-top: 10px;
+        }
+        .btn-next:hover { background-color: #0284c7; }
+
+        .feedback {
+            font-weight: 800;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .correct { color: #16a34a; }
+        .incorrect { color: #dc2626; }
+        .auto-next-msg {
+            display: block;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #64748b;
+            margin-top: 5px;
+        }
+
+        .explanation {
+            background: #f1f5f9;
+            color: var(--text-main);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        
+        .meaning {
+            color: var(--primary);
+            font-style: italic;
+        }
+
+        /* --- Contact Section --- */
+        .contact-section {
+            text-align: center; padding: 40px 20px;
+            background: white; border-top: 1px solid #e2e8f0;
+        }
+
+        .contact-section h2 { font-size: 1.8rem; margin-bottom: 20px; color: var(--text-main); font-weight: 800; }
+        .social-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        
+        .btn-social {
+            display: flex; align-items: center; gap: 10px; padding: 10px 25px;
+            border-radius: 50px; font-size: 1.1rem; font-weight: 700;
+            text-decoration: none; background-color: white; transition: all 0.3s ease;
+        }
+
+        .btn-zalo { color: var(--zalo-color); border: 2px solid var(--zalo-color); }
+        .btn-zalo:hover { background-color: var(--zalo-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 104, 255, 0.3); }
+        .zalo-logo { width: 24px; height: 24px; border-radius: 6px; }
+
+        .btn-fb { color: var(--fb-color); border: 2px solid var(--fb-color); }
+        .btn-fb:hover { background-color: var(--fb-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3); }
+        .fb-icon { width: 22px; height: 22px; fill: var(--fb-color); transition: fill 0.3s; }
+        .btn-fb:hover .fb-icon { fill: white; }
+
+        footer { text-align: center; padding: 15px; background: var(--text-main); color: white; font-size: 0.95rem; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="index.html" class="btn-nav btn-back">⬅ Quay lại Trang chủ</a>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>🗣️ Luyện Tập IPA</h1>
+            <p class="subtitle">Đọc phiên âm và gõ từ tiếng Anh tương ứng</p>
+            
+            <div class="controls">
+                <div class="progress" id="progress">Từ: 1/100</div>
+            </div>
+
+            <div class="ipa-box">
+                <div class="ipa-text" id="ipa-display">/ˈkæt/</div>
+            </div>
+
+            <div class="input-area" id="input-area">
+                <input type="text" id="answer-input" placeholder="Nhập từ tiếng Anh..." autocomplete="off">
+                <button class="btn-check" id="check-btn" onclick="checkAnswer()">Kiểm tra</button>
+            </div>
+
+            <div id="feedback" class="feedback"></div>
+            <div id="explanation" class="explanation"></div>
+
+            <button class="btn-next" id="next-btn" onclick="nextQuestion()">Từ tiếp theo ➔</button>
+        </div>
+    </div>
+
+    <section class="contact-section">
+        <h2>Kết nối với thầy Danh</h2>
+        <div class="social-buttons">
+            <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
+                Zalo: 0911594794
+            </a>
+            <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
+                <svg class="fb-icon" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+                Facebook
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Học tiếng Anh cùng thầy Danh.</p>
+    </footer>
+
+<script>
+    const ipaData = [
+        { ipa: "/ˈkæt/", word: "cat", meaning: "con mèo" },
+        { ipa: "/ˈdɒɡ/", word: "dog", meaning: "con chó" },
+        { ipa: "/ˈpɪɡ/", word: "pig", meaning: "con lợn" },
+        { ipa: "/ˈkaʊ/", word: "cow", meaning: "con bò" },
+        { ipa: "/ˈbɜːd/", word: "bird", meaning: "con chim" },
+        { ipa: "/ˈfɪʃ/", word: "fish", meaning: "con cá" },
+        { ipa: "/ˈdʌk/", word: "duck", meaning: "con vịt" },
+        { ipa: "/ˈbeə/", word: "bear", meaning: "con gấu" },
+        { ipa: "/ˈlaɪən/", word: "lion", meaning: "con sư tử" },
+        { ipa: "/ˈbɔɪ/", word: "boy", meaning: "cậu bé" },
+        
+        { ipa: "/ˈred/", word: "red", meaning: "màu đỏ" },
+        { ipa: "/ˈbluː/", word: "blue", meaning: "màu xanh dương" },
+        { ipa: "/ˈɡriːn/", word: "green", meaning: "màu xanh lá" },
+        { ipa: "/ˈblæk/", word: "black", meaning: "màu đen" },
+        { ipa: "/ˈwaɪt/", word: "white", meaning: "màu trắng" },
+        { ipa: "/ˈjeləʊ/", word: "yellow", meaning: "màu vàng" },
+        { ipa: "/ˈbraʊn/", word: "brown", meaning: "màu nâu" },
+        { ipa: "/ˈpɪŋk/", word: "pink", meaning: "màu hồng" },
+        { ipa: "/ˈɡreɪ/", word: "gray / grey", meaning: "màu xám" },
+        { ipa: "/ˈɒrɪndʒ/", word: "orange", meaning: "màu cam / quả cam" },
+
+        { ipa: "/ˈwʌn/", word: "one", meaning: "số một" },
+        { ipa: "/ˈtuː/", word: "two", meaning: "số hai" },
+        { ipa: "/ˈθriː/", word: "three", meaning: "số ba" },
+        { ipa: "/ˈfɔː/", word: "four", meaning: "số bốn" },
+        { ipa: "/ˈfaɪv/", word: "five", meaning: "số năm" },
+        { ipa: "/ˈsɪks/", word: "six", meaning: "số sáu" },
+        { ipa: "/ˈsevn/", word: "seven", meaning: "số bảy" },
+        { ipa: "/ˈeɪt/", word: "eight", meaning: "số tám" },
+        { ipa: "/ˈnaɪn/", word: "nine", meaning: "số chín" },
+        { ipa: "/ˈten/", word: "ten", meaning: "số mười" },
+
+        { ipa: "/ˈbʊk/", word: "book", meaning: "quyển sách" },
+        { ipa: "/ˈpen/", word: "pen", meaning: "cái bút" },
+        { ipa: "/ˈhɪə/", word: "here", meaning: "ở đây" },
+        { ipa: "/ˈtʃeə/", word: "chair", meaning: "cái ghế" },
+        { ipa: "/ˈbæɡ/", word: "bag", meaning: "cái túi" },
+        { ipa: "/ˈklɒk/", word: "clock", meaning: "đồng hồ" },
+        { ipa: "/ˈtʊə/", word: "tour", meaning: "chuyến du lịch" },
+        { ipa: "/ˈdɔː/", word: "door", meaning: "cửa ra vào" },
+        { ipa: "/ˈwɪndəʊ/", word: "window", meaning: "cửa sổ" },
+        { ipa: "/ˈskuːl/", word: "school", meaning: "trường học" },
+
+        { ipa: "/ˈsʌn/", word: "sun", meaning: "mặt trời" },
+        { ipa: "/ˈmuːn/", word: "moon", meaning: "mặt trăng" },
+        { ipa: "/ˈstɑː/", word: "star", meaning: "ngôi sao" },
+        { ipa: "/ˈskaɪ/", word: "sky", meaning: "bầu trời" },
+        { ipa: "/ˈreɪn/", word: "rain", meaning: "cơn mưa" },
+        { ipa: "/ˈsnəʊ/", word: "snow", meaning: "tuyết" },
+        { ipa: "/ˈwɪnd/", word: "wind", meaning: "gió" },
+        { ipa: "/ˈklaʊd/", word: "cloud", meaning: "đám mây" },
+        { ipa: "/ˈtriː/", word: "tree", meaning: "cái cây" },
+        { ipa: "/ˈflaʊə/", word: "flower", meaning: "bông hoa" },
+
+        { ipa: "/ˈrʌn/", word: "run", meaning: "chạy" },
+        { ipa: "/ˈwɔːk/", word: "walk", meaning: "đi bộ" },
+        { ipa: "/ˈdʒʌmp/", word: "jump", meaning: "nhảy" },
+        { ipa: "/ˈswɪm/", word: "swim", meaning: "bơi" },
+        { ipa: "/ˈflaɪ/", word: "fly", meaning: "bay" },
+        { ipa: "/ˈiːt/", word: "eat", meaning: "ăn" },
+        { ipa: "/ˈdrɪŋk/", word: "drink", meaning: "uống" },
+        { ipa: "/ˈsliːp/", word: "sleep", meaning: "ngủ" },
+        { ipa: "/ˈriːd/", word: "read", meaning: "đọc" },
+        { ipa: "/ˈraɪt/", word: "write", meaning: "viết" },
+
+        { ipa: "/ˈhæpi/", word: "happy", meaning: "hạnh phúc, vui vẻ" },
+        { ipa: "/ˈsæd/", word: "sad", meaning: "buồn bã" },
+        { ipa: "/ˈæŋɡri/", word: "angry", meaning: "tức giận" },
+        { ipa: "/ˈtaɪəd/", word: "tired", meaning: "mệt mỏi" },
+        { ipa: "/ˈhʌŋɡri/", word: "hungry", meaning: "đói bụng" },
+        { ipa: "/ˈθɜːsti/", word: "thirsty", meaning: "khát nước" },
+        { ipa: "/ˈhɒt/", word: "hot", meaning: "nóng" },
+        { ipa: "/ˈkəʊld/", word: "cold", meaning: "lạnh" },
+        { ipa: "/ˈbɪɡ/", word: "big", meaning: "to lớn" },
+        { ipa: "/ˈsmɔːl/", word: "small", meaning: "nhỏ bé" },
+
+        { ipa: "/ˈmʌðə/", word: "mother", meaning: "mẹ" },
+        { ipa: "/ˈfɑːðə/", word: "father", meaning: "bố" },
+        { ipa: "/ˈbrʌðə/", word: "brother", meaning: "anh/em trai" },
+        { ipa: "/ˈsɪstə/", word: "sister", meaning: "chị/em gái" },
+        { ipa: "/ˈʌŋkl/", word: "uncle", meaning: "chú, bác" },
+        { ipa: "/ˈɑːnt/", word: "aunt", meaning: "cô, dì" },
+        { ipa: "/ˈkʌzn/", word: "cousin", meaning: "anh em họ" },
+        { ipa: "/ˈfrend/", word: "friend", meaning: "bạn bè" },
+        { ipa: "/ˈtiːtʃə/", word: "teacher", meaning: "giáo viên" },
+        { ipa: "/ˈstjuːdnt/", word: "student", meaning: "học sinh" },
+
+        { ipa: "/ˈwɔːtə/", word: "water", meaning: "nước" },
+        { ipa: "/ˈmɪlk/", word: "milk", meaning: "sữa" },
+        { ipa: "/ˈdʒuːs/", word: "juice", meaning: "nước ép" },
+        { ipa: "/ˈtiː/", word: "tea", meaning: "trà" },
+        { ipa: "/ˈkɒfi/", word: "coffee", meaning: "cà phê" },
+        { ipa: "/ˈbred/", word: "bread", meaning: "bánh mì" },
+        { ipa: "/ˈraɪs/", word: "rice", meaning: "gạo, cơm" },
+        { ipa: "/ˈmiːt/", word: "meat", meaning: "thịt" },
+        { ipa: "/ˈtʃiːz/", word: "cheese", meaning: "pho mát" },
+        { ipa: "/ˈeɡ/", word: "egg", meaning: "quả trứng" },
+
+        { ipa: "/ˈfəʊn/", word: "phone", meaning: "điện thoại" },
+        { ipa: "/ˈtelɪvɪʒn/", word: "television", meaning: "tivi" },
+        { ipa: "/kəmˈpjuːtə/", word: "computer", meaning: "máy tính" },
+        { ipa: "/ˈkɑː/", word: "car", meaning: "xe hơi" },
+        { ipa: "/ˈbʌs/", word: "bus", meaning: "xe buýt" },
+        { ipa: "/ˈtreɪn/", word: "train", meaning: "tàu hỏa" },
+        { ipa: "/ˈpleɪn/", word: "plane", meaning: "máy bay" },
+        { ipa: "/ˈbəʊt/", word: "boat", meaning: "con thuyền" },
+        { ipa: "/ˈbaɪk/", word: "bike", meaning: "xe đạp" },
+        { ipa: "/ˈruːm/", word: "room", meaning: "căn phòng" }
+    ];
+
+    let currentQuestionIndex = 0;
+    let autoNextTimeout; // Biến lưu timeout để quản lý bộ đếm
+
+    function loadQuestion() {
+        // Clear bất kỳ timeout nào còn sót lại khi qua câu
+        if (autoNextTimeout) clearTimeout(autoNextTimeout);
+
+        const currentQ = ipaData[currentQuestionIndex];
+        document.getElementById("progress").innerText = `Từ: ${currentQuestionIndex + 1}/${ipaData.length}`;
+        document.getElementById("ipa-display").innerText = currentQ.ipa;
+        resetUI();
+    }
+
+    function checkAnswer() {
+        const userAnswer = document.getElementById("answer-input").value.trim().toLowerCase();
+        const currentQ = ipaData[currentQuestionIndex];
+        const correctAnswers = currentQ.word.toLowerCase().split("/").map(item => item.trim());
+        
+        const feedbackEl = document.getElementById("feedback");
+        const explanationEl = document.getElementById("explanation");
+        const nextBtn = document.getElementById("next-btn");
+        const checkBtn = document.getElementById("check-btn");
+
+        if (userAnswer === "") {
+            alert("Vui lòng nhập từ tiếng Anh của bạn!");
+            return;
+        }
+
+        // Hiện box chứa từ đúng và nghĩa
+        explanationEl.innerHTML = `Từ đúng: <strong>${currentQ.word}</strong> <br> <span class="meaning">Nghĩa là: ${currentQ.meaning}</span>`;
+        explanationEl.style.display = "block";
+        checkBtn.style.display = "none";
+        document.getElementById("answer-input").disabled = true;
+
+        if (correctAnswers.includes(userAnswer)) {
+            // TRẢ LỜI ĐÚNG
+            feedbackEl.innerHTML = `✅ Chính xác! <span class="auto-next-msg">Đang chuyển từ tiếp theo trong 2 giây...</span>`;
+            feedbackEl.className = "feedback correct";
+            nextBtn.style.display = "none"; // Ẩn nút next, bắt buộc đợi auto
+
+            // Đặt thời gian 2 giây tự động qua bài
+            autoNextTimeout = setTimeout(() => {
+                nextQuestion();
+            }, 2000);
+
+        } else {
+            // TRẢ LỜI SAI
+            const displayAnswer = correctAnswers[0];
+            feedbackEl.innerText = `❌ Sai rồi! Đáp án đúng là: ${displayAnswer}`;
+            feedbackEl.className = "feedback incorrect";
+            nextBtn.style.display = "block"; // Hiện nút next để học viên xem lại, sẵn sàng mới bấm qua
+        }
+    }
+
+    function nextQuestion() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < ipaData.length) {
+            loadQuestion();
+        } else {
+            document.getElementById("ipa-display").innerText = "🎉";
+            document.getElementById("input-area").style.display = "none";
+            document.getElementById("progress").innerText = "Hoàn thành!";
+            
+            const explanationEl = document.getElementById("explanation");
+            explanationEl.innerHTML = "<strong>Chúc mừng! Bạn đã hoàn thành 100 từ vựng và nắm vững 44 âm IPA!</strong>";
+            explanationEl.style.display = "block";
+            
+            resetUI();
+            document.getElementById("check-btn").style.display = "none";
+            document.getElementById("feedback").style.display = "none";
+        }
+    }
+
+    function resetUI() {
+        const inputEl = document.getElementById("answer-input");
+        if(inputEl) {
+            inputEl.value = "";
+            inputEl.disabled = false;
+            inputEl.focus();
+        }
+        
+        document.getElementById("feedback").innerText = "";
+        document.getElementById("explanation").style.display = "none";
+        document.getElementById("next-btn").style.display = "none";
+        
+        const checkBtn = document.getElementById("check-btn");
+        if(checkBtn && currentQuestionIndex < ipaData.length) {
+            checkBtn.style.display = "block";
+        }
+    }
+
+    // Chạy hàm khi load trang
+    window.onload = loadQuestion;
+
+    // Cho phép ấn Enter để kiểm tra hoặc qua bài (nếu đang trả lời sai)
+    document.getElementById("answer-input").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            if (document.getElementById("check-btn").style.display !== "none") {
+                checkAnswer();
+            } else if (document.getElementById("next-btn").style.display !== "none") {
+                nextQuestion();
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
