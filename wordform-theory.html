@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lý thuyết Word Form - Thầy Danh</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #dbeafe;
+            --zalo-color: #0068ff;
+            --fb-color: #1877f2;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px 20px 0 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-container { flex: 1; }
+
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { color: var(--primary); font-size: 2.5rem; font-weight: 800; }
+
+        .container {
+            max-width: 900px; margin: 0 auto 40px auto;
+            background: white; padding: 40px;
+            border-radius: 20px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary); border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px; margin-top: 30px; margin-bottom: 15px; font-size: 1.8rem;
+        }
+
+        h3 { color: #334155; margin-top: 25px; margin-bottom: 10px; font-size: 1.4rem; }
+        p { margin-bottom: 15px; font-size: 1.1rem; }
+        ul { margin-left: 20px; margin-bottom: 15px; font-size: 1.1rem; }
+        li { margin-bottom: 8px; }
+
+        /* Styling for Tables */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 1.1rem; }
+        th, td { border: 1px solid #cbd5e1; padding: 15px; text-align: left; vertical-align: top; }
+        th { background-color: var(--primary); color: white; font-weight: 700; width: 25%; text-align: center; }
+        td:nth-child(1) { font-weight: bold; color: #b91c1c; text-align: center; }
+        tr:nth-child(even) { background-color: #f1f5f9; }
+
+        /* Styling for Examples */
+        .example-box {
+            background-color: var(--accent); border-left: 5px solid var(--primary);
+            padding: 15px 20px; border-radius: 4px; margin-bottom: 20px;
+        }
+        .example-box p { margin-bottom: 8px; }
+        .example-box p:last-child { margin-bottom: 0; }
+
+        .highlight { font-weight: 700; color: #b91c1c; }
+        .meaning { font-style: italic; color: #475569; font-size: 1rem; }
+
+        .btn-back {
+            display: inline-block; background-color: var(--text-muted); color: white;
+            padding: 10px 20px; border-radius: 50px; text-decoration: none;
+            font-weight: 700; margin-bottom: 20px; transition: background 0.3s;
+        }
+        .btn-back:hover { background-color: #475569; }
+
+        .btn-practice {
+            display: block; text-align: center; background-color: var(--primary);
+            color: white; padding: 15px 30px; border-radius: 50px;
+            text-decoration: none; font-weight: 700; font-size: 1.2rem;
+            margin-top: 40px; transition: background 0.3s;
+        }
+        .btn-practice:hover { background-color: var(--primary-hover); }
+
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            th, td { display: block; width: 100% !important; text-align: left !important; }
+            th { text-align: center !important; }
+        }
+
+        /* --- Contact Section --- */
+        .contact-section {
+            text-align: center; padding: 40px 20px;
+            background: white; border-top: 1px solid #e2e8f0;
+            margin: 0 -20px;
+        }
+        .contact-section h2 { font-size: 1.8rem; margin-bottom: 20px; color: var(--text-main); font-weight: 800; border-bottom: none; }
+        .social-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn-social {
+            display: flex; align-items: center; gap: 10px; padding: 10px 25px;
+            border-radius: 50px; font-size: 1.1rem; font-weight: 700;
+            text-decoration: none; background-color: white; transition: all 0.3s ease;
+        }
+        .btn-zalo { color: var(--zalo-color); border: 2px solid var(--zalo-color); }
+        .btn-zalo:hover { background-color: var(--zalo-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 104, 255, 0.3); }
+        .zalo-logo { width: 24px; height: 24px; border-radius: 6px; }
+
+        .btn-fb { color: var(--fb-color); border: 2px solid var(--fb-color); }
+        .btn-fb:hover { background-color: var(--fb-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3); }
+        .fb-icon { width: 22px; height: 22px; fill: var(--fb-color); transition: fill 0.3s; }
+        .btn-fb:hover .fb-icon { fill: white; }
+
+        footer { text-align: center; padding: 15px; background: var(--text-main); color: white; font-size: 0.95rem; font-weight: 600; margin: 0 -20px; }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="container">
+            <a href="grammar-index.html" class="btn-back">⬅ Quay lại Trung tâm Ngữ pháp</a>
+            
+            <div class="header">
+                <h1>📖 Lý Thuyết: Cấu Tạo Từ</h1>
+                <p>(Word Form)</p>
+            </div>
+
+            <p>Trong bài thi tiếng Anh, dạng bài tập điền từ yêu cầu chúng ta phải xác định được ô trống cần điền là <strong>Danh từ (Noun)</strong>, <strong>Tính từ (Adjective)</strong>, <strong>Động từ (Verb)</strong> hay <strong>Trạng từ (Adverb)</strong>. Hãy ghi nhớ các dấu hiệu (hậu tố) và vị trí của chúng dưới đây!</p>
+
+            <h2>I. Danh từ (Nouns)</h2>
+            <h3>1. Dấu hiệu nhận biết (Các đuôi thường gặp)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hậu tố (Đuôi)</th>
+                        <th>Ví dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>-tion / -sion</td><td>information, decision, education</td></tr>
+                    <tr><td>-ment</td><td>development, environment, agreement</td></tr>
+                    <tr><td>-ness</td><td>happiness, sadness, business</td></tr>
+                    <tr><td>-ity / -ty</td><td>ability, responsibility, beauty</td></tr>
+                    <tr><td>-ance / -ence</td><td>importance, difference, attendance</td></tr>
+                    <tr><td>-er / -or / -ist <br><span class="meaning">(Chỉ người)</span></td><td>teacher, doctor, scientist, employee</td></tr>
+                </tbody>
+            </table>
+
+            <h3>2. Vị trí của Danh từ trong câu</h3>
+            <div class="example-box">
+                <p>✔️ <strong>Đứng sau Mạo từ (a, an, the) hoặc Từ chỉ định (this, that, these, those).</strong><br>
+                - I have a <strong>dream</strong>.</p>
+                <p>✔️ <strong>Đứng sau Tính từ (Adj + Noun).</strong><br>
+                - She is a beautiful <strong>girl</strong>.</p>
+                <p>✔️ <strong>Đứng sau Tính từ sở hữu (my, your, his, her, their...).</strong><br>
+                - This is my <strong>book</strong>.</p>
+                <p>✔️ <strong>Đứng sau Giới từ (in, on, at, about, with...).</strong><br>
+                - He is interested in <strong>music</strong>.</p>
+                <p>✔️ <strong>Đứng đầu câu làm Chủ ngữ.</strong><br>
+                - <strong>Education</strong> is very important.</p>
+            </div>
+
+            <h2>II. Tính từ (Adjectives)</h2>
+            <h3>1. Dấu hiệu nhận biết (Các đuôi thường gặp)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hậu tố (Đuôi)</th>
+                        <th>Ví dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>-ful / -less</td><td>beautiful, careful, useless, homeless</td></tr>
+                    <tr><td>-ive</td><td>active, attractive, expensive</td></tr>
+                    <tr><td>-al</td><td>national, traditional, personal</td></tr>
+                    <tr><td>-ous</td><td>dangerous, famous, continuous</td></tr>
+                    <tr><td>-able / -ible</td><td>comfortable, possible, reliable</td></tr>
+                    <tr><td>-ic / -y</td><td>historic, healthy, rainy</td></tr>
+                </tbody>
+            </table>
+
+            <h3>2. Vị trí của Tính từ trong câu</h3>
+            <div class="example-box">
+                <p>✔️ <strong>Đứng trước Danh từ (Adj + Noun).</strong><br>
+                - We have a <span class="highlight">difficult</span> test today.</p>
+                <p>✔️ <strong>Đứng sau Động từ to be (am/is/are/was/were).</strong><br>
+                - The weather is <span class="highlight">nice</span>.</p>
+                <p>✔️ <strong>Đứng sau các Động từ liên kết (Linking verbs): seem, feel, look, become, get...</strong><br>
+                - She looks <span class="highlight">tired</span> today.</p>
+                <p>✔️ <strong>Cấu trúc: make/keep/find + Object + Adj.</strong><br>
+                - Eating vegetables keeps you <span class="highlight">healthy</span>.</p>
+            </div>
+
+            <h2>III. Trạng từ (Adverbs)</h2>
+            <h3>1. Dấu hiệu nhận biết</h3>
+            <p>Hầu hết các Trạng từ được cấu tạo bằng cách: <strong>Tính từ + đuôi "ly" = Trạng từ</strong>.</p>
+            <p><em>Ví dụ:</em> careful -> carefully, quick -> quickly, beautiful -> beautifully.</p>
+            <p><strong>Ngoại lệ (Tính từ và Trạng từ giống hệt nhau):</strong> fast (nhanh), hard (chăm chỉ), late (muộn), early (sớm).</p>
+            <p><strong>Ngoại lệ đặc biệt:</strong> Tính từ "good" chuyển thành trạng từ là "well".</p>
+
+            <h3>2. Vị trí của Trạng từ trong câu</h3>
+            <div class="example-box">
+                <p>✔️ <strong>Đứng trước hoặc sau Động từ thường để bổ nghĩa cho động từ đó.</strong><br>
+                - He runs <span class="highlight">quickly</span>. / He <span class="highlight">carefully</span> opened the box.</p>
+                <p>✔️ <strong>Đứng trước Tính từ để bổ nghĩa cho tính từ (Adv + Adj).</strong><br>
+                - The test is <span class="highlight">extremely</span> difficult.</p>
+                <p>✔️ <strong>Đứng đầu câu (trước dấu phẩy) để bổ nghĩa cho cả câu.</strong><br>
+                - <span class="highlight">Surprisingly</span>, he passed the exam.</p>
+            </div>
+
+            <h2>IV. Động từ (Verbs)</h2>
+            <h3>1. Dấu hiệu nhận biết (Các đuôi thường gặp)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hậu tố (Đuôi)</th>
+                        <th>Ví dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>-ize / -ise</td><td>realize, organize, memorize</td></tr>
+                    <tr><td>-ate</td><td>educate, calculate, communicate</td></tr>
+                    <tr><td>-en</td><td>widen, shorten, strengthen</td></tr>
+                    <tr><td>-ify</td><td>identify, beautify, classify</td></tr>
+                </tbody>
+            </table>
+
+            <h3>2. Vị trí của Động từ trong câu</h3>
+            <div class="example-box">
+                <p>✔️ <strong>Đứng ngay sau Chủ ngữ.</strong><br>
+                - They <span class="highlight">organize</span> the event every year.</p>
+                <p>✔️ <strong>Đứng sau "to" (To V).</strong><br>
+                - I want to <span class="highlight">improve</span> my English.</p>
+                <p>✔️ <strong>Đứng sau các Động từ khuyết thiếu (can, could, should, must, will...).</strong><br>
+                - You must <span class="highlight">finish</span> the homework.</p>
+            </div>
+
+            <a href="wordform-practice.html" class="btn-practice">Vào phòng Luyện tập Word Form ➔</a>
+        </div>
+    </div>
+
+    <!-- Tích hợp phần Liên hệ với thầy Danh -->
+    <section class="contact-section">
+        <h2>Kết nối với thầy Danh</h2>
+        <div class="social-buttons">
+            <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
+                Zalo: 0911594794
+            </a>
+            
+            <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
+                <svg class="fb-icon" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+                Facebook
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Học tiếng Anh cùng thầy Danh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
