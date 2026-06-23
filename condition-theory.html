@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lý thuyết Câu điều kiện - Thầy Danh</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #dbeafe;
+            --zalo-color: #0068ff;
+            --fb-color: #1877f2;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px 20px 0 20px; /* Bỏ padding bottom để dính với footer */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-container {
+            flex: 1;
+        }
+
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { color: var(--primary); font-size: 2.5rem; font-weight: 800; }
+
+        .container {
+            max-width: 900px; margin: 0 auto 40px auto;
+            background: white; padding: 40px;
+            border-radius: 20px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary); border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px; margin-top: 30px; margin-bottom: 15px; font-size: 1.8rem;
+        }
+
+        h3 { color: #334155; margin-top: 25px; margin-bottom: 10px; font-size: 1.4rem; }
+        p { margin-bottom: 15px; font-size: 1.1rem; }
+        ul { margin-left: 20px; margin-bottom: 15px; font-size: 1.1rem; }
+        li { margin-bottom: 8px; }
+
+        /* Styling for Tables */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 1.1rem; }
+        th, td { border: 1px solid #cbd5e1; padding: 15px; text-align: left; vertical-align: top; }
+        th { background-color: var(--primary); color: white; font-weight: 700; width: 20%; text-align: center; }
+        td:nth-child(2) { width: 30%; font-weight: bold; color: #b91c1c; text-align: center;}
+        td:nth-child(3) { width: 50%; }
+        tr:nth-child(even) { background-color: #f1f5f9; }
+
+        /* Styling for Examples */
+        .example-box {
+            background-color: var(--accent); border-left: 5px solid var(--primary);
+            padding: 15px 20px; border-radius: 4px; margin-bottom: 20px;
+        }
+        .example-box p { margin-bottom: 8px; }
+        .example-box p:last-child { margin-bottom: 0; }
+
+        .highlight { font-weight: 700; color: #b91c1c; }
+        .meaning { font-style: italic; color: #475569; font-size: 1rem; }
+
+        .btn-back {
+            display: inline-block; background-color: var(--text-muted); color: white;
+            padding: 10px 20px; border-radius: 50px; text-decoration: none;
+            font-weight: 700; margin-bottom: 20px; transition: background 0.3s;
+        }
+        .btn-back:hover { background-color: #475569; }
+
+        .btn-practice {
+            display: block; text-align: center; background-color: var(--primary);
+            color: white; padding: 15px 30px; border-radius: 50px;
+            text-decoration: none; font-weight: 700; font-size: 1.2rem;
+            margin-top: 40px; transition: background 0.3s;
+        }
+        .btn-practice:hover { background-color: var(--primary-hover); }
+
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            th, td { display: block; width: 100% !important; text-align: left !important; }
+            th { text-align: center !important; }
+        }
+
+        /* --- Contact Section --- */
+        .contact-section {
+            text-align: center; padding: 40px 20px;
+            background: white; border-top: 1px solid #e2e8f0;
+            margin: 0 -20px; /* Kéo giãn ra sát viền màn hình */
+        }
+        .contact-section h2 { font-size: 1.8rem; margin-bottom: 20px; color: var(--text-main); font-weight: 800; border-bottom: none; }
+        .social-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn-social {
+            display: flex; align-items: center; gap: 10px; padding: 10px 25px;
+            border-radius: 50px; font-size: 1.1rem; font-weight: 700;
+            text-decoration: none; background-color: white; transition: all 0.3s ease;
+        }
+        .btn-zalo { color: var(--zalo-color); border: 2px solid var(--zalo-color); }
+        .btn-zalo:hover { background-color: var(--zalo-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 104, 255, 0.3); }
+        .zalo-logo { width: 24px; height: 24px; border-radius: 6px; }
+
+        .btn-fb { color: var(--fb-color); border: 2px solid var(--fb-color); }
+        .btn-fb:hover { background-color: var(--fb-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3); }
+        .fb-icon { width: 22px; height: 22px; fill: var(--fb-color); transition: fill 0.3s; }
+        .btn-fb:hover .fb-icon { fill: white; }
+
+        footer { text-align: center; padding: 15px; background: var(--text-main); color: white; font-size: 0.95rem; font-weight: 600; margin: 0 -20px; }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="container">
+            <a href="grammar-index.html" class="btn-back">⬅ Quay lại Trung tâm Ngữ pháp</a>
+            
+            <div class="header">
+                <h1>📖 Lý Thuyết: Câu Điều Kiện</h1>
+                <p>(Conditional Sentences)</p>
+            </div>
+
+            <h2>I. Cấu trúc chung của Câu điều kiện</h2>
+            <p>Một câu điều kiện luôn bao gồm 2 phần (2 mệnh đề):</p>
+            <ul>
+                <li><strong>Mệnh đề IF (Mệnh đề điều kiện):</strong> Nêu lên điều kiện. (Nếu...)</li>
+                <li><strong>Mệnh đề Chính (Mệnh đề kết quả):</strong> Nêu lên kết quả của điều kiện đó. (Thì...)</li>
+            </ul>
+            <p><em>*Lưu ý: Nếu mệnh đề IF đứng đầu câu, phải có dấu phẩy (,) ngăn cách. Nếu mệnh đề Chính đứng trước thì không cần dấu phẩy.</em></p>
+
+            <h2>II. Bảng Tổng Hợp 4 Loại Câu Điều Kiện Cơ Bản</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại</th>
+                        <th>Công thức (If + Mệnh đề phụ, Mệnh đề chính)</th>
+                        <th>Cách dùng & Ví dụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Loại 0</strong><br><span style="font-size: 0.9rem; font-weight: normal;">(Sự thật hiển nhiên)</span></td>
+                        <td>If + S + V(hiện tại đơn), <br>S + V(hiện tại đơn)</td>
+                        <td>
+                            Diễn tả một sự thật hiển nhiên, chân lý khoa học hoặc một thói quen.
+                            <hr style="margin: 10px 0; border: 0; border-top: 1px dashed #cbd5e1;">
+                            - If you heat ice, it <span class="highlight">melts</span>.<br>
+                            <span class="meaning">(Nếu bạn đun nóng đá, nó sẽ tan chảy.)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Loại 1</strong><br><span style="font-size: 0.9rem; font-weight: normal;">(Có thật ở hiện tại/tương lai)</span></td>
+                        <td>If + S + V(hiện tại đơn), <br>S + will/can/must + V(nguyên thể)</td>
+                        <td>
+                            Diễn tả một giả định có thể xảy ra ở hiện tại hoặc tương lai.
+                            <hr style="margin: 10px 0; border: 0; border-top: 1px dashed #cbd5e1;">
+                            - If it <span class="highlight">rains</span> tomorrow, we <span class="highlight">will stay</span> at home.<br>
+                            <span class="meaning">(Nếu ngày mai trời mưa, chúng tôi sẽ ở nhà.)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Loại 2</strong><br><span style="font-size: 0.9rem; font-weight: normal;">(Không có thật ở hiện tại)</span></td>
+                        <td>If + S + V(quá khứ đơn), <br>S + would/could + V(nguyên thể)</td>
+                        <td>
+                            Diễn tả một giả định trái ngược với thực tế ở hiện tại. <em>*Lưu ý: Động từ "to be" thường dùng "were" cho tất cả các ngôi.</em>
+                            <hr style="margin: 10px 0; border: 0; border-top: 1px dashed #cbd5e1;">
+                            - If I <span class="highlight">were</span> you, I <span class="highlight">would buy</span> that car.<br>
+                            <span class="meaning">(Nếu tôi là bạn, tôi đã mua chiếc xe đó rồi. -> Thực tế tôi không phải là bạn)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Loại 3</strong><br><span style="font-size: 0.9rem; font-weight: normal;">(Không có thật ở quá khứ)</span></td>
+                        <td>If + S + had + V3/ed, <br>S + would/could have + V3/ed</td>
+                        <td>
+                            Diễn tả một giả định trái ngược với sự việc đã xảy ra trong quá khứ (thường mang ý nghĩa tiếc nuối).
+                            <hr style="margin: 10px 0; border: 0; border-top: 1px dashed #cbd5e1;">
+                            - If I <span class="highlight">had studied</span> harder, I <span class="highlight">would have passed</span> the exam.<br>
+                            <span class="meaning">(Nếu tôi học chăm hơn, tôi đã đậu kỳ thi. -> Thực tế trong quá khứ đã lười và trượt)</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>III. Câu Điều Kiện Hỗn Hợp (Mixed Conditionals)</h2>
+            <p>Dùng để diễn đạt sự việc xảy ra ở 2 mốc thời gian khác nhau (Thường xuất hiện trong các bài thi TOEIC/IELTS).</p>
+            
+            <h3>1. Mix 3-2 (Giả thiết Quá khứ -> Kết quả Hiện tại)</h3>
+            <div class="example-box">
+                <p><strong>Công thức:</strong> If + S + had + V3/ed, S + would + V(nguyên thể) + <span class="highlight">now/right now</span>.</p>
+                <p>- If I <strong>had eaten</strong> breakfast, I <strong>would not be</strong> hungry <span class="highlight">now</span>.<br>
+                <span class="meaning">(Nếu sáng nay tôi ăn sáng, thì bây giờ tôi đã không đói. -> Hành động ăn sáng ở quá khứ, cơn đói ở hiện tại)</span></p>
+            </div>
+
+            <h3>2. Mix 2-3 (Bản chất Hiện tại -> Kết quả Quá khứ)</h3>
+            <div class="example-box">
+                <p><strong>Công thức:</strong> If + S + V(quá khứ đơn), S + would have + V3/ed.</p>
+                <p>- If I <strong>were</strong> a good student, I <strong>would have passed</strong> the test <span class="highlight">yesterday</span>.<br>
+                <span class="meaning">(Nếu tôi là học sinh giỏi, tôi đã vượt qua bài test hôm qua. -> Bản chất luôn học kém ở hiện tại, làm ảnh hưởng bài thi ở quá khứ)</span></p>
+            </div>
+
+            <h2>IV. Đảo Ngữ Câu Điều Kiện (Inversion)</h2>
+            <p>Đảo ngữ giúp câu văn trở nên trang trọng hơn. Ta sẽ <strong>bỏ chữ "If"</strong> và đưa trợ động từ lên đầu câu.</p>
+            <ul>
+                <li><strong>Đảo ngữ Loại 1:</strong> Đưa <strong>SHOULD</strong> lên đầu câu. Động từ chính luôn ở dạng nguyên thể.<br>
+                    <span class="meaning">Ví dụ: <strong>Should it rain</strong> tomorrow, we will cancel the trip. (Bằng với: If it rains...)</span>
+                </li>
+                <li><strong>Đảo ngữ Loại 2:</strong> Đưa <strong>WERE</strong> lên đầu câu. Nếu câu dùng động từ thường thì dùng "Were + S + to V".<br>
+                    <span class="meaning">Ví dụ 1: <strong>Were I</strong> you, I wouldn't do that.<br>
+                    Ví dụ 2: <strong>Were he to study</strong> harder, he would pass.</span>
+                </li>
+                <li><strong>Đảo ngữ Loại 3:</strong> Đưa <strong>HAD</strong> lên đầu câu. Động từ chính vẫn ở dạng V3/ed.<br>
+                    <span class="meaning">Ví dụ: <strong>Had I known</strong> the truth, I wouldn't have trusted him.</span>
+                </li>
+            </ul>
+
+            <h2>V. Các từ thay thế cho IF (Nâng cao)</h2>
+            <div class="example-box">
+                <p><strong>1. Unless = If... not (Trừ khi, nếu không)</strong></p>
+                <p><em>*Lưu ý: Mệnh đề sau Unless luôn ở dạng khẳng định (vì bản thân nó đã mang nghĩa phủ định).</em><br>
+                - <strong>Unless</strong> you study hard, you will fail = <strong>If</strong> you <strong>don't</strong> study hard, you will fail.</p>
+                
+                <p style="margin-top: 15px;"><strong>2. Provided that / Providing that / As long as (Miễn là)</strong></p>
+                <p>- You can borrow my car <strong>as long as</strong> you drive carefully.<br>
+                <span class="meaning">(Bạn có thể mượn xe của tôi miễn là bạn lái xe cẩn thận.)</span></p>
+                
+                <p style="margin-top: 15px;"><strong>3. But for + Noun / Without + Noun (Nếu không có...)</strong></p>
+                <p>Thường dùng trong điều kiện loại 2 hoặc loại 3.<br>
+                - <strong>Without</strong> your help, I would have failed.<br>
+                <span class="meaning">(Nếu không có sự giúp đỡ của bạn, tôi đã thất bại rồi.)</span></p>
+            </div>
+
+            <a href="grammar-practice.html" class="btn-practice">Vào phòng Luyện tập bài IF ➔</a>
+        </div>
+    </div>
+
+    <!-- Tích hợp phần Liên hệ với thầy Danh -->
+    <section class="contact-section">
+        <h2>Kết nối với thầy Danh</h2>
+        <div class="social-buttons">
+            <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
+                Zalo: 0911594794
+            </a>
+            
+            <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
+                <svg class="fb-icon" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+                Facebook
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Học tiếng Anh cùng thầy Danh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
