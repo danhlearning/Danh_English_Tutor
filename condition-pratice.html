@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Câu Điều Kiện (IF) - Thầy Danh</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --zalo-color: #0068ff;
+            --fb-color: #1877f2;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .top-nav {
+            padding: 15px 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-nav {
+            padding: 8px 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+
+        .btn-back { background-color: #e2e8f0; color: var(--text-main); }
+        .btn-back:hover { background-color: #cbd5e1; }
+
+        .btn-theory { background-color: var(--primary); color: white; }
+        .btn-theory:hover { background-color: var(--primary-hover); }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            width: 100%;
+            max-width: 700px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .controls { margin-bottom: 20px; text-align: right; }
+        .progress { font-weight: 800; color: var(--text-muted); font-size: 1.1rem; }
+
+        .question-box {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 1.15rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        .input-area { display: flex; gap: 10px; margin-bottom: 20px; }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 12px 15px;
+            font-size: 1.1rem;
+            font-family: inherit;
+            border: 2px solid #cbd5e1;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus { border-color: var(--primary); }
+
+        button {
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: inherit;
+            transition: background 0.3s;
+        }
+
+        .btn-check { background-color: var(--primary); color: white; white-space: nowrap; }
+        .btn-check:hover { background-color: var(--primary-hover); }
+
+        .btn-next {
+            background-color: #0ea5e9;
+            color: white;
+            display: none;
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 50px;
+        }
+        .btn-next:hover { background-color: #0284c7; }
+
+        .feedback { font-weight: 800; margin-bottom: 15px; font-size: 1.2rem; }
+        .correct { color: #16a34a; }
+        .incorrect { color: #dc2626; }
+
+        .explanation {
+            background: #fef3c7;
+            color: #b45309;
+            padding: 15px 20px;
+            border-left: 5px solid #f59e0b;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: none;
+            font-size: 1.05rem;
+            line-height: 1.5;
+        }
+
+        /* --- Contact Section --- */
+        .contact-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .contact-section h2 { font-size: 1.8rem; margin-bottom: 20px; color: var(--text-main); font-weight: 800; }
+        .social-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        
+        .btn-social {
+            display: flex; align-items: center; gap: 10px; padding: 10px 25px;
+            border-radius: 50px; font-size: 1.1rem; font-weight: 700;
+            text-decoration: none; background-color: white; transition: all 0.3s ease;
+        }
+
+        .btn-zalo { color: var(--zalo-color); border: 2px solid var(--zalo-color); }
+        .btn-zalo:hover { background-color: var(--zalo-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 104, 255, 0.3); }
+        .zalo-logo { width: 24px; height: 24px; border-radius: 6px; }
+
+        .btn-fb { color: var(--fb-color); border: 2px solid var(--fb-color); }
+        .btn-fb:hover { background-color: var(--fb-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3); }
+        .fb-icon { width: 22px; height: 22px; fill: var(--fb-color); transition: fill 0.3s; }
+        .btn-fb:hover .fb-icon { fill: white; }
+
+        footer { text-align: center; padding: 15px; background: var(--text-main); color: white; font-size: 0.95rem; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="grammar.html" class="btn-nav btn-back">⬅ Quay lại Trung tâm</a>
+        <!-- Đã cập nhật link trỏ về condition-theory.html -->
+        <a href="condition-theory.html" class="btn-nav btn-theory">📖 Xem Lý thuyết</a>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>📝 Bài Tập Câu Điều Kiện</h1>
+            
+            <div class="controls">
+                <div class="progress" id="progress">Câu: 1/60</div>
+            </div>
+
+            <div class="question-box" id="question-text"></div>
+
+            <div class="input-area" id="input-area">
+                <input type="text" id="answer-input" placeholder="Nhập động từ/từ cần điền..." autocomplete="off">
+                <button class="btn-check" id="check-btn" onclick="checkAnswer()">Kiểm tra</button>
+            </div>
+
+            <div id="feedback" class="feedback"></div>
+            <div id="explanation" class="explanation"></div>
+
+            <button class="btn-next" id="next-btn" onclick="nextQuestion()">Câu tiếp theo ➔</button>
+        </div>
+    </div>
+
+    <section class="contact-section">
+        <h2>Kết nối với thầy Danh</h2>
+        <div class="social-buttons">
+            <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
+                Zalo: 0911594794
+            </a>
+            <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
+                <svg class="fb-icon" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+                Facebook
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Học tiếng Anh cùng thầy Danh.</p>
+    </footer>
+
+<script>
+    const quizData = [
+        // --- LEVEL 1: LOẠI 0 & 1 (Cơ bản) ---
+        { q: "1. If it (rain) _____ tomorrow, we will stay at home.", a: "rains", e: "Điều kiện loại 1: If + Hiện tại đơn, Tương lai đơn. 'it' số ít -> rains." },
+        { q: "2. If you heat ice, it (melt) _____.", a: "melts", e: "Điều kiện loại 0 (sự thật hiển nhiên): If + HTĐ, HTĐ." },
+        { q: "3. I will call you if I (have) _____ time.", a: "have", e: "Mệnh đề If loại 1 chia Hiện tại đơn." },
+        { q: "4. If she (not/study) _____ hard, she will fail the exam.", a: "does not study / doesn't study", e: "Phủ định HTĐ với 'she' -> doesn't + V." },
+        { q: "5. What will you do if you (miss) _____ the bus?", a: "miss", e: "Mệnh đề If loại 1 đi với 'you' -> động từ giữ nguyên." },
+        { q: "6. If you mix red and blue, you (get) _____ purple.", a: "get", e: "Loại 0: pha màu luôn ra kết quả cố định -> Hiện tại đơn." },
+        { q: "7. We will go to the beach if the weather (be) _____ nice.", a: "is", e: "Động từ 'to be' ở HTĐ đi với 'the weather' -> is." },
+        { q: "8. If he (come) _____ late, the teacher will be angry.", a: "comes", e: "Chủ ngữ 'he' -> comes." },
+        { q: "9. They (not/let) _____ you in if you don't have a ticket.", a: "will not let / won't let", e: "Mệnh đề chính loại 1: will not + V." },
+        { q: "10. If water reaches 100 degrees, it (boil) _____.", a: "boils", e: "Sự thật khoa học (Loại 0)." },
+        { q: "11. If I see him, I (give) _____ him your message.", a: "will give", e: "Sự việc có thể xảy ra ở tương lai (Loại 1)." },
+        { q: "12. Plants die if they (not/get) _____ enough water.", a: "do not get / don't get", e: "Chân lý (Loại 0), 'they' mượn 'do'." },
+        { q: "13. I (be) _____ very happy if you pass the test.", a: "will be", e: "Mệnh đề chính loại 1." },
+        { q: "14. If you press this button, the machine (start) _____.", a: "starts", e: "Chức năng máy móc (Loại 0) -> Hiện tại đơn." },
+        { q: "15. We will save money if we (eat) _____ at home.", a: "eat", e: "Mệnh đề If loại 1." },
+        { q: "16. If the sun sets, it (get) _____ dark.", a: "gets", e: "Sự thật hiển nhiên." },
+        { q: "17. She (not/go) _____ to the party if she is tired.", a: "will not go / won't go", e: "Mệnh đề chính loại 1 phủ định." },
+        { q: "18. If you don't hurry, you (miss) _____ the train.", a: "will miss", e: "Dự đoán kết quả tương lai (Loại 1)." },
+        { q: "19. If babies are hungry, they usually (cry) _____.", a: "cry", e: "Thói quen, bản năng (Loại 0)." },
+        { q: "20. I will help you with your homework if I (finish) _____ mine early.", a: "finish", e: "Mệnh đề If loại 1." },
+
+        // --- LEVEL 2: LOẠI 2 & 3 (Trung bình) ---
+        { q: "21. If I (be) _____ you, I would study harder.", a: "were", e: "Điều kiện loại 2 (không có thật ở hiện tại). To be thường dùng 'were' cho mọi ngôi." },
+        { q: "22. If I had a lot of money, I (travel) _____ around the world.", a: "would travel", e: "Mệnh đề chính loại 2: would + V." },
+        { q: "23. If she (know) _____ his number, she would call him.", a: "knew", e: "Mệnh đề If loại 2: V quá khứ đơn (knew)." },
+        { q: "24. We would have won the match if we (play) _____ better.", a: "had played", e: "Điều kiện loại 3 (không có thật trong QK). Mệnh đề If dùng Quá khứ hoàn thành (had + V3)." },
+        { q: "25. If you had told me about the problem, I (help) _____ you.", a: "would have helped", e: "Mệnh đề chính loại 3: would have + V3/ed." },
+        { q: "26. I would buy that house if it (not/be) _____ so expensive.", a: "were not / weren't", e: "Loại 2 (thực tế nhà rất đắt). To be -> weren't." },
+        { q: "27. If he had driven carefully, he (not/have) _____ the accident.", a: "would not have had / wouldn't have had", e: "Loại 3: would not have + V3 (had)." },
+        { q: "28. If they (invite) _____ me, I would have gone to the party.", a: "had invited", e: "Mệnh đề If loại 3: had + V3/ed." },
+        { q: "29. What would you do if you (see) _____ a ghost?", a: "saw", e: "Giả định không có thật (Loại 2) -> Quá khứ đơn." },
+        { q: "30. If it had rained yesterday, we (stay) _____ at home.", a: "would have stayed", e: "Loại 3 (thực tế hôm qua không mưa)." },
+        { q: "31. She (pass) _____ the exam if she had studied harder.", a: "would have passed", e: "Mệnh đề chính loại 3." },
+        { q: "32. If I spoke English perfectly, I (get) _____ a good job.", a: "would get", e: "Loại 2 (hiện tại tôi nói chưa hoàn hảo)." },
+        { q: "33. If you (go) _____ to bed earlier, you wouldn't be so tired now.", a: "went", e: "Loại 2 -> V(QKĐ)." },
+        { q: "34. He would not have missed the flight if he (wake) _____ up on time.", a: "had woken", e: "Loại 3 -> had + V3 (wake -> woke -> woken)." },
+        { q: "35. If I (have) _____ wings, I would fly to you.", a: "had", e: "Giả định không tưởng (Loại 2) -> Quá khứ đơn." },
+        { q: "36. I (not/do) _____ that if I were you.", a: "would not do / wouldn't do", e: "Câu khuyên nhủ dùng Điều kiện loại 2." },
+        { q: "37. If she had worn a coat, she (not/catch) _____ a cold.", a: "would not have caught / wouldn't have caught", e: "Loại 3: Thực tế cô ấy đã bị cảm." },
+        { q: "38. If we lived in a city, we (go) _____ to the cinema more often.", a: "would go", e: "Loại 2: Thực tế chúng tôi không sống ở TP." },
+        { q: "39. If I (know) _____ you were in hospital, I would have visited you.", a: "had known", e: "Loại 3: Thực tế QK tôi không biết." },
+        { q: "40. You would have enjoyed the movie if you (come) _____ with us.", a: "had come", e: "Loại 3: come -> came -> come." },
+
+        // --- LEVEL 3: NÂNG CAO & ĐẢO NGỮ (TOEIC/IELTS) ---
+        { q: "41. (Câu đk Hỗn hợp) If I had eaten breakfast, I (not/be) _____ hungry right now.", a: "would not be / wouldn't be", e: "Mix 3-2: Mệnh đề If loại 3 (QK), Mệnh đề chính loại 2 (có 'now')." },
+        { q: "42. (Câu đk Hỗn hợp) If he were a good student, he (pass) _____ the exam yesterday.", a: "would have passed", e: "Mix 2-3: Bản chất anh ấy học dở (Loại 2), kết quả rớt bài kiểm tra hôm qua (Loại 3)." },
+        { q: "43. (Đảo ngữ loại 1) _____ you need any further information, please contact us.", a: "should", e: "Đảo ngữ loại 1: Đưa 'Should' lên đầu, bỏ If. (Should + S + V)." },
+        { q: "44. (Đảo ngữ loại 2) _____ I you, I would accept the offer.", a: "were", e: "Đảo ngữ loại 2: Đưa 'Were' lên đầu, bỏ If. (Were + S + ...)." },
+        { q: "45. (Đảo ngữ loại 3) _____ I known the truth, I wouldn't have trusted him.", a: "had", e: "Đảo ngữ loại 3: Đưa 'Had' lên đầu, bỏ If. (Had + S + V3)." },
+        { q: "46. I won't go to the party _____ you come with me.", a: "unless", e: "Unless = If...not (Trừ khi)." },
+        { q: "47. You can borrow my car _____ long as you drive carefully.", a: "as", e: "As long as = So long as = Provided that (Miễn là)." },
+        { q: "48. (Đảo ngữ loại 1) _____ it rain tomorrow, we will cancel the picnic.", a: "should", e: "Đảo ngữ loại 1 (Should + it + rain nguyên thể)." },
+        { q: "49. (Đảo ngữ loại 2) _____ he to study harder, he would pass the exam.", a: "were", e: "Đảo ngữ loại 2 với động từ thường: Were + S + TO V." },
+        { q: "50. (Mix 3-2) If she had taken the medicine last night, she (feel) _____ better now.", a: "would feel", e: "Mix 3-2: Hành động QK ảnh hưởng hiện tại (now) -> would + V." },
+        { q: "51. (Unless) Unless he (apologize) _____, I will never speak to him again.", a: "apologizes", e: "Sau Unless dùng mệnh đề khẳng định (HTĐ) giống If loại 1." },
+        { q: "52. _____ that you win the lottery, what will you buy first?", a: "provided / supposing", e: "Provided that / Supposing that = Giả sử như, miễn là." },
+        { q: "53. (Đảo ngữ loại 3) _____ we arrived earlier, we would have seen the opening performance.", a: "had", e: "Đảo 'Had' lên trước chủ ngữ." },
+        { q: "54. _____ condition that you return it by Friday, you can borrow the book.", a: "on", e: "Cụm 'On condition that' = Với điều kiện là." },
+        { q: "55. (Mix 2-3) If I (not/be) _____ afraid of spiders, I would have picked it up.", a: "were not / weren't", e: "Bản chất tôi luôn sợ nhện (Loại 2), sự việc nhặt nhện ở QK (Loại 3)." },
+        { q: "56. We will go hiking tomorrow _____ it rains.", a: "unless", e: "Trừ khi trời mưa." },
+        { q: "57. (Đảo ngữ loại 1) _____ anyone call, tell them I'm busy.", a: "should", e: "Đảo 'Should' -> Động từ 'call' giữ nguyên thể." },
+        { q: "58. But _____ his help, I would have failed the project.", a: "for", e: "Cụm 'But for + N' = Nếu không có (Dùng trong đk loại 2, 3)." },
+        { q: "59. (Đảo ngữ loại 3) _____ the police not arrived in time, the thieves would have escaped.", a: "had", e: "Đảo ngữ câu phủ định: Had + S + NOT + V3." },
+        { q: "60. You will fail the test _____ you study harder.", a: "unless", e: "Bạn sẽ trượt TRỪ KHI bạn học chăm hơn." }
+    ];
+
+    let currentQuestionIndex = 0;
+
+    function loadQuestion() {
+        const currentQ = quizData[currentQuestionIndex];
+        document.getElementById("progress").innerText = `Câu: ${currentQuestionIndex + 1}/${quizData.length}`;
+        
+        // Highlight phần trong ngoặc hoặc chỗ trống cho dễ nhìn
+        let questionHtml = currentQ.q.replace("_____", "<strong>_____</strong>");
+        document.getElementById("question-text").innerHTML = questionHtml;
+        
+        resetUI();
+    }
+
+    function checkAnswer() {
+        const userAnswer = document.getElementById("answer-input").value.trim().toLowerCase();
+        const currentQ = quizData[currentQuestionIndex];
+        
+        const correctAnswers = currentQ.a.toLowerCase().split("/").map(item => item.trim());
+        
+        const feedbackEl = document.getElementById("feedback");
+        const explanationEl = document.getElementById("explanation");
+        const nextBtn = document.getElementById("next-btn");
+        const checkBtn = document.getElementById("check-btn");
+
+        if (userAnswer === "") {
+            alert("Vui lòng nhập đáp án của bạn!");
+            return;
+        }
+
+        if (correctAnswers.includes(userAnswer)) {
+            feedbackEl.innerText = "✅ Chính xác!";
+            feedbackEl.className = "feedback correct";
+        } else {
+            feedbackEl.innerText = `❌ Sai rồi! Đáp án đúng có thể là: ${currentQ.a}`;
+            feedbackEl.className = "feedback incorrect";
+        }
+
+        explanationEl.innerHTML = `<strong>💡 Giải thích:</strong> ${currentQ.e}`;
+        explanationEl.style.display = "block";
+        nextBtn.style.display = "block";
+        checkBtn.style.display = "none";
+        document.getElementById("answer-input").disabled = true;
+    }
+
+    function nextQuestion() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < quizData.length) {
+            loadQuestion();
+        } else {
+            document.getElementById("question-text").innerHTML = "<strong>🎉 Tuyệt vời! Bạn đã hoàn thành 60 câu chuyên sâu về Câu điều kiện!</strong>";
+            document.getElementById("input-area").style.display = "none";
+            document.getElementById("progress").innerText = "Hoàn thành!";
+            resetUI();
+            document.getElementById("check-btn").style.display = "none";
+        }
+    }
+
+    function resetUI() {
+        const inputEl = document.getElementById("answer-input");
+        if(inputEl) {
+            inputEl.value = "";
+            inputEl.disabled = false;
+            inputEl.focus();
+        }
+        
+        document.getElementById("feedback").innerText = "";
+        document.getElementById("explanation").style.display = "none";
+        document.getElementById("next-btn").style.display = "none";
+        
+        const checkBtn = document.getElementById("check-btn");
+        if(checkBtn && currentQuestionIndex < quizData.length) {
+            checkBtn.style.display = "block";
+        }
+    }
+
+    window.onload = loadQuestion;
+
+    document.getElementById("answer-input").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            if (document.getElementById("check-btn").style.display !== "none") {
+                checkAnswer();
+            } else {
+                nextQuestion();
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
