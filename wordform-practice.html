@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Word Form - Thầy Danh</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --zalo-color: #0068ff;
+            --fb-color: #1877f2;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .top-nav {
+            padding: 15px 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-nav {
+            padding: 8px 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+
+        .btn-back { background-color: #e2e8f0; color: var(--text-main); }
+        .btn-back:hover { background-color: #cbd5e1; }
+
+        .btn-theory { background-color: var(--primary); color: white; }
+        .btn-theory:hover { background-color: var(--primary-hover); }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            width: 100%;
+            max-width: 700px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .controls { margin-bottom: 20px; text-align: right; }
+        .progress { font-weight: 800; color: var(--text-muted); font-size: 1.1rem; }
+
+        .question-box {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 1.15rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        .input-area { display: flex; gap: 10px; margin-bottom: 20px; }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 12px 15px;
+            font-size: 1.1rem;
+            font-family: inherit;
+            border: 2px solid #cbd5e1;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus { border-color: var(--primary); }
+
+        button {
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: inherit;
+            transition: background 0.3s;
+        }
+
+        .btn-check { background-color: var(--primary); color: white; white-space: nowrap; }
+        .btn-check:hover { background-color: var(--primary-hover); }
+
+        .btn-next {
+            background-color: #0ea5e9;
+            color: white;
+            display: none;
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 50px;
+        }
+        .btn-next:hover { background-color: #0284c7; }
+
+        .feedback { font-weight: 800; margin-bottom: 15px; font-size: 1.2rem; }
+        .correct { color: #16a34a; }
+        .incorrect { color: #dc2626; }
+
+        .explanation {
+            background: #fef3c7;
+            color: #b45309;
+            padding: 15px 20px;
+            border-left: 5px solid #f59e0b;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: none;
+            font-size: 1.05rem;
+            line-height: 1.5;
+        }
+
+        /* --- Contact Section --- */
+        .contact-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .contact-section h2 { font-size: 1.8rem; margin-bottom: 20px; color: var(--text-main); font-weight: 800; }
+        .social-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        
+        .btn-social {
+            display: flex; align-items: center; gap: 10px; padding: 10px 25px;
+            border-radius: 50px; font-size: 1.1rem; font-weight: 700;
+            text-decoration: none; background-color: white; transition: all 0.3s ease;
+        }
+
+        .btn-zalo { color: var(--zalo-color); border: 2px solid var(--zalo-color); }
+        .btn-zalo:hover { background-color: var(--zalo-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 104, 255, 0.3); }
+        .zalo-logo { width: 24px; height: 24px; border-radius: 6px; }
+
+        .btn-fb { color: var(--fb-color); border: 2px solid var(--fb-color); }
+        .btn-fb:hover { background-color: var(--fb-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3); }
+        .fb-icon { width: 22px; height: 22px; fill: var(--fb-color); transition: fill 0.3s; }
+        .btn-fb:hover .fb-icon { fill: white; }
+
+        footer { text-align: center; padding: 15px; background: var(--text-main); color: white; font-size: 0.95rem; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="grammar-index.html" class="btn-nav btn-back">⬅ Quay lại Trung tâm</a>
+        <a href="wordform-theory.html" class="btn-nav btn-theory">📖 Xem Lý thuyết Word Form</a>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>📝 Bài Tập Từ Loại (Word Form)</h1>
+            
+            <div class="controls">
+                <div class="progress" id="progress">Câu: 1/60</div>
+            </div>
+
+            <div class="question-box" id="question-text"></div>
+
+            <div class="input-area" id="input-area">
+                <input type="text" id="answer-input" placeholder="Nhập dạng đúng của từ..." autocomplete="off">
+                <button class="btn-check" id="check-btn" onclick="checkAnswer()">Kiểm tra</button>
+            </div>
+
+            <div id="feedback" class="feedback"></div>
+            <div id="explanation" class="explanation"></div>
+
+            <button class="btn-next" id="next-btn" onclick="nextQuestion()">Câu tiếp theo ➔</button>
+        </div>
+    </div>
+
+    <section class="contact-section">
+        <h2>Kết nối với thầy Danh</h2>
+        <div class="social-buttons">
+            <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
+                Zalo: 0911594794
+            </a>
+            <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
+                <svg class="fb-icon" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+                Facebook
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Học tiếng Anh cùng thầy Danh.</p>
+    </footer>
+
+<script>
+    const quizData = [
+        // --- LEVEL 1: CƠ BẢN (1-20) ---
+        { q: "1. She is a very (beauty) _____ girl. [Cơ bản]", a: "beautiful", e: "Đứng trước danh từ 'girl' cần một Tính từ. Tính từ của beauty là beautiful." },
+        { q: "2. He drives very (care) _____. [Cơ bản]", a: "carefully", e: "Đứng sau động từ thường 'drives' cần một Trạng từ để bổ nghĩa. Trạng từ của care là carefully." },
+        { q: "3. Playing with matches is very (danger) _____. [Cơ bản]", a: "dangerous", e: "Sau to be 'is' và trạng từ 'very' cần một Tính từ. Tính từ của danger là dangerous." },
+        { q: "4. We need more (inform) _____ about this project. [Cơ bản]", a: "information", e: "Sau 'more' cần một Danh từ. Danh từ của inform là information." },
+        { q: "5. They lived (happy) _____ ever after. [Cơ bản]", a: "happily", e: "Bổ nghĩa cho động từ 'lived' cần Trạng từ -> happily." },
+        { q: "6. Air (pollute) _____ is a serious problem in big cities. [Cơ bản]", a: "pollution", e: "Cần Danh từ ghép với 'Air' để tạo thành chủ ngữ -> Air pollution (ô nhiễm không khí)." },
+        { q: "7. It is (nature) _____ for a child to depend on its parents. [Cơ bản]", a: "natural", e: "Sau to be 'is' cần một Tính từ -> natural (tự nhiên, bình thường)." },
+        { q: "8. This dictionary is very (use) _____ for my studies. [Cơ bản]", a: "useful", e: "Sau to be 'is' và 'very' cần Tính từ mang nghĩa tích cực -> useful (hữu ích)." },
+        { q: "9. He is a famous (act) _____ in Hollywood. [Cơ bản]", a: "actor", e: "Sau mạo từ 'a' và tính từ 'famous' cần Danh từ chỉ người -> actor." },
+        { q: "10. We have to make a quick (decide) _____. [Cơ bản]", a: "decision", e: "Sau mạo từ 'a' và tính từ 'quick' cần Danh từ -> decision." },
+        { q: "11. My teacher is very (friend) _____ to everyone. [Cơ bản]", a: "friendly", e: "Sau to be 'is' cần Tính từ. 'Friendly' (thân thiện) là tính từ dù có đuôi -ly." },
+        { q: "12. What is the (differ) _____ between these two pictures? [Cơ bản]", a: "difference", e: "Sau mạo từ 'the' cần Danh từ -> difference." },
+        { q: "13. He wants to be a successful (music) _____ in the future. [Cơ bản]", a: "musician", e: "Chỉ nghề nghiệp, cần danh từ chỉ người -> musician (nhạc sĩ)." },
+        { q: "14. She is (interest) _____ in reading comic books. [Cơ bản]", a: "interested", e: "Cấu trúc: be interested in (thích thú với cái gì)." },
+        { q: "15. The children are playing (noise) _____ upstairs. [Cơ bản]", a: "noisily", e: "Bổ nghĩa cho động từ 'playing' cần Trạng từ -> noisily." },
+        { q: "16. This is a (tradition) _____ festival in Vietnam. [Cơ bản]", a: "traditional", e: "Đứng trước danh từ 'festival' cần Tính từ -> traditional." },
+        { q: "17. You should eat more vegetables to stay (health) _____. [Cơ bản]", a: "healthy", e: "Sau động từ liên kết 'stay' cần Tính từ -> healthy (khỏe mạnh)." },
+        { q: "18. The film was so (bore) _____ that I fell asleep. [Cơ bản]", a: "boring", e: "Chỉ tính chất của bộ phim (vật) -> dùng tính từ đuôi -ing: boring." },
+        { q: "19. The (develop) _____ of technology makes our lives easier. [Cơ bản]", a: "development", e: "Đứng sau 'The' làm chủ ngữ cần Danh từ -> development." },
+        { q: "20. I like her because of her (kind) _____. [Cơ bản]", a: "kindness", e: "Sau tính từ sở hữu 'her' cần Danh từ -> kindness (sự tử tế)." },
+
+        // --- LEVEL 2: TRUNG BÌNH (21-40) ---
+        { q: "21. He works (hard) _____ to earn money for his family. [Trung bình]", a: "hard", e: "Trạng từ của 'hard' vẫn là 'hard' (chăm chỉ). 'Hardly' có nghĩa là 'hầu như không'." },
+        { q: "22. The new manager is highly (qualify) _____ for the job. [Trung bình]", a: "qualified", e: "Sau trạng từ 'highly' cần Tính từ -> qualified (đủ trình độ/bằng cấp)." },
+        { q: "23. Please fill in the (apply) _____ form. [Trung bình]", a: "application", e: "Danh từ ghép: application form (đơn xin việc/nhập học)." },
+        { q: "24. Good (communicate) _____ skills are required for this role. [Trung bình]", a: "communication", e: "Danh từ ghép làm chủ ngữ: communication skills (kỹ năng giao tiếp)." },
+        { q: "25. We were (surprise) _____ at the news. [Trung bình]", a: "surprised", e: "Chỉ cảm xúc của con người -> Tính từ đuôi -ed: surprised." },
+        { q: "26. You must be (care) _____ when you cross the street. [Trung bình]", a: "careful", e: "Sau động từ to be 'be' cần Tính từ -> careful." },
+        { q: "27. Thomas Edison was a great (invent) _____. [Trung bình]", a: "inventor", e: "Danh từ chỉ người -> inventor (nhà phát minh)." },
+        { q: "28. The company is looking for creative (employ) _____. [Trung bình]", a: "employees", e: "Cần danh từ số nhiều chỉ người (những nhân viên) -> employees." },
+        { q: "29. It is (extreme) _____ cold today. [Trung bình]", a: "extremely", e: "Bổ nghĩa cho tính từ 'cold' cần một Trạng từ -> extremely." },
+        { q: "30. He is (confide) _____ that he will win the match. [Trung bình]", a: "confident", e: "Sau to be 'is' cần Tính từ -> confident (tự tin)." },
+        { q: "31. Smoking is (harm) _____ to your health. [Trung bình]", a: "harmful", e: "Sau to be cần Tính từ. Cấu trúc: be harmful to (có hại cho)." },
+        { q: "32. The party was a great (succeed) _____. [Trung bình]", a: "success", e: "Sau mạo từ 'a' và tính từ 'great' cần Danh từ -> success (sự thành công)." },
+        { q: "33. We need to find a (solve) _____ to this problem. [Trung bình]", a: "solution", e: "Sau mạo từ 'a' cần Danh từ -> solution (giải pháp)." },
+        { q: "34. She smiled (happy) _____ when she saw him. [Trung bình]", a: "happily", e: "Bổ nghĩa cho động từ 'smiled' cần Trạng từ -> happily." },
+        { q: "35. Electricity is one of the most important (invent) _____ of all time. [Trung bình]", a: "inventions", e: "Sau 'one of the most...' cần Danh từ số nhiều -> inventions." },
+        { q: "36. The teacher gave us a clear (explain) _____ of the lesson. [Trung bình]", a: "explanation", e: "Sau tính từ 'clear' cần Danh từ -> explanation (sự giải thích)." },
+        { q: "37. Going by train is more (convenience) _____ than going by bus. [Trung bình]", a: "convenient", e: "Sau 'more' trong cấu trúc so sánh hơn của tính từ dài -> convenient." },
+        { q: "38. She is an (act) _____ member of the club. [Trung bình]", a: "active", e: "Đứng trước danh từ 'member' cần Tính từ -> active (năng nổ, tích cực)." },
+        { q: "39. Many people lost their homes in the (nature) _____ disaster. [Trung bình]", a: "natural", e: "Trước danh từ 'disaster' cần Tính từ -> natural disaster (thiên tai)." },
+        { q: "40. His sudden (appear) _____ surprised everyone. [Trung bình]", a: "appearance", e: "Sau tính từ 'sudden' cần Danh từ -> appearance (sự xuất hiện)." },
+
+        // --- LEVEL 3: NÂNG CAO (TOEIC/IELTS) (41-60) ---
+        { q: "41. The board of directors has (approve) _____ the new budget. [Nâng cao]", a: "approved", e: "Sau trợ động từ 'has' cần Động từ ở dạng V3/ed (Thì Hiện tại hoàn thành) -> approved." },
+        { q: "42. The new policy will be highly (benefit) _____ to local businesses. [Nâng cao]", a: "beneficial", e: "Sau trạng từ 'highly' cần Tính từ -> beneficial (có lợi)." },
+        { q: "43. We apologize for the (convenience) _____ caused by the delay. [Nâng cao]", a: "inconvenience", e: "Dựa vào ngữ cảnh (xin lỗi vì...), cần Danh từ mang nghĩa phủ định -> inconvenience (sự bất tiện)." },
+        { q: "44. Please keep your personal belongings (secure) _____ at all times. [Nâng cao]", a: "secure", e: "Cấu trúc: keep + Object + Adj (giữ cho cái gì như thế nào) -> secure (an toàn)." },
+        { q: "45. The machine requires regular (maintain) _____ to function properly. [Nâng cao]", a: "maintenance", e: "Sau tính từ 'regular' cần Danh từ -> maintenance (sự bảo trì)." },
+        { q: "46. They have made a (signify) _____ contribution to the project. [Nâng cao]", a: "significant", e: "Đứng trước danh từ 'contribution' cần Tính từ -> significant (đáng kể)." },
+        { q: "47. The manager evaluated the (perform) _____ of the staff. [Nâng cao]", a: "performance", e: "Sau mạo từ 'the' cần Danh từ -> performance (hiệu suất, phần thể hiện)." },
+        { q: "48. You need written (permit) _____ to enter this restricted area. [Nâng cao]", a: "permission", e: "Sau tính từ 'written' (được viết/bằng văn bản) cần Danh từ -> permission (sự cho phép)." },
+        { q: "49. (Strategy) _____, the company decided to expand into Asia. [Nâng cao]", a: "strategically", e: "Đứng đầu câu và có dấu phẩy, cần Trạng từ bổ nghĩa cho cả câu -> Strategically (Về mặt chiến lược)." },
+        { q: "50. To (strong) _____ your password, add numbers and symbols. [Nâng cao]", a: "strengthen", e: "Sau 'To' chỉ mục đích cần Động từ nguyên thể -> strengthen (tăng cường)." },
+        { q: "51. The factory's daily (produce) _____ has increased by 20%. [Nâng cao]", a: "production", e: "Chủ ngữ của câu, đứng sau tính từ 'daily' cần Danh từ -> production (sản lượng/sự sản xuất)." },
+        { q: "52. She is entirely (depend) _____ on her parents for financial support. [Nâng cao]", a: "dependent", e: "Sau to be 'is' và trạng từ 'entirely', kết hợp giới từ 'on' -> Tính từ dependent (phụ thuộc)." },
+        { q: "53. The new software is easily (access) _____ from any device. [Nâng cao]", a: "accessible", e: "Sau to be và trạng từ 'easily' cần Tính từ -> accessible (có thể truy cập)." },
+        { q: "54. His presentation was very (inform) _____ and engaging. [Nâng cao]", a: "informative", e: "Sau 'very' cần Tính từ -> informative (nhiều thông tin hữu ích)." },
+        { q: "55. The data must be analyzed (care) _____ before we publish the report. [Nâng cao]", a: "carefully", e: "Bổ nghĩa cho động từ bị động 'analyzed' cần Trạng từ -> carefully." },
+        { q: "56. We offer a wide (vary) _____ of products at low prices. [Nâng cao]", a: "variety", e: "Cấu trúc cụm danh từ: a wide variety of (một sự đa dạng lớn các...) -> variety." },
+        { q: "57. Customer (satisfy) _____ is our top priority. [Nâng cao]", a: "satisfaction", e: "Cụm danh từ: Customer satisfaction (Sự hài lòng của khách hàng)." },
+        { q: "58. The weather here is highly (predict) _____; it can rain at any moment. [Nâng cao]", a: "unpredictable", e: "Ngữ cảnh: có thể mưa bất cứ lúc nào -> Tính từ mang nghĩa phủ định: unpredictable (không thể đoán trước)." },
+        { q: "59. Candidates must meet all the minimum (require) _____. [Nâng cao]", a: "requirements", e: "Sau tính từ 'minimum' cần Danh từ số nhiều -> requirements (những yêu cầu)." },
+        { q: "60. The CEO announced the (retire) _____ of the marketing director. [Nâng cao]", a: "retirement", e: "Sau mạo từ 'the' cần Danh từ -> retirement (sự nghỉ hưu)." }
+    ];
+
+    let currentQuestionIndex = 0;
+
+    function loadQuestion() {
+        const currentQ = quizData[currentQuestionIndex];
+        document.getElementById("progress").innerText = `Câu: ${currentQuestionIndex + 1}/${quizData.length}`;
+        
+        let questionHtml = currentQ.q.replace("_____", "<strong>_____</strong>");
+        document.getElementById("question-text").innerHTML = questionHtml;
+        
+        resetUI();
+    }
+
+    function checkAnswer() {
+        const userAnswer = document.getElementById("answer-input").value.trim().toLowerCase();
+        const currentQ = quizData[currentQuestionIndex];
+        
+        const correctAnswers = currentQ.a.toLowerCase().split("/").map(item => item.trim());
+        
+        const feedbackEl = document.getElementById("feedback");
+        const explanationEl = document.getElementById("explanation");
+        const nextBtn = document.getElementById("next-btn");
+        const checkBtn = document.getElementById("check-btn");
+
+        if (userAnswer === "") {
+            alert("Vui lòng nhập đáp án của bạn!");
+            return;
+        }
+
+        if (correctAnswers.includes(userAnswer)) {
+            feedbackEl.innerText = "✅ Chính xác!";
+            feedbackEl.className = "feedback correct";
+        } else {
+            feedbackEl.innerText = `❌ Sai rồi! Đáp án đúng là: ${currentQ.a}`;
+            feedbackEl.className = "feedback incorrect";
+        }
+
+        explanationEl.innerHTML = `<strong>💡 Giải thích:</strong> ${currentQ.e}`;
+        explanationEl.style.display = "block";
+        nextBtn.style.display = "block";
+        checkBtn.style.display = "none";
+        document.getElementById("answer-input").disabled = true;
+    }
+
+    function nextQuestion() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < quizData.length) {
+            loadQuestion();
+        } else {
+            document.getElementById("question-text").innerHTML = "<strong>🎉 Xuất sắc! Bạn đã vượt qua 60 câu hỏi thử thách về Word Form!</strong>";
+            document.getElementById("input-area").style.display = "none";
+            document.getElementById("progress").innerText = "Hoàn thành!";
+            resetUI();
+            document.getElementById("check-btn").style.display = "none";
+        }
+    }
+
+    function resetUI() {
+        const inputEl = document.getElementById("answer-input");
+        if(inputEl) {
+            inputEl.value = "";
+            inputEl.disabled = false;
+            inputEl.focus();
+        }
+        
+        document.getElementById("feedback").innerText = "";
+        document.getElementById("explanation").style.display = "none";
+        document.getElementById("next-btn").style.display = "none";
+        
+        const checkBtn = document.getElementById("check-btn");
+        if(checkBtn && currentQuestionIndex < quizData.length) {
+            checkBtn.style.display = "block";
+        }
+    }
+
+    window.onload = loadQuestion;
+
+    document.getElementById("answer-input").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            if (document.getElementById("check-btn").style.display !== "none") {
+                checkAnswer();
+            } else {
+                nextQuestion();
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
