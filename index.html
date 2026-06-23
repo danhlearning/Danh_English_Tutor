@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Học tiếng Anh cùng thầy Danh</title>
     
+    <!-- Nhúng font chữ Nunito từ Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
@@ -33,11 +34,11 @@
             line-height: 1.6;
         }
 
-        /* --- Header / Hero Section MỚI --- */
+        /* --- Header / Hero Section --- */
         .hero {
             background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
             color: white;
-            padding: 60px 20px 80px 20px; /* Tăng padding dưới để đẩy card lên */
+            padding: 60px 20px 80px 20px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
@@ -48,7 +49,7 @@
             align-items: center;
             justify-content: space-between;
             gap: 40px;
-            flex-wrap: wrap-reverse; /* Trên điện thoại: chữ dưới, ảnh trên */
+            flex-wrap: wrap-reverse;
         }
 
         .hero-text {
@@ -74,7 +75,6 @@
             flex-shrink: 0;
         }
 
-        /* Bo tròn ảnh đại diện và thêm hiệu ứng đổ bóng */
         .profile-pic {
             width: 220px;
             height: 220px;
@@ -89,7 +89,6 @@
             transform: scale(1.05);
         }
 
-        /* Căn giữa lại khi xem trên màn hình nhỏ (điện thoại) */
         @media (max-width: 768px) {
             .hero-content {
                 justify-content: center;
@@ -104,7 +103,7 @@
             }
         }
 
-        /* --- Main Content (Cards) --- */
+        /* --- Main Content (Cards cho Từ vựng & Ngữ pháp) --- */
         .container {
             max-width: 1000px;
             margin: -40px auto 40px auto;
@@ -112,7 +111,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
-            position: relative; /* Đảm bảo card nằm đè lên nền xanh của header */
+            position: relative;
             z-index: 10;
         }
 
@@ -168,6 +167,123 @@
 
         .card:hover .btn-card {
             background-color: var(--primary-hover);
+        }
+
+        /* --- Khu vực Phát âm IPA --- */
+        .pronunciation-section {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            color: #1e293b;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            color: #64748b;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f1f5f9;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .icon-wrapper {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .theory-icon {
+            background-color: #e0f2fe;
+            color: #0284c7;
+        }
+
+        .practice-icon {
+            background-color: #fdf4ff;
+            color: #d946ef;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            color: #0f172a;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .feature-card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            flex-grow: 1;
+        }
+
+        .btn-action {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: #0ea5e9;
+            border: 2px solid #0ea5e9;
+        }
+
+        .btn-outline:hover {
+            background-color: #0ea5e9;
+            color: white;
+        }
+
+        .btn-fill {
+            background-color: #d946ef;
+            color: white;
+            border: 2px solid #d946ef;
+        }
+
+        .btn-fill:hover {
+            background-color: #c026d3;
+            border-color: #c026d3;
         }
 
         /* --- Contact Section --- */
@@ -255,6 +371,7 @@
 </head>
 <body>
 
+    <!-- Header & Hero -->
     <header class="hero">
         <div class="hero-content">
             <div class="hero-text">
@@ -267,7 +384,9 @@
         </div>
     </header>
 
+    <!-- Khối 1: Từ vựng và Ngữ pháp -->
     <div class="container">
+        <!-- Card Từ vựng -->
         <a href="flashcard.html" class="card">
             <div class="card-icon">📖</div>
             <h2>Luyện từ vựng</h2>
@@ -275,21 +394,40 @@
             <div class="btn-card">Bắt đầu học ➔</div>
         </a>
 
-        <a href="ipa.html" class="card">
-            <div class="card-icon">🗣️</div>
-            <h2>Hướng dẫn phát âm</h2>
-            <p>Nắm vững bảng phiên âm IPA và bí quyết phát âm chuẩn xác như người bản xứ.</p>
-            <div class="btn-card">Luyện giọng ngay ➔</div>
-        </a>
-
+        <!-- Card Ngữ pháp -->
         <a href="grammar-index.html" class="card">
             <div class="card-icon">📝</div>
             <h2>Ngữ pháp</h2>
-            <p>Thực hành chia 6 thì cơ bản tiếng Anh từ mức độ cơ bản đến nâng cao (TOEIC/IELTS).</p>
-            <div class="btn-card">Làm bài tập ➔</div>
+            <p>Thực hành chuyên sâu các chủ điểm ngữ pháp từ mức độ cơ bản đến nâng cao (TOEIC/IELTS).</p>
+            <div class="btn-card">Vào trung tâm Ngữ pháp ➔</div>
         </a>
     </div>
 
+    <!-- Khối 2: Chuẩn hóa Phát âm IPA -->
+    <section class="pronunciation-section">
+        <div class="section-header">
+            <h2>🗣️ Chuẩn Hóa Phát Âm IPA</h2>
+            <p>Lộ trình từ làm quen khẩu hình miệng đến phản xạ nối âm chuẩn bản xứ</p>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon-wrapper theory-icon">📚</div>
+                <h3>Lý Thuyết Phát Âm</h3>
+                <p>Học chi tiết cách đặt lưỡi, khẩu hình miệng và dấu hiệu nhận biết của toàn bộ 44 nguyên âm & phụ âm trong tiếng Anh.</p>
+                <a href="ipa-theory.html" class="btn-action btn-outline">Đọc Lý Thuyết</a>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon-wrapper practice-icon">🎯</div>
+                <h3>Luyện Tập Phản Xạ</h3>
+                <p>Thực hành nhìn phiên âm đoán từ vựng. Trải nghiệm phương pháp học tương tác giúp nhớ sâu và phản xạ cực nhanh.</p>
+                <a href="ipa-practice.html" class="btn-action btn-fill">Bắt Đầu Luyện Tập</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Khối 3: Liên hệ -->
     <section class="contact-section">
         <h2>Kết nối với thầy Danh</h2>
         <div class="social-buttons">
