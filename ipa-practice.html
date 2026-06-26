@@ -133,6 +133,17 @@
             font-size: 1rem;
             border: 1px solid #bbf7d0;
         }
+        .timer {
+            font-weight: 800;
+            color: #b91c1c; /* Màu đỏ sẫm */
+            background: #fee2e2;
+            padding: 6px 15px;
+            border-radius: 50px;
+            font-size: 1rem;
+            border: 1px solid #fecaca;
+            min-width: 95px;
+            text-align: center;
+        }
 
         .progress { font-weight: 800; color: var(--text-muted); font-size: 1.1rem; }
 
@@ -275,8 +286,9 @@
                 <button class="tab-btn" id="tab-toeic" onclick="setLevel('toeic')">TOEIC</button>
             </div>
             
-            <div class="controls">
+           <div class="controls">
                 <div class="stats" id="score-display">Đúng: 0</div>
+                <div class="timer" id="timer-display">⏱️ 05:00</div> <!-- Đồng hồ mới thêm vào -->
                 <div class="progress" id="progress">Từ: 1/100</div>
             </div>
 
@@ -393,6 +405,8 @@
     let currentQuestionIndex = 0;
     let correctCount = 0;
     let autoNextTimeout;
+    let timeLeft = 300; // 5 phút = 300 giây
+    let timerInterval;
 
     // Hàm trộn mảng (Fisher-Yates Shuffle)
     function shuffleArray(array) {
@@ -403,7 +417,50 @@
         }
         return shuffled;
     }
+function startTimer() {
+        clearInterval(timerInterval); // Xóa đồng hồ cũ nếu đổi tab
+        timeLeft = 300; // Reset lại 5 phút
+        updateTimerDisplay();
+        
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                endGameByTime(); // Hết giờ thì gọi hàm kết thúc
+            }
+        }, 1000);
+    }
 
+    function updateTimerDisplay() {
+        let minutes = Math.floor(timeLeft / 60);
+        let seconds = timeLeft % 60;
+        document.getElementById("timer-display").innerText = `⏱️ 0${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    }
+
+    function endGameByTime() {
+        document.getElementById("ipa-display").innerText = "⏰";
+        document.getElementById("ipa-container").style.border = "none";
+        document.getElementById("ipa-container").style.background = "transparent";
+        
+        document.getElementById("input-area").style.display = "none";
+        document.getElementById("progress").innerText = "Hết giờ!";
+        
+        const explanationEl = document.getElementById("explanation");
+        explanationEl.innerHTML = `
+            <div style="text-align: center; font-size: 1.2rem;">
+                <strong style="color: #dc2626; font-size: 1.5rem;">⏰ ĐÃ HẾT 5 PHÚT!</strong><br><br>
+                Thử thách kết thúc. Trong 5 phút, bạn gõ đúng được:<br>
+                <strong style="color: #15803d; font-size: 2rem;">${correctCount}</strong> từ.
+            </div>
+        `;
+        explanationEl.style.display = "block";
+        
+        resetUI();
+        document.getElementById("check-btn").style.display = "none";
+        document.getElementById("feedback").style.display = "none";
+    }
     // Chọn cấp độ (Tab)
     function setLevel(level) {
         // Cập nhật UI nút tab
@@ -429,7 +486,7 @@
         document.getElementById("ipa-container").style.border = "2px dashed #f0abfc";
         document.getElementById("ipa-container").style.background = "#fdf4ff";
         document.getElementById("input-area").style.display = "flex";
-
+        startTimer();
         loadQuestion();
     }
 
@@ -493,6 +550,7 @@
             loadQuestion();
         } else {
             // Hoàn thành
+            clearInterval(timerInterval);
             document.getElementById("ipa-display").innerText = "🎉";
             document.getElementById("ipa-container").style.border = "none";
             document.getElementById("ipa-container").style.background = "transparent";
