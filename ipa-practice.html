@@ -126,16 +126,14 @@
         
         .stats {
             font-weight: 800;
-            color: #15803d;
-            background: #dcfce7;
             padding: 6px 15px;
             border-radius: 50px;
             font-size: 1rem;
-            border: 1px solid #bbf7d0;
+            border: 1px solid;
         }
         .timer {
             font-weight: 800;
-            color: #b91c1c; /* Màu đỏ sẫm */
+            color: #b91c1c;
             background: #fee2e2;
             padding: 6px 15px;
             border-radius: 50px;
@@ -279,7 +277,6 @@
             <h1>🗣️ Luyện Phát Âm</h1>
             <p class="subtitle">Đọc phiên âm và gõ từ tiếng Anh tương ứng</p>
 
-            <!-- Tabs -->
             <div class="tabs">
                 <button class="tab-btn active" id="tab-basic" onclick="setLevel('basic')">Cơ Bản</button>
                 <button class="tab-btn" id="tab-intermediate" onclick="setLevel('intermediate')">Trung Cấp</button>
@@ -287,8 +284,9 @@
             </div>
             
            <div class="controls">
-                <div class="stats" id="score-display">Đúng: 0</div>
-                <div class="timer" id="timer-display">⏱️ 05:00</div> <!-- Đồng hồ mới thêm vào -->
+                <div class="stats" id="correct-display" style="background: #dcfce7; color: #15803d; border-color: #bbf7d0;">Đúng: 0</div>
+                <div class="stats" id="incorrect-display" style="background: #fee2e2; color: #b91c1c; border-color: #fecaca; margin-left: 5px;">Sai: 0</div>
+                <div class="timer" id="timer-display">⏱️ 05:00</div>
                 <div class="progress" id="progress">Từ: 1/100</div>
             </div>
 
@@ -329,7 +327,7 @@
     </footer>
 
 <script>
-    // DỮ LIỆU
+    // DỮ LIỆU TỪ VỰNG
     const basicWords = [
         { ipa: "/ˈkæt/", word: "cat", meaning: "con mèo" }, { ipa: "/ˈdɒɡ/", word: "dog", meaning: "con chó" }, { ipa: "/ˈpɪɡ/", word: "pig", meaning: "con lợn" }, { ipa: "/ˈkaʊ/", word: "cow", meaning: "con bò" }, { ipa: "/ˈbɜːd/", word: "bird", meaning: "con chim" },
         { ipa: "/ˈfɪʃ/", word: "fish", meaning: "con cá" }, { ipa: "/ˈdʌk/", word: "duck", meaning: "con vịt" }, { ipa: "/ˈbeə/", word: "bear", meaning: "con gấu" }, { ipa: "/ˈlaɪən/", word: "lion", meaning: "con sư tử" }, { ipa: "/ˈbɔɪ/", word: "boy", meaning: "cậu bé" },
@@ -434,22 +432,24 @@
     let currentData = [];
     let currentQuestionIndex = 0;
     let correctCount = 0;
+    let incorrectCount = 0;
     let autoNextTimeout;
     let timeLeft = 300; // 5 phút = 300 giây
     let timerInterval;
 
     // Hàm trộn mảng (Fisher-Yates Shuffle)
     function shuffleArray(array) {
-        let shuffled = [...array]; // Tạo bản sao để không làm hỏng mảng gốc
+        let shuffled = [...array];
         for (let i = shuffled.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
         }
         return shuffled;
     }
-function startTimer() {
-        clearInterval(timerInterval); // Xóa đồng hồ cũ nếu đổi tab
-        timeLeft = 300; // Reset lại 5 phút
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 300;
         updateTimerDisplay();
         
         timerInterval = setInterval(() => {
@@ -458,7 +458,7 @@ function startTimer() {
             
             if (timeLeft <= 0) {
                 clearInterval(timerInterval);
-                endGameByTime(); // Hết giờ thì gọi hàm kết thúc
+                endGameByTime();
             }
         }, 1000);
     }
@@ -481,8 +481,9 @@ function startTimer() {
         explanationEl.innerHTML = `
             <div style="text-align: center; font-size: 1.2rem;">
                 <strong style="color: #dc2626; font-size: 1.5rem;">⏰ ĐÃ HẾT 5 PHÚT!</strong><br><br>
-                Thử thách kết thúc. Trong 5 phút, bạn gõ đúng được:<br>
-                <strong style="color: #15803d; font-size: 2rem;">${correctCount}</strong> từ.
+                Thử thách kết thúc. Trong 5 phút, bạn gõ được:<br>
+                <strong style="color: #15803d; font-size: 1.5rem;">Đúng: ${correctCount}</strong> từ. | 
+                <strong style="color: #b91c1c; font-size: 1.5rem;">Sai: ${incorrectCount}</strong> từ.
             </div>
         `;
         explanationEl.style.display = "block";
@@ -491,13 +492,12 @@ function startTimer() {
         document.getElementById("check-btn").style.display = "none";
         document.getElementById("feedback").style.display = "none";
     }
+
     // Chọn cấp độ (Tab)
     function setLevel(level) {
-        // Cập nhật giao diện nút tab
         document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
         document.getElementById(`tab-${level}`).classList.add('active');
 
-        // ÁP DỤNG XÁO TRỘN NGẪU NHIÊN CHO TẤT CẢ CÁC TAB
         if (level === 'basic') {
             currentData = shuffleArray(basicWords);
         } else if (level === 'intermediate') {
@@ -509,14 +509,16 @@ function startTimer() {
         // Reset trạng thái
         currentQuestionIndex = 0;
         correctCount = 0;
-        document.getElementById("score-display").innerText = `Đúng: 0`;
+        incorrectCount = 0;
+        document.getElementById("correct-display").innerText = `Đúng: 0`;
+        document.getElementById("incorrect-display").innerText = `Sai: 0`;
 
-        // Reset giao diện về lúc ban đầu
         document.getElementById("ipa-container").style.border = "2px dashed #f0abfc";
         document.getElementById("ipa-container").style.background = "#fdf4ff";
         document.getElementById("input-area").style.display = "flex";
+
         startTimer();
-        loadQuestion(); // Tải câu hỏi đầu tiên (đã được xáo trộn)
+        loadQuestion();
     }
 
     function loadQuestion() {
@@ -537,44 +539,33 @@ function startTimer() {
         const explanationEl = document.getElementById("explanation");
         const nextBtn = document.getElementById("next-btn");
         const checkBtn = document.getElementById("check-btn");
-        const scoreDisplay = document.getElementById("score-display");
 
         if (userAnswer === "") {
             alert("Vui lòng nhập từ tiếng Anh của bạn!");
             return;
         }
-        // Hàm trộn mảng ngẫu nhiên
-    function shuffleArray(array) {
-        let shuffled = [...array]; // Tạo bản sao để không làm hỏng mảng gốc
-        for (let i = shuffled.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-        }
-        return shuffled;
-    }
 
-        // Hiện box chứa từ đúng và nghĩa
         explanationEl.innerHTML = `Từ đúng: <strong>${currentQ.word}</strong> <br> <span class="meaning">Nghĩa là: ${currentQ.meaning}</span>`;
         explanationEl.style.display = "block";
         checkBtn.style.display = "none";
         document.getElementById("answer-input").disabled = true;
 
         if (correctAnswers.includes(userAnswer)) {
-            // TRẢ LỜI ĐÚNG
             correctCount++;
-            scoreDisplay.innerText = `Đúng: ${correctCount}`;
+            document.getElementById("correct-display").innerText = `Đúng: ${correctCount}`;
             
             feedbackEl.innerHTML = `✅ Chính xác! <span class="auto-next-msg">Đang chuyển từ tiếp theo trong 2 giây...</span>`;
             feedbackEl.className = "feedback correct";
             nextBtn.style.display = "none";
 
-            // Auto chuyển bài
             autoNextTimeout = setTimeout(() => {
                 nextQuestion();
             }, 1000);
 
         } else {
-            // TRẢ LỜI SAI
+            incorrectCount++;
+            document.getElementById("incorrect-display").innerText = `Sai: ${incorrectCount}`;
+            
             const displayAnswer = correctAnswers[0];
             feedbackEl.innerText = `❌ Sai rồi! Đáp án đúng là: ${displayAnswer}`;
             feedbackEl.className = "feedback incorrect";
@@ -587,7 +578,6 @@ function startTimer() {
         if (currentQuestionIndex < currentData.length) {
             loadQuestion();
         } else {
-            // Hoàn thành
             clearInterval(timerInterval);
             document.getElementById("ipa-display").innerText = "🎉";
             document.getElementById("ipa-container").style.border = "none";
@@ -600,7 +590,7 @@ function startTimer() {
             explanationEl.innerHTML = `
                 <div style="text-align: center; font-size: 1.2rem;">
                     <strong>Chúc mừng! Bạn đã hoàn thành toàn bộ nhóm từ này!</strong><br><br>
-                    Kết quả của bạn: <strong style="color: #15803d; font-size: 1.5rem;">${correctCount}/${currentData.length}</strong> từ đúng.
+                    Kết quả của bạn: <strong style="color: #15803d;">Đúng: ${correctCount}</strong> - <strong style="color: #b91c1c;">Sai: ${incorrectCount}</strong> trên tổng số ${currentData.length} từ.
                 </div>
             `;
             explanationEl.style.display = "block";
@@ -629,9 +619,9 @@ function startTimer() {
         }
     }
 
-    // Khởi tạo tab Cơ bản lúc mới vào trang
     window.onload = () => {
         setLevel('basic');
+        startTimer();
     };
 
     document.getElementById("answer-input").addEventListener("keypress", function(event) {
