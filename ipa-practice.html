@@ -493,18 +493,17 @@ function startTimer() {
     }
     // Chọn cấp độ (Tab)
     function setLevel(level) {
-        // Cập nhật UI nút tab
+        // Cập nhật giao diện nút tab
         document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
         document.getElementById(`tab-${level}`).classList.add('active');
 
-        // Cập nhật dữ liệu
+        // ÁP DỤNG XÁO TRỘN NGẪU NHIÊN CHO TẤT CẢ CÁC TAB
         if (level === 'basic') {
-            // YÊU CẦU: Xáo trộn từ vựng ở thẻ cơ bản
             currentData = shuffleArray(basicWords);
         } else if (level === 'intermediate') {
-            currentData = [...intermediateWords];
+            currentData = shuffleArray(intermediateWords);
         } else if (level === 'toeic') {
-            currentData = [...toeicWords];
+            currentData = shuffleArray(toeicWords);
         }
 
         // Reset trạng thái
@@ -512,12 +511,12 @@ function startTimer() {
         correctCount = 0;
         document.getElementById("score-display").innerText = `Đúng: 0`;
 
-        // Reset giao diện về lúc chưa kết thúc
+        // Reset giao diện về lúc ban đầu
         document.getElementById("ipa-container").style.border = "2px dashed #f0abfc";
         document.getElementById("ipa-container").style.background = "#fdf4ff";
         document.getElementById("input-area").style.display = "flex";
-        startTimer();
-        loadQuestion();
+
+        loadQuestion(); // Tải câu hỏi đầu tiên (đã được xáo trộn)
     }
 
     function loadQuestion() {
@@ -544,6 +543,15 @@ function startTimer() {
             alert("Vui lòng nhập từ tiếng Anh của bạn!");
             return;
         }
+        // Hàm trộn mảng ngẫu nhiên
+    function shuffleArray(array) {
+        let shuffled = [...array]; // Tạo bản sao để không làm hỏng mảng gốc
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
 
         // Hiện box chứa từ đúng và nghĩa
         explanationEl.innerHTML = `Từ đúng: <strong>${currentQ.word}</strong> <br> <span class="meaning">Nghĩa là: ${currentQ.meaning}</span>`;
