@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Nói Chủ Đề Food - Thầy Danh</title>
+    
+    <!-- Nhúng font chữ Nunito đồng bộ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #d97706; /* Đổi sang màu vàng cam ấm áp cho chủ đề Food */
+            --primary-hover: #b45309;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #d97706;
+            --accent-bg: #fef3c7;
+            --zalo-color: #0068ff;
+            --fb-color: #1877f2;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* --- Nav Bar --- */
+        .top-nav {
+            padding: 15px 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-nav {
+            padding: 8px 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            background-color: #e2e8f0;
+            color: var(--text-main);
+        }
+
+        .btn-nav:hover { background-color: #cbd5e1; }
+
+        /* --- Main Content --- */
+        .main-content {
+            flex: 1;
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header-section h1 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .header-section p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        /* --- Container Topic --- */
+        .topic-container {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .topic-badge {
+            display: inline-block;
+            background-color: var(--accent-bg);
+            color: var(--accent);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .topic-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 25px;
+        }
+
+        /* --- Vocabulary Section --- */
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 15px;
+            border-left: 4px solid var(--primary);
+            padding-left: 10px;
+        }
+
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+
+        .vocab-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 15px;
+            border-radius: 12px;
+            transition: all 0.3s;
+        }
+
+        .vocab-item:hover {
+            border-color: var(--accent);
+            background: #fffbeb;
+        }
+
+        .vocab-word {
+            font-weight: 800;
+            color: #0f172a;
+            font-size: 1.1rem;
+        }
+
+        .vocab-ipa {
+            color: #d946ef;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .vocab-meaning {
+            color: var(--text-main);
+            font-size: 0.95rem;
+        }
+
+        /* --- Sample Q&A Section --- */
+        .qa-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .qa-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 20px;
+            background: #ffffff;
+        }
+
+        .question-box {
+            font-weight: 800;
+            color: #0f172a;
+            font-size: 1.15rem;
+            margin-bottom: 12px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .question-tag {
+            color: var(--accent);
+        }
+
+        .answer-box {
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            border-left: 4px solid #cbd5e1;
+        }
+
+        .answer-text {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .highlight-word {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        .translation-box {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        /* --- Contact Section --- */
+        .contact-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .contact-section h2 { font-size: 1.8rem; margin-bottom: 20px; color: var(--text-main); font-weight: 800; }
+        .social-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        
+        .btn-social {
+            display: flex; align-items: center; gap: 10px; padding: 10px 25px;
+            border-radius: 50px; font-size: 1.1rem; font-weight: 700;
+            text-decoration: none; background-color: white; transition: all 0.3s ease;
+        }
+
+        .btn-zalo { color: var(--zalo-color); border: 2px solid var(--zalo-color); }
+        .btn-zalo:hover { background-color: var(--zalo-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 104, 255, 0.3); }
+        .zalo-logo { width: 24px; height: 24px; border-radius: 6px; }
+
+        .btn-fb { color: var(--fb-color); border: 2px solid var(--fb-color); }
+        .btn-fb:hover { background-color: var(--fb-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3); }
+        .fb-icon { width: 22px; height: 22px; fill: var(--fb-color); transition: fill 0.3s; }
+        .btn-fb:hover .fb-icon { fill: white; }
+
+        footer { text-align: center; padding: 15px; background: var(--text-main); color: white; font-size: 0.95rem; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="index.html" class="btn-nav btn-back">⬅ Quay lại Trang chủ</a>
+    </div>
+
+    <div class="main-content">
+        <div class="header-section">
+            <h1>🗣️ Luyện Nói Chủ Đề Food</h1>
+            <p>Học từ vựng cốt lõi và luyện tập trả lời phản xạ theo tiêu chuẩn IELTS Speaking 6.0</p>
+        </div>
+
+        <!-- Khối Chủ đề Food -->
+        <div class="topic-container">
+            <span class="topic-badge">Topic 2</span>
+            <h2 class="topic-title">🍲 Food & Eating Habits</h2>
+
+            <!-- 1. Bộ từ vựng chủ đề Food -->
+            <h3 class="section-title">Key Vocabulary (Từ vựng cốt lõi)</h3>
+            <div class="vocab-grid">
+                <div class="vocab-item">
+                    <div class="vocab-word">Home-cooked meal</div>
+                    <div class="vocab-ipa">/həʊm kʊkt miːl/</div>
+                    <div class="vocab-meaning">Bữa ăn nấu tại nhà</div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-word">Signature dish</div>
+                    <div class="vocab-ipa">/ˈsɪɡnətʃə dɪʃ/</div>
+                    <div class="vocab-meaning">Món ăn đặc trưng, món tủ</div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-word">Nutritious</div>
+                    <div class="vocab-ipa">/njuːˈtrɪʃəs/</div>
+                    <div class="vocab-meaning">Giàu dinh dưỡng, bổ dưỡng</div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-word">Grab a bite</div>
+                    <div class="vocab-ipa">/ɡræb ə baɪt/</div>
+                    <div class="vocab-meaning">Ăn vội, ăn nhanh một món gì đó</div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-word">Cuisine</div>
+                    <div class="vocab-ipa">/kwɪˈziːn/</div>
+                    <div class="vocab-meaning">Ẩm thực (phong cách nấu ăn)</div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-word">Have a sweet tooth</div>
+                    <div class="vocab-ipa">/hæv ə swiːt tuːθ/</div>
+                    <div class="vocab-meaning">Người hảo ngọt, thích ăn đồ ngọt</div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-word">Authentic flavor</div>
+                    <div class="vocab-ipa">/ɔːˈθentɪk ˈfleɪvə/</div>
+                    <div class="vocab-meaning">Hương vị nguyên bản, chuẩn vị</div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-word">Balanced diet</div>
+                    <div class="vocab-ipa">/ˈbælənst ˈdaɪət/</div>
+                    <div class="vocab-meaning">Chế độ ăn uống cân bằng, hợp lý</div>
+                </div>
+            </div>
+
+            <!-- 2. Câu trả lời mẫu Part 1 -->
+            <h3 class="section-title">IELTS Speaking Part 1 Samples (Band 6.0)</h3>
+            <div class="qa-list">
+                <!-- Câu 1 -->
+                <div class="qa-card">
+                    <div class="question-box">
+                        <span class="question-tag">Q1:</span> Do you prefer eating out or eating at home?
+                    </div>
+                    <div class="answer-box">
+                        <p class="answer-text">"To be honest, I prefer having a <span class="highlight-word">home-cooked meal</span>. It is much more <span class="highlight-word">nutritious</span> and hygienic than eating at restaurants. However, sometimes when I am too busy, I just <span class="highlight-word">grab a bite</span> at a convenience store."</p>
+                    </div>
+                    <div class="translation-box">
+                        Dịch: Thành thật mà nói, tôi thích ăn một bữa ăn nấu tại nhà hơn. Nó bổ dưỡng và vệ sinh hơn nhiều so với ăn ở nhà hàng. Tuy nhiên, đôi khi bận quá tôi chỉ ghé tiệm tạp hóa tiện lợi ăn vội chút gì đó.
+                    </div>
+                </div>
+
+                <!-- Câu 2 -->
+                <div class="qa-card">
+                    <div class="question-box">
+                        <span class="question-tag">Q2:</span> What is your favorite kind of food?
+                    </div>
+                    <div class="answer-box">
+                        <p class="answer-text">"I am a big fan of traditional Vietnamese <span class="highlight-word">cuisine</span>, especially Pho. It has an <span class="highlight-word">authentic flavor</span> that you cannot find anywhere else. I also <span class="highlight-word">have a sweet tooth</span>, so I love eating traditional desserts after meals."</p>
+                    </div>
+                    <div class="translation-box">
+                        Dịch: Tôi là một người rất hâm mộ ẩm thực truyền thống Việt Nam, đặc biệt là Phở. Nó có một hương vị nguyên bản mà bạn không thể tìm thấy ở nơi nào khác. Tôi cũng là người hảo ngọt nên rất thích ăn các món chè tráng miệng sau bữa ăn.
+                    </div>
+                </div>
+
+                <!-- Câu 3 -->
+                <div class="qa-card">
+                    <div class="question-box">
+                        <span class="question-tag">Q3:</span> Do you think your eating habits are healthy?
+                    </div>
+                    <div class="answer-box">
+                        <p class="answer-text">"Well, I try my best to maintain a <span class="highlight-word">balanced diet</span> by eating a lot of vegetables and fruits. But occasionally, I still eat fast food or drink milk tea with my friends on weekends."</p>
+                    </div>
+                    <div class="translation-box">
+                        Dịch: Chà, tôi cố gắng hết sức để duy trì một chế độ ăn uống cân bằng bằng cách ăn nhiều rau củ và trái cây. Nhưng thỉnh thoảng, tôi vẫn ăn thức ăn nhanh hoặc uống trà sữa cùng bạn bè vào cuối tuần.
+                    </div>
+                </div>
+
+                <!-- 3. Câu trả lời mẫu Part 2 (Long Turn Cue Card) -->
+                <div class="qa-card" style="border-top: 4px solid var(--primary); margin-top: 20px;">
+                    <div class="question-box" style="color: var(--primary);">
+                        <span class="question-tag">Part 2 Cue Card:</span> Describe a special dish you enjoy eating.
+                    </div>
+                    <div style="background: #fffbeb; border: 1px dashed #fef3c7; padding: 12px 15px; border-radius: 8px; margin-bottom: 15px; font-size: 0.95rem; font-weight: 600; color: #b45309;">
+                        💡 You should say: What dish it is, Where you usually eat it, What ingredients it has, and explain why this dish is so special to you.
+                    </div>
+                    <div class="answer-box" style="border-left: 4px solid var(--primary);">
+                        <p class="answer-text">
+                            "Today, I would like to share with you about my favorite dish, which is caramelized pork and eggs. It is a traditional Vietnamese dish and also my mother's <span class="highlight-word">signature dish</span>. 
+                            <br><br>
+                            I usually enjoy this meal at home during special family gatherings, especially during Tet holiday. The main ingredients are very simple, including pork belly, boiled eggs, and fresh coconut water, all slowly cooked together until tender. 
+                            <br><br>
+                            This dish is incredibly special to me because it always brings back happy childhood memories. Every time I taste the <span class="highlight-word">authentic flavor</span> of this <span class="highlight-word">home-cooked meal</span>, I feel warm and connected to my family. Even though I have tried many different types of international <span class="highlight-word">cuisine</span>, nothing can compare to this simple but meaningful dish."
+                        </p>
+                    </div>
+                    <div class="translation-box">
+                        <strong>Dịch bài nói mẫu Part 2:</strong>
+                        <br>
+                        Hôm nay, tôi muốn chia sẻ với các bạn về món ăn yêu thích nhất của mình, đó là món thịt kho hột vịt. Đây là một món ăn truyền thống của Việt Nam và cũng là món tủ của mẹ tôi.
+                        <br><br>
+                        Tôi thường thưởng thức bữa ăn này ở nhà vào những dịp gia đình tụ họp đặc biệt, nhất là vào dịp Tết. Các nguyên liệu chính rất đơn giản, bao gồm thịt ba chỉ, trứng luộc và nước dừa tươi, tất cả được kho chậm cùng nhau cho đến khi mềm hẳn.
+                        <br><br>
+                        Món ăn này vô cùng đặc biệt đối với tôi vì nó luôn gợi lại những kỷ niệm đẹp thời thơ ấu. Mỗi lần nếm thử hương vị nguyên bản của bữa cơm gia đình nấu này, tôi đều cảm thấy ấm áp và gắn kết với gia đình mình. Mặc dù tôi đã thử qua rất nhiều loại hình ẩm thực quốc tế khác nhau, không gì có thể so sánh được với món ăn đơn giản nhưng đầy ý nghĩa này.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kết nối liên hệ -->
+    <section class="contact-section">
+        <h2>Kết nối với thầy Danh</h2>
+        <div class="social-buttons">
+            <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
+                Zalo: 0911594794
+            </a>
+            <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
+                <svg class="fb-icon" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+                Facebook
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Học tiếng Anh cùng thầy Danh.</p>
+    </footer>
+
+</body>
+</html>
