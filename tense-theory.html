@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lý thuyết 6 Thì Cơ Bản - Thầy Danh</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #dbeafe;
+            --zalo-color: #0068ff;
+            --fb-color: #1877f2;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px 20px 0 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-container {
+            flex: 1;
+        }
+
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { color: var(--primary); font-size: 2.5rem; font-weight: 800; }
+
+        .container {
+            max-width: 950px; margin: 0 auto 40px auto;
+            background: white; padding: 40px;
+            border-radius: 20px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary); border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px; margin-top: 30px; margin-bottom: 15px; font-size: 1.8rem;
+        }
+
+        h3 { color: #334155; margin-top: 25px; margin-bottom: 10px; font-size: 1.4rem; }
+        p { margin-bottom: 15px; font-size: 1.1rem; }
+        ul { margin-left: 20px; margin-bottom: 15px; font-size: 1.1rem; }
+        li { margin-bottom: 8px; }
+
+        /* Styling for Tables */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 1.05rem; }
+        th, td { border: 1px solid #cbd5e1; padding: 12px 15px; text-align: left; vertical-align: top; }
+        th { background-color: var(--primary); color: white; font-weight: 700; text-align: center; }
+        
+        /* Cấu trúc cột của bảng 6 thì */
+        th:nth-child(1) { width: 20%; }
+        th:nth-child(2) { width: 30%; }
+        th:nth-child(3) { width: 50%; }
+
+        td:nth-child(2) { font-weight: bold; color: #b91c1c; }
+        tr:nth-child(even) { background-color: #f1f5f9; }
+
+        /* Styling for Examples */
+        .example-box {
+            background-color: var(--accent); border-left: 5px solid var(--primary);
+            padding: 15px 20px; border-radius: 4px; margin-bottom: 20px;
+        }
+        .example-box p { margin-bottom: 8px; }
+        .example-box p:last-child { margin-bottom: 0; }
+
+        .highlight { font-weight: 700; color: #b91c1c; }
+        .meaning { font-style: italic; color: #475569; font-size: 1rem; }
+
+        .btn-back {
+            display: inline-block; background-color: var(--text-muted); color: white;
+            padding: 10px 20px; border-radius: 50px; text-decoration: none;
+            font-weight: 700; margin-bottom: 20px; transition: background 0.3s;
+        }
+        .btn-back:hover { background-color: #475569; }
+
+        .btn-practice {
+            display: block; text-align: center; background-color: var(--primary);
+            color: white; padding: 15px 30px; border-radius: 50px;
+            text-decoration: none; font-weight: 700; font-size: 1.2rem;
+            margin-top: 40px; transition: background 0.3s;
+        }
+        .btn-practice:hover { background-color: var(--primary-hover); }
+
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            th, td { display: block; width: 100% !important; text-align: left !important; }
+            th { text-align: center !important; }
+        }
+
+        /* --- Contact Section --- */
+        .contact-section {
+            text-align: center; padding: 40px 20px;
+            background: white; border-top: 1px solid #e2e8f0;
+            margin: 0 -20px;
+        }
+        .contact-section h2 { font-size: 1.8rem; margin-bottom: 20px; color: var(--text-main); font-weight: 800; border-bottom: none; }
+        .social-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn-social {
+            display: flex; align-items: center; gap: 10px; padding: 10px 25px;
+            border-radius: 50px; font-size: 1.1rem; font-weight: 700;
+            text-decoration: none; background-color: white; transition: all 0.3s ease;
+        }
+        .btn-zalo { color: var(--zalo-color); border: 2px solid var(--zalo-color); }
+        .btn-zalo:hover { background-color: var(--zalo-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 104, 255, 0.3); }
+        .zalo-logo { width: 24px; height: 24px; border-radius: 6px; }
+
+        .btn-fb { color: var(--fb-color); border: 2px solid var(--fb-color); }
+        .btn-fb:hover { background-color: var(--fb-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3); }
+        .fb-icon { width: 22px; height: 22px; fill: var(--fb-color); transition: fill 0.3s; }
+        .btn-fb:hover .fb-icon { fill: white; }
+
+        footer { text-align: center; padding: 15px; background: var(--text-main); color: white; font-size: 0.95rem; font-weight: 600; margin: 0 -20px; }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="container">
+            <a href="grammar-index.html" class="btn-back">⬅ Quay lại Trung tâm Ngữ pháp</a>
+            
+            <div class="header">
+                <h1>📖 Lý Thuyết: 6 Thì Cơ Bản Trong Tiếng Anh</h1>
+                <p>(6 Mốc Thời Gian Quan Trọng Nhất Định Phải Nắm Vững)</p>
+            </div>
+
+            <h2>I. Tổng quan về các nhóm Thì cơ bản</h2>
+            <p>Trong tiếng Anh có tổng cộng 12 thì, tuy nhiên đối với các mục đích giao tiếp hàng ngày hoặc làm nền tảng luyện thi TOEIC/IELTS, bạn cần làm chủ **6 thì cơ bản** chia đều cho 3 mốc thời gian: **Hiện tại, Quá khứ và Tương lai**.</p>
+            <ul>
+                <li><strong>Nhóm Đơn (Simple):</strong> Diễn tả tính chất chung, lâu dài hoặc lặp đi lặp lại.</li>
+                <li><strong>Nhóm Tiếp diễn (Continuous):</strong> Diễn tả tính chất tạm thời, đang diễn ra ngay tại thời điểm được nói tới.</li>
+            </ul>
+
+            <h2>II. Bảng Tổng Hợp Công Thức & Cách Dùng 6 Thì Cơ Bản</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tên Thì</th>
+                        <th>Công thức khẳng định (+)</th>
+                        <th>Cách dùng chính & Ví dụ minh họa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 1. Hiện tại đơn -->
+                    <tr>
+                        <td><strong>1. Hiện tại đơn</strong><br><span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">Present Simple</span></td>
+                        <td>
+                            • Động từ thường:<br>
+                            <span class="highlight">S + V(s/es)</span><br><br>
+                            • Động từ To Be:<br>
+                            <span class="highlight">S + am/is/are + N/Adj</span>
+                        </td>
+                        <td>
+                            Diễn tả thói quen lặp đi lặp lại, sự thật hiển nhiên hoặc một lịch trình cố định.
+                            <hr style="margin: 10px 0; border: 0; border-top: 1px dashed #cbd5e1;">
+                            - She <span class="highlight">walks</span> to school every day.<br>
+                            <span class="meaning">(Cô ấy đi bộ đến trường mỗi ngày -> Thói quen)</span><br>
+                            - The sun <span class="highlight">rises</span> in the East.<br>
+                            <span class="meaning">(Mặt trời mọc ở hướng Đông -> Chân lý hiển nhiên)</span>
+                        </td>
+                    </tr>
+                    <!-- 2. Hiện tại tiếp diễn -->
+                    <tr>
+                        <td><strong>2. Hiện tại tiếp diễn</strong><br><span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">Present Continuous</span></td>
+                        <td>
+                            <span class="highlight">S + am/is/are + V-ing</span>
+                        </td>
+                        <td>
+                            Diễn tả hành động đang xảy ra ngay tại thời điểm nói hoặc một kế hoạch sắp xảy ra có dự định từ trước.
+                            <hr style="margin: 10px 0; border: 0; border-top: 1px dashed #cbd5e1;">
+                            - Look! The train <span class="highlight">is coming</span>.<br>
+                            <span class="meaning">(Nhìn kìa! Đoàn tàu đang đến -> Ngay tại lúc nói)</span><br>
+                            - I <span class="highlight">am meeting</span> my boss tonight.<br>
+                            <span class="meaning">(Tôi sẽ gặp sếp vào tối nay -> Kế hoạch cụ thể)</span>
+                        </td>
+                    </tr>
+                    <!-- 3. Quá khứ đơn -->
+                    <tr>
+                        <td><strong>3. Quá khứ đơn</strong><br><span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">Past Simple</span></td>
+                        <td>
+                            • Động từ thường:<br>
+                            <span class="highlight">S + V2/-ed</span><br><br>
+                            • Động từ To Be:<br>
+                            <span class="highlight">S + was/were + N/Adj</span>
+                        </td>
+                        <td>
+                            Diễn tả hành động đã xảy ra và chấm dứt hoàn toàn trong quá khứ, biết rõ thời gian chính xác.
+                            <hr style="margin: 10px 0; border: 0; border-top: 1px dashed #cbd5e1;">
+                            - We <span class="highlight">visited</span> Dalat last year.<br>
+                            <span class="meaning">(Chúng tôi đã đi du lịch Đà Lạt năm ngoái -> Đã chấm dứt)</span>
+                        </td>
+                    </tr>
+                    <!-- 4. Quá khứ tiếp diễn -->
+                    <tr>
+                        <td><strong>4. Quá khứ tiếp diễn</strong><br><span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">Past Continuous</span></td>
+                        <td>
+                            <span class="highlight">S + was/were + V-ing</span>
+                        </td>
+                        <td>
+                            Diễn tả hành động đang diễn ra tại một thời điểm cụ thể trong quá khứ hoặc một hành động đang chạy thì hành động khác chen ngang.
+                            <hr style="margin: 10px 0; border: 0; border-top: 1px dashed #cbd5e1;">
+                            - At 8 PM yesterday, I <span class="highlight">was watching</span> TV.<br>
+                            <span class="meaning">(Lúc 8 giờ tối qua, tôi đang xem TV -> Thời điểm cụ thể)</span><br>
+                            - While I <span class="highlight">was cooking</span>, the phone rang.<br>
+                            <span class="meaning">(Khi tôi đang nấu ăn thì điện thoại reo -> Hành động chen ngang)</span>
+                        </td>
+                    </tr>
+                    <!-- 5. Tương lai đơn -->
+                    <tr>
+                        <td><strong>5. Tương lai đơn</strong><br><span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">Future Simple</span></td>
+                        <td>
+                            <span class="highlight">S + will + V(nguyên thể)</span>
+                        </td>
+                        <td>
+                            Diễn tả một quyết định bộc phát ngay tại thời điểm nói, một lời hứa, lời đe dọa hoặc một dự đoán không có căn cứ.
+                            <hr style="margin: 10px 0; border: 0; border-top: 1px dashed #cbd5e1;">
+                            - It's hot. I <span class="highlight">will open</span> the window.<br>
+                            <span class="meaning">(Nóng quá. Tôi sẽ mở cửa sổ -> Quyết định tức thời)</span><br>
+                            - I think it <span class="highlight">will rain</span> tomorrow.<br>
+                            <span class="meaning">(Tôi nghĩ ngày mai trời sẽ mưa -> Dự đoán cá nhân)</span>
+                        </td>
+                    </tr>
+                    <!-- 6. Tương lai gần -->
+                    <tr>
+                        <td><strong>6. Tương lai gần</strong><br><span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">Near Future</span></td>
+                        <td>
+                            <span class="highlight">S + am/is/are + going to + V(nt)</span>
+                        </td>
+                        <td>
+                            Diễn tả một dự định, kế hoạch đã được lên lịch sẵn từ trước hoặc một dự đoán chắc chắn dựa trên bằng chứng/hiện tượng ở hiện tại.
+                            <hr style="margin: 10px 0; border: 0; border-top: 1px dashed #cbd5e1;">
+                            - I <span class="highlight">am going to buy</span> a new laptop next week.<br>
+                            <span class="meaning">(Tôi định mua một chiếc laptop mới vào tuần tới -> Có dự định sẵn)</span><br>
+                            - Look at those dark clouds! It <span class="highlight">is going to rain</span>.<br>
+                            <span class="meaning">(Nhìn những đám mây đen kìa! Trời sắp mưa rồi -> Có bằng chứng rõ ràng)</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>III. Dấu Hiệu Nhận Biết Bằng Trạng Từ Thời Gian</h2>
+            <p>Để chọn đúng thì trong câu trắc nghiệm (nhất là cấu trúc đề TOEIC), việc xác định trạng từ thời gian đi kèm là cực kỳ quan trọng.</p>
+            
+            <h3>1. Trạng từ dùng cho Nhóm Hiện Tại</h3>
+            <div class="example-box">
+                <p>• <strong>Hiện tại đơn:</strong> always, usually, often, sometimes, every day/week/month, once/twice a week...</p>
+                <p>• <strong>Hiện tại tiếp diễn:</strong> now, right now, at the moment, at present, các từ gây chú ý: Look!, Listen!, Keep silent!...</p>
+            </div>
+
+            <h3>2. Trạng từ dùng cho Nhóm Quá Khứ</h3>
+            <div class="example-box">
+                <p>• <strong>Quá khứ đơn:</strong> yesterday, ago (2 days ago), last night/week/year, in + năm trong quá khứ (in 2020)...</p>
+                <p>• <strong>Quá khứ tiếp diễn:</strong> at this time yesterday, at + giờ cụ thể + mốc quá khứ (at 9 PM last night), các mệnh đề nối bằng "When" hoặc "While".</p>
+            </div>
+
+            <h3>3. Trạng từ dùng cho Nhóm Tương Lai</h3>
+            <div class="example-box">
+                <p>• <strong>Tương lai đơn & Tương lai gần:</strong> tomorrow, next week/month/year, in + thời gian tới (in 5 minutes), soon, các động từ bày tỏ quan điểm: think, believe, suppose, hope...</p>
+            </div>
+
+            <h2>IV. Một Số Lưu Ý Đặc Biệt Khi Chia Thì</h2>
+            <ul>
+                <li><strong>Động từ chỉ trạng thái (Stative Verbs):</strong> Các từ như <em>love, hate, like, want, know, remember, believe, understand...</em> thường <strong>không dùng ở thể tiếp diễn</strong>. Ngay cả khi có dấu hiệu "now", ta vẫn phải chia ở Hiện tại đơn.<br>
+                    <span class="meaning">Ví dụ đúng: I <strong>know</strong> the answer now. (Không dùng: I am knowing...)</span>
+                </li>
+                <li><strong>Quy tắc thêm "s/es":</strong> Trong thì Hiện tại đơn với chủ ngữ số ít (He, She, It, Danh từ số ít), các động từ kết thúc bằng các đuôi <em>-o, -ch, -s, -x, -sh, -z</em> thì ta thêm đuôi <strong>-es</strong> (Ví dụ: watch -> watches, go -> goes).</li>
+                <li><strong>Động từ bất quy tắc:</strong> Ở thì Quá khứ đơn, ngoài các từ thêm đuôi "-ed" thông thường, hãy chú ý học thuộc bảng động từ bất quy tắc cột số 2 (V2) (Ví dụ: go -> went, see -> saw, buy -> bought).</li>
+            </ul>
+
+            <a href="tense-practice.html" class="btn-practice">Vào phòng Luyện tập 6 Thì Cơ Bản ➔</a>
+        </div>
+    </div>
+
+    <!-- Tích hợp phần Liên hệ với thầy Danh -->
+    <section class="contact-section">
+        <h2>Kết nối với thầy Danh</h2>
+        <div class="social-buttons">
+            <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
+                Zalo: 0911594794
+            </a>
+            
+            <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
+                <svg class="fb-icon" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+                Facebook
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Học tiếng Anh cùng thầy Danh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
