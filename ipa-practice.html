@@ -33,7 +33,7 @@
         }
 
         .top-nav {
-            padding: 15px 20px;
+            padding: 12px 15px;
             background: white;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             display: flex;
@@ -42,11 +42,11 @@
         }
 
         .btn-nav {
-            padding: 8px 16px;
+            padding: 6px 14px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             transition: all 0.3s;
             background-color: #e2e8f0;
             color: var(--text-main);
@@ -59,16 +59,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 40px 20px;
+            padding: 20px 15px;
         }
 
         .container {
             background: white;
-            padding: 30px;
-            border-radius: 20px;
+            padding: 20px 15px;
+            border-radius: 16px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
             width: 100%;
-            max-width: 600px;
+            max-width: 480px;
             text-align: center;
         }
 
@@ -76,32 +76,33 @@
             color: var(--primary);
             margin-bottom: 5px;
             font-weight: 800;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
         
         .subtitle {
             color: var(--text-muted);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-weight: 600;
+            font-size: 0.95rem;
         }
 
         /* --- Tabs --- */
         .tabs {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-bottom: 25px;
+            gap: 8px;
+            margin-bottom: 20px;
             background: #f1f5f9;
-            padding: 5px;
+            padding: 4px;
             border-radius: 50px;
         }
 
         .tab-btn {
             flex: 1;
-            padding: 10px 15px;
+            padding: 8px 10px;
             border: none;
             border-radius: 50px;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 700;
             font-family: inherit;
             cursor: pointer;
@@ -121,58 +122,62 @@
             display: flex; 
             justify-content: space-between; 
             align-items: center;
-            margin-bottom: 20px; 
+            margin-bottom: 15px; 
+            gap: 5px;
         }
         
         .stats {
             font-weight: 800;
-            padding: 6px 15px;
+            padding: 5px 10px;
             border-radius: 50px;
-            font-size: 1rem;
+            font-size: 0.85rem;
             border: 1px solid;
+            flex: 1;
+            text-align: center;
         }
         .timer {
             font-weight: 800;
             color: #b91c1c;
             background: #fee2e2;
-            padding: 6px 15px;
+            padding: 5px 10px;
             border-radius: 50px;
-            font-size: 1rem;
+            font-size: 0.85rem;
             border: 1px solid #fecaca;
-            min-width: 95px;
+            min-width: 80px;
             text-align: center;
         }
 
-        .progress { font-weight: 800; color: var(--text-muted); font-size: 1.1rem; }
+        .progress { font-weight: 800; color: var(--text-muted); font-size: 0.95rem; }
 
         .ipa-box {
             background: #fdf4ff;
             border: 2px dashed #f0abfc;
-            padding: 30px 20px;
-            border-radius: 15px;
-            margin-bottom: 25px;
+            padding: 15px 10px;
+            border-radius: 12px;
+            margin-bottom: 20px;
             transition: all 0.3s;
         }
 
         .ipa-text {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 3.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
             color: var(--ipa-color);
-            letter-spacing: 2px;
+            letter-spacing: 1px;
+            word-break: break-all;
         }
 
         .input-area {
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            margin-bottom: 20px;
+            gap: 12px;
+            margin-bottom: 15px;
         }
 
         input[type="text"] {
             width: 100%;
-            padding: 15px;
-            font-size: 1.5rem;
+            padding: 12px;
+            font-size: 1.2rem;
             text-align: center;
             font-family: inherit;
             border: 2px solid #cbd5e1;
@@ -185,8 +190,8 @@
         input[type="text"]:focus { border-color: var(--ipa-color); }
 
         .btn-check, .btn-next {
-            padding: 15px 25px;
-            font-size: 1.2rem;
+            padding: 12px 20px;
+            font-size: 1.1rem;
             border: none;
             border-radius: 12px;
             cursor: pointer;
@@ -203,20 +208,20 @@
             background-color: #0ea5e9;
             color: white;
             display: none;
-            margin-top: 10px;
+            margin-top: 5px;
         }
         .btn-next:hover { background-color: #0284c7; }
 
         .feedback {
             font-weight: 800;
             margin-bottom: 10px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
         .correct { color: #16a34a; }
         .incorrect { color: #dc2626; }
         .auto-next-msg {
             display: block;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             font-weight: 600;
             color: #64748b;
             margin-top: 5px;
@@ -225,46 +230,46 @@
         .explanation {
             background: #f1f5f9;
             color: var(--text-main);
-            padding: 15px;
+            padding: 12px;
             border-radius: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             display: none;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 700;
-            line-height: 1.5;
+            line-height: 1.4;
         }
         
         .meaning {
             color: var(--primary);
             font-style: italic;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         /* --- Contact Section --- */
         .contact-section {
-            text-align: center; padding: 40px 20px;
+            text-align: center; padding: 25px 15px;
             background: white; border-top: 1px solid #e2e8f0;
         }
 
-        .contact-section h2 { font-size: 1.8rem; margin-bottom: 20px; color: var(--text-main); font-weight: 800; }
-        .social-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .contact-section h2 { font-size: 1.3rem; margin-bottom: 15px; color: var(--text-main); font-weight: 800; }
+        .social-buttons { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
         
         .btn-social {
-            display: flex; align-items: center; gap: 10px; padding: 10px 25px;
-            border-radius: 50px; font-size: 1.1rem; font-weight: 700;
+            display: flex; align-items: center; gap: 8px; padding: 8px 16px;
+            border-radius: 50px; font-size: 0.95rem; font-weight: 700;
             text-decoration: none; background-color: white; transition: all 0.3s ease;
         }
 
         .btn-zalo { color: var(--zalo-color); border: 2px solid var(--zalo-color); }
         .btn-zalo:hover { background-color: var(--zalo-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 104, 255, 0.3); }
-        .zalo-logo { width: 24px; height: 24px; border-radius: 6px; }
+        .zalo-logo { width: 20px; height: 20px; border-radius: 4px; }
 
         .btn-fb { color: var(--fb-color); border: 2px solid var(--fb-color); }
         .btn-fb:hover { background-color: var(--fb-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3); }
-        .fb-icon { width: 22px; height: 22px; fill: var(--fb-color); transition: fill 0.3s; }
+        .fb-icon { width: 18px; height: 18px; fill: var(--fb-color); transition: fill 0.3s; }
         .btn-fb:hover .fb-icon { fill: white; }
 
-        footer { text-align: center; padding: 15px; background: var(--text-main); color: white; font-size: 0.95rem; font-weight: 600; }
+        footer { text-align: center; padding: 12px; background: var(--text-main); color: white; font-size: 0.85rem; font-weight: 600; }
     </style>
 </head>
 <body>
@@ -286,7 +291,7 @@
             
            <div class="controls">
                 <div class="stats" id="correct-display" style="background: #dcfce7; color: #15803d; border-color: #bbf7d0;">Đúng: 0</div>
-                <div class="stats" id="incorrect-display" style="background: #fee2e2; color: #b91c1c; border-color: #fecaca; margin-left: 5px;">Sai: 0</div>
+                <div class="stats" id="incorrect-display" style="background: #fee2e2; color: #b91c1c; border-color: #fecaca;">Sai: 0</div>
                 <div class="timer" id="timer-display">⏱️ 10:00</div>
                 <div class="progress" id="progress">Từ: 1/240</div>
             </div>
@@ -363,7 +368,7 @@
     
         { ipa: "/ˈæpl/", word: "apple", meaning: "quả táo" }, { ipa: "/bəˈnɑːnə/", word: "banana", meaning: "quả chuối" }, { ipa: "/melən/", word: "melon", meaning: "quả dưa" }, { ipa: "/peə/", word: "pear", meaning: "quả lê" }, { ipa: "/peach/", word: "peach", meaning: "quả đào" },
         { ipa: "/maʊs/", word: "mouse", meaning: "con chuột" }, { ipa: "/ˈræbɪt/", word: "rabbit", meaning: "con thỏ" }, { ipa: "/frɒɡ/", word: "frog", meaning: "con ếch" }, { ipa: "/sneɪk/", word: "snake", meaning: "con rắn" }, { ipa: "/hɔːs/", word: "horse", meaning: "con ngựa" },
-        { ipa: "/ˈmʌŋki/", word: "monkey", meaning: "con khỉ" }, { ipa: "/ˈkɪtn/", word: "kitten", meaning: "mèo con" }, { ipa: "/ˈpʌpi/", word: "poppy", meaning: "chó con" }, { ipa: "/ɡəʊt/", word: "goat", meaning: "con dê" }, { ipa: "/ʃiːp/", word: "sheep", meaning: "con cừu" },
+        { ipa: "/ˈmʌŋki/", word: "monkey", meaning: "con khỉ" }, { ipa: "/ˈkɪtn/", word: "kitten", meaning: "mèo con" }, { ipa: "/ˈpʌpi/", word: "puppy", meaning: "chó con" }, { ipa: "/ɡəʊt/", word: "goat", meaning: "con dê" }, { ipa: "/ʃiːp/", word: "sheep", meaning: "con cừu" },
         { ipa: "/ˈpɜːpl/", word: "purple", meaning: "màu tím" }, { ipa: "/ˈsɪlvə/", word: "silver", meaning: "màu bạc" }, { ipa: "/ɡəʊld/", word: "gold", meaning: "màu vàng gold" }, { ipa: "/ˈpɪŋk/", word: "pink", meaning: "màu hồng" }, { ipa: "/waɪt/", word: "white", meaning: "màu trắng" },
         { ipa: "/zero/", word: "zero", meaning: "số không" }, { ipa: "/ɪˈlevn/", word: "eleven", meaning: "số mười một" }, { ipa: "/twelv/", word: "twelve", meaning: "số mười hai" }, { ipa: "/ˌθɜːˈtiːn/", word: "thirteen", meaning: "số mười ba" }, { ipa: "/ˈtwenti/", word: "twenty", meaning: "số hai mươi" },
         { ipa: "/ˈhʌndrəd/", word: "hundred", meaning: "trăm" }, { ipa: "/ˈθaʊznd/", word: "thousand", meaning: "nghìn / ngàn" }, { ipa: "/ˈmɪljən/", word: "million", meaning: "triệu" }, { ipa: "/ˈruler/", word: "ruler", meaning: "cây thước" }, { ipa: "/ɪˈreɪsə/", word: "eraser", meaning: "cục tẩy" },
@@ -376,27 +381,7 @@
         { ipa: "/kləʊz/", word: "close", meaning: "đóng" }, { ipa: "/smaɪl/", word: "smile", meaning: "mỉm cười" }, { ipa: "/laːf/", word: "laugh", meaning: "cười lớn" }, { ipa: "/kraɪ/", word: "cry", meaning: "khóc" }, { ipa: "/hɪə/", word: "hear", meaning: "nghe" },
         { ipa: "/siː/", word: "see", meaning: "nhìn / thấy" }, { ipa: "/wɒtʃ/", word: "watch", meaning: "xem" }, { ipa: "/smel/", word: "smell", meaning: "ngửi" }, { ipa: "/tʌtʃ/", word: "touch", meaning: "chạm vào" }, { ipa: "/noʊ/", word: "know", meaning: "biết" },
         { ipa: "/faɪnd/", word: "find", meaning: "tìm thấy" }, { ipa: "/meɪk/", word: "make", meaning: "làm ra / chế tạo" }, { ipa: "/gɪv/", word: "give", meaning: "cho / tặng" }, { ipa: "/teɪk/", word: "take", meaning: "lấy / cầm" }, { ipa: "/bɪg/", word: "big", meaning: "to lớn" },
-        { ipa: "/tɔːl/", word: "tall", meaning: "cao" }, { ipa: "/ʃɔːt/", word: "short", meaning: "ngắn / thấp" }, { ipa: "/lɒŋ/", word: "long", meaning: "dài" }, { ipa: "/faːst/", word: "fast", meaning: "nhanh" }, { ipa: "/sləʊ/", word: "chậm" },
-        { ipa: "/nuː/", word: "new", meaning: "mới" }, { ipa: "/oʊld/", word: "old", meaning: "cũ / già" }, { ipa: "/jʌŋ/", word: "young", meaning: "trẻ trung" }, { ipa: "/kliːn/", word: "clean", meaning: "sạch sẽ" }, { ipa: "/ˈdɜːti/", word: "dirty", meaning: "bẩn thỉu" },
-        { ipa: "/gʊd/", word: "good", meaning: "tốt" }, { ipa: "/bæd/", word: "bad", meaning: "xấu / tồi tệ" }, { ipa: "/ˈizi/", word: "easy", meaning: "dễ dàng" }, { ipa: "/hɑːd/", word: "hard", meaning: "khó / cứng" }, { ipa: "/suːp/", word: "soup", meaning: "món súp / canh" },
-        { ipa: "/keɪk/", word: "cake", meaning: "bánh ngọt" }, { ipa: "/sɔːlt/", word: "salt", meaning: "muối" }, { ipa: "/ˈʃʊɡə/", word: "sugar", meaning: "đường" }, { ipa: "/ˈpepə/", word: "pepper", meaning: "tiêu" }, { ipa: "/bɒtl/", word: "bottle", meaning: "chai / lọ" },
-        { ipa: "/kʌp/", word: "cup", meaning: "cái tách / cúp" }, { ipa: "/ɡlɑːs/", word: "glass", meaning: "ly thủy tinh" }, { ipa: "/spuːn/", word: "spoon", meaning: "cái muỗng / thìa" }, { ipa: "/fɔːk/", word: "fork", meaning: "cái nĩa" }, { ipa: "/naɪf/", word: "knife", meaning: "con dao" },
-        { ipa: "/ˈæpl/", word: "apple", meaning: "quả táo" }, { ipa: "/bəˈnɑːnə/", word: "banana", meaning: "quả chuối" }, { ipa: "/melən/", word: "melon", meaning: "quả dưa" }, { ipa: "/peə/", word: "pear", meaning: "quả lê" }, { ipa: "/peach/", word: "peach", meaning: "quả đào" },
-        { ipa: "/maʊs/", word: "mouse", meaning: "con chuột" }, { ipa: "/ˈræbɪt/", word: "rabbit", meaning: "con thỏ" }, { ipa: "/frɒɡ/", word: "frog", meaning: "con ếch" }, { ipa: "/sneɪk/", word: "snake", meaning: "con rắn" }, { ipa: "/hɔːs/", word: "horse", meaning: "con ngựa" },
-        { ipa: "/ˈmʌŋki/", word: "monkey", meaning: "con khỉ" }, { ipa: "/ˈkɪtn/", word: "kitten", meaning: "mèo con" }, { ipa: "/ˈpʌpi/", word: "chó con", meaning: "chó con" }, { ipa: "/ɡəʊt/", word: "goat", meaning: "con dê" }, { ipa: "/ʃiːp/", word: "sheep", meaning: "con cừu" },
-        { ipa: "/ˈpɜːpl/", word: "purple", meaning: "màu tím" }, { ipa: "/ˈsɪlvə/", word: "silver", meaning: "màu bạc" }, { ipa: "/ɡəʊld/", word: "gold", meaning: "màu vàng gold" }, { ipa: "/ˈpɪŋk/", word: "pink", meaning: "màu hồng" }, { ipa: "/waɪt/", word: "white", meaning: "màu trắng" },
-        { ipa: "/zero/", word: "zero", meaning: "số không" }, { ipa: "/ɪˈlevn/", word: "eleven", meaning: "số mười một" }, { ipa: "/twelv/", word: "twelve", meaning: "số mười hai" }, { ipa: "/ˌθɜːˈtiːn/", word: "thirteen", meaning: "số mười ba" }, { ipa: "/ˈtwenti/", word: "twenty", meaning: "số hai mươi" },
-        { ipa: "/ˈhʌndrəd/", word: "hundred", meaning: "trăm" }, { ipa: "/ˈθaʊznd/", word: "thousand", meaning: "nghìn / ngàn" }, { ipa: "/ˈmɪljən/", word: "million", meaning: "triệu" }, { ipa: "/ˈruler/", word: "ruler", meaning: "cây thước" }, { ipa: "/ɪˈreɪsə/", word: "eraser", meaning: "cục tẩy" },
-        { ipa: "/desk/", word: "desk", meaning: "bàn làm việc" }, { ipa: "/ˈteɪbl/", word: "table", meaning: "cái bàn" }, { ipa: "/bɔːd/", word: "board", meaning: "cái bảng" }, { ipa: "/læmp/", word: "lamp", meaning: "cái đèn" }, { ipa: "/pæd/", word: "pad", meaning: "tập giấy note" },
-        { ipa: "/ruːf/", word: "roof", meaning: "mái nhà" }, { ipa: "/ˈflɔː/", word: "floor", meaning: "sàn nhà" }, { ipa: "/yard/", word: "yard", meaning: "sân vườn" }, { ipa: "/ˈɡɑːdn/", word: "garden", meaning: "khu vườn" }, { ipa: "/ɡeɪt/", word: "gate", meaning: "cổng" },
-        { ipa: "/wind/", word: "wind", meaning: "gió" }, { ipa: "/stɔːm/", word: "storm", meaning: "cơn bão" }, { ipa: "/leɪk/", word: "lake", meaning: "hồ nước" }, { ipa: "/ˈrɪvə/", word: "river", meaning: "dòng sông" }, { ipa: "/hɪl/", word: "hill", meaning: "ngọn đồi" },
-        { ipa: "/rɒk/", word: "rock", meaning: "hòn đá" }, { ipa: "/sænd/", word: "sand", meaning: "cát" }, { ipa: "/lɪːf/", word: "leaf", meaning: "chiếc lá" }, { ipa: "/plɑːnt/", word: "plant", meaning: "thực vật / cây trồng" }, { ipa: "/siːd/", word: "seed", meaning: "hạt giống" },
-        { ipa: "/sɪt/", word: "sit", meaning: "ngồi" }, { ipa: "/stænd/", word: "stand", meaning: "đứng" }, { ipa: "/spɪːk/", word: "speak", meaning: "nói" }, { ipa: "/tɔːk/", word: "talk", meaning: "trò chuyện" }, { ipa: "/sing/", word: "sing", meaning: "hát" },
-        { ipa: "/dɑːns/", word: "dance", meaning: "nhảy múa" }, { ipa: "/kʊk/", word: "cook", meaning: "nấu ăn" }, { ipa: "/wɒʃ/", word: "wash", meaning: "rửa / giặt" }, { ipa: "/kliːn/", word: "clean", meaning: "lau dọn" }, { ipa: "/oʊpən/", word: "open", meaning: "mở" },
-        { ipa: "/kləʊz/", word: "close", meaning: "đóng" }, { ipa: "/smaɪl/", word: "smile", meaning: "mỉm cười" }, { ipa: "/laːf/", word: "laugh", meaning: "cười lớn" }, { ipa: "/kraɪ/", word: "cry", meaning: "khóc" }, { ipa: "/hɪə/", word: "hear", meaning: "nghe" },
-        { ipa: "/siː/", word: "see", meaning: "nhìn / thấy" }, { ipa: "/wɒtʃ/", word: "watch", meaning: "xem" }, { ipa: "/smel/", word: "smell", meaning: "ngửi" }, { ipa: "/tʌtʃ/", word: "touch", meaning: "chạm vào" }, { ipa: "/noʊ/", word: "know", meaning: "biết" },
-        { ipa: "/faɪnd/", word: "find", meaning: "tìm thấy" }, { ipa: "/meɪk/", word: "make", meaning: "làm ra / chế tạo" }, { ipa: "/gɪv/", word: "give", meaning: "cho / tặng" }, { ipa: "/teɪk/", word: "take", meaning: "lấy / cầm" }, { ipa: "/bɪg/", word: "big", meaning: "to lớn" },
-        { ipa: "/tɔːl/", word: "tall", meaning: "cao" }, { ipa: "/ʃɔːt/", word: "short", meaning: "ngắn / thấp" }, { ipa: "/lɒŋ/", word: "long", meaning: "dài" }, { ipa: "/faːst/", word: "fast", meaning: "nhanh" }, { ipa: "/sləʊ/", word: "chậm" },
+        { ipa: "/tɔːl/", word: "tall", meaning: "cao" }, { ipa: "/ʃɔːt/", word: "short", meaning: "ngắn / thấp" }, { ipa: "/lɒŋ/", word: "long", meaning: "dài" }, { ipa: "/faːst/", word: "fast", meaning: "nhanh" }, { ipa: "/sləʊ/", word: "slow", meaning: "chậm" },
         { ipa: "/nuː/", word: "new", meaning: "mới" }, { ipa: "/oʊld/", word: "old", meaning: "cũ / già" }, { ipa: "/jʌŋ/", word: "young", meaning: "trẻ trung" }, { ipa: "/kliːn/", word: "clean", meaning: "sạch sẽ" }, { ipa: "/ˈdɜːti/", word: "dirty", meaning: "bẩn thỉu" },
         { ipa: "/gʊd/", word: "good", meaning: "tốt" }, { ipa: "/bæd/", word: "bad", meaning: "xấu / tồi tệ" }, { ipa: "/ˈizi/", word: "easy", meaning: "dễ dàng" }, { ipa: "/hɑːd/", word: "hard", meaning: "khó / cứng" }, { ipa: "/suːp/", word: "soup", meaning: "món súp / canh" },
         { ipa: "/keɪk/", word: "cake", meaning: "bánh ngọt" }, { ipa: "/sɔːlt/", word: "salt", meaning: "muối" }, { ipa: "/ˈʃʊɡə/", word: "sugar", meaning: "đường" }, { ipa: "/ˈpepə/", word: "pepper", meaning: "tiêu" }, { ipa: "/bɒtl/", word: "bottle", meaning: "chai / lọ" },
@@ -420,7 +405,7 @@
         { ipa: "/ˈdɜːti/", word: "dirty", meaning: "bẩn thỉu" }, { ipa: "/dɪˈskʌvə/", word: "discover", meaning: "khám phá" }, { ipa: "/dɪˈziːz/", word: "disease", meaning: "căn bệnh" }, { ipa: "/ˈdɒktə/", word: "doctor", meaning: "bác sĩ" }, { ipa: "/ˈdɒlə/", word: "dollar", meaning: "đô la" },
         { ipa: "/ˈɜːli/", word: "early", meaning: "sớm" }, { ipa: "/ˈiːzi/", word: "easy", meaning: "dễ dàng" }, { ipa: "/ˈefət/", word: "effort", meaning: "nỗ lực" }, { ipa: "/ˈenədʒi/", word: "energy", meaning: "năng lượng" }, { ipa: "/ɪnˈdʒɔɪ/", word: "enjoy", meaning: "thưởng thức" },
         { ipa: "/ɪˈnʌf/", word: "enough", meaning: "đủ" }, { ipa: "/ˈentə/", word: "enter", meaning: "đi vào" }, { ipa: "/ɪnˈtaɪə/", word: "entire", meaning: "toàn bộ" }, { ipa: "/ɪˈvent/", word: "event", meaning: "sự kiện" }, { ipa: "/ˈevə/", word: "ever", meaning: "từng, bao giờ" },
-        { ipa: "/ˈevri/", word: "every", meaning: "mỗi, mọi" }, { ipa: "/ɪɡˈzækt/", word: "exact", meaning: "chính xác" }, { ipa: "/ɪɡˈzɑːmpl/", word: "example", meaning: "ví dụ" }, { ipa: "/ɪkˈspekt/", word: "expect", meaning: "kỳ vọng" }, { ipa: "/ɪkˈspleɪn/", word: "explain", meaning: "giải thích" },
+        { ipa: "/ˈevri/", word: "every", meaning: "mỗi, mọi" }, { ipa: "/ɪɡˈzækt/", word: "exact", meaning: "chính xác" }, { ipa: "/ɪɡˈzɑːmpl/", word: "example", meaning: "ví dụ" }, { ipa: "/kriˈeɪt/", word: "create", meaning: "tạo ra" }, { ipa: "/ɪkˈspleɪn/", word: "explain", meaning: "giải thích" },
         { ipa: "/ˈfæktə/", word: "factor", meaning: "yếu tố" }, { ipa: "/ˈfæməli/", word: "family", meaning: "gia đình" }, { ipa: "/ˈfeɪməs/", word: "famous", meaning: "nổi tiếng" }, { ipa: "/ˈfɑːðə/", word: "father", meaning: "bố" }, { ipa: "/ˈfɪɡə/", word: "figure", meaning: "con số, nhân vật" },
         { ipa: "/ˈfaɪnl/", word: "final", meaning: "cuối cùng" }, { ipa: "/ˈfɪnɪʃ/", word: "finish", meaning: "kết thúc" }, { ipa: "/ˈflaʊə/", word: "flower", meaning: "bông hoa" }, { ipa: "/ˈfəʊkəs/", word: "focus", meaning: "tập trung" }, { ipa: "/ˈfɒləʊ/", word: "follow", meaning: "theo sau" },
         { ipa: "/ˈfɒrɪst/", word: "forest", meaning: "rừng" }, { ipa: "/fəˈɡet/", word: "forget", meaning: "quên" }, { ipa: "/ˈfjuːtʃə/", word: "future", meaning: "tương lai" }, { ipa: "/ˈɡɑːdn/", word: "garden", meaning: "khu vườn" }, { ipa: "/ˈdʒenrəl/", word: "general", meaning: "chung chung" },
@@ -429,7 +414,7 @@
         { ipa: "/ˈmɪdl/", word: "middle", meaning: "ở giữa" }, { ipa: "/ˈmɪnɪt/", word: "minute", meaning: "phút" }, { ipa: "/ˈmɪrə/", word: "mirror", meaning: "cái gương" }, { ipa: "/ˈmɒdl/", word: "model", meaning: "mô hình, người mẫu" }, { ipa: "/ˈmɒdn/", word: "modern", meaning: "hiện đại" },
         { ipa: "/ˈməʊmənt/", word: "moment", meaning: "khoảnh khắc" }, { ipa: "/ˈmʌni/", word: "money", meaning: "tiền bạc" }, { ipa: "/ˈmʌŋki/", word: "monkey", meaning: "con khỉ" }, { ipa: "/ˈmɔːnɪŋ/", word: "morning", meaning: "buổi sáng" }, { ipa: "/ˈmaʊntən/", word: "mountain", meaning: "ngọn núi" },
         { ipa: "/ˈmɜːdə/", word: "murder", meaning: "sát hại" }, { ipa: "/ˈmʌsl/", word: "muscle", meaning: "cơ bắp" }, { ipa: "/ˈmjuːzɪk/", word: "music", meaning: "âm nhạc" }, { ipa: "/ˈnærəʊ/", word: "narrow", meaning: "chật hẹp" }, { ipa: "/ˈneɪʃn/", word: "nation", meaning: "quốc gia" },
-        { ipa: "/ˈneɪtʃə/", word: "nature", meaning: "thiên nhiên" }, { ipa: "/ˈnɜːvəs/", word: "nervous", meaning: "lo lắng" }, { ipa: "/ˈnɔːml/", word: "normal", meaning: "bình thường" }, { ipa: "/ˈnʌθɪŋ/", word: "nothing", meaning: "không có gì" }, { ipa: "/ˈnəʊtɪs/", word: "notice", meaning: "chú ý" },
+        { ipa: "/ˈneɪtʃə/", word: "nature", meaning: " thiên nhiên" }, { ipa: "/ˈnɜːvəs/", word: "nervous", meaning: "lo lắng" }, { ipa: "/ˈnɔːml/", word: "normal", meaning: "bình thường" }, { ipa: "/ˈnʌθɪŋ/", word: "nothing", meaning: "không có gì" }, { ipa: "/ˈnəʊtɪs/", word: "notice", meaning: "chú ý" },
         { ipa: "/ˈnʌmbə/", word: "number", meaning: "con số" }, { ipa: "/ˈɒbdʒɪkt/", word: "object", meaning: "vật thể" }, { ipa: "/ˈəʊʃn/", word: "ocean", meaning: "đại dương" }, { ipa: "/ˈɒfɪs/", word: "office", meaning: "văn phòng" }, { ipa: "/ˈɒnlaɪn/", word: "online", meaning: "trực tuyến" },
         { ipa: "/ˈɒpʃn/", word: "option", meaning: "lựa chọn" }, { ipa: "/ˈɔːdə/", word: "order", meaning: "gọi món, ra lệnh" }, { ipa: "/ˈɒrɪdʒɪn/", word: "origin", meaning: "nguồn gốc" }, { ipa: "/ˈaʊtlaɪn/", word: "outline", meaning: "dàn ý" }, { ipa: "/ˈpæləs/", word: "palace", meaning: "cung điện" },
         { ipa: "/ˈpænɪk/", word: "panic", meaning: "hoảng loạn" }, { ipa: "/ˈpeɪpə/", word: "paper", meaning: "tờ giấy" }, { ipa: "/ˈpeərənt/", word: "parent", meaning: "phụ huynh" }, { ipa: "/ˈpɑːti/", word: "party", meaning: "bữa tiệc" }, { ipa: "/ˈpæsɪndʒə/", word: "passenger", meaning: "hành khách" },
@@ -439,21 +424,21 @@
         { ipa: "/ˈɔːltə/", word: "alter", meaning: "thay đổi, sửa đổi" }, { ipa: "/æmˈbɪʃn/", word: "ambition", meaning: "tham vọng" }, { ipa: "/əˈmaʊnt/", word: "amount", meaning: "số lượng" }, { ipa: "/ˈæŋkl/", word: "ankle", meaning: "mắt cá chân" }, { ipa: "/əˈpɔːtmənt/", word: "apartment", meaning: "căn hộ" },
         { ipa: "/əˈpɒlədʒaɪz/", word: "apologize", meaning: "xin lỗi" }, { ipa: "/əˈpɪərəns/", word: "appearance", meaning: "diệu mạo, vẻ bề ngoài" }, { ipa: "/ˈæpəteɪt/", word: "appetite", meaning: "sự ngon miệng, thèm ăn" }, { ipa: "/əˈplaɪəns/", word: "appliance", meaning: "thiết bị, dụng cụ" }, { ipa: "/ˈæmbiənt/", word: "ambient", meaning: "xung quanh, bao quanh" },
         { ipa: "/əˈpoint/", word: "appoint", meaning: "bổ nhiệm, chỉ định" }, { ipa: "/əˈpriːʃieɪt/", word: "appreciate", meaning: "trân trọng, đánh giá cao" }, { ipa: "/ˈɑːɡjumənt/", word: "argument", meaning: "sự tranh luận, lý lẽ" }, { ipa: "/əˈreɪndʒmənt/", word: "arrangement", meaning: "sự sắp xếp" }, { ipa: "/əˈrest/", word: "arrest", meaning: "bắt giữ" },
-        { ipa: "/ˈærəɡənt/", word: "arrogant", meaning: "kiêu ngạo, ngạo mạn" }, { ipa: "/ˈændʒl/", word: "angel", meaning: "thiên thần" }, { ipa: "/əˈʃeɪmd/", word: "ashamed", meaning: "xấu hổ" }, { ipa: "/ˈæspekt/", word: "aspect", meaning: "khía cạnh, phương diện" }, { ipa: "/əˈsɪstənt/", word: "assistant", meaning: "trợ lý" },
-        { ipa: "/əˈsəʊʃieɪt/", word: "associate", meaning: "liên kết, cộng tác" }, { ipa: "/əˈtiːv/", word: "achieve", meaning: "đạt được" }, { ipa: "/ˈæmətʃə/", word: "amateur", meaning: "người nghiệp dư" }, { ipa: "/əˈtræktɪv/", word: "attractive", meaning: "thu hút, hấp dẫn" }, { ipa: "/ˈɔːdiəns/", word: "audience", meaning: "khán giả" },
+        { ipa: "/ˈærəɡənt/", word: "arrogant", meaning: "kiêu ngạo, ngạo mạn" }, { ipa: "/ˈændʒl/", word: "angel", meaning: "thiên thần" }, { ipa: "/əˈsheɪmd/", word: "ashamed", meaning: "xấu hổ" }, { ipa: "/ˈæspekt/", word: "aspect", meaning: "khía cạnh, phương diện" }, { ipa: "/əˈsɪstənt/", word: "assistant", meaning: "trợ lý" },
+        { ipa: "/əˈsəʊʃieɪt/", word: "associate", meaning: "liên kết, cộng tác" }, { ipa: "/əˈtʃiːv/", word: "achieve", meaning: "đạt được" }, { ipa: "/ˈæmətʃə/", word: "amateur", meaning: "người nghiệp dư" }, { ipa: "/əˈtræktɪv/", word: "attractive", meaning: "thu hút, hấp dẫn" }, { ipa: "/ˈɔːdiəns/", word: "audience", meaning: "khán giả" },
         { ipa: "/əˈvɔɪd/", word: "avoid", meaning: "tránh né" }, { ipa: "/ˈbækɡraʊnd/", word: "background", meaning: "nền tảng, bối cảnh" }, { ipa: "/ˈbæɡɪdʒ/", word: "baggage", meaning: "hành lý" }, { ipa: "/ˈbæŋkrʌpt/", word: "bankrupt", meaning: "phá sản" }, { ipa: "/ˈbɑːbə/", word: "barber", meaning: "thợ cắt tóc nam" },
         { ipa: "/ˈbɑːɡɪn/", word: "bargain", meaning: "mặc cả, món hời" }, { ipa: "/ˈbæriə/", word: "barrier", meaning: "rào cản" }, { ipa: "/ˈbɪtə/", word: "bitter", meaning: "đắng, cay đắng" }, { ipa: "/bleɪm/", word: "blame", meaning: "đổ lỗi, khiển trách" }, { ipa: "/blɪŋk/", word: "blink", meaning: "nháy mắt, chớp mắt" },
         { ipa: "/ˈblɪstə/", word: "blister", meaning: "vết phồng rộp" }, { ipa: "/bəʊst/", word: "boast", meaning: "khoe khoang" }, { ipa: "/ˈbɔːdrəm/", word: "boardroom", meaning: "phòng họp ban giám đốc" }, { ipa: "/ˈbɒnet/", word: "bonnet", meaning: "nắp ca-pô xe" }, { ipa: "/ˈbɔːrɪŋ/", word: "boring", meaning: "nhạt nhẽo, tẻ nhạt" },
-        { ipa: "/ˈbɒdrə/", word: "bother", meaning: "làm phiền, bận tâm" }, { ipa: "/ˈbaʊndri/", word: "boundary", meaning: "ranh giới, biên giới" }, { ipa: "/brænd/", word: "brand", meaning: "thương hiệu" }, { ipa: "/bʊʃ/", word: "bush", meaning: "bụi cây, bụi rậm" }, { ipa: "/ˈbʌtəflaɪ/", word: "butterfly", meaning: "con bướm" },
+        { ipa: "/ˈbɒðə/", word: "bother", meaning: "làm phiền, bận tâm" }, { ipa: "/ˈbaʊndri/", word: "boundary", meaning: "ranh giới, biên giới" }, { ipa: "/brænd/", word: "brand", meaning: "thương hiệu" }, { ipa: "/bʊʃ/", word: "bush", meaning: "bụi cây, bụi rậm" }, { ipa: "/ˈbʌtəflaɪ/", word: "butterfly", meaning: "con bướm" },
         { ipa: "/ˈkæbɪn/", word: "cabin", meaning: "buồng lái, cabin, nhà gỗ nhỏ" }, { ipa: "/ˈkæbɪnət/", word: "cabinet", meaning: "tủ nhiều ngăn, nội các" }, { ipa: "/ˈkæfətiːriə/", word: "cafeteria", meaning: "quán ăn tự phục vụ" }, { ipa: "/kælˈkjuːleɪt/", word: "calculate", meaning: "tính toán" }, { ipa: "/ˈkændɪdət/", word: "candidate", meaning: "ứng cử viên" },
         { ipa: "/kəˈpæsəti/", word: "capacity", meaning: "sức chứa, dung tích" }, { ipa: "/ˈkɑːɡəʊ/", word: "cargo", meaning: "hàng hóa (vận tải)" }, { ipa: "/ˈkɑːpɪt/", word: "carpet", meaning: "tấm thảm" }, { ipa: "/ˈkæʃɪə/", word: "cashier", meaning: "thu ngân" }, { ipa: "/ˈkæsl/", word: "castle", meaning: "lâu đài" },
-        { ipa: "/ˈkæzʊəl/", word: "casual", meaning: "thông thường, giản dị" }, { ipa: "/ˈkætəlɒɡ/", word: "catalog", meaning: "danh mục sản phẩm" }, { ipa: "/ˈseɪlɪŋ/", word: "ceiling", meaning: "trần nhà" }, { ipa: "/ˈselə/", word: "cellar", meaning: "hầm chứa rượu" }, { ipa: "/ˈseməteri/", word: "cemetery", meaning: "nghĩa trang" },
-        { ipa: "/ˈsɜːtɪfɪkət/", word: "certificate", meaning: "chứng chỉ, giấy chứng nhận" }, { ipa: "/ˈtʃæmpiən/", word: "champion", meaning: "nhà vô địch" }, { ipa: "/ˈtʃænəl/", word: "channel", meaning: "kênh truyền hình/kênh nước" }, { ipa: "/ˈtʃæpəl/", word: "chapel", meaning: "nhà nguyện nhỏ" }, { ipa: "/ˈtʃærtɪ/", word: "charity", meaning: "hội từ thiện, lòng bao dung" },
-        { ipa: "/ˈtʃɑːmɪŋ/", word: "charming", meaning: "quyến rũ, duyên dáng" }, { ipa: "/tʃɪːf/", word: "chief", meaning: "trưởng phòng, người đứng đầu" }, { ipa: "/ˈtʃɪmni/", word: "chimney", meaning: "ống khói" }, { ipa: "/ˈtʃɒpstrɪks/", word: "chopsticks", meaning: "đôi đũa" }, { ipa: "/ˈsɪnəmə/", word: "cinema", meaning: "rạp chiếu phim" },
-        { ipa: "/ˈsɪtɪzn/", word: "citizen", meaning: "công dân" }, { ipa: "/ˈklæsik/", word: "classic", meaning: "kinh điển, cổ điển" }, { ipa: "/ˈklɪf/", word: "cliff", meaning: "vách đá" }, { ipa: "/ˈklaɪmət/", word: "climate", meaning: "khí hậu" }, { ipa: "/ˈklɪnɪk/", word: "clinic", meaning: "phòng khám" },
-        { ipa: "/ˈkləʊvə/", word: "clover", meaning: "cỏ ba lá" }, { ipa: "/ˈkoʊst/", word: "coast", meaning: "bờ biển" }, { ipa: "/kəˈlɑːps/", word: "collapse", meaning: "đổ sụp, sụp đổ" }, { ipa: "/ˈkɒmət/", word: "comet", meaning: "sao chổi" }, { ipa: "/ˈkɒmɪdi/", word: "comedy", meaning: "hài kịch" },
-        { ipa: "/ˈkɒmraɪz/", word: "compromise", meaning: "sự thỏa hiệp" }, { ipa: "/kənˈsɪːl/", word: "conceal", meaning: "che giấu, giấu giếm" }, { ipa: "/ˈkɒnkrɪːt/", word: "concrete", meaning: "bê tông" }, { ipa: "/kənˈfess/", word: "confess", meaning: "thú nhận, xưng tội" }, { ipa: "/kənˈfjuːz/", word: "confuse", meaning: "làm rối trí, nhầm lẫn" },
-        { ipa: "/kənˈɡrætʃəleɪt/", word: "congratulate", meaning: "chúc mừng" }, { ipa: "/ˈkɒnʃəs/", word: "conscious", meaning: "tỉnh táo, có ý thức" }, { ipa: "/ˈkɒn.sɪ.kwəns/", word: "consequence", meaning: "hậu quả, hệ quả" }, { ipa: "/kənˈsɜːv/", word: "conserve", meaning: "bảo tồn, giữ gìn" }, { ipa: "/kənˈsɪst/", word: "consist", meaning: "bao gồm" }
+        { ipa: "/ˈkæʒʊəl/", word: "casual", meaning: "thông thường, giản dị" }, { ipa: "/ˈkætəlɒɡ/", word: "catalog", meaning: "danh mục sản phẩm" }, { ipa: "/ˈsiːlɪŋ/", word: "ceiling", meaning: "trần nhà" }, { ipa: "/ˈselə/", word: "cellar", meaning: "hầm chứa rượu" }, { ipa: "/ˈseməteri/", word: "cemetery", meaning: "nghĩa trang" },
+        { ipa: "/ˈsɜːtɪfɪkət/", word: "certificate", meaning: "chứng chỉ, giấy chứng nhận" }, { ipa: "/ˈtʃæmpiən/", word: "champion", meaning: "nhà vô địch" }, { ipa: "/ˈtʃænəl/", word: "channel", meaning: "kênh truyền hình/kênh nước" }, { ipa: "/ˈtʃæpəl/", word: "chapel", meaning: "nhà nguyện nhỏ" }, { ipa: "/ˈtʃærɪti/", word: "charity", meaning: "hội từ thiện, lòng bao dung" },
+        { ipa: "/ˈtʃɑːmɪŋ/", word: "charming", meaning: "quyến rũ, duyên dáng" }, { ipa: "/tʃiːf/", word: "chief", meaning: "trưởng phòng, người đứng đầu" }, { ipa: "/ˈtʃɪmni/", word: "chimney", meaning: "ống khói" }, { ipa: "/ˈtʃɒpstrɪks/", word: "chopsticks", meaning: "đôi đũa" }, { ipa: "/ˈsɪnəmə/", word: "cinema", meaning: "rạp chiếu phim" },
+        { ipa: "/ˈsɪtɪzn/", word: "citizen", meaning: "công dân" }, { ipa: "/ˈklæsɪk/", word: "classic", meaning: "kinh điển, cổ điển" }, { ipa: "/ˈklɪf/", word: "cliff", meaning: "vách đá" }, { ipa: "/ˈklaɪmət/", word: "climate", meaning: "khí hậu" }, { ipa: "/ˈklɪnɪk/", word: "clinic", meaning: "phòng khám" },
+        { ipa: "/ˈkləʊvə/", word: "clover", meaning: "cỏ ba lá" }, { ipa: "/ˈkəʊst/", word: "coast", meaning: "bờ biển" }, { ipa: "/kəˈlæps/", word: "collapse", meaning: "đổ sụp, sụp đổ" }, { ipa: "/ˈkɒmət/", word: "comet", meaning: "sao chổi" }, { ipa: "/ˈkɒmɪdi/", word: "comedy", meaning: "hài kịch" },
+        { ipa: "/ˈkɒmprəmaɪz/", word: "compromise", meaning: "sự thỏa hiệp" }, { ipa: "/kənˈsiːl/", word: "conceal", meaning: "che giấu, giấu giếm" }, { ipa: "/ˈkɒnkrɪːt/", word: "concrete", meaning: "bê tông" }, { ipa: "/kənˈfes/", word: "confess", meaning: "thú nhận, xưng tội" }, { ipa: "/kənˈfjuːz/", word: "confuse", meaning: "làm rối trí, nhầm lẫn" },
+        { ipa: "/kənˈɡrætʃuleɪt/", word: "congratulate", meaning: "chúc mừng" }, { ipa: "/ˈkɒnʃəs/", word: "conscious", meaning: "tỉnh táo, có ý thức" }, { ipa: "/ˈkɒnsɪkwəns/", word: "consequence", meaning: "hậu quả, hệ quả" }, { ipa: "/kənˈsɜːv/", word: "conserve", meaning: "bảo tồn, giữ gìn" }, { ipa: "/kənˈsɪst/", word: "consist", meaning: "bao gồm" }
     ];
 
     const toeicWords = [
@@ -479,7 +464,7 @@
         { ipa: "/ɪɡˈzɪst/", word: "exist", meaning: "tồn tại" }, { ipa: "/ɪkˈspænd/", word: "expand", meaning: "mở rộng" }, { ipa: "/ɪkˈspens/", word: "expense", meaning: "chi phí" }, { ipa: "/ˈekspɔːt/", word: "export", meaning: "xuất khẩu" }, { ipa: "/ɪkˈstend/", word: "extend", meaning: "kéo dài" },
         { ipa: "/ˈfæktəri/", word: "factory", meaning: "nhà máy" }, { ipa: "/ˈfiːtʃə/", word: "feature", meaning: "tính năng" },
         { ipa: "/ˈfaɪnæns/", word: "finance", meaning: "tài chính" }, { ipa: "/ˈfɔːwəd/", word: "forward", meaning: "chuyển tiếp" }, { ipa: "/ˈɡɑːmənt/", word: "garment", meaning: "may mặc, quần áo" }, { ipa: "/ˈdʒenjuɪn/", word: "genuine", meaning: "chính hãng, thật" }, { ipa: "/ˈgaɪdns/", word: "guidance", meaning: "sự hướng dẫn" },
-        { ipa: "/ˈhændl/", word: "handle", meaning: "xử lý, giải quyết" }, { ipa: "/ˈhæzəd/", word: "hazard", meaning: "mối nguy hiểm" }, { ipa: "/ˈtʃeə/", word: "chair", meaning: "cái ghế" }, { ipa: "/ˈɪnvɔɪ/", word: "invoice", meaning: "hóa đơn" }, { ipa: "/ˈsource/", word: "resource", meaning: "nguồn lực" },
+        { ipa: "/ˈhændl/", word: "handle", meaning: "xử lý, giải quyết" }, { ipa: "/ˈhæzəd/", word: "hazard", meaning: "mối nguy hiểm" }, { ipa: "/ˈtʃeə/", word: "chair", meaning: "cái ghế" }, { ipa: "/ˈtɪnvɔɪs/", word: "invoice", meaning: "hóa đơn" }, { ipa: "/rɪˈsɔːs/", word: "resource", meaning: "nguồn lực" },
         { ipa: "/ˈɪmplɪment/", word: "implement", meaning: "triển khai, thực hiện" }, { ipa: "/ɪnˈsentɪv/", word: "incentive", meaning: "sự ưu đãi, khuyến khích" }, { ipa: "/ɪnˈkɜː/", word: "incur", meaning: "phát sinh, gánh chịu" }, { ipa: "/ˈɪndɪkeɪt/", word: "indicate", meaning: "chỉ ra, cho biết" }, { ipa: "/ɪnˈspekt/", word: "inspect", meaning: "thanh tra, kiểm tra" },
         { ipa: "/ɪnˈstɔːl/", word: "install", meaning: "lắp đặt, cài đặt" }, { ipa: "/ɪnˈtend/", word: "intend", meaning: "có ý định" }, { ipa: "/ɪnˈvest/", word: "invest", meaning: "đầu tư" }, { ipa: "/ˈdʒɜːnl/", word: "journal", meaning: "tạp chí, sổ nhật ký" }, { ipa: "/ˈdʒʌstɪfaɪ/", word: "justify", meaning: "chứng minh, biện minh" },
         { ipa: "/ˈlændskeɪp/", word: "landscape", meaning: "bối cảnh, phong cảnh" }, { ipa: "/ˈledʒə/", word: "ledger", meaning: "sổ cái" }, { ipa: "/ˈliːɡl/", word: "legal", meaning: "hợp pháp" }, { ipa: "/ˈlesn/", word: "lessen", meaning: "giảm bớt" }, { ipa: "/ˈlaɪsns/", word: "license", meaning: "giấy phép, cấp phép" },
@@ -496,11 +481,11 @@
         { ipa: "/ˈædveɪnt/", word: "advent", meaning: "sự xuất hiện, sự đến" },
         { ipa: "/ˈædvəkeɪt/", word: "advocate", meaning: "ủng hộ, người bào chữa" },
         { ipa: "/ˈæɡrɪɡət/", word: "aggregate", meaning: "tổng hợp, khối lượng lớn" },
-        { ipa: "/əˈlɪːvɪeɪt/", word: "alleviate", meaning: "làm giảm bớt, xoa dịu" },
-        { ipa: "/ˈælkəteɪt/", word: "allocate", meaning: "phân bổ, cấp cho" },
-        { ipa: "/əmˈbɪɡjuəs/", word: "ambiguous", meaning: "mơ hồ, nhập nhằng" },
-        { ipa: "/əˈmɪnd/", word: "amend", meaning: "sửa đổi, bổ sung (luật/tài liệu)" },
-        { ipa: "/æntɪsɪpeɪt/", word: "anticipate", meaning: "dự đoán, lường trước" },
+        { ipa: "/əˈliːvɪeɪt/", word: "alleviate", meaning: "làm giảm bớt, xoa dịu" },
+        { ipa: "/ˈæləkeɪt/", word: "allocate", meaning: "phân bổ, cấp cho" },
+        { ipa: "/æmˈbɪɡjuəs/", word: "ambiguous", meaning: "mơ hồ, nhập nhằng" },
+        { ipa: "/əˈmend/", word: "amend", meaning: "sửa đổi, bổ sung (luật/tài liệu)" },
+        { ipa: "/ænˈtɪsɪpeɪt/", word: "anticipate", meaning: "dự đoán, lường trước" },
         { ipa: "/əˈpærənt/", word: "apparent", meaning: "rõ ràng, hiển nhiên" },
         { ipa: "/ˈæprəʊprɪət/", word: "appropriate", meaning: "phù hợp, thích đáng" },
         { ipa: "/ˈɑːbɪtrəri/", word: "arbitrary", meaning: "tùy ý, độc đoán" },
@@ -509,35 +494,35 @@
         { ipa: "/ˈɔːθəraɪz/", word: "authorize", meaning: "ủy quyền, cho phép" },
         { ipa: "/ˈbærən/", word: "barren", meaning: "cằn cỗi, không có kết quả" },
         { ipa: "/ˈbenefɪt/", word: "benefit", meaning: "lợi ích, phúc lợi" },
-        { ipa: "/ˈbaɪæst/", word: "biased", meaning: "thiên vị, thành kiến" },
-        { ipa: "/ˈbʊːst/", word: "boost", meaning: "thúc đẩy, tăng cường" },
-        { ipa: "/ˈbrəʊʃə/", word: "brochure", meaning: "sách hướng dẫn nhỏ, tờ bướm quảng cáo" },
-        { ipa: "/ˈkætəɡɔːraɪz/", word: "categorize", meaning: "phân loại" },
-        { ipa: "/ˈtʃærɪstɪk/", word: "characteristic", meaning: "đặc tính, đặc trưng" },
+        { ipa: "/ˈbaɪəst/", word: "biased", meaning: "thiên vị, thành kiến" },
+        { ipa: "/buːst/", word: "boost", meaning: "thúc đẩy, tăng cường" },
+        { ipa: "/brəʊˈʃʊə/", word: "brochure", meaning: "sách hướng dẫn nhỏ, tờ bướm quảng cáo" },
+        { ipa: "/ˈkætəɡəraɪz/", word: "categorize", meaning: "phân loại" },
+        { ipa: "/ˌkærəktəˈrɪstɪk/", word: "characteristic", meaning: "đặc tính, đặc trưng" },
         { ipa: "/ˈsɜːrkjəleɪt/", word: "circulate", meaning: "lưu hành, tuần hoàn" },
         { ipa: "/ˈklærɪfaɪ/", word: "clarify", meaning: "làm rõ, làm sáng tỏ" },
         { ipa: "/kəʊˈhɪərənt/", word: "coherent", meaning: "mạch lạc, chặt chẽ" },
         { ipa: "/kəˈlæbəreɪt/", word: "collaborate", meaning: "hợp tác" },
         { ipa: "/kəˈmɒdəti/", word: "commodity", meaning: "hàng hóa, nhu yếu phẩm" },
-        { ipa: "/kəmˈpel/", word: "compelled", meaning: "bị bắt buộc, cưỡng bách" },
-        { ipa: "/kəmˈpenːseɪt/", word: "compensate", meaning: "đền bù, bồi thường" },
-        { ipa: "/kəmˈpɪləbl/", word: "compatible", meaning: "tương thích, hợp nhau" },
-        { ipa: "/kəmˈpɪl/", word: "compile", meaning: "biên soạn, tập hợp tài liệu" },
+        { ipa: "/kəmˈpeld/", word: "compelled", meaning: "bị bắt buộc, cưỡng bách" },
+        { ipa: "/ˈkɒmpenseɪt/", word: "compensate", meaning: "đền bù, bồi thường" },
+        { ipa: "/kəmˈpætəbl/", word: "compatible", meaning: "tương thích, hợp nhau" },
+        { ipa: "/kəmˈpaɪl/", word: "compile", meaning: "biên soạn, tập hợp tài liệu" },
         { ipa: "/ˈkɒmplɪmənt/", word: "compliment", meaning: "lời khen ngợi" },
-        { ipa: "/kəmˈprɪhənsɪv/", word: "comprehensive", meaning: "toàn diện, bao quát" },
+        { ipa: "/ˌkɒmprɪˈhensɪv/", word: "comprehensive", meaning: "toàn diện, bao quát" },
         { ipa: "/ˈkɒmprəmaɪz/", word: "compromise", meaning: "thỏa hiệp" },
-        { ipa: "/ˈkɒnsɪkjuːtɪv/", word: "consecutive", meaning: "liên tiếp, liền kề" },
-        { ipa: "/kənˈsensus/", word: "consensus", meaning: "sự đồng thuận, nhất trí" },
-        { ipa: "/kənˈsɪdəreɪbl/", word: "considerable", meaning: "đáng kể, to lớn" },
-        { ipa: "/kənˈstɪtjuːt/", word: "constitute", meaning: "cấu thành, thiết lập" },
+        { ipa: "/kənˈsekjətɪv/", word: "consecutive", meaning: "liên tiếp, liền kề" },
+        { ipa: "/kənˈsensəs/", word: "consensus", meaning: "sự đồng thuận, nhất trí" },
+        { ipa: "/kənˈsɪdərəbl/", word: "considerable", meaning: "đáng kể, to lớn" },
+        { ipa: "/ˈkɒnstɪtjuːt/", word: "constitute", meaning: "cấu thành, thiết lập" },
         { ipa: "/kənˈstreɪnt/", word: "constraint", meaning: "sự hạn chế, sự ràng buộc" },
         { ipa: "/kənˈtrɪbjuːt/", word: "contribute", meaning: "đóng góp, góp phần" },
-        { ipa: "/kəˈpəʊnənt/", word: "component", meaning: "thành phần cấu tạo" },
-        { ipa: "/kənˈvɪːnɪənt/", word: "convenient", meaning: "tiện lợi, thuận tiện" },
+        { ipa: "/kəmˈpəʊnənt/", word: "component", meaning: "thành phần cấu tạo" },
+        { ipa: "/kənˈviːniənt/", word: "convenient", meaning: "tiện lợi, thuận tiện" },
         { ipa: "/kənˈveɪ/", word: "convey", meaning: "truyền tải (thông điệp), vận chuyển" },
         { ipa: "/kəʊp/", word: "cope", meaning: "đương đầu, đối phó" },
         { ipa: "/ˈkɔːpərət/", word: "corporate", meaning: "thuộc về doanh nghiệp, tập đoàn" },
-        { ipa: "/ˈkriːdɪbl/", word: "credible", meaning: "đáng tin cậy, có uy tín" }
+        { ipa: "/ˈkredəbl/", word: "credible", meaning: "đáng tin cậy, có uy tín" }
     ];
 
     // Trạng thái ứng dụng
@@ -666,7 +651,7 @@
             correctCount++;
             document.getElementById("correct-display").innerText = `Đúng: ${correctCount}`;
             
-            feedbackEl.innerHTML = `✅ Chính xác! <span class="auto-next-msg">Đang chuyển từ tiếp theo trong 2 giây...</span>`;
+            feedbackEl.innerHTML = `✅ Chính xác! <span class="auto-next-msg">Đang chuyển từ tiếp theo trong 1 giây...</span>`;
             feedbackEl.className = "feedback correct";
             nextBtn.style.display = "none";
 
