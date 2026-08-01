@@ -31,14 +31,14 @@
             font-family: 'Nunito', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
-        /* --- Header / Hero Section --- */
+        /* --- Header / Hero Section (Thu gọn padding & kích thước) --- */
         .hero {
             background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
             color: white;
-            padding: 60px 20px 80px 20px;
+            padding: 30px 15px 50px 15px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
@@ -48,25 +48,25 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 40px;
+            gap: 20px;
             flex-wrap: wrap-reverse;
         }
 
         .hero-text {
             flex: 1;
             text-align: left;
-            min-width: 300px;
+            min-width: 250px;
         }
 
         .hero-text h1 {
-            font-size: 2.8rem;
-            margin-bottom: 15px;
+            font-size: 1.8rem;
+            margin-bottom: 8px;
             font-weight: 800;
-            line-height: 1.2;
+            line-height: 1.25;
         }
 
         .hero-text p {
-            font-size: 1.25rem;
+            font-size: 1rem;
             opacity: 0.95;
             font-weight: 600;
         }
@@ -76,12 +76,12 @@
         }
 
         .profile-pic {
-            width: 220px;
-            height: 220px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
             object-fit: cover;
-            border: 6px solid rgba(255, 255, 255, 0.8);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            border: 4px solid rgba(255, 255, 255, 0.85);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
             transition: transform 0.3s ease;
         }
 
@@ -93,34 +93,34 @@
             .hero-content {
                 justify-content: center;
                 text-align: center;
+                gap: 12px;
             }
             .hero-text {
                 text-align: center;
             }
-            .profile-pic {
-                width: 180px;
-                height: 180px;
+            .hero-text h1 {
+                font-size: 1.6rem;
             }
         }
 
-        /* --- Main Content (Cards cho Từ vựng & Ngữ pháp) --- */
+        /* --- Main Content Cards (Thu gọn khoảng cách & padding) --- */
         .container {
             max-width: 1000px;
-            margin: -40px auto 40px auto;
-            padding: 0 20px;
+            margin: -25px auto 25px auto;
+            padding: 0 15px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
             position: relative;
             z-index: 10;
         }
 
         .card {
             background: white;
-            border-radius: 20px;
-            padding: 30px;
+            border-radius: 16px;
+            padding: 18px 20px;
             text-align: center;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-decoration: none;
             color: inherit;
@@ -130,37 +130,37 @@
         }
 
         .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
         }
 
         .card-icon {
-            font-size: 3.5rem;
-            margin-bottom: 15px;
+            font-size: 2.2rem;
+            margin-bottom: 8px;
         }
 
         .card h2 {
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             color: var(--primary);
-            margin-bottom: 10px;
+            margin-bottom: 6px;
             font-weight: 800;
         }
 
         .card p {
             color: var(--text-muted);
-            margin-bottom: 25px;
+            margin-bottom: 15px;
             flex-grow: 1;
-            font-size: 1.05rem;
+            font-size: 0.92rem;
             font-weight: 600;
         }
 
         .btn-card {
             background-color: var(--primary);
             color: white;
-            padding: 12px 25px;
-            border-radius: 50px;
+            padding: 8px 18px;
+            border-radius: 30px;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             transition: background 0.3s;
             width: 100%;
         }
@@ -169,43 +169,82 @@
             background-color: var(--primary-hover);
         }
 
-        /* --- Khu vực Phát âm IPA --- */
-        .pronunciation-section {
+        /* --- Menu Phân Loại Lớp 1 - Lớp 12 (Tối ưu nút bấm gọn gàng) --- */
+        .grade-section {
             max-width: 1000px;
-            margin: 60px auto;
-            padding: 0 20px;
+            margin: 30px auto;
+            padding: 0 15px;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         .section-header h2 {
-            font-size: 2.2rem;
+            font-size: 1.5rem;
             color: #1e293b;
             font-weight: 800;
-            margin-bottom: 10px;
+            margin-bottom: 4px;
         }
 
         .section-header p {
             color: #64748b;
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             font-weight: 600;
+        }
+
+        .grade-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+        }
+
+        .grade-btn {
+            background: white;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 10px 6px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 800;
+            font-size: 0.95rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+            transition: all 0.25s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .grade-btn:hover {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        /* --- Khu vực Phát âm IPA (Thu nhỏ padding & icon) --- */
+        .pronunciation-section {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 0 15px;
         }
 
         .feature-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
         }
 
         .feature-card {
             background: #ffffff;
-            border-radius: 20px;
-            padding: 40px 30px;
+            border-radius: 16px;
+            padding: 22px 18px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
             border: 1px solid #f1f5f9;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
@@ -214,19 +253,19 @@
         }
 
         .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
         }
 
         .icon-wrapper {
-            width: 80px;
-            height: 80px;
+            width: 55px;
+            height: 55px;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+            font-size: 1.6rem;
+            margin-bottom: 12px;
         }
 
         .theory-icon {
@@ -240,24 +279,25 @@
         }
 
         .feature-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: #0f172a;
-            margin-bottom: 15px;
+            margin-bottom: 8px;
             font-weight: 800;
         }
 
         .feature-card p {
             color: #64748b;
-            line-height: 1.6;
-            margin-bottom: 30px;
+            font-size: 0.9rem;
+            line-height: 1.45;
+            margin-bottom: 18px;
             flex-grow: 1;
         }
 
         .btn-action {
             display: inline-block;
-            padding: 12px 30px;
-            border-radius: 50px;
-            font-size: 1.1rem;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.95rem;
             font-weight: 700;
             text-decoration: none;
             transition: all 0.3s ease;
@@ -267,7 +307,7 @@
         .btn-outline {
             background-color: transparent;
             color: #0ea5e9;
-            border: 2px solid #0ea5e9;
+            border: 1.5px solid #0ea5e9;
         }
 
         .btn-outline:hover {
@@ -278,7 +318,7 @@
         .btn-fill {
             background-color: #d946ef;
             color: white;
-            border: 2px solid #d946ef;
+            border: 1.5px solid #d946ef;
         }
 
         .btn-fill:hover {
@@ -286,18 +326,18 @@
             border-color: #c026d3;
         }
 
-        /* --- Contact Section --- */
+        /* --- Contact Section (Gọn gàng) --- */
         .contact-section {
             text-align: center;
-            padding: 50px 20px;
+            padding: 30px 15px;
             background: white;
-            margin-top: 40px;
+            margin-top: 30px;
             border-top: 1px solid #e2e8f0;
         }
 
         .contact-section h2 {
-            font-size: 2.2rem;
-            margin-bottom: 25px;
+            font-size: 1.5rem;
+            margin-bottom: 18px;
             color: var(--text-main);
             font-weight: 800;
         }
@@ -305,17 +345,17 @@
         .social-buttons {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 12px;
             flex-wrap: wrap;
         }
 
         .btn-social {
             display: flex;
             align-items: center;
-            gap: 12px;
-            padding: 10px 25px;
-            border-radius: 50px;
-            font-size: 1.15rem;
+            gap: 8px;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.95rem;
             font-weight: 700;
             text-decoration: none;
             background-color: white;
@@ -324,33 +364,33 @@
 
         .btn-zalo {
             color: var(--zalo-color);
-            border: 2px solid var(--zalo-color);
+            border: 1.5px solid var(--zalo-color);
         }
         .btn-zalo:hover {
             background-color: var(--zalo-color);
             color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 104, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 104, 255, 0.25);
         }
         .zalo-logo {
-            width: 28px;
-            height: 28px;
-            border-radius: 6px;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
         }
 
         .btn-fb {
             color: var(--fb-color);
-            border: 2px solid var(--fb-color);
+            border: 1.5px solid var(--fb-color);
         }
         .btn-fb:hover {
             background-color: var(--fb-color);
             color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(24, 119, 242, 0.25);
         }
         .fb-icon {
-            width: 26px;
-            height: 26px;
+            width: 18px;
+            height: 18px;
             fill: var(--fb-color);
             transition: fill 0.3s;
         }
@@ -361,10 +401,10 @@
         /* --- Footer --- */
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 15px;
             background: var(--text-main);
             color: white;
-            font-size: 1rem;
+            font-size: 0.85rem;
             font-weight: 600;
         }
     </style>
@@ -398,30 +438,53 @@
         <a href="grammar-index.html" class="card">
             <div class="card-icon">📝</div>
             <h2>Ngữ pháp</h2>
-            <p>Thực hành chuyên sâu các chủ điểm ngữ pháp từ mức độ cơ bản đến nâng cao (TOEIC/IELTS).</p>
+            <p>Thực hành chuyên sâu các chủ điểm ngữ pháp từ cơ bản đến nâng cao (TOEIC/IELTS).</p>
             <div class="btn-card">Vào trung tâm Ngữ pháp ➔</div>
         </a>
     </div>
+
+    <!-- Khối Menu các Lớp từ Lớp 1 đến Lớp 12 -->
+    <section class="grade-section">
+        <div class="section-header">
+            <h2>🎓 Chương Trình Học Theo Lớp</h2>
+            <p>Chọn lớp học để tiếp tục lộ trình tương ứng</p>
+        </div>
+
+        <div class="grade-grid">
+            <a href="lop1.html" class="grade-btn">🏫 Lớp 1</a>
+            <a href="lop2.html" class="grade-btn">🏫 Lớp 2</a>
+            <a href="lop3.html" class="grade-btn">🏫 Lớp 3</a>
+            <a href="lop4.html" class="grade-btn">🏫 Lớp 4</a>
+            <a href="lop5.html" class="grade-btn">🏫 Lớp 5</a>
+            <a href="lop6.html" class="grade-btn">🏫 Lớp 6</a>
+            <a href="lop7.html" class="grade-btn">🏫 Lớp 7</a>
+            <a href="lop8.html" class="grade-btn">🏫 Lớp 8</a>
+            <a href="lop9.html" class="grade-btn">🏫 Lớp 9</a>
+            <a href="lop10.html" class="grade-btn">🏫 Lớp 10</a>
+            <a href="lop11.html" class="grade-btn">🏫 Lớp 11</a>
+            <a href="lop12.html" class="grade-btn">🏫 Lớp 12</a>
+        </div>
+    </section>
 
     <!-- Khối 2: Chuẩn hóa Phát âm IPA -->
     <section class="pronunciation-section">
         <div class="section-header">
             <h2>🗣️ Chuẩn Hóa Phát Âm IPA</h2>
-            <p>Lộ trình từ làm quen khẩu hình miệng đến phản xạ nối âm chuẩn bản xứ</p>
+            <p>Lộ trình từ làm quen khẩu hình đến phản xạ nối âm</p>
         </div>
 
         <div class="feature-grid">
             <div class="feature-card">
                 <div class="icon-wrapper theory-icon">📚</div>
                 <h3>Lý Thuyết Phát Âm</h3>
-                <p>Học chi tiết cách đặt lưỡi, khẩu hình miệng và dấu hiệu nhận biết của toàn bộ 44 nguyên âm & phụ âm trong tiếng Anh.</p>
+                <p>Chi tiết cách đặt lưỡi, khẩu hình miệng và dấu hiệu nhận biết của 44 nguyên âm & phụ âm.</p>
                 <a href="ipa-theory.html" class="btn-action btn-outline">Đọc Lý Thuyết</a>
             </div>
 
             <div class="feature-card">
                 <div class="icon-wrapper practice-icon">🎯</div>
                 <h3>Luyện Tập Phản Xạ</h3>
-                <p>Thực hành nhìn phiên âm đoán từ vựng. Trải nghiệm phương pháp học tương tác giúp nhớ sâu và phản xạ cực nhanh.</p>
+                <p>Thực hành nhìn phiên âm đoán từ vựng giúp nhớ sâu và phản xạ nhanh.</p>
                 <a href="ipa-practice.html" class="btn-action btn-fill">Bắt Đầu Luyện Tập</a>
             </div>
         </div>
