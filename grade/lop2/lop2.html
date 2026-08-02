@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiếng Anh Lớp 2 - Học tiếng Anh cùng thầy Danh</title>
+    
+    <!-- Nhúng font chữ Nunito từ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --zalo-color: #0068ff;
+            --fb-color: #1877f2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        /* --- Hero / Header Section --- */
+        .hero {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 30px 15px 40px 15px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            transition: background 0.3s ease;
+            margin-bottom: 12px;
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.35);
+        }
+
+        .hero-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 6px;
+            font-weight: 800;
+        }
+
+        .hero-text p {
+            font-size: 1rem;
+            opacity: 0.95;
+            font-weight: 600;
+        }
+
+        /* --- Lesson List Container --- */
+        .main-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .section-header h2 {
+            font-size: 1.6rem;
+            color: var(--text-main);
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        /* Grid bài học */
+        .lesson-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 18px;
+        }
+
+        .lesson-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+            border-color: var(--primary);
+        }
+
+        .card-header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .lesson-icon {
+            font-size: 1.8rem;
+        }
+
+        .lesson-badge {
+            display: inline-block;
+            background-color: #e0f2fe;
+            color: #0284c7;
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 12px;
+        }
+
+        .lesson-card h3 {
+            font-size: 1.15rem;
+            color: var(--text-main);
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+
+        .lesson-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+
+        .btn-study {
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        .lesson-card:hover .btn-study {
+            background-color: var(--primary-hover);
+        }
+
+        /* --- Contact Section --- */
+        .contact-section {
+            text-align: center;
+            padding: 30px 15px;
+            background: white;
+            margin-top: 40px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .contact-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 18px;
+            color: var(--text-main);
+            font-weight: 800;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn-social {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-decoration: none;
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-zalo {
+            color: var(--zalo-color);
+            border: 1.5px solid var(--zalo-color);
+        }
+        .btn-zalo:hover {
+            background-color: var(--zalo-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 104, 255, 0.25);
+        }
+        .zalo-logo {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+
+        .btn-fb {
+            color: var(--fb-color);
+            border: 1.5px solid var(--fb-color);
+        }
+        .btn-fb:hover {
+            background-color: var(--fb-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(24, 119, 242, 0.25);
+        }
+        .fb-icon {
+            width: 18px;
+            height: 18px;
+            fill: var(--fb-color);
+            transition: fill 0.3s;
+        }
+        .btn-fb:hover .fb-icon {
+            fill: white;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: var(--text-main);
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <!-- Đường dẫn lùi về trang chủ ở thư mục gốc -->
+                <a href="../../index.html" class="back-btn">⬅ Trang chủ</a>
+                <h1>Chương Trình Tiếng Anh Lớp 2</h1>
+                <p>Danh sách các bài học & chủ đề luyện tập dành cho học sinh Lớp 2</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nội dung chính: Danh sách đề mục Bài Học -->
+    <main class="main-container">
+        <div class="section-header">
+            <h2>📚 Danh Sách Chủ Đề Bài Học</h2>
+            <p>Chọn một chủ đề bên dưới để bắt đầu học và làm bài tập</p>
+        </div>
+
+        <div class="lesson-grid">
+            
+            <!-- 1. Animals -->
+            <a href="animals.html" class="lesson-card">
+                <div>
+                    <div class="card-header-flex">
+                        <span class="lesson-badge">Chủ đề 1</span>
+                        <span class="lesson-icon">🐶</span>
+                    </div>
+                    <h3>Animals</h3>
+                    <p>Học từ vựng và câu về thế giới các loài động vật quen thuộc.</p>
+                </div>
+                <div class="btn-study">Vào học ➔</div>
+            </a>
+
+            <!-- 2. Colors -->
+            <a href="colors.html" class="lesson-card">
+                <div>
+                    <div class="card-header-flex">
+                        <span class="lesson-badge">Chủ đề 2</span>
+                        <span class="lesson-icon">🎨</span>
+                    </div>
+                    <h3>Colors</h3>
+                    <p>Khám phá các sắc màu rực rỡ và cách nhận biết bằng tiếng Anh.</p>
+                </div>
+                <div class="btn-study">Vào học ➔</div>
+            </a>
+
+            <!-- 3. Dates -->
+            <a href="dates.html" class="lesson-card">
+                <div>
+                    <div class="card-header-flex">
+                        <span class="lesson-badge">Chủ đề 3</span>
+                        <span class="lesson-icon">📅</span>
+                    </div>
+                    <h3>Dates & Days</h3>
+                    <p>Học về các ngày trong tuần và cách gọi tên thời gian đơn giản.</p>
+                </div>
+                <div class="btn-study">Vào học ➔</div>
+            </a>
+
+            <!-- 4. Family & Friends -->
+            <a href="familyfriends.html" class="lesson-card">
+                <div>
+                    <div class="card-header-flex">
+                        <span class="lesson-badge">Chủ đề 4</span>
+                        <span class="lesson-icon">👨‍👩‍👧‍👦</span>
+                    </div>
+                    <h3>Family & Friends</h3>
+                    <p>Từ vựng giới thiệu bản thân, người thân trong gia đình và bạn bè.</p>
+                </div>
+                <div class="btn-study">Vào học ➔</div>
+            </a>
+
+            <!-- 5. Food & Drinks -->
+            <a href="fooddrinks.html" class="lesson-card">
+                <div>
+                    <div class="card-header-flex">
+                        <span class="lesson-badge">Chủ đề 5</span>
+                        <span class="lesson-icon">🍔</span>
+                    </div>
+                    <h3>Food & Drinks</h3>
+                    <p>Tên các món ăn, thức uống yêu thích và mẫu câu gọi món.</p>
+                </div>
+                <div class="btn-study">Vào học ➔</div>
+            </a>
+
+            <!-- 6. Fruits -->
+            <a href="fruits.html" class="lesson-card">
+                <div>
+                    <div class="card-header-flex">
+                        <span class="lesson-badge">Chủ đề 6</span>
+                        <span class="lesson-icon">🍎</span>
+                    </div>
+                    <h3>Fruits</h3>
+                    <p>Nhận biết và đọc tên các loại trái cây tươi ngon hằng ngày.</p>
+                </div>
+                <div class="btn-study">Vào học ➔</div>
+            </a>
+
+            <!-- 7. Numbers -->
+            <a href="numbers.html" class="lesson-card">
+                <div>
+                    <div class="card-header-flex">
+                        <span class="lesson-badge">Chủ đề 7</span>
+                        <span class="lesson-icon">🔢</span>
+                    </div>
+                    <h3>Numbers</h3>
+                    <p>Tập đếm số và nhận biết chữ số từ cơ bản đến nâng cao.</p>
+                </div>
+                <div class="btn-study">Vào học ➔</div>
+            </a>
+
+            <!-- 8. School Supplies -->
+            <a href="schoolsupplies.html" class="lesson-card">
+                <div>
+                    <div class="card-header-flex">
+                        <span class="lesson-badge">Chủ đề 8</span>
+                        <span class="lesson-icon">✏️</span>
+                    </div>
+                    <h3>School Supplies</h3>
+                    <p>Tên gọi các dụng cụ học tập quen thuộc trong cặp sách của em.</p>
+                </div>
+                <div class="btn-study">Vào học ➔</div>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Khối Liên hệ với thầy Danh -->
+    <section class="contact-section">
+        <h2>Kết nối với thầy Danh</h2>
+        <div class="social-buttons">
+            <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
+                Zalo: 0911594794
+            </a>
+            
+            <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
+                <svg class="fb-icon" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+                Facebook
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Học tiếng Anh cùng thầy Danh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

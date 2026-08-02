@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Học Tiếng Anh Chủ Đề Gia Đình & Bè Bạn (Family & Friends)</title>
+<!-- Google Font: Nunito -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --primary: #FF6B6B;
+    --secondary: #4ECDC4;
+    --accent: #FFE66D;
+    --bg-color: #F7F9FC;
+    --card-bg: rgba(255, 255, 255, 0.98);
+    --text-color: #2D3748;
+    --purple: #6C5CE7;
+    --blue: #4A90E2;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Nunito', sans-serif; }
+
+  body {
+    background-color: var(--bg-color);
+    background-image: radial-gradient(#4ECDC4 0.75px, transparent 0.75px), radial-gradient(#FF6B6B 0.75px, #F7F9FC 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #D93838;
+    text-shadow: 2px 2px 0px #FED7D7;
+  }
+
+  header p {
+    font-size: 1rem;
+    color: #718096;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-btn {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    background: #FFFFFF;
+    color: #4A5568;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+  }
+
+  .nav-btn.active, .nav-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(255, 107, 107, 0.3);
+  }
+
+  /* Main Container */
+  .container {
+    width: 100%;
+    max-width: 950px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
+
+  .tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* TAB 1: VOCABULARY GRID */
+  .vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+  }
+
+  .vocab-card {
+    border-radius: 16px;
+    padding: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+
+  .vocab-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .emoji-badge-wrapper {
+    width: 100%;
+    height: 90px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.12);
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .emoji-display {
+    font-size: 3.8rem;
+    line-height: 1;
+  }
+
+  .word-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 2px;
+  }
+
+  .phonetic {
+    font-size: 0.95rem;
+    opacity: 0.95;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+
+  .meaning {
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .example-box {
+    background: rgba(255, 255, 255, 0.95);
+    color: #2D3748;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 0.85rem;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .audio-btn {
+    background: white;
+    color: #2D3748;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    transition: transform 0.2s;
+  }
+
+  .audio-btn:hover {
+    transform: scale(1.1);
+  }
+
+  /* TAB 2: SENTENCES & RULES */
+  .sentence-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .sentence-card {
+    background: #F7FAFC;
+    border-left: 5px solid var(--primary);
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .sentence-card h3 {
+    color: #D93838;
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
+
+  .dialogue {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+
+  .speaker {
+    font-weight: 800;
+    color: #D69E2E;
+  }
+
+  /* GAMES GENERAL */
+  .single-card-container, .quiz-container, .spelling-box, .count-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+  }
+
+  .card-mode-selector {
+    display: flex;
+    gap: 8px;
+    background: #EDF2F7;
+    padding: 4px;
+    border-radius: 16px;
+  }
+
+  .mode-btn {
+    border: none;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    color: #4A5568;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+  }
+
+  .mode-btn.active {
+    background: white;
+    color: var(--primary);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+
+  .score-board {
+    background: #FEFCBF;
+    color: #744210;
+    border: 2px solid #F6E05E;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 1.05rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .flip-card-single {
+    background-color: transparent;
+    width: 310px;
+    height: 230px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    border-radius: 16px;
+  }
+
+  .flip-card-single.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: 3px solid white;
+  }
+
+  .flip-card-front {
+    background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+    color: white;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+    color: white;
+  }
+
+  .card-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .card-counter {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #718096;
+  }
+
+  .vocab-preview-box {
+    width: 160px;
+    height: 130px;
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    font-size: 4.5rem;
+  }
+
+  .mcq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 460px;
+  }
+
+  .mcq-btn {
+    padding: 12px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    border: 2px solid #E2E8F0;
+    border-radius: 12px;
+    background: #F7FAFC;
+    color: #2D3748;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .mcq-btn:hover {
+    border-color: var(--primary);
+    background: #FFF5F5;
+  }
+
+  .mcq-btn.correct {
+    background: #48BB78 !important;
+    color: white !important;
+    border-color: #38A169 !important;
+  }
+
+  .mcq-btn.wrong {
+    background: #F56565 !important;
+    color: white !important;
+    border-color: #C53030 !important;
+  }
+
+  .spelling-input-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .spelling-input {
+    padding: 10px 16px;
+    font-size: 1.1rem;
+    border: 2px solid #CBD5E0;
+    border-radius: 10px;
+    text-align: center;
+    width: 320px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+  }
+
+  .btn-action {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    background: #38A169;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .item-display-box {
+    width: 100%;
+    max-width: 650px;
+    min-height: 180px;
+    background: #F7FAFC;
+    border: 3px dashed #CBD5E0;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .item-emoji {
+    font-size: 4rem;
+    user-select: none;
+    animation: popIn 0.3s ease;
+  }
+
+  @keyframes popIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+
+  .feedback-msg {
+    font-weight: 800;
+    font-size: 1rem;
+    min-height: 24px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>👨‍👩‍👧‍👦 FAMILY AND FRIENDS</h1>
+  <p>Học Từ Vựng & Mẫu Câu Tiếng Anh Chủ Đề Gia Đình & Bè Bạn</p>
+</header>
+
+<nav>
+  <button class="nav-btn active" onclick="switchTab('vocab', event)">📚 Từ vựng Gia đình và bạn bè</button>
+  <button class="nav-btn" onclick="switchTab('sentences', event)">🗣️ Mẫu Câu & Cấu Trúc</button>
+  <button class="nav-btn" onclick="switchTab('game-flip', event)">🃏 Game 1: Lật Flashcard</button>
+  <button class="nav-btn" onclick="switchTab('game-mcq', event)">🎯 Game 2: Trắc Nghiệm</button>
+  <button class="nav-btn" onclick="switchTab('game-spelling', event)">✍️ Game 3: Điền Chính Tả</button>
+  <button class="nav-btn" onclick="switchTab('game-count', event)">🧩 Game 4: Luyện Viết Câu Hoàn Chỉnh</button>
+</nav>
+
+<div class="container">
+  
+  <!-- TAB 1: VOCABULARY -->
+  <div id="vocab" class="tab-content active">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #D93838; font-weight: 800; font-size: 1.4rem;">Từ vựng Gia đình và bạn bè</h2>
+    <div class="vocab-grid" id="vocab-grid-container"></div>
+  </div>
+
+  <!-- TAB 2: RULES & SENTENCES -->
+  <div id="sentences" class="tab-content">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #D93838; font-weight: 800; font-size: 1.4rem;">Mẫu Câu Hỏi & Giới Thiệu Gia Đình, Bạn Bè</h2>
+    <div class="sentence-section">
+      
+      <div class="sentence-card">
+        <h3>💡 Mẫu Câu 1: Giới thiệu thành viên (This is... / These are...)</h3>
+        <p><b>Dùng cho 1 người (Số ít):</b> This is my + [Thành viên].</p>
+        <p><i>Ví dụ: This is my mother. (Đây là mẹ của tôi.)</i></p>
+        <br>
+        <p><b>Dùng cho nhiều người (Số nhiều):</b> These are my + [Thành viên số nhiều].</p>
+        <p><i>Ví dụ: These are my parents. (Đây là bố mẹ của tôi.)</i></p>
+        <div class="dialogue">
+          <p><span class="speaker">Mẫu câu:</span> This is my best friend. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('This is my best friend.')">🔊</button></p>
+        </div>
+      </div>
+
+      <div class="sentence-card">
+        <h3>Mẫu Câu 2: Hỏi ai đó là ai? (Who is this / Who is that?)</h3>
+        <p><b>Hỏi:</b> Who is this? (Đây là ai?) / Who is that? (Kia là ai?)</p>
+        <p><b>Trả lời:</b> He is my... (Ông/Anh ấy là...) hoặc She is my... (Bà/Cô ấy là...)</p>
+        <div class="dialogue">
+          <p><span class="speaker">Ask:</span> Who is that? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('Who is that?')">🔊</button></p>
+          <p><span class="speaker">Answer:</span> She is my grandmother. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('She is my grandmother.')">🔊</button></p>
+        </div>
+      </div>
+
+      <div class="sentence-card">
+        <h3>Mẫu Câu 3: Hỏi số lượng thành viên trong gia đình</h3>
+        <p><b>Hỏi:</b> How many people are there in your family?</p>
+        <p><b>Trả lời:</b> There are + [Số lượng] + people in my family.</p>
+        <div class="dialogue">
+          <p><span class="speaker">Ask:</span> How many people are there in your family? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('How many people are there in your family?')">🔊</button></p>
+          <p><span class="speaker">Answer:</span> There are four people in my family. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('There are four people in my family.')">🔊</button></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TAB 3: GAME 1 FLIP CARD -->
+  <div id="game-flip" class="tab-content">
+    <h2 style="text-align: center; color: #D93838; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard Gia Đình & Bạn Bè</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để lật xem đáp án. Sau 3 giây thẻ sẽ tự chuyển tiếp!</p>
+    
+    <div class="single-card-container">
+      <div class="card-mode-selector">
+        <button class="mode-btn active" id="mode-viet" onclick="setCardFrontMode('viet', this)">Mặt trước: Hình ảnh & Tiếng Việt</button>
+        <button class="mode-btn" id="mode-ipa" onclick="setCardFrontMode('ipa', this)">Mặt trước: Chỉ IPA ↔ Mặt sau: Chỉ Từ Vựng</button>
+      </div>
+
+      <div class="card-controls">
+        <span class="card-counter" id="card-counter-text">Thẻ 1 / 20</span>
+      </div>
+
+      <div class="flip-card-single" id="single-card-el" onclick="flipSingleCard()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" id="card-front-content"></div>
+          <div class="flip-card-back" id="card-back-content"></div>
+        </div>
+      </div>
+
+      <div>
+        <button class="nav-btn" onclick="prevSingleCard()">⏮️ Thẻ Trước</button>
+        <button class="nav-btn" onclick="nextSingleCard(false)">Thẻ Tiếp ⏭️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: GAME 2 MCQ -->
+  <div id="game-mcq" class="tab-content">
+    <h2 style="text-align: center; color: #D93838; font-weight: 800; font-size: 1.4rem;">Game 2: Trắc Nghiệm Chọn Từ Đúng</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình ảnh biểu tượng và chọn từ tiếng Anh tương ứng!</p>
+    
+    <div class="quiz-container">
+      <div class="vocab-preview-box" id="mcq-number-preview"></div>
+      <div class="mcq-grid" id="mcq-options-container"></div>
+    </div>
+  </div>
+
+  <!-- TAB 5: GAME 3 SPELLING -->
+  <div id="game-spelling" class="tab-content">
+    <h2 style="text-align: center; color: #D93838; font-weight: 800; font-size: 1.4rem;">Game 3: Thử Tài Điền Chính Tả</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn biểu tượng và nghe phát âm để gõ chính xác từ tiếng Anh! (Ấn ENTER để kiểm tra)</p>
+    
+    <div class="spelling-box">
+      <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 / 20 câu</div>
+
+      <div id="spelling-preview" class="vocab-preview-box"></div>
+      <button class="audio-btn" style="width: 44px; height: 44px; font-size: 1.3rem; margin-top:0;" onclick="playSpellingAudio()">🔊</button>
+      
+      <div class="spelling-input-group">
+        <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ từ tiếng Anh..." autocomplete="off">
+        <button class="btn-action" onclick="checkSpelling()">Kiểm tra</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 6: GAME 4 SENTENCE PRACTICE -->
+  <div id="game-count" class="tab-content">
+    <h2 style="text-align: center; color: #D93838; font-weight: 800; font-size: 1.4rem;">Game 4: Luyện Tập Viết Câu Hoàn Chỉnh</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn gợi ý nhân vật và hoàn thành câu tiếng Anh thích hợp! (Ấn ENTER để kiểm tra)</p>
+    
+    <div class="count-game-container">
+      <div class="score-board" id="count-score">🎯 Đã đúng: 0 / 30 câu</div>
+
+      <div class="card-controls">
+        <span class="card-counter" id="count-counter-text">Câu 1 / 30</span>
+      </div>
+
+      <div class="item-display-box" id="count-items-container"></div>
+
+      <div class="feedback-msg" id="count-feedback"></div>
+
+      <div class="spelling-input-group">
+        <input type="text" id="count-sentence-input" class="spelling-input" style="width:400px;" placeholder="Gõ câu trả lời..." autocomplete="off">
+        <button class="btn-action" onclick="checkCountSentence()">Kiểm tra</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  /* Đã cập nhật tốc độ phát âm đọc chậm rõ rệt (0.3) */
+  const defaultSpeechRate = 0.3;
+
+  /* HỆ THỐNG PHÁT ÂM THANH HIỆU ỨNG (Web Audio API) */
+  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+  function playSoundEffect(type) {
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+
+    if (type === 'correct') {
+      const now = audioCtx.currentTime;
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(523.25, now); // C5
+      osc.frequency.setValueAtTime(659.25, now + 0.1); // E5
+      osc.frequency.setValueAtTime(783.99, now + 0.2); // G5
+      osc.frequency.setValueAtTime(1046.50, now + 0.3); // C6
+      gain.gain.setValueAtTime(0.3, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+      osc.start(now);
+      osc.stop(now + 0.6);
+    } else if (type === 'wrong') {
+      const now = audioCtx.currentTime;
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(180, now);
+      osc.frequency.setValueAtTime(130, now + 0.15);
+      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+      osc.start(now);
+      osc.stop(now + 0.4);
+    }
+  }
+
+  const cardColors = [
+    '#FF6B6B', '#4ECDC4', '#4A90E2', '#6C5CE7', '#FD79A8',
+    '#00B894', '#E17055', '#00CEC9', '#6C5CE7', '#FDCB6E'
+  ];
+
+  function shuffleArray(array) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  /* DỮ LIỆU TỪ VỰNG CHỦ ĐỀ FAMILY AND FRIENDS */
+  const familyVocabulary = [
+    { name: 'Father', emoji: '👨', ipa: '/ˈfɑːðər/', meaning: 'Bố / Cha', sentence: 'This is my father.', hex: '#4A90E2' },
+    { name: 'Mother', emoji: '👩', ipa: '/ˈmʌðər/', meaning: 'Mẹ', sentence: 'This is my mother.', hex: '#FF6B6B' },
+    { name: 'Brother', emoji: '👦', ipa: '/ˈbrʌðər/', meaning: 'Anh / Em trai', sentence: 'He is my brother.', hex: '#4ECDC4' },
+    { name: 'Sister', emoji: '👧', ipa: '/ˈsɪstər/', meaning: 'Chị / Em gái', sentence: 'She is my sister.', hex: '#FD79A8' },
+    { name: 'Grandfather', emoji: '👴', ipa: '/ˈɡræn.fɑː.ðər/', meaning: 'Ông', sentence: 'He is my grandfather.', hex: '#00B894' },
+    { name: 'Grandmother', emoji: '👵', ipa: '/ˈɡræn.mʌðər/', meaning: 'Bà', sentence: 'She is my grandmother.', hex: '#6C5CE7' },
+    { name: 'Baby', emoji: '👶', ipa: '/ˈbeɪbi/', meaning: 'Em bé', sentence: 'Look at the baby.', hex: '#FFE66D' },
+    { name: 'Parents', emoji: '👨‍👩‍👦', ipa: '/ˈpeərənts/', meaning: 'Bố mẹ', sentence: 'I love my parents.', hex: '#E17055' },
+    { name: 'Friend', emoji: '🧑‍🤝‍🧑', ipa: '/frend/', meaning: 'Bạn bè', sentence: 'He is my friend.', hex: '#00CEC9' },
+    { name: 'Best friend', emoji: '👫', ipa: '/best frend/', meaning: 'Bạn thân', sentence: 'She is my best friend.', hex: '#FF7675' },
+    { name: 'Uncle', emoji: '🧔', ipa: '/ˈʌŋkl/', meaning: 'Chú / Bác / Cậu', sentence: 'He is my uncle.', hex: '#0984E3' },
+    { name: 'Aunt', emoji: '👩‍🦰', ipa: '/ɑːnt/', meaning: 'Cô / Dì / Thím', sentence: 'She is my aunt.', hex: '#E84393' },
+    { name: 'Cousin', emoji: '🧒', ipa: '/ˈkʌzn/', meaning: 'Anh chị em họ', sentence: 'This is my cousin.', hex: '#6C5CE7' },
+    { name: 'Family', emoji: '👨‍👩‍👧‍👦', ipa: '/ˈfæməli/', meaning: 'Gia đình', sentence: 'I have a happy family.', hex: '#D63031' },
+    { name: 'Son', emoji: '👦', ipa: '/sʌn/', meaning: 'Con trai', sentence: 'He is their son.', hex: '#00B894' },
+    { name: 'Daughter', emoji: '👧', ipa: '/ˈdɔːtər/', meaning: 'Con gái', sentence: 'She is their daughter.', hex: '#FD79A8' },
+    { name: 'Classmate', emoji: '🎒', ipa: '/ˈklɑːs.meɪt/', meaning: 'Bạn cùng lớp', sentence: 'We are classmates.', hex: '#4A90E2' },
+    { name: 'Neighbor', emoji: '🏡', ipa: '/ˈneɪbər/', meaning: 'Hàng xóm', sentence: 'He is my neighbor.', hex: '#FDCB6E' },
+    { name: 'Husband', emoji: '🤵', ipa: '/ˈhʌzbənd/', meaning: 'Chồng', sentence: 'He is her husband.', hex: '#2D3436' },
+    { name: 'Wife', emoji: '👰', ipa: '/waɪf/', meaning: 'Vợ', sentence: 'She is his wife.', hex: '#E84393' }
+  ];
+
+  /* DỮ LIỆU CÂU HỎI CHO GAME 4 (30 CÂU HOÀN CHỈNH) */
+  const sentenceQuestions = [
+    { target: 'father', emoji: '👨', prompt: 'Đây là bố tôi. (Giới thiệu dùng "This is...")', answer: 'This is my father', altAnswer: 'this is my father.' },
+    { target: 'mother', emoji: '👩', prompt: 'Bà ấy là mẹ tôi. (Dùng đại từ "She...")', answer: 'She is my mother', altAnswer: 'she is my mother.' },
+    { target: 'brother', emoji: '👦', prompt: 'Anh ấy là anh trai tôi. (Dùng đại từ "He...")', answer: 'He is my brother', altAnswer: 'he is my brother.' },
+    { target: 'sister', emoji: '👧', prompt: 'Cô ấy là chị gái tôi. (Dùng đại từ "She...")', answer: 'She is my sister', altAnswer: 'she is my sister.' },
+    { target: 'grandfather', emoji: '👴', prompt: 'Đây là ông tôi. (Giới thiệu dùng "This is...")', answer: 'This is my grandfather', altAnswer: 'this is my grandfather.' },
+    { target: 'grandmother', emoji: '👵', prompt: 'Bà ấy là bà của tôi. (Dùng đại từ "She...")', answer: 'She is my grandmother', altAnswer: 'she is my grandmother.' },
+    { target: 'friend', emoji: '🧑‍🤝‍🧑', prompt: 'Anh ấy là bạn của tôi. (Dùng đại từ "He...")', answer: 'He is my friend', altAnswer: 'he is my friend.' },
+    { target: 'best friend', emoji: '👫', prompt: 'Cô ấy là bạn thân nhất của tôi. (Dùng "She is...")', answer: 'She is my best friend', altAnswer: 'she is my best friend.' },
+    { target: 'family', emoji: '👨‍👩‍👧‍👦', prompt: 'Tôi yêu gia đình của tôi. (Viết câu "I love...")', answer: 'I love my family', altAnswer: 'i love my family.' },
+    { target: 'parents', emoji: '👨‍👩‍👦', prompt: 'Đây là bố mẹ tôi. (Giới thiệu số nhiều "These are...")', answer: 'These are my parents', altAnswer: 'these are my parents.' },
+    { target: 'uncle', emoji: '🧔', prompt: 'Chú ấy là chú của tôi. (Dùng đại từ "He...")', answer: 'He is my uncle', altAnswer: 'he is my uncle.' },
+    { target: 'aunt', emoji: '👩‍🦰', prompt: 'Cô ấy là cô/dì của tôi. (Dùng đại từ "She...")', answer: 'She is my aunt', altAnswer: 'she is my aunt.' },
+    { target: 'cousin', emoji: '🧒', prompt: 'Đây là anh em họ của tôi. (Giới thiệu dùng "This is...")', answer: 'This is my cousin', altAnswer: 'this is my cousin.' },
+    { target: 'classmate', emoji: '🎒', prompt: 'Cô ấy là bạn cùng lớp của tôi. (Dùng "She is...")', answer: 'She is my classmate', altAnswer: 'she is my classmate.' },
+    { target: 'baby', emoji: '👶', prompt: 'Đây là em bé. (Giới thiệu dùng "This is...")', answer: 'This is the baby', altAnswer: 'this is a baby' },
+    { target: 'neighbor', emoji: '🏡', prompt: 'Ông ấy là hàng xóm của tôi. (Dùng "He is...")', answer: 'He is my neighbor', altAnswer: 'he is my neighbor.' },
+    { target: 'husband', emoji: '🤵', prompt: 'Anh ấy là chồng của cô ấy. (Dùng "He is her...")', answer: 'He is her husband', altAnswer: 'he is her husband.' },
+    { target: 'wife', emoji: '👰', prompt: 'Cô ấy là vợ của anh ấy. (Dùng "She is his...")', answer: 'She is his wife', altAnswer: 'she is his wife.' },
+    { target: 'son', emoji: '👦', prompt: 'Cậu ấy là con trai của họ. (Dùng "He is their...")', answer: 'He is their son', altAnswer: 'he is their son.' },
+    { target: 'daughter', emoji: '👧', prompt: 'Cô ấy là con gái của họ. (Dùng "She is their...")', answer: 'She is their daughter', altAnswer: 'she is their daughter.' },
+    { target: 'best friend boy', emoji: '👦', prompt: 'Anh ấy là bạn thân nhất của tôi. (Dùng "He is...")', answer: 'He is my best friend', altAnswer: 'he is my best friend.' },
+    { target: 'who is this', emoji: '❓', prompt: 'Đây là ai? (Đặt câu hỏi với "Who is...")', answer: 'Who is this', altAnswer: 'who is this?' },
+    { target: 'who is that', emoji: '👉', prompt: 'Kia là ai? (Đặt câu hỏi với "Who is...")', answer: 'Who is that', altAnswer: 'who is that?' },
+    { target: 'father this', emoji: '👨', prompt: 'Đây là bố tôi. (Giới thiệu dùng "This is...")', answer: 'This is my father', altAnswer: 'this is my father.' },
+    { target: 'grandfather he', emoji: '👴', prompt: 'Ông ấy là ông của tôi. (Dùng "He is...")', answer: 'He is my grandfather', altAnswer: 'he is my grandfather.' },
+    { target: 'neighbor she', emoji: '🏡', prompt: 'Bà ấy là hàng xóm của tôi. (Dùng "She is...")', answer: 'She is my neighbor', altAnswer: 'she is my neighbor.' },
+    { target: 'classmate he', emoji: '🎒', prompt: 'Cậu ấy là bạn cùng lớp của tôi. (Dùng "He is...")', answer: 'He is my classmate', altAnswer: 'he is my classmate.' },
+    { target: 'uncle this', emoji: '🧔', prompt: 'Đây là chú của tôi. (Giới thiệu dùng "This is...")', answer: 'This is my uncle', altAnswer: 'this is my uncle.' },
+    { target: 'aunt this', emoji: '👩‍🦰', prompt: 'Đây là cô/dì của tôi. (Giới thiệu dùng "This is...")', answer: 'This is my aunt', altAnswer: 'this is my aunt.' },
+    { target: 'friends these', emoji: '🧑‍🤝‍🧑', prompt: 'Đây là những người bạn của tôi. (Số nhiều "These are...")', answer: 'These are my friends', altAnswer: 'these are my friends.' }
+  ];
+
+  let flashcardDeck = [];
+
+  function speak(text) {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = defaultSpeechRate;
+
+      const voices = window.speechSynthesis.getVoices();
+      const bestVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Premium') || v.name.includes('Samantha') || v.name.includes('Zira')));
+      if (bestVoice) {
+        utterance.voice = bestVoice;
+      }
+
+      window.speechSynthesis.speak(utterance);
+    }
+  }
+
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.onvoiceschanged = () => {};
+  }
+
+  function renderVocabGrid() {
+    const grid = document.getElementById('vocab-grid-container');
+    grid.innerHTML = '';
+    familyVocabulary.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'vocab-card';
+      card.style.background = item.hex;
+
+      card.innerHTML = `
+        <div class="emoji-badge-wrapper">
+          <span class="emoji-display">${item.emoji}</span>
+        </div>
+        <div class="word-title">${item.name}</div>
+        <div class="phonetic">${item.ipa}</div>
+        <div class="meaning">${item.meaning}</div>
+        <div class="example-box">
+          <b>Ví dụ:</b> <i>"${item.sentence}"</i>
+        </div>
+        <button class="audio-btn" onclick="speak('${item.name}')">🔊</button>
+      `;
+      grid.appendChild(card);
+    });
+  }
+  renderVocabGrid();
+
+  function switchTab(tabId, evt) {
+    clearTimeout(singleCardTimer);
+    clearTimeout(mcqTimer);
+    clearTimeout(spellingTimer);
+    clearTimeout(countTimer);
+
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
+    
+    document.getElementById(tabId).classList.add('active');
+    if(evt && evt.target) {
+      evt.target.classList.add('active');
+    }
+
+    if(tabId === 'game-flip') initSingleCardGame();
+    if(tabId === 'game-mcq') initMcqGame();
+    if(tabId === 'game-spelling') initSpellingGame();
+    if(tabId === 'game-count') initCountGame();
+  }
+
+  /* GAME 1: FLASHCARD */
+  let singleCardIdx = 0;
+  let singleCardTimer = null;
+  let cardFrontMode = 'viet';
+
+  function setCardFrontMode(mode, btnEl) {
+    cardFrontMode = mode;
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    if(btnEl) btnEl.classList.add('active');
+    renderSingleCardContent();
+  }
+
+  function initSingleCardGame() {
+    singleCardIdx = 0;
+    flashcardDeck = shuffleArray(familyVocabulary);
+    renderSingleCardContent();
+  }
+
+  function changeCardWithAnimation() {
+    clearTimeout(singleCardTimer);
+    const cardEl = document.getElementById('single-card-el');
+
+    if (cardEl.classList.contains('flipped')) {
+      cardEl.classList.remove('flipped');
+      setTimeout(() => {
+        renderSingleCardContent();
+      }, 600);
+    } else {
+      renderSingleCardContent();
+    }
+  }
+
+  function renderSingleCardContent() {
+    const item = flashcardDeck[singleCardIdx];
+    const cardEl = document.getElementById('single-card-el');
+    const frontEl = document.getElementById('card-front-content');
+    const backEl = document.getElementById('card-back-content');
+    const counterEl = document.getElementById('card-counter-text');
+
+    cardEl.classList.remove('flipped');
+    counterEl.innerText = `Thẻ ${singleCardIdx + 1} / ${flashcardDeck.length}`;
+
+    frontEl.className = 'flip-card-front';
+    frontEl.style.background = 'linear-gradient(135deg, #FF6B6B, #FF8E53)';
+    frontEl.style.color = 'white';
+
+    backEl.className = 'flip-card-back';
+    backEl.style.background = item.hex;
+    backEl.style.color = 'white';
+    backEl.style.border = '3px solid white';
+
+    if(cardFrontMode === 'viet') {
+      frontEl.innerHTML = `
+        <span style="font-size: 3.8rem; margin-bottom: 4px;">${item.emoji}</span>
+        <h2 style="font-size: 1.4rem; margin-bottom: 8px; font-weight:800;">${item.meaning}</h2>
+        <p style="font-size: 0.85rem; opacity: 0.85;">(Chạm vào thẻ để lật)</p>
+      `;
+      backEl.innerHTML = `
+        <h2 style="font-size: 2.2rem; margin-bottom: 4px; font-weight:800;">${item.name}</h2>
+        <p style="font-size: 1.1rem; font-weight:700;">${item.ipa}</p>
+        <p style="font-size: 0.95rem; margin-top: 8px; font-style: italic;">"${item.sentence}"</p>
+      `;
+    } else {
+      frontEl.innerHTML = `
+        <h1 style="font-size: 2.2rem; margin-bottom: 8px; font-weight:800;">${item.ipa}</h1>
+        <p style="font-size: 0.85rem; opacity: 0.85;">(Chạm để xem từ vựng)</p>
+      `;
+      backEl.innerHTML = `
+        <span style="font-size: 3rem; margin-bottom: 4px;">${item.emoji}</span>
+        <h1 style="font-size: 2.2rem; font-weight:900;">${item.name}</h1>
+      `;
+    }
+  }
+
+  function flipSingleCard() {
+    const cardEl = document.getElementById('single-card-el');
+    if(!cardEl.classList.contains('flipped')) {
+      cardEl.classList.add('flipped');
+      const item = flashcardDeck[singleCardIdx];
+      speak(item.name);
+
+      clearTimeout(singleCardTimer);
+      singleCardTimer = setTimeout(() => {
+        nextSingleCard(true);
+      }, 3000);
+    }
+  }
+
+  function nextSingleCard(isAuto = false) {
+    clearTimeout(singleCardTimer);
+    singleCardIdx = (singleCardIdx + 1) % flashcardDeck.length;
+    changeCardWithAnimation();
+  }
+
+  function prevSingleCard() {
+    clearTimeout(singleCardTimer);
+    singleCardIdx = (singleCardIdx - 1 + flashcardDeck.length) % flashcardDeck.length;
+    changeCardWithAnimation();
+  }
+
+  /* GAME 2: TRẮC NGHIỆM */
+  let mcqIdx = 0;
+  let mcqTimer = null;
+  let mcqList = [];
+
+  function initMcqGame() {
+    mcqList = shuffleArray(familyVocabulary);
+    mcqIdx = 0;
+    loadMcqQuestion();
+  }
+
+  function loadMcqQuestion() {
+    clearTimeout(mcqTimer);
+    const item = mcqList[mcqIdx];
+    const previewBox = document.getElementById('mcq-number-preview');
+    const optionsGrid = document.getElementById('mcq-options-container');
+
+    previewBox.innerText = item.emoji;
+
+    let options = [item.name];
+    let otherItems = familyVocabulary.filter(c => c.name !== item.name);
+    otherItems = shuffleArray(otherItems);
+    for(let i = 0; i < 3; i++) {
+      options.push(otherItems[i].name);
+    }
+    options = shuffleArray(options);
+
+    optionsGrid.innerHTML = '';
+    options.forEach(optName => {
+      const btn = document.createElement('button');
+      btn.className = 'mcq-btn';
+      btn.innerText = optName;
+      btn.onclick = () => handleMcqChoice(btn, optName, item.name);
+      optionsGrid.appendChild(btn);
+    });
+  }
+
+  function handleMcqChoice(btn, selectedName, correctName) {
+    const allBtns = document.querySelectorAll('.mcq-btn');
+    allBtns.forEach(b => b.onclick = null);
+
+    if(selectedName === correctName) {
+      btn.classList.add('correct');
+      playSoundEffect('correct');
+      speak(correctName);
+
+      mcqTimer = setTimeout(() => {
+        mcqIdx = (mcqIdx + 1) % mcqList.length;
+        loadMcqQuestion();
+      }, 2000);
+    } else {
+      btn.classList.add('wrong');
+      playSoundEffect('wrong');
+      allBtns.forEach(b => {
+        if(b.innerText === correctName) b.classList.add('correct');
+      });
+      speak(correctName);
+
+      mcqTimer = setTimeout(() => {
+        loadMcqQuestion();
+      }, 2500);
+    }
+  }
+
+  /* GAME 3: CHÍNH TẢ */
+  let spellingIdx = 0;
+  let spellingTimer = null;
+  let spellingList = [];
+  let spellingCorrectCount = 0;
+
+  function initSpellingGame() {
+    spellingList = shuffleArray(familyVocabulary);
+    spellingIdx = 0;
+    spellingCorrectCount = 0;
+    updateSpellingScore();
+    loadSpellingQuestion();
+  }
+
+  function updateSpellingScore() {
+    document.getElementById('spelling-score').innerText = `🎯 Đã đúng: ${spellingCorrectCount} / ${spellingList.length} câu`;
+  }
+
+  function loadSpellingQuestion() {
+    clearTimeout(spellingTimer);
+    const item = spellingList[spellingIdx];
+    const preview = document.getElementById('spelling-preview');
+    const input = document.getElementById('spelling-input');
+
+    preview.innerText = item.emoji;
+    input.value = '';
+    input.disabled = false;
+    input.focus();
+    speak(item.name);
+  }
+
+  function playSpellingAudio() {
+    speak(spellingList[spellingIdx].name);
+  }
+
+  function checkSpelling() {
+    const inputEl = document.getElementById('spelling-input');
+    const inputVal = inputEl.value.trim().toLowerCase();
+    const correctVal = spellingList[spellingIdx].name.toLowerCase();
+
+    if(inputVal === correctVal) {
+      inputEl.disabled = true;
+      spellingCorrectCount++;
+      updateSpellingScore();
+      playSoundEffect('correct');
+      speak(spellingList[spellingIdx].name);
+
+      spellingTimer = setTimeout(() => {
+        spellingIdx = (spellingIdx + 1) % spellingList.length;
+        loadSpellingQuestion();
+      }, 2000);
+    } else {
+      playSoundEffect('wrong');
+      inputEl.style.borderColor = '#E53E3E';
+      setTimeout(() => {
+        inputEl.style.borderColor = '#CBD5E0';
+      }, 1000);
+    }
+  }
+
+  /* GAME 4: VIẾT CÂU HOÀN CHỈNH */
+  let countIdx = 0;
+  let countTimer = null;
+  let countList = [];
+  let countCorrectCount = 0;
+
+  function initCountGame() {
+    countList = shuffleArray(sentenceQuestions);
+    countIdx = 0;
+    countCorrectCount = 0;
+    updateCountScore();
+    loadCountQuestion();
+  }
+
+  function updateCountScore() {
+    document.getElementById('count-score').innerText = `🎯 Đã đúng: ${countCorrectCount} / ${countList.length} câu`;
+  }
+
+  function loadCountQuestion() {
+    clearTimeout(countTimer);
+    const item = countList[countIdx];
+    const container = document.getElementById('count-items-container');
+    const input = document.getElementById('count-sentence-input');
+    const feedback = document.getElementById('count-feedback');
+    const counterText = document.getElementById('count-counter-text');
+
+    counterText.innerText = `Câu ${countIdx + 1} / ${countList.length}`;
+    feedback.innerText = '';
+    feedback.style.color = '#2D3748';
+    input.value = '';
+    input.disabled = false;
+    input.style.borderColor = '#CBD5E0';
+    input.focus();
+
+    container.innerHTML = `
+      <div class="item-emoji">${item.emoji}</div>
+      <div style="font-size: 1.2rem; font-weight: 700; color: #2B6CB0;">${item.prompt}</div>
+    `;
+  }
+
+  function normalizeSentence(str) {
+    return str.toLowerCase()
+              .replace(/[.,?!]/g, '')
+              .replace(/\s+/g, ' ')
+              .trim();
+  }
+
+  function checkCountSentence() {
+    const item = countList[countIdx];
+    const inputEl = document.getElementById('count-sentence-input');
+    const feedback = document.getElementById('count-feedback');
+    const userInput = normalizeSentence(inputEl.value);
+
+    const validSentence1 = normalizeSentence(item.answer);
+    const validSentence2 = normalizeSentence(item.altAnswer || '');
+
+    if (userInput === validSentence1 || (validSentence2 && userInput === validSentence2)) {
+      feedback.style.color = '#38A169';
+      feedback.innerText = '🎉 Chính xác! Tuyệt vời!';
+      inputEl.disabled = true;
+      
+      countCorrectCount++;
+      updateCountScore();
+      playSoundEffect('correct');
+      speak(item.answer);
+
+      countTimer = setTimeout(() => {
+        countIdx = (countIdx + 1) % countList.length;
+        loadCountQuestion();
+      }, 2500);
+    } else {
+      playSoundEffect('wrong');
+      feedback.style.color = '#E53E3E';
+      feedback.innerText = `❌ Thử lại nhé! Đáp án đúng: "${item.answer}"`;
+      inputEl.style.borderColor = '#E53E3E';
+      setTimeout(() => {
+        inputEl.style.borderColor = '#CBD5E0';
+      }, 1200);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('spelling-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        checkSpelling();
+      }
+    });
+
+    document.getElementById('count-sentence-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        checkCountSentence();
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

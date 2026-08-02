@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Học Tiếng Anh Chủ Đề Động Vật (Animals)</title>
+<!-- Google Font: Nunito -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --primary: #38A169; /* Đổi tone màu chính sang Xanh lá (Nature) */
+    --secondary: #DD6B20;
+    --accent: #ECC94B;
+    --bg-color: #F0FFF4; /* Nền xanh nhạt */
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --text-color: #2D3748;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Nunito', sans-serif; }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #276749;
+    text-shadow: 2px 2px 0px #C6F6D5;
+  }
+
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-btn {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    background: #FFFFFF;
+    color: #4A5568;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+  }
+
+  .nav-btn.active, .nav-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(56, 161, 105, 0.3);
+  }
+
+  /* Main Container */
+  .container {
+    width: 100%;
+    max-width: 950px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
+
+  .tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* TAB 1: VOCABULARY GRID */
+  .vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+  }
+
+  .number-card {
+    border-radius: 16px;
+    padding: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+
+  .number-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .number-badge-wrapper {
+    width: 100%;
+    height: 90px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.12);
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .number-display {
+    font-size: 3.2rem;
+    user-select: none;
+  }
+
+  .word-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 2px;
+  }
+
+  .phonetic {
+    font-size: 0.95rem;
+    opacity: 0.95;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+
+  .meaning {
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .example-box {
+    background: rgba(255, 255, 255, 0.95);
+    color: #2D3748;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 0.85rem;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .audio-btn {
+    background: white;
+    color: #2D3748;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    transition: transform 0.2s;
+  }
+
+  .audio-btn:hover {
+    transform: scale(1.1);
+  }
+
+  /* TAB 2: SENTENCES & RULES */
+  .sentence-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .sentence-card {
+    background: #F0FFF4;
+    border-left: 5px solid var(--primary);
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .sentence-card h3 {
+    color: #276749;
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
+
+  .dialogue {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+
+  .speaker {
+    font-weight: 800;
+    color: #D69E2E;
+  }
+
+  /* GAMES GENERAL */
+  .single-card-container, .quiz-container, .spelling-box, .count-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+  }
+
+  .card-mode-selector {
+    display: flex;
+    gap: 8px;
+    background: #EDF2F7;
+    padding: 4px;
+    border-radius: 16px;
+  }
+
+  .mode-btn {
+    border: none;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    color: #4A5568;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+  }
+
+  .mode-btn.active {
+    background: white;
+    color: var(--primary);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+
+  .score-board {
+    background: #FEFCBF;
+    color: #744210;
+    border: 2px solid #F6E05E;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 1.05rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .flip-card-single {
+    background-color: transparent;
+    width: 300px;
+    height: 220px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    border-radius: 16px;
+  }
+
+  .flip-card-single.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: 3px solid white;
+  }
+
+  .flip-card-front {
+    background: linear-gradient(135deg, #38A169, #4FD1C5);
+    color: white;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+    color: white;
+  }
+
+  .card-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .card-counter {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #718096;
+  }
+
+  .number-preview-box {
+    width: 160px;
+    height: 130px;
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #276749;
+  }
+
+  .mcq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 460px;
+  }
+
+  .mcq-btn {
+    padding: 12px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    border: 2px solid #E2E8F0;
+    border-radius: 12px;
+    background: #F7FAFC;
+    color: #2D3748;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .mcq-btn:hover {
+    border-color: var(--primary);
+    background: #F0FFF4;
+  }
+
+  .mcq-btn.correct {
+    background: #48BB78 !important;
+    color: white !important;
+    border-color: #38A169 !important;
+  }
+
+  .mcq-btn.wrong {
+    background: #F56565 !important;
+    color: white !important;
+    border-color: #C53030 !important;
+  }
+
+  .spelling-input-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .spelling-input {
+    padding: 10px 16px;
+    font-size: 1.1rem;
+    border: 2px solid #CBD5E0;
+    border-radius: 10px;
+    text-align: center;
+    width: 320px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+  }
+
+  .btn-action {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    background: #38A169;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  /* GAME 4: COUNTING ITEMS */
+  .item-display-box {
+    width: 100%;
+    max-width: 650px;
+    min-height: 180px;
+    background: #F7FAFC;
+    border: 3px dashed #CBD5E0;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .item-emoji {
+    font-size: 2.2rem;
+    user-select: none;
+    animation: popIn 0.3s ease;
+  }
+
+  @keyframes popIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+
+  .feedback-msg {
+    font-weight: 800;
+    font-size: 1rem;
+    min-height: 24px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🐾 ANIMALS VOCABULARY</h1>
+</header>
+
+<nav>
+  <button class="nav-btn active" onclick="switchTab('vocab', event)">🦁 Từ Vựng Động Vật</button>
+  <button class="nav-btn" onclick="switchTab('sentences', event)">🗣️ Mẫu Câu & Giao Tiếp</button>
+  <button class="nav-btn" onclick="switchTab('game-flip', event)">🃏 Game 1: Lật Flashcard</button>
+  <button class="nav-btn" onclick="switchTab('game-mcq', event)">🎯 Game 2: Trắc Nghiệm</button>
+  <button class="nav-btn" onclick="switchTab('game-spelling', event)">✍️ Game 3: Điền Chính Tả</button>
+  <button class="nav-btn" onclick="switchTab('game-count', event)">🧩 Game 4: Đếm Vật & Viết Câu</button>
+</nav>
+
+<div class="container">
+  
+  <!-- TAB 1: VOCABULARY -->
+  <div id="vocab" class="tab-content active">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Từ Vựng 50 Loài Động Vật Phổ Biến</h2>
+    <div class="vocab-grid" id="vocab-grid-container"></div>
+  </div>
+
+  <!-- TAB 2: RULES & SENTENCES -->
+  <div id="sentences" class="tab-content">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Cấu Trúc Câu Tiếng Anh Về Động Vật</h2>
+    <div class="sentence-section">
+      
+      <div class="sentence-card">
+        <h3>💡 Mẫu câu 1: Hỏi và xác định tên con vật (What animal is this?)</h3>
+        <p><b>Hỏi:</b> What animal is this? / What is that?</p>
+        <p><b>Trả lời:</b> It is a/an + [Tên con vật].</p>
+        <div class="dialogue">
+          <p><span class="speaker">Mom:</span> What animal is this? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What animal is this?')">🔊</button></p>
+          <p><span class="speaker">Kid:</span> It is an elephant. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('It is an elephant.')">🔊</button></p>
+        </div>
+      </div>
+
+      <div class="sentence-card">
+        <h3>💡 Mẫu câu 2: Hỏi về con vật yêu thích (Favorite animal)</h3>
+        <p><b>Hỏi:</b> What is your favorite animal?</p>
+        <p><b>Trả lời:</b> My favorite animal is [Tên số ít] / I like [Tên số nhiều].</p>
+        <div class="dialogue">
+          <p><span class="speaker">Alex:</span> What is your favorite animal? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What is your favorite animal?')">🔊</button></p>
+          <p><span class="speaker">Ben:</span> I like dogs and cats. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('I like dogs and cats.')">🔊</button></p>
+        </div>
+      </div>
+
+      <div class="sentence-card">
+        <h3>💡 Mẫu câu 3: Mô tả khả năng / Nơi sống (Can / Live)</h3>
+        <p><b>Nơi sống:</b> Where does it live? -> It lives in the [forest / ocean / farm].</p>
+        <p><b>Khả năng:</b> What can it do? -> It can [fly / swim / run].</p>
+        <div class="dialogue">
+          <p><span class="speaker">Teacher:</span> What can a bird do? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What can a bird do?')">🔊</button></p>
+          <p><span class="speaker">Student:</span> A bird can fly. It lives in the tree. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('A bird can fly. It lives in the tree.')">🔊</button></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TAB 3: GAME 1 FLIP CARD -->
+  <div id="game-flip" class="tab-content">
+    <h2 style="text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard Động Vật</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để lật xem phát âm và nghĩa. Sau 3 giây thẻ sẽ tự chuyển tiếp!</p>
+    
+    <div class="single-card-container">
+      <div class="card-mode-selector">
+        <button class="mode-btn active" id="mode-viet" onclick="setCardFrontMode('viet', this)">Mặt trước: Hình & Từ Anh</button>
+        <button class="mode-btn" id="mode-ipa" onclick="setCardFrontMode('ipa', this)">Mặt trước: Hình & IPA ↔ Mặt sau: Nghĩa Việt</button>
+      </div>
+
+      <div class="card-controls">
+        <span class="card-counter" id="card-counter-text">Thẻ 1 / 50</span>
+      </div>
+
+      <div class="flip-card-single" id="single-card-el" onclick="flipSingleCard()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" id="card-front-content"></div>
+          <div class="flip-card-back" id="card-back-content"></div>
+        </div>
+      </div>
+
+      <div>
+        <button class="nav-btn" onclick="prevSingleCard()">⏮️ Thẻ Trước</button>
+        <button class="nav-btn" onclick="nextSingleCard(false)">Thẻ Tiếp ⏭️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: GAME 2 MCQ -->
+  <div id="game-mcq" class="tab-content">
+    <h2 style="text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Game 2: Ai Tinh Mắt Nhất? (Trắc Nghiệm)</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình con vật và chọn 1 trong 4 tên tiếng Anh chính xác nhất!</p>
+    
+    <div class="quiz-container">
+      <div class="number-preview-box" id="mcq-number-preview"></div>
+      <div class="mcq-grid" id="mcq-options-container"></div>
+    </div>
+  </div>
+
+  <!-- TAB 5: GAME 3 SPELLING -->
+  <div id="game-spelling" class="tab-content">
+    <h2 style="text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Game 3: Thử Tài Viết Tên Động Vật</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình và nghe phát âm để gõ đúng tên tiếng Anh của con vật! (Ấn ENTER để kiểm tra)</p>
+    
+    <div class="spelling-box">
+      <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 / 50 câu</div>
+
+      <div id="spelling-preview" class="number-preview-box"></div>
+      <button class="audio-btn" style="width: 44px; height: 44px; font-size: 1.3rem; margin-top:0;" onclick="playSpellingAudio()">🔊</button>
+      
+      <div class="spelling-input-group">
+        <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ tên con vật (ví dụ: cat)..." autocomplete="off">
+        <button class="btn-action" onclick="checkSpelling()">Kiểm tra</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 6: GAME 4 COUNTING SENTENCES -->
+  <div id="game-count" class="tab-content">
+    <h2 style="text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Game 4: Đếm Thú & Luyện Câu (Số nhiều)</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Đếm số lượng con vật rồi nhập câu. Chú ý các từ số nhiều bất quy tắc (ví dụ: mice, sheep, fish)!</p>
+    
+    <div class="count-game-container">
+      <div class="score-board" id="count-score">🎯 Đã đúng: 0 / 16 câu</div>
+
+      <div class="card-controls">
+        <span class="card-counter" id="count-counter-text">Câu 1 / 16</span>
+      </div>
+
+      <div class="item-display-box" id="count-items-container"></div>
+
+      <div class="feedback-msg" id="count-feedback"></div>
+
+      <div class="spelling-input-group">
+        <input type="text" id="count-sentence-input" class="spelling-input" placeholder="Ví dụ: There are 3 cats" autocomplete="off">
+        <button class="btn-action" onclick="checkCountSentence()">Kiểm tra</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const defaultSpeechRate = 0.85;
+
+  /* HỆ THỐNG PHÁT ÂM THANH HIỆU ỨNG (Web Audio API) */
+  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+  function playSoundEffect(type) {
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+
+    if (type === 'correct') {
+      const now = audioCtx.currentTime;
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(523.25, now);
+      osc.frequency.setValueAtTime(659.25, now + 0.1);
+      osc.frequency.setValueAtTime(783.99, now + 0.2);
+      osc.frequency.setValueAtTime(1046.50, now + 0.3);
+      gain.gain.setValueAtTime(0.3, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+      osc.start(now);
+      osc.stop(now + 0.6);
+    } else if (type === 'wrong') {
+      const now = audioCtx.currentTime;
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(180, now);
+      osc.frequency.setValueAtTime(130, now + 0.15);
+      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+      osc.start(now);
+      osc.stop(now + 0.4);
+    }
+  }
+
+  function shuffleArray(array) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  /* DỮ LIỆU TỪ VỰNG ĐỘNG VẬT (50 CON) */
+  const animalsList = [
+    { num: 1, name: 'Dog', ipa: '/dɔɡ/', meaning: 'Con chó', emoji: '🐶', hex: '#E53E3E' },
+    { num: 2, name: 'Cat', ipa: '/kæt/', meaning: 'Con mèo', emoji: '🐱', hex: '#ED8936' },
+    { num: 3, name: 'Mouse', ipa: '/maʊs/', meaning: 'Con chuột', emoji: '🐭', hex: '#ECC94B' },
+    { num: 4, name: 'Rabbit', ipa: '/ˈræbɪt/', meaning: 'Con thỏ', emoji: '🐰', hex: '#38A169' },
+    { num: 5, name: 'Hamster', ipa: '/ˈhæmstər/', meaning: 'Chuột hamster', emoji: '🐹', hex: '#3182CE' },
+    { num: 6, name: 'Fox', ipa: '/fɒks/', meaning: 'Con cáo', emoji: '🦊', hex: '#ED64A6' },
+    { num: 7, name: 'Bear', ipa: '/bɛər/', meaning: 'Con gấu', emoji: '🐻', hex: '#4A90E2' },
+    { num: 8, name: 'Panda', ipa: '/ˈpændə/', meaning: 'Gấu trúc', emoji: '🐼', hex: '#319795' },
+    { num: 9, name: 'Tiger', ipa: '/ˈtaɪɡər/', meaning: 'Con hổ', emoji: '🐯', hex: '#DD6B20' },
+    { num: 10, name: 'Lion', ipa: '/ˈlaɪən/', meaning: 'Sư tử', emoji: '🦁', hex: '#E53E3E' },
+    { num: 11, name: 'Cow', ipa: '/kaʊ/', meaning: 'Bò sữa', emoji: '🐮', hex: '#38A169' },
+    { num: 12, name: 'Pig', ipa: '/pɪɡ/', meaning: 'Con lợn / Heo', emoji: '🐷', hex: '#ED64A6' },
+    { num: 13, name: 'Frog', ipa: '/frɒɡ/', meaning: 'Con ếch', emoji: '🐸', hex: '#38A169' },
+    { num: 14, name: 'Monkey', ipa: '/ˈmʌŋki/', meaning: 'Con khỉ', emoji: '🐵', hex: '#DD6B20' },
+    { num: 15, name: 'Chicken', ipa: '/ˈtʃɪkɪn/', meaning: 'Con gà', emoji: '🐔', hex: '#E53E3E' },
+    { num: 16, name: 'Duck', ipa: '/dʌk/', meaning: 'Con vịt', emoji: '🦆', hex: '#ECC94B' },
+    { num: 17, name: 'Bird', ipa: '/bɜːrd/', meaning: 'Con chim', emoji: '🐦', hex: '#4A90E2' },
+    { num: 18, name: 'Eagle', ipa: '/ˈiːɡəl/', meaning: 'Đại bàng', emoji: '🦅', hex: '#718096' },
+    { num: 19, name: 'Owl', ipa: '/aʊl/', meaning: 'Cú mèo', emoji: '🦉', hex: '#805AD5' },
+    { num: 20, name: 'Penguin', ipa: '/ˈpɛŋɡwɪn/', meaning: 'Chim cánh cụt', emoji: '🐧', hex: '#2B6CB0' },
+    { num: 21, name: 'Bat', ipa: '/bæt/', meaning: 'Con dơi', emoji: '🦇', hex: '#4A5568' },
+    { num: 22, name: 'Wolf', ipa: '/wʊlf/', meaning: 'Chó sói', emoji: '🐺', hex: '#718096' },
+    { num: 23, name: 'Horse', ipa: '/hɔːrs/', meaning: 'Con ngựa', emoji: '🐴', hex: '#DD6B20' },
+    { num: 24, name: 'Zebra', ipa: '/ˈziːbrə/', meaning: 'Ngựa vằn', emoji: '🦓', hex: '#4A5568' },
+    { num: 25, name: 'Giraffe', ipa: '/dʒɪˈrɑːf/', meaning: 'Hươu cao cổ', emoji: '🦒', hex: '#ECC94B' },
+    { num: 26, name: 'Elephant', ipa: '/ˈɛlɪfənt/', meaning: 'Con voi', emoji: '🐘', hex: '#718096' },
+    { num: 27, name: 'Rhinoceros', ipa: '/raɪˈnɒsərəs/', meaning: 'Tê giác', emoji: '🦏', hex: '#A0AEC0' },
+    { num: 28, name: 'Hippopotamus', ipa: '/ˌhɪpəˈpɒtəməs/', meaning: 'Hà mã', emoji: '🦛', hex: '#718096' },
+    { num: 29, name: 'Crocodile', ipa: '/ˈkrɒkədaɪl/', meaning: 'Cá sấu', emoji: '🐊', hex: '#38A169' },
+    { num: 30, name: 'Snake', ipa: '/sneɪk/', meaning: 'Con rắn', emoji: '🐍', hex: '#48BB78' },
+    { num: 31, name: 'Turtle', ipa: '/ˈtɜːrtl/', meaning: 'Con rùa', emoji: '🐢', hex: '#38A169' },
+    { num: 32, name: 'Whale', ipa: '/weɪl/', meaning: 'Cá voi', emoji: '🐳', hex: '#3182CE' },
+    { num: 33, name: 'Dolphin', ipa: '/ˈdɒlfɪn/', meaning: 'Cá heo', emoji: '🐬', hex: '#4A90E2' },
+    { num: 34, name: 'Seal', ipa: '/siːl/', meaning: 'Hải cẩu', emoji: '🦭', hex: '#A0AEC0' },
+    { num: 35, name: 'Fish', ipa: '/fɪʃ/', meaning: 'Con cá', emoji: '🐟', hex: '#4299E1' },
+    { num: 36, name: 'Shark', ipa: '/ʃɑːrk/', meaning: 'Cá mập', emoji: '🦈', hex: '#718096' },
+    { num: 37, name: 'Octopus', ipa: '/ˈɒktəpəs/', meaning: 'Bạch tuộc', emoji: '🐙', hex: '#9F7AEA' },
+    { num: 38, name: 'Crab', ipa: '/kræb/', meaning: 'Con cua', emoji: '🦀', hex: '#E53E3E' },
+    { num: 39, name: 'Butterfly', ipa: '/ˈbʌtərflaɪ/', meaning: 'Con bướm', emoji: '🦋', hex: '#4A90E2' },
+    { num: 40, name: 'Bee', ipa: '/biː/', meaning: 'Con ong', emoji: '🐝', hex: '#ECC94B' },
+    { num: 41, name: 'Ant', ipa: '/ænt/', meaning: 'Con kiến', emoji: '🐜', hex: '#E53E3E' },
+    { num: 42, name: 'Spider', ipa: '/ˈspaɪdər/', meaning: 'Con nhện', emoji: '🕷️', hex: '#4A5568' },
+    { num: 43, name: 'Kangaroo', ipa: '/ˌkæŋɡəˈruː/', meaning: 'Chuột túi', emoji: '🦘', hex: '#DD6B20' },
+    { num: 44, name: 'Camel', ipa: '/ˈkæməl/', meaning: 'Lạc đà', emoji: '🐫', hex: '#D69E2E' },
+    { num: 45, name: 'Sheep', ipa: '/ʃiːp/', meaning: 'Con cừu', emoji: '🐑', hex: '#CBD5E0' },
+    { num: 46, name: 'Goat', ipa: '/ɡoʊt/', meaning: 'Con dê', emoji: '🐐', hex: '#A0AEC0' },
+    { num: 47, name: 'Deer', ipa: '/dɪər/', meaning: 'Hươu / Nai', emoji: '🦌', hex: '#D69E2E' },
+    { num: 48, name: 'Squirrel', ipa: '/ˈskwɪrəl/', meaning: 'Con sóc', emoji: '🐿️', hex: '#DD6B20' },
+    { num: 49, name: 'Snail', ipa: '/sneɪl/', meaning: 'Ốc sên', emoji: '🐌', hex: '#A0AEC0' },
+    { num: 50, name: 'Koala', ipa: '/koʊˈɑːlə/', meaning: 'Gấu Koala', emoji: '🐨', hex: '#718096' }
+  ];
+
+  /* DỮ LIỆU CÂU ĐẾM GAME 4 (Bao gồm số nhiều bất quy tắc) */
+  const countGameQuestions = [
+    { count: 3, itemSingular: 'cat', itemPlural: 'cats', emoji: '🐱' },
+    { count: 5, itemSingular: 'dog', itemPlural: 'dogs', emoji: '🐶' },
+    { count: 2, itemSingular: 'fox', itemPlural: 'foxes', emoji: '🦊' }, // Số nhiều thêm 'es'
+    { count: 4, itemSingular: 'mouse', itemPlural: 'mice', emoji: '🐭' }, // Bất quy tắc
+    { count: 1, itemSingular: 'elephant', itemPlural: 'elephants', emoji: '🐘' },
+    { count: 6, itemSingular: 'bird', itemPlural: 'birds', emoji: '🐦' },
+    { count: 8, itemSingular: 'fish', itemPlural: 'fish', emoji: '🐟' }, // Bất quy tắc (giữ nguyên)
+    { count: 3, itemSingular: 'sheep', itemPlural: 'sheep', emoji: '🐑' }, // Bất quy tắc (giữ nguyên)
+    { count: 7, itemSingular: 'bee', itemPlural: 'bees', emoji: '🐝' },
+    { count: 2, itemSingular: 'butterfly', itemPlural: 'butterflies', emoji: '🦋' }, // y -> ies
+    { count: 4, itemSingular: 'monkey', itemPlural: 'monkeys', emoji: '🐵' },
+    { count: 1, itemSingular: 'tiger', itemPlural: 'tigers', emoji: '🐯' },
+    { count: 5, itemSingular: 'penguin', itemPlural: 'penguins', emoji: '🐧' },
+    { count: 9, itemSingular: 'ant', itemPlural: 'ants', emoji: '🐜' },
+    { count: 2, itemSingular: 'turtle', itemPlural: 'turtles', emoji: '🐢' },
+    { count: 3, itemSingular: 'kangaroo', itemPlural: 'kangaroos', emoji: '🦘' }
+  ];
+
+  let flashcardDeck = [];
+
+  function speak(text) {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = defaultSpeechRate;
+
+      const voices = window.speechSynthesis.getVoices();
+      const bestVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Samantha')));
+      if (bestVoice) utterance.voice = bestVoice;
+
+      window.speechSynthesis.speak(utterance);
+    }
+  }
+
+  function renderVocabGrid() {
+    const grid = document.getElementById('vocab-grid-container');
+    grid.innerHTML = '';
+    animalsList.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'number-card';
+      card.style.background = item.hex;
+
+      card.innerHTML = `
+        <div class="number-badge-wrapper">
+          <span class="number-display">${item.emoji}</span>
+        </div>
+        <div class="word-title">${item.name}</div>
+        <div class="phonetic">${item.ipa}</div>
+        <div class="meaning">${item.meaning}</div>
+        <div class="example-box">
+          <b>Ví dụ:</b> <i>"The ${item.name.toLowerCase()} is cute."</i>
+        </div>
+        <button class="audio-btn" onclick="speak('${item.name}')">🔊</button>
+      `;
+      grid.appendChild(card);
+    });
+  }
+  renderVocabGrid();
+
+  function switchTab(tabId, evt) {
+    clearTimeout(singleCardTimer);
+    clearTimeout(mcqTimer);
+    clearTimeout(spellingTimer);
+    clearTimeout(countTimer);
+
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
+    
+    document.getElementById(tabId).classList.add('active');
+    if(evt && evt.target) evt.target.classList.add('active');
+
+    if(tabId === 'game-flip') initSingleCardGame();
+    if(tabId === 'game-mcq') initMcqGame();
+    if(tabId === 'game-spelling') initSpellingGame();
+    if(tabId === 'game-count') initCountGame();
+  }
+
+  /* GAME 1: FLASHCARD */
+  let singleCardIdx = 0;
+  let singleCardTimer = null;
+  let cardFrontMode = 'viet';
+
+  function setCardFrontMode(mode, btnEl) {
+    cardFrontMode = mode;
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    if(btnEl) btnEl.classList.add('active');
+    renderSingleCardContent();
+  }
+
+  function initSingleCardGame() {
+    singleCardIdx = 0;
+    flashcardDeck = shuffleArray(animalsList);
+    renderSingleCardContent();
+  }
+
+  function changeCardWithAnimation() {
+    clearTimeout(singleCardTimer);
+    const cardEl = document.getElementById('single-card-el');
+    if (cardEl.classList.contains('flipped')) {
+      cardEl.classList.remove('flipped');
+      setTimeout(() => renderSingleCardContent(), 600);
+    } else {
+      renderSingleCardContent();
+    }
+  }
+
+  function renderSingleCardContent() {
+    const item = flashcardDeck[singleCardIdx];
+    const cardEl = document.getElementById('single-card-el');
+    const frontEl = document.getElementById('card-front-content');
+    const backEl = document.getElementById('card-back-content');
+    const counterEl = document.getElementById('card-counter-text');
+
+    cardEl.classList.remove('flipped');
+    counterEl.innerText = `Thẻ ${singleCardIdx + 1} / ${flashcardDeck.length}`;
+
+    frontEl.className = 'flip-card-front';
+    frontEl.style.background = 'linear-gradient(135deg, #38A169, #4FD1C5)';
+    
+    backEl.className = 'flip-card-back';
+    backEl.style.background = item.hex;
+
+    if(cardFrontMode === 'viet') {
+      frontEl.innerHTML = `
+        <h1 style="font-size: 3.8rem; margin-bottom: 4px;">${item.emoji}</h1>
+        <h2 style="font-size: 1.5rem; font-weight:800;">${item.name}</h2>
+        <p style="font-size: 0.85rem; opacity: 0.85;">(Chạm để xem nghĩa)</p>
+      `;
+      backEl.innerHTML = `
+        <h2 style="font-size: 1.8rem; font-weight:800; margin-bottom:4px;">${item.meaning}</h2>
+        <p style="font-size: 1.1rem; font-weight:700;">${item.ipa}</p>
+      `;
+    } else {
+      frontEl.innerHTML = `
+        <h1 style="font-size: 3.5rem; margin-bottom: 4px;">${item.emoji}</h1>
+        <h2 style="font-size: 1.3rem; font-weight:800;">${item.ipa}</h2>
+        <p style="font-size: 0.85rem; opacity: 0.85;">(Chạm để xem tên)</p>
+      `;
+      backEl.innerHTML = `
+        <h1 style="font-size: 2rem; font-weight:900;">${item.name}</h1>
+        <p style="font-size: 1.1rem; font-weight:700;">${item.meaning}</p>
+      `;
+    }
+  }
+
+  function flipSingleCard() {
+    const cardEl = document.getElementById('single-card-el');
+    if(!cardEl.classList.contains('flipped')) {
+      cardEl.classList.add('flipped');
+      const item = flashcardDeck[singleCardIdx];
+      speak(item.name);
+
+      clearTimeout(singleCardTimer);
+      singleCardTimer = setTimeout(() => nextSingleCard(true), 3000);
+    }
+  }
+
+  function nextSingleCard(isAuto = false) {
+    clearTimeout(singleCardTimer);
+    singleCardIdx = (singleCardIdx + 1) % flashcardDeck.length;
+    changeCardWithAnimation();
+  }
+
+  function prevSingleCard() {
+    clearTimeout(singleCardTimer);
+    singleCardIdx = (singleCardIdx - 1 + flashcardDeck.length) % flashcardDeck.length;
+    changeCardWithAnimation();
+  }
+
+  /* GAME 2: TRẮC NGHIỆM */
+  let mcqIdx = 0;
+  let mcqTimer = null;
+  let mcqList = [];
+
+  function initMcqGame() {
+    mcqList = shuffleArray(animalsList);
+    mcqIdx = 0;
+    loadMcqQuestion();
+  }
+
+  function loadMcqQuestion() {
+    clearTimeout(mcqTimer);
+    const item = mcqList[mcqIdx];
+    const previewBox = document.getElementById('mcq-number-preview');
+    const optionsGrid = document.getElementById('mcq-options-container');
+
+    previewBox.innerText = item.emoji;
+
+    let options = [item.name];
+    let otherItems = animalsList.filter(c => c.name !== item.name);
+    otherItems = shuffleArray(otherItems);
+    for(let i = 0; i < 3; i++) {
+      options.push(otherItems[i].name);
+    }
+    options = shuffleArray(options);
+
+    optionsGrid.innerHTML = '';
+    options.forEach(optName => {
+      const btn = document.createElement('button');
+      btn.className = 'mcq-btn';
+      btn.innerText = optName;
+      btn.onclick = () => handleMcqChoice(btn, optName, item.name);
+      optionsGrid.appendChild(btn);
+    });
+  }
+
+  function handleMcqChoice(btn, selectedName, correctName) {
+    const allBtns = document.querySelectorAll('.mcq-btn');
+    allBtns.forEach(b => b.onclick = null);
+
+    if(selectedName === correctName) {
+      btn.classList.add('correct');
+      playSoundEffect('correct');
+      speak(correctName);
+
+      mcqTimer = setTimeout(() => {
+        mcqIdx = (mcqIdx + 1) % mcqList.length;
+        loadMcqQuestion();
+      }, 2000);
+    } else {
+      btn.classList.add('wrong');
+      playSoundEffect('wrong');
+      allBtns.forEach(b => {
+        if(b.innerText === correctName) b.classList.add('correct');
+      });
+      speak(correctName);
+
+      mcqTimer = setTimeout(() => loadMcqQuestion(), 2500);
+    }
+  }
+
+  /* GAME 3: CHÍNH TẢ */
+  let spellingIdx = 0;
+  let spellingTimer = null;
+  let spellingList = [];
+  let spellingCorrectCount = 0;
+
+  function initSpellingGame() {
+    spellingList = shuffleArray(animalsList);
+    spellingIdx = 0;
+    spellingCorrectCount = 0;
+    updateSpellingScore();
+    loadSpellingQuestion();
+  }
+
+  function updateSpellingScore() {
+    document.getElementById('spelling-score').innerText = `🎯 Đã đúng: ${spellingCorrectCount} / ${spellingList.length} câu`;
+  }
+
+  function loadSpellingQuestion() {
+    clearTimeout(spellingTimer);
+    const item = spellingList[spellingIdx];
+    const preview = document.getElementById('spelling-preview');
+    const input = document.getElementById('spelling-input');
+
+    preview.innerText = item.emoji;
+    input.value = '';
+    input.disabled = false;
+    input.focus();
+    speak(item.name);
+  }
+
+  function playSpellingAudio() {
+    speak(spellingList[spellingIdx].name);
+  }
+
+  function checkSpelling() {
+    const inputEl = document.getElementById('spelling-input');
+    const inputVal = inputEl.value.trim().toLowerCase();
+    const correctVal = spellingList[spellingIdx].name.toLowerCase();
+
+    if(inputVal === correctVal) {
+      inputEl.disabled = true;
+      spellingCorrectCount++;
+      updateSpellingScore();
+      playSoundEffect('correct');
+      speak(spellingList[spellingIdx].name);
+
+      spellingTimer = setTimeout(() => {
+        spellingIdx = (spellingIdx + 1) % spellingList.length;
+        loadSpellingQuestion();
+      }, 2000);
+    } else {
+      playSoundEffect('wrong');
+      inputEl.style.borderColor = '#E53E3E';
+      setTimeout(() => inputEl.style.borderColor = '#CBD5E0', 1000);
+    }
+  }
+
+  /* GAME 4: ĐẾM VẬT DỤNG VÀ VIẾT CÂU */
+  let countIdx = 0;
+  let countTimer = null;
+  let countList = [];
+  let countCorrectCount = 0;
+
+  function initCountGame() {
+    countList = shuffleArray(countGameQuestions);
+    countIdx = 0;
+    countCorrectCount = 0;
+    updateCountScore();
+    loadCountQuestion();
+  }
+
+  function updateCountScore() {
+    document.getElementById('count-score').innerText = `🎯 Đã đúng: ${countCorrectCount} / ${countList.length} câu`;
+  }
+
+  function loadCountQuestion() {
+    clearTimeout(countTimer);
+    const item = countList[countIdx];
+    const container = document.getElementById('count-items-container');
+    const input = document.getElementById('count-sentence-input');
+    const feedback = document.getElementById('count-feedback');
+    const counterText = document.getElementById('count-counter-text');
+
+    counterText.innerText = `Câu ${countIdx + 1} / ${countList.length}`;
+    feedback.innerText = '';
+    input.value = '';
+    input.disabled = false;
+    input.style.borderColor = '#CBD5E0';
+    input.focus();
+
+    container.innerHTML = '';
+    for(let i = 0; i < item.count; i++) {
+      const span = document.createElement('span');
+      span.className = 'item-emoji';
+      span.innerText = item.emoji;
+      container.appendChild(span);
+    }
+  }
+
+  function normalizeSentence(str) {
+    return str.toLowerCase().replace(/[.,?!]/g, '').replace(/\s+/g, ' ').trim();
+  }
+
+  function checkCountSentence() {
+    const item = countList[countIdx];
+    const inputEl = document.getElementById('count-sentence-input');
+    const feedback = document.getElementById('count-feedback');
+    const userInput = normalizeSentence(inputEl.value);
+
+    const verb = item.count === 1 ? 'is' : 'are';
+    const noun = item.count === 1 ? item.itemSingular : item.itemPlural;
+
+    const validSentence = normalizeSentence(`There ${verb} ${item.count} ${noun}`);
+
+    if (userInput === validSentence) {
+      const spokenSentence = `There ${verb} ${item.count} ${noun}`;
+      feedback.style.color = '#38A169';
+      feedback.innerText = '🎉 Chính xác! Tuyệt vời!';
+      inputEl.disabled = true;
+      
+      countCorrectCount++;
+      updateCountScore();
+      playSoundEffect('correct');
+      speak(spokenSentence);
+
+      countTimer = setTimeout(() => {
+        countIdx = (countIdx + 1) % countList.length;
+        loadCountQuestion();
+      }, 2500);
+    } else {
+      playSoundEffect('wrong');
+      feedback.style.color = '#E53E3E';
+      feedback.innerText = `❌ Thử lại nhé! Gợi ý: "There ${verb} ${item.count} ${noun}"`;
+      inputEl.style.borderColor = '#E53E3E';
+      setTimeout(() => inputEl.style.borderColor = '#CBD5E0', 1200);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('spelling-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') checkSpelling();
+    });
+
+    document.getElementById('count-sentence-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') checkCountSentence();
+    });
+  });
+</script>
+
+</body>
+</html>

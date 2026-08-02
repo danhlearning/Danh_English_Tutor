@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Học Tiếng Anh Chủ Đề Trái Cây (Fruits)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --primary: #38A169;
+    --primary-hover: #2F855A;
+    --secondary: #E53E3E;
+    --accent: #ECC94B;
+    --bg-color: #F0F4F8;
+    --card-bg: #FFFFFF;
+    --text-color: #2D3748;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Nunito', sans-serif; }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #2F855A;
+    text-shadow: 1px 1px 0px #CBD5E0;
+  }
+
+  nav {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-btn {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    background: #FFFFFF;
+    color: #4A5568;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+  }
+
+  .nav-btn.active, .nav-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(56, 161, 105, 0.3);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 950px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
+
+  .tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* TAB 1: VOCABULARY GRID */
+  .vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+  }
+
+  .number-card {
+    border-radius: 16px;
+    padding: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+
+  .number-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .number-badge-wrapper {
+    width: 100%;
+    height: 85px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .number-display {
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+
+  .word-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 2px;
+  }
+
+  .phonetic {
+    font-size: 0.9rem;
+    opacity: 0.95;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+
+  .meaning {
+    font-size: 0.88rem;
+    background: rgba(0, 0, 0, 0.22);
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  .example-box {
+    background: rgba(255, 255, 255, 0.95);
+    color: #2D3748;
+    padding: 8px 10px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 0.82rem;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .audio-btn {
+    background: white;
+    color: #2D3748;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    transition: transform 0.2s;
+  }
+
+  .audio-btn:hover {
+    transform: scale(1.1);
+  }
+
+  /* TAB 2: RULES */
+  .sentence-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .sentence-card {
+    background: #F7FAFC;
+    border-left: 5px solid var(--primary);
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .sentence-card h3 {
+    color: #2F855A;
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
+
+  .dialogue {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+
+  .speaker {
+    font-weight: 800;
+    color: #D69E2E;
+  }
+
+  /* GAMES COMMON UI */
+  .single-card-container, .quiz-container, .spelling-box, .count-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 5px;
+  }
+
+  .score-board {
+    background: #FEFCBF;
+    color: #744210;
+    border: 2px solid #F6E05E;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 1.05rem;
+  }
+
+  /* FLASHCARD */
+  .flip-card-single {
+    background-color: transparent;
+    width: 320px;
+    height: 220px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    border-radius: 16px;
+  }
+
+  .flip-card-single.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: 3px solid white;
+  }
+
+  .flip-card-front {
+    background: linear-gradient(135deg, #48BB78, #38A169);
+    color: white;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+    color: white;
+  }
+
+  .card-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .card-counter {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #718096;
+  }
+
+  .number-preview-box {
+    width: 240px;
+    min-height: 120px;
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #2F855A;
+    text-align: center;
+    padding: 12px;
+    border: 2px solid #E2E8F0;
+  }
+
+  .mcq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .mcq-btn {
+    padding: 12px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    border: 2px solid #E2E8F0;
+    border-radius: 12px;
+    background: #F7FAFC;
+    color: #2D3748;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .mcq-btn:hover {
+    border-color: var(--primary);
+    background: #F0FFF4;
+  }
+
+  .mcq-btn.correct {
+    background: #48BB78 !important;
+    color: white !important;
+    border-color: #38A169 !important;
+  }
+
+  .mcq-btn.wrong {
+    background: #F56565 !important;
+    color: white !important;
+    border-color: #C53030 !important;
+  }
+
+  .spelling-input-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .spelling-input {
+    padding: 12px 16px;
+    font-size: 1.05rem;
+    border: 2px solid #CBD5E0;
+    border-radius: 10px;
+    text-align: center;
+    width: 360px;
+    max-width: 90%;
+    font-weight: 700;
+  }
+
+  .spelling-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(72, 187, 120, 0.2);
+  }
+
+  .btn-action {
+    padding: 10px 18px;
+    font-size: 1rem;
+    font-weight: 700;
+    background: #38A169;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .btn-action:hover {
+    background: #2F855A;
+  }
+
+  .btn-reveal {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    background: #DD6B20;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .btn-reveal:hover {
+    background: #C05621;
+  }
+
+  /* UI GAME 4: DISPLAY FRUITS FOR COUNTING */
+  .fruit-display-box {
+    width: 100%;
+    max-width: 420px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border: 2px solid #CBD5E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fruit-header {
+    width: 100%;
+    background: #38A169;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+
+  .fruit-body {
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+  }
+
+  .fruit-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    max-width: 360px;
+    padding: 10px;
+    background: #F7FAFC;
+    border-radius: 12px;
+    border: 1px dashed #CBD5E0;
+  }
+
+  .fruit-icon-item {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    transition: transform 0.2s;
+  }
+
+  .fruit-icon-item:hover {
+    transform: scale(1.2);
+  }
+
+  .fruit-subtext {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #2D3748;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .feedback-msg {
+    font-weight: 800;
+    font-size: 1.05rem;
+    min-height: 32px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .hint-note {
+    font-size: 0.85rem;
+    color: #718096;
+    text-align: center;
+    max-width: 500px;
+    margin-top: 5px;
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🍎 FRUIT LEARNING & COUNTING GAME</h1>
+</header>
+
+<nav>
+  <button class="nav-btn active" onclick="switchTab('vocab', event)">📚 Từ Vựng Trái Cây</button>
+  <button class="nav-btn" onclick="switchTab('sentences', event)">🗣️ Mẫu Câu & Quy Tắc</button>
+  <button class="nav-btn" onclick="switchTab('game-flip', event)">🃏 Game 1: Lật Flashcard</button>
+  <button class="nav-btn" onclick="switchTab('game-mcq', event)">🎯 Game 2: Trắc Nghiệm</button>
+  <button class="nav-btn" onclick="switchTab('game-spelling', event)">✍️ Game 3: Điền Từ</button>
+  <button class="nav-btn" onclick="switchTab('game-count', event)">🧩 Game 4: Đếm Số Lượng & Viết Câu (50 Câu)</button>
+</nav>
+
+<div class="container">
+  
+  <!-- TAB 1: VOCABULARY GRID -->
+  <div id="vocab" class="tab-content active">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Từ Vựng 18 Loại Trái Cây</h2>
+    <div class="vocab-grid" id="vocab-grid-container"></div>
+  </div>
+
+  <!-- TAB 2: RULES & SENTENCES -->
+  <div id="sentences" class="tab-content">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Quy Tắc Ngữ Pháp & Mẫu Câu</h2>
+    <div class="sentence-section">
+      
+      <div class="sentence-card">
+        <h3>💡 1. Mạo Từ "A" và "AN" (Số ít - 1 quả)</h3>
+        <p>• <b>A:</b> Đứng trước danh từ bắt đầu bằng một <b>Phụ âm</b> (e.g. <i>a banana, a watermelon, a strawberry</i>).</p>
+        <p>• <b>AN:</b> Đứng trước danh từ bắt đầu bằng một <b>Nguyên âm (A, E, I, O, U)</b> (e.g. <i>an apple, an orange, an avocado</i>).</p>
+        <p>➔ Mẫu câu: <b>It is a/an + [Tên quả]</b> (e.g. <i>It is an apple. / It is a banana.</i>)</p>
+      </div>
+
+      <div class="sentence-card">
+        <h3>💡 2. Quy Tắc Số Nhiều & Đếm Số Lượng (2 quả trở lên)</h3>
+        <p>Khi có từ 2 quả trở lên, ta thêm <b>-s</b>, <b>-es</b>, hoặc đổi <b>-y thành -ies</b>:</p>
+        <p>• Tận cùng thông thường: thêm <b>-s</b> (e.g. <i>2 apples, 5 bananas, 10 oranges</i>).</p>
+        <p>• Tận cùng -ch, -o: thêm <b>-es</b> (e.g. <i>peach ➔ peaches, mango ➔ mangoes</i>).</p>
+        <p>• Tận cùng phụ âm + y: đổi thành <b>-ies</b> (e.g. <i>strawberry ➔ strawberries, cherry ➔ cherries</i>).</p>
+        <p>➔ Mẫu câu đếm số lượng: <b>There are [Số lượng] [Tên quả số nhiều]</b> (e.g. <i>There are 20 strawberries.</i>)</p>
+      </div>
+
+      <div class="sentence-card">
+        <h3>Mẫu câu giao tiếp thông dụng</h3>
+        <div class="dialogue">
+          <p><span class="speaker">Hỏi số lượng:</span> How many apples are there? <button class="audio-btn" style="display:inline-flex; width:26px; height:26px; font-size:0.75rem;" onclick="speak('How many apples are there?')">🔊</button></p>
+          <p><span class="speaker">Trả lời:</span> There are 20 apples. <button class="audio-btn" style="display:inline-flex; width:26px; height:26px; font-size:0.75rem;" onclick="speak('There are 20 apples.')">🔊</button></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TAB 3: GAME 1 FLIP CARD -->
+  <div id="game-flip" class="tab-content">
+    <h2 style="text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để lật xem tên tiếng Anh và nghe phát âm!</p>
+    
+    <div class="single-card-container">
+      <div class="card-controls">
+        <span class="card-counter" id="card-counter-text">Thẻ 1 / 18</span>
+      </div>
+
+      <div class="flip-card-single" id="single-card-el" onclick="flipSingleCard()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" id="card-front-content"></div>
+          <div class="flip-card-back" id="card-back-content"></div>
+        </div>
+      </div>
+
+      <div>
+        <button class="nav-btn" onclick="prevSingleCard()">⏮️ Thẻ Trước</button>
+        <button class="nav-btn" onclick="nextSingleCard()">Thẻ Tiếp ⏭️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: GAME 2 MCQ -->
+  <div id="game-mcq" class="tab-content">
+    <h2 style="text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Game 2: Trắc Nghiệm Từ Vựng</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình và chọn đáp án đúng nhất!</p>
+    
+    <div class="quiz-container">
+      <div class="number-preview-box" id="mcq-number-preview"></div>
+      <div class="mcq-grid" id="mcq-options-container"></div>
+    </div>
+  </div>
+
+  <!-- TAB 5: GAME 3 SPELLING -->
+  <div id="game-spelling" class="tab-content">
+    <h2 style="text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Game 3: Điền Chính Tả</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn nghĩa và nghe âm thanh để gõ tên từ vựng tiếng Anh!</p>
+    
+    <div class="spelling-box">
+      <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 câu</div>
+
+      <div id="spelling-preview" class="number-preview-box"></div>
+      <button class="audio-btn" style="width: 42px; height: 42px; font-size: 1.2rem; margin-top:0;" onclick="playSpellingAudio()">🔊</button>
+      
+      <div class="feedback-msg" id="spelling-feedback"></div>
+
+      <div class="spelling-input-group">
+        <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ tên tiếng Anh..." autocomplete="off">
+        <button class="btn-action" onclick="checkSpelling()">Kiểm tra</button>
+        <button class="btn-reveal" onclick="revealSpellingAnswer()">💡 Đáp án</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 6: GAME 4 COUNTING & SENTENCES -->
+  <div id="game-count" class="tab-content">
+    <h2 style="text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Game 4: Đếm Số Lượng & Viết Mẫu Câu (50 Câu)</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Đếm số lượng quả trong khung và điền câu Tiếng Anh thích hợp!</p>
+    
+    <div class="count-game-container">
+      <div class="score-board" id="count-score">🎯 Đã đúng: 0 / 50 câu</div>
+
+      <div class="card-controls">
+        <span class="card-counter" id="count-counter-text">Câu 1 / 50</span>
+      </div>
+
+      <div class="fruit-display-box">
+        <div class="fruit-header">COUNT THE FRUITS 🍎🍌🍊</div>
+        <div class="fruit-body">
+          <div class="fruit-items-container" id="fruit-items-container">
+            <!-- Dynamic Fruit Emojis -->
+          </div>
+          <div class="fruit-subtext" id="fruit-sub-display">Đếm: 20 quả dâu tây</div>
+        </div>
+      </div>
+
+      <div class="feedback-msg" id="count-feedback"></div>
+
+      <div class="spelling-input-group">
+        <input type="text" id="count-sentence-input" class="spelling-input" placeholder="Ví dụ: There are 20 strawberries / It is an apple..." autocomplete="off">
+        <button class="btn-action" onclick="checkCountSentence()">Kiểm tra</button>
+        <button class="btn-reveal" onclick="revealCountAnswer()">💡 Đáp án</button>
+      </div>
+
+      <div class="hint-note">
+        💡 <b>Cấu trúc chấp nhận:</b><br>
+        • Nếu là 1 quả: <i>"It is an apple"</i>, <i>"It's a banana"</i>, <i>"an apple"</i><br>
+        • Nếu nhiều quả: <i>"There are 20 strawberries"</i>, <i>"20 strawberries"</i>, <i>"They are 20 strawberries"</i>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  /* SPEECH SYNTHESIS & SOUND EFFECTS */
+  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+  function playSoundEffect(type) {
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+
+    if (type === 'correct') {
+      const now = audioCtx.currentTime;
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(523.25, now); 
+      osc.frequency.setValueAtTime(659.25, now + 0.1); 
+      osc.frequency.setValueAtTime(783.99, now + 0.2); 
+      osc.frequency.setValueAtTime(1046.50, now + 0.3); 
+      gain.gain.setValueAtTime(0.3, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
+      osc.start(now);
+      osc.stop(now + 0.5);
+    } else if (type === 'wrong') {
+      const now = audioCtx.currentTime;
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(180, now);
+      osc.frequency.setValueAtTime(130, now + 0.15);
+      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+      osc.start(now);
+      osc.stop(now + 0.35);
+    }
+  }
+
+  function speak(text) {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.85;
+
+      const voices = window.speechSynthesis.getVoices();
+      const bestVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Samantha') || v.name.includes('Zira')));
+      if (bestVoice) {
+        utterance.voice = bestVoice;
+      }
+
+      window.speechSynthesis.speak(utterance);
+    }
+  }
+
+  function shuffleArray(array) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  /* DATA: 18 FRUITS */
+  const fruitVocab = [
+    { icon: '🍎', name: 'Apple', plural: 'apples', ipa: '/ˈæp.əl/', meaning: 'Quả táo', hex: '#E53E3E', article: 'an' },
+    { icon: '🍌', name: 'Banana', plural: 'bananas', ipa: '/bəˈnɑː.nə/', meaning: 'Quả chuối', hex: '#D69E2E', article: 'a' },
+    { icon: '🍊', name: 'Orange', plural: 'oranges', ipa: '/ˈɒr.ɪndʒ/', meaning: 'Quả cam', hex: '#DD6B20', article: 'an' },
+    { icon: '🍇', name: 'Grape', plural: 'grapes', ipa: '/ɡreɪp/', meaning: 'Quả nho', hex: '#805AD5', article: 'a' },
+    { icon: '🍉', name: 'Watermelon', plural: 'watermelons', ipa: '/ˈwɔː.təˌmel.ən/', meaning: 'Quả dưa hấu', hex: '#38A169', article: 'a' },
+    { icon: '🍓', name: 'Strawberry', plural: 'strawberries', ipa: '/ˈstrɔː.bər.i/', meaning: 'Quả dâu tây', hex: '#E53E3E', article: 'a' },
+    { icon: '🥭', name: 'Mango', plural: 'mangoes', ipa: '/ˈmæŋ.ɡəʊ/', meaning: 'Quả xoài', hex: '#ED8936', article: 'a' },
+    { icon: '🍍', name: 'Pineapple', plural: 'pineapples', ipa: '/ˈpaɪnˌæp.əl/', meaning: 'Quả dứa (thơm)', hex: '#ECC94B', article: 'a' },
+    { icon: '🥑', name: 'Avocado', plural: 'avocados', ipa: '/ˌæv.əˈkɑː.dəʊ/', meaning: 'Quả bơ', hex: '#2F855A', article: 'an' },
+    { icon: '🍑', name: 'Peach', plural: 'peaches', ipa: '/piːtʃ/', meaning: 'Quả đào', hex: '#ED64A6', article: 'a' },
+    { icon: '🍒', name: 'Cherry', plural: 'cherries', ipa: '/ˈtʃer.i/', meaning: 'Quả anh đào', hex: '#9B2C2C', article: 'a' },
+    { icon: '🍋', name: 'Lemon', plural: 'lemons', ipa: '/ˈlem.ən/', meaning: 'Quả chanh vàng', hex: '#D69E2E', article: 'a' },
+    { icon: '🍈', name: 'Melon', plural: 'melons', ipa: '/ˈmel.ən/', meaning: 'Quả dưa lưới', hex: '#48BB78', article: 'a' },
+    { icon: '🍐', name: 'Pear', plural: 'pears', ipa: '/peə/', meaning: 'Quả lê', hex: '#38A169', article: 'a' },
+    { icon: '🥝', name: 'Kiwi', plural: 'kiwis', ipa: '/ˈkiː.wiː/', meaning: 'Quả kiwi', hex: '#2F855A', article: 'a' },
+    { icon: '🥥', name: 'Coconut', plural: 'coconuts', ipa: '/ˈkəʊ.kə.nʌt/', meaning: 'Quả dừa', hex: '#718096', article: 'a' },
+    { icon: '🍈', name: 'Papaya', plural: 'papayas', ipa: '/pəˈpaɪ.ə/', meaning: 'Quả đu đủ', hex: '#DD6B20', article: 'a' },
+    { icon: '🍏', name: 'Guava', plural: 'guavas', ipa: '/ˈɡwɑː.və/', meaning: 'Quả ổi', hex: '#48BB78', article: 'a' }
+  ];
+
+  /* GENERATE 50 QUESTIONS FOR GAME 4 */
+  function buildGame4Questions() {
+    const list = [];
+    
+    // Pattern A: Multi-fruit counting questions (e.g. 20 strawberries, 5 apples, 12 bananas...)
+    const countConfigs = [
+      { fruit: 'Strawberry', count: 20, vn: '20 quả dâu tây' },
+      { fruit: 'Apple', count: 5, vn: '5 quả táo' },
+      { fruit: 'Banana', count: 12, vn: '12 quả chuối' },
+      { fruit: 'Orange', count: 8, vn: '8 quả cam' },
+      { fruit: 'Grape', count: 15, vn: '15 quả nho' },
+      { fruit: 'Mango', count: 6, vn: '6 quả xoài' },
+      { fruit: 'Watermelon', count: 3, vn: '3 quả dưa hấu' },
+      { fruit: 'Cherry', count: 18, vn: '18 quả anh đào' },
+      { fruit: 'Peach', count: 7, vn: '7 quả đào' },
+      { fruit: 'Lemon', count: 10, vn: '10 quả chanh vàng' },
+      { fruit: 'Pineapple', count: 4, vn: '4 quả dứa' },
+      { fruit: 'Avocado', count: 9, vn: '9 quả bơ' },
+      { fruit: 'Pear', count: 14, vn: '14 quả lê' },
+      { fruit: 'Kiwi', count: 11, vn: '11 quả kiwi' },
+      { fruit: 'Coconut', count: 2, vn: '2 quả dừa' },
+      { fruit: 'Papaya', count: 5, vn: '5 quả đu đủ' },
+      { fruit: 'Guava', count: 16, vn: '16 quả ổi' },
+      { fruit: 'Melon', count: 4, vn: '4 quả dưa lưới' },
+      
+      { fruit: 'Strawberry', count: 10, vn: '10 quả dâu tây' },
+      { fruit: 'Apple', count: 20, vn: '20 quả táo' },
+      { fruit: 'Banana', count: 15, vn: '15 quả chuối' },
+      { fruit: 'Orange', count: 12, vn: '12 quả cam' },
+      { fruit: 'Grape', count: 20, vn: '20 quả nho' },
+      { fruit: 'Mango', count: 8, vn: '8 quả xoài' },
+      { fruit: 'Cherry', count: 12, vn: '12 quả anh đào' },
+      { fruit: 'Lemon', count: 6, vn: '6 quả chanh vàng' },
+      { fruit: 'Peach', count: 10, vn: '10 quả đào' },
+      { fruit: 'Kiwi', count: 8, vn: '8 quả kiwi' },
+      { fruit: 'Avocado', count: 15, vn: '15 quả bơ' },
+      { fruit: 'Pineapple', count: 6, vn: '6 quả dứa' },
+      { fruit: 'Pear', count: 9, vn: '9 quả lê' }
+    ];
+
+    countConfigs.forEach(item => {
+      const fObj = fruitVocab.find(f => f.name === item.fruit);
+      if (fObj) {
+        list.push({
+          type: 'plural',
+          icon: fObj.icon,
+          count: item.count,
+          vnText: `Đếm: ${item.vn}`,
+          fruitName: fObj.name,
+          pluralName: fObj.plural,
+          targetSentence: `There are ${item.count} ${fObj.plural}`,
+          altSentence: `${item.count} ${fObj.plural}`
+        });
+      }
+    });
+
+    // Pattern B: Single fruit questions (1 fruit -> It is an apple / It is a banana)
+    fruitVocab.forEach(fObj => {
+      list.push({
+        type: 'single',
+        icon: fObj.icon,
+        count: 1,
+        vnText: `Đây là: ${fObj.meaning}`,
+        fruitName: fObj.name,
+        article: fObj.article,
+        targetSentence: `It is ${fObj.article} ${fObj.name.toLowerCase()}`,
+        altSentence: `${fObj.article} ${fObj.name.toLowerCase()}`
+      });
+    });
+
+    // Ensure we have exactly 50 or shuffle to get top 50
+    const shuffled = shuffleArray(list);
+    return shuffled.slice(0, 50);
+  }
+
+  const fruitQuestions = buildGame4Questions();
+
+  /* TAB CONTROL */
+  function switchTab(tabId, evt) {
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
+    
+    document.getElementById(tabId).classList.add('active');
+    if(evt && evt.target) {
+      evt.target.classList.add('active');
+    }
+
+    if(tabId === 'game-flip') initSingleCardGame();
+    if(tabId === 'game-mcq') initMcqGame();
+    if(tabId === 'game-spelling') initSpellingGame();
+    if(tabId === 'game-count') initCountGame();
+  }
+
+  /* RENDER TAB 1 VOCABULARY */
+  function renderVocabGrid() {
+    const grid = document.getElementById('vocab-grid-container');
+    grid.innerHTML = '';
+    fruitVocab.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'number-card';
+      card.style.background = item.hex;
+
+      card.innerHTML = `
+        <div class="number-badge-wrapper">
+          <span class="number-display">${item.icon}</span>
+        </div>
+        <div class="word-title">${item.name}</div>
+        <div class="phonetic">${item.ipa}</div>
+        <div class="meaning">${item.meaning}</div>
+        <div class="example-box">
+          <b>Ví dụ:</b> <i>"It is ${item.article} ${item.name.toLowerCase()}."</i>
+        </div>
+        <button class="audio-btn" onclick="speak('${item.name}')">🔊</button>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  /* GAME 1: FLASHCARD */
+  let flashcardDeck = [];
+  let singleCardIdx = 0;
+
+  function initSingleCardGame() {
+    singleCardIdx = 0;
+    flashcardDeck = shuffleArray(fruitVocab);
+    renderSingleCardContent();
+  }
+
+  function renderSingleCardContent() {
+    const item = flashcardDeck[singleCardIdx];
+    const cardEl = document.getElementById('single-card-el');
+    const frontEl = document.getElementById('card-front-content');
+    const backEl = document.getElementById('card-back-content');
+    const counterEl = document.getElementById('card-counter-text');
+
+    cardEl.classList.remove('flipped');
+    counterEl.innerText = `Thẻ ${singleCardIdx + 1} / ${flashcardDeck.length}`;
+
+    frontEl.className = 'flip-card-front';
+    frontEl.style.background = 'linear-gradient(135deg, #48BB78, #38A169)';
+
+    backEl.className = 'flip-card-back';
+    backEl.style.background = item.hex;
+
+    frontEl.innerHTML = `
+      <div style="font-size: 3.5rem; margin-bottom: 2px;">${item.icon}</div>
+      <h2 style="font-size: 1.6rem; font-weight:800;">${item.meaning}</h2>
+      <p style="font-size: 0.85rem; opacity: 0.85; margin-top:4px;">(Chạm vào thẻ để lật xem tiếng Anh)</p>
+    `;
+    backEl.innerHTML = `
+      <h2 style="font-size: 2.2rem; margin-bottom: 4px; font-weight:800;">${item.name}</h2>
+      <p style="font-size: 1.1rem; font-weight:700;">${item.ipa}</p>
+    `;
+  }
+
+  function flipSingleCard() {
+    const cardEl = document.getElementById('single-card-el');
+    cardEl.classList.toggle('flipped');
+    if(cardEl.classList.contains('flipped')) {
+      const item = flashcardDeck[singleCardIdx];
+      speak(item.name);
+    }
+  }
+
+  function nextSingleCard() {
+    singleCardIdx = (singleCardIdx + 1) % flashcardDeck.length;
+    renderSingleCardContent();
+  }
+
+  function prevSingleCard() {
+    singleCardIdx = (singleCardIdx - 1 + flashcardDeck.length) % flashcardDeck.length;
+    renderSingleCardContent();
+  }
+
+  /* GAME 2: TRẮC NGHIỆM */
+  let mcqIdx = 0;
+  let mcqList = [];
+  let mcqTimer = null;
+
+  function initMcqGame() {
+    mcqList = shuffleArray(fruitVocab);
+    mcqIdx = 0;
+    loadMcqQuestion();
+  }
+
+  function loadMcqQuestion() {
+    clearTimeout(mcqTimer);
+    const item = mcqList[mcqIdx];
+    const previewBox = document.getElementById('mcq-number-preview');
+    const optionsGrid = document.getElementById('mcq-options-container');
+
+    previewBox.innerHTML = `<div style="font-size:3.5rem; line-height:1;">${item.icon}</div><div style="font-size:1.1rem; font-weight:700; color:#4A5568;">${item.meaning}</div>`;
+
+    let options = [item.name];
+    let otherItems = fruitVocab.filter(c => c.name !== item.name);
+    otherItems = shuffleArray(otherItems);
+    for(let i = 0; i < 3; i++) {
+      options.push(otherItems[i].name);
+    }
+    options = shuffleArray(options);
+
+    optionsGrid.innerHTML = '';
+    options.forEach(optName => {
+      const btn = document.createElement('button');
+      btn.className = 'mcq-btn';
+      btn.innerText = optName;
+      btn.onclick = () => handleMcqChoice(btn, optName, item.name);
+      optionsGrid.appendChild(btn);
+    });
+  }
+
+  function handleMcqChoice(btn, selectedName, correctName) {
+    const allBtns = document.querySelectorAll('.mcq-btn');
+    allBtns.forEach(b => b.onclick = null);
+
+    if(selectedName === correctName) {
+      btn.classList.add('correct');
+      playSoundEffect('correct');
+      speak(correctName);
+
+      mcqTimer = setTimeout(() => {
+        mcqIdx = (mcqIdx + 1) % mcqList.length;
+        loadMcqQuestion();
+      }, 1800);
+    } else {
+      btn.classList.add('wrong');
+      playSoundEffect('wrong');
+      allBtns.forEach(b => {
+        if(b.innerText === correctName) b.classList.add('correct');
+      });
+      speak(correctName);
+
+      mcqTimer = setTimeout(() => {
+        loadMcqQuestion();
+      }, 2200);
+    }
+  }
+
+  /* GAME 3: CHÍNH TẢ */
+  let spellingIdx = 0;
+  let spellingList = [];
+  let spellingCorrectCount = 0;
+
+  function initSpellingGame() {
+    spellingList = shuffleArray(fruitVocab);
+    spellingIdx = 0;
+    spellingCorrectCount = 0;
+    updateSpellingScore();
+    loadSpellingQuestion();
+  }
+
+  function updateSpellingScore() {
+    document.getElementById('spelling-score').innerText = `🎯 Đã đúng: ${spellingCorrectCount} / ${spellingList.length} câu`;
+  }
+
+  function loadSpellingQuestion() {
+    const item = spellingList[spellingIdx];
+    const preview = document.getElementById('spelling-preview');
+    const input = document.getElementById('spelling-input');
+    const feedback = document.getElementById('spelling-feedback');
+
+    preview.innerHTML = `<div style="font-size:3.5rem; line-height:1;">${item.icon}</div><div style="font-size:1.1rem; font-weight:700; color:#4A5568;">${item.meaning}</div>`;
+    
+    feedback.innerText = '';
+    input.value = '';
+    input.disabled = false;
+    input.style.borderColor = '#CBD5E0';
+    input.focus();
+    speak(item.name);
+  }
+
+  function playSpellingAudio() {
+    speak(spellingList[spellingIdx].name);
+  }
+
+  function checkSpelling() {
+    const inputEl = document.getElementById('spelling-input');
+    const feedback = document.getElementById('spelling-feedback');
+    const inputVal = inputEl.value.trim().toLowerCase();
+    const correctVal = spellingList[spellingIdx].name.toLowerCase();
+
+    if(inputVal === correctVal) {
+      feedback.style.color = '#38A169';
+      feedback.innerText = '🎉 Chính xác! Tuyệt vời!';
+      inputEl.disabled = true;
+      spellingCorrectCount++;
+      updateSpellingScore();
+      playSoundEffect('correct');
+      speak(spellingList[spellingIdx].name);
+
+      setTimeout(() => {
+        spellingIdx = (spellingIdx + 1) % spellingList.length;
+        loadSpellingQuestion();
+      }, 1800);
+    } else {
+      playSoundEffect('wrong');
+      feedback.style.color = '#E53E3E';
+      feedback.innerText = `❌ Sai rồi! Đáp án đúng: ${spellingList[spellingIdx].name}`;
+      inputEl.style.borderColor = '#E53E3E';
+    }
+  }
+
+  function revealSpellingAnswer() {
+    const feedback = document.getElementById('spelling-feedback');
+    const inputEl = document.getElementById('spelling-input');
+    const correctName = spellingList[spellingIdx].name;
+    
+    feedback.style.color = '#DD6B20';
+    feedback.innerText = `💡 Đáp án: ${correctName}`;
+    inputEl.value = correctName;
+    speak(correctName);
+  }
+
+  /* GAME 4: ĐẾM SỐ LƯỢNG & VIẾT MẪU CÂU (50 CÂU) */
+  let countIdx = 0;
+  let countCorrectCount = 0;
+
+  function initCountGame() {
+    countIdx = 0;
+    countCorrectCount = 0;
+    updateCountScore();
+    loadCountQuestion();
+  }
+
+  function updateCountScore() {
+    document.getElementById('count-score').innerText = `🎯 Đã đúng: ${countCorrectCount} / ${fruitQuestions.length} câu`;
+  }
+
+  function loadCountQuestion() {
+    const item = fruitQuestions[countIdx];
+    const itemsContainer = document.getElementById('fruit-items-container');
+    const subBox = document.getElementById('fruit-sub-display');
+    const input = document.getElementById('count-sentence-input');
+    const feedback = document.getElementById('count-feedback');
+    const counterText = document.getElementById('count-counter-text');
+
+    counterText.innerText = `Câu ${countIdx + 1} / ${fruitQuestions.length}`;
+    feedback.innerText = '';
+    feedback.style.color = '#2D3748';
+    input.value = '';
+    input.disabled = false;
+    input.style.borderColor = '#CBD5E0';
+
+    // Build fruit emoji grid dynamically based on count
+    itemsContainer.innerHTML = '';
+    
+    // Display up to the actual count of fruits
+    for(let i = 0; i < item.count; i++) {
+      const span = document.createElement('span');
+      span.className = 'fruit-icon-item';
+      span.innerText = item.icon;
+      itemsContainer.appendChild(span);
+    }
+
+    subBox.innerText = item.vnText;
+    input.focus();
+  }
+
+  function normalizeText(str) {
+    return str.toLowerCase()
+              .replace(/’/g, "'")
+              .replace(/[.,?!]/g, '')
+              .replace(/\s+/g, ' ')
+              .trim();
+  }
+
+  function checkCountSentence() {
+    const item = fruitQuestions[countIdx];
+    const inputEl = document.getElementById('count-sentence-input');
+    const feedback = document.getElementById('count-feedback');
+    const userInput = normalizeText(inputEl.value);
+
+    // Build accepted answers list
+    const validAnswers = [];
+
+    if (item.type === 'plural') {
+      // e.g. "There are 20 strawberries"
+      validAnswers.push(normalizeText(`There are ${item.count} ${item.pluralName}`));
+      validAnswers.push(normalizeText(`They are ${item.count} ${item.pluralName}`));
+      validAnswers.push(normalizeText(`${item.count} ${item.pluralName}`));
+      // Forgiving fallback if student forgets plural 's'
+      validAnswers.push(normalizeText(`There are ${item.count} ${item.fruitName}`));
+      validAnswers.push(normalizeText(`${item.count} ${item.fruitName}`));
+    } else {
+      // Single fruit e.g. "It is an apple"
+      validAnswers.push(normalizeText(`It is ${item.article} ${item.fruitName}`));
+      validAnswers.push(normalizeText(`It's ${item.article} ${item.fruitName}`));
+      validAnswers.push(normalizeText(`This is ${item.article} ${item.fruitName}`));
+      validAnswers.push(normalizeText(`${item.article} ${item.fruitName}`));
+      validAnswers.push(normalizeText(item.fruitName));
+    }
+
+    if (validAnswers.includes(userInput)) {
+      feedback.style.color = '#38A169';
+      feedback.innerText = '🎉 Chính xác! Tuyệt vời!';
+      inputEl.disabled = true;
+      
+      countCorrectCount++;
+      updateCountScore();
+      playSoundEffect('correct');
+      speak(item.targetSentence);
+
+      setTimeout(() => {
+        countIdx = (countIdx + 1) % fruitQuestions.length;
+        loadCountQuestion();
+      }, 2200);
+    } else {
+      playSoundEffect('wrong');
+      feedback.style.color = '#E53E3E';
+      feedback.innerText = `❌ Sai rồi! Đáp án chuẩn: "${item.targetSentence}"`;
+      inputEl.style.borderColor = '#E53E3E';
+    }
+  }
+
+  function revealCountAnswer() {
+    const item = fruitQuestions[countIdx];
+    const feedback = document.getElementById('count-feedback');
+    const inputEl = document.getElementById('count-sentence-input');
+
+    feedback.style.color = '#DD6B20';
+    feedback.innerText = `💡 Đáp án: ${item.targetSentence} (hoặc "${item.altSentence}")`;
+    inputEl.value = item.targetSentence;
+    speak(item.targetSentence);
+  }
+
+  /* INITIALIZATION */
+  document.addEventListener('DOMContentLoaded', () => {
+    renderVocabGrid();
+
+    document.getElementById('spelling-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') checkSpelling();
+    });
+
+    document.getElementById('count-sentence-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') checkCountSentence();
+    });
+  });
+</script>
+
+</body>
+</html>

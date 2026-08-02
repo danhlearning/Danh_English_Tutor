@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Học Tiếng Anh Chủ Đề Màu Sắc (English Colors for Kids)</title>
+<!-- Google Font: Nunito -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --primary: #4A90E2;
+    --secondary: #FF6B6B;
+    --accent: #FFD166;
+    --bg-color: #E2E8F0;
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --text-color: #2D3748;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Nunito', sans-serif; }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #2B6CB0;
+    text-shadow: 2px 2px 0px #CBD5E0;
+  }
+
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-btn {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    background: #FFFFFF;
+    color: #4A5568;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+  }
+
+  .nav-btn.active, .nav-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(74, 144, 226, 0.3);
+  }
+
+  /* Main Container */
+  .container {
+    width: 100%;
+    max-width: 900px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
+
+  .tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Pattern Caro biểu thị Transparent */
+  .transparent-bg-pattern {
+    background-color: #ffffff !important;
+    background-image: linear-gradient(45deg, #e2e8f0 25%, transparent 25%), 
+                      linear-gradient(-45deg, #e2e8f0 25%, transparent 25%), 
+                      linear-gradient(45deg, transparent 75%, #e2e8f0 75%), 
+                      linear-gradient(-45deg, transparent 75%, #e2e8f0 75%) !important;
+    background-size: 16px 16px !important;
+    background-position: 0 0, 0 8px, 8px -8px, -8px 0px !important;
+  }
+
+  /* TAB 1: VOCABULARY GRID */
+  .vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+  }
+
+  .color-card {
+    border-radius: 16px;
+    padding: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+
+  .color-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .real-obj-wrapper {
+    width: 100%;
+    height: 130px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.12);
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .real-obj-wrapper svg {
+    width: 90px;
+    height: 90px;
+  }
+
+  .word-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 2px;
+  }
+
+  .phonetic {
+    font-size: 1rem;
+    opacity: 0.95;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+
+  .meaning {
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .example-box {
+    background: rgba(255, 255, 255, 0.95);
+    color: #2D3748;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 0.85rem;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .audio-btn {
+    background: white;
+    color: #2D3748;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    transition: transform 0.2s;
+  }
+
+  .audio-btn:hover {
+    transform: scale(1.1);
+  }
+
+  /* TAB 2: SENTENCES */
+  .sentence-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .sentence-card {
+    background: #F7FAFC;
+    border-left: 5px solid var(--primary);
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .sentence-card h3 {
+    color: #2B6CB0;
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
+
+  .dialogue {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+
+  .speaker {
+    font-weight: 800;
+    color: #D69E2E;
+  }
+
+  /* GAMES */
+  .single-card-container, .quiz-container, .spelling-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+  }
+
+  .card-mode-selector {
+    display: flex;
+    gap: 8px;
+    background: #EDF2F7;
+    padding: 4px;
+    border-radius: 16px;
+  }
+
+  .mode-btn {
+    border: none;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    color: #4A5568;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+  }
+
+  .mode-btn.active {
+    background: white;
+    color: var(--primary);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+
+  .flip-card-single {
+    background-color: transparent;
+    width: 300px;
+    height: 220px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    border-radius: 16px;
+  }
+
+  .flip-card-single.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: 3px solid white;
+  }
+
+  .flip-card-front {
+    background: linear-gradient(135deg, #4A90E2, #67B26F);
+    color: white;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+    color: white;
+  }
+
+  .card-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .card-counter {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #718096;
+  }
+
+  .color-preview-box, .spelling-img-preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #FFFFFF;
+  }
+
+  .color-preview-box svg, .spelling-img-preview svg {
+    width: 110px;
+    height: 110px;
+  }
+
+  .mcq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 440px;
+  }
+
+  .mcq-btn {
+    padding: 12px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    border: 2px solid #E2E8F0;
+    border-radius: 12px;
+    background: #F7FAFC;
+    color: #2D3748;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .mcq-btn:hover {
+    border-color: var(--primary);
+    background: #EBF8FF;
+  }
+
+  .mcq-btn.correct {
+    background: #48BB78 !important;
+    color: white !important;
+    border-color: #38A169 !important;
+  }
+
+  .mcq-btn.wrong {
+    background: #F56565 !important;
+    color: white !important;
+    border-color: #C53030 !important;
+  }
+
+  .spelling-input-group {
+    display: flex;
+    gap: 8px;
+  }
+
+  .spelling-input {
+    padding: 10px 16px;
+    font-size: 1.2rem;
+    border: 2px solid #CBD5E0;
+    border-radius: 10px;
+    text-align: center;
+    width: 220px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+  }
+
+  .btn-action {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    background: #38A169;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎨 ENGLISH COLORS FOR KIDS</h1>
+</header>
+
+<nav>
+  <button class="nav-btn active" onclick="switchTab('vocab', event)">📚 Từ Vựng & Phiên Âm</button>
+  <button class="nav-btn" onclick="switchTab('sentences', event)">🗣️ Mẫu Câu Giao Tiếp</button>
+  <button class="nav-btn" onclick="switchTab('game-flip', event)">🃏 Game 1: Lật Flashcard</button>
+  <button class="nav-btn" onclick="switchTab('game-mcq', event)">🎯 Game 2: Trắc Nghiệm Màu Sắc</button>
+  <button class="nav-btn" onclick="switchTab('game-spelling', event)">✍️ Game 3: Điền Chính Tả</button>
+</nav>
+
+<div class="container">
+  
+  <!-- TAB 1: VOCABULARY -->
+  <div id="vocab" class="tab-content active">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">13 Từ Vựng Màu Sắc Trong Tiếng Anh</h2>
+    <div class="vocab-grid" id="vocab-grid-container"></div>
+  </div>
+
+  <!-- TAB 2: SENTENCES -->
+  <div id="sentences" class="tab-content">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Cách Đặt Câu Vừa Học Với Màu Sắc</h2>
+    <div class="sentence-section">
+      <div class="sentence-card">
+        <h3>Mẫu câu 1: Hỏi và trả lời màu sắc của vật nói chung</h3>
+        <p><b>Hỏi:</b> What color is it? <i>(Nó là màu gì?)</i></p>
+        <p><b>Trả lời:</b> It is + [Màu sắc]. <i>(Nó là màu...)</i></p>
+        <div class="dialogue">
+          <p><span class="speaker">Teacher:</span> What color is it? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What color is it?')">🔊</button></p>
+          <p><span class="speaker">Student:</span> It is red! / It's blue! <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('It is red. It is blue.')">🔊</button></p>
+        </div>
+      </div>
+
+      <div class="sentence-card">
+        <h3>Mẫu câu 2: Nói đồ vật cụ thể mang màu sắc gì</h3>
+        <p><b>Cấu trúc A:</b> The + [Đồ vật] + is + [Màu sắc].</p>
+        <p><b>Ví dụ:</b> <i>The pen is green.</i> (Cây bút màu xanh lá)</p>
+        <br>
+        <p><b>Cấu trúc B:</b> It is a/an + [Màu sắc] + [Đồ vật].</p>
+        <p><b>Ví dụ:</b> <i>It is a yellow pencil.</i> (Nó là một cây bút chì màu vàng)</p>
+        <div class="dialogue">
+          <p><span class="speaker">Luyện tập:</span> "It is a transparent glass bottle." <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('It is a transparent glass bottle.')">🔊</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 3: GAME 1 FLIP CARD -->
+  <div id="game-flip" class="tab-content">
+    <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard Tự Động</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để lật xem nghĩa/tiếng Anh. Sau 3 giây thẻ sẽ tự chuyển tiếp!</p>
+    
+    <div class="single-card-container">
+      <div class="card-mode-selector">
+        <button class="mode-btn active" id="mode-viet" onclick="setCardFrontMode('viet', this)">Mặt trước: Tiếng Việt</button>
+        <button class="mode-btn" id="mode-ipa" onclick="setCardFrontMode('ipa', this)">Mặt trước: Chỉ Phiên Âm IPA</button>
+      </div>
+
+      <div class="card-controls">
+        <span class="card-counter" id="card-counter-text">Thẻ 1 / 13</span>
+        <button class="nav-btn" style="padding: 5px 12px; font-size: 0.85rem;" onclick="shuffleCards()">🔀 Trộn Ngẫu Nhiên</button>
+      </div>
+
+      <div class="flip-card-single" id="single-card-el" onclick="flipSingleCard()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" id="card-front-content"></div>
+          <div class="flip-card-back" id="card-back-content"></div>
+        </div>
+      </div>
+
+      <div>
+        <button class="nav-btn" onclick="prevSingleCard()">⏮️ Thẻ Trước</button>
+        <button class="nav-btn" onclick="nextSingleCard(false)">Thẻ Tiếp ⏭️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: GAME 2 MCQ -->
+  <div id="game-mcq" class="tab-content">
+    <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 2: Trắc Nghiệm Chọn Từ Đúng</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình minh họa bên trên và chọn 1 trong 6 đáp án đúng bên dưới!</p>
+    
+    <div class="quiz-container">
+      <div class="color-preview-box" id="mcq-color-preview"></div>
+      <div class="mcq-grid" id="mcq-options-container"></div>
+    </div>
+  </div>
+
+  <!-- TAB 5: GAME 3 SPELLING -->
+  <div id="game-spelling" class="tab-content">
+    <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 3: Thử Tài Điền Chính Tả</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình ảnh và nghe phát âm để gõ tên từ tiếng Anh chính xác!</p>
+    
+    <div class="spelling-box">
+      <div id="spelling-preview" class="spelling-img-preview"></div>
+      <button class="audio-btn" style="width: 44px; height: 44px; font-size: 1.3rem; margin-top:0;" onclick="playSpellingAudio()">🔊</button>
+      
+      <div class="spelling-input-group">
+        <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ từ..." autocomplete="off">
+        <button class="btn-action" onclick="checkSpelling()">Kiểm tra</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // Mặc định tốc độ đọc là 0.5 (Chậm rõ cho bé)
+  const defaultSpeechRate = 0.5;
+
+  /* Bộ Vector SVG hiển thị chuẩn xác từng hình ảnh đồ vật minh họa */
+  const svgIcons = {
+    apple: `<svg viewBox="0 0 64 64"><path fill="#E53E3E" d="M32 12c-6-6-16-4-20 4-5 10-1 24 8 32 4 4 8 6 12 6s8-2 12-6c9-8 13-22 8-32-4-8-14-10-20-4z"/><path fill="#38A169" d="M32 12c2-4 6-6 10-6-1 3-3 6-6 7-2 1-4 0-4-1z"/><path fill="#744210" d="M31 6h2v7h-2z"/></svg>`,
+    umbrella: `<svg viewBox="0 0 64 64"><path fill="#3182CE" d="M32 10C16 10 6 24 6 36h52C58 24 48 10 32 10z"/><path fill="#2B6CB0" d="M32 10c-5 8-5 18 0 26 5-8 5-18 0-26z"/><path fill="#718096" d="M31 36h2v18c0 3-2 5-5 5s-5-2-5-5h2c0 2 1 3 3 3s3-1 3-3V36z"/><path fill="#3182CE" d="M31 6h2v4h-2z"/></svg>`,
+    /* Đã cập nhật SVG Chuối Vàng Dài Hơn & Cong Tự Nhiên Hơn */
+    banana: `<svg viewBox="0 0 64 64"><path fill="#F6E05E" stroke="#D69E2E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M8 52C16 58 42 56 56 12c-8 3-22 9-32 5C16 13 10 32 8 52z"/><path fill="#744210" d="M55 10l3-3 2 1-2 4zM6 52l2 3-3 1z"/></svg>`,
+    leaf: `<svg viewBox="0 0 64 64"><path fill="#38A169" d="M52 12C28 12 12 28 12 52c24 0 40-16 40-40z"/><path fill="#276749" d="M12 52C28 36 40 24 52 12M28 36l-6 6M38 26l-6 6M46 18l-4 4"/></svg>`,
+    orange: `<svg viewBox="0 0 64 64"><circle cx="32" cy="34" r="22" fill="#ED8936"/><path fill="#38A169" d="M32 12c4-4 10-4 14 0-4 3-8 4-14 0z"/><circle cx="24" cy="28" r="1.5" fill="#DD6B20"/><circle cx="38" cy="38" r="1.5" fill="#DD6B20"/><circle cx="30" cy="44" r="1.5" fill="#DD6B20"/></svg>`,
+    grapes: `<svg viewBox="0 0 64 64"><circle cx="26" cy="24" r="7" fill="#9F7AEA"/><circle cx="38" cy="24" r="7" fill="#9F7AEA"/><circle cx="20" cy="34" r="7" fill="#805AD5"/><circle cx="32" cy="34" r="7" fill="#805AD5"/><circle cx="44" cy="34" r="7" fill="#805AD5"/><circle cx="26" cy="44" r="7" fill="#6B46C1"/><circle cx="38" cy="44" r="7" fill="#6B46C1"/><circle cx="32" cy="52" r="7" fill="#553C9A"/><path fill="#38A169" d="M32 14c-6-4-12-2-14 2 6 1 11 0 14-2z"/><path fill="#744210" d="M31 8h2v7h-2z"/></svg>`,
+    flower: `<svg viewBox="0 0 64 64"><circle cx="32" cy="20" r="8" fill="#ED64A6"/><circle cx="44" cy="32" r="8" fill="#ED64A6"/><circle cx="32" cy="44" r="8" fill="#ED64A6"/><circle cx="20" cy="32" r="8" fill="#ED64A6"/><circle cx="32" cy="32" r="7" fill="#ECC94B"/></svg>`,
+    cat: `<svg viewBox="0 0 64 64"><path fill="#2D3748" d="M16 18l8 10V46h16V28l8-10-8 4c-4-3-12-3-16 0l-8-4z"/><circle cx="26" cy="32" r="2" fill="#ECC94B"/><circle cx="38" cy="32" r="2" fill="#ECC94B"/><path fill="#ED64A6" d="M30 36l2 2 2-2h-4z"/></svg>`,
+    dog: `<svg viewBox="0 0 64 64"><path fill="#E2E8F0" d="M18 20c0-6 6-10 14-10s14 4 14 10v20c0 8-6 14-14 14s-14-6-14-14V20z"/><path fill="#A0AEC0" d="M14 22c0 8 4 14 4 14s2-8 0-14-4 0-4 0zM50 22c0 8-4 14-4 14s-2-8 0-14 4 0 4 0z"/><circle cx="26" cy="24" r="2.5" fill="#2D3748"/><circle cx="38" cy="24" r="2.5" fill="#2D3748"/><ellipse cx="32" cy="30" rx="4" ry="3" fill="#2D3748"/></svg>`,
+    elephant: `<svg viewBox="0 0 64 64"><path fill="#A0AEC0" d="M12 28c0-10 8-16 20-16s20 6 20 16v18H12V28z"/><path fill="#CBD5E0" d="M8 24c0 8 4 12 8 12V20c-4 0-8 0-8 4zM56 24c0 8-4 12-8 12V20c4 0 8 0 8 4z"/><path fill="#A0AEC0" d="M28 32v16c0 4 3 6 6 6s4-2 2-4v-8"/><circle cx="24" cy="26" r="2" fill="#2D3748"/><circle cx="40" cy="26" r="2" fill="#2D3748"/></svg>`,
+    watch: `<svg viewBox="0 0 64 64"><rect x="26" y="6" width="12" height="52" fill="#CBD5E0" rx="3"/><circle cx="32" cy="32" r="16" fill="#E2E8F0" stroke="#718096" stroke-width="3"/><path stroke="#2D3748" stroke-width="2" stroke-linecap="round" d="M32 32V22M32 32h6"/></svg>`,
+    bear: `<svg viewBox="0 0 64 64"><circle cx="18" cy="18" r="7" fill="#744210"/><circle cx="46" cy="18" r="7" fill="#744210"/><circle cx="32" cy="32" r="20" fill="#8C521F"/><ellipse cx="32" cy="38" rx="8" ry="6" fill="#D69E2E"/><circle cx="25" cy="28" r="2" fill="#2D3748"/><circle cx="39" cy="28" r="2" fill="#2D3748"/><ellipse cx="32" cy="36" rx="3" ry="2" fill="#2D3748"/></svg>`,
+    bottle: `<svg viewBox="0 0 64 64"><path fill="rgba(255,255,255,0.4)" stroke="#4A5568" stroke-width="2.5" stroke-linejoin="round" d="M26 12h12v6l5 6v28c0 3-2 4-5 4H26c-3 0-5-1-5-4V24l5-6v-6z"/><path fill="#CBD5E0" d="M24 8h16v4H24z"/><path stroke="#A0AEC0" stroke-width="2" stroke-linecap="round" d="M25 28c3 2 8 2 12 0M25 36c3 2 8 2 12 0"/></svg>`
+  };
+
+  /* Dữ liệu 13 Từ Vựng Tiếng Anh */
+  const colorsData = [
+    { name: 'Red', ipa: '/rɛd/', meaning: 'Màu đỏ', hex: '#E53E3E', textColor: '#FFF', icon: svgIcons.apple, example: 'Red apple 🍎', sentence: 'It is a red apple.' },
+    { name: 'Blue', ipa: '/bluː/', meaning: 'Màu xanh dương', hex: '#3182CE', textColor: '#FFF', icon: svgIcons.umbrella, example: 'Blue umbrella ☂️', sentence: 'The umbrella is blue.' },
+    { name: 'Yellow', ipa: '/ˈjɛloʊ/', meaning: 'Màu vàng', hex: '#ECC94B', textColor: '#2D3748', icon: svgIcons.banana, example: 'Yellow banana 🍌', sentence: 'I have a yellow banana.' },
+    { name: 'Green', ipa: '/ɡriːn/', meaning: 'Màu xanh lá', hex: '#38A169', textColor: '#FFF', icon: svgIcons.leaf, example: 'Green leaf 🍃', sentence: 'The leaf is green.' },
+    { name: 'Orange', ipa: '/ˈɔːrɪndʒ/', meaning: 'Màu cam', hex: '#ED8936', textColor: '#FFF', icon: svgIcons.orange, example: 'Orange fruit 🍊', sentence: 'It is an orange fruit.' },
+    { name: 'Purple', ipa: '/ˈpɜːrpəl/', meaning: 'Màu tím', hex: '#9F7AEA', textColor: '#FFF', icon: svgIcons.grapes, example: 'Purple grapes 🍇', sentence: 'The grapes are purple.' },
+    { name: 'Pink', ipa: '/pɪŋk/', meaning: 'Màu hồng', hex: '#ED64A6', textColor: '#FFF', icon: svgIcons.flower, example: 'Pink flower 🌸', sentence: 'I like the pink flower.' },
+    { name: 'Black', ipa: '/blæk/', meaning: 'Màu đen', hex: '#2D3748', textColor: '#FFF', icon: svgIcons.cat, example: 'Black cat 🐈‍⬛', sentence: 'The cat is black.' },
+    { name: 'White', ipa: '/waɪt/', meaning: 'Màu trắng', hex: '#FFFFFF', textColor: '#2D3748', border: '2px solid #CBD5E0', icon: svgIcons.dog, example: 'White dog 🐕', sentence: 'The dog is white.' },
+    { name: 'Gray', ipa: '/ɡreɪ/', meaning: 'Màu xám', hex: '#A0AEC0', textColor: '#FFF', icon: svgIcons.elephant, example: 'Gray elephant 🐘', sentence: 'It is a gray elephant.' },
+    { name: 'Silver', ipa: '/ˈsɪlvər/', meaning: 'Màu bạc', hex: '#E2E8F0', textColor: '#2D3748', border: '2px solid #A0AEC0', icon: svgIcons.watch, example: 'Silver watch ⌚', sentence: 'The watch is silver.' },
+    { name: 'Brown', ipa: '/braʊn/', meaning: 'Màu nâu', hex: '#744210', textColor: '#FFF', icon: svgIcons.bear, example: 'Brown bear 🐻', sentence: 'It is a brown bear.' },
+    { name: 'Transparent', ipa: '/trænˈspærənt/', meaning: 'Trong suốt', isTransparent: true, textColor: '#2D3748', border: '2px solid #A0AEC0', icon: svgIcons.bottle, example: 'Transparent glass bottle 🫙', sentence: 'The glass bottle is transparent.' }
+  ];
+
+  let flashcardDeck = [...colorsData];
+
+  function speak(text) {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = defaultSpeechRate; // Mặc định luôn là 0.5
+      window.speechSynthesis.speak(utterance);
+    }
+  }
+
+  function renderVocabGrid() {
+    const grid = document.getElementById('vocab-grid-container');
+    grid.innerHTML = '';
+    colorsData.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'color-card' + (item.isTransparent ? ' transparent-bg-pattern' : '');
+      if(!item.isTransparent) {
+        card.style.background = item.hex;
+      }
+      if(item.textColor) card.style.color = item.textColor;
+      if(item.border) card.style.border = item.border;
+
+      card.innerHTML = `
+        <div class="real-obj-wrapper">${item.icon}</div>
+        <div class="word-title">${item.name}</div>
+        <div class="phonetic">${item.ipa}</div>
+        <div class="meaning">${item.meaning}</div>
+        <div class="example-box">
+          <b>Ví dụ:</b> ${item.example}<br>
+          <i>"${item.sentence}"</i>
+        </div>
+        <button class="audio-btn" onclick="speak('${item.name}. ${item.sentence}')">🔊</button>
+      `;
+      grid.appendChild(card);
+    });
+  }
+  renderVocabGrid();
+
+  function switchTab(tabId, evt) {
+    clearTimeout(singleCardTimer);
+    clearTimeout(mcqTimer);
+    clearTimeout(spellingTimer);
+
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
+    
+    document.getElementById(tabId).classList.add('active');
+    if(evt && evt.target) {
+      evt.target.classList.add('active');
+    }
+
+    if(tabId === 'game-flip') initSingleCardGame();
+    if(tabId === 'game-mcq') initMcqGame();
+    if(tabId === 'game-spelling') initSpellingGame();
+  }
+
+  /* GAME 1: FLASHCARD */
+  let singleCardIdx = 0;
+  let singleCardTimer = null;
+  let cardFrontMode = 'viet';
+
+  function setCardFrontMode(mode, btnEl) {
+    cardFrontMode = mode;
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    if(btnEl) btnEl.classList.add('active');
+    renderSingleCardContent();
+  }
+
+  function shuffleCards() {
+    clearTimeout(singleCardTimer);
+    for (let i = flashcardDeck.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [flashcardDeck[i], flashcardDeck[j]] = [flashcardDeck[j], flashcardDeck[i]];
+    }
+    singleCardIdx = 0;
+    changeCardWithAnimation();
+  }
+
+  function initSingleCardGame() {
+    singleCardIdx = 0;
+    flashcardDeck = [...colorsData];
+    renderSingleCardContent();
+  }
+
+  function changeCardWithAnimation() {
+    clearTimeout(singleCardTimer);
+    const cardEl = document.getElementById('single-card-el');
+
+    if (cardEl.classList.contains('flipped')) {
+      cardEl.classList.remove('flipped');
+      setTimeout(() => {
+        renderSingleCardContent();
+      }, 600);
+    } else {
+      renderSingleCardContent();
+    }
+  }
+
+  function renderSingleCardContent() {
+    const item = flashcardDeck[singleCardIdx];
+    const cardEl = document.getElementById('single-card-el');
+    const frontEl = document.getElementById('card-front-content');
+    const backEl = document.getElementById('card-back-content');
+    const counterEl = document.getElementById('card-counter-text');
+
+    cardEl.classList.remove('flipped');
+    counterEl.innerText = `Thẻ ${singleCardIdx + 1} / ${flashcardDeck.length}`;
+
+    frontEl.className = 'flip-card-front';
+    frontEl.style.background = 'linear-gradient(135deg, #4A90E2, #67B26F)';
+    frontEl.style.color = 'white';
+
+    if(cardFrontMode === 'viet') {
+      frontEl.innerHTML = `
+        <h2 style="font-size: 1.8rem; margin-bottom: 8px; font-weight:800;">${item.meaning}</h2>
+        <p style="font-size: 0.85rem; opacity: 0.85;">(Chạm vào thẻ để lật)</p>
+      `;
+    } else {
+      frontEl.innerHTML = `
+        <h2 style="font-size: 2.1rem; margin-bottom: 8px; font-weight:700;">${item.ipa}</h2>
+        <p style="font-size: 0.85rem; opacity: 0.85;">(Chạm vào thẻ để xem đáp án)</p>
+      `;
+    }
+
+    backEl.className = 'flip-card-back' + (item.isTransparent ? ' transparent-bg-pattern' : '');
+    if(!item.isTransparent) {
+      backEl.style.background = item.hex;
+    } else {
+      backEl.style.background = 'transparent';
+    }
+    backEl.style.color = item.textColor || 'white';
+    if(item.border) backEl.style.border = item.border;
+    else backEl.style.border = '3px solid white';
+
+    backEl.innerHTML = `
+      <h2 style="font-size: 2.3rem; margin-bottom: 4px; font-weight:800;">${item.name}</h2>
+      <p style="font-size: 1.2rem; font-weight:700;">${item.ipa}</p>
+    `;
+  }
+
+  function flipSingleCard() {
+    const cardEl = document.getElementById('single-card-el');
+    if(!cardEl.classList.contains('flipped')) {
+      cardEl.classList.add('flipped');
+      const item = flashcardDeck[singleCardIdx];
+      speak(item.name);
+
+      clearTimeout(singleCardTimer);
+      singleCardTimer = setTimeout(() => {
+        nextSingleCard(true);
+      }, 3000);
+    }
+  }
+
+  function nextSingleCard(isAuto = false) {
+    clearTimeout(singleCardTimer);
+    singleCardIdx = (singleCardIdx + 1) % flashcardDeck.length;
+    changeCardWithAnimation();
+  }
+
+  function prevSingleCard() {
+    clearTimeout(singleCardTimer);
+    singleCardIdx = (singleCardIdx - 1 + flashcardDeck.length) % flashcardDeck.length;
+    changeCardWithAnimation();
+  }
+
+  /* GAME 2: TRẮC NGHIỆM */
+  let mcqIdx = 0;
+  let mcqTimer = null;
+
+  function initMcqGame() {
+    mcqIdx = 0;
+    loadMcqQuestion();
+  }
+
+  function loadMcqQuestion() {
+    clearTimeout(mcqTimer);
+    const item = colorsData[mcqIdx];
+    const previewBox = document.getElementById('mcq-color-preview');
+    const optionsGrid = document.getElementById('mcq-options-container');
+
+    if(item.isTransparent) previewBox.className = 'color-preview-box transparent-bg-pattern';
+    else previewBox.className = 'color-preview-box';
+
+    previewBox.innerHTML = item.icon;
+
+    let options = [item.name];
+    let otherColors = colorsData.filter(c => c.name !== item.name);
+    otherColors.sort(() => Math.random() - 0.5);
+    for(let i = 0; i < 5; i++) {
+      options.push(otherColors[i].name);
+    }
+    options.sort(() => Math.random() - 0.5);
+
+    optionsGrid.innerHTML = '';
+    options.forEach(optName => {
+      const btn = document.createElement('button');
+      btn.className = 'mcq-btn';
+      btn.innerText = optName;
+      btn.onclick = () => handleMcqChoice(btn, optName, item.name);
+      optionsGrid.appendChild(btn);
+    });
+  }
+
+  function handleMcqChoice(btn, selectedName, correctName) {
+    const allBtns = document.querySelectorAll('.mcq-btn');
+    allBtns.forEach(b => b.onclick = null);
+
+    if(selectedName === correctName) {
+      btn.classList.add('correct');
+      speak(correctName);
+
+      mcqTimer = setTimeout(() => {
+        mcqIdx = (mcqIdx + 1) % colorsData.length;
+        loadMcqQuestion();
+      }, 3000);
+    } else {
+      btn.classList.add('wrong');
+      allBtns.forEach(b => {
+        if(b.innerText === correctName) b.classList.add('correct');
+      });
+      speak(correctName);
+
+      mcqTimer = setTimeout(() => {
+        loadMcqQuestion();
+      }, 3000);
+    }
+  }
+
+  /* GAME 3: CHÍNH TẢ */
+  let spellingIdx = 0;
+  let spellingTimer = null;
+
+  function initSpellingGame() {
+    spellingIdx = 0;
+    loadSpellingQuestion();
+  }
+
+  function loadSpellingQuestion() {
+    clearTimeout(spellingTimer);
+    const item = colorsData[spellingIdx];
+    const preview = document.getElementById('spelling-preview');
+    const input = document.getElementById('spelling-input');
+    
+    if(item.isTransparent) preview.className = 'spelling-img-preview transparent-bg-pattern';
+    else preview.className = 'spelling-img-preview';
+
+    preview.innerHTML = item.icon;
+
+    input.value = '';
+    input.disabled = false;
+    speak(item.name);
+  }
+
+  function playSpellingAudio() {
+    speak(colorsData[spellingIdx].name);
+  }
+
+  function checkSpelling() {
+    const inputEl = document.getElementById('spelling-input');
+    const inputVal = inputEl.value.trim().toLowerCase();
+    const correctVal = colorsData[spellingIdx].name.toLowerCase();
+
+    if(inputVal === correctVal) {
+      inputEl.disabled = true;
+      speak(colorsData[spellingIdx].name);
+
+      spellingTimer = setTimeout(() => {
+        spellingIdx = (spellingIdx + 1) % colorsData.length;
+        loadSpellingQuestion();
+      }, 3000);
+    } else {
+      inputEl.style.borderColor = '#E53E3E';
+      setTimeout(() => {
+        inputEl.style.borderColor = '#CBD5E0';
+      }, 1000);
+    }
+  }
+</script>
+
+</body>
+</html>
