@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đang soạn bài - Học tiếng Anh cùng thầy Danh</title>
+    
+    <!-- Font chữ Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --zalo-color: #0068ff;
+            --fb-color: #1877f2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* --- Header / Hero --- */
+        .hero {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 30px 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+        }
+
+        /* --- Container & Notice Card --- */
+        .container {
+            max-width: 650px;
+            margin: 40px auto 20px auto;
+            padding: 0 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .notice-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .notice-icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .notice-card h2 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .notice-card p {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            font-weight: 700;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .btn-home {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-home:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        /* --- Contact Section --- */
+        .contact-section {
+            text-align: center;
+            padding: 30px 15px;
+            background: white;
+            margin-top: 30px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .contact-section h2 {
+            font-size: 1.3rem;
+            margin-bottom: 18px;
+            color: var(--text-main);
+            font-weight: 800;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn-social {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-decoration: none;
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-zalo {
+            color: var(--zalo-color);
+            border: 1.5px solid var(--zalo-color);
+        }
+        .btn-zalo:hover {
+            background-color: var(--zalo-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 104, 255, 0.25);
+        }
+        .zalo-logo {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+
+        .btn-fb {
+            color: var(--fb-color);
+            border: 1.5px solid var(--fb-color);
+        }
+        .btn-fb:hover {
+            background-color: var(--fb-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(24, 119, 242, 0.25);
+        }
+        .fb-icon {
+            width: 18px;
+            height: 18px;
+            fill: var(--fb-color);
+            transition: fill 0.3s;
+        }
+        .btn-fb:hover .fb-icon {
+            fill: white;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: var(--text-main);
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Hero -->
+    <header class="hero">
+        <h1>Học tiếng Anh cùng thầy Danh</h1>
+    </header>
+
+    <!-- Khối Thông Báo Main -->
+    <main class="container">
+        <div class="notice-card">
+            <span class="notice-icon">✍️⏳</span>
+            <h2>Nội Dung Đang Được Cập Nhật!</h2>
+            <p>Thầy Danh đang soạn bài cho mục này, các em chờ thầy chút xíu nhé!</p>
+            <a href="/" class="btn-home">⬅ Quay lại Trang Chủ</a>
+        </div>
+    </main>
+
+    <!-- Khối Liên Hệ Về Thầy Danh -->
+    <section class="contact-section">
+        <h2>Cần hỗ trợ? Kết nối với thầy Danh ngay nhé!</h2>
+        <div class="social-buttons">
+            <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
+                Zalo: 0911594794
+            </a>
+            
+            <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
+                <svg class="fb-icon" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+                Facebook
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Học tiếng Anh cùng thầy Danh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
