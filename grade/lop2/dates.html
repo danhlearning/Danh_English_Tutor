@@ -937,7 +937,7 @@
       mcqTimer = setTimeout(() => {
         mcqIdx = (mcqIdx + 1) % mcqList.length;
         loadMcqQuestion();
-      }, 2000);
+      }, 1000);
     } else {
       btn.classList.add('wrong');
       playSoundEffect('wrong');
@@ -948,7 +948,7 @@
 
       mcqTimer = setTimeout(() => {
         loadMcqQuestion();
-      }, 2500);
+      }, 1500);
     }
   }
 
@@ -1008,7 +1008,7 @@
       spellingTimer = setTimeout(() => {
         spellingIdx = (spellingIdx + 1) % spellingList.length;
         loadSpellingQuestion();
-      }, 2000);
+      }, 1000);
     } else {
       playSoundEffect('wrong');
       feedback.style.color = '#E53E3E';
