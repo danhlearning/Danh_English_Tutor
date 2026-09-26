@@ -449,8 +449,10 @@
     text-align: center;
   }
 </style>
+<link rel="stylesheet" href="./learning-shared.css">
+<link rel="stylesheet" href="./grade2-theme.css">
 </head>
-<body>
+<body class="grade2-topic">
 
 <header>
   <h1>🔢 ENGLISH NUMBERS 1 - 100</h1>
@@ -546,6 +548,7 @@
     <div class="quiz-container">
       <div class="number-preview-box" id="mcq-number-preview"></div>
       <div class="mcq-grid" id="mcq-options-container"></div>
+      <p id="mcq-feedback" role="status" aria-live="polite" style="min-height:1.5em;text-align:center;font-weight:800;"></p>
     </div>
   </div>
 
@@ -586,6 +589,7 @@
       <div class="spelling-input-group">
         <input type="text" id="count-sentence-input" class="spelling-input" placeholder="Ví dụ: There are 13 birds" autocomplete="off">
         <button class="btn-action" onclick="checkCountSentence()">Kiểm tra</button>
+        <button class="btn-action" onclick="revealCountAnswer()">💡 Hiện đáp án</button>
       </div>
     </div>
   </div>
@@ -594,7 +598,7 @@
 
 <script>
   /* CẬP NHẬT TỐC ĐỘ ĐỌC: Giảm siêu chậm xuống 0.25 */
-  const defaultSpeechRate = 0.25;
+  const defaultSpeechRate = 0.6;
 
   /* HỆ THỐNG PHÁT ÂM THANH HIỆU ỨNG (Web Audio API - Tự tạo âm thanh không cần file) */
   const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -756,7 +760,7 @@
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'en-US';
-      utterance.rate = defaultSpeechRate; /* Giảm siêu chậm 0.25 */
+      utterance.rate = defaultSpeechRate;
 
       const voices = window.speechSynthesis.getVoices();
       /* Tìm giọng đọc tiếng Anh tự nhiên chất lượng cao nếu có */
@@ -934,6 +938,8 @@
     const item = mcqList[mcqIdx];
     const previewBox = document.getElementById('mcq-number-preview');
     const optionsGrid = document.getElementById('mcq-options-container');
+    const mcqFeedback = document.getElementById('mcq-feedback');
+    mcqFeedback.textContent = '';
 
     previewBox.innerText = item.num;
 
@@ -956,30 +962,27 @@
   }
 
   function handleMcqChoice(btn, selectedName, correctName) {
-    const allBtns = document.querySelectorAll('.mcq-btn');
-    allBtns.forEach(b => b.onclick = null);
-
-    if(selectedName === correctName) {
-      btn.classList.add('correct');
-      playSoundEffect('correct'); /* ÂM THANH ĐÚNG */
-      speak(correctName);
-
-      mcqTimer = setTimeout(() => {
-        mcqIdx = (mcqIdx + 1) % mcqList.length;
-        loadMcqQuestion();
-      }, 2000);
-    } else {
+    const allBtns = document.querySelectorAll('#mcq-options-container .mcq-btn');
+    const feedback = document.getElementById('mcq-feedback');
+    if (selectedName !== correctName) {
+      btn.disabled = true;
       btn.classList.add('wrong');
-      playSoundEffect('wrong'); /* ÂM THANH SAI */
-      allBtns.forEach(b => {
-        if(b.innerText === correctName) b.classList.add('correct');
-      });
-      speak(correctName);
-
-      mcqTimer = setTimeout(() => {
-        loadMcqQuestion();
-      }, 2500);
+      feedback.style.color = '#C53030';
+      feedback.textContent = '❌ Chưa đúng. Thử lựa chọn khác nhé!';
+      playSoundEffect('wrong');
+      return;
     }
+
+    allBtns.forEach(button => { button.disabled = true; });
+    btn.classList.add('correct');
+    feedback.style.color = '#276749';
+    feedback.textContent = '✅ Chính xác!';
+    playSoundEffect('correct');
+    speak(correctName);
+    mcqTimer = setTimeout(() => {
+      mcqIdx = (mcqIdx + 1) % mcqList.length;
+      loadMcqQuestion();
+    }, 2000);
   }
 
   /* GAME 3: CHÍNH TẢ (1-100) + BỘ ĐẾM SỐ CÂU ĐÚNG */
@@ -1123,7 +1126,7 @@
     } else {
       playSoundEffect('wrong'); /* ÂM THANH SAI */
       feedback.style.color = '#E53E3E';
-      feedback.innerText = `❌ Thử lại nhé! Gợi ý: "There ${verb} ${item.count} ${noun}"`;
+      feedback.innerText = '❌ Chưa đúng. Thử lại nhé!';
       inputEl.style.borderColor = '#E53E3E';
       setTimeout(() => {
         inputEl.style.borderColor = '#CBD5E0';
@@ -1132,6 +1135,17 @@
   }
 
   /* BẮT SỰ KIỆN PHÍM ENTER */
+  function revealCountAnswer() {
+    const item = countList[countIdx];
+    const sentence = `There ${item.count === 1 ? 'is' : 'are'} ${item.count} ${item.count === 1 ? item.itemSingular : item.itemPlural}`;
+    const input = document.getElementById('count-sentence-input');
+    const feedback = document.getElementById('count-feedback');
+    feedback.style.color = '#DD6B20';
+    feedback.innerText = `💡 Đáp án: "${sentence}"`;
+    input.value = sentence;
+    speak(sentence);
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('spelling-input').addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
@@ -1148,6 +1162,18 @@
 </script>
 
 <contact-danh></contact-danh>
-    <script src="../../components.js"></script>
+    <script src="../../shared/contact-footer.js"></script>
+<script src="./learning-core.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => DanhLesson.mount({
+    topic: 'numbers',
+    words: all100Numbers.map((word, index) => ({
+      id: word.name.toLowerCase(), name: word.name, meaning: word.meaning,
+      ipa: word.ipa, color: word.hex, visual: word.num
+    }))
+  }));
+</script>
+
+<script src="./grade2-navigation.js"></script>
 </body>
 </html>

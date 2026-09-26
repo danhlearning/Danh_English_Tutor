@@ -287,8 +287,10 @@
 
   .feedback-msg { font-weight: 800; font-size: 1rem; min-height: 24px; text-align: center; }
 </style>
+<link rel="stylesheet" href="./learning-shared.css">
+<link rel="stylesheet" href="./grade2-theme.css">
 </head>
-<body>
+<body class="grade2-topic">
 
 <header>
   <h1>😊 FEELINGS & EMOTIONS</h1>
@@ -384,6 +386,7 @@
     <div class="quiz-container">
       <div class="vocab-preview-box" id="mcq-number-preview"></div>
       <div class="mcq-grid" id="mcq-options-container"></div>
+      <p id="mcq-feedback" role="status" aria-live="polite" style="min-height:1.5em;text-align:center;font-weight:800;"></p>
     </div>
   </div>
 
@@ -962,6 +965,8 @@
     const item = mcqList[mcqIdx];
     const previewBox = document.getElementById('mcq-number-preview');
     const optionsGrid = document.getElementById('mcq-options-container');
+    const mcqFeedback = document.getElementById('mcq-feedback');
+    mcqFeedback.textContent = '';
 
     previewBox.innerHTML = item.svg;
 
@@ -982,28 +987,27 @@
   }
 
   function handleMcqChoice(btn, selectedName, correctName) {
-    const allBtns = document.querySelectorAll('.mcq-btn');
-    allBtns.forEach(b => b.onclick = null);
-
-    if(selectedName === correctName) {
-      btn.classList.add('correct');
-      playSoundEffect('correct');
-      speak(correctName);
-
-      mcqTimer = setTimeout(() => {
-        mcqIdx = (mcqIdx + 1) % mcqList.length;
-        loadMcqQuestion();
-      }, 2000);
-    } else {
+    const allBtns = document.querySelectorAll('#mcq-options-container .mcq-btn');
+    const feedback = document.getElementById('mcq-feedback');
+    if (selectedName !== correctName) {
+      btn.disabled = true;
       btn.classList.add('wrong');
+      feedback.style.color = '#C53030';
+      feedback.textContent = '❌ Chưa đúng. Thử lựa chọn khác nhé!';
       playSoundEffect('wrong');
-      allBtns.forEach(b => {
-        if(b.innerText === correctName) b.classList.add('correct');
-      });
-      speak(correctName);
-
-      mcqTimer = setTimeout(() => { loadMcqQuestion(); }, 2500);
+      return;
     }
+
+    allBtns.forEach(button => { button.disabled = true; });
+    btn.classList.add('correct');
+    feedback.style.color = '#276749';
+    feedback.textContent = '✅ Chính xác!';
+    playSoundEffect('correct');
+    speak(correctName);
+    mcqTimer = setTimeout(() => {
+      mcqIdx = (mcqIdx + 1) % mcqList.length;
+      loadMcqQuestion();
+    }, 2000);
   }
 
   /* GAME 3: CHÍNH TẢ */
@@ -1135,7 +1139,7 @@
     } else {
       playSoundEffect('wrong');
       feedback.style.color = '#E53935';
-      feedback.innerText = '❌ Thử lại nhé! (Bạn có thể bấm "Hiện đáp án" nếu cần)';
+      feedback.innerText = '❌ Chưa đúng. Thử lại nhé!';
       inputEl.style.borderColor = '#E53935';
       setTimeout(() => { inputEl.style.borderColor = '#CE93D8'; }, 1200);
     }
@@ -1160,5 +1164,20 @@
   });
 </script>
 
+<script src="./learning-core.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => DanhLesson.mount({
+    topic: 'feeling',
+    words: emotionsVocabulary.map((word, index) => ({
+      id: word.name.toLowerCase(), name: word.name, meaning: word.meaning,
+      ipa: word.ipa, color: word.hex, visual: word.svg
+    }))
+  }));
+</script>
+
+<contact-danh></contact-danh>
+<script src="../../shared/contact-footer.js"></script>
+
+<script src="./grade2-navigation.js"></script>
 </body>
 </html>

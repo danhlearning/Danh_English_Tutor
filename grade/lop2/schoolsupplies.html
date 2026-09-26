@@ -447,8 +447,10 @@
     text-align: center;
   }
 </style>
+<link rel="stylesheet" href="./learning-shared.css">
+<link rel="stylesheet" href="./grade2-theme.css">
 </head>
-<body>
+<body class="grade2-topic">
 
 <header>
   <h1>🎒 SCHOOL SUPPLIES VOCABULARY</h1>
@@ -546,6 +548,7 @@
     <div class="quiz-container">
       <div class="number-preview-box" id="mcq-number-preview"></div>
       <div class="mcq-grid" id="mcq-options-container"></div>
+      <p id="mcq-feedback" role="status" aria-live="polite" style="min-height:1.5em;text-align:center;font-weight:800;"></p>
     </div>
   </div>
 
@@ -586,6 +589,7 @@
       <div class="spelling-input-group">
         <input type="text" id="count-sentence-input" class="spelling-input" placeholder="Ví dụ: There are 3 pencils" autocomplete="off">
         <button class="btn-action" onclick="checkCountSentence()">Kiểm tra</button>
+        <button class="btn-action" onclick="revealCountAnswer()">💡 Hiện đáp án</button>
       </div>
     </div>
   </div>
@@ -593,7 +597,7 @@
 </div>
 
 <script>
-  const defaultSpeechRate = 0.8;
+  const defaultSpeechRate = 0.6;
 
   /* HỆ THỐNG PHÁT ÂM THANH HIỆU ỨNG (Web Audio API) */
   const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -856,6 +860,8 @@
     const item = mcqList[mcqIdx];
     const previewBox = document.getElementById('mcq-number-preview');
     const optionsGrid = document.getElementById('mcq-options-container');
+    const mcqFeedback = document.getElementById('mcq-feedback');
+    mcqFeedback.textContent = '';
 
     previewBox.innerText = item.emoji;
 
@@ -878,28 +884,27 @@
   }
 
   function handleMcqChoice(btn, selectedName, correctName) {
-    const allBtns = document.querySelectorAll('.mcq-btn');
-    allBtns.forEach(b => b.onclick = null);
-
-    if(selectedName === correctName) {
-      btn.classList.add('correct');
-      playSoundEffect('correct');
-      speak(correctName);
-
-      mcqTimer = setTimeout(() => {
-        mcqIdx = (mcqIdx + 1) % mcqList.length;
-        loadMcqQuestion();
-      }, 2000);
-    } else {
+    const allBtns = document.querySelectorAll('#mcq-options-container .mcq-btn');
+    const feedback = document.getElementById('mcq-feedback');
+    if (selectedName !== correctName) {
+      btn.disabled = true;
       btn.classList.add('wrong');
+      feedback.style.color = '#C53030';
+      feedback.textContent = '❌ Chưa đúng. Thử lựa chọn khác nhé!';
       playSoundEffect('wrong');
-      allBtns.forEach(b => {
-        if(b.innerText === correctName) b.classList.add('correct');
-      });
-      speak(correctName);
-
-      mcqTimer = setTimeout(() => loadMcqQuestion(), 2500);
+      return;
     }
+
+    allBtns.forEach(button => { button.disabled = true; });
+    btn.classList.add('correct');
+    feedback.style.color = '#276749';
+    feedback.textContent = '✅ Chính xác!';
+    playSoundEffect('correct');
+    speak(correctName);
+    mcqTimer = setTimeout(() => {
+      mcqIdx = (mcqIdx + 1) % mcqList.length;
+      loadMcqQuestion();
+    }, 2000);
   }
 
   /* GAME 3: CHÍNH TẢ */
@@ -1035,10 +1040,21 @@
     } else {
       playSoundEffect('wrong');
       feedback.style.color = '#E53E3E';
-      feedback.innerText = `❌ Thử lại nhé! Gợi ý: "There ${verb} ${item.count} ${noun}"`;
+      feedback.innerText = '❌ Chưa đúng. Thử lại nhé!';
       inputEl.style.borderColor = '#E53E3E';
       setTimeout(() => inputEl.style.borderColor = '#CBD5E0', 1200);
     }
+  }
+
+  function revealCountAnswer() {
+    const item = countList[countIdx];
+    const sentence = `There ${item.count === 1 ? 'is' : 'are'} ${item.count} ${item.count === 1 ? item.itemSingular : item.itemPlural}`;
+    const input = document.getElementById('count-sentence-input');
+    const feedback = document.getElementById('count-feedback');
+    feedback.style.color = '#DD6B20';
+    feedback.innerText = `💡 Đáp án: "${sentence}"`;
+    input.value = sentence;
+    speak(sentence);
   }
 
   document.addEventListener('DOMContentLoaded', () => {
@@ -1053,6 +1069,18 @@
 </script>
 
 <contact-danh></contact-danh>
-    <script src="../../components.js"></script>
+    <script src="../../shared/contact-footer.js"></script>
+<script src="./learning-core.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => DanhLesson.mount({
+    topic: 'schoolsupplies',
+    words: schoolSupplies.map((word, index) => ({
+      id: word.name.toLowerCase(), name: word.name, meaning: word.meaning,
+      ipa: word.ipa, color: word.hex, visual: word.emoji
+    }))
+  }));
+</script>
+
+<script src="./grade2-navigation.js"></script>
 </body>
 </html>

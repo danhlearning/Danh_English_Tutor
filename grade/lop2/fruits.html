@@ -495,8 +495,10 @@
     line-height: 1.4;
   }
 </style>
+<link rel="stylesheet" href="./learning-shared.css">
+<link rel="stylesheet" href="./grade2-theme.css">
 </head>
-<body>
+<body class="grade2-topic">
 
 <header>
   <h1>🍎 FRUIT LEARNING & COUNTING GAME</h1>
@@ -583,6 +585,7 @@
     <div class="quiz-container">
       <div class="number-preview-box" id="mcq-number-preview"></div>
       <div class="mcq-grid" id="mcq-options-container"></div>
+      <p id="mcq-feedback" role="status" aria-live="polite" style="min-height:1.5em;text-align:center;font-weight:800;"></p>
     </div>
   </div>
 
@@ -602,7 +605,7 @@
       <div class="spelling-input-group">
         <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ tên tiếng Anh..." autocomplete="off">
         <button class="btn-action" onclick="checkSpelling()">Kiểm tra</button>
-        <button class="btn-reveal" onclick="revealSpellingAnswer()">💡 Đáp án</button>
+        <button class="btn-reveal" onclick="revealSpellingAnswer()">💡 Hiện đáp án</button>
       </div>
     </div>
   </div>
@@ -634,7 +637,7 @@
       <div class="spelling-input-group">
         <input type="text" id="count-sentence-input" class="spelling-input" placeholder="Ví dụ: There are 20 strawberries / It is an apple..." autocomplete="off">
         <button class="btn-action" onclick="checkCountSentence()">Kiểm tra</button>
-        <button class="btn-reveal" onclick="revealCountAnswer()">💡 Đáp án</button>
+        <button class="btn-reveal" onclick="revealCountAnswer()">💡 Hiện đáp án</button>
       </div>
 
       <div class="hint-note">
@@ -688,7 +691,7 @@
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'en-US';
-      utterance.rate = 0.85;
+      utterance.rate = 0.6;
 
       const voices = window.speechSynthesis.getVoices();
       const bestVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Samantha') || v.name.includes('Zira')));
@@ -921,6 +924,8 @@
     const item = mcqList[mcqIdx];
     const previewBox = document.getElementById('mcq-number-preview');
     const optionsGrid = document.getElementById('mcq-options-container');
+    const mcqFeedback = document.getElementById('mcq-feedback');
+    mcqFeedback.textContent = '';
 
     previewBox.innerHTML = `<div style="font-size:3.5rem; line-height:1;">${item.icon}</div><div style="font-size:1.1rem; font-weight:700; color:#4A5568;">${item.meaning}</div>`;
 
@@ -943,30 +948,27 @@
   }
 
   function handleMcqChoice(btn, selectedName, correctName) {
-    const allBtns = document.querySelectorAll('.mcq-btn');
-    allBtns.forEach(b => b.onclick = null);
-
-    if(selectedName === correctName) {
-      btn.classList.add('correct');
-      playSoundEffect('correct');
-      speak(correctName);
-
-      mcqTimer = setTimeout(() => {
-        mcqIdx = (mcqIdx + 1) % mcqList.length;
-        loadMcqQuestion();
-      }, 1800);
-    } else {
+    const allBtns = document.querySelectorAll('#mcq-options-container .mcq-btn');
+    const feedback = document.getElementById('mcq-feedback');
+    if (selectedName !== correctName) {
+      btn.disabled = true;
       btn.classList.add('wrong');
+      feedback.style.color = '#C53030';
+      feedback.textContent = '❌ Chưa đúng. Thử lựa chọn khác nhé!';
       playSoundEffect('wrong');
-      allBtns.forEach(b => {
-        if(b.innerText === correctName) b.classList.add('correct');
-      });
-      speak(correctName);
-
-      mcqTimer = setTimeout(() => {
-        loadMcqQuestion();
-      }, 2200);
+      return;
     }
+
+    allBtns.forEach(button => { button.disabled = true; });
+    btn.classList.add('correct');
+    feedback.style.color = '#276749';
+    feedback.textContent = '✅ Chính xác!';
+    playSoundEffect('correct');
+    speak(correctName);
+    mcqTimer = setTimeout(() => {
+      mcqIdx = (mcqIdx + 1) % mcqList.length;
+      loadMcqQuestion();
+    }, 2000);
   }
 
   /* GAME 3: CHÍNH TẢ */
@@ -1028,7 +1030,7 @@
     } else {
       playSoundEffect('wrong');
       feedback.style.color = '#E53E3E';
-      feedback.innerText = `❌ Sai rồi! Đáp án đúng: ${spellingList[spellingIdx].name}`;
+      feedback.innerText = '❌ Chưa đúng. Thử lại nhé!';
       inputEl.style.borderColor = '#E53E3E';
     }
   }
@@ -1140,7 +1142,7 @@
     } else {
       playSoundEffect('wrong');
       feedback.style.color = '#E53E3E';
-      feedback.innerText = `❌ Sai rồi! Đáp án chuẩn: "${item.targetSentence}"`;
+      feedback.innerText = '❌ Chưa đúng. Thử lại nhé!';
       inputEl.style.borderColor = '#E53E3E';
     }
   }
@@ -1171,6 +1173,18 @@
 </script>
 
 <contact-danh></contact-danh>
-    <script src="../../components.js"></script>
+    <script src="../../shared/contact-footer.js"></script>
+<script src="./learning-core.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => DanhLesson.mount({
+    topic: 'fruits',
+    words: fruitVocab.map((word, index) => ({
+      id: word.name.toLowerCase(), name: word.name, meaning: word.meaning,
+      ipa: word.ipa, color: word.hex, visual: word.icon
+    }))
+  }));
+</script>
+
+<script src="./grade2-navigation.js"></script>
 </body>
 </html>

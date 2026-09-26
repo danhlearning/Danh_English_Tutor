@@ -284,13 +284,16 @@
 
   .feedback-msg { font-weight: 800; font-size: 1rem; min-height: 24px; text-align: center; }
 </style>
+<link rel="stylesheet" href="./learning-shared.css">
+<link rel="stylesheet" href="./grade2-theme.css">
 </head>
-<body>
+<body class="grade2-topic">
 
 <header>
   <h1>🧑 BODY PARTS</h1>
-  <p>Học Từ Vựng & Mẫu Câu Tiếng Anh Chủ Đề Bộ Phận Cơ Thể (Hình Minh Họa SVG Chi Tiết)</p>
+  <p>Học từ vựng và mẫu câu về cơ thể · Phiên âm Anh-Anh</p>
 </header>
+
 
 <nav>
   <button class="nav-btn active" onclick="switchTab('vocab', event)">📚 Từ Vựng Cơ Thể</button>
@@ -333,71 +336,49 @@
 
       <div class="sentence-card">
         <h3>Mẫu Câu 3: Hỏi khi bị đau (What's wrong? / My ... hurts.)</h3>
-        <p><b>Cấu trúc:</b> What's wrong? - My + [bộ phận] + hurts.</p>
+        <p><b>Cấu trúc:</b> What's wrong? — My + [bộ phận số ít] + hurts. Với số nhiều: My + [bộ phận số nhiều] + hurt.</p><p>My knee hurts. — Đầu gối của tôi bị đau. My tummy hurts a little. — Bụng của tôi hơi đau.</p>
         <div class="dialogue">
           <p><span class="speaker">Mẫu câu:</span> What's wrong? - My tummy hurts. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What is wrong? My tummy hurts.')">🔊</button></p>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- TAB 3: GAME 1 FLIP CARD -->
-  <div id="game-flip" class="tab-content">
-    <h2 style="text-align: center; color: #E65100; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard Cơ Thể</h2>
-    <p style="text-align: center; color: #BF360C; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để lật xem đáp án. Sau 3 giây thẻ sẽ tự chuyển tiếp!</p>
-
-    <div class="single-card-container">
-      <div class="card-mode-selector">
-        <button class="mode-btn active" id="mode-viet" onclick="setCardFrontMode('viet', this)">Mặt trước: Hình ảnh & Tiếng Việt</button>
-        <button class="mode-btn" id="mode-ipa" onclick="setCardFrontMode('ipa', this)">Mặt trước: Chỉ IPA ↔ Mặt sau: Chỉ Từ Vựng</button>
+      <div class="sentence-card">
+        <h3>Số ít, số nhiều và tóc</h3>
+        <p>Một: eye, ear, tooth, foot. Nhiều: eyes, ears, teeth, feet.</p>
+        <p>Thêm -s với các từ như hand → hands, arm → arms, finger → fingers, leg → legs.</p>
+        <p>Hair chỉ mái tóc, không dùng “two hairs” để nói về cả mái tóc.</p>
+        <p><b>Ví dụ:</b> This is my foot. These are my feet.</p>
+        <button class="audio-btn" aria-label="Nghe mẫu câu số ít và số nhiều" onclick="speak('This is my foot. These are my feet.')">🔊</button>
       </div>
-
-      <div class="card-controls">
-        <span class="card-counter" id="card-counter-text">Thẻ 1 / 16</span>
+      <div class="sentence-card">
+        <h3>Mô tả đặc điểm: I have… / She has… / My … are…</h3>
+        <p>I have black hair. — Tôi có mái tóc màu đen.</p>
+        <p>She has a long neck. — Cô ấy có chiếc cổ dài.</p>
+        <p>My eyes are brown. — Đôi mắt của tôi màu nâu.</p>
+        <p>My legs are strong. — Đôi chân của tôi khỏe.</p>
+        <button class="audio-btn" aria-label="Nghe các câu mô tả" onclick="speak('I have black hair. She has a long neck. My eyes are brown. My legs are strong.')">🔊</button>
       </div>
-
-      <div class="flip-card-single" id="single-card-el" onclick="flipSingleCard()">
-        <div class="flip-card-inner">
-          <div class="flip-card-front" id="card-front-content"></div>
-          <div class="flip-card-back" id="card-back-content"></div>
-        </div>
+      <div class="sentence-card">
+        <h3>Nói về giác quan: I … with my…</h3>
+        <p>I listen with my ears. — Tôi nghe bằng đôi tai của mình.</p>
+        <p>I smell with my nose. — Tôi ngửi bằng mũi của mình.</p>
+        <button class="audio-btn" aria-label="Nghe mẫu câu về giác quan" onclick="speak('I listen with my ears. I smell with my nose.')">🔊</button>
       </div>
-
-      <div>
-        <button class="nav-btn" onclick="prevSingleCard()">⏮️ Thẻ Trước</button>
-        <button class="nav-btn" onclick="nextSingleCard(false)">Thẻ Tiếp ⏭️</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- TAB 4: GAME 2 MCQ -->
-  <div id="game-mcq" class="tab-content">
-    <h2 style="text-align: center; color: #E65100; font-weight: 800; font-size: 1.4rem;">Game 2: Trắc Nghiệm Chọn Từ Đúng</h2>
-    <p style="text-align: center; color: #BF360C; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình ảnh và chọn tên bộ phận cơ thể tương ứng bằng tiếng Anh!</p>
-
-    <div class="quiz-container">
-      <div class="vocab-preview-box" id="mcq-number-preview"></div>
-      <div class="mcq-grid" id="mcq-options-container"></div>
-    </div>
-  </div>
-
-  <!-- TAB 5: GAME 3 SPELLING -->
-  <div id="game-spelling" class="tab-content">
-    <h2 style="text-align: center; color: #E65100; font-weight: 800; font-size: 1.4rem;">Game 3: Thử Tài Điền Chính Tả</h2>
-    <p style="text-align: center; color: #BF360C; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình ảnh và nghe phát âm để gõ chính xác tên bộ phận! (Ấn ENTER để kiểm tra)</p>
-
-    <div class="spelling-box">
-      <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 / 16 câu</div>
-
-      <div id="spelling-preview" class="vocab-preview-box"></div>
-      <button class="audio-btn" style="width: 44px; height: 44px; font-size: 1.3rem; margin-top:0;" onclick="playSpellingAudio()">🔊</button>
-
-      <div class="spelling-input-group">
-        <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ tên bộ phận tiếng Anh..." autocomplete="off">
-        <button class="btn-action" onclick="checkSpelling()">Kiểm tra</button>
+      <div class="sentence-card">
+        <h3>Hướng dẫn hành động: bắt đầu bằng động từ</h3>
+        <p>Open your mouth, please. — Hãy mở miệng ra nào. Có thể nói: Please open your mouth.</p>
+        <p>Brush your teeth every day. — Hãy đánh răng mỗi ngày.</p>
+        <p>Wash your hands before eating. — Hãy rửa tay trước khi ăn.</p>
+        <p>Put your hand on my shoulder. — Đặt tay bạn lên vai tôi.</p>
+        <button class="audio-btn" aria-label="Nghe câu hướng dẫn" onclick="speak('Open your mouth, please. Brush your teeth every day. Wash your hands before eating. Put your hand on my shoulder.')">🔊</button>
       </div>
     </div>
   </div>
+
+  <!-- Game 1–3 use the same shared learning interface as other Grade 2 topics. -->
+  <div id="game-flip" class="tab-content"></div>
+  <div id="game-mcq" class="tab-content"></div>
+  <div id="game-spelling" class="tab-content"></div>
 
   <!-- TAB 6: GAME 4 SENTENCE PRACTICE -->
   <div id="game-count" class="tab-content">
@@ -413,525 +394,27 @@
 
       <div class="item-display-box" id="count-items-container"></div>
 
-      <div class="feedback-msg" id="count-feedback"></div>
+      <div class="feedback-msg" id="count-feedback" role="status" aria-live="polite"></div>
 
       <div class="spelling-input-group">
         <input type="text" id="count-sentence-input" class="spelling-input" style="width:380px;" placeholder="Gõ câu tiếng Anh..." autocomplete="off">
-        <button class="btn-action" onclick="checkCountSentence()">Kiểm tra</button>
-        <button class="btn-reveal" onclick="revealCountSentence()">💡 Hiện đáp án</button>
+        <button class="btn-action" id="count-check" onclick="checkCountSentence()">Kiểm tra</button>
+        <button class="btn-reveal" id="count-reveal" onclick="revealCountSentence()">💡 Hiện đáp án</button>
       </div>
+      <button class="btn-action" id="count-next" type="button" hidden onclick="nextCountQuestion()">Câu tiếp theo →</button>
     </div>
   </div>
 
 </div>
 
-<script>
-  const defaultSpeechRate = 0.6;
-  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+<script src="./bodyparts-data.js"></script>
+<script src="./lesson-core.js"></script>
+<script src="./bodyparts.js"></script>
+<script src="./learning-core.js"></script>
+<script>document.addEventListener('DOMContentLoaded', mountBodyParts);</script>
+<script src="./grade2-navigation.js"></script>
 
-  function playSoundEffect(type) {
-    if (audioCtx.state === 'suspended') { audioCtx.resume(); }
-    const osc = audioCtx.createOscillator();
-    const gain = audioCtx.createGain();
-    osc.connect(gain);
-    gain.connect(audioCtx.destination);
-
-    if (type === 'correct') {
-      const now = audioCtx.currentTime;
-      osc.type = 'triangle';
-      osc.frequency.setValueAtTime(523.25, now);
-      osc.frequency.setValueAtTime(659.25, now + 0.1);
-      osc.frequency.setValueAtTime(783.99, now + 0.2);
-      osc.frequency.setValueAtTime(1046.50, now + 0.3);
-      gain.gain.setValueAtTime(0.3, now);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
-      osc.start(now); osc.stop(now + 0.6);
-    } else if (type === 'wrong') {
-      const now = audioCtx.currentTime;
-      osc.type = 'sawtooth';
-      osc.frequency.setValueAtTime(180, now);
-      osc.frequency.setValueAtTime(130, now + 0.15);
-      gain.gain.setValueAtTime(0.2, now);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
-      osc.start(now); osc.stop(now + 0.4);
-    }
-  }
-
-  function shuffleArray(array) {
-    const arr = [...array];
-    for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-    return arr;
-  }
-
-  /* BỘ TỪ VỰNG BODY PARTS SVG VẼ TAY CHI TIẾT */
-  const vocabList = [
-    { name: 'Head', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <circle cx="50" cy="55" r="32" fill="#FFCCBC" stroke="#BF360C" stroke-width="2.5"/>
-        <path d="M 20 45 Q 50 10 80 45 Q 78 28 50 25 Q 22 28 20 45 Z" fill="#5D4037" stroke="#3E2723" stroke-width="2"/>
-        <circle cx="38" cy="55" r="4" fill="#3E2723"/>
-        <circle cx="62" cy="55" r="4" fill="#3E2723"/>
-        <path d="M 38 72 Q 50 80 62 72" stroke="#BF360C" stroke-width="3" fill="none"/>
-        <ellipse cx="20" cy="58" rx="5" ry="8" fill="#FFCCBC" stroke="#BF360C" stroke-width="2"/>
-        <ellipse cx="80" cy="58" rx="5" ry="8" fill="#FFCCBC" stroke="#BF360C" stroke-width="2"/>
-      </svg>`, ipa: '/hed/', meaning: 'Cái đầu', sentence: 'This is my head.', hex: '#FF7043' },
-    { name: 'Hair', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <ellipse cx="50" cy="65" rx="30" ry="28" fill="#FFCCBC" stroke="#BF360C" stroke-width="2"/>
-        <path d="M 18 50 Q 25 15 50 15 Q 75 15 82 50 Q 70 30 50 30 Q 30 30 18 50 Z" fill="#4E342E" stroke="#3E2723" stroke-width="2"/>
-        <path d="M 25 35 Q 30 25 40 22" stroke="#3E2723" stroke-width="2" fill="none"/>
-        <path d="M 60 22 Q 70 25 75 35" stroke="#3E2723" stroke-width="2" fill="none"/>
-      </svg>`, ipa: '/heər/', meaning: 'Tóc', sentence: 'I have black hair.', hex: '#6D4C41' },
-    { name: 'Eyes', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <ellipse cx="30" cy="50" rx="18" ry="12" fill="#FFFFFF" stroke="#37474F" stroke-width="2.5"/>
-        <ellipse cx="70" cy="50" rx="18" ry="12" fill="#FFFFFF" stroke="#37474F" stroke-width="2.5"/>
-        <circle cx="30" cy="50" r="7" fill="#5D4037"/>
-        <circle cx="70" cy="50" r="7" fill="#5D4037"/>
-        <circle cx="32" cy="47" r="2" fill="#FFFFFF"/>
-        <circle cx="72" cy="47" r="2" fill="#FFFFFF"/>
-        <path d="M 14 42 Q 30 30 46 42" stroke="#3E2723" stroke-width="3" fill="none"/>
-        <path d="M 54 42 Q 70 30 86 42" stroke="#3E2723" stroke-width="3" fill="none"/>
-      </svg>`, ipa: '/aɪz/', meaning: 'Mắt', sentence: 'My eyes are brown.', hex: '#29B6F6' },
-    { name: 'Ears', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <path d="M 30 30 Q 10 40 15 62 Q 18 78 35 75 Q 45 72 40 55 Q 45 40 30 30 Z" fill="#FFCCBC" stroke="#BF360C" stroke-width="2.5"/>
-        <path d="M 30 45 Q 22 52 26 62" stroke="#BF360C" stroke-width="2" fill="none"/>
-        <path d="M 70 30 Q 90 40 85 62 Q 82 78 65 75 Q 55 72 60 55 Q 55 40 70 30 Z" fill="#FFCCBC" stroke="#BF360C" stroke-width="2.5"/>
-        <path d="M 70 45 Q 78 52 74 62" stroke="#BF360C" stroke-width="2" fill="none"/>
-      </svg>`, ipa: '/ɪərz/', meaning: 'Tai', sentence: 'I listen with my ears.', hex: '#FFA726' },
-    { name: 'Nose', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <path d="M 50 20 Q 40 55 32 65 Q 30 78 50 78 Q 70 78 68 65 Q 60 55 50 20 Z" fill="#FFCCBC" stroke="#BF360C" stroke-width="2.5"/>
-        <ellipse cx="42" cy="70" rx="5" ry="4" fill="#BF360C"/>
-        <ellipse cx="58" cy="70" rx="5" ry="4" fill="#BF360C"/>
-      </svg>`, ipa: '/nəʊz/', meaning: 'Mũi', sentence: 'I smell with my nose.', hex: '#EC407A' },
-    { name: 'Mouth', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <path d="M 15 50 Q 50 80 85 50 Q 50 65 15 50 Z" fill="#D84315" stroke="#BF360C" stroke-width="2.5"/>
-        <path d="M 20 50 Q 50 60 80 50 L 80 45 Q 50 55 20 45 Z" fill="#FFFFFF"/>
-        <path d="M 15 50 Q 50 35 85 50" stroke="#BF360C" stroke-width="2.5" fill="none"/>
-      </svg>`, ipa: '/maʊθ/', meaning: 'Miệng', sentence: 'Open your mouth, please.', hex: '#EF5350' },
-    { name: 'Teeth', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <rect x="15" y="35" width="70" height="35" rx="10" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="2.5"/>
-        <line x1="29" y1="35" x2="29" y2="70" stroke="#CFD8DC" stroke-width="2"/>
-        <line x1="43" y1="35" x2="43" y2="70" stroke="#CFD8DC" stroke-width="2"/>
-        <line x1="57" y1="35" x2="57" y2="70" stroke="#CFD8DC" stroke-width="2"/>
-        <line x1="71" y1="35" x2="71" y2="70" stroke="#CFD8DC" stroke-width="2"/>
-        <line x1="15" y1="52" x2="85" y2="52" stroke="#CFD8DC" stroke-width="2"/>
-      </svg>`, ipa: '/tiːθ/', meaning: 'Răng', sentence: 'Brush your teeth every day.', hex: '#26C6DA' },
-    { name: 'Neck', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <ellipse cx="50" cy="25" rx="26" ry="18" fill="#FFCCBC" stroke="#BF360C" stroke-width="2.5"/>
-        <rect x="38" y="30" width="24" height="45" fill="#FFCCBC" stroke="#BF360C" stroke-width="2.5"/>
-        <path d="M 20 80 Q 50 65 80 80 L 80 90 L 20 90 Z" fill="#4FC3F7" stroke="#0288D1" stroke-width="2.5"/>
-      </svg>`, ipa: '/nek/', meaning: 'Cổ', sentence: 'She has a long neck.', hex: '#66BB6A' },
-    { name: 'Shoulder', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <path d="M 10 60 Q 30 25 50 30 Q 70 25 90 60 L 90 85 L 10 85 Z" fill="#4FC3F7" stroke="#0288D1" stroke-width="2.5"/>
-        <circle cx="50" cy="28" r="14" fill="#FFCCBC" stroke="#BF360C" stroke-width="2"/>
-        <path d="M 20 55 Q 30 40 40 45" stroke="#0288D1" stroke-width="2" fill="none"/>
-        <path d="M 80 55 Q 70 40 60 45" stroke="#0288D1" stroke-width="2" fill="none"/>
-      </svg>`, ipa: '/ˈʃəʊl.dər/', meaning: 'Vai', sentence: 'Put your hand on my shoulder.', hex: '#AB47BC' },
-    { name: 'Arm', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <path d="M 30 15 Q 20 40 30 55 Q 25 70 35 85" stroke="#FFCCBC" stroke-width="22" fill="none" stroke-linecap="round"/>
-        <path d="M 30 15 Q 20 40 30 55 Q 25 70 35 85" stroke="#BF360C" stroke-width="2" fill="none" stroke-linecap="round"/>
-        <circle cx="35" cy="85" r="12" fill="#FFCCBC" stroke="#BF360C" stroke-width="2"/>
-        <circle cx="30" cy="15" r="10" fill="#4FC3F7" stroke="#0288D1" stroke-width="2"/>
-      </svg>`, ipa: '/ɑːm/', meaning: 'Cánh tay', sentence: 'I have two arms.', hex: '#FFCA28' },
-    { name: 'Hand', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <rect x="35" y="45" width="30" height="35" rx="12" fill="#FFCCBC" stroke="#BF360C" stroke-width="2.5"/>
-        <rect x="25" y="15" width="10" height="35" rx="5" fill="#FFCCBC" stroke="#BF360C" stroke-width="2"/>
-        <rect x="38" y="10" width="10" height="40" rx="5" fill="#FFCCBC" stroke="#BF360C" stroke-width="2"/>
-        <rect x="52" y="12" width="10" height="38" rx="5" fill="#FFCCBC" stroke="#BF360C" stroke-width="2"/>
-        <rect x="65" y="20" width="10" height="32" rx="5" fill="#FFCCBC" stroke="#BF360C" stroke-width="2"/>
-        <path d="M 35 60 Q 15 55 18 70 Q 20 82 35 78 Z" fill="#FFCCBC" stroke="#BF360C" stroke-width="2"/>
-      </svg>`, ipa: '/hænd/', meaning: 'Bàn tay', sentence: 'Wash your hands before eating.', hex: '#42A5F5' },
-    { name: 'Finger', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <rect x="38" y="20" width="24" height="60" rx="12" fill="#FFCCBC" stroke="#BF360C" stroke-width="2.5"/>
-        <path d="M 40 30 Q 50 24 60 30" stroke="#BF360C" stroke-width="1.5" fill="none"/>
-        <ellipse cx="50" cy="26" rx="9" ry="7" fill="#FFF3E0" stroke="#BF360C" stroke-width="2"/>
-      </svg>`, ipa: '/ˈfɪŋ.ɡər/', meaning: 'Ngón tay', sentence: 'I have ten fingers.', hex: '#FF8A65' },
-    { name: 'Leg', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <path d="M 35 10 L 65 10 L 62 60 L 70 90 L 55 90 L 50 65 L 45 90 L 30 90 L 38 60 Z" fill="#FFCCBC" stroke="#BF360C" stroke-width="2.5"/>
-        <rect x="30" y="90" width="20" height="8" rx="3" fill="#78909C"/>
-        <rect x="50" y="90" width="20" height="8" rx="3" fill="#78909C"/>
-      </svg>`, ipa: '/leɡ/', meaning: 'Chân (đùi)', sentence: 'My legs are strong.', hex: '#8D6E63' },
-    { name: 'Knee', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <path d="M 40 10 L 60 10 L 58 45 L 65 55 L 60 90 L 40 90 L 35 55 L 42 45 Z" fill="#FFCCBC" stroke="#BF360C" stroke-width="2.5"/>
-        <circle cx="50" cy="50" r="12" fill="#FFE0B2" stroke="#BF360C" stroke-width="2"/>
-      </svg>`, ipa: '/niː/', meaning: 'Đầu gối', sentence: 'I hurt my knee.', hex: '#5C6BC0' },
-    { name: 'Foot', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <path d="M 20 60 Q 15 40 30 35 Q 45 30 50 45 L 85 55 Q 92 60 88 68 Q 82 75 60 72 L 25 72 Q 15 70 20 60 Z" fill="#FFCCBC" stroke="#BF360C" stroke-width="2.5"/>
-        <circle cx="55" cy="47" r="4" fill="#FFCCBC" stroke="#BF360C" stroke-width="1.5"/>
-        <circle cx="63" cy="45" r="4" fill="#FFCCBC" stroke="#BF360C" stroke-width="1.5"/>
-        <circle cx="71" cy="45" r="4" fill="#FFCCBC" stroke="#BF360C" stroke-width="1.5"/>
-        <circle cx="79" cy="47" r="4" fill="#FFCCBC" stroke="#BF360C" stroke-width="1.5"/>
-      </svg>`, ipa: '/fʊt/', meaning: 'Bàn chân', sentence: 'I have two feet.', hex: '#26A69A' },
-    { name: 'Tummy', svg: `<svg class="svg-icon" viewBox="0 0 100 100">
-        <ellipse cx="50" cy="55" rx="38" ry="32" fill="#FFCCBC" stroke="#BF360C" stroke-width="2.5"/>
-        <ellipse cx="50" cy="55" rx="5" ry="6" fill="#BF360C"/>
-        <path d="M 20 40 Q 50 25 80 40" stroke="#EF9A9A" stroke-width="2" fill="none"/>
-      </svg>`, ipa: '/ˈtʌm.i/', meaning: 'Bụng', sentence: 'My tummy hurts a little.', hex: '#F06292' }
-  ];
-
-  /* DỮ LIỆU CÂU HỎI GAME 4 */
-  const sentenceQuestions = [
-    { svg: vocabList[0].svg, vietnamese: 'Đây là đầu của tôi.', hint: 'Đây là + đầu của tôi', answer: 'This is my head' },
-    { svg: vocabList[1].svg, vietnamese: 'Tôi có mái tóc màu đen.', hint: 'Tôi + có + mái tóc + màu đen', answer: 'I have black hair' },
-    { svg: vocabList[2].svg, vietnamese: 'Mắt của tôi màu nâu.', hint: 'Mắt của tôi + thì + màu nâu', answer: 'My eyes are brown' },
-    { svg: vocabList[3].svg, vietnamese: 'Tôi nghe bằng đôi tai của mình.', hint: 'Tôi + nghe + bằng + đôi tai', answer: 'I listen with my ears' },
-    { svg: vocabList[4].svg, vietnamese: 'Tôi ngửi bằng mũi của mình.', hint: 'Tôi + ngửi + bằng + cái mũi', answer: 'I smell with my nose' },
-    { svg: vocabList[5].svg, vietnamese: 'Hãy mở miệng ra nào.', hint: 'Mở + miệng của bạn', answer: 'Open your mouth please' },
-    { svg: vocabList[6].svg, vietnamese: 'Hãy đánh răng mỗi ngày.', hint: 'Đánh + răng + mỗi ngày', answer: 'Brush your teeth every day' },
-    { svg: vocabList[7].svg, vietnamese: 'Cô ấy có chiếc cổ dài.', hint: 'Cô ấy + có + một chiếc cổ dài', answer: 'She has a long neck' },
-    { svg: vocabList[8].svg, vietnamese: 'Đặt tay bạn lên vai tôi.', hint: 'Đặt + tay bạn + lên + vai tôi', answer: 'Put your hand on my shoulder' },
-    { svg: vocabList[9].svg, vietnamese: 'Tôi có hai cánh tay.', hint: 'Tôi + có + hai + cánh tay', answer: 'I have two arms' },
-    { svg: vocabList[10].svg, vietnamese: 'Hãy rửa tay trước khi ăn.', hint: 'Rửa + tay của bạn + trước khi ăn', answer: 'Wash your hands before eating' },
-    { svg: vocabList[11].svg, vietnamese: 'Tôi có mười ngón tay.', hint: 'Tôi + có + mười + ngón tay', answer: 'I have ten fingers' },
-    { svg: vocabList[12].svg, vietnamese: 'Đôi chân của tôi rất khỏe.', hint: 'Đôi chân tôi + thì + rất khỏe', answer: 'My legs are strong' },
-    { svg: vocabList[13].svg, vietnamese: 'Tôi bị đau đầu gối.', hint: 'Tôi + làm đau + đầu gối', answer: 'I hurt my knee' },
-    { svg: vocabList[14].svg, vietnamese: 'Tôi có hai bàn chân.', hint: 'Tôi + có + hai + bàn chân', answer: 'I have two feet' },
-    { svg: vocabList[15].svg, vietnamese: 'Bụng của tôi hơi đau.', hint: 'Bụng của tôi + đau + một chút', answer: 'My tummy hurts a little' }
-  ];
-
-  let flashcardDeck = [];
-
-  function speak(text) {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'en-US';
-      utterance.rate = defaultSpeechRate;
-      const voices = window.speechSynthesis.getVoices();
-      const bestVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Premium') || v.name.includes('Samantha')));
-      if (bestVoice) utterance.voice = bestVoice;
-      window.speechSynthesis.speak(utterance);
-    }
-  }
-
-  function renderVocabGrid() {
-    const grid = document.getElementById('vocab-grid-container');
-    grid.innerHTML = '';
-    vocabList.forEach(item => {
-      const card = document.createElement('div');
-      card.className = 'vocab-card';
-      card.style.background = item.hex;
-      card.innerHTML = `
-        <div class="image-badge-wrapper">${item.svg}</div>
-        <div class="word-title">${item.name}</div>
-        <div class="phonetic">${item.ipa}</div>
-        <div class="meaning">${item.meaning}</div>
-        <div class="example-box"><b>Ví dụ:</b> <i>"${item.sentence}"</i></div>
-        <button class="audio-btn" onclick="speak('${item.name}')">🔊</button>
-      `;
-      grid.appendChild(card);
-    });
-  }
-  renderVocabGrid();
-
-  function switchTab(tabId, evt) {
-    clearTimeout(singleCardTimer);
-    clearTimeout(mcqTimer);
-    clearTimeout(spellingTimer);
-    clearTimeout(countTimer);
-
-    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
-
-    document.getElementById(tabId).classList.add('active');
-    if(evt && evt.target) evt.target.classList.add('active');
-
-    if(tabId === 'game-flip') initSingleCardGame();
-    if(tabId === 'game-mcq') initMcqGame();
-    if(tabId === 'game-spelling') initSpellingGame();
-    if(tabId === 'game-count') initCountGame();
-  }
-
-  /* GAME 1: FLASHCARD */
-  let singleCardIdx = 0;
-  let singleCardTimer = null;
-  let cardFrontMode = 'viet';
-
-  function setCardFrontMode(mode, btnEl) {
-    cardFrontMode = mode;
-    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-    if(btnEl) btnEl.classList.add('active');
-    renderSingleCardContent();
-  }
-
-  function initSingleCardGame() {
-    singleCardIdx = 0;
-    flashcardDeck = shuffleArray(vocabList);
-    renderSingleCardContent();
-  }
-
-  function changeCardWithAnimation() {
-    clearTimeout(singleCardTimer);
-    const cardEl = document.getElementById('single-card-el');
-    if (cardEl.classList.contains('flipped')) {
-      cardEl.classList.remove('flipped');
-      setTimeout(() => { renderSingleCardContent(); }, 600);
-    } else {
-      renderSingleCardContent();
-    }
-  }
-
-  function renderSingleCardContent() {
-    const item = flashcardDeck[singleCardIdx];
-    const cardEl = document.getElementById('single-card-el');
-    const frontEl = document.getElementById('card-front-content');
-    const backEl = document.getElementById('card-back-content');
-    const counterEl = document.getElementById('card-counter-text');
-
-    cardEl.classList.remove('flipped');
-    counterEl.innerText = `Thẻ ${singleCardIdx + 1} / ${flashcardDeck.length}`;
-
-    frontEl.className = 'flip-card-front';
-    frontEl.style.background = 'linear-gradient(135deg, #EF6C00, #FFA726)';
-    frontEl.style.color = 'white';
-
-    backEl.className = 'flip-card-back';
-    backEl.style.background = item.hex;
-    backEl.style.color = 'white';
-
-    if(cardFrontMode === 'viet') {
-      frontEl.innerHTML = `
-        <div style="width:100px; height:85px; border-radius:10px; overflow:hidden; margin-bottom:6px; background:white; padding:4px; display:flex; justify-content:center; align-items:center;">${item.svg}</div>
-        <h2 style="font-size: 1.3rem; margin-bottom: 2px; font-weight:800;">${item.meaning}</h2>
-        <p style="font-size: 0.8rem; opacity: 0.85;">(Chạm để lật thẻ)</p>
-      `;
-      backEl.innerHTML = `
-        <h2 style="font-size: 2rem; margin-bottom: 4px; font-weight:800;">${item.name}</h2>
-        <p style="font-size: 1.1rem; font-weight:700;">${item.ipa}</p>
-        <p style="font-size: 0.9rem; margin-top: 8px; font-style: italic;">"${item.sentence}"</p>
-      `;
-    } else {
-      frontEl.innerHTML = `
-        <h1 style="font-size: 2.2rem; margin-bottom: 8px; font-weight:800;">${item.ipa}</h1>
-        <p style="font-size: 0.85rem; opacity: 0.85;">(Chạm để xem từ vựng)</p>
-      `;
-      backEl.innerHTML = `
-        <div style="width:100px; height:85px; border-radius:10px; overflow:hidden; margin-bottom:6px; background:white; padding:4px; display:flex; justify-content:center; align-items:center;">${item.svg}</div>
-        <h1 style="font-size: 2rem; font-weight:900;">${item.name}</h1>
-      `;
-    }
-  }
-
-  function flipSingleCard() {
-    const cardEl = document.getElementById('single-card-el');
-    if(!cardEl.classList.contains('flipped')) {
-      cardEl.classList.add('flipped');
-      const item = flashcardDeck[singleCardIdx];
-      speak(item.name);
-      clearTimeout(singleCardTimer);
-      singleCardTimer = setTimeout(() => { nextSingleCard(true); }, 3000);
-    }
-  }
-
-  function nextSingleCard(isAuto = false) {
-    clearTimeout(singleCardTimer);
-    singleCardIdx = (singleCardIdx + 1) % flashcardDeck.length;
-    changeCardWithAnimation();
-  }
-
-  function prevSingleCard() {
-    clearTimeout(singleCardTimer);
-    singleCardIdx = (singleCardIdx - 1 + flashcardDeck.length) % flashcardDeck.length;
-    changeCardWithAnimation();
-  }
-
-  /* GAME 2: TRẮC NGHIỆM */
-  let mcqIdx = 0;
-  let mcqTimer = null;
-  let mcqList = [];
-
-  function initMcqGame() {
-    mcqList = shuffleArray(vocabList);
-    mcqIdx = 0;
-    loadMcqQuestion();
-  }
-
-  function loadMcqQuestion() {
-    clearTimeout(mcqTimer);
-    const item = mcqList[mcqIdx];
-    const previewBox = document.getElementById('mcq-number-preview');
-    const optionsGrid = document.getElementById('mcq-options-container');
-
-    previewBox.innerHTML = item.svg;
-
-    let options = [item.name];
-    let otherItems = vocabList.filter(c => c.name !== item.name);
-    otherItems = shuffleArray(otherItems);
-    for(let i = 0; i < 3; i++) options.push(otherItems[i].name);
-    options = shuffleArray(options);
-
-    optionsGrid.innerHTML = '';
-    options.forEach(optName => {
-      const btn = document.createElement('button');
-      btn.className = 'mcq-btn';
-      btn.innerText = optName;
-      btn.onclick = () => handleMcqChoice(btn, optName, item.name);
-      optionsGrid.appendChild(btn);
-    });
-  }
-
-  function handleMcqChoice(btn, selectedName, correctName) {
-    const allBtns = document.querySelectorAll('.mcq-btn');
-    allBtns.forEach(b => b.onclick = null);
-
-    if(selectedName === correctName) {
-      btn.classList.add('correct');
-      playSoundEffect('correct');
-      speak(correctName);
-      mcqTimer = setTimeout(() => {
-        mcqIdx = (mcqIdx + 1) % mcqList.length;
-        loadMcqQuestion();
-      }, 2000);
-    } else {
-      btn.classList.add('wrong');
-      playSoundEffect('wrong');
-      allBtns.forEach(b => { if(b.innerText === correctName) b.classList.add('correct'); });
-      speak(correctName);
-      mcqTimer = setTimeout(() => { loadMcqQuestion(); }, 2500);
-    }
-  }
-
-  /* GAME 3: CHÍNH TẢ */
-  let spellingIdx = 0;
-  let spellingTimer = null;
-  let spellingList = [];
-  let spellingCorrectCount = 0;
-
-  function initSpellingGame() {
-    spellingList = shuffleArray(vocabList);
-    spellingIdx = 0;
-    spellingCorrectCount = 0;
-    updateSpellingScore();
-    loadSpellingQuestion();
-  }
-
-  function updateSpellingScore() {
-    document.getElementById('spelling-score').innerText = `🎯 Đã đúng: ${spellingCorrectCount} / ${spellingList.length} câu`;
-  }
-
-  function loadSpellingQuestion() {
-    clearTimeout(spellingTimer);
-    const item = spellingList[spellingIdx];
-    const preview = document.getElementById('spelling-preview');
-    const input = document.getElementById('spelling-input');
-    preview.innerHTML = item.svg;
-    input.value = '';
-    input.disabled = false;
-    input.focus();
-    speak(item.name);
-  }
-
-  function playSpellingAudio() { speak(spellingList[spellingIdx].name); }
-
-  function checkSpelling() {
-    const inputEl = document.getElementById('spelling-input');
-    const inputVal = inputEl.value.trim().toLowerCase();
-    const correctVal = spellingList[spellingIdx].name.toLowerCase();
-
-    if(inputVal === correctVal) {
-      inputEl.disabled = true;
-      spellingCorrectCount++;
-      updateSpellingScore();
-      playSoundEffect('correct');
-      speak(spellingList[spellingIdx].name);
-      spellingTimer = setTimeout(() => {
-        spellingIdx = (spellingIdx + 1) % spellingList.length;
-        loadSpellingQuestion();
-      }, 2000);
-    } else {
-      playSoundEffect('wrong');
-      inputEl.style.borderColor = '#E53935';
-      setTimeout(() => { inputEl.style.borderColor = '#FFCC80'; }, 1000);
-    }
-  }
-
-  /* GAME 4: VIẾT CÂU */
-  let countIdx = 0;
-  let countTimer = null;
-  let countList = [];
-  let countCorrectCount = 0;
-
-  function initCountGame() {
-    countList = shuffleArray(sentenceQuestions);
-    countIdx = 0;
-    countCorrectCount = 0;
-    updateCountScore();
-    loadCountQuestion();
-  }
-
-  function updateCountScore() {
-    document.getElementById('count-score').innerText = `🎯 Đã đúng: ${countCorrectCount} / ${countList.length} câu`;
-  }
-
-  function loadCountQuestion() {
-    clearTimeout(countTimer);
-    const item = countList[countIdx];
-    const container = document.getElementById('count-items-container');
-    const input = document.getElementById('count-sentence-input');
-    const feedback = document.getElementById('count-feedback');
-    const counterText = document.getElementById('count-counter-text');
-
-    counterText.innerText = `Câu ${countIdx + 1} / ${countList.length}`;
-    feedback.innerText = '';
-    feedback.style.color = '#BF360C';
-    input.value = '';
-    input.disabled = false;
-    input.style.borderColor = '#FFCC80';
-    input.focus();
-
-    container.innerHTML = `
-      <div style="width:110px; height:90px; border-radius:12px; overflow:hidden; box-shadow:0 4px 8px rgba(0,0,0,0.1); background:white; padding:6px; display:flex; align-items:center; justify-content:center;">${item.svg}</div>
-      <div style="font-size: 1.3rem; font-weight: 800; color: #E65100;">"${item.vietnamese}"</div>
-      <div style="font-size: 0.9rem; font-weight: 600; color: #BF360C; background: #FFF3E0; padding: 4px 12px; border-radius: 8px;">💡 Cấu trúc gợi ý: ${item.hint}</div>
-    `;
-  }
-
-  function normalizeSentence(str) {
-    return str.toLowerCase().replace(/[.,?!]/g, '').replace(/\s+/g, ' ').trim();
-  }
-
-  function checkCountSentence() {
-    const item = countList[countIdx];
-    const inputEl = document.getElementById('count-sentence-input');
-    const feedback = document.getElementById('count-feedback');
-    const userInput = normalizeSentence(inputEl.value);
-    const validSentence = normalizeSentence(item.answer);
-
-    if (userInput === validSentence) {
-      feedback.style.color = '#43A047';
-      feedback.innerText = '🎉 Chính xác! Bạn giỏi quá!';
-      inputEl.disabled = true;
-      countCorrectCount++;
-      updateCountScore();
-      playSoundEffect('correct');
-      speak(item.answer);
-      countTimer = setTimeout(() => {
-        countIdx = (countIdx + 1) % countList.length;
-        loadCountQuestion();
-      }, 2000);
-    } else {
-      playSoundEffect('wrong');
-      feedback.style.color = '#E53935';
-      feedback.innerText = '❌ Thử lại nhé! (Bạn có thể bấm "Hiện đáp án" nếu cần)';
-      inputEl.style.borderColor = '#E53935';
-      setTimeout(() => { inputEl.style.borderColor = '#FFCC80'; }, 1200);
-    }
-  }
-
-  function revealCountSentence() {
-    const item = countList[countIdx];
-    const feedback = document.getElementById('count-feedback');
-    feedback.style.color = '#FF9800';
-    feedback.innerText = `💡 Đáp án gợi ý: "${item.answer}"`;
-    speak(item.answer);
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('spelling-input').addEventListener('keydown', (e) => { if (e.key === 'Enter') checkSpelling(); });
-    document.getElementById('count-sentence-input').addEventListener('keydown', (e) => { if (e.key === 'Enter') checkCountSentence(); });
-  });
-</script>
-
+<contact-danh></contact-danh>
+<script src="../../shared/contact-footer.js"></script>
 </body>
 </html>

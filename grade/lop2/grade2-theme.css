@@ -1,0 +1,440 @@
+/* Lớp 2: one playful visual layer over each topic's own accent color. */
+body.grade2-topic {
+  --g2-ink: #263449;
+  --g2-muted: #59697d;
+  --g2-outline: #dce9ee;
+  --g2-shadow: 0 12px 30px #20354b1a;
+  background-color: var(--bg-color, #f0fff4);
+  background-image:
+    radial-gradient(circle, color-mix(in srgb, var(--primary, #38a169) 18%, transparent) 1.4px, transparent 1.8px),
+    radial-gradient(circle, color-mix(in srgb, #4a90e2 14%, transparent) 1.2px, transparent 1.6px);
+  background-size: 32px 32px, 32px 32px;
+  background-position: 0 0, 16px 16px;
+  color: var(--g2-ink);
+}
+body.grade2-topic > header {
+  width: min(100%, 950px);
+  padding: 10px 16px 4px;
+}
+body.grade2-topic > header h1 {
+  color: var(--primary, #38a169);
+  font-size: clamp(1.8rem, 3.4vw, 2.5rem);
+  line-height: 1.18;
+  text-shadow: 2px 2px 0 #fff;
+}
+body.grade2-topic > header p { color: var(--g2-muted); }
+body.grade2-topic > nav {
+  width: min(100%, 950px);
+  gap: 9px;
+  margin: 16px auto 20px;
+}
+body.grade2-topic > nav .nav-btn {
+  min-height: 44px;
+  border: 2px solid color-mix(in srgb, var(--primary, #38a169) 15%, white);
+  border-radius: 16px;
+  background: white;
+  color: #33465b;
+  box-shadow: 0 4px 10px #20354b12;
+  transition: transform 180ms ease, background-color 180ms ease, color 180ms ease,
+    border-color 180ms ease, box-shadow 180ms ease;
+}
+body.grade2-topic > nav .nav-btn.active,
+body.grade2-topic > nav .nav-btn:hover {
+  background: var(--primary, #38a169);
+  border-color: var(--primary, #38a169);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 16px color-mix(in srgb, var(--primary, #38a169) 30%, transparent);
+}
+body.grade2-topic > .container {
+  width: min(100%, 950px);
+  padding: clamp(16px, 3vw, 28px);
+  border: 1px solid #ffffffd9;
+  border-radius: 24px;
+  box-shadow: var(--g2-shadow);
+}
+body.grade2-topic .tab-content.active { animation: g2-tab-in 240ms ease-out both; }
+@keyframes g2-tab-in {
+  from { opacity: 0; transform: translateY(9px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+body.grade2-topic .vocab-card,
+body.grade2-topic .number-card,
+body.grade2-topic .color-card,
+body.grade2-topic .sentence-card,
+body.grade2-topic .dialogue {
+  border-radius: 20px;
+  box-shadow: 0 7px 18px #24324716;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+body.grade2-topic .vocab-card:hover,
+body.grade2-topic .number-card:hover,
+body.grade2-topic .color-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 11px 22px #24324722;
+}
+body.grade2-topic .btn-action,
+body.grade2-topic .audio-btn,
+body.grade2-topic .learning-panel button:not(.learning-card) {
+  border-radius: 14px;
+  transition: transform 180ms ease, filter 180ms ease, box-shadow 180ms ease;
+}
+body.grade2-topic .btn-action:hover,
+body.grade2-topic .audio-btn:hover,
+body.grade2-topic .learning-panel button:not(.learning-card):hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+body.grade2-topic .learning-panel { color: var(--g2-ink); }
+body.grade2-topic .learning-panel h2 { color: var(--primary, #38a169); }
+body.grade2-topic .learning-toolbar {
+  padding: 14px;
+  border: 1px solid color-mix(in srgb, var(--primary, #38a169) 22%, white);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--primary, #38a169) 9%, white);
+}
+body.grade2-topic .learning-storage,
+body.grade2-topic .learning-feedback { color: var(--g2-muted); }
+body.grade2-topic .learning-feedback[data-kind="correct"] { color: #247342; }
+body.grade2-topic .learning-feedback[data-kind="wrong"] { color: #aa3434; }
+body.grade2-topic .learning-toolbar button,
+body.grade2-topic .learning-controls button,
+body.grade2-topic .learning-stage > button:not(.learning-card),
+body.grade2-topic .learning-spelling button {
+  background: var(--primary, #38a169);
+  color: white;
+  box-shadow: 0 4px 10px color-mix(in srgb, var(--primary, #38a169) 20%, transparent);
+}
+body.grade2-topic .learning-controls button.is-active {
+  background: color-mix(in srgb, var(--primary, #38a169) 70%, #17395a);
+}
+body.grade2-topic .learning-options button {
+  border-color: color-mix(in srgb, var(--primary, #38a169) 28%, white);
+  border-radius: 14px;
+}
+body.grade2-topic :is(button, input, a):focus-visible,
+body.grade2-index a:focus-visible {
+  outline: 3px solid #f1b94a;
+  outline-offset: 3px;
+}
+body.grade2-topic .learning-history {
+  border: 1px solid var(--g2-outline);
+  border-radius: 14px;
+  padding: 10px 14px;
+  background: #fff;
+}
+
+/* The global * { margin: 0 } rule in topic pages otherwise pins dialogs at (0, 0). */
+body.grade2-topic:has(.learning-picker[open]) { overflow: hidden; }
+body.grade2-topic .learning-picker {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(820px, calc(100vw - 32px));
+  max-width: none;
+  height: min(680px, 90vh);
+  height: min(680px, 90dvh);
+  max-height: 90vh;
+  max-height: 90dvh;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 22px;
+  background: #fff;
+  color: var(--g2-ink);
+  box-shadow: 0 22px 70px #163c2b55;
+}
+body.grade2-topic .learning-picker[open] {
+  display: block;
+  animation: g2-dialog-in 220ms ease-out both;
+}
+@keyframes g2-dialog-in {
+  from { opacity: 0; transform: translateY(12px) scale(.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+body.grade2-topic .learning-picker::backdrop { background: #102e2370; }
+body.grade2-topic .learning-picker form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  min-height: 0;
+  padding: 18px 20px;
+}
+body.grade2-topic .learning-picker h2 {
+  margin: 0;
+  color: var(--primary, #38a169);
+  font-size: 1.4rem;
+}
+body.grade2-topic .learning-picker p { color: var(--g2-muted); }
+body.grade2-topic .learning-picker input[type="search"] {
+  width: 100%;
+  min-height: 46px;
+  margin-top: 6px;
+  border: 2px solid #c8d9e7;
+  border-radius: 12px;
+}
+body.grade2-topic .learning-picker-actions {
+  flex: none;
+  margin: 0;
+  gap: 8px;
+}
+body.grade2-topic .learning-picker button {
+  min-height: 42px;
+  border-radius: 12px;
+  background: var(--primary, #38a169);
+  color: white;
+}
+body.grade2-topic .learning-picker .learning-none,
+body.grade2-topic .learning-picker .learning-cancel { background: #687789; }
+body.grade2-topic .learning-picker .learning-choices {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: none;
+  overflow-y: auto;
+  align-content: start;
+  grid-auto-rows: min-content;
+  gap: 9px;
+  padding: 10px 3px;
+  scrollbar-gutter: stable;
+}
+body.grade2-topic .learning-picker .learning-choice {
+  min-width: 0;
+  border: 2px solid var(--g2-outline);
+  border-radius: 13px;
+  background: white;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+body.grade2-topic .learning-picker .learning-choice:has(input:checked) {
+  border-color: color-mix(in srgb, var(--primary, #38a169) 60%, white);
+  background: color-mix(in srgb, var(--primary, #38a169) 7%, white);
+}
+body.grade2-topic .learning-picker .learning-choice:hover { transform: translateY(-1px); }
+body.grade2-topic .learning-picker .learning-choice input { accent-color: var(--primary, #38a169); }
+body.grade2-topic .learning-picker form > .learning-picker-actions:last-child {
+  justify-content: flex-end;
+  padding-top: 8px;
+  border-top: 1px solid var(--g2-outline);
+}
+
+/* Course index uses the same rounded, colourful components. */
+body.grade2-index { background: #f0f7f5; color: #263449; }
+body.grade2-index .hero {
+  background: linear-gradient(125deg, #38a169 0%, #35aaa5 48%, #4a90e2 100%);
+  box-shadow: 0 8px 22px #20435828;
+}
+body.grade2-index .back-btn { border: 1px solid #ffffff77; }
+body.grade2-index .lesson-card {
+  border: 2px solid #e0eced;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px #24324714;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+body.grade2-index .lesson-card:nth-child(4n + 1) { border-top: 5px solid #38a169; }
+body.grade2-index .lesson-card:nth-child(4n + 2) { border-top: 5px solid #4a90e2; }
+body.grade2-index .lesson-card:nth-child(4n + 3) { border-top: 5px solid #f2a754; }
+body.grade2-index .lesson-card:nth-child(4n + 4) { border-top: 5px solid #ed7aaa; }
+body.grade2-index .lesson-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 25px #24324724;
+}
+body.grade2-index .lesson-badge { border-radius: 12px; background: #e5f5ef; color: #277350; }
+body.grade2-index .btn-study { background: #31855e; border-radius: 14px; }
+body.grade2-index .lesson-card:hover .btn-study { background: #246c4c; }
+
+@media (max-width: 600px) {
+  body.grade2-topic { padding: 12px; }
+  body.grade2-topic > header { padding: 10px 4px 2px; }
+  body.grade2-topic > nav { gap: 7px; }
+  body.grade2-topic > nav .nav-btn {
+    flex: 1 1 calc(50% - 7px);
+    padding: 10px 8px;
+    font-size: .82rem;
+  }
+  body.grade2-topic > .container { padding: 16px 12px; border-radius: 20px; }
+  body.grade2-topic .learning-picker {
+    inset: auto 0 0;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    height: 92vh;
+    height: 92dvh;
+    max-height: 92vh;
+    max-height: 92dvh;
+    border-radius: 22px 22px 0 0;
+  }
+  body.grade2-topic .learning-picker[open] { animation: g2-sheet-in 240ms ease-out both; }
+  @keyframes g2-sheet-in {
+    from { opacity: .8; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  body.grade2-topic .learning-picker form { padding: 16px; }
+  body.grade2-topic .learning-picker .learning-choices { grid-template-columns: 1fr; }
+  body.grade2-topic .learning-picker .learning-choice { min-height: 56px; }
+}
+@media (max-height: 480px) {
+  body.grade2-topic .learning-picker,
+  body.grade2-topic .learning-picker[open] { height: 96vh; height: 96dvh; max-height: 96vh; max-height: 96dvh; }
+  body.grade2-topic .learning-picker form { gap: 6px; padding: 10px 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.grade2-topic .tab-content.active,
+  body.grade2-topic .learning-picker[open],
+  body.grade2-index .lesson-card { animation: none; transition: none; }
+  body.grade2-topic > nav .nav-btn,
+  body.grade2-topic .learning-panel button,
+  body.grade2-topic .learning-picker .learning-choice,
+  body.grade2-topic .btn-action,
+  body.grade2-topic .audio-btn,
+  body.grade2-topic .vocab-card,
+  body.grade2-topic .number-card,
+  body.grade2-topic .color-card { transition: none; transform: none; }
+}
+
+/* Compact topic navigation and the shared game card. */
+body.grade2-topic .g2-page-links {
+  width: min(100%, 950px);
+  margin: 8px auto 0;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+body.grade2-topic .g2-page-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 7px 12px;
+  border: 1px solid color-mix(in srgb, var(--primary, #38a169) 22%, white);
+  border-radius: 999px;
+  background: #ffffffeb;
+  color: var(--g2-ink);
+  font-size: .87rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 3px 9px #20354b10;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+body.grade2-topic .g2-page-links a:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary, #38a169);
+  box-shadow: 0 5px 12px #20354b20;
+}
+body.grade2-topic > nav.g2-main-nav {
+  width: min(calc(100% - 24px), 620px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  margin: 10px auto 18px;
+  padding: 5px;
+  border: 1px solid color-mix(in srgb, var(--primary, #38a169) 18%, white);
+  border-radius: 19px;
+  background: white;
+  box-shadow: 0 5px 15px #20354b12;
+}
+body.grade2-topic > nav.g2-main-nav .nav-btn {
+  width: 100%;
+  min-width: 0;
+  min-height: 42px;
+  padding: 9px 6px;
+  border: 0;
+  border-radius: 13px;
+  background: transparent;
+  box-shadow: none;
+  font-size: clamp(.82rem, 2.5vw, .97rem);
+  line-height: 1.2;
+}
+body.grade2-topic > nav.g2-main-nav .nav-btn.active,
+body.grade2-topic > nav.g2-main-nav .nav-btn:hover {
+  transform: none;
+  box-shadow: none;
+}
+body.grade2-topic > nav.g2-main-nav .nav-btn.active {
+  background: var(--primary, #38a169);
+  color: white;
+}
+body.grade2-topic > nav.g2-main-nav .nav-btn:not(.active):hover {
+  background: color-mix(in srgb, var(--primary, #38a169) 10%, white);
+  color: var(--g2-ink);
+}
+body.grade2-topic .g2-game-switcher {
+  padding: 10px;
+  margin: 0 0 16px;
+  border: 1px solid color-mix(in srgb, var(--primary, #38a169) 22%, white);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--primary, #38a169) 8%, white);
+}
+body.grade2-topic .g2-game-switcher[hidden] { display: none; }
+body.grade2-topic .g2-game-choices {
+  display: grid;
+  grid-template-columns: repeat(var(--g2-game-count, 4), minmax(0, 1fr));
+  gap: 8px;
+}
+body.grade2-topic .g2-game-choice,
+body.grade2-topic .g2-flashcard-controls .g2-card-nav-btn,
+body.grade2-topic .learning-card-nav button {
+  min-height: 44px;
+  padding: 8px 10px;
+  border: 2px solid color-mix(in srgb, var(--primary, #38a169) 25%, white);
+  border-radius: 14px;
+  background: white;
+  color: var(--g2-ink);
+  font: inherit;
+  font-size: .9rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 10px #20354b12;
+  transition: transform 180ms ease, background-color 180ms ease,
+    border-color 180ms ease, box-shadow 180ms ease;
+}
+body.grade2-topic .g2-game-choice:hover,
+body.grade2-topic .g2-flashcard-controls .g2-card-nav-btn:hover,
+body.grade2-topic .learning-card-nav button:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary, #38a169);
+  box-shadow: 0 6px 14px #20354b22;
+}
+body.grade2-topic .g2-game-choice.active,
+body.grade2-topic .g2-flashcard-controls .g2-card-nav-btn[data-direction="next"],
+body.grade2-topic .learning-card-nav button:nth-child(2) {
+  background: var(--primary, #38a169);
+  border-color: var(--primary, #38a169);
+  color: white;
+}
+body.grade2-topic .g2-flashcard-controls,
+body.grade2-topic .learning-card-nav {
+  width: min(100%, 520px);
+  margin: 10px auto 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+body.grade2-topic .g2-flashcard-controls .g2-card-nav-btn,
+body.grade2-topic .learning-card-nav button {
+  flex: 1 1 118px;
+  max-width: 175px;
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  body.grade2-topic .g2-game-choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body.grade2-topic .g2-page-links { justify-content: center; }
+  body.grade2-topic .g2-page-links a { font-size: .82rem; }
+  body.grade2-topic .g2-flashcard-controls,
+  body.grade2-topic .learning-card-nav { gap: 8px; }
+  body.grade2-topic .g2-flashcard-controls .g2-card-nav-btn,
+  body.grade2-topic .learning-card-nav button { font-size: .8rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.grade2-topic .g2-page-links a,
+  body.grade2-topic .g2-game-choice,
+  body.grade2-topic .g2-flashcard-controls .g2-card-nav-btn,
+  body.grade2-topic .learning-card-nav button { transition: none; transform: none; }
+}
+
+/* Body Parts sentence practice uses the same topic navigation and responsive cards. */
+.grade2-topic .count-image { width:110px; height:90px; border-radius:12px; overflow:hidden; background:white; padding:6px; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 8px rgba(0,0,0,.1); }
+.grade2-topic .count-image svg { max-width:100%; max-height:100%; }
+.grade2-topic .count-meaning { font-size:1.3rem; font-weight:800; color:#E65100; }
+.grade2-topic .count-hint { font-size:.9rem; font-weight:600; color:#BF360C; background:#FFF3E0; padding:4px 12px; border-radius:8px; }
+.grade2-topic #count-next:not([hidden]) { display:inline-block; margin-top:12px; }

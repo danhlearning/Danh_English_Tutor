@@ -415,8 +415,10 @@
     cursor: pointer;
   }
 </style>
+<link rel="stylesheet" href="./learning-shared.css">
+<link rel="stylesheet" href="./grade2-theme.css">
 </head>
-<body>
+<body class="grade2-topic">
 
 <header>
   <h1>🎨 ENGLISH COLORS FOR KIDS</h1>
@@ -504,6 +506,7 @@
     <div class="quiz-container">
       <div class="color-preview-box" id="mcq-color-preview"></div>
       <div class="mcq-grid" id="mcq-options-container"></div>
+      <p id="mcq-feedback" role="status" aria-live="polite" style="min-height:1.5em;text-align:center;font-weight:800;"></p>
     </div>
   </div>
 
@@ -527,7 +530,7 @@
 
 <script>
   // Mặc định tốc độ đọc là 0.5 (Chậm rõ cho bé)
-  const defaultSpeechRate = 0.5;
+  const defaultSpeechRate = 0.6;
 
   /* Bộ Vector SVG hiển thị chuẩn xác từng hình ảnh đồ vật minh họa */
   const svgIcons = {
@@ -571,7 +574,7 @@
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'en-US';
-      utterance.rate = defaultSpeechRate; // Mặc định luôn là 0.5
+      utterance.rate = defaultSpeechRate;
       window.speechSynthesis.speak(utterance);
     }
   }
@@ -746,6 +749,8 @@
     const item = colorsData[mcqIdx];
     const previewBox = document.getElementById('mcq-color-preview');
     const optionsGrid = document.getElementById('mcq-options-container');
+    const mcqFeedback = document.getElementById('mcq-feedback');
+    mcqFeedback.textContent = '';
 
     if(item.isTransparent) previewBox.className = 'color-preview-box transparent-bg-pattern';
     else previewBox.className = 'color-preview-box';
@@ -771,28 +776,27 @@
   }
 
   function handleMcqChoice(btn, selectedName, correctName) {
-    const allBtns = document.querySelectorAll('.mcq-btn');
-    allBtns.forEach(b => b.onclick = null);
-
-    if(selectedName === correctName) {
-      btn.classList.add('correct');
-      speak(correctName);
-
-      mcqTimer = setTimeout(() => {
-        mcqIdx = (mcqIdx + 1) % colorsData.length;
-        loadMcqQuestion();
-      }, 1000);
-    } else {
+    const allBtns = document.querySelectorAll('#mcq-options-container .mcq-btn');
+    const feedback = document.getElementById('mcq-feedback');
+    if (selectedName !== correctName) {
+      btn.disabled = true;
       btn.classList.add('wrong');
-      allBtns.forEach(b => {
-        if(b.innerText === correctName) b.classList.add('correct');
-      });
-      speak(correctName);
-
-      mcqTimer = setTimeout(() => {
-        loadMcqQuestion();
-      }, 3000);
+      feedback.style.color = '#C53030';
+      feedback.textContent = '❌ Chưa đúng. Thử lựa chọn khác nhé!';
+      playSoundEffect('wrong');
+      return;
     }
+
+    allBtns.forEach(button => { button.disabled = true; });
+    btn.classList.add('correct');
+    feedback.style.color = '#276749';
+    feedback.textContent = '✅ Chính xác!';
+    playSoundEffect('correct');
+    speak(correctName);
+    mcqTimer = setTimeout(() => {
+      mcqIdx = (mcqIdx + 1) % mcqList.length;
+      loadMcqQuestion();
+    }, 2000);
   }
 
   /* GAME 3: CHÍNH TẢ */
@@ -846,7 +850,19 @@
   }
 </script>
 
+<script src="./learning-core.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => DanhLesson.mount({
+    topic: 'colors',
+    words: colorsData.map((word, index) => ({
+      id: word.name.toLowerCase(), name: word.name, meaning: word.meaning,
+      ipa: word.ipa, color: word.hex, visual: word.icon
+    }))
+  }));
+</script>
+
 <contact-danh></contact-danh>
-    <script src="../../components.js"></script>
+    <script src="../../shared/contact-footer.js"></script>
+<script src="./grade2-navigation.js"></script>
 </body>
 </html>

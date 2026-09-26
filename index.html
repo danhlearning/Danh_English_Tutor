@@ -17,8 +17,6 @@
             --bg-color: #f8fafc;
             --text-main: #1e293b;
             --text-muted: #64748b;
-            --zalo-color: #0068ff;
-            --fb-color: #1877f2;
         }
 
         * {
@@ -226,6 +224,16 @@
             box-shadow: 0 6px 12px rgba(37, 99, 235, 0.2);
         }
 
+        .grade-btn-unavailable,
+        .grade-btn-unavailable:hover {
+            background: #f1f5f9;
+            border-color: #e2e8f0;
+            color: #64748b;
+            cursor: default;
+            transform: none;
+            box-shadow: none;
+        }
+
         /* --- Khu vực Phát âm IPA --- */
         .pronunciation-section {
             max-width: 1000px;
@@ -326,87 +334,6 @@
             border-color: #c026d3;
         }
 
-        /* --- Contact Section --- */
-        .contact-section {
-            text-align: center;
-            padding: 30px 15px;
-            background: white;
-            margin-top: 30px;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        .contact-section h2 {
-            font-size: 1.5rem;
-            margin-bottom: 18px;
-            color: var(--text-main);
-            font-weight: 800;
-        }
-
-        .social-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .btn-social {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 18px;
-            border-radius: 30px;
-            font-size: 0.95rem;
-            font-weight: 700;
-            text-decoration: none;
-            background-color: white;
-            transition: all 0.3s ease;
-        }
-
-        .btn-zalo {
-            color: var(--zalo-color);
-            border: 1.5px solid var(--zalo-color);
-        }
-        .btn-zalo:hover {
-            background-color: var(--zalo-color);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0, 104, 255, 0.25);
-        }
-        .zalo-logo {
-            width: 20px;
-            height: 20px;
-            border-radius: 4px;
-        }
-
-        .btn-fb {
-            color: var(--fb-color);
-            border: 1.5px solid var(--fb-color);
-        }
-        .btn-fb:hover {
-            background-color: var(--fb-color);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(24, 119, 242, 0.25);
-        }
-        .fb-icon {
-            width: 18px;
-            height: 18px;
-            fill: var(--fb-color);
-            transition: fill 0.3s;
-        }
-        .btn-fb:hover .fb-icon {
-            fill: white;
-        }
-
-        /* --- Footer --- */
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: var(--text-main);
-            color: white;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
     </style>
 </head>
 <body>
@@ -451,19 +378,19 @@
         </div>
 
         <div class="grade-grid">
-            <a href="lop1.html" class="grade-btn">🏫 Lớp 1</a>
+            <span class="grade-btn grade-btn-unavailable" aria-disabled="true" title="Chưa có bài học">🏫 Lớp 1 · Sắp có</span>
             <!-- Đã cập nhật đường dẫn chính xác cho Lớp 2 bên dưới -->
             <a href="grade/lop2/lop2.html" class="grade-btn">🏫 Lớp 2</a>
-            <a href="lop3.html" class="grade-btn">🏫 Lớp 3</a>
-            <a href="lop4.html" class="grade-btn">🏫 Lớp 4</a>
-            <a href="lop5.html" class="grade-btn">🏫 Lớp 5</a>
-            <a href="lop6.html" class="grade-btn">🏫 Lớp 6</a>
-            <a href="lop7.html" class="grade-btn">🏫 Lớp 7</a>
-            <a href="lop8.html" class="grade-btn">🏫 Lớp 8</a>
-            <a href="lop9.html" class="grade-btn">🏫 Lớp 9</a>
-            <a href="lop10.html" class="grade-btn">🏫 Lớp 10</a>
-            <a href="lop11.html" class="grade-btn">🏫 Lớp 11</a>
-            <a href="lop12.html" class="grade-btn">🏫 Lớp 12</a>
+            <span class="grade-btn grade-btn-unavailable" aria-disabled="true" title="Chưa có bài học">🏫 Lớp 3 · Sắp có</span>
+            <span class="grade-btn grade-btn-unavailable" aria-disabled="true" title="Chưa có bài học">🏫 Lớp 4 · Sắp có</span>
+            <span class="grade-btn grade-btn-unavailable" aria-disabled="true" title="Chưa có bài học">🏫 Lớp 5 · Sắp có</span>
+            <span class="grade-btn grade-btn-unavailable" aria-disabled="true" title="Chưa có bài học">🏫 Lớp 6 · Sắp có</span>
+            <span class="grade-btn grade-btn-unavailable" aria-disabled="true" title="Chưa có bài học">🏫 Lớp 7 · Sắp có</span>
+            <span class="grade-btn grade-btn-unavailable" aria-disabled="true" title="Chưa có bài học">🏫 Lớp 8 · Sắp có</span>
+            <span class="grade-btn grade-btn-unavailable" aria-disabled="true" title="Chưa có bài học">🏫 Lớp 9 · Sắp có</span>
+            <span class="grade-btn grade-btn-unavailable" aria-disabled="true" title="Chưa có bài học">🏫 Lớp 10 · Sắp có</span>
+            <span class="grade-btn grade-btn-unavailable" aria-disabled="true" title="Chưa có bài học">🏫 Lớp 11 · Sắp có</span>
+            <span class="grade-btn grade-btn-unavailable" aria-disabled="true" title="Chưa có bài học">🏫 Lớp 12 · Sắp có</span>
         </div>
     </section>
 
@@ -491,27 +418,8 @@
         </div>
     </section>
 
-    <!-- Khối 3: Liên hệ -->
-    <section class="contact-section">
-        <h2>Kết nối với thầy Danh</h2>
-        <div class="social-buttons">
-            <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
-                Zalo: 0911594794
-            </a>
-            
-            <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
-                <svg class="fb-icon" viewBox="0 0 24 24">
-                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
-                </svg>
-                Facebook
-            </a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Học tiếng Anh cùng thầy Danh. All rights reserved.</p>
-    </footer>
+    <contact-danh></contact-danh>
+    <script src="./shared/contact-footer.js"></script>
 
 </body>
 </html>

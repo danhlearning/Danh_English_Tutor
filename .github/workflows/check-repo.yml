@@ -1,0 +1,15 @@
+name: Check Grade 2 lessons
+
+on: [push, pull_request]
+
+jobs:
+  lessons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check lesson data and game rules
+        run: node --test grade/lop2/tests/*.test.cjs
+      - name: Check local links and IDs
+        run: node scripts/check-local-links.cjs
+      - name: Check the shared footer
+        run: node scripts/check-contact-footer.cjs
