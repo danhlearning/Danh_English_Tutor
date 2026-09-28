@@ -6,7 +6,7 @@ const vm = require('node:vm');
 
 const root = path.resolve(__dirname, '..');
 const context = { window: {} };
-vm.runInNewContext(fs.readFileSync(path.join(root, 'extended-topics-data.js'), 'utf8'), context);
+vm.runInNewContext(fs.readFileSync(path.join(root, 'assets/data/extended-topics-data.js'), 'utf8'), context);
 const catalog = context.window.grade2ExtendedTopics;
 const expected = { adjectives: 12, shapes: 8, toys: 12, weather: 8, rooms: 7, transport: 12 };
 
@@ -43,12 +43,12 @@ for (const [id, count] of Object.entries(expected)) {
     assert.equal(ids.length, new Set(ids).size);
     for (const required of ['vocab', 'sentences', 'game-flip', 'game-mcq', 'game-spelling', 'game-count',
       'sentence-input', 'sentence-check', 'sentence-reveal', 'sentence-next']) assert.ok(ids.includes(required));
-    for (const stylesheet of ['learning-shared.css', 'grade2-theme.css', 'extended-topic.css']) {
-      assert.ok(html.includes(`href="./${stylesheet}"`));
+    for (const stylesheet of ['assets/css/learning-shared.css', 'assets/css/grade2-theme.css', 'assets/css/extended-topic.css']) {
+      assert.ok(html.includes(`href="./${stylesheet}`));
       assert.ok(fs.existsSync(path.join(root, stylesheet)));
     }
-    for (const script of ['extended-topics-data.js', 'extended-topic.js', 'learning-core.js', 'grade2-navigation.js']) {
-      assert.ok(html.includes(`src="./${script}"`));
+    for (const script of ['assets/data/extended-topics-data.js', 'assets/js/extended-topic.js', 'assets/js/learning-core.js', 'assets/js/grade2-navigation.js']) {
+      assert.ok(html.includes(`src="./${script}`));
       assert.ok(fs.existsSync(path.join(root, script)));
     }
     assert.equal((html.match(/<contact-danh>/g) || []).length, 1);

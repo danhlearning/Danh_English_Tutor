@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- Bài luyện từ vựng theo Unit; câu và tranh do website biên soạn. -->
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 13 · Tiếng Anh 2 Global Success</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/learning-shared.css">
+  <link rel="stylesheet" href="./assets/css/grade2-theme.css?v=reveal10">
+  <link rel="stylesheet" href="./assets/css/extended-topic.css">
+</head>
+<body class="grade2-topic" data-topic="gsunit13">
+  <header><h1 id="topic-title">Unit 1</h1><p id="topic-description"></p></header>
+  <nav aria-label="Các phần của bài học">
+    <button type="button" class="nav-btn active" onclick="switchTab('vocab', event)">Từ vựng</button>
+    <button type="button" class="nav-btn" onclick="switchTab('sentences', event)">Mẫu câu</button>
+    <button type="button" class="nav-btn" onclick="switchTab('game-flip', event)">Game 1: Lật thẻ</button>
+    <button type="button" class="nav-btn" onclick="switchTab('game-mcq', event)">Game 2: Trắc nghiệm</button>
+    <button type="button" class="nav-btn" onclick="switchTab('game-spelling', event)">Game 3: Chính tả</button>
+    <button type="button" class="nav-btn" onclick="switchTab('game-count', event)">Game 4: Viết câu</button>
+  </nav>
+  <div class="container">
+    <section id="vocab" class="tab-content active"><h2 class="g2-topic-heading" id="vocab-title"></h2><div id="vocab-grid-container" class="g2-vocab-grid"></div></section>
+    <section id="sentences" class="tab-content"><h2 class="g2-topic-heading" id="sentences-title"></h2><p id="sentence-pattern" class="g2-pattern"></p><ul id="sentence-examples" class="g2-examples"></ul></section>
+    <section id="game-flip" class="tab-content"></section>
+    <section id="game-mcq" class="tab-content"></section>
+    <section id="game-spelling" class="tab-content"></section>
+    <section id="game-count" class="tab-content"><h2 class="g2-topic-heading">Game 4 · Viết câu</h2>
+      <div class="g2-practice"><p id="sentence-score" class="g2-practice-score"></p><div id="sentence-stage"></div><p id="sentence-feedback" class="g2-practice-feedback" role="status" aria-live="polite"></p>
+        <div class="g2-practice-controls"><input id="sentence-input" class="g2-practice-input" type="text" autocomplete="off" aria-label="Gõ câu tiếng Anh" placeholder="Gõ câu tiếng Anh">
+          <button id="sentence-check" class="g2-practice-button" type="button">Kiểm tra</button><button id="sentence-reveal" class="g2-practice-button" data-action="reveal" type="button">💡 Hiện đáp án</button>
+        </div><button id="sentence-next" class="g2-practice-button" type="button" hidden>Câu tiếp theo →</button>
+      </div>
+    </section>
+  </div>
+  <contact-danh></contact-danh>
+  <script src="../../shared/contact-footer.js"></script>
+  <script src="./assets/data/gs-units-data.js"></script>
+  <script src="./assets/js/grade2-progress.js"></script>
+  <script src="./assets/js/extended-topic.js"></script>
+  <script src="./assets/js/learning-core.js"></script>
+  <script src="./assets/js/grade2-navigation.js?v=reveal10"></script>
+</body>
+</html>

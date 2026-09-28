@@ -1,0 +1,744 @@
+/* Cấu hình Tốc độ đọc 0.6 */
+  const defaultSpeechRate = 0.6;
+
+  /* HỆ THỐNG ÂM THANH HIỆU ỨNG (Web Audio API) */
+  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+  function playSoundEffect(type) {
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+
+    if (type === 'correct') {
+      const now = audioCtx.currentTime;
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(523.25, now);
+      osc.frequency.setValueAtTime(659.25, now + 0.1);
+      osc.frequency.setValueAtTime(783.99, now + 0.2);
+      osc.frequency.setValueAtTime(1046.50, now + 0.3);
+      gain.gain.setValueAtTime(0.3, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+      osc.start(now);
+      osc.stop(now + 0.6);
+    } else if (type === 'wrong') {
+      const now = audioCtx.currentTime;
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(180, now);
+      osc.frequency.setValueAtTime(130, now + 0.15);
+      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+      osc.start(now);
+      osc.stop(now + 0.4);
+    }
+  }
+
+  function shuffleArray(array) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  /* BỘ TỪ VỰNG TRANG PHỤC SVG GHÉP ICON CHI TIẾT */
+  const clothesVocabulary = [
+    { 
+      name: 'T-shirt', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Áo thun tay ngắn đỏ với hình ngôi sao ghép ở ngực -->
+        <path d="M 28 25 L 10 38 L 22 52 L 28 46 L 28 82 L 72 82 L 72 46 L 78 52 L 90 38 L 72 25 Q 50 32 28 25 Z" fill="#E53935" stroke="#B71C1C" stroke-width="2.5"/>
+        <path d="M 38 25 Q 50 35 62 25" stroke="#B71C1C" stroke-width="3" fill="none"/>
+        <!-- Ngôi sao vàng trang trí -->
+        <polygon points="50,42 53,50 61,50 54,55 57,63 50,58 43,63 46,55 39,50 47,50" fill="#FFD54F"/>
+        <line x1="28" y1="82" x2="72" y2="82" stroke="#B71C1C" stroke-width="3"/>
+      </svg>`, 
+      ipa: '/ˈtiː.ʃɜːt/', meaning: 'Áo thun / Áo phông', sentence: 'I wear a red T-shirt.', hex: '#E53935' 
+    },
+    { 
+      name: 'Shirt', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Áo sơ mi xanh dương có cổ, hàng nút và túi áo ghép -->
+        <path d="M 30 25 L 12 36 L 22 50 L 30 44 L 30 84 L 70 84 L 70 44 L 78 50 L 88 36 L 70 25 Z" fill="#1E88E5" stroke="#0D47A1" stroke-width="2.5"/>
+        <!-- Cổ áo -->
+        <polygon points="30,25 50,38 42,25" fill="#1565C0" stroke="#0D47A1"/>
+        <polygon points="70,25 50,38 58,25" fill="#1565C0" stroke="#0D47A1"/>
+        <!-- Hàng nút áo -->
+        <line x1="50" y1="38" x2="50" y2="84" stroke="#0D47A1" stroke-width="2"/>
+        <circle cx="50" cy="48" r="2.5" fill="#FFFFFF"/>
+        <circle cx="50" cy="58" r="2.5" fill="#FFFFFF"/>
+        <circle cx="50" cy="68" r="2.5" fill="#FFFFFF"/>
+        <circle cx="50" cy="78" r="2.5" fill="#FFFFFF"/>
+        <!-- Túi áo -->
+        <rect x="56" y="46" width="10" height="12" rx="1" fill="#1565C0" stroke="#0D47A1"/>
+      </svg>`, 
+      ipa: '/ʃɜːt/', meaning: 'Áo sơ mi', sentence: 'He wears a white shirt.', hex: '#1E88E5' 
+    },
+    { 
+      name: 'Dress', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Váy đầm xòe hồng xinh xắn với nơ ghép ở eo -->
+        <path d="M 38 20 L 32 38 L 42 42 L 20 85 L 80 85 L 58 42 L 68 38 L 62 20 Q 50 26 38 20 Z" fill="#EC407A" stroke="#AD1457" stroke-width="2.5"/>
+        <path d="M 40 20 Q 50 28 60 20" stroke="#AD1457" stroke-width="2" fill="none"/>
+        <!-- Thắt lưng & Cái nơ -->
+        <rect x="40" y="40" width="20" height="5" fill="#D81B60"/>
+        <circle cx="50" cy="42.5" r="4" fill="#FF80AB"/>
+        <path d="M 44 42.5 L 40 39 L 40 46 Z" fill="#FF80AB"/>
+        <path d="M 56 42.5 L 60 39 L 60 46 Z" fill="#FF80AB"/>
+        <!-- Sọc bèo chân váy -->
+        <path d="M 20 85 Q 30 80 40 85 Q 50 80 60 85 Q 70 80 80 85" stroke="#AD1457" stroke-width="3" fill="none"/>
+      </svg>`, 
+      ipa: '/dres/', meaning: 'Váy đầm', sentence: 'She wears a pink dress.', hex: '#EC407A' 
+    },
+    { 
+      name: 'Skirt', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Chân váy xếp ly màu cam vàng -->
+        <path d="M 35 30 L 65 30 L 78 80 L 22 80 Z" fill="#FF9800" stroke="#E65100" stroke-width="2.5"/>
+        <!-- Cạp váy -->
+        <rect x="35" y="26" width="30" height="7" rx="2" fill="#F57C00" stroke="#E65100"/>
+        <!-- Đường xếp ly -->
+        <line x1="38" y1="33" x2="32" y2="80" stroke="#E65100" stroke-width="2"/>
+        <line x1="46" y1="33" x2="44" y2="80" stroke="#E65100" stroke-width="2"/>
+        <line x1="54" y1="33" x2="56" y2="80" stroke="#E65100" stroke-width="2"/>
+        <line x1="62" y1="33" x2="68" y2="80" stroke="#E65100" stroke-width="2"/>
+      </svg>`, 
+      ipa: '/skɜːt/', meaning: 'Chân váy', sentence: 'The girl wears a yellow skirt.', hex: '#FF9800' 
+    },
+    { 
+      name: 'Pants', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Quần dài jeans lam đậm có túi và thắt lưng -->
+        <path d="M 30 25 L 70 25 L 74 85 L 54 85 L 50 48 L 46 85 L 26 85 Z" fill="#3F51B5" stroke="#1A237E" stroke-width="2.5"/>
+        <!-- Cạp quần và đỉa quần -->
+        <rect x="29" y="23" width="42" height="7" fill="#303F9F" stroke="#1A237E"/>
+        <line x1="36" y1="23" x2="36" y2="30" stroke="#1A237E" stroke-width="2"/>
+        <line x1="64" y1="23" x2="64" y2="30" stroke="#1A237E" stroke-width="2"/>
+        <circle cx="50" cy="26.5" r="2" fill="#FFD54F"/>
+        <!-- Đường may túi -->
+        <path d="M 30 30 Q 38 33 36 42" stroke="#9FA8DA" stroke-width="2" fill="none"/>
+        <path d="M 70 30 Q 62 33 64 42" stroke="#9FA8DA" stroke-width="2" fill="none"/>
+      </svg>`, 
+      ipa: '/pænts/', meaning: 'Quần dài', sentence: 'He is wearing blue pants.', hex: '#3F51B5' 
+    },
+    { 
+      name: 'Shorts', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Quần đùi xanh lá trẻ trung -->
+        <path d="M 28 30 L 72 30 L 76 65 L 54 65 L 50 48 L 46 65 L 24 65 Z" fill="#66BB6A" stroke="#2E7D32" stroke-width="2.5"/>
+        <rect x="27" y="27" width="46" height="7" fill="#4CAF50" stroke="#2E7D32"/>
+        <!-- Dây buộc quần -->
+        <path d="M 47 34 C 42 42 40 45 42 48" stroke="#FFFFFF" stroke-width="2.5" fill="none"/>
+        <path d="M 53 34 C 58 42 60 45 58 48" stroke="#FFFFFF" stroke-width="2.5" fill="none"/>
+        <circle cx="50" cy="31" r="2" fill="#2E7D32"/>
+      </svg>`, 
+      ipa: '/ʃɔːts/', meaning: 'Quần đùi / Quần ngắn', sentence: 'I wear shorts in summer.', hex: '#4CAF50' 
+    },
+    { 
+      name: 'Jacket', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Áo khoác da/dù màu tím nâu cá tính có dây kéo khóa -->
+        <path d="M 28 25 L 8 42 L 20 58 L 28 50 L 28 82 L 72 82 L 72 50 L 80 58 L 92 42 L 72 25 Z" fill="#8E24AA" stroke="#4A148C" stroke-width="2.5"/>
+        <polygon points="28,25 45,38 35,25" fill="#6A1B9A"/>
+        <polygon points="72,25 55,38 65,25" fill="#6A1B9A"/>
+        <!-- Khóa kéo kéo giữa -->
+        <line x1="50" y1="38" x2="50" y2="82" stroke="#FFD54F" stroke-width="3"/>
+        <rect x="47" y="52" width="6" height="8" rx="1" fill="#FFA000"/>
+        <!-- 2 Túi áp xéo -->
+        <line x1="32" y1="65" x2="42" y2="72" stroke="#4A148C" stroke-width="3"/>
+        <line x1="68" y1="65" x2="58" y2="72" stroke="#4A148C" stroke-width="3"/>
+      </svg>`, 
+      ipa: '/ˈdʒæk.ɪt/', meaning: 'Áo khoác ngắn', sentence: 'Put on your jacket.', hex: '#8E24AA' 
+    },
+    { 
+      name: 'Coat', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Áo măng tô/Áo khoác dáng dài màu nâu mùa đông -->
+        <path d="M 28 20 L 8 38 L 20 52 L 26 44 L 24 88 L 76 88 L 74 44 L 80 52 L 92 38 L 72 20 Z" fill="#8D6E63" stroke="#4E342E" stroke-width="2.5"/>
+        <polygon points="28,20 48,36 38,20" fill="#6D4C41"/>
+        <polygon points="72,20 52,36 62,20" fill="#6D4C41"/>
+        <!-- Cúc áo to 2 hàng -->
+        <circle cx="42" cy="48" r="3" fill="#3E2723"/>
+        <circle cx="58" cy="48" r="3" fill="#3E2723"/>
+        <circle cx="42" cy="62" r="3" fill="#3E2723"/>
+        <circle cx="58" cy="62" r="3" fill="#3E2723"/>
+        <!-- Thắt lưng eo -->
+        <rect x="25" y="68" width="50" height="7" fill="#5D4037"/>
+        <rect x="46" y="66" width="8" height="11" fill="#FFD54F" stroke="#5D4037"/>
+      </svg>`, 
+      ipa: '/kəʊt/', meaning: 'Áo khoác dáng dài', sentence: 'It is cold, wear a coat.', hex: '#8D6E63' 
+    },
+    { 
+      name: 'Sweater', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Áo len mùa đông màu đỏ cam họa tiết dệt ziczac -->
+        <path d="M 26 25 L 8 40 L 18 56 L 26 48 L 26 82 L 74 82 L 74 48 L 82 56 L 92 40 L 74 25 Z" fill="#FF7043" stroke="#D84315" stroke-width="2.5"/>
+        <!-- Cổ áo bo tròn len -->
+        <path d="M 36 25 Q 50 35 64 25 Q 50 38 36 25 Z" fill="#D84315"/>
+        <!-- Họa tiết răng cưa ziczac -->
+        <path d="M 26 50 L 34 56 L 42 50 L 50 56 L 58 50 L 66 56 L 74 50" stroke="#FFF" stroke-width="3" fill="none"/>
+        <path d="M 26 62 L 34 68 L 42 62 L 50 68 L 58 62 L 66 68 L 74 62" stroke="#FFF" stroke-width="3" fill="none"/>
+      </svg>`, 
+      ipa: '/ˈswet.ər/', meaning: 'Áo len', sentence: 'This sweater is very warm.', hex: '#FF7043' 
+    },
+    { 
+      name: 'Hat', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Mũ vành / Mũ phớt sang trọng màu vàng kem có nơ -->
+        <ellipse cx="50" cy="70" rx="42" ry="14" fill="#FFE082" stroke="#FFB300" stroke-width="2.5"/>
+        <path d="M 26 68 C 26 30 74 30 74 68 Z" fill="#FFCA28" stroke="#FFB300" stroke-width="2.5"/>
+        <!-- Dải ruy băng đỏ quanh mũ -->
+        <path d="M 26 62 C 30 58 70 58 74 62 C 74 68 26 68 26 62 Z" fill="#E53935"/>
+        <circle cx="66" cy="62" r="4" fill="#B71C1C"/>
+      </svg>`, 
+      ipa: '/hæt/', meaning: 'Mũ / Nón', sentence: 'He wears a cool hat.', hex: '#FFCA28' 
+    },
+    { 
+      name: 'Cap', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Mũ lưỡi trai thể thao màu xanh dương -->
+        <path d="M 22 58 C 22 28 72 28 74 58 Z" fill="#0288D1" stroke="#01579B" stroke-width="2.5"/>
+        <!-- Lưỡi trai nhô ra -->
+        <path d="M 12 62 Q 40 50 78 58 Q 50 74 12 62 Z" fill="#01579B"/>
+        <!-- Nút tròn trên đỉnh mũ -->
+        <circle cx="48" cy="30" r="4" fill="#01579B"/>
+        <!-- Logo hình tròn -->
+        <circle cx="48" cy="46" r="7" fill="#FFFFFF"/>
+      </svg>`, 
+      ipa: '/kæp/', meaning: 'Mũ lưỡi trai', sentence: 'Put on your baseball cap.', hex: '#0288D1' 
+    },
+    { 
+      name: 'Socks', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Đôi tất/vớ cổ cao màu xám xanh sọc trắng -->
+        <!-- Tất 1 -->
+        <path d="M 20 20 L 40 20 L 40 58 Q 40 70 55 70 L 55 85 Q 30 88 22 75 L 20 58 Z" fill="#4DD0E1" stroke="#00838F" stroke-width="2"/>
+        <rect x="20" y="20" width="20" height="6" fill="#00838F"/>
+        <!-- Tất 2 -->
+        <path d="M 48 20 L 68 20 L 68 58 Q 68 70 83 70 L 83 85 Q 58 88 50 75 L 48 58 Z" fill="#26C6DA" stroke="#00838F" stroke-width="2"/>
+        <rect x="48" y="20" width="20" height="6" fill="#00838F"/>
+        <!-- Sọc sọc trang trí -->
+        <line x1="20" y1="34" x2="40" y2="34" stroke="#FFF" stroke-width="3"/>
+        <line x1="48" y1="34" x2="68" y2="34" stroke="#FFF" stroke-width="3"/>
+      </svg>`, 
+      ipa: '/sɒks/', meaning: 'Tất / Vớ (Đôi)', sentence: 'I need a pair of warm socks.', hex: '#26C6DA' 
+    },
+    { 
+      name: 'Shoes', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Đôi giày thể thao sneakers năng động -->
+        <path d="M 10 68 C 10 52 32 45 48 52 C 55 42 70 42 88 56 C 94 65 92 78 85 80 L 10 80 Z" fill="#EF5350" stroke="#C62828" stroke-width="2.5"/>
+        <!-- Đế giày -->
+        <rect x="8" y="74" width="82" height="8" rx="3" fill="#FFFFFF" stroke="#C62828" stroke-width="1.5"/>
+        <!-- Mũi giày cao su trắng -->
+        <path d="M 10 74 C 10 65 22 64 28 74 Z" fill="#FFFFFF"/>
+        <!-- Dây giày xỏ -->
+        <line x1="38" y1="56" x2="48" y2="60" stroke="#FFF" stroke-width="2.5"/>
+        <line x1="42" y1="62" x2="52" y2="66" stroke="#FFF" stroke-width="2.5"/>
+      </svg>`, 
+      ipa: '/ʃuːz/', meaning: 'Giày (Đôi)', sentence: 'These shoes are comfortable.', hex: '#EF5350' 
+    },
+    { 
+      name: 'Boots', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Đôi boot/ủng cao cổ màu nâu cổ điển -->
+        <path d="M 25 20 L 55 20 L 55 58 Q 75 58 85 68 Q 88 78 80 82 L 25 82 Z" fill="#A1887F" stroke="#4E342E" stroke-width="2.5"/>
+        <!-- Đế boot dày -->
+        <rect x="23" y="78" width="60" height="8" rx="2" fill="#3E2723"/>
+        <rect x="23" y="82" width="18" height="6" fill="#1B1B1B"/>
+        <!-- Hàng lỗ & dây buột boot -->
+        <line x1="48" y1="26" x2="48" y2="62" stroke="#3E2723" stroke-width="2"/>
+        <circle cx="48" cy="32" r="2" fill="#FFD54F"/>
+        <circle cx="48" cy="42" r="2" fill="#FFD54F"/>
+        <circle cx="48" cy="52" r="2" fill="#FFD54F"/>
+      </svg>`, 
+      ipa: '/buːts/', meaning: 'Ủng / Giày cao cổ', sentence: 'She wears leather boots.', hex: '#8D6E63' 
+    },
+    { 
+      name: 'Gloves', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Đôi găng tay mùa đông ấm áp -->
+        <path d="M 20 80 L 20 42 Q 20 30 27 30 Q 33 30 33 42 L 33 25 Q 33 15 40 15 Q 47 15 47 25 L 47 28 Q 47 18 54 18 Q 60 18 60 28 L 60 35 Q 60 28 66 28 Q 72 28 72 38 L 72 60 Q 72 82 50 82 L 20 82 Z" fill="#AB47BC" stroke="#4A148C" stroke-width="2"/>
+        <!-- Ngón cái xòe -->
+        <path d="M 22 55 Q 10 45 16 35 Q 24 35 28 48 Z" fill="#AB47BC" stroke="#4A148C" stroke-width="2"/>
+        <!-- Bo cổ găng tay -->
+        <rect x="18" y="75" width="56" height="10" rx="3" fill="#7B1FA2"/>
+      </svg>`, 
+      ipa: '/ɡlʌvz/', meaning: 'Găng tay (Đôi)', sentence: 'Wear gloves to keep warm.', hex: '#AB47BC' 
+    },
+    { 
+      name: 'Scarf', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Khăn quàng cổ len mùa đông quấn vòng màu đỏ -->
+        <path d="M 20 30 C 20 15 80 15 80 30 C 80 48 20 48 20 30 Z" fill="#E53935" stroke="#B71C1C" stroke-width="2.5"/>
+        <!-- Vạt khăn rủ xuống -->
+        <path d="M 55 40 L 75 40 L 80 88 L 60 88 Z" fill="#D32F2F" stroke="#B71C1C" stroke-width="2.5"/>
+        <!-- Tua rua chân khăn -->
+        <line x1="62" y1="88" x2="62" y2="95" stroke="#B71C1C" stroke-width="2"/>
+        <line x1="67" y1="88" x2="67" y2="95" stroke="#B71C1C" stroke-width="2"/>
+        <line x1="72" y1="88" x2="72" y2="95" stroke="#B71C1C" stroke-width="2"/>
+        <line x1="77" y1="88" x2="77" y2="95" stroke="#B71C1C" stroke-width="2"/>
+      </svg>`, 
+      ipa: '/skɑːf/', meaning: 'Khăn quàng cổ', sentence: 'A red scarf around her neck.', hex: '#E53935' 
+    },
+    { 
+      name: 'Tie', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Cà vạt công sở sọc xéo thanh lịch -->
+        <!-- Nút thắt cà vạt -->
+        <polygon points="42,18 58,18 54,28 46,28" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+        <!-- Thân cà vạt -->
+        <polygon points="46,28 54,28 60,75 50,90 40,75" fill="#1E88E5" stroke="#0D47A1" stroke-width="2.5"/>
+        <!-- Sọc trang trí -->
+        <line x1="45" y1="40" x2="55" y2="46" stroke="#FFD54F" stroke-width="3"/>
+        <line x1="43" y1="55" x2="57" y2="61" stroke="#FFD54F" stroke-width="3"/>
+      </svg>`, 
+      ipa: '/taɪ/', meaning: 'Cà vạt', sentence: 'He wears a blue tie to work.', hex: '#1E88E5' 
+    },
+    { 
+      name: 'Belt', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Thắt lưng da màu nâu có mặt khóa kim loại vàng -->
+        <rect x="10" y="42" width="80" height="16" rx="3" fill="#5D4037" stroke="#3E2723" stroke-width="2"/>
+        <!-- Lỗ bấm thắt lưng -->
+        <circle cx="20" cy="50" r="2" fill="#D7CCC8"/>
+        <circle cx="28" cy="50" r="2" fill="#D7CCC8"/>
+        <circle cx="36" cy="50" r="2" fill="#D7CCC8"/>
+        <!-- Mặt khóa kim loại -->
+        <rect x="62" y="36" width="22" height="28" rx="4" fill="#FFD54F" stroke="#FFA000" stroke-width="2.5"/>
+        <rect x="67" y="41" width="12" height="18" fill="#5D4037"/>
+        <line x1="72" y1="36" x2="72" y2="64" stroke="#FFA000" stroke-width="3"/>
+      </svg>`, 
+      ipa: '/belt/', meaning: 'Thắt lưng / Dây nịt', sentence: 'a brown leather belt.', hex: '#795548' 
+    },
+    { 
+      name: 'Pyjamas', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Bộ đồ ngủ pyjamas màu xanh dễ thương có họa tiết mặt trăng -->
+        <!-- Áo ngủ -->
+        <path d="M 18 20 L 36 20 L 40 46 L 14 46 Z" fill="#80DEEA" stroke="#00838F" stroke-width="2"/>
+        <!-- Quần ngủ -->
+        <path d="M 18 48 L 36 48 L 38 85 L 28 85 L 27 62 L 26 85 L 16 85 Z" fill="#80DEEA" stroke="#00838F" stroke-width="2"/>
+        <!-- Hình mặt trăng ghép bên phải -->
+        <path d="M 68 30 A 20 20 0 1 0 88 50 A 15 15 0 1 1 68 30 Z" fill="#FFF59D" stroke="#FBC02D"/>
+      </svg>`, 
+      ipa: '/pəˈdʒɑː.məz/', meaning: 'Bộ đồ ngủ', sentence: 'Put on your pyjamas before sleep.', hex: '#00ACC1' 
+    },
+    { 
+      name: 'Raincoat', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Áo mưa trùm đầu màu vàng tươi và giọt nước mưa -->
+        <path d="M 28 35 L 10 50 L 22 62 L 28 54 L 25 88 L 75 88 L 72 54 L 78 62 L 90 50 L 72 35 Z" fill="#FFEB3B" stroke="#FBC02D" stroke-width="2.5"/>
+        <!-- Mũ trùm -->
+        <path d="M 32 36 C 32 12 68 12 68 36 Z" fill="#FDD835" stroke="#FBC02D" stroke-width="2"/>
+        <!-- Cúc bấm -->
+        <circle cx="50" cy="48" r="3" fill="#F57F17"/>
+        <circle cx="50" cy="62" r="3" fill="#F57F17"/>
+        <circle cx="50" cy="76" r="3" fill="#F57F17"/>
+        <!-- Giọt mưa rơi -->
+        <path d="M 82 22 Q 85 28 82 31 Q 79 28 82 22" fill="#29B6F6"/>
+      </svg>`, 
+      ipa: '/ˈreɪn.kəʊt/', meaning: 'Áo mưa', sentence: 'Take a raincoat, it is raining.', hex: '#FBC02D' 
+    }
+  ];
+
+  /* DỮ LIỆU CÂU HỎI GAME 4 */
+  const sentenceQuestions = [
+    { svg: clothesVocabulary[0].svg, vietnamese: 'Tôi đang mặc một chiếc áo thun màu đỏ.', hint: 'Tôi + đang mặc + một + [Trang phục]', answer: 'I am wearing a red T-shirt' },
+    { svg: clothesVocabulary[1].svg, vietnamese: 'Anh ấy mặc một chiếc áo sơ mi trắng.', hint: 'Anh ấy + mặc + một + [Trang phục]', answer: 'He wears a white shirt' },
+    { svg: clothesVocabulary[2].svg, vietnamese: 'Cô ấy đang mặc một chiếc váy đầm đẹp.', hint: 'Cô ấy + đang mặc + một + [Trang phục]', answer: 'She is wearing a beautiful dress' },
+    { svg: clothesVocabulary[3].svg, vietnamese: 'Cô gái thích mặc chân váy.', hint: 'Cô gái + thích + mặc + [Trang phục]', answer: 'The girl likes wearing a skirt' },
+    { svg: clothesVocabulary[4].svg, vietnamese: 'Anh ấy đang mặc quần dài màu xanh.', hint: 'Anh ấy + đang mặc + [Trang phục]', answer: 'He is wearing blue pants' },
+    { svg: clothesVocabulary[5].svg, vietnamese: 'Tôi mặc quần đùi vào mùa hè.', hint: 'Tôi + mặc + [Trang phục] + vào mùa hè', answer: 'I wear shorts in summer' },
+    { svg: clothesVocabulary[6].svg, vietnamese: 'Hãy khoác áo khoác của bạn vào.', hint: 'Hãy khoác vào + [Trang phục] + của bạn', answer: 'Put on your jacket' },
+    { svg: clothesVocabulary[7].svg, vietnamese: 'Trời lạnh, hãy mặc áo khoác dáng dài.', hint: 'Thời tiết lạnh + mặc + [Trang phục]', answer: 'It is cold wear a coat' },
+    { svg: clothesVocabulary[8].svg, vietnamese: 'Chiếc áo len này rất ấm áp.', hint: 'Chiếc [Trang phục] này + thì + rất ấm', answer: 'This sweater is very warm' },
+    { svg: clothesVocabulary[9].svg, vietnamese: 'Anh ấy đội một chiếc mũ ngầu.', hint: 'Anh ấy + đội + một chiếc + [Phụ kiện]', answer: 'He wears a cool hat' },
+    { svg: clothesVocabulary[10].svg, vietnamese: 'Hãy đội mũ lưỡi trai của bạn vào.', hint: 'Hãy đội vào + [Phụ kiện] + của bạn', answer: 'Put on your cap' },
+    { svg: clothesVocabulary[11].svg, vietnamese: 'Tôi cần một đôi tất ấm.', hint: 'Tôi + cần + một đôi + [Phụ kiện]', answer: 'I need a pair of warm socks' },
+    { svg: clothesVocabulary[12].svg, vietnamese: 'Đôi giày này rất thoải mái.', hint: 'Những chiếc [Trang phục] này + thì + thoải mái', answer: 'These shoes are comfortable' },
+    { svg: clothesVocabulary[13].svg, vietnamese: 'Cô ấy đi đôi ủng bằng da.', hint: 'Cô ấy + đi + [Trang phục] bằng da', answer: 'She wears leather boots' },
+    { svg: clothesVocabulary[14].svg, vietnamese: 'Đeo găng tay để giữ ấm.', hint: 'Đeo + [Phụ kiện] + để giữ ấm', answer: 'Wear gloves to keep warm' },
+    { svg: clothesVocabulary[15].svg, vietnamese: 'Cô ấy quàng một chiếc khăn đỏ.', hint: 'Một chiếc [Phụ kiện] đỏ + quanh cổ cô ấy', answer: 'A red scarf around her neck' },
+    { svg: clothesVocabulary[16].svg, vietnamese: 'Anh ấy đeo cà vạt đi làm.', hint: 'Anh ấy + đeo + [Phụ kiện] + đi làm', answer: 'He wears a tie to work' },
+    { svg: clothesVocabulary[17].svg, vietnamese: 'Một chiếc thắt lưng da màu nâu.', hint: 'Một chiếc [Phụ kiện] + da màu nâu', answer: 'A brown leather belt' },
+    { svg: clothesVocabulary[18].svg, vietnamese: 'Mặc bộ đồ ngủ trước khi đi ngủ.', hint: 'Mặc vào + [Trang phục] + trước khi đi ngủ', answer: 'Put on your pyjamas before sleep' },
+    { svg: clothesVocabulary[19].svg, vietnamese: 'Mang theo áo mưa, trời đang mưa.', hint: 'Mang theo + [Trang phục] + trời đang mưa', answer: 'Take a raincoat it is raining' }
+  ];
+
+  let flashcardDeck = [];
+
+  function speak(text) {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = defaultSpeechRate;
+
+      const voices = window.speechSynthesis.getVoices();
+      const bestVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Premium') || v.name.includes('Samantha')));
+      if (bestVoice) utterance.voice = bestVoice;
+
+      window.speechSynthesis.speak(utterance);
+    }
+  }
+
+  function renderVocabGrid() {
+    const grid = document.getElementById('vocab-grid-container');
+    grid.innerHTML = '';
+    clothesVocabulary.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'vocab-card';
+      card.style.background = item.hex;
+
+      card.innerHTML = `
+        <div class="image-badge-wrapper">
+          ${item.svg}
+        </div>
+        <div class="word-title">${item.name}</div>
+        <div class="phonetic">${item.ipa}</div>
+        <div class="meaning">${item.meaning}</div>
+        <div class="example-box">
+          <b>Ví dụ:</b> <i>"${item.sentence}"</i>
+        </div>
+        <button class="audio-btn" onclick="speak('${item.name}')">🔊</button>
+      `;
+      grid.appendChild(card);
+    });
+  }
+  renderVocabGrid();
+
+  function switchTab(tabId, evt) {
+    clearTimeout(singleCardTimer);
+    clearTimeout(mcqTimer);
+    clearTimeout(spellingTimer);
+    clearTimeout(countTimer);
+
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
+    
+    document.getElementById(tabId).classList.add('active');
+    if(evt && evt.target) evt.target.classList.add('active');
+
+    if(tabId === 'game-flip') initSingleCardGame();
+    if(tabId === 'game-mcq') initMcqGame();
+    if(tabId === 'game-spelling') initSpellingGame();
+    if(tabId === 'game-count') initCountGame();
+  }
+
+  /* GAME 1: FLASHCARD */
+  let singleCardIdx = 0;
+  let singleCardTimer = null;
+  let cardFrontMode = 'viet';
+
+  function setCardFrontMode(mode, btnEl) {
+    cardFrontMode = mode;
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    if(btnEl) btnEl.classList.add('active');
+    renderSingleCardContent();
+  }
+
+  function initSingleCardGame() {
+    singleCardIdx = 0;
+    flashcardDeck = shuffleArray(clothesVocabulary);
+    renderSingleCardContent();
+  }
+
+  function changeCardWithAnimation() {
+    clearTimeout(singleCardTimer);
+    const cardEl = document.getElementById('single-card-el');
+
+    if (cardEl.classList.contains('flipped')) {
+      cardEl.classList.remove('flipped');
+      setTimeout(() => { renderSingleCardContent(); }, 600);
+    } else {
+      renderSingleCardContent();
+    }
+  }
+
+  function renderSingleCardContent() {
+    const item = flashcardDeck[singleCardIdx];
+    const cardEl = document.getElementById('single-card-el');
+    const frontEl = document.getElementById('card-front-content');
+    const backEl = document.getElementById('card-back-content');
+    const counterEl = document.getElementById('card-counter-text');
+
+    cardEl.classList.remove('flipped');
+    counterEl.innerText = `Thẻ ${singleCardIdx + 1} / ${flashcardDeck.length}`;
+
+    frontEl.className = 'flip-card-front';
+    frontEl.style.background = 'linear-gradient(135deg, #00897B, #00ACC1)';
+    frontEl.style.color = 'white';
+
+    backEl.className = 'flip-card-back';
+    backEl.style.background = item.hex;
+    backEl.style.color = 'white';
+
+    if(cardFrontMode === 'viet') {
+      frontEl.innerHTML = `
+        <div style="width:100px; height:85px; border-radius:10px; overflow:hidden; margin-bottom:6px; background:white; padding:4px; display:flex; justify-content:center; align-items:center;">
+          ${item.svg}
+        </div>
+        <h2 style="font-size: 1.3rem; margin-bottom: 2px; font-weight:800;">${item.meaning}</h2>
+        <p style="font-size: 0.8rem; opacity: 0.85;">(Chạm để lật thẻ)</p>
+      `;
+      backEl.innerHTML = `
+        <h2 style="font-size: 2rem; margin-bottom: 4px; font-weight:800;">${item.name}</h2>
+        <p style="font-size: 1.1rem; font-weight:700;">${item.ipa}</p>
+        <p style="font-size: 0.9rem; margin-top: 8px; font-style: italic;">"${item.sentence}"</p>
+      `;
+    } else {
+      frontEl.innerHTML = `
+        <h1 style="font-size: 2.2rem; margin-bottom: 8px; font-weight:800;">${item.ipa}</h1>
+        <p style="font-size: 0.85rem; opacity: 0.85;">(Chạm để xem từ vựng)</p>
+      `;
+      backEl.innerHTML = `
+        <div style="width:100px; height:85px; border-radius:10px; overflow:hidden; margin-bottom:6px; background:white; padding:4px; display:flex; justify-content:center; align-items:center;">
+          ${item.svg}
+        </div>
+        <h1 style="font-size: 2rem; font-weight:900;">${item.name}</h1>
+      `;
+    }
+  }
+
+  function flipSingleCard() {
+    const cardEl = document.getElementById('single-card-el');
+    if(!cardEl.classList.contains('flipped')) {
+      cardEl.classList.add('flipped');
+      const item = flashcardDeck[singleCardIdx];
+      speak(item.name);
+
+      clearTimeout(singleCardTimer);
+      singleCardTimer = setTimeout(() => { nextSingleCard(true); }, 3000);
+    }
+  }
+
+  function nextSingleCard(isAuto = false) {
+    clearTimeout(singleCardTimer);
+    singleCardIdx = (singleCardIdx + 1) % flashcardDeck.length;
+    changeCardWithAnimation();
+  }
+
+  function prevSingleCard() {
+    clearTimeout(singleCardTimer);
+    singleCardIdx = (singleCardIdx - 1 + flashcardDeck.length) % flashcardDeck.length;
+    changeCardWithAnimation();
+  }
+
+  /* GAME 2: TRẮC NGHIỆM */
+  let mcqIdx = 0;
+  let mcqTimer = null;
+  let mcqList = [];
+
+  function initMcqGame() {
+    mcqList = shuffleArray(clothesVocabulary);
+    mcqIdx = 0;
+    loadMcqQuestion();
+  }
+
+  function loadMcqQuestion() {
+    clearTimeout(mcqTimer);
+    const item = mcqList[mcqIdx];
+    const previewBox = document.getElementById('mcq-number-preview');
+    const optionsGrid = document.getElementById('mcq-options-container');
+    const mcqFeedback = document.getElementById('mcq-feedback');
+    mcqFeedback.textContent = '';
+
+    previewBox.innerHTML = item.svg;
+
+    let options = [item.name];
+    let otherItems = clothesVocabulary.filter(c => c.name !== item.name);
+    otherItems = shuffleArray(otherItems);
+    for(let i = 0; i < 3; i++) options.push(otherItems[i].name);
+    options = shuffleArray(options);
+
+    optionsGrid.innerHTML = '';
+    options.forEach(optName => {
+      const btn = document.createElement('button');
+      btn.className = 'mcq-btn';
+      btn.innerText = optName;
+      btn.onclick = () => handleMcqChoice(btn, optName, item.name);
+      optionsGrid.appendChild(btn);
+    });
+  }
+
+  function handleMcqChoice(btn, selectedName, correctName) {
+    const allBtns = document.querySelectorAll('#mcq-options-container .mcq-btn');
+    const feedback = document.getElementById('mcq-feedback');
+    if (selectedName !== correctName) {
+      btn.disabled = true;
+      btn.classList.add('wrong');
+      feedback.style.color = '#C53030';
+      feedback.textContent = '❌ Chưa đúng. Thử lựa chọn khác nhé!';
+      playSoundEffect('wrong');
+      return;
+    }
+
+    allBtns.forEach(button => { button.disabled = true; });
+    btn.classList.add('correct');
+    feedback.style.color = '#276749';
+    feedback.textContent = '✅ Chính xác!';
+    playSoundEffect('correct');
+    speak(correctName);
+    mcqTimer = setTimeout(() => {
+      mcqIdx = (mcqIdx + 1) % mcqList.length;
+      loadMcqQuestion();
+    }, 2000);
+  }
+
+  /* GAME 3: CHÍNH TẢ */
+  let spellingIdx = 0;
+  let spellingTimer = null;
+  let spellingList = [];
+  let spellingCorrectCount = 0;
+
+  function initSpellingGame() {
+    spellingList = shuffleArray(clothesVocabulary);
+    spellingIdx = 0;
+    spellingCorrectCount = 0;
+    updateSpellingScore();
+    loadSpellingQuestion();
+  }
+
+  function updateSpellingScore() {
+    document.getElementById('spelling-score').innerText = `🎯 Đã đúng: ${spellingCorrectCount} / ${spellingList.length} câu`;
+  }
+
+  function loadSpellingQuestion() {
+    clearTimeout(spellingTimer);
+    const item = spellingList[spellingIdx];
+    const preview = document.getElementById('spelling-preview');
+    const input = document.getElementById('spelling-input');
+
+    preview.innerHTML = item.svg;
+    input.value = '';
+    input.disabled = false;
+    input.focus();
+    speak(item.name);
+  }
+
+  function playSpellingAudio() {
+    speak(spellingList[spellingIdx].name);
+  }
+
+  function checkSpelling() {
+    const inputEl = document.getElementById('spelling-input');
+    const inputVal = inputEl.value.trim().toLowerCase();
+    const correctVal = spellingList[spellingIdx].name.toLowerCase();
+
+    if(inputVal === correctVal) {
+      inputEl.disabled = true;
+      spellingCorrectCount++;
+      updateSpellingScore();
+      playSoundEffect('correct');
+      speak(spellingList[spellingIdx].name);
+
+      spellingTimer = setTimeout(() => {
+        spellingIdx = (spellingIdx + 1) % spellingList.length;
+        loadSpellingQuestion();
+      }, 2000);
+    } else {
+      playSoundEffect('wrong');
+      inputEl.style.borderColor = '#E53935';
+      setTimeout(() => { inputEl.style.borderColor = '#80CBC4'; }, 1000);
+    }
+  }
+
+  /* GAME 4: VIẾT CÂU */
+  let countIdx = 0;
+  let countTimer = null;
+  let countList = [];
+  let countCorrectCount = 0;
+
+  function initCountGame() {
+    countList = shuffleArray(sentenceQuestions);
+    countIdx = 0;
+    countCorrectCount = 0;
+    updateCountScore();
+    loadCountQuestion();
+  }
+
+  function updateCountScore() {
+    document.getElementById('count-score').innerText = `🎯 Đã đúng: ${countCorrectCount} / ${countList.length} câu`;
+  }
+
+  function loadCountQuestion() {
+    clearTimeout(countTimer);
+    const item = countList[countIdx];
+    const container = document.getElementById('count-items-container');
+    const input = document.getElementById('count-sentence-input');
+    const feedback = document.getElementById('count-feedback');
+    const counterText = document.getElementById('count-counter-text');
+
+    counterText.innerText = `Câu ${countIdx + 1} / ${countList.length}`;
+    feedback.innerText = '';
+    feedback.style.color = '#004D40';
+    input.value = '';
+    input.disabled = false;
+    input.style.borderColor = '#80CBC4';
+    input.focus();
+
+    container.innerHTML = `
+      <div style="width:110px; height:90px; border-radius:12px; overflow:hidden; box-shadow:0 4px 8px rgba(0,0,0,0.1); background:white; padding:6px; display:flex; align-items:center; justify-content:center;">
+        ${item.svg}
+      </div>
+      <div style="font-size: 1.3rem; font-weight: 800; color: #00695C;">"${item.vietnamese}"</div>
+      <div style="font-size: 0.9rem; font-weight: 600; color: #004D40; background: #E0F2F1; padding: 4px 12px; border-radius: 8px;">💡 Cấu trúc gợi ý: ${item.hint}</div>
+    `;
+  }
+
+  function normalizeSentence(str) {
+    return str.toLowerCase().replace(/[.,?!]/g, '').replace(/\s+/g, ' ').trim();
+  }
+
+  function checkCountSentence() {
+    const item = countList[countIdx];
+    const inputEl = document.getElementById('count-sentence-input');
+    const feedback = document.getElementById('count-feedback');
+    const userInput = normalizeSentence(inputEl.value);
+    const validSentence = normalizeSentence(item.answer);
+
+    if (userInput === validSentence) {
+      feedback.style.color = '#43A047';
+      feedback.innerText = '🎉 Chính xác! Bạn giỏi quá!';
+      inputEl.disabled = true;
+      
+      countCorrectCount++;
+      updateCountScore();
+      playSoundEffect('correct');
+      speak(item.answer);
+
+      countTimer = setTimeout(() => {
+        countIdx = (countIdx + 1) % countList.length;
+        loadCountQuestion();
+      }, 2000);
+    } else {
+      playSoundEffect('wrong');
+      feedback.style.color = '#E53935';
+      feedback.innerText = '❌ Chưa đúng. Thử lại nhé!';
+      inputEl.style.borderColor = '#E53935';
+      setTimeout(() => { inputEl.style.borderColor = '#80CBC4'; }, 1200);
+    }
+  }
+
+  function revealCountSentence() {
+    const item = countList[countIdx];
+    const feedback = document.getElementById('count-feedback');
+    feedback.style.color = '#FF9800';
+    feedback.innerText = `💡 Đáp án gợi ý: "${item.answer}"`;
+    speak(item.answer);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('spelling-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') checkSpelling();
+    });
+
+    document.getElementById('count-sentence-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') checkCountSentence();
+    });
+  });

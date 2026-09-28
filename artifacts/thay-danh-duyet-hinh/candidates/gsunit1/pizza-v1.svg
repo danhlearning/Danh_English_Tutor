@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Bánh pizza tròn với các miếng cắt">
+<defs><radialGradient id="crust"><stop stop-color="#f7c67a"/><stop offset=".81" stop-color="#e9ac63"/><stop offset="1" stop-color="#b96e3e"/></radialGradient><filter id="s"><feGaussianBlur stdDeviation="7"/></filter></defs>
+<ellipse cx="160" cy="278" rx="114" ry="13" fill="#9c8066" opacity=".2" filter="url(#s)"/>
+<circle cx="160" cy="157" r="124" fill="#e9ded1" stroke="#a5aab1" stroke-width="4"/>
+<circle cx="160" cy="151" r="113" fill="url(#crust)" stroke="#aa653f" stroke-width="4"/>
+<circle cx="160" cy="151" r="96" fill="#d85c46"/>
+<circle cx="160" cy="151" r="89" fill="#f8d473"/>
+<path d="M160 63v176M77 104l166 94M77 198l166-94" stroke="#bc8c4b" stroke-width="3" opacity=".75"/>
+<path d="M95 99q16-14 32-5m63-13q20 0 32 15M75 164q14-8 30 1m113 47q15 1 25-7m-100 31q14-8 26-2" fill="none" stroke="#ffe79c" stroke-width="7" stroke-linecap="round"/>
+<g fill="#bf594d" stroke="#a4453d" stroke-width="2"><circle cx="121" cy="97" r="15"/><circle cx="191" cy="104" r="15"/><circle cx="216" cy="164" r="14"/><circle cx="150" cy="179" r="15"/><circle cx="106" cy="182" r="13"/><circle cx="169" cy="225" r="11"/></g>
+<g fill="#f08f75" opacity=".8"><circle cx="117" cy="92" r="4"/><circle cx="185" cy="98" r="4"/><circle cx="146" cy="174" r="4"/><circle cx="210" cy="158" r="4"/></g>
+<g fill="#458d55"><path d="M160 105q-18-20-26-7 5 13 26 7m1 0q2-24 18-18 1 16-18 18Z"/><path d="M102 139q-16-18-24-6 5 13 24 6m1 0q3-20 16-16 1 15-16 16Z"/><path d="M201 199q-15-16-23-4 7 13 23 4m1 0q3-21 16-16 1 16-16 16Z"/></g>
+<g fill="#fff0b5"><ellipse cx="180" cy="147" rx="9" ry="5"/><ellipse cx="134" cy="138" rx="7" ry="4"/><ellipse cx="116" cy="219" rx="9" ry="5"/></g>
+</svg>

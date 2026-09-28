@@ -1,0 +1,727 @@
+/* Cấu hình Tốc độ đọc 0.6 */
+  const defaultSpeechRate = 0.6;
+
+  /* HỆ THỐNG ÂM THANH HIỆU ỨNG (Web Audio API) */
+  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+  function playSoundEffect(type) {
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+
+    if (type === 'correct') {
+      const now = audioCtx.currentTime;
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(523.25, now);
+      osc.frequency.setValueAtTime(659.25, now + 0.1);
+      osc.frequency.setValueAtTime(783.99, now + 0.2);
+      osc.frequency.setValueAtTime(1046.50, now + 0.3);
+      gain.gain.setValueAtTime(0.3, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+      osc.start(now);
+      osc.stop(now + 0.6);
+    } else if (type === 'wrong') {
+      const now = audioCtx.currentTime;
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(180, now);
+      osc.frequency.setValueAtTime(130, now + 0.15);
+      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+      osc.start(now);
+      osc.stop(now + 0.4);
+    }
+  }
+
+  function shuffleArray(array) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  /* BỘ TỪ VỰNG SVG GHÉP ICON CHI TIẾT (PHƯƠNG ÁN A) */
+  const emotionsVocabulary = [
+    { 
+      name: 'Thirsty', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Mặt khát -->
+        <circle cx="42" cy="50" r="38" fill="#4FC3F7"/>
+        <circle cx="30" cy="42" r="5" fill="#01579B"/>
+        <circle cx="54" cy="42" r="5" fill="#01579B"/>
+        <path d="M 30 62 Q 42 62 54 62 Q 56 72 42 72 Q 28 72 30 62 Z" fill="#D32F2F"/>
+        <!-- Cốc nước ghép bên phải -->
+        <rect x="68" y="48" width="22" height="32" rx="3" fill="#E0F7FA" stroke="#00838F" stroke-width="2"/>
+        <path d="M 70 58 L 88 58 L 88 78 L 70 78 Z" fill="#29B6F6" opacity="0.7"/>
+        <line x1="78" y1="35" x2="74" y2="76" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+        <!-- Giọt nước -->
+        <path d="M 58 28 Q 62 38 58 42 Q 54 38 58 28" fill="#0288D1"/>
+      </svg>`, 
+      ipa: '/ˈθɜːsti/', meaning: 'Khát nước', sentence: 'She is thirsty.', hex: '#29B6F6' 
+    },
+    { 
+      name: 'Hungry', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Mặt đói thèm thuồng -->
+        <circle cx="42" cy="50" r="38" fill="#FF7043"/>
+        <circle cx="30" cy="42" r="5" fill="#3E2723"/>
+        <circle cx="54" cy="42" r="5" fill="#3E2723"/>
+        <path d="M 28 58 Q 42 74 56 58 Z" fill="#3E2723"/>
+        <path d="M 48 58 Q 54 68 50 72" stroke="#E53935" stroke-width="4" fill="none"/>
+        <!-- Đĩa đùi gà ghép bên phải -->
+        <ellipse cx="78" cy="74" rx="18" ry="6" fill="#B0BEC5"/>
+        <path d="M 68 68 C 65 52 85 52 86 66 C 86 72 72 74 68 68 Z" fill="#D84315"/>
+        <path d="M 85 68 L 94 72" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+      </svg>`, 
+      ipa: '/ˈhʌŋɡri/', meaning: 'Đói bụng', sentence: 'I am hungry.', hex: '#FF7043' 
+    },
+    { 
+      name: 'Sleepy', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Mặt buồn ngủ -->
+        <circle cx="40" cy="45" r="35" fill="#80CBC4"/>
+        <path d="M 22 42 Q 30 50 38 42" stroke="#004D40" stroke-width="4" fill="none"/>
+        <path d="M 48 42 Q 56 50 64 44" stroke="#004D40" stroke-width="4" fill="none"/>
+        <circle cx="43" cy="60" r="5" fill="#004D40"/>
+        <!-- Chiếc giường ghép phía dưới -->
+        <rect x="15" y="72" width="75" height="18" rx="4" fill="#5D4037"/>
+        <rect x="25" y="65" width="55" height="10" rx="3" fill="#E0F2F1"/>
+        <!-- Chữ Zzz -->
+        <text x="70" y="30" font-size="20" font-weight="bold" fill="#004D40">Zzz</text>
+      </svg>`, 
+      ipa: '/ˈsliːpi/', meaning: 'Buồn ngủ', sentence: 'I am sleepy.', hex: '#26A69A' 
+    },
+    { 
+      name: 'Tired', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Mặt mệt mỏi bơ vơ -->
+        <circle cx="45" cy="45" r="36" fill="#B0BEC5"/>
+        <line x1="26" y1="38" x2="38" y2="42" stroke="#263238" stroke-width="4"/>
+        <line x1="64" y1="38" x2="52" y2="42" stroke="#263238" stroke-width="4"/>
+        <ellipse cx="45" cy="62" rx="10" ry="7" fill="#263238"/>
+        <!-- Túi chườm đá trên đầu -->
+        <ellipse cx="45" cy="12" rx="14" ry="7" fill="#42A5F5"/>
+        <path d="M 40 12 L 45 6 L 50 12 Z" fill="#1E88E5"/>
+      </svg>`, 
+      ipa: '/ˈtaɪəd/', meaning: 'Mệt mỏi', sentence: 'I feel tired.', hex: '#78909C' 
+    },
+    { 
+      name: 'Hot', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Mặt nóng đỏ chảy mồ hôi -->
+        <circle cx="42" cy="52" r="36" fill="#FFAB91"/>
+        <circle cx="30" cy="45" r="5" fill="#BF360C"/>
+        <circle cx="54" cy="45" r="5" fill="#BF360C"/>
+        <ellipse cx="42" cy="68" rx="7" ry="10" fill="#BF360C"/>
+        <!-- Giọt mồ hôi -->
+        <path d="M 62 42 Q 66 50 62 54 Q 58 50 62 42" fill="#29B6F6"/>
+        <!-- Mặt trời chiếu nóng phía trên -->
+        <circle cx="80" cy="22" r="12" fill="#FFD54F"/>
+        <line x1="80" y1="4" x2="80" y2="8" stroke="#FFA000" stroke-width="3"/>
+        <line x1="96" y1="22" x2="92" y2="22" stroke="#FFA000" stroke-width="3"/>
+        <line x1="92" y1="10" x2="89" y2="13" stroke="#FFA000" stroke-width="3"/>
+      </svg>`, 
+      ipa: '/hɒt/', meaning: 'Nóng nực', sentence: 'I feel hot.', hex: '#FF5722' 
+    },
+    { 
+      name: 'Cold', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Mặt lạnh run rẩy -->
+        <circle cx="45" cy="50" r="36" fill="#80DEEA"/>
+        <line x1="30" y1="42" x2="42" y2="42" stroke="#006064" stroke-width="4"/>
+        <line x1="50" y1="42" x2="62" y2="42" stroke="#006064" stroke-width="4"/>
+        <path d="M 32 65 Q 37 60 42 65 T 52 65 T 62 65" stroke="#006064" stroke-width="4" fill="none"/>
+        <!-- Khăn quàng cổ ghép dưới -->
+        <path d="M 20 70 Q 45 88 70 70 Q 75 80 60 90 L 30 90 Z" fill="#E53935"/>
+        <!-- Băng tuyết -->
+        <path d="M 78 20 L 88 30 M 83 18 L 83 32 M 76 25 L 90 25" stroke="#0288D1" stroke-width="3"/>
+      </svg>`, 
+      ipa: '/kəʊld/', meaning: 'Lạnh lẽo', sentence: 'It is cold.', hex: '#00ACC1' 
+    },
+    { 
+      name: 'Sick', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Mặt ốm đeo khẩu trang -->
+        <circle cx="45" cy="45" r="36" fill="#A5D6A7"/>
+        <line x1="28" y1="36" x2="40" y2="40" stroke="#1B5E20" stroke-width="4"/>
+        <line x1="62" y1="36" x2="50" y2="40" stroke="#1B5E20" stroke-width="4"/>
+        <!-- Khẩu trang -->
+        <rect x="25" y="50" width="40" height="22" rx="4" fill="#FFFFFF" stroke="#81C784" stroke-width="2"/>
+        <!-- Nhiệt kế kẹp miệng/bên cạnh -->
+        <rect x="70" y="40" width="8" height="35" rx="4" fill="#FFFFFF" stroke="#37474F" stroke-width="2"/>
+        <circle cx="74" cy="70" r="7" fill="#E53935"/>
+      </svg>`, 
+      ipa: '/sɪk/', meaning: 'Bị ốm', sentence: 'I feel sick.', hex: '#66BB6A' 
+    },
+    { 
+      name: 'Happy', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Mặt vui tươi -->
+        <circle cx="45" cy="50" r="38" fill="#FFD54F"/>
+        <circle cx="32" cy="40" r="6" fill="#3E2723"/>
+        <circle cx="58" cy="40" r="6" fill="#3E2723"/>
+        <path d="M 28 58 Q 45 80 62 58" stroke="#3E2723" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <!-- Bong bóng trái tim nhỏ -->
+        <path d="M 75 25 C 75 18, 85 18, 85 25 C 85 32, 75 38, 75 38 C 75 38, 65 32, 65 25 C 65 18, 75 18, 75 25 Z" fill="#E91E63"/>
+      </svg>`, 
+      ipa: '/ˈhæpi/', meaning: 'Vui vẻ', sentence: 'I feel happy.', hex: '#EC407A' 
+    },
+    { 
+      name: 'Sad', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Mặt buồn mụ mẫm -->
+        <circle cx="45" cy="52" r="38" fill="#90CAF9"/>
+        <circle cx="32" cy="44" r="5" fill="#1A237E"/>
+        <circle cx="58" cy="44" r="5" fill="#1A237E"/>
+        <path d="M 28 70 Q 45 52 62 70" stroke="#1A237E" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <!-- Đám mây mưa ghép trên đầu -->
+        <path d="M 65 18 Q 72 10 80 16 Q 88 14 90 22 Q 95 28 85 30 L 65 30 Z" fill="#78909C"/>
+        <line x1="72" y1="34" x2="70" y2="40" stroke="#29B6F6" stroke-width="2"/>
+        <line x1="82" y1="34" x2="80" y2="40" stroke="#29B6F6" stroke-width="2"/>
+      </svg>`, 
+      ipa: '/sæd/', meaning: 'Buồn bã', sentence: 'She is sad.', hex: '#5C6BC0' 
+    },
+    { 
+      name: 'Angry', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <!-- Mặt tức giận bốc hỏa -->
+        <circle cx="45" cy="50" r="38" fill="#EF5350"/>
+        <line x1="22" y1="32" x2="38" y2="40" stroke="#212121" stroke-width="5" stroke-linecap="round"/>
+        <line x1="68" y1="32" x2="52" y2="40" stroke="#212121" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="32" cy="46" r="5" fill="#212121"/>
+        <circle cx="58" cy="46" r="5" fill="#212121"/>
+        <path d="M 28 70 Q 45 58 62 70" stroke="#212121" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <!-- Ngọn lửa bốc lên trên đầu -->
+        <path d="M 75 22 C 70 12 80 5 80 5 C 80 5 85 12 90 15 C 95 18 90 28 75 22 Z" fill="#FF9800"/>
+      </svg>`, 
+      ipa: '/ˈæŋɡri/', meaning: 'Tức giận', sentence: 'He is angry.', hex: '#E53935' 
+    },
+    { 
+      name: 'Scared', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <circle cx="45" cy="50" r="38" fill="#B39DDB"/>
+        <ellipse cx="32" cy="40" rx="6" ry="9" fill="#311B92"/>
+        <ellipse cx="58" cy="40" rx="6" ry="9" fill="#311B92"/>
+        <ellipse cx="45" cy="68" rx="10" ry="14" fill="#311B92"/>
+        <!-- Con ma nhỏ ghép góc -->
+        <path d="M 75 25 C 75 15 90 15 90 25 L 90 40 L 85 36 L 80 40 L 75 36 Z" fill="#FFFFFF" stroke="#7E57C2" stroke-width="2"/>
+      </svg>`, 
+      ipa: '/skeərd/', meaning: 'Sợ hãi', sentence: 'I am scared.', hex: '#7E57C2' 
+    },
+    { 
+      name: 'Excited', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <circle cx="45" cy="50" r="38" fill="#CE93D8"/>
+        <!-- Mắt hình ngôi sao -->
+        <polygon points="32,34 35,42 25,37 37,37 28,42" fill="#4A148C"/>
+        <polygon points="58,34 61,42 51,37 63,37 54,42" fill="#4A148C"/>
+        <path d="M 28 58 Q 45 85 62 58 Z" fill="#4A148C"/>
+        <!-- Pháo hoa/sao lấp lánh -->
+        <path d="M 78 15 L 82 25 L 92 25 L 84 31 L 87 40 L 78 34 L 69 40 L 72 31 L 64 25 L 74 25 Z" fill="#FFD54F"/>
+      </svg>`, 
+      ipa: '/ɪkˈsaɪtɪd/', meaning: 'Hào hứng', sentence: 'We are excited.', hex: '#AB47BC' 
+    },
+    { 
+      name: 'Bored', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <circle cx="45" cy="50" r="38" fill="#BCAAA4"/>
+        <line x1="26" y1="42" x2="38" y2="42" stroke="#3E2723" stroke-width="5" stroke-linecap="round"/>
+        <line x1="52" y1="42" x2="64" y2="42" stroke="#3E2723" stroke-width="5" stroke-linecap="round"/>
+        <line x1="30" y1="65" x2="60" y2="65" stroke="#3E2723" stroke-width="5" stroke-linecap="round"/>
+        <!-- Đồng hồ cát trôi chậm -->
+        <path d="M 75 20 L 91 20 L 83 32 L 91 44 L 75 44 L 83 32 Z" fill="#D7CCC8" stroke="#5D4037" stroke-width="2"/>
+      </svg>`, 
+      ipa: '/bɔːd/', meaning: 'Chán nản', sentence: 'I feel bored.', hex: '#8D6E63' 
+    },
+    { 
+      name: 'Surprised', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <circle cx="45" cy="50" r="38" fill="#FFB74D"/>
+        <circle cx="32" cy="38" r="7" fill="#E65100"/>
+        <circle cx="58" cy="38" r="7" fill="#E65100"/>
+        <circle cx="45" cy="68" r="13" fill="#E65100"/>
+        <!-- Dấu chấm cảm bàng hoàng -->
+        <text x="76" y="42" font-size="32" font-weight="900" fill="#E65100">!</text>
+      </svg>`, 
+      ipa: '/səˈpraɪzd/', meaning: 'Bất ngờ', sentence: 'He looks surprised.', hex: '#FFA726' 
+    },
+    { 
+      name: 'Calm', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <circle cx="45" cy="50" r="38" fill="#80DEEA"/>
+        <path d="M 26 42 Q 33 48 40 42" stroke="#006064" stroke-width="4" fill="none"/>
+        <path d="M 50 42 Q 57 48 64 42" stroke="#006064" stroke-width="4" fill="none"/>
+        <path d="M 33 62 Q 45 68 57 62" stroke="#006064" stroke-width="4" fill="none"/>
+        <!-- Tách trà thư thái -->
+        <path d="M 72 32 L 90 32 L 86 46 L 76 46 Z" fill="#E0F7FA" stroke="#00838F" stroke-width="2"/>
+        <path d="M 78 26 Q 81 22 78 18" stroke="#B2EBF2" stroke-width="2" fill="none"/>
+      </svg>`, 
+      ipa: '/kɑːm/', meaning: 'Bình tĩnh', sentence: 'Stay calm.', hex: '#26C6DA' 
+    },
+    { 
+      name: 'Nervous', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <circle cx="45" cy="50" r="38" fill="#FFE082"/>
+        <circle cx="32" cy="40" r="6" fill="#FF6F00"/>
+        <circle cx="58" cy="40" r="6" fill="#FF6F00"/>
+        <path d="M 28 65 Q 33 58 38 65 T 48 65 T 58 65" stroke="#FF6F00" stroke-width="4" fill="none"/>
+        <!-- Nhịp tim đập loạn -->
+        <path d="M 70 25 L 75 25 L 78 15 L 83 35 L 87 20 L 90 25 L 95 25" stroke="#E53935" stroke-width="3" fill="none"/>
+      </svg>`, 
+      ipa: '/ˈnɜːvəs/', meaning: 'Lo lắng', sentence: 'She is nervous.', hex: '#FFA000' 
+    },
+    { 
+      name: 'Shy', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <circle cx="45" cy="50" r="38" fill="#F8BBD0"/>
+        <circle cx="32" cy="42" r="5" fill="#880E4F"/>
+        <circle cx="58" cy="42" r="5" fill="#880E4F"/>
+        <circle cx="22" cy="50" r="8" fill="#FF4081" opacity="0.6"/>
+        <circle cx="68" cy="50" r="8" fill="#FF4081" opacity="0.6"/>
+        <path d="M 36 64 Q 45 68 54 64" stroke="#880E4F" stroke-width="4" fill="none"/>
+      </svg>`, 
+      ipa: '/ʃaɪ/', meaning: 'Xấu hổ / Bẽn lẽn', sentence: 'He is shy.', hex: '#FF4081' 
+    },
+    { 
+      name: 'Confused', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <circle cx="45" cy="50" r="38" fill="#CFD8DC"/>
+        <circle cx="32" cy="38" r="7" fill="#263238"/>
+        <circle cx="58" cy="44" r="5" fill="#263238"/>
+        <path d="M 28 65 Q 45 55 62 68" stroke="#263238" stroke-width="5" fill="none"/>
+        <!-- Dấu hỏi xoay quanh -->
+        <text x="74" y="36" font-size="30" font-weight="bold" fill="#37474F">?</text>
+      </svg>`, 
+      ipa: '/kənˈfjuːzd/', meaning: 'Bối rối', sentence: 'I am confused.', hex: '#78909C' 
+    },
+    { 
+      name: 'Proud', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <circle cx="45" cy="52" r="38" fill="#E6EE9C"/>
+        <!-- Đeo kính râm ngầu -->
+        <rect x="22" y="38" width="20" height="14" rx="3" fill="#212121"/>
+        <rect x="48" y="38" width="20" height="14" rx="3" fill="#212121"/>
+        <line x1="42" y1="42" x2="48" y2="42" stroke="#212121" stroke-width="3"/>
+        <path d="M 28 60 Q 45 74 62 60" stroke="#33691E" stroke-width="5" fill="none"/>
+        <!-- Vương miện trên đầu -->
+        <polygon points="45,8 51,20 61,16 55,26 35,26 29,16 39,20" fill="#FBC02D"/>
+      </svg>`, 
+      ipa: '/praʊd/', meaning: 'Tự hào', sentence: 'I am proud of you.', hex: '#D4E157' 
+    },
+    { 
+      name: 'Relaxed', 
+      svg: `<svg class="svg-icon" viewBox="0 0 100 100">
+        <circle cx="45" cy="50" r="38" fill="#A5D6A7"/>
+        <path d="M 26 42 Q 33 36 40 42" stroke="#1B5E20" stroke-width="4" fill="none"/>
+        <path d="M 50 42 Q 57 36 64 42" stroke="#1B5E20" stroke-width="4" fill="none"/>
+        <path d="M 32 60 Q 45 72 58 60" stroke="#1B5E20" stroke-width="4" fill="none"/>
+        <!-- Nốt nhạc bay bổng -->
+        <path d="M 76 25 L 88 20 L 88 38 M 76 30 L 76 42" stroke="#2E7D32" stroke-width="3" fill="none"/>
+        <circle cx="72" cy="42" r="4" fill="#2E7D32"/>
+        <circle cx="84" cy="38" r="4" fill="#2E7D32"/>
+      </svg>`, 
+      ipa: '/rɪˈlækst/', meaning: 'Thư giãn', sentence: 'I am relaxed.', hex: '#81C784' 
+    }
+  ];
+
+  /* DỮ LIỆU CÂU HỎI GAME 4 */
+  const sentenceQuestions = [
+    { svg: emotionsVocabulary[0].svg, vietnamese: 'Cô ấy đang khát nước.', hint: 'Cô ấy + là/thì + [Trạng thái]', answer: 'She is thirsty' },
+    { svg: emotionsVocabulary[1].svg, vietnamese: 'Tôi đói bụng.', hint: 'Tôi + là/thì + [Trạng thái]', answer: 'I am hungry' },
+    { svg: emotionsVocabulary[2].svg, vietnamese: 'Tôi buồn ngủ quá.', hint: 'Tôi + là/thì + [Trạng thái]', answer: 'I am sleepy' },
+    { svg: emotionsVocabulary[3].svg, vietnamese: 'Tôi cảm thấy mệt mỏi.', hint: 'Tôi + cảm thấy + [Trạng thái]', answer: 'I feel tired' },
+    { svg: emotionsVocabulary[4].svg, vietnamese: 'Tôi cảm thấy nóng.', hint: 'Tôi + cảm thấy + [Trạng thái]', answer: 'I feel hot' },
+    { svg: emotionsVocabulary[5].svg, vietnamese: 'Trời lạnh quá.', hint: 'Nó + là/thì + [Trạng thái]', answer: 'It is cold' },
+    { svg: emotionsVocabulary[6].svg, vietnamese: 'Tôi cảm thấy bị ốm.', hint: 'Tôi + cảm thấy + [Trạng thái]', answer: 'I feel sick' },
+    { svg: emotionsVocabulary[7].svg, vietnamese: 'Tôi cảm thấy vui vẻ.', hint: 'Tôi + cảm thấy + [Cảm xúc]', answer: 'I feel happy' },
+    { svg: emotionsVocabulary[8].svg, vietnamese: 'Cô ấy buồn.', hint: 'Cô ấy + là/thì + [Cảm xúc]', answer: 'She is sad' },
+    { svg: emotionsVocabulary[9].svg, vietnamese: 'Anh ấy tức giận.', hint: 'Anh ấy + là/thì + [Cảm xúc]', answer: 'He is angry' },
+    { svg: emotionsVocabulary[10].svg, vietnamese: 'Tôi bị sợ hãi.', hint: 'Tôi + là/thì + [Cảm xúc]', answer: 'I am scared' },
+    { svg: emotionsVocabulary[11].svg, vietnamese: 'Chúng tôi rất hào hứng.', hint: 'Chúng tôi + là/thì + [Cảm xúc]', answer: 'We are excited' },
+    { svg: emotionsVocabulary[12].svg, vietnamese: 'Tôi cảm thấy chán nản.', hint: 'Tôi + cảm thấy + [Cảm xúc]', answer: 'I feel bored' },
+    { svg: emotionsVocabulary[13].svg, vietnamese: 'Anh ấy trông bất ngờ.', hint: 'Anh ấy + trông như + [Cảm xúc]', answer: 'He looks surprised' },
+    { svg: emotionsVocabulary[14].svg, vietnamese: 'Hãy giữ bình tĩnh.', hint: 'Giữ + [Cảm xúc]', answer: 'Stay calm' },
+    { svg: emotionsVocabulary[15].svg, vietnamese: 'Cô ấy lo lắng.', hint: 'Cô ấy + là/thì + [Cảm xúc]', answer: 'She is nervous' },
+    { svg: emotionsVocabulary[16].svg, vietnamese: 'Anh ấy bẽn lẽn xấu hổ.', hint: 'Anh ấy + là/thì + [Cảm xúc]', answer: 'He is shy' },
+    { svg: emotionsVocabulary[17].svg, vietnamese: 'Tôi bị bối rối.', hint: 'Tôi + là/thì + [Cảm xúc]', answer: 'I am confused' },
+    { svg: emotionsVocabulary[18].svg, vietnamese: 'Tôi tự hào về bạn.', hint: 'Tôi + là/thì + tự hào + về bạn', answer: 'I am proud of you' },
+    { svg: emotionsVocabulary[19].svg, vietnamese: 'Tôi cảm thấy thư giãn.', hint: 'Tôi + là/thì + [Cảm xúc]', answer: 'I am relaxed' }
+  ];
+
+  let flashcardDeck = [];
+
+  function speak(text) {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = defaultSpeechRate;
+
+      const voices = window.speechSynthesis.getVoices();
+      const bestVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Premium') || v.name.includes('Samantha')));
+      if (bestVoice) utterance.voice = bestVoice;
+
+      window.speechSynthesis.speak(utterance);
+    }
+  }
+
+  function renderVocabGrid() {
+    const grid = document.getElementById('vocab-grid-container');
+    grid.innerHTML = '';
+    emotionsVocabulary.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'vocab-card';
+      card.style.background = item.hex;
+
+      card.innerHTML = `
+        <div class="image-badge-wrapper">
+          ${item.svg}
+        </div>
+        <div class="word-title">${item.name}</div>
+        <div class="phonetic">${item.ipa}</div>
+        <div class="meaning">${item.meaning}</div>
+        <div class="example-box">
+          <b>Ví dụ:</b> <i>"${item.sentence}"</i>
+        </div>
+        <button class="audio-btn" onclick="speak('${item.name}')">🔊</button>
+      `;
+      grid.appendChild(card);
+    });
+  }
+  renderVocabGrid();
+
+  function switchTab(tabId, evt) {
+    clearTimeout(singleCardTimer);
+    clearTimeout(mcqTimer);
+    clearTimeout(spellingTimer);
+    clearTimeout(countTimer);
+
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
+    
+    document.getElementById(tabId).classList.add('active');
+    if(evt && evt.target) evt.target.classList.add('active');
+
+    if(tabId === 'game-flip') initSingleCardGame();
+    if(tabId === 'game-mcq') initMcqGame();
+    if(tabId === 'game-spelling') initSpellingGame();
+    if(tabId === 'game-count') initCountGame();
+  }
+
+  /* GAME 1: FLASHCARD */
+  let singleCardIdx = 0;
+  let singleCardTimer = null;
+  let cardFrontMode = 'viet';
+
+  function setCardFrontMode(mode, btnEl) {
+    cardFrontMode = mode;
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    if(btnEl) btnEl.classList.add('active');
+    renderSingleCardContent();
+  }
+
+  function initSingleCardGame() {
+    singleCardIdx = 0;
+    flashcardDeck = shuffleArray(emotionsVocabulary);
+    renderSingleCardContent();
+  }
+
+  function changeCardWithAnimation() {
+    clearTimeout(singleCardTimer);
+    const cardEl = document.getElementById('single-card-el');
+
+    if (cardEl.classList.contains('flipped')) {
+      cardEl.classList.remove('flipped');
+      setTimeout(() => { renderSingleCardContent(); }, 600);
+    } else {
+      renderSingleCardContent();
+    }
+  }
+
+  function renderSingleCardContent() {
+    const item = flashcardDeck[singleCardIdx];
+    const cardEl = document.getElementById('single-card-el');
+    const frontEl = document.getElementById('card-front-content');
+    const backEl = document.getElementById('card-back-content');
+    const counterEl = document.getElementById('card-counter-text');
+
+    cardEl.classList.remove('flipped');
+    counterEl.innerText = `Thẻ ${singleCardIdx + 1} / ${flashcardDeck.length}`;
+
+    frontEl.className = 'flip-card-front';
+    frontEl.style.background = 'linear-gradient(135deg, #EC407A, #AB47BC)';
+    frontEl.style.color = 'white';
+
+    backEl.className = 'flip-card-back';
+    backEl.style.background = item.hex;
+    backEl.style.color = 'white';
+
+    if(cardFrontMode === 'viet') {
+      frontEl.innerHTML = `
+        <div style="width:100px; height:85px; border-radius:10px; overflow:hidden; margin-bottom:6px; background:white; padding:4px; display:flex; justify-content:center; align-items:center;">
+          ${item.svg}
+        </div>
+        <h2 style="font-size: 1.3rem; margin-bottom: 2px; font-weight:800;">${item.meaning}</h2>
+        <p style="font-size: 0.8rem; opacity: 0.85;">(Chạm để lật thẻ)</p>
+      `;
+      backEl.innerHTML = `
+        <h2 style="font-size: 2rem; margin-bottom: 4px; font-weight:800;">${item.name}</h2>
+        <p style="font-size: 1.1rem; font-weight:700;">${item.ipa}</p>
+        <p style="font-size: 0.9rem; margin-top: 8px; font-style: italic;">"${item.sentence}"</p>
+      `;
+    } else {
+      frontEl.innerHTML = `
+        <h1 style="font-size: 2.2rem; margin-bottom: 8px; font-weight:800;">${item.ipa}</h1>
+        <p style="font-size: 0.85rem; opacity: 0.85;">(Chạm để xem từ vựng)</p>
+      `;
+      backEl.innerHTML = `
+        <div style="width:100px; height:85px; border-radius:10px; overflow:hidden; margin-bottom:6px; background:white; padding:4px; display:flex; justify-content:center; align-items:center;">
+          ${item.svg}
+        </div>
+        <h1 style="font-size: 2rem; font-weight:900;">${item.name}</h1>
+      `;
+    }
+  }
+
+  function flipSingleCard() {
+    const cardEl = document.getElementById('single-card-el');
+    if(!cardEl.classList.contains('flipped')) {
+      cardEl.classList.add('flipped');
+      const item = flashcardDeck[singleCardIdx];
+      speak(item.name);
+
+      clearTimeout(singleCardTimer);
+      singleCardTimer = setTimeout(() => { nextSingleCard(true); }, 3000);
+    }
+  }
+
+  function nextSingleCard(isAuto = false) {
+    clearTimeout(singleCardTimer);
+    singleCardIdx = (singleCardIdx + 1) % flashcardDeck.length;
+    changeCardWithAnimation();
+  }
+
+  function prevSingleCard() {
+    clearTimeout(singleCardTimer);
+    singleCardIdx = (singleCardIdx - 1 + flashcardDeck.length) % flashcardDeck.length;
+    changeCardWithAnimation();
+  }
+
+  /* GAME 2: TRẮC NGHIỆM */
+  let mcqIdx = 0;
+  let mcqTimer = null;
+  let mcqList = [];
+
+  function initMcqGame() {
+    mcqList = shuffleArray(emotionsVocabulary);
+    mcqIdx = 0;
+    loadMcqQuestion();
+  }
+
+  function loadMcqQuestion() {
+    clearTimeout(mcqTimer);
+    const item = mcqList[mcqIdx];
+    const previewBox = document.getElementById('mcq-number-preview');
+    const optionsGrid = document.getElementById('mcq-options-container');
+    const mcqFeedback = document.getElementById('mcq-feedback');
+    mcqFeedback.textContent = '';
+
+    previewBox.innerHTML = item.svg;
+
+    let options = [item.name];
+    let otherItems = emotionsVocabulary.filter(c => c.name !== item.name);
+    otherItems = shuffleArray(otherItems);
+    for(let i = 0; i < 3; i++) options.push(otherItems[i].name);
+    options = shuffleArray(options);
+
+    optionsGrid.innerHTML = '';
+    options.forEach(optName => {
+      const btn = document.createElement('button');
+      btn.className = 'mcq-btn';
+      btn.innerText = optName;
+      btn.onclick = () => handleMcqChoice(btn, optName, item.name);
+      optionsGrid.appendChild(btn);
+    });
+  }
+
+  function handleMcqChoice(btn, selectedName, correctName) {
+    const allBtns = document.querySelectorAll('#mcq-options-container .mcq-btn');
+    const feedback = document.getElementById('mcq-feedback');
+    if (selectedName !== correctName) {
+      btn.disabled = true;
+      btn.classList.add('wrong');
+      feedback.style.color = '#C53030';
+      feedback.textContent = '❌ Chưa đúng. Thử lựa chọn khác nhé!';
+      playSoundEffect('wrong');
+      return;
+    }
+
+    allBtns.forEach(button => { button.disabled = true; });
+    btn.classList.add('correct');
+    feedback.style.color = '#276749';
+    feedback.textContent = '✅ Chính xác!';
+    playSoundEffect('correct');
+    speak(correctName);
+    mcqTimer = setTimeout(() => {
+      mcqIdx = (mcqIdx + 1) % mcqList.length;
+      loadMcqQuestion();
+    }, 2000);
+  }
+
+  /* GAME 3: CHÍNH TẢ */
+  let spellingIdx = 0;
+  let spellingTimer = null;
+  let spellingList = [];
+  let spellingCorrectCount = 0;
+
+  function initSpellingGame() {
+    spellingList = shuffleArray(emotionsVocabulary);
+    spellingIdx = 0;
+    spellingCorrectCount = 0;
+    updateSpellingScore();
+    loadSpellingQuestion();
+  }
+
+  function updateSpellingScore() {
+    document.getElementById('spelling-score').innerText = `🎯 Đã đúng: ${spellingCorrectCount} / ${spellingList.length} câu`;
+  }
+
+  function loadSpellingQuestion() {
+    clearTimeout(spellingTimer);
+    const item = spellingList[spellingIdx];
+    const preview = document.getElementById('spelling-preview');
+    const input = document.getElementById('spelling-input');
+
+    preview.innerHTML = item.svg;
+    input.value = '';
+    input.disabled = false;
+    input.focus();
+    speak(item.name);
+  }
+
+  function playSpellingAudio() {
+    speak(spellingList[spellingIdx].name);
+  }
+
+  function checkSpelling() {
+    const inputEl = document.getElementById('spelling-input');
+    const inputVal = inputEl.value.trim().toLowerCase();
+    const correctVal = spellingList[spellingIdx].name.toLowerCase();
+
+    if(inputVal === correctVal) {
+      inputEl.disabled = true;
+      spellingCorrectCount++;
+      updateSpellingScore();
+      playSoundEffect('correct');
+      speak(spellingList[spellingIdx].name);
+
+      spellingTimer = setTimeout(() => {
+        spellingIdx = (spellingIdx + 1) % spellingList.length;
+        loadSpellingQuestion();
+      }, 2000);
+    } else {
+      playSoundEffect('wrong');
+      inputEl.style.borderColor = '#E53935';
+      setTimeout(() => { inputEl.style.borderColor = '#CE93D8'; }, 1000);
+    }
+  }
+
+  /* GAME 4: VIẾT CÂU */
+  let countIdx = 0;
+  let countTimer = null;
+  let countList = [];
+  let countCorrectCount = 0;
+
+  function initCountGame() {
+    countList = shuffleArray(sentenceQuestions);
+    countIdx = 0;
+    countCorrectCount = 0;
+    updateCountScore();
+    loadCountQuestion();
+  }
+
+  function updateCountScore() {
+    document.getElementById('count-score').innerText = `🎯 Đã đúng: ${countCorrectCount} / ${countList.length} câu`;
+  }
+
+  function loadCountQuestion() {
+    clearTimeout(countTimer);
+    const item = countList[countIdx];
+    const container = document.getElementById('count-items-container');
+    const input = document.getElementById('count-sentence-input');
+    const feedback = document.getElementById('count-feedback');
+    const counterText = document.getElementById('count-counter-text');
+
+    counterText.innerText = `Câu ${countIdx + 1} / ${countList.length}`;
+    feedback.innerText = '';
+    feedback.style.color = '#4A148C';
+    input.value = '';
+    input.disabled = false;
+    input.style.borderColor = '#CE93D8';
+    input.focus();
+
+    container.innerHTML = `
+      <div style="width:110px; height:90px; border-radius:12px; overflow:hidden; box-shadow:0 4px 8px rgba(0,0,0,0.1); background:white; padding:6px; display:flex; align-items:center; justify-content:center;">
+        ${item.svg}
+      </div>
+      <div style="font-size: 1.3rem; font-weight: 800; color: #8E24AA;">"${item.vietnamese}"</div>
+      <div style="font-size: 0.9rem; font-weight: 600; color: #4A148C; background: #F3E5F5; padding: 4px 12px; border-radius: 8px;">💡 Cấu trúc gợi ý: ${item.hint}</div>
+    `;
+  }
+
+  function normalizeSentence(str) {
+    return str.toLowerCase().replace(/[.,?!]/g, '').replace(/\s+/g, ' ').trim();
+  }
+
+  function checkCountSentence() {
+    const item = countList[countIdx];
+    const inputEl = document.getElementById('count-sentence-input');
+    const feedback = document.getElementById('count-feedback');
+    const userInput = normalizeSentence(inputEl.value);
+    const validSentence = normalizeSentence(item.answer);
+
+    if (userInput === validSentence) {
+      feedback.style.color = '#43A047';
+      feedback.innerText = '🎉 Chính xác! Bạn giỏi quá!';
+      inputEl.disabled = true;
+      
+      countCorrectCount++;
+      updateCountScore();
+      playSoundEffect('correct');
+      speak(item.answer);
+
+      countTimer = setTimeout(() => {
+        countIdx = (countIdx + 1) % countList.length;
+        loadCountQuestion();
+      }, 2000);
+    } else {
+      playSoundEffect('wrong');
+      feedback.style.color = '#E53935';
+      feedback.innerText = '❌ Chưa đúng. Thử lại nhé!';
+      inputEl.style.borderColor = '#E53935';
+      setTimeout(() => { inputEl.style.borderColor = '#CE93D8'; }, 1200);
+    }
+  }
+
+  function revealCountSentence() {
+    const item = countList[countIdx];
+    const feedback = document.getElementById('count-feedback');
+    feedback.style.color = '#FF9800';
+    feedback.innerText = `💡 Đáp án gợi ý: "${item.answer}"`;
+    speak(item.answer);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('spelling-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') checkSpelling();
+    });
+
+    document.getElementById('count-sentence-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') checkCountSentence();
+    });
+  });

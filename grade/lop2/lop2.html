@@ -10,188 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
     
-    <style>
-        :root {
-            --primary: #2563eb;
-            --primary-hover: #1d4ed8;
-            --bg-color: #f8fafc;
-            --text-main: #1e293b;
-            --text-muted: #64748b;
-            --zalo-color: #0068ff;
-            --fb-color: #1877f2;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Nunito', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.5;
-        }
-
-        /* --- Hero / Header Section --- */
-        .hero {
-            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
-            color: white;
-            padding: 30px 15px 40px 15px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-
-        .hero-content {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .back-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            color: white;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.95rem;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 6px 14px;
-            border-radius: 20px;
-            transition: background 0.3s ease;
-            margin-bottom: 12px;
-        }
-
-        .back-btn:hover {
-            background: rgba(255, 255, 255, 0.35);
-        }
-
-        .hero-text h1 {
-            font-size: 1.8rem;
-            margin-bottom: 6px;
-            font-weight: 800;
-        }
-
-        .hero-text p {
-            font-size: 1rem;
-            opacity: 0.95;
-            font-weight: 600;
-        }
-
-        /* --- Lesson List Container --- */
-        .main-container {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 15px;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        .section-header h2 {
-            font-size: 1.6rem;
-            color: var(--text-main);
-            font-weight: 800;
-            margin-bottom: 6px;
-        }
-
-        .section-header p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            font-weight: 600;
-        }
-
-        /* Grid bài học */
-        .lesson-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 18px;
-        }
-
-        .lesson-card {
-            background: white;
-            border-radius: 16px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e2e8f0;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-            color: inherit;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .lesson-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-            border-color: var(--primary);
-        }
-
-        .card-header-flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .lesson-icon {
-            font-size: 1.8rem;
-        }
-
-        .lesson-badge {
-            display: inline-block;
-            background-color: #e0f2fe;
-            color: #0284c7;
-            font-size: 0.8rem;
-            font-weight: 800;
-            padding: 4px 10px;
-            border-radius: 12px;
-        }
-
-        .lesson-card h3 {
-            font-size: 1.15rem;
-            color: var(--text-main);
-            margin-bottom: 8px;
-            font-weight: 800;
-        }
-
-        .lesson-card p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            font-weight: 600;
-            margin-bottom: 16px;
-            flex-grow: 1;
-        }
-
-        .btn-study {
-            background-color: var(--primary);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: 700;
-            font-size: 0.9rem;
-            text-align: center;
-            transition: background 0.3s ease;
-        }
-
-        .lesson-card:hover .btn-study {
-            background-color: var(--primary-hover);
-        }
-
-        /* --- Footer --- */
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: var(--text-main);
-            color: white;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-    </style>
-<link rel="stylesheet" href="./grade2-theme.css">
+    <link rel="stylesheet" href="./assets/css/topics/lop2.css">
+<link rel="stylesheet" href="./assets/css/grade2-theme.css?v=reveal10">
 </head>
 <body class="grade2-index">
 
@@ -208,9 +28,84 @@
 
     <!-- Nội dung chính: Danh sách đề mục Bài Học -->
     <main class="main-container">
-        <div class="section-header">
-            <h2>📚 Danh Sách Chủ Đề Bài Học</h2>
-            <p>Chọn một chủ đề bên dưới để bắt đầu học và làm bài tập</p>
+        <section aria-labelledby="global-success-heading">
+            <div class="section-header">
+                <h2 id="global-success-heading">📖 Tiếng Anh 2 · Global Success</h2>
+                <p>Luyện từ vựng theo thứ tự 16 Unit. Câu luyện và tranh do website biên soạn.</p>
+            </div>
+            <div class="lesson-grid unit-grid">
+            <a href="gsunit1.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 1</span><span class="lesson-icon">🎉</span></div>
+                <h3>At my birthday party</h3><p>Tiệc sinh nhật · 3 từ vựng, mẫu câu luyện thêm và 4 trò chơi.</p></div>
+                <div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit2.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 2</span></div>
+                <h3>In the backyard</h3><p>Sân sau · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit3.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 3</span></div>
+                <h3>At the seaside</h3><p>Bờ biển · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit4.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 4</span></div>
+                <h3>In the countryside</h3><p>Vùng quê · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit5.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 5</span></div>
+                <h3>In the classroom</h3><p>Lớp học · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit6.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 6</span></div>
+                <h3>On the farm</h3><p>Nông trại · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit7.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 7</span></div>
+                <h3>In the kitchen</h3><p>Nhà bếp · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit8.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 8</span></div>
+                <h3>In the village</h3><p>Ngôi làng · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit9.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 9</span></div>
+                <h3>In the grocery store</h3><p>Cửa hàng thực phẩm · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit10.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 10</span></div>
+                <h3>At the zoo</h3><p>Sở thú · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit11.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 11</span></div>
+                <h3>In the playground</h3><p>Sân chơi · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit12.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 12</span></div>
+                <h3>At the café</h3><p>Quán cà phê · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit13.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 13</span></div>
+                <h3>In the maths class</h3><p>Giờ học toán · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit14.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 14</span></div>
+                <h3>At home</h3><p>Ở nhà · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit15.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 15</span></div>
+                <h3>In the clothes shop</h3><p>Cửa hàng quần áo · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            <a href="gsunit16.html" class="lesson-card">
+                <div><div class="card-header-flex"><span class="lesson-badge">Unit 16</span></div>
+                <h3>At the campsite</h3><p>Khu cắm trại · Từ vựng, câu luyện và 4 trò chơi.</p></div><div class="btn-study">Vào học ➔</div>
+            </a>
+            </div>
+        </section>
+
+        <div class="section-header supplementary-header">
+            <h2>📚 Chủ đề luyện tập bổ trợ</h2>
+            <p>Các chủ đề riêng để luyện thêm từ vựng và trò chơi</p>
+            <p class="curriculum-note">Các chủ đề dưới đây là nội dung bổ trợ của website, không đồng nghĩa với Unit trong sách.</p>
         </div>
 
         <div class="lesson-grid">
@@ -466,7 +361,8 @@
     </main>
 
     <contact-danh></contact-danh>
-    <script src="../../shared/contact-footer.js"></script>
+    <script src="./assets/js/grade2-progress.js"></script>
+<script src="../../shared/contact-footer.js"></script>
 
 
 

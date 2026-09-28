@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Con diều nhiều màu đang bay">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e5f5ff"/><stop offset="1" stop-color="#fbfdff"/></linearGradient><filter id="s"><feGaussianBlur stdDeviation="5"/></filter></defs>
+<circle cx="160" cy="158" r="133" fill="url(#sky)"/>
+<g fill="#fff" opacity=".95"><path d="M50 103q-2-14 12-17 11-17 26-6 19-3 23 13 15 1 14 13Z"/><path d="M220 78q0-12 14-14 11-15 26-4 18-3 22 14 11 1 12 10Z"/></g>
+<path d="M79 262q67-13 114 28" fill="none" stroke="#bccfd3" stroke-width="7" opacity=".18" filter="url(#s)"/>
+<path d="M158 38 239 146 159 245 79 146Z" fill="#fff7d9" stroke="#5b6882" stroke-width="5" stroke-linejoin="round"/>
+<path d="M158 39v205L79 146Z" fill="#f58983"/><path d="M158 39v205l81-99Z" fill="#f4bd5e"/><path d="M79 146h160l-80 99Z" fill="#6cb3c8"/>
+<path d="M158 39v205M79 146h160" stroke="#fff7e9" stroke-width="6"/>
+<path d="M158 39 239 146 159 245 79 146Z" fill="none" stroke="#596b78" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="159" cy="145" r="9" fill="#fff4d7" stroke="#536a77" stroke-width="3"/>
+<path d="M159 244q-18 21-4 35t-10 20m16-43q-23-1-28 20 23 1 28-20m0 0q19 0 25 21-21 1-25-21m-7 29q-18-3-23 15 19 1 23-15m0 0q16-2 23 15-17 3-23-15" fill="none" stroke="#667c8a" stroke-width="3" stroke-linecap="round"/>
+<path d="M160 257q-22-2-28 19 23 1 28-19m0 0q18-2 25 20-20 2-25-20m-7 28q-17-2-23 15 18 1 23-15m0 0q17-2 22 15-18 2-22-15" fill="#ef8f88" stroke="#c86b72" stroke-width="2"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Hộp bỏng ngô">
+<defs><linearGradient id="box" x2="1" y2="1"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#e8ded2"/></linearGradient><filter id="s"><feGaussianBlur stdDeviation="7"/></filter></defs>
+<ellipse cx="160" cy="279" rx="94" ry="14" fill="#a98c77" opacity=".18" filter="url(#s)"/>
+<g fill="#fff6d9" stroke="#b9925e" stroke-width="3" stroke-linejoin="round">
+<path d="M75 113q-18-18-5-31 7-7 17-3-5-22 15-26 13-3 20 8 8-22 29-19 14 2 18 14 11-20 28-13 11 5 12 15 20-14 31 2 7 9 3 19 20-7 29 7 8 14-7 27Z"/>
+<path d="M65 104q-20-9-21 10 0 14 17 16 2 18 23 17l22-24m115-22q21-12 33 4 9 15-5 23 2 18-21 19l-21-20"/>
+</g>
+<g fill="#ffe8a6" stroke="#d6b06b" stroke-width="2"><path d="M86 67q-8 21 7 28 17-1 16-19-5-14-23-9Z"/><path d="M135 62q-15 12-6 28 17 7 25-10-1-18-19-18Z"/><path d="M183 61q-14 16-3 29 17 5 23-11-2-16-20-18Z"/><path d="M225 77q-17 9-10 27 15 10 26-4 4-17-16-23Z"/></g>
+<path d="M76 122h168l-19 142q-65 23-130 0Z" fill="url(#box)" stroke="#a95d59" stroke-width="5" stroke-linejoin="round"/>
+<path d="M96 125h29l8 145q-16-2-27-6Zm48 0h31l-1 149q-16 2-30 0Zm52 0h30l-11 140q-14 5-27 7Z" fill="#db6263"/>
+<path d="M78 128q82 13 164 0" fill="none" stroke="#9c5350" stroke-width="5" stroke-linecap="round"/>
+<path d="M113 203q47-23 94 0" fill="none" stroke="#fff7e7" stroke-width="5" stroke-linecap="round"/>
+<circle cx="140" cy="194" r="4" fill="#794e47"/><circle cx="182" cy="194" r="4" fill="#794e47"/><path d="M151 212q10 9 20 0" fill="none" stroke="#794e47" stroke-width="3" stroke-linecap="round"/>
+<path d="M92 115q62 9 136 0" fill="none" stroke="#fff9df" stroke-width="6" stroke-linecap="round"/>
+</svg>

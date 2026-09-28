@@ -1,0 +1,418 @@
+:root {
+    --primary: #4A90E2;
+    --secondary: #FF6B6B;
+    --accent: #FFD166;
+    --bg-color: #E2E8F0;
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --text-color: #2D3748;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Nunito', sans-serif; }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #2B6CB0;
+    text-shadow: 2px 2px 0px #CBD5E0;
+  }
+
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-btn {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    background: #FFFFFF;
+    color: #4A5568;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+  }
+
+  .nav-btn.active, .nav-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(74, 144, 226, 0.3);
+  }
+
+  /* Main Container */
+  .container {
+    width: 100%;
+    max-width: 900px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
+
+  .tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Pattern Caro biểu thị Transparent */
+  .transparent-bg-pattern {
+    background-color: #ffffff !important;
+    background-image: linear-gradient(45deg, #e2e8f0 25%, transparent 25%), 
+                      linear-gradient(-45deg, #e2e8f0 25%, transparent 25%), 
+                      linear-gradient(45deg, transparent 75%, #e2e8f0 75%), 
+                      linear-gradient(-45deg, transparent 75%, #e2e8f0 75%) !important;
+    background-size: 16px 16px !important;
+    background-position: 0 0, 0 8px, 8px -8px, -8px 0px !important;
+  }
+
+  /* TAB 1: VOCABULARY GRID */
+  .vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+  }
+
+  .color-card {
+    border-radius: 16px;
+    padding: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+
+  .color-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .real-obj-wrapper {
+    width: 100%;
+    height: 130px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.12);
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .real-obj-wrapper svg {
+    width: 90px;
+    height: 90px;
+  }
+
+  .word-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 2px;
+  }
+
+  .phonetic {
+    font-size: 1rem;
+    opacity: 0.95;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+
+  .meaning {
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .example-box {
+    background: rgba(255, 255, 255, 0.95);
+    color: #2D3748;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 0.85rem;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .audio-btn {
+    background: white;
+    color: #2D3748;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    transition: transform 0.2s;
+  }
+
+  .audio-btn:hover {
+    transform: scale(1.1);
+  }
+
+  /* TAB 2: SENTENCES */
+  .sentence-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .sentence-card {
+    background: #F7FAFC;
+    border-left: 5px solid var(--primary);
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .sentence-card h3 {
+    color: #2B6CB0;
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
+
+  .dialogue {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+
+  .speaker {
+    font-weight: 800;
+    color: #D69E2E;
+  }
+
+  /* GAMES */
+  .single-card-container, .quiz-container, .spelling-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+  }
+
+  .card-mode-selector {
+    display: flex;
+    gap: 8px;
+    background: #EDF2F7;
+    padding: 4px;
+    border-radius: 16px;
+  }
+
+  .mode-btn {
+    border: none;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    color: #4A5568;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+  }
+
+  .mode-btn.active {
+    background: white;
+    color: var(--primary);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+
+  .flip-card-single {
+    background-color: transparent;
+    width: 300px;
+    height: 220px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    border-radius: 16px;
+  }
+
+  .flip-card-single.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: 3px solid white;
+  }
+
+  .flip-card-front {
+    background: linear-gradient(135deg, #4A90E2, #67B26F);
+    color: white;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+    color: white;
+  }
+
+  .card-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .card-counter {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #718096;
+  }
+
+  .color-preview-box, .spelling-img-preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #FFFFFF;
+  }
+
+  .color-preview-box svg, .spelling-img-preview svg {
+    width: 110px;
+    height: 110px;
+  }
+
+  .mcq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 440px;
+  }
+
+  .mcq-btn {
+    padding: 12px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    border: 2px solid #E2E8F0;
+    border-radius: 12px;
+    background: #F7FAFC;
+    color: #2D3748;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .mcq-btn:hover {
+    border-color: var(--primary);
+    background: #EBF8FF;
+  }
+
+  .mcq-btn.correct {
+    background: #48BB78 !important;
+    color: white !important;
+    border-color: #38A169 !important;
+  }
+
+  .mcq-btn.wrong {
+    background: #F56565 !important;
+    color: white !important;
+    border-color: #C53030 !important;
+  }
+
+  .spelling-input-group {
+    display: flex;
+    gap: 8px;
+  }
+
+  .spelling-input {
+    padding: 10px 16px;
+    font-size: 1.2rem;
+    border: 2px solid #CBD5E0;
+    border-radius: 10px;
+    text-align: center;
+    width: 220px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+  }
+
+  .btn-action {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    background: #38A169;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+/* Game 4 uses the shared Grade 2 sentence scoring engine. */
+#game-count h2 { text-align:center; color:#2B6CB0; }
+.colors-game4-instruction { text-align:center; color:#526174; }
+#game-count .count-game-container { max-width:620px; margin:0 auto; text-align:center; }
+#game-count .score-board { margin:14px 0; font-weight:800; }
+.colors-game4-image { width:120px; height:120px; margin:14px auto; display:flex; align-items:center; justify-content:center; }
+.colors-game4-image svg { width:100%; height:100%; }
+.colors-game4-prompt { font-size:1.25rem; font-weight:800; }
+.colors-game4-controls { flex-wrap:wrap; justify-content:center; margin-top:16px; }
+.colors-game4-controls .spelling-input { flex:1 1 210px; max-width:340px; text-transform:none; letter-spacing:normal; }
+.colors-game4-controls button { min-height:44px; }
+.colors-game4-controls .btn-reveal { border:0; border-radius:10px; padding:10px 16px; background:#9b6124; color:#fff; font:inherit; font-weight:800; cursor:pointer; }
+#game-count #count-feedback { min-height:1.5em; font-weight:800; }

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiếng Anh lớp 4 · Global Success · Danh English Tutor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/grade4.css">
+</head>
+<body>
+  <header class="g4-hero">
+    <a class="g4-back" href="../../index.html">← Trang chủ</a>
+    <p class="g4-eyebrow">Danh English Tutor · Bản demo</p>
+    <h1>Tiếng Anh lớp 4</h1>
+    <p class="g4-subtitle">Global Success · Unit 1 và Unit 2</p>
+    <p class="g4-focus">Học một ít mỗi lần, tự nhớ từ và ôn lại những từ chưa chắc.</p>
+  </header>
+  <main class="g4-container">
+    <div class="g4-intro"><p>Chọn Unit đang học. Tiến độ được lưu trên thiết bị này.</p></div>
+    <div class="g4-units">
+      <a class="g4-unit-card" href="./unit1.html"><span class="g4-chip">UNIT 1 · 6 TỪ</span><h2>My friends</h2><p>Bạn bè của em · Hỏi và giới thiệu bạn đến từ đâu.</p><strong id="unit1-status">Đã luyện 0/6 từ</strong><span>Vào học →</span></a>
+      <a class="g4-unit-card" href="./unit2.html"><span class="g4-chip">UNIT 2 · 6 TỪ</span><h2>Time and daily routines</h2><p>Giờ giấc và sinh hoạt hằng ngày.</p><strong id="unit2-status">Đã luyện 0/6 từ</strong><span>Vào học →</span></a>
+    </div>
+    <section class="g4-review" aria-labelledby="review-heading">
+      <h2 id="review-heading">🧠 Ôn hôm nay</h2>
+      <p id="review-count" role="status"></p>
+      <p>Những từ em đã luyện sẽ xuất hiện lại theo từng ngày. Từ làm sai được ưu tiên ôn sớm.</p>
+      <button class="g4-primary" id="review-start" type="button">Bắt đầu ôn</button>
+      <div class="g4-review-stage" id="review-stage" hidden></div>
+    </section>
+    <p class="g4-source">Nội dung demo dựa trên chủ đề Unit 1–2 của <a href="https://taphuan.nxbgd.vn/tap-huan/chi-tiet-sach/tieng-anh-4-global-success-tap-mot-939702978.939702978">Tiếng Anh 4 Global Success, tập một</a>. Câu luyện và hình do website biên soạn.</p>
+  </main>
+  <contact-danh></contact-danh>
+  <script src="../../shared/contact-footer.js"></script>
+  <script src="./assets/js/units-data.js"></script>
+  <script src="./assets/js/progress.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+</html>

@@ -6,10 +6,10 @@ const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
 const context = { window: {} };
 vm.createContext(context);
-for (const name of ['bodyparts-data.js', 'lesson-core.js']) vm.runInContext(fs.readFileSync(path.join(root, name), 'utf8'), context);
+for (const name of ['assets/data/bodyparts-data.js', 'assets/js/bodyparts-diagrams.js', 'assets/js/lesson-core.js']) vm.runInContext(fs.readFileSync(path.join(root, name), 'utf8'), context);
 const lesson = context.window.bodyPartsLesson;
 const core = context.window.Lop2Lesson;
-vm.runInContext(fs.readFileSync(path.join(root, 'learning-core.js'), 'utf8'), context);
+vm.runInContext(fs.readFileSync(path.join(root, 'assets/js/learning-core.js'), 'utf8'), context);
 const LearningState = context.window.DanhLesson.LearningState;
 const plain = value => JSON.parse(JSON.stringify(value));
 function memory() {
@@ -81,6 +81,16 @@ test('Bộ game chung nhớ lựa chọn Body Parts và không cộng điểm sa
   time += 1000;
   assert.equal(restored.advance('mcq'), true);
   assert.equal(restored.round('mcq').index, 1);
+});
+
+test('Cả 16 hình Body Parts có tên chỉ dẫn khi học và ẩn tên trong trò chơi', () => {
+  assert.equal(lesson.vocabulary.length, 16);
+  for (const word of lesson.vocabulary) {
+    assert.match(word.diagramSvg, /<svg[^>]*bodyparts-diagram/);
+    assert.match(word.diagramSvg, new RegExp(`<text[^>]*>${word.name}</text>`));
+    assert.match(word.svg, /<svg[^>]*svg-icon/);
+    assert.doesNotMatch(word.svg, /<text\b/i);
+  }
 });
 
 test('Mỗi câu Body Parts chỉ tham chiếu từ và hình có thật', () => {

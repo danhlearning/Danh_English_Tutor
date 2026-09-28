@@ -1,0 +1,115 @@
+:root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #dbeafe;
+            --zalo-color: #0068ff;
+            --fb-color: #1877f2;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px 20px 0 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-container {
+            flex: 1;
+        }
+
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { color: var(--primary); font-size: 2.5rem; font-weight: 800; }
+
+        .container {
+            max-width: 950px; margin: 0 auto 40px auto;
+            background: white; padding: 40px;
+            border-radius: 20px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary); border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px; margin-top: 30px; margin-bottom: 15px; font-size: 1.8rem;
+        }
+
+        h3 { color: #334155; margin-top: 25px; margin-bottom: 10px; font-size: 1.4rem; }
+        p { margin-bottom: 15px; font-size: 1.1rem; }
+        ul { margin-left: 20px; margin-bottom: 15px; font-size: 1.1rem; }
+        li { margin-bottom: 8px; }
+
+        /* Styling for Tables */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 1.05rem; }
+        th, td { border: 1px solid #cbd5e1; padding: 12px 15px; text-align: left; vertical-align: top; }
+        th { background-color: var(--primary); color: white; font-weight: 700; text-align: center; }
+        
+        /* Cấu trúc cột của bảng 6 thì */
+        th:nth-child(1) { width: 20%; }
+        th:nth-child(2) { width: 30%; }
+        th:nth-child(3) { width: 50%; }
+
+        td:nth-child(2) { font-weight: bold; color: #b91c1c; }
+        tr:nth-child(even) { background-color: #f1f5f9; }
+
+        /* Styling for Examples */
+        .example-box {
+            background-color: var(--accent); border-left: 5px solid var(--primary);
+            padding: 15px 20px; border-radius: 4px; margin-bottom: 20px;
+        }
+        .example-box p { margin-bottom: 8px; }
+        .example-box p:last-child { margin-bottom: 0; }
+
+        .highlight { font-weight: 700; color: #b91c1c; }
+        .meaning { font-style: italic; color: #475569; font-size: 1rem; }
+
+        .btn-back {
+            display: inline-block; background-color: var(--text-muted); color: white;
+            padding: 10px 20px; border-radius: 50px; text-decoration: none;
+            font-weight: 700; margin-bottom: 20px; transition: background 0.3s;
+        }
+        .btn-back:hover { background-color: #475569; }
+
+        .btn-practice {
+            display: block; text-align: center; background-color: var(--primary);
+            color: white; padding: 15px 30px; border-radius: 50px;
+            text-decoration: none; font-weight: 700; font-size: 1.2rem;
+            margin-top: 40px; transition: background 0.3s;
+        }
+        .btn-practice:hover { background-color: var(--primary-hover); }
+
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            th, td { display: block; width: 100% !important; text-align: left !important; }
+            th { text-align: center !important; }
+        }
+
+        /* --- Contact Section --- */
+        .contact-section {
+            text-align: center; padding: 40px 20px;
+            background: white; border-top: 1px solid #e2e8f0;
+            margin: 0 -20px;
+        }
+        .contact-section h2 { font-size: 1.8rem; margin-bottom: 20px; color: var(--text-main); font-weight: 800; border-bottom: none; }
+        .social-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn-social {
+            display: flex; align-items: center; gap: 10px; padding: 10px 25px;
+            border-radius: 50px; font-size: 1.1rem; font-weight: 700;
+            text-decoration: none; background-color: white; transition: all 0.3s ease;
+        }
+        .btn-zalo { color: var(--zalo-color); border: 2px solid var(--zalo-color); }
+        .btn-zalo:hover { background-color: var(--zalo-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 104, 255, 0.3); }
+        .zalo-logo { width: 24px; height: 24px; border-radius: 6px; }
+
+        .btn-fb { color: var(--fb-color); border: 2px solid var(--fb-color); }
+        .btn-fb:hover { background-color: var(--fb-color); color: white; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3); }
+        .fb-icon { width: 22px; height: 22px; fill: var(--fb-color); transition: fill 0.3s; }
+        .btn-fb:hover .fb-icon { fill: white; }
+
+        footer { text-align: center; padding: 15px; background: var(--text-main); color: white; font-size: 0.95rem; font-weight: 600; margin: 0 -20px; }

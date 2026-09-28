@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f0e8">
+  <title>Thầy Danh duyệt hình · Lớp 2</title>
+  <link rel="stylesheet" href="style.css?v=20260928">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Nhóm từ vựng">
+      <a class="brand" href="../../grade/lop2/lop2.html"><span class="brand-mark" aria-hidden="true">D<span>✦</span></span><span><b>Danh English Tutor</b><small>Không gian sáng tạo</small></span></a>
+      <div class="side-label">ARTIFACT RIÊNG</div>
+      <h1>Thầy Danh<br><em>duyệt hình.</em></h1>
+      <p class="side-intro">Kho ảnh thật đang dùng và ảnh cần thầy góp ý.</p>
+      <div class="side-rule"></div>
+      <div class="side-heading">Ảnh thật / tổng từ <span id="groupCount"></span></div>
+      <nav id="groupNav" class="group-nav" aria-label="Chọn chủ đề"></nav>
+      <div class="side-foot"><span class="live-dot"></span> Đang lưu lựa chọn trên thiết bị này</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><div class="crumb">BỘ SƯU TẬP / <strong>LỚP 2</strong></div><div class="top-actions"><button id="importButton" class="text-button" type="button">Nhập bản duyệt</button><button id="exportButton" class="export-button" type="button">↓ Xuất bản duyệt</button><input id="importFile" type="file" accept="application/json,.json" hidden></div></header>
+      <section class="hero" aria-labelledby="pageTitle"><div><div class="eyebrow"><span class="sparkle">✦</span> HÌNH ẢNH CỐT LÕI · LỚP 2</div><h2 id="pageTitle">Ảnh chân thật.<br><span>Học dễ hiểu.</span></h2><p>Xem ảnh thật trong bài học và góp ý khi cần. Ảnh rõ nghĩa sẽ được đưa thẳng vào topic; ảnh chưa chắc chắn được đưa lên đây để thầy chọn.</p><div class="hero-tags"><span>◎ Ảnh thật, rõ chi tiết</span><span>♡ Hợp với trẻ nhỏ</span><span>◉ Dễ phân biệt</span></div></div><div class="hero-art" aria-hidden="true"><div class="art-bubble bubble-one">✿</div><div class="art-card art-card-back"><img src="candidates/realistic/animals/dog-photo-v1.png" alt=""></div><div class="art-card art-card-front"><img src="candidates/realistic/fruits/apple-photo-v1.png" alt=""></div><div class="art-bubble bubble-two">✦</div></div></section>
+      <section class="stats" aria-label="Tiến độ duyệt"><div class="stat"><span>TỪ TRONG DANH MỤC</span><strong id="totalCount">0</strong><small>toàn bộ lớp 2</small></div><div class="stat"><span>ẢNH CHÂN THẬT</span><strong id="candidateCount">0</strong><small>ứng viên trong kho</small></div><div class="stat"><span>ẢNH MỚI ĐÃ DUYỆT</span><strong id="approvedCount">0</strong><small>ảnh chân thật được chọn</small></div><div class="stat"><span>ẢNH MỚI CẦN SỬA</span><strong id="revisionCount">0</strong><small>có góp ý của thầy</small></div></section>
+      <section class="workspace" aria-labelledby="catalogTitle"><div class="section-top"><div><div class="eyebrow">DANH SÁCH TRANH</div><h3 id="catalogTitle">Bộ tranh ứng viên</h3><p id="sectionDescription">Xem ảnh đã dùng và góp ý. Những ảnh còn phân vân sẽ chờ thầy duyệt tại đây.</p></div><div class="section-deco" aria-hidden="true">✳</div></div>
+        <div class="toolbar"><label class="select-wrap mobile-group"><span>Chủ đề</span><select id="mobileGroup"></select></label><label class="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Tìm tên từ hoặc nghĩa tiếng Việt..." autocomplete="off"></label><label class="select-wrap"><span>Trạng thái</span><select id="statusFilter"><option value="photo">Ảnh chân thật mới</option><option value="candidates">Mọi tranh ứng viên</option><option value="all">Tất cả</option><option value="approved">Đã duyệt</option><option value="revision">Cần sửa</option><option value="pending">Chờ vẽ</option></select></label></div>
+        <div id="resultLine" class="result-line" aria-live="polite"></div><div id="cards" class="cards"></div><button id="loadMore" class="load-more" type="button" hidden>Xem thêm từ</button>
+      </section>
+      <footer>Thầy Danh duyệt hình <span>·</span> Kho duyệt độc lập của Danh English Tutor <span>·</span> Ảnh đã được chọn dùng trong bài học; ảnh cần góp ý vẫn ở kho duyệt</footer>
+    </main>
+  </div>
+
+  <dialog id="reviewDialog" class="review-dialog" aria-labelledby="reviewTitle"><div class="dialog-head"><div><span id="dialogGroup" class="eyebrow"></span><h2 id="reviewTitle"></h2><p id="reviewMeaning"></p></div><button id="closeDialog" class="close-button" type="button" aria-label="Đóng">×</button></div><div class="comparison"><div class="compare-panel"><div class="panel-head"><span>HÌNH ĐANG DÙNG</span><span class="mini-tag">Tham khảo</span></div><div id="currentVisual" class="large-visual"></div><p>Hình đang có trên website lớp 2.</p></div><div class="compare-panel candidate-panel"><div class="panel-head"><span>TRANH MỚI ĐỂ THẦY DUYỆT</span><span class="mini-tag fresh">Ứng viên</span></div><div id="candidateVisual" class="large-visual"></div><div id="candidateChoices" class="candidate-choices"></div></div></div><div class="review-form"><label for="reviewNote">Nhận xét của thầy <span>(có thể bỏ trống khi duyệt)</span></label><textarea id="reviewNote" rows="3" placeholder="Ví dụ: làm tai mèo rõ hơn, đổi màu nền, thêm ngữ cảnh..."></textarea><div id="saveMessage" class="save-message" role="status"></div><div class="dialog-actions"><button id="clearButton" class="clear-button" type="button" hidden>Bỏ lựa chọn</button><button id="revisionButton" class="revision-button" type="button">↺ Cần sửa hình</button><button id="approveButton" class="approve-button" type="button">✓ Duyệt hình này</button></div></div></dialog>
+  <script src="catalog.js"></script><script src="candidates.js"></script><script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+:root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --zalo-color: #0068ff;
+            --fb-color: #1877f2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        /* --- Hero / Header Section --- */
+        .hero {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 30px 15px 40px 15px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            transition: background 0.3s ease;
+            margin-bottom: 12px;
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.35);
+        }
+
+        .hero-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 6px;
+            font-weight: 800;
+        }
+
+        .hero-text p {
+            font-size: 1rem;
+            opacity: 0.95;
+            font-weight: 600;
+        }
+
+        /* --- Lesson List Container --- */
+        .main-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .section-header h2 {
+            font-size: 1.6rem;
+            color: var(--text-main);
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        /* Grid bài học */
+        .lesson-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 18px;
+        }
+
+        .lesson-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+            border-color: var(--primary);
+        }
+
+        .card-header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .lesson-icon {
+            font-size: 1.8rem;
+        }
+
+        .lesson-badge {
+            display: inline-block;
+            background-color: #e0f2fe;
+            color: #0284c7;
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 12px;
+        }
+
+        .lesson-card h3 {
+            font-size: 1.15rem;
+            color: var(--text-main);
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+
+        .lesson-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+
+        .btn-study {
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        .lesson-card:hover .btn-study {
+            background-color: var(--primary-hover);
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: var(--text-main);
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+@media (max-width: 360px) {
+  .lesson-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+.grade2-progress-summary {
+  margin: 0 0 18px;
+  text-align: center;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+.lesson-progress {
+  display: inline-block;
+  margin: 0 0 12px;
+  color: #166534;
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+.curriculum-note {
+  max-width: 700px;
+  margin: 14px auto 0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #eaf3ff;
+  color: #174276 !important;
+  font-size: .88rem;
+}
+
+/* Danh mục Unit Global Success */
+.unit-grid { margin-bottom: 42px; }
+.unit-pending { background: #f8fafc; border-style: dashed; box-shadow: none; }
+.unit-pending:hover { transform: none; box-shadow: none; border-color: #cbd5e1; }
+.unit-status { color: #475569; font-size: .88rem; font-weight: 800; }
+.supplementary-header { padding-top: 10px; }

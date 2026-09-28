@@ -1,4 +1,4 @@
-name: Check Grade 2 lessons
+name: Check lessons
 
 on: [push, pull_request]
 
@@ -8,7 +8,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check lesson data and game rules
-        run: node --test grade/lop2/tests/*.test.cjs
+        run: node --test grade/lop2/tests/*.test.cjs grade/lop4/tests/*.test.cjs
+      - name: Check JavaScript syntax
+        run: find assets/js grade/lop2/assets/js grade/lop4/assets/js shared -type f -name '*.js' -print0 | xargs -0 -n1 node --check
       - name: Check local links and IDs
         run: node scripts/check-local-links.cjs
       - name: Check the shared footer

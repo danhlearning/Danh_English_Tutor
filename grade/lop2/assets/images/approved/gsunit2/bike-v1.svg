@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Xe đạp hai bánh rõ khung, yên và tay lái">
+<defs><filter id="s"><feGaussianBlur stdDeviation="5"/></filter><linearGradient id="frame" x2="0" y2="1"><stop stop-color="#f58c76"/><stop offset="1" stop-color="#d35f61"/></linearGradient></defs>
+<ellipse cx="160" cy="269" rx="136" ry="12" fill="#8b9b91" opacity=".15" filter="url(#s)"/>
+<g fill="#f9fcfc" stroke="#3f5965" stroke-width="7"><circle cx="72" cy="210" r="54"/><circle cx="248" cy="210" r="54"/></g>
+<g stroke="#a9bdc3" stroke-width="2"><path d="M72 156v108m-54-54h108m-92-38 76 76m0-76-76 76M248 156v108m-54-54h108m-92-38 76 76m0-76-76 76"/></g>
+<g fill="#7d99a4" stroke="#3f5965" stroke-width="4"><circle cx="72" cy="210" r="10"/><circle cx="248" cy="210" r="10"/></g>
+<path d="m72 210 57-91 53 91H72l57-91 119 91-38-113" fill="none" stroke="url(#frame)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="m72 210 57-91 53 91H72l57-91 119 91-38-113" fill="none" stroke="#7f4e59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M178 210h32m-28 0-10 21m10-21 19-17" fill="none" stroke="#6d7880" stroke-width="5" stroke-linecap="round"/>
+<circle cx="182" cy="210" r="11" fill="#f2c65d" stroke="#6b6c6b" stroke-width="3"/>
+<path d="M169 231h-18m43-38h18" stroke="#525d64" stroke-width="7" stroke-linecap="round"/>
+<path d="M127 118h-28" stroke="#52636e" stroke-width="7" stroke-linecap="round"/><path d="M98 112q-7-13 11-15h27q12 1 10 12l-5 5Z" fill="#5d6977"/>
+<path d="M210 98 204 83q-3-9 6-10h29m-29 0 14-18" fill="none" stroke="#586d78" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M231 54h22m-16 20h18" stroke="#303e47" stroke-width="8" stroke-linecap="round"/>
+<path d="M104 118q-19 8-27 24" fill="none" stroke="#ee9a74" stroke-width="3"/>
+<path d="M202 102q25-11 47 3" fill="none" stroke="#ee9a74" stroke-width="3"/>
+</svg>

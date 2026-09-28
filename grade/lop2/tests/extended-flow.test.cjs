@@ -27,7 +27,7 @@ class FakeElement {
   removeAttribute(name) { this.attrs.delete(name); }
   focus() {}
 }
-function page(id) {
+function page(id, dataFile = 'assets/data/extended-topics-data.js') {
   const ids = ['topic-title','topic-description','vocab-title','sentences-title','vocab-grid-container',
     'sentence-pattern','sentence-examples','sentence-stage','sentence-input','sentence-check',
     'sentence-reveal','sentence-next','sentence-score','sentence-feedback','vocab','sentences',
@@ -45,8 +45,8 @@ function page(id) {
   };
   const window = { DanhLesson: { mount(config) { mounted = config; config.onSelectionChange(config.words.map(word => word.id)); } } };
   const context = { window, document, setTimeout, clearTimeout };
-  vm.runInNewContext(fs.readFileSync(path.join(root, 'extended-topics-data.js'), 'utf8'), context);
-  vm.runInNewContext(fs.readFileSync(path.join(root, 'extended-topic.js'), 'utf8'), context);
+  vm.runInNewContext(fs.readFileSync(path.join(root, dataFile), 'utf8'), context);
+  vm.runInNewContext(fs.readFileSync(path.join(root, 'assets/js/extended-topic.js'), 'utf8'), context);
   ready();
   return { nodes, window, mounted: () => mounted };
 }
@@ -89,4 +89,18 @@ test('Game 4: sửa đúng sau sai không tính đúng ngay; áp dụng lại c�
   p.nodes.get('sentence-next').dispatch('click');
   mount.onSelectionChange(['circle'], true);
   assert.match(p.nodes.get('sentence-score').textContent, /Đã học 0\/1/);
+});
+
+
+test('Unit 1 Global Success chạy Game 4 qua bộ bài học chung', () => {
+  const p = page('gsunit1', 'assets/data/gs-unit1-data.js');
+  const mount = p.mounted();
+  assert.equal(mount.topic, 'gsunit1');
+  assert.equal(mount.words.length, 3);
+  mount.onSelectionChange(['pizza'], true);
+  p.window.switchTab('game-count');
+  answer(p, 'I like pizza.');
+  assert.match(p.nodes.get('sentence-score').textContent, /Đúng ngay 1/);
+  p.nodes.get('sentence-next').dispatch('click');
+  assert.match(p.nodes.get('sentence-stage').textContent, /Hoàn thành lượt/);
 });

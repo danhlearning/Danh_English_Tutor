@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Câu Điều Kiện (IF) - Thầy Danh</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/pages/condition-practice.css">
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="grammar-index.html" class="btn-nav btn-back">⬅ Quay lại Trung tâm</a>
+        <!-- Đã cập nhật link trỏ về condition-theory.html -->
+        <a href="condition-theory.html" class="btn-nav btn-theory">📖 Xem Lý thuyết</a>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>📝 Bài Tập Câu Điều Kiện</h1>
+            
+            <div class="controls">
+                <div class="progress" id="progress">Câu: 1/60</div>
+            </div>
+
+            <div class="question-box" id="question-text"></div>
+
+            <div class="input-area" id="input-area">
+                <input type="text" id="answer-input" placeholder="Nhập động từ/từ cần điền..." autocomplete="off">
+                <button class="btn-check" id="check-btn" onclick="checkAnswer()">Kiểm tra</button>
+            </div>
+
+            <div id="feedback" class="feedback"></div>
+            <div id="explanation" class="explanation"></div>
+
+            <button class="btn-next" id="next-btn" onclick="nextQuestion()">Câu tiếp theo ➔</button>
+        </div>
+    </div>
+
+    <section class="contact-section">
+        <h2>Kết nối với thầy Danh</h2>
+        <div class="social-buttons">
+            <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
+                Zalo: 0911594794
+            </a>
+            <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
+                <svg class="fb-icon" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+                Facebook
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Học tiếng Anh cùng thầy Danh.</p>
+    </footer>
+
+<script src="./assets/js/pages/condition-practice.js"></script>
+
+</body>
+</html>

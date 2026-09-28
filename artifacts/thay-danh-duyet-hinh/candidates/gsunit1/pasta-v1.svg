@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Bát mì Ý pasta">
+<defs><linearGradient id="plate" x2="0" y2="1"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#e4eef0"/></linearGradient><linearGradient id="noodle" x2="0" y2="1"><stop stop-color="#ffe49b"/><stop offset="1" stop-color="#e7aa51"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="7"/></filter></defs>
+<ellipse cx="160" cy="274" rx="113" ry="16" fill="#a6a18d" opacity=".18" filter="url(#shadow)"/>
+<ellipse cx="160" cy="198" rx="124" ry="61" fill="#c4d8dd" stroke="#7998a0" stroke-width="4"/>
+<ellipse cx="160" cy="184" rx="112" ry="47" fill="url(#plate)" stroke="#a9c8cd" stroke-width="4"/>
+<ellipse cx="160" cy="181" rx="94" ry="37" fill="#f4c97d"/>
+<path d="M88 179c15-22 29 12 43-9s24 11 39-8 32 14 51-5m-139 30c21-18 26 14 48-3s25 11 41-6 32 12 55-4m-133 27c13-16 29 9 47-5s28 14 49-2 25 8 40-4m-115-45c15-13 26 10 42-4s24 8 41-2" fill="none" stroke="url(#noodle)" stroke-width="8" stroke-linecap="round"/>
+<path d="M93 169c19 15 32-15 52 1m25 18c19-17 29 7 43-7m-109 15c19-10 30 8 43-3m27-32c17 8 26-8 42-1" fill="none" stroke="#c15b3c" stroke-width="6" stroke-linecap="round"/>
+<g fill="#d96347" stroke="#a73f33" stroke-width="2"><circle cx="119" cy="166" r="11"/><circle cx="198" cy="177" r="10"/><circle cx="152" cy="194" r="9"/></g>
+<g fill="#4a9c62"><path d="M146 148q-17-24-26-8 7 17 26 8m1 0q3-26 20-20 2 18-20 20"/><path d="M217 197q-14-21-24-7 8 14 24 7m0 0q4-22 18-16 2 13-18 16"/></g>
+<path d="M44 193q11 60 56 72 63 22 120 0 45-15 56-72-40 43-116 43T44 193Z" fill="url(#plate)" stroke="#86a5ad" stroke-width="4"/>
+<path d="M72 224q90 40 177 0" fill="none" stroke="#d7e8e8" stroke-width="8" stroke-linecap="round"/>
+<path d="M40 101l18 58m-4-59 18 54m-8-56 17 51" fill="none" stroke="#9daab0" stroke-width="4" stroke-linecap="round"/>
+<path d="M35 104q12-14 24-8l12 60-11 4Z" fill="#dce5e5" stroke="#8b9ca2" stroke-width="3"/>
+</svg>
