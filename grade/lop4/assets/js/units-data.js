@@ -1,4 +1,4 @@
-/* Demo vocabulary follows the themes of Global Success 4 Units 1–2. All art and practice prompts are original. */
+/* Practice vocabulary follows the themes of Global Success 4 Units 1–4. All art and practice prompts are original. */
 (() => {
   'use strict';
   const svg = body => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="22" fill="#f2f8fb"/>${body}</svg>`;
@@ -24,6 +24,7 @@
     dinner: svg(clock('7:00', true) + plate + '<path d="M44 76q9-10 18 0t17 0" fill="none" stroke="#dd8c72" stroke-width="8"/><path d="M21 58v33m73-33v33" stroke="#6b8293" stroke-width="5"/>'),
     bed: svg(clock('9:00', true) + '<rect x="16" y="69" width="86" height="25" rx="5" fill="#8db1d2" stroke="#405f80" stroke-width="4"/><rect x="22" y="63" width="27" height="15" rx="5" fill="#fff"/><path d="M17 95v9m85-9v9" stroke="#405f80" stroke-width="5"/>' + star(72,48,'#f7d878',.35))
   };
+  const photo = (unit, name) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" aria-hidden="true"><image href="./assets/images/${unit}/${name}.webp" width="120" height="120" preserveAspectRatio="xMidYMid slice"/></svg>`;
   const make = (id, name, meaning, ipa, color, visual, context) => ({ id, name, meaning, ipa, color, visual, context });
   window.DanhGrade4Units = {
     unit1: {
@@ -56,6 +57,39 @@
         make('lunch','have lunch','ăn trưa','/hæv lʌntʃ/','#768b4b',routines.lunch,'At noon, I ____ in the school canteen.'),
         make('dinner','have dinner','ăn tối','/hæv ˈdɪn.ə/','#9c624c',routines.dinner,'In the evening, I ____ with my family.'),
         make('bed','go to bed','đi ngủ','/ɡəʊ tə bed/','#605a9b',routines.bed,'At night, I ____ after reading a story.')
+      ]
+    },
+    unit3: {
+      id: 'unit3', number: 3, title: 'My week', subtitle: 'Một tuần của em',
+      focus: 'Hỏi thứ trong tuần và kể hoạt động thường làm vào từng ngày.',
+      patterns: [
+        { question: 'What day is it today?', answer: 'It is Thursday.', note: 'Hỏi hôm nay là thứ mấy.' },
+        { question: 'What do you do on Sundays?', answer: 'I play football with my friends.', note: 'Hỏi và kể hoạt động theo ngày.' }
+      ],
+      words: [
+        make('study-at-school','study at school','học ở trường','/ˈstʌd.i ət skuːl/','#376f9a',photo('unit3','study-at-school'),'On Mondays, I ____ in my classroom.'),
+        make('listen-to-music','listen to music','nghe nhạc','/ˈlɪs.ən tə ˈmjuː.zɪk/','#8066a3',photo('unit3','listen-to-music'),'On Sundays, I ____ with my headphones.'),
+        make('do-housework','do housework','làm việc nhà','/duː ˈhaʊs.wɜːk/','#9b6f51',photo('unit3','do-housework'),'On Saturdays, I ____ and sweep the floor.'),
+        make('watch-tv','watch TV','xem tivi','/wɒtʃ ˌtiː ˈviː/','#627e9f',photo('unit3','watch-tv'),'After dinner, I ____ with my brother.'),
+        make('go-to-school','go to school','đi học','/ɡəʊ tə skuːl/','#3d8783',photo('unit3','go-to-school'),'On weekdays, I ____ with my backpack.'),
+        make('play-football','play football','chơi bóng đá','/pleɪ ˈfʊt.bɔːl/','#638753',photo('unit3','play-football'),'On Sundays, I ____ in the park.')
+      ]
+    },
+    unit4: {
+      id: 'unit4', number: 4, title: 'My birthday party', subtitle: 'Bữa tiệc sinh nhật của em',
+      focus: 'Hỏi tháng sinh nhật và gọi tên món ăn, thức uống trong bữa tiệc.',
+      patterns: [
+        { question: 'When is your birthday?', answer: 'It is in March.', note: 'Hỏi tháng sinh nhật.' },
+        { question: 'What do you want to eat?', answer: 'I want some chips and grapes.', note: 'Hỏi món ăn mong muốn.' },
+        { question: 'What do you want to drink?', answer: 'I want some lemonade.', note: 'Hỏi thức uống mong muốn.' }
+      ],
+      words: [
+        make('jam','jam','mứt','/dʒæm/','#bb4d58',photo('unit4','jam'),'I want some ____ on my bread.'),
+        make('chips','chips','khoai tây chiên','/tʃɪps/','#b98138',photo('unit4','chips'),'I want some ____ at the party.'),
+        make('grapes','grapes','nho','/ɡreɪps/','#79588c',photo('unit4','grapes'),'There are purple ____ on the table.'),
+        make('water','water','nước lọc','/ˈwɔː.tə/','#42829e',photo('unit4','water'),'I drink ____ when I am thirsty.'),
+        make('lemonade','lemonade','nước chanh','/ˌlem.əˈneɪd/','#b89b39',photo('unit4','lemonade'),'I want some ____ with lemon slices.'),
+        make('juice','juice','nước ép','/dʒuːs/','#bd7337',photo('unit4','juice'),'I would like some orange ____.')
       ]
     }
   };

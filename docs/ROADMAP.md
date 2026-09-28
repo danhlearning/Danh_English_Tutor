@@ -1,6 +1,6 @@
 # Lộ trình Danh English Tutor
 
-Cập nhật: 26/09/2026. Các URL HTML đang dùng được giữ trong suốt quá trình chỉnh sửa.
+Cập nhật: 28/09/2026. Các URL HTML đang dùng được giữ trong suốt quá trình chỉnh sửa.
 
 ## 1. Nền tảng và cấu trúc
 
@@ -31,7 +31,8 @@ Cập nhật: 26/09/2026. Các URL HTML đang dùng được giữ trong suốt 
 - [ ] Đối chiếu từ và câu hiện có với sách, ghi rõ Unit và phạm vi.
 - [x] Dựng demo Unit 1–2 Lớp 4 để thử phương pháp học từ và ôn cách quãng.
 - [ ] Đối chiếu chi tiết từng Lesson Lớp 4 trước khi mở rộng toàn bộ Unit.
-- [ ] Mở rộng các Unit Lớp 4 sau khi nhận góp ý về hai bài demo.
+- [x] Mở rộng Unit 3–4 Lớp 4 với 12 ảnh minh họa phong cách ảnh chụp, câu luyện và phần ôn chung.
+- [ ] Tiếp tục đối chiếu Lesson và mở rộng Unit 5–20 Lớp 4.
 
 ## Điều kiện hoàn thành mỗi đợt
 

@@ -31,7 +31,7 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline:3px solid #
 .g4-word-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
 .g4-word-card { display:grid; grid-template-columns:112px minmax(0,1fr) auto; align-items:center; gap:16px; padding:14px; border:1px solid var(--border); border-radius:14px; background:#fffdf8; }
 .g4-visual { display:inline-flex; align-items:center; justify-content:center; width:100%; max-width:120px; aspect-ratio:1; flex:none; }
-.g4-visual svg { width:100%; height:100%; display:block; }
+.g4-visual svg { width:100%; height:100%; display:block; border-radius:16px; }
 .g4-word-card h3 { margin:0; color:#174e70; font-size:1.15rem; }
 .g4-word-card p { margin:0; }
 .g4-word-card small { display:block; color:#607488; }
@@ -68,7 +68,7 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline:3px solid #
 .g4-source a { font-weight:800; }
 .learning-panel { max-width:830px; }
 .learning-panel .learning-picture-option { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; min-height:130px; }
-.learning-picture-option .learning-visual { width:80px; height:80px; }
+.learning-picture-option .learning-visual { width:clamp(80px,18vw,104px); height:clamp(80px,18vw,104px); }
 .learning-picture-option span:last-child { font-size:.9rem; }
 .learning-stage > button:not(.learning-card), .learning-reveal { min-height:44px; margin:5px; padding:10px 15px; background:#176e88; border:0; border-radius:10px; color:#fff; font-weight:800; }
 .learning-stage > button.learning-reveal { background:#fff4cf; color:#79521a; border:1px solid #c6a55e; }
@@ -76,6 +76,6 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline:3px solid #
 .learning-options button { min-height:58px; }
 .learning-spelling { margin-top:12px; }
 .learning-spelling input { min-height:44px; }
-@media(max-width:760px) { .g4-word-grid,.g4-patterns,.g4-units { grid-template-columns:1fr; } .g4-word-card { grid-template-columns:80px minmax(0,1fr); } .g4-word-card .g4-sound { grid-column:2; justify-self:start; } .tab-content { padding:18px; } }
+@media(max-width:760px) { .g4-word-grid,.g4-patterns,.g4-units { grid-template-columns:1fr; } .g4-word-card { grid-template-columns:clamp(80px,18vw,108px) minmax(0,1fr); } .g4-word-card .g4-sound { grid-column:2; justify-self:start; } .tab-content { padding:18px; } }
 @media(max-width:420px) { .g4-word-card { gap:10px; } .g4-word-card h3 { font-size:1rem; } .g4-hero { padding:20px 16px 30px; } .g4-tabs { padding:8px 12px; } .g4-container { width:calc(100% - 20px); } }
 @media(prefers-reduced-motion:reduce) { .g4-unit-card { transition:none; } }

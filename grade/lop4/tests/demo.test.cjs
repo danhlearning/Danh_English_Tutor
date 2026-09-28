@@ -9,8 +9,8 @@ vm.runInNewContext(fs.readFileSync(path.join(root, 'assets/js/units-data.js'), '
 const units = context.window.DanhGrade4Units;
 const { createStore, DAY } = require('../assets/js/progress.js');
 
-test('Hai Unit demo có trang, từ, hình và câu luyện nhất quán', () => {
-  assert.deepEqual(Object.keys(units), ['unit1', 'unit2']);
+test('Bốn Unit có trang, từ, hình và câu luyện nhất quán', () => {
+  assert.deepEqual(Object.keys(units), ['unit1', 'unit2', 'unit3', 'unit4']);
   for (const [key, unit] of Object.entries(units)) {
     const html = fs.readFileSync(path.join(root, `${key}.html`), 'utf8');
     assert.match(html, new RegExp(`data-unit="${key}"`));
@@ -22,6 +22,11 @@ test('Hai Unit demo có trang, từ, hình và câu luyện nhất quán', () =>
       assert.match(word.color, /^#[0-9a-f]{6}$/i);
       assert.match(word.visual, /^<svg\b[^>]*viewBox="0 0 120 120"/);
       assert.ok(!/<script|foreignObject|(?:href|src)=["']https?:/i.test(word.visual));
+      if (unit.number >= 3) {
+        const match = word.visual.match(/href="(\.\/assets\/images\/unit[34]\/[^".]+\.webp)"/);
+        assert.ok(match, `${word.name} cần ảnh WebP nội bộ`);
+        assert.ok(fs.statSync(path.join(root, match[1])).size > 1000);
+      }
       assert.equal(word.context.split('____').length, 2);
     }
   }

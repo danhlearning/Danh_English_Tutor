@@ -26,7 +26,7 @@
   }
   function update() {
     const due = store.due(all.map(word => word.key));
-    el('review-count').textContent = due.length ? `${due.length} từ cần ôn hôm nay` : 'Chưa có từ cần ôn. Hãy luyện Unit 1 hoặc Unit 2 trước nhé.';
+    el('review-count').textContent = due.length ? `${due.length} từ cần ôn hôm nay` : 'Chưa có từ cần ôn. Hãy luyện một Unit trước nhé.';
     el('review-start').disabled = due.length === 0;
     for (const unit of units) {
       const sum = store.summary(unit.words.map(word => `${unit.id}:${word.id}`));
