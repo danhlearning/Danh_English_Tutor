@@ -1,4 +1,4 @@
-/* Demo catalogue and cross-unit review for Grade 4. */
+/* Grade 4 catalogue and cross-unit review. */
 (() => {
   'use strict';
   const units = Object.values(window.DanhGrade4Units || {});
@@ -23,6 +23,23 @@
   function button(label, action, className = '') {
     const item = document.createElement('button'); item.type = 'button'; item.textContent = label; item.className = className;
     item.addEventListener('click', action); return item;
+  }
+  function renderUnits() {
+    const list = el('unit-list');
+    for (const unit of units) {
+      const card = document.createElement('a');
+      card.className = 'g4-unit-card';
+      card.href = `./${unit.id}.html`;
+      const chip = document.createElement('span');
+      chip.className = 'g4-chip';
+      chip.textContent = `UNIT ${unit.number} · ${unit.words.length} TỪ`;
+      const title = document.createElement('h2'); title.textContent = unit.title;
+      const description = document.createElement('p'); description.textContent = `${unit.subtitle} · ${unit.focus}`;
+      const status = document.createElement('strong'); status.id = `${unit.id}-status`;
+      const enter = document.createElement('span'); enter.textContent = 'Vào học →';
+      card.append(chip, title, description, status, enter);
+      list.append(card);
+    }
   }
   function update() {
     const due = store.due(all.map(word => word.key));
@@ -92,5 +109,6 @@
     if (document.hidden) { clearTimeout(timer); timer = null; }
     else if (!el('review-stage').hidden && position < queue.length) renderReview();
   });
+  renderUnits();
   update();
 })();

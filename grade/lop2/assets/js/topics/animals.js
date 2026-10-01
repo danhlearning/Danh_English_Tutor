@@ -1,4 +1,4 @@
-const defaultSpeechRate = 0.6;
+const defaultSpeechRate = 0.85;
 
   /* HỆ THỐNG PHÁT ÂM THANH HIỆU ỨNG (Web Audio API) */
   let audioCtx = null;
@@ -49,56 +49,56 @@ const defaultSpeechRate = 0.6;
 
   /* DỮ LIỆU TỪ VỰNG ĐỘNG VẬT (50 CON) */
   const animalsList = [
-    { num: 1, name: 'Dog', ipa: '/dɔɡ/', meaning: 'Con chó', emoji: '<svg class="vocab-photo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><image href="./assets/images/approved/animals/dog-photo-v1.webp" width="120" height="120"/></svg>', hex: '#E53E3E' },
+    { num: 1, name: 'Dog', ipa: '/dɑːɡ/', meaning: 'Con chó', emoji: '<svg class="vocab-photo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><image href="./assets/images/approved/animals/dog-photo-v1.webp" width="120" height="120"/></svg>', hex: '#E53E3E' },
     { num: 2, name: 'Cat', ipa: '/kæt/', meaning: 'Con mèo', emoji: '🐱', hex: '#ED8936' },
     { num: 3, name: 'Mouse', ipa: '/maʊs/', meaning: 'Con chuột', emoji: '🐭', hex: '#ECC94B' },
-    { num: 4, name: 'Rabbit', ipa: '/ˈræbɪt/', meaning: 'Con thỏ', emoji: '🐰', hex: '#38A169' },
-    { num: 5, name: 'Hamster', ipa: '/ˈhæmstər/', meaning: 'Chuột hamster', emoji: '🐹', hex: '#3182CE' },
-    { num: 6, name: 'Fox', ipa: '/fɒks/', meaning: 'Con cáo', emoji: '🦊', hex: '#ED64A6' },
-    { num: 7, name: 'Bear', ipa: '/bɛər/', meaning: 'Con gấu', emoji: '🐻', hex: '#4A90E2' },
-    { num: 8, name: 'Panda', ipa: '/ˈpændə/', meaning: 'Gấu trúc', emoji: '🐼', hex: '#319795' },
-    { num: 9, name: 'Tiger', ipa: '/ˈtaɪɡər/', meaning: 'Con hổ', emoji: '🐯', hex: '#DD6B20' },
-    { num: 10, name: 'Lion', ipa: '/ˈlaɪən/', meaning: 'Sư tử', emoji: '🦁', hex: '#E53E3E' },
+    { num: 4, name: 'Rabbit', ipa: '/ˈræb.ɪt/', meaning: 'Con thỏ', emoji: '🐰', hex: '#38A169' },
+    { num: 5, name: 'Hamster', ipa: '/ˈhæm.stɚ/', meaning: 'Chuột hamster', emoji: '🐹', hex: '#3182CE' },
+    { num: 6, name: 'Fox', ipa: '/fɑːks/', meaning: 'Con cáo', emoji: '🦊', hex: '#ED64A6' },
+    { num: 7, name: 'Bear', ipa: '/ber/', meaning: 'Con gấu', emoji: '🐻', hex: '#4A90E2' },
+    { num: 8, name: 'Panda', ipa: '/ˈpæn.də/', meaning: 'Gấu trúc', emoji: '🐼', hex: '#319795' },
+    { num: 9, name: 'Tiger', ipa: '/ˈtaɪ.ɡɚ/', meaning: 'Con hổ', emoji: '🐯', hex: '#DD6B20' },
+    { num: 10, name: 'Lion', ipa: '/ˈlaɪ.ən/', meaning: 'Sư tử', emoji: '🦁', hex: '#E53E3E' },
     { num: 11, name: 'Cow', ipa: '/kaʊ/', meaning: 'Bò sữa', emoji: '🐮', hex: '#38A169' },
     { num: 12, name: 'Pig', ipa: '/pɪɡ/', meaning: 'Con lợn / Heo', emoji: '🐷', hex: '#ED64A6' },
-    { num: 13, name: 'Frog', ipa: '/frɒɡ/', meaning: 'Con ếch', emoji: '🐸', hex: '#38A169' },
-    { num: 14, name: 'Monkey', ipa: '/ˈmʌŋki/', meaning: 'Con khỉ', emoji: '🐵', hex: '#DD6B20' },
-    { num: 15, name: 'Chicken', ipa: '/ˈtʃɪkɪn/', meaning: 'Con gà', emoji: '🐔', hex: '#E53E3E' },
+    { num: 13, name: 'Frog', ipa: '/frɑːɡ/', meaning: 'Con ếch', emoji: '🐸', hex: '#38A169' },
+    { num: 14, name: 'Monkey', ipa: '/ˈmʌŋ.ki/', meaning: 'Con khỉ', emoji: '🐵', hex: '#DD6B20' },
+    { num: 15, name: 'Chicken', ipa: '/ˈtʃɪk.ɪn/', meaning: 'Con gà', emoji: '🐔', hex: '#E53E3E' },
     { num: 16, name: 'Duck', ipa: '/dʌk/', meaning: 'Con vịt', emoji: '🦆', hex: '#ECC94B' },
-    { num: 17, name: 'Bird', ipa: '/bɜːrd/', meaning: 'Con chim', emoji: '🐦', hex: '#4A90E2' },
-    { num: 18, name: 'Eagle', ipa: '/ˈiːɡəl/', meaning: 'Đại bàng', emoji: '🦅', hex: '#718096' },
+    { num: 17, name: 'Bird', ipa: '/bɝːd/', meaning: 'Con chim', emoji: '🐦', hex: '#4A90E2' },
+    { num: 18, name: 'Eagle', ipa: '/ˈiː.ɡəl/', meaning: 'Đại bàng', emoji: '🦅', hex: '#718096' },
     { num: 19, name: 'Owl', ipa: '/aʊl/', meaning: 'Cú mèo', emoji: '🦉', hex: '#805AD5' },
-    { num: 20, name: 'Penguin', ipa: '/ˈpɛŋɡwɪn/', meaning: 'Chim cánh cụt', emoji: '🐧', hex: '#2B6CB0' },
+    { num: 20, name: 'Penguin', ipa: '/ˈpeŋ.ɡwɪn/', meaning: 'Chim cánh cụt', emoji: '🐧', hex: '#2B6CB0' },
     { num: 21, name: 'Bat', ipa: '/bæt/', meaning: 'Con dơi', emoji: '🦇', hex: '#4A5568' },
     { num: 22, name: 'Wolf', ipa: '/wʊlf/', meaning: 'Chó sói', emoji: '🐺', hex: '#718096' },
     { num: 23, name: 'Horse', ipa: '/hɔːrs/', meaning: 'Con ngựa', emoji: '🐴', hex: '#DD6B20' },
-    { num: 24, name: 'Zebra', ipa: '/ˈziːbrə/', meaning: 'Ngựa vằn', emoji: '🦓', hex: '#4A5568' },
-    { num: 25, name: 'Giraffe', ipa: '/dʒɪˈrɑːf/', meaning: 'Hươu cao cổ', emoji: '🦒', hex: '#ECC94B' },
-    { num: 26, name: 'Elephant', ipa: '/ˈɛlɪfənt/', meaning: 'Con voi', emoji: '🐘', hex: '#718096' },
-    { num: 27, name: 'Rhinoceros', ipa: '/raɪˈnɒsərəs/', meaning: 'Tê giác', emoji: '🦏', hex: '#A0AEC0' },
-    { num: 28, name: 'Hippopotamus', ipa: '/ˌhɪpəˈpɒtəməs/', meaning: 'Hà mã', emoji: '🦛', hex: '#718096' },
-    { num: 29, name: 'Crocodile', ipa: '/ˈkrɒkədaɪl/', meaning: 'Cá sấu', emoji: '🐊', hex: '#38A169' },
+    { num: 24, name: 'Zebra', ipa: '/ˈziː.brə/', meaning: 'Ngựa vằn', emoji: '🦓', hex: '#4A5568' },
+    { num: 25, name: 'Giraffe', ipa: '/dʒɪˈræf/', meaning: 'Hươu cao cổ', emoji: '🦒', hex: '#ECC94B' },
+    { num: 26, name: 'Elephant', ipa: '/ˈel.ə.fənt/', meaning: 'Con voi', emoji: '🐘', hex: '#718096' },
+    { num: 27, name: 'Rhinoceros', ipa: '/raɪˈnɑː.sɚ.əs/', meaning: 'Tê giác', emoji: '🦏', hex: '#A0AEC0' },
+    { num: 28, name: 'Hippopotamus', ipa: '/ˌhɪp.əˈpɑː.t̬ə.məs/', meaning: 'Hà mã', emoji: '🦛', hex: '#718096' },
+    { num: 29, name: 'Crocodile', ipa: '/ˈkrɑː.kə.daɪl/', meaning: 'Cá sấu', emoji: '🐊', hex: '#38A169' },
     { num: 30, name: 'Snake', ipa: '/sneɪk/', meaning: 'Con rắn', emoji: '🐍', hex: '#48BB78' },
-    { num: 31, name: 'Turtle', ipa: '/ˈtɜːrtl/', meaning: 'Con rùa', emoji: '🐢', hex: '#38A169' },
+    { num: 31, name: 'Turtle', ipa: '/ˈtɝː.t̬əl/', meaning: 'Con rùa', emoji: '🐢', hex: '#38A169' },
     { num: 32, name: 'Whale', ipa: '/weɪl/', meaning: 'Cá voi', emoji: '🐳', hex: '#3182CE' },
-    { num: 33, name: 'Dolphin', ipa: '/ˈdɒlfɪn/', meaning: 'Cá heo', emoji: '🐬', hex: '#4A90E2' },
+    { num: 33, name: 'Dolphin', ipa: '/ˈdɑːl.fɪn/', meaning: 'Cá heo', emoji: '🐬', hex: '#4A90E2' },
     { num: 34, name: 'Seal', ipa: '/siːl/', meaning: 'Hải cẩu', emoji: '🦭', hex: '#A0AEC0' },
     { num: 35, name: 'Fish', ipa: '/fɪʃ/', meaning: 'Con cá', emoji: '🐟', hex: '#4299E1' },
     { num: 36, name: 'Shark', ipa: '/ʃɑːrk/', meaning: 'Cá mập', emoji: '🦈', hex: '#718096' },
-    { num: 37, name: 'Octopus', ipa: '/ˈɒktəpəs/', meaning: 'Bạch tuộc', emoji: '🐙', hex: '#9F7AEA' },
+    { num: 37, name: 'Octopus', ipa: '/ˈɑːk.tə.pəs/', meaning: 'Bạch tuộc', emoji: '🐙', hex: '#9F7AEA' },
     { num: 38, name: 'Crab', ipa: '/kræb/', meaning: 'Con cua', emoji: '🦀', hex: '#E53E3E' },
-    { num: 39, name: 'Butterfly', ipa: '/ˈbʌtərflaɪ/', meaning: 'Con bướm', emoji: '🦋', hex: '#4A90E2' },
+    { num: 39, name: 'Butterfly', ipa: '/ˈbʌt̬.ɚ.flaɪ/', meaning: 'Con bướm', emoji: '🦋', hex: '#4A90E2' },
     { num: 40, name: 'Bee', ipa: '/biː/', meaning: 'Con ong', emoji: '🐝', hex: '#ECC94B' },
     { num: 41, name: 'Ant', ipa: '/ænt/', meaning: 'Con kiến', emoji: '🐜', hex: '#E53E3E' },
-    { num: 42, name: 'Spider', ipa: '/ˈspaɪdər/', meaning: 'Con nhện', emoji: '🕷️', hex: '#4A5568' },
-    { num: 43, name: 'Kangaroo', ipa: '/ˌkæŋɡəˈruː/', meaning: 'Chuột túi', emoji: '🦘', hex: '#DD6B20' },
-    { num: 44, name: 'Camel', ipa: '/ˈkæməl/', meaning: 'Lạc đà', emoji: '🐫', hex: '#D69E2E' },
+    { num: 42, name: 'Spider', ipa: '/ˈspaɪ.dɚ/', meaning: 'Con nhện', emoji: '🕷️', hex: '#4A5568' },
+    { num: 43, name: 'Kangaroo', ipa: '/ˌkæŋ.ɡəˈruː/', meaning: 'Chuột túi', emoji: '🦘', hex: '#DD6B20' },
+    { num: 44, name: 'Camel', ipa: '/ˈkæm.əl/', meaning: 'Lạc đà', emoji: '🐫', hex: '#D69E2E' },
     { num: 45, name: 'Sheep', ipa: '/ʃiːp/', meaning: 'Con cừu', emoji: '🐑', hex: '#CBD5E0' },
     { num: 46, name: 'Goat', ipa: '/ɡoʊt/', meaning: 'Con dê', emoji: '🐐', hex: '#A0AEC0' },
-    { num: 47, name: 'Deer', ipa: '/dɪər/', meaning: 'Hươu / Nai', emoji: '🦌', hex: '#D69E2E' },
-    { num: 48, name: 'Squirrel', ipa: '/ˈskwɪrəl/', meaning: 'Con sóc', emoji: '🐿️', hex: '#DD6B20' },
+    { num: 47, name: 'Deer', ipa: '/dɪr/', meaning: 'Hươu / Nai', emoji: '🦌', hex: '#D69E2E' },
+    { num: 48, name: 'Squirrel', ipa: '/ˈskwɝː.əl/', meaning: 'Con sóc', emoji: '🐿️', hex: '#DD6B20' },
     { num: 49, name: 'Snail', ipa: '/sneɪl/', meaning: 'Ốc sên', emoji: '🐌', hex: '#A0AEC0' },
-    { num: 50, name: 'Koala', ipa: '/koʊˈɑːlə/', meaning: 'Gấu Koala', emoji: '🐨', hex: '#718096' }
+    { num: 50, name: 'Koala', ipa: '/koʊˈɑː.lə/', meaning: 'Gấu Koala', emoji: '🐨', hex: '#718096' }
   ];
 
   /* DỮ LIỆU CÂU ĐẾM GAME 4 (Bao gồm số nhiều bất quy tắc) */
@@ -123,17 +123,69 @@ const defaultSpeechRate = 0.6;
 
   let flashcardDeck = [];
   let finishCurrentSpeech = null;
+  let activeWordAudio = null;
+  let speechSerial = 0;
+  let usVoice = null;
+  const wordAudioFiles = new Map(animalsList.map(item => [item.name.toLowerCase(),
+    `./assets/audio/animals/${item.name.toLowerCase()}.mp3?v=us-ljspeech-2`]));
 
-  function stopSpeech() {
-    if (finishCurrentSpeech) finishCurrentSpeech();
+  function refreshUSVoice() {
     try {
-      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
-    } catch (error) { /* Không để lỗi âm thanh làm gián đoạn bài học. */ }
+      usVoice = window.speechSynthesis.getVoices().find(voice =>
+        voice.lang.replace('_', '-').toLowerCase() === 'en-us') || null;
+    } catch { usVoice = null; }
+  }
+  if ('speechSynthesis' in window) {
+    refreshUSVoice();
+    window.speechSynthesis.addEventListener?.('voiceschanged', refreshUSVoice);
   }
 
-  function speak(text) {
-    stopSpeech();
-    if (!('speechSynthesis' in window)) return Promise.resolve();
+  function stopSpeech() {
+    speechSerial++;
+    if (finishCurrentSpeech) finishCurrentSpeech();
+    if (activeWordAudio) {
+      try { activeWordAudio.pause(); activeWordAudio.currentTime = 0; }
+      catch { /* Audio may still be loading. */ }
+      activeWordAudio = null;
+    }
+    try {
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    } catch { /* Audio is optional. */ }
+  }
+
+  function playWordAudio(source) {
+    return new Promise(resolve => {
+      let audio;
+      try { audio = new Audio(source); }
+      catch { resolve(false); return; }
+      activeWordAudio = audio;
+      audio.preload = 'auto';
+      let finished = false;
+      const timeout = setTimeout(() => finish(false), 8000);
+      function finish(result) {
+        if (finished) return;
+        finished = true;
+        clearTimeout(timeout);
+        audio.onended = audio.onerror = null;
+        if (result !== true) {
+          try { audio.pause(); audio.currentTime = 0; } catch { /* Audio may still be loading. */ }
+        }
+        if (activeWordAudio === audio) activeWordAudio = null;
+        if (finishCurrentSpeech === cancel) finishCurrentSpeech = null;
+        resolve(result);
+      }
+      const cancel = () => finish(null);
+      finishCurrentSpeech = cancel;
+      audio.onended = () => finish(true);
+      audio.onerror = () => finish(false);
+      try { audio.play().catch(() => finish(false)); }
+      catch { finish(false); }
+    });
+  }
+
+  function speakWithDevice(text, serial) {
+    if (serial !== speechSerial || !('speechSynthesis' in window) ||
+        typeof SpeechSynthesisUtterance === 'undefined') return Promise.resolve();
     return new Promise(resolve => {
       let finished = false;
       const timeout = setTimeout(finish, 8000);
@@ -149,14 +201,25 @@ const defaultSpeechRate = 0.6;
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = 'en-US';
         utterance.rate = defaultSpeechRate;
-        const voices = window.speechSynthesis.getVoices();
-        const bestVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Samantha')));
-        if (bestVoice) utterance.voice = bestVoice;
-        utterance.onend = finish;
-        utterance.onerror = finish;
+        refreshUSVoice();
+        if (usVoice) utterance.voice = usVoice;
+        utterance.onend = utterance.onerror = finish;
         window.speechSynthesis.speak(utterance);
-      } catch (error) { finish(); /* Phát âm không làm gián đoạn thao tác học. */ }
+      } catch { finish(); }
     });
+  }
+
+  async function speak(text) {
+    stopSpeech();
+    const serial = speechSerial;
+    const source = wordAudioFiles.get(String(text).trim().toLowerCase());
+    if (source) {
+      const result = await playWordAudio(source);
+      if (result === true || result === null || serial !== speechSerial) return;
+      const note = document.getElementById('animals-audio-note');
+      if (note) note.textContent = 'Không tải được âm mẫu. Trang đang dùng giọng đọc tiếng Anh của thiết bị.';
+    }
+    return speakWithDevice(text, serial);
   }
 
   function renderVocabGrid() {

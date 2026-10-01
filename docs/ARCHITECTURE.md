@@ -8,7 +8,7 @@ Website dùng HTML, CSS và JavaScript tĩnh; không cần bước build. Giữ 
 - grade/lop2/assets/css/topics/ và assets/js/topics/: giao diện và mã riêng của các bài cũ.
 - grade/lop2/assets/data/: dữ liệu tách riêng của Body Parts và sáu chủ đề mới.
 - grade/lop2/assets/js/: bộ chọn từ, điều hướng, Game 4, theo dõi tiến độ dùng chung.
-- grade/lop4/: demo hai Unit Lớp 4, dữ liệu, giao diện và tiến độ ôn tập riêng.
+- grade/lop4/: 20 Unit Lớp 4, dữ liệu, giao diện và tiến độ ôn tập riêng.
 - shared/: footer dùng trên nhiều trang.
 - templates/: mẫu để sao chép vào vị trí bài học.
 - scripts/ và grade/lop2/tests/: kiểm tra liên kết, footer, dữ liệu và hành vi game.
@@ -29,4 +29,4 @@ Chạy các lệnh trong README.md sau mỗi lần đổi đường dẫn hoặc
 
 ## Demo Lớp 4
 
-Các trang `grade/lop4/unit1.html` và `unit2.html` dùng chung bộ lật thẻ, nghe chọn tranh và chính tả trong `grade/lop2/assets/js/learning-core.js`; tùy chọn lớp 4 bật thẻ tự nhớ từ và nút hiện đáp án sau 10 giây. `grade/lop4/assets/js/lesson.js` xử lý câu luyện; `progress.js` lưu mức luyện từng từ và lịch ôn trên thiết bị. `lop4.html` gom từ cần ôn của hai Unit.
+Các trang `grade/lop4/unit1.html` đến `unit20.html` dùng chung bộ lật thẻ, nghe chọn tranh và chính tả trong `grade/lop2/assets/js/learning-core.js`; tùy chọn lớp 4 bật thẻ tự nhớ từ và nút hiện đáp án sau 10 giây. `grade/lop4/assets/js/lesson.js` xử lý câu luyện; `progress.js` lưu mức luyện từng từ và lịch ôn trên thiết bị. `lop4.html` gom từ cần ôn của cả 20 Unit.

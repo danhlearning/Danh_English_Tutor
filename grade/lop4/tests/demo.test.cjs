@@ -6,28 +6,36 @@ const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
 const context = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'assets/js/units-data.js'), 'utf8'), context);
+vm.runInNewContext(fs.readFileSync(path.join(root, 'assets/js/extended-units-data.js'), 'utf8'), context);
 const units = context.window.DanhGrade4Units;
 const { createStore, DAY } = require('../assets/js/progress.js');
 
-test('Bốn Unit có trang, từ, hình và câu luyện nhất quán', () => {
-  assert.deepEqual(Object.keys(units), ['unit1', 'unit2', 'unit3', 'unit4']);
+test('Đủ 20 Unit có trang, từ, hình và câu luyện nhất quán', () => {
+  assert.deepEqual(Object.keys(units), Array.from({ length: 20 }, (_, index) => `unit${index + 1}`));
+  const catalog = fs.readFileSync(path.join(root, 'lop4.html'), 'utf8');
+  assert.match(catalog, /id="unit-list"/);
+  assert.match(catalog, /extended-units-data\.js/);
   for (const [key, unit] of Object.entries(units)) {
     const html = fs.readFileSync(path.join(root, `${key}.html`), 'utf8');
     assert.match(html, new RegExp(`data-unit="${key}"`));
-    assert.equal(unit.words.length, 6);
-    assert.equal(new Set(unit.words.map(word => word.id)).size, 6);
+    if (unit.number >= 5) assert.match(html, /extended-units-data\.js/);
+    const expectedWordCount = unit.number === 4 ? 18 : 6;
+    assert.equal(unit.words.length, expectedWordCount);
+    assert.equal(new Set(unit.words.map(word => word.id)).size, expectedWordCount);
     assert.ok(unit.patterns.length >= 2);
     for (const word of unit.words) {
       assert.match(word.ipa, /^\/.+\/$/);
       assert.match(word.color, /^#[0-9a-f]{6}$/i);
       assert.match(word.visual, /^<svg\b[^>]*viewBox="0 0 120 120"/);
       assert.ok(!/<script|foreignObject|(?:href|src)=["']https?:/i.test(word.visual));
-      if (unit.number >= 3) {
+      if (unit.number === 3 || (unit.number === 4 && word.group === 'party')) {
         const match = word.visual.match(/href="(\.\/assets\/images\/unit[34]\/[^".]+\.webp)"/);
         assert.ok(match, `${word.name} cần ảnh WebP nội bộ`);
         assert.ok(fs.statSync(path.join(root, match[1])).size > 1000);
       }
       assert.equal(word.context.split('____').length, 2);
+      assert.ok(word.context.trim().endsWith('.'));
+      assert.ok(word.meaning && word.name);
     }
   }
 });

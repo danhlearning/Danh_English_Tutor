@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../lop2/assets/css/learning-shared.css">
-  <link rel="stylesheet" href="./assets/css/grade4.css">
+  <link rel="stylesheet" href="./assets/css/grade4.css?v=unit4-full-1">
 </head>
 <body data-unit="unit4">
   <header class="g4-hero">
@@ -21,15 +21,63 @@
   <nav class="g4-tabs" aria-label="Các hoạt động học">
     <button type="button" class="nav-btn active" data-tab="vocab">Từ vựng</button>
     <button type="button" class="nav-btn" data-tab="sentences">Mẫu câu</button>
+    <button type="button" class="nav-btn" data-tab="lesson3">Bài 3 · Đọc & viết</button>
     <button type="button" class="nav-btn" data-tab="game-flip">Lật thẻ</button>
     <button type="button" class="nav-btn" data-tab="game-mcq">Nghe chọn tranh</button>
     <button type="button" class="nav-btn" data-tab="game-spelling">Gõ từ</button>
     <button type="button" class="nav-btn" data-tab="game-context">Dùng trong câu</button>
   </nav>
   <main class="g4-container">
-    <div class="g4-intro"><p>Mỗi lượt có 6 từ. Em có thể chọn bộ từ trong các trò chơi.</p><span class="g4-progress" id="unit-progress"></span></div>
-    <section id="vocab" class="tab-content active" aria-label="Từ vựng"><h2>Từ vựng của Unit</h2><p class="g4-note">Xem hình, đọc nghĩa và nghe cách phát âm. Dấu ✓ cho biết em đã trả lời đúng ngay lần đầu ở từng kiểu luyện.</p><div class="g4-word-grid" id="vocab-grid-container"></div><p id="speech-note" role="status"></p></section>
+    <div class="g4-intro"><p>Lesson 1: 12 tháng · Lesson 2: món ăn, thức uống · Lesson 3: phát âm, đọc, viết và thiệp mời. Em có thể chọn bộ từ trong các trò chơi.</p><span class="g4-progress" id="unit-progress"></span></div>
+    <section id="vocab" class="tab-content active" aria-label="Từ vựng"><h2>18 từ vựng của Unit 4</h2><p class="g4-note">Xem hình, đọc nghĩa và nghe cách phát âm. Dấu ✓ cho biết em đã trả lời đúng ngay lần đầu ở từng kiểu luyện.</p><div class="g4-word-grid" id="vocab-grid-container"></div><p id="speech-note" role="status"></p></section>
     <section id="sentences" class="tab-content" aria-label="Mẫu câu"><h2>Mẫu câu</h2><p class="g4-note">Nghe, đọc theo và thử thay từ hoặc hoạt động em biết.</p><div class="g4-patterns" id="patterns"></div></section>
+    <section id="lesson3" class="tab-content" aria-label="Bài 3: phát âm, đọc, viết và thiệp mời">
+      <h2>Lesson 3 · Phát âm, đọc và viết</h2>
+      <p class="g4-note">Luyện lại nội dung của Unit 4 bằng bài đọc và thiệp mời do website biên soạn.</p>
+      <div class="g4-lesson3-grid">
+        <article class="g4-activity">
+          <h3>🔊 Âm đầu j /dʒ/ và w /w/</h3>
+          <p>Nghe rồi đọc theo. Chú ý âm đầu của từng nhóm từ.</p>
+          <div class="g4-sound-pair"><strong>j /dʒ/</strong><span>jam · juice · January · June</span><button type="button" class="g4-sound" data-unit4-say="jam, juice, January, June">🔊 Nghe âm j</button></div>
+          <div class="g4-sound-pair"><strong>w /w/</strong><span>water · want · when · we</span><button type="button" class="g4-sound" data-unit4-say="water, want, when, we">🔊 Nghe âm w</button></div>
+          <p id="unit4-pronunciation-note" role="status" class="g4-feedback"></p>
+        </article>
+        <article class="g4-activity">
+          <h3>📖 Đọc hiểu: Sinh nhật của Alex</h3>
+          <p class="g4-reading">Hello! My name is Alex. My birthday is in October. At my party, I want some chips and grapes. I want some lemonade, too. Come and celebrate with me!</p>
+          <div class="g4-reading-questions">
+            <label>1. Alex sinh nhật vào tháng nào?
+              <select data-unit4-answer="October"><option value="">Chọn tháng</option><option>March</option><option>October</option><option>December</option></select>
+            </label>
+            <label>2. Alex muốn ăn món nào?
+              <select data-unit4-answer="grapes"><option value="">Chọn món ăn</option><option>jam</option><option>grapes</option><option>water</option></select>
+            </label>
+            <label>3. Alex muốn uống gì?
+              <select data-unit4-answer="lemonade"><option value="">Chọn thức uống</option><option>juice</option><option>lemonade</option><option>chips</option></select>
+            </label>
+          </div>
+          <button type="button" id="unit4-reading-check" class="g4-primary">Kiểm tra bài đọc</button>
+          <p id="unit4-reading-feedback" role="status" class="g4-feedback"></p>
+        </article>
+        <article class="g4-activity g4-activity-wide">
+          <h3>✉️ Viết thiệp mời sinh nhật</h3>
+          <p>Điền thông tin để tạo thiệp bằng tiếng Anh. Em có thể đọc lại và sửa trước khi in.</p>
+          <form id="unit4-invitation-form" class="g4-invitation-form">
+            <label>Tên em <input name="host" maxlength="40" required placeholder="Ví dụ: Lan"></label>
+            <label>Mời bạn <input name="guest" maxlength="40" required placeholder="Ví dụ: Mai"></label>
+            <label>Tháng sinh nhật <select name="month" required><option value="">Chọn tháng</option></select></label>
+            <label>Món ăn <select name="food" required><option value="">Chọn món ăn</option><option>jam</option><option>chips</option><option>grapes</option></select></label>
+            <label>Thức uống <select name="drink" required><option value="">Chọn thức uống</option><option>water</option><option>lemonade</option><option>juice</option></select></label>
+            <label>Ngày tổ chức (nếu có) <input name="date" type="date"></label>
+            <label>Giờ (nếu có) <input name="time" type="time"></label>
+            <label>Địa điểm (nếu có) <input name="place" maxlength="80" placeholder="Ví dụ: my house"></label>
+            <button class="g4-primary" type="submit">Tạo thiệp mời</button>
+          </form>
+          <div id="unit4-invitation-preview" class="g4-invitation-preview" aria-live="polite" hidden></div>
+          <button type="button" id="unit4-invitation-print" class="g4-sound" hidden>🖨️ In thiệp</button>
+        </article>
+      </div>
+    </section>
     <section id="game-flip" class="tab-content" aria-label="Lật thẻ"></section>
     <section id="game-mcq" class="tab-content" aria-label="Nghe chọn tranh"></section>
     <section id="game-spelling" class="tab-content" aria-label="Gõ từ"></section>
@@ -38,9 +86,10 @@
   </main>
   <contact-danh></contact-danh>
   <script src="../../shared/contact-footer.js"></script>
-  <script src="./assets/js/units-data.js"></script>
+  <script src="./assets/js/units-data.js?v=unit4-full-1"></script>
   <script src="./assets/js/progress.js"></script>
   <script src="../lop2/assets/js/learning-core.js"></script>
-  <script src="./assets/js/lesson.js"></script>
+  <script src="./assets/js/lesson.js?v=unit4-full-1"></script>
+  <script src="./assets/js/unit4-extra.js?v=unit4-full-1"></script>
 </body>
 </html>

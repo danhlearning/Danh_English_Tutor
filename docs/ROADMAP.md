@@ -32,7 +32,8 @@ Cập nhật: 28/09/2026. Các URL HTML đang dùng được giữ trong suốt 
 - [x] Dựng demo Unit 1–2 Lớp 4 để thử phương pháp học từ và ôn cách quãng.
 - [ ] Đối chiếu chi tiết từng Lesson Lớp 4 trước khi mở rộng toàn bộ Unit.
 - [x] Mở rộng Unit 3–4 Lớp 4 với 12 ảnh minh họa phong cách ảnh chụp, câu luyện và phần ôn chung.
-- [ ] Tiếp tục đối chiếu Lesson và mở rộng Unit 5–20 Lớp 4.
+- [x] Mở rộng bài luyện theo chủ đề Unit 5–20 Lớp 4, mỗi Unit có 6 từ, mẫu câu, bốn trò và ôn chung.
+- [ ] Đối chiếu từng Lesson lớp 4 với sách và thử âm thanh trên thiết bị học sinh.
 
 ## Điều kiện hoàn thành mỗi đợt
 

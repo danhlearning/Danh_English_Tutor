@@ -79,3 +79,37 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline:3px solid #
 @media(max-width:760px) { .g4-word-grid,.g4-patterns,.g4-units { grid-template-columns:1fr; } .g4-word-card { grid-template-columns:clamp(80px,18vw,108px) minmax(0,1fr); } .g4-word-card .g4-sound { grid-column:2; justify-self:start; } .tab-content { padding:18px; } }
 @media(max-width:420px) { .g4-word-card { gap:10px; } .g4-word-card h3 { font-size:1rem; } .g4-hero { padding:20px 16px 30px; } .g4-tabs { padding:8px 12px; } .g4-container { width:calc(100% - 20px); } }
 @media(prefers-reduced-motion:reduce) { .g4-unit-card { transition:none; } }
+
+/* Unit 4: calendar vocabulary, reading and invitation project. */
+.g4-word-group { grid-column:1/-1; margin:12px 0 0; padding:10px 14px; border-radius:12px; background:#e8f5f3; color:#176278; font-size:1.05rem; }
+.g4-lesson3-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.g4-activity { padding:20px; border:1px solid var(--border); border-radius:16px; background:#fffdfa; }
+.g4-activity h3 { margin:0 0 8px; color:#175b75; }
+.g4-activity > p { margin:0 0 15px; color:var(--muted); }
+.g4-activity-wide { grid-column:1/-1; }
+.g4-sound-pair { display:flex; align-items:center; flex-wrap:wrap; gap:9px; padding:11px 0; border-top:1px solid var(--border); }
+.g4-sound-pair strong { min-width:66px; color:#9b4f3d; }
+.g4-sound-pair span { flex:1 1 170px; }
+.g4-reading { padding:16px; border-left:4px solid #e8ae5a; border-radius:8px; background:#fff3dc; color:var(--ink) !important; line-height:1.7; }
+.g4-reading-questions { display:grid; gap:12px; margin:14px 0; }
+.g4-reading-questions label,.g4-invitation-form label { display:grid; gap:5px; font-weight:800; }
+.g4-reading-questions select,.g4-invitation-form select,.g4-invitation-form input { width:100%; min-height:44px; padding:8px 10px; border:1px solid #a8c3cf; border-radius:9px; background:#fff; color:var(--ink); }
+.g4-reading-questions select[aria-invalid="true"] { border:2px solid #b34f4f; background:#fff1ee; }
+.g4-invitation-form { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.g4-invitation-form .g4-primary { justify-self:start; align-self:end; }
+.g4-invitation-preview { max-width:680px; margin:24px auto 12px; padding:28px; border:5px double #e8b45c; border-radius:18px; background:#fff9ed; box-shadow:0 8px 24px #18344a14; }
+.g4-invitation-preview h4 { margin:0 0 18px; font-size:1.8rem; color:#a94b57; text-align:center; }
+.g4-invitation-preview p { margin:12px 0; font-size:1.08rem; }
+.g4-invitation-signature { font-weight:800; color:#176278; text-align:right; }
+#unit4-invitation-print { display:block; margin:0 auto; }
+@media(max-width:760px) { .g4-lesson3-grid,.g4-invitation-form { grid-template-columns:1fr; } .g4-activity-wide { grid-column:auto; } }
+@media print {
+  body:has(#unit4-invitation-preview:not([hidden])) > :not(main) { display:none !important; }
+  body:has(#unit4-invitation-preview:not([hidden])) main > :not(#lesson3) { display:none !important; }
+  body:has(#unit4-invitation-preview:not([hidden])) #lesson3 { display:block; padding:0; border:0; box-shadow:none; }
+  body:has(#unit4-invitation-preview:not([hidden])) #lesson3 > :not(.g4-lesson3-grid),
+  body:has(#unit4-invitation-preview:not([hidden])) .g4-lesson3-grid > :not(.g4-activity-wide),
+  body:has(#unit4-invitation-preview:not([hidden])) .g4-activity-wide > :not(#unit4-invitation-preview) { display:none !important; }
+  body:has(#unit4-invitation-preview:not([hidden])) .g4-activity-wide { padding:0; border:0; }
+  body:has(#unit4-invitation-preview:not([hidden])) .g4-invitation-preview { margin:0; box-shadow:none; }
+}

@@ -25,7 +25,22 @@
     bed: svg(clock('9:00', true) + '<rect x="16" y="69" width="86" height="25" rx="5" fill="#8db1d2" stroke="#405f80" stroke-width="4"/><rect x="22" y="63" width="27" height="15" rx="5" fill="#fff"/><path d="M17 95v9m85-9v9" stroke="#405f80" stroke-width="5"/>' + star(72,48,'#f7d878',.35))
   };
   const photo = (unit, name) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" aria-hidden="true"><image href="./assets/images/${unit}/${name}.webp" width="120" height="120" preserveAspectRatio="xMidYMid slice"/></svg>`;
-  const make = (id, name, meaning, ipa, color, visual, context) => ({ id, name, meaning, ipa, color, visual, context });
+  const monthVisual = number => svg(`<rect x="20" y="17" width="80" height="88" rx="11" fill="#fff" stroke="#7aa5b5" stroke-width="3"/><path d="M20 30q0-13 11-13h58q11 0 11 13v16H20Z" fill="#ed8a78"/><path d="M39 11v14m42-14v14" stroke="#315b70" stroke-width="6" stroke-linecap="round"/><text x="60" y="84" text-anchor="middle" font-family="Arial,sans-serif" font-size="39" font-weight="bold" fill="#225d74">${String(number).padStart(2, '0')}</text>`);
+  const months = [
+    ['January', 'tháng Một', '/ˈdʒæn.ju.ə.ri/', 'first'],
+    ['February', 'tháng Hai', '/ˈfeb.ru.ə.ri/', 'second'],
+    ['March', 'tháng Ba', '/mɑːtʃ/', 'third'],
+    ['April', 'tháng Tư', '/ˈeɪ.prəl/', 'fourth'],
+    ['May', 'tháng Năm', '/meɪ/', 'fifth'],
+    ['June', 'tháng Sáu', '/dʒuːn/', 'sixth'],
+    ['July', 'tháng Bảy', '/dʒuˈlaɪ/', 'seventh'],
+    ['August', 'tháng Tám', '/ˈɔː.ɡəst/', 'eighth'],
+    ['September', 'tháng Chín', '/sepˈtem.bə/', 'ninth'],
+    ['October', 'tháng Mười', '/ɒkˈtəʊ.bə/', 'tenth'],
+    ['November', 'tháng Mười Một', '/nəʊˈvem.bə/', 'eleventh'],
+    ['December', 'tháng Mười Hai', '/dɪˈsem.bə/', 'twelfth']
+  ];
+  const make = (id, name, meaning, ipa, color, visual, context, group) => ({ id, name, meaning, ipa, color, visual, context, group });
   window.DanhGrade4Units = {
     unit1: {
       id: 'unit1', number: 1, title: 'My friends', subtitle: 'Bạn bè của em',
@@ -77,19 +92,22 @@
     },
     unit4: {
       id: 'unit4', number: 4, title: 'My birthday party', subtitle: 'Bữa tiệc sinh nhật của em',
-      focus: 'Hỏi tháng sinh nhật và gọi tên món ăn, thức uống trong bữa tiệc.',
+      focus: 'Học 12 tháng, hỏi tháng sinh nhật, chọn món ăn thức uống và tự làm thiệp mời.',
       patterns: [
-        { question: 'When is your birthday?', answer: 'It is in March.', note: 'Hỏi tháng sinh nhật.' },
+        { question: "When's your birthday?", answer: "It's in March.", note: 'Lesson 1 · Hỏi tháng sinh nhật: in + tên tháng.' },
         { question: 'What do you want to eat?', answer: 'I want some chips and grapes.', note: 'Hỏi món ăn mong muốn.' },
         { question: 'What do you want to drink?', answer: 'I want some lemonade.', note: 'Hỏi thức uống mong muốn.' }
       ],
       words: [
-        make('jam','jam','mứt','/dʒæm/','#bb4d58',photo('unit4','jam'),'I want some ____ on my bread.'),
-        make('chips','chips','khoai tây chiên','/tʃɪps/','#b98138',photo('unit4','chips'),'I want some ____ at the party.'),
-        make('grapes','grapes','nho','/ɡreɪps/','#79588c',photo('unit4','grapes'),'There are purple ____ on the table.'),
-        make('water','water','nước lọc','/ˈwɔː.tə/','#42829e',photo('unit4','water'),'I drink ____ when I am thirsty.'),
-        make('lemonade','lemonade','nước chanh','/ˌlem.əˈneɪd/','#b89b39',photo('unit4','lemonade'),'I want some ____ with lemon slices.'),
-        make('juice','juice','nước ép','/dʒuːs/','#bd7337',photo('unit4','juice'),'I would like some orange ____.')
+        ...months.map(([name, meaning, ipa, ordinal], index) =>
+          make(`month-${index + 1}`, name, meaning, ipa, '#438e9b', monthVisual(index + 1),
+            `The ${ordinal} month of the year is ____.`, 'months')),
+        make('jam','jam','mứt','/dʒæm/','#bb4d58',photo('unit4','jam'),'I want some ____ on my bread.','party'),
+        make('chips','chips','khoai tây chiên','/tʃɪps/','#b98138',photo('unit4','chips'),'I want some ____ at the party.','party'),
+        make('grapes','grapes','nho','/ɡreɪps/','#79588c',photo('unit4','grapes'),'There are purple ____ on the table.','party'),
+        make('water','water','nước lọc','/ˈwɔː.tə/','#42829e',photo('unit4','water'),'I drink ____ when I am thirsty.','party'),
+        make('lemonade','lemonade','nước chanh','/ˌlem.əˈneɪd/','#b89b39',photo('unit4','lemonade'),'I want some ____ with lemon slices.','party'),
+        make('juice','juice','nước ép','/dʒuːs/','#bd7337',photo('unit4','juice'),'I would like some orange ____.','party')
       ]
     }
   };

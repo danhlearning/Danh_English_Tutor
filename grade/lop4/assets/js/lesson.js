@@ -1,4 +1,4 @@
-/* Grade 4 demo page: original Unit prompts plus the shared flashcard/game engine. */
+/* Grade 4 Unit page: original practice prompts plus the shared game engine. */
 (() => {
   'use strict';
   const unit = window.DanhGrade4Units?.[document.body.dataset.unit];
@@ -9,6 +9,20 @@
     catch { return { getItem: () => null, setItem: () => { throw Error('Storage blocked'); } }; }
   })();
   const store = window.DanhGrade4Progress.createStore(storage);
+  if (unit.id === 'unit4') {
+    try {
+      const selectionKey = 'danh.learning.g4unit4.v1';
+      const saved = JSON.parse(storage.getItem(selectionKey) || 'null');
+      const oldWords = ['jam', 'chips', 'grapes', 'water', 'lemonade', 'juice'];
+      if (saved?.version === 1 && Array.isArray(saved.selected) &&
+          saved.selected.length === oldWords.length && oldWords.every(id => saved.selected.includes(id))) {
+        saved.selected = unit.words.map(word => word.id);
+        saved.rounds = {};
+        saved.cards = null;
+        storage.setItem(selectionKey, JSON.stringify(saved));
+      }
+    } catch { /* Tiến độ cũ vẫn có thể học tiếp nếu bộ nhớ bị chặn. */ }
+  }
   const key = word => `${unit.id}:${word.id}`;
   const el = id => document.getElementById(id);
   let selectedIds = unit.words.map(word => word.id);
@@ -62,7 +76,14 @@
   function renderVocab() {
     const grid = el('vocab-grid-container');
     grid.replaceChildren();
+    let currentGroup = null;
     for (const word of unit.words) {
+      if (unit.id === 'unit4' && word.group !== currentGroup) {
+        currentGroup = word.group;
+        const heading = document.createElement('h3'); heading.className = 'g4-word-group';
+        heading.textContent = currentGroup === 'months' ? 'Lesson 1 · 12 tháng trong năm' : 'Lesson 2 · Đồ ăn và thức uống';
+        grid.append(heading);
+      }
       const card = document.createElement('article'); card.className = 'g4-word-card';
       card.append(visual(word));
       const body = document.createElement('div');
