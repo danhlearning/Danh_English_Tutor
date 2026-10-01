@@ -30,3 +30,7 @@ Chạy các lệnh trong README.md sau mỗi lần đổi đường dẫn hoặc
 ## Demo Lớp 4
 
 Các trang `grade/lop4/unit1.html` đến `unit20.html` dùng chung bộ lật thẻ, nghe chọn tranh và chính tả trong `grade/lop2/assets/js/learning-core.js`; tùy chọn lớp 4 bật thẻ tự nhớ từ và nút hiện đáp án sau 10 giây. `grade/lop4/assets/js/lesson.js` xử lý câu luyện; `progress.js` lưu mức luyện từng từ và lịch ôn trên thiết bị. `lop4.html` gom từ cần ôn của cả 20 Unit.
+
+## Lớp 6 và Ngữ pháp
+
+`grade/lop6/lop6.html` là danh mục; `unit1.html` đến `unit12.html` dùng dữ liệu từ `assets/js/units-data.js` và bộ hiển thị `lesson.js`. Trang `grammar.html` dùng `grammar-data.js`, `grammar-extra-data.js` và `grammar-expanded-data.js` (1.800 câu hỏi gốc và biến thể theo tình huống, gắn Unit/cấp độ/dạng bài) và `grammar.js` (chọn lượt 1–3 câu, chấm điểm, streak, hiệu ứng và lưu tiến độ). Giao diện Ngữ pháp nằm trong `assets/css/grammar.css`. Kết quả được lưu bằng localStorage trên thiết bị; điểm hỗ trợ trong một lượt không cộng vào điểm tích lũy.

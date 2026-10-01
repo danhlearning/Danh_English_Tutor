@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ngữ pháp lớp 6 · Luyện theo cấp độ · Danh English Tutor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/grade6.css">
+  <link rel="stylesheet" href="./assets/css/grammar.css">
+</head>
+<body>
+  <header class="gg-hero"><div class="g6-shell">
+    <a class="g6-back" href="./lop6.html">← Tiếng Anh lớp 6</a>
+    <div class="gg-hero-content"><div><p class="g6-kicker">GLOBAL SUCCESS · NGỮ PHÁP LỚP 6</p><h1>Mỗi lần một bước nhỏ</h1><p>Ôn ngữ pháp theo Unit và học kỳ. Mỗi lượt chỉ 1–3 câu, có gợi ý sau khi trả lời.</p></div><div class="gg-hero-badge" aria-hidden="true">✨<span>📚</span></div></div>
+  </div></header>
+  <main class="g6-shell gg-main">
+    <section class="gg-stats" aria-label="Tiến độ của em">
+      <div><span>🔥 Chuỗi đúng</span><strong id="streak">0</strong></div>
+      <div><span>🏆 Chuỗi tốt nhất</span><strong id="best-streak">0</strong></div>
+      <div><span>⭐ Điểm tích lũy</span><strong id="total-points">0</strong></div>
+      <div><span>✅ Đã đúng</span><strong id="correct-count">0</strong></div>
+    </section>
+    <section class="gg-setup" id="setup" aria-labelledby="setup-heading">
+      <div class="gg-heading"><div><p class="g6-overline">CHỌN BÀI LUYỆN</p><h2 id="setup-heading">Bắt đầu theo cách của em</h2><p>Chọn phạm vi, độ khó và số câu. Em có thể đổi sau mỗi lượt.</p></div><span class="gg-library" id="library-count">1.800 câu hỏi</span></div>
+      <div class="gg-fields">
+        <fieldset><legend>Phạm vi ôn tập</legend><div class="gg-segments" id="scope-options"><label><input type="radio" name="scope" value="unit" checked><span>Theo Unit</span></label><label><input type="radio" name="scope" value="term1"><span>Học kỳ 1</span></label><label><input type="radio" name="scope" value="term2"><span>Học kỳ 2</span></label></div><select id="unit-select" aria-label="Chọn Unit"></select></fieldset>
+        <fieldset><legend>Cấp độ</legend><div class="gg-segments" id="level-options"><label><input type="radio" name="level" value="easy" checked><span>🌱 Dễ</span></label><label><input type="radio" name="level" value="medium"><span>🌿 Vừa</span></label><label><input type="radio" name="level" value="hard"><span>🚀 Khó</span></label></div><p class="gg-field-note">Luyện từ dễ tới khó; em có thể chọn lại cấp độ bất cứ lúc nào.</p></fieldset>
+        <fieldset><legend>Số câu mỗi lượt</legend><div class="gg-segments"><label><input type="radio" name="length" value="1"><span>1 câu</span></label><label><input type="radio" name="length" value="2"><span>2 câu</span></label><label><input type="radio" name="length" value="3" checked><span>3 câu</span></label></div><p class="gg-field-note">Màn hình chỉ hiện một câu tại một thời điểm.</p></fieldset>
+        <fieldset><legend>Điểm hỗ trợ (chấp điểm)</legend><div class="gg-segments"><label><input type="radio" name="handicap" value="0" checked><span>0 điểm</span></label><label><input type="radio" name="handicap" value="10"><span>+10</span></label><label><input type="radio" name="handicap" value="20"><span>+20</span></label></div><p class="gg-field-note">Điểm hỗ trợ chỉ cộng vào kết quả lượt này; số câu đúng vẫn tính riêng.</p></fieldset>
+      </div>
+      <div class="gg-start-row"><p id="selection-summary" role="status"></p><button class="gg-primary" id="start" type="button">Bắt đầu 3 câu →</button></div>
+    </section>
+    <section class="gg-play" id="play" hidden aria-label="Câu hỏi hiện tại">
+      <div class="gg-play-top"><span id="round-position"></span><span id="round-scope"></span><button id="sound-toggle" type="button" aria-pressed="true" title="Bật hoặc tắt âm thanh">🔊 Âm thanh</button></div>
+      <div class="gg-progress-track" aria-hidden="true"><span id="round-progress"></span></div>
+      <div class="gg-question-card" id="question-card">
+        <div class="gg-question-meta"><span id="question-level"></span><span id="question-unit"></span><span id="question-type"></span></div>
+        <h2 id="question-prompt"></h2>
+        <div class="gg-hint" id="question-hint" hidden><strong>💡 Gợi ý sau 20 giây</strong><p id="question-vocab"></p><p id="question-rule"></p></div>
+        <p class="gg-help-status" id="help-status" role="status">Gợi ý hiện sau 20 giây. Xem đáp án sau hai lần sai hoặc 60 giây.</p>
+        <div id="answer-area"></div>
+        <p class="gg-feedback" id="feedback" role="status" aria-live="polite"></p>
+        <div class="gg-answer-actions"><button class="gg-secondary" id="reveal" type="button" hidden>Xem đáp án</button><button class="gg-primary" id="next" type="button" hidden>Câu tiếp theo →</button></div>
+      </div>
+      <div id="celebration" class="gg-celebration" aria-hidden="true"></div>
+    </section>
+    <section class="gg-result" id="result" hidden aria-labelledby="result-heading">
+      <div class="gg-result-icon" aria-hidden="true">🎉</div><p class="g6-overline">HOÀN THÀNH LƯỢT HỌC</p><h2 id="result-heading">Em đã làm xong!</h2><p id="result-message"></p>
+      <div class="gg-result-stats"><div><strong id="result-correct">0/3</strong><span>Câu đúng</span></div><div><strong id="result-earned">0</strong><span>Điểm trả lời</span></div><div><strong id="result-handicap">+0</strong><span>Điểm hỗ trợ</span></div><div><strong id="result-total">0</strong><span>Tổng lượt này</span></div></div>
+      <div class="gg-result-actions"><button class="gg-primary" id="again" type="button">Luyện tiếp 3 câu</button><button class="gg-secondary" id="change" type="button">Đổi bài luyện</button></div>
+    </section>
+    <section class="gg-info"><h2>Ôn theo học kỳ</h2><p>Học kỳ 1 gồm Unit 1–6; học kỳ 2 gồm Unit 7–12. Bộ câu hỏi này tập trung vào ngữ pháp với các dạng chọn đáp án, điền từ, xếp câu và sửa lỗi thường gặp trong phần ôn tập. Câu hỏi do website biên soạn, không phải đề thi chính thức.</p><a href="./lop6.html">Xem các Unit lớp 6 →</a></section>
+    <p class="g6-source">Chủ điểm đối chiếu với <a href="https://heid.vn/product/sach-giao-khoa-tieng-anh-lop-6-tap-1-global-success/">Tiếng Anh 6 Global Success tập 1</a> và <a href="https://heid.vn/bi-kip-soan-bai-giang-tieng-anh-global-success-lop-6/">cấu trúc Unit của HEID</a>. Câu hỏi và lời giải do website biên soạn.</p>
+  </main>
+  <contact-danh></contact-danh>
+  <script src="../../shared/contact-footer.js"></script>
+  <script src="./assets/js/units-data.js"></script>
+  <script src="./assets/js/grammar-data.js"></script>
+  <script src="./assets/js/grammar-extra-data.js"></script>
+  <script src="./assets/js/grammar-expanded-data.js"></script>
+  <script src="./assets/js/grammar.js"></script>
+</body>
+</html>
