@@ -1,6 +1,7 @@
 (() => {
   'use strict';
   const questions = window.DanhGrade6Grammar || [];
+  const ROUND_LENGTH = 10;
   const units = window.DanhGrade6Units || [];
   const $ = id => document.getElementById(id);
   const storageKey = 'danh-g6-grammar-v1';
@@ -20,8 +21,8 @@
   const chosen = name => document.querySelector(`input[name="${name}"]:checked`).value;
   const scopeName = value => value === 'term1' ? 'Ôn học kỳ 1 · Unit 1–6' : value === 'term2' ? 'Ôn học kỳ 2 · Unit 7–12' : `Unit ${$('unit-select').value}`;
   const levelName = value => ({ easy: 'Dễ', medium: 'Vừa', hard: 'Khó' })[value];
-  const typeName = value => ({ choice: 'Chọn đáp án', fill: 'Điền từ', order: 'Xếp câu', correct: 'Sửa lỗi' })[value];
-  const normal = value => String(value).toLocaleLowerCase('en').replace(/[’‘]/g, "'").replace(/[.!?]+$/g, '').replace(/\s+/g, ' ').trim();
+  const typeName = value => ({ choice: 'Chọn đáp án', fill: 'Điền từ', order: 'Xếp câu', correct: 'Sửa lỗi · viết cả câu', rewrite: 'Viết lại câu' })[value];
+  const normal = value => String(value).toLocaleLowerCase('en').replace(/[’‘]/g, "'").replace(/[,.!?]/g, '').replace(/\s+/g, ' ').trim();
   const isAnswer = (value, answer) => answer.split('|').some(item => normal(value) === normal(item));
   const randomise = items => {
     const output = [...items];
@@ -36,10 +37,10 @@
     return questions.filter(item => item.level === level && (scope === 'unit' ? item.unit === Number($('unit-select').value) : scope === 'term1' ? item.unit <= 6 : item.unit >= 7));
   };
   const updateSelection = () => {
-    const scope = chosen('scope'), length = chosen('length');
+    const scope = chosen('scope');
     $('unit-select').disabled = scope !== 'unit';
-    $('selection-summary').textContent = `${scopeName(scope)} · Cấp ${levelName(chosen('level'))} · ${length} câu · ${selectPool().length} câu trong thư viện`;
-    $('start').textContent = `Bắt đầu ${length} câu →`;
+    $('selection-summary').textContent = `${scopeName(scope)} · Cấp ${levelName(chosen('level'))} · ${ROUND_LENGTH} câu · ${selectPool().length} câu trong thư viện`;
+    $('start').textContent = `Bắt đầu ${ROUND_LENGTH} câu →`;
   };
   for (const unit of units) {
     const option = document.createElement('option'); option.value = unit.number; option.textContent = `Unit ${unit.number} · ${unit.title}`;
@@ -99,9 +100,12 @@
   };
   const setVisible = name => {
     for (const id of ['setup', 'play', 'result']) $(id).hidden = id !== name;
-    $(name).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.body.classList.remove('gg-is-setup', 'gg-is-playing', 'gg-is-result');
+    document.body.classList.add(name === 'play' ? 'gg-is-playing' : `gg-is-${name}`);
+    if (name !== 'play' || window.innerWidth > 760) $(name).scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
   const current = () => round.items[round.position];
+  const hintDelay = question => question.type === 'choice' || (question.type === 'fill' && question.answer.split('|')[0].trim().split(/\s+/).length === 1) ? 20_000 : 60_000;
   let hintTimer = null, revealTimer = null, questionStartedAt = 0, wrongAttempts = 0, attempts = 0;
   const clearHelpTimers = () => {
     window.clearTimeout(hintTimer); window.clearTimeout(revealTimer);
@@ -112,22 +116,21 @@
     if (!round || round.finished || !$('question-hint').hidden) return;
     const question = current();
     const glossary = window.DanhGrade6GrammarHints?.[question.unit] || {};
-    const context = `${question.prompt} ${(question.parts || []).join(' ')}`.toLocaleLowerCase('en');
+    const context = `${question.prompt} ${question.source || ''} ${question.cue || ''} ${(question.parts || []).join(' ')}`.toLocaleLowerCase('en');
     let words = Object.entries(glossary).filter(([word]) => context.includes(word.toLocaleLowerCase('en'))).slice(0, 3);
     if (!words.length) words = Object.entries(glossary).slice(0, 2);
     $('question-vocab').textContent = question.vocab ? `Từ vựng: ${question.vocab}.` : `Từ vựng: ${words.map(([word, meaning]) => `${word} = ${meaning}`).join('; ')}.`;
     $('question-rule').textContent = `Cấu trúc: ${question.rule}`;
     $('question-hint').hidden = false;
-    $('help-status').textContent = 'Em có thể dùng gợi ý để thử trả lời. Đáp án hiện sau hai lần sai hoặc 60 giây.';
   };
   const refreshHelp = () => {
     if (!round || round.finished) return;
     const elapsed = Date.now() - questionStartedAt;
-    if (elapsed >= 20_000) showHint();
-    else { window.clearTimeout(hintTimer); hintTimer = window.setTimeout(refreshHelp, 20_000 - elapsed + 20); }
+    const delay = hintDelay(current());
+    if (elapsed >= delay) showHint();
+    else { window.clearTimeout(hintTimer); hintTimer = window.setTimeout(refreshHelp, delay - elapsed + 20); }
     if (revealAllowed()) {
       $('reveal').hidden = false;
-      $('help-status').textContent = 'Nếu vẫn chưa tìm ra, em có thể xem đáp án.';
     } else { window.clearTimeout(revealTimer); revealTimer = window.setTimeout(refreshHelp, 60_000 - elapsed + 20); }
   };
   const finishQuestion = (revealed = false) => {
@@ -157,7 +160,7 @@
     state.answered[question.id] = record; save(); updateStats();
     const explanation = document.createElement('small'); explanation.textContent = question.explain;
     $('feedback').append(explanation);
-    $('answer-area').querySelectorAll('button,input').forEach(control => { control.disabled = true; });
+    $('answer-area').querySelectorAll('button,input,textarea').forEach(control => { control.disabled = true; });
     $('reveal').hidden = true;
     $('next').hidden = false;
     $('next').textContent = round.position === round.items.length - 1 ? 'Xem kết quả →' : 'Câu tiếp theo →';
@@ -189,8 +192,7 @@
     $('feedback').textContent = ''; $('feedback').className = 'gg-feedback';
     clearHelpTimers(); wrongAttempts = 0; attempts = 0; questionStartedAt = Date.now();
     $('question-hint').hidden = true; $('reveal').hidden = true; $('next').hidden = true;
-    $('help-status').textContent = 'Gợi ý hiện sau 20 giây. Xem đáp án sau hai lần sai hoặc 60 giây.';
-    hintTimer = window.setTimeout(refreshHelp, 20_000);
+    hintTimer = window.setTimeout(refreshHelp, hintDelay(question));
     revealTimer = window.setTimeout(refreshHelp, 60_000);
     $('round-position').textContent = `Câu ${round.position + 1}/${round.items.length}`;
     $('round-scope').textContent = scopeName(round.scope);
@@ -209,10 +211,10 @@
         options.append(choice);
       }
       area.append(options);
-    } else if (question.type === 'fill' || question.type === 'correct') {
+    } else if (question.type === 'fill') {
       const form = document.createElement('form'); form.className = 'gg-input-row';
       const input = document.createElement('input'); input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false;
-      input.placeholder = question.type === 'correct' ? 'Viết lại cả câu cho đúng' : 'Gõ phần còn thiếu';
+      input.placeholder = 'Gõ phần còn thiếu';
       input.setAttribute('aria-label', input.placeholder);
       const submit = document.createElement('button'); submit.type = 'submit'; submit.className = 'gg-primary'; submit.textContent = 'Kiểm tra';
       form.addEventListener('submit', event => {
@@ -222,6 +224,33 @@
         if (!round.finished) { input.focus(); input.select(); }
       });
       form.append(input, submit); area.append(form);
+    } else if (question.type === 'correct' || question.type === 'rewrite') {
+      if (question.type === 'rewrite') {
+        const source = document.createElement('div'); source.className = 'gg-rewrite-source';
+        const sourceLabel = document.createElement('strong'); sourceLabel.textContent = 'Câu gốc';
+        const sourceText = document.createElement('p'); sourceText.textContent = question.source;
+        source.append(sourceLabel, sourceText);
+        const cue = document.createElement('div'); cue.className = 'gg-rewrite-cue';
+        const cueLabel = document.createElement('strong'); cueLabel.textContent = 'Viết lại bắt đầu bằng';
+        const cueText = document.createElement('p'); cueText.textContent = question.cue;
+        cue.append(cueLabel, cueText);
+        area.append(source, cue);
+      }
+      const form = document.createElement('form'); form.className = 'gg-rewrite-form';
+      const label = document.createElement('label'); label.textContent = question.type === 'correct' ? 'Viết đầy đủ câu đã sửa' : 'Câu viết lại của em';
+      label.htmlFor = 'sentence-answer';
+      const input = document.createElement('textarea'); input.id = 'sentence-answer'; input.rows = 3;
+      input.autocomplete = 'off'; input.spellcheck = false;
+      input.placeholder = question.type === 'correct' ? 'Viết đầy đủ câu đúng bằng tiếng Anh' : 'Viết đầy đủ câu mới bằng tiếng Anh';
+      const note = document.createElement('small'); note.textContent = 'Máy đối chiếu với đáp án mẫu. Nếu em viết cách khác cùng nghĩa, hãy đối chiếu lời giải.';
+      const submit = document.createElement('button'); submit.type = 'submit'; submit.className = 'gg-primary'; submit.textContent = 'Kiểm tra câu';
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        if (!input.value.trim()) { $('feedback').textContent = 'Em hãy viết câu trả lời trước nhé.'; input.focus(); return; }
+        submitAnswer(input.value);
+        if (!round.finished) { input.focus(); input.select(); }
+      });
+      form.append(label, input, note, submit); area.append(form);
     } else if (question.type === 'order') {
       const selected = [];
       const built = document.createElement('div'); built.className = 'gg-built'; built.setAttribute('aria-label', 'Câu đang xếp');
@@ -255,17 +284,22 @@
       };
       return rank(a) - rank(b);
     });
-    const items = pool.slice(0, Number(chosen('length')));
+    let items = pool.slice(0, ROUND_LENGTH);
+    const rewrites = pool.filter(item => item.type === 'rewrite');
+    const included = items.filter(item => item.type === 'rewrite').length;
+    if (rewrites.length && included < 2) {
+      const extra = rewrites.filter(item => !items.includes(item)).slice(0, 2 - included);
+      items = [...items.slice(0, ROUND_LENGTH - extra.length), ...extra];
+    }
+    items = randomise(items);
     if (!items.length) return;
-    round = { items, position: 0, correct: 0, firstTryCorrect: 0, earned: 0, handicap: Number(chosen('handicap')), scope: chosen('scope'), level: chosen('level'), finished: false };
+    round = { items, position: 0, correct: 0, firstTryCorrect: 0, earned: 0, scope: chosen('scope'), level: chosen('level'), finished: false };
     setVisible('play'); renderQuestion();
   };
   const renderResult = () => {
     $('round-progress').style.width = '100%';
     $('result-correct').textContent = `${round.correct}/${round.items.length}`;
     $('result-earned').textContent = round.earned;
-    $('result-handicap').textContent = `+${round.handicap}`;
-    $('result-total').textContent = round.earned + round.handicap;
     $('result-message').textContent = round.firstTryCorrect === round.items.length ? 'Em đã làm rất tốt! Sẵn sàng nâng cấp độ chưa?' : 'Mỗi câu vừa làm đều giúp em hiểu bài hơn. Thử thêm một lượt ngắn nhé!';
     const nextLevel = round.firstTryCorrect === round.items.length ? ({ easy: 'medium', medium: 'hard', hard: 'hard' })[round.level] : round.level;
     $('again').textContent = nextLevel === round.level ? `Luyện tiếp ${round.items.length} câu` : `Luyện tiếp cấp ${levelName(nextLevel)} →`;
@@ -273,6 +307,11 @@
     setVisible('result');
   };
   $('start').addEventListener('click', startRound);
+  $('exit-play').addEventListener('click', () => {
+    clearHelpTimers();
+    round = null;
+    setVisible('setup'); updateSelection();
+  });
   $('next').addEventListener('click', () => {
     if (!round?.finished) return;
     if (round.position === round.items.length - 1) renderResult();

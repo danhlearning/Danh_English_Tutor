@@ -35,7 +35,7 @@ Cập nhật: 01/10/2026. Các URL HTML đang dùng được giữ trong suốt 
 - [x] Mở rộng bài luyện theo chủ đề Unit 5–20 Lớp 4, mỗi Unit có 6 từ, mẫu câu, bốn trò và ôn chung.
 - [ ] Đối chiếu từng Lesson lớp 4 với sách và thử âm thanh trên thiết bị học sinh.
 - [x] Mở Lớp 6 với danh mục 12 Unit Global Success, 96 từ và bài luyện lật thẻ, chọn nghĩa, gõ từ.
-- [x] Phát triển phần Ngữ pháp Lớp 6 với 1.800 câu hỏi theo tình huống, ba cấp độ, bốn dạng bài và ôn học kỳ theo lượt 1–3 câu.
+- [x] Phát triển phần Ngữ pháp Lớp 6 với 1.872 câu hỏi theo tình huống, ba cấp độ, năm dạng bài và ôn học kỳ theo set 10 câu.
 - [ ] Đối chiếu chi tiết từng Lesson và mẫu đề kiểm tra của từng trường với sách trước khi coi là ngân hàng đề thi chính thức.
 
 ## Điều kiện hoàn thành mỗi đợt
