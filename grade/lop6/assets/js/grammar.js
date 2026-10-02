@@ -40,7 +40,7 @@
     const scope = chosen('scope');
     $('unit-select').disabled = scope !== 'unit';
     $('selection-summary').textContent = `${scopeName(scope)} · Cấp ${levelName(chosen('level'))} · ${ROUND_LENGTH} câu · ${selectPool().length} câu trong thư viện`;
-    $('start').textContent = `Bắt đầu ${ROUND_LENGTH} câu →`;
+    $('start').textContent = `Bắt đầu làm`;
   };
   for (const unit of units) {
     const option = document.createElement('option'); option.value = unit.number; option.textContent = `Unit ${unit.number} · ${unit.title}`;
