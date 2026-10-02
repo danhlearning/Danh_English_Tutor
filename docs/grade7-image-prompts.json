@@ -1,0 +1,120 @@
+{
+  "tool": "Built-in imagegen",
+  "date": "2026-10-02",
+  "images": [
+    {
+      "name": "community-service",
+      "file": "grade/lop7/assets/images/community-service.webp",
+      "caption": "hoạt động phục vụ cộng đồng",
+      "prompt": "Create one square, high resolution, razor sharp educational vocabulary image for Vietnamese grade 7 students. Photorealistic editorial photography, friendly natural daylight, no logos, no watermark. Concept: community service. Show Vietnamese teenage student volunteers with gloves collecting litter into bags in a public park, clearly helping their local community, one simple coherent scene, correct hands and realistic objects. This abstract phrase needs a large clean cream caption strip at the bottom containing exactly the Vietnamese text 'hoạt động phục vụ cộng đồng', dark highly legible typography, with all accents correct. No English text. Save the image for a website vocabulary card."
+    },
+    {
+      "name": "creativity",
+      "file": "grade/lop7/assets/images/creativity.webp",
+      "caption": "sự sáng tạo",
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: A Vietnamese teenager inventing an original colourful toy robot from clean reused cardboard boxes and bottle caps at a craft table, creative transformation clearly visible. This abstract concept needs a clean cream strip at the bottom with large legible dark Vietnamese text exactly 'sự sáng tạo', correct accents. No other text. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "sunburn",
+      "file": "grade/lop7/assets/images/sunburn.webp",
+      "caption": null,
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: A healthy adult outdoors under a sun umbrella, mild pink sunburn clearly visible on one shoulder while the other shoulder is covered, modest clothing, no blisters or injuries, no medical claims. No words, captions, text or labels. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "balanced-diet",
+      "file": "grade/lop7/assets/images/balanced-diet.webp",
+      "caption": "chế độ ăn uống cân bằng",
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: One simple overhead plate of a varied meal with vegetables, rice, tofu, fish and fruit, neatly divided into visually clear portions, realistic edible foods, educational everyday nutrition concept. This abstract concept needs a clean cream strip at the bottom with large legible dark Vietnamese text exactly 'chế độ ăn uống cân bằng', correct accents. No other text. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "donate",
+      "file": "grade/lop7/assets/images/donate.webp",
+      "caption": null,
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: Vietnamese teenagers handing a neat box of clean used books to a community volunteer, a recipient gratefully accepting them; clearly giving to help, not selling. No words, captions, text or labels. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "performance",
+      "file": "grade/lop7/assets/images/performance.webp",
+      "caption": null,
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: A Vietnamese teenager singing into a microphone on a small school stage with two student musicians and a seated audience visible, one coherent musical performance. No words, captions, text or labels. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "water-puppet-show",
+      "file": "grade/lop7/assets/images/water-puppet-show.webp",
+      "caption": null,
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: Authentic traditional Vietnamese water puppetry: wooden lacquered puppets above a green water stage, Vietnamese communal-house pavilion backdrop, hidden puppeteers behind bamboo screen; no human-sized puppets. No words, captions, text or labels. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "ingredient",
+      "file": "grade/lop7/assets/images/ingredient.webp",
+      "caption": "nguyên liệu nấu ăn",
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: Raw eggs, flour, milk and butter neatly arranged on a simple kitchen table beside a mixing bowl before baking a cake, recognisable raw ingredients. This abstract concept needs a clean cream strip at the bottom with large legible dark Vietnamese text exactly 'nguyên liệu nấu ăn', correct accents. No other text. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "entrance-examination",
+      "file": "grade/lop7/assets/images/entrance-examination.webp",
+      "caption": "kỳ thi tuyển sinh",
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: Vietnamese teenage students sitting at separate examination desks, focused writing test papers, a teacher supervising, no legible test answers. This abstract concept needs a clean cream strip at the bottom with large legible dark Vietnamese text exactly 'kỳ thi tuyển sinh', correct accents. No other text. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "pedestrian",
+      "file": "grade/lop7/assets/images/pedestrian.webp",
+      "caption": null,
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: A person walking across clearly marked black and white zebra crossing on foot, cars stopped in background and pedestrian signal green, road safety clear. No words, captions, text or labels. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "traffic-jam",
+      "file": "grade/lop7/assets/images/traffic-jam.webp",
+      "caption": null,
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: Realistic slightly elevated view of a city road packed with stopped cars and buses bumper to bumper in daylight, two clear lanes facing same direction. No words, captions, text or labels. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "documentary",
+      "file": "grade/lop7/assets/images/documentary.webp",
+      "caption": "phim tài liệu",
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: A student watching a nature documentary on a television with a realistic sea turtle swimming underwater; a small documentary camera inset is unnecessary, simple screen plus attentive viewer. This abstract concept needs a clean cream strip at the bottom with large legible dark Vietnamese text exactly 'phim tài liệu', correct accents. No other text. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "gripping",
+      "file": "grade/lop7/assets/images/gripping.webp",
+      "caption": "hấp dẫn, cuốn hút",
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: Vietnamese teenagers watching a film in a small cinema, leaning forward attentively with eyes fixed on screen and popcorn paused, expressions fascinated rather than frightened. This abstract concept needs a clean cream strip at the bottom with large legible dark Vietnamese text exactly 'hấp dẫn, cuốn hút', correct accents. No other text. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "celebration",
+      "file": "grade/lop7/assets/images/celebration.webp",
+      "caption": "hoạt động ăn mừng, lễ kỷ niệm",
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: Vietnamese families joyfully gathering outdoors with paper lanterns and festive ribbons to celebrate the new year, smiling and clapping, not a birthday party. This abstract concept needs a clean cream strip at the bottom with large legible dark Vietnamese text exactly 'hoạt động ăn mừng, lễ kỷ niệm', correct accents. No other text. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "renewable-energy",
+      "file": "grade/lop7/assets/images/renewable-energy.webp",
+      "caption": "năng lượng tái tạo",
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: Realistic landscape photograph with modern solar panels in foreground and wind turbines in background under bright sunshine, no smoke, one clean coherent scene. This abstract concept needs a clean cream strip at the bottom with large legible dark Vietnamese text exactly 'năng lượng tái tạo', correct accents. No other text. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "non-renewable-energy",
+      "file": "grade/lop7/assets/images/non-renewable-energy.webp",
+      "caption": "năng lượng không tái tạo",
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: Sharp realistic still-life of black coal lumps and a small closed crude-oil barrel against a quiet plain background, simple concept of finite fossil fuel sources. This abstract concept needs a clean cream strip at the bottom with large legible dark Vietnamese text exactly 'năng lượng không tái tạo', correct accents. No other text. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "driverless",
+      "file": "grade/lop7/assets/images/driverless.webp",
+      "caption": "không người lái, tự lái",
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: Realistic conceptual photograph of autonomous electric car with a clearly empty driver seat and a passenger seated in rear, compact roof sensor visible, travelling slowly on controlled road, conceptual future transport. This abstract concept needs a clean cream strip at the bottom with large legible dark Vietnamese text exactly 'không người lái, tự lái', correct accents. No other text. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "landmark",
+      "file": "grade/lop7/assets/images/landmark.webp",
+      "caption": "địa danh nổi bật, dễ nhận biết",
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: Sharp daylight photograph of the recognisable Sydney Opera House by the harbour, correct distinctive white shell roofs, unobstructed main subject. This abstract concept needs a clean cream strip at the bottom with large legible dark Vietnamese text exactly 'địa danh nổi bật, dễ nhận biết', correct accents. No other text. Main subject must be clearly recognisable on a phone."
+    },
+    {
+      "name": "native-speaker",
+      "file": "grade/lop7/assets/images/native-speaker.webp",
+      "caption": "người bản ngữ",
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: A parent warmly speaking with a small child at home, a subtle second scene of that same child older speaking the same language fluently, one coherent educational photo composition; do not imply ethnicity determines native language. This abstract concept needs a clean cream strip at the bottom with large legible dark Vietnamese text exactly 'người bản ngữ', correct accents. No other text. Main subject must be clearly recognisable on a phone."
+    }
+  ]
+}

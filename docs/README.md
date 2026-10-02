@@ -13,3 +13,4 @@ Các tài liệu lịch sử được giữ để tra cứu quyết định và 
 - [Global Success Lớp 4](content/global-success-grade4-demo.md): phạm vi, ảnh và nguồn tham chiếu Unit 1–20.
 
 - [Global Success Lớp 6](content/global-success-grade6.md): phạm vi 12 Unit, cách biên soạn và phần Ngữ pháp dự kiến.
+- [Global Success Lớp 7](LOP7.md): 12 Unit, 96 từ, 19 ảnh, 432 mục luyện ngữ pháp và nguồn đối chiếu.

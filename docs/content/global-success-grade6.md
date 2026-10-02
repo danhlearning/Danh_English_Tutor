@@ -2,7 +2,7 @@
 
 Trang `grade/lop6/lop6.html` có danh mục 12 Unit theo thứ tự của sách. Mỗi Unit hiện có 8 từ/cụm từ (96 mục trên toàn lớp), nghĩa tiếng Việt, câu ví dụ riêng, giọng đọc của trình duyệt, thẻ lật, trắc nghiệm chọn nghĩa và luyện gõ từ. Tiến độ từ trả lời đúng ngay lần đầu được lưu trên thiết bị.
 
-Tên và thứ tự 12 Unit được đối chiếu với [danh mục từ vựng của HEID – Nhà xuất bản Giáo dục Việt Nam](https://heid.vn/kham-pha-tu-vung-tieng-anh-lop-6-global-success/) và [giới thiệu cấu trúc sách](https://heid.vn/bi-kip-soan-bai-giang-tieng-anh-global-success-lop-6/). Từ được chọn và các câu luyện do website biên soạn theo chủ đề; đây chưa phải bản đối chiếu theo từng Lesson hay trang sách.
+Tên và thứ tự 12 Unit được đối chiếu với danh mục từ vựng Tiếng Anh 6 Global Success và giới thiệu cấu trúc sách. Từ được chọn và các câu luyện do website biên soạn theo chủ đề; đây chưa phải bản đối chiếu theo từng Lesson hay trang sách.
 
 Mục **Ngữ pháp** dẫn tới `grade/lop6/grammar.html` từ trang danh mục và từng Unit. Có 1.872 câu hỏi và biến thể theo tình huống: mỗi Unit 156 câu, mỗi cấp độ 52 câu. Năm dạng gồm chọn đáp án, điền từ, xếp câu, sửa lỗi và viết lại câu giữ nguyên nghĩa. Mỗi set có ít nhất hai câu viết lại. Học sinh chọn ôn Unit riêng, học kỳ 1 (Unit 1–6) hoặc học kỳ 2 (Unit 7–12), mỗi set 10 câu, mỗi màn hình một câu. Hệ thống lưu chuỗi trả lời đúng, điểm tích lũy và lịch sử câu hỏi trên thiết bị. Âm thanh có thể tắt; hiệu ứng chuyển động tôn trọng tùy chọn giảm chuyển động của thiết bị.
 
@@ -12,7 +12,7 @@ Gợi ý từ vựng và cấu trúc hiện sau 20 giây với câu trắc nghi�
 
 Ngân hàng 1.872 câu gồm 180 câu biên soạn trực tiếp, 1.620 biến thể từ 15 tình huống cho mỗi Unit và 72 câu viết lại (mỗi Unit 2 câu/cấp độ); mỗi tình huống biến thể có 9 kiểu câu ở ba cấp độ. Các biến thể được tạo bằng mẫu ngữ pháp có đáp án, giải thích và từ vựng gắn với ngữ cảnh.
 
-Danh mục ngữ pháp đối chiếu thêm với [tổng hợp ngữ pháp Tiếng Anh 6 của HEID](https://heid.vn/ngu-phap-tieng-anh-lop-6/). Ba cấp độ là cách website sắp xếp độ khó luyện tập trong phạm vi kiến thức lớp 6, không phải ba cấp độ chính thức của sách.
+Danh mục ngữ pháp đối chiếu thêm với tổng hợp ngữ pháp Tiếng Anh 6 Global Success. Ba cấp độ là cách website sắp xếp độ khó luyện tập trong phạm vi kiến thức lớp 6, không phải ba cấp độ chính thức của sách.
 
 Dạng viết lại câu đưa ra câu gốc và phần bắt đầu của câu mới, yêu cầu viết trọn câu giữ nguyên nghĩa. Nội dung phủ 12 Unit, từ đổi cấu trúc đơn giản đến so sánh, đại từ sở hữu, tương lai và câu điều kiện. Máy đối chiếu câu nhập với đáp án mẫu sau khi bỏ khác biệt chữ hoa và dấu câu; các cách diễn đạt đúng khác có thể cần giáo viên đối chiếu.
 
