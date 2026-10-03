@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+<script src="../../shared/learner-profile-core.js"></script>
+<script src="../../shared/learner-profile.js"></script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Học Tiếng Anh Chủ Đề Trái Cây (Fruits)</title>
@@ -28,7 +31,7 @@
 </nav>
 
 <div class="container">
-  
+
   <!-- TAB 1: VOCABULARY GRID -->
   <div id="vocab" class="tab-content active">
     <h2 style="margin-bottom: 16px; text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Từ Vựng 18 Loại Trái Cây</h2>
@@ -39,7 +42,7 @@
   <div id="sentences" class="tab-content">
     <h2 style="margin-bottom: 16px; text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Quy Tắc Ngữ Pháp & Mẫu Câu</h2>
     <div class="sentence-section">
-      
+
       <div class="sentence-card">
         <h3>💡 1. Mạo Từ "A" và "AN" (Số ít - 1 quả)</h3>
         <p>• <b>A:</b> Đứng trước danh từ bắt đầu bằng một <b>Phụ âm</b> (e.g. <i>a banana, a watermelon, a strawberry</i>).</p>
@@ -71,7 +74,7 @@
   <div id="game-flip" class="tab-content">
     <h2 style="text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để lật xem tên tiếng Anh và nghe phát âm!</p>
-    
+
     <div class="single-card-container">
       <div class="card-controls">
         <span class="card-counter" id="card-counter-text">Thẻ 1 / 18</span>
@@ -95,7 +98,7 @@
   <div id="game-mcq" class="tab-content">
     <h2 style="text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Game 2: Trắc Nghiệm Từ Vựng</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình và chọn đáp án đúng nhất!</p>
-    
+
     <div class="quiz-container">
       <div class="number-preview-box" id="mcq-number-preview"></div>
       <div class="mcq-grid" id="mcq-options-container"></div>
@@ -107,13 +110,13 @@
   <div id="game-spelling" class="tab-content">
     <h2 style="text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Game 3: Điền Chính Tả</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn nghĩa và nghe âm thanh để gõ tên từ vựng tiếng Anh!</p>
-    
+
     <div class="spelling-box">
       <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 câu</div>
 
       <div id="spelling-preview" class="number-preview-box"></div>
       <button class="audio-btn" style="width: 42px; height: 42px; font-size: 1.2rem; margin-top:0;" onclick="playSpellingAudio()">🔊</button>
-      
+
       <div class="feedback-msg" id="spelling-feedback"></div>
 
       <div class="spelling-input-group">
@@ -128,7 +131,7 @@
   <div id="game-count" class="tab-content">
     <h2 style="text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Game 4: Đếm Số Lượng & Viết Mẫu Câu (50 Câu)</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Đếm số lượng quả trong khung và điền câu Tiếng Anh thích hợp!</p>
-    
+
     <div class="count-game-container">
       <div class="score-board" id="count-score">🎯 Đã đúng: 0 / 50 câu</div>
 

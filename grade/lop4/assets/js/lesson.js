@@ -5,7 +5,7 @@
   if (!unit || !window.DanhLesson || !window.DanhGrade4Progress) throw new Error('Thiếu dữ liệu bài học lớp 4.');
   const wordsById = new Map(unit.words.map(word => [word.id, word]));
   const storage = (() => {
-    try { return window.localStorage; }
+    try { return (window.DanhLearners?.storage || window.localStorage); }
     catch { return { getItem: () => null, setItem: () => { throw Error('Storage blocked'); } }; }
   })();
   const store = window.DanhGrade4Progress.createStore(storage);

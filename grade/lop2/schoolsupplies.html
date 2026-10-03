@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+<script src="../../shared/learner-profile-core.js"></script>
+<script src="../../shared/learner-profile.js"></script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Học Tiếng Anh Chủ Đề Dụng Cụ Học Tập (School Supplies)</title>
@@ -29,7 +32,7 @@
 </nav>
 
 <div class="container">
-  
+
   <!-- TAB 1: VOCABULARY -->
   <div id="vocab" class="tab-content active">
     <h2 style="margin-bottom: 16px; text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Từ Vựng Các Dụng Cụ Học Tập Thường Gặp</h2>
@@ -40,7 +43,7 @@
   <div id="sentences" class="tab-content">
     <h2 style="margin-bottom: 16px; text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Cấu Trúc Mẫu Câu Giao Tiếp Về Dụng Cụ Học Tập</h2>
     <div class="sentence-section">
-      
+
       <div class="sentence-card">
         <h3>💡 Mẫu câu 1: Hỏi và Xác Định Dụng Cụ Học Tập (What is this / What are these?)</h3>
         <p><b>Hỏi (Số ít):</b> What is this? / What is that?</p>
@@ -78,7 +81,7 @@
   <div id="game-flip" class="tab-content">
     <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để lật xem phát âm và nghĩa. Sau 3 giây thẻ sẽ tự chuyển tiếp!</p>
-    
+
     <div class="single-card-container">
       <div class="card-mode-selector">
         <button class="mode-btn active" id="mode-viet" onclick="setCardFrontMode('viet', this)">Mặt trước: Hình & Từ Anh</button>
@@ -107,7 +110,7 @@
   <div id="game-mcq" class="tab-content">
     <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 2: Trắc Nghiệm Chọn Từ Đúng</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình ảnh bên trên và chọn 1 trong 4 đáp án từ tiếng Anh đúng!</p>
-    
+
     <div class="quiz-container">
       <div class="number-preview-box" id="mcq-number-preview"></div>
       <div class="mcq-grid" id="mcq-options-container"></div>
@@ -119,13 +122,13 @@
   <div id="game-spelling" class="tab-content">
     <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 3: Thử Tài Điền Chính Tả</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình biểu tượng và nghe phát âm để gõ tên dụng cụ! (Ấn ENTER để kiểm tra)</p>
-    
+
     <div class="spelling-box">
       <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 / 25 câu</div>
 
       <div id="spelling-preview" class="number-preview-box"></div>
       <button class="audio-btn" style="width: 44px; height: 44px; font-size: 1.3rem; margin-top:0;" onclick="playSpellingAudio()">🔊</button>
-      
+
       <div class="spelling-input-group">
         <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ tên dụng cụ học tập..." autocomplete="off">
         <button class="btn-action" onclick="checkSpelling()">Kiểm tra</button>
@@ -137,7 +140,7 @@
   <div id="game-count" class="tab-content">
     <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 4: Đếm Dụng Cụ Học Tập & Viết Câu</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Hãy đếm số lượng dụng cụ học tập rồi nhập cả câu (Ví dụ: "There are 5 pens")</p>
-    
+
     <div class="count-game-container">
       <div class="score-board" id="count-score">🎯 Đã đúng: 0 / 16 câu</div>
 

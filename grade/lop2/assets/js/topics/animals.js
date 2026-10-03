@@ -254,7 +254,7 @@ const defaultSpeechRate = 0.85;
 
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
-    
+
     document.getElementById(tabId).classList.add('active');
     if(evt && evt.target) evt.target.classList.add('active');
 
@@ -361,7 +361,7 @@ const defaultSpeechRate = 0.85;
     }
   }
   let learningStorage;
-  try { learningStorage = window.localStorage; } catch { learningStorage = { getItem() { return null; }, setItem() { throw new Error('Storage unavailable'); } }; }
+  try { learningStorage = (window.DanhLearners?.storage || window.localStorage); } catch { learningStorage = { getItem() { return null; }, setItem() { throw new Error('Storage unavailable'); } }; }
   const learning = new AnimalsLearning(learningStorage);
   let activeLearningTab = 'vocab';
   let singleCardIdx = 0, singleCardTimer = null, singleCardRevealTimer = null, cardFrontMode = 'viet';
@@ -525,7 +525,7 @@ const defaultSpeechRate = 0.85;
 
     frontEl.className = 'flip-card-front';
     frontEl.style.background = 'linear-gradient(135deg, #38A169, #4FD1C5)';
-    
+
     backEl.className = 'flip-card-back';
     backEl.style.background = item.hex;
 
@@ -745,7 +745,7 @@ const defaultSpeechRate = 0.85;
       feedback.style.color = '#38A169';
       feedback.innerText = '🎉 Chính xác! Tuyệt vời!';
       inputEl.disabled = true;
-      
+
       countCorrectCount++;
       updateCountScore();
       playSoundEffect('correct');

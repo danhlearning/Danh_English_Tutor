@@ -4,6 +4,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const sharedFile = path.join(root, 'shared', 'contact-footer.js');
 const pages = [path.join(root, 'index.html')];
+for (const name of ['skills.html','grammar-index.html','grammar-practice.html','grammar-theory.html','tense-practice.html','tense-theory.html','relative-clause-practice.html','relative-clause-theory.html','condition-practice.html','condition-theory.html','wordform-practice.html','wordform-theory.html']) pages.push(path.join(root,name));
 const errors = [];
 
 function findHtml(directory) {
@@ -40,5 +41,5 @@ if (errors.length) {
   for (const error of errors) console.error(error);
   process.exitCode = 1;
 } else {
-  console.log(`Footer hợp lệ trên ${pages.length} trang (trang chủ và các trang trong grade).`);
+  console.log(`Footer hợp lệ trên ${pages.length} trang (trang chủ, kỹ năng, ngữ pháp và các trang trong grade).`);
 }

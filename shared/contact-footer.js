@@ -68,7 +68,7 @@
           <h2 id="contact-title">Kết nối với thầy Danh</h2>
           <div class="social-buttons">
             <a class="btn-social btn-zalo" href="https://zalo.me/0911594794" target="_blank" rel="noopener noreferrer">
-              <img class="zalo-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="">
+              <svg class="zalo-logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H9l-5 3v-3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path fill="white" d="M7 7h10v2l-7 6h7v2H7v-2l7-6H7z"/></svg>
               Zalo: 0911594794
             </a>
             <a class="btn-social btn-fb" href="https://www.facebook.com/cong.danh.0210" target="_blank" rel="noopener noreferrer">

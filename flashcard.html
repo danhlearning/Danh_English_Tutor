@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+<script src="./shared/learner-profile-core.js"></script>
+<script src="./shared/learner-profile.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Danh's Flashcard — Vocabulary System 7.5</title>
     <link rel="stylesheet" href="./assets/css/pages/flashcard.css">
+    <link rel="stylesheet" href="./assets/css/skills-navigation.css">
 </head>
 <body>
 
     <div class="game-container">
+        <a href="skills.html" class="skills-return">← Luyện theo kỹ năng</a>
         <div class="auth-banner">
             <div class="user-status" id="lbl-user-status">Trạng thái: <span>Khách</span></div>
-            <button class="btn-auth-trigger" id="btn-auth-action" onclick="openAuthModal()">Đăng nhập</button>
+            <button class="btn-auth-trigger" id="btn-auth-action" onclick="openAuthModal()">Đổi người học</button>
         </div>
 
         <div class="header-area">
@@ -135,22 +140,6 @@
                 <div class="input-row"><label>Ví dụ</label><input type="text" id="txt-example" placeholder="It takes time to adapt to a new country."></div>
             </div>
             <button class="btn-danger-zone" onclick="clearAllCustomWords()">Xóa toàn bộ kho từ riêng</button>
-        </div>
-    </div>
-
-    <div class="modal-overlay" id="modal-auth" onclick="closeModalViaOverlay(event, 'modal-auth')">
-        <div class="modal-sheet">
-            <div class="modal-handle"></div>
-            <div class="modal-header">
-                <button class="btn-nav" onclick="closeModal('modal-auth')">Hủy</button>
-                <div class="modal-title" id="auth-modal-title">Đăng nhập</div>
-                <button class="btn-nav" style="font-weight:600" onclick="submitAuthForm()">Xong</button>
-            </div>
-            <div class="input-group">
-                <div class="input-row"><label>Email</label><input type="email" id="txt-auth-email" placeholder="example@icloud.com"></div>
-                <div class="input-row"><label>Mật khẩu</label><input type="password" id="txt-auth-pass" placeholder="Tối thiểu 6 ký tự"></div>
-            </div>
-            <div style="text-align:center;color:#007aff;font-size:0.85rem;cursor:pointer" id="auth-toggle-msg" onclick="toggleAuthMode()">Chưa có tài khoản? Đăng ký</div>
         </div>
     </div>
 

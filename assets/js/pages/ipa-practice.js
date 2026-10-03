@@ -198,6 +198,19 @@
     let autoNextTimeout;
     let timeLeft = 600; // 10 phút = 600 giây
     let timerInterval;
+    let currentLevel='basic';
+    let gameFinished=false;
+    const ipaKey='danh:ipa-reflex:v1';
+    function saveReflexResult(reason) {
+        if(window.DanhLearners && !window.DanhLearners.current) return;
+        try {
+            const storage=window.DanhLearners?.storage || window.localStorage;
+            let history=JSON.parse(storage.getItem(ipaKey) || '[]');
+            if(!Array.isArray(history))history=[];
+            history.push({level:currentLevel,correct:correctCount,incorrect:incorrectCount,total:currentData.length,reason,at:Date.now()});
+            storage.setItem(ipaKey,JSON.stringify(history.slice(-100)));
+        } catch {}
+    }
 
     // Hàm trộn mảng (Fisher-Yates Shuffle)
     function shuffleArray(array) {
@@ -215,6 +228,7 @@
         updateTimerDisplay();
         
         timerInterval = setInterval(() => {
+            if(document.hidden || (window.DanhLearners && !window.DanhLearners.current))return;
             timeLeft--;
             updateTimerDisplay();
             
@@ -232,6 +246,9 @@
     }
 
     function endGameByTime() {
+        if(gameFinished)return;
+        gameFinished=true;
+        saveReflexResult('time');
         document.getElementById("ipa-display").innerText = "⏰";
         document.getElementById("ipa-container").style.border = "none";
         document.getElementById("ipa-container").style.background = "transparent";
@@ -257,6 +274,8 @@
 
     // Chọn cấp độ (Tab)
     function setLevel(level) {
+        currentLevel=level;
+        gameFinished=false;
         document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
         document.getElementById(`tab-${level}`).classList.add('active');
 
@@ -293,6 +312,7 @@
     }
 
     function checkAnswer() {
+        if(gameFinished || document.getElementById('answer-input').disabled)return;
         const userAnswer = document.getElementById("answer-input").value.trim().toLowerCase();
         const currentQ = currentData[currentQuestionIndex];
         const correctAnswers = currentQ.word.toLowerCase().split("/").map(item => item.trim());
@@ -336,10 +356,14 @@
     }
 
     function nextQuestion() {
+        if(gameFinished)return;
+        if(autoNextTimeout)clearTimeout(autoNextTimeout);
         currentQuestionIndex++;
         if (currentQuestionIndex < currentData.length) {
             loadQuestion();
         } else {
+            gameFinished=true;
+            saveReflexResult('complete');
             clearInterval(timerInterval);
             document.getElementById("ipa-display").innerText = "🎉";
             document.getElementById("ipa-container").style.border = "none";

@@ -85,8 +85,8 @@
         }
 
         // --- SYSTEM CORE ---
-        let usersDB = JSON.parse(localStorage.getItem('f_users')) || {};
-        let currentUser = localStorage.getItem('f_logged') || null;
+        const learnerStorage = window.DanhLearners?.storage || window.localStorage;
+        const readList = key => { try { const v=JSON.parse(learnerStorage.getItem(key)); return Array.isArray(v)?v:[]; } catch { return []; } };
         let reviewList = [];
         let learnedList = [];
 
@@ -95,7 +95,6 @@
         let currentIndex = 0;
         let correctCount = 0;
         let wrongCount = 0;
-        let authMode = 'login';
 
         const cardElement = document.getElementById('flashcard');
 
@@ -119,30 +118,16 @@
         }
 
         function loadUserData() {
-            if (currentUser && usersDB[currentUser]) {
-                database.custom = usersDB[currentUser].customWords || [];
-                reviewList = usersDB[currentUser].reviewList || [];
-                learnedList = usersDB[currentUser].learnedList || [];
-            } else {
-                database.custom = JSON.parse(localStorage.getItem('c_words_g')) || [];
-                reviewList = JSON.parse(localStorage.getItem('r_list_g')) || [];
-                learnedList = JSON.parse(localStorage.getItem('l_list_g')) || [];
-            }
+            database.custom = readList('c_words_g');
+            reviewList = readList('r_list_g');
+            learnedList = readList('l_list_g');
             buildReviewCategory();
         }
-
         function saveDataSync() {
-            if (currentUser && usersDB[currentUser]) {
-                usersDB[currentUser].reviewList = reviewList;
-                usersDB[currentUser].learnedList = learnedList;
-                localStorage.setItem('f_users', JSON.stringify(usersDB));
-            } else {
-                localStorage.setItem('r_list_g', JSON.stringify(reviewList));
-                localStorage.setItem('l_list_g', JSON.stringify(learnedList));
-            }
+            learnerStorage.setItem('r_list_g', JSON.stringify(reviewList));
+            learnerStorage.setItem('l_list_g', JSON.stringify(learnedList));
             buildReviewCategory();
         }
-
         function buildReviewCategory() {
             const allWords = [...database.elementary, ...database.intermediate, ...database.advanced, ...database.toeic, ...database.ielts, ...database.custom];
             database.review = allWords.filter(item => reviewList.includes(item.id));
@@ -238,7 +223,7 @@
 
         // --- POPUPS & AUTH ---
         function openAddWordModal() { document.getElementById('modal-add-word').classList.add('is-visible'); }
-        function openAuthModal() { document.getElementById('modal-auth').classList.add('is-visible'); }
+        function openAuthModal() { window.DanhLearners?.open(); }
         function openStatsModal() {
             const allWords = [...database.elementary, ...database.intermediate, ...database.advanced, ...database.toeic, ...database.ielts, ...database.custom];
             const total = allWords.length;
@@ -271,42 +256,22 @@
                 example: document.getElementById('txt-example').value.trim() || "No example provided.",
                 image: "" // Tự động lấy ảnh từ khóa trực tuyến khi xem
             };
-            if (currentUser && usersDB[currentUser]) { usersDB[currentUser].customWords.push(newObj); localStorage.setItem('f_users', JSON.stringify(usersDB)); }
-            else { database.custom.push(newObj); localStorage.setItem('c_words_g', JSON.stringify(database.custom)); }
+            database.custom.push(newObj); learnerStorage.setItem('c_words_g', JSON.stringify(database.custom));
             loadUserData(); closeModal('modal-add-word'); switchCategory('custom');
         }
 
         function clearAllCustomWords() {
             if (confirm("Xóa sạch sổ tay từ vựng tự thêm?")) {
-                if (currentUser) usersDB[currentUser].customWords = []; else localStorage.removeItem('c_words_g');
+                learnerStorage.removeItem('c_words_g');
                 saveDataSync(); loadUserData(); closeModal('modal-add-word'); switchCategory('custom');
             }
         }
 
         function updateAuthUI() {
-            const lbl = document.getElementById('lbl-user-status'); const btn = document.getElementById('btn-auth-action');
-            if (currentUser) { lbl.innerHTML = `Tài khoản: <span>${currentUser}</span>`; btn.innerText = "Đăng xuất"; btn.className = "btn-auth-trigger logout"; btn.onclick = logout; }
-            else { lbl.innerHTML = `Trạng thái: <span>Khách</span>`; btn.innerText = "Đăng nhập"; btn.className = "btn-auth-trigger"; btn.onclick = openAuthModal; }
+            const lbl=document.getElementById('lbl-user-status'), btn=document.getElementById('btn-auth-action');
+            lbl.textContent='Đang học: '+(window.DanhLearners?.current?.name || 'Chọn người học');
+            btn.textContent='Đổi người học'; btn.onclick=openAuthModal;
         }
-        function toggleAuthMode() {
-            authMode = authMode === 'login' ? 'register' : 'login';
-            document.getElementById('auth-modal-title').innerText = authMode === 'login' ? "Đăng nhập" : "Đăng ký";
-            document.getElementById('auth-toggle-msg').innerText = authMode === 'login' ? "Chưa có tài khoản? Đăng ký" : "Đã có tài khoản? Đăng nhập";
-        }
-        function submitAuthForm() {
-            const e = document.getElementById('txt-auth-email').value.trim(); const p = document.getElementById('txt-auth-pass').value.trim();
-            if (!e || p.length < 6) return alert("Email sai định dạng hoặc mật khẩu chưa đủ 6 ký tự.");
-            if (authMode === 'register') {
-                if (usersDB[e]) return alert("Email này đã được sử dụng!");
-                usersDB[e] = { password: p, customWords: [], reviewList: [], learnedList: [] };
-                localStorage.setItem('f_users', JSON.stringify(usersDB)); alert("Đăng ký thành công!"); toggleAuthMode();
-            } else {
-                if (!usersDB[e] || usersDB[e].password !== p) return alert("Sai tài khoản hoặc mật khẩu.");
-                currentUser = e; localStorage.setItem('f_logged', e); closeModal('modal-auth'); updateAuthUI(); loadUserData(); switchCategory('elementary');
-            }
-        }
-        function logout() { if (confirm("Bạn có chắc muốn đăng xuất?")) { currentUser = null; localStorage.removeItem('f_logged'); updateAuthUI(); loadUserData(); switchCategory('elementary'); } }
-
         // RUN ENGINE
         boostDatabase();
         updateAuthUI();

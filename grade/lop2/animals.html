@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+<script src="../../shared/learner-profile-core.js"></script>
+<script src="../../shared/learner-profile.js"></script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Học Tiếng Anh Chủ Đề Động Vật (Animals)</title>
@@ -42,7 +45,7 @@
       <p>10 lượt gần nhất; lưu tối đa 50 lượt trên thiết bị này.</p><ul id="learning-history"></ul>
     </details>
   </section>
-  
+
   <!-- TAB 1: VOCABULARY -->
   <div id="vocab" class="tab-content active">
     <h2 style="margin-bottom: 16px; text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Từ Vựng 50 Loài Động Vật Phổ Biến</h2>
@@ -55,7 +58,7 @@
   <div id="sentences" class="tab-content">
     <h2 style="margin-bottom: 16px; text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Cấu Trúc Câu Tiếng Anh Về Động Vật</h2>
     <div class="sentence-section">
-      
+
       <div class="sentence-card">
         <h3>💡 Mẫu câu 1: Hỏi và xác định tên con vật (What animal is this?)</h3>
         <p><b>Hỏi:</b> What animal is this? / What is that?</p>
@@ -93,7 +96,7 @@
   <div id="game-flip" class="tab-content">
     <h2 style="text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard Động Vật</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để xem đáp án và nghe phát âm. Đáp án hiện đủ 1 giây rồi tự chuyển thẻ.</p>
-    
+
     <div class="single-card-container">
       <div class="card-mode-selector">
         <button class="mode-btn active" id="mode-viet" onclick="setCardFrontMode('viet', this)">Mặt trước: Hình & Từ Anh</button>
@@ -156,7 +159,7 @@
   <div id="game-spelling" class="tab-content">
     <h2 style="text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Game 3: Thử Tài Viết Tên Động Vật</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình, nghe rồi nhập tên tiếng Anh. Nhấn Enter hoặc Kiểm tra. Đúng: chuyển câu sau 1 giây.</p>
-    
+
     <div class="learning-stats" aria-label="Điểm và chuỗi trả lời đúng">
   <div>⭐ <strong id="spelling-points">0</strong><span>Điểm lượt này</span></div>
   <div>🔥 <strong id="spelling-streak">0</strong><span>Chuỗi đúng</span></div>
@@ -168,7 +171,7 @@
       <div class="card-counter" id="spelling-progress"></div>
       <div id="spelling-preview" class="number-preview-box"></div>
       <button class="audio-btn" style="width: 44px; height: 44px; font-size: 1.3rem; margin-top:0;" id="spelling-audio" aria-label="Nghe lại tên con vật" onclick="playSpellingAudio()">🔊</button>
-      
+
       <div class="spelling-input-group">
         <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ tên con vật (ví dụ: cat)..." aria-label="Tên con vật bằng tiếng Anh" aria-describedby="spelling-feedback" autocomplete="off" autocapitalize="none" spellcheck="false">
         <button class="btn-action" id="spelling-check" onclick="checkSpelling()">Kiểm tra</button>
@@ -189,7 +192,7 @@
   <div id="game-count" class="tab-content">
     <h2 style="text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Game 4: Đếm Thú & Luyện Câu (Số nhiều)</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Đếm số lượng con vật rồi nhập câu. Chú ý các từ số nhiều bất quy tắc (ví dụ: mice, sheep, fish)!</p>
-    
+
     <div class="count-game-container">
       <div class="score-board" id="count-score">🎯 Đã đúng: 0 / 16 câu</div>
 

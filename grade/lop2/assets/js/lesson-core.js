@@ -18,7 +18,7 @@
     const key = 'danh:lop2:' + lesson.id + ':selected-words:v1';
     let selected = [...allIds];
     try {
-      if (storage === undefined) storage = window.localStorage;
+      if (storage === undefined) storage = (window.DanhLearners?.storage || window.localStorage);
       const saved = JSON.parse(storage?.getItem(key) || 'null');
       if (Array.isArray(saved)) {
         const valid = [...new Set(saved.filter(id => knownIds.has(id)))];

@@ -11,14 +11,14 @@
     if (!/^[a-z0-9-]+$/.test(topic) || !valid(result)) return false;
     try {
       const value = { ...result, completedAt: new Date().toISOString() };
-      window.localStorage.setItem(key(topic), JSON.stringify(value));
+      (window.DanhLearners?.storage || window.localStorage).setItem(key(topic), JSON.stringify(value));
       return true;
     } catch (_) { return false; }
   }
   function read(topic) {
     if (!/^[a-z0-9-]+$/.test(topic)) return null;
     try {
-      const value = JSON.parse(window.localStorage.getItem(key(topic)) || 'null');
+      const value = JSON.parse((window.DanhLearners?.storage || window.localStorage).getItem(key(topic)) || 'null');
       return valid(value) ? value : null;
     } catch (_) { return null; }
   }

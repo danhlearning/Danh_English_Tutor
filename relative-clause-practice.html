@@ -1,67 +1,16 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài Tập Mệnh Đề Quan Hệ - Thầy Danh</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./assets/css/pages/relative-clause-practice.css">
-</head>
-<body>
-
-    <div class="top-nav">
-        <a href="grammar-index.html" class="btn-nav btn-back">⬅ Quay lại Trung tâm Ngữ pháp</a>
-        <a href="relative-clause-theory.html" class="btn-nav btn-theory">📖 Xem Lý thuyết</a>
-    </div>
-
-    <div class="main-content">
-        <div class="container">
-            <h1>📝 Bài Tập Mệnh Đề Quan Hệ</h1>
-            
-            <div class="controls">
-                <div class="progress" id="progress">Câu: 1/60</div>
-            </div>
-
-            <div class="question-box" id="question-text">
-                </div>
-
-            <div class="input-area" id="input-area">
-                <input type="text" id="answer-input" placeholder="Nhập từ cần điền (vd: who, which...)" autocomplete="off">
-                <button class="btn-check" id="check-btn" onclick="checkAnswer()">Kiểm tra</button>
-            </div>
-
-            <div id="feedback" class="feedback"></div>
-            <div id="explanation" class="explanation"></div>
-
-            <button class="btn-next" id="next-btn" onclick="nextQuestion()">Câu tiếp theo ➔</button>
-        </div>
-    </div>
-
-    <section class="contact-section">
-        <h2>Kết nối với thầy Danh</h2>
-        <div class="social-buttons">
-            <a href="https://zalo.me/0911594794" target="_blank" class="btn-social btn-zalo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="zalo-logo">
-                Zalo: 0911594794
-            </a>
-            <a href="https://www.facebook.com/cong.danh.0210" target="_blank" class="btn-social btn-fb">
-                <svg class="fb-icon" viewBox="0 0 24 24">
-                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
-                </svg>
-                Facebook
-            </a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Học tiếng Anh cùng thầy Danh.</p>
-    </footer>
-
-<script src="./assets/js/pages/relative-clause-practice.js"></script>
-
-</body>
-</html>
+<!doctype html>
+<html lang="vi"><head>
+<script src="./shared/learner-profile-core.js"></script>
+<script src="./shared/learner-profile.js"></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Luyện ngữ pháp tiếng Anh theo chuyên đề, ôn lỗi sai và lưu tiến độ cùng Danh English Tutor."><title>Luyện tập ngữ pháp | Danh English Tutor</title><link rel="preload" href="assets/fonts/nunito/latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="assets/css/pages/grammar-room.css"><link rel="stylesheet" href="assets/css/pages/grammar-playful.css"><link rel="icon" href="assets/icons/grammar-buddy.svg" type="image/svg+xml"></head><body data-page="practice" data-group="relative"><a class="skip-link" href="#main">Đến nội dung học</a><header class="hero"><div class="hero-inner"><a class="back" href="skills.html">← Luyện theo kỹ năng</a><span class="hero-mascot" aria-hidden="true"><img src="assets/icons/grammar-buddy.svg" alt="" width="98" height="98"></span><h1>Luyện tập ngữ pháp</h1><p>Tập trung vào một câu, tự sửa khi chưa đúng và tiến bộ qua từng lượt.</p></div></header><main id="main" class="room learning"><a class="button" href="grammar-index.html" style="margin-bottom:16px">← Phòng ngữ pháp</a><div class="experience-toolbar" role="group" aria-label="Âm thanh và chuyển động"><button type="button" id="sound-toggle" aria-pressed="true">🔊 Âm thanh: bật</button><button type="button" id="motion-toggle" aria-pressed="true">✨ Hiệu ứng: bật</button></div><div id="notice" class="notice" role="status" aria-live="polite"></div>
+<section id="resume-panel" class="panel" hidden><h2>Em có một lượt đang làm</h2><p id="resume-label"></p><button id="resume-btn" class="primary">Tiếp tục lượt này</button></section>
+<section id="setup-panel" class="panel"><h2>Chọn bài và cấp độ</h2><div class="setup"><label>Bài học<select id="topic-select"></select></label><label>Cấp độ<select id="level-select"><option value="1">Nền tảng · Có gợi ý cấu trúc</option><option value="2">Vận dụng · Tự chọn cấu trúc</option><option value="3">Thử thách · Hoàn thành cả câu</option></select></label></div><p class="muted">Mỗi lượt 10 câu: chọn đáp án, điền từ, xếp câu, sửa lỗi và viết lại. Em có thể thử lại khi sai; chỉ số đúng ngay được tính vào điểm chính.</p><div class="actions"><button id="start-btn" class="primary">Bắt đầu làm</button><button id="setup-review" class="soft">Ôn lỗi sai bài này</button></div></section>
+<section id="practice" class="panel" hidden><div class="learning-buddy" id="learning-buddy"><img src="assets/icons/grammar-buddy.svg" alt="" width="40" height="40" aria-hidden="true"><span id="buddy-message">Mình cùng luyện từng câu nhé! 🌱</span></div><div class="lesson-head"><div><h2 id="lesson-title"></h2><div id="lesson-level" class="muted small"></div></div><strong id="counter"></strong></div><div class="progress-track" aria-hidden="true"><div id="progress-fill" class="progress-fill"></div></div>
+<p id="question-label" class="question-label" tabindex="-1"></p><p id="instruction" class="instruction"></p><details id="scaffold" class="scaffold"><summary>Công thức hỗ trợ</summary><p id="scaffold-text"></p></details><p id="question" class="question"></p><p id="cue" class="cue"></p>
+<div id="options" class="answer-options" role="group" aria-label="Các đáp án"></div><div id="typed-answer"><label class="field-label" for="answer-input">Câu trả lời của em</label><textarea id="answer-input" class="answer-input" rows="3" placeholder="Nhập câu trả lời…" autocomplete="off" autocapitalize="sentences" spellcheck="false" aria-describedby="instruction"></textarea></div>
+<div id="order-answer"><div class="field-label">Câu em đang xếp</div><div id="selected-tokens" class="token-zone selected-zone"></div><div class="field-label">Các từ còn lại</div><div id="available-tokens" class="token-zone"></div></div>
+<div id="feedback" class="response" role="status" aria-live="polite" hidden></div><div id="explanation" class="explanation" hidden></div><div id="hint-text" class="explanation" hidden></div>
+<div class="practice-actions"><button class="primary" id="check-btn">Kiểm tra</button><button class="primary" id="next-btn" hidden>Câu tiếp theo →</button><button id="skip-btn">Bỏ qua câu này</button><button id="leave-practice">Lưu và về phòng học</button></div>
+<div class="help-actions"><button id="hint-btn" disabled>Gợi ý</button><button id="reveal-btn" disabled>Xem đáp án</button></div><p id="timer-message" class="timer-message"></p><div class="lesson-links"><a id="theory-link" href="grammar-theory.html" target="_blank" rel="noopener">Xem lý thuyết bài này</a><a href="grammar-index.html">Về danh mục</a></div><p class="small muted">Bài viết lại được đối chiếu với các đáp án mẫu đã biên soạn. Nếu câu chưa khớp, em hãy kiểm tra từ yêu cầu và giữ nguyên nghĩa.</p></section>
+<section id="results" class="panel" hidden><div class="results-mascot" aria-hidden="true"><img src="assets/icons/grammar-buddy.svg" alt="" width="100" height="100"><span>Mỗi bước nhỏ đều đáng tự hào ✨</span></div><h2 id="results-heading" tabindex="-1">Kết quả lượt học</h2><div id="score" class="result-score"></div><p id="result-caption" class="muted"></p><div id="result-counts" class="result-grid"></div><p id="mastery-message"></p><h3 id="errors-heading"></h3><ul id="error-list" class="review-list"></ul><div class="actions"><button id="result-review" class="soft">Ôn lỗi sai</button><button id="new-round" class="primary">Luyện tiếp</button><a class="button" href="grammar-index.html">Về phòng học</a></div></section><noscript><p class="notice">Hãy bật JavaScript để làm bài.</p></noscript></main><contact-danh></contact-danh><script src="shared/contact-footer.js" defer></script>
+<script src="assets/data/grammar/catalog.js" defer></script><script src="assets/data/grammar/questions.js" defer></script><script src="assets/js/grammar/answer-checker.js" defer></script><script src="assets/js/grammar/round-selection.js" defer></script><script src="assets/js/grammar/progress.js" defer></script><script src="assets/js/grammar/session.js" defer></script><script src="assets/js/grammar/experience.js" defer></script><script src="assets/js/grammar/render.js" defer></script></body></html>

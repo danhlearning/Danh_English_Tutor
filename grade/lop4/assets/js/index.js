@@ -3,7 +3,7 @@
   'use strict';
   const units = Object.values(window.DanhGrade4Units || {});
   const storage = (() => {
-    try { return window.localStorage; }
+    try { return (window.DanhLearners?.storage || window.localStorage); }
     catch { return { getItem: () => null, setItem: () => { throw Error('Storage blocked'); } }; }
   })();
   const store = window.DanhGrade4Progress.createStore(storage);

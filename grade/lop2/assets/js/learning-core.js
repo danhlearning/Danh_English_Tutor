@@ -201,7 +201,7 @@
       });
     }
     let storage;
-    try { storage = window.localStorage; }
+    try { storage = (window.DanhLearners?.storage || window.localStorage); }
     catch { storage = { getItem: () => null, setItem: () => { throw Error('Storage blocked'); } }; }
     const learning = new LearningState(topic, words, storage, () => Date.now(), initialCardMode);
     const originalSwitchTab = window.switchTab;

@@ -245,7 +245,7 @@
   }
   function migrateSelection() {
     try {
-      const storage = window.localStorage;
+      const storage = (window.DanhLearners?.storage || window.localStorage);
       const currentKey = 'danh.learning.bodyparts.v1';
       const current = JSON.parse(storage.getItem(currentKey) || 'null');
       if (current?.version === 1 && Array.isArray(current.selected) && current.selected.length &&

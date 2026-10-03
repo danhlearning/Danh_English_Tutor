@@ -8,10 +8,10 @@
   const defaultState = { streak: 0, bestStreak: 0, points: 0, correct: 0, answered: {} };
   let state = { ...defaultState };
   try {
-    const saved = JSON.parse(localStorage.getItem(storageKey) || 'null');
+    const saved = JSON.parse((window.DanhLearners?.storage || window.localStorage).getItem(storageKey) || 'null');
     if (saved && typeof saved === 'object') state = { ...defaultState, ...saved, answered: saved.answered || {} };
   } catch { /* Vẫn học được khi bộ nhớ trình duyệt không khả dụng. */ }
-  const save = () => { try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch { /* Không lưu được trên thiết bị này. */ } };
+  const save = () => { try { (window.DanhLearners?.storage || window.localStorage).setItem(storageKey, JSON.stringify(state)); } catch { /* Không lưu được trên thiết bị này. */ } };
   const updateStats = () => {
     $('streak').textContent = state.streak;
     $('best-streak').textContent = state.bestStreak;

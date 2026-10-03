@@ -1,0 +1,2887 @@
+{
+  "date": "2026-10-03",
+  "total": 360,
+  "retainedForGrading": 0,
+  "entries": [
+    {
+      "id": "legacy-tense-present-simple-1",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 1,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-2",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 2,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-3",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 3,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-4",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 4,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-5",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 5,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-6",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 6,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-7",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 7,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-8",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 8,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-9",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 9,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-10",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 10,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-11",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 11,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-12",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 12,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-13",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 13,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-14",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 14,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-15",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 15,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-16",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 16,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-17",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 17,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-18",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 18,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-19",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 19,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-20",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 20,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-21",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 21,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-22",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 22,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-23",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 23,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-24",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 24,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-25",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 25,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-26",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 26,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-27",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 27,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-28",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 28,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-29",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 29,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-simple-30",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Simple",
+      "number": 30,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-1",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 1,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-2",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 2,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-3",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 3,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-4",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 4,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-5",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 5,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-6",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 6,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-7",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 7,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-8",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 8,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-9",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 9,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-10",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 10,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-11",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 11,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-12",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 12,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-13",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 13,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-14",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 14,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-15",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 15,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-16",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 16,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-17",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 17,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-18",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 18,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-19",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 19,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-20",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 20,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-21",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 21,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-22",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 22,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-23",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 23,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-24",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 24,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-25",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 25,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-26",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 26,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-27",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 27,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-28",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 28,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-29",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 29,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-continuous-30",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Continuous",
+      "number": 30,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-1",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 1,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-2",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 2,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-3",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 3,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-4",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 4,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-5",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 5,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-6",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 6,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-7",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 7,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-8",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 8,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-9",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 9,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-10",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 10,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-11",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 11,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-12",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 12,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-13",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 13,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-14",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 14,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-15",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 15,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-16",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 16,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-17",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 17,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-18",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 18,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-19",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 19,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-20",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 20,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-21",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 21,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-22",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 22,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-23",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 23,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-24",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 24,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-25",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 25,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-26",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 26,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-27",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 27,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-28",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 28,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-29",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 29,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-simple-30",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Simple",
+      "number": 30,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-1",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 1,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-2",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 2,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-3",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 3,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-4",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 4,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-5",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 5,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-6",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 6,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-7",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 7,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-8",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 8,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-9",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 9,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-10",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 10,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-11",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 11,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-12",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 12,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-13",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 13,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-14",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 14,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-15",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 15,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-16",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 16,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-17",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 17,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-18",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 18,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-19",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 19,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-20",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 20,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-21",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 21,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-22",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 22,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-23",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 23,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-24",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 24,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-25",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 25,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-26",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 26,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-27",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 27,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-28",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 28,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-29",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 29,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-past-continuous-30",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Past Continuous",
+      "number": 30,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-1",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 1,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-2",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 2,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-3",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 3,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-4",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 4,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-5",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 5,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-6",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 6,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-7",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 7,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-8",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 8,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-9",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 9,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-10",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 10,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-11",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 11,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-12",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 12,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-13",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 13,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-14",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 14,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-15",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 15,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-16",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 16,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-17",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 17,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-18",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 18,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-19",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 19,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-20",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 20,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-21",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 21,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-22",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 22,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-23",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 23,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-24",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 24,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-25",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 25,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-26",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 26,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-27",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 27,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-28",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 28,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-29",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 29,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-future-simple-30",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Future Simple",
+      "number": 30,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-1",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 1,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-2",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 2,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-3",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 3,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-4",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 4,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-5",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 5,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-6",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 6,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-7",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 7,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-8",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 8,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-9",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 9,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-10",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 10,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-11",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 11,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-12",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 12,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-13",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 13,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-14",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 14,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-15",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 15,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-16",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 16,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-17",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 17,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-18",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 18,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-19",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 19,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-20",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 20,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-21",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 21,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-22",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 22,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-23",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 23,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-24",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 24,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-25",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 25,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-26",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 26,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-27",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 27,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-28",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 28,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-29",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 29,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-tense-present-perfect-30",
+      "source": "assets/js/pages/tense-practice.js",
+      "section": "Present Perfect",
+      "number": 30,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-1",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 1,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-2",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 2,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-3",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 3,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-4",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 4,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-5",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 5,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-6",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 6,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-7",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 7,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-8",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 8,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-9",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 9,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-10",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 10,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-11",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 11,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-12",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 12,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-13",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 13,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-14",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 14,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-15",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 15,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-16",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 16,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-17",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 17,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-18",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 18,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-19",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 19,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-20",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 20,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-21",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 21,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-22",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 22,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-23",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 23,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-24",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 24,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-25",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 25,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-26",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 26,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-27",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 27,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-28",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 28,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-29",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 29,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-30",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 30,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-31",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 31,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-32",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 32,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-33",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 33,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-34",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 34,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-35",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 35,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-36",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 36,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-37",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 37,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-38",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 38,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-39",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 39,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-40",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 40,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-41",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 41,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-42",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 42,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-43",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 43,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-44",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 44,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-45",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 45,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-46",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 46,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-47",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 47,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-48",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 48,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-49",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 49,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-50",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 50,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-51",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 51,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-52",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 52,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-53",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 53,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-54",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 54,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-55",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 55,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-56",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 56,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-57",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 57,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-58",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 58,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-59",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 59,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-relative-clause-relative-clause-60",
+      "source": "assets/js/pages/relative-clause-practice.js",
+      "section": "relative-clause",
+      "number": 60,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-1",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 1,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-2",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 2,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-3",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 3,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-4",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 4,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-5",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 5,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-6",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 6,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-7",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 7,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-8",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 8,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-9",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 9,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-10",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 10,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-11",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 11,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-12",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 12,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-13",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 13,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-14",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 14,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-15",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 15,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-16",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 16,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-17",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 17,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-18",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 18,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-19",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 19,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-20",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 20,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-21",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 21,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-22",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 22,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-23",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 23,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-24",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 24,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-25",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 25,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-26",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 26,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-27",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 27,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-28",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 28,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-29",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 29,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-30",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 30,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-31",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 31,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-32",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 32,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-33",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 33,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-34",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 34,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-35",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 35,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-36",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 36,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-37",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 37,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-38",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 38,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-39",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 39,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-40",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 40,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-41",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 41,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-42",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 42,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-43",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 43,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-44",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 44,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-45",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 45,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-46",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 46,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-47",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 47,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-48",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 48,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-49",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 49,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-50",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 50,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-51",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 51,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-52",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 52,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-53",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 53,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-54",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 54,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-55",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 55,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-56",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 56,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-57",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 57,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-58",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 58,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-59",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 59,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-condition-condition-60",
+      "source": "assets/js/pages/condition-practice.js",
+      "section": "condition",
+      "number": 60,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-1",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 1,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-2",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 2,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-3",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 3,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-4",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 4,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-5",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 5,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-6",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 6,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-7",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 7,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-8",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 8,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-9",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 9,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-10",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 10,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-11",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 11,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-12",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 12,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-13",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 13,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-14",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 14,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-15",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 15,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-16",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 16,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-17",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 17,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-18",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 18,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-19",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 19,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-20",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 20,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-21",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 21,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-22",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 22,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-23",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 23,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-24",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 24,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-25",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 25,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-26",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 26,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-27",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 27,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-28",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 28,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-29",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 29,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-30",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 30,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-31",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 31,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-32",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 32,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-33",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 33,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-34",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 34,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-35",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 35,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-36",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 36,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-37",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 37,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-38",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 38,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-39",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 39,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-40",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 40,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-41",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 41,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-42",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 42,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-43",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 43,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-44",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 44,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-45",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 45,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-46",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 46,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-47",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 47,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-48",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 48,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-49",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 49,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-50",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 50,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-51",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 51,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-52",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 52,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-53",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 53,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-54",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 54,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-55",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 55,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-56",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 56,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-57",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 57,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-58",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 58,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-59",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 59,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    },
+    {
+      "id": "legacy-wordform-wordform-60",
+      "source": "assets/js/pages/wordform-practice.js",
+      "section": "wordform",
+      "number": 60,
+      "status": "retired",
+      "reason": "Replaced in published pages by the structured authored bank; original answers are not used for grading."
+    }
+  ]
+}

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+<script src="../../shared/learner-profile-core.js"></script>
+<script src="../../shared/learner-profile.js"></script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Học Tiếng Anh Chủ Đề Gia Đình & Bè Bạn (Family & Friends)</title>
@@ -30,7 +33,7 @@
 </nav>
 
 <div class="container">
-  
+
   <!-- TAB 1: VOCABULARY -->
   <div id="vocab" class="tab-content active">
     <h2 style="margin-bottom: 16px; text-align: center; color: #D93838; font-weight: 800; font-size: 1.4rem;">Từ vựng Gia đình và bạn bè</h2>
@@ -41,7 +44,7 @@
   <div id="sentences" class="tab-content">
     <h2 style="margin-bottom: 16px; text-align: center; color: #D93838; font-weight: 800; font-size: 1.4rem;">Mẫu Câu Hỏi & Giới Thiệu Gia Đình, Bạn Bè</h2>
     <div class="sentence-section">
-      
+
       <div class="sentence-card">
         <h3>💡 Mẫu Câu 1: Giới thiệu thành viên (This is... / These are...)</h3>
         <p><b>Dùng cho 1 người (Số ít):</b> This is my + [Thành viên].</p>
@@ -81,7 +84,7 @@
   <div id="game-flip" class="tab-content">
     <h2 style="text-align: center; color: #D93838; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard Gia Đình & Bạn Bè</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để lật xem đáp án. Sau 3 giây thẻ sẽ tự chuyển tiếp!</p>
-    
+
     <div class="single-card-container">
       <div class="card-mode-selector">
         <button class="mode-btn active" id="mode-viet" onclick="setCardFrontMode('viet', this)">Mặt trước: Hình ảnh & Tiếng Việt</button>
@@ -110,7 +113,7 @@
   <div id="game-mcq" class="tab-content">
     <h2 style="text-align: center; color: #D93838; font-weight: 800; font-size: 1.4rem;">Game 2: Trắc Nghiệm Chọn Từ Đúng</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình ảnh biểu tượng và chọn từ tiếng Anh tương ứng!</p>
-    
+
     <div class="quiz-container">
       <div class="vocab-preview-box" id="mcq-number-preview"></div>
       <div class="mcq-grid" id="mcq-options-container"></div>
@@ -122,13 +125,13 @@
   <div id="game-spelling" class="tab-content">
     <h2 style="text-align: center; color: #D93838; font-weight: 800; font-size: 1.4rem;">Game 3: Thử Tài Điền Chính Tả</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn biểu tượng và nghe phát âm để gõ chính xác từ tiếng Anh! (Ấn ENTER để kiểm tra)</p>
-    
+
     <div class="spelling-box">
       <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 / 20 câu</div>
 
       <div id="spelling-preview" class="vocab-preview-box"></div>
       <button class="audio-btn" style="width: 44px; height: 44px; font-size: 1.3rem; margin-top:0;" onclick="playSpellingAudio()">🔊</button>
-      
+
       <div class="spelling-input-group">
         <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ từ tiếng Anh..." autocomplete="off">
         <button class="btn-action" onclick="checkSpelling()">Kiểm tra</button>
@@ -140,7 +143,7 @@
   <div id="game-count" class="tab-content">
     <h2 style="text-align: center; color: #D93838; font-weight: 800; font-size: 1.4rem;">Game 4: Luyện Tập Viết Câu Hoàn Chỉnh</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn gợi ý nhân vật và hoàn thành câu tiếng Anh thích hợp! (Ấn ENTER để kiểm tra)</p>
-    
+
     <div class="count-game-container">
       <div class="score-board" id="count-score">🎯 Đã đúng: 0 / 30 câu</div>
 

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+<script src="../../shared/learner-profile-core.js"></script>
+<script src="../../shared/learner-profile.js"></script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Học Tiếng Anh Chủ Đề Số Đếm (English Numbers 1 - 100)</title>
@@ -29,7 +32,7 @@
 </nav>
 
 <div class="container">
-  
+
   <!-- TAB 1: VOCABULARY -->
   <div id="vocab" class="tab-content active">
     <h2 style="margin-bottom: 16px; text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Từ Vựng Số Đếm Từ 1 Đến 30, 99 & 100</h2>
@@ -40,7 +43,7 @@
   <div id="sentences" class="tab-content">
     <h2 style="margin-bottom: 16px; text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Quy Tắc Ghép Số & Mẫu Câu Hỏi Số Lượng</h2>
     <div class="sentence-section">
-      
+
       <div class="sentence-card">
         <h3>💡 Quy Tắc Ghép Số Tiếng Anh Hàng Chục & Hàng Trăm</h3>
         <p><b>1. Số ghép hàng chục (21 - 99):</b> [Số tròn chục] + <b>-</b> + [Số hàng đơn vị].</p>
@@ -76,7 +79,7 @@
   <div id="game-flip" class="tab-content">
     <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để lật xem đáp án. Sau 3 giây thẻ sẽ tự chuyển tiếp!</p>
-    
+
     <div class="single-card-container">
       <div class="card-mode-selector">
         <button class="mode-btn active" id="mode-viet" onclick="setCardFrontMode('viet', this)">Mặt trước: Số & Tiếng Việt</button>
@@ -105,7 +108,7 @@
   <div id="game-mcq" class="tab-content">
     <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 2: Trắc Nghiệm Chọn Từ Đúng (1 - 100)</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn con số bên trên và chọn 1 trong 4 đáp án từ tiếng Anh đúng!</p>
-    
+
     <div class="quiz-container">
       <div class="number-preview-box" id="mcq-number-preview"></div>
       <div class="mcq-grid" id="mcq-options-container"></div>
@@ -117,13 +120,13 @@
   <div id="game-spelling" class="tab-content">
     <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 3: Thử Tài Điền Chính Tả Số Đếm (1 - 100)</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn con số và nghe phát âm để gõ chữ tiếng Anh chính xác! (Ấn ENTER để kiểm tra)</p>
-    
+
     <div class="spelling-box">
       <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 / 100 câu</div>
 
       <div id="spelling-preview" class="number-preview-box"></div>
       <button class="audio-btn" style="width: 44px; height: 44px; font-size: 1.3rem; margin-top:0;" onclick="playSpellingAudio()">🔊</button>
-      
+
       <div class="spelling-input-group">
         <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ tên số..." autocomplete="off">
         <button class="btn-action" onclick="checkSpelling()">Kiểm tra</button>
@@ -135,7 +138,7 @@
   <div id="game-count" class="tab-content">
     <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 4: Đếm Đồ Vật & Viết Câu (50 Câu)</h2>
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Bé hãy đếm số lượng vật dụng/con vật rồi nhập cả câu (Ấn ENTER để kiểm tra đáp án)</p>
-    
+
     <div class="count-game-container">
       <div class="score-board" id="count-score">🎯 Đã đúng: 0 / 50 câu</div>
 

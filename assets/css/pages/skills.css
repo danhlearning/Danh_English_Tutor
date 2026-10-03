@@ -1,0 +1,10 @@
+@import url("./index.css");
+
+.skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:35px}
+.skills-grid .card{padding:24px;min-width:0}
+.skills-grid .card h2{font-size:1.4rem;line-height:1.4}
+.skills-grid .card p{font-size:1rem;line-height:1.6}
+.skills-grid .btn-card{min-height:44px;display:flex;justify-content:center;align-items:center}
+.skills-grid .card:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
+@media(max-width:600px){.skills-grid{grid-template-columns:minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){.skills-grid .card,.profile-pic{transition:none}}

@@ -2,13 +2,22 @@
 
 Website học tiếng Anh tĩnh bằng HTML, CSS và JavaScript. Trang chủ là index.html; danh sách bài Lớp 2 là grade/lop2/lop2.html.
 
+Định hướng sản phẩm là **game học tiếng Anh**: mỗi hoạt động có mục tiêu học, thử thách, phản hồi, tự sửa và ôn lại; dùng Nunito, phong cách dễ thương, âm thanh và animation phục vụ cách chơi. Khi phát triển, tuân theo [chỉ dẫn chung](AGENTS.md) và [nguyên tắc thiết kế game học tiếng Anh](docs/NGUYEN_TAC_GAME_HOC_TIENG_ANH.md).
+
 ## Mở website
 
 Mở index.html bằng Chrome hoặc chạy một máy chủ tĩnh từ thư mục gốc repo. Giữ nguyên cấu trúc thư mục để liên kết và tài nguyên hoạt động. Các URL HTML hiện có được giữ để người học vẫn mở được liên kết đã lưu.
 
+## Hồ sơ người học
+
+Nhập tên để vào học, chọn lại tên khi bắt đầu phiên mới và đổi người học trên thanh đầu trang. Một trình duyệt có thể lưu nhiều hồ sơ với tiến độ, lượt dở và lựa chọn hiệu ứng riêng. Có đổi tên, sao lưu JSON, khôi phục thành hồ sơ mới và xác nhận xóa một hồ sơ. Tiến độ cũ có thể chuyển cho hồ sơ đầu tiên; chưa đồng bộ tự động giữa các thiết bị. Xem [hướng dẫn hồ sơ](docs/LEARNER_PROFILES.md).
+
 ## Cấu trúc
 
 - Các trang HTML ở gốc: địa chỉ công khai hiện có.
+- skills.html: trang Luyện theo kỹ năng, gom từ vựng, ngữ pháp, lý thuyết phát âm và luyện tập phản xạ. Trang chủ có hai lối vào: luyện kỹ năng và học theo lớp.
+- grammar-index.html: phòng ngữ pháp với 25 bài, ba cấp độ, 1.530 mục luyện từ 510 tình huống; lượt 10 câu có năm dạng, lưu lượt dở, ôn lỗi sai và lịch ôn. Các đường dẫn chuyên đề cũ vẫn hoạt động.
+- assets/data/grammar/ và assets/js/grammar/: nội dung và bộ luyện chung của phòng ngữ pháp; tiến độ cách ly với các lớp.
 - assets/css/pages/ và assets/js/pages/: giao diện và mã của các trang ở gốc.
 - grade/lop2/*.html: trang danh sách, 16 Unit Global Success và 19 chủ đề bổ trợ Lớp 2.
 - grade/lop2/assets/: CSS, mã game và dữ liệu dùng trong bài Lớp 2; bộ Game 1–3 cũng phục vụ demo Lớp 4.
@@ -26,12 +35,14 @@ Mở index.html bằng Chrome hoặc chạy một máy chủ tĩnh từ thư m�
 
 Chạy từ gốc repo:
 
-    node --test grade/lop2/tests/*.test.cjs grade/lop4/tests/*.test.cjs grade/lop7/tests/*.test.cjs
-    find assets/js grade/lop2/assets/js grade/lop4/assets/js grade/lop6/assets/js grade/lop7/assets/js shared -type f -name '*.js' -print0 | xargs -0 -n1 node --check
+    node --test grade/lop2/tests/*.test.cjs grade/lop4/tests/*.test.cjs grade/lop7/tests/*.test.cjs tests/grammar-room/*.test.cjs tests/learner-profiles/*.test.cjs
+    find assets/data assets/js grade/lop2/assets/js grade/lop4/assets/js grade/lop6/assets/js grade/lop7/assets/js shared -type f -name '*.js' -print0 | xargs -0 -n1 node --check
     node scripts/check-local-links.cjs
     node scripts/check-contact-footer.cjs
 
 GitHub Actions chạy lại các lệnh này khi push hoặc mở pull request. Các bài kiểm tra tự động chưa thay được việc nghe giọng đọc và thao tác trực tiếp trên điện thoại.
+
+Phòng ngữ pháp: `node scripts/build-grammar-pages.cjs` tái tạo các trang công khai từ mẫu chung. Kiểm tra trình duyệt bằng `node tests/grammar-room/browser-smoke.cjs` khi có Playwright; có thể đặt `PLAYWRIGHT_MODULE`, `BROWSER_CHANNEL` và `LESSON_BASE_URL` theo môi trường. Chi tiết nội dung, cách chấm và lưu tiến độ tại [tài liệu phòng ngữ pháp](docs/GRAMMAR_ROOM.md).
 
 ## Trạng thái phát triển
 

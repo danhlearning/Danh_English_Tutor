@@ -1,6 +1,6 @@
 # Lộ trình Danh English Tutor
 
-Cập nhật: 02/10/2026. Các URL HTML đang dùng được giữ trong suốt quá trình chỉnh sửa.
+Cập nhật: 03/10/2026. Các URL HTML đang dùng được giữ trong suốt quá trình chỉnh sửa.
 
 ## 1. Nền tảng và cấu trúc
 
@@ -40,5 +40,9 @@ Cập nhật: 02/10/2026. Các URL HTML đang dùng được giữ trong suốt 
 - [ ] Đối chiếu chi tiết từng Lesson và mẫu đề kiểm tra của từng trường với sách trước khi coi là ngân hàng đề thi chính thức.
 
 ## Điều kiện hoàn thành mỗi đợt
+
+- [x] Gom bốn khu vực luyện vào Luyện theo kỹ năng, giữ bố cục trang chủ và lộ trình theo lớp.
+- [x] Phát triển phòng ngữ pháp: 25 bài, 1.530 mục từ 510 tình huống, ba cấp độ và năm dạng; lý thuyết ngắn, lưu lượt dở, ôn lỗi sai, lịch ôn và luyện tổng hợp. Xem [tài liệu phòng ngữ pháp](GRAMMAR_ROOM.md).
+- [ ] Kiểm chứng bàn phím và thao tác phòng ngữ pháp trên điện thoại vật lý của học sinh.
 
 Các lệnh kiểm tra trong README.md phải đạt. Thay đổi âm thanh, hình và thao tác cần được thử trên trình duyệt thật trước khi coi là nghiệm thu toàn diện.

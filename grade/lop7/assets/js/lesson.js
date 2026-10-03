@@ -13,14 +13,14 @@
   const key = `danh-g7-${id}`;
   let learned = [];
   try {
-    const saved = JSON.parse(localStorage.getItem(key) || '[]');
+    const saved = JSON.parse((window.DanhLearners?.storage || window.localStorage).getItem(key) || '[]');
     if (Array.isArray(saved)) learned = saved.filter(value => Number.isInteger(value) && value >= 1 && value <= unit.words.length);
   } catch { /* Trang vẫn dùng được khi trình duyệt chặn lưu trữ. */ }
   const mastered = new Set(learned);
   const updateProgress = () => { $('#unit-progress').textContent = `Đã trả lời đúng ${mastered.size}/${unit.words.length} từ`; };
   const mark = word => {
     mastered.add(word.id); updateProgress();
-    try { localStorage.setItem(key, JSON.stringify([...mastered])); } catch { /* Không lưu được trên thiết bị này. */ }
+    try { (window.DanhLearners?.storage || window.localStorage).setItem(key, JSON.stringify([...mastered])); } catch { /* Không lưu được trên thiết bị này. */ }
   };
   const speak = term => {
     const status = $('#speech-note');
