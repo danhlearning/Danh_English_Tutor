@@ -23,7 +23,7 @@
         window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(button.dataset.unit4Say);
         utterance.lang = 'en-GB';
-        utterance.rate = 0.75;
+        window.DanhYoungSpeech.configure(utterance);
         window.speechSynthesis.speak(utterance);
         pronunciationNote.textContent = '';
       } catch {

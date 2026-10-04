@@ -218,7 +218,7 @@
       if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') return Promise.resolve();
       return new Promise(resolve => {
         let finished = false;
-        const timeout = setTimeout(finish, 8000);
+        const timeout = setTimeout(finish, window.DanhYoungSpeech.timeoutFor(word.name));
         function finish() {
           if (finished) return;
           finished = true;
@@ -230,7 +230,6 @@
         try {
           const utterance = new SpeechSynthesisUtterance(word.name);
           utterance.lang = speechLocale;
-          utterance.rate = 0.6;
           const voices = window.speechSynthesis.getVoices();
           const voice = voices.find(item => item.lang.replace('_', '-').toLowerCase() === speechLocale.toLowerCase() &&
             (item.name.includes('Natural') || item.name.includes('Google') || item.name.includes('Samantha'))) ||
@@ -239,6 +238,7 @@
           if (voice) utterance.voice = voice;
           utterance.onend = finish;
           utterance.onerror = finish;
+          window.DanhYoungSpeech.configure(utterance);
           window.speechSynthesis.speak(utterance);
         } catch { finish(); }
       });

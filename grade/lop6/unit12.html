@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/grade6.css">
+  <link rel="stylesheet" href="../../shared/vocabulary-game.css?v=feedback-2">
 </head>
 <body data-unit="unit12">
   <header class="g6-lesson-hero"><div class="g6-shell">
@@ -22,15 +23,16 @@
     <nav class="g6-tabs" role="tablist" aria-label="Hoạt động của Unit">
       <button class="g6-tab" type="button" role="tab" data-tab="vocabulary">Từ vựng</button>
       <button class="g6-tab" type="button" role="tab" data-tab="flashcards">Lật thẻ</button>
-      <button class="g6-tab" type="button" role="tab" data-tab="quiz">Chọn nghĩa</button>
+      <button class="g6-tab" type="button" role="tab" data-tab="quiz">🎮 Chọn từ</button>
       <button class="g6-tab" type="button" role="tab" data-tab="spelling">Gõ từ</button>
       <button class="g6-tab" type="button" role="tab" data-tab="grammar">Ngữ pháp</button>
     </nav>
     <section class="g6-panel" id="vocabulary" role="tabpanel"><h2>8 từ vựng của Unit</h2><p class="g6-note">Đọc từ, xem nghĩa và câu ví dụ. Nút nghe dùng giọng đọc có sẵn trên thiết bị của em.</p><div class="g6-word-grid" id="vocab-grid"></div></section>
     <section class="g6-panel" id="flashcards" role="tabpanel" hidden><h2>Lật thẻ ghi nhớ</h2><p class="g6-note">Nhìn từ tiếng Anh rồi thử đoán nghĩa trước khi lật.</p><div class="g6-flash-wrap"><button class="g6-flashcard" id="flashcard" type="button"></button><div class="g6-flash-controls"><button class="g6-secondary" id="flash-prev" type="button">← Thẻ trước</button><button class="g6-sound" id="flash-sound" type="button">🔊 Nghe</button><button class="g6-primary" id="flash-next" type="button">Thẻ sau →</button></div></div></section>
-    <section class="g6-panel" id="quiz" role="tabpanel" hidden><h2>Chọn nghĩa đúng</h2><p class="g6-note">Mỗi lượt gồm 8 câu. Chọn đúng ngay lần đầu để ghi nhận từ đã học.</p><div class="g6-stage" id="quiz-stage"></div></section>
+    <section class="g6-panel" id="quiz" role="tabpanel" hidden><h2>🎮 Chọn từ tiếng Anh</h2><p class="g6-note">Đọc nghĩa tiếng Việt, chọn 1 trong 4 từ tiếng Anh. Đúng ngay được 10 sao; tự sửa đúng được 5 sao.</p><div class="g6-stage" id="quiz-stage"></div></section>
     <section class="g6-panel" id="spelling" role="tabpanel" hidden><h2>Gõ từ tiếng Anh</h2><p class="g6-note">Nhìn nghĩa tiếng Việt và tự gõ từ. Sau hai lần sai, em có thể xem đáp án.</p><div class="g6-stage" id="spelling-stage"></div></section>
     <section class="g6-panel" id="grammar" role="tabpanel" hidden><div class="g6-grammar-unit"><span class="g6-grammar-icon" aria-hidden="true">🧩</span><h2>Ngữ pháp Unit 12</h2><p>Luyện ngữ pháp Unit 12 từ dễ tới khó. Mỗi set gồm 10 câu, có chấm điểm và giải thích.</p><a class="g6-primary g6-grammar-link" href="./grammar.html?unit=12">Vào luyện ngữ pháp Unit 12 →</a></div></section>
+    <p class="g6-note"><a href="./vocabulary-review.html?term=1">🌟 Ôn từ vựng học kỳ 1</a> · <a href="./vocabulary-review.html?term=2">🚀 Ôn từ vựng học kỳ 2</a></p>
     <p id="speech-note" role="status"></p>
     <div class="g6-unit-footer"><a href="./lop6.html">← Về danh sách Unit</a><a href="./unit1.html">Về Unit 1 →</a></div>
     <p class="g6-source">Từ vựng và câu luyện do website biên soạn theo chủ đề Tiếng Anh 6 Global Success.</p>
@@ -38,6 +40,8 @@
   <contact-danh></contact-danh>
   <script src="../../shared/contact-footer.js"></script>
   <script src="./assets/js/units-data.js"></script>
-  <script src="./assets/js/lesson.js"></script>
+  <script src="../../shared/learning-effects.js?v=sync-3"></script>
+  <script src="../../shared/vocabulary-game.js?v=sync-3"></script>
+  <script src="./assets/js/lesson.js?v=feedback-2"></script>
 </body>
 </html>

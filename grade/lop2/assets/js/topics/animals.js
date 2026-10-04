@@ -1,15 +1,22 @@
-const defaultSpeechRate = 0.85;
+// Slow listening practice; keep the recorded voice's pitch and vowel quality.
+const wordPlaybackRate = window.DanhYoungSpeech.audioRate;
+const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
 
   /* HỆ THỐNG PHÁT ÂM THANH HIỆU ỨNG (Web Audio API) */
   let audioCtx = null;
+  let activeEffectOscillator = null;
 
   function playSoundEffect(type) {
+    // The model pronunciation must remain audible after a correct answer.
+    if (activeWordAudio || finishCurrentSpeech) return;
     try {
     const AudioContextClass = window.AudioContext || window.webkitAudioContext;
     if (!AudioContextClass) return;
     if (!audioCtx) audioCtx = new AudioContextClass();
     if (audioCtx.state === 'suspended') audioCtx.resume().catch(() => {});
     const osc = audioCtx.createOscillator();
+    activeEffectOscillator = osc;
+    osc.onended = () => { if (activeEffectOscillator === osc) activeEffectOscillator = null; };
     const gain = audioCtx.createGain();
     osc.connect(gain);
     gain.connect(audioCtx.destination);
@@ -21,7 +28,7 @@ const defaultSpeechRate = 0.85;
       osc.frequency.setValueAtTime(659.25, now + 0.1);
       osc.frequency.setValueAtTime(783.99, now + 0.2);
       osc.frequency.setValueAtTime(1046.50, now + 0.3);
-      gain.gain.setValueAtTime(0.3, now);
+      gain.gain.setValueAtTime(0.04, now);
       gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
       osc.start(now);
       osc.stop(now + 0.6);
@@ -30,7 +37,7 @@ const defaultSpeechRate = 0.85;
       osc.type = 'sawtooth';
       osc.frequency.setValueAtTime(180, now);
       osc.frequency.setValueAtTime(130, now + 0.15);
-      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.setValueAtTime(0.025, now);
       gain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
       osc.start(now);
       osc.stop(now + 0.4);
@@ -142,6 +149,10 @@ const defaultSpeechRate = 0.85;
 
   function stopSpeech() {
     speechSerial++;
+    if (activeEffectOscillator) {
+      try { activeEffectOscillator.stop(); } catch { /* Already ended. */ }
+      activeEffectOscillator = null;
+    }
     if (finishCurrentSpeech) finishCurrentSpeech();
     if (activeWordAudio) {
       try { activeWordAudio.pause(); activeWordAudio.currentTime = 0; }
@@ -153,6 +164,11 @@ const defaultSpeechRate = 0.85;
     } catch { /* Audio is optional. */ }
   }
 
+  window.addEventListener('pagehide', stopSpeech);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopSpeech();
+  });
+
   function playWordAudio(source) {
     return new Promise(resolve => {
       let audio;
@@ -160,8 +176,11 @@ const defaultSpeechRate = 0.85;
       catch { resolve(false); return; }
       activeWordAudio = audio;
       audio.preload = 'auto';
+      audio.preservesPitch = true;
+      audio.playbackRate = wordPlaybackRate;
+      audio.defaultPlaybackRate = wordPlaybackRate;
       let finished = false;
-      const timeout = setTimeout(() => finish(false), 8000);
+      const timeout = setTimeout(() => finish(false), speechTimeoutMs);
       function finish(result) {
         if (finished) return;
         finished = true;
@@ -184,40 +203,61 @@ const defaultSpeechRate = 0.85;
   }
 
   function speakWithDevice(text, serial) {
-    if (serial !== speechSerial || !('speechSynthesis' in window) ||
-        typeof SpeechSynthesisUtterance === 'undefined') return Promise.resolve();
+    if (serial !== speechSerial) return Promise.resolve();
+    if (!('speechSynthesis' in window) || typeof SpeechSynthesisUtterance === 'undefined') {
+      setAudioNote('Thiết bị không hỗ trợ giọng đọc câu. Bạn vẫn có thể nghe các từ bằng âm mẫu.');
+      return Promise.resolve();
+    }
+    refreshUSVoice();
+    if (!usVoice) {
+      setAudioNote('Thiết bị chưa có giọng đọc Anh–Mỹ. Hãy thử nghe lại hoặc dùng thiết bị có giọng này.');
+      return Promise.resolve();
+    }
     return new Promise(resolve => {
       let finished = false;
-      const timeout = setTimeout(finish, 8000);
+      let utterance;
+      const timeout = setTimeout(() => {
+        try { window.speechSynthesis.cancel(); } catch { /* Device speech unavailable. */ }
+        finish();
+      }, window.DanhYoungSpeech.timeoutFor(text));
       function finish() {
         if (finished) return;
         finished = true;
         clearTimeout(timeout);
+        if (utterance) utterance.onend = utterance.onerror = null;
         if (finishCurrentSpeech === finish) finishCurrentSpeech = null;
         resolve();
       }
       finishCurrentSpeech = finish;
       try {
-        const utterance = new SpeechSynthesisUtterance(text);
+        utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = 'en-US';
-        utterance.rate = defaultSpeechRate;
-        refreshUSVoice();
-        if (usVoice) utterance.voice = usVoice;
-        utterance.onend = utterance.onerror = finish;
+        utterance.voice = usVoice;
+        utterance.onend = finish;
+        utterance.onerror = () => {
+          if (serial === speechSerial) setAudioNote('Chưa phát được giọng đọc. Bấm loa để thử lại nhé.');
+          finish();
+        };
+        window.DanhYoungSpeech.configure(utterance);
         window.speechSynthesis.speak(utterance);
       } catch { finish(); }
     });
   }
 
+  function setAudioNote(message) {
+    const note = document.getElementById('animals-audio-note');
+    if (note) note.textContent = message;
+  }
+
   async function speak(text) {
     stopSpeech();
+    setAudioNote('Nghe chậm · Giọng Anh–Mỹ');
     const serial = speechSerial;
     const source = wordAudioFiles.get(String(text).trim().toLowerCase());
     if (source) {
       const result = await playWordAudio(source);
       if (result === true || result === null || serial !== speechSerial) return;
-      const note = document.getElementById('animals-audio-note');
-      if (note) note.textContent = 'Không tải được âm mẫu. Trang đang dùng giọng đọc tiếng Anh của thiết bị.';
+      setAudioNote('Không tải được âm mẫu. Đang dùng giọng Anh–Mỹ đọc chậm của thiết bị.');
     }
     return speakWithDevice(text, serial);
   }

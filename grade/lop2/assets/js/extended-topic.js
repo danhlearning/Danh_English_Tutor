@@ -36,7 +36,7 @@
     if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') return Promise.resolve();
     return new Promise(resolve => {
       let done = false;
-      const fallback = setTimeout(finish, 8000);
+      const fallback = setTimeout(finish, window.DanhYoungSpeech.timeoutFor(value));
       function finish() {
         if (done) return;
         done = true;
@@ -48,11 +48,11 @@
       try {
         const utterance = new SpeechSynthesisUtterance(value);
         utterance.lang = 'en-GB';
-        utterance.rate = .6;
         const voices = window.speechSynthesis.getVoices();
         utterance.voice = voices.find(voice => voice.lang.replace('_','-').toLowerCase() === 'en-gb') || null;
         utterance.onend = finish;
         utterance.onerror = finish;
+        window.DanhYoungSpeech.configure(utterance);
         window.speechSynthesis.speak(utterance);
       } catch { finish(); }
     });

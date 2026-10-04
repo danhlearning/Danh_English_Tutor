@@ -34,7 +34,8 @@ async function add(page,name){await page.evaluate(()=>DanhLearners.open());await
  // Vocabulary marks from the actual lesson UI load only for the selected learner.
  await page.goto(base+'/grade/lop7/unit1.html',{waitUntil:'domcontentloaded'});
  await page.locator('[data-tab=quiz]').click();
- const correctMeaning=await page.evaluate(()=>{const text=document.querySelector('#quiz-stage h3').textContent;return DanhGrade7Units[0].words.find(w=>text.includes('“'+w.term+'”')).meaning;});
+ await page.locator('#quiz-stage').getByRole('button',{name:'Bắt đầu chơi',exact:true}).click();
+ const correctMeaning=await page.evaluate(()=>{const text=document.querySelector('#quiz-stage h3').textContent;return DanhGrade7Units[0].words.find(w=>text.includes('“'+w.meaning+'”')).term;});
  await page.locator('#quiz-stage button').filter({hasText:correctMeaning}).click();assert.equal(await page.evaluate(()=>JSON.parse(DanhLearners.storage.getItem('danh-g7-unit1')).length),1);
  await page.reload({waitUntil:'domcontentloaded'});assert.match(await page.locator('#unit-progress').innerText(),/1\/8/);
  // Import is a separate profile, then deletion affects only the chosen name.

@@ -16,7 +16,8 @@
     try {
       if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') return;
       window.speechSynthesis.cancel();
-      const voice = new SpeechSynthesisUtterance(value); voice.lang = 'en-GB'; voice.rate = .7;
+      const voice = new SpeechSynthesisUtterance(value); voice.lang = 'en-GB';
+      window.DanhYoungSpeech.configure(voice);
       window.speechSynthesis.speak(voice);
     } catch { /* Audio is optional. */ }
   }

@@ -1,4 +1,3 @@
-const defaultSpeechRate = 0.6;
 
   /* HỆ THỐNG PHÁT ÂM THANH HIỆU ỨNG (Web Audio API) */
   const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -99,7 +98,6 @@ const defaultSpeechRate = 0.6;
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'en-US';
-      utterance.rate = defaultSpeechRate;
 
       const voices = window.speechSynthesis.getVoices();
       const bestVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Premium') || v.name.includes('Samantha') || v.name.includes('Zira')));
@@ -107,6 +105,7 @@ const defaultSpeechRate = 0.6;
         utterance.voice = bestVoice;
       }
 
+      window.DanhYoungSpeech.configure(utterance);
       window.speechSynthesis.speak(utterance);
     }
   }

@@ -1,0 +1,31 @@
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const assert=require('node:assert/strict');
+const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8001';
+const activity=async(page,value)=>page.locator(`input[name=activity][value=${value}]`).check();
+const current=page=>page.evaluate(()=>{const r=JSON.parse(DanhLearners.storage.getItem(`danh-g${document.body.dataset.grade}-grammar-v1`)).active;return window[`DanhGrade${document.body.dataset.grade}Grammar`].find(q=>q.id===r.items[r.position]);});
+const last=page=>page.evaluate(()=>testCues.at(-1));
+(async()=>{const browser=await chromium.launch({headless:true,channel:'msedge'});try{
+ const context=await browser.newContext({viewport:{width:390,height:844}});await context.route('**/*',r=>new URL(r.request().url()).origin===base?r.continue():r.abort());
+ await context.addInitScript(()=>{window.testCues=[];window.testStarts=0;window.testStops=0;const Native=window.AudioContext;window.AudioContext=class extends Native{createOscillator(){const o=super.createOscillator(),start=o.start.bind(o),stop=o.stop.bind(o);o.start=(...args)=>{testStarts++;return start(...args);};o.stop=(...args)=>{testStops++;return stop(...args);};return o;}};document.addEventListener('danh-learning-feedback',e=>testCues.push({...e.detail,starts:testStarts}));});
+ const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(base+'/grade/lop6/grammar.html');await page.locator('#learner-name').fill('Đồng bộ');await page.getByRole('button',{name:'Vào học ngay',exact:true}).click();await page.waitForFunction(()=>window.DanhLearningEffects && window.DanhLearners?.current);
+ for(const grade of[6,7]){
+  await page.goto(base+`/grade/lop${grade}/grammar.html`);await page.waitForFunction(()=>window.DanhLearningEffects);assert.equal(await page.evaluate(()=>testStarts),0);await page.mouse.click(2,290);assert.equal(await page.evaluate(()=>testStarts),0);
+  await activity(page,'preposition');assert.equal((await last(page)).kind,'tap');await page.locator('#start').click();assert.equal((await last(page)).kind,'start');
+  for(let index=0;index<5;index++){
+   const q=await current(page);assert.equal(await page.locator('.gg-option').count(),4);const choice=page.locator('.gg-option').filter({hasText:new RegExp(`^[ABCD]\\. ${q.answer}$`)});
+   const before=await page.evaluate(()=>testStarts);await choice.focus();await page.keyboard.press('Enter');assert.equal((await last(page)).kind,[2,4].includes(index)?'streak':'good');assert.ok(await page.evaluate(()=>testStarts>0));assert.ok((await last(page)).starts>before);
+   assert.equal(await page.locator('#question-card').evaluate(n=>n.classList.contains('vg-pop')||n.classList.contains('vg-celebrate')),true);
+   if(index===4){await page.reload();assert.equal(await page.evaluate(()=>testStarts),0);await page.locator('#resume').click();assert.equal(await page.locator('#streak').textContent(),'5');assert.equal(await page.evaluate(()=>testCues.some(x=>['good','streak'].includes(x.kind))),false);}
+   await page.locator('#next').click();assert.equal((await last(page)).kind,'next');
+  }
+  let q=await current(page);await page.locator('.gg-option').filter({hasText:new RegExp(`^[ABCD]\\. ${q.options.find(x=>x!==q.answer)}$`)}).click();assert.equal((await last(page)).kind,'bad');assert.equal(await page.locator('.gg-option.vg-shake').count(),1);assert.equal(await page.locator('#streak').textContent(),'0');
+  await page.locator('.gg-option').filter({hasText:new RegExp(`^[ABCD]\\. ${q.answer}$`)}).click();assert.equal((await last(page)).kind,'corrected');await page.locator('#next').click();
+  q=await current(page);for(const wrong of q.options.filter(x=>x!==q.answer).slice(0,2))await page.locator('.gg-option').filter({hasText:new RegExp(`^[ABCD]\\. ${wrong}$`)}).click();await page.locator('#reveal').click();assert.equal((await last(page)).kind,'help');await page.locator('#next').click();
+  for(let i=7;i<10;i++){q=await current(page);await page.locator('.gg-option').filter({hasText:new RegExp(`^[ABCD]\\. ${q.answer}$`)}).click();await page.locator('#next').click();}assert.equal((await last(page)).kind,'complete');
+  await page.locator('#change').click();await page.locator('#start').click();await page.locator('#sound-toggle').click();const starts=await page.evaluate(()=>testStarts);q=await current(page);await page.locator('.gg-option').filter({hasText:new RegExp(`^[ABCD]\\. ${q.answer}$`)}).click();assert.equal(await page.evaluate(()=>testStarts),starts);assert.equal((await last(page)).sound,false);await page.locator('#motion-toggle').click();await page.locator('#next').click();assert.equal((await last(page)).motion,false);
+  await page.goto(base+`/grade/lop${grade}/unit1.html`);assert.equal(await page.locator('#vocab-sound').getAttribute('aria-pressed'),'false');assert.equal(await page.locator('#vocab-motion').getAttribute('aria-pressed'),'false');await page.locator('#vocab-sound').click();await page.locator('#vocab-motion').click();
+  await page.goto(base+`/grade/lop${grade}/grammar.html`);assert.equal(await page.locator('#sound-toggle').getAttribute('aria-pressed'),'true');assert.equal(await page.locator('#motion-toggle').getAttribute('aria-pressed'),'true');await page.locator('#resume').click();
+  await page.evaluate(()=>{document.querySelector('.gg-option:not(:disabled)').click();const before=testStops;Object.defineProperty(document,'hidden',{configurable:true,value:true});document.dispatchEvent(new Event('visibilitychange'));window.testDidStop=testStops>before;});assert.ok(await page.evaluate(()=>testDidStop));await page.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,value:false});document.dispatchEvent(new Event('visibilitychange'));});
+ }
+ assert.deepEqual(errors,[]);await context.close();console.log('PASS: both grammar grades use shared sounds/animations, action-only audio, keyboard, first/corrected/wrong/help/complete, streak 3/5 and reload safety, mute/motion shared with vocabulary, and hidden-tab stop.');
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

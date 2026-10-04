@@ -77,3 +77,23 @@ test('lượt 10 câu luôn giữ hai bài viết lại ở mọi vị trí tron
     }
   }
 });
+
+test('bộ nâng cấp: bốn lựa chọn, viết lại có mở đầu, phát âm và đoạn văn đủ 12 Unit', () => {
+  const upgraded=vm.createContext({window:{}});
+  for(const file of ['units-data.js','grammar-data.js','grammar-exam-data.js'])vm.runInContext(fs.readFileSync(path.join(root,'assets/js',file),'utf8'),upgraded);
+  const bank=upgraded.window.DanhGrade7Grammar;
+  assert.equal(new Set(bank.map(q=>q.id)).size,bank.length);
+  for(const q of bank){
+    if(q.options){assert.equal(q.options.length,4,q.id);assert.equal(new Set(q.options).size,4,q.id);assert.equal(q.options.filter(x=>x===q.answer).length,1,q.id);}
+    if(q.type==='rewrite'){const prefix=q.cue.split('...')[0].trim();assert.ok(prefix && !prefix.includes('Bắt đầu:'),q.id);assert.ok(q.answer.split('|')[0].startsWith(prefix),q.id);}
+    if(q.marked){assert.equal(q.marked.length,4);assert.ok(q.marked.every(x=>/\[[^\]]+\]/.test(x)));}
+  }
+  for(let unit=1;unit<=12;unit++){
+    assert.ok(bank.some(q=>q.unit===unit&&q.type==='pronunciation'));
+    const passage=bank.filter(q=>q.unit===unit&&q.type==='preposition');
+    assert.equal(passage.length,10);assert.equal(new Set(passage.map(q=>q.passageId)).size,1);
+    assert.deepEqual(Array.from(passage,q=>q.blank),[1,2,3,4,5,6,7,8,9,10]);
+    assert.equal(new Set(passage.map(q=>q.part)).size,5);
+    for(const q of passage)assert.equal((q.passage.match(/\(\d+\) ___/g)||[]).length,2);
+  }
+});

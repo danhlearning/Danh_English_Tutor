@@ -1,6 +1,4 @@
-/* CẬP NHẬT TỐC ĐỘ ĐỌC: Giảm siêu chậm xuống 0.25 */
-  const defaultSpeechRate = 0.6;
-
+/* Tốc độ đọc dùng cấu hình chung cho lớp 2 và lớp 4. */
   /* HỆ THỐNG PHÁT ÂM THANH HIỆU ỨNG (Web Audio API - Tự tạo âm thanh không cần file) */
   const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
@@ -161,7 +159,6 @@
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'en-US';
-      utterance.rate = defaultSpeechRate;
 
       const voices = window.speechSynthesis.getVoices();
       /* Tìm giọng đọc tiếng Anh tự nhiên chất lượng cao nếu có */
@@ -170,6 +167,7 @@
         utterance.voice = bestVoice;
       }
 
+      window.DanhYoungSpeech.configure(utterance);
       window.speechSynthesis.speak(utterance);
     }
   }

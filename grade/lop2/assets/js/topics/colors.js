@@ -1,6 +1,4 @@
 // Mặc định tốc độ đọc là 0.5 (Chậm rõ cho bé)
-  const defaultSpeechRate = 0.6;
-
   /* Bộ Vector SVG hiển thị chuẩn xác từng hình ảnh đồ vật minh họa */
   const svgIcons = {
     apple: `<svg viewBox="0 0 64 64"><path fill="#E53E3E" d="M32 12c-6-6-16-4-20 4-5 10-1 24 8 32 4 4 8 6 12 6s8-2 12-6c9-8 13-22 8-32-4-8-14-10-20-4z"/><path fill="#38A169" d="M32 12c2-4 6-6 10-6-1 3-3 6-6 7-2 1-4 0-4-1z"/><path fill="#744210" d="M31 6h2v7h-2z"/></svg>`,
@@ -43,7 +41,7 @@
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'en-US';
-      utterance.rate = defaultSpeechRate;
+      window.DanhYoungSpeech.configure(utterance);
       window.speechSynthesis.speak(utterance);
     }
   }

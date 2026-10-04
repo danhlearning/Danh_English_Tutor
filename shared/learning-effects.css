@@ -1,0 +1,11 @@
+.vg-spark{position:fixed;z-index:2147483647;pointer-events:none;transform:translate(-50%,-50%);font-size:1.6rem;color:#a073c8;animation:vg-spark .6s ease-out forwards}
+.vg-pop{animation:vg-pop .35s ease-out}
+.vg-shake{animation:vg-shake .34s ease-in-out}
+.vg-celebrate{animation:vg-celebrate .6s ease-out}
+@keyframes vg-shake{20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}100%{transform:translateX(0)}}
+@keyframes vg-celebrate{35%{transform:translateY(-5px) scale(1.04)}65%{transform:translateY(0) scale(.98)}100%{transform:scale(1)}}
+@keyframes vg-spark{from{opacity:1;transform:translate(-50%,-50%) scale(.6)}to{opacity:0;transform:translate(-50%,-180%) scale(1.7) rotate(45deg)}}
+@keyframes vg-pop{50%{transform:scale(1.025)}}
+.vg-reduced *,.vg-reduced *::before,.vg-reduced *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+.vg-reduced .vg-spark{display:none}
+@media(prefers-reduced-motion:reduce){.vg-world *,.vg-world *::before,.vg-world *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.vg-spark{display:none}}

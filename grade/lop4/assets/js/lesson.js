@@ -40,7 +40,7 @@
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(value);
       utterance.lang = 'en-GB';
-      utterance.rate = .7;
+      window.DanhYoungSpeech.configure(utterance);
       window.speechSynthesis.speak(utterance);
     } catch { el('speech-note').textContent = 'Không thể phát âm trên thiết bị này.'; }
   }

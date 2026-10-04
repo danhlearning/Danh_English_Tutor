@@ -11,12 +11,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/grade7.css">
-  <link rel="stylesheet" href="./assets/css/grammar.css">
+  <link rel="stylesheet" href="./assets/css/grammar.css?v=sync-3">
+  <link rel="stylesheet" href="../../shared/learning-effects.css?v=sync-3">
+  <link rel="stylesheet" href="../../shared/grammar-game.css?v=sync-3">
 </head>
-<body class="gg-is-setup">
+<body class="gg-is-setup" data-grade="7">
   <header class="gg-hero"><div class="g6-shell">
     <a class="g6-back" href="./lop7.html">← Tiếng Anh lớp 7</a>
-    <div class="gg-hero-content"><div><p class="g6-kicker">GLOBAL SUCCESS · NGỮ PHÁP LỚP 6</p><h1>Mỗi lần một bước nhỏ</h1><p>Ôn ngữ pháp theo Unit và học kỳ. Mỗi set gồm 10 câu, hiển thị từng câu một để em tập trung.</p></div><div class="gg-hero-badge" aria-hidden="true">✨<span>📚</span></div></div>
+    <div class="gg-hero-content"><div><p class="g6-kicker">GLOBAL SUCCESS · NGỮ PHÁP LỚP 7</p><h1>Mỗi lần một bước nhỏ</h1><p>Ôn ngữ pháp theo Unit và học kỳ. Luyện từng câu theo Unit, hoặc đọc từng phần của một đoạn văn.</p></div><div class="gg-hero-badge" aria-hidden="true">✨<span>📚</span></div></div>
   </div></header>
   <main class="g6-shell gg-main">
     <section class="gg-stats" aria-label="Tiến độ của em">
@@ -26,21 +28,22 @@
       <div><span>✅ Đã đúng</span><strong id="correct-count">0</strong></div>
     </section>
     <section class="gg-setup" id="setup" aria-labelledby="setup-heading">
-      <div class="gg-heading"><div><p class="g6-overline">CHỌN BÀI LUYỆN</p><h2 id="setup-heading">Bắt đầu theo cách của em</h2><p>Chọn phạm vi và độ khó. Mỗi set gồm 10 câu, có ít nhất hai câu viết lại.</p></div><span class="gg-library" id="library-count">432 câu hỏi</span></div>
+      <div class="gg-heading"><div><p class="g6-overline">CHỌN BÀI LUYỆN</p><h2 id="setup-heading">Bắt đầu theo cách của em</h2><p>Chọn dạng bài, phạm vi và độ khó. Lượt ngữ pháp có tối đa 10 câu; gợi ý viết lại xuất hiện sau 2 phút làm câu đó.</p></div><span class="gg-library" id="library-count">432 câu hỏi</span></div>
       <div class="gg-fields">
+        <fieldset><legend>Dạng bài</legend><div class="gg-segments"><label><input type="radio" name="activity" value="grammar" checked><span>Ngữ pháp tổng hợp</span></label><label><input type="radio" name="activity" value="rewrite"><span>Viết lại câu</span></label><label><input type="radio" name="activity" value="pronunciation"><span>Phát âm</span></label><label><input type="radio" name="activity" value="preposition"><span>Giới từ · đoạn văn</span></label></div></fieldset>
         <fieldset><legend>Phạm vi ôn tập</legend><div class="gg-segments" id="scope-options"><label><input type="radio" name="scope" value="unit" checked><span>Theo Unit</span></label><label><input type="radio" name="scope" value="term1"><span>Học kỳ 1</span></label><label><input type="radio" name="scope" value="term2"><span>Học kỳ 2</span></label></div><select id="unit-select" aria-label="Chọn Unit"></select></fieldset>
         <fieldset><legend>Cấp độ</legend><div class="gg-segments" id="level-options"><label><input type="radio" name="level" value="easy" checked><span>🌱 Dễ</span></label><label><input type="radio" name="level" value="medium"><span>🌿 Vừa</span></label><label><input type="radio" name="level" value="hard"><span>🚀 Khó</span></label></div><p class="gg-field-note">Luyện từ dễ tới khó; em có thể chọn lại cấp độ bất cứ lúc nào.</p></fieldset>
       </div>
-      <div class="gg-start-row"><p id="selection-summary" role="status"></p><button class="gg-primary" id="start" type="button">Bắt đầu làm</button></div>
+      <div class="gg-start-row"><p id="selection-summary" role="status"></p><button class="gg-secondary" id="resume" type="button" hidden disabled>Tiếp tục lượt dở</button><button class="gg-primary" id="start" type="button" disabled>Bắt đầu làm</button></div>
     </section>
     <section class="gg-play" id="play" hidden aria-label="Câu hỏi hiện tại">
-      <div class="gg-play-top"><span id="round-position"></span><span id="round-scope"></span><button id="sound-toggle" type="button" aria-pressed="true" title="Bật hoặc tắt âm thanh">🔊 Âm thanh</button><button id="exit-play" type="button" title="Đổi bài luyện">← Đổi bài</button></div>
+      <div class="gg-play-top"><span id="round-position"></span><span id="round-scope"></span><button id="sound-toggle" type="button" aria-pressed="true" title="Bật hoặc tắt âm thanh">🔊 Âm thanh</button><button id="motion-toggle" type="button" aria-pressed="true">✨ Chuyển động</button><button id="exit-play" type="button" title="Đổi bài luyện">← Đổi bài</button></div>
       <div class="gg-progress-track" aria-hidden="true"><span id="round-progress"></span></div>
       <div class="gg-question-card" id="question-card">
         <div class="gg-question-meta"><span id="question-level"></span><span id="question-unit"></span><span id="question-type"></span></div>
         <h2 id="question-prompt"></h2>
-        <div class="gg-hint" id="question-hint" hidden><strong>💡 Gợi ý</strong><p id="question-vocab"></p><p id="question-rule"></p></div>
         <div id="answer-area"></div>
+        <div class="gg-hint" id="question-hint" hidden><strong>💡 Gợi ý</strong><p id="question-vocab"></p><p id="question-rule"></p></div>
         <p class="gg-feedback" id="feedback" role="status" aria-live="polite"></p>
         <div class="gg-answer-actions"><button class="gg-secondary" id="reveal" type="button" hidden>Xem đáp án</button><button class="gg-primary" id="next" type="button" hidden>Câu tiếp theo →</button></div>
       </div>
@@ -51,14 +54,16 @@
       <div class="gg-result-stats"><div><strong id="result-correct">0/10</strong><span>Câu đúng</span></div><div><strong id="result-earned">0</strong><span>Điểm đạt được</span></div></div>
       <div class="gg-result-actions"><button class="gg-primary" id="again" type="button">Luyện tiếp 10 câu</button><button class="gg-secondary" id="change" type="button">Đổi bài luyện</button></div>
     </section>
-    <section class="gg-info"><h2>Ôn theo học kỳ</h2><p>Học kỳ 1 gồm Unit 1–6; học kỳ 2 gồm Unit 7–12. Bộ câu hỏi này tập trung vào ngữ pháp với các dạng chọn đáp án, điền từ, xếp câu, sửa lỗi và viết lại câu giữ nguyên nghĩa thường gặp trong phần ôn tập. Câu hỏi do website biên soạn, không phải đề thi chính thức.</p><a href="./lop7.html">Xem các Unit lớp 7 →</a></section>
-    <p class="g6-source">Chủ điểm theo Tiếng Anh 7 Global Success. Câu hỏi và lời giải do website biên soạn.</p>
+    <section class="gg-info"><h2>Ôn theo học kỳ</h2><p>Học kỳ 1 gồm Unit 1–6; học kỳ 2 gồm Unit 7–12. Bộ câu hỏi này tập trung vào ngữ pháp với các dạng chọn đáp án, điền từ, xếp câu, sửa lỗi, viết lại câu giữ nguyên nghĩa, phát âm và điền giới từ trong đoạn văn thường gặp trong phần ôn tập. Câu hỏi do website biên soạn, không phải đề thi chính thức.</p><a href="./lop7.html">Xem các Unit lớp 7 →</a></section>
+    <p class="g6-source">Chủ điểm đối chiếu với Tiếng Anh 7 Global Success và cấu trúc Unit. Câu hỏi và lời giải do website biên soạn.</p>
   </main>
   <contact-danh></contact-danh>
   <script src="../../shared/contact-footer.js"></script>
   <script src="./assets/js/units-data.js"></script>
   <script src="./assets/js/grammar-data.js"></script>
-  <script src="./assets/js/round-selection.js"></script>
-  <script src="./assets/js/grammar.js"></script>
+  <script src="./assets/js/grammar-exam-data.js"></script>
+  <script src="../../shared/learning-effects.js?v=sync-3"></script>
+  <script src="../../shared/grammar-game.js?v=sync-3"></script>
+  <script src="./assets/js/grammar.js?v=sync-3"></script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-const defaultSpeechRate = 0.6;
   const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
   function playSoundEffect(type) {
@@ -163,10 +162,10 @@ const defaultSpeechRate = 0.6;
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'en-US';
-      utterance.rate = defaultSpeechRate;
       const voices = window.speechSynthesis.getVoices();
       const bestVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Premium') || v.name.includes('Samantha')));
       if (bestVoice) utterance.voice = bestVoice;
+      window.DanhYoungSpeech.configure(utterance);
       window.speechSynthesis.speak(utterance);
     }
   }
