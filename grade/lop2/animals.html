@@ -14,6 +14,7 @@
 
 <link rel="stylesheet" href="./assets/css/topics/animals.css">
 <link rel="stylesheet" href="./assets/css/grade2-theme.css?v=reveal10">
+  <link rel="stylesheet" href="../../shared/grade-colors.css?v=all-grades-20261016-2">
 </head>
 <body class="grade2-topic">
 
@@ -34,7 +35,7 @@
   <section class="learning-toolbar" id="learning-toolbar" hidden aria-label="Cài đặt luyện tập">
     <div class="learning-toolbar-top">
       <strong>🌱 Bộ từ của bạn</strong>
-      <button class="btn-action" id="choose-vocabulary" onclick="openVocabularyPicker()">⚙️ Chọn từ luyện tập · 50 từ</button>
+      <button class="btn-action" id="choose-vocabulary" onclick="openVocabularyPicker()">⚙️ Chọn từ luyện tập</button>
     </div>
     <p id="storage-note" role="status">Lựa chọn, tiến độ và kỷ lục được lưu trên thiết bị này.</p>
     <details><summary>⭐ Cách tính điểm và streak</summary>
@@ -48,7 +49,7 @@
 
   <!-- TAB 1: VOCABULARY -->
   <div id="vocab" class="tab-content active">
-    <h2 style="margin-bottom: 16px; text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Từ Vựng 50 Loài Động Vật Phổ Biến</h2>
+    <h2 style="margin-bottom: 16px; text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Từ Vựng Loài Động Vật Phổ Biến</h2>
     <p style="text-align:center; color:#276749; margin:0;">Phiên âm và giọng đọc Anh-Mỹ (US).</p>
     <p id="animals-audio-note" role="status" style="text-align:center; color:#9c461c; margin:0 0 18px;">Nghe chậm · Giọng Anh–Mỹ</p>
     <div class="vocab-grid" id="vocab-grid-container"></div>
@@ -103,7 +104,7 @@
         <button class="mode-btn" id="mode-ipa" onclick="setCardFrontMode('ipa', this)">Mặt trước: Hình & IPA</button>
       </div>
 
-      <div class="card-counter" id="card-viewed">📖 Đã xem 0 / 50 từ</div>
+      <div class="card-counter" id="card-viewed">📖 Lật thẻ để ôn tập</div>
       <div class="card-controls">
         <span class="card-counter" id="card-counter-text">Thẻ 1 / 50</span>
       </div>

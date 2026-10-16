@@ -1,0 +1,85 @@
+@import url('./learner-font.css');
+
+/* Bảng màu trang trí chung; đáp án và phản hồi giữ màu theo kết quả. */
+:is(body,body.vg-world) { font-family:'Danh Nunito',Nunito,sans-serif; background-color:#f0f7f5; }
+:is(body,body.vg-world) :is(.g4-hero,.g6-hero,.g6-lesson-hero,.gg-hero) {
+  background:linear-gradient(125deg,#38a169 0%,#35aaa5 48%,#4a90e2 100%);
+}
+
+:is(.g4-unit-card,.g4-word-card,.g4-pattern,.g4-tabs button,
+    .g6-unit-card,.g6-word-card,.g6-tab,.g6-section-nav a,
+    .vg-review-card,.gg-stats>div,.gg-fields fieldset,.gg-result-stats>div,
+    .unit-card,.word-card,.examples article,.tabs button) {
+  --tile-accent:#38a169; --tile-tint:#edf9f1; --tile-ink:#246c4c;
+}
+:is(.g4-unit-card,.g4-word-card,.g4-pattern,.g4-tabs button,
+    .g6-unit-card,.g6-word-card,.g6-tab,.g6-section-nav a,
+    .vg-review-card,.gg-stats>div,.gg-fields fieldset,.gg-result-stats>div,
+    .unit-card,.word-card,.examples article,.tabs button):nth-child(4n + 2) {
+  --tile-accent:#4a90e2; --tile-tint:#eef6ff; --tile-ink:#245d9e;
+}
+:is(.g4-unit-card,.g4-word-card,.g4-pattern,.g4-tabs button,
+    .g6-unit-card,.g6-word-card,.g6-tab,.g6-section-nav a,
+    .vg-review-card,.gg-stats>div,.gg-fields fieldset,.gg-result-stats>div,
+    .unit-card,.word-card,.examples article,.tabs button):nth-child(4n + 3) {
+  --tile-accent:#f2a754; --tile-tint:#fff6e9; --tile-ink:#8b551b;
+}
+:is(.g4-unit-card,.g4-word-card,.g4-pattern,.g4-tabs button,
+    .g6-unit-card,.g6-word-card,.g6-tab,.g6-section-nav a,
+    .vg-review-card,.gg-stats>div,.gg-fields fieldset,.gg-result-stats>div,
+    .unit-card,.word-card,.examples article,.tabs button):nth-child(4n + 4) {
+  --tile-accent:#ed7aaa; --tile-tint:#fff0f6; --tile-ink:#9b3763;
+}
+
+:is(body,body.vg-world) :is(.g4-unit-card,.g6-unit-card,.vg-review-card,.unit-card) {
+  border:2px solid #e0eced; border-top:5px solid var(--tile-accent);
+  border-radius:20px; background:linear-gradient(155deg,var(--tile-tint),#fff 85%);
+  box-shadow:0 8px 18px #24324714;
+}
+:is(body,body.vg-world) :is(.g4-unit-card,.g6-unit-card,.vg-review-card,.unit-card):hover {
+  border-color:var(--tile-accent); box-shadow:0 14px 25px #24324724;
+}
+:is(body,body.vg-world) .g4-unit-card .g4-chip {
+  background:var(--tile-tint); color:var(--tile-ink);
+  border:1px solid var(--tile-accent); border-radius:12px;
+}
+:is(body,body.vg-world) :is(.g4-unit-card h2,.g6-unit-card h3,.vg-review-card h3,.unit-card h3,
+    .g6-unit-number,.g6-card-bottom strong) { color:var(--tile-ink); }
+:is(body,body.vg-world) .g4-unit-card>span:last-child {
+  display:inline-flex; align-items:center; min-height:44px; margin-top:14px;
+  padding:8px 16px; border-radius:14px; background:var(--tile-ink); color:#fff; font-weight:800;
+}
+:is(body,body.vg-world) :is(.g4-word-card,.g4-pattern,.g6-word-card,.word-card,.examples article) {
+  border:1px solid var(--tile-accent); border-top-width:4px;
+  border-radius:20px; background:var(--tile-tint);
+}
+:is(body,body.vg-world) :is(.g4-word-card h3,.g4-pattern strong,.g6-word-card h3) { color:var(--tile-ink); }
+:is(body,body.vg-world) :is(.g4-tabs button,.g6-tab,.g6-section-nav a,.tabs button) {
+  background:var(--tile-tint); border:1px solid var(--tile-accent);
+  border-radius:14px; color:var(--tile-ink); min-height:44px;
+}
+:is(body,body.vg-world) :is(.g4-tabs button.active,.g6-tab.active,.tabs button[aria-current]) {
+  background:var(--tile-ink); border-color:var(--tile-ink); color:#fff;
+}
+:is(body,body.vg-world) :is(.gg-stats>div,.gg-fields fieldset,.gg-result-stats>div) {
+  background:var(--tile-tint); border:1px solid var(--tile-accent); border-radius:16px;
+}
+:is(body,body.vg-world) :is(.gg-stats strong,.gg-fields legend,.gg-result-stats strong) { color:var(--tile-ink); }
+:is(body,body.vg-world) :is(.g4-review,.g6-grammar,.g6-grammar-unit) {
+  background:linear-gradient(120deg,#fff6e9,#fff0f6); border:1px solid #e8c98e; border-radius:20px;
+}
+:is(body,body.vg-world) :is(.g6-flashcard,.g6-stage,.gg-setup,.gg-question-card,.gg-result) {
+  border-radius:22px;
+}
+:is(body,body.vg-world) .g6-flashcard { background:linear-gradient(145deg,#fff6e9,#eef6ff); border-color:#a6c8ed; }
+:is(body,body.vg-world) :is(.g4-primary,.g6-primary,.gg-primary) { border-radius:14px; min-height:44px; }
+:is(body,body.vg-world) :is(a,button,input,select):focus-visible { outline:3px solid #8b551b; outline-offset:4px; }
+@media(prefers-reduced-motion:reduce) {
+  :is(body,body.vg-world) :is(.g4-unit-card,.g6-unit-card,.vg-review-card,.unit-card) { transition:none; }
+  :is(body,body.vg-world) :is(.g4-unit-card,.g6-unit-card,.vg-review-card,.unit-card):hover { transform:none; }
+}
+
+body.vg-world { font-family:"Danh Nunito",Nunito,sans-serif; background-color:#f0f7f5; }
+:is(body,body.vg-world) :is(.g6-hero,.g6-lesson-hero,.gg-hero) { color:#fff; }
+:is(body,body.vg-world) :is(.g6-hero,.g6-lesson-hero) .g6-kicker { color:#fff; }
+[hidden] { display:none !important; }

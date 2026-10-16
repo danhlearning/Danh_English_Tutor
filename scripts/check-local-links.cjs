@@ -6,7 +6,8 @@ const pages = [];
 const errors = [];
 function visit(directory) {
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
-    if (entry.name === '.git' || entry.name === 'templates') continue;
+    // Chỉ kiểm tra trang nguồn, bỏ thư viện và sản phẩm dựng cục bộ.
+    if (['.git','templates','node_modules','artifacts','output','outputs','tmp','.codex-temp'].includes(entry.name)) continue;
     const file = path.join(directory, entry.name);
     if (entry.isDirectory()) visit(file);
     else if (entry.isFile() && entry.name.endsWith('.html')) pages.push(file);

@@ -14,6 +14,10 @@ Nhập tên để vào học, chọn lại tên khi bắt đầu phiên mới v�
 
 ## Cấu trúc
 
+- Giao diện hiện tại lớp 1, 3, 5 theo mẫu lớp 4: bảng từ có ảnh AI/phiên âm/nghe, mẫu câu, lật thẻ, nghe chọn tranh, gõ từ và dùng từ trong câu; danh mục có ôn hôm nay. Dựng cả ba lớp bằng `node scripts/build-primary-template.cjs` (hai lệnh dựng cũ cũng gọi bộ dựng này). Bộ chạy ở `shared/primary-template-*.js`, dùng lại CSS lớp 4 và Game 1–3 đang có. Ngân hàng xuất ở `grade/lop<lớp>/assets/js/course.js`. Các lượt theo giao diện cũ được giữ ở `legacy.html?unit=unit<N>&mode=<mode>`; URL Unit cũ có tham số `mode` chuyển tới đúng lượt đó.
+- Ảnh từ vựng lớp 1/3/5: bản đồ tại `shared/assets/primary-vocabulary/manifest.json`, prompt tạo ảnh tại `docs/primary-image-prompts.json`, ảnh WebP dùng trực tiếp từ kho mới và kho AI sẵn có. Bản gốc ảnh mới nằm trong `artifacts/primary-template/originals/`; tối ưu và xuất bảng QA bằng `scripts/optimize-primary-images.py`.
+- grade/lop1/lop1.html và grade/lop5/lop5.html: 16 chặng lớp 1 (64 mục từ, 48 câu) và 20 chặng lớp 5 (120 mục từ/cụm từ, 80 câu). Nội dung tự biên soạn theo chủ đề; giao diện và bốn game theo mẫu lớp 4 tại shared/primary-template-*.js. Dựng lại bằng `node scripts/build-primary-grades.cjs`; kiểm tra trình duyệt bằng `node tests/primary-grades/browser.cjs` với máy chủ cổng 8001. Trang chủ và danh mục lớp 1–5 đã có liên kết chọn lớp.
+- grade/lop3/lop3.html: danh mục lớp 3 theo mẫu lớp 4 với 20 Unit, 93 mục từ/cụm từ, 60 câu mẫu và bốn game. Dữ liệu ở grade/lop3/units.js; dựng lại các trang bằng `node scripts/build-grade3.cjs`; kiểm tra giao diện mới bằng `node tests/primary-grades/browser.cjs`, kiểm tra lượt cũ bằng `node tests/grade3/browser.cjs` khi máy chủ tĩnh chạy ở cổng 8001.
 - Các trang HTML ở gốc: địa chỉ công khai hiện có.
 - skills.html: trang Luyện theo kỹ năng, gom từ vựng, ngữ pháp, lý thuyết phát âm và luyện tập phản xạ. Trang chủ có hai lối vào: luyện kỹ năng và học theo lớp.
 - grammar-index.html: phòng ngữ pháp với 25 bài, ba cấp độ, 1.530 mục luyện từ 510 tình huống; lượt 10 câu có năm dạng, lưu lượt dở, ôn lỗi sai và lịch ôn. Các đường dẫn chuyên đề cũ vẫn hoạt động.
@@ -35,8 +39,8 @@ Nhập tên để vào học, chọn lại tên khi bắt đầu phiên mới v�
 
 Chạy từ gốc repo:
 
-    node --test grade/lop2/tests/*.test.cjs grade/lop4/tests/*.test.cjs grade/lop7/tests/*.test.cjs tests/grammar-room/*.test.cjs tests/learner-profiles/*.test.cjs
-    find assets/data assets/js grade/lop2/assets/js grade/lop4/assets/js grade/lop6/assets/js grade/lop7/assets/js shared -type f -name '*.js' -print0 | xargs -0 -n1 node --check
+    node --test grade/lop2/tests/*.test.cjs grade/lop4/tests/*.test.cjs grade/lop7/tests/*.test.cjs tests/grammar-room/*.test.cjs tests/learner-profiles/*.test.cjs tests/primary-grades/*.test.cjs
+    find assets/data assets/js grade/lop1 grade/lop2/assets/js grade/lop3 grade/lop4/assets/js grade/lop5 grade/lop6/assets/js grade/lop7/assets/js shared -type f -name '*.js' -print0 | xargs -0 -n1 node --check
     node scripts/check-local-links.cjs
     node scripts/check-contact-footer.cjs
 
@@ -46,4 +50,4 @@ Phòng ngữ pháp: `node scripts/build-grammar-pages.cjs` tái tạo các trang
 
 ## Trạng thái phát triển
 
-Lớp 2 có 16 Unit luyện từ vựng theo Tiếng Anh 2 – Global Success và 19 chủ đề bổ trợ. Mỗi Unit có từ vựng, câu luyện và tranh do website biên soạn; nội dung chưa đối chiếu từng Lesson với trang sách. Lớp 4 có đủ Unit 1–20 theo chủ đề Tiếng Anh 4 – Global Success, kèm phần ôn từ theo ngày. Unit 3–4 dùng ảnh minh họa phong cách ảnh chụp được tạo bằng AI; Unit 5–20 dùng biểu tượng minh họa. Lớp 6 có 12 Unit theo chủ đề Tiếng Anh 6 – Global Success, với 96 từ và các bài luyện do website biên soạn; phần Ngữ pháp có bài luyện theo Unit và học kỳ, năm dạng câu hỏi và streak. Lớp 7 có 12 Unit, 96 từ, 19 ảnh minh họa theo ngữ cảnh và 432 mục luyện ngữ pháp. Các lớp còn lại chưa có bài học; tên lớp vẫn hiển thị trên trang chủ nhưng chưa mở được. Xem [lộ trình](docs/ROADMAP.md).
+Lớp 2 có 16 Unit luyện từ vựng theo Tiếng Anh 2 – Global Success và 19 chủ đề bổ trợ. Mỗi Unit có từ vựng, câu luyện và tranh do website biên soạn; nội dung chưa đối chiếu từng Lesson với trang sách. Lớp 4 có đủ Unit 1–20 theo chủ đề Tiếng Anh 4 – Global Success, kèm phần ôn từ theo ngày. Unit 3–4 dùng ảnh minh họa phong cách ảnh chụp được tạo bằng AI; Unit 5–20 dùng biểu tượng minh họa. Lớp 6 có 12 Unit theo chủ đề Tiếng Anh 6 – Global Success, với 96 từ và các bài luyện do website biên soạn; phần Ngữ pháp có bài luyện theo Unit và học kỳ, năm dạng câu hỏi và streak. Lớp 7 có 12 Unit, 96 từ, 19 ảnh minh họa theo ngữ cảnh và 432 mục luyện ngữ pháp. Lớp 1 và 5 đã mở với bốn game theo chủ đề tự biên soạn; lớp 3 có 20 chặng, 93 mục từ và 60 câu. Lớp 8–12 chưa có bài học. Xem [lộ trình](docs/ROADMAP.md).

@@ -124,7 +124,7 @@
         const first=round.results.filter(result=>result.outcome==='first').length,corrected=round.results.filter(result=>result.outcome==='corrected').length,seen=round.results.filter(result=>result.outcome==='seen').length;
         stage.append(el('span','🏆','vg-mascot'),el('h3',`Em đã hoàn thành ${round.items.length} câu!`),el('p',`⭐ ${points(round.results)} sao · Đúng ngay: ${first} · Tự sửa đúng: ${corrected} · Đã xem: ${seen}`));
         const weak=round.results.filter(result=>result.outcome!=='first').map(result=>byKey.get(result.key));
-        if(weak.length){stage.append(el('p',`Cần ôn: ${weak.map(word=>word.term).join(', ')}`),button(`Ôn lại ${weak.length} từ cần luyện`,()=>begin(weak)));}
+        if(weak.length){stage.append(el('p',`Cần ôn: ${weak.map(word=>word.term).join(', ')}`),button('Ôn lại từ cần luyện',()=>begin(weak)));}
         stage.append(button('Chơi lượt mới',()=>begin(),'g6-secondary'));return;
       }
       const word=current();

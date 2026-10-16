@@ -7,7 +7,7 @@
   const words=selected.flatMap(unit=>unit.words.map(word=>({...word,unit:unit.number})));
   document.title=`Ôn từ vựng học kỳ ${term} · Lớp ${grade} · Danh English Tutor`;
   document.querySelector('#review-title').textContent=`Đảo từ vựng · Học kỳ ${term}`;
-  document.querySelector('#review-description').textContent=`Lớp ${grade} · Unit ${term===1?'1–6':'7–12'} · ${words.length} từ trong thư viện. Mỗi lượt 10 câu, kết hợp từ nhiều Unit.`;
+  document.querySelector('#review-description').textContent=`Lớp ${grade} · Unit ${term===1?'1–6':'7–12'}. Mỗi lượt 10 câu, kết hợp từ nhiều Unit.`;
   document.querySelector(`[data-term="${term}"]`).setAttribute('aria-current','page');
   if(window.DanhLearners.current)try{
     window.DanhLearners.storage.setItem('danh:learner-route:v1',JSON.stringify({path:location.pathname+location.search,title:document.title,at:Date.now()}));

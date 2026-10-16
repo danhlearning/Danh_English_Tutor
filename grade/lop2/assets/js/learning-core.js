@@ -184,7 +184,8 @@
   }
 
   function mount({ topic, words, speechLocale = 'en-US', onSelectionChange,
-    mcqMode = 'name-choice', onResult, revealSpellingAfterMs = 0, initialCardMode = 'viet', cardRevealMs = DELAY }) {
+    mcqMode = 'name-choice', onResult, revealSpellingAfterMs = 0, initialCardMode = 'viet', cardRevealMs = DELAY,
+    effects = null, requireGesture = false, initialTab, onTabChange }) {
     if (!/^[a-z0-9]+$/.test(topic) || !Array.isArray(words) || words.length < 1 ||
         words.some(word => !word.name || !word.meaning || typeof word.id !== 'string' || !word.id)) return;
     const byId = new Map(words.map(word => [word.id, word]));
@@ -205,6 +206,8 @@
     catch { storage = { getItem: () => null, setItem: () => { throw Error('Storage blocked'); } }; }
     const learning = new LearningState(topic, words, storage, () => Date.now(), initialCardMode);
     const originalSwitchTab = window.switchTab;
+    let hasGesture = !requireGesture;
+    if (requireGesture) document.addEventListener('click', () => { hasGesture = true; }, { capture: true });
     let active = null, timer = null, revealTimer = null, draft = new Set();
     let scheduleToken = 0, finishCurrentSpeech = null;
     const el = id => document.getElementById(id);
@@ -215,6 +218,7 @@
     };
     const speakWord = word => {
       stopSpeech();
+      if (!hasGesture || (effects && !effects.soundEnabled()) || document.hidden) return Promise.resolve();
       if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') return Promise.resolve();
       return new Promise(resolve => {
         let finished = false;
@@ -245,6 +249,7 @@
     };
     let audioContext = null;
     const sound = kind => {
+      if (effects) { effects.feedback(kind === 'correct' ? 'good' : 'bad'); return; }
       try {
         const AudioContextClass = window.AudioContext || window.webkitAudioContext;
         if (!AudioContextClass) return;
@@ -299,7 +304,7 @@
       <p>Bộ từ này dùng chung cho Game ${onSelectionChange ? '1–4' : '1–3'}. Game 2 cần ít nhất 2 từ.</p>
       <label>Tìm từ tiếng Anh hoặc tiếng Việt <input class="learning-search" type="search" autocomplete="off"></label>
       <div class="learning-picker-actions"><button type="button" class="learning-all">Chọn tất cả</button>
-        <button type="button" class="learning-none">Bỏ chọn</button><span class="learning-count"></span></div>
+        <button type="button" class="learning-none">Bỏ chọn</button></div>
       <div class="learning-choices"></div><p class="learning-picker-hint"></p>
       <div class="learning-picker-actions"><button type="button" class="learning-apply">Áp dụng</button>
         <button type="button" class="learning-cancel">Hủy</button></div></form>`;
@@ -337,7 +342,6 @@
       pickerCount();
     }
     function pickerCount() {
-      dialog.querySelector('.learning-count').textContent = `Đã chọn ${draft.size} / ${words.length} từ`;
       dialog.querySelector('.learning-apply').disabled = draft.size === 0;
       dialog.querySelector('.learning-picker-hint').textContent = draft.size === 1
         ? 'Bộ 1 từ dùng được ở Game 1 và 3.' : 'Game 2 hiển thị tối đa 4 lựa chọn từ bộ đã chọn.';
@@ -349,7 +353,7 @@
     }
     function toolbar() {
       const area = panel();
-      area.querySelector('.learning-pick').textContent = `⚙️ Chọn từ luyện tập · ${learning.state.selected.length} từ`;
+      area.querySelector('.learning-pick').textContent = '⚙️ Chọn từ luyện tập';
       area.querySelector('.learning-storage').textContent = learning.storageAvailable
         ? 'Tiến độ lưu trên thiết bị này.' : 'Không lưu được tiến độ; bạn vẫn có thể học trong phiên này.';
       const history = area.querySelector('.learning-history ol'); history.replaceChildren();
@@ -366,6 +370,7 @@
       cancel(); stopSpeech();
       learning.state.lastTab = tab;
       learning.save();
+      onTabChange?.(tab);
       if (!titles[tab]) {
         active = null;
         originalSwitchTab(tab, event);
@@ -397,7 +402,7 @@
     function renderCards() {
       const cards = learning.cards(), stage = panel().querySelector('.learning-stage'); stage.replaceChildren();
       const word = byId.get(cards.deck[cards.index]);
-      stage.append(progress(`Thẻ ${cards.index + 1} / ${cards.deck.length} · Đã xem ${cards.seen.length} từ`));
+      stage.append(progress(`Thẻ ${cards.index + 1} / ${cards.deck.length}`));
       const modes = document.createElement('div'); modes.className = 'learning-controls';
       const cardModes = initialCardMode === 'picture'
         ? [['picture', 'Hình, tự nhớ từ'], ['viet', 'Hình & Từ Anh'], ['ipa', 'Hình & IPA']]
@@ -414,7 +419,7 @@
         back.setAttribute('aria-hidden', 'false');
         if (!cards.seen.includes(word.id)) cards.seen.push(word.id);
         learning.save(); speakWord(word);
-        stage.querySelector('.learning-progress').textContent = `Thẻ ${cards.index + 1} / ${cards.deck.length} · Đã xem ${cards.seen.length} từ`;
+        stage.querySelector('.learning-progress').textContent = `Thẻ ${cards.index + 1} / ${cards.deck.length}`;
         timer = setTimeout(() => {
           timer = setTimeout(() => moveCard(1, true), cardRevealMs);
         }, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 160);
@@ -630,7 +635,10 @@
       } else renderActive();
     });
     onSelectionChange?.([...learning.state.selected]);
-    if (learning.state.lastTab && titles[learning.state.lastTab]) {
+    if (typeof initialTab === 'string' && el(initialTab)?.classList.contains('tab-content')) {
+      const control = document.querySelector(`nav [data-tab="${initialTab}"]`);
+      show(initialTab, { currentTarget: control });
+    } else if (learning.state.lastTab && titles[learning.state.lastTab]) {
       const button = document.querySelector(`nav [data-tab="${learning.state.lastTab}"]`) || document.querySelector('nav [data-game-nav]');
       show(learning.state.lastTab, { currentTarget: button });
     }

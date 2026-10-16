@@ -1,6 +1,6 @@
 # Lộ trình Danh English Tutor
 
-Cập nhật: 03/10/2026. Các URL HTML đang dùng được giữ trong suốt quá trình chỉnh sửa.
+Cập nhật: 15/10/2026. Các URL HTML đang dùng được giữ trong suốt quá trình chỉnh sửa.
 
 ## 1. Nền tảng và cấu trúc
 
@@ -23,6 +23,8 @@ Cập nhật: 03/10/2026. Các URL HTML đang dùng được giữ trong suốt 
 
 ## 3. Nội dung
 
+- [x] Mở lớp 1 với 16 chặng, 64 mục từ và 48 câu ngắn; lớp 5 với 20 chặng, 120 mục từ/cụm từ và 80 câu theo tình huống. Bốn game, lưu lượt dở và ôn mục cần luyện; bộ chạy chung với lớp 3 giữ nguyên tiến độ cũ.
+- [x] Nối đường chọn lớp 1–5 trên trang chủ và danh mục các lớp; giữ nguyên bài lớp 2/4 và 20 chặng lớp 3.
 - [x] Chọn Tiếng Anh 2 – Global Success làm hướng phát triển nội dung.
 - [x] Tạo danh mục kiểm tra 19 chủ đề hiện có và ghi nguồn sách chính thức.
 - [x] Lập danh mục 16 Unit theo thứ tự của Global Success trên website.

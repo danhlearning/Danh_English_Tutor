@@ -10,6 +10,9 @@ Mỗi tên có ID độc lập. Trùng tên không nhập chung dữ liệu; đ�
 
 ## Tiến độ và chuyển đổi
 
+- Giao diện theo mẫu lớp 4 của lớp 1/3/5 dùng `danh.learning.g<lớp>unit<N>.v1` cho bộ chọn, lật thẻ, nghe chọn tranh và gõ; `danh.grade<lớp>.words.v1` cho bằng chứng từng kỹ năng và lịch ôn; `danh-g<lớp>-unit<N>-template-context-v1` cho điền từ và `danh-g<lớp>-template-review-v1` cho lượt ôn. Nhớ tab bằng `danh-g<lớp>-unit<N>-template-tab-v1`. Các khóa đều qua `DanhLearners.storage`. Các khóa game cũ bên dưới được giữ nguyên, có lối tiếp tục trong Unit; không chuyển điểm xếp câu sang bằng chứng điền câu.
+- Các lượt theo giao diện trước của lớp 1, 3, 5 dùng chung `shared/primary-game.js`, cấu hình và ngân hàng từng lớp riêng. Lớp 1 và 5 dùng `danh-g1-unit<N>-<mode>-v1` và `danh-g5-unit<N>-<mode>-v1`; giữ nguyên định dạng/khóa lớp 3. Bốn mode là `meaning`, `listen`, `spelling`, `sentence`; lượt, nháp, lần sai, gợi ý và kết quả lưu độc lập theo lớp/Unit/mode. Chọn lớp trong thanh tiểu học chỉ chuyển trang, không sao chép tiến độ giữa lớp.
+- Lớp 3 dùng `danh-g3-unit<N>-<mode>-v1`, với `mode` là `meaning`, `listen`, `spelling`, `sentence`. Mỗi Unit và game giữ lượt riêng: thứ tự nhiệm vụ/lựa chọn, lần sai, gợi ý, bản nháp hoặc mảnh câu, vị trí và kết quả. Tách đúng ngay, tự sửa, đúng có gợi ý, đã xem, bỏ qua; mở thẻ không ghi hoàn thành. Ôn mục cần luyện bắt đầu lượt mới trong cùng game. Dùng tùy chọn hiệu ứng chung theo hồ sơ, không sửa khóa tiến độ lớp khác.
 - Tách dữ liệu phòng ngữ pháp, ngữ pháp lớp 6/7, từ vựng lớp 2/4/6/7, sổ tay/ôn tập từ vựng và tùy chọn hiệu ứng theo hồ sơ.
 - Phòng ngữ pháp tiếp tục lượt dở với thứ tự câu, câu trả lời và các lần thử đã lưu. Các hoạt động khác tiếp tục theo khả năng lưu tiến độ vốn có; không tự gắn trạng thái hoàn thành cho việc mở trang.
 - Trắc nghiệm từ vựng lớp 6/7 tiếp tục lượt Unit hoặc học kỳ với thứ tự câu, bốn lựa chọn, lần sai và kết quả đã lưu. Ôn học kỳ 1 dùng Unit 1–6, học kỳ 2 dùng Unit 7–12. Lượt ôn học kỳ có tiến độ riêng, không ghi đè từ Unit đã trả lời đúng. Đúng ngay, tự sửa đúng và đã xem được phân biệt; chỉ đúng ngay trong Unit cập nhật danh sách từ đã đúng vốn có.
@@ -29,7 +32,7 @@ Nếu lưu lâu dài bị chặn, website dùng bộ nhớ phiên và thông bá
 
 ## Chỉ dẫn phát triển
 
-`shared/learner-profile-core.js` quản lý hồ sơ, chuyển đổi, sao lưu và vùng lưu. `shared/learner-profile.js` khởi tạo đồng bộ trước mã bài học, hiển thị cửa chọn tên và quản lý phiên; giao diện cô lập bằng Shadow DOM, Nunito tự lưu trong dự án. Hai script xuất hiện trên 104 trang công khai và hai mẫu trang.
+`shared/learner-profile-core.js` quản lý hồ sơ, chuyển đổi, sao lưu và vùng lưu. `shared/learner-profile.js` khởi tạo đồng bộ trước mã bài học, hiển thị cửa chọn tên và quản lý phiên; giao diện cô lập bằng Shadow DOM, Nunito tự lưu trong dự án. Các trang công khai và mẫu trang nạp hai script này trước mã bài học.
 
 Mã học dùng `window.DanhLearners.storage`. Mỗi tài liệu giữ cố định ID của người học khi khởi tạo. Đổi người học tải lại tài liệu; việc lưu trong `pagehide` của trang cũ vẫn ghi cho đúng người cũ. Không thay thế hay sửa prototype của `localStorage`.
 

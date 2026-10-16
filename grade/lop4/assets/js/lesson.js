@@ -61,7 +61,7 @@
   function updateSummary() {
     const ids = unit.words.map(key);
     const sum = store.summary(ids);
-    el('unit-progress').textContent = `Đã luyện ${sum.practised}/${ids.length} từ · Cần ôn ${sum.due}`;
+    el('unit-progress').textContent = sum.due ? 'Có từ cần ôn' : sum.practised ? 'Đã luyện tập' : 'Sẵn sàng luyện tập';
     for (const word of unit.words) {
       const row = el(`status-${word.id}`);
       if (!row) continue;

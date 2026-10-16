@@ -13,9 +13,8 @@
     const title = document.createElement('h3'); title.textContent = unit.title;
     const meaning = document.createElement('p'); meaning.textContent = unit.vietnamese;
     const bottom = document.createElement('div'); bottom.className = 'g6-card-bottom';
-    const count = document.createElement('span'); count.textContent = `${unit.words.length} từ vựng`;
     const enter = document.createElement('strong'); enter.textContent = 'Vào học →';
-    bottom.append(count, enter);
+    bottom.append(enter);
     card.append(top, title, meaning, bottom);
     list.append(card);
   }

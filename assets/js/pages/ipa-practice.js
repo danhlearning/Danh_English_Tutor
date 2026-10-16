@@ -261,8 +261,8 @@
             <div style="text-align: center; font-size: 1.2rem;">
                 <strong style="color: #dc2626; font-size: 1.5rem;">⏰ ĐÃ HẾT 10 PHÚT!</strong><br><br>
                 Thử thách kết thúc. Trong 10 phút, bạn gõ được:<br>
-                <strong style="color: #15803d; font-size: 1.5rem;">Đúng: ${correctCount}</strong> từ. | 
-                <strong style="color: #b91c1c; font-size: 1.5rem;">Sai: ${incorrectCount}</strong> từ.
+                <strong style="color: #15803d; font-size: 1.5rem;">Đúng: ${correctCount}</strong> câu. | 
+                <strong style="color: #b91c1c; font-size: 1.5rem;">Sai: ${incorrectCount}</strong> câu.
             </div>
         `;
         explanationEl.style.display = "block";
@@ -376,7 +376,7 @@
             explanationEl.innerHTML = `
                 <div style="text-align: center; font-size: 1.2rem;">
                     <strong>Chúc mừng! Bạn đã hoàn thành toàn bộ nhóm từ này!</strong><br><br>
-                    Kết quả của bạn: <strong style="color: #15803d;">Đúng: ${correctCount}</strong> - <strong style="color: #b91c1c;">Sai: ${incorrectCount}</strong> trên tổng số ${currentData.length} từ.
+                    Kết quả của bạn: <strong style="color: #15803d;">Đúng: ${correctCount}</strong> - <strong style="color: #b91c1c;">Sai: ${incorrectCount}</strong> trong lượt luyện này.
                 </div>
             `;
             explanationEl.style.display = "block";

@@ -17,7 +17,7 @@
     if (Array.isArray(saved)) learned = saved.filter(value => Number.isInteger(value) && value >= 1 && value <= unit.words.length);
   } catch { /* Trang vẫn dùng được khi trình duyệt chặn lưu trữ. */ }
   const mastered = new Set(learned);
-  const updateProgress = () => { $('#unit-progress').textContent = `Đã trả lời đúng ${mastered.size}/${unit.words.length} từ`; };
+  const updateProgress = () => { const progress = $('#unit-progress'); progress.textContent = mastered.size ? 'Đã luyện tập' : ''; progress.hidden = !progress.textContent; };
   const mark = word => {
     mastered.add(word.id); updateProgress();
     try { window.DanhLearners.storage.setItem(key, JSON.stringify([...mastered])); } catch { /* Không lưu được trên thiết bị này. */ }
@@ -87,12 +87,12 @@
   function renderSpelling() {
     spellingStage.replaceChildren();
     if (spellingPosition >= spellingOrder.length) {
-      const heading = document.createElement('h3'); heading.textContent = `Hoàn thành: ${spellingScore}/${unit.words.length} từ đúng ngay lần đầu`;
+      const heading = document.createElement('h3'); heading.textContent = `Hoàn thành: ${spellingScore}/${unit.words.length} câu đúng ngay lần đầu`;
       spellingStage.append(heading, button('Luyện lại', () => { spellingOrder = randomOrder(); spellingPosition = 0; spellingScore = 0; spellingStreak = 0; renderSpelling(); window.DanhVocabularyGame.feedback('start',spellingStage); }, 'g6-primary'));
       return;
     }
     const word = unit.words[spellingOrder[spellingPosition]];
-    const position = document.createElement('p'); position.className = 'g6-card-position'; position.textContent = `TỪ ${spellingPosition + 1}/${unit.words.length}`;
+    const position = document.createElement('p'); position.className = 'g6-card-position'; position.textContent = `Câu ${spellingPosition + 1}/${unit.words.length}`;
     const streak = document.createElement('p'); streak.className='vg-streak'; streak.textContent=`🔥 ${spellingStreak} câu đúng liên tiếp`;
     const question = document.createElement('h3'); question.textContent = `Gõ tiếng Anh cho: ${word.meaning}`;
     const form = document.createElement('form'); form.className = 'g6-answer';

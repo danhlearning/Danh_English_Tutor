@@ -426,7 +426,7 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
   }
   function updateLearningToolbar() {
     learningElement('learning-toolbar').hidden = !['game-flip','game-mcq','game-spelling'].includes(activeLearningTab);
-    learningElement('choose-vocabulary').textContent = '⚙️ Chọn từ luyện tập · ' + learning.state.selected.length + ' từ';
+    learningElement('choose-vocabulary').textContent = '⚙️ Chọn từ luyện tập';
     learningElement('storage-note').textContent = learning.storageAvailable ? 'Lựa chọn, tiến độ và kỷ lục được lưu trên thiết bị này.' : 'Trình duyệt chưa lưu được tiến độ. Bạn vẫn có thể chơi trong phiên này.';
   }
   function showStats(game) {
@@ -498,13 +498,13 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
       const meaning = document.createElement('small'); meaning.textContent = word.meaning;
       description.append(name, meaning); label.append(checkbox, emoji, description); list.appendChild(label);
     });
-    learningElement('vocab-search-status').textContent = words.length ? 'Hiển thị ' + words.length + ' / 50 từ' : 'Không tìm thấy từ phù hợp. Thử từ khóa khác nhé.';
+    learningElement('vocab-search-status').textContent = words.length ? '' : 'Không tìm thấy từ phù hợp. Thử từ khóa khác nhé.';
     updatePickerCount();
   }
   function updatePickerCount() {
     const n = pickerDraft.size;
-    learningElement('vocab-selected-count').textContent = 'Đã chọn ' + n + ' / 50 từ';
-    learningElement('apply-vocabulary').textContent = n ? 'Bắt đầu với ' + n + ' từ đã chọn' : 'Chọn ít nhất 1 từ';
+    learningElement('vocab-selected-count').textContent = n ? 'Đã chọn bộ từ' : 'Chưa chọn từ';
+    learningElement('apply-vocabulary').textContent = n ? 'Bắt đầu luyện tập' : 'Hãy chọn từ luyện tập';
     learningElement('apply-vocabulary').disabled = n === 0;
     learningElement('vocab-selection-hint').textContent = n === 1 ? '1 từ: chơi được Game 1 và 3. Game 2 cần ít nhất 2 từ.' : 'Bộ từ dùng chung cho Game 1–3. Game 2 có tối đa 4 lựa chọn mỗi câu.';
   }
@@ -522,7 +522,7 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
     history.forEach(h => {
       const item = document.createElement('li');
       const title = document.createElement('strong'); title.textContent = (h.game === 'mcq' ? 'Game 2 · Trắc nghiệm' : 'Game 3 · Chính tả') + ' — ' + h.score + ' điểm';
-      const info = document.createElement('span'); info.textContent = h.total + ' từ · Đúng lần đầu ' + h.firstTry + '/' + h.total + ' · Chuỗi tốt nhất ' + h.peak;
+      const info = document.createElement('span'); info.textContent = h.total + ' câu · Đúng lần đầu ' + h.firstTry + '/' + h.total + ' · Chuỗi tốt nhất ' + h.peak;
       const date = document.createElement('small'); date.textContent = new Date(h.completedAt).toLocaleString('vi-VN');
       item.append(title, info, date); list.append(item);
     });
@@ -608,7 +608,7 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
     }, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : FLIP_DURATION_MS);
     playSingleCardAudio();
   }
-  function updateViewedCount() { const cards = learning.cards(); learningElement('card-viewed').textContent = '📖 Đã xem ' + cards.seen.length + ' / ' + cards.deck.length + ' từ'; }
+  function updateViewedCount() { const cards = learning.cards(); learningElement('card-viewed').textContent = cards.seen.length ? '📖 Đã xem thẻ' : '📖 Lật thẻ để ôn tập'; }
   function playSingleCardAudio() { if (activeLearningTab === 'game-flip') speak(flashcardDeck[singleCardIdx].name); }
   function moveSingleCard(step, isAuto = false) {
     cancelCardTimers(); if (activeLearningTab !== 'game-flip') return;

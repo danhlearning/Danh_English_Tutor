@@ -33,7 +33,7 @@
       card.href = `./${unit.id}.html`;
       const chip = document.createElement('span');
       chip.className = 'g4-chip';
-      chip.textContent = `UNIT ${unit.number} · ${unit.words.length} TỪ`;
+      chip.textContent = `UNIT ${unit.number}`;
       const title = document.createElement('h2'); title.textContent = unit.title;
       const description = document.createElement('p'); description.textContent = `${unit.subtitle} · ${unit.focus}`;
       const status = document.createElement('strong'); status.id = `${unit.id}-status`;
@@ -44,11 +44,11 @@
   }
   function update() {
     const due = store.due(all.map(word => word.key));
-    el('review-count').textContent = due.length ? `${due.length} từ cần ôn hôm nay` : 'Chưa có từ cần ôn. Hãy luyện một Unit trước nhé.';
+    el('review-count').textContent = due.length ? 'Có từ cần ôn hôm nay' : 'Chưa có từ cần ôn. Hãy luyện một Unit trước nhé.';
     el('review-start').disabled = due.length === 0;
     for (const unit of units) {
       const sum = store.summary(unit.words.map(word => `${unit.id}:${word.id}`));
-      el(`${unit.id}-status`).textContent = `Đã luyện ${sum.practised}/${unit.words.length} từ · Cần ôn ${sum.due}`;
+      el(`${unit.id}-status`).textContent = sum.due ? 'Có từ cần ôn' : sum.practised ? 'Đã luyện tập' : 'Sẵn sàng luyện tập';
     }
   }
   function next() { clearTimeout(timer); timer = null; position++; mistakes = 0; renderReview(); }
@@ -61,7 +61,7 @@
     }
     const word = byKey.get(queue[position]);
     const heading = document.createElement('p'); heading.className = 'g4-question-count';
-    heading.textContent = `Từ ${position + 1}/${queue.length} · ${word.unit.title}`;
+    heading.textContent = `Câu ${position + 1}/${queue.length} · ${word.unit.title}`;
     const art = document.createElement('span'); art.className = 'g4-visual g4-question-art'; art.innerHTML = word.visual;
     art.setAttribute('role', 'img'); art.setAttribute('aria-label', word.meaning);
     const meaning = document.createElement('p'); meaning.className = 'g4-context-prompt'; meaning.textContent = word.meaning;

@@ -1,3 +1,5 @@
+@import url('../../../shared/learner-font.css');
+
 :root {
             --primary: #2563eb;
             --primary-hover: #1d4ed8;
@@ -320,3 +322,23 @@
             background-color: #c026d3;
             border-color: #c026d3;
         }
+
+/* Cùng bảng màu và thẻ bo tròn của danh mục lớp 2. */
+body { font-family:'Danh Nunito',Nunito,sans-serif; background:#f0f7f5; }
+.hero { background:linear-gradient(125deg,#38a169 0%,#35aaa5 48%,#4a90e2 100%); }
+.card,.grade-btn { --tile-accent:#38a169; --tile-tint:#edf9f1; --tile-ink:#246c4c; }
+:is(.card,.grade-btn):nth-child(4n + 2) { --tile-accent:#4a90e2; --tile-tint:#eef6ff; --tile-ink:#245d9e; }
+.grade-btn:nth-child(4n + 3) { --tile-accent:#f2a754; --tile-tint:#fff6e9; --tile-ink:#8b551b; }
+.grade-btn:nth-child(4n + 4) { --tile-accent:#ed7aaa; --tile-tint:#fff0f6; --tile-ink:#9b3763; }
+.card { border:2px solid #e0eced; border-top:5px solid var(--tile-accent); border-radius:20px; background:linear-gradient(155deg,var(--tile-tint),#fff 85%); }
+.card h2 { color:var(--tile-ink); }
+.card p { font-size:1rem; }
+.btn-card,.card:hover .btn-card { background:var(--tile-ink); border-radius:14px; min-height:44px; display:grid; place-items:center; }
+.grade-btn { border:2px solid var(--tile-accent); border-bottom-width:4px; border-radius:16px; background:var(--tile-tint); color:var(--tile-ink); min-height:54px; font-size:1.05rem; }
+a.grade-btn:hover { background:var(--tile-ink); border-color:var(--tile-ink); color:white; }
+.grade-btn-unavailable,.grade-btn-unavailable:hover { background:#f1f5f9; border-color:#dce3e8; color:#64748b; }
+a:focus-visible { outline:3px solid #8b551b; outline-offset:4px; }
+@media(prefers-reduced-motion:reduce) {
+  .card,.grade-btn,.profile-pic,.btn-card { transition:none; }
+  .card:hover,.grade-btn:hover,.profile-pic:hover { transform:none; }
+}

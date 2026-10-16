@@ -1,0 +1,63 @@
+/* Lộ trình nền tảng và câu luyện riêng của Danh English Tutor. */
+(() => {
+  const units = [
+    ['Hello, friends!','Xin chào bạn','👋','Chào, tạm biệt và trả lời có hoặc không.',
+      ['hello|xin chào|👋','goodbye|tạm biệt|🙋','yes|có, vâng|✅','no|không|🙅'],
+      ['Xin chào, Mai.|Hello, Mai.','Tạm biệt, Nam.|Goodbye, Nam.','Vâng, làm ơn.|Yes, please.']],
+    ['My school bag','Chiếc cặp nhỏ','🎒','Nhận biết bốn đồ dùng học tập.',
+      ['bag|cặp sách|bag','book|quyển sách|📘','pen|bút mực|🖊️','pencil|bút chì|✏️'],
+      ['Một quyển sách.|A book.','Một bút chì.|A pencil.','Đây là cặp của mình.|This is my bag.']],
+    ['Colour hunt','Đi tìm màu sắc','🌈','Gọi tên bốn màu quen thuộc.',
+      ['red|màu đỏ|🔴','blue|màu xanh dương|🔵','green|màu xanh lá|🟢','yellow|màu vàng|🟡'],
+      ['Nó màu đỏ.|It is red.','Một quả bóng màu xanh dương.|A blue ball.','Nó màu vàng.|It is yellow.']],
+    ['Count with me','Đếm cùng mình','🔢','Nhận biết các số từ một đến bốn.',
+      ['one|số một|1️⃣','two|số hai|2️⃣','three|số ba|3️⃣','four|số bốn|4️⃣'],
+      ['Một quyển sách.|One book.','Hai cái bút.|Two pens.','Ba con mèo.|Three cats.']],
+    ['My family','Nhà mình có ai?','🏡','Gọi tên những người thân gần gũi.',
+      ['mum|mẹ|👩','dad|bố|👨','brother|anh hoặc em trai|brother','sister|chị hoặc em gái|sister'],
+      ['Đây là mẹ của mình.|This is my mum.','Đây là bố của mình.|This is my dad.','Xin chào, chị gái.|Hello, sister.']],
+    ['My face','Gương mặt đáng yêu','😊','Gọi tên mắt, tai, mũi và miệng.',
+      ['eye|mắt|👁️','ear|tai|👂','nose|mũi|👃','mouth|miệng|👄'],
+      ['Chạm vào mũi của bạn.|Touch your nose.','Mở miệng của bạn.|Open your mouth.','Đây là tai của mình.|This is my ear.']],
+    ['Little pets','Những thú cưng nhỏ','🐈','Nhận biết bốn con vật quen thuộc.',
+      ['cat|con mèo|🐈','dog|con chó|🐕','bird|con chim|🐦','fish|con cá|🐟'],
+      ['Một con mèo.|A cat.','Đây là con chó của mình.|This is my dog.','Mình thấy một con chim.|I see a bird.']],
+    ['Toy time','Giờ chơi đồ chơi','🪁','Nói tên đồ chơi mình có.',
+      ['ball|quả bóng|⚽','kite|cái diều|kite','car|ô tô đồ chơi|🚗','doll|búp bê|🪆'],
+      ['Một quả bóng.|A ball.','Mình có một cái diều.|I have a kite.','Đây là ô tô đồ chơi của mình.|This is my car.']],
+    ['Fruit basket','Giỏ trái cây','🍎','Nhận biết và nói thích trái cây.',
+      ['apple|quả táo|🍎','banana|quả chuối|🍌','orange|quả cam|🍊','grapes|nho|grapes'],
+      ['Một quả táo.|An apple.','Mình thích chuối.|I like bananas.','Một quả cam.|An orange.']],
+    ['Snack time','Bữa ăn nhỏ','🥛','Gọi tên đồ ăn và thức uống.',
+      ['milk|sữa|🥛','water|nước|water','bread|bánh mì|🍞','rice|cơm|🍚'],
+      ['Mình thích sữa.|I like milk.','Nước, làm ơn.|Water, please.','Mình thích cơm.|I like rice.']],
+    ['My room','Căn phòng nhỏ','🛏️','Nhận biết đồ vật trong phòng.',
+      ['bed|cái giường|🛏️','chair|cái ghế|🪑','table|cái bàn|table','door|cánh cửa|🚪'],
+      ['Một cái ghế.|A chair.','Đóng cửa lại.|Close the door.','Đây là giường của mình.|This is my bed.']],
+    ['Ready to go','Cùng mặc đồ nào','👕','Gọi tên quần áo, giày và mũ.',
+      ['hat|cái mũ|hat','shirt|áo sơ mi|👔','shoes|đôi giày|shoes','dress|váy liền|dress'],
+      ['Một cái mũ màu đỏ.|A red hat.','Đây là váy của mình.|This is my dress.','Giày của mình màu xanh dương.|My shoes are blue.']],
+    ['Move and play','Vận động vui','🏃','Hiểu bốn động tác đơn giản.',
+      ['run|chạy|🏃','jump|nhảy lên|🤸','sit|ngồi|🪑','stand|đứng|🧍'],
+      ['Mình có thể chạy.|I can run.','Xin mời ngồi xuống.|Sit down, please.','Xin mời đứng lên.|Stand up, please.']],
+    ['Animal friends','Bạn ở nông trại','🐄','Nhận biết con vật ở nông trại.',
+      ['cow|con bò|🐄','pig|con lợn|🐖','duck|con vịt|🦆','hen|con gà mái|🐔'],
+      ['Một con vịt.|A duck.','Mình thấy một con bò.|I see a cow.','Con lợn màu hồng.|The pig is pink.']],
+    ['Look outside','Nhìn ra ngoài nhé','☀️','Gọi tên những gì thấy ngoài trời.',
+      ['sun|mặt trời|☀️','tree|cây|🌳','flower|bông hoa|🌸','rain|mưa|🌧️'],
+      ['Một cái cây màu xanh lá.|A green tree.','Mình thấy mặt trời.|I see the sun.','Một bông hoa màu đỏ.|A red flower.']],
+    ['My little world','Thế giới nhỏ của mình','🌟','Dùng từ chỉ kích thước và cảm xúc.',
+      ['big|to, lớn|🐘','small|nhỏ, bé|🐭','happy|vui vẻ|😊','sad|buồn|😢'],
+      ['Mình vui.|I am happy.','Con mèo nhỏ.|The cat is small.','Con chó to.|The dog is big.']]
+  ];
+  window.DanhPrimaryCourse = {
+    grade:1, title:'Khu vườn tiếng Anh', intro:'Cùng Cáo Nhỏ nghe, khám phá và nói những câu đầu tiên!',
+    guidance:'Bắt đầu với Chọn nghĩa hoặc Nghe tìm từ. Em có thể nhờ người lớn đọc lời hướng dẫn; thử gõ từ và xếp câu khi đã sẵn sàng.',
+    zones:['🌱 Chào thế giới nhỏ','🏡 Những điều thân quen','🍎 Một ngày của em','🌳 Cùng khám phá'],
+    units:units.map(([title,subtitle,icon,goal,words,sentences],i)=>({
+      id:`unit${i+1}`,number:i+1,title,subtitle,icon,goal,
+      words:words.map((v,j)=>{const [term,meaning,art]=v.split('|');return {id:`w${j+1}`,term,meaning,art};}),
+      sentences:sentences.map((v,j)=>{const [meaning,term]=v.split('|');return {id:`s${j+1}`,term,meaning};})
+    }))
+  };
+})();

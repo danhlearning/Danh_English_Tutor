@@ -48,7 +48,7 @@
       '<div class="picker-modes" role="group" aria-label="Cách chọn từ">' +
       '<button type="button" data-mode="all">Tất cả</button><button type="button" data-mode="custom">Tự chọn</button></div>' +
       '<fieldset><legend>Đánh dấu các từ muốn luyện tập</legend><div class="picker-grid"></div></fieldset>' +
-      '<p class="picker-count" aria-live="polite"></p>' +
+      '' +
       '<p class="picker-error" role="status"></p>' +
       '<button type="button" class="picker-apply">Áp dụng cho 4 game</button>';
     host.appendChild(details);
@@ -90,12 +90,11 @@
     function updateDraft() {
       all.setAttribute('aria-pressed', String(mode === 'all'));
       custom.setAttribute('aria-pressed', String(mode === 'custom'));
-      details.querySelector('.picker-count').textContent = 'Đã chọn ' + draft.size + '/' + lesson.vocabulary.length + ' từ';
       apply.disabled = draft.size < 4;
       error.textContent = draft.size < 4 ? 'Hãy chọn ít nhất 4 từ để trắc nghiệm có đủ 4 đáp án.' : '';
     }
     function updateApplied() {
-      applied.textContent = '— Đang dùng ' + selection.ids().length + '/' + lesson.vocabulary.length + ' từ · Đổi bộ từ';
+      applied.textContent = '— Đổi bộ từ luyện tập';
     }
     all.addEventListener('click', () => {
       mode = 'all';
@@ -113,7 +112,7 @@
       onApply();
       updateApplied();
       details.open = false;
-      host.querySelector('.picker-status').textContent = 'Đã áp dụng ' + selection.ids().length + ' từ cho 4 game.' +
+      host.querySelector('.picker-status').textContent = 'Đã áp dụng bộ từ cho các game.' +
         (result.saved ? '' : ' Trình duyệt không lưu được lựa chọn; bộ từ vẫn dùng trong phiên này.');
       details.querySelector('summary').focus();
     });

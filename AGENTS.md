@@ -24,3 +24,9 @@
 - Tiến độ, lượt dở và tùy chọn cá nhân phải dùng `window.DanhLearners.storage`, với khóa học bắt đầu bằng `danh-`, `danh:` hoặc `danh.`. Không ghi trực tiếp vào vùng `localStorage` dùng chung; giữ ID hồ sơ cố định trong suốt vòng đời tài liệu.
 - Trang và mẫu mới tải `shared/learner-profile-core.js`, rồi `shared/learner-profile.js` trước các script bài học. Không dùng tên làm định danh, không tự nhập chung hai hồ sơ trùng tên.
 - Giữ khả năng chuyển đổi tiến độ cũ, đổi tên không mất dữ liệu, sao lưu/khôi phục và học trong phiên khi bộ nhớ bị chặn. Kiểm tra đổi người học, nhiều tab, tải lại và xóa chỉ một hồ sơ.
+
+## Dựng và chỉnh sửa video
+
+- Trước khi dựng hoặc chỉnh sửa video cho người dùng, đọc [Quy tắc dựng video](docs/VIDEO_EDITING_RULES.md). Áp dụng phản hồi ở vùng bên dưới, âm wrong/correct và zoom trực tiếp từ khóa trong câu; không dùng khung chữ lớn che nội dung.
+- Các quy tắc video chỉ áp dụng cho sản phẩm video; hướng dẫn trực tiếp mới nhất của người dùng luôn được ưu tiên.
+

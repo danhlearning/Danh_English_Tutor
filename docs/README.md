@@ -5,6 +5,10 @@
 - [Nguyên tắc thiết kế game học tiếng Anh](NGUYEN_TAC_GAME_HOC_TIENG_ANH.md): định hướng chung, vòng học, giao diện Nunito, âm thanh, animation, tiến độ và nghiệm thu cho toàn website.
 
 - [Lộ trình hiện tại](ROADMAP.md): thứ tự công việc và tiêu chí hoàn thành.
+- [Phát triển lớp 1–5](plans/primary-grades.md): phạm vi nội dung, mục tiêu, cách chơi, chấm và lưu tiến độ lớp 1/5; dùng chung bộ game lớp 3.
+- [Lớp 1/3/5 theo mẫu lớp 4](plans/primary-grade4-template.md): yêu cầu mới về sáu hoạt động, ảnh AI, lưu lượt và bảo toàn dữ liệu cũ.
+- [Nghiệm thu mẫu lớp 4 ngày 16/10/2026](reports/primary-grade4-template-2026-10-16.md): 56 Unit, kho ảnh mới, chức năng, tiến độ và giới hạn kiểm tra.
+- [Kiểm tra lớp 1–5 ngày 15/10/2026](reports/primary-grades-2026-10-15.md): kết quả kiểm tra nội dung/game, tiến độ, ảnh và màn hình nhỏ; giới hạn giọng đọc, thiết bị thật.
 - [Cấu trúc website](ARCHITECTURE.md): vai trò từng thư mục và cách thêm chủ đề.
 - [Đối chiếu Global Success](content/global-success-audit.md): danh mục 16 Unit, nguồn tham chiếu và 19 chủ đề bổ trợ chờ đối chiếu.
 - [Đánh giá Animals](plans/animals-games.md): điều kiện để hợp nhất Game 1–3.
