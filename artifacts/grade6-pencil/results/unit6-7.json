@@ -1,0 +1,13 @@
+{
+  "key": "unit6/7",
+  "unit": 6,
+  "unitId": "unit6",
+  "id": 7,
+  "term": "wish",
+  "meaning": "lời chúc",
+  "example": "I send a New Year wish to my grandparents.",
+  "slug": "wish",
+  "file": "grade/lop6/assets/images/pencil/unit6/wish-v1.webp",
+  "prompt": "Use case: illustration-story. Asset: one square vocabulary illustration for a Grade 6 English learning website. Subject: wish, meaning lời chúc. Context for the illustrator only, do not put these words in the image: I send a New Year wish to my grandparents.\nScene: A Vietnamese middle-school child respectfully offering a warm New Year greeting to smiling grandparents, hands together politely, pink blossom nearby and a small subtle heart-shaped sparkle. No speech bubble or written greeting.\nStyle: charming hand-drawn flat 2D colored-pencil cartoon with clearly visible pencil grain, layered colored-pencil shading and soft warm graphite outlines on warm white paper, restrained cheerful pastel colors, matching the newest pencil vocabulary illustrations for this project. Suitable for ages 11–12, natural proportions, not babyish. One coherent scene, square composition, main subject clear at thumbnail size, light breathing room around the subject. No photorealism, no 3D, no vector-flat rendering.\nConstraints: absolutely no letters, readable text, words, numbers, captions, Vietnamese meanings, definitions, labels, logos, watermarks, decorative border or speech bubbles. No collage or multiple cards. Correct anatomy, object construction, perspective and cause-and-effect. Do not add unrelated decoration. Create exactly one finished square image.",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-2a0a3ead-51cd-44a3-9325-8c83fbb28219.png"
+}

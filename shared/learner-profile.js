@@ -24,9 +24,28 @@
   const confirmed=saved?.tab===tab && Date.now()-saved.at<12*60*60*1000;
   const current=confirmed ? store.get(saved.id) : null;
   let host, shadow, overlay, panel, returnFocus, errorMessage='', mustReload=false;
-  const storage=current ? store.scope(current.id, storageError, tab) : memory();
+  function guestStorage() {
+    const key='danh-learner-guest-session-v1', data=memory();
+    let savedGuest;
+    try { savedGuest=(session && C.parse(session.getItem(key))) || C.parse(window.name)?.guestSession; } catch { savedGuest=C.parse(window.name)?.guestSession; }
+    if(savedGuest?.tab===tab && savedGuest.data && typeof savedGuest.data==='object') {
+      Object.entries(savedGuest.data).forEach(([k,v])=>{if(C.validKey(k) && typeof v==='string')data.setItem(k,v);});
+    }
+    const set=data.setItem,remove=data.removeItem;
+    const flush=()=>{
+      const values={};for(let i=0;i<data.length;i++){const k=data.key(i);values[k]=data.getItem(k);}
+      const value={tab,data:values};
+      try { if(session){session.setItem(key,JSON.stringify(value));return;} } catch {}
+      window.name=JSON.stringify({...C.parse(window.name,{}),guestSession:value});
+    };
+    data.setItem=(k,v)=>{if(!C.validKey(String(k)))throw Error('Unsupported learning key');set(k,v);flush();};
+    data.removeItem=k=>{remove(k);flush();};
+    data.clear=()=>{for(const k of Array.from({length:data.length},(_,i)=>data.key(i)))remove(k);flush();};
+    return data;
+  }
+  const storage=current ? store.scope(current.id, storageError, tab) : guestStorage();
   // This document keeps its own storage scope, including during pagehide after a switch.
-  window.DanhLearners={current,storage,open:()=>show('list'),manage:()=>show('manage'),endSession:()=>{if(session)session.removeItem(SESSION);window.name=JSON.stringify({danhTab:tab});location.reload();}};
+  window.DanhLearners={current,storage,open:()=>show(store.list().length?'list':'create'),manage:()=>show(current?'manage':store.list().length?'list':'create'),endSession:()=>{if(session){session.removeItem(SESSION);session.removeItem('danh-learner-guest-session-v1');}window.name=JSON.stringify({danhTab:tab});location.reload();}};
   function storageError(reason) { errorMessage=reason==='quota' ? 'Máy chưa lưu được thay đổi mới. Em hãy tải bản sao lưu và giải phóng bộ nhớ.' : 'Hồ sơ đã thay đổi ở tab khác. Em hãy tải lại trang để tiếp tục.'; if (shadow) { const notice=shadow.getElementById('storage-warning');notice.textContent=errorMessage;notice.hidden=false; } }
   function select(id) {
     const p=store.get(id); if(!p) {show('list');return;}
@@ -40,19 +59,14 @@
   function button(text, fn, cls='') { const b=el('button',text,cls);b.type='button';b.addEventListener('click',fn);return b; }
   function info(text) { panel.append(el('p',text,'muted')); }
   function heading(text, icon='🌟') { panel.append(el('div',icon,'mascot'),el('h1',text)); }
-  function hide() { if(!current || mustReload || !store.get(current.id))return; overlay.hidden=true; document.body.style.overflow=''; [...document.body.children].filter(e=>e!==host).forEach(e=>{if(e.dataset.learnerInert==='1'){e.inert=false;delete e.dataset.learnerInert;}});returnFocus?.focus(); }
+  function hide() { if(mustReload || (current && !store.get(current.id)))return; overlay.hidden=true; document.body.style.overflow=''; [...document.body.children].filter(e=>e!==host).forEach(e=>{if(e.dataset.learnerInert==='1'){e.inert=false;delete e.dataset.learnerInert;}});returnFocus?.focus(); }
   function show(mode='list') {
     if (!shadow) return;
     if(mustReload && mode!=='list')mode='conflict';
-    returnFocus=document.activeElement;panel.replaceChildren();overlay.hidden=false;document.body.style.overflow='hidden';
+    returnFocus=shadow.activeElement || document.activeElement;panel.replaceChildren();overlay.hidden=false;document.body.style.overflow='hidden';
     [...document.body.children].filter(e=>e!==host && !['SCRIPT','STYLE','LINK'].includes(e.tagName)).forEach(e=>{if(!e.inert){e.inert=true;e.dataset.learnerInert='1';}});
-    if (current && store.get(current.id) && !mustReload && mode!=='conflict') panel.append(button('Đóng ✕',hide,'close'));
-    if (mode==='confirm') {
-      const p=store.recommend();if(!p){show('create');return;}
-      heading('Hôm nay vẫn là '+p.name+' phải không?',p.avatar);
-      info('Chọn đúng tên để tiếp tục lộ trình của mình nhé.');
-      panel.append(button('Đúng rồi, vào học',()=>select(p.id),'primary'),button('Đổi người học',()=>show('list'),'wide'));
-    } else if (mode==='create' || mode==='edit') {
+    if (!mustReload && (!current || store.get(current.id)) && mode!=='conflict') panel.append(button('Đóng ✕',hide,'close'));
+    if (mode==='create' || mode==='edit') {
       const editing=mode==='edit', p=editing?store.get(current.id):null;
       heading(editing?'Hồ sơ của '+p.name:'Chào em! Mình làm quen nhé 🌱',p?.avatar || '🌟');
       info(editing?'Đổi tên vẫn giữ nguyên lộ trình đã học.':'Chỉ cần tên là em có thể vào học ngay.');
@@ -84,7 +98,8 @@
       mustReload=true;
       heading('Mình cập nhật lộ trình nhé','🌱');info(errorMessage || 'Lộ trình đang được cập nhật ở một tab khác. Tải lại để tiếp tục với kết quả mới nhất.');panel.append(button('Tải lại để tiếp tục',()=>location.reload(),'primary'));
     } else {
-      heading('Hôm nay ai vào học nào?','🌈');info('Mỗi tên có một hành trình riêng trên máy này.');
+      heading(current?'Chọn người học':'Đăng nhập','🌈');info('Chọn hồ sơ để tiếp tục lộ trình đã lưu trên trình duyệt này.');
+      if(!current && storage.length)info('Lượt học thử trong tab này không tự nhập vào hồ sơ đã chọn.');
       const list=el('div',undefined,'profiles'),profiles=store.list();profiles.forEach((p,i)=>{const b=button('',()=>select(p.id),'profile');b.append(el('span',p.avatar,'avatar'),el('strong',p.name));if(p.id===current?.id)b.append(el('small','Đang học'));else if(profiles.some(other=>other.id!==p.id && other.name===p.name && other.avatar===p.avatar))b.append(el('small','Hồ sơ #'+(i+1)));list.append(b);});panel.append(list,button('+ Thêm người học',()=>show('create'),'primary'),button('Khôi phục từ bản sao lưu',importFile,'wide'));
     }
     info(local?'Hồ sơ được lưu trên trình duyệt này, chưa đồng bộ sang thiết bị khác.':'Trình duyệt đang chặn lưu lâu dài. Hãy tải bản sao lưu trước khi đóng phiên.');
@@ -101,13 +116,13 @@
   function mount() {
     host=el('danh-learner');shadow=host.attachShadow({mode:'open'});
     const css=el('link');css.rel='stylesheet';css.href=new URL('shared/learner-profile.css',base).href;shadow.append(css);
-    const bar=el('div',undefined,'bar');bar.append(el('span',current?current.avatar+' '+current.name:'🌱 Hồ sơ người học','bar-name'));
+    const bar=el('div',undefined,'bar');bar.append(el('span',current?current.avatar+' '+current.name:'🌱 Học thử','bar-name'));
     if(current)bar.append(button('Đổi người học',()=>show('list')),button('Hồ sơ',()=>show('manage')));
+    else bar.append(button('Đăng nhập',window.DanhLearners.open,'primary login'));
     const notice=el('p',local?'': 'Trình duyệt chặn lưu lâu dài. Tiến độ chỉ giữ trong phiên này.','warning');notice.id='storage-warning';notice.role='status';notice.hidden=!!local;shadow.append(bar,notice);
     overlay=el('div',undefined,'overlay');overlay.hidden=true;panel=el('section',undefined,'sheet');panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','Hồ sơ người học');overlay.append(panel);shadow.append(overlay);document.body.prepend(host);
-    shadow.addEventListener('keydown',e=>{if(overlay.hidden)return;if(e.key==='Escape' && current){e.preventDefault();hide();}if(e.key==='Tab'){const items=[...panel.querySelectorAll('button,input,a[href]')].filter(x=>!x.hidden && !x.disabled);const first=items[0],last=items.at(-1),active=shadow.activeElement;if(e.shiftKey && active===first){e.preventDefault();last?.focus();}else if(!e.shiftKey && active===last){e.preventDefault();first?.focus();}}});
-    if(!current)show(store.list().length?'confirm':'create');
-    else if(/(practice|lesson|unit\d|grammar|flashcard|\/topics\/|bodyparts|animals|food|clothes|numbers|phonetic)/i.test(location.pathname) && !/-index\.html$/.test(location.pathname) && !/\/grammar\.html$/.test(location.pathname)) {
+    shadow.addEventListener('keydown',e=>{if(overlay.hidden)return;if(e.key==='Escape'){e.preventDefault();hide();}if(e.key==='Tab'){const items=[...panel.querySelectorAll('button,input,a[href]')].filter(x=>!x.hidden && !x.disabled);const first=items[0],last=items.at(-1),active=shadow.activeElement;if(e.shiftKey && active===first){e.preventDefault();last?.focus();}else if(!e.shiftKey && active===last){e.preventDefault();first?.focus();}}});
+    if(current && /(practice|lesson|unit\d|grammar|flashcard|\/topics\/|bodyparts|animals|food|clothes|numbers|phonetic)/i.test(location.pathname) && !/-index\.html$/.test(location.pathname) && !/\/grammar\.html$/.test(location.pathname)) {
       storage.setItem('danh:learner-route:v1',JSON.stringify({path:location.pathname+location.search,title:document.title.split('|')[0].trim(),at:Date.now()}));
     }
   }

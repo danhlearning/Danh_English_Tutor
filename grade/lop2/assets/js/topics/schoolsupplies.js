@@ -43,51 +43,41 @@
     return arr;
   }
 
-  /* DỮ LIỆU TỪ VỰNG DỤNG CỤ HỌC TẬP (ĐÃ LOẠI BỎ 5 TỪ YÊU CẦU) */
+  /* 18 TỪ / CỤM TỪ NGẮN (1–2 ÂM TIẾT) */
   const schoolSupplies = [
     { num: 1, name: 'Pencil', ipa: '/ˈpɛnsəl/', meaning: 'Bút chì', emoji: '✏️', hex: '#E53E3E' },
     { num: 2, name: 'Pen', ipa: '/pɛn/', meaning: 'Bút mực / Bút bi', emoji: '🖊️', hex: '#ED8936' },
-    { num: 3, name: 'Eraser', ipa: '/ɪˈreɪzər/', meaning: 'Cục tẩy / Cục gôm', emoji: '🧽', hex: '#ECC94B' },
     { num: 4, name: 'Ruler', ipa: '/ˈruːlər/', meaning: 'Thước kẻ', emoji: '📏', hex: '#38A169' },
     { num: 5, name: 'Book', ipa: '/bʊk/', meaning: 'Sách', emoji: '📖', hex: '#3182CE' },
     { num: 6, name: 'School bag', ipa: '/skuːl bæɡ/', meaning: 'Cặp sách', emoji: '🎒', hex: '#ED64A6' },
     { num: 7, name: 'Scissors', ipa: '/ˈsɪzərz/', meaning: 'Cây kéo', emoji: '✂️', hex: '#4A90E2' },
     { num: 8, name: 'Glue', ipa: '/ɡluː/', meaning: 'Keo dán / Hồ dán', emoji: '🧴', hex: '#319795' },
     { num: 9, name: 'Crayon', ipa: '/ˈkreɪɒn/', meaning: 'Bút màu sáp', emoji: '🖍️', hex: '#DD6B20' },
-    { num: 10, name: 'Pencil case', ipa: '/ˈpɛnsəl keɪs/', meaning: 'Hộp bút', emoji: '👝', hex: '#E53E3E' },
     { num: 11, name: 'Chair', ipa: '/ʧɛr/', meaning: 'Ghế ngồi', emoji: '🪑', hex: '#38A169' },
     { num: 12, name: 'Blackboard', ipa: '/ˈblækˌbɔːrd/', meaning: 'Bảng đen', emoji: '⬛', hex: '#3182CE' },
     { num: 13, name: 'Paper', ipa: '/ˈpeɪpər/', meaning: 'Tờ giấy', emoji: '📄', hex: '#ED64A6' },
     { num: 14, name: 'Folder', ipa: '/ˈfoʊldər/', meaning: 'Bìa đựng tài liệu', emoji: '📁', hex: '#4A90E2' },
-    { num: 15, name: 'Calculator', ipa: '/ˈkælkjəˌleɪtər/', meaning: 'Máy tính bỏ túi', emoji: '🧮', hex: '#319795' },
     { num: 16, name: 'Globe', ipa: '/ɡloʊb/', meaning: 'Quả địa cầu', emoji: '🌐', hex: '#DD6B20' },
     { num: 17, name: 'Compass', ipa: '/ˈkʌmpəs/', meaning: 'Com-pa', emoji: '🧭', hex: '#E53E3E' },
     { num: 18, name: 'Paintbrush', ipa: '/ˈpeɪntˌbrʌʃ/', meaning: 'Cọ vẽ', emoji: '🖌️', hex: '#ED8936' },
     { num: 19, name: 'Palette', ipa: '/ˈpælɪt/', meaning: 'Khay pha màu', emoji: '🎨', hex: '#ECC94B' },
-    { num: 20, name: 'Paperclip', ipa: '/ˈpeɪpərˌklɪp/', meaning: 'Kẹp giấy', emoji: '📎', hex: '#38A169' },
     { num: 21, name: 'Stapler', ipa: '/ˈsteɪplər/', meaning: 'Cái dập ghim', emoji: '📌', hex: '#3182CE' },
-    { num: 22, name: 'Dictionary', ipa: '/ˈdɪkʃəˌnɛri/', meaning: 'Từ điển', emoji: '📚', hex: '#ED64A6' },
-    { num: 23, name: 'Highlighter', ipa: '/ˈhaɪˌlaɪtər/', meaning: 'Bút dạ quang', emoji: '🖊️', hex: '#4A90E2' },
-    { num: 24, name: 'Protractor', ipa: '/proʊˈtræktər/', meaning: 'Thước đo độ', emoji: '📐', hex: '#319795' },
     { num: 25, name: 'Backpack', ipa: '/ˈbækˌpæk/', meaning: 'Balo học sinh', emoji: '🎒', hex: '#DD6B20' }
   ];
   window.DanhPencil?.apply('schoolsupplies', schoolSupplies);
 
 
-  /* DỮ LIỆU CÂU ĐẾM GAME 4 (ĐÃ LOẠI BỎ 5 TỪ TRÊN) */
+  /* CÂU ĐẾM CHỈ DÙNG BỘ TỪ NGẮN */
   const countGameQuestions = [
     { count: 3, itemSingular: 'pencil', itemPlural: 'pencils', emoji: '✏️' },
     { count: 5, itemSingular: 'book', itemPlural: 'books', emoji: '📖' },
     { count: 2, itemSingular: 'ruler', itemPlural: 'rulers', emoji: '📏' },
-    { count: 4, itemSingular: 'eraser', itemPlural: 'erasers', emoji: '🧽' },
     { count: 1, itemSingular: 'school bag', itemPlural: 'school bags', emoji: '🎒' },
     { count: 6, itemSingular: 'pen', itemPlural: 'pens', emoji: '🖊️' },
     { count: 8, itemSingular: 'crayon', itemPlural: 'crayons', emoji: '🖍️' },
-    { count: 2, itemSingular: 'scissors', itemPlural: 'scissors', emoji: '✂️' },
-    { count: 7, itemSingular: 'paperclip', itemPlural: 'paperclips', emoji: '📎' },
-    { count: 4, itemSingular: 'glue', itemPlural: 'glues', emoji: '🧴' },
-    { count: 1, itemSingular: 'calculator', itemPlural: 'calculators', emoji: '🧮' },
-    { count: 9, itemSingular: 'paper', itemPlural: 'papers', emoji: '📄' },
+    { count: 2, itemSingular: 'scissors', itemPlural: 'pairs of scissors', emoji: '✂️' },
+    { count: 4, itemSingular: 'glue', itemPlural: 'glue sticks', emoji: '🧴' },
+    { count: 9, itemSingular: 'paper', itemPlural: 'sheets of paper', emoji: '📄' },
     { count: 2, itemSingular: 'globe', itemPlural: 'globes', emoji: '🌐' },
     { count: 4, itemSingular: 'paintbrush', itemPlural: 'paintbrushes', emoji: '🖌️' },
     { count: 6, itemSingular: 'folder', itemPlural: 'folders', emoji: '📁' },
@@ -129,7 +119,7 @@
         <div class="phonetic">${item.ipa}</div>
         <div class="meaning">${item.meaning}</div>
         <div class="example-box">
-          <b>Ví dụ:</b> <i>"This is my ${item.name.toLowerCase()}."</i>
+          <b>Ví dụ:</b> <i>"${item.name === 'Scissors' ? 'These are my scissors.' : `This is my ${item.name.toLowerCase()}.`}"</i>
         </div>
         <button class="audio-btn" onclick="speak('${item.name}')">🔊</button>
       `;

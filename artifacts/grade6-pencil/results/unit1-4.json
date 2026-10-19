@@ -1,0 +1,13 @@
+{
+  "key": "unit1/4",
+  "unit": 1,
+  "unitId": "unit1",
+  "id": 4,
+  "term": "timetable",
+  "meaning": "thời khóa biểu",
+  "example": "Our timetable is on the classroom wall.",
+  "slug": "timetable",
+  "file": "grade/lop6/assets/images/pencil/unit1/timetable-v1.webp",
+  "prompt": "Use case: illustration-story. Asset: one square vocabulary illustration for a Grade 6 English learning website. Subject: timetable, meaning thời khóa biểu. Context for the illustrator only, do not put these words in the image: Our timetable is on the classroom wall.\nScene: A classroom wall weekly timetable represented by a clean rectangular grid with five equal columns and four rows, each cell contains only a small pictogram of a school activity such as ball, book, palette or music note. No letters, numbers or words anywhere.\nStyle: charming hand-drawn flat 2D colored-pencil cartoon with clearly visible pencil grain, layered colored-pencil shading and soft warm graphite outlines on warm white paper, restrained cheerful pastel colors, matching the newest pencil vocabulary illustrations for this project. Suitable for ages 11–12, natural proportions, not babyish. One coherent scene, square composition, main subject clear at thumbnail size, light breathing room around the subject. No photorealism, no 3D, no vector-flat rendering.\nConstraints: absolutely no letters, readable text, words, numbers, captions, Vietnamese meanings, definitions, labels, logos, watermarks, decorative border or speech bubbles. No collage or multiple cards. Correct anatomy, object construction, perspective and cause-and-effect. Do not add unrelated decoration. Create exactly one finished square image.",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-98696fa6-c3a1-42b6-bc41-1c8fd7d56378.png"
+}

@@ -3,8 +3,15 @@
   "method": "Direct visual review of all 19 full images and normalized contact sheets, not automatic OCR.",
   "grade6": {
     "vocabularyItems": 96,
-    "bitmapImages": 0,
-    "note": "Uses emoji; standardized the visual frames. No Vietnamese meanings baked into bitmaps."
+    "bitmapImages": 96,
+    "style": "2D colored-pencil illustration, matching the latest Grade 2 pencil style; characters and contexts suitable for Grade 6",
+    "reviewedVisually": 96,
+    "size": [
+      768,
+      768
+    ],
+    "reviewFile": "artifacts/grade6-pencil/individual-review.json",
+    "note": "Từng WebP cuối đã mở xem trực tiếp, không có chữ/nghĩa Việt trong ảnh; hash gắn đúng bản đã xem. Nghĩa và ví dụ hiển thị ngoài ảnh. Hai bản sửa Save/Technology được chọn cuối."
   },
   "images": [
     {

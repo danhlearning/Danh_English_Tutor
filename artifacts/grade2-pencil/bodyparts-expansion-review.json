@@ -1,0 +1,359 @@
+{
+  "tool": "built-in image_gen",
+  "newImages": 16,
+  "totalActiveWords": 32,
+  "assets": [
+    {
+      "id": "head",
+      "name": "Head",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/head-v1.webp",
+      "sha256": "d59fdc0a58f979c331be36d9c95ac9d93006eb0b239fd5dbcf49c135e72b091e",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "hair",
+      "name": "Hair",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/hair-v1.webp",
+      "sha256": "fe1c345ef3515fd893ade74a888f603c726a4e65a1a1d0facb3730a894738cff",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "eyes",
+      "name": "Eyes",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/eyes-v1.webp",
+      "sha256": "e842ecd0b3ac9c9830b86a094ac372f2a3111991a09c09f6c25c0c5148e51259",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "ears",
+      "name": "Ears",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/ears-v1.webp",
+      "sha256": "cbaf4c729beb4ebba40a7527bd8759e58737621801db0106b701c9fe9b70ca22",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "nose",
+      "name": "Nose",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/nose-v1.webp",
+      "sha256": "3cd9758f3de25c31471e9ebda396f617da68bd984a1b503143b085d34e602fe9",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "mouth",
+      "name": "Mouth",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/mouth-v1.webp",
+      "sha256": "e931b7ed43a1fafcea724381a392623fad9f353bbdd37f64c087bef9f27e1a20",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "teeth",
+      "name": "Teeth",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/teeth-v1.webp",
+      "sha256": "490fd96f9e232c0ca4ff4fde3e06387ba5044c673a562e45ae426a173d5d5c59",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "neck",
+      "name": "Neck",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/neck-v1.webp",
+      "sha256": "6eec2e709cd9a91383e1ced8d4c4f8f41a1036b2ba521ed1ba2762febc6e13d7",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "shoulder",
+      "name": "Shoulder",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/shoulder-v1.webp",
+      "sha256": "3d3f69355c4a66e6f14c59e0e4291e21621b8347e9c6d6cfd854d603be6c6e97",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "arm",
+      "name": "Arm",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/arm-v1.webp",
+      "sha256": "26592000154b4653289b9183f04720d86c97e5c5a7982b20a4b0921e92d99b56",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "hand",
+      "name": "Hand",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/hand-v1.webp",
+      "sha256": "903f40b893d6f82646d4934ca4bdbba9aee4705bb9e56a1937488f389fb4ac70",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "finger",
+      "name": "Finger",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/finger-v1.webp",
+      "sha256": "847e5882921aae79a96161d9a00608a73d26577f01d1ce8c1bff5236ebb63252",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "leg",
+      "name": "Leg",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/leg-v1.webp",
+      "sha256": "294185f2ec7a5fa7a05524db7b63ea842aef880426d4d31308e8d9a6c67f8307",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "knee",
+      "name": "Knee",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/knee-v1.webp",
+      "sha256": "a3e9945ced9f0903380abb7510b08e8ab3de04626725d5f10ee3e83bf893420c",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "foot",
+      "name": "Foot",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/foot-v1.webp",
+      "sha256": "660edbb4ead2f2f101a4faf504a197446e66ac33de91c147d094c27079a1e6ed",
+      "size": [
+        768,
+        768
+      ],
+      "review": "approved original set; individual-review.json"
+    },
+    {
+      "id": "tummy",
+      "name": "Stomach",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/tummy-v1.webp",
+      "sha256": "9a07e3752c2d845b72e97b9f0dca9034198fbaabfcb04bdc6b9517445b254de3",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "face",
+      "name": "Face",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/face-v1.webp",
+      "sha256": "dfd0e7f260b82c4a5cfe9ddb34bc008878d534ec10adb17a23fa29d2513b6ba9",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "forehead",
+      "name": "Forehead",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/forehead-v1.webp",
+      "sha256": "f1f76a28254e950fbfd11f7c70f8e17feb1e50476ecf332d52a88281716347d4",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "eyebrows",
+      "name": "Eyebrows",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/eyebrows-v1.webp",
+      "sha256": "7c32bfb5ca1962c5821ec491d28dff0b5839c399327609f739b767bb52830c68",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "eyelashes",
+      "name": "Eyelashes",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/eyelashes-v1.webp",
+      "sha256": "0cbf62d01d0c37b8a5c09ade5b541c0740222ce1ab5b0fddb0ebe22589575561",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "cheeks",
+      "name": "Cheeks",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/cheeks-v1.webp",
+      "sha256": "36783d12b06fee4be9237339c598c7eac3bb52ad6b61c36b5bdcbd01048d2c8e",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "chin",
+      "name": "Chin",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/chin-v1.webp",
+      "sha256": "88fcee92ae10190a919792fa404c20ecfba1ffc367edc0feefe8e3588ae5a847",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "lips",
+      "name": "Lips",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/lips-v1.webp",
+      "sha256": "9fa2ef63d85f604d7ef219607222232dd6c99d4241ee37c7c46dd48a9c70b402",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "tongue",
+      "name": "Tongue",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/tongue-v1.webp",
+      "sha256": "7b9a8e9bb9ad52b49e778bb38a13932a488a92d57d890a5ebdfc46f54a0f84bc",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "chest",
+      "name": "Chest",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/chest-v1.webp",
+      "sha256": "1c27ce290c4ca27f383b5f2b3428887a612ce3075281722db27ac944fd2ad544",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "back",
+      "name": "Back",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/back-v1.webp",
+      "sha256": "1eb01ba5f6291a42bc49bccce6413fecd4391f58dc3a5944b15a86e795627f8d",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "elbow",
+      "name": "Elbow",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/elbow-v1.webp",
+      "sha256": "8ad287fdc195f946a9518cfbdb8f6d743072df0945559ab16031980e21caeb10",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "wrist",
+      "name": "Wrist",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/wrist-v1.webp",
+      "sha256": "307c910ba2fb52787e64557805409ed697a642f25552258ac69b7f99b7bdfdde",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "thumb",
+      "name": "Thumb",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/thumb-v1.webp",
+      "sha256": "9176a927abbc2751644c39a7ed039826bfcb0a795c0e5740fbe59041dc6470c6",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "toes",
+      "name": "Toes",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/toes-v1.webp",
+      "sha256": "025836fa7c6b1280d06a19e1f5d5aa077bae51d183fd4841bac61906754c991c",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "ankle",
+      "name": "Ankle",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/ankle-v1.webp",
+      "sha256": "c321e24993c426f6e46378d0cdb58c5b7d43918ebd4e7bd893e4b5fd1d195695",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    },
+    {
+      "id": "heel",
+      "name": "Heel",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/heel-v1.webp",
+      "sha256": "6e0a85f1b26257e31769f86dabb6d3ae7ee84f93f7797378266d0472fad42595",
+      "size": [
+        768,
+        768
+      ],
+      "review": "directly viewed 2026-10-19"
+    }
+  ]
+}

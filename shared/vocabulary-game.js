@@ -16,6 +16,7 @@
   const {feedback,afterFeedback,reduced}=effects;
   const settings = () => {
     document.body.classList.add('vg-world');
+    if(effects.automatic)return;
     const bar=el('div',undefined,'vg-settings');bar.setAttribute('role','group');bar.setAttribute('aria-label','Âm thanh và chuyển động');bar.dataset.vocabSettings='true';
     const soundButton=button('',()=>{},'g6-secondary');soundButton.id='vocab-sound';
     const motionButton=button('',()=>{},'g6-secondary');motionButton.id='vocab-motion';

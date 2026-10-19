@@ -1,7 +1,9 @@
 :host{display:block;font-family:"Danh Nunito",Nunito,system-ui,sans-serif;color:#40345c;font-size:16px;line-height:1.5;position:relative;z-index:10000}
 *{box-sizing:border-box} [hidden]{display:none!important}
 button,input,a{font:inherit}button,a{touch-action:manipulation}button{cursor:pointer;background:#fff;border:1px solid #d8cced;border-radius:14px;color:#534473;padding:10px 15px;min-height:44px;font-weight:800}button:hover{background:#f0e8ff}button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #9274e3;outline-offset:3px}
-.bar{background:#f7f1ff;border-bottom:1px solid #e3d8ef;display:flex;align-items:center;gap:8px;padding:8px max(12px,calc((100vw - 1100px)/2));flex-wrap:wrap}.bar-name{font-weight:900;flex:1;min-width:90px;overflow-wrap:anywhere}.bar button{padding:7px 12px;font-size:14px}
+.bar{background:var(--danh-profile-background,#f7f1ff);border-bottom:1px solid var(--danh-profile-border,#e3d8ef);display:flex;align-items:center;gap:8px;padding:8px max(12px,calc((100vw - 1100px)/2));flex-wrap:wrap}.bar-name{font-weight:900;flex:1;min-width:90px;overflow-wrap:anywhere}.bar button{padding:7px 12px;font-size:14px}
+.bar .login{background:var(--danh-profile-accent,#7654be);color:#fff;border-color:var(--danh-profile-accent,#7654be);white-space:nowrap;width:auto;flex:none;margin:0}.bar .login:hover{background:var(--danh-profile-accent-hover,#60409f)}
+.bar{padding-inline:var(--danh-profile-inset,max(12px,calc((100vw - 1100px)/2)))}.bar .login{box-shadow:0 4px 0 var(--danh-profile-button-shadow,#65499f)}
 .warning{margin:0;background:#fff1d0;color:#705211;padding:10px 16px;font-weight:700}
 .overlay{position:fixed;inset:0;z-index:2147483646;background:rgba(64,47,91,.42);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;padding:20px;overflow:auto;overscroll-behavior:contain}
 .sheet{width:100%;max-width:510px;max-height:calc(100dvh - 40px);overflow:auto;background:linear-gradient(155deg,#fff,#fcf6ff);border:3px solid #fff;border-radius:30px;padding:28px;box-shadow:0 20px 90px #3b235545;position:relative;animation:hello .25s ease-out;overflow-wrap:anywhere}

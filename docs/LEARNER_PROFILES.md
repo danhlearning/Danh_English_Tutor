@@ -2,13 +2,21 @@
 
 ## Trải nghiệm
 
-Lần đầu mở website, người học nhập tên, có thể chọn bạn đồng hành và bấm **Vào học ngay**. Không cần email hoặc mật khẩu. Các trang học đều có thanh tên, **Đổi người học** và **Hồ sơ**.
+Mở website là xem và học thử ngay, không tự bật hộp hỏi tên. Thanh đầu trang có nút **Đăng nhập**; bấm nút để chọn hồ sơ có sẵn hoặc nhập tên, chọn bạn đồng hành và bấm **Vào học ngay**. Hộp có nút Đóng và phím Escape. Đây là đăng nhập hồ sơ trên thiết bị, không cần email hoặc mật khẩu. Khi đã chọn hồ sơ, thanh hiện tên, **Đổi người học** và **Hồ sơ**.
 
-Phiên học mới gợi ý tên gần nhất và hỏi “Hôm nay vẫn là … phải không?”. Người học chọn **Đúng rồi, vào học** hoặc chọn một tên khác, thêm người học. Trong cùng tab, chuyển bài và tải lại vẫn giữ người đang học. Phiên được xác nhận trong tối đa 12 giờ; có thể chủ động **Kết thúc phiên học**. Mỗi tab giữ người học riêng.
+Trong cùng tab, chuyển bài và tải lại vẫn giữ người đã đăng nhập. Phiên có hạn tối đa 12 giờ; có thể chủ động **Kết thúc phiên học**. Hết phiên hoặc tab mới hiện nút Đăng nhập, không tự chọn tên gần nhất hay bật hộp hỏi. Mỗi tab giữ người học riêng.
+
+Khi học thử, `DanhLearners.storage` dùng bộ nhớ riêng trong tab, lưu gói `danh-learner-guest-session-v1` trong sessionStorage, có dự phòng qua window.name khi bị chặn. ID tab ngăn tab mới dùng nhầm gói sao chép. Giữ lượt qua tải lại/chuyển bài trong tab; không ghi vào localStorage dùng chung hoặc hồ sơ có sẵn. Đăng nhập tải dữ liệu của hồ sơ đã chọn, không tự nhập kết quả học thử. Kết thúc phiên xóa gói học thử của tab. Dữ liệu hồ sơ cũ giữ nguyên.
 
 Mỗi tên có ID độc lập. Trùng tên không nhập chung dữ liệu; đổi tên hoặc bạn đồng hành giữ lộ trình. Danh sách phân biệt hồ sơ trùng cả tên và hình bằng số hồ sơ. Xóa hồ sơ cần xác nhận, chỉ xóa dữ liệu của tên đó.
 
 ## Tiến độ và chuyển đổi
+
+- Body Parts lớp 2 có 32 từ; tên Stomach giữ ID từ/câu cũ `tummy`/`body-tummy`. Giữ nguyên bộ từ đã chọn; chọn Tất cả để thêm từ mới vào lượt luyện. Một lần chuyển đổi cách viết được đánh dấu bằng `danh.bodyparts.stomach-word.v1`: nếu lượt chính tả cũ có tummy, lưu nguyên trạng thái vào `danh.learning.bodyparts.before-stomach.v1` rồi bỏ riêng lượt chính tả đó, giữ lượt trắc nghiệm, bộ chọn và lịch sử; thông báo cho người học. Các khóa qua `DanhLearners.storage`, không gộp hồ sơ hay đổi bài khác.
+
+- School Supplies lớp 2 rút còn 18 từ ngắn. Khi bộ chọn cũ chứa từ đã bỏ, lưu nguyên bản vào `danh.learning.schoolsupplies.before-short-words.v1` trước khi cập nhật `danh.learning.schoolsupplies.v1`, đều qua `DanhLearners.storage`. Giữ ID còn phù hợp hoặc chọn cả bộ nếu không còn từ nào; lượt/thẻ của bộ bị đổi bắt đầu lại và có thông báo. Bộ chọn không bị ảnh hưởng giữ lượt dở. Bản lưu chứa đầy đủ kết quả/lượt cũ, không làm thay đổi chủ đề hay người học khác.
+
+- Ôn tập tổng hợp lớp 2 dùng `danh-g2-mixed-review-v1` qua `DanhLearners.storage`: chọn Unit, lượt trộn, thứ tự đáp án/mảnh câu, nháp, lần sai, gợi ý, kết quả và tối đa 20 lượt lịch sử. Giữ lượt cũ khi thay bộ Unit; tiếp tục vẫn dùng bộ ban đầu. Không ghi vào tiến độ Unit hoặc bằng chứng thành thạo. Không phát giọng đọc khi tải lại.
 
 - Lớp 8/9 dùng bộ chạy chung với THCS, khóa riêng `danh-g8-unit<N>`, `danh-g9-unit<N>`, `danh-g8-vocabulary-game-<phạm vi>-v1`, `danh-g9-vocabulary-game-<phạm vi>-v1`, `danh-g8-grammar-v1`, `danh-g9-grammar-v1`, tất cả qua `DanhLearners.storage`. Phạm vi từ vựng là `unit1`…`unit12`, `term1`, `term2`. Lưu lượt chọn từ và ngữ pháp, dùng tùy chọn hiệu ứng chung theo hồ sơ. Gõ từ hiện là luyện tự do trong trang, chưa lưu nguyên lượt gõ dở và không ghi bằng chứng thành thạo.
 

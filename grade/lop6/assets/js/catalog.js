@@ -13,7 +13,7 @@
     const title = document.createElement('h3'); title.textContent = unit.title;
     const meaning = document.createElement('p'); meaning.textContent = unit.vietnamese;
     const bottom = document.createElement('div'); bottom.className = 'g6-card-bottom';
-    const enter = document.createElement('strong'); enter.textContent = 'Vào học →';
+    const enter = document.createElement('strong'); enter.textContent = '→'; enter.setAttribute('aria-hidden','true');
     bottom.append(enter);
     card.append(top, title, meaning, bottom);
     list.append(card);

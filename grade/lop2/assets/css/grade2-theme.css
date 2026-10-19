@@ -302,7 +302,7 @@ body.grade2-topic .g2-page-links {
 body.grade2-topic .g2-page-links a {
   display: inline-flex;
   align-items: center;
-  min-height: 40px;
+  min-height: 44px;
   padding: 7px 12px;
   border: 1px solid color-mix(in srgb, var(--primary, #38a169) 22%, white);
   border-radius: 999px;

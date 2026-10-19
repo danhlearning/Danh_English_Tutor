@@ -273,3 +273,5 @@
   }
 
   .feedback-msg { font-weight: 800; font-size: 1rem; min-height: 24px; text-align: center; }
+
+.bodyparts-vocab-note { max-width: 680px; margin: 0 auto 18px; text-align: center; line-height: 1.6; color: #334155; font-size: 1.05rem; }

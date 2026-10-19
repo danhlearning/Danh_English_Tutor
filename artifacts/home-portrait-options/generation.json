@@ -1,0 +1,37 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Option B approved and applied as shared home hero background",
+  "assets": [
+    {
+      "id": "a",
+      "name": "Giấy kem xé viền",
+      "prompt": "Create ONE square 1:1 decorative PAPER BACKGROUND to surround a circular teacher portrait on an English tutor website. Premium colored pencil illustration with tactile paper grain and hand-drawn imperfect lines. Warm ivory scrapbook wrapping paper, layered torn paper edges and two small beige masking-tape corners. Delicate colored pencil doodles confined to outer corners: a tiny pencil, open notebook, small coral stars and one simple leafy sprig. Cream, pale honey, teal accents. Friendly elegant hand-crafted learning journal feel. Keep the central 70 percent as pale blank paper, no shapes crossing the center, the portrait will be overlaid separately. Decorative details small and near edges so the face remains the focus. Fully opaque background, all four edges inside frame with a little breathing room. NO person, no face, no photographic content, no lettering, no numbers, no words, no text, no logo, no watermark. A finished flat 2D paper collage backdrop, no tabletop perspective or UI mockup.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-41c9ece7-c67f-4ea7-b830-d785613a11e0.png",
+      "file": "artifacts/home-portrait-options/paper-a.webp",
+      "sha256": "8be39e84cc5321d9a0fbf4867a1e3a5e305899b8cf7183ead5b95b280c29a39f",
+      "review": "Opened final WebP directly; no text or visible drawing defects. Original portrait overlaid in HTML only. Preview viewed after checking circular proportions."
+    },
+    {
+      "id": "b",
+      "name": "Giấy ô ly pastel",
+      "prompt": "Create ONE square 1:1 decorative PAPER BACKGROUND to surround a circular teacher portrait on an English tutor website. Premium colored pencil illustration with tactile paper grain and hand-drawn imperfect lines. Light cream graph-notebook wrapping paper with very subtle pale blue pencil grid, softly irregular cut-paper border, two small mint and peach translucent washi tape strips at opposite corners. Tiny colored pencil paper airplane, orange pencil, gentle curved wind strokes and sky-blue stars ONLY at the outer edges. Fresh light playful school stationery feel. Keep the central 70 percent as pale blank paper, no shapes crossing the center, the portrait will be overlaid separately. Decorative details small and near edges so the face remains the focus. Fully opaque background, all four edges inside frame with a little breathing room. NO person, no face, no photographic content, no lettering, no numbers, no words, no text, no logo, no watermark. A finished flat 2D paper collage backdrop, no tabletop perspective or UI mockup.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-acf34056-2011-40d0-b518-eb6a02bc3008.png",
+      "file": "artifacts/home-portrait-options/paper-b.webp",
+      "sha256": "4a380096bf1df984d2b1631b09c5f99fd8a5c5e87bf0f4fb14cf31a0293d58ac",
+      "review": "Opened final WebP directly; no text or visible drawing defects. Original portrait overlaid in HTML only. Preview viewed after checking circular proportions."
+    },
+    {
+      "id": "c",
+      "name": "Giấy kraft sổ tay",
+      "prompt": "Create ONE square 1:1 decorative PAPER BACKGROUND to surround a circular teacher portrait on an English tutor website. Premium colored pencil illustration with tactile paper grain and hand-drawn imperfect lines. Light natural kraft wrapping paper with gently crumpled tactile fibers, an irregular torn ivory paper layer in the middle, muted forest-green colored pencil leaves and a tiny book at outer corners, one small paper airplane and a few ochre pencil stars at the edge. Understated warm personal tutor travel journal feel, not dark. Keep the central 70 percent as pale blank paper, no shapes crossing the center, the portrait will be overlaid separately. Decorative details small and near edges so the face remains the focus. Fully opaque background, all four edges inside frame with a little breathing room. NO person, no face, no photographic content, no lettering, no numbers, no words, no text, no logo, no watermark. A finished flat 2D paper collage backdrop, no tabletop perspective or UI mockup.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-60835769-0a35-40f4-85a2-f3296851213e.png",
+      "file": "artifacts/home-portrait-options/paper-c.webp",
+      "sha256": "1871604c374e8db0208acbbaeeca156c2704b6ddd4d74e538a75fd1ded34d046",
+      "review": "Opened final WebP directly; no text or visible drawing defects. Original portrait overlaid in HTML only. Preview viewed after checking circular proportions."
+    }
+  ],
+  "selected": "b",
+  "approvedFile": "assets/images/home/paper-grid-approved-v1.webp",
+  "approvedSource": "User-attached PNG matching option B",
+  "approvedSha256": "d7170670b68c73674867c053f5b868ad3e36bf8f4c123ace2825d343cb82d1af"
+}

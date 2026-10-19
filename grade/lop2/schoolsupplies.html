@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="./assets/css/topics/schoolsupplies.css">
+<link rel="stylesheet" href="./assets/css/topics/schoolsupplies.css?v=whole-pictures-1">
 <link rel="stylesheet" href="./assets/css/learning-shared.css">
 <link rel="stylesheet" href="./assets/css/grade2-theme.css?v=reveal10">
   <link rel="stylesheet" href="../../shared/grade-colors.css?v=all-grades-20261016-2">
@@ -40,6 +40,7 @@
   <!-- TAB 1: VOCABULARY -->
   <div id="vocab" class="tab-content active">
     <h2 style="margin-bottom: 16px; text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Từ Vựng Các Dụng Cụ Học Tập Thường Gặp</h2>
+    <p class="school-vocab-note">18 từ ngắn, dễ nhớ. Em bấm loa để nghe rồi chọn từ muốn luyện nhé!</p>
     <div class="vocab-grid" id="vocab-grid-container"></div>
   </div>
 
@@ -73,7 +74,7 @@
         <p><b>Hỏi mượn:</b> May I borrow your + [Tên dụng cụ], please?</p>
         <p><b>Đồng ý:</b> Here you are! / Sure!</p>
         <div class="dialogue">
-          <p><span class="speaker">Student A:</span> May I borrow your eraser, please? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('May I borrow your eraser, please?')">🔊</button></p>
+          <p><span class="speaker">Student A:</span> May I borrow your ruler, please? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('May I borrow your ruler, please?')">🔊</button></p>
           <p><span class="speaker">Student B:</span> Here you are! <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('Here you are!')">🔊</button></p>
         </div>
       </div>
@@ -93,7 +94,7 @@
       </div>
 
       <div class="card-controls">
-        <span class="card-counter" id="card-counter-text">Thẻ 1 / 25</span>
+        <span class="card-counter" id="card-counter-text">Thẻ 1 / 18</span>
       </div>
 
       <div class="flip-card-single" id="single-card-el" onclick="flipSingleCard()">
@@ -128,7 +129,7 @@
     <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình biểu tượng và nghe phát âm để gõ tên dụng cụ! (Ấn ENTER để kiểm tra)</p>
 
     <div class="spelling-box">
-      <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 / 25 câu</div>
+      <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 / 18 câu</div>
 
       <div id="spelling-preview" class="number-preview-box"></div>
       <button class="audio-btn" style="width: 44px; height: 44px; font-size: 1.3rem; margin-top:0;" onclick="playSpellingAudio()">🔊</button>
@@ -169,22 +170,32 @@
 <script src="./assets/js/grade2-progress.js"></script>
 <script src="./assets/js/legacy-game4.js"></script>
 <script src="../../shared/young-learner-speech.js?v=slow-sync-1"></script>
-  <script src="./assets/js/topics/schoolsupplies.js?v=pencil-20261019"></script>
+  <script src="./assets/js/topics/schoolsupplies.js?v=short-words-1"></script>
 <script src="./assets/js/legacy-game4-config.js"></script>
 
 <contact-danh></contact-danh>
     <script src="../../shared/contact-footer.js"></script>
+<script src="./assets/js/schoolsupplies-migration.js?v=short-words-1"></script>
 <script src="./assets/js/learning-core.js?v=pencil-20261019"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', () => DanhLesson.mount({
+  document.addEventListener('DOMContentLoaded', () => {
+    const update = DanhSchoolSuppliesMigration(window.DanhLearners.storage, schoolSupplies.map(word => word.name.toLowerCase()));
+    if (update.changed) {
+      const note = document.createElement('p');
+      note.className = 'school-vocab-note';
+      note.textContent = 'Bài đã rút gọn còn 18 từ. Các từ em chọn còn phù hợp đã được giữ; lượt có từ đã bỏ sẽ bắt đầu lại. Kết quả cũ đã được lưu riêng trong hồ sơ.';
+      document.getElementById('vocab').prepend(note);
+    }
+    DanhLesson.mount({
     topic: 'schoolsupplies',
     words: schoolSupplies.map((word, index) => ({
       id: word.name.toLowerCase(), name: word.name, meaning: word.meaning,
       ipa: word.ipa, color: word.hex, visual: word.emoji
     }))
-  }));
+  });
+  });
 </script>
 
-<script src="./assets/js/grade2-navigation.js?v=reveal10"></script>
+<script src="./assets/js/grade2-navigation.js?v=mixed-review-1"></script>
 </body>
 </html>

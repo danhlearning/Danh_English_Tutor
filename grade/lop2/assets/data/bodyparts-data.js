@@ -1,6 +1,5 @@
-// Dữ liệu chủ đề cơ thể. Hình SVG được dựng tập trung trong bodyparts-diagrams.js.
-// Mã từ ổn định dùng để chọn từ và liên kết bài tập.
-// IPA Anh-Anh khi đọc từ riêng lẻ; forms không tự động là đáp án chính tả.
+// Bộ từ cơ thể thường gặp; ID cũ giữ ổn định khi mở rộng bài.
+// IPA Anh-Anh; hình và nghĩa hiển thị tách biệt.
 window.bodyPartsLesson = {
   "id": "bodyparts",
   "title": "Các bộ phận trên cơ thể",
@@ -261,21 +260,293 @@ window.bodyPartsLesson = {
       "imageDescription": "Bàn chân"
     },
     {
-      "name": "Tummy",
+      "name": "Stomach",
       "svg": null,
-      "ipa": "/ˈtʌm.i/",
+      "ipa": "/ˈstʌm.ək/",
       "meaning": "Bụng",
-      "sentence": "My tummy hurts a little.",
+      "sentence": "My stomach hurts a little.",
       "hex": "#F06292",
       "id": "tummy",
-      "singular": "tummy",
-      "plural": "tummies",
+      "singular": "stomach",
+      "plural": "stomachs",
       "forms": [
-        "tummy",
-        "tummies"
+        "stomach",
+        "stomachs"
       ],
       "number": "singular",
-      "imageDescription": "Bụng được tô nổi bật trên thân người"
+      "imageDescription": "Vùng bụng phía trước cơ thể, bên dưới ngực"
+    },
+    {
+      "id": "face",
+      "name": "Face",
+      "svg": null,
+      "ipa": "/feɪs/",
+      "meaning": "Khuôn mặt",
+      "sentence": "This is my face.",
+      "hex": "#EF5350",
+      "singular": "face",
+      "plural": "faces",
+      "forms": [
+        "face",
+        "faces"
+      ],
+      "number": "singular",
+      "imageDescription": "Khuôn mặt"
+    },
+    {
+      "id": "forehead",
+      "name": "Forehead",
+      "svg": null,
+      "ipa": "/ˈfɒr.ɪd/",
+      "meaning": "Trán",
+      "sentence": "This is my forehead.",
+      "hex": "#AB47BC",
+      "singular": "forehead",
+      "plural": "foreheads",
+      "forms": [
+        "forehead",
+        "foreheads"
+      ],
+      "number": "singular",
+      "imageDescription": "Trán"
+    },
+    {
+      "id": "eyebrows",
+      "name": "Eyebrows",
+      "svg": null,
+      "ipa": "/ˈaɪ.braʊz/",
+      "meaning": "Lông mày",
+      "sentence": "These are my eyebrows.",
+      "hex": "#42A5F5",
+      "singular": "eyebrow",
+      "plural": "eyebrows",
+      "forms": [
+        "eyebrow",
+        "eyebrows"
+      ],
+      "number": "plural",
+      "imageDescription": "Lông mày"
+    },
+    {
+      "id": "eyelashes",
+      "name": "Eyelashes",
+      "svg": null,
+      "ipa": "/ˈaɪ.læʃ.ɪz/",
+      "meaning": "Lông mi",
+      "sentence": "These are my eyelashes.",
+      "hex": "#26A69A",
+      "singular": "eyelash",
+      "plural": "eyelashes",
+      "forms": [
+        "eyelash",
+        "eyelashes"
+      ],
+      "number": "plural",
+      "imageDescription": "Lông mi"
+    },
+    {
+      "id": "cheeks",
+      "name": "Cheeks",
+      "svg": null,
+      "ipa": "/tʃiːks/",
+      "meaning": "Má",
+      "sentence": "These are my cheeks.",
+      "hex": "#FF8A65",
+      "singular": "cheek",
+      "plural": "cheeks",
+      "forms": [
+        "cheek",
+        "cheeks"
+      ],
+      "number": "plural",
+      "imageDescription": "Má"
+    },
+    {
+      "id": "chin",
+      "name": "Chin",
+      "svg": null,
+      "ipa": "/tʃɪn/",
+      "meaning": "Cằm",
+      "sentence": "This is my chin.",
+      "hex": "#5C6BC0",
+      "singular": "chin",
+      "plural": "chins",
+      "forms": [
+        "chin",
+        "chins"
+      ],
+      "number": "singular",
+      "imageDescription": "Cằm"
+    },
+    {
+      "id": "lips",
+      "name": "Lips",
+      "svg": null,
+      "ipa": "/lɪps/",
+      "meaning": "Môi",
+      "sentence": "These are my lips.",
+      "hex": "#EF5350",
+      "singular": "lip",
+      "plural": "lips",
+      "forms": [
+        "lip",
+        "lips"
+      ],
+      "number": "plural",
+      "imageDescription": "Môi"
+    },
+    {
+      "id": "tongue",
+      "name": "Tongue",
+      "svg": null,
+      "ipa": "/tʌŋ/",
+      "meaning": "Lưỡi",
+      "sentence": "This is my tongue.",
+      "hex": "#AB47BC",
+      "singular": "tongue",
+      "plural": "tongues",
+      "forms": [
+        "tongue",
+        "tongues"
+      ],
+      "number": "singular",
+      "imageDescription": "Lưỡi"
+    },
+    {
+      "id": "chest",
+      "name": "Chest",
+      "svg": null,
+      "ipa": "/tʃest/",
+      "meaning": "Ngực",
+      "sentence": "This is my chest.",
+      "hex": "#42A5F5",
+      "singular": "chest",
+      "plural": "chests",
+      "forms": [
+        "chest",
+        "chests"
+      ],
+      "number": "singular",
+      "imageDescription": "Ngực"
+    },
+    {
+      "id": "back",
+      "name": "Back",
+      "svg": null,
+      "ipa": "/bæk/",
+      "meaning": "Lưng",
+      "sentence": "This is my back.",
+      "hex": "#26A69A",
+      "singular": "back",
+      "plural": "backs",
+      "forms": [
+        "back",
+        "backs"
+      ],
+      "number": "singular",
+      "imageDescription": "Lưng"
+    },
+    {
+      "id": "elbow",
+      "name": "Elbow",
+      "svg": null,
+      "ipa": "/ˈel.bəʊ/",
+      "meaning": "Khuỷu tay",
+      "sentence": "This is my elbow.",
+      "hex": "#FF8A65",
+      "singular": "elbow",
+      "plural": "elbows",
+      "forms": [
+        "elbow",
+        "elbows"
+      ],
+      "number": "singular",
+      "imageDescription": "Khuỷu tay"
+    },
+    {
+      "id": "wrist",
+      "name": "Wrist",
+      "svg": null,
+      "ipa": "/rɪst/",
+      "meaning": "Cổ tay",
+      "sentence": "This is my wrist.",
+      "hex": "#5C6BC0",
+      "singular": "wrist",
+      "plural": "wrists",
+      "forms": [
+        "wrist",
+        "wrists"
+      ],
+      "number": "singular",
+      "imageDescription": "Cổ tay"
+    },
+    {
+      "id": "thumb",
+      "name": "Thumb",
+      "svg": null,
+      "ipa": "/θʌm/",
+      "meaning": "Ngón tay cái",
+      "sentence": "This is my thumb.",
+      "hex": "#EF5350",
+      "singular": "thumb",
+      "plural": "thumbs",
+      "forms": [
+        "thumb",
+        "thumbs"
+      ],
+      "number": "singular",
+      "imageDescription": "Ngón tay cái"
+    },
+    {
+      "id": "toes",
+      "name": "Toes",
+      "svg": null,
+      "ipa": "/təʊz/",
+      "meaning": "Ngón chân",
+      "sentence": "I have ten toes.",
+      "hex": "#AB47BC",
+      "singular": "toe",
+      "plural": "toes",
+      "forms": [
+        "toe",
+        "toes"
+      ],
+      "number": "plural",
+      "imageDescription": "Ngón chân"
+    },
+    {
+      "id": "ankle",
+      "name": "Ankle",
+      "svg": null,
+      "ipa": "/ˈæŋ.kəl/",
+      "meaning": "Mắt cá chân",
+      "sentence": "This is my ankle.",
+      "hex": "#42A5F5",
+      "singular": "ankle",
+      "plural": "ankles",
+      "forms": [
+        "ankle",
+        "ankles"
+      ],
+      "number": "singular",
+      "imageDescription": "Mắt cá chân"
+    },
+    {
+      "id": "heel",
+      "name": "Heel",
+      "svg": null,
+      "ipa": "/hiːl/",
+      "meaning": "Gót chân",
+      "sentence": "This is my heel.",
+      "hex": "#26A69A",
+      "singular": "heel",
+      "plural": "heels",
+      "forms": [
+        "heel",
+        "heels"
+      ],
+      "number": "singular",
+      "imageDescription": "Gót chân"
     }
   ],
   "questions": [
@@ -479,14 +750,222 @@ window.bodyPartsLesson = {
     {
       "vietnamese": "Bụng của tôi hơi đau.",
       "hint": "Bụng của tôi + đau + một chút",
-      "answer": "My tummy hurts a little",
+      "answer": "My stomach hurts a little",
       "id": "body-tummy",
       "imageWordId": "tummy",
       "targetWordIds": [
         "tummy"
       ],
       "acceptedAnswers": [
-        "My tummy hurts a little"
+        "My stomach hurts a little"
+      ]
+    },
+    {
+      "id": "body-face",
+      "vietnamese": "Đây là khuôn mặt của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số ít)",
+      "answer": "This is my face",
+      "imageWordId": "face",
+      "targetWordIds": [
+        "face"
+      ],
+      "acceptedAnswers": [
+        "This is my face"
+      ]
+    },
+    {
+      "id": "body-forehead",
+      "vietnamese": "Đây là trán của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số ít)",
+      "answer": "This is my forehead",
+      "imageWordId": "forehead",
+      "targetWordIds": [
+        "forehead"
+      ],
+      "acceptedAnswers": [
+        "This is my forehead"
+      ]
+    },
+    {
+      "id": "body-eyebrows",
+      "vietnamese": "Đây là lông mày của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số nhiều)",
+      "answer": "These are my eyebrows",
+      "imageWordId": "eyebrows",
+      "targetWordIds": [
+        "eyebrows"
+      ],
+      "acceptedAnswers": [
+        "These are my eyebrows"
+      ]
+    },
+    {
+      "id": "body-eyelashes",
+      "vietnamese": "Đây là lông mi của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số nhiều)",
+      "answer": "These are my eyelashes",
+      "imageWordId": "eyelashes",
+      "targetWordIds": [
+        "eyelashes"
+      ],
+      "acceptedAnswers": [
+        "These are my eyelashes"
+      ]
+    },
+    {
+      "id": "body-cheeks",
+      "vietnamese": "Đây là má của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số nhiều)",
+      "answer": "These are my cheeks",
+      "imageWordId": "cheeks",
+      "targetWordIds": [
+        "cheeks"
+      ],
+      "acceptedAnswers": [
+        "These are my cheeks"
+      ]
+    },
+    {
+      "id": "body-chin",
+      "vietnamese": "Đây là cằm của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số ít)",
+      "answer": "This is my chin",
+      "imageWordId": "chin",
+      "targetWordIds": [
+        "chin"
+      ],
+      "acceptedAnswers": [
+        "This is my chin"
+      ]
+    },
+    {
+      "id": "body-lips",
+      "vietnamese": "Đây là môi của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số nhiều)",
+      "answer": "These are my lips",
+      "imageWordId": "lips",
+      "targetWordIds": [
+        "lips"
+      ],
+      "acceptedAnswers": [
+        "These are my lips"
+      ]
+    },
+    {
+      "id": "body-tongue",
+      "vietnamese": "Đây là lưỡi của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số ít)",
+      "answer": "This is my tongue",
+      "imageWordId": "tongue",
+      "targetWordIds": [
+        "tongue"
+      ],
+      "acceptedAnswers": [
+        "This is my tongue"
+      ]
+    },
+    {
+      "id": "body-chest",
+      "vietnamese": "Đây là ngực của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số ít)",
+      "answer": "This is my chest",
+      "imageWordId": "chest",
+      "targetWordIds": [
+        "chest"
+      ],
+      "acceptedAnswers": [
+        "This is my chest"
+      ]
+    },
+    {
+      "id": "body-back",
+      "vietnamese": "Đây là lưng của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số ít)",
+      "answer": "This is my back",
+      "imageWordId": "back",
+      "targetWordIds": [
+        "back"
+      ],
+      "acceptedAnswers": [
+        "This is my back"
+      ]
+    },
+    {
+      "id": "body-elbow",
+      "vietnamese": "Đây là khuỷu tay của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số ít)",
+      "answer": "This is my elbow",
+      "imageWordId": "elbow",
+      "targetWordIds": [
+        "elbow"
+      ],
+      "acceptedAnswers": [
+        "This is my elbow"
+      ]
+    },
+    {
+      "id": "body-wrist",
+      "vietnamese": "Đây là cổ tay của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số ít)",
+      "answer": "This is my wrist",
+      "imageWordId": "wrist",
+      "targetWordIds": [
+        "wrist"
+      ],
+      "acceptedAnswers": [
+        "This is my wrist"
+      ]
+    },
+    {
+      "id": "body-thumb",
+      "vietnamese": "Đây là ngón tay cái của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số ít)",
+      "answer": "This is my thumb",
+      "imageWordId": "thumb",
+      "targetWordIds": [
+        "thumb"
+      ],
+      "acceptedAnswers": [
+        "This is my thumb"
+      ]
+    },
+    {
+      "id": "body-toes",
+      "vietnamese": "Tôi có mười ngón chân.",
+      "hint": "Tôi + có + mười + ngón chân",
+      "answer": "I have ten toes",
+      "imageWordId": "toes",
+      "targetWordIds": [
+        "toes"
+      ],
+      "acceptedAnswers": [
+        "I have ten toes"
+      ]
+    },
+    {
+      "id": "body-ankle",
+      "vietnamese": "Đây là mắt cá chân của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số ít)",
+      "answer": "This is my ankle",
+      "imageWordId": "ankle",
+      "targetWordIds": [
+        "ankle"
+      ],
+      "acceptedAnswers": [
+        "This is my ankle"
+      ]
+    },
+    {
+      "id": "body-heel",
+      "vietnamese": "Đây là gót chân của tôi.",
+      "hint": "Đây là + bộ phận của tôi (số ít)",
+      "answer": "This is my heel",
+      "imageWordId": "heel",
+      "targetWordIds": [
+        "heel"
+      ],
+      "acceptedAnswers": [
+        "This is my heel"
       ]
     }
   ]

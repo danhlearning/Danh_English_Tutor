@@ -1,0 +1,13 @@
+{
+  "key": "unit4/2",
+  "unit": 4,
+  "unitId": "unit4",
+  "id": 2,
+  "term": "market",
+  "meaning": "chợ",
+  "example": "We buy fresh fruit at the market.",
+  "slug": "market",
+  "file": "grade/lop6/assets/images/pencil/unit4/market-v1.webp",
+  "prompt": "Use case: illustration-story. Asset: one square vocabulary illustration for a Grade 6 English learning website. Subject: market, meaning chợ. Context for the illustrator only, do not put these words in the image: We buy fresh fruit at the market.\nScene: A lively open-air fruit and vegetable market with covered stalls and baskets of produce, seller and customer exchanging fruit. No price tags, labels, lettering or currency details.\nStyle: charming hand-drawn flat 2D colored-pencil cartoon with clearly visible pencil grain, layered colored-pencil shading and soft warm graphite outlines on warm white paper, restrained cheerful pastel colors, matching the newest pencil vocabulary illustrations for this project. Suitable for ages 11–12, natural proportions, not babyish. One coherent scene, square composition, main subject clear at thumbnail size, light breathing room around the subject. No photorealism, no 3D, no vector-flat rendering.\nConstraints: absolutely no letters, readable text, words, numbers, captions, Vietnamese meanings, definitions, labels, logos, watermarks, decorative border or speech bubbles. No collage or multiple cards. Correct anatomy, object construction, perspective and cause-and-effect. Do not add unrelated decoration. Create exactly one finished square image.",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-a9053828-f9fc-47e0-9d53-1d785923ddbf.png"
+}

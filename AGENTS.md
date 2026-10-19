@@ -13,10 +13,13 @@
 ## Nội dung và giao diện
 
 - Thương hiệu của sản phẩm là **Danh English Tutor**.
+- Không viết câu phụ (subtitle/sub) giải thích lại tiêu đề trong giao diện. Tiêu đề phải tự nói rõ nội dung; không thêm mô tả hiển nhiên bên dưới hoặc lặp ý bằng cách diễn đạt khác. Áp dụng từ nay cho mọi trang, mục và thành phần mới hoặc được chỉnh sửa. Hướng dẫn thao tác cần thiết của trò chơi đặt tại nơi thực hiện thao tác; slogan thương hiệu đã được người dùng duyệt giữ theo yêu cầu riêng.
 - Nguồn đối chiếu bên ngoài chỉ dùng để tham khảo trong quá trình biên soạn. Không đưa tên thương hiệu hoặc đường dẫn của đơn vị phát hành nguồn đối chiếu vào UX/UI, mã nguồn, chú thích, dữ liệu, tài liệu hay các tệp tạo mới trong dự án.
 - Có thể giữ tên bộ sách, lớp, Unit và chủ đề để học sinh chọn bài phù hợp. Nội dung luyện tập, ví dụ và hình minh họa được biên soạn riêng cho website.
 - Áp dụng nguyên tắc trên cho mọi thay đổi tiếp theo, kể cả khi sao chép mẫu trang hoặc bổ sung một lớp mới.
 - Phương châm giao diện: dùng font **Nunito**, phong cách đáng yêu, dễ thương, chữ lớn dễ đọc trên điện thoại. Bài luyện có âm thanh phản hồi nhẹ và animation phù hợp; có nút bật/tắt, nhớ lựa chọn và tôn trọng chế độ giảm chuyển động của thiết bị. Không tự phát âm thanh khi mở trang.
+- Mọi vùng có tiếng Việt, kể cả footer, hộp thoại, nút và thành phần Shadow DOM, phải dùng Nunito có đủ dấu từ tệp nội bộ (`shared/learner-font.css`, ưu tiên `"Danh Nunito"`). Không chỉ dựa vào font tải ngoài. Trước bàn giao, kiểm tra dấu tiếng Việt ở vùng đã sửa khi chặn mạng ngoài; chạy kiểm tra font và xem trực tiếp giao diện trên điện thoại/máy tính.
+- Kiểm tra font: `node scripts/check-vietnamese-fonts.cjs`; khi thay font hoặc thành phần dùng chung, chạy thêm `node tests/learner-profiles/vietnamese-fonts.browser.cjs` để kiểm tra glyph thực tế khi mạng ngoài bị chặn.
 - Hình minh họa từ vựng không chứa chữ hoặc nghĩa tiếng Việt bên trong ảnh. Nghĩa tiếng Việt hiển thị bằng văn bản riêng ngoài ảnh. Luôn mở và xem trực tiếp từng ảnh được dùng để kiểm tra đúng nghĩa, không có chữ và không lỗi hình trước khi bàn giao; không dùng lại ảnh lớp 6–7 có nghĩa tiếng Việt trong hình.
 
 ## Hồ sơ và lưu lộ trình

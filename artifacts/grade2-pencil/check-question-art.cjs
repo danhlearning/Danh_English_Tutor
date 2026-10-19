@@ -5,7 +5,7 @@ const {chromium}=require('playwright'),fs=require('node:fs'),assert=require('nod
   const c=await b.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});
   await c.route('**/*',r=>r.request().url().startsWith('http://127.0.0.1:8001')?r.continue():r.abort());
   const p=await c.newPage();await p.goto('http://127.0.0.1:8001');
-  await p.locator('#learner-name').fill('Kiểm tra câu có tranh');
+  if(await p.getByRole('button',{name:'Đăng nhập',exact:true}).isVisible())await p.getByRole('button',{name:'Đăng nhập',exact:true}).click();await p.locator('#learner-name').fill('Kiểm tra câu có tranh');
   await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await p.waitForFunction(()=>DanhLearners.current);
   const topics=JSON.parse(fs.readFileSync(__dirname+'/inventory.json','utf8').replace(/^\uFEFF/,'')).filter(t=>t.topic!=='numbers');
   const records=[];

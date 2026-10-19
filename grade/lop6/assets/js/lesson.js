@@ -39,6 +39,20 @@
   const illustration = (word, className) => {
     const frame = document.createElement('span');
     frame.className = className === 'g6-word-icon' ? 'g6-word-visual' : 'g6-flash-visual';
+    if (word.image) {
+      const image = document.createElement('img');
+      image.className = className; image.src = word.image;
+      image.alt = `Minh họa: ${word.meaning}`;
+      image.width = 768; image.height = 768; image.loading = 'lazy';
+      image.addEventListener('error', () => {
+        image.remove();
+        const fallback = document.createElement('span');
+        fallback.className = `${className} g6-symbol-art`;
+        fallback.textContent = word.icon; fallback.setAttribute('aria-hidden', 'true');
+        frame.append(fallback);
+      }, {once:true});
+      frame.append(image); return frame;
+    }
     const icon = document.createElement('span'); icon.className = `${className} g6-symbol-art`;
     icon.textContent = word.icon; icon.classList.toggle('g6-composite-symbol', word.icon.includes('\u200d'));
     icon.setAttribute('aria-hidden', 'true'); frame.append(icon); return frame;

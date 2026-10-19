@@ -1,5 +1,11 @@
 /* One contact footer for the home page and every topic page. */
 (() => {
+  const fonts = new URL('./learner-font.css', document.currentScript.src).href;
+  if (![...document.querySelectorAll('link[rel="stylesheet"]')].some(link => link.href === fonts)) {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet'; link.href = fonts;
+    document.head.append(link);
+  }
   if (customElements.get('contact-danh')) return;
 
   class ContactDanh extends HTMLElement {
@@ -12,7 +18,7 @@
             display: block;
             width: 100%;
             flex-shrink: 0;
-            font-family: Nunito, sans-serif;
+            font-family: "Danh Nunito", Nunito, system-ui, sans-serif;
             line-height: 1.5;
             color: #1e293b;
           }
@@ -20,9 +26,9 @@
           .contact-section {
             text-align: center;
             padding: 30px 15px;
-            background: white;
+            background: var(--danh-contact-background, white);
             margin-top: 30px;
-            border-top: 1px solid #e2e8f0;
+            border-top: 1px solid var(--danh-contact-border, #e2e8f0);
           }
           h2 { margin: 0 0 18px; font-size: 1.5rem; font-weight: 800; }
           .social-buttons {
@@ -53,8 +59,8 @@
           footer {
             text-align: center;
             padding: 15px;
-            background: #1e293b;
-            color: white;
+            background: var(--danh-footer-background, #1e293b);
+            color: var(--danh-footer-color, white);
             font-size: .85rem;
             font-weight: 600;
           }

@@ -156,4 +156,4 @@ window.DanhGrade6Units = [
       ['human', 'con người', 'Robots can work with humans.', '🧑']
     ]
   }
-].map((unit, index) => ({ ...unit, number: index + 1, id: `unit${index + 1}`, words: unit.words.map(([term, meaning, example, icon], wordIndex) => ({ id: wordIndex + 1, term, meaning, example, icon })) }));
+].map((unit, index) => ({ ...unit, number: index + 1, id: `unit${index + 1}`, words: unit.words.map(([term, meaning, example, icon], wordIndex) => ({ id: wordIndex + 1, term, meaning, example, icon, ...(window.DanhGrade6PencilImages?.[`unit${index + 1}`]?.[wordIndex + 1] ? {image:window.DanhGrade6PencilImages[`unit${index + 1}`][wordIndex + 1]} : {}) })) }));

@@ -22,7 +22,7 @@
   links.className = 'g2-page-links';
   links.setAttribute('role', 'navigation');
   links.setAttribute('aria-label', 'Quay lại');
-  for (const [label, href] of [['🏠 Trang chủ', '../../index.html'], ['📚 Lớp 2', './lop2.html']]) {
+  for (const [label, href] of [['🏠 Trang chủ', '../../index.html'], ['📚 Lớp 2', './lop2.html'], ['🌈 Ôn tổng hợp', './review.html']]) {
     const link = document.createElement('a');
     link.href = href;
     link.textContent = label;

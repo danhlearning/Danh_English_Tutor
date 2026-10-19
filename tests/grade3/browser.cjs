@@ -5,7 +5,7 @@ const context={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,'gra
 assert.equal(bank.length,20);let words=0,sentences=0,art=0;
 for(const u of bank){assert.ok(u.words.length>=4);assert.equal(new Set(u.words.map(w=>w.term)).size,u.words.length);assert.equal(new Set(u.words.map(w=>w.meaning)).size,u.words.length);assert.equal(u.sentences.length,3);words+=u.words.length;sentences+=u.sentences.length;for(const w of u.words)if(/^[a-z-]+$/.test(w.art)){assert.ok(fs.existsSync(path.join(root,`shared/assets/vocabulary-3d/${w.art}-3d-v1.webp`)),w.art);art++;}assert.ok(fs.existsSync(path.join(root,`grade/lop3/${u.id}.html`)));}
 const get=(p,m='meaning',u='unit1')=>p.evaluate(({m,u})=>JSON.parse(DanhLearners.storage.getItem(`danh-g3-${u}-${m}-v1`)),{m,u});
-const create=async(p,name)=>{await p.locator('#learner-name').fill(name);await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await p.waitForFunction(n=>window.DanhLearners?.current?.name===n,name);};
+const create=async(p,name)=>{if(await p.getByRole('button',{name:'Đăng nhập',exact:true}).isVisible())await p.getByRole('button',{name:'Đăng nhập',exact:true}).click();await p.locator('#learner-name').fill(name);await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await p.waitForFunction(n=>window.DanhLearners?.current?.name===n,name);};
 const click=p=>p.locator('[data-action="next"]').click();
 (async()=>{const browser=await chromium.launch({headless:true,channel:'msedge'});try{
 const ctx=await browser.newContext({viewport:{width:390,height:844}}),p=await ctx.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));

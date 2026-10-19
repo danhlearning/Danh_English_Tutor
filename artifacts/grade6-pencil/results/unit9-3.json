@@ -1,0 +1,13 @@
+{
+  "key": "unit9/3",
+  "unit": 9,
+  "unitId": "unit9",
+  "id": 3,
+  "term": "museum",
+  "meaning": "bảo tàng",
+  "example": "We visited a history museum.",
+  "slug": "museum",
+  "file": "grade/lop6/assets/images/pencil/unit9/museum-v1.webp",
+  "prompt": "Use case: illustration-story. Asset: one square vocabulary illustration for a Grade 6 English learning website. Subject: museum, meaning bảo tàng. Context for the illustrator only, do not put these words in the image: We visited a history museum.\nScene: A history museum interior with carefully displayed artifacts in glass cases, a dinosaur skeleton and visitors walking respectfully. No information plaques or labels.\nStyle: charming hand-drawn flat 2D colored-pencil cartoon with clearly visible pencil grain, layered colored-pencil shading and soft warm graphite outlines on warm white paper, restrained cheerful pastel colors, matching the newest pencil vocabulary illustrations for this project. Suitable for ages 11–12, natural proportions, not babyish. One coherent scene, square composition, main subject clear at thumbnail size, light breathing room around the subject. No photorealism, no 3D, no vector-flat rendering.\nConstraints: absolutely no letters, readable text, words, numbers, captions, Vietnamese meanings, definitions, labels, logos, watermarks, decorative border or speech bubbles. No collage or multiple cards. Correct anatomy, object construction, perspective and cause-and-effect. Do not add unrelated decoration. Create exactly one finished square image.",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-d06f5db8-7b67-4e15-ad54-e6aa9ae45083.png"
+}

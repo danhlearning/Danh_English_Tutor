@@ -1,0 +1,13 @@
+{
+  "key": "unit2/4",
+  "unit": 2,
+  "unitId": "unit2",
+  "id": 4,
+  "term": "bathroom",
+  "meaning": "phòng tắm",
+  "example": "There is a mirror in the bathroom.",
+  "slug": "bathroom",
+  "file": "grade/lop6/assets/images/pencil/unit2/bathroom-v1.webp",
+  "prompt": "Use case: illustration-story. Asset: one square vocabulary illustration for a Grade 6 English learning website. Subject: bathroom, meaning phòng tắm. Context for the illustrator only, do not put these words in the image: There is a mirror in the bathroom.\nScene: A clean bathroom with washbasin and mirror, bathtub with shower, towel and small floor tiles. No kitchen items, no people.\nStyle: charming hand-drawn flat 2D colored-pencil cartoon with clearly visible pencil grain, layered colored-pencil shading and soft warm graphite outlines on warm white paper, restrained cheerful pastel colors, matching the newest pencil vocabulary illustrations for this project. Suitable for ages 11–12, natural proportions, not babyish. One coherent scene, square composition, main subject clear at thumbnail size, light breathing room around the subject. No photorealism, no 3D, no vector-flat rendering.\nConstraints: absolutely no letters, readable text, words, numbers, captions, Vietnamese meanings, definitions, labels, logos, watermarks, decorative border or speech bubbles. No collage or multiple cards. Correct anatomy, object construction, perspective and cause-and-effect. Do not add unrelated decoration. Create exactly one finished square image.",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-b679490d-533a-45b4-ba76-22e3c6b54025.png"
+}

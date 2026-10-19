@@ -12,7 +12,7 @@ const out=path.join(root,'artifacts/vocabulary-3d');
   const errors=[];
   page.on('pageerror',e=>errors.push(e.message));
   await page.goto('http://127.0.0.1:8001/grade/lop2/gsunit1.html');
-  await page.locator('#learner-name').fill('Bạn học thử');
+  if(await page.getByRole('button',{name:'Đăng nhập',exact:true}).isVisible())await page.getByRole('button',{name:'Đăng nhập',exact:true}).click();await page.locator('#learner-name').fill('Bạn học thử');
   await page.getByRole('button',{name:'Vào học ngay',exact:true}).click();
   await page.waitForFunction(()=>window.DanhLearners.current?.name==='Bạn học thử');
   const grades=[[2,16],[4,20]].filter(([grade])=>!process.env.ONLY_GRADE || grade===Number(process.env.ONLY_GRADE));

@@ -16,10 +16,10 @@ function memory() {
   const map = new Map();
   return { getItem: key => map.get(key) ?? null, setItem: (key, value) => map.set(key, value) };
 }
-test('Mặc định chọn đủ 16 từ và 16 câu', () => {
+test('Mặc định chọn đủ 32 từ và 32 câu', () => {
   const selection = core.createSelection(lesson, memory());
-  assert.equal(selection.words().length, 16);
-  assert.equal(selection.questions().length, 16);
+  assert.equal(selection.words().length, 32);
+  assert.equal(selection.questions().length, 32);
 });
 test('Chọn 4 từ và lọc đúng câu nhiều từ mục tiêu', () => {
   const selection = core.createSelection(lesson, memory());
@@ -33,22 +33,22 @@ test('Chọn 4 từ và lọc đúng câu nhiều từ mục tiêu', () => {
 test('Không đổi bộ đang chơi nếu lựa chọn không đủ 4 từ duy nhất', () => {
   const selection = core.createSelection(lesson, memory());
   assert.throws(() => selection.apply(['head', 'head', 'eyes', 'missing']));
-  assert.equal(selection.words().length, 16);
+  assert.equal(selection.words().length, 32);
 });
 test('Bản sao ID không cho thay đổi bộ đã áp dụng', () => {
   const selection = core.createSelection(lesson, memory());
   const draft = selection.ids(); draft.pop();
-  assert.equal(selection.ids().length, 16);
+  assert.equal(selection.ids().length, 32);
 });
 test('Nhớ bộ đã áp dụng và cách ly theo chủ đề', () => {
   const storage = memory();
   core.createSelection(lesson, storage).apply(['head', 'hair', 'eyes', 'ears']);
   assert.equal(core.createSelection(lesson, storage).words().length, 4);
-  assert.equal(core.createSelection({...lesson, id: 'another-topic'}, storage).words().length, 16);
+  assert.equal(core.createSelection({...lesson, id: 'another-topic'}, storage).words().length, 32);
 });
 test('Dữ liệu lưu hỏng hoặc lỗi thời quay về tất cả', () => {
   for (const value of ['not json', '{}', '["head","eyes","missing"]']) {
-    assert.equal(core.createSelection(lesson, {getItem: () => value}).words().length, 16);
+    assert.equal(core.createSelection(lesson, {getItem: () => value}).words().length, 32);
   }
 });
 test('Lưu trữ bị chặn vẫn học với bộ đã chọn trong phiên', () => {
@@ -83,11 +83,12 @@ test('Bộ game chung nhớ lựa chọn Body Parts và không cộng điểm sa
   assert.equal(restored.round('mcq').index, 1);
 });
 
-test('Cả 16 hình Body Parts có tên chỉ dẫn khi học và ẩn tên trong trò chơi', () => {
-  assert.equal(lesson.vocabulary.length, 16);
+test('Cả 32 hình Body Parts không chứa chữ; tên và nghĩa hiển thị bên ngoài', () => {
+  assert.equal(lesson.vocabulary.length, 32);
   for (const word of lesson.vocabulary) {
     assert.match(word.diagramSvg, /<svg[^>]*bodyparts-diagram/);
-    assert.match(word.diagramSvg, new RegExp(`<text[^>]*>${word.name}</text>`));
+    assert.doesNotMatch(word.diagramSvg, /<text\b/i);
+    assert.match(word.diagramSvg, /preserveAspectRatio="xMidYMid meet"/);
     assert.match(word.svg, /<svg[^>]*svg-icon/);
     assert.doesNotMatch(word.svg, /<text\b/i);
   }
@@ -95,8 +96,8 @@ test('Cả 16 hình Body Parts có tên chỉ dẫn khi học và ẩn tên tron
 
 test('Mỗi câu Body Parts chỉ tham chiếu từ và hình có thật', () => {
   const ids = new Set(lesson.vocabulary.map(word => word.id));
-  assert.equal(ids.size, 16);
-  assert.equal(lesson.questions.length, 16);
+  assert.equal(ids.size, 32);
+  assert.equal(lesson.questions.length, 32);
   for (const question of lesson.questions) {
     assert.equal(ids.has(question.imageWordId), true, question.id);
     assert.equal(question.targetWordIds.length > 0, true, question.id);
@@ -110,7 +111,8 @@ test('Mọi trang Lớp 2 có đúng một footer và không gọi components.js
   const menu = fs.readFileSync(path.join(root, 'lop2.html'), 'utf8');
   const linkedPages = [...menu.matchAll(/<a\s+href="([^"]+\.html)"\s+class="lesson-card"/g)].map(match => match[1]);
   assert.equal(new Set(linkedPages).size, linkedPages.length);
-  assert.deepEqual(pages.slice().sort(), ['lop2.html', ...linkedPages].sort());
+  assert.ok(menu.includes('href="./review.html"'), 'Có lối vào ôn tập tổng hợp');
+  assert.deepEqual(pages.slice().sort(), ['lop2.html', 'review.html', ...linkedPages].sort());
   for (const page of pages) {
     const html = fs.readFileSync(path.join(root, page), 'utf8');
     assert.equal((html.match(/<contact-danh>/g) || []).length, 1, page);

@@ -1,0 +1,101 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": "face",
+      "name": "Face",
+      "prompt": "Create ONE square 1:1 children's English vocabulary illustration. Match colored pencil picture-book style: warm soft realistic colored pencil strokes on white paper, cute friendly proportions, gentle shading, bright calm colors, plain pure white background, generous white margin, entire subject inside canvas. Educational body-part diagram with one simple coral-red pointer and outline showing the exact target; absolutely no words, letters, labels, numbers, logos or watermark. Child age about seven. Subject: A cheerful child's whole face viewed straight on, include both eyes nose mouth cheeks ears and chin; red circle surrounds the entire facial oval, red arrow points to the facial oval. No additional objects. Anatomically accurate. White background opaque.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-c0a55876-00eb-4eec-8df9-bc2daafc5b9d.png"
+    },
+    {
+      "id": "forehead",
+      "name": "Forehead",
+      "prompt": "Create ONE square 1:1 children's English vocabulary illustration. Match colored pencil picture-book style: warm soft realistic colored pencil strokes on white paper, cute friendly proportions, gentle shading, bright calm colors, plain pure white background, generous white margin, entire subject inside canvas. Educational body-part diagram with one simple coral-red pointer and outline showing the exact target; absolutely no words, letters, labels, numbers, logos or watermark. Child age about seven. Subject: Close up cheerful child's head, hair swept upward leaving broad visible forehead between eyebrows and hairline. Red circle tightly surrounds ONLY forehead, arrow points between eyebrows and hairline. No additional objects. Anatomically accurate. White background opaque.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-ce90beab-4075-43c5-8703-981b24259540.png"
+    },
+    {
+      "id": "eyebrows",
+      "name": "Eyebrows",
+      "prompt": "Create ONE square 1:1 children's English vocabulary illustration. Match colored pencil picture-book style: warm soft realistic colored pencil strokes on white paper, cute friendly proportions, gentle shading, bright calm colors, plain pure white background, generous white margin, entire subject inside canvas. Educational body-part diagram with one simple coral-red pointer and outline showing the exact target; absolutely no words, letters, labels, numbers, logos or watermark. Child age about seven. Subject: Close up cheerful child's face with two clearly separate brown eyebrows above eyes. Two small red oval rings surround ONLY eyebrows, arrow points directly to eyebrow hair, NOT eyes. No additional objects. Anatomically accurate. White background opaque.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-f49d1821-5b85-4e23-9422-b23603876925.png"
+    },
+    {
+      "id": "eyelashes",
+      "name": "Eyelashes",
+      "prompt": "Create ONE square 1:1 children's English vocabulary illustration. Match colored pencil picture-book style: warm soft realistic colored pencil strokes on white paper, cute friendly proportions, gentle shading, bright calm colors, plain pure white background, generous white margin, entire subject inside canvas. Educational body-part diagram with one simple coral-red pointer and outline showing the exact target; absolutely no words, letters, labels, numbers, logos or watermark. Child age about seven. Subject: Very close crop of one open human eye, visible short curved individual eyelashes attached to upper eyelid. No eyebrow in crop. A thin red arrow precisely points to upper eyelid lash hairs, red oval around lash tips, distinguish lashes from eyebrows. No additional objects. Anatomically accurate. White background opaque.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-28f3e4fe-c478-4751-9285-92ab68d5b03e.png"
+    },
+    {
+      "id": "cheeks",
+      "name": "Cheeks",
+      "prompt": "ONE square children's educational body-part illustration, colored pencil picture-book art, warm visible pencil texture, cute friendly child age seven, natural anatomy, soft shading and bright gentle colors. Plain white opaque background with generous margin. Entire subject fully inside frame. A simple coral red outline and arrow precisely identify the requested part. NO words letters labels numbers logos watermark or extra objects. Cheerful child's face front view with rosy cheeks below eyes to sides of nose. Two red outline rings precisely surround the two cheek areas. Red arrow points to cheek.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-1aa787e9-49b1-4e19-b9d9-46c89e3e67ab.png"
+    },
+    {
+      "id": "chin",
+      "name": "Chin",
+      "prompt": "ONE square children's educational body-part illustration, colored pencil picture-book art, warm visible pencil texture, cute friendly child age seven, natural anatomy, soft shading and bright gentle colors. Plain white opaque background with generous margin. Entire subject fully inside frame. A simple coral red outline and arrow precisely identify the requested part. NO words letters labels numbers logos watermark or extra objects. Cheerful child's face close up; small red circle highlights ONLY chin below mouth at very bottom of face, arrow touches chin, not mouth or neck.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-d647da56-c419-4014-bf01-11b886aff1b3.png"
+    },
+    {
+      "id": "lips",
+      "name": "Lips",
+      "prompt": "ONE square children's educational body-part illustration, colored pencil picture-book art, warm visible pencil texture, cute friendly child age seven, natural anatomy, soft shading and bright gentle colors. Plain white opaque background with generous margin. Entire subject fully inside frame. A simple coral red outline and arrow precisely identify the requested part. NO words letters labels numbers logos watermark or extra objects. Close up lower half of a friendly child's face with relaxed gently closed mouth showing upper and lower pink lips. Small red oval tightly frames pink lips and red arrow points to lip. No open mouth.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-433b7087-3a84-426a-8461-54fc0ac8b4fa.png"
+    },
+    {
+      "id": "tongue",
+      "name": "Tongue",
+      "prompt": "ONE square children's educational body-part illustration, colored pencil picture-book art, warm visible pencil texture, cute friendly child age seven, natural anatomy, soft shading and bright gentle colors. Plain white opaque background with generous margin. Entire subject fully inside frame. A simple coral red outline and arrow precisely identify the requested part. NO words letters labels numbers logos watermark or extra objects. Close up friendly smiling child sticking pink tongue out slightly, clear tongue distinct from lips and white teeth. Small red outline circle surrounds tongue tip, red arrow ends on tongue.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-fb757a69-0d7e-4882-995c-fe03fbedf543.png"
+    },
+    {
+      "id": "chest",
+      "name": "Chest",
+      "prompt": "ONE square children's educational body-part illustration, colored pencil picture-book art, warm visible pencil texture, cute friendly child age seven, natural anatomy, soft shading and bright gentle colors. Plain white opaque background with generous margin. Entire subject fully inside frame. A simple coral red outline and arrow precisely identify the requested part. NO words letters labels numbers logos watermark or extra objects. Friendly child front view head to waist wearing plain blue crewneck T-shirt fully covering torso. Red oval on shirt highlights upper front torso directly below neck above stomach, red arrow points to upper chest area. No exposed torso.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-1df82b43-b1d0-40a9-bf9a-e1b5507252cc.png"
+    },
+    {
+      "id": "back",
+      "name": "Back",
+      "prompt": "ONE square children's educational body-part illustration, colored pencil picture-book art, warm visible pencil texture, cute friendly child age seven, natural anatomy, soft shading and bright gentle colors. Plain white opaque background with generous margin. Entire subject fully inside frame. A simple coral red outline and arrow precisely identify the requested part. NO words letters labels numbers logos watermark or extra objects. Friendly child seen directly FROM BEHIND wearing plain blue T-shirt and green shorts. Only back of brown-haired head visible, no face, no backpack. Red oval highlights center of upper back on shirt, red arrow points to back.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-faff2ba6-29f4-45e7-b297-e480db149027.png"
+    },
+    {
+      "id": "elbow",
+      "name": "Elbow",
+      "prompt": "ONE square children's educational body-part illustration, colored pencil picture-book art, warm visible pencil texture, cute friendly child age seven, natural anatomy, soft shading and bright gentle colors. Plain white opaque background with generous margin. Entire subject fully inside frame. A simple coral red outline and arrow precisely identify the requested part. NO words letters labels numbers logos watermark or extra objects. Side view child's arm bent at right angle, plain short blue sleeve at shoulder, hand visible with five correct fingers. Red circle precisely surrounds elbow joint at bend midway between upper arm and forearm, red arrow touches elbow, not shoulder or wrist.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-0c3f3122-0fc7-46a9-8650-305edd41cac2.png"
+    },
+    {
+      "id": "wrist",
+      "name": "Wrist",
+      "prompt": "ONE square children's educational body-part illustration, colored pencil picture-book art, warm visible pencil texture, cute friendly child age seven, natural anatomy, soft shading and bright gentle colors. Plain white opaque background with generous margin. Entire subject fully inside frame. A simple coral red outline and arrow precisely identify the requested part. NO words letters labels numbers logos watermark or extra objects. One anatomically correct child's open hand with five fingers and forearm shown palm facing viewer, wrist clearly visible at narrow junction where hand joins forearm. Small red ring around wrist joint, red arrow ends at wrist, not fingers or palm.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-b3bfe4df-57e9-4943-9190-7ab0c9bedf99.png"
+    },
+    {
+      "id": "thumb",
+      "name": "Thumb",
+      "prompt": "ONE square children's educational body-part illustration, colored pencil picture-book art, warm visible pencil texture, natural anatomy, soft shading and bright gentle colors. Plain white opaque background with generous margin. Entire subject fully inside frame. A simple coral red outline and arrow precisely identify the requested part. NO words letters labels numbers logos watermark or extra objects. One anatomically correct child's open hand palm facing viewer, exactly four long fingers and one shorter thumb out to side. Red outline oval surrounds ONLY thumb on side of palm, red arrow points to thumb tip.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-3a725bf5-7d0b-4ca2-9fff-ffcbb69dcb76.png"
+    },
+    {
+      "id": "toes",
+      "name": "Toes",
+      "prompt": "ONE square children's educational body-part illustration, colored pencil picture-book art, warm visible pencil texture, natural anatomy, soft shading and bright gentle colors. Plain white opaque background with generous margin. Entire subject fully inside frame. A simple coral red outline and arrow precisely identify the requested part. NO words letters labels numbers logos watermark or extra objects. Two bare child's feet viewed from above, each has exactly five anatomically correct toes, no shoes. Thin red oval surrounds toe row of one foot, arrow points to toes. All ten toes visible, calm neutral educational illustration.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-cc3b4ee0-dbe5-4e79-be61-1a6283e74507.png"
+    },
+    {
+      "id": "ankle",
+      "name": "Ankle",
+      "prompt": "ONE square children's educational body-part illustration, colored pencil picture-book art, warm visible pencil texture, natural anatomy, soft shading and bright gentle colors. Plain white opaque background with generous margin. Entire subject fully inside frame. A simple coral red outline and arrow precisely identify the requested part. NO words letters labels numbers logos watermark or extra objects. One bare child's foot and lower leg seen from side, entire foot heel and toe tips visible. Small red ring surrounds ankle bone on side at joint where lower leg meets foot, red arrow ends on ankle bone ABOVE heel, not heel.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-1b7c12cc-12d9-4811-8ece-8d83cd9f9682.png"
+    },
+    {
+      "id": "heel",
+      "name": "Heel",
+      "prompt": "ONE square children's educational body-part illustration, colored pencil picture-book art, warm visible pencil texture, natural anatomy, soft shading and bright gentle colors. Plain white opaque background with generous margin. Entire subject fully inside frame. A simple coral red outline and arrow precisely identify the requested part. NO words letters labels numbers logos watermark or extra objects. One bare child's foot and lower leg in side view with all heel and toe tips inside frame. Small red ring surrounds rounded back-bottom heel of foot touching floor, red arrow points to very back-bottom heel BELOW ankle. Not ankle.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-f03751f1-55c9-498e-9971-94f937c36246.png"
+    }
+  ]
+}

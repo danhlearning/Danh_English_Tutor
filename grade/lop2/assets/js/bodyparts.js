@@ -279,6 +279,12 @@
     }
   });
   window.mountBodyParts = () => {
+    if (window.DanhBodyPartsContentUpdate(window.DanhLearners.storage)) {
+      const note = document.createElement('p');
+      note.className = 'bodyparts-vocab-note';
+      note.textContent = 'Từ chỉ bụng nay là Stomach. Lượt gõ từ cũ đã được lưu riêng; em bắt đầu lượt mới để luyện cách viết này nhé!';
+      document.getElementById('vocab').prepend(note);
+    }
     migrateSelection();
     window.DanhLesson.mount({
       topic: lesson.id,

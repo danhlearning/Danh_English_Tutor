@@ -9,6 +9,15 @@ for (const asset of inventory.assets) {
   if (asset.topic === 'numbers') continue;
   (manifest[asset.topic] ||= {})[asset.name.toLowerCase()] = `${asset.topic}/${asset.slug}-v1.webp`;
 }
+const bodyReviewFile = path.join(root, 'artifacts/grade2-pencil/bodyparts-expansion-review.json');
+if (fs.existsSync(bodyReviewFile)) {
+  const review = JSON.parse(fs.readFileSync(bodyReviewFile, 'utf8'));
+  for (const asset of review.assets) {
+    const file = path.join(root, asset.file);
+    if (require('node:crypto').createHash('sha256').update(fs.readFileSync(file)).digest('hex') !== asset.sha256) throw Error('Body Parts review is stale: ' + asset.id);
+    (manifest.bodyparts ||= {})[asset.name.toLowerCase()] = asset.file.replace('grade/lop2/assets/images/pencil/', '');
+  }
+}
 fs.writeFileSync(path.join(root, 'grade/lop2/assets/js/pencil-images-data.js'), '/* Local, reviewed pencil artwork. */\nwindow.DanhGrade2PencilManifest = ' + JSON.stringify(manifest, null, 2) + ';\n');
 const vars = {clothes:'clothesVocabulary',dates:'daysAndMonthsVocab',familyfriends:'familyVocabulary',feeling:'emotionsVocabulary',fooddrinks:'foodVocabulary',fruits:'fruitVocab',numbers:'vocabNumbers',schoolsupplies:'schoolSupplies',householditems:'vocabList',verbs:'verbVocabulary'};
 function afterArray(source, name, statement) {

@@ -21,7 +21,7 @@ const files = ['grade/lop2', 'grade/lop4'].flatMap(dir => fs.readdirSync(path.jo
    speechSynthesis.speak=u=>{readings.push({text:u.text,rate:u.rate,pitch:u.pitch,volume:u.volume,lang:u.lang,voice:u.voice?.name});queueMicrotask(()=>u.onend?.());};
   });
   await page.goto(`${base}/grade/lop2/gsunit1.html`);
-  await page.locator('#learner-name').fill('Kiểm tra đọc chậm');
+  if(await page.getByRole('button',{name:'Đăng nhập',exact:true}).isVisible())await page.getByRole('button',{name:'Đăng nhập',exact:true}).click();await page.locator('#learner-name').fill('Kiểm tra đọc chậm');
   await page.getByRole('button',{name:'Vào học ngay',exact:true}).click();
   let pages=0, interactions=0;
   async function verifyRead(label,action){

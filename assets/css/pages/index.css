@@ -35,8 +35,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 20px;
-            flex-wrap: wrap-reverse;
+            gap: 36px;
+            flex-wrap: nowrap;
         }
 
         .hero-text {
@@ -46,14 +46,14 @@
         }
 
         .hero-text h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
+            font-size: clamp(2rem, 3.1vw, 2.75rem);
+            margin-bottom: 12px;
             font-weight: 800;
             line-height: 1.25;
         }
 
         .hero-text p {
-            font-size: 1rem;
+            font-size: 1.2rem;
             opacity: 0.95;
             font-weight: 600;
         }
@@ -62,9 +62,16 @@
             flex-shrink: 0;
         }
 
+        .profile-link {
+            display: inline-block;
+            border-radius: 50%;
+            line-height: 0;
+        }
+
         .profile-pic {
-            width: 110px;
-            height: 110px;
+            display: block;
+            width: 224px;
+            height: 224px;
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid rgba(255, 255, 255, 0.85);
@@ -77,16 +84,29 @@
         }
 
         @media (max-width: 768px) {
+            .hero {
+                padding: 24px 16px 42px;
+            }
             .hero-content {
+                flex-direction: column-reverse;
                 justify-content: center;
                 text-align: center;
-                gap: 12px;
+                gap: 16px;
             }
             .hero-text {
                 text-align: center;
             }
             .hero-text h1 {
-                font-size: 1.6rem;
+                font-size: clamp(1.75rem, 7.4vw, 2rem);
+                margin-bottom: 10px;
+            }
+            .hero-text p {
+                font-size: 1.1rem;
+                line-height: 1.5;
+            }
+            .profile-pic {
+                width: 176px;
+                height: 176px;
             }
         }
 
@@ -341,4 +361,54 @@ a:focus-visible { outline:3px solid #8b551b; outline-offset:4px; }
 @media(prefers-reduced-motion:reduce) {
   .card,.grade-btn,.profile-pic,.btn-card { transition:none; }
   .card:hover,.grade-btn:hover,.profile-pic:hover { transform:none; }
+}
+
+/* Approved notebook paper wraps the complete introduction. */
+body.home-page{
+  background:#fcf5e5;color:#294b45;
+  --danh-profile-background:#fcf5e5;--danh-profile-border:#e9dcc2;
+  --danh-profile-accent:#237569;--danh-profile-accent-hover:#1c685d;
+  --danh-profile-button-shadow:#16584e;
+  --danh-contact-background:#fcf5e5;--danh-contact-border:#e9dcc2;
+  --danh-footer-background:#f3e8d2;--danh-footer-color:#39544c;
+}
+.home-page .hero{
+  width:min(1120px,calc(100% - 48px));margin:20px auto 24px;
+  background:#fcf5e5 url('../../images/home/paper-grid-approved-v1.webp') center top/cover no-repeat;
+  color:#254e49;border:1px solid #e7dbc1;border-radius:26px;
+  padding:38px 40px;box-shadow:0 10px 28px #6852320a;
+}
+.home-page .hero-content{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;max-width:none}
+.home-page .hero-text{min-width:0;text-align:left}
+.home-page .hero-text h1{font-size:clamp(2rem,3.2vw,2.75rem);line-height:1.2;text-wrap:balance;margin-bottom:14px}
+.home-page .hero-text p{font-size:1.2rem;line-height:1.55;color:#53695f;font-weight:700;opacity:1;text-wrap:balance}
+.home-page .profile-link{background:#fffaf0;border-radius:50%;padding:5px;box-shadow:0 8px 22px #594c3420}
+.home-page .profile-pic{width:224px;height:224px;border:3px solid #fffaf0;box-shadow:none}
+.home-page .container{margin:0 auto 26px;max-width:1150px;padding-inline:15px}
+.home-page .profile-link:focus-visible{outline:3px solid #237569;outline-offset:5px}
+@media(min-width:601px) and (max-width:900px){
+  .home-page .hero{padding:34px 30px;width:calc(100% - 40px)}
+  .home-page .hero-content{gap:24px}
+  .home-page .profile-pic{width:188px;height:188px}
+  .home-page .hero-text h1{font-size:2rem}
+  .home-page .hero-text p{font-size:1.1rem}
+}
+@media(max-width:600px){
+  .home-page .hero{width:calc(100% - 28px);margin:14px auto 18px;padding:24px 20px 26px;border-radius:22px;background-position:center center}
+  .home-page .hero-content{grid-template-columns:minmax(0,1fr);gap:14px;justify-items:center}
+  .home-page .hero-image{grid-row:1}
+  .home-page .hero-text{text-align:center}
+  .home-page .profile-link{padding:4px}
+  .home-page .profile-pic{width:144px;height:144px}
+  .home-page .hero-text h1{font-size:clamp(1.65rem,7.2vw,1.9rem);line-height:1.2;margin:0 0 10px}
+  .home-page .hero-text p{font-size:1.05rem;line-height:1.5;max-width:310px;margin:auto;color:#425f54;background:rgb(252 245 229 / .88);padding:3px 9px;border-radius:9px}
+  .home-page .container{grid-template-columns:1fr;gap:12px;padding-inline:14px;margin-bottom:28px}
+  .home-page .container .card{display:grid;grid-template-columns:44px minmax(0,1fr);column-gap:12px;row-gap:6px;padding:18px;text-align:left}
+  .home-page .container .card-icon{grid-column:1;grid-row:1 / 3;align-self:start;display:grid;place-items:center;width:44px;height:44px;font-size:1.9rem;margin:0}
+  .home-page .container .card h2{grid-column:2;font-size:1.25rem;line-height:1.35;margin:0}
+  .home-page .container .card p{grid-column:2;font-size:.95rem;line-height:1.5;margin:0}
+  .home-page .container .btn-card{grid-column:1 / -1;margin-top:8px;padding:10px 14px;min-height:44px;font-size:1rem}
+  .home-page .grade-section{padding:0 14px 24px}
+  .home-page .section-header h2{font-size:1.45rem;line-height:1.4}
+  .home-page .grade-grid{gap:10px}
 }

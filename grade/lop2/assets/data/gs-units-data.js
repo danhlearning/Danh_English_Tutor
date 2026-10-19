@@ -145,5 +145,5 @@
       description: `Tiếng Anh 2 – Global Success · Luyện ${focus}. Câu luyện do website biên soạn.`,
       pattern: `Câu luyện thêm: ${pattern}`, words, questions };
   }
-  window.grade2Units = Object.freeze(catalog);
+  window.grade2Units = Object.freeze({ ...window.grade2Units, ...catalog });
 })();

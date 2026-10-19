@@ -6,8 +6,10 @@
   const write=(key,value)=>{try{storage.setItem(key,JSON.stringify(value));}catch{}};
   const el=(tag,text,className)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(className)node.className=className;return node;};
   const prefsKey='danh-vocabulary-effects-v1';
+  const automatic=document.body.dataset.effectsMode==='automatic';
   let prefs=read(prefsKey,{}) || {};
-  if(prefs.shared!==true){
+  if(automatic) prefs={sound:true,motion:true,shared:true};
+  else if(prefs.shared!==true){
     const legacy=read('danh-g6-grammar-effects',{}) || {};
     prefs={sound:prefs.sound!==false && legacy.sound!==false,motion:prefs.motion!==false && legacy.motion!==false,shared:true};
     write(prefsKey,prefs);
@@ -93,5 +95,5 @@
     document.addEventListener('danh-learning-effects-change',update);update();
   };
   refresh();
-  window.DanhLearningEffects={feedback,afterFeedback,stop,reduced,bindSettings,soundEnabled:()=>sound,motionEnabled:()=>motion,isMilestone:count=>count===3||count>=5&&count%5===0};
+  window.DanhLearningEffects={feedback,afterFeedback,stop,reduced,bindSettings,automatic,soundEnabled:()=>sound,motionEnabled:()=>motion,isMilestone:count=>count===3||count>=5&&count%5===0};
 })();
