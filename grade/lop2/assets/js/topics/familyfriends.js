@@ -71,6 +71,8 @@
     { name: 'Husband', emoji: '🤵', ipa: '/ˈhʌzbənd/', meaning: 'Chồng', sentence: 'He is her husband.', hex: '#2D3436' },
     { name: 'Wife', emoji: '👰', ipa: '/waɪf/', meaning: 'Vợ', sentence: 'She is his wife.', hex: '#E84393' }
   ];
+  window.DanhPencil?.apply('familyfriends', familyVocabulary);
+
 
   /* DỮ LIỆU CÂU HỎI CHO GAME 4 (30 CÂU HOÀN CHỈNH) */
   const sentenceQuestions = [
@@ -105,6 +107,8 @@
     { target: 'aunt this', emoji: '👩‍🦰', prompt: 'Đây là cô/dì của tôi. (Giới thiệu dùng "This is...")', answer: 'This is my aunt', altAnswer: 'this is my aunt.' },
     { target: 'friends these', emoji: '🧑‍🤝‍🧑', prompt: 'Đây là những người bạn của tôi. (Số nhiều "These are...")', answer: 'These are my friends', altAnswer: 'these are my friends.' }
   ];
+  window.DanhPencil?.questions('familyfriends', sentenceQuestions, familyVocabulary);
+
 
   let flashcardDeck = [];
 

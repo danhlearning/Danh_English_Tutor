@@ -95,6 +95,9 @@
         let currentIndex = 0;
         let correctCount = 0;
         let wrongCount = 0;
+        let transitionTimer = null;
+        let marking = false;
+        const roundRatings = new Map();
 
         const cardElement = document.getElementById('flashcard');
 
@@ -109,12 +112,26 @@
         }
 
         function handleCardClick(event) {
+            if (!flashcards.length || event.target.closest('.empty-state-text')) return;
             if (event.target.closest('#btn-speak-icon') || event.target.closest('.btn-speaker')) {
                 event.stopPropagation();
                 if (flashcards[currentIndex]) speakWord(flashcards[currentIndex].word);
                 return;
             }
-            cardElement.classList.toggle('is-flipped');
+            setCardFlipped(!cardElement.classList.contains('is-flipped'));
+        }
+
+        function setCardFlipped(flipped) {
+            cardElement.classList.toggle('is-flipped', flipped);
+            const front = document.getElementById('card-front-view');
+            const back = document.getElementById('card-back-view');
+            front.inert = flipped;
+            back.inert = !flipped;
+            front.setAttribute('aria-hidden', String(flipped));
+            back.setAttribute('aria-hidden', String(!flipped));
+            const flip = document.getElementById('btn-flip');
+            flip.setAttribute('aria-pressed', String(flipped));
+            flip.textContent = flipped ? 'Xem lại từ ↻' : 'Lật xem nghĩa ↻';
         }
 
         function loadUserData() {
@@ -132,21 +149,26 @@
             const allWords = [...database.elementary, ...database.intermediate, ...database.advanced, ...database.toeic, ...database.ielts, ...database.custom];
             database.review = allWords.filter(item => reviewList.includes(item.id));
             document.getElementById('seg-review').innerText = `Ôn tập (${database.review.length})`;
-            if (currentCategory === 'review') flashcards = [...database.review];
         }
 
         function switchCategory(catName) {
             currentCategory = catName;
-            document.querySelectorAll('.segment-btn').forEach(b => b.classList.remove('is-active'));
+            document.querySelectorAll('.segment-btn').forEach(b => {
+                b.classList.remove('is-active'); b.setAttribute('aria-pressed', 'false');
+            });
             document.getElementById(`seg-${catName}`).classList.add('is-active');
+            document.getElementById(`seg-${catName}`).setAttribute('aria-pressed', 'true');
+            document.getElementById(`seg-${catName}`).scrollIntoView({block:'nearest', inline:'nearest'});
             flashcards = [...database[currentCategory]];
             resetGame();
         }
 
         function updateCard() {
-            cardElement.classList.remove('is-flipped');
+            setCardFlipped(false);
             if (flashcards.length === 0) {
-                document.getElementById('card-front-view').innerHTML = `<div class="empty-state-text">Mục này hiện đang trống hoặc bạn đã học hết! 🎉</div>`;
+                document.getElementById('card-front-view').innerHTML = currentCategory === 'custom'
+                    ? `<div class="empty-state-text"><h2>Sổ tay đang chờ từ đầu tiên 🌱</h2><p>Thêm từ em muốn nhớ cùng nghĩa và câu ví dụ.</p><button class="btn-flip" onclick="event.stopPropagation();openAddWordModal()">Thêm từ đầu tiên</button></div>`
+                    : `<div class="empty-state-text"><h2>Chưa có từ cần ôn 🌿</h2><p>Chọn “Cần ôn lại” khi xem thẻ để đưa từ vào đây.</p><button class="btn-flip" onclick="event.stopPropagation();switchCategory('elementary')">Chọn bộ từ sơ cấp</button></div>`;
                 document.getElementById('card-index').innerText = "0/0";
                 document.getElementById('progress-bar').style.width = '0%';
                 setDisabled(true);
@@ -156,11 +178,11 @@
             const checkImg = document.getElementById('img-vocab');
             if (!checkImg) {
                 document.getElementById('card-front-view').innerHTML = `
-                    <div class="vocab-image-box"><img id="img-vocab" src="" alt="Vocabulary illustration" onerror="this.src='https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=500'"></div>
+                    <div class="vocab-image-box"><img id="img-vocab" src="./assets/icons/vocabulary-fallback.svg" alt="Hình minh họa từ vựng"></div>
                     <div class="front-info-area">
                         <div class="word-container">
                             <div class="word" id="lbl-word">-</div>
-                            <button class="btn-speaker" id="btn-speak-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg></button>
+                            <button class="btn-speaker" id="btn-speak-icon" aria-label="Nghe từ tiếng Anh"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg></button>
                         </div>
                         <div class="ipa" id="lbl-ipa">-</div>
                     </div>`;
@@ -175,17 +197,18 @@
             document.getElementById('lbl-mean-vi').innerText = data.meanVi;
             document.getElementById('lbl-example').innerText = data.example;
 
-            // XỬ LÝ ĐỔ HÌNH ẢNH: Ưu tiên ảnh chuẩn trong db, tự thêm thì fallback sang ảnh keyword trực tuyến
+            // A failed image gets one local fallback, including for custom words.
             const imgElement = document.getElementById('img-vocab');
             imgElement.style.opacity = '0.3';
-            
-            if (data.image) {
-                imgElement.src = data.image;
-            } else {
-                imgElement.src = `https://images.unsplash.com/featured/500x350/?${encodeURIComponent(data.word)}`;
-            }
-            
             imgElement.onload = () => imgElement.style.opacity = '1';
+            imgElement.onerror = () => {
+                imgElement.onerror = null;
+                imgElement.alt = 'Chưa có hình minh họa riêng cho từ này';
+                imgElement.style.opacity = '1';
+                imgElement.src = './assets/icons/vocabulary-fallback.svg';
+            };
+            imgElement.alt = data.image ? `Hình minh họa: ${data.word}` : 'Chưa có hình minh họa riêng cho từ này';
+            imgElement.src = data.image || './assets/icons/vocabulary-fallback.svg';
 
             document.getElementById('card-index').innerText = `${currentIndex + 1}/${flashcards.length}`;
             document.getElementById('btn-prev').disabled = currentIndex === 0;
@@ -196,34 +219,83 @@
         function setDisabled(val) {
             document.getElementById('btn-mark-wrong').disabled = val; document.getElementById('btn-mark-correct').disabled = val;
             document.getElementById('btn-shuffle').disabled = val;
+            document.getElementById('btn-prev').disabled = val || currentIndex === 0;
+            document.getElementById('btn-next').disabled = val || currentIndex === flashcards.length - 1;
+            document.getElementById('btn-flip').disabled = val;
         }
 
-        function nextCard() { if (currentIndex < flashcards.length - 1) { currentIndex++; updateCard(); } }
-        function prevCard() { if (currentIndex > 0) { currentIndex--; updateCard(); } }
+        function nextCard() { if (!marking && currentIndex < flashcards.length - 1) { currentIndex++; updateCard(); } }
+        function prevCard() { if (!marking && currentIndex > 0) { currentIndex--; updateCard(); } }
 
         function markCard(isCorrect) {
-            if (flashcards.length === 0) return;
+            if (flashcards.length === 0 || marking) return;
+            marking = true;
+            setDisabled(true);
             const item = flashcards[currentIndex];
+            roundRatings.set(item.id, isCorrect);
+            correctCount = [...roundRatings.values()].filter(Boolean).length;
+            wrongCount = roundRatings.size - correctCount;
+            document.getElementById('correct-count').innerText = correctCount;
+            document.getElementById('wrong-count').innerText = wrongCount;
             if (isCorrect) {
-                correctCount++; document.getElementById('correct-count').innerText = correctCount;
                 if (!learnedList.includes(item.id)) learnedList.push(item.id);
                 reviewList = reviewList.filter(id => id !== item.id);
             } else {
-                wrongCount++; document.getElementById('wrong-count').innerText = wrongCount;
                 if (!reviewList.includes(item.id)) reviewList.push(item.id);
                 learnedList = learnedList.filter(id => id !== item.id);
             }
             saveDataSync();
-            if (currentIndex < flashcards.length - 1) { setTimeout(() => { currentIndex++; updateCard(); }, 250); }
-            else { setTimeout(() => { alert(`Danh mục kết thúc!\nThuộc: ${correctCount}\nChưa thuộc: ${wrongCount}`); resetGame(); }, 350); }
+            if (currentIndex < flashcards.length - 1) {
+                transitionTimer = setTimeout(() => { marking = false; currentIndex++; updateCard(); }, 250);
+            } else {
+                transitionTimer = setTimeout(() => {
+                    alert(`Đã xem hết bộ thẻ!\nTự đánh giá nhớ được: ${correctCount}\nCần ôn lại: ${wrongCount}`);
+                    flashcards = [...database[currentCategory]];
+                    resetGame();
+                }, 350);
+            }
         }
 
-        function resetGame() { currentIndex = 0; correctCount = 0; wrongCount = 0; document.getElementById('correct-count').innerText = 0; document.getElementById('wrong-count').innerText = 0; updateCard(); }
+        function resetGame() { clearTimeout(transitionTimer); marking = false; roundRatings.clear(); currentIndex = 0; correctCount = 0; wrongCount = 0; document.getElementById('correct-count').innerText = 0; document.getElementById('wrong-count').innerText = 0; updateCard(); }
         function shuffleCards() { flashcards.sort(() => Math.random() - 0.5); resetGame(); }
 
         // --- POPUPS & AUTH ---
-        function openAddWordModal() { document.getElementById('modal-add-word').classList.add('is-visible'); }
-        function openAuthModal() { window.DanhLearners?.open(); }
+        let activeModal = null;
+        let modalTrigger = null;
+        let modalBackground = [];
+        let previousOverflow = '';
+        const modalFocusables = modal => [...modal.querySelectorAll('button:not(:disabled),input:not(:disabled),[href],[tabindex="0"]')]
+            .filter(node => node.getClientRects().length);
+        function openModal(id, initialFocus) {
+            if (activeModal) closeModal(activeModal.id);
+            const modal = document.getElementById(id);
+            modalTrigger = document.activeElement;
+            previousOverflow = document.body.style.overflow;
+            modalBackground = [...document.body.children].filter(node => node !== modal)
+                .map(node => ({ node, inert: node.inert }));
+            modalBackground.forEach(({ node }) => { node.inert = true; });
+            activeModal = modal;
+            modal.inert = false;
+            modal.removeAttribute('aria-hidden');
+            modal.classList.add('is-visible');
+            document.body.style.overflow = 'hidden';
+            (modal.querySelector(initialFocus || 'button') || modal.querySelector('[role="dialog"]')).focus();
+        }
+        document.addEventListener('keydown', event => {
+            if (!activeModal) return;
+            if (event.key === 'Escape') {
+                event.preventDefault(); closeModal(activeModal.id);
+            } else if (event.key === 'Tab') {
+                const nodes = modalFocusables(activeModal), first = nodes[0], last = nodes[nodes.length - 1];
+                if (!nodes.length) { event.preventDefault(); return; }
+                if (event.shiftKey && (document.activeElement === first || !nodes.includes(document.activeElement))) {
+                    event.preventDefault(); last.focus();
+                } else if (!event.shiftKey && (document.activeElement === last || !nodes.includes(document.activeElement))) {
+                    event.preventDefault(); first.focus();
+                }
+            }
+        });
+        function openAddWordModal() { openModal('modal-add-word', '#txt-word'); }
         function openStatsModal() {
             const allWords = [...database.elementary, ...database.intermediate, ...database.advanced, ...database.toeic, ...database.ielts, ...database.custom];
             const total = allWords.length;
@@ -240,10 +312,20 @@
 
             document.getElementById('bar-correct').style.width = `${total > 0 ? (correctTotal/total)*100 : 0}%`;
             document.getElementById('bar-review').style.width = `${total > 0 ? (reviewTotal/total)*100 : 0}%`;
-            document.getElementById('modal-stats').classList.add('is-visible');
+            openModal('modal-stats');
         }
         function resetStatsLog() { if (confirm("Xóa lịch sử để học lại từ đầu?")) { reviewList = []; learnedList = []; saveDataSync(); closeModal('modal-stats'); resetGame(); } }
-        function closeModal(id) { document.getElementById(id).classList.remove('is-visible'); }
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            if (activeModal !== modal) return;
+            modal.classList.remove('is-visible');
+            modalBackground.forEach(({ node, inert }) => { node.inert = inert; });
+            document.body.style.overflow = previousOverflow;
+            activeModal = null;
+            if (modalTrigger?.isConnected) modalTrigger.focus();
+            modal.inert = true;
+            modal.setAttribute('aria-hidden', 'true');
+        }
         function closeModalViaOverlay(e, id) { if (e.target.classList.contains('modal-overlay')) closeModal(id); }
 
         function saveNewWord() {
@@ -254,7 +336,7 @@
                 id: "c_" + Date.now(), word: w, ipa: document.getElementById('txt-ipa').value.trim() || "/.../",
                 defEn: document.getElementById('txt-def-en').value.trim() || "No English definition.", meanVi: vi,
                 example: document.getElementById('txt-example').value.trim() || "No example provided.",
-                image: "" // Tự động lấy ảnh từ khóa trực tuyến khi xem
+                image: "" // Dùng ảnh dự phòng nội bộ cho từ tự thêm.
             };
             database.custom.push(newObj); learnerStorage.setItem('c_words_g', JSON.stringify(database.custom));
             loadUserData(); closeModal('modal-add-word'); switchCategory('custom');
@@ -267,13 +349,7 @@
             }
         }
 
-        function updateAuthUI() {
-            const lbl=document.getElementById('lbl-user-status'), btn=document.getElementById('btn-auth-action');
-            lbl.textContent='Đang học: '+(window.DanhLearners?.current?.name || 'Chọn người học');
-            btn.textContent='Đổi người học'; btn.onclick=openAuthModal;
-        }
         // RUN ENGINE
         boostDatabase();
-        updateAuthUI();
         loadUserData();
         switchCategory('elementary');

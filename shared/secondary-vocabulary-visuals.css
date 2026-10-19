@@ -1,0 +1,9 @@
+/* Lớp 6–7: ảnh và biểu tượng có chung khung vuông trong từng hoạt động. */
+.g6-word-card{min-width:0}
+.g6-word-visual,.g6-flash-visual{box-sizing:border-box;display:grid;place-items:center;width:min(100%,240px);aspect-ratio:1;margin:0 auto 16px;border-radius:16px;background:#fff;overflow:hidden;flex-shrink:0}
+.g6-word-visual img.g6-word-icon,.g6-flash-visual img.g6-flash-icon{display:block;width:100%;height:100%;max-width:none;max-height:none;aspect-ratio:1;object-fit:contain;margin:0;border-radius:inherit}
+.g6-word-visual .g6-symbol-art,.g6-flash-visual .g6-symbol-art{display:grid;place-items:center;min-width:0;width:100%;height:100%;margin:0;font-family:'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif;font-size:140px;line-height:1;filter:none}
+.g6-flash-visual{margin:0 auto}
+.vg-world .g6-flashcard.vg-flip-card .vg-flip-face{min-height:460px}
+@media(max-width:480px){.g6-word-visual,.g6-flash-visual{width:min(100%,220px)}.g6-word-visual .g6-symbol-art,.g6-flash-visual .g6-symbol-art{font-size:128px}}
+.g6-word-visual .g6-composite-symbol,.g6-flash-visual .g6-composite-symbol{font-size:64px}

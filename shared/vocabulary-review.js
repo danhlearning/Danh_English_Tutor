@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const grade=Number(document.body.dataset.grade);
-  const units=grade===6?window.DanhGrade6Units:window.DanhGrade7Units;
+  const units=window[`DanhGrade${grade}Units`];
   const term=new URLSearchParams(location.search).get('term')==='2'?2:1;
   const selected=units.filter(unit=>term===1?unit.number<=6:unit.number>=7);
   const words=selected.flatMap(unit=>unit.words.map(word=>({...word,unit:unit.number})));

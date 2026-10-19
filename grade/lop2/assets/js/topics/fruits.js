@@ -80,6 +80,8 @@
     { icon: '🍈', name: 'Papaya', plural: 'papayas', ipa: '/pəˈpaɪ.ə/', meaning: 'Quả đu đủ', hex: '#DD6B20', article: 'a' },
     { icon: '🍏', name: 'Guava', plural: 'guavas', ipa: '/ˈɡwɑː.və/', meaning: 'Quả ổi', hex: '#48BB78', article: 'a' }
   ];
+  window.DanhPencil?.apply('fruits', fruitVocab);
+
 
   /* GENERATE 50 QUESTIONS FOR GAME 4 */
   function buildGame4Questions() {

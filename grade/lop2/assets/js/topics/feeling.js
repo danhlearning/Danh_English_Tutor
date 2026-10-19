@@ -326,6 +326,8 @@
       ipa: '/rɪˈlækst/', meaning: 'Thư giãn', sentence: 'I am relaxed.', hex: '#81C784' 
     }
   ];
+  window.DanhPencil?.apply('feeling', emotionsVocabulary);
+
 
   /* DỮ LIỆU CÂU HỎI GAME 4 */
   const sentenceQuestions = [
@@ -350,6 +352,8 @@
     { svg: emotionsVocabulary[18].svg, vietnamese: 'Tôi tự hào về bạn.', hint: 'Tôi + là/thì + tự hào + về bạn', answer: 'I am proud of you' },
     { svg: emotionsVocabulary[19].svg, vietnamese: 'Tôi cảm thấy thư giãn.', hint: 'Tôi + là/thì + [Cảm xúc]', answer: 'I am relaxed' }
   ];
+  window.DanhPencil?.questions('feeling', sentenceQuestions, emotionsVocabulary);
+
 
   let flashcardDeck = [];
 

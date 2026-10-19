@@ -66,6 +66,8 @@
     { name: 'Tea', emoji: '🍵', ipa: '/tiː/', meaning: 'Trà', sentence: 'I drink tea.', hex: '#4CAF50' },
     { name: 'Cookie', emoji: '🍪', ipa: '/ˈkʊki/', meaning: 'Bánh Quy', sentence: 'I want a cookie.', hex: '#8D6E63' }
   ];
+  window.DanhPencil?.apply('fooddrinks', foodVocabulary);
+
 
   /* DỮ LIỆU CÂU HỎI GAME 4: NGỮ PHÁP CỰC KỲ ĐƠN GIẢN CẤP TIỂU HỌC */
   const sentenceQuestions = [
@@ -90,6 +92,8 @@
     { emoji: '🍪', vietnamese: 'Tôi muốn một chiếc bánh quy.', hint: 'Tôi + muốn + [Một chiếc bánh]', answer: 'I want a cookie' },
     { emoji: '🥪', vietnamese: 'Tôi ăn một chiếc bánh kẹp.', hint: 'Tôi + ăn + [Một chiếc bánh]', answer: 'I eat a sandwich' }
   ];
+  window.DanhPencil?.questions('fooddrinks', sentenceQuestions, foodVocabulary);
+
 
   let flashcardDeck = [];
 

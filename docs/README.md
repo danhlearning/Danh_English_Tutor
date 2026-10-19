@@ -25,3 +25,5 @@ Các tài liệu lịch sử được giữ để tra cứu quyết định và 
 
 - [Global Success Lớp 6](content/global-success-grade6.md): phạm vi 12 Unit, cách biên soạn và phần Ngữ pháp dự kiến.
 - [Global Success Lớp 7](LOP7.md): 12 Unit, 96 từ, 19 ảnh, 432 mục luyện ngữ pháp và nguồn đối chiếu.
+- [Lớp 8–9](plans/grade8-9.md): mục tiêu, cơ chế chơi, giới hạn lưu lượt và quy tắc ảnh không chữ.
+- [Rà và sửa ảnh lớp 6–7](reports/grade6-7-images-2026-10-19.md): 16 ảnh tạo lại/làm sạch, 19 ảnh 768 × 768 và khung minh họa đồng bộ.

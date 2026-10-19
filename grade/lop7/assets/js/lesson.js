@@ -37,16 +37,19 @@
     element.textContent = label; element.addEventListener('click', callback); return element;
   };
   const illustration = (word, className) => {
+    const frame = document.createElement('span');
+    frame.className = className === 'g6-word-icon' ? 'g6-word-visual' : 'g6-flash-visual';
     if (word.image) {
       const image = document.createElement('img');
       image.className = className; image.src = word.image;
       image.alt = `Minh họa: ${word.meaning}`;
       image.width = 768; image.height = 768; image.loading = 'lazy';
-      return image;
+      frame.append(image); return frame;
     }
     const icon = document.createElement('span');
-    icon.className = className; icon.textContent = word.icon;
-    icon.setAttribute('aria-hidden', 'true'); return icon;
+    icon.className = `${className} g6-symbol-art`; icon.textContent = word.icon;
+    icon.classList.toggle('g6-composite-symbol', word.icon.includes('\u200d'));
+    icon.setAttribute('aria-hidden', 'true'); frame.append(icon); return frame;
   };
   const vocab = $('#vocab-grid');
   for (const word of unit.words) {

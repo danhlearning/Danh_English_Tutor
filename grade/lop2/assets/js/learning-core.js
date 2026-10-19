@@ -191,10 +191,10 @@
     const byId = new Map(words.map(word => [word.id, word]));
     if (byId.size !== words.length) return;
     const vocabularyGrid = document.getElementById('vocab-grid-container');
-    if (vocabularyGrid && (illustrations[topic] || topic === 'dates')) {
+    if (vocabularyGrid && (illustrations[topic] || topic === 'dates' || window.DanhPencil?.picture(topic, words[0].name))) {
       words.forEach((word, index) => {
-        const picture = vocabularyGrid.children[index]?.querySelector('.number-display, .emoji-display');
-        const art = word.photo || illustrations[topic]?.[word.name] || (topic === 'dates' ? calendarVisual(word.name) : null);
+        const picture = vocabularyGrid.children[index]?.querySelector('.number-display, .emoji-display, .image-badge-wrapper, .g2-vocab-image');
+        const art = window.DanhPencil?.picture(topic, word.name) || word.photo || illustrations[topic]?.[word.name] || (topic === 'dates' ? calendarVisual(word.name) : null);
         if (picture && art) {
           picture.innerHTML = art;
           picture.classList.add('learning-vocab-picture');
@@ -276,7 +276,7 @@
       } catch { /* Sound effects never block learning. */ }
     };
     const visual = (container, word) => {
-      const value = word.photo || illustrations[topic]?.[word.name] || (topic === 'dates' ? calendarVisual(word.name) : null) ||
+      const value = window.DanhPencil?.picture(topic, word.name) || word.photo || illustrations[topic]?.[word.name] || (topic === 'dates' ? calendarVisual(word.name) : null) ||
         String(word.visual ?? word.name);
       container.setAttribute('role', 'img');
       container.setAttribute('aria-label', word.meaning);

@@ -76,7 +76,7 @@ Trước khi triển khai, ghi rõ:
 | Theo lớp/Unit | Nhiệm vụ theo chủ đề và ôn phối hợp kỹ năng | Bám lộ trình học và nhớ lâu |
 | Trang chủ/danh mục | Chọn nhiệm vụ, tiếp tục lượt, nhìn phần cần ôn | Biết bắt đầu ở đâu và bước học tiếp theo |
 
-Hình minh họa đúng ngữ cảnh và rõ nghĩa. Từ trừu tượng có thể dùng nghĩa tiếng Việt khi học; ở nhiệm vụ kiểm tra, tránh để hình/chữ vô tình lộ đáp án. Công thức và sơ đồ cần đọc chính xác được dựng bằng chữ hoặc đồ họa rõ nét.
+Hình minh họa đúng ngữ cảnh và rõ nghĩa. Không chèn chữ hoặc nghĩa tiếng Việt bên trong ảnh minh họa từ vựng; nghĩa và giải thích đặt bằng văn bản riêng ngoài ảnh. Với từ trừu tượng, dùng biểu tượng cùng nghĩa và ví dụ riêng khi học. Luôn xem trực tiếp từng ảnh để kiểm tra đúng nghĩa, không có chữ và không lỗi hình; không dùng lại ảnh lớp 6–7 có nghĩa tiếng Việt trong hình. Ở nhiệm vụ kiểm tra, tránh để hình/chữ vô tình lộ đáp án. Công thức và sơ đồ cần đọc chính xác được dựng bằng chữ hoặc đồ họa rõ nét.
 
 ## 7. Tiến độ và cách mở rộng website
 

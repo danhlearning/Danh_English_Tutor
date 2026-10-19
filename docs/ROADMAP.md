@@ -39,6 +39,8 @@ Cập nhật: 15/10/2026. Các URL HTML đang dùng được giữ trong suốt 
 - [x] Mở Lớp 6 với danh mục 12 Unit Global Success, 96 từ và bài luyện lật thẻ, chọn nghĩa, gõ từ.
 - [x] Phát triển phần Ngữ pháp Lớp 6 với 1.872 câu hỏi theo tình huống, ba cấp độ, năm dạng bài và ôn học kỳ theo set 10 câu.
 - [x] Mở Lớp 7 theo 12 chủ đề Global Success, 96 từ, 19 ảnh minh họa cho từ khó và 432 mục luyện ngữ pháp ở ba cấp độ.
+- [x] Mở lớp 8 và 9, mỗi lớp 12 Unit, 96 từ/cụm từ, 252 mục luyện ngữ pháp ở ba cấp độ, ôn học kỳ và tiến độ riêng. Hình không có chữ/nghĩa Việt bên trong; đã xem từng tài nguyên sử dụng.
+- [x] Rà toàn bộ lớp 6–7: lớp 6 dùng biểu tượng; lớp 7 sửa/tạo lại 16 ảnh, giữ ba cảnh phù hợp, chuẩn hóa đủ 19 ảnh 768 × 768 và khung ảnh/biểu tượng chung. Không còn gọi phiên bản ảnh có nghĩa Việt trong hình.
 - [ ] Đối chiếu chi tiết từng Lesson và mẫu đề kiểm tra của từng trường với sách trước khi coi là ngân hàng đề thi chính thức.
 
 ## Điều kiện hoàn thành mỗi đợt

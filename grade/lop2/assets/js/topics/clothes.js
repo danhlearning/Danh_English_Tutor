@@ -343,6 +343,8 @@
       ipa: '/ˈreɪn.kəʊt/', meaning: 'Áo mưa', sentence: 'Take a raincoat, it is raining.', hex: '#FBC02D' 
     }
   ];
+  window.DanhPencil?.apply('clothes', clothesVocabulary);
+
 
   /* DỮ LIỆU CÂU HỎI GAME 4 */
   const sentenceQuestions = [
@@ -367,6 +369,8 @@
     { svg: clothesVocabulary[18].svg, vietnamese: 'Mặc bộ đồ ngủ trước khi đi ngủ.', hint: 'Mặc vào + [Trang phục] + trước khi đi ngủ', answer: 'Put on your pyjamas before sleep' },
     { svg: clothesVocabulary[19].svg, vietnamese: 'Mang theo áo mưa, trời đang mưa.', hint: 'Mang theo + [Trang phục] + trời đang mưa', answer: 'Take a raincoat it is raining' }
   ];
+  window.DanhPencil?.questions('clothes', sentenceQuestions, clothesVocabulary);
+
 
   let flashcardDeck = [];
 

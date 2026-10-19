@@ -83,3 +83,15 @@ body.vg-world { font-family:"Danh Nunito",Nunito,sans-serif; background-color:#f
 :is(body,body.vg-world) :is(.g6-hero,.g6-lesson-hero,.gg-hero) { color:#fff; }
 :is(body,body.vg-world) :is(.g6-hero,.g6-lesson-hero) .g6-kicker { color:#fff; }
 [hidden] { display:none !important; }
+
+.g6-unit-footer { display:flex; flex-wrap:wrap; gap:12px; }
+.g6-unit-footer a { display:inline-flex; align-items:center; min-height:44px; padding:8px 12px; border-radius:12px; }
+.g6-unit-footer a:hover { background:#eef6ff; }
+
+/* Long lesson names must wrap without pushing the illustration off screen. */
+.g6-lesson-hero-inner > div { min-width:0; overflow-wrap:anywhere; }
+.g6-lesson-icon { flex-shrink:0; }
+@media(max-width:360px) {
+  .g6-lesson-hero-inner { gap:12px; }
+  .g6-lesson-icon { display:none; }
+}

@@ -36,10 +36,17 @@
     const element = document.createElement('button'); element.type = 'button'; element.className = className;
     element.textContent = label; element.addEventListener('click', callback); return element;
   };
+  const illustration = (word, className) => {
+    const frame = document.createElement('span');
+    frame.className = className === 'g6-word-icon' ? 'g6-word-visual' : 'g6-flash-visual';
+    const icon = document.createElement('span'); icon.className = `${className} g6-symbol-art`;
+    icon.textContent = word.icon; icon.classList.toggle('g6-composite-symbol', word.icon.includes('\u200d'));
+    icon.setAttribute('aria-hidden', 'true'); frame.append(icon); return frame;
+  };
   const vocab = $('#vocab-grid');
   for (const word of unit.words) {
     const card = document.createElement('article'); card.className = 'g6-word-card';
-    const icon = document.createElement('span'); icon.className = 'g6-word-icon'; icon.textContent = word.icon; icon.setAttribute('aria-hidden', 'true');
+    const icon = illustration(word, 'g6-word-icon');
     const title = document.createElement('h3'); title.textContent = word.term;
     const meaning = document.createElement('p'); meaning.className = 'g6-meaning'; meaning.textContent = word.meaning;
     const example = document.createElement('p'); example.className = 'g6-example'; example.textContent = word.example;
@@ -60,7 +67,7 @@
 
   const cards = window.DanhVocabularyGame.flashcards({
     card: $('#flashcard'), words: unit.words, previous: $('#flash-prev'), next: $('#flash-next'),
-    illustration: word => (() => { const icon=document.createElement('span');icon.className='g6-flash-icon';icon.textContent=word.icon;icon.setAttribute('aria-hidden','true');return icon; })()
+    illustration: word => illustration(word, 'g6-flash-icon')
   });
   $('#flash-sound').addEventListener('click', () => speak(cards.current().term));
 

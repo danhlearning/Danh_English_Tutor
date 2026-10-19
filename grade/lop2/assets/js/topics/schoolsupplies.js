@@ -71,6 +71,8 @@
     { num: 24, name: 'Protractor', ipa: '/proʊˈtræktər/', meaning: 'Thước đo độ', emoji: '📐', hex: '#319795' },
     { num: 25, name: 'Backpack', ipa: '/ˈbækˌpæk/', meaning: 'Balo học sinh', emoji: '🎒', hex: '#DD6B20' }
   ];
+  window.DanhPencil?.apply('schoolsupplies', schoolSupplies);
+
 
   /* DỮ LIỆU CÂU ĐẾM GAME 4 (ĐÃ LOẠI BỎ 5 TỪ TRÊN) */
   const countGameQuestions = [
@@ -91,6 +93,8 @@
     { count: 6, itemSingular: 'folder', itemPlural: 'folders', emoji: '📁' },
     { count: 5, itemSingular: 'chair', itemPlural: 'chairs', emoji: '🪑' }
   ];
+  window.DanhPencil?.questions('schoolsupplies', countGameQuestions, schoolSupplies);
+
 
   let flashcardDeck = [];
 
@@ -402,7 +406,7 @@
     for(let i = 0; i < item.count; i++) {
       const span = document.createElement('span');
       span.className = 'item-emoji';
-      span.innerText = item.emoji;
+      span.innerHTML = item.emoji;
       container.appendChild(span);
     }
   }

@@ -120,4 +120,4 @@ window.DanhGrade7Units = [
     ['landmark', 'địa danh nổi bật, dễ nhận biết', 'The Sydney Opera House is a famous landmark.', '🏛️', 'landmark'],
     ['native speaker', 'người bản ngữ', 'A native speaker learns the language from early childhood.', '🗣️', 'native-speaker']
   ]}
-].map((unit, index) => ({ ...unit, number: index + 1, id: `unit${index + 1}`, words: unit.words.map(([term, meaning, example, icon, image], wordIndex) => ({ id: wordIndex + 1, term, meaning, example, icon, image: image ? `./assets/images/${image}.webp` : null })) }));
+].map((unit, index) => ({ ...unit, number: index + 1, id: `unit${index + 1}`, words: unit.words.map(([term, meaning, example, icon, image], wordIndex) => ({ id: wordIndex + 1, term, meaning, example, icon, image: image ? `./assets/images/${image}-v2.webp` : null })) }));

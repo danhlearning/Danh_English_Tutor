@@ -66,6 +66,8 @@
     { name: 'Ride', emoji: '🚲', ipa: '/raɪd/', meaning: 'Đi (xe đạp)', sentence: 'I ride my bike to school.', hex: '#00B894' },
     { name: 'Fly', emoji: '🪁', ipa: '/flaɪ/', meaning: 'Bay', sentence: 'The kite flies high in the sky.', hex: '#4ECDC4' }
   ];
+  window.DanhPencil?.apply('verbs', verbVocabulary);
+
 
   /* DỮ LIỆU CÂU HỎI CHO GAME 4 (30 CÂU HOÀN CHỈNH) */
   const sentenceQuestions = [
@@ -100,6 +102,8 @@
     { target: 'like to play', emoji: '⚽', prompt: 'Tôi thích chơi bóng đá. (Dùng "I like to...")', answer: 'I like to play football', altAnswer: 'i like playing football' },
     { target: 'dance well', emoji: '💃', prompt: 'Cô ấy có thể nhảy múa giỏi. (Dùng "She can...")', answer: 'She can dance well', altAnswer: 'she can dance well.' }
   ];
+  window.DanhPencil?.questions('verbs', sentenceQuestions, verbVocabulary);
+
 
   let flashcardDeck = [];
 

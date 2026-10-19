@@ -134,6 +134,8 @@
         <ellipse cx="50" cy="92" rx="20" ry="5" fill="#607D8B"/>
       </svg>`, ipa: '/fæn/', meaning: 'Quạt máy', sentence: "Turn on the fan, it's hot.", hex: '#4FC3F7' }
   ];
+  window.DanhPencil?.apply('householditems', vocabList);
+
 
   /* DỮ LIỆU CÂU HỎI GAME 4 */
   const sentenceQuestions = [
@@ -154,6 +156,8 @@
     { svg: vocabList[14].svg, vietnamese: 'Điện thoại đang reo.', hint: 'Điện thoại + đang + reo', answer: 'The telephone is ringing' },
     { svg: vocabList[15].svg, vietnamese: 'Hãy bật quạt lên, trời nóng quá.', hint: "Bật + quạt + trời nóng quá", answer: "Turn on the fan it's hot" }
   ];
+  window.DanhPencil?.questions('householditems', sentenceQuestions, vocabList);
+
 
   let flashcardDeck = [];
 

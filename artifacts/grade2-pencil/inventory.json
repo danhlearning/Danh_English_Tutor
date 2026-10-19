@@ -1,0 +1,1852 @@
+[
+  {
+    "topic": "clothes",
+    "words": [
+      {
+        "id": "t-shirt",
+        "name": "T-shirt",
+        "meaning": "Áo thun / Áo phông"
+      },
+      {
+        "id": "shirt",
+        "name": "Shirt",
+        "meaning": "Áo sơ mi"
+      },
+      {
+        "id": "dress",
+        "name": "Dress",
+        "meaning": "Váy đầm"
+      },
+      {
+        "id": "skirt",
+        "name": "Skirt",
+        "meaning": "Chân váy"
+      },
+      {
+        "id": "pants",
+        "name": "Pants",
+        "meaning": "Quần dài"
+      },
+      {
+        "id": "shorts",
+        "name": "Shorts",
+        "meaning": "Quần đùi / Quần ngắn"
+      },
+      {
+        "id": "jacket",
+        "name": "Jacket",
+        "meaning": "Áo khoác ngắn"
+      },
+      {
+        "id": "coat",
+        "name": "Coat",
+        "meaning": "Áo khoác dáng dài"
+      },
+      {
+        "id": "sweater",
+        "name": "Sweater",
+        "meaning": "Áo len"
+      },
+      {
+        "id": "hat",
+        "name": "Hat",
+        "meaning": "Mũ / Nón"
+      },
+      {
+        "id": "cap",
+        "name": "Cap",
+        "meaning": "Mũ lưỡi trai"
+      },
+      {
+        "id": "socks",
+        "name": "Socks",
+        "meaning": "Tất / Vớ (Đôi)"
+      },
+      {
+        "id": "shoes",
+        "name": "Shoes",
+        "meaning": "Giày (Đôi)"
+      },
+      {
+        "id": "boots",
+        "name": "Boots",
+        "meaning": "Ủng / Giày cao cổ"
+      },
+      {
+        "id": "gloves",
+        "name": "Gloves",
+        "meaning": "Găng tay (Đôi)"
+      },
+      {
+        "id": "scarf",
+        "name": "Scarf",
+        "meaning": "Khăn quàng cổ"
+      },
+      {
+        "id": "tie",
+        "name": "Tie",
+        "meaning": "Cà vạt"
+      },
+      {
+        "id": "belt",
+        "name": "Belt",
+        "meaning": "Thắt lưng / Dây nịt"
+      },
+      {
+        "id": "pyjamas",
+        "name": "Pyjamas",
+        "meaning": "Bộ đồ ngủ"
+      },
+      {
+        "id": "raincoat",
+        "name": "Raincoat",
+        "meaning": "Áo mưa"
+      }
+    ]
+  },
+  {
+    "topic": "dates",
+    "words": [
+      {
+        "id": "monday",
+        "name": "Monday",
+        "meaning": "Thứ Hai"
+      },
+      {
+        "id": "tuesday",
+        "name": "Tuesday",
+        "meaning": "Thứ Ba"
+      },
+      {
+        "id": "wednesday",
+        "name": "Wednesday",
+        "meaning": "Thứ Tư"
+      },
+      {
+        "id": "thursday",
+        "name": "Thursday",
+        "meaning": "Thứ Năm"
+      },
+      {
+        "id": "friday",
+        "name": "Friday",
+        "meaning": "Thứ Sáu"
+      },
+      {
+        "id": "saturday",
+        "name": "Saturday",
+        "meaning": "Thứ Bảy"
+      },
+      {
+        "id": "sunday",
+        "name": "Sunday",
+        "meaning": "Chủ Nhật"
+      },
+      {
+        "id": "january",
+        "name": "January",
+        "meaning": "Tháng 1"
+      },
+      {
+        "id": "february",
+        "name": "February",
+        "meaning": "Tháng 2"
+      },
+      {
+        "id": "march",
+        "name": "March",
+        "meaning": "Tháng 3"
+      },
+      {
+        "id": "april",
+        "name": "April",
+        "meaning": "Tháng 4"
+      },
+      {
+        "id": "may",
+        "name": "May",
+        "meaning": "Tháng 5"
+      },
+      {
+        "id": "june",
+        "name": "June",
+        "meaning": "Tháng 6"
+      },
+      {
+        "id": "july",
+        "name": "July",
+        "meaning": "Tháng 7"
+      },
+      {
+        "id": "august",
+        "name": "August",
+        "meaning": "Tháng 8"
+      },
+      {
+        "id": "september",
+        "name": "September",
+        "meaning": "Tháng 9"
+      },
+      {
+        "id": "october",
+        "name": "October",
+        "meaning": "Tháng 10"
+      },
+      {
+        "id": "november",
+        "name": "November",
+        "meaning": "Tháng 11"
+      },
+      {
+        "id": "december",
+        "name": "December",
+        "meaning": "Tháng 12"
+      }
+    ]
+  },
+  {
+    "topic": "familyfriends",
+    "words": [
+      {
+        "id": "father",
+        "name": "Father",
+        "meaning": "Bố / Cha"
+      },
+      {
+        "id": "mother",
+        "name": "Mother",
+        "meaning": "Mẹ"
+      },
+      {
+        "id": "brother",
+        "name": "Brother",
+        "meaning": "Anh / Em trai"
+      },
+      {
+        "id": "sister",
+        "name": "Sister",
+        "meaning": "Chị / Em gái"
+      },
+      {
+        "id": "grandfather",
+        "name": "Grandfather",
+        "meaning": "Ông"
+      },
+      {
+        "id": "grandmother",
+        "name": "Grandmother",
+        "meaning": "Bà"
+      },
+      {
+        "id": "baby",
+        "name": "Baby",
+        "meaning": "Em bé"
+      },
+      {
+        "id": "parents",
+        "name": "Parents",
+        "meaning": "Bố mẹ"
+      },
+      {
+        "id": "friend",
+        "name": "Friend",
+        "meaning": "Bạn bè"
+      },
+      {
+        "id": "best friend",
+        "name": "Best friend",
+        "meaning": "Bạn thân"
+      },
+      {
+        "id": "uncle",
+        "name": "Uncle",
+        "meaning": "Chú / Bác / Cậu"
+      },
+      {
+        "id": "aunt",
+        "name": "Aunt",
+        "meaning": "Cô / Dì / Thím"
+      },
+      {
+        "id": "cousin",
+        "name": "Cousin",
+        "meaning": "Anh chị em họ"
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "meaning": "Gia đình"
+      },
+      {
+        "id": "son",
+        "name": "Son",
+        "meaning": "Con trai"
+      },
+      {
+        "id": "daughter",
+        "name": "Daughter",
+        "meaning": "Con gái"
+      },
+      {
+        "id": "classmate",
+        "name": "Classmate",
+        "meaning": "Bạn cùng lớp"
+      },
+      {
+        "id": "neighbor",
+        "name": "Neighbor",
+        "meaning": "Hàng xóm"
+      },
+      {
+        "id": "husband",
+        "name": "Husband",
+        "meaning": "Chồng"
+      },
+      {
+        "id": "wife",
+        "name": "Wife",
+        "meaning": "Vợ"
+      }
+    ]
+  },
+  {
+    "topic": "feeling",
+    "words": [
+      {
+        "id": "thirsty",
+        "name": "Thirsty",
+        "meaning": "Khát nước"
+      },
+      {
+        "id": "hungry",
+        "name": "Hungry",
+        "meaning": "Đói bụng"
+      },
+      {
+        "id": "sleepy",
+        "name": "Sleepy",
+        "meaning": "Buồn ngủ"
+      },
+      {
+        "id": "tired",
+        "name": "Tired",
+        "meaning": "Mệt mỏi"
+      },
+      {
+        "id": "hot",
+        "name": "Hot",
+        "meaning": "Nóng nực"
+      },
+      {
+        "id": "cold",
+        "name": "Cold",
+        "meaning": "Lạnh lẽo"
+      },
+      {
+        "id": "sick",
+        "name": "Sick",
+        "meaning": "Bị ốm"
+      },
+      {
+        "id": "happy",
+        "name": "Happy",
+        "meaning": "Vui vẻ"
+      },
+      {
+        "id": "sad",
+        "name": "Sad",
+        "meaning": "Buồn bã"
+      },
+      {
+        "id": "angry",
+        "name": "Angry",
+        "meaning": "Tức giận"
+      },
+      {
+        "id": "scared",
+        "name": "Scared",
+        "meaning": "Sợ hãi"
+      },
+      {
+        "id": "excited",
+        "name": "Excited",
+        "meaning": "Hào hứng"
+      },
+      {
+        "id": "bored",
+        "name": "Bored",
+        "meaning": "Chán nản"
+      },
+      {
+        "id": "surprised",
+        "name": "Surprised",
+        "meaning": "Bất ngờ"
+      },
+      {
+        "id": "calm",
+        "name": "Calm",
+        "meaning": "Bình tĩnh"
+      },
+      {
+        "id": "nervous",
+        "name": "Nervous",
+        "meaning": "Lo lắng"
+      },
+      {
+        "id": "shy",
+        "name": "Shy",
+        "meaning": "Xấu hổ / Bẽn lẽn"
+      },
+      {
+        "id": "confused",
+        "name": "Confused",
+        "meaning": "Bối rối"
+      },
+      {
+        "id": "proud",
+        "name": "Proud",
+        "meaning": "Tự hào"
+      },
+      {
+        "id": "relaxed",
+        "name": "Relaxed",
+        "meaning": "Thư giãn"
+      }
+    ]
+  },
+  {
+    "topic": "fooddrinks",
+    "words": [
+      {
+        "id": "pizza",
+        "name": "Pizza",
+        "meaning": "Bánh Pizza"
+      },
+      {
+        "id": "hamburger",
+        "name": "Hamburger",
+        "meaning": "Bánh Hamburger"
+      },
+      {
+        "id": "sandwich",
+        "name": "Sandwich",
+        "meaning": "Bánh Kẹp"
+      },
+      {
+        "id": "bread",
+        "name": "Bread",
+        "meaning": "Bánh Mỳ"
+      },
+      {
+        "id": "rice",
+        "name": "Rice",
+        "meaning": "Cơm / Gạo"
+      },
+      {
+        "id": "noodles",
+        "name": "Noodles",
+        "meaning": "Mì / Bún"
+      },
+      {
+        "id": "chicken",
+        "name": "Chicken",
+        "meaning": "Thịt Gà"
+      },
+      {
+        "id": "fish",
+        "name": "Fish",
+        "meaning": "Cá"
+      },
+      {
+        "id": "egg",
+        "name": "Egg",
+        "meaning": "Trứng"
+      },
+      {
+        "id": "soup",
+        "name": "Soup",
+        "meaning": "Súp / Canh"
+      },
+      {
+        "id": "salad",
+        "name": "Salad",
+        "meaning": "Rau Trộn / Salad"
+      },
+      {
+        "id": "ice cream",
+        "name": "Ice cream",
+        "meaning": "Kem"
+      },
+      {
+        "id": "cake",
+        "name": "Cake",
+        "meaning": "Bánh Ngọt"
+      },
+      {
+        "id": "apple",
+        "name": "Apple",
+        "meaning": "Quả Táo"
+      },
+      {
+        "id": "banana",
+        "name": "Banana",
+        "meaning": "Quả Chuối"
+      },
+      {
+        "id": "milk",
+        "name": "Milk",
+        "meaning": "Sữa"
+      },
+      {
+        "id": "water",
+        "name": "Water",
+        "meaning": "Nước Lọc"
+      },
+      {
+        "id": "juice",
+        "name": "Juice",
+        "meaning": "Nước Ép Trái Cây"
+      },
+      {
+        "id": "tea",
+        "name": "Tea",
+        "meaning": "Trà"
+      },
+      {
+        "id": "cookie",
+        "name": "Cookie",
+        "meaning": "Bánh Quy"
+      }
+    ]
+  },
+  {
+    "topic": "fruits",
+    "words": [
+      {
+        "id": "apple",
+        "name": "Apple",
+        "meaning": "Quả táo"
+      },
+      {
+        "id": "banana",
+        "name": "Banana",
+        "meaning": "Quả chuối"
+      },
+      {
+        "id": "orange",
+        "name": "Orange",
+        "meaning": "Quả cam"
+      },
+      {
+        "id": "grape",
+        "name": "Grape",
+        "meaning": "Quả nho"
+      },
+      {
+        "id": "watermelon",
+        "name": "Watermelon",
+        "meaning": "Quả dưa hấu"
+      },
+      {
+        "id": "strawberry",
+        "name": "Strawberry",
+        "meaning": "Quả dâu tây"
+      },
+      {
+        "id": "mango",
+        "name": "Mango",
+        "meaning": "Quả xoài"
+      },
+      {
+        "id": "pineapple",
+        "name": "Pineapple",
+        "meaning": "Quả dứa (thơm)"
+      },
+      {
+        "id": "avocado",
+        "name": "Avocado",
+        "meaning": "Quả bơ"
+      },
+      {
+        "id": "peach",
+        "name": "Peach",
+        "meaning": "Quả đào"
+      },
+      {
+        "id": "cherry",
+        "name": "Cherry",
+        "meaning": "Quả anh đào"
+      },
+      {
+        "id": "lemon",
+        "name": "Lemon",
+        "meaning": "Quả chanh vàng"
+      },
+      {
+        "id": "melon",
+        "name": "Melon",
+        "meaning": "Quả dưa lưới"
+      },
+      {
+        "id": "pear",
+        "name": "Pear",
+        "meaning": "Quả lê"
+      },
+      {
+        "id": "kiwi",
+        "name": "Kiwi",
+        "meaning": "Quả kiwi"
+      },
+      {
+        "id": "coconut",
+        "name": "Coconut",
+        "meaning": "Quả dừa"
+      },
+      {
+        "id": "papaya",
+        "name": "Papaya",
+        "meaning": "Quả đu đủ"
+      },
+      {
+        "id": "guava",
+        "name": "Guava",
+        "meaning": "Quả ổi"
+      }
+    ]
+  },
+  {
+    "topic": "numbers",
+    "words": [
+      {
+        "id": "one",
+        "name": "One",
+        "meaning": "Số 1"
+      },
+      {
+        "id": "two",
+        "name": "Two",
+        "meaning": "Số 2"
+      },
+      {
+        "id": "three",
+        "name": "Three",
+        "meaning": "Số 3"
+      },
+      {
+        "id": "four",
+        "name": "Four",
+        "meaning": "Số 4"
+      },
+      {
+        "id": "five",
+        "name": "Five",
+        "meaning": "Số 5"
+      },
+      {
+        "id": "six",
+        "name": "Six",
+        "meaning": "Số 6"
+      },
+      {
+        "id": "seven",
+        "name": "Seven",
+        "meaning": "Số 7"
+      },
+      {
+        "id": "eight",
+        "name": "Eight",
+        "meaning": "Số 8"
+      },
+      {
+        "id": "nine",
+        "name": "Nine",
+        "meaning": "Số 9"
+      },
+      {
+        "id": "ten",
+        "name": "Ten",
+        "meaning": "Số 10"
+      },
+      {
+        "id": "eleven",
+        "name": "Eleven",
+        "meaning": "Số 11"
+      },
+      {
+        "id": "twelve",
+        "name": "Twelve",
+        "meaning": "Số 12"
+      },
+      {
+        "id": "thirteen",
+        "name": "Thirteen",
+        "meaning": "Số 13"
+      },
+      {
+        "id": "fourteen",
+        "name": "Fourteen",
+        "meaning": "Số 14"
+      },
+      {
+        "id": "fifteen",
+        "name": "Fifteen",
+        "meaning": "Số 15"
+      },
+      {
+        "id": "sixteen",
+        "name": "Sixteen",
+        "meaning": "Số 16"
+      },
+      {
+        "id": "seventeen",
+        "name": "Seventeen",
+        "meaning": "Số 17"
+      },
+      {
+        "id": "eighteen",
+        "name": "Eighteen",
+        "meaning": "Số 18"
+      },
+      {
+        "id": "nineteen",
+        "name": "Nineteen",
+        "meaning": "Số 19"
+      },
+      {
+        "id": "twenty",
+        "name": "Twenty",
+        "meaning": "Số 20"
+      },
+      {
+        "id": "twenty-one",
+        "name": "Twenty-One",
+        "meaning": "Số 21"
+      },
+      {
+        "id": "twenty-two",
+        "name": "Twenty-Two",
+        "meaning": "Số 22"
+      },
+      {
+        "id": "twenty-three",
+        "name": "Twenty-Three",
+        "meaning": "Số 23"
+      },
+      {
+        "id": "twenty-four",
+        "name": "Twenty-Four",
+        "meaning": "Số 24"
+      },
+      {
+        "id": "twenty-five",
+        "name": "Twenty-Five",
+        "meaning": "Số 25"
+      },
+      {
+        "id": "twenty-six",
+        "name": "Twenty-Six",
+        "meaning": "Số 26"
+      },
+      {
+        "id": "twenty-seven",
+        "name": "Twenty-Seven",
+        "meaning": "Số 27"
+      },
+      {
+        "id": "twenty-eight",
+        "name": "Twenty-Eight",
+        "meaning": "Số 28"
+      },
+      {
+        "id": "twenty-nine",
+        "name": "Twenty-Nine",
+        "meaning": "Số 29"
+      },
+      {
+        "id": "thirty",
+        "name": "Thirty",
+        "meaning": "Số 30"
+      },
+      {
+        "id": "thirty-one",
+        "name": "Thirty-One",
+        "meaning": "Số 31"
+      },
+      {
+        "id": "thirty-two",
+        "name": "Thirty-Two",
+        "meaning": "Số 32"
+      },
+      {
+        "id": "thirty-three",
+        "name": "Thirty-Three",
+        "meaning": "Số 33"
+      },
+      {
+        "id": "thirty-four",
+        "name": "Thirty-Four",
+        "meaning": "Số 34"
+      },
+      {
+        "id": "thirty-five",
+        "name": "Thirty-Five",
+        "meaning": "Số 35"
+      },
+      {
+        "id": "thirty-six",
+        "name": "Thirty-Six",
+        "meaning": "Số 36"
+      },
+      {
+        "id": "thirty-seven",
+        "name": "Thirty-Seven",
+        "meaning": "Số 37"
+      },
+      {
+        "id": "thirty-eight",
+        "name": "Thirty-Eight",
+        "meaning": "Số 38"
+      },
+      {
+        "id": "thirty-nine",
+        "name": "Thirty-Nine",
+        "meaning": "Số 39"
+      },
+      {
+        "id": "forty",
+        "name": "Forty",
+        "meaning": "Số 40"
+      },
+      {
+        "id": "forty-one",
+        "name": "Forty-One",
+        "meaning": "Số 41"
+      },
+      {
+        "id": "forty-two",
+        "name": "Forty-Two",
+        "meaning": "Số 42"
+      },
+      {
+        "id": "forty-three",
+        "name": "Forty-Three",
+        "meaning": "Số 43"
+      },
+      {
+        "id": "forty-four",
+        "name": "Forty-Four",
+        "meaning": "Số 44"
+      },
+      {
+        "id": "forty-five",
+        "name": "Forty-Five",
+        "meaning": "Số 45"
+      },
+      {
+        "id": "forty-six",
+        "name": "Forty-Six",
+        "meaning": "Số 46"
+      },
+      {
+        "id": "forty-seven",
+        "name": "Forty-Seven",
+        "meaning": "Số 47"
+      },
+      {
+        "id": "forty-eight",
+        "name": "Forty-Eight",
+        "meaning": "Số 48"
+      },
+      {
+        "id": "forty-nine",
+        "name": "Forty-Nine",
+        "meaning": "Số 49"
+      },
+      {
+        "id": "fifty",
+        "name": "Fifty",
+        "meaning": "Số 50"
+      },
+      {
+        "id": "fifty-one",
+        "name": "Fifty-One",
+        "meaning": "Số 51"
+      },
+      {
+        "id": "fifty-two",
+        "name": "Fifty-Two",
+        "meaning": "Số 52"
+      },
+      {
+        "id": "fifty-three",
+        "name": "Fifty-Three",
+        "meaning": "Số 53"
+      },
+      {
+        "id": "fifty-four",
+        "name": "Fifty-Four",
+        "meaning": "Số 54"
+      },
+      {
+        "id": "fifty-five",
+        "name": "Fifty-Five",
+        "meaning": "Số 55"
+      },
+      {
+        "id": "fifty-six",
+        "name": "Fifty-Six",
+        "meaning": "Số 56"
+      },
+      {
+        "id": "fifty-seven",
+        "name": "Fifty-Seven",
+        "meaning": "Số 57"
+      },
+      {
+        "id": "fifty-eight",
+        "name": "Fifty-Eight",
+        "meaning": "Số 58"
+      },
+      {
+        "id": "fifty-nine",
+        "name": "Fifty-Nine",
+        "meaning": "Số 59"
+      },
+      {
+        "id": "sixty",
+        "name": "Sixty",
+        "meaning": "Số 60"
+      },
+      {
+        "id": "sixty-one",
+        "name": "Sixty-One",
+        "meaning": "Số 61"
+      },
+      {
+        "id": "sixty-two",
+        "name": "Sixty-Two",
+        "meaning": "Số 62"
+      },
+      {
+        "id": "sixty-three",
+        "name": "Sixty-Three",
+        "meaning": "Số 63"
+      },
+      {
+        "id": "sixty-four",
+        "name": "Sixty-Four",
+        "meaning": "Số 64"
+      },
+      {
+        "id": "sixty-five",
+        "name": "Sixty-Five",
+        "meaning": "Số 65"
+      },
+      {
+        "id": "sixty-six",
+        "name": "Sixty-Six",
+        "meaning": "Số 66"
+      },
+      {
+        "id": "sixty-seven",
+        "name": "Sixty-Seven",
+        "meaning": "Số 67"
+      },
+      {
+        "id": "sixty-eight",
+        "name": "Sixty-Eight",
+        "meaning": "Số 68"
+      },
+      {
+        "id": "sixty-nine",
+        "name": "Sixty-Nine",
+        "meaning": "Số 69"
+      },
+      {
+        "id": "seventy",
+        "name": "Seventy",
+        "meaning": "Số 70"
+      },
+      {
+        "id": "seventy-one",
+        "name": "Seventy-One",
+        "meaning": "Số 71"
+      },
+      {
+        "id": "seventy-two",
+        "name": "Seventy-Two",
+        "meaning": "Số 72"
+      },
+      {
+        "id": "seventy-three",
+        "name": "Seventy-Three",
+        "meaning": "Số 73"
+      },
+      {
+        "id": "seventy-four",
+        "name": "Seventy-Four",
+        "meaning": "Số 74"
+      },
+      {
+        "id": "seventy-five",
+        "name": "Seventy-Five",
+        "meaning": "Số 75"
+      },
+      {
+        "id": "seventy-six",
+        "name": "Seventy-Six",
+        "meaning": "Số 76"
+      },
+      {
+        "id": "seventy-seven",
+        "name": "Seventy-Seven",
+        "meaning": "Số 77"
+      },
+      {
+        "id": "seventy-eight",
+        "name": "Seventy-Eight",
+        "meaning": "Số 78"
+      },
+      {
+        "id": "seventy-nine",
+        "name": "Seventy-Nine",
+        "meaning": "Số 79"
+      },
+      {
+        "id": "eighty",
+        "name": "Eighty",
+        "meaning": "Số 80"
+      },
+      {
+        "id": "eighty-one",
+        "name": "Eighty-One",
+        "meaning": "Số 81"
+      },
+      {
+        "id": "eighty-two",
+        "name": "Eighty-Two",
+        "meaning": "Số 82"
+      },
+      {
+        "id": "eighty-three",
+        "name": "Eighty-Three",
+        "meaning": "Số 83"
+      },
+      {
+        "id": "eighty-four",
+        "name": "Eighty-Four",
+        "meaning": "Số 84"
+      },
+      {
+        "id": "eighty-five",
+        "name": "Eighty-Five",
+        "meaning": "Số 85"
+      },
+      {
+        "id": "eighty-six",
+        "name": "Eighty-Six",
+        "meaning": "Số 86"
+      },
+      {
+        "id": "eighty-seven",
+        "name": "Eighty-Seven",
+        "meaning": "Số 87"
+      },
+      {
+        "id": "eighty-eight",
+        "name": "Eighty-Eight",
+        "meaning": "Số 88"
+      },
+      {
+        "id": "eighty-nine",
+        "name": "Eighty-Nine",
+        "meaning": "Số 89"
+      },
+      {
+        "id": "ninety",
+        "name": "Ninety",
+        "meaning": "Số 90"
+      },
+      {
+        "id": "ninety-one",
+        "name": "Ninety-One",
+        "meaning": "Số 91"
+      },
+      {
+        "id": "ninety-two",
+        "name": "Ninety-Two",
+        "meaning": "Số 92"
+      },
+      {
+        "id": "ninety-three",
+        "name": "Ninety-Three",
+        "meaning": "Số 93"
+      },
+      {
+        "id": "ninety-four",
+        "name": "Ninety-Four",
+        "meaning": "Số 94"
+      },
+      {
+        "id": "ninety-five",
+        "name": "Ninety-Five",
+        "meaning": "Số 95"
+      },
+      {
+        "id": "ninety-six",
+        "name": "Ninety-Six",
+        "meaning": "Số 96"
+      },
+      {
+        "id": "ninety-seven",
+        "name": "Ninety-Seven",
+        "meaning": "Số 97"
+      },
+      {
+        "id": "ninety-eight",
+        "name": "Ninety-Eight",
+        "meaning": "Số 98"
+      },
+      {
+        "id": "ninety-nine",
+        "name": "Ninety-Nine",
+        "meaning": "Số 99"
+      },
+      {
+        "id": "one hundred",
+        "name": "One hundred",
+        "meaning": "Số 100"
+      }
+    ]
+  },
+  {
+    "topic": "schoolsupplies",
+    "words": [
+      {
+        "id": "pencil",
+        "name": "Pencil",
+        "meaning": "Bút chì"
+      },
+      {
+        "id": "pen",
+        "name": "Pen",
+        "meaning": "Bút mực / Bút bi"
+      },
+      {
+        "id": "eraser",
+        "name": "Eraser",
+        "meaning": "Cục tẩy / Cục gôm"
+      },
+      {
+        "id": "ruler",
+        "name": "Ruler",
+        "meaning": "Thước kẻ"
+      },
+      {
+        "id": "book",
+        "name": "Book",
+        "meaning": "Sách"
+      },
+      {
+        "id": "school bag",
+        "name": "School bag",
+        "meaning": "Cặp sách"
+      },
+      {
+        "id": "scissors",
+        "name": "Scissors",
+        "meaning": "Cây kéo"
+      },
+      {
+        "id": "glue",
+        "name": "Glue",
+        "meaning": "Keo dán / Hồ dán"
+      },
+      {
+        "id": "crayon",
+        "name": "Crayon",
+        "meaning": "Bút màu sáp"
+      },
+      {
+        "id": "pencil case",
+        "name": "Pencil case",
+        "meaning": "Hộp bút"
+      },
+      {
+        "id": "chair",
+        "name": "Chair",
+        "meaning": "Ghế ngồi"
+      },
+      {
+        "id": "blackboard",
+        "name": "Blackboard",
+        "meaning": "Bảng đen"
+      },
+      {
+        "id": "paper",
+        "name": "Paper",
+        "meaning": "Tờ giấy"
+      },
+      {
+        "id": "folder",
+        "name": "Folder",
+        "meaning": "Bìa đựng tài liệu"
+      },
+      {
+        "id": "calculator",
+        "name": "Calculator",
+        "meaning": "Máy tính bỏ túi"
+      },
+      {
+        "id": "globe",
+        "name": "Globe",
+        "meaning": "Quả địa cầu"
+      },
+      {
+        "id": "compass",
+        "name": "Compass",
+        "meaning": "Com-pa"
+      },
+      {
+        "id": "paintbrush",
+        "name": "Paintbrush",
+        "meaning": "Cọ vẽ"
+      },
+      {
+        "id": "palette",
+        "name": "Palette",
+        "meaning": "Khay pha màu"
+      },
+      {
+        "id": "paperclip",
+        "name": "Paperclip",
+        "meaning": "Kẹp giấy"
+      },
+      {
+        "id": "stapler",
+        "name": "Stapler",
+        "meaning": "Cái dập ghim"
+      },
+      {
+        "id": "dictionary",
+        "name": "Dictionary",
+        "meaning": "Từ điển"
+      },
+      {
+        "id": "highlighter",
+        "name": "Highlighter",
+        "meaning": "Bút dạ quang"
+      },
+      {
+        "id": "protractor",
+        "name": "Protractor",
+        "meaning": "Thước đo độ"
+      },
+      {
+        "id": "backpack",
+        "name": "Backpack",
+        "meaning": "Balo học sinh"
+      }
+    ]
+  },
+  {
+    "topic": "bodyparts",
+    "words": [
+      {
+        "id": "head",
+        "name": "Head",
+        "meaning": "Cái đầu"
+      },
+      {
+        "id": "hair",
+        "name": "Hair",
+        "meaning": "Tóc"
+      },
+      {
+        "id": "eyes",
+        "name": "Eyes",
+        "meaning": "Đôi mắt"
+      },
+      {
+        "id": "ears",
+        "name": "Ears",
+        "meaning": "Đôi tai"
+      },
+      {
+        "id": "nose",
+        "name": "Nose",
+        "meaning": "Mũi"
+      },
+      {
+        "id": "mouth",
+        "name": "Mouth",
+        "meaning": "Miệng"
+      },
+      {
+        "id": "teeth",
+        "name": "Teeth",
+        "meaning": "Răng (số nhiều)"
+      },
+      {
+        "id": "neck",
+        "name": "Neck",
+        "meaning": "Cổ"
+      },
+      {
+        "id": "shoulder",
+        "name": "Shoulder",
+        "meaning": "Vai"
+      },
+      {
+        "id": "arm",
+        "name": "Arm",
+        "meaning": "Cánh tay"
+      },
+      {
+        "id": "hand",
+        "name": "Hand",
+        "meaning": "Bàn tay"
+      },
+      {
+        "id": "finger",
+        "name": "Finger",
+        "meaning": "Ngón tay"
+      },
+      {
+        "id": "leg",
+        "name": "Leg",
+        "meaning": "Chân"
+      },
+      {
+        "id": "knee",
+        "name": "Knee",
+        "meaning": "Đầu gối"
+      },
+      {
+        "id": "foot",
+        "name": "Foot",
+        "meaning": "Bàn chân"
+      },
+      {
+        "id": "tummy",
+        "name": "Tummy",
+        "meaning": "Bụng"
+      }
+    ]
+  },
+  {
+    "topic": "householditems",
+    "words": [
+      {
+        "id": "table",
+        "name": "Table",
+        "meaning": "Cái bàn"
+      },
+      {
+        "id": "chair",
+        "name": "Chair",
+        "meaning": "Cái ghế"
+      },
+      {
+        "id": "bed",
+        "name": "Bed",
+        "meaning": "Cái giường"
+      },
+      {
+        "id": "door",
+        "name": "Door",
+        "meaning": "Cánh cửa"
+      },
+      {
+        "id": "window",
+        "name": "Window",
+        "meaning": "Cửa sổ"
+      },
+      {
+        "id": "television",
+        "name": "Television",
+        "meaning": "Ti vi"
+      },
+      {
+        "id": "refrigerator",
+        "name": "Refrigerator",
+        "meaning": "Tủ lạnh"
+      },
+      {
+        "id": "sofa",
+        "name": "Sofa",
+        "meaning": "Ghế sofa"
+      },
+      {
+        "id": "lamp",
+        "name": "Lamp",
+        "meaning": "Đèn bàn"
+      },
+      {
+        "id": "clock",
+        "name": "Clock",
+        "meaning": "Đồng hồ"
+      },
+      {
+        "id": "mirror",
+        "name": "Mirror",
+        "meaning": "Gương"
+      },
+      {
+        "id": "sink",
+        "name": "Sink",
+        "meaning": "Bồn rửa"
+      },
+      {
+        "id": "stove",
+        "name": "Stove",
+        "meaning": "Bếp nấu"
+      },
+      {
+        "id": "wardrobe",
+        "name": "Wardrobe",
+        "meaning": "Tủ quần áo"
+      },
+      {
+        "id": "telephone",
+        "name": "Telephone",
+        "meaning": "Điện thoại"
+      },
+      {
+        "id": "fan",
+        "name": "Fan",
+        "meaning": "Quạt máy"
+      }
+    ]
+  },
+  {
+    "topic": "verbs",
+    "words": [
+      {
+        "id": "run",
+        "name": "Run",
+        "meaning": "Chạy"
+      },
+      {
+        "id": "walk",
+        "name": "Walk",
+        "meaning": "Đi bộ"
+      },
+      {
+        "id": "jump",
+        "name": "Jump",
+        "meaning": "Nhảy"
+      },
+      {
+        "id": "swim",
+        "name": "Swim",
+        "meaning": "Bơi"
+      },
+      {
+        "id": "eat",
+        "name": "Eat",
+        "meaning": "Ăn"
+      },
+      {
+        "id": "drink",
+        "name": "Drink",
+        "meaning": "Uống"
+      },
+      {
+        "id": "sleep",
+        "name": "Sleep",
+        "meaning": "Ngủ"
+      },
+      {
+        "id": "read",
+        "name": "Read",
+        "meaning": "Đọc"
+      },
+      {
+        "id": "write",
+        "name": "Write",
+        "meaning": "Viết"
+      },
+      {
+        "id": "sing",
+        "name": "Sing",
+        "meaning": "Hát"
+      },
+      {
+        "id": "dance",
+        "name": "Dance",
+        "meaning": "Nhảy múa"
+      },
+      {
+        "id": "play",
+        "name": "Play",
+        "meaning": "Chơi"
+      },
+      {
+        "id": "cook",
+        "name": "Cook",
+        "meaning": "Nấu ăn"
+      },
+      {
+        "id": "draw",
+        "name": "Draw",
+        "meaning": "Vẽ"
+      },
+      {
+        "id": "listen",
+        "name": "Listen",
+        "meaning": "Nghe"
+      },
+      {
+        "id": "watch",
+        "name": "Watch",
+        "meaning": "Xem"
+      },
+      {
+        "id": "sit",
+        "name": "Sit",
+        "meaning": "Ngồi"
+      },
+      {
+        "id": "stand",
+        "name": "Stand",
+        "meaning": "Đứng"
+      },
+      {
+        "id": "ride",
+        "name": "Ride",
+        "meaning": "Đi (xe đạp)"
+      },
+      {
+        "id": "fly",
+        "name": "Fly",
+        "meaning": "Bay"
+      }
+    ]
+  },
+  {
+    "topic": "adjectives",
+    "words": [
+      {
+        "id": "big",
+        "name": "Big",
+        "meaning": "to"
+      },
+      {
+        "id": "small",
+        "name": "Small",
+        "meaning": "nhỏ"
+      },
+      {
+        "id": "long",
+        "name": "Long",
+        "meaning": "dài"
+      },
+      {
+        "id": "short",
+        "name": "Short",
+        "meaning": "ngắn"
+      },
+      {
+        "id": "old",
+        "name": "Old",
+        "meaning": "cũ"
+      },
+      {
+        "id": "new",
+        "name": "New",
+        "meaning": "mới"
+      },
+      {
+        "id": "clean",
+        "name": "Clean",
+        "meaning": "sạch"
+      },
+      {
+        "id": "dirty",
+        "name": "Dirty",
+        "meaning": "bẩn"
+      },
+      {
+        "id": "hot",
+        "name": "Hot",
+        "meaning": "nóng"
+      },
+      {
+        "id": "cold",
+        "name": "Cold",
+        "meaning": "lạnh"
+      },
+      {
+        "id": "fast",
+        "name": "Fast",
+        "meaning": "nhanh"
+      },
+      {
+        "id": "slow",
+        "name": "Slow",
+        "meaning": "chậm"
+      }
+    ]
+  },
+  {
+    "topic": "shapes",
+    "words": [
+      {
+        "id": "circle",
+        "name": "Circle",
+        "meaning": "hình tròn"
+      },
+      {
+        "id": "square",
+        "name": "Square",
+        "meaning": "hình vuông"
+      },
+      {
+        "id": "triangle",
+        "name": "Triangle",
+        "meaning": "hình tam giác"
+      },
+      {
+        "id": "rectangle",
+        "name": "Rectangle",
+        "meaning": "hình chữ nhật"
+      },
+      {
+        "id": "oval",
+        "name": "Oval",
+        "meaning": "hình bầu dục"
+      },
+      {
+        "id": "star",
+        "name": "Star",
+        "meaning": "hình ngôi sao"
+      },
+      {
+        "id": "heart",
+        "name": "Heart",
+        "meaning": "hình trái tim"
+      },
+      {
+        "id": "diamond",
+        "name": "Diamond",
+        "meaning": "hình thoi"
+      }
+    ]
+  },
+  {
+    "topic": "toys",
+    "words": [
+      {
+        "id": "ball",
+        "name": "Ball",
+        "meaning": "quả bóng"
+      },
+      {
+        "id": "doll",
+        "name": "Doll",
+        "meaning": "búp bê"
+      },
+      {
+        "id": "teddy-bear",
+        "name": "Teddy bear",
+        "meaning": "gấu bông"
+      },
+      {
+        "id": "kite",
+        "name": "Kite",
+        "meaning": "diều"
+      },
+      {
+        "id": "robot",
+        "name": "Robot",
+        "meaning": "người máy đồ chơi"
+      },
+      {
+        "id": "toy-car",
+        "name": "Toy car",
+        "meaning": "ô tô đồ chơi"
+      },
+      {
+        "id": "train",
+        "name": "Train",
+        "meaning": "tàu hỏa đồ chơi"
+      },
+      {
+        "id": "yo-yo",
+        "name": "Yo-yo",
+        "meaning": "con quay yo-yo"
+      },
+      {
+        "id": "puzzle",
+        "name": "Puzzle",
+        "meaning": "trò ghép hình"
+      },
+      {
+        "id": "blocks",
+        "name": "Blocks",
+        "meaning": "các khối xếp hình"
+      },
+      {
+        "id": "drum",
+        "name": "Drum",
+        "meaning": "trống đồ chơi"
+      },
+      {
+        "id": "boat",
+        "name": "Boat",
+        "meaning": "thuyền đồ chơi"
+      }
+    ]
+  },
+  {
+    "topic": "weather",
+    "words": [
+      {
+        "id": "sunny",
+        "name": "Sunny",
+        "meaning": "có nắng"
+      },
+      {
+        "id": "rainy",
+        "name": "Rainy",
+        "meaning": "có mưa"
+      },
+      {
+        "id": "cloudy",
+        "name": "Cloudy",
+        "meaning": "nhiều mây"
+      },
+      {
+        "id": "windy",
+        "name": "Windy",
+        "meaning": "có gió"
+      },
+      {
+        "id": "snowy",
+        "name": "Snowy",
+        "meaning": "có tuyết"
+      },
+      {
+        "id": "stormy",
+        "name": "Stormy",
+        "meaning": "có bão"
+      },
+      {
+        "id": "foggy",
+        "name": "Foggy",
+        "meaning": "có sương mù"
+      },
+      {
+        "id": "hot",
+        "name": "Hot",
+        "meaning": "nóng"
+      }
+    ]
+  },
+  {
+    "topic": "rooms",
+    "words": [
+      {
+        "id": "bedroom",
+        "name": "Bedroom",
+        "meaning": "phòng ngủ"
+      },
+      {
+        "id": "bathroom",
+        "name": "Bathroom",
+        "meaning": "phòng tắm"
+      },
+      {
+        "id": "kitchen",
+        "name": "Kitchen",
+        "meaning": "nhà bếp"
+      },
+      {
+        "id": "living-room",
+        "name": "Living room",
+        "meaning": "phòng khách"
+      },
+      {
+        "id": "dining-room",
+        "name": "Dining room",
+        "meaning": "phòng ăn"
+      },
+      {
+        "id": "study",
+        "name": "Study",
+        "meaning": "phòng học/làm việc"
+      },
+      {
+        "id": "garage",
+        "name": "Garage",
+        "meaning": "nhà để xe"
+      }
+    ]
+  },
+  {
+    "topic": "transport",
+    "words": [
+      {
+        "id": "car",
+        "name": "Car",
+        "meaning": "ô tô"
+      },
+      {
+        "id": "bus",
+        "name": "Bus",
+        "meaning": "xe buýt"
+      },
+      {
+        "id": "bike",
+        "name": "Bike",
+        "meaning": "xe đạp"
+      },
+      {
+        "id": "train",
+        "name": "Train",
+        "meaning": "tàu hỏa"
+      },
+      {
+        "id": "plane",
+        "name": "Plane",
+        "meaning": "máy bay"
+      },
+      {
+        "id": "boat",
+        "name": "Boat",
+        "meaning": "thuyền"
+      },
+      {
+        "id": "ship",
+        "name": "Ship",
+        "meaning": "tàu thủy"
+      },
+      {
+        "id": "taxi",
+        "name": "Taxi",
+        "meaning": "xe taxi"
+      },
+      {
+        "id": "motorbike",
+        "name": "Motorbike",
+        "meaning": "xe máy"
+      },
+      {
+        "id": "truck",
+        "name": "Truck",
+        "meaning": "xe tải"
+      },
+      {
+        "id": "helicopter",
+        "name": "Helicopter",
+        "meaning": "trực thăng"
+      },
+      {
+        "id": "scooter",
+        "name": "Scooter",
+        "meaning": "xe trượt"
+      }
+    ]
+  }
+]

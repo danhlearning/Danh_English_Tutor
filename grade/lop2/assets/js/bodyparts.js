@@ -2,6 +2,7 @@
 (() => {
   'use strict';
   const lesson = window.bodyPartsLesson;
+  window.DanhPencil?.apply('bodyparts', lesson.vocabulary);
   const words = lesson.vocabulary;
   const byId = new Map(words.map(word => [word.id, word]));
   const normalize = window.Lop2Lesson.normalizeSentence;

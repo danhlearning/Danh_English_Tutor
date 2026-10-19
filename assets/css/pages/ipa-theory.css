@@ -1,3 +1,5 @@
+@import url('../../../shared/learner-font.css');
+
 :root {
             --primary-color: #1e293b;
             --accent-color: #2563eb;
@@ -22,7 +24,7 @@
         }
 
         body {
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Danh Nunito', Nunito, sans-serif;
             background-color: var(--bg-light);
             color: var(--text-main);
             line-height: 1.6;
@@ -223,6 +225,9 @@
         .word-ipa { font-family: "Times New Roman", Times, serif; color: var(--text-muted); font-size: 1.1rem; }
         
         .speak-btn {
+            min-width:44px;
+            min-height:44px;
+            flex-shrink:0;
             background: none;
             border: none;
             cursor: pointer;
@@ -247,3 +252,6 @@
             font-size: 0.9rem;
             border-top: 1px solid var(--border-color);
         }
+
+button:focus-visible, a:focus-visible { outline:3px solid #8b551b; outline-offset:3px; }
+@media(prefers-reduced-motion:reduce) { *, *::before, *::after { transition:none !important; animation:none !important; scroll-behavior:auto !important; } .speak-btn:hover { transform:none; } }

@@ -28,9 +28,9 @@ Các hoạt động gồm nghe bằng giọng thiết bị, xem từ vựng, l�
 
 ## Hình ảnh
 
-19 ảnh riêng biệt được tạo bằng công cụ imagegen tích hợp, mỗi từ một yêu cầu tạo ảnh. Ảnh lưu tại `grade/lop7/assets/images/`; mô tả đầy đủ trong `grade7-image-prompts.json`. Ảnh chân thật, khung vuông, rõ bối cảnh. Các khái niệm trừu tượng có chữ nghĩa tiếng Việt ngay trong ảnh. Driverless là hình minh họa khái niệm xe tự lái; ảnh không khẳng định một mẫu xe thương mại cụ thể có tính năng này. Người bản ngữ là người tiếp thu ngôn ngữ từ nhỏ, không xác định bằng ngoại hình hay quốc tịch.
+19 ảnh đang dùng là phiên bản `*-v2.webp` trong `grade/lop7/assets/images/`, đồng bộ 768 × 768 px. Ngày 19/10/2026 đã tạo lại 13 ảnh có nghĩa Việt trong hình và ảnh sunburn chưa rõ nghĩa, đồng thời dùng imagegen làm sạch nhãn chữ nhỏ ở donate/performance; ba cảnh phù hợp được giữ và chuẩn hóa kích thước. Mỗi ảnh có prompt riêng trong `grade7-image-prompts.json`, bản duyệt và SHA-256 ở `content/grade6-7-image-review.json`. Ảnh không có chú thích/nhãn nghĩa bên trong; nghĩa Việt là văn bản riêng bên ngoài. Driverless minh họa xe thử nghiệm tự lái với ghế lái trống, không khẳng định tính năng của mẫu xe thương mại. Native speaker minh họa giao tiếp ngôn ngữ từ nhỏ trong gia đình; không suy ra ngôn ngữ, quốc tịch hay người bản ngữ chỉ bằng ngoại hình.
 
-Ảnh xuất hiện ở danh sách từ và mặt nghĩa của thẻ. Mặt tiếng Anh, chọn nghĩa và gõ từ không hiện ảnh chứa nghĩa để tránh lộ đáp án. Các từ dễ nhận biết còn dùng biểu tượng như lớp 6.
+Ảnh xuất hiện ở danh sách từ và mặt nghĩa của thẻ. Mặt tiếng Anh, chọn từ và gõ từ không hiện ảnh để giữ nhiệm vụ nhớ từ. Các từ khác dùng biểu tượng như lớp 6. Hai lớp dùng khung vuông chung: 220 px trên điện thoại tối đa 480 px, 240 px ở màn hình lớn; ảnh co vừa khung, không cắt chủ thể. CSS ở `shared/secondary-vocabulary-visuals.css`; khung áp dụng cho cả biểu tượng và ảnh, bảng từ và mặt nghĩa lật thẻ.
 
 ## Kiểm tra
 

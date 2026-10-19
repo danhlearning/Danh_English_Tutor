@@ -1,0 +1,167 @@
+{
+  "passed": true,
+  "views": [
+    {
+      "file": "flashcard.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "file": "ipa-practice.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "file": "ipa-theory.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "file": "grammar-index.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "file": "grade/lop6/unit4.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "file": "grade/lop7/unit1.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "file": "grade/lop8/unit10.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "file": "grade/lop9/unit1.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "file": "flashcard.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "file": "ipa-practice.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "file": "ipa-theory.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "file": "grammar-index.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "file": "grade/lop6/unit4.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "file": "grade/lop7/unit1.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "file": "grade/lop8/unit10.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "file": "grade/lop9/unit1.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "file": "flashcard.html",
+      "width": 760,
+      "passed": true
+    },
+    {
+      "file": "ipa-practice.html",
+      "width": 760,
+      "passed": true
+    },
+    {
+      "file": "ipa-theory.html",
+      "width": 760,
+      "passed": true
+    },
+    {
+      "file": "grammar-index.html",
+      "width": 760,
+      "passed": true
+    },
+    {
+      "file": "grade/lop6/unit4.html",
+      "width": 760,
+      "passed": true
+    },
+    {
+      "file": "grade/lop7/unit1.html",
+      "width": 760,
+      "passed": true
+    },
+    {
+      "file": "grade/lop8/unit10.html",
+      "width": 760,
+      "passed": true
+    },
+    {
+      "file": "grade/lop9/unit1.html",
+      "width": 760,
+      "passed": true
+    },
+    {
+      "file": "flashcard.html",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "file": "ipa-practice.html",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "file": "ipa-theory.html",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "file": "grammar-index.html",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "file": "grade/lop6/unit4.html",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "file": "grade/lop7/unit1.html",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "file": "grade/lop8/unit10.html",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "file": "grade/lop9/unit1.html",
+      "width": 1280,
+      "passed": true
+    }
+  ],
+  "flows": "keyboard flip, empty states, repeated rating, category transition cancellation, review removal, end, add/reload, 200% text, timer, footer",
+  "errors": []
+}

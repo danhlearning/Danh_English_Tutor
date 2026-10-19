@@ -3,6 +3,7 @@
   'use strict';
   const topic = window.grade2Units?.[document.body.dataset.topic] || window.grade2ExtendedTopics?.[document.body.dataset.topic];
   if (!topic) throw new Error('Không tìm thấy dữ liệu chủ đề Lớp 2.');
+  window.DanhPencil?.apply(topic.id, topic.words);
   const byId = new Map(topic.words.map(word => [word.id, word]));
   const shuffle = items => {
     const result = [...items];

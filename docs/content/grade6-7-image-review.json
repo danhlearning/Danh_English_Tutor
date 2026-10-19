@@ -1,0 +1,239 @@
+{
+  "date": "2026-10-19",
+  "method": "Direct visual review of all 19 full images and normalized contact sheets, not automatic OCR.",
+  "grade6": {
+    "vocabularyItems": 96,
+    "bitmapImages": 0,
+    "note": "Uses emoji; standardized the visual frames. No Vietnamese meanings baked into bitmaps."
+  },
+  "images": [
+    {
+      "name": "balanced-diet",
+      "path": "grade/lop7/assets/images/balanced-diet-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "e07fc3405d9a42aea53b197e6e78310de64265f0d165991b9c622f3229e46553",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "celebration",
+      "path": "grade/lop7/assets/images/celebration-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "a81ba4b12d8e908396173cf3b057c232fb94f1c7f86f7d80b68839fed9bb4a2e",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "community-service",
+      "path": "grade/lop7/assets/images/community-service-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "31d76bb3def3043a5ce36ca2be8c6f4f973dfb8c8fb2cf2441cd3a739b046ee8",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "creativity",
+      "path": "grade/lop7/assets/images/creativity-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "07e05015ef1fd78180206946b15445f798c311d66fd4cdd8163c059338d83488",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "documentary",
+      "path": "grade/lop7/assets/images/documentary-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "455eaff87ba8eb584f2f36d810a17b8a46fa9fd17895f2362c7a76a1b51c8019",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "donate",
+      "path": "grade/lop7/assets/images/donate-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "842872f72fce57c8c286299afaa594d2b35cb48d165d3da40a4de513e90606e2",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "driverless",
+      "path": "grade/lop7/assets/images/driverless-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "1b75f7f3547777eceb3edfdadef8cf6326aa041b661e73cc36fde4cf45c19566",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "entrance-examination",
+      "path": "grade/lop7/assets/images/entrance-examination-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "828cf006d2363706f26255388bf9e8780371cd18a6f8cfbf671ec2e35b27ee00",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "gripping",
+      "path": "grade/lop7/assets/images/gripping-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "34b67cfb668afd15357f39e5fb3487fe9b82f6d5a58786189e7502174564d3ce",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "ingredient",
+      "path": "grade/lop7/assets/images/ingredient-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "ae84eedf7266d977eb89f6e1654e2c62fde1be1f54781a95b734baddd66cefe3",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "landmark",
+      "path": "grade/lop7/assets/images/landmark-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "91c0ccf67f949a12dab714c547103cda4b8e7e2bb06edec411cdfdea072cf2cc",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "native-speaker",
+      "path": "grade/lop7/assets/images/native-speaker-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "cab087f029c479787ee06dffdcadd3adbf88d05318fff18c6a587cf8a795d085",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "non-renewable-energy",
+      "path": "grade/lop7/assets/images/non-renewable-energy-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "97abcf26e4727ccd640b101244b0131818d62eade7790db8d971da175c29ee91",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "pedestrian",
+      "path": "grade/lop7/assets/images/pedestrian-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "retained-and-standardized",
+      "sha256": "ea19b17675761e0f37631b6d9e6ccc224dab830e837d8897f83f17e1ee68a69a",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "performance",
+      "path": "grade/lop7/assets/images/performance-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "3965fe56b413a296dd4517e749701e3cfeb3a9a151fdf32149b166d967dfb5b6",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "renewable-energy",
+      "path": "grade/lop7/assets/images/renewable-energy-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "3420f0f7daedcf6f654895e37d2b5151bcbeeba88ab80f3ff25344766898cc8a",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "sunburn",
+      "path": "grade/lop7/assets/images/sunburn-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "ae64edeb580991d92a471bd4774f45a79776394b25874fb26bb3603451c73c55",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "traffic-jam",
+      "path": "grade/lop7/assets/images/traffic-jam-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "retained-and-standardized",
+      "sha256": "f1fe9c6d7f814d16a9498a3b44ec501803118542987010e3d92e13b0cb165df9",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "water-puppet-show",
+      "path": "grade/lop7/assets/images/water-puppet-show-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "retained-and-standardized",
+      "sha256": "53ac2cadcf20936bd5dc51950cbd7f4a8f9bbf555cd0de4c6d20c8c28e937680",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    }
+  ]
+}

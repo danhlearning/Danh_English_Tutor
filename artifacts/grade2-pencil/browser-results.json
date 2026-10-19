@@ -1,0 +1,780 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "topic": "clothes",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "clothes",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "clothes",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "clothes",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "clothes",
+      "mode": "vocab",
+      "width": 390,
+      "words": 20
+    },
+    {
+      "topic": "dates",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "dates",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "dates",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "dates",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "dates",
+      "mode": "vocab",
+      "width": 390,
+      "words": 19
+    },
+    {
+      "topic": "familyfriends",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "familyfriends",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "familyfriends",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "familyfriends",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "familyfriends",
+      "mode": "vocab",
+      "width": 390,
+      "words": 20
+    },
+    {
+      "topic": "feeling",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "feeling",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "feeling",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "feeling",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "feeling",
+      "mode": "vocab",
+      "width": 390,
+      "words": 20
+    },
+    {
+      "topic": "fooddrinks",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "fooddrinks",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "fooddrinks",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "fooddrinks",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "fooddrinks",
+      "mode": "vocab",
+      "width": 390,
+      "words": 20
+    },
+    {
+      "topic": "fruits",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "fruits",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "fruits",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "fruits",
+      "mode": "game-count",
+      "width": 390,
+      "art": 8
+    },
+    {
+      "topic": "fruits",
+      "mode": "vocab",
+      "width": 390,
+      "words": 18
+    },
+    {
+      "topic": "schoolsupplies",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "schoolsupplies",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "schoolsupplies",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "schoolsupplies",
+      "mode": "game-count",
+      "width": 390,
+      "art": 2
+    },
+    {
+      "topic": "schoolsupplies",
+      "mode": "vocab",
+      "width": 390,
+      "words": 25
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "vocab",
+      "width": 390,
+      "words": 16
+    },
+    {
+      "topic": "householditems",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "householditems",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "householditems",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "householditems",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "householditems",
+      "mode": "vocab",
+      "width": 390,
+      "words": 16
+    },
+    {
+      "topic": "verbs",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "verbs",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "verbs",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "verbs",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "verbs",
+      "mode": "vocab",
+      "width": 390,
+      "words": 20
+    },
+    {
+      "topic": "adjectives",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "adjectives",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "adjectives",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "adjectives",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "adjectives",
+      "mode": "vocab",
+      "width": 390,
+      "words": 12
+    },
+    {
+      "topic": "shapes",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "shapes",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "shapes",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "shapes",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "shapes",
+      "mode": "vocab",
+      "width": 390,
+      "words": 8
+    },
+    {
+      "topic": "toys",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "toys",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "toys",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "toys",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "toys",
+      "mode": "vocab",
+      "width": 390,
+      "words": 12
+    },
+    {
+      "topic": "weather",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "weather",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "weather",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "weather",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "weather",
+      "mode": "vocab",
+      "width": 390,
+      "words": 8
+    },
+    {
+      "topic": "rooms",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "rooms",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "rooms",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "rooms",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "rooms",
+      "mode": "vocab",
+      "width": 390,
+      "words": 7
+    },
+    {
+      "topic": "transport",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "transport",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "transport",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "transport",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "transport",
+      "mode": "vocab",
+      "width": 390,
+      "words": 12
+    },
+    {
+      "topic": "clothes",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 20
+    },
+    {
+      "topic": "dates",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 19
+    },
+    {
+      "topic": "familyfriends",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 20
+    },
+    {
+      "topic": "feeling",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 20
+    },
+    {
+      "topic": "fooddrinks",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 20
+    },
+    {
+      "topic": "fruits",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 18
+    },
+    {
+      "topic": "schoolsupplies",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 25
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 16
+    },
+    {
+      "topic": "householditems",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 16
+    },
+    {
+      "topic": "verbs",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 20
+    },
+    {
+      "topic": "adjectives",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 12
+    },
+    {
+      "topic": "shapes",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 8
+    },
+    {
+      "topic": "toys",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 12
+    },
+    {
+      "topic": "weather",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 8
+    },
+    {
+      "topic": "rooms",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 7
+    },
+    {
+      "topic": "transport",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 12
+    },
+    {
+      "topic": "clothes",
+      "mode": "vocab",
+      "width": 320,
+      "words": 20
+    },
+    {
+      "topic": "dates",
+      "mode": "vocab",
+      "width": 320,
+      "words": 19
+    },
+    {
+      "topic": "familyfriends",
+      "mode": "vocab",
+      "width": 320,
+      "words": 20
+    },
+    {
+      "topic": "feeling",
+      "mode": "vocab",
+      "width": 320,
+      "words": 20
+    },
+    {
+      "topic": "fooddrinks",
+      "mode": "vocab",
+      "width": 320,
+      "words": 20
+    },
+    {
+      "topic": "fruits",
+      "mode": "vocab",
+      "width": 320,
+      "words": 18
+    },
+    {
+      "topic": "schoolsupplies",
+      "mode": "vocab",
+      "width": 320,
+      "words": 25
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "vocab",
+      "width": 320,
+      "words": 16
+    },
+    {
+      "topic": "householditems",
+      "mode": "vocab",
+      "width": 320,
+      "words": 16
+    },
+    {
+      "topic": "verbs",
+      "mode": "vocab",
+      "width": 320,
+      "words": 20
+    },
+    {
+      "topic": "adjectives",
+      "mode": "vocab",
+      "width": 320,
+      "words": 12
+    },
+    {
+      "topic": "shapes",
+      "mode": "vocab",
+      "width": 320,
+      "words": 8
+    },
+    {
+      "topic": "toys",
+      "mode": "vocab",
+      "width": 320,
+      "words": 12
+    },
+    {
+      "topic": "weather",
+      "mode": "vocab",
+      "width": 320,
+      "words": 8
+    },
+    {
+      "topic": "rooms",
+      "mode": "vocab",
+      "width": 320,
+      "words": 7
+    },
+    {
+      "topic": "transport",
+      "mode": "vocab",
+      "width": 320,
+      "words": 12
+    },
+    {
+      "topic": "clothes",
+      "mode": "vocab",
+      "width": 760,
+      "words": 20
+    },
+    {
+      "topic": "dates",
+      "mode": "vocab",
+      "width": 760,
+      "words": 19
+    },
+    {
+      "topic": "familyfriends",
+      "mode": "vocab",
+      "width": 760,
+      "words": 20
+    },
+    {
+      "topic": "feeling",
+      "mode": "vocab",
+      "width": 760,
+      "words": 20
+    },
+    {
+      "topic": "fooddrinks",
+      "mode": "vocab",
+      "width": 760,
+      "words": 20
+    },
+    {
+      "topic": "fruits",
+      "mode": "vocab",
+      "width": 760,
+      "words": 18
+    },
+    {
+      "topic": "schoolsupplies",
+      "mode": "vocab",
+      "width": 760,
+      "words": 25
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "vocab",
+      "width": 760,
+      "words": 16
+    },
+    {
+      "topic": "householditems",
+      "mode": "vocab",
+      "width": 760,
+      "words": 16
+    },
+    {
+      "topic": "verbs",
+      "mode": "vocab",
+      "width": 760,
+      "words": 20
+    },
+    {
+      "topic": "adjectives",
+      "mode": "vocab",
+      "width": 760,
+      "words": 12
+    },
+    {
+      "topic": "shapes",
+      "mode": "vocab",
+      "width": 760,
+      "words": 8
+    },
+    {
+      "topic": "toys",
+      "mode": "vocab",
+      "width": 760,
+      "words": 12
+    },
+    {
+      "topic": "weather",
+      "mode": "vocab",
+      "width": 760,
+      "words": 8
+    },
+    {
+      "topic": "rooms",
+      "mode": "vocab",
+      "width": 760,
+      "words": 7
+    },
+    {
+      "topic": "transport",
+      "mode": "vocab",
+      "width": 760,
+      "words": 12
+    }
+  ],
+  "errors": [],
+  "bad": [],
+  "excluded": [
+    "animals",
+    "colors",
+    "numbers"
+  ]
+}

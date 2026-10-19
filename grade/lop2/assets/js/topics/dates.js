@@ -66,6 +66,8 @@
     { num: 'Nov', name: 'November', ipa: '/nəʊˈvɛmbə/', meaning: 'Tháng 11', hex: '#38A169', category: 'month' },
     { num: 'Dec', name: 'December', ipa: '/dɪˈsɛmbə/', meaning: 'Tháng 12', hex: '#9F7AEA', category: 'month' }
   ];
+  window.DanhPencil?.apply('dates', daysAndMonthsVocab);
+
 
   /* DỮ LIỆU GAME 4: BỘ ĐỀ 50 CÂU HỎI */
   const dateQuestions = [
@@ -121,6 +123,8 @@
     { main: '15/11', sub: 'Ngày 15 tháng 11', target: 'November 15th', answer: 'It is November 15th' },
     { main: '24/12', sub: 'Ngày 24 tháng 12', target: 'December 24th', answer: 'It is December 24th' }
   ];
+  window.DanhPencil?.questions('dates', dateQuestions, daysAndMonthsVocab);
+
 
   let flashcardDeck = [];
 
@@ -439,7 +443,8 @@
     input.style.borderColor = '#CBD5E0';
     input.focus();
 
-    mainBox.innerText = item.main;
+    mainBox.innerHTML = window.DanhPencil?.picture('dates', item.target) || '';
+    if (!mainBox.innerHTML) mainBox.textContent = item.main;
     subBox.innerText = item.sub;
   }
 
