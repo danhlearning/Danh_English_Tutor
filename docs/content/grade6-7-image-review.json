@@ -242,5 +242,18 @@
       "reviewedVisually": true,
       "noCaptionOrReadableText": true
     }
-  ]
+  ],
+  "grade7": {
+    "date": "2026-10-21",
+    "vocabularyItems": 96,
+    "bitmapImages": 96,
+    "reviewedVisually": 96,
+    "size": [
+      768,
+      768
+    ],
+    "style": "colored pencil",
+    "reviewFile": "artifacts/grade7-pencil/final-prompts.json",
+    "note": "96 tranh thay bộ 19 ảnh cũ; giữ nghĩa và ví dụ ngoài ảnh. Danh sách images là hồ sơ ảnh cũ, không phải ảnh runtime hiện tại."
+  }
 }

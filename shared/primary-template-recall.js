@@ -34,7 +34,7 @@
       const line=el('div',undefined,'g4-answer-line'),input=el('input');
       input.type='text';input.id='recall-answer';input.autocomplete='off';input.autocapitalize='off';input.spellcheck=false;input.value=task.result?word.name:task.draft;input.disabled=!!task.result;input.placeholder='Gõ từ hoặc cụm từ tiếng Anh';input.setAttribute('aria-label',context?'Điền từ vào câu':'Gõ từ tiếng Anh cần ôn');
       const feedback=el('p',task.result?`${labels[task.result]} · ${word.name} — ${word.meaning}`:task.errors?'Chưa đúng. Em thử lại nhé.':'','g4-feedback');feedback.setAttribute('role','status');
-      const finish=result=>{if(task.result||!active)return;pause();task.result=result;save();record(word,result,task.errors);update();fx.feedback(result==='first'?'good':result==='corrected'?'corrected':'help');render();};
+      const finish=result=>{if(task.result||!active)return;pause();task.result=result;save();record(word,result,task.errors);update();fx.feedback(result==='first'?'good':result==='corrected'?'corrected':'help');render();if(result==='first'||result==='corrected')window.DanhAnswerSpeech.say(word.name);};
       const check=button('Kiểm tra',()=>{if(task.result||!active)return;const attempt=normal(input.value);if(!attempt){feedback.textContent='Hãy gõ câu trả lời trước nhé.';input.focus();return;}if(attempt===normal(word.name))finish(task.errors?'corrected':'first');else{task.errors++;save();record(word,'wrong',task.errors);update();feedback.textContent='Chưa đúng. Nhìn tranh, đọc nghĩa và thử lại nhé!';input.setAttribute('aria-invalid','true');fx.feedback('bad');input.focus();}});
       check.disabled=!!task.result;
       input.addEventListener('input',()=>{task.draft=input.value;input.removeAttribute('aria-invalid');save();});

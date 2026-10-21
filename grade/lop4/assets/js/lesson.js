@@ -34,7 +34,7 @@
   function speak(value) {
     try {
       if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') {
-        el('speech-note').textContent = 'Trình duyệt này chưa hỗ trợ đọc tiếng Anh.';
+        window.DanhAnswerSpeech.say(value);
         return;
       }
       window.speechSynthesis.cancel();

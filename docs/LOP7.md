@@ -6,10 +6,7 @@
 
 Các hoạt động gồm nghe bằng giọng thiết bị, xem từ vựng, lật thẻ, chọn nghĩa, gõ từ; ngữ pháp có Unit/học kỳ, điểm, chuỗi đúng, gợi ý trễ và đáp án sau hai lần sai hoặc một phút. Bộ nhớ tiến độ lớp 7 dùng khóa riêng, không lẫn với lớp 6. Kế thừa kiểu chữ lớn trên điện thoại của lớp 6.
 
-## Nguồn đối chiếu
-
-- Danh sách 12 Unit Tiếng Anh 7 Global Success.
-- [Book Map và ngữ pháp trong tài liệu tập huấn của NXBGDVN](https://medialib.qlgd.edu.vn/Uploads/THU_VIEN/shn/2/37/UserFiles/TLBD-Anh-7---Global-Success-434ab8a9-7aa0-48d3-a228-a433dd62d185.pdf), trang in 6–7, trang PDF 12.
+## Chủ điểm
 
 | Unit | Chủ điểm ngữ pháp |
 | --- | --- |
@@ -28,9 +25,17 @@ Các hoạt động gồm nghe bằng giọng thiết bị, xem từ vựng, l�
 
 ## Hình ảnh
 
-19 ảnh đang dùng là phiên bản `*-v2.webp` trong `grade/lop7/assets/images/`, đồng bộ 768 × 768 px. Ngày 19/10/2026 đã tạo lại 13 ảnh có nghĩa Việt trong hình và ảnh sunburn chưa rõ nghĩa, đồng thời dùng imagegen làm sạch nhãn chữ nhỏ ở donate/performance; ba cảnh phù hợp được giữ và chuẩn hóa kích thước. Mỗi ảnh có prompt riêng trong `grade7-image-prompts.json`, bản duyệt và SHA-256 ở `content/grade6-7-image-review.json`. Ảnh không có chú thích/nhãn nghĩa bên trong; nghĩa Việt là văn bản riêng bên ngoài. Driverless minh họa xe thử nghiệm tự lái với ghế lái trống, không khẳng định tính năng của mẫu xe thương mại. Native speaker minh họa giao tiếp ngôn ngữ từ nhỏ trong gia đình; không suy ra ngôn ngữ, quốc tịch hay người bản ngữ chỉ bằng ngoại hình.
+Ngày 21/10/2026: dùng đủ 96 tranh bút chì màu, 768 × 768 px, tại `grade/lop7/assets/images/pencil/unit1/` đến `unit12/`, thay bộ 19 ảnh cũ. Nguồn, prompt cuối và SHA-256 ở `artifacts/grade7-pencil/final-prompts.json`; trang duyệt đủ tranh ở `artifacts/grade7-pencil/review.html`. Giữ hai bản sửa đồng xu và máy ảnh. Ảnh không có chữ/nhãn nghĩa bên trong; nghĩa Việt nằm ngoài ảnh. Native speaker dùng cảnh giao tiếp từ nhỏ trong gia đình; nghĩa và ví dụ giải thích khái niệm, không suy ra ngôn ngữ từ ngoại hình.
 
-Ảnh xuất hiện ở danh sách từ và mặt nghĩa của thẻ. Mặt tiếng Anh, chọn từ và gõ từ không hiện ảnh để giữ nhiệm vụ nhớ từ. Các từ khác dùng biểu tượng như lớp 6. Hai lớp dùng khung vuông chung: 220 px trên điện thoại tối đa 480 px, 240 px ở màn hình lớn; ảnh co vừa khung, không cắt chủ thể. CSS ở `shared/secondary-vocabulary-visuals.css`; khung áp dụng cho cả biểu tượng và ảnh, bảng từ và mặt nghĩa lật thẻ.
+Ảnh xuất hiện ở danh sách từ và mặt nghĩa của thẻ. Mặt tiếng Anh, chọn từ và gõ từ không hiện ảnh để giữ nhiệm vụ nhớ từ. Cả 96 từ có tranh riêng; biểu tượng chỉ là dự phòng khi ảnh lỗi. Khung ảnh chung ở `shared/secondary-vocabulary-visuals.css`, co vừa khung và không cắt chủ thể. Giữ tông lavender, chất giấy và bìa riêng lớp 7; cấu trúc/cách chơi theo mẫu lớp 6 mới nhất. Phiên bản tải dữ liệu `pencil-20261021` được giữ trong bộ đồng bộ mẫu.
+
+## Bản hoàn thiện hiện tại
+
+576 mục gồm 432 mục ngữ pháp gốc (144 chọn, 144 điền, 36 xếp, 36 sửa lỗi, 72 viết lại), 24 mục nhận biết phát âm và 120 mục giới từ trong 12 đoạn văn (10 chỗ trống/đoạn). Nhiều dạng có thể luyện cùng ngữ cảnh; không coi đây là 576 ngữ cảnh độc lập. Viết lại đối chiếu đáp án mẫu; phát âm không chấm giọng nói. Lượt có tối đa 10 mục và báo đúng số thực tế. Giữ URL, ID từ/câu và khóa lớp 7/hồ sơ. Lật thẻ không ghi thành thạo; chọn từ tách đúng ngay, tự sửa và xem đáp án. Gõ từ chưa khôi phục nguyên lượt dở. Không hiện UI điều chỉnh âm/chuyển động, không tự phát khi tải trang.
+
+Kiểm tra hiện tại: `node --test grade/lop7/tests/content.test.cjs tests/secondary-images/grade7-pencil.test.cjs tests/secondary-images/content.test.cjs tests/secondary-template/content.test.cjs`; `node tests/secondary-images/grade7-pencil.browser.cjs`; đặt `TEST_GRADES=7` rồi chạy `node tests/secondary-template/browser.cjs`. Bản ghi lớp được chọn không ghi đè kết quả kiểm tra cả bảy lớp. Hai bài trình duyệt này thay cho selector của giao diện cũ trong `grade/lop7/tests/browser-smoke.cjs`.
+
+Đã kiểm tra 36 trang Unit ở 320/390/1280px, đủ 96 mặt thẻ, fallback ảnh lỗi, luồng đúng/sai/tự sửa/nhấn lặp/tải lại/tiếp tục, gõ từ, hai học kỳ và bốn nhóm ngữ pháp ở Unit 1/12; hồ sơ riêng và bộ nhớ bị chặn. Chặn mạng ngoài, xem trực tiếp ảnh chụp máy tính/điện thoại và chữ Việt. Kết quả ở `artifacts/grade7-pencil/browser-results.json` và `artifacts/secondary-template/browser-results-selected.json`. Đây là Edge mô phỏng, chưa kiểm tra điện thoại vật lý hoặc nghe âm bằng tai. Phần kiểm tra cũ bên dưới là lịch sử.
 
 ## Kiểm tra
 

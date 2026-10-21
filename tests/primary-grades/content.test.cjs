@@ -28,6 +28,9 @@ test('Danh mục lớp 1–5 có đường dẫn hoạt động và giữ URL c�
   for(const grade of [1,2,3,4,5]) {
     const href=`grade/lop${grade}/lop${grade}.html`;
     assert.ok(home.includes(`href="${href}"`));
-    assert.ok(fs.readFileSync(path.join(root,href),'utf8').includes(`<primary-grade-nav grade="${grade}">`));
+    const catalog=fs.readFileSync(path.join(root,href),'utf8');
+    assert.ok(catalog.includes('href="../../index.html"'));
+    assert.ok(catalog.includes(`grade${grade}-cover-pencil-v1.webp`));
+    assert.ok(!catalog.includes('<primary-grade-nav'));
   }
 });

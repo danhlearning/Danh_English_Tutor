@@ -1,0 +1,12 @@
+{
+  "unit": 1,
+  "wordId": 3,
+  "term": "collecting coins",
+  "meaning": "sưu tầm tiền xu",
+  "example": "Nam likes collecting coins from different countries.",
+  "file": "grade/lop7/assets/images/pencil/unit1/3-v1.webp",
+  "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: collecting coins. Scene: Nam likes collecting coins from different countries. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024.",
+  "mode": "built-in image_gen",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-44e2c0b2-4a4d-4547-8344-e92588d08066.png",
+  "repairPrompt": "Edit this existing colored-pencil illustration only: remove every tiny letter, numeral and inscription from ALL coin faces. Keep pictorial embossed motifs such as leaves, simple portraits and architecture, but no lettering or numbers at all. Keep the boy, pose, coin album, room, composition, paper, pencil texture and colours unchanged. Do not add any writing anywhere."
+}

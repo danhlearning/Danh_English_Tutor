@@ -131,6 +131,7 @@
       effects.feedback('bad',el('question'));return;
     }
     play();effects.feedback(status==='first'?'good':'corrected',el('question'));el('next').focus({preventScroll:true});
+    window.DanhAnswerSpeech.say(model.expected());
   }
   el('answer').addEventListener('input',()=>{model.draft(el('answer').value);storageNotice();});
   el('answer-form').addEventListener('submit',e=>{e.preventDefault();submit(el('answer').value);});

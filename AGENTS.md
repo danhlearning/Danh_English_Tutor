@@ -12,7 +12,17 @@
 
 ## Nội dung và giao diện
 
+### Mẫu thống nhất lớp 6–12
+
+- Phiên bản mới nhất của lớp 6 là mẫu cấu trúc, cách chơi và thiết lập cho lớp 6–12. Khi tạo hoặc hoàn thiện lớp, đối chiếu trực tiếp mẫu lớp 6 đang có; áp dụng đủ danh mục, Unit, từ vựng, lật thẻ, chọn từ, gõ từ và các dạng luyện ngữ pháp. Nội dung theo đúng lớp, không đổi tên bài lớp 6 để dùng cho lớp khác.
+- Vẫn giữ **tông màu, chất giấy kraft và ảnh bìa riêng cho từng lớp** để đa dạng. Thống nhất cấu trúc không có nghĩa là dùng chung màu hoặc bìa.
+- Không hiển thị UI điều chỉnh **âm thanh/chuyển động** trên các trang lớp 6–12 theo yêu cầu trực tiếp của người dùng. Âm phản hồi sau thao tác, nút nghe phục vụ học và tôn trọng giảm chuyển động của thiết bị vẫn áp dụng; không tự đọc hoặc phát âm khi mở trang.
+- Ảnh tạo mới theo phong cách **vẽ bút chì màu**, đúng nghĩa, không chữ trong hình; kiểm tra trực tiếp từng ảnh trước bàn giao. Giữ URL, ID từ/câu và tiến độ riêng từng lớp/hồ sơ khi nâng cấp.
+
 - Thương hiệu của sản phẩm là **Danh English Tutor**.
+- Quy tắc giọng đọc xuyên suốt repo: mỗi lần người học chọn hoặc nhập đáp án đúng, kể cả tự sửa đúng, phải có giọng đọc tiếng Anh của từ/cụm từ tương ứng; với nhiệm vụ cả câu, đọc câu đúng. Giữ nút nghe lại khi có. Không chỉ phát âm correct rồi bỏ qua giọng đọc; không đọc nhãn A/B/C/D, tiếng Việt hoặc ký hiệu IPA thay cho từ mẫu. Không tự đọc khi mở trang, khôi phục câu đã chấm hoặc nhấn lặp; tôn trọng lựa chọn tắt âm và dừng khi rời/ẩn trang. Kiểm tra sự kiện đọc thực tế cho cả đúng ngay và tự sửa đúng trước bàn giao.
+- Giọng đọc phải có tệp âm thanh nội bộ dự phòng qua `DanhAnswerSpeech` khi trình duyệt thiếu hoặc lỗi Web Speech. Không nghiệm thu chỉ bằng mock `speechSynthesis.speak`: phải kiểm tra sự kiện media `playing`/`ended` với Web Speech bị vô hiệu hóa, và đổi phiên bản URL script khi cập nhật để tab cũ nạp bản mới. Bổ sung đáp án mới vào `scripts/build-answer-audio-plan.cjs` rồi dựng tệp âm thanh tương ứng.
+- Mọi chỗ trống (gap) trong bài tập trên toàn repo phải hiển thị bằng **một nét gạch liền**, không dùng ba dấu gạch rời. Dùng bộ hiển thị chung `shared/exercise-gaps.js` và CSS trong `shared/learner-font.css`; ký hiệu placeholder nội bộ được giữ nguyên để không phá bộ dựng, chấm bài hoặc lượt dở. Trang/mẫu mới phải tải bộ chung qua `shared/learner-profile.js`.
 - Không viết câu phụ (subtitle/sub) giải thích lại tiêu đề trong giao diện. Tiêu đề phải tự nói rõ nội dung; không thêm mô tả hiển nhiên bên dưới hoặc lặp ý bằng cách diễn đạt khác. Áp dụng từ nay cho mọi trang, mục và thành phần mới hoặc được chỉnh sửa. Hướng dẫn thao tác cần thiết của trò chơi đặt tại nơi thực hiện thao tác; slogan thương hiệu đã được người dùng duyệt giữ theo yêu cầu riêng.
 - Nguồn đối chiếu bên ngoài chỉ dùng để tham khảo trong quá trình biên soạn. Không đưa tên thương hiệu hoặc đường dẫn của đơn vị phát hành nguồn đối chiếu vào UX/UI, mã nguồn, chú thích, dữ liệu, tài liệu hay các tệp tạo mới trong dự án.
 - Có thể giữ tên bộ sách, lớp, Unit và chủ đề để học sinh chọn bài phù hợp. Nội dung luyện tập, ví dụ và hình minh họa được biên soạn riêng cho website.

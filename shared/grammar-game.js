@@ -4,6 +4,7 @@ window.DanhGrammarGame = config => {
   const questions = window[`DanhGrade${grade}Grammar`] || [];
   const ROUND_LENGTH = 10;
   const units = window[`DanhGrade${grade}Units`] || [];
+  const termSplit = config.termSplit || 6;
   const $ = id => document.getElementById(id);
   const defaultState = { streak: 0, bestStreak: 0, points: 0, correct: 0, answered: {} };
   let state = { ...defaultState };
@@ -22,7 +23,7 @@ window.DanhGrammarGame = config => {
     $('correct-count').textContent = state.correct;
   };
   const chosen = name => document.querySelector(`input[name="${name}"]:checked`).value;
-  const scopeName = (value, unit = $('unit-select').value) => value === 'term1' ? 'Ôn học kỳ 1 · Unit 1–6' : value === 'term2' ? 'Ôn học kỳ 2 · Unit 7–12' : `Unit ${unit}`;
+  const scopeName = (value, unit = $('unit-select').value) => value === 'term1' ? `Ôn học kỳ 1 · Unit 1–${termSplit}` : value === 'term2' ? `Ôn học kỳ 2 · Unit ${termSplit+1}–${units.length}` : `Unit ${unit}`;
   const levelName = value => ({ easy: 'Dễ', medium: 'Vừa', hard: 'Khó' })[value];
   const typeName = value => ({ choice: 'Chọn đáp án', fill: 'Điền từ', order: 'Xếp câu', correct: 'Sửa lỗi · viết cả câu', rewrite: 'Viết lại câu', pronunciation: 'Phát âm', preposition: 'Giới từ · đoạn văn' })[value];
   const normal = value => String(value).toLocaleLowerCase('en').replace(/[’‘]/g, "'").replace(/[,.!?]/g, '').replace(/\s+/g, ' ').trim();
@@ -37,14 +38,14 @@ window.DanhGrammarGame = config => {
   };
   const selectPool = () => {
     const scope = chosen('scope'), level = chosen('level');
-    return questions.filter(item => (chosen('activity') === 'grammar' ? !['pronunciation', 'preposition'].includes(item.type) : item.type === chosen('activity')) && (['pronunciation','preposition'].includes(chosen('activity')) || item.level === level) && (scope === 'unit' ? item.unit === Number($('unit-select').value) : scope === 'term1' ? item.unit <= 6 : item.unit >= 7));
+    return questions.filter(item => (chosen('activity') === 'grammar' ? !['pronunciation', 'preposition'].includes(item.type) : item.type === chosen('activity')) && (['pronunciation','preposition'].includes(chosen('activity')) || item.level === level) && (scope === 'unit' ? item.unit === Number($('unit-select').value) : scope === 'term1' ? item.unit <= termSplit : item.unit > termSplit));
   };
   const updateSelection = () => {
     const scope = chosen('scope');
     $('unit-select').disabled = scope !== 'unit';
     const byUnit = ['pronunciation','preposition'].includes(chosen('activity'));
     document.querySelectorAll('input[name="level"]').forEach(input => { input.disabled = byUnit; });
-    $('selection-summary').textContent = `${scopeName(scope)} · ${byUnit ? (chosen('activity') === 'pronunciation' ? `Phát âm Anh–Anh · ${grade===6?'Unit 10: trọng âm · 11: nhịp · 12: ngữ điệu':'Unit 9–10: trọng âm · 11: trọng âm câu · 12: ngữ điệu'}` : 'Một đoạn văn · 5 phần · 10 chỗ trống') : `Cấp ${levelName(chosen('level'))}`} · ${Math.min(ROUND_LENGTH, selectPool().length)} câu`;
+    $('selection-summary').textContent = `${scopeName(scope)} · ${byUnit ? (chosen('activity') === 'pronunciation' ? (config.pronunciationSummary || `Phát âm Anh–Anh · ${grade===6?'Unit 10: trọng âm · 11: nhịp · 12: ngữ điệu':'Unit 9–10: trọng âm · 11: trọng âm câu · 12: ngữ điệu'}`) : 'Một đoạn văn · 5 phần · 10 chỗ trống') : `Cấp ${levelName(chosen('level'))}`} · ${Math.min(ROUND_LENGTH, selectPool().length)} câu`;
     $('start').textContent = `Bắt đầu làm`;
   };
   for (const unit of units) {
@@ -54,7 +55,7 @@ window.DanhGrammarGame = config => {
   const requestedUnit = Number(new URLSearchParams(location.search).get('unit'));
   if (Number.isInteger(requestedUnit) && requestedUnit >= 1 && requestedUnit <= units.length) $('unit-select').value = requestedUnit;
   document.querySelectorAll('.gg-fields input, #unit-select').forEach(input => input.addEventListener('change',()=>{updateSelection();respond('tap',input.closest('label')||input);}));
-  $('library-count').textContent = `${questions.length.toLocaleString('vi-VN')} câu hỏi · 12 Unit`;
+  $('library-count').textContent = `${questions.length.toLocaleString('vi-VN')} mục luyện · ${units.length} Unit`;
   updateSelection(); updateStats();
 
   let round = null;
@@ -150,6 +151,7 @@ window.DanhGrammarGame = config => {
     checkpoint();
     const kind=revealed?'help':attempts>1?'corrected':effects.isMilestone(state.streak)?'streak':'good';
     respond(kind);
+    if(!revealed)window.DanhAnswerSpeech.question(question);
     if(kind==='streak') {const badge=document.createElement('strong');badge.className='gg-streak-reward';badge.textContent=`🔥 ${state.streak} câu đúng liên tiếp!`;$('feedback').prepend(badge);}
   };
   const submitAnswer = (value, choiceButton = null) => {

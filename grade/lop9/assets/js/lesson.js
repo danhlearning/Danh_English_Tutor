@@ -24,12 +24,8 @@
   };
   const speak = term => {
     const status = $('#speech-note');
-    if (!window.DanhVocabularyGame.soundEnabled()) { status.textContent = 'Âm thanh đang tắt. Bật âm thanh để nghe từ nhé.'; return; }
-    if (!('speechSynthesis' in window)) { status.textContent = 'Trình duyệt này chưa hỗ trợ giọng đọc.'; return; }
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(term);
-    utterance.lang = 'en-GB'; utterance.rate = 0.82;
-    window.speechSynthesis.speak(utterance);
+    if (!window.DanhVocabularyGame.soundEnabled()) { status.textContent = 'Âm thanh đang tắt.'; return; }
+    window.DanhAnswerSpeech.say(term);
     status.textContent = `Đang đọc: ${term}`;
   };
   const button = (label, callback, className = '') => {
@@ -37,16 +33,25 @@
     element.textContent = label; element.addEventListener('click', callback); return element;
   };
   const illustration = (word, className) => {
+    const frame = document.createElement('span');
+    frame.className = className === 'g6-word-icon' ? 'g6-word-visual' : 'g6-flash-visual';
     if (word.image) {
       const image = document.createElement('img');
       image.className = className; image.src = word.image;
       image.alt = `Minh họa: ${word.meaning}`;
       image.width = 768; image.height = 768; image.loading = 'lazy';
-      return image;
+      image.addEventListener('error', () => {
+        image.remove();
+        const fallback = document.createElement('span');
+        fallback.className = `${className} g6-symbol-art`;
+        fallback.textContent = word.icon; fallback.setAttribute('aria-hidden', 'true');
+        frame.append(fallback);
+      }, {once:true});
+      frame.append(image); return frame;
     }
-    const icon = document.createElement('span');
-    icon.className = className; icon.textContent = word.icon;
-    icon.setAttribute('aria-hidden', 'true'); return icon;
+    const icon = document.createElement('span'); icon.className = `${className} g6-symbol-art`;
+    icon.textContent = word.icon; icon.classList.toggle('g6-composite-symbol', word.icon.includes('\u200d'));
+    icon.setAttribute('aria-hidden', 'true'); frame.append(icon); return frame;
   };
   const vocab = $('#vocab-grid');
   for (const word of unit.words) {
@@ -116,7 +121,7 @@
         solved = true;
         if (attempts === 0) { spellingScore++; spellingStreak++; } else spellingStreak=0;
         streak.textContent=`🔥 ${spellingStreak} câu đúng liên tiếp`;
-        window.DanhVocabularyGame.feedback(attempts ? 'corrected' : window.DanhVocabularyGame.isMilestone(spellingStreak) ? 'streak' : 'good',spellingStage); feedback.textContent = 'Đúng rồi! 🌟'; input.disabled = true; submit.disabled = true; reveal.hidden = true; next.hidden = false; window.DanhVocabularyGame.afterFeedback(() => speak(word.term));
+        window.DanhVocabularyGame.feedback(attempts ? 'corrected' : window.DanhVocabularyGame.isMilestone(spellingStreak) ? 'streak' : 'good',spellingStage); feedback.textContent = 'Đúng rồi! 🌟'; input.disabled = true; submit.disabled = true; reveal.hidden = true; next.hidden = false; window.DanhAnswerSpeech.say(word.term);
       } else { spellingStreak=0;streak.textContent='🔥 0 câu đúng liên tiếp';window.DanhVocabularyGame.feedback('bad',form); attempts++; feedback.textContent = 'Chưa đúng, em thử lại nhé.'; reveal.hidden = attempts < 2; input.focus(); input.select(); }
     });
     form.append(input, submit);

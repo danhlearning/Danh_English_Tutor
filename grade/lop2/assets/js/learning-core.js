@@ -214,12 +214,13 @@
     const cancel = () => { clearTimeout(timer); clearTimeout(revealTimer); timer = revealTimer = null; scheduleToken++; };
     const stopSpeech = () => {
       if (finishCurrentSpeech) finishCurrentSpeech();
+      window.DanhAnswerSpeech?.stop();
       try { window.speechSynthesis?.cancel(); } catch { /* Audio is optional. */ }
     };
     const speakWord = word => {
       stopSpeech();
       if (!hasGesture || (effects && !effects.soundEnabled()) || document.hidden) return Promise.resolve();
-      if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') return Promise.resolve();
+      if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined' || !window.speechSynthesis.getVoices().some(v=>/^en(?:[-_]|$)/i.test(v.lang))) return Promise.resolve(window.DanhAnswerSpeech.say(word.name));
       return new Promise(resolve => {
         let finished = false;
         const timeout = setTimeout(finish, window.DanhYoungSpeech.timeoutFor(word.name));

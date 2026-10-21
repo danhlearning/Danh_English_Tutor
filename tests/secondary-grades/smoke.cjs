@@ -7,7 +7,7 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8001';
  for(const grade of [8,9]){
   await p.goto(base+`/grade/lop${grade}/unit12.html`);await p.locator('[data-tab=spelling]').click();
   assert.equal(await p.evaluate(g=>DanhLearners.storage.getItem(`danh-g${g}-unit12`),grade),null);
-  const answer=await p.evaluate(g=>{const prompt=document.querySelector('#spelling-stage h3').textContent;return window[`DanhGrade${g}Units`][11].words.find(w=>prompt.includes(w.meaning)).term;},grade);
+  const answer=await p.evaluate(g=>{const prompt=document.querySelector('#spelling-stage h3').textContent;return window[`DanhGrade${g}Units`][11].words.find(w=>prompt===`Gõ tiếng Anh cho: ${w.meaning}`).term;},grade);
   await p.locator('#spelling-stage input').fill(answer);await p.locator('#spelling-stage button[type=submit]').click();assert.match(await p.locator('#spelling-stage').textContent(),/Đúng rồi/);
   assert.equal(await p.evaluate(g=>DanhLearners.storage.getItem(`danh-g${g}-unit12`),grade),null);
  }

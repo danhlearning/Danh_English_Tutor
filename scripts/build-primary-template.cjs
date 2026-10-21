@@ -7,7 +7,6 @@ for(const f of ['units-data.js','extended-units-data.js'])vm.runInNewContext(rea
 const known=Object.fromEntries(Object.values(reference.window.DanhGrade4Units).flatMap(u=>u.words.map(w=>[w.name.toLowerCase(),w])));
 const palette=['#28698e','#9b5b85','#53824e','#ac713d','#586da5','#a35c55'];
 const scripts=`  <script src="../../shared/contact-footer.js"></script>
-  <script src="../../shared/primary-grade-nav.js"></script>
   <script src="../../shared/young-learner-speech.js"></script>
   <script src="../../shared/learning-effects.js"></script>
   <script src="./assets/js/course.js"></script>
@@ -59,3 +58,4 @@ for(const grade of [1,3,5]){
   fs.writeFileSync(path.join(dir,'legacy.html'),legacy.replace('<script src="../../shared/primary-game.js">','<script src="assets/js/course.js"></script><script src="../../shared/primary-game.js">'));
   console.log(`Lớp ${grade}: ${units.length} Unit theo mẫu lớp 4.`);
 }
+require('./apply-primary-covers.cjs');

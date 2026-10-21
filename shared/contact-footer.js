@@ -11,40 +11,46 @@
   class ContactDanh extends HTMLElement {
     connectedCallback() {
       if (this.shadowRoot) return;
-      const year = new Date().getFullYear();
       this.attachShadow({ mode: 'open' }).innerHTML = `
         <style>
           :host {
             display: block;
             width: 100%;
+            min-width: 0;
+            grid-column: 1 / -1;
             flex-shrink: 0;
             font-family: "Danh Nunito", Nunito, system-ui, sans-serif;
+            font-size: 16px;
             line-height: 1.5;
             color: #1e293b;
           }
           * { box-sizing: border-box; }
           .contact-section {
             text-align: center;
-            padding: 30px 15px;
+            padding: 32px 20px;
             background: var(--danh-contact-background, white);
             margin-top: 30px;
             border-top: 1px solid var(--danh-contact-border, #e2e8f0);
           }
-          h2 { margin: 0 0 18px; font-size: 1.5rem; font-weight: 800; }
+          .contact-inner { width: min(100%, 640px); margin-inline: auto; }
+          h2 { margin: 0 0 20px; font-size: 24px; line-height: 1.35; font-weight: 800; }
           .social-buttons {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 240px));
             justify-content: center;
-            flex-wrap: wrap;
             gap: 12px;
           }
           .btn-social {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            min-width: 0;
             gap: 8px;
             padding: 8px 18px;
             border-radius: 30px;
             background: white;
-            font-size: .95rem;
+            font-size: 16px;
             font-weight: 700;
             text-decoration: none;
             transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
@@ -56,21 +62,27 @@
           .btn-fb { color: #1877f2; border: 1.5px solid #1877f2; }
           .btn-fb:hover { color: white; background: #1877f2; box-shadow: 0 4px 10px #1877f240; }
           .fb-icon { width: 18px; height: 18px; fill: currentColor; }
+          svg { flex-shrink: 0; }
           footer {
             text-align: center;
-            padding: 15px;
+            padding: 18px 20px;
             background: var(--danh-footer-background, #1e293b);
             color: var(--danh-footer-color, white);
-            font-size: .85rem;
+            font-size: 16px;
+            line-height: 1.65;
             font-weight: 600;
           }
-          footer p { margin: 0; }
-          @media (max-width: 380px) {
-            h2 { font-size: 1.3rem; }
-            .btn-social { justify-content: center; width: min(100%, 240px); }
+          footer p { max-width: 640px; margin: 0 auto; text-wrap: balance; }
+          footer span { display: inline-block; }
+          @media (max-width: 520px) {
+            .social-buttons { grid-template-columns: minmax(0, 280px); }
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .btn-social { transition: none; }
           }
         </style>
         <section class="contact-section" aria-labelledby="contact-title">
+          <div class="contact-inner">
           <h2 id="contact-title">Kết nối với thầy Danh</h2>
           <div class="social-buttons">
             <a class="btn-social btn-zalo" href="https://zalo.me/0911594794" target="_blank" rel="noopener noreferrer">
@@ -84,8 +96,9 @@
               Facebook
             </a>
           </div>
+          </div>
         </section>
-        <footer><p>&copy; ${year} Học tiếng Anh cùng thầy Danh. All rights reserved.</p></footer>
+        <footer><p><span>Học tiếng Anh cùng thầy Danh.</span> <span>Mã nguồn mở, học miễn phí.</span></p></footer>
       `;
     }
   }

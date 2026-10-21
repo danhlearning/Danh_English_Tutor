@@ -196,6 +196,7 @@
     let correctCount = 0;
     let incorrectCount = 0;
     let autoNextTimeout;
+    let roundGeneration=0;
     let timeLeft = 600; // 10 phút = 600 giây
     let timerInterval;
     let currentLevel='basic';
@@ -274,6 +275,7 @@
 
     // Chọn cấp độ (Tab)
     function setLevel(level) {
+        roundGeneration++;clearTimeout(autoNextTimeout);window.DanhAnswerSpeech?.stop();
         currentLevel=level;
         gameFinished=false;
         document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
@@ -333,16 +335,20 @@
         document.getElementById("answer-input").disabled = true;
 
         if (correctAnswers.includes(userAnswer)) {
+            const speechFinished=window.DanhAnswerSpeech.say(userAnswer);
             correctCount++;
             document.getElementById("correct-display").innerText = `Đúng: ${correctCount}`;
             
-            feedbackEl.innerHTML = `✅ Chính xác! <span class="auto-next-msg">Đang chuyển từ tiếp theo trong 1 giây...</span>`;
+            feedbackEl.innerHTML = `✅ Chính xác! <span class="auto-next-msg">Nghe xong sẽ chuyển từ tiếp theo...</span>`;
             feedbackEl.className = "feedback correct";
             nextBtn.style.display = "none";
 
-            autoNextTimeout = setTimeout(() => {
-                nextQuestion();
-            }, 1000);
+            const answeredIndex=currentQuestionIndex;
+            const answeredGeneration=roundGeneration;
+            Promise.resolve(speechFinished).then(()=>{
+                if(gameFinished||document.hidden||roundGeneration!==answeredGeneration||currentQuestionIndex!==answeredIndex)return;
+                autoNextTimeout=setTimeout(()=>{if(!gameFinished&&!document.hidden&&roundGeneration===answeredGeneration&&currentQuestionIndex===answeredIndex)nextQuestion();},1000);
+            });
 
         } else {
             incorrectCount++;

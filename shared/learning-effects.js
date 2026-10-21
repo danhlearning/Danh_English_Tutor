@@ -19,7 +19,7 @@
   let speechTimer;
   let goodVariation = 0;
   const reduced = () => !motion || matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const stop = () => { clearTimeout(speechTimer);for(const oscillator of voices)try{oscillator.stop();}catch{} voices.clear();audio?.suspend()?.catch(()=>{});window.speechSynthesis?.cancel(); };
+  const stop = () => { clearTimeout(speechTimer);for(const oscillator of voices)try{oscillator.stop();}catch{} voices.clear();audio?.suspend()?.catch(()=>{});window.DanhAnswerSpeech?.stop();window.speechSynthesis?.cancel(); };
   const tone = (kind='tap') => {
     if(!sound || document.hidden)return;
     try {
@@ -85,6 +85,7 @@
     document.dispatchEvent(new Event('danh-learning-effects-change'));
   };
   const bindSettings=({soundButton,motionButton,compact=false})=>{
+    if(automatic){soundButton.hidden=true;motionButton.hidden=true;return;}
     const update=()=>{
       soundButton.textContent=sound?(compact?'🔊 Âm thanh':'🔊 Âm thanh: bật'):(compact?'🔇 Đã tắt âm':'🔇 Âm thanh: tắt');soundButton.setAttribute('aria-pressed',String(sound));
       motionButton.textContent=motion?(compact?'✨ Chuyển động':'✨ Chuyển động: bật'):'🌱 Giảm chuyển động';motionButton.setAttribute('aria-pressed',String(motion));

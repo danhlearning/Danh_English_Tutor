@@ -72,3 +72,5 @@ for (const grade of [8,9]) {
   }
   console.log(`Lớp ${grade}: ${units.length} Unit, ${units.flatMap(u=>u.words).length} từ, ${questions.length} mục luyện.`);
 }
+require('./build-secondary-template-extras.cjs');
+require('./sync-secondary-template.cjs');

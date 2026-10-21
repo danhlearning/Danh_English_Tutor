@@ -106,6 +106,7 @@
       const count=streakLength(round);
       feedback(outcome==='seen'?'help':outcome==='corrected'?'corrected':isMilestone(count)?'streak':'good',stage.querySelector('.g6-choice.correct') || stage);
       if(isMilestone(count))feedbackVisualStreak(stage);
+      if(outcome!=='seen')window.DanhAnswerSpeech.say(word.term);
     };
     const points = results => results.reduce((sum,result)=>sum+(result.outcome==='first'?10:result.outcome==='corrected'?5:0),0);
     const focusQuestion = () => {
@@ -152,8 +153,7 @@
         status.classList.add(round.outcome==='seen'?'vg-help':'vg-good');
         stage.append(el('p',word.example,'vg-example'),button('🔊 Nghe từ',()=>{
           if(!effects.soundEnabled()){status.textContent='Âm thanh đang tắt. Bật âm thanh để nghe từ nhé.';return;}
-          if(!('speechSynthesis' in window)){status.textContent+=' Thiết bị chưa có giọng đọc.';return;}
-          window.speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(word.term);utterance.lang='en-GB';utterance.rate=.82;window.speechSynthesis.speak(utterance);
+          window.DanhAnswerSpeech.say(word.term);
         },'g6-secondary'));
         const next=button(round.index===round.items.length-1?'Xem tổng kết →':'Câu tiếp theo →',()=>{
           if(!round.solved)return;

@@ -14,7 +14,7 @@
   let queue = [], position = 0, mistakes = 0, timer = null;
   function speak(value) {
     try {
-      if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') return;
+      if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') {window.DanhAnswerSpeech.say(value);return;}
       window.speechSynthesis.cancel();
       const voice = new SpeechSynthesisUtterance(value); voice.lang = 'en-GB';
       window.DanhYoungSpeech.configure(voice);

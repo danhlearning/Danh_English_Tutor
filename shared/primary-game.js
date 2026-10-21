@@ -31,7 +31,7 @@
   function notify(text){document.querySelector('#feedback').textContent=text;}
   function speak(text){
     if(!fx.soundEnabled()){notify('Em hãy bật âm thanh rồi bấm nghe nhé.');return;}
-    if(!window.speechSynthesis||!window.SpeechSynthesisUtterance){notify('Máy này chưa hỗ trợ đọc tiếng Anh. Em có thể chơi Chọn nghĩa hoặc Xếp câu.');return;}
+    if(!window.speechSynthesis||!window.SpeechSynthesisUtterance){window.DanhAnswerSpeech.say(text);return;}
     speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(text);utterance.lang='en-US';window.DanhYoungSpeech.configure(utterance);
     utterance.onerror=()=>notify('Chưa phát được giọng đọc. Em thử lại hoặc chọn game khác nhé.');speechSynthesis.speak(utterance);
   }
@@ -58,7 +58,7 @@
   }
   function hintText(w){return mode==='sentence'?`💡 Câu bắt đầu bằng “${esc(w.term.split(' ')[0])}”.`:mode==='listen'?'💡 Nghe lại chậm và chú ý âm đầu của từ.':`💡 Từ hoặc cụm từ bắt đầu bằng “${esc(w.term[0])}”, gồm ${w.term.replace(/[^a-z]/gi,'').length} chữ cái.`;}
   function answer(value){const {q,w}=current();if(q.result)return;if(!value.trim()){notify('Em hãy thử trả lời trước nhé.');return;}
-    if(normalize(value)===normalize(w.term)){q.result=q.hint?'helped':q.errors?'corrected':'first';persist();fx.feedback(q.result==='first'?'good':'corrected');render();}
+    if(normalize(value)===normalize(w.term)){q.result=q.hint?'helped':q.errors?'corrected':'first';persist();fx.feedback(q.result==='first'?'good':'corrected');render();window.DanhAnswerSpeech.say(w.term);}
     else{q.errors++;persist();fx.feedback('bad');notify(mode==='sentence'?'🌱 Chưa khớp câu mẫu. Em thử đổi thứ tự; nhớ chủ ngữ đứng trước động từ nhé.':'🌱 Chưa đúng rồi. Em thử lại hoặc dùng gợi ý nhé!');}
   }
   function summary(){const counts=Object.fromEntries(Object.keys(labels).map(k=>[k,round.questions.filter(q=>q.result===k).length]));const weak=round.questions.filter(q=>q.result!=='first');app.innerHTML=header()+`<section class="panel"><span class="big-icon">🌟</span><h2>Em đã hoàn thành lượt chơi!</h2><p class="stars">${counts.first}/${round.questions.length} sao đúng ngay</p><p>Cảm ơn em đã kiên trì luyện tập. Mỗi lần tự sửa là một bước tiến!</p><div class="results">${Object.entries(labels).map(([k,label])=>`<p>${label}: <strong>${counts[k]}</strong></p>`).join('')}</div><p>Sao ghi nhận lượt chơi này; hãy quay lại ôn để nhớ lâu hơn.</p>${weak.length?`<button class="primary" data-action="review">Ôn ${weak.length} mục cần luyện</button>`:'<p>Thử một game khác để luyện thêm kỹ năng nhé!</p>'}<button data-action="restart">Chơi lượt mới</button><button data-action="learn">Xem lại thẻ từ</button>${unit.number<units.length?`<a class="button" href="unit${unit.number+1}.html">Chặng tiếp theo →</a>`:''}<p id="feedback" role="status" aria-live="polite"></p></section>`;}

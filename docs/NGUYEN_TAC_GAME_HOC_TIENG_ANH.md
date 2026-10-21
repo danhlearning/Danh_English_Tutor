@@ -54,6 +54,7 @@ Trước khi triển khai, ghi rõ:
 - Tôn trọng tùy chọn giảm chuyển động của thiết bị. Hiệu ứng không che đề, đáp án hoặc vùng bấm; các phần tử trang trí được dọn sau khi chạy.
 - Dùng âm phản hồi nhẹ, tránh gây áp lực khi sai. Tiếng đọc từ/câu được thiết kế riêng để phục vụ nghe và phát âm, với nút nghe lại rõ ràng.
 - Dùng lại các thành phần đang ổn định, điều chỉnh theo cơ chế chơi; kiểm tra âm thanh và chuyển động cùng luồng học.
+- Quy tắc toàn repo: trả lời đúng phải kèm giọng đọc tiếng Anh của từ/cụm từ đã học, kể cả tự sửa đúng; nhiệm vụ cả câu đọc câu đúng. Âm correct không thay thế giọng đọc. Không đọc nhãn đáp án, tiếng Việt hoặc IPA thay từ mẫu. Giữ lựa chọn tắt âm; không tự đọc khi tải/khôi phục trang, không đọc lặp do chấm lại, dừng khi rời hoặc ẩn trang.
 
 ## 5. Phản hồi giúp học và cách ghi điểm
 

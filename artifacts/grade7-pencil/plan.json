@@ -1,0 +1,866 @@
+[
+  {
+    "unit": 1,
+    "wordId": 1,
+    "term": "hobby",
+    "meaning": "sở thích",
+    "example": "My hobby is drawing pictures.",
+    "file": "grade/lop7/assets/images/pencil/unit1/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: hobby. Scene: A Vietnamese young teenager happily drawing in a sketchbook at home, with a small model sailboat and a plant nearby; show enjoyable leisure time. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 1,
+    "wordId": 2,
+    "term": "gardening",
+    "meaning": "làm vườn",
+    "example": "My grandmother enjoys gardening.",
+    "file": "grade/lop7/assets/images/pencil/unit1/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: gardening. Scene: My grandmother enjoys gardening. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 1,
+    "wordId": 3,
+    "term": "collecting coins",
+    "meaning": "sưu tầm tiền xu",
+    "example": "Nam likes collecting coins from different countries.",
+    "file": "grade/lop7/assets/images/pencil/unit1/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: collecting coins. Scene: Nam likes collecting coins from different countries. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 1,
+    "wordId": 4,
+    "term": "making models",
+    "meaning": "làm mô hình",
+    "example": "I enjoy making models of ships.",
+    "file": "grade/lop7/assets/images/pencil/unit1/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: making models. Scene: I enjoy making models of ships. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 1,
+    "wordId": 5,
+    "term": "building dollhouses",
+    "meaning": "làm nhà búp bê",
+    "example": "Mai likes building dollhouses from cardboard.",
+    "file": "grade/lop7/assets/images/pencil/unit1/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: building dollhouses. Scene: Mai likes building dollhouses from cardboard. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 1,
+    "wordId": 6,
+    "term": "cycling",
+    "meaning": "đạp xe",
+    "example": "We go cycling in the park on Sundays.",
+    "file": "grade/lop7/assets/images/pencil/unit1/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: cycling. Scene: We go cycling in the park on Sundays. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 1,
+    "wordId": 7,
+    "term": "taking photos",
+    "meaning": "chụp ảnh",
+    "example": "My brother loves taking photos of flowers.",
+    "file": "grade/lop7/assets/images/pencil/unit1/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: taking photos. Scene: My brother loves taking photos of flowers. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 1,
+    "wordId": 8,
+    "term": "creativity",
+    "meaning": "sự sáng tạo",
+    "example": "Making a new toy from old boxes needs creativity.",
+    "file": "grade/lop7/assets/images/pencil/unit1/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: creativity. Scene: A Vietnamese young teenager inventively building a whimsical toy robot from reused plain cardboard boxes and bottle caps; clearly handmade creative invention. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 2,
+    "wordId": 1,
+    "term": "exercise",
+    "meaning": "tập thể dục",
+    "example": "I exercise every morning.",
+    "file": "grade/lop7/assets/images/pencil/unit2/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: exercise. Scene: I exercise every morning. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 2,
+    "wordId": 2,
+    "term": "vegetable",
+    "meaning": "rau",
+    "example": "A carrot is a vegetable.",
+    "file": "grade/lop7/assets/images/pencil/unit2/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: vegetable. Scene: A carrot is a vegetable. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 2,
+    "wordId": 3,
+    "term": "fruit",
+    "meaning": "trái cây",
+    "example": "I eat fresh fruit after lunch.",
+    "file": "grade/lop7/assets/images/pencil/unit2/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: fruit. Scene: I eat fresh fruit after lunch. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 2,
+    "wordId": 4,
+    "term": "sunburn",
+    "meaning": "tình trạng da bị cháy nắng",
+    "example": "His shoulders are red because of sunburn.",
+    "file": "grade/lop7/assets/images/pencil/unit2/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: sunburn. Scene: A young teenager with mildly red sunburnt shoulders and a gently uncomfortable expression, beside an umbrella and sunhat at a beach. Respectful educational portrayal, no severe injury. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 2,
+    "wordId": 5,
+    "term": "water",
+    "meaning": "nước",
+    "example": "I drink water after playing football.",
+    "file": "grade/lop7/assets/images/pencil/unit2/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: water. Scene: A clear glass of drinking water beside an unlabelled water bottle, fresh clean water, isolated objects. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 2,
+    "wordId": 6,
+    "term": "sleep",
+    "meaning": "ngủ",
+    "example": "I sleep for eight hours every night.",
+    "file": "grade/lop7/assets/images/pencil/unit2/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: sleep. Scene: A young teenager sleeping peacefully in bed with head on a pillow and a blanket, moon through window. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 2,
+    "wordId": 7,
+    "term": "outdoor activity",
+    "meaning": "hoạt động ngoài trời",
+    "example": "Flying a kite is an outdoor activity.",
+    "file": "grade/lop7/assets/images/pencil/unit2/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: outdoor activity. Scene: Flying a kite is an outdoor activity. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 2,
+    "wordId": 8,
+    "term": "balanced diet",
+    "meaning": "chế độ ăn uống cân bằng",
+    "example": "A balanced diet includes different kinds of food.",
+    "file": "grade/lop7/assets/images/pencil/unit2/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: balanced diet. Scene: A single balanced meal on a plate with clearly separated portions of vegetables, rice and fish, plus fruit and a glass of water. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 3,
+    "wordId": 1,
+    "term": "volunteer",
+    "meaning": "tình nguyện viên",
+    "example": "The volunteer helps clean the park.",
+    "file": "grade/lop7/assets/images/pencil/unit3/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: volunteer. Scene: The volunteer helps clean the park. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 3,
+    "wordId": 2,
+    "term": "donate",
+    "meaning": "quyên góp, tặng để giúp đỡ",
+    "example": "We donate books to children who need them.",
+    "file": "grade/lop7/assets/images/pencil/unit3/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: donate. Scene: Two young teenagers handing a box of clean books and clothes to a community volunteer; giving to help others, all packaging unlabelled. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 3,
+    "wordId": 3,
+    "term": "rubbish",
+    "meaning": "rác",
+    "example": "We put the rubbish in a bag.",
+    "file": "grade/lop7/assets/images/pencil/unit3/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: rubbish. Scene: We put the rubbish in a bag. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 3,
+    "wordId": 4,
+    "term": "plant trees",
+    "meaning": "trồng cây",
+    "example": "Our class will plant trees in the school garden.",
+    "file": "grade/lop7/assets/images/pencil/unit3/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: plant trees. Scene: Our class will plant trees in the school garden. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 3,
+    "wordId": 5,
+    "term": "clean up",
+    "meaning": "dọn sạch",
+    "example": "We clean up the beach every month.",
+    "file": "grade/lop7/assets/images/pencil/unit3/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: clean up. Scene: We clean up the beach every month. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 3,
+    "wordId": 6,
+    "term": "nursing home",
+    "meaning": "viện dưỡng lão",
+    "example": "We read stories to older people at the nursing home.",
+    "file": "grade/lop7/assets/images/pencil/unit3/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: nursing home. Scene: An older person sitting with a walking stick in a comfortable care home lounge while a young visitor reads a blank picture book with them. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 3,
+    "wordId": 7,
+    "term": "used clothes",
+    "meaning": "quần áo đã qua sử dụng",
+    "example": "These clean used clothes can help other families.",
+    "file": "grade/lop7/assets/images/pencil/unit3/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: used clothes. Scene: A neat stack of clean gently used shirts and trousers in an open donation box, a visible small repaired patch, no writing. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 3,
+    "wordId": 8,
+    "term": "community service",
+    "meaning": "hoạt động phục vụ cộng đồng",
+    "example": "Cleaning the local park is community service.",
+    "file": "grade/lop7/assets/images/pencil/unit3/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: community service. Scene: A group of Vietnamese young teenagers volunteering to clean rubbish from a public park with gloves, bags and litter pickers. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 4,
+    "wordId": 1,
+    "term": "painting",
+    "meaning": "bức tranh",
+    "example": "This painting shows a quiet village.",
+    "file": "grade/lop7/assets/images/pencil/unit4/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: painting. Scene: A framed landscape painting of a peaceful village with small houses and trees, visibly painted brush textures inside the frame. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 4,
+    "wordId": 2,
+    "term": "portrait",
+    "meaning": "tranh chân dung",
+    "example": "She painted a portrait of her mother.",
+    "file": "grade/lop7/assets/images/pencil/unit4/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: portrait. Scene: A framed hand-painted portrait of a smiling Vietnamese mother, showing head and shoulders, isolated on paper. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 4,
+    "wordId": 3,
+    "term": "guitar",
+    "meaning": "đàn ghi ta",
+    "example": "My sister plays the guitar.",
+    "file": "grade/lop7/assets/images/pencil/unit4/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: guitar. Scene: My sister plays the guitar. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 4,
+    "wordId": 4,
+    "term": "drum",
+    "meaning": "trống",
+    "example": "He plays the drum in our band.",
+    "file": "grade/lop7/assets/images/pencil/unit4/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: drum. Scene: He plays the drum in our band. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 4,
+    "wordId": 5,
+    "term": "violin",
+    "meaning": "đàn vi ô lông",
+    "example": "Lan practises the violin after school.",
+    "file": "grade/lop7/assets/images/pencil/unit4/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: violin. Scene: Lan practises the violin after school. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 4,
+    "wordId": 6,
+    "term": "artist",
+    "meaning": "nghệ sĩ",
+    "example": "The artist is painting a picture.",
+    "file": "grade/lop7/assets/images/pencil/unit4/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: artist. Scene: The artist is painting a picture. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 4,
+    "wordId": 7,
+    "term": "performance",
+    "meaning": "buổi biểu diễn",
+    "example": "We watched a musical performance at school.",
+    "file": "grade/lop7/assets/images/pencil/unit4/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: performance. Scene: Young teenagers giving a musical performance on a small stage with a singer, guitar and drum, audience visible at bottom edge. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 4,
+    "wordId": 8,
+    "term": "water puppet show",
+    "meaning": "buổi múa rối nước",
+    "example": "The water puppet show tells a story about village life.",
+    "file": "grade/lop7/assets/images/pencil/unit4/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: water puppet show. Scene: Traditional Vietnamese water puppets performing over a pool in front of a small red-roofed pavilion; wooden farmer and buffalo puppets emerge from the water, audience at front. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 5,
+    "wordId": 1,
+    "term": "noodle",
+    "meaning": "sợi mì, sợi bún",
+    "example": "This noodle is long and thin.",
+    "file": "grade/lop7/assets/images/pencil/unit5/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: noodle. Scene: A single long cooked noodle lifted with chopsticks from a simple small bowl of noodles; emphasize the long thin noodle. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 5,
+    "wordId": 2,
+    "term": "rice",
+    "meaning": "gạo, cơm",
+    "example": "We eat rice with vegetables.",
+    "file": "grade/lop7/assets/images/pencil/unit5/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: rice. Scene: We eat rice with vegetables. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 5,
+    "wordId": 3,
+    "term": "omelette",
+    "meaning": "trứng tráng",
+    "example": "Dad makes an omelette for breakfast.",
+    "file": "grade/lop7/assets/images/pencil/unit5/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: omelette. Scene: Dad makes an omelette for breakfast. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 5,
+    "wordId": 4,
+    "term": "flour",
+    "meaning": "bột mì",
+    "example": "We use flour to make bread.",
+    "file": "grade/lop7/assets/images/pencil/unit5/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: flour. Scene: We use flour to make bread. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 5,
+    "wordId": 5,
+    "term": "pepper",
+    "meaning": "hạt tiêu, tiêu",
+    "example": "Add a little pepper to the soup.",
+    "file": "grade/lop7/assets/images/pencil/unit5/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: pepper. Scene: A small ceramic bowl of black peppercorns beside a plain pepper grinder, clearly black pepper rather than chilli or bell pepper. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 5,
+    "wordId": 6,
+    "term": "lemonade",
+    "meaning": "nước chanh",
+    "example": "I would like a glass of lemonade.",
+    "file": "grade/lop7/assets/images/pencil/unit5/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: lemonade. Scene: I would like a glass of lemonade. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 5,
+    "wordId": 7,
+    "term": "tofu",
+    "meaning": "đậu phụ",
+    "example": "Mum cooks tofu with tomatoes.",
+    "file": "grade/lop7/assets/images/pencil/unit5/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: tofu. Scene: Mum cooks tofu with tomatoes. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 5,
+    "wordId": 8,
+    "term": "ingredient",
+    "meaning": "nguyên liệu nấu ăn",
+    "example": "An egg is an ingredient in this cake.",
+    "file": "grade/lop7/assets/images/pencil/unit5/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: ingredient. Scene: Raw egg, flour in a small bowl, milk in an unlabelled jug and butter arranged beside a mixing bowl; simple recognizable ingredients for a cake. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 6,
+    "wordId": 1,
+    "term": "school gate",
+    "meaning": "cổng trường",
+    "example": "Meet me at the school gate.",
+    "file": "grade/lop7/assets/images/pencil/unit6/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: school gate. Scene: A welcoming school entrance gate with a low fence and school building behind, no school name or writing. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 6,
+    "wordId": 2,
+    "term": "classroom",
+    "meaning": "phòng học",
+    "example": "Our classroom is on the second floor.",
+    "file": "grade/lop7/assets/images/pencil/unit6/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: classroom. Scene: Our classroom is on the second floor. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 6,
+    "wordId": 3,
+    "term": "laboratory",
+    "meaning": "phòng thí nghiệm",
+    "example": "We do science experiments in the laboratory.",
+    "file": "grade/lop7/assets/images/pencil/unit6/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: laboratory. Scene: We do science experiments in the laboratory. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 6,
+    "wordId": 4,
+    "term": "library",
+    "meaning": "thư viện",
+    "example": "Students read books in the library.",
+    "file": "grade/lop7/assets/images/pencil/unit6/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: library. Scene: Students read books in the library. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 6,
+    "wordId": 5,
+    "term": "computer room",
+    "meaning": "phòng máy tính",
+    "example": "We learn to use computers in the computer room.",
+    "file": "grade/lop7/assets/images/pencil/unit6/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: computer room. Scene: We learn to use computers in the computer room. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 6,
+    "wordId": 6,
+    "term": "playground",
+    "meaning": "sân chơi",
+    "example": "We play badminton in the playground.",
+    "file": "grade/lop7/assets/images/pencil/unit6/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: playground. Scene: We play badminton in the playground. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 6,
+    "wordId": 7,
+    "term": "school uniform",
+    "meaning": "đồng phục học sinh",
+    "example": "I wear my school uniform on Mondays.",
+    "file": "grade/lop7/assets/images/pencil/unit6/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: school uniform. Scene: A Vietnamese young teenager wearing a neat white school shirt, navy trousers or skirt, and a red neck scarf, schoolbag alongside; no insignia text. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 6,
+    "wordId": 8,
+    "term": "entrance examination",
+    "meaning": "kỳ thi tuyển sinh",
+    "example": "She is preparing for the entrance examination.",
+    "file": "grade/lop7/assets/images/pencil/unit6/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: entrance examination. Scene: A young teenager taking an entrance examination in a quiet classroom with spaced desks and an invigilator. Blank paper and pencil, no visible writing. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 7,
+    "wordId": 1,
+    "term": "traffic light",
+    "meaning": "đèn giao thông",
+    "example": "Stop when the traffic light is red.",
+    "file": "grade/lop7/assets/images/pencil/unit7/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: traffic light. Scene: One complete traffic signal with red, amber and green lenses stacked vertically, red illuminated, simple roadside context. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 7,
+    "wordId": 2,
+    "term": "helmet",
+    "meaning": "mũ bảo hiểm",
+    "example": "Always wear a helmet when riding a motorbike.",
+    "file": "grade/lop7/assets/images/pencil/unit7/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: helmet. Scene: Always wear a helmet when riding a motorbike. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 7,
+    "wordId": 3,
+    "term": "seat belt",
+    "meaning": "dây an toàn",
+    "example": "Fasten your seat belt in the car.",
+    "file": "grade/lop7/assets/images/pencil/unit7/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: seat belt. Scene: A passenger seated safely in a car with a three-point seat belt crossing chest and lap, focus on the fastened belt. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 7,
+    "wordId": 4,
+    "term": "pavement",
+    "meaning": "vỉa hè",
+    "example": "We walk on the pavement.",
+    "file": "grade/lop7/assets/images/pencil/unit7/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: pavement. Scene: We walk on the pavement. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 7,
+    "wordId": 5,
+    "term": "pedestrian",
+    "meaning": "người đi bộ",
+    "example": "The pedestrian is crossing at the zebra crossing.",
+    "file": "grade/lop7/assets/images/pencil/unit7/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: pedestrian. Scene: The pedestrian is crossing at the zebra crossing. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 7,
+    "wordId": 6,
+    "term": "zebra crossing",
+    "meaning": "vạch sang đường dành cho người đi bộ",
+    "example": "Use the zebra crossing to cross the road.",
+    "file": "grade/lop7/assets/images/pencil/unit7/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: zebra crossing. Scene: Use the zebra crossing to cross the road. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 7,
+    "wordId": 7,
+    "term": "road sign",
+    "meaning": "biển báo giao thông",
+    "example": "This road sign tells drivers to stop.",
+    "file": "grade/lop7/assets/images/pencil/unit7/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: road sign. Scene: A red octagonal road sign on a pole beside a quiet road, plain red face with white rim, no lettering. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 7,
+    "wordId": 8,
+    "term": "traffic jam",
+    "meaning": "tắc đường",
+    "example": "A traffic jam makes the bus journey slower.",
+    "file": "grade/lop7/assets/images/pencil/unit7/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: traffic jam. Scene: A traffic jam makes the bus journey slower. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 8,
+    "wordId": 1,
+    "term": "comedy",
+    "meaning": "phim hài",
+    "example": "The comedy made everyone laugh.",
+    "file": "grade/lop7/assets/images/pencil/unit8/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: comedy. Scene: A cinema screen showing a funny original clown slipping harmlessly onto a cushion, two audience members laughing in foreground; gentle comedy. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 8,
+    "wordId": 2,
+    "term": "cartoon",
+    "meaning": "phim hoạt hình",
+    "example": "My little sister likes this cartoon.",
+    "file": "grade/lop7/assets/images/pencil/unit8/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: cartoon. Scene: A television screen displaying a cheerful original cartoon mouse chasing a bouncing ball, visibly animated style within the screen; no familiar copyrighted character. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 8,
+    "wordId": 3,
+    "term": "documentary",
+    "meaning": "phim tài liệu",
+    "example": "This documentary explains how sea turtles live.",
+    "file": "grade/lop7/assets/images/pencil/unit8/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: documentary. Scene: A television screen showing a realistic sea turtle swimming underwater, with a wildlife camera on a tripod alongside; clearly a nature documentary, screen contains pictures only. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 8,
+    "wordId": 4,
+    "term": "actor",
+    "meaning": "nam diễn viên",
+    "example": "The actor plays a teacher in the film.",
+    "file": "grade/lop7/assets/images/pencil/unit8/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: actor. Scene: An adult male actor performing the role of a teacher in front of a movie camera and small studio light; blank board. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 8,
+    "wordId": 5,
+    "term": "actress",
+    "meaning": "nữ diễn viên",
+    "example": "The actress plays a doctor in the film.",
+    "file": "grade/lop7/assets/images/pencil/unit8/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: actress. Scene: An adult female actress performing the role of a doctor in front of a movie camera and small studio light; fictional film set. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 8,
+    "wordId": 6,
+    "term": "cinema",
+    "meaning": "rạp chiếu phim",
+    "example": "We watch the film at the cinema.",
+    "file": "grade/lop7/assets/images/pencil/unit8/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: cinema. Scene: We watch the film at the cinema. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 8,
+    "wordId": 7,
+    "term": "ticket",
+    "meaning": "vé",
+    "example": "I bought a ticket for the film.",
+    "file": "grade/lop7/assets/images/pencil/unit8/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: ticket. Scene: A single plain cinema admission ticket with perforated edges and a small pictorial film-reel symbol; no text or numbers. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 8,
+    "wordId": 8,
+    "term": "gripping",
+    "meaning": "hấp dẫn, cuốn hút",
+    "example": "The gripping film kept us watching until the end.",
+    "file": "grade/lop7/assets/images/pencil/unit8/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: gripping. Scene: Two young teenagers leaning forward with fascinated wide eyes watching a suspenseful adventure scene of a little explorer on a screen; show absorbed attention, no scary violence. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 9,
+    "wordId": 1,
+    "term": "festival",
+    "meaning": "lễ hội",
+    "example": "The village holds a spring festival.",
+    "file": "grade/lop7/assets/images/pencil/unit9/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: festival. Scene: The village holds a spring festival. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 9,
+    "wordId": 2,
+    "term": "parade",
+    "meaning": "cuộc diễu hành",
+    "example": "We watched a colourful parade in the street.",
+    "file": "grade/lop7/assets/images/pencil/unit9/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: parade. Scene: We watched a colourful parade in the street. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 9,
+    "wordId": 3,
+    "term": "costume",
+    "meaning": "trang phục hóa trang",
+    "example": "She wears a fairy costume.",
+    "file": "grade/lop7/assets/images/pencil/unit9/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: costume. Scene: A child wearing a fairy costume with wings, a star wand and playful hat, whole body visible. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 9,
+    "wordId": 4,
+    "term": "fireworks",
+    "meaning": "pháo hoa",
+    "example": "We watched fireworks in the sky.",
+    "file": "grade/lop7/assets/images/pencil/unit9/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: fireworks. Scene: We watched fireworks in the sky. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 9,
+    "wordId": 5,
+    "term": "lantern",
+    "meaning": "đèn lồng",
+    "example": "The children carry lanterns at night.",
+    "file": "grade/lop7/assets/images/pencil/unit9/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: lantern. Scene: The children carry lanterns at night. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 9,
+    "wordId": 6,
+    "term": "feast",
+    "meaning": "bữa tiệc thịnh soạn",
+    "example": "Our family prepares a feast for the holiday.",
+    "file": "grade/lop7/assets/images/pencil/unit9/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: feast. Scene: Our family prepares a feast for the holiday. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 9,
+    "wordId": 7,
+    "term": "mask",
+    "meaning": "mặt nạ",
+    "example": "He wears a funny mask at the festival.",
+    "file": "grade/lop7/assets/images/pencil/unit9/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: mask. Scene: One playful theatrical festival face mask with eye holes and colourful decorations, clearly a face mask rather than medical mask. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 9,
+    "wordId": 8,
+    "term": "celebration",
+    "meaning": "hoạt động ăn mừng, lễ kỷ niệm",
+    "example": "The celebration marks the start of the new year.",
+    "file": "grade/lop7/assets/images/pencil/unit9/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: celebration. Scene: A joyful small family celebration with confetti, raised hands and a plain cake, festive pennants with no writing. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 10,
+    "wordId": 1,
+    "term": "solar panel",
+    "meaning": "tấm pin năng lượng mặt trời",
+    "example": "The solar panel makes electricity from sunlight.",
+    "file": "grade/lop7/assets/images/pencil/unit10/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: solar panel. Scene: The solar panel makes electricity from sunlight. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 10,
+    "wordId": 2,
+    "term": "wind turbine",
+    "meaning": "tua bin gió",
+    "example": "The wind turbine turns in the wind.",
+    "file": "grade/lop7/assets/images/pencil/unit10/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: wind turbine. Scene: The wind turbine turns in the wind. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 10,
+    "wordId": 3,
+    "term": "coal",
+    "meaning": "than đá",
+    "example": "Coal is a fossil fuel.",
+    "file": "grade/lop7/assets/images/pencil/unit10/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: coal. Scene: Coal is a fossil fuel. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 10,
+    "wordId": 4,
+    "term": "oil",
+    "meaning": "dầu mỏ",
+    "example": "People get oil from deep underground.",
+    "file": "grade/lop7/assets/images/pencil/unit10/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: oil. Scene: A plain open metal barrel of glossy black crude oil beside a pumpjack in the distance, no kitchen oil bottle. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 10,
+    "wordId": 5,
+    "term": "light bulb",
+    "meaning": "bóng đèn",
+    "example": "Turn off the light bulb when you leave.",
+    "file": "grade/lop7/assets/images/pencil/unit10/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: light bulb. Scene: A single classic light bulb with a clear glass envelope, metal screw base and gently glowing filament, isolated fully visible. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 10,
+    "wordId": 6,
+    "term": "electricity",
+    "meaning": "điện",
+    "example": "The fan needs electricity to work.",
+    "file": "grade/lop7/assets/images/pencil/unit10/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: electricity. Scene: A plugged-in desk fan spinning beside a lamp glowing warmly, cord visibly connected to a wall socket; safe domestic electricity, no lightning touching people. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 10,
+    "wordId": 7,
+    "term": "renewable energy",
+    "meaning": "năng lượng tái tạo",
+    "example": "Wind and sunlight provide renewable energy.",
+    "file": "grade/lop7/assets/images/pencil/unit10/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: renewable energy. Scene: A sunny grassy landscape with solar panels and wind turbines turning under the sun; a coherent renewable energy scene. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 10,
+    "wordId": 8,
+    "term": "non-renewable energy",
+    "meaning": "năng lượng không tái tạo",
+    "example": "Energy from coal is non-renewable energy.",
+    "file": "grade/lop7/assets/images/pencil/unit10/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: non-renewable energy. Scene: Lumps of coal and an unlabelled oil barrel beside an oil pumpjack; recognizable finite fossil fuels, no renewable power objects. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 11,
+    "wordId": 1,
+    "term": "electric car",
+    "meaning": "ô tô điện",
+    "example": "An electric car uses electricity instead of petrol.",
+    "file": "grade/lop7/assets/images/pencil/unit11/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: electric car. Scene: A compact car plugged into an electric charging post, visible charging cable, all surfaces unlabelled. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 11,
+    "wordId": 2,
+    "term": "flying car",
+    "meaning": "ô tô bay",
+    "example": "In this story, a flying car travels above the road.",
+    "file": "grade/lop7/assets/images/pencil/unit11/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: flying car. Scene: A small futuristic car with retractable wings flying above a road, clearly a car rather than an airplane. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 11,
+    "wordId": 3,
+    "term": "spaceship",
+    "meaning": "tàu vũ trụ",
+    "example": "The spaceship carries astronauts into space.",
+    "file": "grade/lop7/assets/images/pencil/unit11/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: spaceship. Scene: The spaceship carries astronauts into space. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 11,
+    "wordId": 4,
+    "term": "helicopter",
+    "meaning": "máy bay trực thăng",
+    "example": "The helicopter lands on a small platform.",
+    "file": "grade/lop7/assets/images/pencil/unit11/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: helicopter. Scene: The helicopter lands on a small platform. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 11,
+    "wordId": 5,
+    "term": "boat",
+    "meaning": "thuyền",
+    "example": "We cross the river by boat.",
+    "file": "grade/lop7/assets/images/pencil/unit11/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: boat. Scene: We cross the river by boat. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 11,
+    "wordId": 6,
+    "term": "train",
+    "meaning": "tàu hỏa",
+    "example": "This train carries passengers between cities.",
+    "file": "grade/lop7/assets/images/pencil/unit11/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: train. Scene: A passenger train with a locomotive and two carriages travelling on rails, entire front visible, no numbers or writing. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 11,
+    "wordId": 7,
+    "term": "passenger",
+    "meaning": "hành khách",
+    "example": "The passenger is sitting on the bus.",
+    "file": "grade/lop7/assets/images/pencil/unit11/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: passenger. Scene: The passenger is sitting on the bus. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 11,
+    "wordId": 8,
+    "term": "driverless",
+    "meaning": "không người lái, tự lái",
+    "example": "A driverless car can travel without a human driver.",
+    "file": "grade/lop7/assets/images/pencil/unit11/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: driverless. Scene: A compact futuristic self-driving car seen through its front windscreen; two passengers sitting on rear seats, visibly empty driver seat and small rooftop sensors. No driver or text. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 12,
+    "wordId": 1,
+    "term": "kangaroo",
+    "meaning": "chuột túi",
+    "example": "Kangaroos live in Australia.",
+    "file": "grade/lop7/assets/images/pencil/unit12/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: kangaroo. Scene: Kangaroos live in Australia. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 12,
+    "wordId": 2,
+    "term": "koala",
+    "meaning": "gấu túi koala",
+    "example": "The koala is resting in a tree.",
+    "file": "grade/lop7/assets/images/pencil/unit12/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: koala. Scene: The koala is resting in a tree. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 12,
+    "wordId": 3,
+    "term": "castle",
+    "meaning": "lâu đài",
+    "example": "We visited an old castle in Scotland.",
+    "file": "grade/lop7/assets/images/pencil/unit12/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: castle. Scene: We visited an old castle in Scotland. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 12,
+    "wordId": 4,
+    "term": "island",
+    "meaning": "hòn đảo",
+    "example": "New Zealand has two large main islands.",
+    "file": "grade/lop7/assets/images/pencil/unit12/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: island. Scene: New Zealand has two large main islands. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 12,
+    "wordId": 5,
+    "term": "coast",
+    "meaning": "bờ biển",
+    "example": "We walked along the coast.",
+    "file": "grade/lop7/assets/images/pencil/unit12/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: coast. Scene: We walked along the coast. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 12,
+    "wordId": 6,
+    "term": "tower",
+    "meaning": "tòa tháp",
+    "example": "The clock tower is very tall.",
+    "file": "grade/lop7/assets/images/pencil/unit12/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: tower. Scene: A tall stone clock tower beside a little tree for scale, clock face with hands and tick marks only, no numerals. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 12,
+    "wordId": 7,
+    "term": "landmark",
+    "meaning": "địa danh nổi bật, dễ nhận biết",
+    "example": "The Sydney Opera House is a famous landmark.",
+    "file": "grade/lop7/assets/images/pencil/unit12/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: landmark. Scene: A clear recognizable view of the Sydney Opera House by the harbour, full sail-shaped architecture and a little water in front, no text. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  },
+  {
+    "unit": 12,
+    "wordId": 8,
+    "term": "native speaker",
+    "meaning": "người bản ngữ",
+    "example": "A native speaker learns the language from early childhood.",
+    "file": "grade/lop7/assets/images/pencil/unit12/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: native speaker. Scene: An English-speaking parent naturally talking with their young child while looking at a blank picture book at home; warm family language learning, no speech bubbles or flags. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024."
+  }
+]

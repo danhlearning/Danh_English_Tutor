@@ -1,0 +1,11 @@
+{
+  "unit": 10,
+  "wordId": 5,
+  "term": "light bulb",
+  "meaning": "bóng đèn",
+  "example": "Turn off the light bulb when you leave.",
+  "file": "grade/lop7/assets/images/pencil/unit10/5-v1.webp",
+  "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: light bulb. Scene: A single classic light bulb with a clear glass envelope, metal screw base and gently glowing filament, isolated fully visible. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024.",
+  "mode": "built-in image_gen",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-be310464-64aa-4f71-ba45-4bf403ef5708.png"
+}

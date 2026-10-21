@@ -357,6 +357,13 @@ body { font-family:'Danh Nunito',Nunito,sans-serif; background:#f0f7f5; }
 .grade-btn { border:2px solid var(--tile-accent); border-bottom-width:4px; border-radius:16px; background:var(--tile-tint); color:var(--tile-ink); min-height:54px; font-size:1.05rem; }
 a.grade-btn:hover { background:var(--tile-ink); border-color:var(--tile-ink); color:white; }
 .grade-btn-unavailable,.grade-btn-unavailable:hover { background:#f1f5f9; border-color:#dce3e8; color:#64748b; }
+.grade-btn.grade-10 { --tile-accent:#8b9f76; --tile-tint:#e7eadb; --tile-ink:#355b43; }
+.grade-btn.grade-6 { --tile-accent:#b6aa86; --tile-tint:#fcf5e5; --tile-ink:#237569; }
+.grade-btn.grade-7 { --tile-accent:#aa95c0; --tile-tint:#e9e3f1; --tile-ink:#65517e; }
+.grade-btn.grade-8 { --tile-accent:#8caf9e; --tile-tint:#dfece7; --tile-ink:#356a60; }
+.grade-btn.grade-9 { --tile-accent:#caa478; --tile-tint:#f3e5d2; --tile-ink:#87613d; }
+.grade-btn.grade-11 { --tile-accent:#c78f7c; --tile-tint:#f1dfd6; --tile-ink:#854c40; }
+.grade-btn.grade-12 { --tile-accent:#8d9dbd; --tile-tint:#e1e5ef; --tile-ink:#3e527c; }
 a:focus-visible { outline:3px solid #8b551b; outline-offset:4px; }
 @media(prefers-reduced-motion:reduce) {
   .card,.grade-btn,.profile-pic,.btn-card { transition:none; }

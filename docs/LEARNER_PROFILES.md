@@ -34,6 +34,10 @@ Mỗi tên có ID độc lập. Trùng tên không nhập chung dữ liệu; đ�
 
 ## Sao lưu và giới hạn
 
+Ngày 20/10/2026, lớp 6–12 dùng mẫu giao diện lớp 6 và hiệu ứng tự động, không hiện UI điều chỉnh âm/chuyển động theo yêu cầu trực tiếp. Nút nghe từ vẫn dùng cho việc học; thiết bị giảm chuyển động vẫn được tôn trọng. Các khóa tiến độ cũ được giữ nguyên. Lớp 10 giữ sáu ID từ đầu mỗi Unit và 120 ID ngữ pháp ban đầu, thêm ID từ 7–8 và các câu mới. Ngữ pháp 8/9/11/12 nạp ngân hàng bổ sung riêng sau ngân hàng gốc, không sửa ID câu gốc. Lượt đã lưu tiếp tục dùng bộ ID ban đầu, không tự thêm câu/từ vào lượt đang chơi.
+
+Lớp 10/11/12 dùng `danh-g<lớp>-unit<N>`, `danh-g<lớp>-vocabulary-game-<phạm vi>-v1`, `danh-g<lớp>-grammar-v1` qua `DanhLearners.storage`. Phạm vi là `unit1`…`unit10`, `term1`, `term2`; học kỳ 1 gồm Unit 1–5, học kỳ 2 gồm Unit 6–10. Lượt chọn từ và ngữ pháp lưu độc lập từng lớp/hồ sơ; dùng tùy chọn hiệu ứng chung. Lật thẻ không ghi hoàn thành; gõ từ là luyện tự do trong trang, chưa lưu nguyên lượt gõ dở và không ghi bằng chứng thành thạo.
+
 Hồ sơ chỉ lưu trên cùng trình duyệt và địa chỉ website. Đổi thiết bị, trình duyệt, tên miền hoặc cổng preview sẽ dùng vùng dữ liệu khác. Xóa dữ liệu trình duyệt có thể mất lộ trình. Tải bản sao lưu JSON trong **Hồ sơ**, rồi khôi phục trên trình duyệt hoặc thiết bị khác. Khôi phục luôn tạo hồ sơ mới để tránh ghi đè người đang học; chỉ nhận định dạng và khóa dữ liệu học hợp lệ, tối đa 5 MB/1.000 khóa.
 
 Hồ sơ là cách phân chia người học, không phải tài khoản bảo mật. Người dùng chung thiết bị có thể chọn các tên khác. Không có đăng nhập máy chủ, đồng bộ tự động hoặc gửi tên/lộ trình tới máy chủ từ tính năng này.

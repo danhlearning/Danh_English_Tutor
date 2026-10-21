@@ -23,7 +23,7 @@ test('12 chủ đề lớp 7, 96 từ và đủ trang học', () => {
       if (word.image) assert.ok(fs.existsSync(path.resolve(root, word.image)), word.image);
     }
   }
-  assert.equal(units.flatMap(u => u.words).filter(w => w.image).length, 19);
+  assert.equal(units.flatMap(u => u.words).filter(w => w.image).length, 96);
 });
 test('mỗi Unit/cấp độ đủ 10 câu và ít nhất 2 câu viết lại', () => {
   assert.equal(questions.length, 432);

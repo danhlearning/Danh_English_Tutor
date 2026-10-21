@@ -96,7 +96,7 @@
     if(result.kind!=='skipped'){$('explanation').hidden=false;$('explanation').textContent=q.explanation;}
     $('next-btn').textContent=s.index===s.questionIds.length-1?'Xem kết quả':'Câu tiếp theo →';support();
   }
-  function finish(kind){const s=state.active,q=current();if(!S.finishQuestion(s,kind))return;P.record(state,q,S.result(s),s.id);persist();showPractice();fx(kind==='first'?'correct':kind==='corrected'?'corrected':kind==='seen'?'reveal':'skip',$('feedback'));}
+  function finish(kind){const s=state.active,q=current();if(!S.finishQuestion(s,kind))return;P.record(state,q,S.result(s),s.id);persist();showPractice();fx(kind==='first'?'correct':kind==='corrected'?'corrected':kind==='seen'?'reveal':'skip',$('feedback'));if(kind==='first'||kind==='corrected')window.DanhAnswerSpeech.question(q);}
   function check(){const s=state.active,q=current();if(!s||S.result(s))return;
     if(!A.normalize(s.answer)){$('feedback').hidden=false;$('feedback').className='response retry';$('feedback').textContent=q.type==='choice'?'Em hãy chọn một đáp án.':q.type==='order'?'Em hãy chọn các từ để xếp câu.':'Em hãy nhập câu trả lời.';return;}
     if(A.accepted(q,s.answer))finish(s.attempts===0?'first':'corrected');
@@ -124,7 +124,7 @@
     $('examples').innerHTML=t.examples.map(([en,vi])=>`<div class="example"><strong>${escape(en)}</strong><div class="muted">${escape(vi)}</div></div>`).join('');
     $('theory-practice').href=`grammar-practice.html?topic=${t.id}&level=${l}`;
     $('quick-questions').innerHTML=t.seeds.slice(0,3).map((seed,i)=>`<div class="quick-question"><p>${escape(seed.sentence.replace(seed.focus,'_____'))}</p><div class="actions">${R.shuffle([seed.focus,seed.wrong]).map(v=>`<button type="button" data-quick="${i}" data-answer="${escape(v)}">${escape(v)}</button>`).join('')}</div><div class="quick-feedback" id="quick-${i}" role="status" aria-live="polite"></div></div>`).join('');
-    document.querySelectorAll('[data-quick]').forEach(b=>b.onclick=()=>{const seed=t.seeds[Number(b.dataset.quick)],feedback=$(`quick-${b.dataset.quick}`);if(b.dataset.answer===seed.focus){feedback.textContent=`✅ Chính xác. ${t.rule}`;b.parentElement.querySelectorAll('button').forEach(button=>button.disabled=true);fx('correct',feedback);}else{feedback.textContent='Chưa đúng. Hãy đọc cách dùng ở trên rồi thử lại.';fx('retry',feedback);}});
+    document.querySelectorAll('[data-quick]').forEach(b=>b.onclick=()=>{const seed=t.seeds[Number(b.dataset.quick)],feedback=$(`quick-${b.dataset.quick}`);if(b.dataset.answer===seed.focus){feedback.textContent=`✅ Chính xác. ${t.rule}`;b.parentElement.querySelectorAll('button').forEach(button=>button.disabled=true);fx('correct',feedback);window.DanhAnswerSpeech.say(seed.focus);}else{feedback.textContent='Chưa đúng. Hãy đọc cách dùng ở trên rồi thử lại.';fx('retry',feedback);}});
     const timeline=$('timeline');timeline.hidden=!['tenses','advanced'].includes(t.group)||!['tenses'].includes(t.group)&&t.id!=='tense-contrast';
     if(!timeline.hidden)timeline.textContent=t.id==='future-simple'?'Hiện tại ─────────→ Tương lai: will + V':t.id==='present-perfect'?'Bắt đầu / trải nghiệm trong quá khứ ─────→ Còn liên quan hiện tại':t.id.startsWith('past')?'Quá khứ: việc đã xảy ra ─────────→ Hiện tại':'Hiện tại: thói quen hoặc việc đang diễn ra';
   }

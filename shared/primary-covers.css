@@ -1,0 +1,26 @@
+/* Bìa nét chì riêng cho danh mục lớp 1–5. */
+@import url('./learner-font.css');
+body.primary-cover-page { --cover-paper:#fbf0df; --cover-ink:#744737; }
+body.primary-cover-2 { --cover-paper:#edf3e5; --cover-ink:#315b48; }
+body.primary-cover-3 { --cover-paper:#eaf1f6; --cover-ink:#375b76; }
+body.primary-cover-4 { --cover-paper:#f0eaf4; --cover-ink:#655074; }
+body.primary-cover-5 { --cover-paper:#f5ecd9; --cover-ink:#71552f; }
+body.primary-cover-page .primary-cover-hero {
+  display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:center; gap:28px;
+  padding:30px max(20px,calc((100vw - 1120px)/2));
+  background:var(--cover-paper); color:var(--cover-ink); box-shadow:0 5px 18px #49392310;
+  font-family:'Danh Nunito',Nunito,sans-serif;
+}
+body.primary-cover-page .primary-cover-hero::before,
+body.primary-cover-page .primary-cover-hero::after { display:none; }
+.primary-cover-copy { min-width:0; }
+body.primary-cover-page .primary-cover-hero :is(h1,p,.g4-eyebrow) { color:var(--cover-ink); }
+body.primary-cover-page .primary-cover-hero h1 { font-size:clamp(2rem,4vw,3.5rem); line-height:1.2; margin:16px 0 8px; }
+body.primary-cover-page .primary-cover-hero :is(.g4-back,.back-btn) {
+  color:var(--cover-ink); background:#ffffff99; border:1px solid currentColor; min-height:44px;
+}
+.primary-cover-art { display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; border-radius:24px; box-shadow:0 6px 18px #49392315; }
+@media(max-width:680px) {
+  body.primary-cover-page .primary-cover-hero { grid-template-columns:minmax(0,1fr); gap:20px; padding:22px 20px 26px; }
+  .primary-cover-art { max-width:480px; justify-self:center; border-radius:20px; }
+}

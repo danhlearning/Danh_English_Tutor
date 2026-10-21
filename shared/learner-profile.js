@@ -4,6 +4,62 @@
   const C = window.DanhLearnerCore;
   const base = new URL('../', document.currentScript.src);
   const font=document.createElement('link');font.rel='stylesheet';font.href=new URL('shared/learner-font.css',base).href;document.head.append(font);
+  const gaps=document.createElement('script');gaps.src=new URL('shared/exercise-gaps.js?v=solid-1',base).href;gaps.async=false;document.head.append(gaps);
+  // Giọng đọc đáp án dùng chung, chỉ được gọi từ thao tác học đã chấm đúng.
+  const answerSpeechEnabled=()=>window.DanhLearningEffects?.soundEnabled?.() ?? window.DanhGrammarExperience?.settings.sound ?? true;
+  const cleanAnswerSpeech=s=>String(s||'').replace(/[\[\]]/g,'').replace(/·/g,',').replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim();
+  const answerAudioKey=s=>{let hash=2166136261;for(const c of cleanAnswerSpeech(s).toLowerCase())hash=Math.imul(hash^c.charCodeAt(0),16777619);return(hash>>>0).toString(16).padStart(8,'0');};
+  document.documentElement.dataset.answerSpeechVersion='audio-1';
+  const answerSpeechState=(state,mode,text)=>{document.documentElement.dataset.answerSpeechState=state;document.documentElement.dataset.answerSpeechMode=mode;document.documentElement.dataset.answerSpeechText=text;document.dispatchEvent(new CustomEvent('danh-answer-speech',{detail:{state,mode,text}}));};
+  let finishAnswerSpeech,answerAudio;
+  const stopAnswerSpeech=()=>{if(answerAudio){answerAudio.pause();answerAudio.src='';answerAudio=null;}finishAnswerSpeech?.();try{window.speechSynthesis?.cancel();}catch{}};
+  const playAnswerAudio=text=>{
+    const audio=new Audio(new URL(`shared/answer-audio/${answerAudioKey(text)}.wav`,base));answerAudio=audio;
+    if(window.DanhYoungSpeech)audio.playbackRate=.85;
+    return new Promise(resolve=>{
+      let finished=false;
+      const done=()=>{if(finished)return;finished=true;clearTimeout(timeout);if(finishAnswerSpeech===done)finishAnswerSpeech=null;if(answerAudio===audio)answerAudio=null;resolve(true);};
+      const timeout=setTimeout(done,Math.max(20000,text.length*180+4000));finishAnswerSpeech=done;
+      audio.onended=()=>{answerSpeechState('ended','audio',text);done();};
+      audio.onplaying=()=>answerSpeechState('playing','audio',text);
+      const failed=()=>{document.dispatchEvent(new CustomEvent('danh-answer-speech',{detail:{state:'error',mode:'audio',text}}));const note=document.getElementById('speech-note');if(note)note.textContent='Chưa phát được giọng đọc. Em bấm Nghe từ để thử lại nhé.';done();};
+      audio.onerror=failed;audio.play().catch(failed);
+    });
+  };
+  window.DanhAnswerSpeech={
+    say(text){
+      if(!answerSpeechEnabled()||document.hidden)return false;
+      const clean=cleanAnswerSpeech(text);
+      if(!clean)return false;
+      try{
+        stopAnswerSpeech();
+        const voices=window.speechSynthesis?.getVoices?.()||[];
+        if(!window.speechSynthesis||!window.SpeechSynthesisUtterance||!voices.some(v=>/^en(?:[-_]|$)/i.test(v.lang)))return playAnswerAudio(clean);
+        const utterance=new window.SpeechSynthesisUtterance(clean);utterance.lang='en-GB';utterance.rate=.82;
+        utterance.voice=voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en\b/i.test(v.lang))||null;
+        window.DanhYoungSpeech?.configure(utterance);
+        return new Promise(resolve=>{
+          let finished=false;
+          const done=()=>{if(finished)return;finished=true;clearTimeout(timeout);if(finishAnswerSpeech===done)finishAnswerSpeech=null;resolve(true);};
+          const timeout=setTimeout(done,Math.max(20000,clean.length*180+4000));
+          finishAnswerSpeech=done;
+          utterance.onstart=()=>answerSpeechState('playing','speech',clean);
+          const fallback=()=>{if(finished)return;if(!answerSpeechEnabled()||document.hidden){done();return;}clearTimeout(timeout);playAnswerAudio(clean).then(done);};
+          utterance.onend=()=>{answerSpeechState('ended','speech',clean);done();};utterance.onerror=event=>{if(['canceled','interrupted'].includes(event.error))done();else fallback();};
+          try{window.speechSynthesis.speak(utterance);}catch{fallback();}
+        });
+      }catch{return false;}
+    },
+    question(question){
+      const answer=String(question.answer??question.answers?.[0]??'').split('|')[0];
+      // Ngữ điệu/nhịp và nhãn âm cần nghe câu tiếng Anh mẫu, không đọc nhãn tiếng Việt.
+      const example=String(question.prompt||'').match(/[“"]([^”"]+)[”"]/)?.[1];
+      return this.say(/[\u00c0-\u1ef9↗↘→]/.test(answer)||/^\/[^/]+\/$/.test(answer)?example:answer);
+    },
+    stop:stopAnswerSpeech
+  };
+  window.addEventListener('pagehide',stopAnswerSpeech);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)stopAnswerSpeech();});
   const memory = () => { const map = new Map(); return {get length(){return map.size;},key(i){return [...map.keys()][i]??null;},getItem(k){return map.get(k)??null;},setItem(k,v){map.set(k,String(v));},removeItem(k){map.delete(k);}}; };
   function available(type) { try { const s=window[type], k='danh-profile-check'; s.setItem(k,'1');s.removeItem(k);return s; } catch { return null; } }
   const local = available('localStorage'), session = available('sessionStorage');

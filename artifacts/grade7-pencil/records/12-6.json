@@ -1,0 +1,11 @@
+{
+  "unit": 12,
+  "wordId": 6,
+  "term": "tower",
+  "meaning": "tòa tháp",
+  "example": "The clock tower is very tall.",
+  "file": "grade/lop7/assets/images/pencil/unit12/6-v1.webp",
+  "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: tower. Scene: A tall stone clock tower beside a little tree for scale, clock face with hands and tick marks only, no numerals. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024.",
+  "mode": "built-in image_gen",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-e7af05e6-fa1a-4fe8-8212-b1e742f32ce1.png"
+}
