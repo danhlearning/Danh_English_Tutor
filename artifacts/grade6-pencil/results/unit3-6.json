@@ -1,0 +1,13 @@
+{
+  "key": "unit3/6",
+  "unit": 3,
+  "unitId": "unit3",
+  "id": 6,
+  "term": "creative",
+  "meaning": "sáng tạo",
+  "example": "Our creative friend draws beautiful pictures.",
+  "slug": "creative",
+  "file": "grade/lop6/assets/images/pencil/unit3/creative-v1.webp",
+  "prompt": "Use case: illustration-story. Asset: one square vocabulary illustration for a Grade 6 English learning website. Subject: creative, meaning sáng tạo. Context for the illustrator only, do not put these words in the image: Our creative friend draws beautiful pictures.\nScene: A creative student inventing a colorful imaginative drawing on paper using colored pencils, with unique shapes and animals on the drawing, no words. Emphasize original artwork and proud thoughtful expression.\nStyle: charming hand-drawn flat 2D colored-pencil cartoon with clearly visible pencil grain, layered colored-pencil shading and soft warm graphite outlines on warm white paper, restrained cheerful pastel colors, matching the newest pencil vocabulary illustrations for this project. Suitable for ages 11–12, natural proportions, not babyish. One coherent scene, square composition, main subject clear at thumbnail size, light breathing room around the subject. No photorealism, no 3D, no vector-flat rendering.\nConstraints: absolutely no letters, readable text, words, numbers, captions, Vietnamese meanings, definitions, labels, logos, watermarks, decorative border or speech bubbles. No collage or multiple cards. Correct anatomy, object construction, perspective and cause-and-effect. Do not add unrelated decoration. Create exactly one finished square image.",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-53683f5e-cc93-4a34-bc71-bdaee6491b17.png"
+}

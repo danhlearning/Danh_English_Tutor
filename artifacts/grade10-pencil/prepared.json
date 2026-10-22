@@ -1,0 +1,770 @@
+[
+  {
+    "key": "unit1-1",
+    "unit": 1,
+    "wordId": 1,
+    "term": "household chore",
+    "file": "grade/lop10/assets/images/pencil/unit1/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenage boy sweeping a home floor with a broom, a small bucket nearby. Emphasize doing a household chore.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-19c12c60-9cfd-41bf-9cc5-5a5bf13d999e.png"
+  },
+  {
+    "key": "unit1-2",
+    "unit": 1,
+    "wordId": 2,
+    "term": "breadwinner",
+    "file": "grade/lop10/assets/images/pencil/unit1/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Two Vietnamese parents returning home from their jobs carrying a plain work bag and groceries, warmly greeted by their teenager; conveys earning a living for the family, no money symbols or writing.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-6c1e238b-a220-4706-ba78-3795025e76d0.png"
+  },
+  {
+    "key": "unit1-3",
+    "unit": 1,
+    "wordId": 3,
+    "term": "responsibility",
+    "file": "grade/lop10/assets/images/pencil/unit1/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A responsible Vietnamese teenager gently feeding the family cat at the same spot beside its bowl, parents smiling in the background.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-f8e88911-4886-4cc6-8874-37dad4e85369.png"
+  },
+  {
+    "key": "unit1-4",
+    "unit": 1,
+    "wordId": 4,
+    "term": "gratitude",
+    "file": "grade/lop10/assets/images/pencil/unit1/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenager gratefully giving their grandmother a handmade bouquet, warm thankful expressions and natural hands.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-44d1fad3-d7d0-42d9-9926-197a6b59e245.png"
+  },
+  {
+    "key": "unit1-5",
+    "unit": 1,
+    "wordId": 5,
+    "term": "strengthen",
+    "file": "grade/lop10/assets/images/pencil/unit1/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese family planting a small tree together, overlapping hands supporting the young tree, conveying strengthening bonds.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-fdddafa6-c80c-41de-84ac-5de40aa7d18f.png"
+  },
+  {
+    "key": "unit1-6",
+    "unit": 1,
+    "wordId": 6,
+    "term": "support",
+    "file": "grade/lop10/assets/images/pencil/unit1/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: An older Vietnamese teenage sister patiently helping her younger brother understand a blank notebook exercise at a desk, kind supportive expressions.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-686c2603-aca7-41a6-9ed8-077b1c609dea.png"
+  },
+  {
+    "key": "unit1-7",
+    "unit": 1,
+    "wordId": 7,
+    "term": "do the laundry",
+    "file": "grade/lop10/assets/images/pencil/unit1/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenager loading plain clothes into a front loading washing machine, a laundry basket alongside.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-ca1bb557-2f57-4721-b474-9e73c288ded0.png"
+  },
+  {
+    "key": "unit1-8",
+    "unit": 1,
+    "wordId": 8,
+    "term": "family bond",
+    "file": "grade/lop10/assets/images/pencil/unit1/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A close warm Vietnamese family of four sharing a homemade meal around a round table, smiling and talking, clear family connection.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-d4cafa6f-e9a2-4d18-bdeb-c057c3b31edd.png"
+  },
+  {
+    "key": "unit2-1",
+    "unit": 2,
+    "wordId": 1,
+    "term": "carbon footprint",
+    "file": "grade/lop10/assets/images/pencil/unit2/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Two simple travel choices side by side in one cohesive scene: a small car releasing a grey puff, and a teenager cycling along a green path, with much cleaner air near the bicycle. No arrows, footprints, labels or text.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png"
+  },
+  {
+    "key": "unit2-2",
+    "unit": 2,
+    "wordId": 2,
+    "term": "eco-friendly",
+    "file": "grade/lop10/assets/images/pencil/unit2/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenager choosing a fabric shopping bag filled with fresh vegetables instead of disposable plastic; friendly green leafy surroundings.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png"
+  },
+  {
+    "key": "unit2-3",
+    "unit": 2,
+    "wordId": 3,
+    "term": "reusable",
+    "file": "grade/lop10/assets/images/pencil/unit2/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A single sturdy reusable metal water bottle beside a folded reusable fabric bag, clean simple objects fully visible.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png"
+  },
+  {
+    "key": "unit2-4",
+    "unit": 2,
+    "wordId": 4,
+    "term": "conserve",
+    "file": "grade/lop10/assets/images/pencil/unit2/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenager carefully turning off a dripping tap with a small water droplet still visible, focus on saving water.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png"
+  },
+  {
+    "key": "unit2-5",
+    "unit": 2,
+    "wordId": 5,
+    "term": "organic",
+    "file": "grade/lop10/assets/images/pencil/unit2/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A thriving organic vegetable garden with rich compost and natural ladybirds, a Vietnamese grower gently picking fresh lettuce; no chemical bottles or labels.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png"
+  },
+  {
+    "key": "unit2-6",
+    "unit": 2,
+    "wordId": 6,
+    "term": "litter",
+    "file": "grade/lop10/assets/images/pencil/unit2/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Several discarded plain cups and crumpled wrappers scattered on a park path, clearly litter in the wrong place; no writing on wrappers.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png"
+  },
+  {
+    "key": "unit2-7",
+    "unit": 2,
+    "wordId": 7,
+    "term": "recycle",
+    "file": "grade/lop10/assets/images/pencil/unit2/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A teenager placing clean paper into a recycling bin beside a neat stack of old plain paper, the bin bears only a pictorial recycling symbol, no text.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png"
+  },
+  {
+    "key": "unit2-8",
+    "unit": 2,
+    "wordId": 8,
+    "term": "green lifestyle",
+    "file": "grade/lop10/assets/images/pencil/unit2/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenager cycling with a reusable bag and bottle past a leafy neighbourhood, calm clean sustainable everyday living.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png"
+  },
+  {
+    "key": "unit3-1",
+    "unit": 3,
+    "wordId": 1,
+    "term": "audience",
+    "file": "grade/lop10/assets/images/pencil/unit3/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A small seated theatre audience clapping warmly, view from the side of an unlabelled stage, emphasize the audience rather than a performer.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png"
+  },
+  {
+    "key": "unit3-2",
+    "unit": 3,
+    "wordId": 2,
+    "term": "performance",
+    "file": "grade/lop10/assets/images/pencil/unit3/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenage singer confidently performing on a small school stage with microphone and gentle stage lights, no writing or banners.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png"
+  },
+  {
+    "key": "unit3-3",
+    "unit": 3,
+    "wordId": 3,
+    "term": "judge",
+    "file": "grade/lop10/assets/images/pencil/unit3/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A music competition judge sitting at a plain judging desk wearing headphones, attentively listening to a distant singer. Blank papers, no scoring numbers.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png"
+  },
+  {
+    "key": "unit3-4",
+    "unit": 3,
+    "wordId": 4,
+    "term": "talented",
+    "file": "grade/lop10/assets/images/pencil/unit3/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A talented Vietnamese teenage guitarist skilfully playing an acoustic guitar, classmates listening with impressed expressions.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png"
+  },
+  {
+    "key": "unit3-5",
+    "unit": 3,
+    "wordId": 5,
+    "term": "release",
+    "file": "grade/lop10/assets/images/pencil/unit3/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A musician presenting a new plain album sleeve with only an abstract pictorial design, a few plain records neatly arranged beside it; no text or letters.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png"
+  },
+  {
+    "key": "unit3-6",
+    "unit": 3,
+    "wordId": 6,
+    "term": "contest",
+    "file": "grade/lop10/assets/images/pencil/unit3/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Three teenage singers waiting at a small school music competition, one trophy with no inscriptions and a simple stage; no banners or numbers.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png"
+  },
+  {
+    "key": "unit3-7",
+    "unit": 3,
+    "wordId": 7,
+    "term": "composer",
+    "file": "grade/lop10/assets/images/pencil/unit3/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese composer thoughtfully working at a piano with a pencil in hand and plain blank music paper on its stand, no notation, symbols or text.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png"
+  },
+  {
+    "key": "unit3-8",
+    "unit": 3,
+    "wordId": 8,
+    "term": "instrument",
+    "file": "grade/lop10/assets/images/pencil/unit3/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Three musical instruments arranged clearly: acoustic guitar, flute and small drum, all fully visible on light paper, no person or lettering.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png"
+  },
+  {
+    "key": "unit4-1",
+    "unit": 4,
+    "wordId": 1,
+    "term": "volunteer",
+    "file": "grade/lop10/assets/images/pencil/unit4/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenage volunteer reading a blank picture book to two younger children at a community centre, warm attentive expressions, pages contain only simple pictures.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png"
+  },
+  {
+    "key": "unit4-2",
+    "unit": 4,
+    "wordId": 2,
+    "term": "donate",
+    "file": "grade/lop10/assets/images/pencil/unit4/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Two Vietnamese teenagers donating a cardboard box of clean warm clothes to a shelter worker, all boxes and clothes unlabelled.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png"
+  },
+  {
+    "key": "unit4-3",
+    "unit": 4,
+    "wordId": 3,
+    "term": "community",
+    "file": "grade/lop10/assets/images/pencil/unit4/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A friendly Vietnamese neighbourhood community with several neighbours of different ages tending a small shared garden together.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png"
+  },
+  {
+    "key": "unit4-4",
+    "unit": 4,
+    "wordId": 4,
+    "term": "benefit",
+    "file": "grade/lop10/assets/images/pencil/unit4/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A teenager returning from volunteering with a new friend, both smiling with relaxed confident posture near a community garden; conveys a positive benefit of helping.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png"
+  },
+  {
+    "key": "unit4-5",
+    "unit": 4,
+    "wordId": 5,
+    "term": "generous",
+    "file": "grade/lop10/assets/images/pencil/unit4/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A generous Vietnamese neighbour sharing a large basket of fresh vegetables with an older neighbour, warm giving gesture.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png"
+  },
+  {
+    "key": "unit4-6",
+    "unit": 4,
+    "wordId": 6,
+    "term": "charity",
+    "file": "grade/lop10/assets/images/pencil/unit4/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A small charity meal service run by caring volunteers, a volunteer handing a full bowl of soup to an older person at a community table. No signage or labels.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png"
+  },
+  {
+    "key": "unit4-7",
+    "unit": 4,
+    "wordId": 7,
+    "term": "shelter",
+    "file": "grade/lop10/assets/images/pencil/unit4/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A modest safe community shelter: inviting open door, clean bed, blanket and caring adult welcoming a family, no signs or text.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png"
+  },
+  {
+    "key": "unit4-8",
+    "unit": 4,
+    "wordId": 8,
+    "term": "raise funds",
+    "file": "grade/lop10/assets/images/pencil/unit4/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Vietnamese students running a small handmade craft stall to raise funds, one customer placing a plain coin into a clear donation jar, cards have only pictures, no writing or numbers.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png"
+  },
+  {
+    "key": "unit5-1",
+    "unit": 5,
+    "wordId": 1,
+    "term": "device",
+    "file": "grade/lop10/assets/images/pencil/unit5/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: One small digital room temperature sensor device with a completely blank display, fully visible beside a houseplant; no numbers, text or logo.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png"
+  },
+  {
+    "key": "unit5-2",
+    "unit": 5,
+    "wordId": 2,
+    "term": "invention",
+    "file": "grade/lop10/assets/images/pencil/unit5/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A young Vietnamese inventor proudly demonstrating a simple mechanical grabber that picks up a small object, clearly a useful new invention, blank workspace.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png"
+  },
+  {
+    "key": "unit5-3",
+    "unit": 5,
+    "wordId": 3,
+    "term": "portable",
+    "file": "grade/lop10/assets/images/pencil/unit5/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A compact portable charger next to a small closed travel pouch and plain mobile phone, emphasize easily carried size, blank screens and no labels.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png"
+  },
+  {
+    "key": "unit5-4",
+    "unit": 5,
+    "wordId": 4,
+    "term": "experiment",
+    "file": "grade/lop10/assets/images/pencil/unit5/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A safe school science experiment: a Vietnamese teenager wearing goggles carefully observing water filtration through gravel and sand in a clear bottle, tidy table.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png"
+  },
+  {
+    "key": "unit5-5",
+    "unit": 5,
+    "wordId": 5,
+    "term": "effective",
+    "file": "grade/lop10/assets/images/pencil/unit5/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A working air filter with visible grey dust particles on one side and clean clear air on the other, no arrows or labels, simple natural visual comparison.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png"
+  },
+  {
+    "key": "unit5-6",
+    "unit": 5,
+    "wordId": 6,
+    "term": "application",
+    "file": "grade/lop10/assets/images/pencil/unit5/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: An unbranded tablet displaying only simple colourful pictorial app icons, no letters, numbers, keyboard labels or readable text.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png"
+  },
+  {
+    "key": "unit5-7",
+    "unit": 5,
+    "wordId": 7,
+    "term": "robot",
+    "file": "grade/lop10/assets/images/pencil/unit5/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A friendly small wheeled educational robot sorting coloured wooden blocks into matching shapes, no letters or numbers.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png"
+  },
+  {
+    "key": "unit5-8",
+    "unit": 5,
+    "wordId": 8,
+    "term": "solar panel",
+    "file": "grade/lop10/assets/images/pencil/unit5/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: One solar panel in sunlight on a simple roof, connected by a visible wire to a glowing light bulb, clear solar energy concept, no symbols or text.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png"
+  },
+  {
+    "key": "unit6-1",
+    "unit": 6,
+    "wordId": 1,
+    "term": "equality",
+    "file": "grade/lop10/assets/images/pencil/unit6/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Vietnamese teenage boy and girl standing at the same height on equal balanced platforms, both holding school books, an evenly balanced simple scale nearby, no writing.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png"
+  },
+  {
+    "key": "unit6-2",
+    "unit": 6,
+    "wordId": 2,
+    "term": "opportunity",
+    "file": "grade/lop10/assets/images/pencil/unit6/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese school girl stepping through an open classroom door toward a science activity with other peers, an encouraging teacher welcoming her; conveys opportunity.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png"
+  },
+  {
+    "key": "unit6-3",
+    "unit": 6,
+    "wordId": 3,
+    "term": "discrimination",
+    "file": "grade/lop10/assets/images/pencil/unit6/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenage girl unfairly left outside a closed club doorway while two peers are admitted, she looks disappointed and another peer gestures for fairness; avoid written signs.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png"
+  },
+  {
+    "key": "unit6-4",
+    "unit": 6,
+    "wordId": 4,
+    "term": "qualified",
+    "file": "grade/lop10/assets/images/pencil/unit6/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A qualified Vietnamese female engineer in helmet carefully checking a small bridge model with a ruler with no markings, professional confident pose.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png"
+  },
+  {
+    "key": "unit6-5",
+    "unit": 6,
+    "wordId": 5,
+    "term": "encourage",
+    "file": "grade/lop10/assets/images/pencil/unit6/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teacher warmly encouraging a shy teenage girl to join a science demonstration, supportive open hands and confident smile.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png"
+  },
+  {
+    "key": "unit6-6",
+    "unit": 6,
+    "wordId": 6,
+    "term": "right",
+    "file": "grade/lop10/assets/images/pencil/unit6/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese child entering an open welcoming school gate with a blank book, boys and girls of diverse backgrounds all welcome; conveys the right to education.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png"
+  },
+  {
+    "key": "unit6-7",
+    "unit": 6,
+    "wordId": 7,
+    "term": "equal pay",
+    "file": "grade/lop10/assets/images/pencil/unit6/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese man and woman doing the same office work at neighbouring desks, receiving identical plain coin stacks from a manager; clearly equal pay, no writing or numbers.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png"
+  },
+  {
+    "key": "unit6-8",
+    "unit": 6,
+    "wordId": 8,
+    "term": "female firefighter",
+    "file": "grade/lop10/assets/images/pencil/unit6/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese female firefighter in complete protective uniform and helmet checking a fire hose, calm professional scene, no fire or text.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png"
+  },
+  {
+    "key": "unit7-1",
+    "unit": 7,
+    "wordId": 1,
+    "term": "cooperate",
+    "file": "grade/lop10/assets/images/pencil/unit7/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Vietnamese and international teenagers cooperating to assemble a simple small model bridge at a shared table, equal teamwork, blank materials.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png"
+  },
+  {
+    "key": "unit7-2",
+    "unit": 7,
+    "wordId": 2,
+    "term": "peacekeeping",
+    "file": "grade/lop10/assets/images/pencil/unit7/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Two peacekeeping workers wearing plain blue helmets delivering a box of supplies near a peaceful village, respectful calm scene, no weapons or insignia or text.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png"
+  },
+  {
+    "key": "unit7-3",
+    "unit": 7,
+    "wordId": 3,
+    "term": "investment",
+    "file": "grade/lop10/assets/images/pencil/unit7/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A new community library being built with shelves and books, a caring adult placing a sapling alongside; conveys investment in education, no money icons or writing.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png"
+  },
+  {
+    "key": "unit7-4",
+    "unit": 7,
+    "wordId": 4,
+    "term": "regional",
+    "file": "grade/lop10/assets/images/pencil/unit7/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A group of teenagers from neighbouring Southeast Asian communities meeting around a plain map-shaped table, no flags, borders, labels or letters.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png"
+  },
+  {
+    "key": "unit7-5",
+    "unit": 7,
+    "wordId": 5,
+    "term": "commitment",
+    "file": "grade/lop10/assets/images/pencil/unit7/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A committed Vietnamese teenager carefully watering the same small school tree in a garden, strong attentive care and focus, no calendars or text.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png"
+  },
+  {
+    "key": "unit7-6",
+    "unit": 7,
+    "wordId": 6,
+    "term": "development",
+    "file": "grade/lop10/assets/images/pencil/unit7/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A growing Vietnamese community with a new school building, green young trees and a simple bridge, hopeful development scene without labels.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png"
+  },
+  {
+    "key": "unit7-7",
+    "unit": 7,
+    "wordId": 7,
+    "term": "humanitarian aid",
+    "file": "grade/lop10/assets/images/pencil/unit7/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Humanitarian workers handing a plain relief box containing food, blankets and sealed clean water to a family, humane dignified setting, no brands or words.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png"
+  },
+  {
+    "key": "unit7-8",
+    "unit": 7,
+    "wordId": 8,
+    "term": "international",
+    "file": "grade/lop10/assets/images/pencil/unit7/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: An international group of teenage students from several cultures collaborating around a small globe, friendly equal peers, no flags, words or map labels.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png"
+  },
+  {
+    "key": "unit8-1",
+    "unit": 8,
+    "wordId": 1,
+    "term": "blended learning",
+    "file": "grade/lop10/assets/images/pencil/unit8/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenager learning with a laptop at home in one part of a cohesive illustration and discussing a book with a teacher in a classroom in the other, connected by flowing pencil line, no words.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4a5aca9b-0860-427a-8d26-3caf5e4957a1.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 8, New Ways to Learn, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A Vietnamese teenager learning with a laptop at home in one part of a cohesive illustration and discussing a book with a teacher in a classroom in the other, connected by flowing pencil line, no words.\n2. An open unbranded laptop, tablet and stylus arranged neatly as digital learning tools, screens have only simple abstract shapes, no letters or numbers.\n3. A Vietnamese teenager tapping a colourful puzzle on a tablet while pictorial puzzle pieces visibly respond, interactive learning, no interface text or digits.\n4. A Vietnamese teenager opening a digital lesson represented by an open laptop with a small unlocked padlock pictogram beside it, screen contains only a book pictogram.\n5. A focused Vietnamese teenager studying alone at a tidy home desk with an open blank notebook, pencil and reading lamp, clear independent self-study.\n6. A useful collection of learning resources: plain books, globe, headphones and an open laptop with only a book pictogram, no text or labels.\n7. A Vietnamese teenager at a home desk taking an online lesson, laptop screen shows only the portrait of a friendly teacher with simple geometric diagrams, no text or digits.\n8. Four Vietnamese teenage students discussing ideas around a shared table with blank notebooks, natural attentive faces and gestures, no speech bubbles or words.",
+    "cell": 1
+  },
+  {
+    "key": "unit8-2",
+    "unit": 8,
+    "wordId": 2,
+    "term": "digital",
+    "file": "grade/lop10/assets/images/pencil/unit8/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: An open unbranded laptop, tablet and stylus arranged neatly as digital learning tools, screens have only simple abstract shapes, no letters or numbers.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4a5aca9b-0860-427a-8d26-3caf5e4957a1.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 8, New Ways to Learn, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A Vietnamese teenager learning with a laptop at home in one part of a cohesive illustration and discussing a book with a teacher in a classroom in the other, connected by flowing pencil line, no words.\n2. An open unbranded laptop, tablet and stylus arranged neatly as digital learning tools, screens have only simple abstract shapes, no letters or numbers.\n3. A Vietnamese teenager tapping a colourful puzzle on a tablet while pictorial puzzle pieces visibly respond, interactive learning, no interface text or digits.\n4. A Vietnamese teenager opening a digital lesson represented by an open laptop with a small unlocked padlock pictogram beside it, screen contains only a book pictogram.\n5. A focused Vietnamese teenager studying alone at a tidy home desk with an open blank notebook, pencil and reading lamp, clear independent self-study.\n6. A useful collection of learning resources: plain books, globe, headphones and an open laptop with only a book pictogram, no text or labels.\n7. A Vietnamese teenager at a home desk taking an online lesson, laptop screen shows only the portrait of a friendly teacher with simple geometric diagrams, no text or digits.\n8. Four Vietnamese teenage students discussing ideas around a shared table with blank notebooks, natural attentive faces and gestures, no speech bubbles or words.",
+    "cell": 2
+  },
+  {
+    "key": "unit8-3",
+    "unit": 8,
+    "wordId": 3,
+    "term": "interactive",
+    "file": "grade/lop10/assets/images/pencil/unit8/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenager tapping a colourful puzzle on a tablet while pictorial puzzle pieces visibly respond, interactive learning, no interface text or digits.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4a5aca9b-0860-427a-8d26-3caf5e4957a1.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 8, New Ways to Learn, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A Vietnamese teenager learning with a laptop at home in one part of a cohesive illustration and discussing a book with a teacher in a classroom in the other, connected by flowing pencil line, no words.\n2. An open unbranded laptop, tablet and stylus arranged neatly as digital learning tools, screens have only simple abstract shapes, no letters or numbers.\n3. A Vietnamese teenager tapping a colourful puzzle on a tablet while pictorial puzzle pieces visibly respond, interactive learning, no interface text or digits.\n4. A Vietnamese teenager opening a digital lesson represented by an open laptop with a small unlocked padlock pictogram beside it, screen contains only a book pictogram.\n5. A focused Vietnamese teenager studying alone at a tidy home desk with an open blank notebook, pencil and reading lamp, clear independent self-study.\n6. A useful collection of learning resources: plain books, globe, headphones and an open laptop with only a book pictogram, no text or labels.\n7. A Vietnamese teenager at a home desk taking an online lesson, laptop screen shows only the portrait of a friendly teacher with simple geometric diagrams, no text or digits.\n8. Four Vietnamese teenage students discussing ideas around a shared table with blank notebooks, natural attentive faces and gestures, no speech bubbles or words.",
+    "cell": 3
+  },
+  {
+    "key": "unit8-4",
+    "unit": 8,
+    "wordId": 4,
+    "term": "access",
+    "file": "grade/lop10/assets/images/pencil/unit8/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenager opening a digital lesson represented by an open laptop with a small unlocked padlock pictogram beside it, screen contains only a book pictogram.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4a5aca9b-0860-427a-8d26-3caf5e4957a1.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 8, New Ways to Learn, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A Vietnamese teenager learning with a laptop at home in one part of a cohesive illustration and discussing a book with a teacher in a classroom in the other, connected by flowing pencil line, no words.\n2. An open unbranded laptop, tablet and stylus arranged neatly as digital learning tools, screens have only simple abstract shapes, no letters or numbers.\n3. A Vietnamese teenager tapping a colourful puzzle on a tablet while pictorial puzzle pieces visibly respond, interactive learning, no interface text or digits.\n4. A Vietnamese teenager opening a digital lesson represented by an open laptop with a small unlocked padlock pictogram beside it, screen contains only a book pictogram.\n5. A focused Vietnamese teenager studying alone at a tidy home desk with an open blank notebook, pencil and reading lamp, clear independent self-study.\n6. A useful collection of learning resources: plain books, globe, headphones and an open laptop with only a book pictogram, no text or labels.\n7. A Vietnamese teenager at a home desk taking an online lesson, laptop screen shows only the portrait of a friendly teacher with simple geometric diagrams, no text or digits.\n8. Four Vietnamese teenage students discussing ideas around a shared table with blank notebooks, natural attentive faces and gestures, no speech bubbles or words.",
+    "cell": 4
+  },
+  {
+    "key": "unit8-5",
+    "unit": 8,
+    "wordId": 5,
+    "term": "self-study",
+    "file": "grade/lop10/assets/images/pencil/unit8/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A focused Vietnamese teenager studying alone at a tidy home desk with an open blank notebook, pencil and reading lamp, clear independent self-study.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4a5aca9b-0860-427a-8d26-3caf5e4957a1.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 8, New Ways to Learn, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A Vietnamese teenager learning with a laptop at home in one part of a cohesive illustration and discussing a book with a teacher in a classroom in the other, connected by flowing pencil line, no words.\n2. An open unbranded laptop, tablet and stylus arranged neatly as digital learning tools, screens have only simple abstract shapes, no letters or numbers.\n3. A Vietnamese teenager tapping a colourful puzzle on a tablet while pictorial puzzle pieces visibly respond, interactive learning, no interface text or digits.\n4. A Vietnamese teenager opening a digital lesson represented by an open laptop with a small unlocked padlock pictogram beside it, screen contains only a book pictogram.\n5. A focused Vietnamese teenager studying alone at a tidy home desk with an open blank notebook, pencil and reading lamp, clear independent self-study.\n6. A useful collection of learning resources: plain books, globe, headphones and an open laptop with only a book pictogram, no text or labels.\n7. A Vietnamese teenager at a home desk taking an online lesson, laptop screen shows only the portrait of a friendly teacher with simple geometric diagrams, no text or digits.\n8. Four Vietnamese teenage students discussing ideas around a shared table with blank notebooks, natural attentive faces and gestures, no speech bubbles or words.",
+    "cell": 5
+  },
+  {
+    "key": "unit8-6",
+    "unit": 8,
+    "wordId": 6,
+    "term": "resource",
+    "file": "grade/lop10/assets/images/pencil/unit8/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A useful collection of learning resources: plain books, globe, headphones and an open laptop with only a book pictogram, no text or labels.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4a5aca9b-0860-427a-8d26-3caf5e4957a1.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 8, New Ways to Learn, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A Vietnamese teenager learning with a laptop at home in one part of a cohesive illustration and discussing a book with a teacher in a classroom in the other, connected by flowing pencil line, no words.\n2. An open unbranded laptop, tablet and stylus arranged neatly as digital learning tools, screens have only simple abstract shapes, no letters or numbers.\n3. A Vietnamese teenager tapping a colourful puzzle on a tablet while pictorial puzzle pieces visibly respond, interactive learning, no interface text or digits.\n4. A Vietnamese teenager opening a digital lesson represented by an open laptop with a small unlocked padlock pictogram beside it, screen contains only a book pictogram.\n5. A focused Vietnamese teenager studying alone at a tidy home desk with an open blank notebook, pencil and reading lamp, clear independent self-study.\n6. A useful collection of learning resources: plain books, globe, headphones and an open laptop with only a book pictogram, no text or labels.\n7. A Vietnamese teenager at a home desk taking an online lesson, laptop screen shows only the portrait of a friendly teacher with simple geometric diagrams, no text or digits.\n8. Four Vietnamese teenage students discussing ideas around a shared table with blank notebooks, natural attentive faces and gestures, no speech bubbles or words.",
+    "cell": 6
+  },
+  {
+    "key": "unit8-7",
+    "unit": 8,
+    "wordId": 7,
+    "term": "online lesson",
+    "file": "grade/lop10/assets/images/pencil/unit8/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenager at a home desk taking an online lesson, laptop screen shows only the portrait of a friendly teacher with simple geometric diagrams, no text or digits.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4a5aca9b-0860-427a-8d26-3caf5e4957a1.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 8, New Ways to Learn, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A Vietnamese teenager learning with a laptop at home in one part of a cohesive illustration and discussing a book with a teacher in a classroom in the other, connected by flowing pencil line, no words.\n2. An open unbranded laptop, tablet and stylus arranged neatly as digital learning tools, screens have only simple abstract shapes, no letters or numbers.\n3. A Vietnamese teenager tapping a colourful puzzle on a tablet while pictorial puzzle pieces visibly respond, interactive learning, no interface text or digits.\n4. A Vietnamese teenager opening a digital lesson represented by an open laptop with a small unlocked padlock pictogram beside it, screen contains only a book pictogram.\n5. A focused Vietnamese teenager studying alone at a tidy home desk with an open blank notebook, pencil and reading lamp, clear independent self-study.\n6. A useful collection of learning resources: plain books, globe, headphones and an open laptop with only a book pictogram, no text or labels.\n7. A Vietnamese teenager at a home desk taking an online lesson, laptop screen shows only the portrait of a friendly teacher with simple geometric diagrams, no text or digits.\n8. Four Vietnamese teenage students discussing ideas around a shared table with blank notebooks, natural attentive faces and gestures, no speech bubbles or words.",
+    "cell": 7
+  },
+  {
+    "key": "unit8-8",
+    "unit": 8,
+    "wordId": 8,
+    "term": "discussion",
+    "file": "grade/lop10/assets/images/pencil/unit8/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Four Vietnamese teenage students discussing ideas around a shared table with blank notebooks, natural attentive faces and gestures, no speech bubbles or words.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4a5aca9b-0860-427a-8d26-3caf5e4957a1.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 8, New Ways to Learn, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A Vietnamese teenager learning with a laptop at home in one part of a cohesive illustration and discussing a book with a teacher in a classroom in the other, connected by flowing pencil line, no words.\n2. An open unbranded laptop, tablet and stylus arranged neatly as digital learning tools, screens have only simple abstract shapes, no letters or numbers.\n3. A Vietnamese teenager tapping a colourful puzzle on a tablet while pictorial puzzle pieces visibly respond, interactive learning, no interface text or digits.\n4. A Vietnamese teenager opening a digital lesson represented by an open laptop with a small unlocked padlock pictogram beside it, screen contains only a book pictogram.\n5. A focused Vietnamese teenager studying alone at a tidy home desk with an open blank notebook, pencil and reading lamp, clear independent self-study.\n6. A useful collection of learning resources: plain books, globe, headphones and an open laptop with only a book pictogram, no text or labels.\n7. A Vietnamese teenager at a home desk taking an online lesson, laptop screen shows only the portrait of a friendly teacher with simple geometric diagrams, no text or digits.\n8. Four Vietnamese teenage students discussing ideas around a shared table with blank notebooks, natural attentive faces and gestures, no speech bubbles or words.",
+    "cell": 8
+  },
+  {
+    "key": "unit9-1",
+    "unit": 9,
+    "wordId": 1,
+    "term": "biodiversity",
+    "file": "grade/lop10/assets/images/pencil/unit9/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A rich natural forest ecosystem with diverse birds, butterflies, flowers, a frog and several plant species, clear biodiversity, no people or text.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-f9d3c050-cfce-437f-8402-f2737d303ea5.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 9, Protecting the Environment, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A rich natural forest ecosystem with diverse birds, butterflies, flowers, a frog and several plant species, clear biodiversity, no people or text.\n2. A wetland habitat with ducks nesting safely among reeds beside a pond, show the animals living in their natural home.\n3. A forest area with many freshly cut tree stumps and a few remaining tall trees, clear harmful deforestation, no people or machinery labels.\n4. A vulnerable sea turtle swimming near a reef with a caring conservation worker observing from a distance, gentle protective mood, no warning signs or text.\n5. A factory chimney releasing a cloud of grey smoke over an otherwise clean landscape, emphasize pollutant in the air, no skull symbols or labels.\n6. Two Vietnamese teenagers carefully protecting a small forest sapling with a simple wooden guard, preservation action, no writing.\n7. A wild bird, small deer and squirrel living naturally together in a green woodland, clear wildlife rather than pets, no cages.\n8. Vietnamese teenagers replanting young native trees in a previously cleared patch with visible old stumps, hopeful reforestation, no text.",
+    "cell": 1
+  },
+  {
+    "key": "unit9-2",
+    "unit": 9,
+    "wordId": 2,
+    "term": "habitat",
+    "file": "grade/lop10/assets/images/pencil/unit9/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A wetland habitat with ducks nesting safely among reeds beside a pond, show the animals living in their natural home.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-f9d3c050-cfce-437f-8402-f2737d303ea5.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 9, Protecting the Environment, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A rich natural forest ecosystem with diverse birds, butterflies, flowers, a frog and several plant species, clear biodiversity, no people or text.\n2. A wetland habitat with ducks nesting safely among reeds beside a pond, show the animals living in their natural home.\n3. A forest area with many freshly cut tree stumps and a few remaining tall trees, clear harmful deforestation, no people or machinery labels.\n4. A vulnerable sea turtle swimming near a reef with a caring conservation worker observing from a distance, gentle protective mood, no warning signs or text.\n5. A factory chimney releasing a cloud of grey smoke over an otherwise clean landscape, emphasize pollutant in the air, no skull symbols or labels.\n6. Two Vietnamese teenagers carefully protecting a small forest sapling with a simple wooden guard, preservation action, no writing.\n7. A wild bird, small deer and squirrel living naturally together in a green woodland, clear wildlife rather than pets, no cages.\n8. Vietnamese teenagers replanting young native trees in a previously cleared patch with visible old stumps, hopeful reforestation, no text.",
+    "cell": 2
+  },
+  {
+    "key": "unit9-3",
+    "unit": 9,
+    "wordId": 3,
+    "term": "deforestation",
+    "file": "grade/lop10/assets/images/pencil/unit9/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A forest area with many freshly cut tree stumps and a few remaining tall trees, clear harmful deforestation, no people or machinery labels.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-f9d3c050-cfce-437f-8402-f2737d303ea5.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 9, Protecting the Environment, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A rich natural forest ecosystem with diverse birds, butterflies, flowers, a frog and several plant species, clear biodiversity, no people or text.\n2. A wetland habitat with ducks nesting safely among reeds beside a pond, show the animals living in their natural home.\n3. A forest area with many freshly cut tree stumps and a few remaining tall trees, clear harmful deforestation, no people or machinery labels.\n4. A vulnerable sea turtle swimming near a reef with a caring conservation worker observing from a distance, gentle protective mood, no warning signs or text.\n5. A factory chimney releasing a cloud of grey smoke over an otherwise clean landscape, emphasize pollutant in the air, no skull symbols or labels.\n6. Two Vietnamese teenagers carefully protecting a small forest sapling with a simple wooden guard, preservation action, no writing.\n7. A wild bird, small deer and squirrel living naturally together in a green woodland, clear wildlife rather than pets, no cages.\n8. Vietnamese teenagers replanting young native trees in a previously cleared patch with visible old stumps, hopeful reforestation, no text.",
+    "cell": 3
+  },
+  {
+    "key": "unit9-4",
+    "unit": 9,
+    "wordId": 4,
+    "term": "endangered",
+    "file": "grade/lop10/assets/images/pencil/unit9/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A vulnerable sea turtle swimming near a reef with a caring conservation worker observing from a distance, gentle protective mood, no warning signs or text.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-f9d3c050-cfce-437f-8402-f2737d303ea5.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 9, Protecting the Environment, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A rich natural forest ecosystem with diverse birds, butterflies, flowers, a frog and several plant species, clear biodiversity, no people or text.\n2. A wetland habitat with ducks nesting safely among reeds beside a pond, show the animals living in their natural home.\n3. A forest area with many freshly cut tree stumps and a few remaining tall trees, clear harmful deforestation, no people or machinery labels.\n4. A vulnerable sea turtle swimming near a reef with a caring conservation worker observing from a distance, gentle protective mood, no warning signs or text.\n5. A factory chimney releasing a cloud of grey smoke over an otherwise clean landscape, emphasize pollutant in the air, no skull symbols or labels.\n6. Two Vietnamese teenagers carefully protecting a small forest sapling with a simple wooden guard, preservation action, no writing.\n7. A wild bird, small deer and squirrel living naturally together in a green woodland, clear wildlife rather than pets, no cages.\n8. Vietnamese teenagers replanting young native trees in a previously cleared patch with visible old stumps, hopeful reforestation, no text.",
+    "cell": 4
+  },
+  {
+    "key": "unit9-5",
+    "unit": 9,
+    "wordId": 5,
+    "term": "pollutant",
+    "file": "grade/lop10/assets/images/pencil/unit9/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A factory chimney releasing a cloud of grey smoke over an otherwise clean landscape, emphasize pollutant in the air, no skull symbols or labels.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-f9d3c050-cfce-437f-8402-f2737d303ea5.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 9, Protecting the Environment, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A rich natural forest ecosystem with diverse birds, butterflies, flowers, a frog and several plant species, clear biodiversity, no people or text.\n2. A wetland habitat with ducks nesting safely among reeds beside a pond, show the animals living in their natural home.\n3. A forest area with many freshly cut tree stumps and a few remaining tall trees, clear harmful deforestation, no people or machinery labels.\n4. A vulnerable sea turtle swimming near a reef with a caring conservation worker observing from a distance, gentle protective mood, no warning signs or text.\n5. A factory chimney releasing a cloud of grey smoke over an otherwise clean landscape, emphasize pollutant in the air, no skull symbols or labels.\n6. Two Vietnamese teenagers carefully protecting a small forest sapling with a simple wooden guard, preservation action, no writing.\n7. A wild bird, small deer and squirrel living naturally together in a green woodland, clear wildlife rather than pets, no cages.\n8. Vietnamese teenagers replanting young native trees in a previously cleared patch with visible old stumps, hopeful reforestation, no text.",
+    "cell": 5
+  },
+  {
+    "key": "unit9-6",
+    "unit": 9,
+    "wordId": 6,
+    "term": "preserve",
+    "file": "grade/lop10/assets/images/pencil/unit9/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Two Vietnamese teenagers carefully protecting a small forest sapling with a simple wooden guard, preservation action, no writing.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-f9d3c050-cfce-437f-8402-f2737d303ea5.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 9, Protecting the Environment, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A rich natural forest ecosystem with diverse birds, butterflies, flowers, a frog and several plant species, clear biodiversity, no people or text.\n2. A wetland habitat with ducks nesting safely among reeds beside a pond, show the animals living in their natural home.\n3. A forest area with many freshly cut tree stumps and a few remaining tall trees, clear harmful deforestation, no people or machinery labels.\n4. A vulnerable sea turtle swimming near a reef with a caring conservation worker observing from a distance, gentle protective mood, no warning signs or text.\n5. A factory chimney releasing a cloud of grey smoke over an otherwise clean landscape, emphasize pollutant in the air, no skull symbols or labels.\n6. Two Vietnamese teenagers carefully protecting a small forest sapling with a simple wooden guard, preservation action, no writing.\n7. A wild bird, small deer and squirrel living naturally together in a green woodland, clear wildlife rather than pets, no cages.\n8. Vietnamese teenagers replanting young native trees in a previously cleared patch with visible old stumps, hopeful reforestation, no text.",
+    "cell": 6
+  },
+  {
+    "key": "unit9-7",
+    "unit": 9,
+    "wordId": 7,
+    "term": "wildlife",
+    "file": "grade/lop10/assets/images/pencil/unit9/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A wild bird, small deer and squirrel living naturally together in a green woodland, clear wildlife rather than pets, no cages.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-f9d3c050-cfce-437f-8402-f2737d303ea5.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 9, Protecting the Environment, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A rich natural forest ecosystem with diverse birds, butterflies, flowers, a frog and several plant species, clear biodiversity, no people or text.\n2. A wetland habitat with ducks nesting safely among reeds beside a pond, show the animals living in their natural home.\n3. A forest area with many freshly cut tree stumps and a few remaining tall trees, clear harmful deforestation, no people or machinery labels.\n4. A vulnerable sea turtle swimming near a reef with a caring conservation worker observing from a distance, gentle protective mood, no warning signs or text.\n5. A factory chimney releasing a cloud of grey smoke over an otherwise clean landscape, emphasize pollutant in the air, no skull symbols or labels.\n6. Two Vietnamese teenagers carefully protecting a small forest sapling with a simple wooden guard, preservation action, no writing.\n7. A wild bird, small deer and squirrel living naturally together in a green woodland, clear wildlife rather than pets, no cages.\n8. Vietnamese teenagers replanting young native trees in a previously cleared patch with visible old stumps, hopeful reforestation, no text.",
+    "cell": 7
+  },
+  {
+    "key": "unit9-8",
+    "unit": 9,
+    "wordId": 8,
+    "term": "reforestation",
+    "file": "grade/lop10/assets/images/pencil/unit9/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Vietnamese teenagers replanting young native trees in a previously cleared patch with visible old stumps, hopeful reforestation, no text.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-f9d3c050-cfce-437f-8402-f2737d303ea5.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 9, Protecting the Environment, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A rich natural forest ecosystem with diverse birds, butterflies, flowers, a frog and several plant species, clear biodiversity, no people or text.\n2. A wetland habitat with ducks nesting safely among reeds beside a pond, show the animals living in their natural home.\n3. A forest area with many freshly cut tree stumps and a few remaining tall trees, clear harmful deforestation, no people or machinery labels.\n4. A vulnerable sea turtle swimming near a reef with a caring conservation worker observing from a distance, gentle protective mood, no warning signs or text.\n5. A factory chimney releasing a cloud of grey smoke over an otherwise clean landscape, emphasize pollutant in the air, no skull symbols or labels.\n6. Two Vietnamese teenagers carefully protecting a small forest sapling with a simple wooden guard, preservation action, no writing.\n7. A wild bird, small deer and squirrel living naturally together in a green woodland, clear wildlife rather than pets, no cages.\n8. Vietnamese teenagers replanting young native trees in a previously cleared patch with visible old stumps, hopeful reforestation, no text.",
+    "cell": 8
+  },
+  {
+    "key": "unit10-1",
+    "unit": 10,
+    "wordId": 1,
+    "term": "ecotourism",
+    "file": "grade/lop10/assets/images/pencil/unit10/1-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A small group of teenage visitors quietly following a local guide along a forest boardwalk, protecting the landscape, clearly low impact ecotourism.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-5be741ed-b679-4cf6-a26a-db49e7d9d63d.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 10, Ecotourism, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A small group of teenage visitors quietly following a local guide along a forest boardwalk, protecting the landscape, clearly low impact ecotourism.\n2. A responsible teenage visitor picking up their own rubbish and putting it in a small reusable bag before leaving a nature trail.\n3. A peaceful scenic destination with forested hills, a lake and a small eco lodge, a traveller with a backpack looking toward it, no maps or labels.\n4. A Vietnamese traveller buying fresh fruit directly from a local farmer at a small countryside stand, no currency details or signs.\n5. A narrow winding hiking trail through a green forest with stepping stones, entire path clearly visible, no arrows or signs.\n6. One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison, no arrows, words or borders.\n7. A friendly Vietnamese local tour guide with a backpack explaining a forest tree to three teenage visitors, natural guiding gesture, no microphone or written signs.\n8. A small handmade clay cup and woven miniature basket offered as travel souvenirs at a local craft stall, objects fully visible, no letters or price labels.",
+    "cell": 1
+  },
+  {
+    "key": "unit10-2",
+    "unit": 10,
+    "wordId": 2,
+    "term": "responsible",
+    "file": "grade/lop10/assets/images/pencil/unit10/2-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A responsible teenage visitor picking up their own rubbish and putting it in a small reusable bag before leaving a nature trail.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-5be741ed-b679-4cf6-a26a-db49e7d9d63d.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 10, Ecotourism, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A small group of teenage visitors quietly following a local guide along a forest boardwalk, protecting the landscape, clearly low impact ecotourism.\n2. A responsible teenage visitor picking up their own rubbish and putting it in a small reusable bag before leaving a nature trail.\n3. A peaceful scenic destination with forested hills, a lake and a small eco lodge, a traveller with a backpack looking toward it, no maps or labels.\n4. A Vietnamese traveller buying fresh fruit directly from a local farmer at a small countryside stand, no currency details or signs.\n5. A narrow winding hiking trail through a green forest with stepping stones, entire path clearly visible, no arrows or signs.\n6. One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison, no arrows, words or borders.\n7. A friendly Vietnamese local tour guide with a backpack explaining a forest tree to three teenage visitors, natural guiding gesture, no microphone or written signs.\n8. A small handmade clay cup and woven miniature basket offered as travel souvenirs at a local craft stall, objects fully visible, no letters or price labels.",
+    "cell": 2
+  },
+  {
+    "key": "unit10-3",
+    "unit": 10,
+    "wordId": 3,
+    "term": "destination",
+    "file": "grade/lop10/assets/images/pencil/unit10/3-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A peaceful scenic destination with forested hills, a lake and a small eco lodge, a traveller with a backpack looking toward it, no maps or labels.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-5be741ed-b679-4cf6-a26a-db49e7d9d63d.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 10, Ecotourism, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A small group of teenage visitors quietly following a local guide along a forest boardwalk, protecting the landscape, clearly low impact ecotourism.\n2. A responsible teenage visitor picking up their own rubbish and putting it in a small reusable bag before leaving a nature trail.\n3. A peaceful scenic destination with forested hills, a lake and a small eco lodge, a traveller with a backpack looking toward it, no maps or labels.\n4. A Vietnamese traveller buying fresh fruit directly from a local farmer at a small countryside stand, no currency details or signs.\n5. A narrow winding hiking trail through a green forest with stepping stones, entire path clearly visible, no arrows or signs.\n6. One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison, no arrows, words or borders.\n7. A friendly Vietnamese local tour guide with a backpack explaining a forest tree to three teenage visitors, natural guiding gesture, no microphone or written signs.\n8. A small handmade clay cup and woven miniature basket offered as travel souvenirs at a local craft stall, objects fully visible, no letters or price labels.",
+    "cell": 3
+  },
+  {
+    "key": "unit10-4",
+    "unit": 10,
+    "wordId": 4,
+    "term": "local",
+    "file": "grade/lop10/assets/images/pencil/unit10/4-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese traveller buying fresh fruit directly from a local farmer at a small countryside stand, no currency details or signs.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-5be741ed-b679-4cf6-a26a-db49e7d9d63d.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 10, Ecotourism, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A small group of teenage visitors quietly following a local guide along a forest boardwalk, protecting the landscape, clearly low impact ecotourism.\n2. A responsible teenage visitor picking up their own rubbish and putting it in a small reusable bag before leaving a nature trail.\n3. A peaceful scenic destination with forested hills, a lake and a small eco lodge, a traveller with a backpack looking toward it, no maps or labels.\n4. A Vietnamese traveller buying fresh fruit directly from a local farmer at a small countryside stand, no currency details or signs.\n5. A narrow winding hiking trail through a green forest with stepping stones, entire path clearly visible, no arrows or signs.\n6. One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison, no arrows, words or borders.\n7. A friendly Vietnamese local tour guide with a backpack explaining a forest tree to three teenage visitors, natural guiding gesture, no microphone or written signs.\n8. A small handmade clay cup and woven miniature basket offered as travel souvenirs at a local craft stall, objects fully visible, no letters or price labels.",
+    "cell": 4
+  },
+  {
+    "key": "unit10-5",
+    "unit": 10,
+    "wordId": 5,
+    "term": "trail",
+    "file": "grade/lop10/assets/images/pencil/unit10/5-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A narrow winding hiking trail through a green forest with stepping stones, entire path clearly visible, no arrows or signs.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-5be741ed-b679-4cf6-a26a-db49e7d9d63d.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 10, Ecotourism, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A small group of teenage visitors quietly following a local guide along a forest boardwalk, protecting the landscape, clearly low impact ecotourism.\n2. A responsible teenage visitor picking up their own rubbish and putting it in a small reusable bag before leaving a nature trail.\n3. A peaceful scenic destination with forested hills, a lake and a small eco lodge, a traveller with a backpack looking toward it, no maps or labels.\n4. A Vietnamese traveller buying fresh fruit directly from a local farmer at a small countryside stand, no currency details or signs.\n5. A narrow winding hiking trail through a green forest with stepping stones, entire path clearly visible, no arrows or signs.\n6. One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison, no arrows, words or borders.\n7. A friendly Vietnamese local tour guide with a backpack explaining a forest tree to three teenage visitors, natural guiding gesture, no microphone or written signs.\n8. A small handmade clay cup and woven miniature basket offered as travel souvenirs at a local craft stall, objects fully visible, no letters or price labels.",
+    "cell": 5
+  },
+  {
+    "key": "unit10-6",
+    "unit": 10,
+    "wordId": 6,
+    "term": "impact",
+    "file": "grade/lop10/assets/images/pencil/unit10/6-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison, no arrows, words or borders.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-5be741ed-b679-4cf6-a26a-db49e7d9d63d.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 10, Ecotourism, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A small group of teenage visitors quietly following a local guide along a forest boardwalk, protecting the landscape, clearly low impact ecotourism.\n2. A responsible teenage visitor picking up their own rubbish and putting it in a small reusable bag before leaving a nature trail.\n3. A peaceful scenic destination with forested hills, a lake and a small eco lodge, a traveller with a backpack looking toward it, no maps or labels.\n4. A Vietnamese traveller buying fresh fruit directly from a local farmer at a small countryside stand, no currency details or signs.\n5. A narrow winding hiking trail through a green forest with stepping stones, entire path clearly visible, no arrows or signs.\n6. One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison, no arrows, words or borders.\n7. A friendly Vietnamese local tour guide with a backpack explaining a forest tree to three teenage visitors, natural guiding gesture, no microphone or written signs.\n8. A small handmade clay cup and woven miniature basket offered as travel souvenirs at a local craft stall, objects fully visible, no letters or price labels.",
+    "cell": 6
+  },
+  {
+    "key": "unit10-7",
+    "unit": 10,
+    "wordId": 7,
+    "term": "tour guide",
+    "file": "grade/lop10/assets/images/pencil/unit10/7-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A friendly Vietnamese local tour guide with a backpack explaining a forest tree to three teenage visitors, natural guiding gesture, no microphone or written signs.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-5be741ed-b679-4cf6-a26a-db49e7d9d63d.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 10, Ecotourism, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A small group of teenage visitors quietly following a local guide along a forest boardwalk, protecting the landscape, clearly low impact ecotourism.\n2. A responsible teenage visitor picking up their own rubbish and putting it in a small reusable bag before leaving a nature trail.\n3. A peaceful scenic destination with forested hills, a lake and a small eco lodge, a traveller with a backpack looking toward it, no maps or labels.\n4. A Vietnamese traveller buying fresh fruit directly from a local farmer at a small countryside stand, no currency details or signs.\n5. A narrow winding hiking trail through a green forest with stepping stones, entire path clearly visible, no arrows or signs.\n6. One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison, no arrows, words or borders.\n7. A friendly Vietnamese local tour guide with a backpack explaining a forest tree to three teenage visitors, natural guiding gesture, no microphone or written signs.\n8. A small handmade clay cup and woven miniature basket offered as travel souvenirs at a local craft stall, objects fully visible, no letters or price labels.",
+    "cell": 7
+  },
+  {
+    "key": "unit10-8",
+    "unit": 10,
+    "wordId": 8,
+    "term": "souvenir",
+    "file": "grade/lop10/assets/images/pencil/unit10/8-v1.webp",
+    "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A small handmade clay cup and woven miniature basket offered as travel souvenirs at a local craft stall, objects fully visible, no letters or price labels.",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-5be741ed-b679-4cf6-a26a-db49e7d9d63d.png",
+    "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 10, Ecotourism, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A small group of teenage visitors quietly following a local guide along a forest boardwalk, protecting the landscape, clearly low impact ecotourism.\n2. A responsible teenage visitor picking up their own rubbish and putting it in a small reusable bag before leaving a nature trail.\n3. A peaceful scenic destination with forested hills, a lake and a small eco lodge, a traveller with a backpack looking toward it, no maps or labels.\n4. A Vietnamese traveller buying fresh fruit directly from a local farmer at a small countryside stand, no currency details or signs.\n5. A narrow winding hiking trail through a green forest with stepping stones, entire path clearly visible, no arrows or signs.\n6. One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison, no arrows, words or borders.\n7. A friendly Vietnamese local tour guide with a backpack explaining a forest tree to three teenage visitors, natural guiding gesture, no microphone or written signs.\n8. A small handmade clay cup and woven miniature basket offered as travel souvenirs at a local craft stall, objects fully visible, no letters or price labels.",
+    "cell": 8
+  }
+]

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<script src="../../shared/learner-profile-core.js"></script>
+<script src="../../shared/learner-profile.js?v=preload-20261022"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Học Tiếng Anh Chủ Đề Động Vật (Animals)</title>
+<!-- Google Font: Nunito -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./assets/css/topics/animals.css">
+<link rel="stylesheet" href="./assets/css/grade2-theme.css?v=reveal10">
+  <link rel="stylesheet" href="../../shared/grade-colors.css?v=all-grades-20261016-2">
+</head>
+<body class="grade2-topic">
+
+<header>
+  <h1>🐾 ANIMALS VOCABULARY</h1>
+</header>
+
+<nav>
+  <button class="nav-btn active" onclick="switchTab('vocab', event)">🦁 Từ Vựng Động Vật</button>
+  <button class="nav-btn" onclick="switchTab('sentences', event)">🗣️ Mẫu Câu & Giao Tiếp</button>
+  <button class="nav-btn" onclick="switchTab('game-flip', event)">🃏 Game 1: Lật Flashcard</button>
+  <button class="nav-btn" onclick="switchTab('game-mcq', event)">🎯 Game 2: Trắc Nghiệm</button>
+  <button class="nav-btn" onclick="switchTab('game-spelling', event)">✍️ Game 3: Điền Chính Tả</button>
+  <button class="nav-btn" onclick="switchTab('game-count', event)">🧩 Game 4: Đếm Vật & Viết Câu</button>
+</nav>
+
+<div class="container">
+  <section class="learning-toolbar" id="learning-toolbar" hidden aria-label="Cài đặt luyện tập">
+    <div class="learning-toolbar-top">
+      <strong>🌱 Bộ từ của bạn</strong>
+      <button class="btn-action" id="choose-vocabulary" onclick="openVocabularyPicker()">⚙️ Chọn từ luyện tập</button>
+    </div>
+    <p id="storage-note" role="status">Lựa chọn, tiến độ và kỷ lục được lưu trên thiết bị này.</p>
+    <details><summary>⭐ Cách tính điểm và streak</summary>
+      <p>Game 2 và 3: đúng ngay lần đầu +10 điểm, chuỗi đúng +1. Mỗi mốc 5 câu đúng liên tiếp thưởng +20 điểm. Sai: chuỗi về 0, giữ điểm đã kiếm. Sửa đúng vẫn hoàn thành câu nhưng không cộng điểm hoặc chuỗi. Ô trống không bị phạt.</p>
+      <p>Điểm tính riêng từng lượt của mỗi game. Game 1 ghi nhận từ đã xem. Kỷ lục là chuỗi đúng dài nhất của từng game trên thiết bị này.</p>
+    </details>
+    <details ontoggle="if(this.open) renderHistory()"><summary>🕘 Lịch sử lượt học</summary>
+      <p>10 lượt gần nhất; lưu tối đa 50 lượt trên thiết bị này.</p><ul id="learning-history"></ul>
+    </details>
+  </section>
+
+  <!-- TAB 1: VOCABULARY -->
+  <div id="vocab" class="tab-content active">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Từ Vựng Loài Động Vật Phổ Biến</h2>
+    <p style="text-align:center; color:#276749; margin:0;">Phiên âm và giọng đọc Anh-Mỹ (US).</p>
+    <p id="animals-audio-note" role="status" style="text-align:center; color:#9c461c; margin:0 0 18px;">Nghe chậm · Giọng Anh–Mỹ</p>
+    <div class="vocab-grid" id="vocab-grid-container"></div>
+  </div>
+
+  <!-- TAB 2: RULES & SENTENCES -->
+  <div id="sentences" class="tab-content">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Cấu Trúc Câu Tiếng Anh Về Động Vật</h2>
+    <div class="sentence-section">
+
+      <div class="sentence-card">
+        <h3>💡 Mẫu câu 1: Hỏi và xác định tên con vật (What animal is this?)</h3>
+        <p><b>Hỏi:</b> What animal is this? / What is that?</p>
+        <p><b>Trả lời:</b> It is a/an + [Tên con vật].</p>
+        <div class="dialogue">
+          <p><span class="speaker">Mom:</span> What animal is this? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What animal is this?')">🔊</button></p>
+          <p><span class="speaker">Kid:</span> It is an elephant. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('It is an elephant.')">🔊</button></p>
+        </div>
+      </div>
+
+      <div class="sentence-card">
+        <h3>💡 Mẫu câu 2: Hỏi về con vật yêu thích (Favorite animal)</h3>
+        <p><b>Hỏi:</b> What is your favorite animal?</p>
+        <p><b>Trả lời:</b> My favorite animal is [Tên số ít] / I like [Tên số nhiều].</p>
+        <div class="dialogue">
+          <p><span class="speaker">Alex:</span> What is your favorite animal? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What is your favorite animal?')">🔊</button></p>
+          <p><span class="speaker">Ben:</span> I like dogs and cats. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('I like dogs and cats.')">🔊</button></p>
+        </div>
+      </div>
+
+      <div class="sentence-card">
+        <h3>💡 Mẫu câu 3: Mô tả khả năng / Nơi sống (Can / Live)</h3>
+        <p><b>Nơi sống:</b> Where does it live? -> It lives in the [forest / ocean / farm].</p>
+        <p><b>Khả năng:</b> What can it do? -> It can [fly / swim / run].</p>
+        <div class="dialogue">
+          <p><span class="speaker">Teacher:</span> What can a bird do? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What can a bird do?')">🔊</button></p>
+          <p><span class="speaker">Student:</span> A bird can fly. It lives in the tree. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('A bird can fly. It lives in the tree.')">🔊</button></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TAB 3: GAME 1 FLIP CARD -->
+  <div id="game-flip" class="tab-content">
+    <h2 style="text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard Động Vật</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để xem đáp án và nghe phát âm. Đáp án hiện đủ 1 giây rồi tự chuyển thẻ.</p>
+
+    <div class="single-card-container">
+      <div class="card-mode-selector">
+        <button class="mode-btn active" id="mode-viet" onclick="setCardFrontMode('viet', this)">Mặt trước: Hình & Từ Anh</button>
+        <button class="mode-btn" id="mode-ipa" onclick="setCardFrontMode('ipa', this)">Mặt trước: Hình & IPA</button>
+      </div>
+
+      <div class="card-counter" id="card-viewed">📖 Lật thẻ để ôn tập</div>
+      <div class="card-controls">
+        <span class="card-counter" id="card-counter-text">Thẻ 1 / 50</span>
+      </div>
+
+      <div class="flip-card-single" id="single-card-el" role="button" tabindex="0" aria-label="Lật thẻ xem đáp án" aria-pressed="false" onclick="flipSingleCard()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" id="card-front-content"></div>
+          <div class="flip-card-back" id="card-back-content"></div>
+        </div>
+      </div>
+
+      <div class="card-controls">
+        <button class="nav-btn" onclick="prevSingleCard()">⏮️ Thẻ Trước</button>
+        <button class="nav-btn" onclick="nextSingleCard(false)">Thẻ Tiếp ⏭️</button>
+        <button class="nav-btn" onclick="playSingleCardAudio()">🔊 Nghe lại</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: GAME 2 MCQ -->
+  <div id="game-mcq" class="tab-content">
+    <h2 style="text-align:center;color:#276749;font-size:1.4rem;">Game 2: Ai Tinh Mắt Nhất? (Trắc Nghiệm)</h2>
+    <div class="round-summary" id="mcq-unavailable" hidden>
+      <h3>Chọn thêm một từ nữa nhé!</h3>
+      <p>Game 2 cần ít nhất 2 từ để tạo đáp án lựa chọn. Bạn vẫn có thể học bộ 1 từ ở Game 1 và 3.</p>
+      <button class="btn-action" onclick="openVocabularyPicker()">Chọn thêm từ</button>
+    </div>
+    <div id="mcq-game-content">
+      <p style="text-align:center;color:#718096;margin-top:8px;">Chọn tên tiếng Anh đúng. Đúng: chuyển câu sau 1 giây. Sai: chọn lại nhé!</p>
+      <div class="learning-stats" aria-label="Điểm và chuỗi trả lời đúng">
+  <div>⭐ <strong id="mcq-points">0</strong><span>Điểm lượt này</span></div>
+  <div>🔥 <strong id="mcq-streak">0</strong><span>Chuỗi đúng</span></div>
+  <div>🏆 <strong id="mcq-best">0</strong><span>Kỷ lục chuỗi</span></div>
+</div>
+      <div class="quiz-container">
+        <div class="card-counter" id="mcq-progress"></div>
+        <div class="number-preview-box" id="mcq-number-preview"></div>
+        <div class="mcq-grid" id="mcq-options-container"></div>
+        <div class="game-feedback" id="mcq-feedback" role="status" aria-live="polite"></div>
+      </div>
+      <section id="mcq-summary" class="round-summary" hidden aria-label="Kết quả lượt học">
+  <h3>🎉 Hoàn thành lượt học!</h3>
+  <div class="summary-score" id="mcq-summary-score"></div>
+  <p id="mcq-summary-detail"></p>
+  <p id="mcq-summary-message"></p>
+  <button class="btn-action" id="mcq-restart" onclick="initMcqGame()">Chơi lại</button>
+  <button class="nav-btn" onclick="openVocabularyPicker()">Chọn bộ từ khác</button>
+</section>
+    </div>
+  </div>
+
+  <!-- TAB 5: GAME 3 SPELLING -->
+  <div id="game-spelling" class="tab-content">
+    <h2 style="text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Game 3: Thử Tài Viết Tên Động Vật</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình, nghe rồi nhập tên tiếng Anh. Nhấn Enter hoặc Kiểm tra. Đúng: chuyển câu sau 1 giây.</p>
+
+    <div class="learning-stats" aria-label="Điểm và chuỗi trả lời đúng">
+  <div>⭐ <strong id="spelling-points">0</strong><span>Điểm lượt này</span></div>
+  <div>🔥 <strong id="spelling-streak">0</strong><span>Chuỗi đúng</span></div>
+  <div>🏆 <strong id="spelling-best">0</strong><span>Kỷ lục chuỗi</span></div>
+</div>
+    <div class="spelling-box">
+      <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 / 50 câu</div>
+
+      <div class="card-counter" id="spelling-progress"></div>
+      <div id="spelling-preview" class="number-preview-box"></div>
+      <button class="audio-btn" style="width: 44px; height: 44px; font-size: 1.3rem; margin-top:0;" id="spelling-audio" aria-label="Nghe lại tên con vật" onclick="playSpellingAudio()">🔊</button>
+
+      <div class="spelling-input-group">
+        <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ tên con vật (ví dụ: cat)..." aria-label="Tên con vật bằng tiếng Anh" aria-describedby="spelling-feedback" autocomplete="off" autocapitalize="none" spellcheck="false">
+        <button class="btn-action" id="spelling-check" onclick="checkSpelling()">Kiểm tra</button>
+      </div>
+      <div class="game-feedback" id="spelling-feedback" role="status" aria-live="polite"></div>
+      <section id="spelling-summary" class="round-summary" hidden aria-label="Kết quả lượt học">
+  <h3>🎉 Hoàn thành lượt học!</h3>
+  <div class="summary-score" id="spelling-summary-score"></div>
+  <p id="spelling-summary-detail"></p>
+  <p id="spelling-summary-message"></p>
+  <button class="btn-action" id="spelling-restart" onclick="initSpellingGame()">Chơi lại</button>
+  <button class="nav-btn" onclick="openVocabularyPicker()">Chọn bộ từ khác</button>
+</section>
+    </div>
+  </div>
+
+  <!-- TAB 6: GAME 4 COUNTING SENTENCES -->
+  <div id="game-count" class="tab-content">
+    <h2 style="text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Game 4: Đếm Thú & Luyện Câu (Số nhiều)</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Đếm số lượng con vật rồi nhập câu. Chú ý các từ số nhiều bất quy tắc (ví dụ: mice, sheep, fish)!</p>
+
+    <div class="count-game-container">
+      <div class="score-board" id="count-score">🎯 Đã đúng: 0 / 16 câu</div>
+
+      <div class="card-controls">
+        <span class="card-counter" id="count-counter-text">Câu 1 / 16</span>
+      </div>
+
+      <div class="item-display-box" id="count-items-container"></div>
+
+      <div class="feedback-msg" id="count-feedback"></div>
+
+      <div class="spelling-input-group">
+        <input type="text" id="count-sentence-input" class="spelling-input" placeholder="Ví dụ: There are 3 cats" autocomplete="off">
+        <button class="btn-action" onclick="checkCountSentence()">Kiểm tra</button>
+        <button class="btn-action" onclick="revealCountAnswer()">💡 Hiện đáp án</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<dialog class="picker-dialog" id="vocabulary-picker" aria-labelledby="picker-title" aria-describedby="picker-reset-note">
+  <div class="picker-header">
+    <div class="picker-title-row"><h2 id="picker-title">Chọn từ luyện tập</h2><button type="button" aria-label="Đóng bảng chọn từ" onclick="closeVocabularyPicker()">✕</button></div>
+    <input id="vocab-search" type="search" aria-label="Tìm từ tiếng Anh hoặc nghĩa tiếng Việt" placeholder="Tìm: cat, con mèo…" oninput="renderVocabularyPicker()">
+    <div class="picker-actions">
+      <button type="button" onclick="selectAllVocabulary(true)">Chọn tất cả</button>
+      <button type="button" onclick="selectAllVocabulary(false)">Bỏ chọn</button>
+      <strong id="vocab-selected-count" role="status"></strong>
+    </div>
+    <p id="vocab-search-status" role="status"></p>
+  </div>
+  <div class="vocab-choices" id="vocab-choices"></div>
+  <div class="picker-footer">
+    <p id="vocab-selection-hint"></p>
+    <p id="picker-reset-note">Bắt đầu sẽ đặt lại lượt hiện tại của cả ba game. Kỷ lục và lịch sử được giữ nguyên.</p>
+    <div><button class="nav-btn" onclick="closeVocabularyPicker()">Hủy</button><button class="btn-action" id="apply-vocabulary" onclick="applyVocabularySelection()"></button></div>
+  </div>
+</dialog>
+
+<script src="./assets/js/grade2-progress.js"></script>
+<script src="./assets/js/legacy-game4.js"></script>
+  <script src="../../shared/young-learner-speech.js?v=slow-sync-1"></script>
+  <script src="./assets/js/topics/animals.js?v=primary2-20261022-34"></script>
+<script src="./assets/js/legacy-game4-config.js"></script>
+
+<contact-danh></contact-danh>
+    <script src="../../shared/contact-footer.js"></script>
+<script src="./assets/js/grade2-navigation.js?v=primary2-20261022-34"></script>
+</body>
+</html>

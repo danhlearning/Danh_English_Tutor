@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "topic": "bodyparts",
+      "mode": "game-flip",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "game-mcq",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "game-spelling",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "game-count",
+      "width": 390,
+      "art": 1
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "vocab",
+      "width": 390,
+      "words": 32
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "vocab",
+      "width": 1280,
+      "words": 32
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "vocab",
+      "width": 320,
+      "words": 32
+    },
+    {
+      "topic": "bodyparts",
+      "mode": "vocab",
+      "width": 760,
+      "words": 32
+    }
+  ],
+  "errors": [],
+  "bad": [],
+  "excluded": [
+    "animals",
+    "colors",
+    "numbers"
+  ]
+}

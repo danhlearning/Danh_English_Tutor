@@ -1,0 +1,1061 @@
+{
+  "method": "Direct visual inspection of every final WebP; hashes identify the inspected version",
+  "records": [
+    {
+      "key": "unit2/1",
+      "file": "grade/lop6/assets/images/pencil/unit2/living-room-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "2e32c65f86c4a408c30b557b703408b4b14ac42d87823ed4f78f9f7f2c044de4",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit2/2",
+      "file": "grade/lop6/assets/images/pencil/unit2/bedroom-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "cc993f3393f1b75aed23b1e74d7901b7a7b532bee9ea8e240458c42a049e22cd",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit2/3",
+      "file": "grade/lop6/assets/images/pencil/unit2/kitchen-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "41319015b3938451f7472370a850bf2498e073dfedcee3226243714dfdbda484",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit2/4",
+      "file": "grade/lop6/assets/images/pencil/unit2/bathroom-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "1f66f504228b2737cbd418a01af781c9825e6a7682e2d79b143ffb753af607d8",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit2/5",
+      "file": "grade/lop6/assets/images/pencil/unit2/balcony-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "1fcb9f171ae3973a1e68b43599df246ab686c67404d1b92783a5ff8b5afb1b83",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit2/6",
+      "file": "grade/lop6/assets/images/pencil/unit2/wardrobe-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "84095488d652da160ec677cf5ff28e79bd7683e0b8ab73010d6ab0d740837c35",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit2/7",
+      "file": "grade/lop6/assets/images/pencil/unit2/sofa-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "960b2dc9527f8e2a4973b56626578c6a361f2dcd4b7b5ed9046752c42b049385",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit2/8",
+      "file": "grade/lop6/assets/images/pencil/unit2/fridge-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "de1353c8bd71f4353cb06defc739ab797960c5bf8e7d6bb1e94dbd0fc1cf4961",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit1/1",
+      "file": "grade/lop6/assets/images/pencil/unit1/uniform-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "fc4106a0721d49ec9edcb848f8680f12c82611e432b1bda0da31cfa53b8497f4",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit1/2",
+      "file": "grade/lop6/assets/images/pencil/unit1/classmate-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "9b8e89d81dfa0dc55b8a5fe9df1cdc8bd2ee6f9441517182aea850e403db2dbe",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit1/3",
+      "file": "grade/lop6/assets/images/pencil/unit1/subject-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "dc3744ff0e10287e1e19320f6d89392b8452d98e8d7077cb64763ebf860e0a71",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit1/4",
+      "file": "grade/lop6/assets/images/pencil/unit1/timetable-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "efc988934dc40cdee1e7ed745fd4bf4b2cec67bc67fae18715e1ec51813c34bb",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit1/5",
+      "file": "grade/lop6/assets/images/pencil/unit1/playground-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "701169d77d06dd7289dc54de6bd42de4c3c57fe03950e1cdeb7a820c9936ce21",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit1/6",
+      "file": "grade/lop6/assets/images/pencil/unit1/library-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "201331bcadddb004133eb5d60995e89fb2ccb3b2d129c66050f435334b420470",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit1/7",
+      "file": "grade/lop6/assets/images/pencil/unit1/homework-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "f9e35a7dc6941929321bd73d295c17598b075320e29297cb568ef84f0169f7f4",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit1/8",
+      "file": "grade/lop6/assets/images/pencil/unit1/notebook-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "65d7f65fd0bce998a320fbdda0dbf1d9b1df252ee55dd1db6bb6ae06bd0e4548",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit3/1",
+      "file": "grade/lop6/assets/images/pencil/unit3/friendly-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "29295c4204ec241e83b26b97274bd86bfa1edc2e5b7abdba284fd547662707e2",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit3/2",
+      "file": "grade/lop6/assets/images/pencil/unit3/kind-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "e1adcf18d3d0bee36544adb7c18c0ae041b01df68b251f137ce7198085828d1b",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit3/3",
+      "file": "grade/lop6/assets/images/pencil/unit3/clever-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "fabaefc075ed8aa492da906279b81ef6b67c0c297f81349cb02b11aaa08566fb",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit3/4",
+      "file": "grade/lop6/assets/images/pencil/unit3/funny-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "28d37c70f94a50ed4cc47d5fadc91be2db4a3e7193245fc8bc3770d7603c1d57",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit3/5",
+      "file": "grade/lop6/assets/images/pencil/unit3/confident-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "58c61bc0ad5fb4671559f16cdad8d7412af026d6329cd592f2347f572d84948f",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit3/6",
+      "file": "grade/lop6/assets/images/pencil/unit3/creative-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "9f9d0a80eda468090c1ec713f004f27dcbdbc5aa71c52d7d4aa94defa5cb34a9",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit3/7",
+      "file": "grade/lop6/assets/images/pencil/unit3/glasses-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "c6cbc9291a1c07d99042b9c5dba1b201b22dc8384771e6584f93f1ed6a90dca3",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit3/8",
+      "file": "grade/lop6/assets/images/pencil/unit3/curly-hair-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "48d1bd7bfa44a14d6d4644cc7868db2f84180646f1000bb9feaec08634b1bfe0",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit4/1",
+      "file": "grade/lop6/assets/images/pencil/unit4/neighbourhood-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "dbfd0abb8bb25d59264b3e57f7a6c8169f6759ecad9532786389f0edbf84f4e0",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit4/2",
+      "file": "grade/lop6/assets/images/pencil/unit4/market-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "2f0620450a39ed700de14b5422a8c736bc50231795c9a058b4ce2d79c7665a02",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit4/3",
+      "file": "grade/lop6/assets/images/pencil/unit4/square-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "1ce6198ffb0a0aee49982c60ef4443a38e1425950e4329b8f994bba46f7a3f91",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit4/4",
+      "file": "grade/lop6/assets/images/pencil/unit4/post-office-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "efd7860e9eb5656a576b1fd28ba01296ac3e4967181a5d6324648fce5a8449ed",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit4/5",
+      "file": "grade/lop6/assets/images/pencil/unit4/railway-station-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "bfad08349148dc2f30e94833155dba092db4e2d29bac4c3a2656754b607bd3b6",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit4/6",
+      "file": "grade/lop6/assets/images/pencil/unit4/temple-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "7870474ed1d60e46f830f13c349df883d6b8b0dc2e700c7a497aabdf05bd1292",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit4/7",
+      "file": "grade/lop6/assets/images/pencil/unit4/convenient-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "7625f62fa8df5639f7095c6c0a77241b385b0d7bbd56745fe43f543c70853caf",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit4/8",
+      "file": "grade/lop6/assets/images/pencil/unit4/peaceful-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "70dea9ea71908f11989faf787a2800ca5b641c13eb17a6b43e47278202e75248",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit5/1",
+      "file": "grade/lop6/assets/images/pencil/unit5/mountain-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "22d1b1b784de722d09e33b4678579ab4e3547e863eb763d8c5eb27d214600e1b",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit5/2",
+      "file": "grade/lop6/assets/images/pencil/unit5/island-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "2f900218f8f9247c32457cfe145d338524529c5200d265fd14d93a555a5db036",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit5/3",
+      "file": "grade/lop6/assets/images/pencil/unit5/waterfall-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "67b394290a3e3172613aa80b7d83b387423f6b6d1a81abbfb5fc39bdd861f167",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit5/4",
+      "file": "grade/lop6/assets/images/pencil/unit5/cave-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "8a9544409fbe9c8efbb44da64435067e20355620838afc670a76f4cb7b391568",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit5/5",
+      "file": "grade/lop6/assets/images/pencil/unit5/desert-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "9feb596829cbf377a4c49d44ceb7535107cb1cb89d8172b62e038347ff795985",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit5/6",
+      "file": "grade/lop6/assets/images/pencil/unit5/forest-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "e8da8c27011acced80329275b04fc81291d321f7da40a0a25015787189b868e2",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit5/7",
+      "file": "grade/lop6/assets/images/pencil/unit5/river-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "454e4b884c94b496f7eb8af7f7408dc6fec89221537e77b638761e5e739800d5",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit5/8",
+      "file": "grade/lop6/assets/images/pencil/unit5/travel-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "696de678346b560f48562367b004ddba381a03bc9fcd0d71b7974b58902a4907",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit6/1",
+      "file": "grade/lop6/assets/images/pencil/unit6/lucky-money-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "f93d1107825ac44254da8b870365dad2667ace97161c8a2bcf8617e375d66485",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit6/2",
+      "file": "grade/lop6/assets/images/pencil/unit6/fireworks-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "e0830803fffc97ce271c7ce0da1f2291ab8fbb3272ead13a0f98f4e1205a51fa",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit6/3",
+      "file": "grade/lop6/assets/images/pencil/unit6/peach-blossom-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "5de31a5048c2063d2477a41e55b20208026ae09fcfc1d7a8f533a5cd0b98e64b",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit6/4",
+      "file": "grade/lop6/assets/images/pencil/unit6/apricot-blossom-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "168c456bd1a1736da711e558d1adf3d10dd0c836520a36dee592509405b95b12",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit6/5",
+      "file": "grade/lop6/assets/images/pencil/unit6/decorate-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "b0e9dfde78139d976adec564b053bf08a21878ed854598f5c76f1b6a4284cc10",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit6/6",
+      "file": "grade/lop6/assets/images/pencil/unit6/relative-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "57eff6d00eedeeedb68256736bb57019b1518182dbb24004545e397eb4eb441f",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit6/7",
+      "file": "grade/lop6/assets/images/pencil/unit6/wish-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "c399ffabb8427a6019143402c0dffbffb2fa69b33efaee1cc5100c8f2037b338",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit6/8",
+      "file": "grade/lop6/assets/images/pencil/unit6/celebrate-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "22821b9f9b4860b47c334583bf7e58809a8c6806266ef20b656ba29a678fa78c",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit7/1",
+      "file": "grade/lop6/assets/images/pencil/unit7/programme-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "15a51bb2cd1dac4a6cb839196fddff880d65b304cea9646dc6eff9fb6caf158d",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit7/2",
+      "file": "grade/lop6/assets/images/pencil/unit7/cartoon-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "5f85b413a22dfe16a4434b426cf9fb545a5aa1efdd659a9194f6b52f6fa7427b",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit7/3",
+      "file": "grade/lop6/assets/images/pencil/unit7/news-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "f3f42106fde1f886cb0e62bd587879e73a4f4ff44e1e6615249841ec90552778",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit7/4",
+      "file": "grade/lop6/assets/images/pencil/unit7/documentary-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "d156b34f52a473566d138823252a88ad4167691f9876358f3095507974975649",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit7/5",
+      "file": "grade/lop6/assets/images/pencil/unit7/comedy-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "cfdf8d7b59a6ea80ca614c5b42d1927f09f0475bf5b04f9f4c8dde321f7622b0",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit7/6",
+      "file": "grade/lop6/assets/images/pencil/unit7/channel-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "667dc0c240dc6fd7645e3bcbfa4cfe641efa7a904c35ad3e4fd0e6e701673b5f",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit7/7",
+      "file": "grade/lop6/assets/images/pencil/unit7/remote-control-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "a674047de0c5e62ffa0b09522a7ba92869f2225295fe5fa6ad5f9c4a9ccd4ab6",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit7/8",
+      "file": "grade/lop6/assets/images/pencil/unit7/viewer-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "1d004973f30ca2c6df0b80b06e24a7eaade2da0cf1605a8fda9603945b2d598f",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit8/1",
+      "file": "grade/lop6/assets/images/pencil/unit8/football-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "ba32b2568ec4694d8d2bd8d2ed5ef157092d419d55f1c724b2dbc5685cb87483",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit8/2",
+      "file": "grade/lop6/assets/images/pencil/unit8/badminton-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "e84dc96fcd14634d6a17868829779fccd713f18784077cfac00610ffbb5f90b0",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit8/3",
+      "file": "grade/lop6/assets/images/pencil/unit8/volleyball-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "f0ab0ebd3e403f8a3a8dbd5178649e9bce9e6a2630420cb767fc6b11e4cf974d",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit8/4",
+      "file": "grade/lop6/assets/images/pencil/unit8/swimming-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "bc636b92f45090baa34b9e192398a12c5f3a332808daef121660a69b6615ed75",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit8/5",
+      "file": "grade/lop6/assets/images/pencil/unit8/athlete-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "263ed7c205c5b897cc249d4380137684880447bd970cb643974e868284c380c8",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit8/6",
+      "file": "grade/lop6/assets/images/pencil/unit8/team-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "9f5e795de1191159fb94babb31df34bd5de5c4968893fcf145feee361970dd75",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit8/7",
+      "file": "grade/lop6/assets/images/pencil/unit8/competition-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "870f9336be1933946400bb6d65df06ccbbbb13ba2fb7a9af3d604915af5a5419",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit8/8",
+      "file": "grade/lop6/assets/images/pencil/unit8/racket-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "8bd62305295635698e9ef19bea74df46e9c973469e85257bb03e21dfb17bbc38",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit9/1",
+      "file": "grade/lop6/assets/images/pencil/unit9/city-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "b1e177d30527dd93cc4d20919f5ce0f030a78d9f47fb7414001af03059493efe",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit9/2",
+      "file": "grade/lop6/assets/images/pencil/unit9/landmark-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "3fa0d1d147d15793d6e08da33bd8be75a8a8f4c0fb8663bec7030d593279bdd6",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit9/3",
+      "file": "grade/lop6/assets/images/pencil/unit9/museum-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "5f0fe053a99a9b5119562f2c7d57bd1127c2b3e466e00307b54fadd3f00351ba",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit9/4",
+      "file": "grade/lop6/assets/images/pencil/unit9/palace-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "b7741db892cbb0f1a496bd5c9ab680b8a70dc96d4d8c4459a46bcf090b7035d1",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit9/5",
+      "file": "grade/lop6/assets/images/pencil/unit9/capital-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "9ac1f01b2cdf3be6ca29a216026be69f31b618506120b51cd37baa837a14eb65",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit9/6",
+      "file": "grade/lop6/assets/images/pencil/unit9/continent-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "021d65b70362c081752d1bb63eda539bfd3a6e4c40ba9a0d55048411f11ec9a4",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit9/7",
+      "file": "grade/lop6/assets/images/pencil/unit9/famous-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "c095823098771711f4b799d23ee4f2bbb4d8c51614193beb734bd4dd0096dfba",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit9/8",
+      "file": "grade/lop6/assets/images/pencil/unit9/visit-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "d6022011a7963db9273b296a93cb59f28c805402b81da42c00498ffdf4f9ff12",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit11/1",
+      "file": "grade/lop6/assets/images/pencil/unit11/recycle-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "b0de90b96a4d309ecb515096335edc98b384cc17db47e1f4123d2175d8440617",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit11/2",
+      "file": "grade/lop6/assets/images/pencil/unit11/reuse-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "565663df06575ccb0d876544c3aa8835dc25a2d54c6088e5ecc5c77f36b29fcb",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit11/3",
+      "file": "grade/lop6/assets/images/pencil/unit11/reduce-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "52463ab0b438b0501eb704e5ecbf3f16e0b2c14d940adfdb930e57bd441578f7",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit11/4",
+      "file": "grade/lop6/assets/images/pencil/unit11/pollution-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "45b58b32a46c7bd575b504b75599f56b5f986632adc4bdc31477334fd991b34f",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit10/1",
+      "file": "grade/lop6/assets/images/pencil/unit10/future-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "2ef38a83f5773e26cc0e15bade54a39b4fb89c3f0c0e2ede0eea8ad4f04eb24b",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit10/2",
+      "file": "grade/lop6/assets/images/pencil/unit10/robot-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "18173a38c65b5ce42c107449a9fa3a640cdc11fc09d596702b3ad4208506ad07",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit10/3",
+      "file": "grade/lop6/assets/images/pencil/unit10/solar-energy-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "51910e1a21493f947943cc3c7e43255a5dbe66792a07d545617a0781d9e2a5af",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit10/4",
+      "file": "grade/lop6/assets/images/pencil/unit10/appliance-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "67b85ff946e7f147067c044cc654bf94e680c6ef832d0aebe9452cd5e365b5d3",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit10/5",
+      "file": "grade/lop6/assets/images/pencil/unit10/smart-home-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "fcd1a2a7144e903d12d40b80c5198555c5818fd8fd691a41b5cb5fbdf40d58e8",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit10/6",
+      "file": "grade/lop6/assets/images/pencil/unit10/wireless-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "406568eb961a49f069d7fb3cdb5d2857db89a97e52423a42433ef84226c02cd5",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit10/7",
+      "file": "grade/lop6/assets/images/pencil/unit10/space-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "2e0300f5e5f270e8b61764eee201c46d56774ad076bdb04d26db7352858839cf",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit10/8",
+      "file": "grade/lop6/assets/images/pencil/unit10/automatically-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "1884e8fc218fca98d661ba3bf4cf4a057653744e4fac6da215f3cf06035c4ed2",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit11/5",
+      "file": "grade/lop6/assets/images/pencil/unit11/environment-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "2670ff1afd4432e8691a2a0c124d6f52834534820c9ec355dcf010996d0f3bfe",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit11/6",
+      "file": "grade/lop6/assets/images/pencil/unit11/plastic-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "b698a87fb19a2d628b3e98c2c88f6acdd580264badc80c0936a7ad3aa7989641",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit11/7",
+      "file": "grade/lop6/assets/images/pencil/unit11/bin-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "417c596aec4d12e5185ea5a78255d96f36c1d2d1f7f1cb1a14f8b77c3a75a3c2",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit11/8",
+      "file": "grade/lop6/assets/images/pencil/unit11/save-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "41bdb6e276b4fe567e12f2a504cee7bd77cde0fbcbcbfb199e5b1e8e501b2778",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit12/1",
+      "file": "grade/lop6/assets/images/pencil/unit12/robot-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "cf5daeecae2082e5b8041f67f4a1be1cd97ae41ff67b44017a2ba3d1d59a4e71",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit12/3",
+      "file": "grade/lop6/assets/images/pencil/unit12/helpful-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "ff741f91e8d0fe6b387330c700428c2fdac3f8766db7450e2cc023a34d78d319",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit12/2",
+      "file": "grade/lop6/assets/images/pencil/unit12/technology-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "b13cc9d09331dd0d14c0e174b4aee816828fbd51e514b020a61d3a548f097b5f",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit12/4",
+      "file": "grade/lop6/assets/images/pencil/unit12/housework-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "a6866970f7e1553d936fb16471bdfcb117bf39d7f8945689803222446a5a5a54",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit12/5",
+      "file": "grade/lop6/assets/images/pencil/unit12/recognise-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "cbb8473b93b45b3258ded432815c1e97359b1caba1e6b36396ada5f14ba1f18e",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit12/6",
+      "file": "grade/lop6/assets/images/pencil/unit12/move-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "69ade0b03b7e5e9df196cb0225f77fcebdb68b29364e0be2dc70e9475832fa58",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit12/7",
+      "file": "grade/lop6/assets/images/pencil/unit12/repair-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "950b29b82c9b8c648a2e4547f92ecac737432adde06828d2f3bf10bdaf952e35",
+      "reviewedVisually": true,
+      "noReadableText": true
+    },
+    {
+      "key": "unit12/8",
+      "file": "grade/lop6/assets/images/pencil/unit12/human-v1.webp",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "8f77d9962c567ebf81df8968ed1a6089bc45c3ba4f477e66175438d495b0480c",
+      "reviewedVisually": true,
+      "noReadableText": true
+    }
+  ]
+}

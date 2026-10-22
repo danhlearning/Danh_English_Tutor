@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<script src="../../shared/learner-profile-core.js"></script>
+<script src="../../shared/learner-profile.js?v=preload-20261022"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Học Tiếng Anh Chủ Đề Trái Cây (Fruits)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./assets/css/topics/fruits.css">
+<link rel="stylesheet" href="./assets/css/learning-shared.css">
+<link rel="stylesheet" href="./assets/css/grade2-theme.css?v=reveal10">
+  <link rel="stylesheet" href="../../shared/grade-colors.css?v=all-grades-20261016-2">
+<link rel="stylesheet" href="./assets/css/pencil-illustrations.css?v=pencil-20261019">
+<script src="./assets/js/pencil-images-data.js?v=pencil-20261019"></script>
+<script src="./assets/js/pencil-illustrations.js?v=pencil-20261019-2"></script>
+</head>
+<body class="grade2-topic g2-pencil">
+
+<header>
+  <h1>🍎 FRUIT LEARNING & COUNTING GAME</h1>
+</header>
+
+<nav>
+  <button class="nav-btn active" onclick="switchTab('vocab', event)">📚 Từ Vựng Trái Cây</button>
+  <button class="nav-btn" onclick="switchTab('sentences', event)">🗣️ Mẫu Câu & Quy Tắc</button>
+  <button class="nav-btn" onclick="switchTab('game-flip', event)">🃏 Game 1: Lật Flashcard</button>
+  <button class="nav-btn" onclick="switchTab('game-mcq', event)">🎯 Game 2: Trắc Nghiệm</button>
+  <button class="nav-btn" onclick="switchTab('game-spelling', event)">✍️ Game 3: Điền Từ</button>
+  <button class="nav-btn" onclick="switchTab('game-count', event)">🧩 Game 4: Đếm Số Lượng & Viết Câu (50 Câu)</button>
+</nav>
+
+<div class="container">
+
+  <!-- TAB 1: VOCABULARY GRID -->
+  <div id="vocab" class="tab-content active">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Từ Vựng Loại Trái Cây</h2>
+    <div class="vocab-grid" id="vocab-grid-container"></div>
+  </div>
+
+  <!-- TAB 2: RULES & SENTENCES -->
+  <div id="sentences" class="tab-content">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Quy Tắc Ngữ Pháp & Mẫu Câu</h2>
+    <div class="sentence-section">
+
+      <div class="sentence-card">
+        <h3>💡 1. Mạo Từ "A" và "AN" (Số ít - 1 quả)</h3>
+        <p>• <b>A:</b> Đứng trước danh từ bắt đầu bằng một <b>Phụ âm</b> (e.g. <i>a banana, a watermelon, a strawberry</i>).</p>
+        <p>• <b>AN:</b> Đứng trước danh từ bắt đầu bằng một <b>Nguyên âm (A, E, I, O, U)</b> (e.g. <i>an apple, an orange, an avocado</i>).</p>
+        <p>➔ Mẫu câu: <b>It is a/an + [Tên quả]</b> (e.g. <i>It is an apple. / It is a banana.</i>)</p>
+      </div>
+
+      <div class="sentence-card">
+        <h3>💡 2. Quy Tắc Số Nhiều & Đếm Số Lượng (2 quả trở lên)</h3>
+        <p>Khi có từ 2 quả trở lên, ta thêm <b>-s</b>, <b>-es</b>, hoặc đổi <b>-y thành -ies</b>:</p>
+        <p>• Tận cùng thông thường: thêm <b>-s</b> (e.g. <i>2 apples, 5 bananas, 10 oranges</i>).</p>
+        <p>• Tận cùng -ch, -o: thêm <b>-es</b> (e.g. <i>peach ➔ peaches, mango ➔ mangoes</i>).</p>
+        <p>• Tận cùng phụ âm + y: đổi thành <b>-ies</b> (e.g. <i>strawberry ➔ strawberries, cherry ➔ cherries</i>).</p>
+        <p>➔ Mẫu câu đếm số lượng: <b>There are [Số lượng] [Tên quả số nhiều]</b> (e.g. <i>There are 20 strawberries.</i>)</p>
+      </div>
+
+      <div class="sentence-card">
+        <h3>Mẫu câu giao tiếp thông dụng</h3>
+        <div class="dialogue">
+          <p><span class="speaker">Hỏi số lượng:</span> How many apples are there? <button class="audio-btn" style="display:inline-flex; width:26px; height:26px; font-size:0.75rem;" onclick="speak('How many apples are there?')">🔊</button></p>
+          <p><span class="speaker">Trả lời:</span> There are 20 apples. <button class="audio-btn" style="display:inline-flex; width:26px; height:26px; font-size:0.75rem;" onclick="speak('There are 20 apples.')">🔊</button></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TAB 3: GAME 1 FLIP CARD -->
+  <div id="game-flip" class="tab-content">
+    <h2 style="text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để lật xem tên tiếng Anh và nghe phát âm!</p>
+
+    <div class="single-card-container">
+      <div class="card-controls">
+        <span class="card-counter" id="card-counter-text">Thẻ 1 / 18</span>
+      </div>
+
+      <div class="flip-card-single" id="single-card-el" onclick="flipSingleCard()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" id="card-front-content"></div>
+          <div class="flip-card-back" id="card-back-content"></div>
+        </div>
+      </div>
+
+      <div>
+        <button class="nav-btn" onclick="prevSingleCard()">⏮️ Thẻ Trước</button>
+        <button class="nav-btn" onclick="nextSingleCard()">Thẻ Tiếp ⏭️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: GAME 2 MCQ -->
+  <div id="game-mcq" class="tab-content">
+    <h2 style="text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Game 2: Trắc Nghiệm Từ Vựng</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình và chọn đáp án đúng nhất!</p>
+
+    <div class="quiz-container">
+      <div class="number-preview-box" id="mcq-number-preview"></div>
+      <div class="mcq-grid" id="mcq-options-container"></div>
+      <p id="mcq-feedback" role="status" aria-live="polite" style="min-height:1.5em;text-align:center;font-weight:800;"></p>
+    </div>
+  </div>
+
+  <!-- TAB 5: GAME 3 SPELLING -->
+  <div id="game-spelling" class="tab-content">
+    <h2 style="text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Game 3: Điền Chính Tả</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn nghĩa và nghe âm thanh để gõ tên từ vựng tiếng Anh!</p>
+
+    <div class="spelling-box">
+      <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 câu</div>
+
+      <div id="spelling-preview" class="number-preview-box"></div>
+      <button class="audio-btn" style="width: 42px; height: 42px; font-size: 1.2rem; margin-top:0;" onclick="playSpellingAudio()">🔊</button>
+
+      <div class="feedback-msg" id="spelling-feedback"></div>
+
+      <div class="spelling-input-group">
+        <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ tên tiếng Anh..." autocomplete="off">
+        <button class="btn-action" onclick="checkSpelling()">Kiểm tra</button>
+        <button class="btn-reveal" onclick="revealSpellingAnswer()">💡 Hiện đáp án</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 6: GAME 4 COUNTING & SENTENCES -->
+  <div id="game-count" class="tab-content">
+    <h2 style="text-align: center; color: #2F855A; font-weight: 800; font-size: 1.4rem;">Game 4: Đếm Số Lượng & Viết Mẫu Câu (50 Câu)</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Đếm số lượng quả trong khung và điền câu Tiếng Anh thích hợp!</p>
+
+    <div class="count-game-container">
+      <div class="score-board" id="count-score">🎯 Đã đúng: 0 / 50 câu</div>
+
+      <div class="card-controls">
+        <span class="card-counter" id="count-counter-text">Câu 1 / 50</span>
+      </div>
+
+      <div class="fruit-display-box">
+        <div class="fruit-header">COUNT THE FRUITS 🍎🍌🍊</div>
+        <div class="fruit-body">
+          <div class="fruit-items-container" id="fruit-items-container">
+            <!-- Dynamic Fruit Emojis -->
+          </div>
+          <div class="fruit-subtext" id="fruit-sub-display">Đếm: 20 quả dâu tây</div>
+        </div>
+      </div>
+
+      <div class="feedback-msg" id="count-feedback"></div>
+
+      <div class="spelling-input-group">
+        <input type="text" id="count-sentence-input" class="spelling-input" placeholder="Ví dụ: There are 20 strawberries / It is an apple..." autocomplete="off">
+        <button class="btn-action" onclick="checkCountSentence()">Kiểm tra</button>
+        <button class="btn-reveal" onclick="revealCountAnswer()">💡 Hiện đáp án</button>
+      </div>
+
+      <div class="hint-note">
+        💡 <b>Cấu trúc chấp nhận:</b><br>
+        • Nếu là 1 quả: <i>"It is an apple"</i>, <i>"It's a banana"</i>, <i>"an apple"</i><br>
+        • Nếu nhiều quả: <i>"There are 20 strawberries"</i>, <i>"20 strawberries"</i>, <i>"They are 20 strawberries"</i>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="./assets/js/grade2-progress.js"></script>
+<script src="./assets/js/legacy-game4.js"></script>
+<script src="../../shared/young-learner-speech.js?v=slow-sync-1"></script>
+  <script src="./assets/js/topics/fruits.js?v=pencil-20261019"></script>
+<script src="./assets/js/legacy-game4-config.js"></script>
+
+<contact-danh></contact-danh>
+    <script src="../../shared/contact-footer.js"></script>
+<script src="./assets/js/learning-core.js?v=answer-audio-20261021"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => DanhLesson.mount({
+    topic: 'fruits',
+    words: fruitVocab.map((word, index) => ({
+      id: word.name.toLowerCase(), name: word.name, meaning: word.meaning,
+      ipa: word.ipa, color: word.hex, visual: word.icon
+    }))
+  }));
+</script>
+
+<script src="./assets/js/grade2-navigation.js?v=primary2-20261022-34"></script>
+</body>
+</html>

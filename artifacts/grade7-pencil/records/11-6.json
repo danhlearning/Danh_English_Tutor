@@ -1,0 +1,11 @@
+{
+  "unit": 11,
+  "wordId": 6,
+  "term": "train",
+  "meaning": "tàu hỏa",
+  "example": "This train carries passengers between cities.",
+  "file": "grade/lop7/assets/images/pencil/unit11/6-v1.webp",
+  "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: train. Scene: A passenger train with a locomotive and two carriages travelling on rails, entire front visible, no numbers or writing. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024.",
+  "mode": "built-in image_gen",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-308e99da-8424-4cd2-9d58-54ddfe071556.png"
+}

@@ -1,0 +1,1442 @@
+[
+  {
+    "grade": 2,
+    "unit": "gsunit1",
+    "id": "pasta",
+    "name": "Pasta",
+    "meaning": "mì Ý",
+    "asset": "shared/assets/vocabulary-3d/pasta-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit1",
+    "id": "popcorn",
+    "name": "Popcorn",
+    "meaning": "bỏng ngô",
+    "asset": "shared/assets/vocabulary-3d/popcorn-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit1",
+    "id": "pizza",
+    "name": "Pizza",
+    "meaning": "bánh pizza",
+    "asset": "shared/assets/vocabulary-3d/pizza-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit2",
+    "id": "kite",
+    "name": "Kite",
+    "meaning": "con diều",
+    "asset": "shared/assets/vocabulary-3d/kite-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit2",
+    "id": "bike",
+    "name": "Bike",
+    "meaning": "xe đạp",
+    "asset": "shared/assets/vocabulary-3d/bike-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit2",
+    "id": "kitten",
+    "name": "Kitten",
+    "meaning": "mèo con",
+    "asset": "shared/assets/vocabulary-3d/kitten-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit3",
+    "id": "sail",
+    "name": "Sail",
+    "meaning": "đi thuyền",
+    "asset": "shared/assets/vocabulary-3d/sail-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit3",
+    "id": "sand",
+    "name": "Sand",
+    "meaning": "cát",
+    "asset": "shared/assets/vocabulary-3d/sand-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit3",
+    "id": "sea",
+    "name": "Sea",
+    "meaning": "biển",
+    "asset": "shared/assets/vocabulary-3d/sea-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit4",
+    "id": "rainbow",
+    "name": "Rainbow",
+    "meaning": "cầu vồng",
+    "asset": "shared/assets/vocabulary-3d/rainbow-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit4",
+    "id": "river",
+    "name": "River",
+    "meaning": "dòng sông",
+    "asset": "shared/assets/vocabulary-3d/river-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit4",
+    "id": "road",
+    "name": "Road",
+    "meaning": "con đường",
+    "asset": "shared/assets/vocabulary-3d/road-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit5",
+    "id": "question",
+    "name": "Question",
+    "meaning": "câu hỏi",
+    "asset": "shared/assets/vocabulary-3d/question-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit5",
+    "id": "square",
+    "name": "Square",
+    "meaning": "hình vuông",
+    "asset": "shared/assets/vocabulary-3d/square-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit5",
+    "id": "quiz",
+    "name": "Quiz",
+    "meaning": "bài đố",
+    "asset": "shared/assets/vocabulary-3d/quiz-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit6",
+    "id": "box",
+    "name": "Box",
+    "meaning": "cái hộp",
+    "asset": "shared/assets/vocabulary-3d/box-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit6",
+    "id": "fox",
+    "name": "Fox",
+    "meaning": "con cáo",
+    "asset": "shared/assets/vocabulary-3d/fox-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit6",
+    "id": "ox",
+    "name": "Ox",
+    "meaning": "con bò đực",
+    "asset": "shared/assets/vocabulary-3d/ox-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit7",
+    "id": "juice",
+    "name": "Juice",
+    "meaning": "nước ép",
+    "asset": "shared/assets/vocabulary-3d/juice-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit7",
+    "id": "jelly",
+    "name": "Jelly",
+    "meaning": "thạch",
+    "asset": "shared/assets/vocabulary-3d/jelly-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit7",
+    "id": "jam",
+    "name": "Jam",
+    "meaning": "mứt",
+    "asset": "shared/assets/vocabulary-3d/jam-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit8",
+    "id": "village",
+    "name": "Village",
+    "meaning": "ngôi làng",
+    "asset": "shared/assets/vocabulary-3d/village-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit8",
+    "id": "van",
+    "name": "Van",
+    "meaning": "xe van",
+    "asset": "shared/assets/vocabulary-3d/van-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit8",
+    "id": "volleyball",
+    "name": "Volleyball",
+    "meaning": "quả bóng chuyền",
+    "asset": "shared/assets/vocabulary-3d/volleyball-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit9",
+    "id": "yogurt",
+    "name": "Yogurt",
+    "meaning": "sữa chua",
+    "asset": "shared/assets/vocabulary-3d/yogurt-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit9",
+    "id": "yams",
+    "name": "Yams",
+    "meaning": "những củ khoai",
+    "asset": "shared/assets/vocabulary-3d/yams-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit9",
+    "id": "yo-yos",
+    "name": "Yo-yos",
+    "meaning": "những con quay yo-yo",
+    "asset": "shared/assets/vocabulary-3d/yo-yos-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit10",
+    "id": "zoo",
+    "name": "Zoo",
+    "meaning": "sở thú",
+    "asset": "shared/assets/vocabulary-3d/zoo-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit10",
+    "id": "zebra",
+    "name": "Zebra",
+    "meaning": "ngựa vằn",
+    "asset": "shared/assets/vocabulary-3d/zebra-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit11",
+    "id": "slide",
+    "name": "Slide",
+    "meaning": "trượt cầu trượt",
+    "asset": "shared/assets/vocabulary-3d/slide-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit11",
+    "id": "ride",
+    "name": "Ride",
+    "meaning": "đi xe",
+    "asset": "shared/assets/vocabulary-3d/ride-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit11",
+    "id": "drive",
+    "name": "Drive",
+    "meaning": "lái xe",
+    "asset": "shared/assets/vocabulary-3d/drive-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit12",
+    "id": "grapes",
+    "name": "Grapes",
+    "meaning": "nho",
+    "asset": "shared/assets/vocabulary-3d/grapes-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit12",
+    "id": "cake",
+    "name": "Cake",
+    "meaning": "bánh ngọt",
+    "asset": "shared/assets/vocabulary-3d/cake-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit12",
+    "id": "table",
+    "name": "Table",
+    "meaning": "cái bàn",
+    "asset": "shared/assets/vocabulary-3d/table-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit13",
+    "id": "eleven",
+    "name": "Eleven",
+    "meaning": "mười một",
+    "asset": "shared/assets/vocabulary-3d/eleven-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit13",
+    "id": "thirteen",
+    "name": "Thirteen",
+    "meaning": "mười ba",
+    "asset": "shared/assets/vocabulary-3d/thirteen-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit13",
+    "id": "fourteen",
+    "name": "Fourteen",
+    "meaning": "mười bốn",
+    "asset": "shared/assets/vocabulary-3d/fourteen-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit13",
+    "id": "fifteen",
+    "name": "Fifteen",
+    "meaning": "mười lăm",
+    "asset": "shared/assets/vocabulary-3d/fifteen-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit14",
+    "id": "brother",
+    "name": "Brother",
+    "meaning": "anh hoặc em trai",
+    "asset": "shared/assets/vocabulary-3d/brother-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit14",
+    "id": "sister",
+    "name": "Sister",
+    "meaning": "chị hoặc em gái",
+    "asset": "shared/assets/vocabulary-3d/sister-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit14",
+    "id": "grandmother",
+    "name": "Grandmother",
+    "meaning": "bà",
+    "asset": "shared/assets/vocabulary-3d/grandmother-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit15",
+    "id": "shirts",
+    "name": "Shirts",
+    "meaning": "những chiếc áo sơ mi",
+    "asset": "shared/assets/vocabulary-3d/shirts-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit15",
+    "id": "shoes",
+    "name": "Shoes",
+    "meaning": "những đôi giày",
+    "asset": "shared/assets/vocabulary-3d/shoes-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit15",
+    "id": "shorts",
+    "name": "Shorts",
+    "meaning": "quần đùi",
+    "asset": "shared/assets/vocabulary-3d/shorts-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit16",
+    "id": "tent",
+    "name": "Tent",
+    "meaning": "cái lều",
+    "asset": "shared/assets/vocabulary-3d/tent-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit16",
+    "id": "teapot",
+    "name": "Teapot",
+    "meaning": "ấm trà",
+    "asset": "shared/assets/vocabulary-3d/teapot-3d-v1.webp"
+  },
+  {
+    "grade": 2,
+    "unit": "gsunit16",
+    "id": "blanket",
+    "name": "Blanket",
+    "meaning": "cái chăn",
+    "asset": "shared/assets/vocabulary-3d/blanket-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit1",
+    "id": "america",
+    "name": "America",
+    "meaning": "nước Mỹ",
+    "asset": "shared/assets/vocabulary-3d/america-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit1",
+    "id": "australia",
+    "name": "Australia",
+    "meaning": "nước Úc",
+    "asset": "shared/assets/vocabulary-3d/australia-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit1",
+    "id": "britain",
+    "name": "Britain",
+    "meaning": "nước Anh",
+    "asset": "shared/assets/vocabulary-3d/britain-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit1",
+    "id": "japan",
+    "name": "Japan",
+    "meaning": "nước Nhật",
+    "asset": "shared/assets/vocabulary-3d/japan-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit1",
+    "id": "malaysia",
+    "name": "Malaysia",
+    "meaning": "nước Malaysia",
+    "asset": "shared/assets/vocabulary-3d/malaysia-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit1",
+    "id": "vietnam",
+    "name": "Viet Nam",
+    "meaning": "nước Việt Nam",
+    "asset": "shared/assets/vocabulary-3d/viet-nam-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit2",
+    "id": "getup",
+    "name": "get up",
+    "meaning": "thức dậy",
+    "asset": "shared/assets/vocabulary-3d/get-up-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit2",
+    "id": "breakfast",
+    "name": "have breakfast",
+    "meaning": "ăn sáng",
+    "asset": "shared/assets/vocabulary-3d/have-breakfast-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit2",
+    "id": "school",
+    "name": "go to school",
+    "meaning": "đi học",
+    "asset": "shared/assets/vocabulary-3d/go-to-school-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit2",
+    "id": "lunch",
+    "name": "have lunch",
+    "meaning": "ăn trưa",
+    "asset": "shared/assets/vocabulary-3d/have-lunch-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit2",
+    "id": "dinner",
+    "name": "have dinner",
+    "meaning": "ăn tối",
+    "asset": "shared/assets/vocabulary-3d/have-dinner-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit2",
+    "id": "bed",
+    "name": "go to bed",
+    "meaning": "đi ngủ",
+    "asset": "shared/assets/vocabulary-3d/go-to-bed-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit3",
+    "id": "study-at-school",
+    "name": "study at school",
+    "meaning": "học ở trường",
+    "asset": "shared/assets/vocabulary-3d/study-at-school-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit3",
+    "id": "listen-to-music",
+    "name": "listen to music",
+    "meaning": "nghe nhạc",
+    "asset": "shared/assets/vocabulary-3d/listen-to-music-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit3",
+    "id": "do-housework",
+    "name": "do housework",
+    "meaning": "làm việc nhà",
+    "asset": "shared/assets/vocabulary-3d/do-housework-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit3",
+    "id": "watch-tv",
+    "name": "watch TV",
+    "meaning": "xem tivi",
+    "asset": "shared/assets/vocabulary-3d/watch-tv-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit3",
+    "id": "go-to-school",
+    "name": "go to school",
+    "meaning": "đi học",
+    "asset": "shared/assets/vocabulary-3d/go-to-school-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit3",
+    "id": "play-football",
+    "name": "play football",
+    "meaning": "chơi bóng đá",
+    "asset": "shared/assets/vocabulary-3d/play-football-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "month-1",
+    "name": "January",
+    "meaning": "tháng Một",
+    "asset": "shared/assets/vocabulary-3d/january-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "month-2",
+    "name": "February",
+    "meaning": "tháng Hai",
+    "asset": "shared/assets/vocabulary-3d/february-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "month-3",
+    "name": "March",
+    "meaning": "tháng Ba",
+    "asset": "shared/assets/vocabulary-3d/march-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "month-4",
+    "name": "April",
+    "meaning": "tháng Tư",
+    "asset": "shared/assets/vocabulary-3d/april-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "month-5",
+    "name": "May",
+    "meaning": "tháng Năm",
+    "asset": "shared/assets/vocabulary-3d/may-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "month-6",
+    "name": "June",
+    "meaning": "tháng Sáu",
+    "asset": "shared/assets/vocabulary-3d/june-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "month-7",
+    "name": "July",
+    "meaning": "tháng Bảy",
+    "asset": "shared/assets/vocabulary-3d/july-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "month-8",
+    "name": "August",
+    "meaning": "tháng Tám",
+    "asset": "shared/assets/vocabulary-3d/august-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "month-9",
+    "name": "September",
+    "meaning": "tháng Chín",
+    "asset": "shared/assets/vocabulary-3d/september-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "month-10",
+    "name": "October",
+    "meaning": "tháng Mười",
+    "asset": "shared/assets/vocabulary-3d/october-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "month-11",
+    "name": "November",
+    "meaning": "tháng Mười Một",
+    "asset": "shared/assets/vocabulary-3d/november-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "month-12",
+    "name": "December",
+    "meaning": "tháng Mười Hai",
+    "asset": "shared/assets/vocabulary-3d/december-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "jam",
+    "name": "jam",
+    "meaning": "mứt",
+    "asset": "shared/assets/vocabulary-3d/jam-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "chips",
+    "name": "chips",
+    "meaning": "khoai tây chiên",
+    "asset": "shared/assets/vocabulary-3d/chips-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "grapes",
+    "name": "grapes",
+    "meaning": "nho",
+    "asset": "shared/assets/vocabulary-3d/grapes-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "water",
+    "name": "water",
+    "meaning": "nước lọc",
+    "asset": "shared/assets/vocabulary-3d/water-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "lemonade",
+    "name": "lemonade",
+    "meaning": "nước chanh",
+    "asset": "shared/assets/vocabulary-3d/lemonade-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit4",
+    "id": "juice",
+    "name": "juice",
+    "meaning": "nước ép",
+    "asset": "shared/assets/vocabulary-3d/juice-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit5",
+    "id": "swim",
+    "name": "swim",
+    "meaning": "bơi",
+    "asset": "shared/assets/vocabulary-3d/swim-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit5",
+    "id": "ride-a-bike",
+    "name": "ride a bike",
+    "meaning": "đi xe đạp",
+    "asset": "shared/assets/vocabulary-3d/ride-a-bike-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit5",
+    "id": "draw",
+    "name": "draw",
+    "meaning": "vẽ",
+    "asset": "shared/assets/vocabulary-3d/draw-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit5",
+    "id": "sing",
+    "name": "sing",
+    "meaning": "hát",
+    "asset": "shared/assets/vocabulary-3d/sing-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit5",
+    "id": "dance",
+    "name": "dance",
+    "meaning": "nhảy múa",
+    "asset": "shared/assets/vocabulary-3d/dance-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit5",
+    "id": "play-the-piano",
+    "name": "play the piano",
+    "meaning": "chơi đàn piano",
+    "asset": "shared/assets/vocabulary-3d/play-the-piano-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit6",
+    "id": "classroom",
+    "name": "classroom",
+    "meaning": "lớp học",
+    "asset": "shared/assets/vocabulary-3d/classroom-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit6",
+    "id": "library",
+    "name": "library",
+    "meaning": "thư viện",
+    "asset": "shared/assets/vocabulary-3d/library-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit6",
+    "id": "playground",
+    "name": "playground",
+    "meaning": "sân chơi",
+    "asset": "shared/assets/vocabulary-3d/playground-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit6",
+    "id": "computer-room",
+    "name": "computer room",
+    "meaning": "phòng máy tính",
+    "asset": "shared/assets/vocabulary-3d/computer-room-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit6",
+    "id": "music-room",
+    "name": "music room",
+    "meaning": "phòng âm nhạc",
+    "asset": "shared/assets/vocabulary-3d/music-room-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit6",
+    "id": "gym",
+    "name": "gym",
+    "meaning": "phòng thể chất",
+    "asset": "shared/assets/vocabulary-3d/gym-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit7",
+    "id": "maths",
+    "name": "Maths",
+    "meaning": "môn Toán",
+    "asset": "shared/assets/vocabulary-3d/maths-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit7",
+    "id": "english",
+    "name": "English",
+    "meaning": "môn Tiếng Anh",
+    "asset": "shared/assets/vocabulary-3d/english-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit7",
+    "id": "music",
+    "name": "Music",
+    "meaning": "môn Âm nhạc",
+    "asset": "shared/assets/vocabulary-3d/music-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit7",
+    "id": "art",
+    "name": "Art",
+    "meaning": "môn Mĩ thuật",
+    "asset": "shared/assets/vocabulary-3d/art-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit7",
+    "id": "science",
+    "name": "Science",
+    "meaning": "môn Khoa học",
+    "asset": "shared/assets/vocabulary-3d/science-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit7",
+    "id": "pe",
+    "name": "PE",
+    "meaning": "môn Thể dục",
+    "asset": "shared/assets/vocabulary-3d/pe-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit8",
+    "id": "art",
+    "name": "Art",
+    "meaning": "môn Mĩ thuật",
+    "asset": "shared/assets/vocabulary-3d/art-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit8",
+    "id": "music",
+    "name": "Music",
+    "meaning": "môn Âm nhạc",
+    "asset": "shared/assets/vocabulary-3d/music-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit8",
+    "id": "science",
+    "name": "Science",
+    "meaning": "môn Khoa học",
+    "asset": "shared/assets/vocabulary-3d/science-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit8",
+    "id": "maths",
+    "name": "Maths",
+    "meaning": "môn Toán",
+    "asset": "shared/assets/vocabulary-3d/maths-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit8",
+    "id": "english",
+    "name": "English",
+    "meaning": "môn Tiếng Anh",
+    "asset": "shared/assets/vocabulary-3d/english-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit8",
+    "id": "pe",
+    "name": "PE",
+    "meaning": "môn Thể dục",
+    "asset": "shared/assets/vocabulary-3d/pe-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit9",
+    "id": "football",
+    "name": "football",
+    "meaning": "bóng đá",
+    "asset": "shared/assets/vocabulary-3d/football-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit9",
+    "id": "badminton",
+    "name": "badminton",
+    "meaning": "cầu lông",
+    "asset": "shared/assets/vocabulary-3d/badminton-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit9",
+    "id": "basketball",
+    "name": "basketball",
+    "meaning": "bóng rổ",
+    "asset": "shared/assets/vocabulary-3d/basketball-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit9",
+    "id": "table-tennis",
+    "name": "table tennis",
+    "meaning": "bóng bàn",
+    "asset": "shared/assets/vocabulary-3d/table-tennis-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit9",
+    "id": "running",
+    "name": "running",
+    "meaning": "chạy bộ",
+    "asset": "shared/assets/vocabulary-3d/running-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit9",
+    "id": "swimming",
+    "name": "swimming",
+    "meaning": "bơi lội",
+    "asset": "shared/assets/vocabulary-3d/swimming-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit10",
+    "id": "beach",
+    "name": "beach",
+    "meaning": "bãi biển",
+    "asset": "shared/assets/vocabulary-3d/beach-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit10",
+    "id": "mountains",
+    "name": "mountains",
+    "meaning": "núi",
+    "asset": "shared/assets/vocabulary-3d/mountains-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit10",
+    "id": "island",
+    "name": "island",
+    "meaning": "hòn đảo",
+    "asset": "shared/assets/vocabulary-3d/island-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit10",
+    "id": "museum",
+    "name": "museum",
+    "meaning": "bảo tàng",
+    "asset": "shared/assets/vocabulary-3d/museum-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit10",
+    "id": "camping",
+    "name": "camping",
+    "meaning": "cắm trại",
+    "asset": "shared/assets/vocabulary-3d/camping-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit10",
+    "id": "sightseeing",
+    "name": "sightseeing",
+    "meaning": "tham quan",
+    "asset": "shared/assets/vocabulary-3d/sightseeing-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit11",
+    "id": "living-room",
+    "name": "living room",
+    "meaning": "phòng khách",
+    "asset": "shared/assets/vocabulary-3d/living-room-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit11",
+    "id": "bedroom",
+    "name": "bedroom",
+    "meaning": "phòng ngủ",
+    "asset": "shared/assets/vocabulary-3d/bedroom-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit11",
+    "id": "kitchen",
+    "name": "kitchen",
+    "meaning": "nhà bếp",
+    "asset": "shared/assets/vocabulary-3d/kitchen-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit11",
+    "id": "bathroom",
+    "name": "bathroom",
+    "meaning": "phòng tắm",
+    "asset": "shared/assets/vocabulary-3d/bathroom-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit11",
+    "id": "garden",
+    "name": "garden",
+    "meaning": "khu vườn",
+    "asset": "shared/assets/vocabulary-3d/garden-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit11",
+    "id": "balcony",
+    "name": "balcony",
+    "meaning": "ban công",
+    "asset": "shared/assets/vocabulary-3d/balcony-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit12",
+    "id": "teacher",
+    "name": "teacher",
+    "meaning": "giáo viên",
+    "asset": "shared/assets/vocabulary-3d/teacher-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit12",
+    "id": "doctor",
+    "name": "doctor",
+    "meaning": "bác sĩ",
+    "asset": "shared/assets/vocabulary-3d/doctor-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit12",
+    "id": "farmer",
+    "name": "farmer",
+    "meaning": "nông dân",
+    "asset": "shared/assets/vocabulary-3d/farmer-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit12",
+    "id": "firefighter",
+    "name": "firefighter",
+    "meaning": "lính cứu hỏa",
+    "asset": "shared/assets/vocabulary-3d/firefighter-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit12",
+    "id": "chef",
+    "name": "chef",
+    "meaning": "đầu bếp",
+    "asset": "shared/assets/vocabulary-3d/chef-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit12",
+    "id": "pilot",
+    "name": "pilot",
+    "meaning": "phi công",
+    "asset": "shared/assets/vocabulary-3d/pilot-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit13",
+    "id": "curly-hair",
+    "name": "curly hair",
+    "meaning": "tóc xoăn",
+    "asset": "shared/assets/vocabulary-3d/curly-hair-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit13",
+    "id": "straight-hair",
+    "name": "straight hair",
+    "meaning": "tóc thẳng",
+    "asset": "shared/assets/vocabulary-3d/straight-hair-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit13",
+    "id": "glasses",
+    "name": "glasses",
+    "meaning": "kính mắt",
+    "asset": "shared/assets/vocabulary-3d/glasses-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit13",
+    "id": "blond-hair",
+    "name": "blond hair",
+    "meaning": "tóc vàng",
+    "asset": "shared/assets/vocabulary-3d/blond-hair-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit13",
+    "id": "beard",
+    "name": "beard",
+    "meaning": "râu quai nón",
+    "asset": "shared/assets/vocabulary-3d/beard-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit13",
+    "id": "freckles",
+    "name": "freckles",
+    "meaning": "tàn nhang",
+    "asset": "shared/assets/vocabulary-3d/freckles-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit14",
+    "id": "brush-my-teeth",
+    "name": "brush my teeth",
+    "meaning": "đánh răng",
+    "asset": "shared/assets/vocabulary-3d/brush-my-teeth-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit14",
+    "id": "wash-my-face",
+    "name": "wash my face",
+    "meaning": "rửa mặt",
+    "asset": "shared/assets/vocabulary-3d/wash-my-face-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit14",
+    "id": "have-breakfast",
+    "name": "have breakfast",
+    "meaning": "ăn sáng",
+    "asset": "shared/assets/vocabulary-3d/have-breakfast-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit14",
+    "id": "do-homework",
+    "name": "do homework",
+    "meaning": "làm bài tập về nhà",
+    "asset": "shared/assets/vocabulary-3d/do-homework-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit14",
+    "id": "take-a-shower",
+    "name": "take a shower",
+    "meaning": "tắm vòi sen",
+    "asset": "shared/assets/vocabulary-3d/take-a-shower-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit14",
+    "id": "go-to-bed",
+    "name": "go to bed",
+    "meaning": "đi ngủ",
+    "asset": "shared/assets/vocabulary-3d/go-to-bed-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit15",
+    "id": "visit-grandparents",
+    "name": "visit grandparents",
+    "meaning": "thăm ông bà",
+    "asset": "shared/assets/vocabulary-3d/visit-grandparents-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit15",
+    "id": "go-shopping",
+    "name": "go shopping",
+    "meaning": "đi mua sắm",
+    "asset": "shared/assets/vocabulary-3d/go-shopping-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit15",
+    "id": "have-a-picnic",
+    "name": "have a picnic",
+    "meaning": "đi dã ngoại",
+    "asset": "shared/assets/vocabulary-3d/have-a-picnic-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit15",
+    "id": "watch-a-film",
+    "name": "watch a film",
+    "meaning": "xem phim",
+    "asset": "shared/assets/vocabulary-3d/watch-a-film-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit15",
+    "id": "cook-dinner",
+    "name": "cook dinner",
+    "meaning": "nấu bữa tối",
+    "asset": "shared/assets/vocabulary-3d/cook-dinner-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit15",
+    "id": "play-games",
+    "name": "play games",
+    "meaning": "chơi trò chơi",
+    "asset": "shared/assets/vocabulary-3d/play-games-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit16",
+    "id": "sunny",
+    "name": "sunny",
+    "meaning": "có nắng",
+    "asset": "shared/assets/vocabulary-3d/sunny-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit16",
+    "id": "rainy",
+    "name": "rainy",
+    "meaning": "có mưa",
+    "asset": "shared/assets/vocabulary-3d/rainy-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit16",
+    "id": "cloudy",
+    "name": "cloudy",
+    "meaning": "nhiều mây",
+    "asset": "shared/assets/vocabulary-3d/cloudy-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit16",
+    "id": "windy",
+    "name": "windy",
+    "meaning": "nhiều gió",
+    "asset": "shared/assets/vocabulary-3d/windy-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit16",
+    "id": "snowy",
+    "name": "snowy",
+    "meaning": "có tuyết",
+    "asset": "shared/assets/vocabulary-3d/snowy-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit16",
+    "id": "stormy",
+    "name": "stormy",
+    "meaning": "có bão",
+    "asset": "shared/assets/vocabulary-3d/stormy-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit17",
+    "id": "hospital",
+    "name": "hospital",
+    "meaning": "bệnh viện",
+    "asset": "shared/assets/vocabulary-3d/hospital-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit17",
+    "id": "post-office",
+    "name": "post office",
+    "meaning": "bưu điện",
+    "asset": "shared/assets/vocabulary-3d/post-office-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit17",
+    "id": "cinema",
+    "name": "cinema",
+    "meaning": "rạp chiếu phim",
+    "asset": "shared/assets/vocabulary-3d/cinema-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit17",
+    "id": "park",
+    "name": "park",
+    "meaning": "công viên",
+    "asset": "shared/assets/vocabulary-3d/park-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit17",
+    "id": "supermarket",
+    "name": "supermarket",
+    "meaning": "siêu thị",
+    "asset": "shared/assets/vocabulary-3d/supermarket-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit17",
+    "id": "bus-stop",
+    "name": "bus stop",
+    "meaning": "trạm xe buýt",
+    "asset": "shared/assets/vocabulary-3d/bus-stop-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit18",
+    "id": "t-shirt",
+    "name": "T-shirt",
+    "meaning": "áo phông",
+    "asset": "shared/assets/vocabulary-3d/t-shirt-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit18",
+    "id": "dress",
+    "name": "dress",
+    "meaning": "váy liền",
+    "asset": "shared/assets/vocabulary-3d/dress-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit18",
+    "id": "shoes",
+    "name": "shoes",
+    "meaning": "giày",
+    "asset": "shared/assets/vocabulary-3d/shoes-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit18",
+    "id": "hat",
+    "name": "hat",
+    "meaning": "mũ",
+    "asset": "shared/assets/vocabulary-3d/hat-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit18",
+    "id": "bag",
+    "name": "bag",
+    "meaning": "túi xách",
+    "asset": "shared/assets/vocabulary-3d/bag-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit18",
+    "id": "watch",
+    "name": "watch",
+    "meaning": "đồng hồ đeo tay",
+    "asset": "shared/assets/vocabulary-3d/watch-3d-v2.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit19",
+    "id": "elephant",
+    "name": "elephant",
+    "meaning": "voi",
+    "asset": "shared/assets/vocabulary-3d/elephant-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit19",
+    "id": "giraffe",
+    "name": "giraffe",
+    "meaning": "hươu cao cổ",
+    "asset": "shared/assets/vocabulary-3d/giraffe-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit19",
+    "id": "dolphin",
+    "name": "dolphin",
+    "meaning": "cá heo",
+    "asset": "shared/assets/vocabulary-3d/dolphin-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit19",
+    "id": "parrot",
+    "name": "parrot",
+    "meaning": "vẹt",
+    "asset": "shared/assets/vocabulary-3d/parrot-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit19",
+    "id": "turtle",
+    "name": "turtle",
+    "meaning": "rùa",
+    "asset": "shared/assets/vocabulary-3d/turtle-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit19",
+    "id": "butterfly",
+    "name": "butterfly",
+    "meaning": "bướm",
+    "asset": "shared/assets/vocabulary-3d/butterfly-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit20",
+    "id": "make-a-kite",
+    "name": "make a kite",
+    "meaning": "làm diều",
+    "asset": "shared/assets/vocabulary-3d/make-a-kite-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit20",
+    "id": "pitch-a-tent",
+    "name": "pitch a tent",
+    "meaning": "dựng lều",
+    "asset": "shared/assets/vocabulary-3d/pitch-a-tent-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit20",
+    "id": "tell-stories",
+    "name": "tell stories",
+    "meaning": "kể chuyện",
+    "asset": "shared/assets/vocabulary-3d/tell-stories-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit20",
+    "id": "sing-songs",
+    "name": "sing songs",
+    "meaning": "hát các bài hát",
+    "asset": "shared/assets/vocabulary-3d/sing-songs-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit20",
+    "id": "take-photos",
+    "name": "take photos",
+    "meaning": "chụp ảnh",
+    "asset": "shared/assets/vocabulary-3d/take-photos-3d-v1.webp"
+  },
+  {
+    "grade": 4,
+    "unit": "unit20",
+    "id": "play-games",
+    "name": "play games",
+    "meaning": "chơi trò chơi",
+    "asset": "shared/assets/vocabulary-3d/play-games-3d-v1.webp"
+  }
+]

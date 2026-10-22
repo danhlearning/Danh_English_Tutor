@@ -1,0 +1,26 @@
+/* Giao diện ngữ pháp cùng ngôn ngữ hình ảnh với game từ vựng. */
+body{font-family:"Danh Nunito",Nunito,system-ui,sans-serif;background:#faf5ff;color:#40345c}
+.gg-hero{background:radial-gradient(circle at 88% 20%,#ffedbd,transparent 35%),linear-gradient(125deg,#eee3ff,#e1f6f4);color:#40345c;border-bottom:4px solid #fff}
+.gg-hero .g6-kicker,.gg-heading .g6-overline{color:#75599b}
+.gg-hero .g6-back{background:#fff;color:#63459b;box-shadow:0 4px 0 #dfd0f1;min-height:44px}
+.gg-hero-badge{background:#ffffff9c;border:3px solid #fff;box-shadow:0 8px 0 #d9caed}
+.gg-stats>div,.gg-setup,.gg-question-card,.gg-result{border:2px solid #e6dbf0;border-radius:25px;box-shadow:0 6px 0 #e9dff3}
+.gg-stats strong{color:#7451a3}.gg-stats span{color:#675780}
+.gg-fields fieldset{border:2px solid #e9def4;border-radius:20px}.gg-fields legend{color:#684795}
+.gg-segments span{background:#faf6ff;border:2px solid #e5d9f1;color:#67468f;border-radius:16px}
+.gg-segments label{display:inline-flex}
+.gg-segments input:checked+span{background:#7957bb;border-color:#7957bb;box-shadow:0 3px 0 #5e3d99}
+.gg-primary{background:#7957bb;border-radius:18px;box-shadow:0 5px 0 #5e3d99;min-height:48px}
+.gg-primary:hover{background:#6d49af}
+.gg-secondary,#sound-toggle,#motion-toggle,#exit-play{background:#fff;border:2px solid #e3d6f4;color:#684795;border-radius:16px;min-height:44px}
+.gg-option{background:#faf6ff;border:2px solid #decdf0;border-radius:20px;box-shadow:0 4px 0 #e5d9f2;min-height:56px;font-size:1.25rem;line-height:1.5;color:#533b76}
+.gg-option:hover:not(:disabled){background:#f0e5ff;border-color:#a986d2}
+.gg-option.is-correct{background:#e3f8e9;border-color:#70b98b;color:#236642}.gg-option.is-wrong{background:#fff0ef;border-color:#e5a4a1;color:#9a4848}
+.gg-progress-track{background:#efe7f6}.gg-progress-track span{background:linear-gradient(90deg,#a482d2,#70bea9)}
+.gg-question-meta span{background:#f1e8fb;color:#74549a}.gg-question-card h2{margin-top:18px}
+.gg-tokens button,.gg-built button{background:#f5edff;border:2px solid #ddcbed;color:#63478c;border-radius:14px;min-height:44px}
+.gg-built{border-color:#dac6ee}.gg-passage{background:#eef9f8;border-color:#c4e5de}.gg-exam-answer>span{color:#63478c}
+.gg-streak-reward{display:block;padding:10px 12px;background:#fff0bd;border-radius:14px;color:#86531b;margin-bottom:10px}
+.gg-feedback{font-size:1.125rem}.gg-feedback.good{color:#236642}.gg-feedback.bad{color:#9a4848}
+button:focus-visible,select:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid #9672cf;outline-offset:3px}
+@media(max-width:760px){.gg-is-playing .gg-question-card{border-radius:22px}.gg-is-playing .gg-play-top{gap:7px}.gg-is-playing .gg-option{font-size:1.125rem}.gg-is-playing .gg-play-top button{min-height:44px}.gg-is-playing .gg-question-card h2{margin-top:14px}.gg-is-playing .gg-answer-actions{padding-bottom:5px}}

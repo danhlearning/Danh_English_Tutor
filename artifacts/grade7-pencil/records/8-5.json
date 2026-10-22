@@ -1,0 +1,11 @@
+{
+  "unit": 8,
+  "wordId": 5,
+  "term": "actress",
+  "meaning": "nữ diễn viên",
+  "example": "The actress plays a doctor in the film.",
+  "file": "grade/lop7/assets/images/pencil/unit8/5-v1.webp",
+  "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: actress. Scene: An adult female actress performing the role of a doctor in front of a movie camera and small studio light; fictional film set. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024.",
+  "mode": "built-in image_gen",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-97fde81f-6e4b-453c-9421-16c7ab79d24d.png"
+}

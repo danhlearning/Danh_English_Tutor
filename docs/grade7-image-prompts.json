@@ -1,0 +1,296 @@
+{
+  "tool": "Built-in imagegen",
+  "date": "2026-10-19",
+  "policy": "No captions, Vietnamese meanings or readable text inside vocabulary illustrations. New generations avoid logos and watermarks. Meanings are separate HTML text.",
+  "size": [
+    768,
+    768
+  ],
+  "images": [
+    {
+      "name": "balanced-diet",
+      "path": "grade/lop7/assets/images/balanced-diet-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "e07fc3405d9a42aea53b197e6e78310de64265f0d165991b9c622f3229e46553",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: balanced diet. Overhead photo of one balanced meal on a plain round ceramic plate: brown rice, a portion of grilled fish, plentiful broccoli and carrots, a few slices of fresh fruit. A glass of water beside the plate. Real wholesome food on a light wooden dining table, tidy warm background. Do not put words in the image.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "celebration",
+      "path": "grade/lop7/assets/images/celebration-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "a81ba4b12d8e908396173cf3b057c232fb94f1c7f86f7d80b68839fed9bb4a2e",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: celebration. A Vietnamese family joyfully applauding a small friendly lion-dance performance in their home courtyard during a spring celebration. Warm red plain lanterns, smiles and shared festive atmosphere. All decorations completely plain, no banners or written characters. Respectful candid natural photograph, enough space for full lion mask and people.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "community-service",
+      "path": "grade/lop7/assets/images/community-service-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "31d76bb3def3043a5ce36ca2be8c6f4f973dfb8c8fb2cf2441cd3a739b046ee8",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: community service. Four Vietnamese teenage volunteers in plain blue T-shirts, with gloves, collecting discarded plastic bottles and litter into sacks at a public park. The teamwork and useful service to the neighbourhood must be unmistakable. Safe clean daylight, natural correct hands, shirts and sacks completely unbranded.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "creativity",
+      "path": "grade/lop7/assets/images/creativity-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "07e05015ef1fd78180206946b15445f798c311d66fd4cdd8163c059338d83488",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: creativity. A Vietnamese teenager at a tidy craft table inventing a colourful miniature cardboard robot from recycled boxes, bottle caps and paper. Show the hands actually assembling an original toy, satisfied thoughtful expression. Materials have absolutely no printed packaging or writing. The robot is a simple craft toy with round button eyes, not a real functioning robot.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "documentary",
+      "path": "grade/lop7/assets/images/documentary-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "455eaff87ba8eb584f2f36d810a17b8a46fa9fd17895f2362c7a76a1b51c8019",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: documentary film. A teenager sitting sideways on a sofa watching a large television that shows an educational nature documentary: a realistic sea turtle swimming over coral, no text or television interface on screen. Frame both viewer and TV clearly, natural living room. No printed clothing, no captions. Photographic scene within a photographic scene.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "donate",
+      "path": "grade/lop7/assets/images/donate-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "842872f72fce57c8c286299afaa594d2b35cb48d165d3da40a4de513e90606e2",
+      "caption": null,
+      "prompt": "Use case: precise-object-edit. This is an existing educational photograph for the verb donate. Preserve the scene, people, faces, correct hands, donation of a cardboard box full of books, framing, square aspect and photographic style. Remove ALL visible writing, lettering, labels, logos and brand marks everywhere, especially the tiny white embroidery on the blue volunteer vest, book covers/spines and background books. Make the vest plain blue and all books plain single-colour with NO characters. Do not add captions or a bottom strip. No text in any language, no watermark. Change only those text/logo surfaces; do not alter the meaning or people.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "driverless",
+      "path": "grade/lop7/assets/images/driverless-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "1b75f7f3547777eceb3edfdadef8cf6326aa041b661e73cc36fde4cf45c19566",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: driverless autonomous car. A single futuristic unbranded silver research car seen from front three-quarter angle on a quiet test road. Roof-mounted lidar sensor clearly visible. Through the large clear windshield, show an unmistakably EMPTY driver's seat and an unattended steering wheel; no people at all inside. Daylight, realistic engineering photograph, plain car body, blank number plate, no text. This is a concept demonstration, do not copy any commercial car model.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "entrance-examination",
+      "path": "grade/lop7/assets/images/entrance-examination-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "828cf006d2363706f26255388bf9e8780371cd18a6f8cfbf671ec2e35b27ee00",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: entrance examination. Vietnamese secondary-school students sitting separately at spaced desks in a quiet examination classroom, concentrating and writing on plain paper, with an adult invigilator in the background. Side view emphasizes individual desks and the serious testing setting. Papers only seen obliquely so NO writing is legible; no wall posters, no board text, no name tags or school logos.\nFinal cleanup edit: Use case: precise-object-edit. Edit only the papers and name badge in this examination classroom photograph. Preserve the students, teacher, hands, pens, desks, room, lighting, square crop and composition exactly. Remove every single printed or handwritten letter, number, mark, grey line or glyph from ALL paper sheets, including the foreground girl's sheet and the other students' papers. Make every sheet completely plain clean white paper with absolutely no text, writing or ruling, as viewed obliquely while students hold pens poised over it. Ensure the teacher's badge is also completely blank. No other scene changes. No caption, logo or words in any language anywhere.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "gripping",
+      "path": "grade/lop7/assets/images/gripping-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "34b67cfb668afd15357f39e5fb3487fe9b82f6d5a58786189e7502174564d3ce",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: a gripping film. Three teenage friends sitting in cinema seats with small plain unbranded popcorn boxes. All looking toward the unseen movie screen with wide attentive eyes, leaning slightly forward, thoroughly absorbed and intrigued. Soft projector light on faces, dark cinema background. No posters, screen content, signage, captions or text. Do not make them terrified or show horror imagery.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "ingredient",
+      "path": "grade/lop7/assets/images/ingredient-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "ae84eedf7266d977eb89f6e1654e2c62fde1be1f54781a95b734baddd66cefe3",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: cooking ingredients. A clean tabletop still-life of raw baking ingredients BEFORE cooking: two whole eggs beside a small glass bowl of flour, a pat of butter on a plain saucer, and milk in a plain glass jug. Natural daylight, neutral kitchen background. No packaging, no measurements, no labels, no words. Ingredients distinct and well separated, believable food photograph.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "landmark",
+      "path": "grade/lop7/assets/images/landmark-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "91c0ccf67f949a12dab714c547103cda4b8e7e2bb06edec411cdfdea072cf2cc",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: landmark. An accurate realistic travel photograph of the Sydney Opera House seen clearly across the harbour under a blue sky. Its recognizable white sail-like roof shapes are the main subject, full building in frame with breathing room, water in foreground. No boats with readable names, no signs, no words or labels. No invented building geometry.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "native-speaker",
+      "path": "grade/lop7/assets/images/native-speaker-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "cab087f029c479787ee06dffdcadd3adbf88d05318fff18c6a587cf8a795d085",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: a native speaker acquiring their first language in early childhood. A warm realistic home scene of a mother having a natural face-to-face spoken conversation with her small preschool-age child while pointing to a real household object, both engaged, authentic gestures. Plain everyday clothes, no books or screens with writing, no speech bubbles, flags or nationality symbols. Communicate early childhood language interaction, NOT a supposed nationality inferred from appearance. The actual language is explained in separate website text, never written in this image.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "non-renewable-energy",
+      "path": "grade/lop7/assets/images/non-renewable-energy-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "97abcf26e4727ccd640b101244b0131818d62eade7790db8d971da175c29ee91",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: non-renewable energy sources. Realistic still life of a modest pile of black coal chunks next to a plain dark metal oil barrel on an industrial concrete floor. Natural side light emphasizes coal texture and metal. No hazards, no fire, no smoke, no printed markings or text on the barrel. Both coal and barrel fully visible with clear separation.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "pedestrian",
+      "path": "grade/lop7/assets/images/pedestrian-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "retained-and-standardized",
+      "sha256": "ea19b17675761e0f37631b6d9e6ccc224dab830e837d8897f83f17e1ee68a69a",
+      "caption": null,
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: A person walking across clearly marked black and white zebra crossing on foot, cars stopped in background and pedestrian signal green, road safety clear. No words, captions, text or labels. Main subject must be clearly recognisable on a phone.",
+      "mode": "retained",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "performance",
+      "path": "grade/lop7/assets/images/performance-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "3965fe56b413a296dd4517e749701e3cfeb3a9a151fdf32149b166d967dfb5b6",
+      "caption": null,
+      "prompt": "Use case: precise-object-edit. This is an existing educational photograph of a school musical performance. Preserve the performers, faces, hands, instruments, audience, stage and full square framing. Remove ALL lettering, signatures, logos, labels and brand marks everywhere, particularly the small white oval brand on the drum, any cymbal lettering and any guitar brand/headstock mark. Instruments should be entirely unbranded, visually plain but realistic. No words in any language, no caption strip, no watermark. Do not change the performance or anatomy.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "renewable-energy",
+      "path": "grade/lop7/assets/images/renewable-energy-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "3420f0f7daedcf6f654895e37d2b5151bcbeeba88ab80f3ff25344766898cc8a",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: renewable energy. A realistic clean-energy landscape with a row of blue photovoltaic solar panels in the foreground and three elegant wind turbines on green hills in the distance, under a bright clear sky. Real engineering proportions, exactly three blades per turbine, clear uncluttered composition. No logos, labels, signs, letters or words.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "sunburn",
+      "path": "grade/lop7/assets/images/sunburn-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "regenerated",
+      "sha256": "ae64edeb580991d92a471bd4774f45a79776394b25874fb26bb3603451c73c55",
+      "caption": null,
+      "prompt": "Use case: photorealistic-natural. Create ONE square 1:1 educational vocabulary photograph for a Vietnamese secondary-school English learning website. Natural realistic photography, soft daylight, clean composition, one clear main scene, age-appropriate, no border, no collage or panel. Full subject comfortably framed with 10% breathing room, important details visible at thumbnail size. Absolutely NO words, letters, captions, numbers, logos, watermarks, labels, signs or writing anywhere in the image. No cream caption strip. Fill entire square with the scene. Concept: sunburn, a mild non-graphic skin condition after too much sun. Educational natural photograph of an adult at a beach, wearing a plain sleeveless top and a sunhat. Focus clearly on one exposed upper arm/shoulder with noticeable mild pink-red sunburn and a distinct boundary against adjacent normal skin from a clothing tan line. The adult gently checks the tender reddish shoulder with one hand; face can be partially out of focus. Beach umbrella in the background. No blisters, injury, peeling skin or nudity. Sunburn must be clearly visible without being severe. No words or symbols.",
+      "mode": "built-in-generation-or-edit",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "traffic-jam",
+      "path": "grade/lop7/assets/images/traffic-jam-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "retained-and-standardized",
+      "sha256": "f1fe9c6d7f814d16a9498a3b44ec501803118542987010e3d92e13b0cb165df9",
+      "caption": null,
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: Realistic slightly elevated view of a city road packed with stopped cars and buses bumper to bumper in daylight, two clear lanes facing same direction. No words, captions, text or labels. Main subject must be clearly recognisable on a phone.",
+      "mode": "retained",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    },
+    {
+      "name": "water-puppet-show",
+      "path": "grade/lop7/assets/images/water-puppet-show-v2.webp",
+      "size": [
+        768,
+        768
+      ],
+      "action": "retained-and-standardized",
+      "sha256": "53ac2cadcf20936bd5dc51950cbd7f4a8f9bbf555cd0de4c6d20c8c28e937680",
+      "caption": null,
+      "prompt": "Use case: scientific-educational. Create ONE square high-resolution vocabulary image for a Vietnamese grade 7 learning website. Photorealistic natural editorial photography, sharp details and simple unmistakable context, friendly daylight, correct anatomy, no logo, no watermark. Scene: Authentic traditional Vietnamese water puppetry: wooden lacquered puppets above a green water stage, Vietnamese communal-house pavilion backdrop, hidden puppeteers behind bamboo screen; no human-sized puppets. No words, captions, text or labels. Main subject must be clearly recognisable on a phone.",
+      "mode": "retained",
+      "reviewedVisually": true,
+      "noCaptionOrReadableText": true
+    }
+  ]
+}

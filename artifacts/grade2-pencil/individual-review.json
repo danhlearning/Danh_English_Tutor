@@ -1,0 +1,2284 @@
+{
+  "accepted": [
+    "bodyparts/Head",
+    "bodyparts/Hair",
+    "bodyparts/Eyes",
+    "bodyparts/Ears",
+    "bodyparts/Nose",
+    "bodyparts/Mouth",
+    "bodyparts/Teeth",
+    "bodyparts/Neck",
+    "bodyparts/Shoulder",
+    "bodyparts/Arm",
+    "bodyparts/Hand",
+    "bodyparts/Finger",
+    "bodyparts/Leg",
+    "bodyparts/Knee",
+    "bodyparts/Foot",
+    "bodyparts/Tummy",
+    "schoolsupplies/Pencil",
+    "schoolsupplies/Pen",
+    "schoolsupplies/Eraser",
+    "schoolsupplies/Ruler",
+    "schoolsupplies/Book",
+    "schoolsupplies/School bag",
+    "schoolsupplies/Scissors",
+    "schoolsupplies/Glue",
+    "schoolsupplies/Crayon",
+    "schoolsupplies/Pencil case",
+    "schoolsupplies/Chair",
+    "schoolsupplies/Blackboard",
+    "schoolsupplies/Paper",
+    "schoolsupplies/Folder",
+    "schoolsupplies/Calculator",
+    "schoolsupplies/Globe",
+    "schoolsupplies/Compass",
+    "schoolsupplies/Paintbrush",
+    "schoolsupplies/Palette",
+    "schoolsupplies/Paperclip",
+    "schoolsupplies/Stapler",
+    "schoolsupplies/Dictionary",
+    "schoolsupplies/Highlighter",
+    "schoolsupplies/Protractor",
+    "schoolsupplies/Backpack",
+    "householditems/Table",
+    "householditems/Chair",
+    "householditems/Bed",
+    "householditems/Door",
+    "householditems/Window",
+    "householditems/Television",
+    "householditems/Refrigerator",
+    "householditems/Sofa",
+    "householditems/Lamp",
+    "householditems/Clock",
+    "householditems/Mirror",
+    "householditems/Sink",
+    "householditems/Stove",
+    "householditems/Wardrobe",
+    "householditems/Telephone",
+    "householditems/Fan",
+    "verbs/Run",
+    "verbs/Walk",
+    "verbs/Jump",
+    "verbs/Swim",
+    "verbs/Eat",
+    "verbs/Drink",
+    "verbs/Sleep",
+    "verbs/Read",
+    "verbs/Write",
+    "verbs/Sing",
+    "verbs/Dance",
+    "clothes/T-shirt",
+    "clothes/Shirt",
+    "clothes/Dress",
+    "clothes/Skirt",
+    "clothes/Pants",
+    "clothes/Shorts",
+    "clothes/Jacket",
+    "clothes/Coat",
+    "clothes/Sweater",
+    "clothes/Hat",
+    "clothes/Cap",
+    "clothes/Socks",
+    "clothes/Shoes",
+    "clothes/Boots",
+    "clothes/Gloves",
+    "clothes/Scarf",
+    "clothes/Tie",
+    "clothes/Belt",
+    "clothes/Pyjamas",
+    "clothes/Raincoat",
+    "dates/Monday",
+    "dates/Tuesday",
+    "dates/Wednesday",
+    "dates/Thursday",
+    "dates/Friday",
+    "dates/Saturday",
+    "dates/Sunday",
+    "dates/January",
+    "dates/February",
+    "dates/March",
+    "dates/April",
+    "dates/May",
+    "dates/June",
+    "dates/July",
+    "dates/August",
+    "dates/September",
+    "dates/October",
+    "dates/November",
+    "dates/December",
+    "familyfriends/Father",
+    "familyfriends/Mother",
+    "familyfriends/Brother",
+    "familyfriends/Sister",
+    "familyfriends/Grandfather",
+    "familyfriends/Grandmother",
+    "familyfriends/Baby",
+    "familyfriends/Parents",
+    "familyfriends/Friend",
+    "familyfriends/Best friend",
+    "familyfriends/Uncle",
+    "familyfriends/Aunt",
+    "familyfriends/Cousin",
+    "familyfriends/Family",
+    "familyfriends/Son",
+    "familyfriends/Daughter",
+    "familyfriends/Classmate",
+    "familyfriends/Neighbor",
+    "familyfriends/Husband",
+    "familyfriends/Wife",
+    "feeling/Thirsty",
+    "feeling/Hungry",
+    "feeling/Sleepy",
+    "feeling/Tired",
+    "feeling/Hot",
+    "feeling/Cold",
+    "feeling/Sick",
+    "feeling/Happy",
+    "feeling/Sad",
+    "feeling/Angry",
+    "feeling/Scared",
+    "feeling/Excited",
+    "feeling/Bored",
+    "feeling/Surprised",
+    "feeling/Calm",
+    "feeling/Nervous",
+    "feeling/Shy",
+    "feeling/Confused",
+    "feeling/Proud",
+    "feeling/Relaxed",
+    "fooddrinks/Pizza",
+    "fooddrinks/Hamburger",
+    "fooddrinks/Sandwich",
+    "fooddrinks/Bread",
+    "fooddrinks/Rice",
+    "fooddrinks/Noodles",
+    "fooddrinks/Chicken",
+    "fooddrinks/Fish",
+    "fooddrinks/Egg",
+    "fooddrinks/Soup",
+    "fooddrinks/Salad",
+    "fooddrinks/Ice cream",
+    "fooddrinks/Cake",
+    "fooddrinks/Apple",
+    "fooddrinks/Banana",
+    "fooddrinks/Milk",
+    "fooddrinks/Water",
+    "fooddrinks/Juice",
+    "fooddrinks/Tea",
+    "fooddrinks/Cookie",
+    "fruits/Apple",
+    "fruits/Banana",
+    "fruits/Orange",
+    "fruits/Grape",
+    "fruits/Watermelon",
+    "fruits/Strawberry",
+    "fruits/Mango",
+    "fruits/Pineapple",
+    "fruits/Avocado",
+    "fruits/Peach",
+    "fruits/Cherry",
+    "fruits/Lemon",
+    "fruits/Melon",
+    "fruits/Pear",
+    "fruits/Kiwi",
+    "fruits/Coconut",
+    "fruits/Papaya",
+    "fruits/Guava",
+    "verbs/Play",
+    "verbs/Cook",
+    "verbs/Draw",
+    "verbs/Listen",
+    "verbs/Watch",
+    "verbs/Sit",
+    "verbs/Stand",
+    "verbs/Ride",
+    "verbs/Fly",
+    "adjectives/Big",
+    "adjectives/Small",
+    "adjectives/Long",
+    "adjectives/Short",
+    "adjectives/Old",
+    "adjectives/New",
+    "adjectives/Clean",
+    "adjectives/Dirty",
+    "adjectives/Hot",
+    "adjectives/Cold",
+    "adjectives/Fast",
+    "adjectives/Slow",
+    "shapes/Circle",
+    "shapes/Square",
+    "shapes/Triangle",
+    "shapes/Rectangle",
+    "shapes/Oval",
+    "shapes/Star",
+    "shapes/Heart",
+    "shapes/Diamond",
+    "toys/Ball",
+    "toys/Doll",
+    "toys/Teddy bear",
+    "toys/Kite",
+    "toys/Robot",
+    "toys/Toy car",
+    "toys/Train",
+    "toys/Yo-yo",
+    "toys/Puzzle",
+    "toys/Blocks",
+    "toys/Drum",
+    "toys/Boat",
+    "weather/Sunny",
+    "weather/Rainy",
+    "weather/Cloudy",
+    "weather/Windy",
+    "weather/Snowy",
+    "weather/Stormy",
+    "weather/Foggy",
+    "weather/Hot",
+    "rooms/Bedroom",
+    "rooms/Bathroom",
+    "rooms/Kitchen",
+    "rooms/Living room",
+    "rooms/Dining room",
+    "rooms/Study",
+    "rooms/Garage",
+    "transport/Car",
+    "transport/Bus",
+    "transport/Bike",
+    "transport/Train",
+    "transport/Plane",
+    "transport/Boat",
+    "transport/Ship",
+    "transport/Taxi",
+    "transport/Motorbike",
+    "transport/Truck",
+    "transport/Helicopter",
+    "transport/Scooter"
+  ],
+  "rejected": [],
+  "records": [
+    {
+      "key": "clothes/T-shirt",
+      "file": "grade/lop2/assets/images/pencil/clothes/t-shirt-v1.webp",
+      "sha256": "225696e8673c5cb0fad15d5b3ec4774276acd5fcd3f5147f145dbed32573d506",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Shirt",
+      "file": "grade/lop2/assets/images/pencil/clothes/shirt-v1.webp",
+      "sha256": "0eadd0d67aeb468394946d04405692ef35bfe149409a0c4dda6d1642993a41f2",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Dress",
+      "file": "grade/lop2/assets/images/pencil/clothes/dress-v1.webp",
+      "sha256": "743b674edbb416ab32b8f34ec0d9b360f938804e6707f64a54d720bbfed948a3",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Skirt",
+      "file": "grade/lop2/assets/images/pencil/clothes/skirt-v1.webp",
+      "sha256": "ddd460f35bdb9937c7036b9c4f8e02037f0e51cdc8aab748f49d2158f34a4583",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Pants",
+      "file": "grade/lop2/assets/images/pencil/clothes/pants-v1.webp",
+      "sha256": "d90918502936e83af36e62771254ebf39c7719be486e2fc6869f4d3a82bff000",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Shorts",
+      "file": "grade/lop2/assets/images/pencil/clothes/shorts-v1.webp",
+      "sha256": "8e3ec9e08cec56210fbda89a8832e224c78a59e7ffe39603d44ccc98cecf1ba0",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Jacket",
+      "file": "grade/lop2/assets/images/pencil/clothes/jacket-v1.webp",
+      "sha256": "e0b26ea607ee75e4e2012f4c2b53c7d6844439da1024fa0c51c4354c12039328",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Coat",
+      "file": "grade/lop2/assets/images/pencil/clothes/coat-v1.webp",
+      "sha256": "68b247bba327dfda29dd4b70707bb0711e52a3dab17155867699286a05ba5497",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Sweater",
+      "file": "grade/lop2/assets/images/pencil/clothes/sweater-v1.webp",
+      "sha256": "97aacd22f1165f4aa31ba6d24c71dd46bf9c910de0b060fb5a30c9d17cbb6da0",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Hat",
+      "file": "grade/lop2/assets/images/pencil/clothes/hat-v1.webp",
+      "sha256": "29ff3f8fa7a8b1b2113b6f9686cc5bd6d4566d9d62f3a6fd8c464608b4ce6af5",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Cap",
+      "file": "grade/lop2/assets/images/pencil/clothes/cap-v1.webp",
+      "sha256": "75b7d0ebf812f3bea4482a04b37e9114e1ff6c85db8f6b498655de8a9bf9a76b",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Socks",
+      "file": "grade/lop2/assets/images/pencil/clothes/socks-v1.webp",
+      "sha256": "82fe9365955ca590c583cef2bbc15e31ba2b093d5950114d742f5eaed67d9c4c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Shoes",
+      "file": "grade/lop2/assets/images/pencil/clothes/shoes-v1.webp",
+      "sha256": "13fe84bc5e362a29a2af21081eb6471115c34d86173e50f5334477a21be7e074",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Boots",
+      "file": "grade/lop2/assets/images/pencil/clothes/boots-v1.webp",
+      "sha256": "a2c5c0a4e88d190953a41da747db50c9f9fc04b72786c4986e3f8e846ba9b783",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Gloves",
+      "file": "grade/lop2/assets/images/pencil/clothes/gloves-v1.webp",
+      "sha256": "9d656aa6f2a32d4679e9eb2057b7a9a12c046cd4ab6af3efef02c0ff68b64b92",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Scarf",
+      "file": "grade/lop2/assets/images/pencil/clothes/scarf-v1.webp",
+      "sha256": "982bb26ac78a9181144b6349bb68bdfcbd2856979cb0ac038427fbb178b09cad",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Tie",
+      "file": "grade/lop2/assets/images/pencil/clothes/tie-v1.webp",
+      "sha256": "18a03310eff8fe8c79f39df748aea9b48e4a7520c55f876e742e76c2ed278e7c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Belt",
+      "file": "grade/lop2/assets/images/pencil/clothes/belt-v1.webp",
+      "sha256": "fa5b975215da69015702c436f497e939bee823246dc1dc6053723349a8611048",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Pyjamas",
+      "file": "grade/lop2/assets/images/pencil/clothes/pyjamas-v1.webp",
+      "sha256": "5949a7669ee6f52da400a5c2e1bdeb8fcc4286d7d0341b8c09fc8d01b45995d6",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "clothes/Raincoat",
+      "file": "grade/lop2/assets/images/pencil/clothes/raincoat-v1.webp",
+      "sha256": "09824274e462e0267b9c93e76151e3e9000cdd3908e432810ed6564ed7da1c47",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/Monday",
+      "file": "grade/lop2/assets/images/pencil/dates/monday-v1.webp",
+      "sha256": "ddb5defdba25c7cc7f793fe8f1a5346e0d142a14c1ec2399a0182ed672f82ecf",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/Tuesday",
+      "file": "grade/lop2/assets/images/pencil/dates/tuesday-v1.webp",
+      "sha256": "6b1078b35abc39c614a007ce80e973fca2468c55282f6f165222a445b8f65e12",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/Wednesday",
+      "file": "grade/lop2/assets/images/pencil/dates/wednesday-v1.webp",
+      "sha256": "79e305f9a7c20efc24004ebdbdd30cb4f4e86503f4f99e667189f75e0432e30e",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/Thursday",
+      "file": "grade/lop2/assets/images/pencil/dates/thursday-v1.webp",
+      "sha256": "acf02db88630cda9813bbe4f2e3a28c562b9d58c35c2144804b258926d799117",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/Friday",
+      "file": "grade/lop2/assets/images/pencil/dates/friday-v1.webp",
+      "sha256": "8d244a6f3c0e4f1aa3a6feb1311bcd2a72aa1cde40773c73b6a9cc5801bf216e",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/Saturday",
+      "file": "grade/lop2/assets/images/pencil/dates/saturday-v1.webp",
+      "sha256": "473884d5be62c16709dfe20b4ec3d74a20cb75938ef53cd4b5bc0526f663b46d",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/Sunday",
+      "file": "grade/lop2/assets/images/pencil/dates/sunday-v1.webp",
+      "sha256": "ad19a6776de048e3681f20f7b3c5763eb135129927538b7ae26c8041dc757e11",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/January",
+      "file": "grade/lop2/assets/images/pencil/dates/january-v1.webp",
+      "sha256": "8b62195a799d7bb331648279f5ac95767c0ea006fad2fda80955c028b46528b2",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/February",
+      "file": "grade/lop2/assets/images/pencil/dates/february-v1.webp",
+      "sha256": "0d46e5f9082e8e574d34b93970df095abe4581325ee58b4cfefe2f7a535e997e",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/March",
+      "file": "grade/lop2/assets/images/pencil/dates/march-v1.webp",
+      "sha256": "24835f6ebbeb50aeae2c8a893ebe321c80edd6e6036c88e196c4845204bb6005",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/April",
+      "file": "grade/lop2/assets/images/pencil/dates/april-v1.webp",
+      "sha256": "7a058e971bebf97badbc70de9107bc998a1daef8c8c31ad2e387def5b803a40e",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/May",
+      "file": "grade/lop2/assets/images/pencil/dates/may-v1.webp",
+      "sha256": "92d8032b180b5da48e2a37d52639001a94c1b153816e16e0e82e46571ce66a0f",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/June",
+      "file": "grade/lop2/assets/images/pencil/dates/june-v1.webp",
+      "sha256": "bcd0a290c3b473191ec69e2e4399b522d8410f081b9b9cedc5b43692f3ec3832",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/July",
+      "file": "grade/lop2/assets/images/pencil/dates/july-v1.webp",
+      "sha256": "df3aaf2de8dece8c770df72fd3ac9f969d2f126be947ba961488f7d9c50c6c54",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/August",
+      "file": "grade/lop2/assets/images/pencil/dates/august-v1.webp",
+      "sha256": "26dca9322de24cc52502d42cc43bec17c1301a233b879829977547857d9a474e",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/September",
+      "file": "grade/lop2/assets/images/pencil/dates/september-v1.webp",
+      "sha256": "3aa07f582a46ee9bdd5f7a605a20bd91bcc44629d875965470b31f9f6d2a459d",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/October",
+      "file": "grade/lop2/assets/images/pencil/dates/october-v1.webp",
+      "sha256": "d80ab59535701cd220bc4b67b6a0f5d55e07a946ce92955c1a30e9b30a8db798",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/November",
+      "file": "grade/lop2/assets/images/pencil/dates/november-v1.webp",
+      "sha256": "0aba71f67c3b50c2f29a7f8adc99a40e00aefeb3a24934febab65a3e5ff5b867",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "dates/December",
+      "file": "grade/lop2/assets/images/pencil/dates/december-v1.webp",
+      "sha256": "45ea7838df03e8cb7686b11e20dbe2aa20a103a9736b74c44b5e14660a849bd3",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Father",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/father-v1.webp",
+      "sha256": "ca90b7a5a9d33cf39c65c2cf646460d4877b17bc92f0b0fb15128d53464152e0",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Mother",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/mother-v1.webp",
+      "sha256": "fa1f0b65386ded5dcc7f76d3e2efc4b6bf2b2021d30516341e5077b08744e1b9",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Brother",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/brother-v1.webp",
+      "sha256": "087383a7a8068427dce7c700e6963b5d4edad79112dfac55b074a83e5e614ca3",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Sister",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/sister-v1.webp",
+      "sha256": "c5b736556d4f7980313cef08ec0c07afcc9708e9b47704b3127d92a4bbc4550c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Grandfather",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/grandfather-v1.webp",
+      "sha256": "cb11bd9058540a2e9f4216a14dc761b09716f4d94021c5280775f1717a5ceaa2",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Grandmother",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/grandmother-v1.webp",
+      "sha256": "1573990676bd74f16701aac4effcd2e6cd0c407c5fca60d912f013fe555cda68",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Baby",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/baby-v1.webp",
+      "sha256": "a514cb0035d0cdef820b6a18f3c127d97f656b09f3cd5669f959f95d980aff45",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Parents",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/parents-v1.webp",
+      "sha256": "3d63aa4acc9e2f1235ae4f0d2124b99d2fdadc7b50b6ac4eacfbe44e6e0546cc",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Friend",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/friend-v1.webp",
+      "sha256": "e45f383eca468aef1499d214bb5bb18067d6e1a0e99873f3f257194d49aa0b88",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Best friend",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/best-friend-v1.webp",
+      "sha256": "f2c45f7c2e001e1a76356e6381e4213f7b5148cc5240209c5ef6655f9f3eaa5f",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Uncle",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/uncle-v1.webp",
+      "sha256": "7ded63a7d1a1929a48501c9983ed078b55cda611291cdfaed13f7d099082c018",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Aunt",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/aunt-v1.webp",
+      "sha256": "f3833ff5adfbf1d49d8568eb782c4ba47b99656563a7a109474ca6264ccc8ad1",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Cousin",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/cousin-v1.webp",
+      "sha256": "83fc4823e6515ee4e9ef7cc3cd943fd7d0024c7a00cd49929dc81b9acad8eef8",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Family",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/family-v1.webp",
+      "sha256": "98dc11dfbb7725695577d1c89b7705e2f56a495574a17cbc2bf76b9f79fc52f1",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Son",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/son-v1.webp",
+      "sha256": "0f99aad3f66b6e7fef529f0bee9ff458f0485525d1958c9c51c8ae62be1a1809",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Daughter",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/daughter-v1.webp",
+      "sha256": "743073ddbbd58fbfbdee791e00900bb549f74f1426ff5dcdf6b227392cb19ae5",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Classmate",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/classmate-v1.webp",
+      "sha256": "c8461b4bb623e7163188d3ec65ee1ec0b82d4486a5bdcafd1224adc31ad27eaa",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Neighbor",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/neighbor-v1.webp",
+      "sha256": "bfcb0f9704bd448e6b7734a73139e10902ecfd77a62fa14db8a03ed34d783016",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Husband",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/husband-v1.webp",
+      "sha256": "b305ace2e415d15db93bc2bf2210bbd5b6b4de3b35c9eb60cda236fa8ba6eec6",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "familyfriends/Wife",
+      "file": "grade/lop2/assets/images/pencil/familyfriends/wife-v1.webp",
+      "sha256": "db3d850824d874dddbfbb08d7617c153f453a62fb2b0073479714a3d4bfac463",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Thirsty",
+      "file": "grade/lop2/assets/images/pencil/feeling/thirsty-v1.webp",
+      "sha256": "c7a07f513d6c1a29e06e52a1d0f0a396f245e1e7263338d4747763ea89af60d8",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Hungry",
+      "file": "grade/lop2/assets/images/pencil/feeling/hungry-v1.webp",
+      "sha256": "8bc62b0a3003959999772b15adf42fe91288edae3b089c0f3c29f82d1a36973c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Sleepy",
+      "file": "grade/lop2/assets/images/pencil/feeling/sleepy-v1.webp",
+      "sha256": "1e770d6f95f7c174fbbfd22cf869a65bc5fb6c38a09a4bf705dd152917088112",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Tired",
+      "file": "grade/lop2/assets/images/pencil/feeling/tired-v1.webp",
+      "sha256": "9b1cbc331f2c7df6d2ffe0d558251ea750b7a96de758b77c2d0baeeaaab3670b",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Hot",
+      "file": "grade/lop2/assets/images/pencil/feeling/hot-v1.webp",
+      "sha256": "e094d8d371bc9a7649b1b09ff9d414aaa71dfc5b31d6d816b4bb9de3dfe5a289",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Cold",
+      "file": "grade/lop2/assets/images/pencil/feeling/cold-v1.webp",
+      "sha256": "aa051e7a62b7197fe355eefa802bb7c18e9c12bcd6064528e6a9641bbc530c81",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Sick",
+      "file": "grade/lop2/assets/images/pencil/feeling/sick-v1.webp",
+      "sha256": "2ae9b984873b81523705ee8d4fafbbc94258d23e080016f24855d3a8f091a47c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Happy",
+      "file": "grade/lop2/assets/images/pencil/feeling/happy-v1.webp",
+      "sha256": "4f43e797429bc7b7441afea7c8d6a750cc4b73298c0646e48be274da802efefe",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Sad",
+      "file": "grade/lop2/assets/images/pencil/feeling/sad-v1.webp",
+      "sha256": "c39d28b2008396afa95c88ec13301b86b11ea8b71076dd00c88968ecb27b0971",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Angry",
+      "file": "grade/lop2/assets/images/pencil/feeling/angry-v1.webp",
+      "sha256": "56a6e73e96f50ee370b010abb9c4f5a5834cac5c39cc5ceb08caca9c584f8487",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Scared",
+      "file": "grade/lop2/assets/images/pencil/feeling/scared-v1.webp",
+      "sha256": "9eb70bdc08426d9bfc749e59a0df400588a9b0b309b61ebf029703048fa6f781",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Excited",
+      "file": "grade/lop2/assets/images/pencil/feeling/excited-v1.webp",
+      "sha256": "e22922e5101f7c3aedb271c5abaa8cddb96c0fe89a71ea2865e3cd197cb9441d",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Bored",
+      "file": "grade/lop2/assets/images/pencil/feeling/bored-v1.webp",
+      "sha256": "b138cf480fb1cada36ff1e681a6ed28f32892e361b8b2c7928fab011de2c4244",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Surprised",
+      "file": "grade/lop2/assets/images/pencil/feeling/surprised-v1.webp",
+      "sha256": "8ed061083a6a4c9c9474226932a8b8f72cbb328c06a6b04db61e3f35a24b605b",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Calm",
+      "file": "grade/lop2/assets/images/pencil/feeling/calm-v1.webp",
+      "sha256": "6da9483cfab3c58190dde7fbd2d15400fbe94cd0882276623dd5257b913b5da3",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Nervous",
+      "file": "grade/lop2/assets/images/pencil/feeling/nervous-v1.webp",
+      "sha256": "e1eee75875e79b384b2031cf59ed08baf80065ab7c8e9fde862a3c4dfdf72954",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Shy",
+      "file": "grade/lop2/assets/images/pencil/feeling/shy-v1.webp",
+      "sha256": "9b283398615c14f7ac026c699cdd6bfd4268a14d25f67ceb030f5c439d76bf97",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Confused",
+      "file": "grade/lop2/assets/images/pencil/feeling/confused-v1.webp",
+      "sha256": "801dc6651553a836a4e18d3519d6bfe20bf096b9ca4c0117d40b1d76793479d9",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Proud",
+      "file": "grade/lop2/assets/images/pencil/feeling/proud-v1.webp",
+      "sha256": "e51611b6150c9f12abf447e0d9842f4c4ae8cd90d8fcff572e3cdacfe4af2a1d",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "feeling/Relaxed",
+      "file": "grade/lop2/assets/images/pencil/feeling/relaxed-v1.webp",
+      "sha256": "6db7b1744bb6a88954e361722cb1f63c5a00a40589962afaf35e11fbdd7cad2f",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Pizza",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/pizza-v1.webp",
+      "sha256": "ddc448497f492c55d9d8dfa3d1c0308307c30b28be75cfc694a94aebeb79385b",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Hamburger",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/hamburger-v1.webp",
+      "sha256": "0e530b988ea8643f04fff546b0a7d97dbe18dcb37c085d8fc6731b3894568fce",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Sandwich",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/sandwich-v1.webp",
+      "sha256": "e4e1f029c837240bf4233929e998acba9ecd15b95c26c6404123e2379dd84c29",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Bread",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/bread-v1.webp",
+      "sha256": "91a516ebac7ca9b9b44272e9819bca8b30be0ddc9146f271ee2cc5fe20cb45cd",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Rice",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/rice-v1.webp",
+      "sha256": "d54cf268a04e09b4a491e9b2113e867e4d8f30c1957a6b857deb469d5333daab",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Noodles",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/noodles-v1.webp",
+      "sha256": "6ea86aaf6c543ad55d3282e2e84fb194007a34b68da958b3f6684984c3e9dfb6",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Chicken",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/chicken-v1.webp",
+      "sha256": "4dc249de6aae31a66cc5c8ebf7edcdcf0e083047525bd969edc3b55d9b8591ee",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Fish",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/fish-v1.webp",
+      "sha256": "cd0a4c6f721cfa61e31b6bba1e3680a43e8db5d5014701b1fbbde124e24f4920",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Egg",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/egg-v1.webp",
+      "sha256": "6a6a8bc8a9e1875d8e061f5e636aaeaaae6c7f177329c818b5beaaeac38a3737",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Soup",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/soup-v1.webp",
+      "sha256": "a44ea060bd97e8a5f9dc7985f95eb8f780d66209ac2a618797c1fab1bea51b37",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Salad",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/salad-v1.webp",
+      "sha256": "2a09eb169816630bc06b0ff1beb348736574497a78ab28715f49ccd5456d39d1",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Ice cream",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/ice-cream-v1.webp",
+      "sha256": "e0b923f057fe72ec648ca6f8391afb83c78961a5394f0d9b5b807ecfd706373a",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Cake",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/cake-v1.webp",
+      "sha256": "8d43a8c378a33ae52082f107a1b0fb90c4d9c558f600519e3d7fe5f4e3adecec",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Apple",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/apple-v1.webp",
+      "sha256": "29eecdf48573843bb9e23be1fe16d9f0323003c9051373fff0e126568833ea4e",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Banana",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/banana-v1.webp",
+      "sha256": "ef8312b826f53f188010f52d98f086e87cb0187f5b9a0e1d439e2c74953e8e8c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Milk",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/milk-v1.webp",
+      "sha256": "a5839b49234efc531b5955fed0b0f16c06abf44bb306e3dfad3e2764a474d8f6",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Water",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/water-v1.webp",
+      "sha256": "6045cb98d49e0efa941f9e3bca460c5afb8d2ec195474a8e00a08f2d48971399",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Juice",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/juice-v1.webp",
+      "sha256": "e0e8cb6946dbaa9e3203da78a5d2c2b7325f5f6e7e4762b837603bfee65a5127",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Tea",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/tea-v1.webp",
+      "sha256": "35eefffc5ffe1ad6816b6af2ca47c28ee652eccc0289c705c7dded80e570aea1",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fooddrinks/Cookie",
+      "file": "grade/lop2/assets/images/pencil/fooddrinks/cookie-v1.webp",
+      "sha256": "8b0d6e18bdd277af8ed19a697e9020ffff51ae042bba58c23dcb7043e92c111c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Apple",
+      "file": "grade/lop2/assets/images/pencil/fruits/apple-v1.webp",
+      "sha256": "e6555dbaaaf1e1ea931d5adea04c5e24cd5aeee3904997155584b28b668aaf4a",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Banana",
+      "file": "grade/lop2/assets/images/pencil/fruits/banana-v1.webp",
+      "sha256": "ef8312b826f53f188010f52d98f086e87cb0187f5b9a0e1d439e2c74953e8e8c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Orange",
+      "file": "grade/lop2/assets/images/pencil/fruits/orange-v1.webp",
+      "sha256": "a4013e5abdf4eef4ed52fd258e536c21ef71cb1773037a467f4dbc24ff571f92",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Grape",
+      "file": "grade/lop2/assets/images/pencil/fruits/grape-v1.webp",
+      "sha256": "4f94dd006e916a7383436a1d4a953826f448bdb564b0dca1b2ee46a4cb24c7ff",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Watermelon",
+      "file": "grade/lop2/assets/images/pencil/fruits/watermelon-v1.webp",
+      "sha256": "c3684289b62e71e17471a4bb1580feb37cc5cd5418eda41a93a1dece8833fff6",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Strawberry",
+      "file": "grade/lop2/assets/images/pencil/fruits/strawberry-v1.webp",
+      "sha256": "86be2b90da1627725d2a5a507c41eb4972c084248b54e1beb8bef18db08f2aaa",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Mango",
+      "file": "grade/lop2/assets/images/pencil/fruits/mango-v1.webp",
+      "sha256": "715dc36cfbd31e0c57420ebfe12a02e17eabaa62166bc5e5d216a7f4aa2786d1",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Pineapple",
+      "file": "grade/lop2/assets/images/pencil/fruits/pineapple-v1.webp",
+      "sha256": "2121b6ff78254042d3c69cc8fcaa47cb0cb7af9888afac86caf1de97c0f3f174",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Avocado",
+      "file": "grade/lop2/assets/images/pencil/fruits/avocado-v1.webp",
+      "sha256": "00cc34f1ac82eb1531660ffb0f5039affa82f8bf07faa354b98139db22a8f10b",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Peach",
+      "file": "grade/lop2/assets/images/pencil/fruits/peach-v1.webp",
+      "sha256": "e59adfb421e4b8041cfd39068392a60a0d59b9d8e3d201d3c8d2e7e6005c054f",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Cherry",
+      "file": "grade/lop2/assets/images/pencil/fruits/cherry-v1.webp",
+      "sha256": "1eef7edbd9d3e65d793511dae83f1443528165e437039200df9877b2ead48cab",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Lemon",
+      "file": "grade/lop2/assets/images/pencil/fruits/lemon-v1.webp",
+      "sha256": "4508074f491df6f6a2890fbab3b476dd59d97bb8ca8ff633028c185d7521c91b",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Melon",
+      "file": "grade/lop2/assets/images/pencil/fruits/melon-v1.webp",
+      "sha256": "fa844c53280c2e5666bce8f2b1814c82f24ab5ca9d83bb6f3b22e18f378d93ea",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Pear",
+      "file": "grade/lop2/assets/images/pencil/fruits/pear-v1.webp",
+      "sha256": "a73d4cf9517bc32d903bb0e2e7d3d25fb513ae3e61c46dce931b34d719f2c72f",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Kiwi",
+      "file": "grade/lop2/assets/images/pencil/fruits/kiwi-v1.webp",
+      "sha256": "2adfd6a0524a0dd5a54251034dd8536b4a4ccf0768cb491452c9db35ac5182d6",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Coconut",
+      "file": "grade/lop2/assets/images/pencil/fruits/coconut-v1.webp",
+      "sha256": "0bf309d02a001ade1d16b6e624e77781d20859d26c0378c15c58fd05148ee139",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Papaya",
+      "file": "grade/lop2/assets/images/pencil/fruits/papaya-v1.webp",
+      "sha256": "ea7eed80b3c51761e2a91b2ee1ee71434b166e03c0ca2d937e1100514b899010",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "fruits/Guava",
+      "file": "grade/lop2/assets/images/pencil/fruits/guava-v1.webp",
+      "sha256": "0ef67f2a0251307a0991bc2356e033d9bc91531dc76b4a432c24a7eb81a30435",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Pencil",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/pencil-v1.webp",
+      "sha256": "ddd9d92a3233954fc3be0ee66c0eb392617bc4c7d01423d8854f1d03e89edc59",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Pen",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/pen-v1.webp",
+      "sha256": "2773119b55a745b78dc5cd95996eb31db051460edc0509bbe27baefecbadba29",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Eraser",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/eraser-v1.webp",
+      "sha256": "3cb6bba00e7336d91773057bf93ba4c28a3e83e9a39b039f17db37d2ec8c42ed",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Ruler",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/ruler-v1.webp",
+      "sha256": "e3d7cd32cc95ec3491c4245ad12cb027a95b02fcc6abf7c0164e50d4489501c4",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Book",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/book-v1.webp",
+      "sha256": "38b298e82939f3c17571119b08d9bdf138f05e06d6ad94d13f2969949310613e",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/School bag",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/school-bag-v1.webp",
+      "sha256": "6f6da6faf246f9720767874d2fefb77ebabcab12696e00022f40d1257b9dea98",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Scissors",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/scissors-v1.webp",
+      "sha256": "ae867d0e5dda959c30734ed08e9ca5cb6758b321e4915ac62526364e4d204258",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Glue",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/glue-v1.webp",
+      "sha256": "0154e62140a0aae6424c541c92dd3aef196ab6b48c11c4bd375ec6de69c7e199",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Crayon",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/crayon-v1.webp",
+      "sha256": "8447764a0d159d98b10ad8036f4ee13dfa86bc554a3d9b5456880cad2b98a3a6",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Pencil case",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/pencil-case-v1.webp",
+      "sha256": "cf8440fdb9d9c31f05b6ac306aaab4f1ef87675382953cbebc427d4ed7773106",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Chair",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/chair-v1.webp",
+      "sha256": "efdf60922d70893a9bb33730909b0e6c95e4214d8fea8bd206aed5b871f5b6c4",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Blackboard",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/blackboard-v1.webp",
+      "sha256": "4fab8cf0a21dfe31a092b8d45c150d80319bf2f90930645df22a50e5a32606da",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Paper",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/paper-v1.webp",
+      "sha256": "22d50087ba514429a2d2bb36e19dc7a9ac4b56fe82517b24f459bd2d00877894",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Folder",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/folder-v1.webp",
+      "sha256": "4050664ae3ada670fbb6877dfed9d2cbea46a721d344e91e28a77f02906c5a0d",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Calculator",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/calculator-v1.webp",
+      "sha256": "7088865a85eda3f2fefdc8cfff66594054a947129e8721e3f874d626e62fd698",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Globe",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/globe-v1.webp",
+      "sha256": "719b880f790686436876b60546b7c295060985e52c632076e5e81e94c19cb7bb",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Compass",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/compass-v1.webp",
+      "sha256": "00fe05e0023eb680bba26cb131ba221ea1efae8639112a4b3bfce3acf2740ce2",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Paintbrush",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/paintbrush-v1.webp",
+      "sha256": "4e18871caf97dd59681e58a646ae3d840b1b0d08b94c3cb893ca27234ae2e6e8",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Palette",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/palette-v1.webp",
+      "sha256": "ab5e58d2d931168e284671b1c4b196eb3dc87f4f92f750149ecb38613eebb1e5",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Paperclip",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/paperclip-v1.webp",
+      "sha256": "6603a355855d0c6e9aa075657bdad50587846930425c48845c68e1e1295bd6a1",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Stapler",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/stapler-v1.webp",
+      "sha256": "a4ae999b045409815c4839fa61c001f6c0d71198d0b060f5208aa83381debb51",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Dictionary",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/dictionary-v1.webp",
+      "sha256": "6778d9bc13056fec8dedee79226ccea138397fab70db857bf2230347ca961a3f",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Highlighter",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/highlighter-v1.webp",
+      "sha256": "524cc0dee2ab4696cb74867da8a4cde645ccacad00f1cb0c006e73da734ddc39",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Protractor",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/protractor-v1.webp",
+      "sha256": "2d13e7d68b5a24fb3f844e826b1cf803644b421ea2120085d803ecef73d84b34",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "schoolsupplies/Backpack",
+      "file": "grade/lop2/assets/images/pencil/schoolsupplies/backpack-v1.webp",
+      "sha256": "7e4d3b6d3a8fcaaea15995a8c1f2a49536cb7121b4794dba7a22bfa1e8ffbeac",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Head",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/head-v1.webp",
+      "sha256": "d59fdc0a58f979c331be36d9c95ac9d93006eb0b239fd5dbcf49c135e72b091e",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Hair",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/hair-v1.webp",
+      "sha256": "fe1c345ef3515fd893ade74a888f603c726a4e65a1a1d0facb3730a894738cff",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Eyes",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/eyes-v1.webp",
+      "sha256": "e842ecd0b3ac9c9830b86a094ac372f2a3111991a09c09f6c25c0c5148e51259",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Ears",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/ears-v1.webp",
+      "sha256": "cbaf4c729beb4ebba40a7527bd8759e58737621801db0106b701c9fe9b70ca22",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Nose",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/nose-v1.webp",
+      "sha256": "3cd9758f3de25c31471e9ebda396f617da68bd984a1b503143b085d34e602fe9",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Mouth",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/mouth-v1.webp",
+      "sha256": "e931b7ed43a1fafcea724381a392623fad9f353bbdd37f64c087bef9f27e1a20",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Teeth",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/teeth-v1.webp",
+      "sha256": "490fd96f9e232c0ca4ff4fde3e06387ba5044c673a562e45ae426a173d5d5c59",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Neck",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/neck-v1.webp",
+      "sha256": "6eec2e709cd9a91383e1ced8d4c4f8f41a1036b2ba521ed1ba2762febc6e13d7",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Shoulder",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/shoulder-v1.webp",
+      "sha256": "3d3f69355c4a66e6f14c59e0e4291e21621b8347e9c6d6cfd854d603be6c6e97",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Arm",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/arm-v1.webp",
+      "sha256": "26592000154b4653289b9183f04720d86c97e5c5a7982b20a4b0921e92d99b56",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Hand",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/hand-v1.webp",
+      "sha256": "903f40b893d6f82646d4934ca4bdbba9aee4705bb9e56a1937488f389fb4ac70",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Finger",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/finger-v1.webp",
+      "sha256": "847e5882921aae79a96161d9a00608a73d26577f01d1ce8c1bff5236ebb63252",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Leg",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/leg-v1.webp",
+      "sha256": "294185f2ec7a5fa7a05524db7b63ea842aef880426d4d31308e8d9a6c67f8307",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Knee",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/knee-v1.webp",
+      "sha256": "a3e9945ced9f0903380abb7510b08e8ab3de04626725d5f10ee3e83bf893420c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Foot",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/foot-v1.webp",
+      "sha256": "660edbb4ead2f2f101a4faf504a197446e66ac33de91c147d094c27079a1e6ed",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "bodyparts/Tummy",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/tummy-v1.webp",
+      "sha256": "9a07e3752c2d845b72e97b9f0dca9034198fbaabfcb04bdc6b9517445b254de3",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Table",
+      "file": "grade/lop2/assets/images/pencil/householditems/table-v1.webp",
+      "sha256": "f49f1053fefdf866f41245e972c1ad01403ea7c5a480e225f8f1cf9dc805b551",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Chair",
+      "file": "grade/lop2/assets/images/pencil/householditems/chair-v1.webp",
+      "sha256": "6f3c069f6372c460241f48e1386b72117244412256293c1eb5365afdc6063135",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Bed",
+      "file": "grade/lop2/assets/images/pencil/householditems/bed-v1.webp",
+      "sha256": "76ccfa575cd44d28df4dbbb97e0f985e4b2caa54d6db64c006b913a03568272f",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Door",
+      "file": "grade/lop2/assets/images/pencil/householditems/door-v1.webp",
+      "sha256": "46c49f37256227fe31a2a739bc69b4a55a55c1cfc39147db6a2f43da3e2a6fab",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Window",
+      "file": "grade/lop2/assets/images/pencil/householditems/window-v1.webp",
+      "sha256": "0412ce3b8b16ced463defd41485be33caee426dc294450fab96bdc317ff3211a",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Television",
+      "file": "grade/lop2/assets/images/pencil/householditems/television-v1.webp",
+      "sha256": "0eee0cc26817355ed23afed1d906834ddc8b8e9187c5962cc426333827a65c56",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Refrigerator",
+      "file": "grade/lop2/assets/images/pencil/householditems/refrigerator-v1.webp",
+      "sha256": "dd8133372c7ceb90181196190ff4ee5014f0783574ed4644819b65ec50d4b89a",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Sofa",
+      "file": "grade/lop2/assets/images/pencil/householditems/sofa-v1.webp",
+      "sha256": "7a69eb222921838d654a20c801f1840550e1dcf4fae9191e0953a2f56985c23c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Lamp",
+      "file": "grade/lop2/assets/images/pencil/householditems/lamp-v1.webp",
+      "sha256": "775c801ce5090a10af47e6470e37682fab7195acef473db4e6df6669f7645cf1",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Clock",
+      "file": "grade/lop2/assets/images/pencil/householditems/clock-v1.webp",
+      "sha256": "ff54839884f4d948c455fa624944279b86033b662575a3f1aff95de73aba9828",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Mirror",
+      "file": "grade/lop2/assets/images/pencil/householditems/mirror-v1.webp",
+      "sha256": "1866cb976c44985c4bc535601b3e5f59ce3c7050b470a478f5fe03531aae9cc3",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Sink",
+      "file": "grade/lop2/assets/images/pencil/householditems/sink-v1.webp",
+      "sha256": "2e24b33645ab7254987e184157f977662d2e4f399dae90d335de2656f094ad18",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Stove",
+      "file": "grade/lop2/assets/images/pencil/householditems/stove-v1.webp",
+      "sha256": "d9a5c77beb964f67166b491f91a5ebd55cb5745c4b9a40586e7bb1aab9a763f7",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Wardrobe",
+      "file": "grade/lop2/assets/images/pencil/householditems/wardrobe-v1.webp",
+      "sha256": "38bf1699354257c2901e2b5d83f9710f126a0fda405fd49e1d3b134abdbe3ea3",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Telephone",
+      "file": "grade/lop2/assets/images/pencil/householditems/telephone-v1.webp",
+      "sha256": "ef64882e0b63f524b85daff572485f81c3093b761214cf916e96bcdf1cb49fba",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "householditems/Fan",
+      "file": "grade/lop2/assets/images/pencil/householditems/fan-v1.webp",
+      "sha256": "e0d67e1c091659a534fd97c02e38c60bcf4be49bac0d6b4f50caa0d922d71f08",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Run",
+      "file": "grade/lop2/assets/images/pencil/verbs/run-v1.webp",
+      "sha256": "49d3445fe164d9fd01d5483d7c18c91ef4313cbf48ae8d798cbf6ecc040fada0",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Walk",
+      "file": "grade/lop2/assets/images/pencil/verbs/walk-v1.webp",
+      "sha256": "cb00b902869f2b66d6a64e301b41a840c52c21b43e1c1fb9d57773077244e8e2",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Jump",
+      "file": "grade/lop2/assets/images/pencil/verbs/jump-v1.webp",
+      "sha256": "a3d27155591f45e0f9817f9ff2c8f220500a1dab9698243c11b876ced8d01edb",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Swim",
+      "file": "grade/lop2/assets/images/pencil/verbs/swim-v1.webp",
+      "sha256": "58e773bff1a6b85af4b2378640ca9d76599277f3fb054f76d78896c49b971d2d",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Eat",
+      "file": "grade/lop2/assets/images/pencil/verbs/eat-v1.webp",
+      "sha256": "97270c2fbf5b230514018a44eb9f14f1b4ddc6fd545825e659cc845ecbadec66",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Drink",
+      "file": "grade/lop2/assets/images/pencil/verbs/drink-v1.webp",
+      "sha256": "198c0bca0a506951ec41949c104eacad208993fe21cf2c38be2496cf26a35c82",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Sleep",
+      "file": "grade/lop2/assets/images/pencil/verbs/sleep-v1.webp",
+      "sha256": "42cc09f871e2f96b66a613068f86883356d91400f7f967ffab814e2808ac7652",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Read",
+      "file": "grade/lop2/assets/images/pencil/verbs/read-v1.webp",
+      "sha256": "d19fd6642be16f6763b2092cecab2a99e053af35ee0028c2ce9d0e8a4cbb4be8",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Write",
+      "file": "grade/lop2/assets/images/pencil/verbs/write-v1.webp",
+      "sha256": "946b510d5d3b4091f3c04d24709d8b239c194e60ee8029db71a0df0dd6a82324",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Sing",
+      "file": "grade/lop2/assets/images/pencil/verbs/sing-v1.webp",
+      "sha256": "23fe8974186f6fec3f7630c59cfa5152bfba0a1c7c375ab6a550064cb501c4fa",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Dance",
+      "file": "grade/lop2/assets/images/pencil/verbs/dance-v1.webp",
+      "sha256": "c206e003f238c766e8bb7004e1fd4cb884f5e26bd37ca57827e4f1517c3e3df5",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Play",
+      "file": "grade/lop2/assets/images/pencil/verbs/play-v1.webp",
+      "sha256": "ae34d72477ed1fcb43425fc6ea167c709fa3b347877962565a4722c0ec2139f3",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Cook",
+      "file": "grade/lop2/assets/images/pencil/verbs/cook-v1.webp",
+      "sha256": "a51d2494e9873d08063a1cfb9a26ed04fb5227c47bb3b1d372428c73b1098c0c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Draw",
+      "file": "grade/lop2/assets/images/pencil/verbs/draw-v1.webp",
+      "sha256": "8efdcd1fcf84b4da7bf3c617f84b8835ff932df8c2c53b9341ecfcb033204ce4",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Listen",
+      "file": "grade/lop2/assets/images/pencil/verbs/listen-v1.webp",
+      "sha256": "7604815dbacc3eef99355d87076913f3680725298562bab63d8cc4b2ba9e446d",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Watch",
+      "file": "grade/lop2/assets/images/pencil/verbs/watch-v1.webp",
+      "sha256": "91c0887693c5a1a1223791ab9d19b31b46b65a330972f7c4b266a6d5c91a7d30",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Sit",
+      "file": "grade/lop2/assets/images/pencil/verbs/sit-v1.webp",
+      "sha256": "ee5016b5a95a611c1b909c22bacbfc4f3d426a3e8f00347d4817afc123fb48ec",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Stand",
+      "file": "grade/lop2/assets/images/pencil/verbs/stand-v1.webp",
+      "sha256": "1da3c8a2f9e768c114e42b386ba5de9ec55e0ff995abc5f3a83aefc552d7cd3e",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Ride",
+      "file": "grade/lop2/assets/images/pencil/verbs/ride-v1.webp",
+      "sha256": "b82eaecbe9037afe64d3eeb8a6bddd86cbfc391eb96f542930661b248bb67e9e",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "verbs/Fly",
+      "file": "grade/lop2/assets/images/pencil/verbs/fly-v1.webp",
+      "sha256": "167f51db452b31ec4f75fda8010921fa4e389cb74160c3f6b404029f1dd0095a",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "adjectives/Big",
+      "file": "grade/lop2/assets/images/pencil/adjectives/big-v1.webp",
+      "sha256": "91865a7f15f5783f9ff1e05b9bd9995d8ad0b232f5440b928bc19106cdfc8a81",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "adjectives/Small",
+      "file": "grade/lop2/assets/images/pencil/adjectives/small-v1.webp",
+      "sha256": "37597c6d7afaac58b7d7e2f0d67783268953c366f38d7c1633e976923f5b5406",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "adjectives/Long",
+      "file": "grade/lop2/assets/images/pencil/adjectives/long-v1.webp",
+      "sha256": "607d76dad49cc1301fdabc1d930ca6172d46efda65f31f25dd64f257ea7627af",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "adjectives/Short",
+      "file": "grade/lop2/assets/images/pencil/adjectives/short-v1.webp",
+      "sha256": "7037e439b33016a1cbdf8771d95b0432b8a381141b13a3815163470440292325",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "adjectives/Old",
+      "file": "grade/lop2/assets/images/pencil/adjectives/old-v1.webp",
+      "sha256": "50b642f66a37449c3f2d93b5a7b68bdf434ce9bc9616dc7428d8ea18e5349fe0",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "adjectives/New",
+      "file": "grade/lop2/assets/images/pencil/adjectives/new-v1.webp",
+      "sha256": "a77b4d2cdf1dc453ce65625c85fc1755a9b8a2091b5cc1b149b8bc3af7743225",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "adjectives/Clean",
+      "file": "grade/lop2/assets/images/pencil/adjectives/clean-v1.webp",
+      "sha256": "d0086323acbd899c75ec6f8ffa371f304d7021b2c2757550d2e14dd0ffc17ca3",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "adjectives/Dirty",
+      "file": "grade/lop2/assets/images/pencil/adjectives/dirty-v1.webp",
+      "sha256": "af9f18898ee490082fdb892edced182fd1616190e675ab7fa04ad38471ee404e",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "adjectives/Hot",
+      "file": "grade/lop2/assets/images/pencil/adjectives/hot-v1.webp",
+      "sha256": "8a9bdf115935fac903e967197a13be0d5c943ba4ddb97192fa7047c113ce0f42",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "adjectives/Cold",
+      "file": "grade/lop2/assets/images/pencil/adjectives/cold-v1.webp",
+      "sha256": "39b9a36c96afbbc77f718c714b35466ca2b5f3cbbbd9737c3888b867ba236823",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "adjectives/Fast",
+      "file": "grade/lop2/assets/images/pencil/adjectives/fast-v1.webp",
+      "sha256": "5c01742ef3bc3b773d03e913dbedb1cdd0ec00e69ae13c21fb664f5eaaceca77",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "adjectives/Slow",
+      "file": "grade/lop2/assets/images/pencil/adjectives/slow-v1.webp",
+      "sha256": "d3e1c10a1a082de2f910104647dc00d0ca015f24b4d516f455bcd7cd3d9860da",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "shapes/Circle",
+      "file": "grade/lop2/assets/images/pencil/shapes/circle-v1.webp",
+      "sha256": "28240b586d1d836f4d487d9b5e349e7a7773ee2077267fa67851c69f3c4f444a",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "shapes/Square",
+      "file": "grade/lop2/assets/images/pencil/shapes/square-v1.webp",
+      "sha256": "3ef8d937f57f23be1b49941861b31adca7753eb808135647e9e2068efc76e974",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "shapes/Triangle",
+      "file": "grade/lop2/assets/images/pencil/shapes/triangle-v1.webp",
+      "sha256": "2b81ccc93122d80cb753961dc71436e526ff6b6327d76e204f9b8dc579b21e3a",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "shapes/Rectangle",
+      "file": "grade/lop2/assets/images/pencil/shapes/rectangle-v1.webp",
+      "sha256": "59fddaa5a6c62acb9fb7bdbeac34f26a2192998b7ad88a5edbbe5b43bb01401e",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "shapes/Oval",
+      "file": "grade/lop2/assets/images/pencil/shapes/oval-v1.webp",
+      "sha256": "92f4b515262a9802d50136dc6daca2470aeb26859e9b12fc02c837ced950f67c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "shapes/Star",
+      "file": "grade/lop2/assets/images/pencil/shapes/star-v1.webp",
+      "sha256": "4c05d000e064dc424df297ec7a2b404af2b1ad98e93e9da1e9a28098ad10bdf7",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "shapes/Heart",
+      "file": "grade/lop2/assets/images/pencil/shapes/heart-v1.webp",
+      "sha256": "4c5302d94c947ca02df0f7db04f119b23ff50110ab9b386e56de02399ea47395",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "shapes/Diamond",
+      "file": "grade/lop2/assets/images/pencil/shapes/diamond-v1.webp",
+      "sha256": "f9dec4f60be15d67b13ff58be35260d1d3d5eb2cdd8dec3d616ada060a636d5e",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "toys/Ball",
+      "file": "grade/lop2/assets/images/pencil/toys/ball-v1.webp",
+      "sha256": "be62edda2b5034007290aa5e6c68cf7f87a01f7134ac55ce7f781c3e603f28f7",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "toys/Doll",
+      "file": "grade/lop2/assets/images/pencil/toys/doll-v1.webp",
+      "sha256": "eb9bffd35ed2a5a0a883ddaba5180acc56e7cd9b36e01cba8828610819d09a33",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "toys/Teddy bear",
+      "file": "grade/lop2/assets/images/pencil/toys/teddy-bear-v1.webp",
+      "sha256": "7f59a4b934ee7965354c104e922efbe4f26e9ec874d4e5f97299726b8beeb3e8",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "toys/Kite",
+      "file": "grade/lop2/assets/images/pencil/toys/kite-v1.webp",
+      "sha256": "aed6615f27c2bd0166f18faa3e76d8121bb25f1422e529cc40a0b7ed1bc88b11",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "toys/Robot",
+      "file": "grade/lop2/assets/images/pencil/toys/robot-v1.webp",
+      "sha256": "7de353111662b7ea8f8b8134df42d000e698064c2cbf90d6b87f11c0d7c5055c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "toys/Toy car",
+      "file": "grade/lop2/assets/images/pencil/toys/toy-car-v1.webp",
+      "sha256": "8a08171483721d0c203fcceafc92980c0c012ccd86d533960180a5d78e1c5d83",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "toys/Train",
+      "file": "grade/lop2/assets/images/pencil/toys/train-v1.webp",
+      "sha256": "28ec57cc17df49ca83f6cbb43267f4a12d9bcf9f52827f0db789fba354b78a90",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "toys/Yo-yo",
+      "file": "grade/lop2/assets/images/pencil/toys/yo-yo-v1.webp",
+      "sha256": "ee415807a882ae7b7baaf968128eb982171e0d0b573b317cd7f981e18d14f0f7",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "toys/Puzzle",
+      "file": "grade/lop2/assets/images/pencil/toys/puzzle-v1.webp",
+      "sha256": "c50ff982fb5ada46eff6fddc75a8b477ac715bb081d7bd6ddedcb12d2bd79189",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "toys/Blocks",
+      "file": "grade/lop2/assets/images/pencil/toys/blocks-v1.webp",
+      "sha256": "9926cc31f185e5d0039e0678df61b0190c80be1ae138b45b89ee074be78e42fa",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "toys/Drum",
+      "file": "grade/lop2/assets/images/pencil/toys/drum-v1.webp",
+      "sha256": "8ff45f61a0630a18c43705794cb6f4db27172abcd841294a1954e9cf85be1e37",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "toys/Boat",
+      "file": "grade/lop2/assets/images/pencil/toys/boat-v1.webp",
+      "sha256": "ab79ef2f6ce0d651a3ab3ad0b297bba7da94c83a9b5012017bc4b5a77a074fd7",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "weather/Sunny",
+      "file": "grade/lop2/assets/images/pencil/weather/sunny-v1.webp",
+      "sha256": "45963a14d7a776449bfd18f784316253ba137daf205af3e8002b237c7bc74d5b",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "weather/Rainy",
+      "file": "grade/lop2/assets/images/pencil/weather/rainy-v1.webp",
+      "sha256": "91d4cecf23a0e9e3867c9f1e5f8488b42b729c171d606dfe77bd64c2c5041c40",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "weather/Cloudy",
+      "file": "grade/lop2/assets/images/pencil/weather/cloudy-v1.webp",
+      "sha256": "8eee13b41899c420aac485d199624bdc3c50482e9e12146cbe38eb294c40a2c4",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "weather/Windy",
+      "file": "grade/lop2/assets/images/pencil/weather/windy-v1.webp",
+      "sha256": "a05c3f5afd6e9136542d75b5b9efd58444d1a2ef1e6fd1320775a7cf51e20c96",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "weather/Snowy",
+      "file": "grade/lop2/assets/images/pencil/weather/snowy-v1.webp",
+      "sha256": "a822f022329d147a69fd23bc2aa598a9cf44410c2af0bf653f8a89b4ad98d593",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "weather/Stormy",
+      "file": "grade/lop2/assets/images/pencil/weather/stormy-v1.webp",
+      "sha256": "0c667589a66eee35b26191a681c58129cf972d47777a2ea9a7f4e351a884d76d",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "weather/Foggy",
+      "file": "grade/lop2/assets/images/pencil/weather/foggy-v1.webp",
+      "sha256": "6f6326b97dd72a1d365b687a9b2e432f93f6a849148f898f61af58561b568a98",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "weather/Hot",
+      "file": "grade/lop2/assets/images/pencil/weather/hot-v1.webp",
+      "sha256": "86b2dd7b7d1b1b944cfa394261f44ce5c907b146f32d1c36a440f92dba583dad",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "rooms/Bedroom",
+      "file": "grade/lop2/assets/images/pencil/rooms/bedroom-v1.webp",
+      "sha256": "6846e3fd474350a5a46ede2d4e37fe63eab4067de1f8b8b6ec788852e605eb74",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "rooms/Bathroom",
+      "file": "grade/lop2/assets/images/pencil/rooms/bathroom-v1.webp",
+      "sha256": "eec1f7b91fdec00a9e2d4cdd6a85aff72d4f3f1a522f47fdd7b44d6eb1083069",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "rooms/Kitchen",
+      "file": "grade/lop2/assets/images/pencil/rooms/kitchen-v1.webp",
+      "sha256": "bb8c837f21d70697aed954fb772d377fb1a8503e2606d7e62c3485f7353e9ef8",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "rooms/Living room",
+      "file": "grade/lop2/assets/images/pencil/rooms/living-room-v1.webp",
+      "sha256": "a4b6bf3e200c37a0656601bb284d3738ee96d0a334b353f406ad7da3faed5bcc",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "rooms/Dining room",
+      "file": "grade/lop2/assets/images/pencil/rooms/dining-room-v1.webp",
+      "sha256": "f77749b8665beae3e89a8349e0690d63415c75d2599b6bb99c7c934d7a590977",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "rooms/Study",
+      "file": "grade/lop2/assets/images/pencil/rooms/study-v1.webp",
+      "sha256": "db0d0c4071b627a43bc59b210e6830891eae1209d0786d3fc3dabd4f9652ba78",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "rooms/Garage",
+      "file": "grade/lop2/assets/images/pencil/rooms/garage-v1.webp",
+      "sha256": "9a77942344444cd453e3e13308aec8c7fe6e95ab2025ecc59d9609cff4a9e599",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "transport/Car",
+      "file": "grade/lop2/assets/images/pencil/transport/car-v1.webp",
+      "sha256": "2e2430b2b6db0675d7e7bafc2d0579bc73b7046dbfef392db5d7ef06d7fb4837",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "transport/Bus",
+      "file": "grade/lop2/assets/images/pencil/transport/bus-v1.webp",
+      "sha256": "dd7159fa84b3fea7d1f3f00346f8acbb44faa19682f8b327d48eca228347b744",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "transport/Bike",
+      "file": "grade/lop2/assets/images/pencil/transport/bike-v1.webp",
+      "sha256": "d2753613d5650519de288c5b639282e3df298c905e36240e9d51e710e7c285ac",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "transport/Train",
+      "file": "grade/lop2/assets/images/pencil/transport/train-v1.webp",
+      "sha256": "af64e1c2d472843a1ec54fe6991db383b195a8d024100c465195cdc77f14efc3",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "transport/Plane",
+      "file": "grade/lop2/assets/images/pencil/transport/plane-v1.webp",
+      "sha256": "5b26e82b1694a73d3a93b00e919367c31a8f22eab583f12cd54c6bde858bfe38",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "transport/Boat",
+      "file": "grade/lop2/assets/images/pencil/transport/boat-v1.webp",
+      "sha256": "6a3afcfdb4ad9aa98b66050e895f28660e875fb62cbf3a2063979b0dbe8aeab2",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "transport/Ship",
+      "file": "grade/lop2/assets/images/pencil/transport/ship-v1.webp",
+      "sha256": "32e1a26b2c7036f265064085b517b7ee846ca52b5ed21bd81f345a72026c8e99",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "transport/Taxi",
+      "file": "grade/lop2/assets/images/pencil/transport/taxi-v1.webp",
+      "sha256": "5d571b8baddea9e8c887c6c30f3e95605c405d43d1a697661c7ed511cdc722e5",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "transport/Motorbike",
+      "file": "grade/lop2/assets/images/pencil/transport/motorbike-v1.webp",
+      "sha256": "014596585105b06eeb1bd1191c094694b09a93cc5ff80806cc9e22203fc348da",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "transport/Truck",
+      "file": "grade/lop2/assets/images/pencil/transport/truck-v1.webp",
+      "sha256": "c436be3399b0907da9f0fe24c7619497711ae5d1d6e67f9ec6c884041bc92476",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "transport/Helicopter",
+      "file": "grade/lop2/assets/images/pencil/transport/helicopter-v1.webp",
+      "sha256": "3acba6099263ff36b84da3e0c2e8064e5ae17894ea901ba8c93daba5d9a381be",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    },
+    {
+      "key": "transport/Scooter",
+      "file": "grade/lop2/assets/images/pencil/transport/scooter-v1.webp",
+      "sha256": "527e57987dfdc540f4ead217cf6212dbb5413e194efe1aef0b5a270e49f5b26c",
+      "width": 768,
+      "height": 768,
+      "visualReview": "accepted: meaning, no word labels, anatomy and quantity where applicable"
+    }
+  ]
+}

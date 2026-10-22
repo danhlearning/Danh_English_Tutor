@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<script src="../../shared/learner-profile-core.js"></script>
+<script src="../../shared/learner-profile.js?v=preload-20261022"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Học Tiếng Anh Chủ Đề Thứ, Ngày, Tháng & Năm (Days, Months, Years)</title>
+<!-- Google Font: Nunito -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./assets/css/topics/dates.css">
+<link rel="stylesheet" href="./assets/css/learning-shared.css">
+<link rel="stylesheet" href="./assets/css/grade2-theme.css?v=reveal10">
+  <link rel="stylesheet" href="../../shared/grade-colors.css?v=all-grades-20261016-2">
+<link rel="stylesheet" href="./assets/css/pencil-illustrations.css?v=pencil-20261019">
+<script src="./assets/js/pencil-images-data.js?v=pencil-20261019"></script>
+<script src="./assets/js/pencil-illustrations.js?v=pencil-20261019-2"></script>
+</head>
+<body class="grade2-topic g2-pencil">
+
+<header>
+  <h1>📅 ENGLISH DAYS, MONTHS & DATES</h1>
+</header>
+
+<nav>
+  <button class="nav-btn active" onclick="switchTab('vocab', event)">📚 Từ Vựng (Thứ, Tháng, Thứ Tự)</button>
+  <button class="nav-btn" onclick="switchTab('sentences', event)">🗣️ Quy Tắc & Mẫu Câu</button>
+  <button class="nav-btn" onclick="switchTab('game-flip', event)">🃏 Game 1: Lật Flashcard</button>
+  <button class="nav-btn" onclick="switchTab('game-mcq', event)">🎯 Game 2: Trắc Nghiệm</button>
+  <button class="nav-btn" onclick="switchTab('game-spelling', event)">✍️ Game 3: Điền Chính Tả</button>
+  <button class="nav-btn" onclick="switchTab('game-count', event)">🧩 Game 4: Hỏi & Trả Lời Ngày Tháng (50 Câu)</button>
+</nav>
+
+<div class="container">
+
+  <!-- TAB 1: VOCABULARY -->
+  <div id="vocab" class="tab-content active">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Từ Vựng Các Thứ Trong Tuần & Các Tháng Trong Năm</h2>
+    <div class="vocab-grid" id="vocab-grid-container"></div>
+  </div>
+
+  <!-- TAB 2: RULES & SENTENCES -->
+  <div id="sentences" class="tab-content">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Quy Tắc Viết Ngày Tháng & Mẫu Câu Hỏi Thời Gian</h2>
+    <div class="sentence-section">
+
+      <div class="sentence-card">
+        <h3>💡 1. Quy Tắc Giới Từ Đi Cùng Thứ, Tháng, Năm</h3>
+        <p><b>• ON:</b> Dùng trước các <b>Thứ</b> hoặc <b>Ngày cụ thể</b> (e.g. <i>on Monday, on October 20th</i>).</p>
+        <p><b>• IN:</b> Dùng trước <b>Tháng</b>, <b>Năm</b> hoặc <b>Mùa</b> (e.g. <i>in July, in 2024, in summer</i>).</p>
+        <p><b>• AT:</b> Dùng trước <b>Giờ giấc</b> hoặc dịp đặc biệt (e.g. <i>at 8 o'clock, at Christmas</i>).</p>
+      </div>
+
+      <div class="sentence-card">
+        <h3>💡 2. Quy Tắc Số Thứ Tự Cho Ngày Trong Tháng (Ordinal Numbers)</h3>
+        <p>Trong tiếng Anh, ngày trong tháng dùng <b>Số thứ tự</b> chứ không dùng số đếm:</p>
+        <p>• 1st = First | 2nd = Second | 3rd = Third | 4th = Fourth | 21st = Twenty-first | 22nd = Twenty-second | 23rd = Twenty-third | 31st = Thirty-first.</p>
+        <p>• Viết: <b>October 20th</b> hoặc <b>20th October</b>. Đọc: <i>"October the twentieth"</i> hoặc <i>"the twentieth of October"</i>.</p>
+      </div>
+
+      <div class="sentence-card">
+        <h3>Mẫu câu 1: Hỏi về Thứ trong tuần (What day is it today?)</h3>
+        <p><b>Hỏi:</b> What day is it today?</p>
+        <p><b>Trả lời:</b> It is + [Thứ] (e.g. <i>It is Monday.</i>)</p>
+        <div class="dialogue">
+          <p><span class="speaker">Teacher:</span> What day is it today? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What day is it today?')">🔊</button></p>
+          <p><span class="speaker">Student:</span> It is Friday! <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('It is Friday!')">🔊</button></p>
+        </div>
+      </div>
+
+      <div class="sentence-card">
+        <h3>Mẫu câu 2: Hỏi về Ngày Tháng (What is the date today?)</h3>
+        <p><b>Hỏi:</b> What is the date today?</p>
+        <p><b>Trả lời:</b> It is + [Tháng] + [Ngày thứ tự] (e.g. <i>It is September 5th.</i>)</p>
+        <div class="dialogue">
+          <p><span class="speaker">A:</span> What is the date today? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What is the date today?')">🔊</button></p>
+          <p><span class="speaker">B:</span> It is May 1st. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('It is May 1st.')">🔊</button></p>
+        </div>
+      </div>
+
+      <div class="sentence-card">
+        <h3>Mẫu câu 3: Hỏi về Sinh Nhật (When is your birthday?)</h3>
+        <p><b>Hỏi:</b> When is your birthday?</p>
+        <p><b>Trả lời:</b> It is on + [Tháng + Ngày] (e.g. <i>It is on July 12th.</i>)</p>
+        <div class="dialogue">
+          <p><span class="speaker">A:</span> When is your birthday? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('When is your birthday?')">🔊</button></p>
+          <p><span class="speaker">B:</span> It is on August 15th. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('It is on August 15th.')">🔊</button></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TAB 3: GAME 1 FLIP CARD -->
+  <div id="game-flip" class="tab-content">
+    <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard Từ Vựng</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 10px; font-size: 0.9rem;">Mặt trước là Tiếng Việt, lật thẻ để xem Tiếng Anh kèm IPA!</p>
+
+    <div class="single-card-container">
+      <div class="card-controls">
+        <span class="card-counter" id="card-counter-text">Thẻ 1 / 19</span>
+      </div>
+
+      <div class="flip-card-single" id="single-card-el" onclick="flipSingleCard()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" id="card-front-content"></div>
+          <div class="flip-card-back" id="card-back-content"></div>
+        </div>
+      </div>
+
+      <div>
+        <button class="nav-btn" onclick="prevSingleCard()">⏮️ Thẻ Trước</button>
+        <button class="nav-btn" onclick="nextSingleCard(false)">Thẻ Tiếp ⏭️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: GAME 2 MCQ -->
+  <div id="game-mcq" class="tab-content">
+    <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 2: Trắc Nghiệm Từ Vựng Ngày Tháng</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn từ/nghĩa bên trên và chọn 1 trong 4 đáp án đúng!</p>
+
+    <div class="quiz-container">
+      <div class="number-preview-box" id="mcq-number-preview"></div>
+      <div class="mcq-grid" id="mcq-options-container"></div>
+      <p id="mcq-feedback" role="status" aria-live="polite" style="min-height:1.5em;text-align:center;font-weight:800;"></p>
+    </div>
+  </div>
+
+  <!-- TAB 5: GAME 3 SPELLING -->
+  <div id="game-spelling" class="tab-content">
+    <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 3: Điền Chính Tả Thứ & Tháng</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn nghĩa tiếng Việt và nghe phát âm để gõ từ tiếng Anh chính xác!</p>
+
+    <div class="spelling-box">
+      <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 câu</div>
+
+      <div id="spelling-preview" class="number-preview-box"></div>
+      <button class="audio-btn" style="width: 44px; height: 44px; font-size: 1.3rem; margin-top:0;" onclick="playSpellingAudio()">🔊</button>
+
+      <div class="feedback-msg" id="spelling-feedback"></div>
+
+      <div class="spelling-input-group">
+        <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ tên tiếng Anh..." autocomplete="off">
+        <button class="btn-action" onclick="checkSpelling()">Kiểm tra</button>
+        <button class="btn-reveal" onclick="revealSpellingAnswer()">💡 Hiện đáp án</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 6: GAME 4 DATE SENTENCES (50 CÂU) -->
+  <div id="game-count" class="tab-content">
+    <h2 style="text-align: center; color: #2B6CB0; font-weight: 800; font-size: 1.4rem;">Game 4: Luyện Viết Câu Hỏi & Trả Lời Ngày Tháng (50 Câu)</h2>
+    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Chấp nhận các kiểu gõ: <b>"It is..."</b>, <b>"It's..."</b>, <b>"Today is..."</b>, <b>"Today's..."</b> hoặc tên ngày tháng!</p>
+
+    <div class="count-game-container">
+      <div class="score-board" id="count-score">🎯 Đã đúng: 0 câu</div>
+
+      <div class="card-controls">
+        <span class="card-counter" id="count-counter-text">Câu 1 / 50</span>
+      </div>
+
+      <div class="calendar-box">
+        <div class="calendar-header">CALENDAR</div>
+        <div class="calendar-body">
+          <div class="calendar-day-num" id="calendar-main-display">---</div>
+          <div class="calendar-subtext" id="calendar-sub-display"></div>
+        </div>
+      </div>
+
+      <div class="feedback-msg" id="count-feedback"></div>
+
+      <div class="spelling-input-group">
+        <input type="text" id="count-sentence-input" class="spelling-input" placeholder="Ví dụ: It's Monday, Today is May 1st..." autocomplete="off">
+        <button class="btn-action" onclick="checkCountSentence()">Kiểm tra</button>
+        <button class="btn-reveal" onclick="revealCountAnswer()">💡 Hiện đáp án</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="./assets/js/grade2-progress.js"></script>
+<script src="./assets/js/legacy-game4.js"></script>
+<script src="../../shared/young-learner-speech.js?v=slow-sync-1"></script>
+  <script src="./assets/js/topics/dates.js?v=pencil-20261019"></script>
+<script src="./assets/js/legacy-game4-config.js"></script>
+
+<contact-danh></contact-danh>
+    <script src="../../shared/contact-footer.js"></script>
+<script src="./assets/js/learning-core.js?v=answer-audio-20261021"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => DanhLesson.mount({
+    topic: 'dates',
+    words: daysAndMonthsVocab.map((word, index) => ({
+      id: word.name.toLowerCase(), name: word.name, meaning: word.meaning,
+      ipa: word.ipa, color: word.hex, visual: word.num
+    }))
+  }));
+</script>
+
+<script src="./assets/js/grade2-navigation.js?v=primary2-20261022-34"></script>
+</body>
+</html>

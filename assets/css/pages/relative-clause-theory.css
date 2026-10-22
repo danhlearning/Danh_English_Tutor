@@ -1,0 +1,196 @@
+:root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #dbeafe;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #334155;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Styling for Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 700;
+            width: 15%;
+        }
+
+        td:nth-child(2) {
+            width: 35%;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+
+        .example-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .example-list li {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #cbd5e1;
+        }
+
+        .example-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        /* Styling for Examples */
+        .example-box {
+            background-color: var(--accent);
+            border-left: 5px solid var(--primary);
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .example-box p {
+            margin-bottom: 8px;
+        }
+
+        .example-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            font-weight: 700;
+            color: #b91c1c;
+        }
+        
+        .meaning {
+            font-style: italic;
+            color: #475569;
+            font-size: 1rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            background-color: var(--text-muted);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: #475569;
+        }
+
+        .btn-practice {
+            display: block;
+            text-align: center;
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-top: 40px;
+            transition: background 0.3s;
+        }
+
+        .btn-practice:hover {
+            background-color: var(--primary-hover);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            th, td {
+                display: block;
+                width: 100% !important;
+            }
+            th {
+                text-align: center;
+            }
+        }

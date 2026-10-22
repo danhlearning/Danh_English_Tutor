@@ -1,0 +1,13 @@
+{
+  "key": "unit3/5",
+  "unit": 3,
+  "unitId": "unit3",
+  "id": 5,
+  "term": "confident",
+  "meaning": "tự tin",
+  "example": "She feels confident when she speaks English.",
+  "slug": "confident",
+  "file": "grade/lop6/assets/images/pencil/unit3/confident-v1.webp",
+  "prompt": "Use case: illustration-story. Asset: one square vocabulary illustration for a Grade 6 English learning website. Subject: confident, meaning tự tin. Context for the illustrator only, do not put these words in the image: She feels confident when she speaks English.\nScene: A confident middle-school girl standing upright presenting to a small class, looking relaxed with a microphone and an open gesture. No writing on the board or speech bubbles.\nStyle: charming hand-drawn flat 2D colored-pencil cartoon with clearly visible pencil grain, layered colored-pencil shading and soft warm graphite outlines on warm white paper, restrained cheerful pastel colors, matching the newest pencil vocabulary illustrations for this project. Suitable for ages 11–12, natural proportions, not babyish. One coherent scene, square composition, main subject clear at thumbnail size, light breathing room around the subject. No photorealism, no 3D, no vector-flat rendering.\nConstraints: absolutely no letters, readable text, words, numbers, captions, Vietnamese meanings, definitions, labels, logos, watermarks, decorative border or speech bubbles. No collage or multiple cards. Correct anatomy, object construction, perspective and cause-and-effect. Do not add unrelated decoration. Create exactly one finished square image.",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-7ed3825a-f70c-4eae-b569-2d18c0b5e812.png"
+}

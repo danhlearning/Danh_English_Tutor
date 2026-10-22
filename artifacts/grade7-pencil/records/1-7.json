@@ -1,0 +1,13 @@
+{
+  "unit": 1,
+  "wordId": 7,
+  "term": "taking photos",
+  "meaning": "chụp ảnh",
+  "example": "My brother loves taking photos of flowers.",
+  "file": "grade/lop7/assets/images/pencil/unit1/7-v1.webp",
+  "prompt": "Use case: scientific-educational. One square vocabulary illustration depicting TAKING PHOTOS. A Vietnamese young teenager holding a simple small lavender toy-like compact camera up toward flowers in a garden, clearly pressing the shutter and taking a photo. The camera must have a perfectly plain smooth lavender rectangular front panel with a round black lens, one plain circular shutter button, absolutely no raised badge, no brand plaque, no lettering, no words, no numerals and no logo. Show the camera from its SIDE so the flat side is visible, no conventional black DSLR branding shapes. Delicate hand-drawn graphite and soft coloured pencil, warm ivory fibrous drawing paper, visible pencil hatching, lavender accents, natural anatomy, charming age-appropriate school illustration. Simple clear composition, full figure and flowers inside frame, generous paper margin. Absolutely no text anywhere in the entire picture. No 3D, no vector. Square 1024x1024.",
+  "mode": "built-in image_gen",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-d5eb437f-9d1c-45ee-96fb-da0067252065.png",
+  "originalPrompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: taking photos. Scene: My brother loves taking photos of flowers. Show the main object or action clearly and unambiguously. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024.",
+  "repairReason": "Replace camera with a plain unbranded compact camera to remove small text."
+}

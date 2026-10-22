@@ -1,0 +1,13 @@
+{
+  "key": "unit11/1",
+  "unit": 11,
+  "unitId": "unit11",
+  "id": 1,
+  "term": "recycle",
+  "meaning": "tái chế",
+  "example": "We recycle paper and plastic bottles.",
+  "slug": "recycle",
+  "file": "grade/lop6/assets/images/pencil/unit11/recycle-v1.webp",
+  "prompt": "Use case: illustration-story. Asset: one square vocabulary illustration for a Grade 6 English learning website. Subject: recycle, meaning tái chế. Context for the illustrator only, do not put these words in the image: We recycle paper and plastic bottles.\nScene: A small clear recycling process scene: used plain plastic bottles being processed in a compact safe recycling machine and coming out as a new plain reusable plastic container. Use two simple curved arrows to make transformation clear; no words or labels.\nStyle: charming hand-drawn flat 2D colored-pencil cartoon with clearly visible pencil grain, layered colored-pencil shading and soft warm graphite outlines on warm white paper, restrained cheerful pastel colors, matching the newest pencil vocabulary illustrations for this project. Suitable for ages 11–12, natural proportions, not babyish. One coherent scene, square composition, main subject clear at thumbnail size, light breathing room around the subject. No photorealism, no 3D, no vector-flat rendering.\nConstraints: absolutely no letters, readable text, words, numbers, captions, Vietnamese meanings, definitions, labels, logos, watermarks, decorative border or speech bubbles. No collage or multiple cards. Correct anatomy, object construction, perspective and cause-and-effect. Do not add unrelated decoration. Create exactly one finished square image.",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-acd21a92-f685-40fe-a9e2-647cc41aab64.png"
+}

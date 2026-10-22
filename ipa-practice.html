@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<script src="./shared/learner-profile-core.js"></script>
+<script src="./shared/learner-profile.js?v=preload-20261022"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Tập Phát Âm IPA - Thầy Danh</title>
+    
+    
+    <link rel="stylesheet" href="./assets/css/pages/ipa-practice.css">
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="skills.html" class="btn-nav btn-back">⬅ Luyện theo kỹ năng</a>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>🗣️ Luyện Phát Âm</h1>
+            <p class="subtitle">Đọc phiên âm và gõ từ tiếng Anh tương ứng</p>
+
+            <div class="tabs">
+                <button class="tab-btn active" id="tab-basic" onclick="setLevel('basic')">Cơ Bản</button>
+                <button class="tab-btn" id="tab-intermediate" onclick="setLevel('intermediate')">Trung Cấp</button>
+                <button class="tab-btn" id="tab-toeic" onclick="setLevel('toeic')">TOEIC</button>
+            </div>
+            
+           <div class="controls">
+                <div class="stats" id="correct-display" style="background: #dcfce7; color: #15803d; border-color: #bbf7d0;">Đúng: 0</div>
+                <div class="stats" id="incorrect-display" style="background: #fee2e2; color: #b91c1c; border-color: #fecaca;">Sai: 0</div>
+                <div class="timer" id="timer-display">⏱️ 10:00</div>
+                <div class="progress" id="progress">Từ: 1/240</div>
+            </div>
+
+            <div class="ipa-box" id="ipa-container">
+                <div class="ipa-text" id="ipa-display"></div>
+            </div>
+
+            <div class="input-area" id="input-area">
+                <input type="text" id="answer-input" placeholder="Nhập từ tiếng Anh..." autocomplete="off">
+                <button class="btn-check" id="check-btn" onclick="checkAnswer()">Kiểm tra</button>
+            </div>
+
+            <div id="feedback" class="feedback"></div>
+            <div id="explanation" class="explanation"></div>
+
+            <button class="btn-next" id="next-btn" onclick="nextQuestion()">Từ tiếp theo ➔</button>
+        </div>
+    </div>
+
+    <contact-danh></contact-danh>
+    <script src="./shared/contact-footer.js"></script>
+
+<script src="./assets/js/pages/ipa-practice.js?v=answer-audio-20261021"></script>
+
+</body>
+</html>

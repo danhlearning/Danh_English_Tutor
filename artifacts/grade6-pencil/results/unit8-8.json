@@ -1,0 +1,13 @@
+{
+  "key": "unit8/8",
+  "unit": 8,
+  "unitId": "unit8",
+  "id": 8,
+  "term": "racket",
+  "meaning": "vợt",
+  "example": "I need a racket to play badminton.",
+  "slug": "racket",
+  "file": "grade/lop6/assets/images/pencil/unit8/racket-v1.webp",
+  "prompt": "Use case: illustration-story. Asset: one square vocabulary illustration for a Grade 6 English learning website. Subject: racket, meaning vợt. Context for the illustrator only, do not put these words in the image: I need a racket to play badminton.\nScene: A single badminton racket with oval stringed head and long handle, beside one feather shuttlecock for context. Complete racket fully visible with generous margin; no text or logo.\nStyle: charming hand-drawn flat 2D colored-pencil cartoon with clearly visible pencil grain, layered colored-pencil shading and soft warm graphite outlines on warm white paper, restrained cheerful pastel colors, matching the newest pencil vocabulary illustrations for this project. Suitable for ages 11–12, natural proportions, not babyish. One coherent scene, square composition, main subject clear at thumbnail size, light breathing room around the subject. No photorealism, no 3D, no vector-flat rendering.\nConstraints: absolutely no letters, readable text, words, numbers, captions, Vietnamese meanings, definitions, labels, logos, watermarks, decorative border or speech bubbles. No collage or multiple cards. Correct anatomy, object construction, perspective and cause-and-effect. Do not add unrelated decoration. Create exactly one finished square image.",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-4d5ea18b-1b7d-4ce5-a093-e903141b73d3.png"
+}

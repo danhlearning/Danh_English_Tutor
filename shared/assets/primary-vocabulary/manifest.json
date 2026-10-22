@@ -1,0 +1,1154 @@
+{
+  "hello": {
+    "src": "../../shared/assets/primary-vocabulary/hello-v1.webp",
+    "source": "imagegen",
+    "original": "hello-v1.png"
+  },
+  "goodbye": {
+    "src": "../../shared/assets/primary-vocabulary/goodbye-v1.webp",
+    "source": "imagegen",
+    "original": "goodbye-v1.png"
+  },
+  "yes": {
+    "src": "../../shared/assets/primary-vocabulary/yes-v1.webp",
+    "source": "imagegen",
+    "original": "yes-v1.png"
+  },
+  "no": {
+    "src": "../../shared/assets/primary-vocabulary/no-v1.webp",
+    "source": "imagegen",
+    "original": "no-v1.png"
+  },
+  "bag": {
+    "src": "../../shared/assets/primary-vocabulary/bag-v1.webp",
+    "source": "imagegen",
+    "original": "bag-v1.png"
+  },
+  "book": {
+    "src": "../../shared/assets/primary-vocabulary/book-v1.webp",
+    "source": "imagegen",
+    "original": "book-v1.png"
+  },
+  "pen": {
+    "src": "../../shared/assets/primary-vocabulary/pen-v1.webp",
+    "source": "imagegen",
+    "original": "pen-v1.png"
+  },
+  "pencil": {
+    "src": "../../shared/assets/primary-vocabulary/pencil-v1.webp",
+    "source": "imagegen",
+    "original": "pencil-v1.png"
+  },
+  "red": {
+    "src": "../../shared/assets/primary-vocabulary/red-v1.webp",
+    "source": "imagegen",
+    "original": "red-v1.png"
+  },
+  "blue": {
+    "src": "../../shared/assets/primary-vocabulary/blue-v1.webp",
+    "source": "imagegen",
+    "original": "blue-v1.png"
+  },
+  "green": {
+    "src": "../../shared/assets/primary-vocabulary/green-v1.webp",
+    "source": "imagegen",
+    "original": "green-v1.png"
+  },
+  "yellow": {
+    "src": "../../shared/assets/primary-vocabulary/yellow-v1.webp",
+    "source": "imagegen",
+    "original": "yellow-v1.png"
+  },
+  "one": {
+    "src": "../../shared/assets/primary-vocabulary/one-v1.webp",
+    "source": "imagegen",
+    "original": "one-v1.png"
+  },
+  "two": {
+    "src": "../../shared/assets/primary-vocabulary/two-v1.webp",
+    "source": "imagegen",
+    "original": "two-v1.png"
+  },
+  "three": {
+    "src": "../../shared/assets/primary-vocabulary/three-v1.webp",
+    "source": "imagegen",
+    "original": "three-v1.png"
+  },
+  "four": {
+    "src": "../../shared/assets/primary-vocabulary/four-v1.webp",
+    "source": "imagegen",
+    "original": "four-v1.png"
+  },
+  "mother": {
+    "src": "../../shared/assets/primary-vocabulary/mother-v1.webp",
+    "source": "imagegen",
+    "original": "mother-v1.png"
+  },
+  "mum": {
+    "src": "../../shared/assets/primary-vocabulary/mother-v1.webp",
+    "source": "imagegen",
+    "original": "mother-v1.png"
+  },
+  "father": {
+    "src": "../../shared/assets/primary-vocabulary/father-v1.webp",
+    "source": "imagegen",
+    "original": "father-v1.png"
+  },
+  "dad": {
+    "src": "../../shared/assets/primary-vocabulary/father-v1.webp",
+    "source": "imagegen",
+    "original": "father-v1.png"
+  },
+  "brother": {
+    "src": "../../shared/assets/vocabulary-3d/brother-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "sister": {
+    "src": "../../shared/assets/vocabulary-3d/sister-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "eye": {
+    "src": "../../shared/assets/primary-vocabulary/eye-v1.webp",
+    "source": "imagegen",
+    "original": "eye-v1.png"
+  },
+  "ear": {
+    "src": "../../shared/assets/primary-vocabulary/ear-v1.webp",
+    "source": "imagegen",
+    "original": "ear-v1.png"
+  },
+  "nose": {
+    "src": "../../shared/assets/primary-vocabulary/nose-v1.webp",
+    "source": "imagegen",
+    "original": "nose-v1.png"
+  },
+  "mouth": {
+    "src": "../../shared/assets/primary-vocabulary/mouth-v1.webp",
+    "source": "imagegen",
+    "original": "mouth-v1.png"
+  },
+  "cat": {
+    "src": "../../shared/assets/vocabulary-3d/kitten-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "dog": {
+    "src": "../../grade/lop2/assets/images/approved/animals/dog-photo-v1.webp",
+    "source": "existing-ai"
+  },
+  "bird": {
+    "src": "../../shared/assets/primary-vocabulary/bird-v1.webp",
+    "source": "imagegen",
+    "original": "bird-v1.png"
+  },
+  "fish": {
+    "src": "../../shared/assets/primary-vocabulary/fish-v1.webp",
+    "source": "imagegen",
+    "original": "fish-v1.png"
+  },
+  "ball": {
+    "src": "../../shared/assets/primary-vocabulary/ball-v1.webp",
+    "source": "imagegen",
+    "original": "ball-v1.png"
+  },
+  "kite": {
+    "src": "../../shared/assets/vocabulary-3d/kite-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "car": {
+    "src": "../../shared/assets/primary-vocabulary/car-v1.webp",
+    "source": "imagegen",
+    "original": "car-v1.png"
+  },
+  "doll": {
+    "src": "../../shared/assets/primary-vocabulary/doll-v1.webp",
+    "source": "imagegen",
+    "original": "doll-v1.png"
+  },
+  "apple": {
+    "src": "../../grade/lop2/assets/images/approved/fruits/apple-photo-v1.webp",
+    "source": "existing-ai"
+  },
+  "banana": {
+    "src": "../../shared/assets/primary-vocabulary/banana-v1.webp",
+    "source": "imagegen",
+    "original": "banana-v1.png"
+  },
+  "orange": {
+    "src": "../../shared/assets/primary-vocabulary/orange-v1.webp",
+    "source": "imagegen",
+    "original": "orange-v1.png"
+  },
+  "grapes": {
+    "src": "../../shared/assets/vocabulary-3d/grapes-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "milk": {
+    "src": "../../shared/assets/primary-vocabulary/milk-v1.webp",
+    "source": "imagegen",
+    "original": "milk-v1.png"
+  },
+  "water": {
+    "src": "../../shared/assets/vocabulary-3d/water-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "bread": {
+    "src": "../../shared/assets/primary-vocabulary/bread-v1.webp",
+    "source": "imagegen",
+    "original": "bread-v1.png"
+  },
+  "rice": {
+    "src": "../../shared/assets/primary-vocabulary/rice-v1.webp",
+    "source": "imagegen",
+    "original": "rice-v1.png"
+  },
+  "bed": {
+    "src": "../../shared/assets/primary-vocabulary/bed-v1.webp",
+    "source": "imagegen",
+    "original": "bed-v1.png"
+  },
+  "chair": {
+    "src": "../../shared/assets/primary-vocabulary/chair-v1.webp",
+    "source": "imagegen",
+    "original": "chair-v1.png"
+  },
+  "table": {
+    "src": "../../shared/assets/vocabulary-3d/table-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "door": {
+    "src": "../../shared/assets/primary-vocabulary/door-v1.webp",
+    "source": "imagegen",
+    "original": "door-v1.png"
+  },
+  "hat": {
+    "src": "../../shared/assets/vocabulary-3d/hat-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "shirt": {
+    "src": "../../shared/assets/primary-vocabulary/shirt-v1.webp",
+    "source": "imagegen",
+    "original": "shirt-v1.png"
+  },
+  "shoes": {
+    "src": "../../shared/assets/vocabulary-3d/shoes-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "dress": {
+    "src": "../../shared/assets/vocabulary-3d/dress-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "run": {
+    "src": "../../grade/lop2/assets/images/approved/verbs/run-photo-v1.webp",
+    "source": "existing-ai"
+  },
+  "jump": {
+    "src": "../../shared/assets/primary-vocabulary/jump-v1.webp",
+    "source": "imagegen",
+    "original": "jump-v1.png"
+  },
+  "sit": {
+    "src": "../../shared/assets/primary-vocabulary/sit-v1.webp",
+    "source": "imagegen",
+    "original": "sit-v1.png"
+  },
+  "stand": {
+    "src": "../../shared/assets/primary-vocabulary/stand-v1.webp",
+    "source": "imagegen",
+    "original": "stand-v1.png"
+  },
+  "cow": {
+    "src": "../../shared/assets/primary-vocabulary/cow-v1.webp",
+    "source": "imagegen",
+    "original": "cow-v1.png"
+  },
+  "pig": {
+    "src": "../../shared/assets/primary-vocabulary/pig-v1.webp",
+    "source": "imagegen",
+    "original": "pig-v1.png"
+  },
+  "duck": {
+    "src": "../../shared/assets/primary-vocabulary/duck-v1.webp",
+    "source": "imagegen",
+    "original": "duck-v1.png"
+  },
+  "hen": {
+    "src": "../../shared/assets/primary-vocabulary/hen-v1.webp",
+    "source": "imagegen",
+    "original": "hen-v1.png"
+  },
+  "sun": {
+    "src": "../../shared/assets/primary-vocabulary/sun-v1.webp",
+    "source": "imagegen",
+    "original": "sun-v1.png"
+  },
+  "tree": {
+    "src": "../../shared/assets/primary-vocabulary/tree-v1.webp",
+    "source": "imagegen",
+    "original": "tree-v1.png"
+  },
+  "flower": {
+    "src": "../../shared/assets/primary-vocabulary/flower-v1.webp",
+    "source": "imagegen",
+    "original": "flower-v1.png"
+  },
+  "rain": {
+    "src": "../../shared/assets/primary-vocabulary/rain-v1.webp",
+    "source": "imagegen",
+    "original": "rain-v1.png"
+  },
+  "big": {
+    "src": "../../shared/assets/primary-vocabulary/big-v1.webp",
+    "source": "imagegen",
+    "original": "big-v1.png"
+  },
+  "small": {
+    "src": "../../shared/assets/primary-vocabulary/small-v2.webp",
+    "source": "imagegen",
+    "original": "small-v2.png"
+  },
+  "happy": {
+    "src": "../../shared/assets/primary-vocabulary/happy-v1.webp",
+    "source": "imagegen",
+    "original": "happy-v1.png"
+  },
+  "sad": {
+    "src": "../../shared/assets/primary-vocabulary/sad-v1.webp",
+    "source": "imagegen",
+    "original": "sad-v1.png"
+  },
+  "thank you": {
+    "src": "../../shared/assets/primary-vocabulary/thank-you-v1.webp",
+    "source": "imagegen",
+    "original": "thank-you-v1.png"
+  },
+  "fine": {
+    "src": "../../shared/assets/primary-vocabulary/fine-v1.webp",
+    "source": "imagegen",
+    "original": "fine-v1.png"
+  },
+  "name": {
+    "src": "../../shared/assets/primary-vocabulary/name-v1.webp",
+    "source": "imagegen",
+    "original": "name-v1.png"
+  },
+  "my": {
+    "src": "../../shared/assets/primary-vocabulary/my-v1.webp",
+    "source": "imagegen",
+    "original": "my-v1.png"
+  },
+  "your": {
+    "src": "../../shared/assets/primary-vocabulary/your-v1.webp",
+    "source": "imagegen",
+    "original": "your-v1.png"
+  },
+  "what": {
+    "src": "../../shared/assets/primary-vocabulary/what-v1.webp",
+    "source": "imagegen",
+    "original": "what-v1.png"
+  },
+  "friend": {
+    "src": "../../shared/assets/primary-vocabulary/friend-v1.webp",
+    "source": "imagegen",
+    "original": "friend-v1.png"
+  },
+  "teacher": {
+    "src": "../../shared/assets/vocabulary-3d/teacher-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "boy": {
+    "src": "../../shared/assets/primary-vocabulary/boy-v1.webp",
+    "source": "imagegen",
+    "original": "boy-v1.png"
+  },
+  "girl": {
+    "src": "../../shared/assets/primary-vocabulary/girl-v1.webp",
+    "source": "imagegen",
+    "original": "girl-v1.png"
+  },
+  "hand": {
+    "src": "../../grade/lop2/assets/images/approved/bodyparts/hand-photo-v1.webp",
+    "source": "existing-ai"
+  },
+  "head": {
+    "src": "../../shared/assets/primary-vocabulary/head-v1.webp",
+    "source": "imagegen",
+    "original": "head-v1.png"
+  },
+  "sing": {
+    "src": "../../shared/assets/vocabulary-3d/sing-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "singing": {
+    "src": "../../shared/assets/vocabulary-3d/sing-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "dance": {
+    "src": "../../shared/assets/vocabulary-3d/dance-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "dancing": {
+    "src": "../../shared/assets/vocabulary-3d/dance-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "drawing": {
+    "src": "../../shared/assets/vocabulary-3d/draw-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "swimming": {
+    "src": "../../shared/assets/vocabulary-3d/swimming-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "classroom": {
+    "src": "../../shared/assets/vocabulary-3d/classroom-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "library": {
+    "src": "../../shared/assets/vocabulary-3d/library-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "playground": {
+    "src": "../../shared/assets/vocabulary-3d/playground-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "gym": {
+    "src": "../../shared/assets/vocabulary-3d/gym-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "stand up": {
+    "src": "../../shared/assets/primary-vocabulary/stand-v1.webp",
+    "source": "imagegen",
+    "original": "stand-v1.png"
+  },
+  "sit down": {
+    "src": "../../shared/assets/primary-vocabulary/sit-v1.webp",
+    "source": "imagegen",
+    "original": "sit-v1.png"
+  },
+  "open": {
+    "src": "../../shared/assets/primary-vocabulary/open-v1.webp",
+    "source": "imagegen",
+    "original": "open-v1.png"
+  },
+  "close": {
+    "src": "../../shared/assets/primary-vocabulary/close-v1.webp",
+    "source": "imagegen",
+    "original": "close-v1.png"
+  },
+  "school bag": {
+    "src": "../../shared/assets/primary-vocabulary/bag-v1.webp",
+    "source": "imagegen",
+    "original": "bag-v1.png"
+  },
+  "ruler": {
+    "src": "../../shared/assets/primary-vocabulary/ruler-v1.webp",
+    "source": "imagegen",
+    "original": "ruler-v1.png"
+  },
+  "notebook": {
+    "src": "../../shared/assets/primary-vocabulary/notebook-v1.webp",
+    "source": "imagegen",
+    "original": "notebook-v1.png"
+  },
+  "black": {
+    "src": "../../shared/assets/primary-vocabulary/black-v1.webp",
+    "source": "imagegen",
+    "original": "black-v1.png"
+  },
+  "white": {
+    "src": "../../shared/assets/primary-vocabulary/white-v1.webp",
+    "source": "imagegen",
+    "original": "white-v1.png"
+  },
+  "badminton": {
+    "src": "../../shared/assets/vocabulary-3d/badminton-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "football": {
+    "src": "../../shared/assets/vocabulary-3d/football-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "basketball": {
+    "src": "../../shared/assets/vocabulary-3d/basketball-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "table tennis": {
+    "src": "../../shared/assets/vocabulary-3d/table-tennis-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "grandmother": {
+    "src": "../../shared/assets/vocabulary-3d/grandmother-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "grandfather": {
+    "src": "../../shared/assets/primary-vocabulary/grandfather-v1.webp",
+    "source": "imagegen",
+    "original": "grandfather-v1.png"
+  },
+  "doctor": {
+    "src": "../../shared/assets/vocabulary-3d/doctor-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "farmer": {
+    "src": "../../shared/assets/vocabulary-3d/farmer-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "driver": {
+    "src": "../../shared/assets/vocabulary-3d/drive-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "bedroom": {
+    "src": "../../shared/assets/vocabulary-3d/bedroom-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "living room": {
+    "src": "../../shared/assets/vocabulary-3d/living-room-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "kitchen": {
+    "src": "../../shared/assets/vocabulary-3d/kitchen-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "bathroom": {
+    "src": "../../shared/assets/vocabulary-3d/bathroom-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "garden": {
+    "src": "../../shared/assets/vocabulary-3d/garden-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "box": {
+    "src": "../../shared/assets/vocabulary-3d/box-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "juice": {
+    "src": "../../shared/assets/vocabulary-3d/juice-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "read": {
+    "src": "../../shared/assets/primary-vocabulary/read-v1.webp",
+    "source": "imagegen",
+    "original": "read-v1.png"
+  },
+  "reading": {
+    "src": "../../shared/assets/primary-vocabulary/read-v1.webp",
+    "source": "imagegen",
+    "original": "read-v1.png"
+  },
+  "cook dinner": {
+    "src": "../../shared/assets/vocabulary-3d/cook-dinner-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "cooking": {
+    "src": "../../shared/assets/vocabulary-3d/cook-dinner-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "running": {
+    "src": "../../shared/assets/vocabulary-3d/running-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "ride a bike": {
+    "src": "../../shared/assets/vocabulary-3d/ride-a-bike-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "cycling": {
+    "src": "../../shared/assets/vocabulary-3d/ride-a-bike-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "on foot": {
+    "src": "../../shared/assets/primary-vocabulary/on-foot-v1.webp",
+    "source": "imagegen",
+    "original": "on-foot-v1.png"
+  },
+  "walking": {
+    "src": "../../shared/assets/primary-vocabulary/on-foot-v1.webp",
+    "source": "imagegen",
+    "original": "on-foot-v1.png"
+  },
+  "elephant": {
+    "src": "../../shared/assets/vocabulary-3d/elephant-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "giraffe": {
+    "src": "../../shared/assets/vocabulary-3d/giraffe-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "zebra": {
+    "src": "../../shared/assets/vocabulary-3d/zebra-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "parrot": {
+    "src": "../../shared/assets/vocabulary-3d/parrot-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "turtle": {
+    "src": "../../shared/assets/vocabulary-3d/turtle-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "monkey": {
+    "src": "../../shared/assets/primary-vocabulary/monkey-v1.webp",
+    "source": "imagegen",
+    "original": "monkey-v1.png"
+  },
+  "address": {
+    "src": "../../shared/assets/primary-vocabulary/address-v1.webp",
+    "source": "imagegen",
+    "original": "address-v1.png"
+  },
+  "village": {
+    "src": "../../shared/assets/vocabulary-3d/village-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "city": {
+    "src": "../../shared/assets/primary-vocabulary/city-v1.webp",
+    "source": "imagegen",
+    "original": "city-v1.png"
+  },
+  "street": {
+    "src": "../../shared/assets/primary-vocabulary/street-v1.webp",
+    "source": "imagegen",
+    "original": "street-v1.png"
+  },
+  "live": {
+    "src": "../../shared/assets/primary-vocabulary/live-v1.webp",
+    "source": "imagegen",
+    "original": "live-v1.png"
+  },
+  "hometown": {
+    "src": "../../shared/assets/primary-vocabulary/hometown-v1.webp",
+    "source": "imagegen",
+    "original": "hometown-v1.png"
+  },
+  "get up": {
+    "src": "../../shared/assets/vocabulary-3d/get-up-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "brush my teeth": {
+    "src": "../../shared/assets/vocabulary-3d/brush-my-teeth-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "have breakfast": {
+    "src": "../../shared/assets/vocabulary-3d/have-breakfast-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "do exercise": {
+    "src": "../../shared/assets/primary-vocabulary/do-exercise-v1.webp",
+    "source": "imagegen",
+    "original": "do-exercise-v1.png"
+  },
+  "always": {
+    "src": "../../shared/assets/primary-vocabulary/always-v1.webp",
+    "source": "imagegen",
+    "original": "always-v1.png"
+  },
+  "usually": {
+    "src": "../../shared/assets/primary-vocabulary/usually-v1.webp",
+    "source": "imagegen",
+    "original": "usually-v1.png"
+  },
+  "read comics": {
+    "src": "../../shared/assets/primary-vocabulary/read-comics-v1.webp",
+    "source": "imagegen",
+    "original": "read-comics-v1.png"
+  },
+  "play chess": {
+    "src": "../../shared/assets/primary-vocabulary/play-chess-v1.webp",
+    "source": "imagegen",
+    "original": "play-chess-v1.png"
+  },
+  "draw": {
+    "src": "../../shared/assets/vocabulary-3d/draw-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "draw pictures": {
+    "src": "../../shared/assets/vocabulary-3d/draw-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "practise English": {
+    "src": "../../shared/assets/primary-vocabulary/practise-english-v1.webp",
+    "source": "imagegen",
+    "original": "practise-english-v1.png"
+  },
+  "sometimes": {
+    "src": "../../shared/assets/primary-vocabulary/sometimes-v1.webp",
+    "source": "imagegen",
+    "original": "sometimes-v1.png"
+  },
+  "never": {
+    "src": "../../shared/assets/primary-vocabulary/never-v1.webp",
+    "source": "imagegen",
+    "original": "never-v1.png"
+  },
+  "friendly": {
+    "src": "../../shared/assets/primary-vocabulary/friendly-v1.webp",
+    "source": "imagegen",
+    "original": "friendly-v1.png"
+  },
+  "kind": {
+    "src": "../../shared/assets/primary-vocabulary/kind-v1.webp",
+    "source": "imagegen",
+    "original": "kind-v1.png"
+  },
+  "helpful": {
+    "src": "../../shared/assets/primary-vocabulary/helpful-v1.webp",
+    "source": "imagegen",
+    "original": "helpful-v1.png"
+  },
+  "clever": {
+    "src": "../../shared/assets/primary-vocabulary/clever-v1.webp",
+    "source": "imagegen",
+    "original": "clever-v1.png"
+  },
+  "shy": {
+    "src": "../../shared/assets/primary-vocabulary/shy-v1.webp",
+    "source": "imagegen",
+    "original": "shy-v1.png"
+  },
+  "classmate": {
+    "src": "../../shared/assets/primary-vocabulary/classmate-v1.webp",
+    "source": "imagegen",
+    "original": "classmate-v1.png"
+  },
+  "pilot": {
+    "src": "../../shared/assets/vocabulary-3d/pilot-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "artist": {
+    "src": "../../shared/assets/primary-vocabulary/artist-v1.webp",
+    "source": "imagegen",
+    "original": "artist-v1.png"
+  },
+  "engineer": {
+    "src": "../../shared/assets/primary-vocabulary/engineer-v1.webp",
+    "source": "imagegen",
+    "original": "engineer-v1.png"
+  },
+  "future": {
+    "src": "../../shared/assets/primary-vocabulary/future-v1.webp",
+    "source": "imagegen",
+    "original": "future-v1.png"
+  },
+  "listen": {
+    "src": "../../shared/assets/primary-vocabulary/listen-v1.webp",
+    "source": "imagegen",
+    "original": "listen-v1.png"
+  },
+  "speak": {
+    "src": "../../shared/assets/primary-vocabulary/speak-v1.webp",
+    "source": "imagegen",
+    "original": "speak-v1.png"
+  },
+  "write": {
+    "src": "../../shared/assets/primary-vocabulary/write-v1.webp",
+    "source": "imagegen",
+    "original": "write-v1.png"
+  },
+  "new words": {
+    "src": "../../shared/assets/primary-vocabulary/new-words-v1.webp",
+    "source": "imagegen",
+    "original": "new-words-v1.png"
+  },
+  "dictionary": {
+    "src": "../../shared/assets/primary-vocabulary/dictionary-v1.webp",
+    "source": "imagegen",
+    "original": "dictionary-v1.png"
+  },
+  "story": {
+    "src": "../../shared/assets/primary-vocabulary/story-v1.webp",
+    "source": "imagegen",
+    "original": "story-v1.png"
+  },
+  "character": {
+    "src": "../../shared/assets/primary-vocabulary/character-v1.webp",
+    "source": "imagegen",
+    "original": "character-v1.png"
+  },
+  "brave": {
+    "src": "../../shared/assets/primary-vocabulary/brave-v1.webp",
+    "source": "imagegen",
+    "original": "brave-v1.png"
+  },
+  "gentle": {
+    "src": "../../shared/assets/primary-vocabulary/gentle-v1.webp",
+    "source": "imagegen",
+    "original": "gentle-v1.png"
+  },
+  "hard-working": {
+    "src": "../../shared/assets/primary-vocabulary/hard-working-v1.webp",
+    "source": "imagegen",
+    "original": "hard-working-v1.png"
+  },
+  "ending": {
+    "src": "../../shared/assets/primary-vocabulary/ending-v1.webp",
+    "source": "imagegen",
+    "original": "ending-v1.png"
+  },
+  "volleyball": {
+    "src": "../../shared/assets/vocabulary-3d/volleyball-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "competition": {
+    "src": "../../shared/assets/primary-vocabulary/competition-v1.webp",
+    "source": "imagegen",
+    "original": "competition-v1.png"
+  },
+  "team": {
+    "src": "../../shared/assets/primary-vocabulary/team-v1.webp",
+    "source": "imagegen",
+    "original": "team-v1.png"
+  },
+  "practise": {
+    "src": "../../shared/assets/primary-vocabulary/practise-v1.webp",
+    "source": "imagegen",
+    "original": "practise-v1.png"
+  },
+  "birthday": {
+    "src": "../../shared/assets/primary-vocabulary/birthday-v1.webp",
+    "source": "imagegen",
+    "original": "birthday-v1.png"
+  },
+  "invitation": {
+    "src": "../../shared/assets/primary-vocabulary/invitation-v1.webp",
+    "source": "imagegen",
+    "original": "invitation-v1.png"
+  },
+  "decorate": {
+    "src": "../../shared/assets/primary-vocabulary/decorate-v1.webp",
+    "source": "imagegen",
+    "original": "decorate-v1.png"
+  },
+  "balloon": {
+    "src": "../../shared/assets/primary-vocabulary/balloon-v1.webp",
+    "source": "imagegen",
+    "original": "balloon-v1.png"
+  },
+  "present": {
+    "src": "../../shared/assets/primary-vocabulary/present-v1.webp",
+    "source": "imagegen",
+    "original": "present-v1.png"
+  },
+  "party": {
+    "src": "../../shared/assets/primary-vocabulary/party-v1.webp",
+    "source": "imagegen",
+    "original": "party-v1.png"
+  },
+  "museum": {
+    "src": "../../shared/assets/vocabulary-3d/museum-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "farm": {
+    "src": "../../shared/assets/primary-vocabulary/farm-v1.webp",
+    "source": "imagegen",
+    "original": "farm-v1.png"
+  },
+  "bus": {
+    "src": "../../grade/lop2/assets/images/approved/transport/bus-photo-v1.webp",
+    "source": "existing-ai"
+  },
+  "visit": {
+    "src": "../../shared/assets/primary-vocabulary/visit-v1.webp",
+    "source": "imagegen",
+    "original": "visit-v1.png"
+  },
+  "take photos": {
+    "src": "../../shared/assets/vocabulary-3d/take-photos-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "picnic": {
+    "src": "../../shared/assets/primary-vocabulary/picnic-v1.webp",
+    "source": "imagegen",
+    "original": "picnic-v1.png"
+  },
+  "headache": {
+    "src": "../../shared/assets/primary-vocabulary/headache-v1.webp",
+    "source": "imagegen",
+    "original": "headache-v1.png"
+  },
+  "toothache": {
+    "src": "../../shared/assets/primary-vocabulary/toothache-v1.webp",
+    "source": "imagegen",
+    "original": "toothache-v1.png"
+  },
+  "sore throat": {
+    "src": "../../shared/assets/primary-vocabulary/sore-throat-v1.webp",
+    "source": "imagegen",
+    "original": "sore-throat-v1.png"
+  },
+  "fever": {
+    "src": "../../shared/assets/primary-vocabulary/fever-v1.webp",
+    "source": "imagegen",
+    "original": "fever-v1.png"
+  },
+  "rest": {
+    "src": "../../shared/assets/primary-vocabulary/rest-v1.webp",
+    "source": "imagegen",
+    "original": "rest-v1.png"
+  },
+  "dentist": {
+    "src": "../../shared/assets/primary-vocabulary/dentist-v1.webp",
+    "source": "imagegen",
+    "original": "dentist-v1.png"
+  },
+  "helmet": {
+    "src": "../../shared/assets/primary-vocabulary/helmet-v1.webp",
+    "source": "imagegen",
+    "original": "helmet-v1.png"
+  },
+  "knife": {
+    "src": "../../shared/assets/primary-vocabulary/knife-v1.webp",
+    "source": "imagegen",
+    "original": "knife-v1.png"
+  },
+  "stairs": {
+    "src": "../../shared/assets/primary-vocabulary/stairs-v1.webp",
+    "source": "imagegen",
+    "original": "stairs-v1.png"
+  },
+  "careful": {
+    "src": "../../shared/assets/primary-vocabulary/careful-v1.webp",
+    "source": "imagegen",
+    "original": "careful-v1.png"
+  },
+  "touch": {
+    "src": "../../shared/assets/primary-vocabulary/touch-v1.webp",
+    "source": "imagegen",
+    "original": "touch-v1.png"
+  },
+  "climb": {
+    "src": "../../shared/assets/primary-vocabulary/climb-v1.webp",
+    "source": "imagegen",
+    "original": "climb-v1.png"
+  },
+  "noodles": {
+    "src": "../../shared/assets/primary-vocabulary/noodles-v1.webp",
+    "source": "imagegen",
+    "original": "noodles-v1.png"
+  },
+  "vegetables": {
+    "src": "../../shared/assets/primary-vocabulary/vegetables-v1.webp",
+    "source": "imagegen",
+    "original": "vegetables-v1.png"
+  },
+  "bottle": {
+    "src": "../../shared/assets/primary-vocabulary/bottle-v1.webp",
+    "source": "imagegen",
+    "original": "bottle-v1.png"
+  },
+  "bowl": {
+    "src": "../../shared/assets/primary-vocabulary/bowl-v1.webp",
+    "source": "imagegen",
+    "original": "bowl-v1.png"
+  },
+  "glass": {
+    "src": "../../shared/assets/primary-vocabulary/glass-v1.webp",
+    "source": "imagegen",
+    "original": "glass-v1.png"
+  },
+  "post office": {
+    "src": "../../shared/assets/vocabulary-3d/post-office-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "pharmacy": {
+    "src": "../../shared/assets/primary-vocabulary/pharmacy-v1.webp",
+    "source": "imagegen",
+    "original": "pharmacy-v1.png"
+  },
+  "opposite": {
+    "src": "../../shared/assets/primary-vocabulary/opposite-v1.webp",
+    "source": "imagegen",
+    "original": "opposite-v1.png"
+  },
+  "between": {
+    "src": "../../shared/assets/primary-vocabulary/between-v1.webp",
+    "source": "imagegen",
+    "original": "between-v1.png"
+  },
+  "turn left": {
+    "src": "../../shared/assets/primary-vocabulary/turn-left-v1.webp",
+    "source": "imagegen",
+    "original": "turn-left-v1.png"
+  },
+  "go straight": {
+    "src": "../../shared/assets/primary-vocabulary/go-straight-v1.webp",
+    "source": "imagegen",
+    "original": "go-straight-v1.png"
+  },
+  "train": {
+    "src": "../../grade/lop2/assets/images/approved/transport/train-photo-v1.webp",
+    "source": "existing-ai"
+  },
+  "plane": {
+    "src": "../../grade/lop2/assets/images/approved/transport/plane-photo-v1.webp",
+    "source": "existing-ai"
+  },
+  "bike": {
+    "src": "../../shared/assets/vocabulary-3d/bike-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "bicycle": {
+    "src": "../../shared/assets/vocabulary-3d/bike-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "station": {
+    "src": "../../shared/assets/primary-vocabulary/station-v1.webp",
+    "source": "imagegen",
+    "original": "station-v1.png"
+  },
+  "airport": {
+    "src": "../../shared/assets/primary-vocabulary/airport-v1.webp",
+    "source": "imagegen",
+    "original": "airport-v1.png"
+  },
+  "spring": {
+    "src": "../../shared/assets/primary-vocabulary/spring-v1.webp",
+    "source": "imagegen",
+    "original": "spring-v1.png"
+  },
+  "summer": {
+    "src": "../../shared/assets/primary-vocabulary/summer-v1.webp",
+    "source": "imagegen",
+    "original": "summer-v1.png"
+  },
+  "autumn": {
+    "src": "../../shared/assets/primary-vocabulary/autumn-v1.webp",
+    "source": "imagegen",
+    "original": "autumn-v1.png"
+  },
+  "winter": {
+    "src": "../../shared/assets/primary-vocabulary/winter-v1.webp",
+    "source": "imagegen",
+    "original": "winter-v1.png"
+  },
+  "warm": {
+    "src": "../../shared/assets/primary-vocabulary/warm-v1.webp",
+    "source": "imagegen",
+    "original": "warm-v1.png"
+  },
+  "cool": {
+    "src": "../../shared/assets/primary-vocabulary/cool-v1.webp",
+    "source": "imagegen",
+    "original": "cool-v1.png"
+  },
+  "island": {
+    "src": "../../shared/assets/vocabulary-3d/island-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "beach": {
+    "src": "../../shared/assets/vocabulary-3d/beach-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "mountain": {
+    "src": "../../shared/assets/vocabulary-3d/mountains-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "quiet": {
+    "src": "../../shared/assets/primary-vocabulary/quiet-v1.webp",
+    "source": "imagegen",
+    "original": "quiet-v1.png"
+  },
+  "busy": {
+    "src": "../../shared/assets/primary-vocabulary/busy-v1.webp",
+    "source": "imagegen",
+    "original": "busy-v1.png"
+  },
+  "beautiful": {
+    "src": "../../shared/assets/primary-vocabulary/beautiful-v1.webp",
+    "source": "imagegen",
+    "original": "beautiful-v1.png"
+  },
+  "visited": {
+    "src": "../../shared/assets/primary-vocabulary/visit-v1.webp",
+    "source": "imagegen",
+    "original": "visit-v1.png"
+  },
+  "play games": {
+    "src": "../../shared/assets/vocabulary-3d/play-games-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "played": {
+    "src": "../../shared/assets/vocabulary-3d/play-games-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "watch TV": {
+    "src": "../../shared/assets/vocabulary-3d/watch-tv-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "watched": {
+    "src": "../../shared/assets/vocabulary-3d/watch-tv-3d-v1.webp",
+    "source": "existing-ai"
+  },
+  "helped": {
+    "src": "../../shared/assets/primary-vocabulary/helpful-v1.webp",
+    "source": "imagegen",
+    "original": "helpful-v1.png"
+  },
+  "went": {
+    "src": "../../shared/assets/primary-vocabulary/on-foot-v1.webp",
+    "source": "imagegen",
+    "original": "on-foot-v1.png"
+  },
+  "bought": {
+    "src": "../../shared/assets/primary-vocabulary/bought-v1.webp",
+    "source": "imagegen",
+    "original": "bought-v1.png"
+  },
+  "recycle": {
+    "src": "../../shared/assets/primary-vocabulary/recycle-v1.webp",
+    "source": "imagegen",
+    "original": "recycle-v1.png"
+  },
+  "save water": {
+    "src": "../../shared/assets/primary-vocabulary/save-water-v1.webp",
+    "source": "imagegen",
+    "original": "save-water-v1.png"
+  },
+  "plant trees": {
+    "src": "../../shared/assets/primary-vocabulary/plant-trees-v1.webp",
+    "source": "imagegen",
+    "original": "plant-trees-v1.png"
+  },
+  "rubbish": {
+    "src": "../../shared/assets/primary-vocabulary/rubbish-v1.webp",
+    "source": "imagegen",
+    "original": "rubbish-v1.png"
+  },
+  "clean": {
+    "src": "../../shared/assets/primary-vocabulary/clean-v1.webp",
+    "source": "imagegen",
+    "original": "clean-v1.png"
+  },
+  "reuse": {
+    "src": "../../shared/assets/primary-vocabulary/reuse-v1.webp",
+    "source": "imagegen",
+    "original": "reuse-v1.png"
+  },
+  "holiday": {
+    "src": "../../shared/assets/primary-vocabulary/holiday-v1.webp",
+    "source": "imagegen",
+    "original": "holiday-v1.png"
+  },
+  "plan": {
+    "src": "../../shared/assets/primary-vocabulary/plan-v1.webp",
+    "source": "imagegen",
+    "original": "plan-v1.png"
+  },
+  "learn": {
+    "src": "../../shared/assets/primary-vocabulary/learn-v1.webp",
+    "source": "imagegen",
+    "original": "learn-v1.png"
+  },
+  "explore": {
+    "src": "../../shared/assets/primary-vocabulary/explore-v1.webp",
+    "source": "imagegen",
+    "original": "explore-v1.png"
+  },
+  "improve": {
+    "src": "../../shared/assets/primary-vocabulary/improve-v1.webp",
+    "source": "imagegen",
+    "original": "improve-v1.png"
+  },
+  "together": {
+    "src": "../../shared/assets/primary-vocabulary/together-v1.webp",
+    "source": "imagegen",
+    "original": "together-v1.png"
+  }
+}

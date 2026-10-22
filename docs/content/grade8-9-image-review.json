@@ -1,0 +1,267 @@
+{
+  "note": "Đã xem trực tiếp 18 ảnh trong hai bảng duyệt. Nghĩa Việt nằm ngoài ảnh; không có chữ trong ảnh. Dấu kiểm chỉ áp dụng cho đúng nội dung có SHA-256 này.",
+  "images": [
+    {
+      "path": "shared/assets/vocabulary-3d/ride-a-bike-3d-v1.webp",
+      "sha256": "3e3e515fc4936cbacd8ae072c3ea1e0b1247e11d368f622d623b8345fca34729",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 1,
+          "term": "cycling"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/garden-3d-v1.webp",
+      "sha256": "ade2c3b2fa09b5f66f2a4d32f0cd7609a47d1062fe95b2c623b3d0931d5729f5",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 1,
+          "term": "gardening"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/village-3d-v1.webp",
+      "sha256": "f0a3b321f2ed1ebab0821f2f3452147f87836c3bc0caaa18d57b657ec8abc33f",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 2,
+          "term": "village"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/farmer-3d-v1.webp",
+      "sha256": "b41da8189c19ebfe116ff7e6bfe83cf9b99d64023a8d91044785abf16339d936",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 2,
+          "term": "farmer"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/mountains-3d-v1.webp",
+      "sha256": "264346a7f45e3ef32b295840ab7ab2ce276a929d5c13a69627791e7022517d7f",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 4,
+          "term": "mountain"
+        },
+        {
+          "grade": 9,
+          "unit": 7,
+          "term": "landscape"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/have-dinner-3d-v1.webp",
+      "sha256": "7b271a62187716c0fcac7e670010cee80a7c0f2074d66141644fe866b99dc0be",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 5,
+          "term": "family meal"
+        },
+        {
+          "grade": 9,
+          "unit": 6,
+          "term": "family gathering"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/running-3d-v1.webp",
+      "sha256": "30555797f3da5647eed63d24335ac22de973e9ba6340eb6cecab5b89a79b02a0",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 6,
+          "term": "exercise"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/river-3d-v1.webp",
+      "sha256": "b4be7035f8a30c52357c736a376380bdb72a38fa63da4a098dc238881e816062",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 7,
+          "term": "river"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/supermarket-3d-v1.webp",
+      "sha256": "374e61f0bce929b41771138fc49ef4e1fb5322041c8bd9082fd2f046f15c881d",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 8,
+          "term": "supermarket"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/stormy-3d-v1.webp",
+      "sha256": "5250fd9df3fa9bcdf2125fd9d21b8e2c16899f5b38aba27504079a378c38cfd7",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 9,
+          "term": "storm"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/firefighter-3d-v1.webp",
+      "sha256": "922f4f30195b6ec84b553a2dff17114de56d0a7847a178a21a545d2c75c2ef29",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 1,
+          "term": "firefighter"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/bus-stop-3d-v1.webp",
+      "sha256": "1323284f329294b6cf77b27bef61fc67b4694c9d4c1cf01d92a0f4c589c774e8",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 2,
+          "term": "bus stop"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/swimming-3d-v1.webp",
+      "sha256": "22ab378f9cdd70d351dce4ada9176f436d8ec99bb693adfe0963d513c4e03bd0",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 3,
+          "term": "physical activity"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/museum-3d-v1.webp",
+      "sha256": "f12583a471ffcb99f72904df45fb6f1474a4fac7f1e3a6689fd32e495670b885",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 4,
+          "term": "museum"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/camping-3d-v1.webp",
+      "sha256": "1367a443363b170e5c13a11a55b6e2811d2273e84025167fe9e2843b87b5b18f",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 5,
+          "term": "camping"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/island-3d-v1.webp",
+      "sha256": "b72863d9144957913eabf6bda939449be118d3bc74011b779aee6eb7d0c50de5",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 8,
+          "term": "destination"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/sea-3d-v1.webp",
+      "sha256": "c7dad37239c011025ffe88462e88aada5574c7511ea28f53a2a22ba2c3511bdc",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 10,
+          "term": "ocean"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-3d/chef-3d-v1.webp",
+      "sha256": "97249a9f31417c47860e2021df3f66efcea54da72880ff9b118cf9041d606768",
+      "reviewed": "2026-10-19",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 12,
+          "term": "chef"
+        }
+      ]
+    }
+  ]
+}

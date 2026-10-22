@@ -1,0 +1,13 @@
+{
+  "key": "unit6/1",
+  "unit": 6,
+  "unitId": "unit6",
+  "id": 1,
+  "term": "lucky money",
+  "meaning": "tiền mừng tuổi",
+  "example": "Children receive lucky money at Tet.",
+  "slug": "lucky-money",
+  "file": "grade/lop6/assets/images/pencil/unit6/lucky-money-v1.webp",
+  "prompt": "Use case: illustration-story. Asset: one square vocabulary illustration for a Grade 6 English learning website. Subject: lucky money, meaning tiền mừng tuổi. Context for the illustrator only, do not put these words in the image: Children receive lucky money at Tet.\nScene: A Vietnamese child receiving a red lucky-money envelope from a grandparent at Tet; a small stack of generic unmarked paper money partly visible at the envelope opening. Emphasize giving the red envelope, no writing or banknote numerals.\nStyle: charming hand-drawn flat 2D colored-pencil cartoon with clearly visible pencil grain, layered colored-pencil shading and soft warm graphite outlines on warm white paper, restrained cheerful pastel colors, matching the newest pencil vocabulary illustrations for this project. Suitable for ages 11–12, natural proportions, not babyish. One coherent scene, square composition, main subject clear at thumbnail size, light breathing room around the subject. No photorealism, no 3D, no vector-flat rendering.\nConstraints: absolutely no letters, readable text, words, numbers, captions, Vietnamese meanings, definitions, labels, logos, watermarks, decorative border or speech bubbles. No collage or multiple cards. Correct anatomy, object construction, perspective and cause-and-effect. Do not add unrelated decoration. Create exactly one finished square image.",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-3112dae1-3e82-48f9-903b-e37af42a67b7.png"
+}

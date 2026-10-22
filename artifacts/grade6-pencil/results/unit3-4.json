@@ -1,0 +1,13 @@
+{
+  "key": "unit3/4",
+  "unit": 3,
+  "unitId": "unit3",
+  "id": 4,
+  "term": "funny",
+  "meaning": "hài hước",
+  "example": "My funny friend makes us laugh.",
+  "slug": "funny",
+  "file": "grade/lop6/assets/images/pencil/unit3/funny-v1.webp",
+  "prompt": "Use case: illustration-story. Asset: one square vocabulary illustration for a Grade 6 English learning website. Subject: funny, meaning hài hước. Context for the illustrator only, do not put these words in the image: My funny friend makes us laugh.\nScene: A funny student doing a harmless playful goofy face while two classmates laugh. Warm humor, no teasing, costumes, signs or speech bubbles.\nStyle: charming hand-drawn flat 2D colored-pencil cartoon with clearly visible pencil grain, layered colored-pencil shading and soft warm graphite outlines on warm white paper, restrained cheerful pastel colors, matching the newest pencil vocabulary illustrations for this project. Suitable for ages 11–12, natural proportions, not babyish. One coherent scene, square composition, main subject clear at thumbnail size, light breathing room around the subject. No photorealism, no 3D, no vector-flat rendering.\nConstraints: absolutely no letters, readable text, words, numbers, captions, Vietnamese meanings, definitions, labels, logos, watermarks, decorative border or speech bubbles. No collage or multiple cards. Correct anatomy, object construction, perspective and cause-and-effect. Do not add unrelated decoration. Create exactly one finished square image.",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-ee6782dc-cc77-4a75-a2cc-3aadc565af53.png"
+}

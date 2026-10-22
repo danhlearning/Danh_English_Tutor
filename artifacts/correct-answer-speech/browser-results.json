@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "externalNetworkBlocked": true,
+  "checked": [
+    "g6: choice/corrected/spelling/resume",
+    "g7: choice/corrected/spelling/resume",
+    "g8: choice/corrected/spelling/resume",
+    "g9: choice/corrected/spelling/resume",
+    "g10: choice/corrected/spelling/resume",
+    "g11: choice/corrected/spelling/resume",
+    "g12: choice/corrected/spelling/resume",
+    "g7 grammar: grammar",
+    "g7 grammar: rewrite",
+    "g7 grammar: pronunciation",
+    "g7 grammar: preposition",
+    "g1: context corrected",
+    "g3: context corrected",
+    "g5: context corrected",
+    "g2 mixed review",
+    "g3 legacy",
+    "IPA waits for spoken word",
+    "grammar theory quick check",
+    "grammar room"
+  ],
+  "noAutoplay": true,
+  "noDuplicate": true,
+  "mute": true,
+  "pagehide": true,
+  "errors": []
+}

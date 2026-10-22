@@ -1,0 +1,15 @@
+@import url("../../../lop6/assets/css/grade6.css");
+
+img.g6-word-icon{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:12px;background:#fff;margin-bottom:14px}
+img.g6-flash-icon{display:block;width:min(100%,340px);height:auto;aspect-ratio:1;object-fit:contain;border-radius:14px}
+.g6-word-card h3{overflow-wrap:anywhere}
+.g6-flashcard{overflow-wrap:anywhere}
+.g6-stage input{font-size:1.125rem}
+@media(max-width:760px){
+  .g6-word-card h3{font-size:1.5rem;line-height:1.4}
+  .g6-word-card .g6-meaning,.g6-word-card .g6-example{font-size:1.125rem;line-height:1.55}
+  .g6-stage h3{font-size:1.5rem;line-height:1.45;overflow-wrap:anywhere}
+  .g6-choice{font-size:1.125rem;line-height:1.5;min-height:52px}
+  .g6-tabs{gap:8px}
+  .g6-tab{min-height:44px}
+}

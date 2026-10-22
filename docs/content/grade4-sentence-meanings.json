@@ -1,0 +1,22 @@
+{
+  "unit1": ["Bạn đến từ đâu?", "Mình đến từ Việt Nam.", "Cô ấy đến từ đâu?", "Cô ấy đến từ Nhật Bản."],
+  "unit2": ["Bây giờ là mấy giờ?", "Bây giờ là bảy giờ ba mươi.", "Bạn thức dậy lúc mấy giờ?", "Mình thức dậy lúc sáu giờ ba mươi."],
+  "unit3": ["Hôm nay là thứ mấy?", "Hôm nay là thứ Năm.", "Bạn làm gì vào các ngày Chủ nhật?", "Mình chơi bóng đá với bạn bè."],
+  "unit4": ["Sinh nhật của bạn vào khi nào?", "Sinh nhật của mình vào tháng Ba.", "Bạn muốn ăn gì?", "Mình muốn ăn một ít khoai tây chiên và nho.", "Bạn muốn uống gì?", "Mình muốn uống một ít nước chanh."],
+  "unit5": ["Bạn có biết bơi không?", "Có, mình biết.", "Cô ấy có biết đi xe đạp không?", "Không, cô ấy không biết."],
+  "unit6": ["Thư viện ở đâu?", "Thư viện ở cạnh lớp học.", "Có sân chơi không?", "Có."],
+  "unit7": ["Hôm nay bạn có những môn học nào?", "Mình có môn Toán và tiếng Anh.", "Khi nào bạn có môn Âm nhạc?", "Mình có môn Âm nhạc vào thứ Sáu."],
+  "unit8": ["Môn học yêu thích của bạn là gì?", "Môn học yêu thích của mình là Mĩ thuật.", "Tại sao bạn thích môn Khoa học?", "Bởi vì mình thích tìm hiểu về động vật."],
+  "unit9": ["Ngày hội thể thao của bạn vào khi nào?", "Ngày hội thể thao vào thứ Sáu.", "Bạn chơi môn thể thao nào?", "Mình chơi cầu lông."],
+  "unit10": ["Mùa hè năm ngoái bạn đã đi đâu?", "Mình đã đi đến bãi biển.", "Bạn đã làm gì ở đó?", "Mình đã bơi ở biển."],
+  "unit11": ["Nhà bạn có phòng bếp không?", "Có.", "Ghế sofa ở đâu?", "Ghế sofa ở trong phòng khách."],
+  "unit12": ["Mẹ của bạn làm nghề gì?", "Mẹ mình là bác sĩ.", "Giáo viên làm việc ở đâu?", "Giáo viên làm việc ở trường."],
+  "unit13": ["Cô ấy trông như thế nào?", "Cô ấy có mái tóc xoăn.", "Cậu ấy có đeo kính không?", "Có, cậu ấy có đeo kính."],
+  "unit14": ["Bạn làm gì vào buổi sáng?", "Mình đánh răng.", "Khi nào bạn làm bài tập về nhà?", "Mình làm bài tập sau giờ học."],
+  "unit15": ["Gia đình bạn làm gì vào cuối tuần?", "Chúng mình thăm ông bà.", "Bạn đi đâu vào các ngày Chủ nhật?", "Chúng mình đi đến công viên."],
+  "unit16": ["Hôm nay thời tiết thế nào?", "Hôm nay trời có nắng.", "Bạn làm gì khi trời mưa?", "Mình ở trong nhà."],
+  "unit17": ["Bệnh viện ở đâu?", "Bệnh viện ở cạnh ngân hàng.", "Làm thế nào để đến công viên?", "Đi thẳng rồi rẽ trái."],
+  "unit18": ["Chiếc áo phông này giá bao nhiêu?", "Chiếc áo có giá năm mươi nghìn đồng.", "Bạn muốn mua gì?", "Mình muốn mua một đôi giày."],
+  "unit19": ["Đó là con vật gì?", "Đó là một con hươu cao cổ.", "Một con chim có thể làm gì?", "Nó có thể bay."],
+  "unit20": ["Bạn đang làm gì?", "Mình đang làm một cái diều.", "Họ có đang hát không?", "Có, họ đang hát."]
+}

@@ -1,0 +1,3 @@
+.skills-return{display:inline-flex;align-items:center;min-height:44px;max-width:100%;padding:8px 14px;margin-bottom:16px;border:1px solid #bfdbfe;border-radius:24px;background:#fff;color:#1d4ed8;font:inherit;font-weight:700;line-height:1.4;text-decoration:none}
+.skills-return:hover{background:#eff6ff}
+.skills-return:focus-visible{outline:3px solid #2563eb;outline-offset:3px}

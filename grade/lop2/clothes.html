@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<script src="../../shared/learner-profile-core.js"></script>
+<script src="../../shared/learner-profile.js?v=preload-20261022"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Học Tiếng Anh Chủ Đề Trang Phục & Quần Áo (Clothes & Fashion)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./assets/css/topics/clothes.css">
+<link rel="stylesheet" href="./assets/css/learning-shared.css">
+<link rel="stylesheet" href="./assets/css/grade2-theme.css?v=reveal10">
+  <link rel="stylesheet" href="../../shared/grade-colors.css?v=all-grades-20261016-2">
+<link rel="stylesheet" href="./assets/css/pencil-illustrations.css?v=pencil-20261019">
+<script src="./assets/js/pencil-images-data.js?v=pencil-20261019"></script>
+<script src="./assets/js/pencil-illustrations.js?v=pencil-20261019-2"></script>
+</head>
+<body class="grade2-topic g2-pencil">
+
+<header>
+  <h1>👕 CLOTHES & FASHION</h1>
+  <p>Học Từ Vựng & Mẫu Câu Tiếng Anh Chủ Đề Trang Phục (Tranh bút chì màu)</p>
+</header>
+
+<nav>
+  <button class="nav-btn active" onclick="switchTab('vocab', event)">📚 Từ Vựng Quần Áo</button>
+  <button class="nav-btn" onclick="switchTab('sentences', event)">🗣️ Mẫu Câu Mặc & Phối Đồ</button>
+  <button class="nav-btn" onclick="switchTab('game-flip', event)">🃏 Game 1: Lật Flashcard</button>
+  <button class="nav-btn" onclick="switchTab('game-mcq', event)">🎯 Game 2: Trắc Nghiệm</button>
+  <button class="nav-btn" onclick="switchTab('game-spelling', event)">✍️ Game 3: Điền Chính Tả</button>
+  <button class="nav-btn" onclick="switchTab('game-count', event)">🧩 Game 4: Luyện Viết Câu</button>
+</nav>
+
+<div class="container">
+  
+  <!-- TAB 1: VOCABULARY -->
+  <div id="vocab" class="tab-content active">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #00695C; font-weight: 800; font-size: 1.4rem;">Từ Vựng Các Loại Trang Phục & Phụ Kiện</h2>
+    <div class="vocab-grid" id="vocab-grid-container"></div>
+  </div>
+
+  <!-- TAB 2: SENTENCES -->
+  <div id="sentences" class="tab-content">
+    <h2 style="margin-bottom: 16px; text-align: center; color: #00695C; font-weight: 800; font-size: 1.4rem;">Mẫu Câu Hỏi & Trả Lời Về Trang Phục</h2>
+    <div class="sentence-section">
+      <div class="sentence-card">
+        <h3>💡 Mẫu Câu 1: Hỏi về trang phục đang mặc (What are you wearing? / I am wearing...)</h3>
+        <p><b>Hỏi:</b> What are you wearing today? (Hôm nay bạn đang mặc gì?)</p>
+        <p><b>Trả lời:</b> I am wearing + [Tên trang phục].</p>
+        <p><i>Ví dụ: I am wearing a red T-shirt. (Tôi đang mặc một chiếc áo phông màu đỏ.)</i></p>
+        <div class="dialogue">
+          <p><span class="speaker">Mẫu câu:</span> What are you wearing? - I am wearing a blue shirt. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What are you wearing? I am wearing a blue shirt.')">🔊</button></p>
+        </div>
+      </div>
+
+      <div class="sentence-card">
+        <h3>Mẫu Câu 2: Bày tỏ sở thích trang phục (I like wearing...)</h3>
+        <p><b>Cấu trúc:</b> I like wearing + [Quần áo] in + [Mùa / Thời tiết].</p>
+        <div class="dialogue">
+          <p><span class="speaker">Trả lời 1:</span> I like wearing a sweater in winter. (Tôi thích mặc áo len vào mùa đông.) <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('I like wearing a sweater in winter.')">🔊</button></p>
+          <p><span class="speaker">Trả lời 2:</span> She put on her coat. (Cô ấy khoác chiếc áo cọp vào.) <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('She put on her coat.')">🔊</button></p>
+        </div>
+      </div>
+
+      <div class="sentence-card">
+        <h3>Mẫu Câu 3: Hỏi Yes/No về trang phục (Are you wearing...?)</h3>
+        <p><b>Cấu trúc:</b> Are you wearing + [Trang phục]?</p>
+        <p><b>Trả lời:</b> Yes, I am. / No, I am not.</p>
+        <div class="dialogue">
+          <p><span class="speaker">Mẫu câu:</span> Are you wearing a hat? - Yes, I am. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('Are you wearing a hat? Yes, I am.')">🔊</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 3: GAME 1 FLIP CARD -->
+  <div id="game-flip" class="tab-content">
+    <h2 style="text-align: center; color: #00695C; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard Trang Phục</h2>
+    <p style="text-align: center; color: #004D40; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để lật xem đáp án. Sau 3 giây thẻ sẽ tự chuyển tiếp!</p>
+    
+    <div class="single-card-container">
+      <div class="card-mode-selector">
+        <button class="mode-btn active" id="mode-viet" onclick="setCardFrontMode('viet', this)">Mặt trước: Hình ảnh & Tiếng Việt</button>
+        <button class="mode-btn" id="mode-ipa" onclick="setCardFrontMode('ipa', this)">Mặt trước: Chỉ IPA ↔ Mặt sau: Chỉ Từ Vựng</button>
+      </div>
+
+      <div class="card-controls">
+        <span class="card-counter" id="card-counter-text">Thẻ 1 / 20</span>
+      </div>
+
+      <div class="flip-card-single" id="single-card-el" onclick="flipSingleCard()">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" id="card-front-content"></div>
+          <div class="flip-card-back" id="card-back-content"></div>
+        </div>
+      </div>
+
+      <div>
+        <button class="nav-btn" onclick="prevSingleCard()">⏮️ Thẻ Trước</button>
+        <button class="nav-btn" onclick="nextSingleCard(false)">Thẻ Tiếp ⏭️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: GAME 2 MCQ -->
+  <div id="game-mcq" class="tab-content">
+    <h2 style="text-align: center; color: #00695C; font-weight: 800; font-size: 1.4rem;">Game 2: Trắc Nghiệm Chọn Từ Đúng</h2>
+    <p style="text-align: center; color: #004D40; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình ảnh biểu tượng trang phục và chọn tên tiếng Anh tương ứng!</p>
+    
+    <div class="quiz-container">
+      <div class="vocab-preview-box" id="mcq-number-preview"></div>
+      <div class="mcq-grid" id="mcq-options-container"></div>
+      <p id="mcq-feedback" role="status" aria-live="polite" style="min-height:1.5em;text-align:center;font-weight:800;"></p>
+    </div>
+  </div>
+
+  <!-- TAB 5: GAME 3 SPELLING -->
+  <div id="game-spelling" class="tab-content">
+    <h2 style="text-align: center; color: #00695C; font-weight: 800; font-size: 1.4rem;">Game 3: Thử Tài Điền Chính Tả</h2>
+    <p style="text-align: center; color: #004D40; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình ảnh và nghe phát âm để gõ chính xác tên món đồ! (Ấn ENTER để kiểm tra)</p>
+    
+    <div class="spelling-box">
+      <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 / 20 câu</div>
+
+      <div id="spelling-preview" class="vocab-preview-box"></div>
+      <button class="audio-btn" style="width: 44px; height: 44px; font-size: 1.3rem; margin-top:0;" onclick="playSpellingAudio()">🔊</button>
+      
+      <div class="spelling-input-group">
+        <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ tên trang phục tiếng Anh..." autocomplete="off">
+        <button class="btn-action" onclick="checkSpelling()">Kiểm tra</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 6: GAME 4 SENTENCE PRACTICE -->
+  <div id="game-count" class="tab-content">
+    <h2 style="text-align: center; color: #00695C; font-weight: 800; font-size: 1.4rem;">Game 4: Luyện Tập Viết Câu Trang Phục</h2>
+    <p style="text-align: center; color: #004D40; margin-bottom: 12px; font-size: 0.9rem;">Đọc nghĩa tiếng Việt và gõ câu tiếng Anh tương ứng! (Ấn ENTER để kiểm tra)</p>
+    
+    <div class="count-game-container">
+      <div class="score-board" id="count-score">🎯 Đã đúng: 0 / 20 câu</div>
+
+      <div class="card-controls">
+        <span class="card-counter" id="count-counter-text">Câu 1 / 20</span>
+      </div>
+
+      <div class="item-display-box" id="count-items-container"></div>
+
+      <div class="feedback-msg" id="count-feedback"></div>
+
+      <div class="spelling-input-group">
+        <input type="text" id="count-sentence-input" class="spelling-input" style="width:380px;" placeholder="Gõ câu tiếng Anh..." autocomplete="off">
+        <button class="btn-action" onclick="checkCountSentence()">Kiểm tra</button>
+        <button class="btn-reveal" onclick="revealCountSentence()">💡 Hiện đáp án</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="./assets/js/grade2-progress.js"></script>
+<script src="./assets/js/legacy-game4.js"></script>
+<script src="../../shared/young-learner-speech.js?v=slow-sync-1"></script>
+  <script src="./assets/js/topics/clothes.js?v=slow-sync-1"></script>
+<script src="./assets/js/legacy-game4-config.js"></script>
+
+<script src="./assets/js/learning-core.js?v=answer-audio-20261021"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => DanhLesson.mount({
+    topic: 'clothes',
+    words: clothesVocabulary.map((word, index) => ({
+      id: word.name.toLowerCase(), name: word.name, meaning: word.meaning,
+      ipa: word.ipa, color: word.hex, visual: word.svg
+    }))
+  }));
+</script>
+
+<contact-danh></contact-danh>
+<script src="../../shared/contact-footer.js"></script>
+
+<script src="./assets/js/grade2-navigation.js?v=primary2-20261022-34"></script>
+</body>
+</html>

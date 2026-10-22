@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<script src="../../shared/learner-profile-core.js"></script>
+<script src="../../shared/learner-profile.js?v=preload-20261022"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My family · Lớp 1 · Danh English Tutor</title>
+  <link rel="stylesheet" href="../lop2/assets/css/learning-shared.css">
+  <link rel="stylesheet" href="../lop4/assets/css/grade4.css">
+  <link rel="stylesheet" href="../../shared/primary-template.css?v=colors-20261016">
+  <link rel="stylesheet" href="../../shared/learning-effects.css">
+  <link rel="stylesheet" href="../../shared/grade-colors.css?v=all-grades-20261016-2">
+</head>
+<body data-grade="1" data-unit="unit5">
+  <header class="g4-hero">
+    <a class="g4-back" href="./lop1.html">← Tiếng Anh lớp 1</a>
+    <div class="primary-settings"><button id="sound" type="button">Âm thanh</button><button id="motion" type="button">Chuyển động</button></div><p class="g4-eyebrow" id="unit-number"></p>
+    <h1 id="unit-title"></h1>
+    <p class="g4-subtitle" id="unit-subtitle"></p>
+    <p class="g4-focus" id="unit-focus"></p>
+  </header>
+  <nav class="g4-tabs" aria-label="Các hoạt động học">
+    <button type="button" class="nav-btn active" data-tab="vocab">Từ vựng</button>
+    <button type="button" class="nav-btn" data-tab="sentences">Mẫu câu</button>
+    <button type="button" class="nav-btn" data-tab="game-flip">Lật thẻ</button>
+    <button type="button" class="nav-btn" data-tab="game-mcq">Nghe chọn tranh</button>
+    <button type="button" class="nav-btn" data-tab="game-spelling">Gõ từ</button>
+    <button type="button" class="nav-btn" data-tab="game-context">Dùng trong câu</button>
+  </nav>
+  <main class="g4-container">
+    <div id="legacy-rounds" hidden></div><div class="g4-intro"><p>Em có thể chọn bộ từ trong các trò chơi.</p><span class="g4-progress" id="unit-progress"></span></div>
+    <section id="vocab" class="tab-content active" aria-label="Từ vựng"><h2>Từ vựng của Unit</h2><p class="g4-note">Xem hình, đọc nghĩa và nghe cách phát âm. Dấu ✓ cho biết em đã trả lời đúng ngay lần đầu ở từng kiểu luyện.</p><div class="g4-word-grid" id="vocab-grid-container"></div><p id="speech-note" role="status"></p></section>
+    <section id="sentences" class="tab-content" aria-label="Mẫu câu"><h2>Mẫu câu</h2><p class="g4-note">Nghe, đọc theo và thử thay từ hoặc hoạt động em biết.</p><div class="g4-patterns" id="patterns"></div></section>
+    <section id="game-flip" class="tab-content" aria-label="Lật thẻ"></section>
+    <section id="game-mcq" class="tab-content" aria-label="Nghe chọn tranh"></section>
+    <section id="game-spelling" class="tab-content" aria-label="Gõ từ"></section>
+    <section id="game-context" class="tab-content" aria-label="Dùng trong câu"><h2>Dùng từ trong câu</h2><p class="g4-note">Nhìn tranh rồi điền từ vào câu. Nếu chưa gõ đúng, nút hiện đáp án sẽ xuất hiện sau 10 giây.</p><div class="g4-context-stage" id="context-stage"></div></section>
+    <p class="g4-source">Bài luyện và hình do Danh English Tutor biên soạn. <a href="./lop1.html">Ôn từ của các Unit lớp 1</a>.</p>
+  </main>
+  <contact-danh></contact-danh>
+  <script src="../../shared/contact-footer.js"></script>
+  <script src="../../shared/young-learner-speech.js"></script>
+  <script src="../../shared/learning-effects.js?v=answer-audio-20261021"></script>
+  <script src="./assets/js/course.js"></script>
+  <script src="../../shared/primary-template-progress.js"></script>
+  <script src="../../shared/primary-template-recall.js?v=answer-audio-20261021"></script>
+  <script src="../lop2/assets/js/learning-core.js?v=answer-audio-20261021"></script>
+  <script src="../../shared/primary-template-lesson.js?v=answer-audio-20261021"></script>
+</body>
+</html>

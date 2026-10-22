@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<script src="./shared/learner-profile-core.js"></script>
+<script src="./shared/learner-profile.js?v=preload-20261022"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lật thẻ từ vựng | Danh English Tutor</title>
+    <link rel="stylesheet" href="./assets/css/pages/flashcard.css">
+    <link rel="stylesheet" href="./assets/css/skills-navigation.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <a href="skills.html" class="skills-return">← Luyện theo kỹ năng</a>
+        <div class="header-area">
+            <div><p class="brand-name">Danh English Tutor</p><h1 class="brand-title">Lật thẻ từ vựng</h1></div>
+            <div class="header-actions">
+                <button class="btn-icon-trigger" aria-label="Xem tiến trình từ vựng" onclick="openStatsModal()">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                </button>
+                <button class="btn-icon-trigger" onclick="openAddWordModal()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    Thêm từ
+                </button>
+            </div>
+        </div>
+        
+        <p class="category-hint" id="category-hint">Chọn bộ từ · Vuốt ngang để xem thêm →</p>
+        <div class="segmented-wrapper" tabindex="0" role="region" aria-label="Bộ từ vựng" aria-describedby="category-hint">
+            <div class="segmented-control" role="group" aria-label="Chọn bộ từ">
+                <button class="segment-btn is-active" id="seg-elementary" onclick="switchCategory('elementary')">Sơ cấp</button>
+                <button class="segment-btn" id="seg-intermediate" onclick="switchCategory('intermediate')">Trung cấp</button>
+                <button class="segment-btn" id="seg-advanced" onclick="switchCategory('advanced')">Nâng cao</button>
+                <button class="segment-btn" id="seg-toeic" onclick="switchCategory('toeic')">TOEIC 700</button>
+                <button class="segment-btn" id="seg-ielts" onclick="switchCategory('ielts')">IELTS 7.0</button>
+                <button class="segment-btn" id="seg-custom" onclick="switchCategory('custom')">Sổ tay riêng</button>
+                <button class="segment-btn" id="seg-review" onclick="switchCategory('review')">Ôn tập (0)</button>
+            </div>
+        </div>
+        
+        <div class="score-board">
+            <div>Em nhớ: <span id="correct-count">0</span></div>
+            <div>Thẻ: <span id="card-index" aria-live="polite">0/0</span></div>
+            <div>Cần ôn: <span id="wrong-count">0</span></div>
+        </div>
+        
+        <div class="progress-container"><div class="progress-bar" id="progress-bar"></div></div>
+
+        <div class="flashcard-wrapper">
+            <div class="flashcard" id="flashcard" onclick="handleCardClick(event)">
+                <div class="card-face card-front" id="card-front-view">
+                    <div class="vocab-image-box">
+                        <img id="img-vocab" src="./assets/icons/vocabulary-fallback.svg" alt="Hình minh họa từ vựng">
+                    </div>
+                    <div class="front-info-area">
+                        <div class="word-container">
+                            <div class="word" id="lbl-word">-</div>
+                            <button class="btn-speaker" id="btn-speak-icon" aria-label="Nghe từ tiếng Anh">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                            </button>
+                        </div>
+                        <div class="ipa" id="lbl-ipa">-</div>
+                    </div>
+                </div>
+                <div class="card-face card-back" id="card-back-view" aria-hidden="true" inert>
+                    <div class="back-section">
+                        <div class="back-title">Definition</div>
+                        <div class="definition-en" id="lbl-def-en">-</div>
+                    </div>
+                    <div class="back-section">
+                        <div class="back-title">Nghĩa tiếng Việt</div>
+                        <div class="meaning-vi" id="lbl-mean-vi">-</div>
+                    </div>
+                    <div class="back-section">
+                        <div class="back-title">Example</div>
+                        <div class="example-box" id="lbl-example">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-flip" id="btn-flip" aria-pressed="false" onclick="handleCardClick(event)">Lật xem nghĩa ↻</button>
+        <p class="self-assessment-note">Thử nhớ nghĩa rồi lật thẻ để đối chiếu. Các nút dưới đây ghi nhận em tự đánh giá.</p>
+        <div class="action-buttons">
+            <button class="btn-status btn-wrong" id="btn-mark-wrong" onclick="markCard(false)">Cần ôn lại</button>
+            <button class="btn-status btn-correct" id="btn-mark-correct" onclick="markCard(true)">Em nhớ được</button>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="btn-nav" id="btn-prev" onclick="prevCard()">Quay lại</button>
+            <button class="btn-nav btn-shuffle" id="btn-shuffle" onclick="shuffleCards()">Trộn thẻ</button>
+            <button class="btn-nav" id="btn-next" onclick="nextCard()">Tiếp theo</button>
+        </div>
+        <div class="hint">Chạm vào giữa thẻ để lật — Chạm loa để nghe</div>
+    </div>
+
+    <div class="modal-overlay" id="modal-stats" aria-hidden="true" inert onclick="closeModalViaOverlay(event, 'modal-stats')">
+        <div class="modal-sheet" role="dialog" aria-modal="true" aria-labelledby="stats-title" tabindex="-1">
+            <div class="modal-handle"></div>
+            <div class="modal-header">
+                <button class="btn-nav" style="color:#8e8e93" onclick="closeModal('modal-stats')">Đóng</button>
+                <div class="modal-title" id="stats-title">Tiến trình tổng quan</div>
+                <button class="btn-nav" style="color:#b42336; font-weight:600" onclick="resetStatsLog()">Xóa lịch sử</button>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card"><div class="stat-val" id="stat-total-vocab">0</div><div class="stat-lbl">Tổng số từ</div></div>
+                <div class="stat-card"><div class="stat-val" id="stat-ratio-done" style="color: #237344;">0%</div><div class="stat-lbl">Tự đánh giá nhớ được</div></div>
+            </div>
+            <div class="chart-container">
+                <div class="bar-wrapper">
+                    <div class="bar-segment correct" id="bar-correct"></div>
+                    <div class="bar-segment review" id="bar-review"></div>
+                </div>
+                <div class="chart-legend">
+                    <div>Em nhớ: <span id="lbl-stat-c" style="color:#237344;font-weight:600">0</span></div>
+                    <div>Cần ôn lại: <span id="lbl-stat-r" style="color:#ff9500;font-weight:600">0</span></div>
+                    <div>Chưa đánh giá: <span id="lbl-stat-u" style="font-weight:600">0</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-add-word" aria-hidden="true" inert onclick="closeModalViaOverlay(event, 'modal-add-word')">
+        <div class="modal-sheet" role="dialog" aria-modal="true" aria-labelledby="add-word-title" tabindex="-1">
+            <div class="modal-handle"></div>
+            <div class="modal-header">
+                <button class="btn-nav" onclick="closeModal('modal-add-word')">Hủy</button>
+                <div class="modal-title" id="add-word-title">Thêm từ vựng riêng</div>
+                <button class="btn-nav" style="font-weight:600" onclick="saveNewWord()">Lưu</button>
+            </div>
+            <div class="input-group">
+                <div class="input-row"><label for="txt-word">Từ mới</label><input type="text" id="txt-word" placeholder="Ví dụ: Adapt"></div>
+                <div class="input-row"><label for="txt-ipa">Phiên âm</label><input type="text" id="txt-ipa" placeholder="/əˈdæpt/"></div>
+                <div class="input-row"><label for="txt-def-en">Định nghĩa</label><input type="text" id="txt-def-en" placeholder="To change something to suit a new situation."></div>
+                <div class="input-row"><label for="txt-mean-vi">Nghĩa Việt</label><input type="text" id="txt-mean-vi" placeholder="Thích nghi, thích ứng"></div>
+                <div class="input-row"><label for="txt-example">Ví dụ</label><input type="text" id="txt-example" placeholder="It takes time to adapt to a new country."></div>
+            </div>
+            <button class="btn-danger-zone" onclick="clearAllCustomWords()">Xóa toàn bộ kho từ riêng</button>
+        </div>
+    </div>
+
+    <script src="./assets/js/pages/flashcard.js"></script>
+</body>
+</html>

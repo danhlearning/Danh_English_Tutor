@@ -1,0 +1,15 @@
+{
+  "key": "unit12/2",
+  "unit": 12,
+  "unitId": "unit12",
+  "id": 2,
+  "term": "technology",
+  "meaning": "công nghệ",
+  "example": "Technology changes our lives.",
+  "slug": "technology",
+  "file": "grade/lop6/assets/images/pencil/unit12/technology-v1.webp",
+  "prompt": "Use case: precise-object-edit. Keep this exact warm colored-pencil technology illustration and square composition. Make one precise local change on the tablet screen at the left: replace the red rounded rectangle with a white play triangle with a simple turquoise network pictogram made of three small circular nodes connected by thin lines. The new pictogram must not resemble any company, social-media or video-platform logo. Keep the other tablet picture, laptop, small robot, desk, notebook, pencil, lighting, grain, colors and all object proportions unchanged. No text, letters, captions, numbers, brand marks or watermarks anywhere. One square finished image.",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-a81d56f0-c0df-4a82-935e-796d90c17531.png",
+  "previousSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-b29398a2-b0f2-4f37-98df-7b2675ef9d39.png",
+  "repair": "Remove platform-like red play mark on tablet; use generic network pictogram."
+}

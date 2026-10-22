@@ -1,0 +1,6 @@
+@import url('./learner-font.css');
+#shared-topics{margin:32px auto;width:100%;font-family:'Danh Nunito',Nunito,sans-serif;color:#344459;text-align:left}
+#shared-topics h2{font-family:inherit;font-size:26px;margin:0 0 18px}
+.shared-topic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px}
+.shared-topic-card{box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:8px;min-height:150px;padding:22px;background:#fffaf0;border:2px solid #e5d7bb;border-radius:22px;text-decoration:none;color:#344459;font-size:18px;line-height:1.4}
+.shared-topic-card>span:first-child{font-size:30px}.shared-topic-card strong{font-size:22px}.shared-topic-card:focus-visible{outline:3px solid #81512e;outline-offset:3px}

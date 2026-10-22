@@ -1,0 +1,45 @@
+@import url('./learner-font.css');
+body{font-family:'Danh Nunito',Nunito,sans-serif}
+.primary-settings{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.primary-settings button{font:inherit;font-size:14px;color:#174e70;background:#fff;border:1px solid #b5d9df;border-radius:10px;min-height:44px;padding:8px 10px;font-weight:800;cursor:pointer}
+.g4-visual svg{display:block;width:100%;height:100%;border-radius:16px}
+.g4-word-card h3,.g4-pattern p{overflow-wrap:anywhere}
+.g4-feedback{overflow-wrap:anywhere}
+#legacy-rounds{background:#fff8e8;border:1px solid #efdfb9;border-radius:14px;padding:14px;margin-bottom:18px;display:flex;flex-wrap:wrap;gap:10px}
+#legacy-rounds a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border-radius:10px;border:1px solid #dfc78c;text-decoration:none;font-weight:800}
+.g4-context-stage>button,.g4-review-stage>button{margin:5px}
+.vg-reduced .g4-unit-card{transition:none}.vg-reduced .g4-unit-card:hover{transform:none}
+.vg-reduced .learning-card-inner{transition:none!important;animation:none!important}
+@media(max-width:420px){.g4-context-prompt{font-size:21px}.g4-word-card h3{font-size:19px}.g4-word-card p{font-size:17px}.g4-pattern p{font-size:20px}}
+
+/* Màu thẻ theo nhịp xanh lá, xanh dương, cam và hồng của lớp 2. */
+body { background:#f0f7f5; }
+.g4-hero { background:linear-gradient(125deg,#38a169 0%,#35aaa5 48%,#4a90e2 100%); }
+.g4-unit-card,.g4-word-card,.g4-pattern,.g4-tabs button {
+  --tile-accent:#38a169; --tile-tint:#edf9f1; --tile-ink:#246c4c;
+}
+:is(.g4-unit-card,.g4-word-card,.g4-pattern,.g4-tabs button):nth-child(4n + 2) {
+  --tile-accent:#4a90e2; --tile-tint:#eef6ff; --tile-ink:#245d9e;
+}
+:is(.g4-unit-card,.g4-word-card,.g4-pattern,.g4-tabs button):nth-child(4n + 3) {
+  --tile-accent:#f2a754; --tile-tint:#fff6e9; --tile-ink:#8b551b;
+}
+:is(.g4-unit-card,.g4-word-card,.g4-pattern,.g4-tabs button):nth-child(4n + 4) {
+  --tile-accent:#ed7aaa; --tile-tint:#fff0f6; --tile-ink:#9b3763;
+}
+.g4-unit-card {
+  border:2px solid #e0eced; border-top:5px solid var(--tile-accent);
+  border-radius:20px; background:linear-gradient(160deg,var(--tile-tint),#fff 75%);
+  box-shadow:0 8px 18px #24324714;
+}
+.g4-unit-card .g4-chip { background:var(--tile-tint); color:var(--tile-ink); border:1px solid var(--tile-accent); border-radius:12px; }
+.g4-unit-card h2 { color:var(--tile-ink); }
+.g4-unit-card > span:last-child {
+  display:inline-flex; align-items:center; min-height:44px; margin-top:14px;
+  padding:8px 16px; border-radius:14px; background:var(--tile-ink); color:#fff; font-weight:800;
+}
+.g4-unit-card:hover { border-color:var(--tile-accent); box-shadow:0 14px 25px #24324724; }
+.g4-word-card,.g4-pattern { border:1px solid var(--tile-accent); border-top-width:4px; border-radius:20px; background:var(--tile-tint); }
+.g4-word-card h3,.g4-pattern strong { color:var(--tile-ink); }
+.g4-tabs button { background:var(--tile-tint); border:1px solid var(--tile-accent); border-radius:14px; color:var(--tile-ink); }
+.g4-tabs button.active { background:var(--tile-ink); color:#fff; }

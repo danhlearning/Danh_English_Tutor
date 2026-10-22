@@ -1,0 +1,20 @@
+/* Compact art leaves room for the learning task and controls. */
+.danh-vocabulary-art { display:block; width:100%; height:100%; border-radius:16px; }
+body[data-topic^="gsunit"] .g2-vocab-image { width:100px; height:100px; }
+body[data-topic^="gsunit"] .g2-practice-image { width:130px; height:130px; margin:10px auto; }
+body[data-topic^="gsunit"] .learning-question-visual,
+body[data-unit] .learning-question-visual { width:130px; height:130px; margin:6px auto 14px; }
+body[data-topic^="gsunit"] .learning-card .learning-visual,
+body[data-unit] .learning-card .learning-visual { width:120px; height:120px; }
+body[data-unit] .g4-visual { width:110px; max-width:110px; }
+body[data-unit] .g4-word-card .g4-visual { width:100%; max-width:110px; }
+.g4-container .g4-question-art { width:130px; max-width:130px; }
+.learning-choice-visual .danh-vocabulary-art { max-width:48px; max-height:48px; }
+.learning-options .danh-vocabulary-art { max-width:110px; max-height:110px; }
+@media (max-width:480px) {
+  body[data-topic^="gsunit"] .g2-vocab-image { width:80px; height:80px; }
+  body[data-unit] .g4-visual { width:90px; max-width:90px; }
+  body[data-unit] .g4-word-card .g4-visual { width:100%; max-width:90px; }
+  body[data-unit] .g4-question-art { width:120px; max-width:120px; }
+  body[data-topic^="gsunit"] .g2-practice-image { width:120px; height:120px; }
+}

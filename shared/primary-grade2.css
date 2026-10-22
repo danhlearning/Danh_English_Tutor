@@ -1,0 +1,20 @@
+@import url('./learner-font.css');
+body,button,input,select,textarea{font-family:'Danh Nunito',Nunito,sans-serif}
+.primary2-settings{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.primary2-settings button{min-height:44px;font-size:15px}
+.primary2-previous{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.primary2-previous a,.previous-round{display:inline-flex;align-items:center;min-height:44px;padding:8px;color:#72502f}
+.g2-review-entry{padding:24px;margin-bottom:28px;border:2px solid #d5bd99;border-radius:22px;background:#fff5e4}
+.g2-review-entry .btn-study{display:inline-flex;align-items:center;min-height:48px;margin-top:12px;padding:10px 20px;text-decoration:none}
+.main-container>section>h2{margin:20px 0}
+body[data-grade="1"]{--primary:#a75b44;--bg-color:#fbf0df}
+body[data-grade="3"]{--primary:#376d8a;--bg-color:#eaf1f6}
+body[data-grade="4"]{--primary:#80608d;--bg-color:#f0eaf4}
+body[data-grade="5"]{--primary:#94702c;--bg-color:#f5ecd9}
+body[data-grade]{background-color:var(--bg-color)}
+.g2-example strong{font-size:21px}.g2-example span{font-size:18px}
+.g2-practice-meaning{font-size:clamp(24px,4vw,28px)}
+.g2-audio,.g2-practice-button{min-height:44px}
+.g2-practice-input{font-size:20px}
+[hidden]{display:none!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

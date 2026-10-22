@@ -1,0 +1,11 @@
+{
+  "unit": 12,
+  "wordId": 8,
+  "term": "native speaker",
+  "meaning": "người bản ngữ",
+  "example": "A native speaker learns the language from early childhood.",
+  "file": "grade/lop7/assets/images/pencil/unit12/8-v1.webp",
+  "prompt": "Use case: scientific-educational. Asset: one square English vocabulary illustration for Vietnamese grade 7 learners (age 12–13). Meaning to depict: native speaker. Scene: An English-speaking parent naturally talking with their young child while looking at a blank picture book at home; warm family language learning, no speech bubbles or flags. Style: charming hand-drawn graphite and soft coloured pencil, visible delicate pencil hatching, natural believable anatomy, warm ivory lightly fibrous drawing paper, gentle pastel accents including muted lavender. Simple readable composition with one focal subject, generous empty paper margin on all four sides, whole objects and people comfortably inside frame. Educational children's book quality, age appropriate. Absolutely no text, words, letters, numbers, labels, captions, speech bubbles, logos or watermark anywhere; books and screens have pictures or blank surfaces only. No 3D render, no flat vector, no collage or multi-panel layout. Output square 1024x1024.",
+  "mode": "built-in image_gen",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-04bbdcd4-b9bd-46b2-8b5d-33e1c1d6c5ff.png"
+}

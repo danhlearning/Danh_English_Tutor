@@ -1,0 +1,15 @@
+{
+  "key": "unit11/8",
+  "unit": 11,
+  "unitId": "unit11",
+  "id": 8,
+  "term": "save",
+  "meaning": "tiết kiệm",
+  "example": "Turn off the lights to save energy.",
+  "slug": "save",
+  "file": "grade/lop6/assets/images/pencil/unit11/save-v1.webp",
+  "prompt": "Use case: precise-object-edit. Edit the provided colored-pencil illustration with ONE targeted change: the hanging ceiling lamp must be visibly SWITCHED OFF, because the vocabulary meaning is saving energy by turning off an unnecessary light in daylight. Make the bulb and the inside of the metal shade neutral white/gray and completely unlit, with no yellow glow and no emitted light rays. Keep bright natural daylight coming through the window. Keep the girl pressing the wall switch while leaving, her pose, clothes, face, hands, room, furniture, composition, colored-pencil texture, warm paper background and square canvas unchanged. No text, letters, labels, captions, words, numbers, logos or watermarks. Do not darken the room. Produce one finished square image.",
+  "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-2004487f-6257-4e5e-bb27-7187a6f05d2e.png",
+  "previousSource": "C:\\Users\\Admin\\.codex\\generated_images\\01a1542b-e78e-7982-83a7-eeda97ae81ba\\exec-57d7fd9f-48b9-43a9-9a71-bdf2e236d325.png",
+  "repair": "Ceiling lamp must be switched OFF in daylight."
+}
