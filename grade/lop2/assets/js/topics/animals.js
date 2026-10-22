@@ -142,7 +142,7 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
         voice.lang.replace('_', '-').toLowerCase() === 'en-us') || null;
     } catch { usVoice = null; }
   }
-  if ('speechSynthesis' in window) {
+  if (window.speechSynthesis) {
     refreshUSVoice();
     window.speechSynthesis.addEventListener?.('voiceschanged', refreshUSVoice);
   }

@@ -27,6 +27,8 @@ for(const grade of [1,3,5]){
     })}));
   fs.mkdirSync(path.join(dir,'assets/js'),{recursive:true});
   fs.writeFileSync(path.join(dir,'assets/js/course.js'),`/* Nội dung riêng, theo bố cục học lớp 4. */\nwindow.DanhPrimaryTemplateCourse=${JSON.stringify({grade,units},null,2)};\n`);
+  // Các lớp đã đồng bộ dùng bộ dựng lớp 2 ở cuối script; giữ trang trước đã lưu.
+  if(fs.existsSync(path.join(dir,'assets/js/grade2-course.js')))continue;
   let lesson=read('grade/lop4/unit1.html')
     .replace(/  <link rel="preconnect"[^\n]*\n/g,'').replace(/  <link href="https:\/\/fonts[^\n]*\n/g,'')
     .replace('./assets/css/grade4.css','../lop4/assets/css/grade4.css')
@@ -54,8 +56,9 @@ for(const grade of [1,3,5]){
   <script src="../../shared/primary-template-index.js?v=colors-20261016"></script>
 </body>`);
   fs.writeFileSync(path.join(dir,`lop${grade}.html`),catalog);
-  const legacy=`<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lượt trước · Lớp ${grade} · Danh English Tutor</title><script src="../../shared/learner-profile-core.js"></script><script src="../../shared/learner-profile.js"></script><link rel="stylesheet" href="../../shared/primary-game.css"><link rel="stylesheet" href="../../shared/learning-effects.css"><link rel="stylesheet" href="../../shared/grade-colors.css?v=all-grades-20261016-2"></head><body><header class="topbar"><a class="brand" href="lop${grade}.html">Danh English Tutor · Lớp ${grade}</a><div class="settings"><button id="sound">Âm thanh</button><button id="motion">Chuyển động</button></div></header><main id="app"></main><contact-danh></contact-danh><script src="../../shared/contact-footer.js"></script><script src="../../shared/young-learner-speech.js"></script><script src="../../shared/learning-effects.js"></script><script src="units.js"></script>${grade===3?'<script src="game.js"></script>':''}<script src="../../shared/primary-game.js"></script></body></html>`;
+  const legacy=`<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lượt trước · Lớp ${grade} · Danh English Tutor</title><script src="../../shared/learner-profile-core.js"></script><script src="../../shared/learner-profile.js?v=preload-20261022"></script><link rel="stylesheet" href="../../shared/primary-game.css"><link rel="stylesheet" href="../../shared/learning-effects.css"><link rel="stylesheet" href="../../shared/grade-colors.css?v=all-grades-20261016-2"></head><body><header class="topbar"><a class="brand" href="lop${grade}.html">Danh English Tutor · Lớp ${grade}</a><div class="settings"><button id="sound">Âm thanh</button><button id="motion">Chuyển động</button></div></header><main id="app"></main><contact-danh></contact-danh><script src="../../shared/contact-footer.js"></script><script src="../../shared/young-learner-speech.js"></script><script src="../../shared/learning-effects.js"></script><script src="units.js"></script>${grade===3?'<script src="game.js"></script>':''}<script src="../../shared/primary-game.js"></script></body></html>`;
   fs.writeFileSync(path.join(dir,'legacy.html'),legacy.replace('<script src="../../shared/primary-game.js">','<script src="assets/js/course.js"></script><script src="../../shared/primary-game.js">'));
   console.log(`Lớp ${grade}: ${units.length} Unit theo mẫu lớp 4.`);
 }
 require('./apply-primary-covers.cjs');
+require('./sync-primary-grade2.cjs');

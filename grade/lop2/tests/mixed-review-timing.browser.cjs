@@ -1,0 +1,46 @@
+const {chromium}=require('playwright');
+const assert=require('node:assert/strict');
+(async()=>{
+  const browser=await chromium.launch({channel:'msedge',headless:true});
+  try {
+    const c=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});
+    const p=await c.newPage();
+    await p.clock.install();
+    await p.goto('http://127.0.0.1:8001/grade/lop2/review.html');
+    await p.locator('#mode-summary').click();
+    await p.locator('#mode-choices input[value=spelling]').check();
+    for(const input of await p.locator('#mode-choices input:not([value=spelling])').all())await input.uncheck();
+    await p.locator('#start').click();
+    assert(await p.locator('#reveal').isHidden());
+    await p.clock.fastForward(15000);
+    await p.locator('#leave').click();
+    const saved=await p.evaluate(()=>new DanhGrade2Review.Review(grade2Units,DanhLearners.storage).answer.revealWaitMs);
+    assert(saved>=15000&&saved<20000,saved);
+    await p.clock.fastForward(60000);
+    await p.locator('#resume').click();
+    assert(await p.locator('#reveal').isHidden(),'time on setup does not count');
+    await p.reload();
+    await p.locator('#resume').click();
+    assert(await p.locator('#reveal').isHidden(),'reload retains partial wait, without revealing early');
+    await p.clock.fastForward(13000);
+    assert(await p.locator('#reveal').isHidden());
+    await p.locator('#hint').click();
+    await p.clock.fastForward(2200);
+    assert(await p.locator('#reveal').isVisible(),'hint and reload do not restart the active wait');
+    await p.locator('#reveal').click();
+    assert.equal(await p.evaluate(()=>new DanhGrade2Review.Review(grade2Units,DanhLearners.storage).answer.outcome),'revealed');
+    await p.locator('#next').click();
+    assert(await p.locator('#reveal').isHidden(),'next question has its own wait');
+    await p.clock.fastForward(10000);
+    await p.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,value:true});document.dispatchEvent(new Event('visibilitychange'));});
+    await p.clock.fastForward(60000);
+    await p.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,value:false});document.dispatchEvent(new Event('visibilitychange'));});
+    assert(await p.locator('#reveal').isHidden(),'time in a hidden tab does not count');
+    await p.clock.fastForward(19000);
+    assert(await p.locator('#reveal').isHidden());
+    await p.clock.fastForward(1200);
+    assert(await p.locator('#reveal').isVisible());
+    await c.close();
+    console.log('PASS 30 seconds active per question; setup/hidden time excluded; hint/reload/resume retain time; new question resets; reveal records no reward.');
+  } finally {await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

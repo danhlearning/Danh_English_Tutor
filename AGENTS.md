@@ -3,6 +3,7 @@
 ## Định hướng sản phẩm: game học tiếng Anh
 
 - Phát triển toàn bộ website theo tư duy **game học tiếng Anh**. Mỗi hoạt động có mục tiêu học, thử thách vừa sức, thao tác chơi rõ ràng, phản hồi và cơ hội ôn lại. Cơ chế chơi phải giúp người học hiểu, nhớ hoặc sử dụng tiếng Anh.
+- Luôn ưu tiên cảm giác đang chơi: nhiệm vụ ngắn, nhiều cách tương tác, nhân vật/phản hồi thân thiện, cảm giác tiến bộ và quyền chọn chơi tiếp hoặc ôn lại. Nội dung mới phải tạo thêm cơ hội học thực chất; không chỉ tăng số câu bằng việc đổi thứ tự đáp án hoặc lặp cùng một tình huống.
 - Áp dụng cho trang chủ, Luyện theo kỹ năng, các lớp/Unit, từ vựng, ngữ pháp, phát âm và phản xạ. Phòng ngữ pháp hiện tại là mẫu tham khảo về phong cách và phản hồi; điều chỉnh cơ chế theo kỹ năng và độ tuổi.
 - Trước khi thêm game, bài học hoặc thay đổi đáng kể UX/UI, đọc [Nguyên tắc thiết kế game học tiếng Anh](docs/NGUYEN_TAC_GAME_HOC_TIENG_ANH.md). Ghi rõ mục tiêu học, cách chơi, cách chấm, hỗ trợ khi sai và điều kiện hoàn thành trước khi triển khai.
 - Vòng học chuẩn: chọn mục tiêu → chơi lượt ngắn → nhận phản hồi → tự sửa → tổng kết → ôn hoặc chơi tiếp. Ưu tiên một nhiệm vụ rõ ràng trên điện thoại, giữ quyền chọn bài và tiếp tục lượt dở.
@@ -11,6 +12,11 @@
 - Nghiệm thu cả trải nghiệm chơi và chất lượng học: nội dung/đáp án, phản hồi đúng/sai, thao tác lặp, tiếp tục lượt, âm thanh, giảm chuyển động và bố cục điện thoại. Chỉ báo đạt những bước đã kiểm tra.
 
 ## Nội dung và giao diện
+
+- **Game và UI phải ngắn gọn:** tránh giải thích rườm rà, câu phụ lặp ý tiêu đề và đoạn mô tả thao tác hiển nhiên. Dùng nhãn ngắn, rõ; chỉ đặt hướng dẫn cần thiết ngay tại thao tác, và hiện gợi ý khi người học cần. Áp dụng cho toàn repo.
+- Lớp 1–5 dùng cấu trúc, bốn game và ôn tổng hợp theo phiên bản lớp 2 hiện tại, giữ nội dung, bìa, tông màu, URL và tiến độ riêng từng lớp. Các topic phụ dùng chung một bộ bài ở tất cả các lớp; dẫn về cùng bài thay vì sao chép thành các bản riêng.
+
+- **Nguyên tắc cốt lõi về ảnh:** sau khi tạo ảnh, phải tự mở và xem trực tiếp từng ảnh để kiểm tra tính hợp lý trước khi đưa vào website. Đối chiếu với nghĩa từ, nội dung bài và tình huống cần minh họa; kiểm tra hành động, đồ vật, nhân vật, số lượng, quan hệ không gian và logic thực tế trong ảnh. Nếu ảnh sai nghĩa, mơ hồ, vô lý hoặc có lỗi hình, phải sửa hoặc tạo lại rồi kiểm tra lại; chỉ đưa vào web khi ảnh đã đạt. Không coi việc tạo ảnh thành công là đã kiểm tra chất lượng.
 
 ### Mẫu thống nhất lớp 6–12
 

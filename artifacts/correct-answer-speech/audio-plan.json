@@ -46,6 +46,9 @@
       "grade12",
       "grade3",
       "grade5",
+      "grade3-review",
+      "grade4-review",
+      "grade5-review",
       "grade4",
       "ipa"
     ]
@@ -57,6 +60,8 @@
       "grade7",
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -79,6 +84,7 @@
     "text": "lemonade",
     "groups": [
       "grade7",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -139,7 +145,8 @@
     "text": "helped",
     "groups": [
       "grade7",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -227,6 +234,8 @@
     "groups": [
       "grade7",
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -340,6 +349,7 @@
     "groups": [
       "grade7",
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -545,7 +555,8 @@
     "text": "plant trees",
     "groups": [
       "grade7",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -787,6 +798,9 @@
       "grade7",
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
+      "grade4-review",
       "grade4",
       "grammar-room",
       "ipa"
@@ -1175,6 +1189,7 @@
     "text": "cinema",
     "groups": [
       "grade7",
+      "grade4-review",
       "grade4",
       "ipa"
     ]
@@ -1241,6 +1256,7 @@
     "groups": [
       "grade7",
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -1354,7 +1370,8 @@
     "text": "rubbish",
     "groups": [
       "grade7",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -1374,6 +1391,7 @@
       "grade11",
       "grade12",
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -1455,7 +1473,8 @@
     "text": "helmet",
     "groups": [
       "grade7",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -1495,6 +1514,8 @@
       "grade6",
       "grade7",
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -1510,6 +1531,7 @@
     "text": "computer room",
     "groups": [
       "grade7",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -1520,6 +1542,8 @@
       "grade6",
       "grade7",
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -1601,7 +1625,8 @@
     "groups": [
       "grade7",
       "grade8",
-      "grade9"
+      "grade9",
+      "grade2-review"
     ]
   },
   {
@@ -1626,6 +1651,8 @@
       "grade7",
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -1684,7 +1711,8 @@
     "text": "picnic",
     "groups": [
       "grade7",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -1955,7 +1983,8 @@
     "groups": [
       "grade6",
       "grade7",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -2014,7 +2043,8 @@
     "text": "Where do you live?",
     "groups": [
       "grade7",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -2061,6 +2091,7 @@
     "text": "bike",
     "groups": [
       "grade7",
+      "grade2-review",
       "ipa"
     ]
   },
@@ -2152,6 +2183,8 @@
       "grade6",
       "grade7",
       "grade5",
+      "grade4-review",
+      "grade5-review",
       "grade4"
     ]
   },
@@ -2202,7 +2235,8 @@
     "groups": [
       "grade7",
       "grade8",
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -2271,6 +2305,7 @@
       "grade6",
       "grade7",
       "grade5",
+      "grade5-review",
       "grammar-room"
     ]
   },
@@ -2357,7 +2392,9 @@
     "text": "jam",
     "groups": [
       "grade7",
-      "grade4"
+      "grade4-review",
+      "grade4",
+      "grade2-review"
     ]
   },
   {
@@ -2632,6 +2669,7 @@
       "grade6",
       "grade7",
       "grade5",
+      "grade5-review",
       "grammar-room"
     ]
   },
@@ -2660,7 +2698,8 @@
     "id": "00333c92",
     "text": "A cat.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -2675,6 +2714,13 @@
     "text": "Nam runs more slowly than Lan.",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "0046aa62",
+    "text": "Eyelashes",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -2754,7 +2800,8 @@
     "text": "your",
     "groups": [
       "grade6",
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -2786,6 +2833,8 @@
       "grade10",
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -2811,10 +2860,24 @@
     ]
   },
   {
+    "id": "018f622d",
+    "text": "Open your mouth, please.",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "0190dbea",
     "text": "boast",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "01a53a61",
+    "text": "Fourteen",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -2835,6 +2898,7 @@
     "id": "01da60a0",
     "text": "Britain",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -2888,6 +2952,13 @@
     ]
   },
   {
+    "id": "02214e1b",
+    "text": "I like yams.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "02274402",
     "text": "teaches",
     "groups": [
@@ -2934,6 +3005,7 @@
     "id": "02c65ebd",
     "text": "Science",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -2949,6 +3021,13 @@
     "text": "Which channel shows the comedy?",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "03184150",
+    "text": "This is my face",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -2976,7 +3055,8 @@
     "id": "0391d612",
     "text": "usually",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -2985,6 +3065,8 @@
     "groups": [
       "grade6",
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -2999,6 +3081,7 @@
     "id": "03d5b964",
     "text": "butterfly",
     "groups": [
+      "grade4-review",
       "grade4",
       "ipa"
     ]
@@ -3091,6 +3174,8 @@
       "grade12",
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -3144,10 +3229,18 @@
     ]
   },
   {
+    "id": "0541798f",
+    "text": "Ride",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "0543814f",
     "text": "What will you do in the summer holiday?",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -3204,7 +3297,8 @@
     "id": "05b191f0",
     "text": "This is my mother.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -3213,6 +3307,8 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -3241,6 +3337,7 @@
     "id": "0621914f",
     "text": "pitch a tent",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -3283,6 +3380,8 @@
       "grade12",
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -3301,10 +3400,24 @@
     ]
   },
   {
+    "id": "06b71d65",
+    "text": "I see a blue teapot.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "06b9d59d",
     "text": "You must not leave rubbish in the forest.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "06d5a845",
+    "text": "Question",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -3336,6 +3449,20 @@
     ]
   },
   {
+    "id": "07842673",
+    "text": "My shoes are new.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "0789415e",
+    "text": "What day is it today?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
     "id": "07ca7d9e",
     "text": "The guide who welcomed us speaks three languages.",
     "groups": [
@@ -3348,6 +3475,13 @@
     "groups": [
       "grammar-room",
       "ipa"
+    ]
+  },
+  {
+    "id": "07cc2b2a",
+    "text": "Fifteen",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -3378,7 +3512,8 @@
     "groups": [
       "grade9",
       "grade10",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -3448,6 +3583,7 @@
     "id": "085715ff",
     "text": "cook dinner",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -3455,7 +3591,10 @@
     "id": "0862ff2e",
     "text": "I play badminton.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review",
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -3483,13 +3622,15 @@
     "id": "08b4ad08",
     "text": "hen",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
     "id": "08b9f53d",
     "text": "stormy",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -3555,6 +3696,13 @@
     ]
   },
   {
+    "id": "093fffc1",
+    "text": "I can see a square.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "094ef704",
     "text": "every",
     "groups": [
@@ -3570,6 +3718,13 @@
     ]
   },
   {
+    "id": "09a7284f",
+    "text": "These are my cheeks.",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "09b53960",
     "text": "The shop will close early tomorrow.",
     "groups": [
@@ -3580,6 +3735,7 @@
     "id": "09bffb14",
     "text": "listen to music",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -3587,7 +3743,8 @@
     "id": "09c8f523",
     "text": "Sit down, please.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -3609,7 +3766,9 @@
     "text": "volleyball",
     "groups": [
       "grade6",
-      "grade5"
+      "grade5",
+      "grade5-review",
+      "grade2-review"
     ]
   },
   {
@@ -3664,6 +3823,13 @@
     ]
   },
   {
+    "id": "0a5779c0",
+    "text": "What does your family do at weekends?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
     "id": "0a57c736",
     "text": "wish",
     "groups": [
@@ -3675,6 +3841,20 @@
     "text": "had finished",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "0a876116",
+    "text": "Stomach",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
+    "id": "0aa99f65",
+    "text": "I see eleven stars.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -3690,7 +3870,8 @@
     "groups": [
       "grade6",
       "grade8",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -3875,6 +4056,7 @@
     "id": "0c5c515f",
     "text": "make a kite",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -3972,7 +4154,8 @@
     "id": "0d5c253b",
     "text": "school bag",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -4016,6 +4199,7 @@
     "groups": [
       "grade6",
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -4090,6 +4274,13 @@
     ]
   },
   {
+    "id": "0e71f9ff",
+    "text": "They are blue.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "0e8a0415",
     "text": "This app is used to organise notes.",
     "groups": [
@@ -4108,14 +4299,16 @@
     "text": "classmate",
     "groups": [
       "grade6",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
     "id": "0f0d3658",
     "text": "An apple.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -4149,6 +4342,13 @@
     ]
   },
   {
+    "id": "0f5eaa66",
+    "text": "My dad can drive.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "0f632b79",
     "text": "limestone",
     "groups": [
@@ -4159,7 +4359,9 @@
     "id": "0f81b0dc",
     "text": "I live in a village.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review",
+      "grade2-review"
     ]
   },
   {
@@ -4173,7 +4375,15 @@
     "id": "0f8a5260",
     "text": "September",
     "groups": [
+      "grade4-review",
       "grade4"
+    ]
+  },
+  {
+    "id": "0f8a9e5d",
+    "text": "My legs are strong.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -4187,6 +4397,7 @@
     "id": "0f93019f",
     "text": "dolphin",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -4195,6 +4406,14 @@
     "text": "deeper",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "0fa5b351",
+    "text": "My favourite subject is Art.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -4209,6 +4428,13 @@
     "text": "Our family decided to move to a quieter street.",
     "groups": [
       "grade9"
+    ]
+  },
+  {
+    "id": "0fcca6d5",
+    "text": "Forehead",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -4238,6 +4464,7 @@
     "text": "walking",
     "groups": [
       "grade3",
+      "grade3-review",
       "grammar-room"
     ]
   },
@@ -4246,6 +4473,8 @@
     "text": "pilot",
     "groups": [
       "grade5",
+      "grade4-review",
+      "grade5-review",
       "grade4"
     ]
   },
@@ -4289,7 +4518,16 @@
     "text": "apple",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
+    ]
+  },
+  {
+    "id": "10bddb6c",
+    "text": "It is Thursday.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -4342,6 +4580,13 @@
     ]
   },
   {
+    "id": "10fea2d8",
+    "text": "I like this quiz.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "110ae4ea",
     "text": "rescue worker",
     "groups": [
@@ -4385,6 +4630,13 @@
     ]
   },
   {
+    "id": "115c1033",
+    "text": "I like this cake.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "115d7a14",
     "text": "song",
     "groups": [
@@ -4393,8 +4645,9 @@
   },
   {
     "id": "116b77dc",
-    "text": "face",
+    "text": "Face",
     "groups": [
+      "grade2-bodyparts",
       "ipa"
     ]
   },
@@ -4402,7 +4655,8 @@
     "id": "116ec334",
     "text": "This is my dad.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -4462,6 +4716,14 @@
     ]
   },
   {
+    "id": "11d340f2",
+    "text": "I do it after school.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "120535c8",
     "text": "might buy",
     "groups": [
@@ -4487,6 +4749,13 @@
     "text": "communal house",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "124901b0",
+    "text": "Wash your hands before eating",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -4516,27 +4785,47 @@
     "text": "It is red.",
     "groups": [
       "grade1",
-      "grade3"
+      "grade3",
+      "grade1-review",
+      "grade3-review"
+    ]
+  },
+  {
+    "id": "1294791b",
+    "text": "Why do you like Science?",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
     "id": "12b34c87",
     "text": "music room",
     "groups": [
+      "grade4-review",
       "grade4"
+    ]
+  },
+  {
+    "id": "12b72b6b",
+    "text": "This is my head.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
     "id": "12cd7162",
     "text": "The main character is brave.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
     "id": "12d242af",
     "text": "watch a film",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -4545,6 +4834,13 @@
     "text": "visits",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "12de4536",
+    "text": "What subjects do you have today?",
+    "groups": [
+      "grade4"
     ]
   },
   {
@@ -4616,14 +4912,16 @@
     "id": "13b37b0a",
     "text": "Popcorn",
     "groups": [
-      "grade2"
+      "grade2",
+      "grade2-review"
     ]
   },
   {
     "id": "13cd7de1",
     "text": "vegetables",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -4631,6 +4929,13 @@
     "text": "accent",
     "groups": [
       "grade9"
+    ]
+  },
+  {
+    "id": "13f97b3a",
+    "text": "My bike is blue.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -4686,7 +4991,8 @@
     "id": "14251eae",
     "text": "I practise English every day.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -4716,7 +5022,8 @@
     "groups": [
       "grade6",
       "grade9",
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -4731,6 +5038,8 @@
     "text": "running",
     "groups": [
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -4759,7 +5068,8 @@
     "id": "14e1ffee",
     "text": "Do not run on the stairs.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -4780,6 +5090,7 @@
     "id": "151d1fc9",
     "text": "Australia",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -4788,6 +5099,21 @@
     "text": "is cooking",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "156218c0",
+    "text": "What time do you get up?",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
+    "id": "1571bd38",
+    "text": "Teapot",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -4843,8 +5169,16 @@
     "id": "15d2601e",
     "text": "sing",
     "groups": [
+      "grade4-review",
       "grade4",
       "ipa"
+    ]
+  },
+  {
+    "id": "15eaeb8c",
+    "text": "She's my grandmother.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -4893,6 +5227,7 @@
     "id": "168c26dd",
     "text": "January",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -4947,6 +5282,8 @@
     "groups": [
       "grade6",
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -4954,6 +5291,7 @@
     "id": "16ff797e",
     "text": "December",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -5025,6 +5363,7 @@
     "id": "17c6537c",
     "text": "August",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -5183,6 +5522,13 @@
     ]
   },
   {
+    "id": "1973dc6e",
+    "text": "I see a zebra.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "19a0e71d",
     "text": "We have some balloons before Tet.",
     "groups": [
@@ -5246,7 +5592,9 @@
     "text": "doll",
     "groups": [
       "grade1",
-      "grade3"
+      "grade3",
+      "grade1-review",
+      "grade3-review"
     ]
   },
   {
@@ -5285,6 +5633,13 @@
     ]
   },
   {
+    "id": "1a57f05b",
+    "text": "This is my thumb.",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "1a5a0009",
     "text": "We should give warm wishes.",
     "groups": [
@@ -5299,10 +5654,24 @@
     ]
   },
   {
+    "id": "1a602b9f",
+    "text": "Heel",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "1a6a5e20",
     "text": "They were at home last night.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "1a846875",
+    "text": "These grapes are green.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -5330,6 +5699,7 @@
     "id": "1af8295a",
     "text": "windy",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -5414,7 +5784,8 @@
     "id": "1bfe6c3c",
     "text": "stand up",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -5436,6 +5807,13 @@
     "text": "We will greet the guests when they arrive tomorrow.",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "1c1c99c2",
+    "text": "These are my eyebrows.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -5519,7 +5897,8 @@
     "id": "1d129169",
     "text": "A blue ball.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -5548,6 +5927,8 @@
     "text": "have breakfast",
     "groups": [
       "grade5",
+      "grade4-review",
+      "grade5-review",
       "grade4"
     ]
   },
@@ -5594,10 +5975,25 @@
     ]
   },
   {
+    "id": "1daf89a0",
+    "text": "What does your mother do?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
     "id": "1de306d0",
     "text": "She was not listening at that moment.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "1de337a6",
+    "text": "I brush my teeth.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -5646,7 +6042,8 @@
     "id": "1e801cec",
     "text": "present",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -5682,7 +6079,8 @@
     "id": "1ed13cea",
     "text": "We will explore new places together.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -5690,6 +6088,13 @@
     "text": "If it rains tomorrow, we will stay at home.",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "1f0a7120",
+    "text": "No, it isn't.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -5707,10 +6112,19 @@
     ]
   },
   {
+    "id": "1f2882fc",
+    "text": "It is next to the classroom.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "1f32dfd9",
     "text": "Do not drop rubbish in the park.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -5759,6 +6173,7 @@
       "grade11",
       "grade12",
       "grade5",
+      "grade5-review",
       "grammar-room",
       "ipa"
     ]
@@ -5783,6 +6198,13 @@
     "groups": [
       "grade6",
       "grammar-room"
+    ]
+  },
+  {
+    "id": "1faee677",
+    "text": "Drive",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -5825,7 +6247,15 @@
     "id": "20573e80",
     "text": "practise English",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
+    ]
+  },
+  {
+    "id": "20640d28",
+    "text": "I see a rainbow.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -5971,6 +6401,14 @@
     ]
   },
   {
+    "id": "21ad8d33",
+    "text": "Because I like learning about animals.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "21c252a4",
     "text": "channel",
     "groups": [
@@ -5989,7 +6427,8 @@
     "id": "21e42ee7",
     "text": "The book is on the table.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -6008,6 +6447,7 @@
       "grade11",
       "grade12",
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -6036,7 +6476,8 @@
     "id": "2251d06e",
     "text": "What time do you have breakfast?",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -6050,7 +6491,8 @@
     "id": "2290f86f",
     "text": "My shoes are blue.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -6125,6 +6567,13 @@
     ]
   },
   {
+    "id": "2386abed",
+    "text": "I see yo-yos.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "2388f191",
     "text": "This pen belongs to him.",
     "groups": [
@@ -6143,7 +6592,10 @@
     "text": "grapes",
     "groups": [
       "grade1",
-      "grade4"
+      "grade1-review",
+      "grade4-review",
+      "grade4",
+      "grade2-review"
     ]
   },
   {
@@ -6158,7 +6610,15 @@
     "text": "mother",
     "groups": [
       "grade3",
+      "grade3-review",
       "ipa"
+    ]
+  },
+  {
+    "id": "23e4c802",
+    "text": "I have two feet.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -6194,6 +6654,7 @@
     "text": "careful",
     "groups": [
       "grade5",
+      "grade5-review",
       "grammar-room",
       "ipa"
     ]
@@ -6203,6 +6664,13 @@
     "text": "luggage",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "2461cdf4",
+    "text": "I see shorts.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -6273,6 +6741,7 @@
     "id": "255e0fd1",
     "text": "snowy",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -6291,6 +6760,20 @@
     ]
   },
   {
+    "id": "25a3906d",
+    "text": "These are my eyelashes.",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
+    "id": "25a7329d",
+    "text": "Tongue",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "25bbf946",
     "text": "will lend",
     "groups": [
@@ -6301,7 +6784,8 @@
     "id": "25c57bb5",
     "text": "I want to be a pilot.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -6309,6 +6793,13 @@
     "text": "Did Duy ride his bike to the park last Friday?",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "25f8e67c",
+    "text": "The zebra is big.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -6336,7 +6827,8 @@
     "id": "265b5189",
     "text": "I write them in my notebook.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -6371,7 +6863,16 @@
     "id": "26b20ab9",
     "text": "A green tree.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
+    ]
+  },
+  {
+    "id": "26b56f93",
+    "text": "No, she cannot.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -6414,6 +6915,13 @@
     "text": "The test is tomorrow. You should revise tonight.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "27051db5",
+    "text": "What did you do there?",
+    "groups": [
+      "grade4"
     ]
   },
   {
@@ -6460,6 +6968,13 @@
     ]
   },
   {
+    "id": "2777461c",
+    "text": "I have some juice.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "2798deb9",
     "text": "lightest",
     "groups": [
@@ -6478,7 +6993,8 @@
     "id": "27aed125",
     "text": "A book.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -6486,7 +7002,15 @@
     "text": "close",
     "groups": [
       "grade3",
+      "grade3-review",
       "ipa"
+    ]
+  },
+  {
+    "id": "28032f5d",
+    "text": "This is a van.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -6574,6 +7098,13 @@
     ]
   },
   {
+    "id": "28c07dfc",
+    "text": "My tent is big.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "28d1701e",
     "text": "poverty",
     "groups": [
@@ -6592,6 +7123,20 @@
     "text": "This training course is more useful than the old one.",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "2938afa0",
+    "text": "It's blue.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "29462ce5",
+    "text": "I like to sail.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -6652,6 +7197,13 @@
     ]
   },
   {
+    "id": "2a0e63fb",
+    "text": "These are my cheeks",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "2a11e24e",
     "text": "There are seven visitors near the waterfall.",
     "groups": [
@@ -6677,6 +7229,13 @@
     "text": "accountant",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "2a714cb7",
+    "text": "This is a blanket.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -6729,6 +7288,13 @@
     ]
   },
   {
+    "id": "2abecc61",
+    "text": "The sand is hot.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "2abf7e8a",
     "text": "This ticket is mine.",
     "groups": [
@@ -6740,6 +7306,7 @@
     "text": "run",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -6775,7 +7342,8 @@
       "grade10",
       "grade11",
       "grade12",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -6804,6 +7372,13 @@
     "text": "invest",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "2b6ce2a9",
+    "text": "Rainbow",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -6851,6 +7426,13 @@
     ]
   },
   {
+    "id": "2bf019c9",
+    "text": "The number is fourteen.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "2bf54f8c",
     "text": "Who is she?",
     "groups": [
@@ -6862,6 +7444,13 @@
     "text": "itinerary",
     "groups": [
       "grade9"
+    ]
+  },
+  {
+    "id": "2c07ffa9",
+    "text": "The van is blue.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -6891,6 +7480,7 @@
     "text": "address",
     "groups": [
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -6951,10 +7541,18 @@
     ]
   },
   {
+    "id": "2cb84587",
+    "text": "I see shoes.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "2cc63854",
     "text": "The pen is in the box.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -6986,10 +7584,18 @@
     ]
   },
   {
+    "id": "2d505a99",
+    "text": "Foot",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "2d6193c4",
     "text": "This is my mum.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -7042,6 +7648,7 @@
     "id": "2dbc1605",
     "text": "cloudy",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -7067,6 +7674,13 @@
     ]
   },
   {
+    "id": "2e24772d",
+    "text": "This is my forehead.",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "2e266da1",
     "text": "Cheer for your team.",
     "groups": [
@@ -7086,7 +7700,15 @@
     "groups": [
       "grade6",
       "grade3",
+      "grade3-review",
       "grammar-room"
+    ]
+  },
+  {
+    "id": "2e491669",
+    "text": "My kite is red.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -7151,7 +7773,8 @@
     "groups": [
       "grade6",
       "grade12",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -7166,6 +7789,7 @@
     "text": "firefighter",
     "groups": [
       "grade9",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -7195,6 +7819,7 @@
     "text": "four",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -7202,6 +7827,7 @@
     "id": "2f6f198a",
     "text": "Art",
     "groups": [
+      "grade4-review",
       "grade4",
       "ipa"
     ]
@@ -7243,7 +7869,8 @@
     "id": "2f9d7d55",
     "text": "What is the monkey doing?",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -7278,7 +7905,8 @@
     "id": "2fcfa76e",
     "text": "toothache",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -7293,6 +7921,14 @@
     "text": "discussion",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "30394878",
+    "text": "Where is the hospital?",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -7322,6 +7958,13 @@
     "text": "Is this the trail?",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "307de09d",
+    "text": "These shirts are blue.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -7388,6 +8031,13 @@
     ]
   },
   {
+    "id": "311b846e",
+    "text": "This is a zebra.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "312fd389",
     "text": "picture",
     "groups": [
@@ -7440,6 +8090,7 @@
     "id": "3180a1ba",
     "text": "freckles",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -7510,7 +8161,8 @@
     "id": "323a5a1b",
     "text": "This is my ear.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -7526,6 +8178,13 @@
     "groups": [
       "grade6",
       "grade10"
+    ]
+  },
+  {
+    "id": "3253b626",
+    "text": "This is my elbow.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -7546,7 +8205,9 @@
     "id": "32694bc3",
     "text": "head",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review",
+      "grade2-bodyparts"
     ]
   },
   {
@@ -7561,6 +8222,28 @@
     "text": "The students have tested the new app twice this week.",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "3296ea48",
+    "text": "I am from Viet Nam.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
+    "id": "32a74c0f",
+    "text": "My question is easy.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "32a9a285",
+    "text": "This is a fox.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -7588,6 +8271,7 @@
     "id": "3310c623",
     "text": "tell stories",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -7609,7 +8293,8 @@
     "id": "33377976",
     "text": "The pig is pink.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -7651,7 +8336,8 @@
     "id": "33776992",
     "text": "My hometown is small and quiet.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -7663,8 +8349,9 @@
   },
   {
     "id": "33cfde0e",
-    "text": "kitten",
+    "text": "Kitten",
     "groups": [
+      "grade2-review",
       "ipa"
     ]
   },
@@ -7688,6 +8375,8 @@
     "groups": [
       "grade6",
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -7710,6 +8399,13 @@
     "text": "takes",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "3431254a",
+    "text": "This is my ankle.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -7767,7 +8463,9 @@
     "text": "ball",
     "groups": [
       "grade1",
-      "grade3"
+      "grade3",
+      "grade1-review",
+      "grade3-review"
     ]
   },
   {
@@ -7797,6 +8495,7 @@
     "groups": [
       "grade6",
       "grade5",
+      "grade5-review",
       "grammar-room"
     ]
   },
@@ -7883,6 +8582,9 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
+      "grade2-review",
       "ipa"
     ]
   },
@@ -7906,6 +8608,20 @@
     "text": "She swims well.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "3654d3ff",
+    "text": "The ox is big.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "365b4c60",
+    "text": "Toes",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -7968,7 +8684,10 @@
     "id": "36ec9908",
     "text": "Go straight and turn left.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade4",
+      "grade4-review",
+      "grade5-review"
     ]
   },
   {
@@ -7997,6 +8716,14 @@
     "text": "This chair is more comfortable than that one.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "371cdfd8",
+    "text": "How do I get to the park?",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -8084,6 +8811,13 @@
     ]
   },
   {
+    "id": "380c7e51",
+    "text": "What do you want to buy?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
     "id": "38253dc9",
     "text": "The children looked happy.",
     "groups": [
@@ -8112,9 +8846,17 @@
     ]
   },
   {
-    "id": "386f27b5",
-    "text": "arm",
+    "id": "385aba2a",
+    "text": "Knee",
     "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
+    "id": "386f27b5",
+    "text": "Arm",
+    "groups": [
+      "grade2-bodyparts",
       "ipa"
     ]
   },
@@ -8123,6 +8865,13 @@
     "text": "combine",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "388a4ecd",
+    "text": "This is my chin",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -8221,20 +8970,23 @@
     "id": "396301f2",
     "text": "I like rice.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
     "id": "3977fb82",
     "text": "Close the door.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
     "id": "397aa226",
     "text": "T-shirt",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -8305,6 +9057,13 @@
     ]
   },
   {
+    "id": "3a608e9a",
+    "text": "I have ten toes",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "3a729714",
     "text": "We were visiting the museum at ten yesterday morning.",
     "groups": [
@@ -8324,7 +9083,8 @@
     "id": "3ab3749c",
     "text": "I see the sun.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -8352,7 +9112,8 @@
     "id": "3ae9aff1",
     "text": "The ball is under the bed.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -8373,7 +9134,8 @@
     "id": "3b3b76a6",
     "text": "listen",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -8402,6 +9164,8 @@
     "text": "gym",
     "groups": [
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -8409,7 +9173,8 @@
     "id": "3b613ac0",
     "text": "When is your birthday?",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -8501,7 +9266,8 @@
     "id": "3c694558",
     "text": "thank you",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -8522,7 +9288,8 @@
     "id": "3cb38fd9",
     "text": "I usually get up early.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -8571,7 +9338,8 @@
     "id": "3cfe34c8",
     "text": "I would like a bowl of noodles.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -8590,8 +9358,9 @@
   },
   {
     "id": "3d1fcc9b",
-    "text": "road",
+    "text": "Road",
     "groups": [
+      "grade2-review",
       "ipa"
     ]
   },
@@ -8723,7 +9492,8 @@
     "text": "competition",
     "groups": [
       "grade6",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -8734,10 +9504,18 @@
     ]
   },
   {
+    "id": "3ed228f4",
+    "text": "My sister can sing.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "3f14f4e4",
     "text": "dentist",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -8756,8 +9534,9 @@
   },
   {
     "id": "3f6ae937",
-    "text": "leg",
+    "text": "Leg",
     "groups": [
+      "grade2-bodyparts",
       "ipa"
     ]
   },
@@ -8811,6 +9590,20 @@
     ]
   },
   {
+    "id": "3fe8ba71",
+    "text": "This is a tent.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "3fe90e62",
+    "text": "I can see a rainbow.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "3febe311",
     "text": "advice",
     "groups": [
@@ -8830,6 +9623,13 @@
     "text": "rocks",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "3ffaa4dd",
+    "text": "This is my tongue.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -8865,6 +9665,14 @@
     "text": "Visitors must wear a life jacket.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "4046ac49",
+    "text": "Where is the library?",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -8934,7 +9742,8 @@
     "id": "40b62c7e",
     "text": "This is my hand.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -8964,6 +9773,8 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -9008,6 +9819,8 @@
     "text": "take photos",
     "groups": [
       "grade5",
+      "grade4-review",
+      "grade5-review",
       "grade4"
     ]
   },
@@ -9081,7 +9894,8 @@
     "id": "4272c9ff",
     "text": "I see a cow.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -9097,6 +9911,7 @@
     "groups": [
       "grade6",
       "grade5",
+      "grade5-review",
       "grammar-room"
     ]
   },
@@ -9112,6 +9927,14 @@
     "text": "They promised to help.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "42d88e16",
+    "text": "It is in the living room.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -9182,14 +10005,16 @@
     "id": "436f768a",
     "text": "climb",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
     "id": "43a9059f",
     "text": "I visited my grandparents.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -9211,6 +10036,7 @@
     "text": "shirt",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -9219,6 +10045,13 @@
     "text": "would drive",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "43edbc4b",
+    "text": "Eyes",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -9317,7 +10150,8 @@
     "id": "45176da3",
     "text": "We went to the park.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -9423,6 +10257,7 @@
     "text": "orange",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -9458,7 +10293,8 @@
     "id": "46142932",
     "text": "Goodbye, Nam.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -9494,6 +10330,7 @@
     "id": "464d97f6",
     "text": "watch TV",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -9518,6 +10355,7 @@
       "grade6",
       "grade8",
       "grade10",
+      "grade2-review",
       "ipa"
     ]
   },
@@ -9543,6 +10381,13 @@
     ]
   },
   {
+    "id": "46a0bb38",
+    "text": "This is my grandmother.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "46baed00",
     "text": "earthquake",
     "groups": [
@@ -9553,6 +10398,7 @@
     "id": "46c35465",
     "text": "play the piano",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -9575,7 +10421,9 @@
     "text": "goodbye",
     "groups": [
       "grade1",
-      "grade3"
+      "grade3",
+      "grade1-review",
+      "grade3-review"
     ]
   },
   {
@@ -9589,7 +10437,8 @@
     "id": "46f2543a",
     "text": "What are you doing?",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade4"
     ]
   },
   {
@@ -9600,11 +10449,20 @@
     ]
   },
   {
+    "id": "47184880",
+    "text": "I like to ride.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "471a1a63",
     "text": "village",
     "groups": [
       "grade8",
-      "grade5"
+      "grade5",
+      "grade5-review",
+      "grade2-review"
     ]
   },
   {
@@ -9646,6 +10504,7 @@
     "id": "4794261f",
     "text": "November",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -9654,6 +10513,13 @@
     "text": "The ticket is mine.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "47c94086",
+    "text": "I listen with my ears",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -9667,7 +10533,8 @@
     "id": "47e6744b",
     "text": "improve",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -9709,7 +10576,8 @@
     "id": "4851c93d",
     "text": "I always brush my teeth in the morning.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -9758,6 +10626,14 @@
     ]
   },
   {
+    "id": "48d8dc1b",
+    "text": "Can you swim?",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "48daba94",
     "text": "If we plant trees, the air will be cleaner.",
     "groups": [
@@ -9779,6 +10655,13 @@
     ]
   },
   {
+    "id": "49197a62",
+    "text": "I can see a river.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "4941bef1",
     "text": "to perform",
     "groups": [
@@ -9789,6 +10672,7 @@
     "id": "494372ec",
     "text": "sunny",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -9800,10 +10684,18 @@
     ]
   },
   {
+    "id": "495a0d91",
+    "text": "Yo-yos",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "4962a505",
     "text": "My father is a doctor.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -9827,6 +10719,7 @@
       "grade6",
       "grade8",
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -9841,7 +10734,8 @@
     "id": "49dc8fa4",
     "text": "Yes, please.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -9862,14 +10756,16 @@
     "id": "49ff60aa",
     "text": "draw pictures",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
     "id": "4a005c19",
     "text": "May I have some rice?",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -9894,6 +10790,13 @@
     ]
   },
   {
+    "id": "4a595f72",
+    "text": "What sport do you play?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
     "id": "4a623b4c",
     "text": "I am looking for my glasses.",
     "groups": [
@@ -9913,6 +10816,9 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
+      "grade2-review",
       "ipa"
     ]
   },
@@ -9941,7 +10847,16 @@
     "id": "4aac2619",
     "text": "straight hair",
     "groups": [
+      "grade4-review",
       "grade4"
+    ]
+  },
+  {
+    "id": "4ac17356",
+    "text": "She has curly hair.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -9963,7 +10878,8 @@
     "id": "4b3f4246",
     "text": "hometown",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -10016,10 +10932,24 @@
     ]
   },
   {
+    "id": "4bb3900d",
+    "text": "My stomach hurts a little",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "4bc7bc46",
     "text": "news",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "4bccd906",
+    "text": "The yogurt is cold.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -10037,6 +10967,13 @@
     ]
   },
   {
+    "id": "4bf95912",
+    "text": "Neck",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "4c097285",
     "text": "The new market is more modern than the old market.",
     "groups": [
@@ -10049,6 +10986,7 @@
     "groups": [
       "grade6",
       "grade3",
+      "grade3-review",
       "grammar-room"
     ]
   },
@@ -10070,7 +11008,15 @@
     "id": "4c4e523e",
     "text": "PE",
     "groups": [
+      "grade4-review",
       "grade4"
+    ]
+  },
+  {
+    "id": "4c74050f",
+    "text": "She has a long neck",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -10092,7 +11038,8 @@
     "text": "clever",
     "groups": [
       "grade6",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -10122,6 +11069,13 @@
     "groups": [
       "grade6",
       "grammar-room"
+    ]
+  },
+  {
+    "id": "4cc3db8e",
+    "text": "The fox is small.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -10160,10 +11114,24 @@
     ]
   },
   {
+    "id": "4cf1366b",
+    "text": "Fourteen pens.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "4cf5e017",
     "text": "ambiguous",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "4cf8f2b5",
+    "text": "I have eleven balls.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -10283,7 +11251,8 @@
     "text": "notebook",
     "groups": [
       "grade6",
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -10297,14 +11266,16 @@
     "id": "4e07dba5",
     "text": "A ball.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
     "id": "4e12908f",
     "text": "noodles",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -10347,7 +11318,8 @@
     "id": "4e9f3590",
     "text": "yes",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -10365,10 +11337,18 @@
     ]
   },
   {
+    "id": "4eabe719",
+    "text": "My stomach hurts a little.",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "4ebef5cd",
     "text": "This is my friend.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -10390,6 +11370,13 @@
     "text": "memorable",
     "groups": [
       "grade9"
+    ]
+  },
+  {
+    "id": "4ef8af50",
+    "text": "Shirts",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -10481,13 +11468,15 @@
     "id": "4f9bfd8a",
     "text": "You should see a dentist.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
     "id": "4f9cd7b3",
     "text": "hospital",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -10503,14 +11492,24 @@
     "text": "hello",
     "groups": [
       "grade1",
-      "grade3"
+      "grade3",
+      "grade1-review",
+      "grade3-review"
+    ]
+  },
+  {
+    "id": "4fb4616b",
+    "text": "What do you want to drink?",
+    "groups": [
+      "grade4"
     ]
   },
   {
     "id": "4fbef889",
     "text": "I like drawing.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -10524,7 +11523,8 @@
     "id": "4fc3f677",
     "text": "save water",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -10567,6 +11567,7 @@
     "text": "clean",
     "groups": [
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -10588,6 +11589,8 @@
       "grade12",
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -10616,7 +11619,8 @@
     "id": "50f6276d",
     "text": "I can see an elephant.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -10659,6 +11663,7 @@
     "text": "bus stop",
     "groups": [
       "grade9",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -10696,6 +11701,28 @@
     "text": "sweep",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "518796f4",
+    "text": "Quiz",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "519d92f1",
+    "text": "Brush your teeth every day.",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
+    "id": "51a76f4b",
+    "text": "It can fly.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -10765,6 +11792,7 @@
     "id": "52267680",
     "text": "play games",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -10772,7 +11800,16 @@
     "id": "52396f96",
     "text": "do exercise",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
+    ]
+  },
+  {
+    "id": "52435cf7",
+    "text": "A teacher works at school.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -10801,7 +11838,8 @@
     "id": "5285387c",
     "text": "My mother is cooking.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -10844,6 +11882,13 @@
     "text": "applicant",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "533b289a",
+    "text": "I can ride.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -10900,6 +11945,7 @@
     "text": "big",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -11065,6 +12111,7 @@
     "groups": [
       "grade6",
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -11073,6 +12120,13 @@
     "text": "We want to try a new board game.",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "5599c54b",
+    "text": "I see a kitten.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -11094,6 +12148,13 @@
     "text": "gracefully",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "55c5b8e2",
+    "text": "It's a square.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -11139,6 +12200,13 @@
     ]
   },
   {
+    "id": "563bd362",
+    "text": "This is a volleyball.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "568e2022",
     "text": "to weave",
     "groups": [
@@ -11150,6 +12218,7 @@
     "text": "black",
     "groups": [
       "grade3",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -11164,6 +12233,7 @@
     "id": "56b6fa9e",
     "text": "rainy",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -11200,6 +12270,7 @@
     "text": "balcony",
     "groups": [
       "grade6",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -11218,10 +12289,18 @@
     ]
   },
   {
+    "id": "57342012",
+    "text": "Ox",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "57483ad3",
     "text": "play chess",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -11242,7 +12321,8 @@
     "id": "577b0f92",
     "text": "She is swimming.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -11250,6 +12330,13 @@
     "text": "How much is this T-shirt? It is fifty thousand dong.",
     "groups": [
       "grade4"
+    ]
+  },
+  {
+    "id": "5791e5e6",
+    "text": "Slide",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -11366,6 +12453,13 @@
     ]
   },
   {
+    "id": "599e4074",
+    "text": "I smell with my nose",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "59b0d680",
     "text": "have to",
     "groups": [
@@ -11380,6 +12474,13 @@
     ]
   },
   {
+    "id": "59e8aef7",
+    "text": "This is a square.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "59e94c40",
     "text": "damage",
     "groups": [
@@ -11391,6 +12492,15 @@
     "text": "reliable",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "5a3bc29a",
+    "text": "Yes, they are.",
+    "groups": [
+      "grade4",
+      "grade4-review",
+      "grade2-review"
     ]
   },
   {
@@ -11468,6 +12578,13 @@
     "text": "are not playing",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "5ab7b61d",
+    "text": "Are they singing?",
+    "groups": [
+      "grade4"
     ]
   },
   {
@@ -11565,6 +12682,7 @@
     "id": "5b8cc813",
     "text": "February",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -11580,6 +12698,13 @@
     "text": "work",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "5bb421a2",
+    "text": "Back",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -11642,7 +12767,8 @@
     "id": "5c616f40",
     "text": "I go to school on foot.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -11668,6 +12794,13 @@
     ]
   },
   {
+    "id": "5c79f78e",
+    "text": "This is a village.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "5c8ff3a6",
     "text": "factor",
     "groups": [
@@ -11687,6 +12820,8 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -11729,7 +12864,8 @@
     "id": "5cd1d75b",
     "text": "The giraffe is tall.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -11750,7 +12886,8 @@
     "id": "5cfb6080",
     "text": "busy",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -11765,6 +12902,13 @@
     "text": "The safety rules must be followed by every worker.",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "5d2f195a",
+    "text": "This is my face.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -11818,7 +12962,8 @@
     "id": "5d689621",
     "text": "sometimes",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -11862,7 +13007,15 @@
     "text": "party",
     "groups": [
       "grade5",
+      "grade5-review",
       "ipa"
+    ]
+  },
+  {
+    "id": "5e418fd5",
+    "text": "I see grapes.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -11894,6 +13047,13 @@
     ]
   },
   {
+    "id": "5e667a17",
+    "text": "Where is the sofa?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
     "id": "5e72b9e6",
     "text": "Huy will put a robot in the kitchen in the future.",
     "groups": [
@@ -11904,6 +13064,7 @@
     "id": "5e7fbfb3",
     "text": "visit grandparents",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -11953,14 +13114,23 @@
     "id": "5eb613be",
     "text": "We will go there by bus.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
     "id": "5ec1c68a",
     "text": "It is yellow.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
+    ]
+  },
+  {
+    "id": "5ec570fc",
+    "text": "When's your birthday?",
+    "groups": [
+      "grade4"
     ]
   },
   {
@@ -12032,6 +13202,7 @@
     "groups": [
       "grade6",
       "grade5",
+      "grade5-review",
       "grammar-room"
     ]
   },
@@ -12039,6 +13210,7 @@
     "id": "5fb7b228",
     "text": "watch",
     "groups": [
+      "grade4-review",
       "grade4",
       "ipa"
     ]
@@ -12048,6 +13220,7 @@
     "text": "bus",
     "groups": [
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -12070,6 +13243,13 @@
     "text": "father's",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "5ff30bc3",
+    "text": "I can see a fox.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -12126,7 +13306,8 @@
     "id": "60442894",
     "text": "sore throat",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -12140,7 +13321,8 @@
     "id": "608bc6cb",
     "text": "I want to improve my English.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -12199,7 +13381,8 @@
     "id": "60e75e8f",
     "text": "dancing",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -12213,7 +13396,8 @@
     "id": "60f0eecb",
     "text": "Hello. I am Mai.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -12231,6 +13415,20 @@
     ]
   },
   {
+    "id": "613f0707",
+    "text": "I can slide here.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "61439a55",
+    "text": "My pizza is big.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "61526270",
     "text": "divide",
     "groups": [
@@ -12241,7 +13439,8 @@
     "id": "6159ad49",
     "text": "I will learn to swim.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -12297,7 +13496,8 @@
     "id": "61bc2eb6",
     "text": "How far is the station from here?",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -12330,10 +13530,18 @@
     ]
   },
   {
+    "id": "6223f34a",
+    "text": "I have a box.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "62366ffa",
     "text": "no",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -12356,6 +13564,8 @@
     "text": "parrot",
     "groups": [
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -12395,6 +13605,13 @@
     ]
   },
   {
+    "id": "62b81624",
+    "text": "Eleven balls.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "62c1f7de",
     "text": "We were preparing meals when the lights went out.",
     "groups": [
@@ -12416,6 +13633,13 @@
     ]
   },
   {
+    "id": "62fedfd1",
+    "text": "My juice is cold.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "63275a43",
     "text": "We should listen to each other.",
     "groups": [
@@ -12424,8 +13648,9 @@
   },
   {
     "id": "63374a36",
-    "text": "thirteen",
+    "text": "Thirteen",
     "groups": [
+      "grade2-review",
       "ipa"
     ]
   },
@@ -12440,7 +13665,8 @@
     "id": "635c26c1",
     "text": "Do not play with the knife.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -12468,6 +13694,7 @@
     "id": "63780eb9",
     "text": "park",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -12497,6 +13724,8 @@
     "text": "bag",
     "groups": [
       "grade1",
+      "grade1-review",
+      "grade4-review",
       "grade4",
       "ipa"
     ]
@@ -12540,7 +13769,22 @@
     "id": "63f1336c",
     "text": "spring",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
+    ]
+  },
+  {
+    "id": "640dc222",
+    "text": "I see fifteen fish.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "6438c9ef",
+    "text": "Yams",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -12555,6 +13799,13 @@
     "text": "narrower",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "6470123b",
+    "text": "What can a bird do?",
+    "groups": [
+      "grade4"
     ]
   },
   {
@@ -12575,7 +13826,8 @@
     "id": "649b3249",
     "text": "Do you have a ruler?",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -12642,6 +13894,13 @@
     ]
   },
   {
+    "id": "655c7f59",
+    "text": "This is a quiz.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "65671c0a",
     "text": "We joined the workshop because we wanted practical skills.",
     "groups": [
@@ -12661,7 +13920,16 @@
     "groups": [
       "grade6",
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
+    ]
+  },
+  {
+    "id": "65a41bf4",
+    "text": "These are my lips.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -12682,7 +13950,8 @@
     "id": "65dae503",
     "text": "What do you want to be in the future?",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -12703,7 +13972,8 @@
     "id": "661c3738",
     "text": "opposite",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -12754,6 +14024,8 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -12797,6 +14069,7 @@
     "text": "bottle",
     "groups": [
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -12812,6 +14085,13 @@
     "text": "Stay behind the line.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "66ed8bba",
+    "text": "Wash your hands before eating.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -12839,7 +14119,8 @@
     "id": "6736afe4",
     "text": "always",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -12853,6 +14134,7 @@
     "id": "673f7e19",
     "text": "ride a bike",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -12908,6 +14190,13 @@
     ]
   },
   {
+    "id": "67b8ad9e",
+    "text": "The number is eleven.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "67e3f191",
     "text": "were helping",
     "groups": [
@@ -12919,6 +14208,13 @@
     "text": "did not finish",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "67f95b91",
+    "text": "This is a teapot.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -12963,6 +14259,7 @@
     "text": "pig",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -12981,6 +14278,13 @@
     ]
   },
   {
+    "id": "68c00700",
+    "text": "My village is small.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "68c89d32",
     "text": "I often read in the evening.",
     "groups": [
@@ -12995,10 +14299,19 @@
     ]
   },
   {
+    "id": "68d6bb04",
+    "text": "My brother can run.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "68e41ef0",
     "text": "dress",
     "groups": [
       "grade1",
+      "grade1-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -13064,6 +14377,7 @@
     "text": "touch",
     "groups": [
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -13114,6 +14428,7 @@
     "text": "monkey",
     "groups": [
       "grade3",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -13216,6 +14531,13 @@
     ]
   },
   {
+    "id": "6b42983b",
+    "text": "What do you do when it rains?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
     "id": "6b4e927f",
     "text": "The app which I downloaded yesterday checks spelling.",
     "groups": [
@@ -13226,7 +14548,8 @@
     "id": "6b532a96",
     "text": "ending",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -13304,7 +14627,8 @@
     "id": "6ca4df49",
     "text": "This is my dog.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -13369,6 +14693,7 @@
     "groups": [
       "grade10",
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -13387,6 +14712,13 @@
     ]
   },
   {
+    "id": "6dd3f033",
+    "text": "I have two arms.",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "6dfb7b43",
     "text": "bush",
     "groups": [
@@ -13401,10 +14733,32 @@
     ]
   },
   {
+    "id": "6e0b7046",
+    "text": "Can she ride a bike?",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
+    "id": "6e1f4dae",
+    "text": "I smell with my nose.",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "6e28d2e0",
     "text": "The river is deeper than the canal.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "6e515557",
+    "text": "This is my table.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -13450,6 +14804,14 @@
     ]
   },
   {
+    "id": "6ebb0086",
+    "text": "Is there a kitchen in your home?",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "6ebd387d",
     "text": "They live near us.",
     "groups": [
@@ -13468,6 +14830,7 @@
     "text": "I am happy.",
     "groups": [
       "grade1",
+      "grade1-review",
       "grammar-room"
     ]
   },
@@ -13477,7 +14840,15 @@
     "groups": [
       "grade6",
       "grade5",
+      "grade5-review",
       "grammar-room"
+    ]
+  },
+  {
+    "id": "6ef95b63",
+    "text": "My shorts are green.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -13491,7 +14862,8 @@
     "id": "6efd9421",
     "text": "Do you play football?",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -13499,6 +14871,13 @@
     "text": "will see",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "6f28aaca",
+    "text": "No, he can't.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -13533,6 +14912,8 @@
       "grade12",
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -13566,6 +14947,14 @@
     ]
   },
   {
+    "id": "6f7376bb",
+    "text": "She is a doctor.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "6f75aa91",
     "text": "That street is narrower than this street.",
     "groups": [
@@ -13583,7 +14972,8 @@
     "id": "6fde0848",
     "text": "Will you come to my party?",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -13618,7 +15008,8 @@
     "id": "700ca642",
     "text": "I do exercise every day.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -13657,6 +15048,13 @@
     ]
   },
   {
+    "id": "70ae044b",
+    "text": "This is my heel",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "70b08676",
     "text": "neighbourhood",
     "groups": [
@@ -13675,6 +15073,8 @@
     "text": "box",
     "groups": [
       "grade3",
+      "grade3-review",
+      "grade2-review",
       "ipa"
     ]
   },
@@ -13704,6 +15104,13 @@
     "text": "Lan told me that she could come.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "710ce865",
+    "text": "This is my brother.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -13753,6 +15160,7 @@
     "text": "knife",
     "groups": [
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -13782,6 +15190,7 @@
     "text": "boy",
     "groups": [
       "grade3",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -13790,6 +15199,13 @@
     "text": "debate",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "71d20b93",
+    "text": "I have a volleyball.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -13803,6 +15219,7 @@
     "id": "71da140d",
     "text": "swim",
     "groups": [
+      "grade4-review",
       "grade4",
       "grammar-room",
       "ipa"
@@ -13932,7 +15349,8 @@
     "id": "737e061e",
     "text": "invitation",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -14025,6 +15443,9 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
+      "grade2-bodyparts",
       "ipa"
     ]
   },
@@ -14074,7 +15495,9 @@
     "id": "7499948f",
     "text": "zebra",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review",
+      "grade2-review"
     ]
   },
   {
@@ -14106,6 +15529,13 @@
     ]
   },
   {
+    "id": "74d4a8d9",
+    "text": "This is a box.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "74e439b5",
     "text": "motivation",
     "groups": [
@@ -14113,10 +15543,18 @@
     ]
   },
   {
+    "id": "74f86207",
+    "text": "I like jam.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "751d7a4c",
     "text": "My name is Nam.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -14139,7 +15577,15 @@
     "text": "stand",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
+    ]
+  },
+  {
+    "id": "756d3e31",
+    "text": "These shoes are red.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -14147,6 +15593,14 @@
     "text": "watching",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "75b0f4ca",
+    "text": "Is there a playground?",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -14199,6 +15653,22 @@
     ]
   },
   {
+    "id": "75f8f4ca",
+    "text": "I have Maths and English.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
+    "id": "760430db",
+    "text": "Does he wear glasses?",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "762fc553",
     "text": "I have never visited a fitness centre before.",
     "groups": [
@@ -14237,7 +15707,8 @@
     "id": "7665043e",
     "text": "street",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -14262,6 +15733,13 @@
     ]
   },
   {
+    "id": "76fc123b",
+    "text": "Jelly",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "77097860",
     "text": "When does the science programme air? — On Saturday evening.",
     "groups": [
@@ -14272,7 +15750,8 @@
     "id": "7726985d",
     "text": "sit down",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -14308,6 +15787,8 @@
     "text": "garden",
     "groups": [
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4",
       "ipa"
     ]
@@ -14316,7 +15797,8 @@
     "id": "77688e8b",
     "text": "grandfather",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -14362,6 +15844,14 @@
     ]
   },
   {
+    "id": "780c4df7",
+    "text": "I am making a kite.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "7812e25a",
     "text": "candidate",
     "groups": [
@@ -14372,7 +15862,8 @@
     "id": "7812e2c1",
     "text": "You should take a rest.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -14417,6 +15908,8 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -14446,6 +15939,13 @@
     "text": "right",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "78e3de4d",
+    "text": "Eyebrows",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -14540,6 +16040,13 @@
     ]
   },
   {
+    "id": "7a60a058",
+    "text": "These are my eyebrows",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "7a7f45cd",
     "text": "Does your brother like chess?",
     "groups": [
@@ -14550,7 +16057,8 @@
     "id": "7a95f0a0",
     "text": "practise",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -14624,7 +16132,9 @@
     "text": "Stand up, please.",
     "groups": [
       "grade1",
-      "grade3"
+      "grade3",
+      "grade1-review",
+      "grade3-review"
     ]
   },
   {
@@ -14663,6 +16173,13 @@
     ]
   },
   {
+    "id": "7b5189b1",
+    "text": "My eyes are brown",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "7b6ea845",
     "text": "We use this app to organise our weekly tasks.",
     "groups": [
@@ -14681,6 +16198,13 @@
     "text": "He said the programme would start at eight.",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "7ba412f3",
+    "text": "She has a long neck.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -14810,6 +16334,7 @@
     "id": "7d0a67b4",
     "text": "Maths",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -14818,6 +16343,13 @@
     "text": "She asked me where I lived.",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "7d3697c4",
+    "text": "I have some jam.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -14840,6 +16372,13 @@
     "text": "to arrive",
     "groups": [
       "grade11"
+    ]
+  },
+  {
+    "id": "7d93140d",
+    "text": "What do you do in the morning?",
+    "groups": [
+      "grade4"
     ]
   },
   {
@@ -14867,6 +16406,7 @@
     "id": "7dcc8e20",
     "text": "sing songs",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -14995,7 +16535,8 @@
     "id": "7f697715",
     "text": "learn",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -15038,7 +16579,8 @@
     "id": "7ff9092e",
     "text": "Hello, Mai.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -15061,6 +16603,13 @@
     "text": "Today is colder than yesterday.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "8029b0fd",
+    "text": "One cake.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -15118,6 +16667,8 @@
     "groups": [
       "grade8",
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -15132,7 +16683,15 @@
     "id": "809e3f91",
     "text": "fever",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
+    ]
+  },
+  {
+    "id": "80cca7ca",
+    "text": "I see a cake.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -15165,6 +16724,13 @@
     ]
   },
   {
+    "id": "80f289db",
+    "text": "What do you want to eat?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
     "id": "80f867d9",
     "text": "its",
     "groups": [
@@ -15182,6 +16748,7 @@
     "id": "812e5d77",
     "text": "go to bed",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -15197,6 +16764,13 @@
     "text": "He will not give up.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "814d9ba6",
+    "text": "I can sail on the sea.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -15248,6 +16822,9 @@
       "grade6",
       "grade3",
       "grade5",
+      "grade3-review",
+      "grade4-review",
+      "grade5-review",
       "grade4",
       "grammar-room"
     ]
@@ -15256,7 +16833,8 @@
     "id": "81fa6638",
     "text": "warm",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -15265,6 +16843,8 @@
     "groups": [
       "grade6",
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -15293,6 +16873,7 @@
     "id": "82416065",
     "text": "June",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -15370,7 +16951,8 @@
     "id": "82f81992",
     "text": "This is my bed.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -15379,7 +16961,16 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
+    ]
+  },
+  {
+    "id": "82fdf813",
+    "text": "The quiz is easy.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -15558,6 +17149,13 @@
     ]
   },
   {
+    "id": "8505de3b",
+    "text": "Can you drive?",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "8526e9a7",
     "text": "The girl who won the debate is in my study group.",
     "groups": [
@@ -15568,7 +17166,8 @@
     "id": "855d20f4",
     "text": "May I sit down?",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -15576,7 +17175,8 @@
     "text": "What",
     "groups": [
       "grade6",
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -15584,6 +17184,14 @@
     "text": "corporate",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "85959cdf",
+    "text": "I swam in the sea.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -15622,6 +17230,20 @@
     ]
   },
   {
+    "id": "85cd0b42",
+    "text": "The jam is sweet.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "85d4c9f6",
+    "text": "My knee hurts.",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "85f3a527",
     "text": "cargo",
     "groups": [
@@ -15647,6 +17269,13 @@
     "text": "complain",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "86130a77",
+    "text": "The jelly is red.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -15711,6 +17340,8 @@
     "groups": [
       "grade6",
       "grade5",
+      "grade4-review",
+      "grade5-review",
       "grade4"
     ]
   },
@@ -15726,6 +17357,14 @@
     "text": "The travel bag is yours.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "86b33408",
+    "text": "Yes, there is.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -15799,10 +17438,31 @@
     ]
   },
   {
+    "id": "87837fe0",
+    "text": "When is your sports day?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
     "id": "87aadff8",
     "text": "charming",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "87e202b4",
+    "text": "The number is thirteen.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "881fe472",
+    "text": "Cheeks",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -15820,6 +17480,13 @@
     ]
   },
   {
+    "id": "883885e1",
+    "text": "This is my tongue",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "8883c2f0",
     "text": "We are learning a new song today.",
     "groups": [
@@ -15831,6 +17498,7 @@
     "text": "three",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -15840,6 +17508,8 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -15848,7 +17518,9 @@
     "text": "Touch your nose.",
     "groups": [
       "grade1",
-      "grade3"
+      "grade3",
+      "grade1-review",
+      "grade3-review"
     ]
   },
   {
@@ -15891,7 +17563,8 @@
     "id": "89311c7d",
     "text": "A pencil.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -15912,7 +17585,8 @@
     "id": "896a9d7b",
     "text": "turn left",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -15961,7 +17635,8 @@
     "id": "8a1aae29",
     "text": "Let us go to the library.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -16014,6 +17689,13 @@
     ]
   },
   {
+    "id": "8ad32ccd",
+    "text": "My box is red.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "8ae6ed2e",
     "text": "engage",
     "groups": [
@@ -16022,8 +17704,9 @@
   },
   {
     "id": "8aea8859",
-    "text": "cake",
+    "text": "Cake",
     "groups": [
+      "grade2-review",
       "ipa"
     ]
   },
@@ -16068,6 +17751,7 @@
     "text": "character",
     "groups": [
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -16113,6 +17797,8 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -16120,7 +17806,8 @@
     "id": "8be5edd8",
     "text": "A red hat.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -16135,6 +17822,13 @@
     "text": "scientist",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "8c384f51",
+    "text": "Chin",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -16173,6 +17867,13 @@
     ]
   },
   {
+    "id": "8cac231a",
+    "text": "I see shirts.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "8cb2b7ec",
     "text": "Did Minh watch a football game last night?",
     "groups": [
@@ -16184,6 +17885,13 @@
     "text": "The woman who teaches music is my neighbour.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "8cd37893",
+    "text": "Yogurt",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -16201,10 +17909,18 @@
     ]
   },
   {
+    "id": "8d21d748",
+    "text": "I can see a zebra.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "8d39bde6",
     "text": "name",
     "groups": [
       "grade3",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -16227,7 +17943,15 @@
     "text": "curly hair",
     "groups": [
       "grade6",
+      "grade4-review",
       "grade4"
+    ]
+  },
+  {
+    "id": "8d639fdc",
+    "text": "My knee hurts",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -16235,6 +17959,20 @@
     "text": "They did not play yesterday.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "8daa1bd6",
+    "text": "When do you do your homework?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
+    "id": "8dabd1e6",
+    "text": "This is my back",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -16269,7 +18007,8 @@
     "id": "8dfdfd05",
     "text": "I am fine, thank you.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -16443,9 +18182,17 @@
   },
   {
     "id": "8ff53680",
-    "text": "eleven",
+    "text": "Eleven",
     "groups": [
+      "grade2-review",
       "ipa"
+    ]
+  },
+  {
+    "id": "90281c11",
+    "text": "This is my forehead",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -16531,10 +18278,19 @@
     ]
   },
   {
+    "id": "912f5387",
+    "text": "I have popcorn.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "91336f30",
     "text": "get up",
     "groups": [
       "grade5",
+      "grade4-review",
+      "grade5-review",
       "grade4"
     ]
   },
@@ -16560,10 +18316,19 @@
     ]
   },
   {
+    "id": "91506a13",
+    "text": "I can slide.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "9155ce1a",
     "text": "table tennis",
     "groups": [
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -16578,7 +18343,8 @@
     "id": "91792002",
     "text": "They are cycling.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -16594,6 +18360,9 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
+      "grade2-bodyparts",
       "ipa"
     ]
   },
@@ -16647,6 +18416,13 @@
     ]
   },
   {
+    "id": "9239612c",
+    "text": "This is my elbow",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "9253c0f2",
     "text": "below",
     "groups": [
@@ -16668,10 +18444,24 @@
     ]
   },
   {
+    "id": "927c3c2b",
+    "text": "Zoo",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "9280b53d",
     "text": "nervous",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "92873d4b",
+    "text": "This is a kitten.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -16699,7 +18489,8 @@
     "id": "929d73f7",
     "text": "My brother is reading.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -16724,10 +18515,26 @@
     ]
   },
   {
+    "id": "92c15707",
+    "text": "It is a giraffe.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "92c778aa",
     "text": "reflect",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "92cfa23c",
+    "text": "It's in March.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -16787,11 +18594,20 @@
     ]
   },
   {
+    "id": "9399a408",
+    "text": "I see a river.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "93b5e5df",
     "text": "Open your mouth.",
     "groups": [
       "grade1",
-      "grade3"
+      "grade3",
+      "grade1-review",
+      "grade3-review"
     ]
   },
   {
@@ -16826,7 +18642,15 @@
     "id": "93c6897d",
     "text": "I play badminton twice a week.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
+    ]
+  },
+  {
+    "id": "9408a187",
+    "text": "I can see an ox.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -16840,7 +18664,8 @@
     "id": "948625b8",
     "text": "gentle",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -16861,6 +18686,7 @@
     "id": "94fa0c1b",
     "text": "English",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -16949,6 +18775,14 @@
     ]
   },
   {
+    "id": "961ede9e",
+    "text": "Where does a teacher work?",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "9620fafe",
     "text": "will use",
     "groups": [
@@ -16984,10 +18818,18 @@
     ]
   },
   {
+    "id": "96915b3b",
+    "text": "No, I don't.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "96972cb0",
     "text": "airport",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -17001,7 +18843,8 @@
     "id": "96ce36cb",
     "text": "The story has a happy ending.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -17015,7 +18858,16 @@
     "id": "96d42192",
     "text": "The garden is small.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
+    ]
+  },
+  {
+    "id": "97214f43",
+    "text": "I went to the beach.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -17079,14 +18931,16 @@
     "id": "97a76a65",
     "text": "Pizza",
     "groups": [
-      "grade2"
+      "grade2",
+      "grade2-review"
     ]
   },
   {
     "id": "97c25bbb",
     "text": "The cat is small.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -17121,7 +18975,15 @@
     "id": "983c3286",
     "text": "The dog is big.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
+    ]
+  },
+  {
+    "id": "98484f56",
+    "text": "Chest",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -17137,6 +18999,13 @@
     "groups": [
       "grade11",
       "ipa"
+    ]
+  },
+  {
+    "id": "98a3b5e7",
+    "text": "This is my head",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -17214,6 +19083,7 @@
     "text": "happy",
     "groups": [
       "grade1",
+      "grade1-review",
       "grammar-room",
       "ipa"
     ]
@@ -17240,10 +19110,24 @@
     ]
   },
   {
+    "id": "99ded6dc",
+    "text": "I have some jelly.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "99f173a6",
     "text": "rewarding",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "9a00a55c",
+    "text": "I have ten toes.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -17257,6 +19141,7 @@
     "id": "9a3d08ff",
     "text": "July",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -17327,7 +19212,8 @@
     "id": "9ae76497",
     "text": "We can reuse these bags.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -17397,7 +19283,8 @@
     "id": "9bc84b3e",
     "text": "Where is the post office?",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -17443,6 +19330,13 @@
     ]
   },
   {
+    "id": "9c30fbe7",
+    "text": "I like jelly.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "9c33c586",
     "text": "washes",
     "groups": [
@@ -17455,7 +19349,8 @@
     "text": "engineer",
     "groups": [
       "grade9",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -17557,6 +19452,13 @@
     ]
   },
   {
+    "id": "9d8ab337",
+    "text": "This is my thumb",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "9d9f9b9a",
     "text": "She is interested in learning about regional cultures.",
     "groups": [
@@ -17583,6 +19485,7 @@
     "text": "ruler",
     "groups": [
       "grade3",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -17619,6 +19522,8 @@
     "text": "basketball",
     "groups": [
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -17686,6 +19591,13 @@
     ]
   },
   {
+    "id": "9ea5de9c",
+    "text": "Finger",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "9ebe984e",
     "text": "camera",
     "groups": [
@@ -17746,6 +19658,7 @@
     "text": "supermarket",
     "groups": [
       "grade8",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -17795,7 +19708,8 @@
     "id": "9f5a07c5",
     "text": "I like autumn because it is cool.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -17807,8 +19721,16 @@
       "grade10",
       "grade11",
       "grade12",
+      "grade4-review",
       "grade4",
       "ipa"
+    ]
+  },
+  {
+    "id": "9fb712e6",
+    "text": "I like popcorn and pasta.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -17822,7 +19744,8 @@
     "id": "9fc48be2",
     "text": "How often do you play chess?",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -17850,7 +19773,8 @@
     "id": "9fd84d09",
     "text": "A duck.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -17900,7 +19824,8 @@
     "id": "a05a3ccb",
     "text": "go straight",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -17922,6 +19847,14 @@
     "text": "Although he lacked experience, he prepared carefully.",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "a09ca44b",
+    "text": "We go to the park.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -17960,6 +19893,13 @@
     ]
   },
   {
+    "id": "a11aa602",
+    "text": "This is a question.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "a125a42e",
     "text": "The new hotel is more comfortable than the old hotel.",
     "groups": [
@@ -17977,7 +19917,8 @@
     "id": "a13d0a1e",
     "text": "This is the bedroom.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -18030,6 +19971,13 @@
     ]
   },
   {
+    "id": "a1885b53",
+    "text": "The sea is blue.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "a19c966e",
     "text": "He is an honest man.",
     "groups": [
@@ -18056,6 +20004,9 @@
     "groups": [
       "grade3",
       "grade5",
+      "grade3-review",
+      "grade4-review",
+      "grade5-review",
       "grade4",
       "ipa"
     ]
@@ -18085,6 +20036,7 @@
     "id": "a2142d26",
     "text": "have a picnic",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -18125,6 +20077,7 @@
     "text": "girl",
     "groups": [
       "grade3",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -18148,6 +20101,7 @@
     "groups": [
       "grade9",
       "grade5",
+      "grade5-review",
       "grammar-room",
       "ipa"
     ]
@@ -18163,7 +20117,8 @@
     "id": "a2825d2f",
     "text": "together",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -18237,6 +20192,7 @@
     "text": "small",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -18281,7 +20237,8 @@
     "text": "team",
     "groups": [
       "grade6",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -18355,6 +20312,7 @@
     "id": "a39d0d2c",
     "text": "play football",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -18363,7 +20321,8 @@
     "text": "Wear a helmet.",
     "groups": [
       "grade6",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -18395,6 +20354,14 @@
     ]
   },
   {
+    "id": "a416e6b7",
+    "text": "We visit our grandparents.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "a4213c0a",
     "text": "above",
     "groups": [
@@ -18414,7 +20381,15 @@
     "text": "chef",
     "groups": [
       "grade9",
+      "grade4-review",
       "grade4"
+    ]
+  },
+  {
+    "id": "a44cddcf",
+    "text": "I have black hair.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -18446,6 +20421,13 @@
     ]
   },
   {
+    "id": "a4989fa5",
+    "text": "I like yo-yos.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "a4aa81a1",
     "text": "When the rain started, I was cooking.",
     "groups": [
@@ -18472,6 +20454,7 @@
     "groups": [
       "grade6",
       "grade5",
+      "grade5-review",
       "grammar-room"
     ]
   },
@@ -18590,6 +20573,13 @@
     ]
   },
   {
+    "id": "a62bba20",
+    "text": "I like my grandmother.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "a640cc49",
     "text": "We did not go out yesterday.",
     "groups": [
@@ -18615,6 +20605,13 @@
     "text": "She is my sister.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "a645779d",
+    "text": "This is a bike.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -18656,7 +20653,9 @@
     "id": "a6ad93e2",
     "text": "grandmother",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review",
+      "grade2-review"
     ]
   },
   {
@@ -18664,6 +20663,20 @@
     "text": "I do not skip breakfast.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "a6ec9d55",
+    "text": "I like to slide.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "a7111c04",
+    "text": "It's a blanket.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -18693,6 +20706,7 @@
     "text": "jump",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -18721,6 +20735,7 @@
     "id": "a74c2aa2",
     "text": "Malaysia",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -18770,7 +20785,8 @@
     "id": "a80de345",
     "text": "The playground is big.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -18791,7 +20807,15 @@
     "id": "a836cbd9",
     "text": "We will visit a museum.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
+    ]
+  },
+  {
+    "id": "a836e530",
+    "text": "What is your favourite subject?",
+    "groups": [
+      "grade4"
     ]
   },
   {
@@ -18826,6 +20850,7 @@
     "id": "a88bf413",
     "text": "draw",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -18834,6 +20859,20 @@
     "text": "Unless",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "a898eba7",
+    "text": "I have ten fingers",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
+    "id": "a8e4a31d",
+    "text": "I like grapes.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -18922,6 +20961,13 @@
     ]
   },
   {
+    "id": "a9d0c878",
+    "text": "I listen with my ears.",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "a9ec0a22",
     "text": "stops",
     "groups": [
@@ -18958,11 +21004,25 @@
     ]
   },
   {
+    "id": "aa134e60",
+    "text": "Tent",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "aa27378e",
     "text": "tallest",
     "groups": [
       "grade6",
       "grammar-room"
+    ]
+  },
+  {
+    "id": "aa2f7652",
+    "text": "Shorts",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -19018,7 +21078,8 @@
     "id": "aa7a8694",
     "text": "on foot",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -19095,7 +21156,8 @@
     "id": "aaed1309",
     "text": "What is the weather like today?",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade4"
     ]
   },
   {
@@ -19177,6 +21239,20 @@
     ]
   },
   {
+    "id": "ab848852",
+    "text": "I like the zoo.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "ab8fbff7",
+    "text": "I see sand.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "ab91f0b1",
     "text": "The engineer said that the machine was safe.",
     "groups": [
@@ -19201,7 +21277,8 @@
     "id": "ac0cfc01",
     "text": "brave",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -19215,7 +21292,8 @@
     "id": "ac1ef399",
     "text": "This is my car.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -19346,6 +21424,13 @@
     ]
   },
   {
+    "id": "ad28c330",
+    "text": "Wrist",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "ad2aba25",
     "text": "didn't win",
     "groups": [
@@ -19363,6 +21448,7 @@
     "id": "ad3fc73c",
     "text": "go to school",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -19461,7 +21547,8 @@
     "id": "ae4099ec",
     "text": "I like singing.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -19490,6 +21577,13 @@
     "text": "It is raining outside right now.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "ae79bc92",
+    "text": "These are my lips",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -19549,10 +21643,18 @@
     ]
   },
   {
+    "id": "aeccc607",
+    "text": "I can ride with you.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "aed72c13",
     "text": "station",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -19605,10 +21707,18 @@
     ]
   },
   {
+    "id": "af3051ab",
+    "text": "The table is small.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "af597924",
     "text": "new words",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -19645,6 +21755,8 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -19729,6 +21841,7 @@
     "id": "b0abd0a1",
     "text": "go shopping",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -19751,6 +21864,7 @@
     "text": "father",
     "groups": [
       "grade3",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -19833,7 +21947,15 @@
     "id": "b203b399",
     "text": "take a shower",
     "groups": [
+      "grade4-review",
       "grade4"
+    ]
+  },
+  {
+    "id": "b20619fd",
+    "text": "Shoulder",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -19848,6 +21970,13 @@
     "text": "It is in May.",
     "groups": [
       "grade5"
+    ]
+  },
+  {
+    "id": "b280133f",
+    "text": "I have thirteen pens.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -19893,6 +22022,13 @@
     ]
   },
   {
+    "id": "b2c13be0",
+    "text": "This is my ankle",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "b2de64bf",
     "text": "destination",
     "groups": [
@@ -19912,7 +22048,10 @@
     "text": "shoes",
     "groups": [
       "grade1",
-      "grade4"
+      "grade1-review",
+      "grade4-review",
+      "grade4",
+      "grade2-review"
     ]
   },
   {
@@ -19920,6 +22059,13 @@
     "text": "polar region",
     "groups": [
       "grade9"
+    ]
+  },
+  {
+    "id": "b312c57e",
+    "text": "The rainbow is big.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -19948,6 +22094,20 @@
     "text": "oversee",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "b39153f9",
+    "text": "I can see sand.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "b3993c62",
+    "text": "I see a table.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -19996,7 +22156,8 @@
     "id": "b3e79cb2",
     "text": "story",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -20027,14 +22188,16 @@
     "text": "decorate",
     "groups": [
       "grade6",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
     "id": "b44051f5",
     "text": "A chair.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -20042,6 +22205,13 @@
     "text": "Visitors must not pick rare flowers at the hill.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "b444ffbb",
+    "text": "I like juice.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -20065,6 +22235,8 @@
       "grade6",
       "grade9",
       "grade5",
+      "grade4-review",
+      "grade5-review",
       "grade4"
     ]
   },
@@ -20086,13 +22258,15 @@
     "id": "b4b61246",
     "text": "square",
     "groups": [
-      "grade6"
+      "grade6",
+      "grade2-review"
     ]
   },
   {
     "id": "b4d52a4b",
     "text": "America",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -20167,6 +22341,13 @@
     ]
   },
   {
+    "id": "b54bfbc5",
+    "text": "Brush your teeth every day",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "b554f920",
     "text": "silver",
     "groups": [
@@ -20207,6 +22388,8 @@
     "text": "turtle",
     "groups": [
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -20265,6 +22448,7 @@
     "id": "b626bd3d",
     "text": "Viet Nam",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -20284,8 +22468,9 @@
   },
   {
     "id": "b636446c",
-    "text": "ankle",
+    "text": "Ankle",
     "groups": [
+      "grade2-bodyparts",
       "ipa"
     ]
   },
@@ -20294,6 +22479,20 @@
     "text": "This is my map, not yours.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "b66b3f07",
+    "text": "Where is she from?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
+    "id": "b6824d64",
+    "text": "This is my chest.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -20308,6 +22507,13 @@
     "text": "be completed",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "b6931614",
+    "text": "I see a road.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -20372,6 +22578,13 @@
     "text": "plays",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "b6f3934e",
+    "text": "Fox",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -20456,7 +22669,8 @@
     "id": "b7ba8535",
     "text": "dictionary",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -20464,7 +22678,8 @@
     "text": "plan",
     "groups": [
       "grade9",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -20486,6 +22701,13 @@
     "text": "do not waste",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "b811f770",
+    "text": "Where are you from?",
+    "groups": [
+      "grade4"
     ]
   },
   {
@@ -20569,7 +22791,15 @@
     "id": "b8f5cd96",
     "text": "An orange.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
+    ]
+  },
+  {
+    "id": "b8f9155e",
+    "text": "This is my blanket.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -20590,7 +22820,15 @@
       "grade9",
       "grade11",
       "grade12",
+      "grade2-review",
       "ipa"
+    ]
+  },
+  {
+    "id": "b933facf",
+    "text": "I have two arms",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -20632,7 +22870,8 @@
     "id": "b9e2a73b",
     "text": "I will take photos with my friends.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -20657,6 +22896,13 @@
     ]
   },
   {
+    "id": "ba1b6ce1",
+    "text": "This is my sister.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "ba226bd5",
     "text": "short",
     "groups": [
@@ -20668,6 +22914,7 @@
     "text": "one",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -20689,7 +22936,8 @@
     "id": "ba5f3188",
     "text": "It is opposite the park.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -20774,6 +23022,7 @@
     "text": "duck",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -20841,6 +23090,13 @@
     ]
   },
   {
+    "id": "bbd63eb5",
+    "text": "I like these shirts.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "bbfcefbb",
     "text": "board game",
     "groups": [
@@ -20859,6 +23115,7 @@
     "id": "bc493c67",
     "text": "October",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -20866,7 +23123,8 @@
     "id": "bc517874",
     "text": "I like popcorn.",
     "groups": [
-      "grade2"
+      "grade2",
+      "grade2-review"
     ]
   },
   {
@@ -20884,10 +23142,19 @@
     ]
   },
   {
+    "id": "bcb70651",
+    "text": "I have Music on Friday.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "bcbfa3c2",
     "text": "They travel by train.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -20909,6 +23176,13 @@
     "text": "If water reaches 100 degrees Celsius at sea level, it boils.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "bcf0f69d",
+    "text": "I have fifteen books.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -20955,7 +23229,8 @@
     "id": "bd56e0d5",
     "text": "This is my teacher.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -20977,6 +23252,13 @@
     "text": "Education is important.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "bda639a2",
+    "text": "What time is it?",
+    "groups": [
+      "grade4"
     ]
   },
   {
@@ -21004,7 +23286,8 @@
     "id": "bdeebd1c",
     "text": "balloon",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -21016,8 +23299,9 @@
   },
   {
     "id": "be148163",
-    "text": "sand",
+    "text": "Sand",
     "groups": [
+      "grade2-review",
       "ipa"
     ]
   },
@@ -21047,6 +23331,7 @@
     "text": "two",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -21055,6 +23340,7 @@
     "text": "write",
     "groups": [
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -21126,7 +23412,8 @@
     "id": "bef086ed",
     "text": "fine",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -21197,7 +23484,15 @@
     "id": "bf85e08e",
     "text": "We will decorate the room.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
+    ]
+  },
+  {
+    "id": "bfb35fe6",
+    "text": "This is my wrist.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -21244,6 +23539,13 @@
     ]
   },
   {
+    "id": "c024e375",
+    "text": "To the zoo, please.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "c037b379",
     "text": "species",
     "groups": [
@@ -21255,6 +23557,20 @@
     "text": "We took a taxi yesterday.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "c0496f79",
+    "text": "Put your hand on my shoulder.",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
+    "id": "c05ba54d",
+    "text": "My eyes are brown.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -21289,7 +23605,8 @@
     "id": "c0bd881c",
     "text": "She wants to be a doctor.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -21372,6 +23689,8 @@
       "grade12",
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -21394,7 +23713,9 @@
     "text": "I like milk.",
     "groups": [
       "grade1",
-      "grade3"
+      "grade3",
+      "grade1-review",
+      "grade3-review"
     ]
   },
   {
@@ -21422,6 +23743,7 @@
     "id": "c2075ec9",
     "text": "have dinner",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -21458,7 +23780,8 @@
     "id": "c23cb771",
     "text": "How do you learn new words?",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -21473,7 +23796,8 @@
     "text": "drawing",
     "groups": [
       "grade6",
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -21491,10 +23815,24 @@
     ]
   },
   {
+    "id": "c2726dcf",
+    "text": "I have a question.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "c29c2b29",
     "text": "Mai said that she planted trees every spring.",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "c2a31c96",
+    "text": "It's a kite.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -21576,6 +23914,13 @@
     ]
   },
   {
+    "id": "c363aecd",
+    "text": "We go to the zoo.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "c368200f",
     "text": "concentrate",
     "groups": [
@@ -21608,6 +23953,7 @@
     "text": "singing",
     "groups": [
       "grade3",
+      "grade3-review",
       "grammar-room"
     ]
   },
@@ -21616,6 +23962,20 @@
     "text": "Nam wants",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "c40341b4",
+    "text": "Sail",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "c418b689",
+    "text": "My cake is big.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -21679,6 +24039,8 @@
     "text": "hand",
     "groups": [
       "grade3",
+      "grade3-review",
+      "grade2-bodyparts",
       "ipa"
     ]
   },
@@ -21686,7 +24048,8 @@
     "id": "c4bb620c",
     "text": "winter",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -21727,6 +24090,13 @@
     ]
   },
   {
+    "id": "c53c286c",
+    "text": "This is my wrist",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "c5571d0f",
     "text": "She gave me a useful guide to local customs.",
     "groups": [
@@ -21751,6 +24121,7 @@
     "id": "c59761ed",
     "text": "do housework",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -21780,7 +24151,8 @@
     "id": "c5e12a13",
     "text": "autumn",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -21814,6 +24186,7 @@
       "grade11",
       "grade12",
       "grade1",
+      "grade1-review",
       "grammar-room",
       "ipa"
     ]
@@ -21844,7 +24217,8 @@
     "id": "c665a539",
     "text": "I like pizza.",
     "groups": [
-      "grade2"
+      "grade2",
+      "grade2-review"
     ]
   },
   {
@@ -21852,6 +24226,13 @@
     "text": "Visitors must not throw plastic into the sea at the bay.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "c6f0eaff",
+    "text": "This is my heel.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -21866,7 +24247,8 @@
     "text": "explore",
     "groups": [
       "grade9",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -21876,6 +24258,9 @@
       "grade6",
       "grade3",
       "grade5",
+      "grade3-review",
+      "grade4-review",
+      "grade5-review",
       "grade4"
     ]
   },
@@ -21918,6 +24303,7 @@
     "id": "c73d9c8b",
     "text": "have lunch",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -21953,7 +24339,8 @@
     "id": "c76e7f45",
     "text": "My bag is blue.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -22018,6 +24405,8 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -22032,7 +24421,8 @@
     "id": "c87f7a85",
     "text": "bowl",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -22095,7 +24485,8 @@
     "id": "c9147aac",
     "text": "I listen to English songs.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -22110,6 +24501,13 @@
     "text": "Having considered",
     "groups": [
       "grade11"
+    ]
+  },
+  {
+    "id": "c944ea21",
+    "text": "Teeth",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -22149,6 +24547,14 @@
     ]
   },
   {
+    "id": "c99cb9df",
+    "text": "I want some lemonade.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "c9ad5a6b",
     "text": "men",
     "groups": [
@@ -22180,7 +24586,8 @@
     "id": "ca0992b2",
     "text": "hard-working",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -22262,6 +24669,14 @@
     ]
   },
   {
+    "id": "cb57fec5",
+    "text": "I want to buy a pair of shoes.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "cb619ce5",
     "text": "rabbit",
     "groups": [
@@ -22293,7 +24708,8 @@
     "id": "cb9afa50",
     "text": "We should save water.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -22308,6 +24724,7 @@
     "text": "friend",
     "groups": [
       "grade3",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -22347,10 +24764,24 @@
     ]
   },
   {
+    "id": "cbdda118",
+    "text": "I have two feet",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "cbfd3c67",
     "text": "their",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "cc031ba0",
+    "text": "The kitten is small.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -22385,7 +24816,8 @@
     "id": "cc83129c",
     "text": "I have a book.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -22428,6 +24860,7 @@
     "text": "plane",
     "groups": [
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -22446,6 +24879,14 @@
     ]
   },
   {
+    "id": "cce3bc8e",
+    "text": "Yes, he does.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "ccff7e48",
     "text": "save",
     "groups": [
@@ -22457,7 +24898,8 @@
     "id": "cd203ed8",
     "text": "What is your name?",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -22486,6 +24928,13 @@
     "text": "We will plant the trees as soon as the rain stops.",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "cd7b3dd8",
+    "text": "This is my back.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -22524,6 +24973,7 @@
     "groups": [
       "grade6",
       "grade5",
+      "grade5-review",
       "grammar-room"
     ]
   },
@@ -22568,6 +25018,7 @@
     "id": "ce18c65b",
     "text": "Japan",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -22575,7 +25026,8 @@
     "id": "ce23c5a0",
     "text": "I would like to visit the island.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -22583,6 +25035,14 @@
     "text": "baggage",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "ce2f22e0",
+    "text": "I get up at six thirty.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -22625,8 +25085,17 @@
     "text": "read",
     "groups": [
       "grade5",
+      "grade5-review",
       "grammar-room",
       "ipa"
+    ]
+  },
+  {
+    "id": "cee817f5",
+    "text": "She is from Japan.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -22640,7 +25109,8 @@
     "id": "cf0a889f",
     "text": "I can run.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -22661,6 +25131,7 @@
     "id": "cf25170a",
     "text": "blond hair",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -22668,7 +25139,8 @@
     "id": "cf2f54fe",
     "text": "This is my classroom.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -22721,6 +25193,13 @@
     ]
   },
   {
+    "id": "cfb7ca25",
+    "text": "I see fourteen birds.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "cfbd592e",
     "text": "This is Duy's computer.",
     "groups": [
@@ -22728,10 +25207,31 @@
     ]
   },
   {
+    "id": "cfbd7daf",
+    "text": "I like the sea.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "cfd165d1",
+    "text": "These are my eyelashes",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "cfe40d32",
     "text": "does not watch",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "d00f9b22",
+    "text": "The road is long.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -22773,6 +25273,7 @@
     "id": "d0702a71",
     "text": "study at school",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -22788,7 +25289,8 @@
     "id": "d084379d",
     "text": "It is warm in spring.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -22809,7 +25311,8 @@
     "id": "d09433e9",
     "text": "This beach is beautiful.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -22929,6 +25432,7 @@
     "text": "flower",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -22944,6 +25448,13 @@
     "text": "condition",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "d23ce8b3",
+    "text": "I like my village.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -23000,7 +25511,8 @@
     "id": "d2c7f5e3",
     "text": "Hello, sister.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -23064,6 +25576,7 @@
     "text": "open",
     "groups": [
       "grade3",
+      "grade3-review",
       "grammar-room",
       "ipa"
     ]
@@ -23104,6 +25617,13 @@
       "grade6",
       "grade10",
       "grammar-room"
+    ]
+  },
+  {
+    "id": "d3b74df4",
+    "text": "The river is blue.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -23173,8 +25693,9 @@
   },
   {
     "id": "d4b676b9",
-    "text": "hair",
+    "text": "Hair",
     "groups": [
+      "grade2-bodyparts",
       "ipa"
     ]
   },
@@ -23189,7 +25710,8 @@
     "id": "d4f2aa6f",
     "text": "I would like some water.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -23203,7 +25725,8 @@
     "id": "d4fc86a4",
     "text": "A red flower.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -23217,14 +25740,16 @@
     "id": "d52b18f3",
     "text": "Two pens.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
     "id": "d52dda65",
     "text": "shy",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -23239,6 +25764,13 @@
     "text": "What does your family do at weekends? We visit our grandparents.",
     "groups": [
       "grade4"
+    ]
+  },
+  {
+    "id": "d55f515b",
+    "text": "I can see a van.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -23268,7 +25800,8 @@
     "id": "d5ac4615",
     "text": "I am running.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -23353,6 +25886,7 @@
     "id": "d6a2e186",
     "text": "May",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -23417,7 +25951,8 @@
     "id": "d7b8f81a",
     "text": "bicycle",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -23432,6 +25967,7 @@
     "text": "glasses",
     "groups": [
       "grade6",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -23468,6 +26004,13 @@
     "text": "Despite being nervous, he answered clearly.",
     "groups": [
       "grade9"
+    ]
+  },
+  {
+    "id": "d861cd18",
+    "text": "The number is fifteen.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -23509,7 +26052,8 @@
     "id": "d8bb278c",
     "text": "Where is the kitchen?",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -23517,7 +26061,8 @@
     "text": "kind",
     "groups": [
       "grade6",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -23531,7 +26076,8 @@
     "id": "d91f6d2e",
     "text": "I sometimes read comics.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -23553,6 +26099,7 @@
     "text": "banana",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -23568,6 +26115,13 @@
     "text": "We were not studying at noon.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "d9b4248f",
+    "text": "I like yogurt.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -23596,6 +26150,13 @@
     "text": "If Duy plants small trees, Duy will give the street more shade.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "da0cb1be",
+    "text": "I can ride a bike.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -23768,7 +26329,10 @@
     "text": "kite",
     "groups": [
       "grade1",
-      "grade3"
+      "grade3",
+      "grade1-review",
+      "grade3-review",
+      "grade2-review"
     ]
   },
   {
@@ -23800,6 +26364,20 @@
     ]
   },
   {
+    "id": "dc3721ed",
+    "text": "What do you do on Sundays?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
+    "id": "dc419047",
+    "text": "I see yogurt.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "dc43a9d1",
     "text": "I have not finished yet.",
     "groups": [
@@ -23807,10 +26385,25 @@
     ]
   },
   {
+    "id": "dc4be076",
+    "text": "My mum can drive.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "dc769fd4",
     "text": "isn't practising",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "dcb238d4",
+    "text": "It is fifty thousand dong.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -23864,6 +26457,13 @@
     ]
   },
   {
+    "id": "dd07041e",
+    "text": "I see a red tent.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "dd0d9c2c",
     "text": "elect",
     "groups": [
@@ -23874,7 +26474,8 @@
     "id": "dd115b3a",
     "text": "The pharmacy is between the bank and the shop.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -23882,6 +26483,13 @@
     "text": "was written",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "dd4f20ff",
+    "text": "I can sail.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -23909,7 +26517,8 @@
     "id": "ddb8528c",
     "text": "Our team practises after school.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -23964,7 +26573,8 @@
       "grade10",
       "grade11",
       "grade12",
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -23994,6 +26604,7 @@
     "text": "white",
     "groups": [
       "grade3",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -24016,14 +26627,16 @@
     "id": "de13837b",
     "text": "I see a bird.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
     "id": "de15c7aa",
     "text": "One book.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -24107,7 +26720,8 @@
     "id": "dec1eed2",
     "text": "Three cats.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -24184,7 +26798,8 @@
     "id": "df87da33",
     "text": "I am reading a story about a fox.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -24249,6 +26864,8 @@
     "text": "brush my teeth",
     "groups": [
       "grade5",
+      "grade4-review",
+      "grade5-review",
       "grade4"
     ]
   },
@@ -24268,6 +26885,7 @@
       "grade11",
       "grade12",
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -24319,7 +26937,8 @@
     "id": "e0bf9547",
     "text": "Do you have a dog?",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -24520,7 +27139,8 @@
     "id": "e2d51d34",
     "text": "Pasta",
     "groups": [
-      "grade2"
+      "grade2",
+      "grade2-review"
     ]
   },
   {
@@ -24542,6 +27162,13 @@
     "text": "Using less energy, we lower our emissions.",
     "groups": [
       "grade11"
+    ]
+  },
+  {
+    "id": "e2ee2ebc",
+    "text": "The square is red.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -24568,6 +27195,13 @@
       "grade12",
       "grammar-room",
       "ipa"
+    ]
+  },
+  {
+    "id": "e33f49a7",
+    "text": "Open your mouth please",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -24602,7 +27236,8 @@
     "id": "e37a69a3",
     "text": "She is friendly and kind.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -24651,7 +27286,8 @@
     "id": "e3f280a3",
     "text": "We plant trees on Sundays.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -24662,10 +27298,18 @@
     ]
   },
   {
+    "id": "e40c71b6",
+    "text": "Yes, I do.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "e40ddc70",
     "text": "headache",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -24742,7 +27386,8 @@
     "id": "e49cbcbd",
     "text": "I have a cat.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -24757,6 +27402,27 @@
     "text": "I always go shopping on Saturdays.",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "e4a7a899",
+    "text": "I have pasta.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "e4b99997",
+    "text": "I like these shorts.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "e4ba2f59",
+    "text": "This is my chin.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -24843,7 +27509,8 @@
     "id": "e55419df",
     "text": "driver",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -24865,6 +27532,8 @@
     "text": "elephant",
     "groups": [
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -24873,6 +27542,13 @@
     "text": "There are two camels near the desert.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "e5f4d584",
+    "text": "These yams are big.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -24908,6 +27584,7 @@
     "text": "sad",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -24916,6 +27593,20 @@
     "text": "Lan's",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "e6215e0b",
+    "text": "Yes, it is.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "e65c683d",
+    "text": "Where do you go on Sundays?",
+    "groups": [
+      "grade4"
     ]
   },
   {
@@ -24931,6 +27622,8 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
       "ipa"
     ]
   },
@@ -24939,6 +27632,14 @@
     "text": "We sweep the floor on Saturdays.",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "e676b037",
+    "text": "It is sunny.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -25001,7 +27702,8 @@
     "id": "e6bd903f",
     "text": "I bought a new book.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -25024,14 +27726,16 @@
     "id": "e6ed425d",
     "text": "read comics",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
     "id": "e6f5c96a",
     "text": "This is my pencil.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -25080,7 +27784,8 @@
     "id": "e74f26b6",
     "text": "dad",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -25192,10 +27897,32 @@
     ]
   },
   {
+    "id": "e8c67516",
+    "text": "My blanket is soft.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "e8cea26d",
+    "text": "Put your hand on my shoulder",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "e8e1774a",
     "text": "cellar",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "e8e9e972",
+    "text": "It is on Friday.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -25251,7 +27978,8 @@
     "id": "e95acf29",
     "text": "What is your address?",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -25297,6 +28025,13 @@
     ]
   },
   {
+    "id": "e9d7ea21",
+    "text": "My volleyball is new.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "e9fbe96a",
     "text": "Mai said that she would help me.",
     "groups": [
@@ -25322,6 +28057,7 @@
     "text": "quiet",
     "groups": [
       "grade5",
+      "grade5-review",
       "grammar-room"
     ]
   },
@@ -25337,6 +28073,13 @@
     "text": "cold",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "ea5928fd",
+    "text": "This zoo is big.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -25357,7 +28100,8 @@
     "id": "ea84ebee",
     "text": "mum",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -25371,7 +28115,15 @@
     "id": "ea93a40d",
     "text": "wash my face",
     "groups": [
+      "grade4-review",
       "grade4"
+    ]
+  },
+  {
+    "id": "ea99487b",
+    "text": "I have black hair",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -25386,6 +28138,7 @@
     "text": "rest",
     "groups": [
       "grade5",
+      "grade5-review",
       "grammar-room"
     ]
   },
@@ -25411,10 +28164,18 @@
     ]
   },
   {
+    "id": "eaf53719",
+    "text": "This is an ox.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "eb08cf9e",
     "text": "That is my brother.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -25446,6 +28207,13 @@
     ]
   },
   {
+    "id": "eb8bda47",
+    "text": "My pasta is hot.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "eb93a45d",
     "text": "will live",
     "groups": [
@@ -25458,7 +28226,11 @@
     "groups": [
       "grade3",
       "grade5",
+      "grade3-review",
+      "grade4-review",
+      "grade5-review",
       "grade4",
+      "grade2-review",
       "ipa"
     ]
   },
@@ -25466,7 +28238,16 @@
     "id": "ebba35d6",
     "text": "This is my dress.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
+    ]
+  },
+  {
+    "id": "ebd8f35e",
+    "text": "I want some chips and grapes.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -25510,6 +28291,8 @@
     "text": "giraffe",
     "groups": [
       "grade3",
+      "grade3-review",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -25525,6 +28308,13 @@
     "text": "newest",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "ec4c5307",
+    "text": "I see the sea.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -25545,6 +28335,7 @@
     "id": "ec727ee6",
     "text": "do homework",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -25594,7 +28385,8 @@
     "id": "ecf1eb1c",
     "text": "Open your books.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -25756,6 +28548,7 @@
     "id": "ee89e0f0",
     "text": "March",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -25805,7 +28598,8 @@
     "id": "eedc7d46",
     "text": "I like pasta.",
     "groups": [
-      "grade2"
+      "grade2",
+      "grade2-review"
     ]
   },
   {
@@ -25868,6 +28662,7 @@
     "id": "efa8bbd7",
     "text": "sightseeing",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -25889,7 +28684,8 @@
     "id": "efeb5a2c",
     "text": "birthday",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -25918,7 +28714,8 @@
     "id": "f03e2abc",
     "text": "cool",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -26010,7 +28807,8 @@
     "id": "f144941c",
     "text": "Be careful when you climb.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -26045,7 +28843,8 @@
     "id": "f184edaf",
     "text": "I will take part in the competition.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -26053,6 +28852,20 @@
     "text": "Mai will build a house by the sea in the future.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "f1b5ce14",
+    "text": "This is a road.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
+    "id": "f1bac8ab",
+    "text": "I have ten fingers.",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -26074,6 +28887,7 @@
     "text": "glass",
     "groups": [
       "grade5",
+      "grade5-review",
       "ipa"
     ]
   },
@@ -26127,10 +28941,18 @@
     ]
   },
   {
+    "id": "f2b3fd93",
+    "text": "I see yams.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "f2b56b41",
     "text": "This is my bag.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -26138,6 +28960,8 @@
     "text": "hat",
     "groups": [
       "grade1",
+      "grade1-review",
+      "grade4-review",
       "grade4",
       "ipa"
     ]
@@ -26160,6 +28984,7 @@
     "id": "f31ea7f7",
     "text": "April",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -26168,6 +28993,14 @@
     "text": "were cleaning",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "f3299ab4",
+    "text": "How much is this T-shirt?",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -26224,6 +29057,13 @@
     "text": "The student who studies with me speaks two languages.",
     "groups": [
       "grade9"
+    ]
+  },
+  {
+    "id": "f3ac9ae3",
+    "text": "Thumb",
+    "groups": [
+      "grade2-bodyparts"
     ]
   },
   {
@@ -26328,7 +29168,8 @@
     "id": "f4a138c6",
     "text": "We play basketball.",
     "groups": [
-      "grade3"
+      "grade3",
+      "grade3-review"
     ]
   },
   {
@@ -26336,6 +29177,8 @@
     "text": "beach",
     "groups": [
       "grade5",
+      "grade4-review",
+      "grade5-review",
       "grade4"
     ]
   },
@@ -26369,6 +29212,13 @@
     ]
   },
   {
+    "id": "f4dade01",
+    "text": "These yo-yos are red.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "f4de62f6",
     "text": "vacancy",
     "groups": [
@@ -26397,10 +29247,25 @@
     ]
   },
   {
+    "id": "f506af79",
+    "text": "What animal is it?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
     "id": "f52724e8",
     "text": "The children found a shell yesterday.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "f52b8223",
+    "text": "I stay inside.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -26450,7 +29315,10 @@
     "text": "I have a kite.",
     "groups": [
       "grade1",
-      "grade3"
+      "grade3",
+      "grade1-review",
+      "grade3-review",
+      "grade2-review"
     ]
   },
   {
@@ -26493,6 +29361,14 @@
     ]
   },
   {
+    "id": "f5d081da",
+    "text": "I play football with my friends.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "f5dc06fc",
     "text": "Yesterday, I played football.",
     "groups": [
@@ -26529,10 +29405,24 @@
     ]
   },
   {
+    "id": "f5ff05e3",
+    "text": "Lips",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "f60a6730",
     "text": "If Mai has time, she will cook dinner.",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "f6106c2b",
+    "text": "This is a kite.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -26557,6 +29447,13 @@
     ]
   },
   {
+    "id": "f6779c1d",
+    "text": "This is my pizza.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "f68250ff",
     "text": "He was hungry, so he ate a sandwich.",
     "groups": [
@@ -26567,6 +29464,7 @@
     "id": "f68dfa95",
     "text": "beard",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -26574,6 +29472,7 @@
     "id": "f6be5034",
     "text": "chips",
     "groups": [
+      "grade4-review",
       "grade4"
     ]
   },
@@ -26620,6 +29519,14 @@
     ]
   },
   {
+    "id": "f724e8bf",
+    "text": "It is seven thirty.",
+    "groups": [
+      "grade4",
+      "grade4-review"
+    ]
+  },
+  {
     "id": "f749db6d",
     "text": "inside",
     "groups": [
@@ -26637,10 +29544,26 @@
     ]
   },
   {
+    "id": "f7505fc6",
+    "text": "My grandmother can cook.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "f762e449",
     "text": "chooses",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "f77d30e9",
+    "text": "Yes, I can.",
+    "groups": [
+      "grade4",
+      "grade4-review",
+      "grade2-review"
     ]
   },
   {
@@ -26655,6 +29578,7 @@
     "text": "cow",
     "groups": [
       "grade1",
+      "grade1-review",
       "ipa"
     ]
   },
@@ -26683,7 +29607,8 @@
     "id": "f7bf775c",
     "text": "pharmacy",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -26704,6 +29629,7 @@
     "id": "f815289c",
     "text": "dance",
     "groups": [
+      "grade4-review",
       "grade4",
       "ipa"
     ]
@@ -26713,6 +29639,14 @@
     "text": "She was reading when the phone rang.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "f834593b",
+    "text": "When do you have Music?",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -26727,6 +29661,13 @@
     "text": "They study English on Mondays.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "f86e580a",
+    "text": "Where did you go last summer?",
+    "groups": [
+      "grade4"
     ]
   },
   {
@@ -26845,6 +29786,13 @@
     ]
   },
   {
+    "id": "fa05eecf",
+    "text": "My teapot is small.",
+    "groups": [
+      "grade2-review"
+    ]
+  },
+  {
     "id": "fa20169f",
     "text": "has been",
     "groups": [
@@ -26889,6 +29837,13 @@
     ]
   },
   {
+    "id": "fa636ba2",
+    "text": "This is my chest",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "fa73d0f4",
     "text": "I was cooking dinner when the storm began.",
     "groups": [
@@ -26920,7 +29875,8 @@
     "id": "faaef62a",
     "text": "My classmate is helpful.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -26928,6 +29884,7 @@
     "text": "camping",
     "groups": [
       "grade9",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -27041,7 +29998,8 @@
     "id": "fbd5c652",
     "text": "I have a toothache.",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -27049,6 +30007,13 @@
     "text": "nuclear family",
     "groups": [
       "grade9"
+    ]
+  },
+  {
+    "id": "fbf34f4d",
+    "text": "I like my brother.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -27145,6 +30110,13 @@
     ]
   },
   {
+    "id": "fcaa9661",
+    "text": "My legs are strong",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "fcd23d6d",
     "text": "Trang usually goes to the music club.",
     "groups": [
@@ -27155,7 +30127,8 @@
     "id": "fce32734",
     "text": "summer",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -27170,6 +30143,7 @@
     "text": "mountains",
     "groups": [
       "grade6",
+      "grade4-review",
       "grade4"
     ]
   },
@@ -27185,6 +30159,14 @@
     "text": "ambition",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "fd00a265",
+    "text": "It is next to the bank.",
+    "groups": [
+      "grade4",
+      "grade4-review"
     ]
   },
   {
@@ -27210,6 +30192,13 @@
     ]
   },
   {
+    "id": "fd7b36a9",
+    "text": "What does she look like?",
+    "groups": [
+      "grade4"
+    ]
+  },
+  {
     "id": "fd7f86e7",
     "text": "She won an award while she was working on the project.",
     "groups": [
@@ -27220,7 +30209,8 @@
     "id": "fd902939",
     "text": "farm",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   },
   {
@@ -27278,6 +30268,9 @@
     "groups": [
       "grade1",
       "grade3",
+      "grade1-review",
+      "grade3-review",
+      "grade2-review",
       "ipa"
     ]
   },
@@ -27303,6 +30296,13 @@
     ]
   },
   {
+    "id": "fed68570",
+    "text": "Elbow",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "feda292f",
     "text": "This is Lan's book.",
     "groups": [
@@ -27321,6 +30321,13 @@
     "text": "This is Hoa's picture.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "fefb9588",
+    "text": "Blanket",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -27366,6 +30373,13 @@
     ]
   },
   {
+    "id": "ff55af40",
+    "text": "Ears",
+    "groups": [
+      "grade2-bodyparts"
+    ]
+  },
+  {
     "id": "ff56359c",
     "text": "The children were swimming at four yesterday.",
     "groups": [
@@ -27377,6 +30391,13 @@
     "text": "clearly",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "ff7b6c69",
+    "text": "I like my sister.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -27397,7 +30418,8 @@
     "id": "ffa0f524",
     "text": "Water, please.",
     "groups": [
-      "grade1"
+      "grade1",
+      "grade1-review"
     ]
   },
   {
@@ -27405,6 +30427,13 @@
     "text": "habit",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "ffcb3a0a",
+    "text": "I see a zoo.",
+    "groups": [
+      "grade2-review"
     ]
   },
   {
@@ -27418,7 +30447,8 @@
     "id": "ffd47faf",
     "text": "stairs",
     "groups": [
-      "grade5"
+      "grade5",
+      "grade5-review"
     ]
   }
 ]

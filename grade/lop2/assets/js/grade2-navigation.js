@@ -22,7 +22,11 @@
   links.className = 'g2-page-links';
   links.setAttribute('role', 'navigation');
   links.setAttribute('aria-label', 'Quay lại');
-  for (const [label, href] of [['🏠 Trang chủ', '../../index.html'], ['📚 Lớp 2', './lop2.html'], ['🌈 Ôn tổng hợp', './review.html']]) {
+  const requested=Number(new URLSearchParams(location.search).get('fromGrade'));
+  const grade=Number(document.body.dataset.grade)||(Number.isInteger(requested)&&requested>=1&&requested<=12?requested:2);
+  const classHref=`../lop${grade}/lop${grade}.html`;
+  const reviewHref=grade<=5?`../lop${grade}/review.html`:'./review.html';
+  for (const [label, href] of [['🏠 Trang chủ', '../../index.html'], [`📚 Lớp ${grade}`, classHref], ['🌈 Ôn tổng hợp', reviewHref]]) {
     const link = document.createElement('a');
     link.href = href;
     link.textContent = label;
@@ -117,6 +121,7 @@
 (() => {
   const delay = 10000;
   for (const section of document.querySelectorAll('#game-count, #game-spelling')) {
+    if(document.body.dataset.grade && section.id==='game-count')continue;
     const buttons = [...section.querySelectorAll('button')].filter(button => button.textContent.includes('Hiện đáp án'));
     if (!buttons.length) continue;
     const input = section.querySelector('#sentence-input, #count-sentence-input, #spelling-input');

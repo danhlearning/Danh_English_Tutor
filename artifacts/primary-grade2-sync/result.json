@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "grades": [
+    3,
+    4
+  ],
+  "units": 40,
+  "classesWithSharedTopics": 12,
+  "externalNetworkBlocked": true,
+  "media": "real playing/ended; Web Speech disabled",
+  "errors": [],
+  "missing": []
+}

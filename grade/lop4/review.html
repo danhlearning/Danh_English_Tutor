@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../../shared/learner-profile-core.js"></script>
+  <script src="../../shared/learner-profile.js?v=preload-20261022"></script>
+  <title>Ôn tập tổng hợp lớp 4 | Danh English Tutor</title>
+  <link rel="stylesheet" href="../lop2/assets/css/mixed-review.css?v=primary2-20261022">
+</head>
+<body data-effects-mode="automatic">
+  <a class="skip-link" href="#main">Đến phần ôn tập</a>
+  <header class="review-hero"><div class="review-shell"><a href="./lop4.html" class="back">← Lớp 4</a><p class="brand">Danh English Tutor</p><h1>🏝️ Đảo ôn tập lớp 4</h1></div></header>
+  <main id="main" class="review-shell">
+    <p id="storage-notice" role="status" class="notice" hidden></p>
+    <section id="setup" class="panel" aria-label="Chọn bài ôn tập">
+      <div class="actions setup-actions"><button id="pick-units" type="button">Chọn Unit</button><button id="start" type="button" class="primary">Chơi</button></div>
+      <details class="mode-picker"><summary id="mode-summary">🎲 Chọn dạng thử thách</summary><fieldset id="mode-choices"><legend>Dạng muốn chơi</legend></fieldset><p id="mode-notice" class="muted" role="status"></p></details>
+      <div class="island-preview" aria-hidden="true"><span>🎒</span><i></i><span>🎧</span><i></i><span>🧩</span><i></i><span>🏝️</span></div>
+      <aside id="continue-panel" hidden><h3>🌱 Lượt đang dở</h3><p id="continue-label"></p><button id="resume" class="primary" type="button">Tiếp tục lượt dở →</button></aside>
+    </section>
+    <section id="play" class="panel" hidden aria-labelledby="play-title">
+      <div class="play-heading"><h2 id="play-title" tabindex="-1">Cùng ôn nhé!</h2><button id="leave" type="button">← Chọn bài</button></div>
+      <p id="round-label" class="muted"></p><progress id="round-progress" value="0" max="10" aria-label="Tiến độ lượt ôn"></progress>
+      <ol id="journey" class="journey" aria-label="Đường đi của lượt này"></ol>
+      <p id="companion" class="companion" role="status"></p>
+      <p id="task-kind" class="eyebrow"></p><p id="task-context" class="task-context" hidden></p><h3 id="question" class="question"></h3>
+      <p id="puzzle" class="puzzle" lang="en" hidden></p>
+      <button id="listen" type="button" class="listen" hidden>🔊 Nghe từ tiếng Anh</button><p id="speech-status" role="status"></p>
+      <div id="choices" class="choices"></div>
+      <form id="answer-form"><label id="answer-label" for="answer">Gõ từ tiếng Anh</label><input id="answer" autocomplete="off" autocapitalize="off" spellcheck="false"></form>
+      <div id="sentence" hidden><p>Xếp các mảnh thành câu tiếng Anh.</p><div id="assembled" class="tokens selected-tokens" aria-label="Câu em đã xếp"></div><div id="tokens" class="tokens" aria-label="Mảnh câu để chọn"></div><div class="actions"><button id="undo" type="button">↶ Gỡ mảnh cuối</button></div></div>
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+      <div id="help" class="actions help"><button id="hint" type="button">💡 Gợi ý</button><button id="reveal" type="button" hidden>Xem đáp án</button><button id="skip" type="button">Bỏ qua câu</button></div>
+      <button id="next" type="button" class="primary next" hidden>Câu tiếp theo →</button>
+    </section>
+    <section id="result" class="panel" hidden aria-labelledby="result-title"><span class="eyebrow">CHUYẾN ĐI ĐÃ VỀ ĐÍCH</span><h2 id="result-title" tabindex="-1">🏝️ Em đã hoàn thành lượt ôn!</h2><p id="result-score" class="result-score"></p><p id="result-encouragement" class="companion"></p><div id="result-stats" class="stats"></div><h3>Câu cần luyện thêm</h3><ul id="review-list"></ul><div class="actions"><button id="retry" type="button" class="primary">🌱 Chơi lại câu còn khó</button><button id="choose-again" type="button">🎒 Chọn chuyến đi tiếp</button></div></section>
+  </main>
+  <dialog id="unit-picker" aria-labelledby="picker-title"><form method="dialog"><h2 id="picker-title">Chọn Unit ôn tập</h2><label for="unit-search">Tìm Unit, từ hoặc nghĩa tiếng Việt</label><input id="unit-search" type="search" autocomplete="off"><div class="actions picker-actions"><button id="pick-all" type="button">Chọn tất cả</button><button id="pick-none" type="button">Bỏ chọn</button><button id="pick-term1" type="button">Unit 1–10</button><button id="pick-term2" type="button">Unit 11–20</button></div><div id="unit-choices" class="unit-choices"></div><div class="picker-footer"><p id="picker-count" role="status"></p><div class="actions"><button id="apply-units" type="button" class="primary">Áp dụng</button><button id="cancel-units" type="button">Hủy</button></div></div></form></dialog>
+  <contact-danh></contact-danh>
+  <script src="../../shared/contact-footer.js"></script>
+  <script src="../../shared/young-learner-speech.js"></script>
+  <script src="../../shared/learning-effects.js?v=answer-audio-20261021"></script>
+  <script src="./assets/js/grade2-course.js?v=primary2-20261022-34"></script>
+  <script src="../../shared/primary-grade2-review.js?v=primary2-20261022-34"></script>
+  <script src="../lop2/assets/js/mixed-review-core.js?v=primary2-20261022"></script>
+  <script src="../lop2/assets/js/mixed-review.js?v=primary2-20261022"></script>
+</body>
+</html>

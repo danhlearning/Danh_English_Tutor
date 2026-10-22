@@ -185,7 +185,7 @@
 
   function mount({ topic, words, speechLocale = 'en-US', onSelectionChange,
     mcqMode = 'name-choice', onResult, revealSpellingAfterMs = 0, initialCardMode = 'viet', cardRevealMs = DELAY,
-    effects = null, requireGesture = false, initialTab, onTabChange }) {
+    effects = null, requireGesture = false, initialTab, onTabChange, useAnswerSpeech = false }) {
     if (!/^[a-z0-9]+$/.test(topic) || !Array.isArray(words) || words.length < 1 ||
         words.some(word => !word.name || !word.meaning || typeof word.id !== 'string' || !word.id)) return;
     const byId = new Map(words.map(word => [word.id, word]));
@@ -220,6 +220,7 @@
     const speakWord = word => {
       stopSpeech();
       if (!hasGesture || (effects && !effects.soundEnabled()) || document.hidden) return Promise.resolve();
+      if (useAnswerSpeech) return Promise.resolve(window.DanhAnswerSpeech.say(word.name));
       if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined' || !window.speechSynthesis.getVoices().some(v=>/^en(?:[-_]|$)/i.test(v.lang))) return Promise.resolve(window.DanhAnswerSpeech.say(word.name));
       return new Promise(resolve => {
         let finished = false;

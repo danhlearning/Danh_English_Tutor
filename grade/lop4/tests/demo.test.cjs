@@ -13,12 +13,14 @@ const { createStore, DAY } = require('../assets/js/progress.js');
 test('Đủ 20 Unit có trang, từ, hình và câu luyện nhất quán', () => {
   assert.deepEqual(Object.keys(units), Array.from({ length: 20 }, (_, index) => `unit${index + 1}`));
   const catalog = fs.readFileSync(path.join(root, 'lop4.html'), 'utf8');
-  assert.match(catalog, /id="unit-list"/);
-  assert.match(catalog, /extended-units-data\.js/);
+  assert.match(catalog, /class="lesson-grid unit-grid"/);
+  assert.match(catalog, /review\.html/);
   for (const [key, unit] of Object.entries(units)) {
     const html = fs.readFileSync(path.join(root, `${key}.html`), 'utf8');
     assert.match(html, new RegExp(`data-unit="${key}"`));
-    if (unit.number >= 5) assert.match(html, /extended-units-data\.js/);
+    assert.match(html, /assets\/js\/grade2-course\.js/);
+    const previous = fs.readFileSync(path.join(root, `previous-${key}.html`), 'utf8');
+    if (unit.number >= 5) assert.match(previous, /extended-units-data\.js/);
     const expectedWordCount = unit.number === 4 ? 18 : 6;
     assert.equal(unit.words.length, expectedWordCount);
     assert.equal(new Set(unit.words.map(word => word.id)).size, expectedWordCount);

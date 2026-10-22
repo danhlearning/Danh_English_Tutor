@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "selected": [
+    "gsunit1",
+    "gsunit2",
+    "gsunit3",
+    "gsunit4"
+  ],
+  "active": {
+    "id": "381e415e-c472-4a6f-960a-a0745a7189f6",
+    "units": [
+      "gsunit1",
+      "gsunit2",
+      "gsunit3",
+      "gsunit4"
+    ],
+    "tasks": [
+      {
+        "key": "gsunit3:sand",
+        "mode": "meaning",
+        "options": [
+          "gsunit1:pasta",
+          "gsunit3:sand",
+          "gsunit3:sea",
+          "gsunit4:river"
+        ],
+        "tokenOrder": [
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "key": "gsunit1:popcorn",
+        "mode": "listening",
+        "options": [
+          "gsunit1:pasta",
+          "gsunit1:popcorn",
+          "gsunit3:sea",
+          "gsunit4:river"
+        ],
+        "tokenOrder": [
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "key": "gsunit4:river",
+        "mode": "spelling",
+        "options": [
+          "gsunit1:pasta",
+          "gsunit4:river",
+          "gsunit3:sand",
+          "gsunit4:rainbow"
+        ],
+        "tokenOrder": [
+          2,
+          0,
+          3,
+          1
+        ]
+      },
+      {
+        "key": "gsunit2:bike",
+        "mode": "sentence",
+        "options": [
+          "gsunit1:pasta",
+          "gsunit2:bike",
+          "gsunit3:sea",
+          "gsunit4:river"
+        ],
+        "tokenOrder": [
+          2,
+          0,
+          3,
+          1
+        ]
+      },
+      {
+        "key": "gsunit3:sail",
+        "mode": "meaning",
+        "options": [
+          "gsunit1:pasta",
+          "gsunit3:sail",
+          "gsunit3:sea",
+          "gsunit4:river"
+        ],
+        "tokenOrder": [
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "key": "gsunit1:pasta",
+        "mode": "listening",
+        "options": [
+          "gsunit1:popcorn",
+          "gsunit1:pasta",
+          "gsunit3:sea",
+          "gsunit4:river"
+        ],
+        "tokenOrder": [
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "key": "gsunit4:rainbow",
+        "mode": "spelling",
+        "options": [
+          "gsunit1:pasta",
+          "gsunit4:rainbow",
+          "gsunit3:sand",
+          "gsunit4:river"
+        ],
+        "tokenOrder": [
+          2,
+          0,
+          3,
+          1
+        ]
+      },
+      {
+        "key": "gsunit2:kite",
+        "mode": "sentence",
+        "options": [
+          "gsunit1:pasta",
+          "gsunit2:kite",
+          "gsunit3:sea",
+          "gsunit4:river"
+        ],
+        "tokenOrder": [
+          2,
+          0,
+          3,
+          1
+        ]
+      },
+      {
+        "key": "gsunit3:sea",
+        "mode": "meaning",
+        "options": [
+          "gsunit1:pasta",
+          "gsunit3:sea",
+          "gsunit3:sand",
+          "gsunit4:river"
+        ],
+        "tokenOrder": [
+          2,
+          0,
+          3,
+          1
+        ]
+      },
+      {
+        "key": "gsunit1:pizza",
+        "mode": "listening",
+        "options": [
+          "gsunit1:pasta",
+          "gsunit1:pizza",
+          "gsunit3:sea",
+          "gsunit4:river"
+        ],
+        "tokenOrder": [
+          2,
+          0,
+          1
+        ]
+      }
+    ],
+    "index": 3,
+    "answers": [
+      {
+        "mistakes": 1,
+        "hint": false,
+        "draft": "",
+        "parts": [],
+        "wrongChoices": [
+          "gsunit1:pasta"
+        ],
+        "lastAttempt": "gsunit1:pasta",
+        "outcome": "retry"
+      },
+      {
+        "mistakes": 0,
+        "hint": true,
+        "draft": "",
+        "parts": [],
+        "wrongChoices": [],
+        "lastAttempt": "",
+        "outcome": "hinted"
+      },
+      {
+        "mistakes": 0,
+        "hint": false,
+        "draft": "",
+        "parts": [],
+        "wrongChoices": [],
+        "lastAttempt": "",
+        "outcome": "first"
+      },
+      {
+        "mistakes": 0,
+        "hint": false,
+        "draft": "",
+        "parts": [
+          2
+        ],
+        "wrongChoices": [],
+        "lastAttempt": "",
+        "outcome": null
+      },
+      {
+        "mistakes": 0,
+        "hint": false,
+        "draft": "",
+        "parts": [],
+        "wrongChoices": [],
+        "lastAttempt": "",
+        "outcome": null
+      },
+      {
+        "mistakes": 0,
+        "hint": false,
+        "draft": "",
+        "parts": [],
+        "wrongChoices": [],
+        "lastAttempt": "",
+        "outcome": null
+      },
+      {
+        "mistakes": 0,
+        "hint": false,
+        "draft": "",
+        "parts": [],
+        "wrongChoices": [],
+        "lastAttempt": "",
+        "outcome": null
+      },
+      {
+        "mistakes": 0,
+        "hint": false,
+        "draft": "",
+        "parts": [],
+        "wrongChoices": [],
+        "lastAttempt": "",
+        "outcome": null
+      },
+      {
+        "mistakes": 0,
+        "hint": false,
+        "draft": "",
+        "parts": [],
+        "wrongChoices": [],
+        "lastAttempt": "",
+        "outcome": null
+      },
+      {
+        "mistakes": 0,
+        "hint": false,
+        "draft": "",
+        "parts": [],
+        "wrongChoices": [],
+        "lastAttempt": "",
+        "outcome": null
+      }
+    ]
+  },
+  "history": []
+}

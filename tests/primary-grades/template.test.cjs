@@ -1,15 +1,15 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const {createStore,DAY}=require('../../shared/primary-template-progress.js');
 const root=path.resolve(__dirname,'../..'),memory=()=>{const data=new Map();return {getItem:k=>data.get(k)??null,setItem:(k,v)=>data.set(k,v)};};
-test('Ba lớp có sáu hoạt động cùng lớp 4, nội dung/IPA/ảnh bitmap và câu có đúng một chỗ trống',()=>{
-  const reference=fs.readFileSync(path.join(root,'grade/lop4/unit1.html'),'utf8');
+test('Trang trước của ba lớp giữ sáu hoạt động, nội dung/IPA/ảnh bitmap và câu có đúng một chỗ trống',()=>{
+  const reference=fs.readFileSync(path.join(root,'grade/lop4/previous-unit1.html'),'utf8');
   const tabs=[...reference.matchAll(/data-tab="([^"]+)"/g)].map(m=>m[1]);
   for(const grade of [1,3,5]){
     const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,`grade/lop${grade}/assets/js/course.js`),'utf8'),c);
     const course=c.window.DanhPrimaryTemplateCourse;
     assert.equal(course.grade,grade);assert.equal(course.units.length,grade===1?16:20);
     for(const u of course.units){
-      const html=fs.readFileSync(path.join(root,`grade/lop${grade}/${u.id}.html`),'utf8');
+      const html=fs.readFileSync(path.join(root,`grade/lop${grade}/previous-${u.id}.html`),'utf8');
       assert.deepEqual([...html.matchAll(/data-tab="([^"]+)"/g)].map(m=>m[1]),tabs);
       assert.ok(html.includes('../lop4/assets/css/grade4.css'));assert.ok(html.includes('../lop2/assets/js/learning-core.js'));
       for(const w of u.words){assert.match(w.ipa,/^\/.+\/$/);assert.equal(w.context.split('____').length,2,`${grade} ${u.id} ${w.name}`);assert.ok(w.visual.includes('<image href='));assert.ok(!w.visual.includes('<text'));assert.ok(!/\p{Extended_Pictographic}/u.test(w.visual));assert.ok(fs.existsSync(path.resolve(root,`grade/lop${grade}`,w.image)),`${grade} ${u.id}: ${w.image}`);}

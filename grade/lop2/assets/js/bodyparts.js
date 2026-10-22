@@ -14,41 +14,16 @@
   let timer = null;
   let token = 0;
   let audioContext = null;
-  let finishSpeech = null;
 
   function stop() {
     token++;
     clearTimeout(timer);
     timer = null;
-    if (finishSpeech) finishSpeech();
+    window.DanhAnswerSpeech?.stop();
     try { window.speechSynthesis?.cancel(); } catch { /* Optional audio. */ }
   }
   function speak(text) {
-    if (finishSpeech) finishSpeech();
-    try { window.speechSynthesis?.cancel(); } catch { /* Optional audio. */ }
-    if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') return Promise.resolve();
-    return new Promise(resolve => {
-      let done = false;
-      const fallback = setTimeout(finish, window.DanhYoungSpeech.timeoutFor(text));
-      function finish() {
-        if (done) return;
-        done = true;
-        clearTimeout(fallback);
-        if (finishSpeech === finish) finishSpeech = null;
-        resolve();
-      }
-      finishSpeech = finish;
-      try {
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = lesson.speechLocale;
-        const voices = window.speechSynthesis.getVoices();
-        utterance.voice = voices.find(voice => voice.lang.replace('_', '-').toLowerCase() === lesson.speechLocale.toLowerCase()) || null;
-        utterance.onend = finish;
-        utterance.onerror = finish;
-        window.DanhYoungSpeech.configure(utterance);
-        window.speechSynthesis.speak(utterance);
-      } catch { finish(); }
-    });
+    return Promise.resolve(window.DanhAnswerSpeech.say(text));
   }
   function sound(kind) {
     try {
