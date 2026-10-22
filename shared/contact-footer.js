@@ -22,7 +22,7 @@
             font-family: "Danh Nunito", Nunito, system-ui, sans-serif;
             font-size: 16px;
             line-height: 1.5;
-            color: #1e293b;
+            color: var(--danh-contact-color, #1e293b);
           }
           * { box-sizing: border-box; }
           .contact-section {
@@ -48,19 +48,19 @@
             min-width: 0;
             gap: 8px;
             padding: 8px 18px;
-            border-radius: 30px;
-            background: white;
+            border-radius: var(--danh-contact-button-radius, 30px);
+            background: var(--danh-contact-button-background, white);
             font-size: 16px;
             font-weight: 700;
             text-decoration: none;
             transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
           }
-          .btn-social:focus-visible { outline: 3px solid #2563eb; outline-offset: 4px; }
-          .btn-zalo { color: #0068ff; border: 1.5px solid #0068ff; }
-          .btn-zalo:hover { color: white; background: #0068ff; box-shadow: 0 4px 10px #0068ff40; }
+          .btn-social:focus-visible { outline: 3px solid var(--danh-contact-button-color, #2563eb); outline-offset: 4px; }
+          .btn-zalo { color: var(--danh-contact-button-color, #0068ff); border: 1.5px solid var(--danh-contact-button-border, #0068ff); }
+          .btn-zalo:hover { color: white; background: var(--danh-contact-button-color, #0068ff); box-shadow: 0 4px 10px var(--danh-contact-button-shadow, #0068ff40); }
           .zalo-logo { width: 20px; height: 20px; border-radius: 4px; }
-          .btn-fb { color: #1877f2; border: 1.5px solid #1877f2; }
-          .btn-fb:hover { color: white; background: #1877f2; box-shadow: 0 4px 10px #1877f240; }
+          .btn-fb { color: var(--danh-contact-button-color, #1877f2); border: 1.5px solid var(--danh-contact-button-border, #1877f2); }
+          .btn-fb:hover { color: white; background: var(--danh-contact-button-color, #1877f2); box-shadow: 0 4px 10px var(--danh-contact-button-shadow, #1877f240); }
           .fb-icon { width: 18px; height: 18px; fill: currentColor; }
           svg { flex-shrink: 0; }
           footer {

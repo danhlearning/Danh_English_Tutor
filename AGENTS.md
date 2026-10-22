@@ -13,6 +13,7 @@
 
 ## Nội dung và giao diện
 
+- **Phong cách UI toàn repo là tranh vẽ bút chì màu:** nền giấy, nét viền và chất liệu có cảm giác vẽ tay; áp dụng cho trang, thẻ, nút, biểu tượng và hình minh họa mới hoặc được chỉnh sửa. Giữ chữ Nunito rõ nét, tương phản và vùng bấm dễ dùng trên điện thoại.
 - **Game và UI phải ngắn gọn:** tránh giải thích rườm rà, câu phụ lặp ý tiêu đề và đoạn mô tả thao tác hiển nhiên. Dùng nhãn ngắn, rõ; chỉ đặt hướng dẫn cần thiết ngay tại thao tác, và hiện gợi ý khi người học cần. Áp dụng cho toàn repo.
 - Lớp 1–5 dùng cấu trúc, bốn game và ôn tổng hợp theo phiên bản lớp 2 hiện tại, giữ nội dung, bìa, tông màu, URL và tiến độ riêng từng lớp. Các topic phụ dùng chung một bộ bài ở tất cả các lớp; dẫn về cùng bài thay vì sao chép thành các bản riêng.
 

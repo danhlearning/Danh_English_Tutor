@@ -30,6 +30,7 @@ Trước khi triển khai, ghi rõ:
 
 ## 3. Giao diện vui, đáng yêu và dễ đọc
 
+- Phong cách UI thống nhất toàn repo là **tranh vẽ bút chì màu**: chất giấy, nét viền vẽ tay và chất liệu minh họa bằng chì màu. Áp dụng khi tạo mới hoặc chỉnh sửa trang, thẻ, nút, biểu tượng và ảnh; chữ Nunito vẫn rõ nét và dễ đọc.
 - **Nunito** là font chính; bảo đảm chữ tiếng Việt được tải và hiển thị đúng. Ưu tiên tài nguyên font có sẵn trong dự án.
 - Dùng màu pastel, thẻ/nút bo tròn, biểu tượng rõ nghĩa và nhân vật đồng hành thân thiện. Phong cách được điều chỉnh theo độ tuổi trong cùng ngôn ngữ hình ảnh.
 - Giữ tương phản tốt, nhãn dễ hiểu và khoảng trống đủ để đọc. Câu hỏi trên điện thoại ưu tiên 24–28 px, đáp án/ô nhập khoảng 18 px, giải thích từ 16 px; tăng cỡ chữ vẫn sử dụng được.
