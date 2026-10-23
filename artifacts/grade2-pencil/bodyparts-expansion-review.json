@@ -61,14 +61,13 @@
     {
       "id": "mouth",
       "name": "Mouth",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/mouth-boy-v2.webp",
-      "sha256": "f9798261ed7a1c80bebb6453a57dabd3c154d8a90c9e4d207a72f47bb7c55257",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/mouth-v1.webp",
+      "sha256": "e931b7ed43a1fafcea724381a392623fad9f353bbdd37f64c087bef9f27e1a20",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: miệng được khoanh và chỉ rõ trên khuôn mặt, nét bút chì màu, không chữ; ảnh 768 × 768.",
-      "reviewedOn": "2026-10-24"
+      "review": "approved original set; individual-review.json"
     },
     {
       "id": "teeth",
@@ -128,16 +127,13 @@
     {
       "id": "finger",
       "name": "Finger",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/finger-boy-v2.webp",
-      "sha256": "23c26cee2d23d638304f2cf645f9c72b198904d11a8070c7e4fd6e95101e9b7c",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/finger-v1.webp",
+      "sha256": "847e5882921aae79a96161d9a00608a73d26577f01d1ce8c1bff5236ebb63252",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/finger-v1.webp",
-      "previousSha256": "847e5882921aae79a96161d9a00608a73d26577f01d1ce8c1bff5236ebb63252",
-      "reviewedOn": "2026-10-24"
+      "review": "approved original set; individual-review.json"
     },
     {
       "id": "leg",
@@ -186,226 +182,178 @@
     {
       "id": "face",
       "name": "Face",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/face-boy-v2.webp",
-      "sha256": "11ed62b48600f8e190e2c7c5385513a5ca588ff2a3c942d5c69534375abf64fe",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/face-v1.webp",
+      "sha256": "dfd0e7f260b82c4a5cfe9ddb34bc008878d534ec10adb17a23fa29d2513b6ba9",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/face-v1.webp",
-      "previousSha256": "dfd0e7f260b82c4a5cfe9ddb34bc008878d534ec10adb17a23fa29d2513b6ba9",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "forehead",
       "name": "Forehead",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/forehead-boy-v2.webp",
-      "sha256": "83fa7ee9cfbdce28c9155a21e7d3179d07f990b5c3fe03c79d4ede6bed5df025",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/forehead-v1.webp",
+      "sha256": "f1f76a28254e950fbfd11f7c70f8e17feb1e50476ecf332d52a88281716347d4",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/forehead-v1.webp",
-      "previousSha256": "f1f76a28254e950fbfd11f7c70f8e17feb1e50476ecf332d52a88281716347d4",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "eyebrows",
       "name": "Eyebrows",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/eyebrows-boy-v2.webp",
-      "sha256": "cc85bbe4df7c64190e6835d266703d3e6f1d60179d83f95f6670481dd6213b2b",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/eyebrows-v1.webp",
+      "sha256": "7c32bfb5ca1962c5821ec491d28dff0b5839c399327609f739b767bb52830c68",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/eyebrows-v1.webp",
-      "previousSha256": "7c32bfb5ca1962c5821ec491d28dff0b5839c399327609f739b767bb52830c68",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "eyelashes",
       "name": "Eyelashes",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/eyelashes-boy-v2.webp",
-      "sha256": "0ea5900322f6bbdc9701bfff177f72de7ded71740b07a210eb7a2e62c395f5ea",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/eyelashes-v1.webp",
+      "sha256": "0cbf62d01d0c37b8a5c09ade5b541c0740222ce1ab5b0fddb0ebe22589575561",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/eyelashes-v1.webp",
-      "previousSha256": "0cbf62d01d0c37b8a5c09ade5b541c0740222ce1ab5b0fddb0ebe22589575561",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "cheeks",
       "name": "Cheeks",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/cheeks-boy-v2.webp",
-      "sha256": "daaeb4b225e3de5ecbf43baa4676cd8b5f3bef43fd6bca10bebe6de1cf29c8dc",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/cheeks-v1.webp",
+      "sha256": "36783d12b06fee4be9237339c598c7eac3bb52ad6b61c36b5bdcbd01048d2c8e",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/cheeks-v1.webp",
-      "previousSha256": "36783d12b06fee4be9237339c598c7eac3bb52ad6b61c36b5bdcbd01048d2c8e",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "chin",
       "name": "Chin",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/chin-boy-v2.webp",
-      "sha256": "1a694a663006863e2aff40b7526bb7e979fd3259ade042b7971b7b5f9a9243a9",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/chin-v1.webp",
+      "sha256": "88fcee92ae10190a919792fa404c20ecfba1ffc367edc0feefe8e3588ae5a847",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/chin-v1.webp",
-      "previousSha256": "88fcee92ae10190a919792fa404c20ecfba1ffc367edc0feefe8e3588ae5a847",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "lips",
       "name": "Lips",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/lips-boy-v2.webp",
-      "sha256": "983b0035dee3434ed0e6af372ad5124110911c208e9caa10e09014573baceaaa",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/lips-v1.webp",
+      "sha256": "9fa2ef63d85f604d7ef219607222232dd6c99d4241ee37c7c46dd48a9c70b402",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/lips-v1.webp",
-      "previousSha256": "9fa2ef63d85f604d7ef219607222232dd6c99d4241ee37c7c46dd48a9c70b402",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "tongue",
       "name": "Tongue",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/tongue-boy-v2.webp",
-      "sha256": "04db85ad9bb86c2f282c4e11e4772eb33541f8f53d0efa7901d5a0bbe4a4e054",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/tongue-v1.webp",
+      "sha256": "7b9a8e9bb9ad52b49e778bb38a13932a488a92d57d890a5ebdfc46f54a0f84bc",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/tongue-v1.webp",
-      "previousSha256": "7b9a8e9bb9ad52b49e778bb38a13932a488a92d57d890a5ebdfc46f54a0f84bc",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "chest",
       "name": "Chest",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/chest-boy-v2.webp",
-      "sha256": "b98d7dc07136ab8fa50b071b2238a8dd0ba7511b011d5f868046e6baafccfd9b",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/chest-v1.webp",
+      "sha256": "1c27ce290c4ca27f383b5f2b3428887a612ce3075281722db27ac944fd2ad544",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/chest-v1.webp",
-      "previousSha256": "1c27ce290c4ca27f383b5f2b3428887a612ce3075281722db27ac944fd2ad544",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "back",
       "name": "Back",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/back-boy-v2.webp",
-      "sha256": "a0b82ccc9c7f36decead1c3f21f4b8c52d5f525283cce6ad20829d83a3566768",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/back-v1.webp",
+      "sha256": "1eb01ba5f6291a42bc49bccce6413fecd4391f58dc3a5944b15a86e795627f8d",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/back-v1.webp",
-      "previousSha256": "1eb01ba5f6291a42bc49bccce6413fecd4391f58dc3a5944b15a86e795627f8d",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "elbow",
       "name": "Elbow",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/elbow-boy-v2.webp",
-      "sha256": "600206c030c0d6ce9466ccfdc1c6201a5fe21f6b89e1af63e69e4dc7b488d8ff",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/elbow-v1.webp",
+      "sha256": "8ad287fdc195f946a9518cfbdb8f6d743072df0945559ab16031980e21caeb10",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/elbow-v1.webp",
-      "previousSha256": "8ad287fdc195f946a9518cfbdb8f6d743072df0945559ab16031980e21caeb10",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "wrist",
       "name": "Wrist",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/wrist-boy-v2.webp",
-      "sha256": "343cb55250077877e019716c51500c54dc748ce069000228444c9f19c7618ceb",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/wrist-v1.webp",
+      "sha256": "307c910ba2fb52787e64557805409ed697a642f25552258ac69b7f99b7bdfdde",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/wrist-v1.webp",
-      "previousSha256": "307c910ba2fb52787e64557805409ed697a642f25552258ac69b7f99b7bdfdde",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "thumb",
       "name": "Thumb",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/thumb-boy-v2.webp",
-      "sha256": "26e1680559cdd70521a4fc1254f237abd80b55f9df19ea35eccf60696f43a9b3",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/thumb-v1.webp",
+      "sha256": "9176a927abbc2751644c39a7ed039826bfcb0a795c0e5740fbe59041dc6470c6",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/thumb-v1.webp",
-      "previousSha256": "9176a927abbc2751644c39a7ed039826bfcb0a795c0e5740fbe59041dc6470c6",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "toes",
       "name": "Toes",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/toes-boy-v2.webp",
-      "sha256": "4fe9c18ab493d1ed85dd28553bff4836b8e78e23ed29d08cb41bf2e6806b3ce5",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/toes-v1.webp",
+      "sha256": "025836fa7c6b1280d06a19e1f5d5aa077bae51d183fd4841bac61906754c991c",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/toes-v1.webp",
-      "previousSha256": "025836fa7c6b1280d06a19e1f5d5aa077bae51d183fd4841bac61906754c991c",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "ankle",
       "name": "Ankle",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/ankle-boy-v2.webp",
-      "sha256": "40a1558483538d08774da460897623a8cfb4e5bc126e4fff71af12531fd59096",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/ankle-v1.webp",
+      "sha256": "c321e24993c426f6e46378d0cdb58c5b7d43918ebd4e7bd893e4b5fd1d195695",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/ankle-v1.webp",
-      "previousSha256": "c321e24993c426f6e46378d0cdb58c5b7d43918ebd4e7bd893e4b5fd1d195695",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     },
     {
       "id": "heel",
       "name": "Heel",
-      "file": "grade/lop2/assets/images/pencil/bodyparts/heel-boy-v2.webp",
-      "sha256": "ba2f174e803dcd524aee04bff2654363d6d0c35f9cf9f91e5616e42f4590f448",
+      "file": "grade/lop2/assets/images/pencil/bodyparts/heel-v1.webp",
+      "sha256": "6e0a85f1b26257e31769f86dabb6d3ae7ee84f93f7797378266d0472fad42595",
       "size": [
         768,
         768
       ],
-      "review": "Đã mở xem trực tiếp: đúng bộ phận, vị trí khoanh/chỉ rõ ràng trên nhân vật, không chữ, nét bút chì màu; ảnh 768 × 768.",
-      "previousFile": "grade/lop2/assets/images/pencil/bodyparts/heel-v1.webp",
-      "previousSha256": "6e0a85f1b26257e31769f86dabb6d3ae7ee84f93f7797378266d0472fad42595",
-      "reviewedOn": "2026-10-24"
+      "review": "directly viewed 2026-10-19"
     }
   ]
 }
