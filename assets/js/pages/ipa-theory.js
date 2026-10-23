@@ -1,18 +1,19 @@
 function speakWord(word) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(word);
         if ('speechSynthesis' in window) {
             // Hủy các giọng đọc cũ để tránh đè âm thanh
             window.speechSynthesis.cancel();
 
             const utterance = new SpeechSynthesisUtterance(word);
-            
+
             // Thiết lập ngôn ngữ tiếng Anh và tốc độ đọc thật chậm
-            utterance.lang = 'en-US'; 
-            utterance.rate = 0.6; 
-            
+            utterance.lang = 'en-US';
+            utterance.rate = 0.6;
+
             // Ép trình duyệt tìm giọng chuẩn tiếng Anh
             const voices = window.speechSynthesis.getVoices();
             const englishVoice = voices.find(voice => voice.lang.includes('en-') && (voice.name.includes('Google') || voice.name.includes('Natural') || voice.name.includes('Samantha') || voice.name.includes('Daniel')));
-            
+
             if (englishVoice) {
                 utterance.voice = englishVoice;
             }

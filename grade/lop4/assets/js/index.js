@@ -13,6 +13,7 @@
   const normal = value => String(value).trim().toLowerCase().replace(/\s+/g, ' ');
   let queue = [], position = 0, mistakes = 0, timer = null;
   function speak(value) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(value);
     try {
       if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') {window.DanhAnswerSpeech.say(value);return;}
       window.speechSynthesis.cancel();
@@ -37,7 +38,7 @@
       const title = document.createElement('h2'); title.textContent = unit.title;
       const description = document.createElement('p'); description.textContent = `${unit.subtitle} · ${unit.focus}`;
       const status = document.createElement('strong'); status.id = `${unit.id}-status`;
-      const enter = document.createElement('span'); enter.textContent = 'Vào học →';
+      const enter = document.createElement('span'); enter.hidden = true;
       card.append(chip, title, description, status, enter);
       list.append(card);
     }

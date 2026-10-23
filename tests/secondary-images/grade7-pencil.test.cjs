@@ -15,6 +15,6 @@ test('96 tranh lớp 7 khớp bản duyệt, nội dung và ID đang học',()=>
  }
  for(const name of fs.readdirSync(path.join(root,'grade/lop7')).filter(n=>n.endsWith('.html'))){
   const html=fs.readFileSync(path.join(root,'grade/lop7',name),'utf8');
-  if(html.includes('units-data.js'))assert(html.includes('units-data.js?v=pencil-20261021'),name);
+  if(html.includes('units-data.js'))assert(html.includes('units-data.js?v=compact-listen-20261024'),name);
  }
 });

@@ -32,6 +32,7 @@
     try { window.speechSynthesis?.cancel(); } catch { /* Audio is optional. */ }
   }
   function speak(value) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(value);
     if (finishSpeech) finishSpeech();
     try { window.speechSynthesis?.cancel(); } catch { /* Audio is optional. */ }
     if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') return Promise.resolve();

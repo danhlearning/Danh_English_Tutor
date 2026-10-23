@@ -5,7 +5,7 @@
 })(typeof window !== 'undefined' ? window : globalThis, function () {
   'use strict';
   const INFO = 'danh-learner-info:', DATA = 'danh-learner-data:', META = 'danh-learners-meta-v1';
-  const avatars = ['🐱', '🐰', '🐼', '🦊', '🐸', '🐧', '🦁', '🌻'];
+  const avatars = ['🐱', '🐰', '🐼', '🦊', '🐸', '🐧', '🦁', '🌻', '🐶', '🐻', '🐨', '🐥'];
   const parse = (s, fallback = null) => { try { return JSON.parse(s) ?? fallback; } catch { return fallback; } };
   const validKey = key => typeof key === 'string' && /^(danh[-:.]|[crl]_(words|list)_g$)/.test(key) && !key.startsWith('danh-learner') && key.length < 200;
   function keys(storage) { const result = []; for (let i = 0; i < storage.length; i++) { const k = storage.key(i); if (k !== null) result.push(k); } return result; }

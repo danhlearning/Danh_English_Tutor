@@ -98,6 +98,7 @@
   let flashcardDeck = [];
 
   function speak(text) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
     if (window.speechSynthesis) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
@@ -147,7 +148,7 @@
 
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
-    
+
     document.getElementById(tabId).classList.add('active');
     if(evt && evt.target) {
       evt.target.classList.add('active');
@@ -441,7 +442,7 @@
       feedback.style.color = '#43A047';
       feedback.innerText = '🎉 Chính xác! Bạn giỏi quá!';
       inputEl.disabled = true;
-      
+
       countCorrectCount++;
       updateCountScore();
       playSoundEffect('correct');

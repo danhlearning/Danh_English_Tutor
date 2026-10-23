@@ -9,7 +9,7 @@ for (let grade = 1; grade <= 5; grade++) {
     const file = path.join(dir, name);
     let html = fs.readFileSync(file, 'utf8');
     html = html.replace(/^[ \t]*<primary-grade-nav\b[^>]*><\/primary-grade-nav>\s*\r?\n/gm, '')
-      .replace(/^[ \t]*<script src="\.\.\/\.\.\/shared\/primary-grade-nav\.js"><\/script>\s*\r?\n/gm, '');
+      .replace(/^[ \t]*<script src="\.\.\/\.\.\/shared\/primary-grade-nav\.js?v=compact-listen-20261024"><\/script>\s*\r?\n/gm, '');
     if (name === `lop${grade}.html` && !html.includes('primary-cover-hero')) {
       html = html.replace('</head>', '  <link rel="stylesheet" href="../../shared/primary-covers.css?v=pencil-1">\n</head>');
       html = html.replace(/<body([^>]*)>/, (_, attrs) => attrs.includes('class=')

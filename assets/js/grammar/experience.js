@@ -7,10 +7,6 @@
   function moving(){return settings.motion&&!reduced.matches;}
   function controls(){
     document.body.dataset.motion=moving()?'on':'off';
-    const sound=document.getElementById('sound-toggle'),motion=document.getElementById('motion-toggle');
-    sound.textContent=settings.sound?'🔊 Âm thanh: bật':'🔇 Âm thanh: tắt';sound.setAttribute('aria-pressed',String(settings.sound));
-    motion.textContent=moving()?'✨ Hiệu ứng: bật':'✨ Hiệu ứng: giảm';motion.setAttribute('aria-pressed',String(moving()));
-    motion.disabled=reduced.matches;motion.title=reduced.matches?'Đang theo tùy chọn giảm chuyển động của thiết bị':'Bật hoặc giảm chuyển động';
     if(!moving()){document.querySelector('.celebration-layer')?.remove();document.querySelectorAll('.fx-enter,.fx-pop,.fx-correct,.fx-retry,.fx-finish').forEach(el=>el.classList.remove('fx-enter','fx-pop','fx-correct','fx-retry','fx-finish'));}
   }
   function unlock(){
@@ -46,8 +42,6 @@
   document.addEventListener('pointerdown',()=>{muted=false;unlock();},{capture:true});
   document.addEventListener('keydown',e=>{if(['Enter',' '].includes(e.key)&&!e.repeat){muted=false;unlock();}},{capture:true});
   document.addEventListener('click',e=>{const target=e.target.closest('button,a,summary');if(!target||target.disabled||target.closest('.experience-toolbar'))return;if(!target.matches('#start-btn,#check-btn,#next-btn,#skip-btn,#reveal-btn,#hint-btn,#resume-btn,[data-quick]')){sound('tap');animate(target,'fx-pop');}},{capture:true});
-  document.getElementById('sound-toggle').onclick=()=>{settings.sound=!settings.sound;if(!settings.sound)stop();controls();save();if(settings.sound){unlock();sound('tap');}};
-  document.getElementById('motion-toggle').onclick=()=>{settings.motion=!settings.motion;controls();save();if(!moving())document.querySelector('.celebration-layer')?.remove();};
   document.addEventListener('visibilitychange',()=>{if(document.hidden){muted=true;stop();}});
   window.addEventListener('pagehide',stop);reduced.addEventListener('change',controls);controls();
   window.DanhGrammarExperience={event,animate,sound,get settings(){return {...settings,motion:moving()};},get audioState(){return context?.state||'not-started';},get activeVoices(){return voices.length;}};

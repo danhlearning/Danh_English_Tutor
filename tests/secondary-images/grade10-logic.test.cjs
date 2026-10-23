@@ -9,6 +9,6 @@ test('Lớp 10: đủ 80 ảnh gốc đã rà logic, tám bản sửa đúng has
  const bytes=fs.readFileSync(path.join(root,a.file));assert.equal(bytes.toString('ascii',12,16),'VP8 ');assert.equal(bytes.readUInt16LE(26)&0x3fff,768);assert.equal(bytes.readUInt16LE(28)&0x3fff,768);assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),a.sha256);
  if(a.action==='repaired'){assert.match(a.file,a.key==='unit7-2'?/-v4\.webp$/:/-v2\.webp$/);assert(record.repairPrompt&&record.source&&record.previousFile);assert.notEqual(record.sha256,record.previousSha256);}
  }
- for(let n=1;n<=10;n++)assert(read(`grade/lop10/unit${n}.html`).includes('units-data.js?v=vocab100-20261023-border1'));
+ for(let n=1;n<=10;n++)assert(read(`grade/lop10/unit${n}.html`).includes('units-data.js?v=compact-listen-20261024'));
  assert(read('scripts/build-grade10-complete.cjs').includes('currentImages.get'));
 });

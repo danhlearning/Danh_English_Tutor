@@ -13,10 +13,10 @@
     if (type === 'correct') {
       const now = audioCtx.currentTime;
       osc.type = 'triangle';
-      osc.frequency.setValueAtTime(523.25, now); 
-      osc.frequency.setValueAtTime(659.25, now + 0.1); 
-      osc.frequency.setValueAtTime(783.99, now + 0.2); 
-      osc.frequency.setValueAtTime(1046.50, now + 0.3); 
+      osc.frequency.setValueAtTime(523.25, now);
+      osc.frequency.setValueAtTime(659.25, now + 0.1);
+      osc.frequency.setValueAtTime(783.99, now + 0.2);
+      osc.frequency.setValueAtTime(1046.50, now + 0.3);
       gain.gain.setValueAtTime(0.3, now);
       gain.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
       osc.start(now);
@@ -34,6 +34,7 @@
   }
 
   function speak(text) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
     if (window.speechSynthesis) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
@@ -86,7 +87,7 @@
   /* GENERATE 50 QUESTIONS FOR GAME 4 */
   function buildGame4Questions() {
     const list = [];
-    
+
     // Pattern A: Multi-fruit counting questions (e.g. 20 strawberries, 5 apples, 12 bananas...)
     const countConfigs = [
       { fruit: 'Strawberry', count: 20, vn: '20 quả dâu tây' },
@@ -107,7 +108,7 @@
       { fruit: 'Papaya', count: 5, vn: '5 quả đu đủ' },
       { fruit: 'Guava', count: 16, vn: '16 quả ổi' },
       { fruit: 'Melon', count: 4, vn: '4 quả dưa lưới' },
-      
+
       { fruit: 'Strawberry', count: 10, vn: '10 quả dâu tây' },
       { fruit: 'Apple', count: 20, vn: '20 quả táo' },
       { fruit: 'Banana', count: 15, vn: '15 quả chuối' },
@@ -164,7 +165,7 @@
   function switchTab(tabId, evt) {
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
-    
+
     document.getElementById(tabId).classList.add('active');
     if(evt && evt.target) {
       evt.target.classList.add('active');
@@ -344,7 +345,7 @@
     const feedback = document.getElementById('spelling-feedback');
 
     preview.innerHTML = `<div style="font-size:3.5rem; line-height:1;">${item.icon}</div><div style="font-size:1.1rem; font-weight:700; color:#4A5568;">${item.meaning}</div>`;
-    
+
     feedback.innerText = '';
     input.value = '';
     input.disabled = false;
@@ -388,7 +389,7 @@
     const feedback = document.getElementById('spelling-feedback');
     const inputEl = document.getElementById('spelling-input');
     const correctName = spellingList[spellingIdx].name;
-    
+
     feedback.style.color = '#DD6B20';
     feedback.innerText = `💡 Đáp án: ${correctName}`;
     inputEl.value = correctName;
@@ -427,7 +428,7 @@
 
     // Build fruit emoji grid dynamically based on count
     itemsContainer.innerHTML = '';
-    
+
     // Display up to the actual count of fruits
     for(let i = 0; i < item.count; i++) {
       const span = document.createElement('span');
@@ -478,7 +479,7 @@
       feedback.style.color = '#38A169';
       feedback.innerText = '🎉 Chính xác! Tuyệt vời!';
       inputEl.disabled = true;
-      
+
       countCorrectCount++;
       updateCountScore();
       playSoundEffect('correct');

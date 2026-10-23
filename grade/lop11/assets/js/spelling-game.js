@@ -56,7 +56,7 @@ window.DanhGrade11Spelling = function ({stage, words, unitId}) {
     const feedback=el('p',null,'g6-feedback');feedback.setAttribute('role','status');input.setAttribute('aria-describedby','spelling-feedback');feedback.id='spelling-feedback';
     const actions=el('div',null,'g11-spelling-actions');
     const listen=button('🔊 Nghe gợi ý',()=>{
-      if(!window.DanhVocabularyGame.soundEnabled()){feedback.textContent='Âm thanh đang tắt.';return;}
+      if(!window.DanhListenControls?.isManualRequest() && !window.DanhVocabularyGame.soundEnabled()){feedback.textContent='Âm thanh đang tắt.';return;}
       if(!entry.outcome){entry.hint=true;save();}
       window.DanhAnswerSpeech.say(w.term);
     },'g6-sound');

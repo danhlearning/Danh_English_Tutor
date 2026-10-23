@@ -31,16 +31,16 @@ if(!lesson.includes('const tabKey =')){
 write(base+'assets/js/lesson.js',lesson);
 let catalog=read(base+'assets/js/catalog.js');
 if(!catalog.includes('g12-unit-count')){
- catalog=catalog.replace("    const enter = document.createElement('strong');",`    const count = document.createElement('span'); count.className='g12-unit-count';count.textContent=\`\${unit.words.length} từ\`;
+ catalog=catalog.replace("    const bottom = document.createElement('div'); bottom.className = 'g6-card-bottom';",`    const bottom = document.createElement('div'); bottom.className = 'g6-card-bottom';
+    const count = document.createElement('span'); count.className='g12-unit-count';count.hidden=true;
     try {
       const round=JSON.parse(window.DanhLearners.storage.getItem(\`danh-g12-spelling-\${unit.id}-v1\`)||'null');
       if(round?.version===1&&Array.isArray(round.order)&&round.order.length>0&&round.order.length<=unit.words.length&&new Set(round.order).size===round.order.length&&round.order.every(id=>unit.words.some(w=>w.id===id))&&Number.isInteger(round.position)&&round.position>=0&&round.position<round.order.length&&Object.values(round.entries||{}).some(e=>e?.draft||e?.outcome||e?.attempts)){
-        count.textContent=\`Tiếp tục gõ · \${round.position+1}/\${round.order.length}\`;
+        count.hidden=false;count.textContent=\`Tiếp tục gõ · \${round.position+1}/\${round.order.length}\`;
         card.href=\`./\${unit.id}.html?activity=spelling\`;
       }
     }catch{}
-    const enter = document.createElement('strong');`);
- catalog=catalog.replace('bottom.append(enter);','bottom.append(count,enter);');
+    bottom.append(count);`);
 }
 write(base+'assets/js/catalog.js',catalog);
 for(const file of fs.readdirSync(path.join(root,base)).filter(n=>n.endsWith('.html'))){
@@ -53,10 +53,10 @@ for(const file of fs.readdirSync(path.join(root,base)).filter(n=>n.endsWith('.ht
  if(/^unit\d+\.html$/.test(file)){
   s=s.replace(/<p class="g6-note">(?:Đọc từ, xem tranh[^<]*|Đọc nghĩa tiếng Việt[^<]*|Nhìn nghĩa tiếng Việt[^<]*)<\/p>/g,'');
   s=s.replace('Nhìn từ tiếng Anh rồi thử đoán nghĩa trước khi lật.','Đoán nghĩa rồi chạm thẻ.');
-  if(!s.includes('spelling-game.js'))s=s.replace('  <script src="./assets/js/lesson.js','  <script src="./assets/js/spelling-game.js?v=grade12-20261023"></script>\n  <script src="./assets/js/lesson.js');
+  if(!s.includes('spelling-game.js'))s=s.replace('  <script src="./assets/js/lesson.js','  <script src="./assets/js/spelling-game.js?v=compact-listen-20261024"></script>\n  <script src="./assets/js/lesson.js');
  }
  if(file==='grammar.html'){
-  if(!s.includes('grammar-improvement-data.js'))s=s.replace(/(  <script src="\.\/assets\/js\/grammar-complete-data.js[^\n]*\n)/,'$1  <script src="./assets/js/grammar-improvement-data.js?v=grade12-20261023"></script>\n');
+  if(!s.includes('grammar-improvement-data.js'))s=s.replace(/(  <script src="\.\/assets\/js\/grammar-complete-data.js[^\n]*\n)/,'$1  <script src="./assets/js/grammar-improvement-data.js?v=compact-listen-20261024"></script>\n');
   s=s.replace('<p class="g6-overline">CHỌN BÀI LUYỆN</p>','').replace('Bắt đầu theo cách của em','Chọn thử thách');
   s=s.replace(/<p>Chọn dạng bài, phạm vi và độ khó\.[^<]*<\/p>/,'').replace(/<p class="gg-field-note">Luyện từ dễ tới khó[^<]*<\/p>/,'');
   s=s.replace(/(<section class="gg-info"><h2>Ôn theo học kỳ<\/h2>)<p>[^<]*<\/p>/,'$1<p>Học kỳ 1: Unit 1–5 · Học kỳ 2: Unit 6–10</p>');

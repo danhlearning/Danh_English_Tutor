@@ -34,7 +34,7 @@ for (const topic of topics) {
   const htmlFile = path.join(root, `grade/lop2/${topic}.html`);
   let html = fs.readFileSync(htmlFile, 'utf8');
   if (!html.includes('pencil-illustrations.js')) {
-    html = html.replace('</head>', '<link rel="stylesheet" href="./assets/css/pencil-illustrations.css?v=picture-frame-20261023-2">\n<script src="./assets/js/pencil-images-data.js?v=pencil-20261019"></script>\n<script src="./assets/js/pencil-illustrations.js?v=smooth-20261023-1"></script>\n</head>');
+    html = html.replace('</head>', '<link rel="stylesheet" href="./assets/css/pencil-illustrations.css?v=picture-frame-20261023-2">\n<script src="./assets/js/pencil-images-data.js?v=compact-listen-20261024"></script>\n<script src="./assets/js/pencil-illustrations.js?v=compact-listen-20261024"></script>\n</head>');
     html = html.replace('class="grade2-topic"', 'class="grade2-topic g2-pencil"');
     html = html.replace(/Hình Minh Họa SVG Ghép Chi Tiết/g, 'Tranh bút chì màu');
     html = html.replace(/\((?:Hình Minh Họa )?SVG (?:Ghép )?Chi Tiết\)/g, '(Tranh bút chì màu)');

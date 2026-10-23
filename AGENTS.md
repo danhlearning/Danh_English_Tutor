@@ -13,6 +13,12 @@
 
 ## Nội dung và giao diện
 
+- **Yêu cầu ngày 24/10/2026:** không hiển thị số lượng từ trên thẻ hoặc phần giới thiệu Unit. Không dùng mũi tên trang trí trong thẻ Unit, thẻ hướng dẫn hoặc thẻ chọn mục; cả thẻ là vùng bấm. Áp dụng cho trang hiện tại, thành phần dùng chung và bộ dựng. Giữ chỉ báo tiến độ lượt đang học và nút điều hướng có chức năng (trước/tiếp).
+
+- **Yêu cầu ngày 24/10/2026:** thẻ Unit mở bài trực tiếp, không thêm nhãn/nút “Vào học”. Nút nghe chỉ hiện biểu tượng loa, giữ tên truy cập bằng `aria-label`. Thao tác chủ động bấm loa được phát độc lập với tùy chọn tắt âm phản hồi đã lưu; ưu tiên media playback khi thiết bị hỗ trợ. Không hứa vượt qua âm lượng media bằng 0 hoặc giới hạn của hệ điều hành.
+
+- **Yêu cầu ngày 24/10/2026:** không hiển thị UI điều chỉnh âm thanh/chuyển động trên toàn website, kể cả trang cũ và mẫu dựng. Giữ nút nghe từ/câu phục vụ học, phản hồi âm thanh sau thao tác, tùy chọn đã lưu và giảm chuyển động của thiết bị. Quy tắc này thay thế yêu cầu hiển thị nút bật/tắt ở các phần bên dưới.
+
 - Không dùng mũi tên trang trí ở đề mục/thẻ chọn mục. Ưu tiên chữ rõ, khoảng cách cân đối và vùng bấm dễ dùng; giữ các nút điều hướng có chức năng như thẻ trước/thẻ tiếp.
 
 - **Phong cách UI toàn repo là tranh vẽ bút chì màu:** nền giấy, nét viền và chất liệu có cảm giác vẽ tay; áp dụng cho trang, thẻ, nút, biểu tượng và hình minh họa mới hoặc được chỉnh sửa. Giữ chữ Nunito rõ nét, tương phản và vùng bấm dễ dùng trên điện thoại.

@@ -30,6 +30,7 @@
   function persist(){storage.setItem(key(unit,mode),JSON.stringify(round));}
   function notify(text){document.querySelector('#feedback').textContent=text;}
   function speak(text){
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
     if(!fx.soundEnabled()){notify('Em hãy bật âm thanh rồi bấm nghe nhé.');return;}
     if(!window.speechSynthesis||!window.SpeechSynthesisUtterance){window.DanhAnswerSpeech.say(text);return;}
     speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(text);utterance.lang='en-US';window.DanhYoungSpeech.configure(utterance);

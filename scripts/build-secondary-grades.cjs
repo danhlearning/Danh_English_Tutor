@@ -54,7 +54,7 @@ for (const grade of [8,9]) {
   const names=['lop7','grammar','vocabulary-review',...Array.from({length:12},(_,i)=>`unit${i+1}`)];
   for(const name of names){
     let html=convert(read(`grade/lop7/${name}.html`)).replace(/  <link rel="preconnect"[^\n]*\n/g,'').replace(/  <link href="https:\/\/fonts.googleapis.com[^\n]*\n/g,'');
-    html=html.replace(/  <script src="\.\/assets\/js\/grammar-exam-data.js"><\/script>\r?\n/,'');
+    html=html.replace(/  <script src="\.\/assets\/js\/grammar-exam-data.js?v=compact-listen-20261024"><\/script>\r?\n/,'');
     html=html.replace(/<label><input type="radio" name="activity" value="(?:pronunciation|preposition)"><span>[^<]*<\/span><\/label>/g,'');
     html=html.replace('Luyện từng câu theo Unit, hoặc đọc từng phần của một đoạn văn.','Chọn thử thách, nhận gợi ý và tự sửa qua từng câu.');
     html=html.replace('ba cấp độ và mỗi set 10 câu.','ba cấp độ và mỗi lượt tối đa 10 câu.');
@@ -62,7 +62,7 @@ for (const grade of [8,9]) {
     html=html.replace('Luyện tiếp 10 câu','Luyện lượt tiếp theo');
     html=html.replace('Ảnh theo ngữ cảnh; từ trừu tượng có nghĩa tiếng Việt trong ảnh.','Ảnh theo ngữ cảnh; từ trừu tượng có nghĩa tiếng Việt.');
     html=html.replace('Đọc từ, xem ảnh, nghĩa và câu ví dụ. Từ khó có ảnh theo ngữ cảnh; từ trừu tượng có nghĩa tiếng Việt trong ảnh.','Đọc từ, xem hình hoặc biểu tượng, nghĩa và câu ví dụ. Thử đoán nghĩa trước khi lật thẻ nhé.');
-    html=html.replace('Mỗi Unit có từ vựng, câu ví dụ và hình minh họa cho từ khó.','Mỗi Unit có 8 từ/cụm từ, ví dụ và hình hoặc biểu tượng gợi nhớ.');
+    html=html.replace('Mỗi Unit có từ vựng, câu ví dụ và hình minh họa cho từ khó.','');
     html=html.replace('viết lại câu giữ nguyên nghĩa, phát âm và điền giới từ trong đoạn văn thường gặp trong phần ôn tập.','viết lại câu giữ nguyên nghĩa.');
     html=html.replace(`${questions.length} câu hỏi`,`${questions.length} mục luyện`);
     html=html.replace('Có 252 mục luyện,','Có 252 mục luyện từ 72 ngữ cảnh và 36 câu viết lại,');

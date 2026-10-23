@@ -12,7 +12,7 @@ for(const g of [6,7,8,9,10,11,12]){
  function pencil(s){
   if(g===10)s=s.replace(/units-data\.js\?[^"']*/g,'units-data.js?v=logic-20261022');
   if(g===7)return s.replace(/units-data\.js\?[^"']*/g,'units-data.js?v=pencil-20261021');
-  return g===6||g===10?s.replace(/  <script src="\.\/assets\/js\/units-data/,`  <script src="./assets/js/pencil-images-data.js?v=${g===10?'logic-20261022':'pencil-complete-3'}"></script>\n  <script src="./assets/js/units-data`):s;
+  return g===6||g===10?s.replace(/  <script src="\.\/assets\/js\/units-data/,`  <script src="./assets/js/pencil-images-data.js?v=compact-listen-20261024'logic-20261022':'pencil-complete-3'}"></script>\n  <script src="./assets/js/units-data`):s;
  }
  let catalog=tidy(convert(base.catalog));
  catalog=catalog.replace(/href="(?:\.\/|\.\.\/lop\d+\/)assets\/css\/catalog.css[^"]*"/,'href="../lop6/assets/css/catalog.css?v=secondary-template-3"').replaceAll('12 Unit',`${units.length} Unit`).replace(/<small>[^<]*<\/small>/g,'').replace('<p>Trộn chủ đề, nhớ lâu hơn.</p>','').replace('<p>Chọn Unit hoặc học kỳ. Mỗi lượt 10 câu, vừa sức để tiến bộ.</p>','').replace(/alt="Các bạn học sinh[^"]*"/,`alt="Hành trình học tiếng Anh lớp ${g} qua tranh bút chì màu."`);
@@ -26,8 +26,6 @@ for(const g of [6,7,8,9,10,11,12]){
  // Keep every existing bank script for each grade, including its stable question IDs.
  const old=read(`grade/lop${g}/grammar.html`);
  const bankScripts=[...new Set([...old.matchAll(/  <script src="\.\/assets\/js\/(grammar-(?:data|extra-data|expanded-data|rewrite-data|exam-data|complete-data)\.js)(?:\?[^"]*)?"><\/script>/g)].map(m=>`  <script src="./assets/js/${m[1]}?v=secondary-template-3"></script>`))].join('\n');
- grammar=grammar.replace(/  <script src="\.\/assets\/js\/grammar-(?:data|extra-data|expanded-data|rewrite-data|exam-data|complete-data)\.js(?:\?[^"]*)?"><\/script>\r?\n/g,'');
- grammar=grammar.replace(/  <script src="\.\.\/\.\.\/shared\/learning-effects.js?v=smooth-20261023-1'\n  <script src="../../shared/learning-effects.js?v=smooth-20261023-1');
  grammar=grammar.replace(/id="library-count">[^<]*/, 'id="library-count">Đang tải bài luyện');
  grammar=grammar.replace('Câu hỏi do website biên soạn, không phải đề thi chính thức.','Bài viết được đối chiếu với đáp án mẫu; các dạng có thể cùng luyện một ngữ cảnh.');
  write(`grade/lop${g}/grammar.html`,pencil(grammar));

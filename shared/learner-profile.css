@@ -12,3 +12,25 @@ label{display:block;font-weight:900;margin:12px 0 6px}input:not([type=checkbox])
 @keyframes hello{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
 @media(max-width:480px){.overlay{padding:12px}.sheet{padding:20px;max-height:calc(100dvh - 24px);border-radius:24px}h1{font-size:25px}.bar{padding:8px 10px}.bar-name{font-size:15px}.bar button{padding:7px 9px}}
 @media(prefers-reduced-motion:reduce){.sheet{animation:none}}
+
+/* Giấy kem và nét chì xanh đồng bộ với trang chủ. */
+:host{color:#294f46}
+button{color:#39594f;background:#fffaf0;border-color:#cbbb9e;border-radius:13px}
+button:hover{background:#f3ead6}
+button:focus-visible,input:focus-visible,a:focus-visible{outline-color:#237569}
+.overlay{background:rgba(41,60,49,.35);backdrop-filter:blur(4px)}
+.sheet{max-width:440px;padding:22px 24px;background-color:#fcf5e5;background-image:radial-gradient(#ad906017 .65px,transparent .65px);background-size:5px 5px;border:1px solid #cbbb9e;border-radius:25px 23px 26px 22px;box-shadow:0 16px 60px #493c2929}
+.mascot{font-size:38px;line-height:1.2;margin:0 0 6px}
+h1{color:#294f46;font-size:26px;margin:6px 0 20px}
+.close{background:transparent;border-color:transparent;color:#53695f;min-height:44px;margin-right:-8px;padding:6px 10px}
+.muted,.profile small{color:#596c60}
+.primary{background:#237569;box-shadow:0 3px 0 #16584e;border:1px solid #1c685d;padding:11px 14px;font-size:17px;margin:16px 0 10px}
+.primary:hover{background:#1c685d}
+input:not([type=checkbox]){border-color:#cbbb9e;background:#fffdf6;color:#294f46;font-size:18px;min-height:48px}
+.avatars{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}.avatars button{width:100%;min-width:44px;min-height:44px;font-size:25px;background:#fffaf0}
+.avatars button[aria-pressed=true]{background:#e3eee1;border-color:#397667}
+.profile{font-size:18px;padding:10px 13px;gap:12px;background:#fffaf0;box-shadow:0 2px 0 #80663f12}
+.avatar{font-size:29px}.profiles{max-height:32dvh}
+.wide{font-size:15px}.error:empty{display:none}
+@media(max-width:480px){.sheet{padding:16px 18px;border-radius:22px}h1{font-size:24px;margin-bottom:16px}}
+@media(max-width:370px){.avatars{grid-template-columns:repeat(4,minmax(0,1fr))}}

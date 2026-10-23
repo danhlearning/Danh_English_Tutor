@@ -14,10 +14,10 @@
     if (type === 'correct') {
       const now = audioCtx.currentTime;
       osc.type = 'triangle';
-      osc.frequency.setValueAtTime(523.25, now); 
-      osc.frequency.setValueAtTime(659.25, now + 0.1); 
-      osc.frequency.setValueAtTime(783.99, now + 0.2); 
-      osc.frequency.setValueAtTime(1046.50, now + 0.3); 
+      osc.frequency.setValueAtTime(523.25, now);
+      osc.frequency.setValueAtTime(659.25, now + 0.1);
+      osc.frequency.setValueAtTime(783.99, now + 0.2);
+      osc.frequency.setValueAtTime(1046.50, now + 0.3);
       gain.gain.setValueAtTime(0.3, now);
       gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
       osc.start(now);
@@ -52,7 +52,7 @@
     { num: 'Fri', name: 'Friday', ipa: '/ˈfraɪdeɪ/', meaning: 'Thứ Sáu', hex: '#ED64A6', category: 'day' },
     { num: 'Sat', name: 'Saturday', ipa: '/ˈsætədeɪ/', meaning: 'Thứ Bảy', hex: '#E53E3E', category: 'day' },
     { num: 'Sun', name: 'Sunday', ipa: '/ˈsʌndeɪ/', meaning: 'Chủ Nhật', hex: '#ECC94B', category: 'day' },
-    
+
     { num: 'Jan', name: 'January', ipa: '/ˈdʒænjʊəri/', meaning: 'Tháng 1', hex: '#4A90E2', category: 'month' },
     { num: 'Feb', name: 'February', ipa: '/ˈfɛbrʊəri/', meaning: 'Tháng 2', hex: '#319795', category: 'month' },
     { num: 'Mar', name: 'March', ipa: '/mɑːtʃ/', meaning: 'Tháng 3', hex: '#DD6B20', category: 'month' },
@@ -127,6 +127,7 @@
   let flashcardDeck = [];
 
   function speak(text) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
     return window.DanhAnswerSpeech.say(text);
   }
 
@@ -163,7 +164,7 @@
 
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
-    
+
     document.getElementById(tabId).classList.add('active');
     if(evt && evt.target) {
       evt.target.classList.add('active');
@@ -386,7 +387,7 @@
     const feedback = document.getElementById('spelling-feedback');
     const inputEl = document.getElementById('spelling-input');
     const correctName = spellingList[spellingIdx].name;
-    
+
     feedback.style.color = '#DD6B20';
     feedback.innerText = `💡 Đáp án: ${correctName}`;
     inputEl.value = correctName;
@@ -445,7 +446,7 @@
     const inputEl = document.getElementById('count-sentence-input');
     const feedback = document.getElementById('count-feedback');
     const userInput = normalizeText(inputEl.value);
-    
+
     const targetVal = normalizeText(item.target);
     const validAnswers = [
       normalizeText(`It is ${targetVal}`),
@@ -459,7 +460,7 @@
       feedback.style.color = '#38A169';
       feedback.innerText = '🎉 Chính xác! Tuyệt vời!';
       inputEl.disabled = true;
-      
+
       countCorrectCount++;
       updateCountScore();
       playSoundEffect('correct');

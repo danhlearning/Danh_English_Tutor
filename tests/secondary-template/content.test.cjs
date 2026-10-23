@@ -3,7 +3,7 @@ const root=path.resolve(__dirname,'../..');
 function bank(g){const c={window:{}};vm.createContext(c);const h=fs.readFileSync(path.join(root,`grade/lop${g}/grammar.html`),'utf8');for(const m of h.matchAll(/src="\.\/assets\/js\/(.*?\.js)/g)){if(m[1]==='grammar.js')continue;vm.runInContext(fs.readFileSync(path.join(root,`grade/lop${g}/assets/js/${m[1]}`),'utf8'),c);}return {units:c.window[`DanhGrade${g}Units`],questions:c.window[`DanhGrade${g}Grammar`],html:h};}
 for(const g of [6,7,8,9,10,11,12])test(`Lớp ${g}: cấu trúc, phạm vi và ngân hàng đủ các dạng`,()=>{
 const {units,questions,html}=bank(g);assert.equal(new Set(questions.map(q=>q.id)).size,questions.length);
-assert(html.includes('data-effects-mode="automatic"'));assert(html.includes('<button hidden id="sound-toggle"'));assert(html.includes('<button hidden id="motion-toggle"'));
+assert(html.includes('data-effects-mode="automatic"'));assert(!html.includes('id="sound-toggle"'));assert(!html.includes('id="motion-toggle"'));
 for(const u of units){assert(u.words.length>=6);assert.equal(new Set(u.words.map(w=>w.id)).size,u.words.length);
 for(const type of ['choice','fill','order','correct','rewrite','pronunciation','preposition'])assert(questions.some(q=>q.unit===u.number&&q.type===type),`g${g} u${u.number} ${type}`);
 for(const level of ['easy','medium','hard'])assert(questions.some(q=>q.unit===u.number&&q.level===level&&q.type==='rewrite'));

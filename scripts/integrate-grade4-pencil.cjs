@@ -11,7 +11,7 @@ const script=`/* Ảnh bút chì màu đã kiểm tra; dùng lại ở các bài
 fs.writeFileSync(path.join(root,'grade/lop4/assets/js/pencil-images.js'),script);
 for(const name of fs.readdirSync(path.join(root,'grade/lop4')).filter(n=>/^previous(?:-unit\d+)?\.html$/.test(n))){
  const file=path.join(root,'grade/lop4',name);let html=fs.readFileSync(file,'utf8');
- if(!html.includes('assets/js/pencil-images.js'))html=html.replace(/(<script src="\.\/assets\/js\/(?:lesson|index)\.js[^\"]*"><\/script>)/,'<script src="./assets/js/pencil-images.js?v=g4-pencil-20261022-1"></script>\n$1');
+ if(!html.includes('assets/js/pencil-images.js'))html=html.replace(/(<script src="\.\/assets\/js\/(?:lesson|index)\.js[^\"]*"><\/script>)/,'<script src="./assets/js/pencil-images.js?v=compact-listen-20261024"></script>\n$1');
  fs.writeFileSync(file,html);
 }
 require('./sync-primary-grade2.cjs');

@@ -23,6 +23,7 @@
     try { window.DanhLearners.storage.setItem(key, JSON.stringify([...mastered])); } catch { /* Không lưu được trên thiết bị này. */ }
   };
   const speak = term => {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(term);
     const status = $('#speech-note');
     if (!window.DanhVocabularyGame.soundEnabled()) { status.textContent = 'Âm thanh đang tắt.'; return; }
     window.DanhAnswerSpeech.say(term);

@@ -45,8 +45,8 @@
 
   /* BỘ TỪ VỰNG TRANG PHỤC SVG GHÉP ICON CHI TIẾT */
   const clothesVocabulary = [
-    { 
-      name: 'T-shirt', 
+    {
+      name: 'T-shirt',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Áo thun tay ngắn đỏ với hình ngôi sao ghép ở ngực -->
         <path d="M 28 25 L 10 38 L 22 52 L 28 46 L 28 82 L 72 82 L 72 46 L 78 52 L 90 38 L 72 25 Q 50 32 28 25 Z" fill="#E53935" stroke="#B71C1C" stroke-width="2.5"/>
@@ -54,11 +54,11 @@
         <!-- Ngôi sao vàng trang trí -->
         <polygon points="50,42 53,50 61,50 54,55 57,63 50,58 43,63 46,55 39,50 47,50" fill="#FFD54F"/>
         <line x1="28" y1="82" x2="72" y2="82" stroke="#B71C1C" stroke-width="3"/>
-      </svg>`, 
-      ipa: '/ˈtiː.ʃɜːt/', meaning: 'Áo thun / Áo phông', sentence: 'I wear a red T-shirt.', hex: '#E53935' 
+      </svg>`,
+      ipa: '/ˈtiː.ʃɜːt/', meaning: 'Áo thun / Áo phông', sentence: 'I wear a red T-shirt.', hex: '#E53935'
     },
-    { 
-      name: 'Shirt', 
+    {
+      name: 'Shirt',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Áo sơ mi xanh dương có cổ, hàng nút và túi áo ghép -->
         <path d="M 30 25 L 12 36 L 22 50 L 30 44 L 30 84 L 70 84 L 70 44 L 78 50 L 88 36 L 70 25 Z" fill="#1E88E5" stroke="#0D47A1" stroke-width="2.5"/>
@@ -73,11 +73,11 @@
         <circle cx="50" cy="78" r="2.5" fill="#FFFFFF"/>
         <!-- Túi áo -->
         <rect x="56" y="46" width="10" height="12" rx="1" fill="#1565C0" stroke="#0D47A1"/>
-      </svg>`, 
-      ipa: '/ʃɜːt/', meaning: 'Áo sơ mi', sentence: 'He wears a white shirt.', hex: '#1E88E5' 
+      </svg>`,
+      ipa: '/ʃɜːt/', meaning: 'Áo sơ mi', sentence: 'He wears a white shirt.', hex: '#1E88E5'
     },
-    { 
-      name: 'Dress', 
+    {
+      name: 'Dress',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Váy đầm xòe hồng xinh xắn với nơ ghép ở eo -->
         <path d="M 38 20 L 32 38 L 42 42 L 20 85 L 80 85 L 58 42 L 68 38 L 62 20 Q 50 26 38 20 Z" fill="#EC407A" stroke="#AD1457" stroke-width="2.5"/>
@@ -89,11 +89,11 @@
         <path d="M 56 42.5 L 60 39 L 60 46 Z" fill="#FF80AB"/>
         <!-- Sọc bèo chân váy -->
         <path d="M 20 85 Q 30 80 40 85 Q 50 80 60 85 Q 70 80 80 85" stroke="#AD1457" stroke-width="3" fill="none"/>
-      </svg>`, 
-      ipa: '/dres/', meaning: 'Váy đầm', sentence: 'She wears a pink dress.', hex: '#EC407A' 
+      </svg>`,
+      ipa: '/dres/', meaning: 'Váy đầm', sentence: 'She wears a pink dress.', hex: '#EC407A'
     },
-    { 
-      name: 'Skirt', 
+    {
+      name: 'Skirt',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Chân váy xếp ly màu cam vàng -->
         <path d="M 35 30 L 65 30 L 78 80 L 22 80 Z" fill="#FF9800" stroke="#E65100" stroke-width="2.5"/>
@@ -104,11 +104,11 @@
         <line x1="46" y1="33" x2="44" y2="80" stroke="#E65100" stroke-width="2"/>
         <line x1="54" y1="33" x2="56" y2="80" stroke="#E65100" stroke-width="2"/>
         <line x1="62" y1="33" x2="68" y2="80" stroke="#E65100" stroke-width="2"/>
-      </svg>`, 
-      ipa: '/skɜːt/', meaning: 'Chân váy', sentence: 'The girl wears a yellow skirt.', hex: '#FF9800' 
+      </svg>`,
+      ipa: '/skɜːt/', meaning: 'Chân váy', sentence: 'The girl wears a yellow skirt.', hex: '#FF9800'
     },
-    { 
-      name: 'Pants', 
+    {
+      name: 'Pants',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Quần dài jeans lam đậm có túi và thắt lưng -->
         <path d="M 30 25 L 70 25 L 74 85 L 54 85 L 50 48 L 46 85 L 26 85 Z" fill="#3F51B5" stroke="#1A237E" stroke-width="2.5"/>
@@ -120,11 +120,11 @@
         <!-- Đường may túi -->
         <path d="M 30 30 Q 38 33 36 42" stroke="#9FA8DA" stroke-width="2" fill="none"/>
         <path d="M 70 30 Q 62 33 64 42" stroke="#9FA8DA" stroke-width="2" fill="none"/>
-      </svg>`, 
-      ipa: '/pænts/', meaning: 'Quần dài', sentence: 'He is wearing blue pants.', hex: '#3F51B5' 
+      </svg>`,
+      ipa: '/pænts/', meaning: 'Quần dài', sentence: 'He is wearing blue pants.', hex: '#3F51B5'
     },
-    { 
-      name: 'Shorts', 
+    {
+      name: 'Shorts',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Quần đùi xanh lá trẻ trung -->
         <path d="M 28 30 L 72 30 L 76 65 L 54 65 L 50 48 L 46 65 L 24 65 Z" fill="#66BB6A" stroke="#2E7D32" stroke-width="2.5"/>
@@ -133,11 +133,11 @@
         <path d="M 47 34 C 42 42 40 45 42 48" stroke="#FFFFFF" stroke-width="2.5" fill="none"/>
         <path d="M 53 34 C 58 42 60 45 58 48" stroke="#FFFFFF" stroke-width="2.5" fill="none"/>
         <circle cx="50" cy="31" r="2" fill="#2E7D32"/>
-      </svg>`, 
-      ipa: '/ʃɔːts/', meaning: 'Quần đùi / Quần ngắn', sentence: 'I wear shorts in summer.', hex: '#4CAF50' 
+      </svg>`,
+      ipa: '/ʃɔːts/', meaning: 'Quần đùi / Quần ngắn', sentence: 'I wear shorts in summer.', hex: '#4CAF50'
     },
-    { 
-      name: 'Jacket', 
+    {
+      name: 'Jacket',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Áo khoác da/dù màu tím nâu cá tính có dây kéo khóa -->
         <path d="M 28 25 L 8 42 L 20 58 L 28 50 L 28 82 L 72 82 L 72 50 L 80 58 L 92 42 L 72 25 Z" fill="#8E24AA" stroke="#4A148C" stroke-width="2.5"/>
@@ -149,11 +149,11 @@
         <!-- 2 Túi áp xéo -->
         <line x1="32" y1="65" x2="42" y2="72" stroke="#4A148C" stroke-width="3"/>
         <line x1="68" y1="65" x2="58" y2="72" stroke="#4A148C" stroke-width="3"/>
-      </svg>`, 
-      ipa: '/ˈdʒæk.ɪt/', meaning: 'Áo khoác ngắn', sentence: 'Put on your jacket.', hex: '#8E24AA' 
+      </svg>`,
+      ipa: '/ˈdʒæk.ɪt/', meaning: 'Áo khoác ngắn', sentence: 'Put on your jacket.', hex: '#8E24AA'
     },
-    { 
-      name: 'Coat', 
+    {
+      name: 'Coat',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Áo măng tô/Áo khoác dáng dài màu nâu mùa đông -->
         <path d="M 28 20 L 8 38 L 20 52 L 26 44 L 24 88 L 76 88 L 74 44 L 80 52 L 92 38 L 72 20 Z" fill="#8D6E63" stroke="#4E342E" stroke-width="2.5"/>
@@ -167,11 +167,11 @@
         <!-- Thắt lưng eo -->
         <rect x="25" y="68" width="50" height="7" fill="#5D4037"/>
         <rect x="46" y="66" width="8" height="11" fill="#FFD54F" stroke="#5D4037"/>
-      </svg>`, 
-      ipa: '/kəʊt/', meaning: 'Áo khoác dáng dài', sentence: 'It is cold, wear a coat.', hex: '#8D6E63' 
+      </svg>`,
+      ipa: '/kəʊt/', meaning: 'Áo khoác dáng dài', sentence: 'It is cold, wear a coat.', hex: '#8D6E63'
     },
-    { 
-      name: 'Sweater', 
+    {
+      name: 'Sweater',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Áo len mùa đông màu đỏ cam họa tiết dệt ziczac -->
         <path d="M 26 25 L 8 40 L 18 56 L 26 48 L 26 82 L 74 82 L 74 48 L 82 56 L 92 40 L 74 25 Z" fill="#FF7043" stroke="#D84315" stroke-width="2.5"/>
@@ -180,11 +180,11 @@
         <!-- Họa tiết răng cưa ziczac -->
         <path d="M 26 50 L 34 56 L 42 50 L 50 56 L 58 50 L 66 56 L 74 50" stroke="#FFF" stroke-width="3" fill="none"/>
         <path d="M 26 62 L 34 68 L 42 62 L 50 68 L 58 62 L 66 68 L 74 62" stroke="#FFF" stroke-width="3" fill="none"/>
-      </svg>`, 
-      ipa: '/ˈswet.ər/', meaning: 'Áo len', sentence: 'This sweater is very warm.', hex: '#FF7043' 
+      </svg>`,
+      ipa: '/ˈswet.ər/', meaning: 'Áo len', sentence: 'This sweater is very warm.', hex: '#FF7043'
     },
-    { 
-      name: 'Hat', 
+    {
+      name: 'Hat',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Mũ vành / Mũ phớt sang trọng màu vàng kem có nơ -->
         <ellipse cx="50" cy="70" rx="42" ry="14" fill="#FFE082" stroke="#FFB300" stroke-width="2.5"/>
@@ -192,11 +192,11 @@
         <!-- Dải ruy băng đỏ quanh mũ -->
         <path d="M 26 62 C 30 58 70 58 74 62 C 74 68 26 68 26 62 Z" fill="#E53935"/>
         <circle cx="66" cy="62" r="4" fill="#B71C1C"/>
-      </svg>`, 
-      ipa: '/hæt/', meaning: 'Mũ / Nón', sentence: 'He wears a cool hat.', hex: '#FFCA28' 
+      </svg>`,
+      ipa: '/hæt/', meaning: 'Mũ / Nón', sentence: 'He wears a cool hat.', hex: '#FFCA28'
     },
-    { 
-      name: 'Cap', 
+    {
+      name: 'Cap',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Mũ lưỡi trai thể thao màu xanh dương -->
         <path d="M 22 58 C 22 28 72 28 74 58 Z" fill="#0288D1" stroke="#01579B" stroke-width="2.5"/>
@@ -206,11 +206,11 @@
         <circle cx="48" cy="30" r="4" fill="#01579B"/>
         <!-- Logo hình tròn -->
         <circle cx="48" cy="46" r="7" fill="#FFFFFF"/>
-      </svg>`, 
-      ipa: '/kæp/', meaning: 'Mũ lưỡi trai', sentence: 'Put on your baseball cap.', hex: '#0288D1' 
+      </svg>`,
+      ipa: '/kæp/', meaning: 'Mũ lưỡi trai', sentence: 'Put on your baseball cap.', hex: '#0288D1'
     },
-    { 
-      name: 'Socks', 
+    {
+      name: 'Socks',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Đôi tất/vớ cổ cao màu xám xanh sọc trắng -->
         <!-- Tất 1 -->
@@ -222,11 +222,11 @@
         <!-- Sọc sọc trang trí -->
         <line x1="20" y1="34" x2="40" y2="34" stroke="#FFF" stroke-width="3"/>
         <line x1="48" y1="34" x2="68" y2="34" stroke="#FFF" stroke-width="3"/>
-      </svg>`, 
-      ipa: '/sɒks/', meaning: 'Tất / Vớ (Đôi)', sentence: 'I need a pair of warm socks.', hex: '#26C6DA' 
+      </svg>`,
+      ipa: '/sɒks/', meaning: 'Tất / Vớ (Đôi)', sentence: 'I need a pair of warm socks.', hex: '#26C6DA'
     },
-    { 
-      name: 'Shoes', 
+    {
+      name: 'Shoes',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Đôi giày thể thao sneakers năng động -->
         <path d="M 10 68 C 10 52 32 45 48 52 C 55 42 70 42 88 56 C 94 65 92 78 85 80 L 10 80 Z" fill="#EF5350" stroke="#C62828" stroke-width="2.5"/>
@@ -237,11 +237,11 @@
         <!-- Dây giày xỏ -->
         <line x1="38" y1="56" x2="48" y2="60" stroke="#FFF" stroke-width="2.5"/>
         <line x1="42" y1="62" x2="52" y2="66" stroke="#FFF" stroke-width="2.5"/>
-      </svg>`, 
-      ipa: '/ʃuːz/', meaning: 'Giày (Đôi)', sentence: 'These shoes are comfortable.', hex: '#EF5350' 
+      </svg>`,
+      ipa: '/ʃuːz/', meaning: 'Giày (Đôi)', sentence: 'These shoes are comfortable.', hex: '#EF5350'
     },
-    { 
-      name: 'Boots', 
+    {
+      name: 'Boots',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Đôi boot/ủng cao cổ màu nâu cổ điển -->
         <path d="M 25 20 L 55 20 L 55 58 Q 75 58 85 68 Q 88 78 80 82 L 25 82 Z" fill="#A1887F" stroke="#4E342E" stroke-width="2.5"/>
@@ -253,11 +253,11 @@
         <circle cx="48" cy="32" r="2" fill="#FFD54F"/>
         <circle cx="48" cy="42" r="2" fill="#FFD54F"/>
         <circle cx="48" cy="52" r="2" fill="#FFD54F"/>
-      </svg>`, 
-      ipa: '/buːts/', meaning: 'Ủng / Giày cao cổ', sentence: 'She wears leather boots.', hex: '#8D6E63' 
+      </svg>`,
+      ipa: '/buːts/', meaning: 'Ủng / Giày cao cổ', sentence: 'She wears leather boots.', hex: '#8D6E63'
     },
-    { 
-      name: 'Gloves', 
+    {
+      name: 'Gloves',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Đôi găng tay mùa đông ấm áp -->
         <path d="M 20 80 L 20 42 Q 20 30 27 30 Q 33 30 33 42 L 33 25 Q 33 15 40 15 Q 47 15 47 25 L 47 28 Q 47 18 54 18 Q 60 18 60 28 L 60 35 Q 60 28 66 28 Q 72 28 72 38 L 72 60 Q 72 82 50 82 L 20 82 Z" fill="#AB47BC" stroke="#4A148C" stroke-width="2"/>
@@ -265,11 +265,11 @@
         <path d="M 22 55 Q 10 45 16 35 Q 24 35 28 48 Z" fill="#AB47BC" stroke="#4A148C" stroke-width="2"/>
         <!-- Bo cổ găng tay -->
         <rect x="18" y="75" width="56" height="10" rx="3" fill="#7B1FA2"/>
-      </svg>`, 
-      ipa: '/ɡlʌvz/', meaning: 'Găng tay (Đôi)', sentence: 'Wear gloves to keep warm.', hex: '#AB47BC' 
+      </svg>`,
+      ipa: '/ɡlʌvz/', meaning: 'Găng tay (Đôi)', sentence: 'Wear gloves to keep warm.', hex: '#AB47BC'
     },
-    { 
-      name: 'Scarf', 
+    {
+      name: 'Scarf',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Khăn quàng cổ len mùa đông quấn vòng màu đỏ -->
         <path d="M 20 30 C 20 15 80 15 80 30 C 80 48 20 48 20 30 Z" fill="#E53935" stroke="#B71C1C" stroke-width="2.5"/>
@@ -280,11 +280,11 @@
         <line x1="67" y1="88" x2="67" y2="95" stroke="#B71C1C" stroke-width="2"/>
         <line x1="72" y1="88" x2="72" y2="95" stroke="#B71C1C" stroke-width="2"/>
         <line x1="77" y1="88" x2="77" y2="95" stroke="#B71C1C" stroke-width="2"/>
-      </svg>`, 
-      ipa: '/skɑːf/', meaning: 'Khăn quàng cổ', sentence: 'A red scarf around her neck.', hex: '#E53935' 
+      </svg>`,
+      ipa: '/skɑːf/', meaning: 'Khăn quàng cổ', sentence: 'A red scarf around her neck.', hex: '#E53935'
     },
-    { 
-      name: 'Tie', 
+    {
+      name: 'Tie',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Cà vạt công sở sọc xéo thanh lịch -->
         <!-- Nút thắt cà vạt -->
@@ -294,11 +294,11 @@
         <!-- Sọc trang trí -->
         <line x1="45" y1="40" x2="55" y2="46" stroke="#FFD54F" stroke-width="3"/>
         <line x1="43" y1="55" x2="57" y2="61" stroke="#FFD54F" stroke-width="3"/>
-      </svg>`, 
-      ipa: '/taɪ/', meaning: 'Cà vạt', sentence: 'He wears a blue tie to work.', hex: '#1E88E5' 
+      </svg>`,
+      ipa: '/taɪ/', meaning: 'Cà vạt', sentence: 'He wears a blue tie to work.', hex: '#1E88E5'
     },
-    { 
-      name: 'Belt', 
+    {
+      name: 'Belt',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Thắt lưng da màu nâu có mặt khóa kim loại vàng -->
         <rect x="10" y="42" width="80" height="16" rx="3" fill="#5D4037" stroke="#3E2723" stroke-width="2"/>
@@ -310,11 +310,11 @@
         <rect x="62" y="36" width="22" height="28" rx="4" fill="#FFD54F" stroke="#FFA000" stroke-width="2.5"/>
         <rect x="67" y="41" width="12" height="18" fill="#5D4037"/>
         <line x1="72" y1="36" x2="72" y2="64" stroke="#FFA000" stroke-width="3"/>
-      </svg>`, 
-      ipa: '/belt/', meaning: 'Thắt lưng / Dây nịt', sentence: 'a brown leather belt.', hex: '#795548' 
+      </svg>`,
+      ipa: '/belt/', meaning: 'Thắt lưng / Dây nịt', sentence: 'a brown leather belt.', hex: '#795548'
     },
-    { 
-      name: 'Pyjamas', 
+    {
+      name: 'Pyjamas',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Bộ đồ ngủ pyjamas màu xanh dễ thương có họa tiết mặt trăng -->
         <!-- Áo ngủ -->
@@ -323,11 +323,11 @@
         <path d="M 18 48 L 36 48 L 38 85 L 28 85 L 27 62 L 26 85 L 16 85 Z" fill="#80DEEA" stroke="#00838F" stroke-width="2"/>
         <!-- Hình mặt trăng ghép bên phải -->
         <path d="M 68 30 A 20 20 0 1 0 88 50 A 15 15 0 1 1 68 30 Z" fill="#FFF59D" stroke="#FBC02D"/>
-      </svg>`, 
-      ipa: '/pəˈdʒɑː.məz/', meaning: 'Bộ đồ ngủ', sentence: 'Put on your pyjamas before sleep.', hex: '#00ACC1' 
+      </svg>`,
+      ipa: '/pəˈdʒɑː.məz/', meaning: 'Bộ đồ ngủ', sentence: 'Put on your pyjamas before sleep.', hex: '#00ACC1'
     },
-    { 
-      name: 'Raincoat', 
+    {
+      name: 'Raincoat',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Áo mưa trùm đầu màu vàng tươi và giọt nước mưa -->
         <path d="M 28 35 L 10 50 L 22 62 L 28 54 L 25 88 L 75 88 L 72 54 L 78 62 L 90 50 L 72 35 Z" fill="#FFEB3B" stroke="#FBC02D" stroke-width="2.5"/>
@@ -339,8 +339,8 @@
         <circle cx="50" cy="76" r="3" fill="#F57F17"/>
         <!-- Giọt mưa rơi -->
         <path d="M 82 22 Q 85 28 82 31 Q 79 28 82 22" fill="#29B6F6"/>
-      </svg>`, 
-      ipa: '/ˈreɪn.kəʊt/', meaning: 'Áo mưa', sentence: 'Take a raincoat, it is raining.', hex: '#FBC02D' 
+      </svg>`,
+      ipa: '/ˈreɪn.kəʊt/', meaning: 'Áo mưa', sentence: 'Take a raincoat, it is raining.', hex: '#FBC02D'
     }
   ];
   window.DanhPencil?.apply('clothes', clothesVocabulary);
@@ -375,6 +375,7 @@
   let flashcardDeck = [];
 
   function speak(text) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
     if (window.speechSynthesis) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
@@ -422,7 +423,7 @@
 
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
-    
+
     document.getElementById(tabId).classList.add('active');
     if(evt && evt.target) evt.target.classList.add('active');
 
@@ -708,7 +709,7 @@
       feedback.style.color = '#43A047';
       feedback.innerText = '🎉 Chính xác! Bạn giỏi quá!';
       inputEl.disabled = true;
-      
+
       countCorrectCount++;
       updateCountScore();
       playSoundEffect('correct');

@@ -102,6 +102,7 @@
         const cardElement = document.getElementById('flashcard');
 
         function speakWord(text) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
             if ('speechSynthesis' in window) {
                 window.speechSynthesis.cancel();
                 const utterance = new SpeechSynthesisUtterance(text);
@@ -174,7 +175,7 @@
                 setDisabled(true);
                 return;
             }
-            
+
             const checkImg = document.getElementById('img-vocab');
             if (!checkImg) {
                 document.getElementById('card-front-view').innerHTML = `
@@ -190,7 +191,7 @@
 
             setDisabled(false);
             const data = flashcards[currentIndex];
-            
+
             document.getElementById('lbl-word').innerText = data.word;
             document.getElementById('lbl-ipa').innerText = data.ipa;
             document.getElementById('lbl-def-en').innerText = data.defEn;
