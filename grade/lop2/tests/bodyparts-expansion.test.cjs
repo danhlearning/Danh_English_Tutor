@@ -37,8 +37,15 @@ test('All 32 pictures resolve to reviewed assets with unchanged bytes',()=>{
   const repository=path.resolve(root,'../..');
   const review=JSON.parse(fs.readFileSync(path.join(repository,'artifacts/grade2-pencil/bodyparts-expansion-review.json'),'utf8'));
   assert.equal(review.assets.length,32);
+  const updates=JSON.parse(fs.readFileSync(path.join(repository,'docs/content/bodyparts-character-image-review.json'),'utf8'));
+  assert.equal(updates.assets.length,18);
+  for(const asset of updates.assets){
+    assert(asset.reviewed&&asset.noReadableText&&asset.reviewSource);
+    assert.equal(asset.previousFile,review.assets.find(a=>a.id===asset.id).file);
+    assert.equal(asset.previousSha256,review.assets.find(a=>a.id===asset.id).sha256);
+  }
   for(const word of lesson.vocabulary){
-    const asset=review.assets.find(a=>a.id===word.id);
+    const asset=updates.assets.find(a=>a.id===word.id)||review.assets.find(a=>a.id===word.id);
     const file=context.window.DanhGrade2PencilManifest.bodyparts[word.name.toLowerCase()];
     assert.equal('grade/lop2/assets/images/pencil/'+file,asset.file);
     assert.deepEqual(asset.size,[768,768]);

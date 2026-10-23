@@ -160,7 +160,7 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
       activeWordAudio = null;
     }
     try {
-      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      if (window.speechSynthesis) window.speechSynthesis.cancel();
     } catch { /* Audio is optional. */ }
   }
 
@@ -318,6 +318,7 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
         const saved = JSON.parse(storage.getItem(LEARNING_KEY) || 'null');
         if (saved && saved.version === 1 && this.validDeck(saved.selected)) {
           this.state.selected = saved.selected;
+          if (['game-flip','game-mcq','game-spelling'].includes(saved.lastTab)) this.state.lastTab = saved.lastTab;
           for (const game of ['mcq', 'spelling']) {
             const best = saved.best?.[game];
             this.state.best[game] = Number.isInteger(best) && best >= 0 && best <= this.ids.length ? best : 0;
@@ -561,7 +562,7 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
     cardEl.setAttribute('aria-pressed', 'false');
     frontEl.setAttribute('aria-hidden', 'false');
     backEl.setAttribute('aria-hidden', 'true');
-    counterEl.innerText = `Thẻ ${singleCardIdx + 1} / ${flashcardDeck.length}`;
+    counterEl.textContent = `Thẻ ${singleCardIdx + 1} / ${flashcardDeck.length}`;
 
     frontEl.className = 'flip-card-front';
     frontEl.style.background = 'linear-gradient(135deg, #38A169, #4FD1C5)';
@@ -591,7 +592,9 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
       `;
     }
     // Reset the old flip in the same frame: no extra 600 ms before the next card.
-    void cardEl.offsetWidth;
+    const surface = cardEl.querySelector('.flip-card-inner');
+    // Keep the focusable card; replace only its rotating surface to reset without a layout flush.
+    surface.replaceWith(surface.cloneNode(true));
     cardEl.classList.remove('resetting');
     updateViewedCount();
   }

@@ -3,8 +3,9 @@
   if (window.DanhLearners) return;
   const C = window.DanhLearnerCore;
   const base = new URL('../', document.currentScript.src);
+  const preload=document.createElement('script');preload.src=new URL('shared/site-preload.js?v=20261022-1',base).href;preload.async=true;document.head.append(preload);
   const font=document.createElement('link');font.rel='stylesheet';font.href=new URL('shared/learner-font.css',base).href;document.head.append(font);
-  const gaps=document.createElement('script');gaps.src=new URL('shared/exercise-gaps.js?v=solid-1',base).href;gaps.async=false;document.head.append(gaps);
+  const gaps=document.createElement('script');gaps.src=new URL('shared/exercise-gaps.js?v=smooth-20261023-1',base).href;gaps.async=false;document.head.append(gaps);
   // Giọng đọc đáp án dùng chung, chỉ được gọi từ thao tác học đã chấm đúng.
   const answerSpeechEnabled=()=>window.DanhLearningEffects?.soundEnabled?.() ?? window.DanhGrammarExperience?.settings.sound ?? true;
   const cleanAnswerSpeech=s=>String(s||'').replace(/[\[\]]/g,'').replace(/·/g,',').replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim();
@@ -79,7 +80,7 @@
   let saved=session ? C.parse(session.getItem(SESSION)) : C.parse(window.name)?.learnerSession;
   const confirmed=saved?.tab===tab && Date.now()-saved.at<12*60*60*1000;
   const current=confirmed ? store.get(saved.id) : null;
-  let host, shadow, overlay, panel, returnFocus, errorMessage='', mustReload=false;
+  let host, shadow, overlay, panel, returnFocus, bodyOverflow='', errorMessage='', mustReload=false;
   function guestStorage() {
     const key='danh-learner-guest-session-v1', data=memory();
     let savedGuest;
@@ -115,11 +116,12 @@
   function button(text, fn, cls='') { const b=el('button',text,cls);b.type='button';b.addEventListener('click',fn);return b; }
   function info(text) { panel.append(el('p',text,'muted')); }
   function heading(text, icon='🌟') { panel.append(el('div',icon,'mascot'),el('h1',text)); }
-  function hide() { if(mustReload || (current && !store.get(current.id)))return; overlay.hidden=true; document.body.style.overflow=''; [...document.body.children].filter(e=>e!==host).forEach(e=>{if(e.dataset.learnerInert==='1'){e.inert=false;delete e.dataset.learnerInert;}});returnFocus?.focus(); }
+  function hide() { if(mustReload || (current && !store.get(current.id)))return; overlay.hidden=true; document.body.style.overflow=bodyOverflow; [...document.body.children].filter(e=>e!==host).forEach(e=>{if(e.dataset.learnerInert==='1'){e.inert=false;delete e.dataset.learnerInert;}});if(returnFocus?.isConnected)returnFocus.focus(); }
   function show(mode='list') {
     if (!shadow) return;
     if(mustReload && mode!=='list')mode='conflict';
-    returnFocus=shadow.activeElement || document.activeElement;panel.replaceChildren();overlay.hidden=false;document.body.style.overflow='hidden';
+    if(overlay.hidden){returnFocus=shadow.activeElement || document.activeElement;bodyOverflow=document.body.style.overflow;}
+    panel.replaceChildren();overlay.hidden=false;document.body.style.overflow='hidden';
     [...document.body.children].filter(e=>e!==host && !['SCRIPT','STYLE','LINK'].includes(e.tagName)).forEach(e=>{if(!e.inert){e.inert=true;e.dataset.learnerInert='1';}});
     if (!mustReload && (!current || store.get(current.id)) && mode!=='conflict') panel.append(button('Đóng ✕',hide,'close'));
     if (mode==='create' || mode==='edit') {
@@ -139,7 +141,7 @@
       const submit=el('button',editing?'Lưu thay đổi':'Vào học ngay','primary');submit.type='submit';form.append(submit);
       form.addEventListener('submit',e=>{e.preventDefault();try{if(editing){store.rename(p.id,input.value,avatar);location.reload();}else{const created=store.create(input.value,avatar,!!checkbox?.checked);select(created.id);}}catch(err){error.textContent=err.name==='QuotaExceededError'?'Máy chưa đủ chỗ lưu hồ sơ. Em thử giải phóng bộ nhớ nhé.':err.message||'Chưa lưu được hồ sơ. Em thử lại nhé.';}});
       panel.append(form);if(store.list().length)panel.append(button('← Chọn tên có sẵn',()=>show('list'),'wide'));
-      setTimeout(()=>input.focus(),0);
+      input.focus();
     } else if(mode==='manage' && current) {
       const p=store.get(current.id);if(!p){show('list');return;}
       heading(p.name+' và hành trình học',p.avatar);
@@ -159,7 +161,7 @@
       const list=el('div',undefined,'profiles'),profiles=store.list();profiles.forEach((p,i)=>{const b=button('',()=>select(p.id),'profile');b.append(el('span',p.avatar,'avatar'),el('strong',p.name));if(p.id===current?.id)b.append(el('small','Đang học'));else if(profiles.some(other=>other.id!==p.id && other.name===p.name && other.avatar===p.avatar))b.append(el('small','Hồ sơ #'+(i+1)));list.append(b);});panel.append(list,button('+ Thêm người học',()=>show('create'),'primary'),button('Khôi phục từ bản sao lưu',importFile,'wide'));
     }
     info(local?'Hồ sơ được lưu trên trình duyệt này, chưa đồng bộ sang thiết bị khác.':'Trình duyệt đang chặn lưu lâu dài. Hãy tải bản sao lưu trước khi đóng phiên.');
-    if(mode!=='create' && mode!=='edit')setTimeout(()=>panel.querySelector('button')?.focus(),0);
+    if(mode!=='create' && mode!=='edit')panel.querySelector('button')?.focus();
   }
   function safePath(path) {try{const u=new URL(path,location.origin);return u.origin===location.origin && /\.html$/.test(u.pathname) && !u.pathname.includes('..');}catch{return false;}}
   function download() {
@@ -171,7 +173,7 @@
   }
   function mount() {
     host=el('danh-learner');shadow=host.attachShadow({mode:'open'});
-    const css=el('link');css.rel='stylesheet';css.href=new URL('shared/learner-profile.css',base).href;shadow.append(css);
+    const css=el('link');css.rel='stylesheet';css.href=new URL('shared/learner-profile.css?v=ui-20261022',base).href;shadow.append(css);
     const bar=el('div',undefined,'bar');bar.append(el('span',current?current.avatar+' '+current.name:'🌱 Học thử','bar-name'));
     if(current)bar.append(button('Đổi người học',()=>show('list')),button('Hồ sơ',()=>show('manage')));
     else bar.append(button('Đăng nhập',window.DanhLearners.open,'primary login'));

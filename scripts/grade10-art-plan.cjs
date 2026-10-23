@@ -40,7 +40,7 @@ const scenes=[
 'A talented Vietnamese teenage guitarist skilfully playing an acoustic guitar, classmates listening with impressed expressions.',
 'A musician presenting a new plain album sleeve with only an abstract pictorial design, a few plain records neatly arranged beside it; no text or letters.',
 'Three teenage singers waiting at a small school music competition, one trophy with no inscriptions and a simple stage; no banners or numbers.',
-'A Vietnamese composer thoughtfully working at a piano with a pencil in hand and plain blank music paper on its stand, no notation, symbols or text.',
+'A Vietnamese composer thoughtfully working at a piano with a pencil in hand and plain blank music paper on its stand. The keyboard has parallel white keys and raised black keys in correct repeating groups of two and three, no overlapping keys, notation, symbols or text.',
 'Three musical instruments arranged clearly: acoustic guitar, flute and small drum, all fully visible on light paper, no person or lettering.'
 ],
 [
@@ -57,8 +57,8 @@ const scenes=[
 'One small digital room temperature sensor device with a completely blank display, fully visible beside a houseplant; no numbers, text or logo.',
 'A young Vietnamese inventor proudly demonstrating a simple mechanical grabber that picks up a small object, clearly a useful new invention, blank workspace.',
 'A compact portable charger next to a small closed travel pouch and plain mobile phone, emphasize easily carried size, blank screens and no labels.',
-'A safe school science experiment: a Vietnamese teenager wearing goggles carefully observing water filtration through gravel and sand in a clear bottle, tidy table.',
-'A working air filter with visible grey dust particles on one side and clean clear air on the other, no arrows or labels, simple natural visual comparison.',
+'A safe school science experiment: a Vietnamese teenager wearing goggles pours water into an inverted cut-open bottle filter. A visible ring clamp connects the bottle to a metal support rod with a heavy base on the tabletop. Gravel, sand, charcoal and cotton stay inside the bottle, with droplets falling through the neck into a receiving beaker below; nothing floats unsupported.',
+'A working air purifier with visible grey dust particles entering its front intake grille and clean air leaving a clearly visible outlet grille on the side, never passing through solid housing, no arrows or labels.',
 'An unbranded tablet displaying only simple colourful pictorial app icons, no letters, numbers, keyboard labels or readable text.',
 'A friendly small wheeled educational robot sorting coloured wooden blocks into matching shapes, no letters or numbers.',
 'One solar panel in sunlight on a simple roof, connected by a visible wire to a glowing light bulb, clear solar energy concept, no symbols or text.'
@@ -70,12 +70,12 @@ const scenes=[
 'A qualified Vietnamese female engineer in helmet carefully checking a small bridge model with a ruler with no markings, professional confident pose.',
 'A Vietnamese teacher warmly encouraging a shy teenage girl to join a science demonstration, supportive open hands and confident smile.',
 'A Vietnamese child entering an open welcoming school gate with a blank book, boys and girls of diverse backgrounds all welcome; conveys the right to education.',
-'A Vietnamese man and woman doing the same office work at neighbouring desks, receiving identical plain coin stacks from a manager; clearly equal pay, no writing or numbers.',
+'A Vietnamese man and woman doing the same office work at neighbouring desks. Each receives exactly one identical stack of three equal-sized coins on an open palm at the same height; six coins total, no third stack, clearly equal pay, no writing or numbers.',
 'A Vietnamese female firefighter in complete protective uniform and helmet checking a fire hose, calm professional scene, no fire or text.'
 ],
 [
 'Vietnamese and international teenagers cooperating to assemble a simple small model bridge at a shared table, equal teamwork, blank materials.',
-'Two peacekeeping workers wearing plain blue helmets delivering a box of supplies near a peaceful village, respectful calm scene, no weapons or insignia or text.',
+'Two Vietnamese soldiers wearing plain olive-green long-sleeve military shirts, matching trousers, green Vietnamese pith helmets with chinstraps and red star badges, and black rubber sandals stand watch on a peaceful mountainous land border. One observes a distant mountain pass with binoculars, the other stands attentively beside a blank stone boundary marker. Red Vietnamese flag with one centered yellow star on a nearby flagpole and sleeve flag patches; these national flags are exempt from the general no-flags constraint. No blue military clothes, no aid delivery, no mother or child, no camouflage, no guns, no readable text or numbers. Natural anatomy and grounded path, colored-pencil style.',
 'A new community library being built with shelves and books, a caring adult placing a sapling alongside; conveys investment in education, no money icons or writing.',
 'A group of teenagers from neighbouring Southeast Asian communities meeting around a plain map-shaped table, no flags, borders, labels or letters.',
 'A committed Vietnamese teenager carefully watering the same small school tree in a garden, strong attentive care and focus, no calendars or text.',
@@ -87,7 +87,7 @@ const scenes=[
 'A Vietnamese teenager learning with a laptop at home in one part of a cohesive illustration and discussing a book with a teacher in a classroom in the other, connected by flowing pencil line, no words.',
 'An open unbranded laptop, tablet and stylus arranged neatly as digital learning tools, screens have only simple abstract shapes, no letters or numbers.',
 'A Vietnamese teenager tapping a colourful puzzle on a tablet while pictorial puzzle pieces visibly respond, interactive learning, no interface text or digits.',
-'A Vietnamese teenager opening a digital lesson represented by an open laptop with a small unlocked padlock pictogram beside it, screen contains only a book pictogram.',
+'A Vietnamese teenager beside an open laptop, with both screen and keyboard facing the learner so they can see and use them, natural three-quarter side view. A small unlocked padlock pictogram beside it, screen contains only a book pictogram, no second screen on the back.',
 'A focused Vietnamese teenager studying alone at a tidy home desk with an open blank notebook, pencil and reading lamp, clear independent self-study.',
 'A useful collection of learning resources: plain books, globe, headphones and an open laptop with only a book pictogram, no text or labels.',
 'A Vietnamese teenager at a home desk taking an online lesson, laptop screen shows only the portrait of a friendly teacher with simple geometric diagrams, no text or digits.',
@@ -105,11 +105,11 @@ const scenes=[
 ],
 [
 'A small group of teenage visitors quietly following a local guide along a forest boardwalk, protecting the landscape, clearly low impact ecotourism.',
-'A responsible teenage visitor picking up their own rubbish and putting it in a small reusable bag before leaving a nature trail.',
+'A responsible teenage visitor picking up a discarded clear PET bottle and putting it in a small reusable bag before leaving a nature trail. The bottle has exactly one neck and one cap at its mouth, and a closed transparent five-lobed base with no cap at the bottom.',
 'A peaceful scenic destination with forested hills, a lake and a small eco lodge, a traveller with a backpack looking toward it, no maps or labels.',
 'A Vietnamese traveller buying fresh fruit directly from a local farmer at a small countryside stand, no currency details or signs.',
 'A narrow winding hiking trail through a green forest with stepping stones, entire path clearly visible, no arrows or signs.',
-'One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison, no arrows, words or borders.',
+'One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison. Each bottle has only one neck and cap, with a closed normal base at the opposite end, no double-ended bottles, arrows, words or borders.',
 'A friendly Vietnamese local tour guide with a backpack explaining a forest tree to three teenage visitors, natural guiding gesture, no microphone or written signs.',
 'A small handmade clay cup and woven miniature basket offered as travel souvenirs at a local craft stall, objects fully visible, no letters or price labels.'
 ]

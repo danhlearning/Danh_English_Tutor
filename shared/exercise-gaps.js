@@ -9,6 +9,7 @@
     const parent = node.parentElement;
     if (!parent || parent.closest(ignored)) return;
     const text = node.nodeValue;
+    if (!text || (!text.includes('__') && !text.includes('---'))) return;
     marker.lastIndex = 0;
     const matches = [...text.matchAll(marker)].filter(m => !protectedURL(text, m.index));
     if (!matches.length) return;
@@ -41,9 +42,16 @@
     texts.forEach(formatText);
   }
   const observer = new MutationObserver(records => {
+    const roots = new Set();
     for (const record of records) {
-      if (record.type === 'characterData') format(record.target);
-      else for (const node of record.addedNodes) format(node);
+      if (record.type === 'characterData') roots.add(record.target);
+      else for (const node of record.addedNodes) roots.add(node);
+    }
+    for (const node of roots) {
+      if (!node.isConnected) continue;
+      let parent=node.parentNode, nested=false;
+      while(parent){if(roots.has(parent)){nested=true;break;}parent=parent.parentNode;}
+      if(!nested)format(node);
     }
   });
   observer.observe(document.documentElement, {subtree:true, childList:true, characterData:true});

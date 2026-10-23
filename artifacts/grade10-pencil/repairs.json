@@ -16,5 +16,40 @@
     "file": "C:/Users/Admin/Documents/Codex/Danh English Tutor/grade/lop10/assets/images/pencil/unit8/6-v1.webp",
     "prompt": "Remove ALL tiny writing, letters, pseudo-letters and title marks from every book spine. All book covers and spines must be completely plain solid colours. Keep the same globe, laptop with book pictogram, headphones, plant, composition and colored pencil style unchanged. No text anywhere.",
     "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-7f0a2139-dc37-43ab-9c54-5f0fcb5a7390.png"
+  },
+  {
+    "key": "unit10-2",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-c45cc0a8-c156-4c46-8844-421ca1ec42f7.png",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil vocabulary illustration for responsible tourism. Fix ONLY the plastic water bottle being picked up in the lower left: it must be ONE normal clear PET bottle with ONE short neck and ONE blue screw cap on the upper-right end beside the woman's fingers, and a normal closed, transparent five-lobed PET base at the lower-left end. Completely REMOVE the blue cap/blue circular insert at the bottom. No second mouth, no second cap, no hole at the base, no detached blue cap anywhere. Retain the natural grip, one continuous bottle body, the small reusable bag, the teenage traveller, pose, backpack, forest trail, ivory-paper coloured-pencil texture and square composition unchanged. No text or watermark."
+  },
+  {
+    "key": "unit10-6",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-4b6621bd-450d-4e85-a752-9e2495069b88.png",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil environmental-impact illustration. Fix ONLY the large clear blue-tinted plastic bottle lying diagonally in the lower-right foreground on the bank: make it a normal ONE-neck PET bottle, with ONE blue screw cap at the upper-left end, ONE continuous cylindrical body, and a closed transparent five-lobed plastic base at the lower-right end. Remove the blue cap and neck currently at the lower-right base. The base must be closed, colourless and cannot be a second bottle opening. Keep the rest of the litter, river, healthy left bank, damaged right bank, trees, composition and coloured-pencil paper style unchanged. No text, letters or watermark."
+  },
+  {
+    "key": "unit5-4",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-5022dbb5-839e-4eb8-825c-66cbf2be9afe.png",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil student water-filtration experiment. Correct the physically unsupported upside-down filter bottle: add a realistic compact laboratory support stand on the tabletop, with a stable heavy base, ONE vertical metal rod placed beside the receiving beaker, and a clearly visible clamp/ring securely gripping the filter bottle around its upper body. The filter must visibly be supported by this stand, not floating. Keep a clear air gap between the downward-facing filter nozzle and the receiving beaker rim. The bottle is cut open at its upper rim to receive water; filter layers are gravel above sand above charcoal, retained by cotton at the neck, with drips leaving a small hole in the cap. Water follows gravity downward into the lower beaker. Preserve the same student, safety goggles, pouring hand, natural anatomy, table, soft coloured-pencil style, warm ivory background and square frame. No labels, letters, numbers or watermark."
+  },
+  {
+    "key": "unit3-7",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-c50be2f4-6606-43f4-92e2-59898e3ad76c.png",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target. Repair ONLY the visible piano keyboard in this coloured-pencil composer illustration. Draw a straight physically correct piano keyboard: consistent parallel rectangular white keys, narrower raised black keys set BACK toward the fallboard in repeating groups of TWO black keys then THREE black keys, separated by the normal gaps; no overlapping, floating, bent or melted keys and no extra row of keys. Match the keyboard's existing diagonal perspective precisely. Preserve the young composer, thinking pose, pencil, grand-piano body, blank music paper, room, lighting, paper texture and square composition. Keep all pages blank and no text anywhere."
+  },
+  {
+    "key": "unit5-5",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-c414f105-8874-46e4-b81d-d1b976fdc2cd.png",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil illustration of an effective air purifier. Repair the physical air path: keep the existing broad front intake/filter grille on the left/front face with dust approaching it from the left. Add a clearly visible clean-air OUTLET GRILLE with narrow horizontal slots on the RIGHT SIDE PANEL of the same device. The soft blue airflow strokes must begin exactly at that outlet grille and travel away to the right, never through a solid casing panel. One coherent device, solid intact outer frame, clearly separate intake and outlet. Preserve its overall size, ivory housing, tabletop, background plant/window, gentle coloured-pencil shading and square composition. No writing, labels, numbers or watermark."
+  },
+  {
+    "key": "unit6-7",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-1cfd6bed-854c-413d-819b-36807355b0a5.png",
+    "prompt": "Use case: precise-object-edit. Edit target: the attached equal-pay office illustration. Critical correction: DELETE BOTH existing coin stacks completely and redraw them as exactly THREE coins on the man's open palm and exactly THREE coins on the woman's open palm. SIX coins total. The TWO stacks must be identical in physical height and diameter, each showing THREE thick clearly separated gold discs (three visible coin side faces). Place their supporting palms at the SAME horizontal height so equality is visually unmistakable. Neither stack may be higher or contain more discs. The manager holds NO additional coins, both of his empty hands stay open. Keep the same three people, natural hands, faces, clothing, desks, laptops, pencil strokes, warm-paper background and square frame. Do not add currency symbols, writing or watermarks."
+  },
+  {
+    "key": "unit8-4",
+    "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-3f328741-c7ff-4a7c-bcc7-fd5d93a7164e.png",
+    "prompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil illustration for access to learning. Correct the person/computer orientation: reposition and angle the ONE open laptop so its screen AND keyboard face the teenage student, not away from her. Show a natural three-quarter side view: the girl sits to the left of the laptop at the desk, looking at the inner display from its front side; one hand can reach its trackpad normally. The viewer may see the inner display obliquely from beside her. Display only a simple open-book picture with blank pages; no text. Keep the same girl, pink sweater, joyful expression, desk, plant, ivory paper background and blue unlocked-padlock symbol as an intentional educational icon. No second laptop, no disconnected extra keyboard, no screens on the back of a lid, no extra fingers. Preserve the coloured-pencil style and square composition."
   }
 ]

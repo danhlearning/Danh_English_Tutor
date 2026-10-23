@@ -38,8 +38,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nước Mỹ",
           "ipa": "/əˈmer.ɪ.kə/",
           "color": "#27477b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"14\" y=\"30\" width=\"92\" height=\"62\" rx=\"4\" fill=\"#fff\" stroke=\"#36516a\" stroke-width=\"3\"/><rect x=\"16\" y=\"32\" width=\"88\" height=\"4.961538461538462\" fill=\"#cb4052\"/><rect x=\"16\" y=\"36.46153846153846\" width=\"88\" height=\"4.961538461538462\" fill=\"#fff\"/><rect x=\"16\" y=\"40.92307692307692\" width=\"88\" height=\"4.961538461538462\" fill=\"#cb4052\"/><rect x=\"16\" y=\"45.38461538461539\" width=\"88\" height=\"4.961538461538462\" fill=\"#fff\"/><rect x=\"16\" y=\"49.84615384615385\" width=\"88\" height=\"4.961538461538462\" fill=\"#cb4052\"/><rect x=\"16\" y=\"54.30769230769231\" width=\"88\" height=\"4.961538461538462\" fill=\"#fff\"/><rect x=\"16\" y=\"58.769230769230774\" width=\"88\" height=\"4.961538461538462\" fill=\"#cb4052\"/><rect x=\"16\" y=\"63.230769230769226\" width=\"88\" height=\"4.961538461538462\" fill=\"#fff\"/><rect x=\"16\" y=\"67.6923076923077\" width=\"88\" height=\"4.961538461538462\" fill=\"#cb4052\"/><rect x=\"16\" y=\"72.15384615384616\" width=\"88\" height=\"4.961538461538462\" fill=\"#fff\"/><rect x=\"16\" y=\"76.61538461538461\" width=\"88\" height=\"4.961538461538462\" fill=\"#cb4052\"/><rect x=\"16\" y=\"81.07692307692308\" width=\"88\" height=\"4.961538461538462\" fill=\"#fff\"/><rect x=\"16\" y=\"85.53846153846155\" width=\"88\" height=\"4.961538461538462\" fill=\"#cb4052\"/><rect x=\"16\" y=\"32\" width=\"39\" height=\"31\" fill=\"#2d5184\"/><circle cx=\"25\" cy=\"39\" r=\"1.5\" fill=\"#fff\"/><circle cx=\"36\" cy=\"39\" r=\"1.5\" fill=\"#fff\"/><circle cx=\"47\" cy=\"39\" r=\"1.5\" fill=\"#fff\"/><circle cx=\"25\" cy=\"49\" r=\"1.5\" fill=\"#fff\"/><circle cx=\"36\" cy=\"49\" r=\"1.5\" fill=\"#fff\"/><circle cx=\"47\" cy=\"49\" r=\"1.5\" fill=\"#fff\"/><circle cx=\"25\" cy=\"58\" r=\"1.5\" fill=\"#fff\"/><circle cx=\"36\" cy=\"58\" r=\"1.5\" fill=\"#fff\"/><circle cx=\"47\" cy=\"58\" r=\"1.5\" fill=\"#fff\"/></svg>",
-          "context": "My new friend is from ____. Her flag has stars and stripes."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/america-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "My new friend is from ____. Her flag has stars and stripes.",
+          "image": "../../grade/lop4/assets/images/pencil/america-v1.webp"
         },
         {
           "id": "australia",
@@ -47,8 +48,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nước Úc",
           "ipa": "/ɒˈstreɪ.li.ə/",
           "color": "#427d93",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"14\" y=\"30\" width=\"92\" height=\"62\" rx=\"4\" fill=\"#fff\" stroke=\"#36516a\" stroke-width=\"3\"/><rect x=\"16\" y=\"32\" width=\"88\" height=\"58\" fill=\"#173f82\"/><rect x=\"16\" y=\"32\" width=\"42\" height=\"28\" fill=\"#fff\"/><path d=\"M16 32 58 60M58 32 16 60\" stroke=\"#d6404e\" stroke-width=\"5\"/><path d=\"M37 32v28M16 46h42\" stroke=\"#fff\" stroke-width=\"10\"/><path d=\"M37 32v28M16 46h42\" stroke=\"#d6404e\" stroke-width=\"5\"/><path d=\"M73 37.6l1.395 3.7800000000000002h3.9600000000000004l-3.24 2.3400000000000003 1.26 3.7800000000000002L73 45.43l-3.375 2.52 1.26 -3.7800000000000002l-3.24 -2.3400000000000003h3.9600000000000004Z\" fill=\"#fff\"/><path d=\"M88 49.6l1.395 3.7800000000000002h3.9600000000000004l-3.24 2.3400000000000003 1.26 3.7800000000000002L88 57.43l-3.375 2.52 1.26 -3.7800000000000002l-3.24 -2.3400000000000003h3.9600000000000004Z\" fill=\"#fff\"/><path d=\"M70 67.6l1.395 3.7800000000000002h3.9600000000000004l-3.24 2.3400000000000003 1.26 3.7800000000000002L70 75.43l-3.375 2.52 1.26 -3.7800000000000002l-3.24 -2.3400000000000003h3.9600000000000004Z\" fill=\"#fff\"/><path d=\"M94 71.6l1.395 3.7800000000000002h3.9600000000000004l-3.24 2.3400000000000003 1.26 3.7800000000000002L94 79.43l-3.375 2.52 1.26 -3.7800000000000002l-3.24 -2.3400000000000003h3.9600000000000004Z\" fill=\"#fff\"/><path d=\"M55 76.6l1.395 3.7800000000000002h3.9600000000000004l-3.24 2.3400000000000003 1.26 3.7800000000000002L55 84.43l-3.375 2.52 1.26 -3.7800000000000002l-3.24 -2.3400000000000003h3.9600000000000004Z\" fill=\"#fff\"/></svg>",
-          "context": "Leo is from ____. His flag has a blue background and stars."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/australia-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "Leo is from ____. His flag has a blue background and stars.",
+          "image": "../../grade/lop4/assets/images/pencil/australia-v1.webp"
         },
         {
           "id": "britain",
@@ -56,8 +58,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nước Anh",
           "ipa": "/ˈbrɪt.ən/",
           "color": "#344c89",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"14\" y=\"30\" width=\"92\" height=\"62\" rx=\"4\" fill=\"#fff\" stroke=\"#36516a\" stroke-width=\"3\"/><rect x=\"16\" y=\"32\" width=\"88\" height=\"58\" fill=\"#21447d\"/><path d=\"M16 32 104 90M104 32 16 90\" stroke=\"#fff\" stroke-width=\"14\"/><path d=\"M16 32 104 90M104 32 16 90\" stroke=\"#d9444f\" stroke-width=\"6\"/><path d=\"M60 32v58M16 61h88\" stroke=\"#fff\" stroke-width=\"19\"/><path d=\"M60 32v58M16 61h88\" stroke=\"#d9444f\" stroke-width=\"10\"/></svg>",
-          "context": "Holly is from ____. Her flag has red and white crosses."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/britain-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "Holly is from ____. Her flag has red and white crosses.",
+          "image": "../../grade/lop4/assets/images/pencil/britain-v1.webp"
         },
         {
           "id": "japan",
@@ -65,8 +68,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nước Nhật",
           "ipa": "/dʒəˈpæn/",
           "color": "#b7445c",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"14\" y=\"30\" width=\"92\" height=\"62\" rx=\"4\" fill=\"#fff\" stroke=\"#36516a\" stroke-width=\"3\"/><circle cx=\"60\" cy=\"61\" r=\"19\" fill=\"#c9434f\"/></svg>",
-          "context": "My friend Yuki is from ____. Her flag has a red circle."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/japan-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "My friend Yuki is from ____. Her flag has a red circle.",
+          "image": "../../grade/lop4/assets/images/pencil/japan-v1.webp"
         },
         {
           "id": "malaysia",
@@ -74,8 +78,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nước Malaysia",
           "ipa": "/məˈleɪ.zi.ə/",
           "color": "#315f85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"14\" y=\"30\" width=\"92\" height=\"62\" rx=\"4\" fill=\"#fff\" stroke=\"#36516a\" stroke-width=\"3\"/><rect x=\"16\" y=\"32\" width=\"88\" height=\"4.642857142857143\" fill=\"#d34049\"/><rect x=\"16\" y=\"36.142857142857146\" width=\"88\" height=\"4.642857142857143\" fill=\"#fff\"/><rect x=\"16\" y=\"40.285714285714285\" width=\"88\" height=\"4.642857142857143\" fill=\"#d34049\"/><rect x=\"16\" y=\"44.42857142857143\" width=\"88\" height=\"4.642857142857143\" fill=\"#fff\"/><rect x=\"16\" y=\"48.57142857142857\" width=\"88\" height=\"4.642857142857143\" fill=\"#d34049\"/><rect x=\"16\" y=\"52.714285714285715\" width=\"88\" height=\"4.642857142857143\" fill=\"#fff\"/><rect x=\"16\" y=\"56.85714285714286\" width=\"88\" height=\"4.642857142857143\" fill=\"#d34049\"/><rect x=\"16\" y=\"61\" width=\"88\" height=\"4.642857142857143\" fill=\"#fff\"/><rect x=\"16\" y=\"65.14285714285714\" width=\"88\" height=\"4.642857142857143\" fill=\"#d34049\"/><rect x=\"16\" y=\"69.28571428571428\" width=\"88\" height=\"4.642857142857143\" fill=\"#fff\"/><rect x=\"16\" y=\"73.42857142857143\" width=\"88\" height=\"4.642857142857143\" fill=\"#d34049\"/><rect x=\"16\" y=\"77.57142857142857\" width=\"88\" height=\"4.642857142857143\" fill=\"#fff\"/><rect x=\"16\" y=\"81.71428571428572\" width=\"88\" height=\"4.642857142857143\" fill=\"#d34049\"/><rect x=\"16\" y=\"85.85714285714286\" width=\"88\" height=\"4.642857142857143\" fill=\"#fff\"/><rect x=\"16\" y=\"32\" width=\"44\" height=\"32\" fill=\"#25478c\"/><circle cx=\"35\" cy=\"48\" r=\"11\" fill=\"#ffe276\"/><circle cx=\"39\" cy=\"45\" r=\"9\" fill=\"#25478c\"/><path d=\"M50 41.76l1.612 4.368h4.5760000000000005l-3.744 2.704 1.456 4.368L50 50.808l-3.9000000000000004 2.912 1.456 -4.368l-3.744 -2.704h4.5760000000000005Z\" fill=\"#ffe276\"/></svg>",
-          "context": "Aina is from ____. Her flag has a crescent moon."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/malaysia-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "Aina is from ____. Her flag has a crescent moon.",
+          "image": "../../grade/lop4/assets/images/pencil/malaysia-v1.webp"
         },
         {
           "id": "vietnam",
@@ -83,8 +88,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nước Việt Nam",
           "ipa": "/ˌviː.et ˈnæm/",
           "color": "#bf4545",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"14\" y=\"30\" width=\"92\" height=\"62\" rx=\"4\" fill=\"#fff\" stroke=\"#36516a\" stroke-width=\"3\"/><rect x=\"16\" y=\"32\" width=\"88\" height=\"58\" fill=\"#d94343\"/><path d=\"M60 41l5.425 14.700000000000001h15.400000000000002l-12.6 9.1 4.8999999999999995 14.700000000000001L60 71.45l-13.125 9.799999999999999 4.8999999999999995 -14.700000000000001l-12.6 -9.1h15.400000000000002Z\" fill=\"#ffe16f\"/></svg>",
-          "context": "Nam is from ____. His flag has a yellow star."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/viet-nam-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "Nam is from ____. His flag has a yellow star.",
+          "image": "../../grade/lop4/assets/images/pencil/viet-nam-v1.webp"
         }
       ],
       "icon": "🌏",
@@ -138,8 +144,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "thức dậy",
           "ipa": "/ɡet ʌp/",
           "color": "#436eaa",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><circle cx=\"91\" cy=\"26\" r=\"20\" fill=\"#ffe39a\"/><text x=\"91\" y=\"32\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#604c2b\">6:30</text><rect x=\"18\" y=\"72\" width=\"72\" height=\"24\" rx=\"5\" fill=\"#92b8d8\" stroke=\"#45698a\" stroke-width=\"3\"/><rect x=\"18\" y=\"67\" width=\"25\" height=\"12\" rx=\"4\" fill=\"#fff\"/><circle cx=\"43\" cy=\"54\" r=\"11\" fill=\"#f3be9d\"/><path d=\"M32 49q11-18 22 0\" fill=\"none\" stroke=\"#614b43\" stroke-width=\"5\"/><path d=\"M28 92V76q14-18 30 0v16\" fill=\"#6f9fd1\" stroke=\"#36516a\" stroke-width=\"3\"/></svg>",
-          "context": "On school days, I ____ when my alarm rings at six thirty."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/get-up-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "On school days, I ____ when my alarm rings at six thirty.",
+          "image": "../../grade/lop4/assets/images/pencil/get-up-v1.webp"
         },
         {
           "id": "breakfast",
@@ -147,8 +154,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "ăn sáng",
           "ipa": "/hæv ˈbrek.fəst/",
           "color": "#ae6d42",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><circle cx=\"91\" cy=\"26\" r=\"20\" fill=\"#ffe39a\"/><text x=\"91\" y=\"32\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#604c2b\">7:00</text><ellipse cx=\"61\" cy=\"83\" rx=\"36\" ry=\"16\" fill=\"#fff\" stroke=\"#6685a1\" stroke-width=\"4\"/><ellipse cx=\"61\" cy=\"83\" rx=\"24\" ry=\"9\" fill=\"#f3cf86\"/><path d=\"M32 46h28l-3 22H36Z\" fill=\"#f2c575\" stroke=\"#8e684c\" stroke-width=\"3\"/><path d=\"M38 43q8-12 16 0\" fill=\"none\" stroke=\"#fff\" stroke-width=\"4\"/><rect x=\"79\" y=\"58\" width=\"13\" height=\"23\" rx=\"3\" fill=\"#ef9f72\"/></svg>",
-          "context": "Before school, I ____ with my family."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/have-breakfast-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "Before school, I ____ with my family.",
+          "image": "../../grade/lop4/assets/images/pencil/have-breakfast-v1.webp"
         },
         {
           "id": "school",
@@ -156,8 +164,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "đi học",
           "ipa": "/ɡəʊ tə skuːl/",
           "color": "#49758c",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><circle cx=\"91\" cy=\"26\" r=\"20\" fill=\"#ffe39a\"/><text x=\"91\" y=\"32\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#604c2b\">7:30</text><path d=\"M17 63 61 30l43 33\" fill=\"#ea8c71\" stroke=\"#36516a\" stroke-width=\"4\"/><rect x=\"25\" y=\"62\" width=\"72\" height=\"42\" fill=\"#f7d68a\" stroke=\"#36516a\" stroke-width=\"4\"/><rect x=\"48\" y=\"74\" width=\"24\" height=\"30\" fill=\"#8bb7dc\"/></svg>",
-          "context": "At seven thirty, I ____ with my sister."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/go-to-school-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "At seven thirty, I ____ with my sister.",
+          "image": "../../grade/lop4/assets/images/pencil/go-to-school-v1.webp"
         },
         {
           "id": "lunch",
@@ -165,8 +174,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "ăn trưa",
           "ipa": "/hæv lʌntʃ/",
           "color": "#768b4b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><circle cx=\"91\" cy=\"26\" r=\"20\" fill=\"#ffe39a\"/><text x=\"91\" y=\"32\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#604c2b\">12:00</text><ellipse cx=\"61\" cy=\"83\" rx=\"36\" ry=\"16\" fill=\"#fff\" stroke=\"#6685a1\" stroke-width=\"4\"/><ellipse cx=\"61\" cy=\"83\" rx=\"24\" ry=\"9\" fill=\"#f3cf86\"/><path d=\"M45 76q6-10 13 0t13 0\" fill=\"none\" stroke=\"#80ae6c\" stroke-width=\"7\"/><path d=\"M21 58v33m73-33v33\" stroke=\"#6b8293\" stroke-width=\"5\"/></svg>",
-          "context": "At noon, I ____ in the school canteen."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/have-lunch-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "At noon, I ____ in the school canteen.",
+          "image": "../../grade/lop4/assets/images/pencil/have-lunch-v1.webp"
         },
         {
           "id": "dinner",
@@ -174,8 +184,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "ăn tối",
           "ipa": "/hæv ˈdɪn.ə/",
           "color": "#9c624c",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><circle cx=\"91\" cy=\"26\" r=\"20\" fill=\"#2d4a83\"/><text x=\"91\" y=\"32\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#fff\">7:00</text><ellipse cx=\"61\" cy=\"83\" rx=\"36\" ry=\"16\" fill=\"#fff\" stroke=\"#6685a1\" stroke-width=\"4\"/><ellipse cx=\"61\" cy=\"83\" rx=\"24\" ry=\"9\" fill=\"#f3cf86\"/><path d=\"M44 76q9-10 18 0t17 0\" fill=\"none\" stroke=\"#dd8c72\" stroke-width=\"8\"/><path d=\"M21 58v33m73-33v33\" stroke=\"#6b8293\" stroke-width=\"5\"/></svg>",
-          "context": "In the evening, I ____ with my family."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/have-dinner-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "In the evening, I ____ with my family.",
+          "image": "../../grade/lop4/assets/images/pencil/have-dinner-v1.webp"
         },
         {
           "id": "bed",
@@ -183,8 +194,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "đi ngủ",
           "ipa": "/ɡəʊ tə bed/",
           "color": "#605a9b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><circle cx=\"91\" cy=\"26\" r=\"20\" fill=\"#2d4a83\"/><text x=\"91\" y=\"32\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#fff\">9:00</text><rect x=\"16\" y=\"69\" width=\"86\" height=\"25\" rx=\"5\" fill=\"#8db1d2\" stroke=\"#405f80\" stroke-width=\"4\"/><rect x=\"22\" y=\"63\" width=\"27\" height=\"15\" rx=\"5\" fill=\"#fff\"/><path d=\"M17 95v9m85-9v9\" stroke=\"#405f80\" stroke-width=\"5\"/><path d=\"M72 43.8l1.085 2.94h3.08l-2.52 1.8199999999999998 0.9799999999999999 2.94L72 49.89l-2.625 1.9599999999999997 0.9799999999999999 -2.94l-2.52 -1.8199999999999998h3.08Z\" fill=\"#f7d878\"/></svg>",
-          "context": "At night, I ____ after reading a story."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/go-to-bed-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "At night, I ____ after reading a story.",
+          "image": "../../grade/lop4/assets/images/pencil/go-to-bed-v1.webp"
         }
       ],
       "icon": "⏰",
@@ -238,8 +250,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "học ở trường",
           "ipa": "/ˈstʌd.i ət skuːl/",
           "color": "#376f9a",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><image href=\"../lop4/assets/images/unit3/study-at-school.webp\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid slice\"/></svg>",
-          "context": "On Mondays, I ____ in my classroom."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/study-at-school-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "On Mondays, I ____ in my classroom.",
+          "image": "../../grade/lop4/assets/images/pencil/study-at-school-v1.webp"
         },
         {
           "id": "listen-to-music",
@@ -247,8 +260,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nghe nhạc",
           "ipa": "/ˈlɪs.ən tə ˈmjuː.zɪk/",
           "color": "#8066a3",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><image href=\"../lop4/assets/images/unit3/listen-to-music.webp\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid slice\"/></svg>",
-          "context": "On Sundays, I ____ with my headphones."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/listen-to-music-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "On Sundays, I ____ with my headphones.",
+          "image": "../../grade/lop4/assets/images/pencil/listen-to-music-v1.webp"
         },
         {
           "id": "do-housework",
@@ -256,8 +270,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "làm việc nhà",
           "ipa": "/duː ˈhaʊs.wɜːk/",
           "color": "#9b6f51",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><image href=\"../lop4/assets/images/unit3/do-housework.webp\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid slice\"/></svg>",
-          "context": "On Saturdays, I ____ and sweep the floor."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/do-housework-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "On Saturdays, I ____ and sweep the floor.",
+          "image": "../../grade/lop4/assets/images/pencil/do-housework-v1.webp"
         },
         {
           "id": "watch-tv",
@@ -265,8 +280,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "xem tivi",
           "ipa": "/wɒtʃ ˌtiː ˈviː/",
           "color": "#627e9f",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><image href=\"../lop4/assets/images/unit3/watch-tv.webp\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid slice\"/></svg>",
-          "context": "After dinner, I ____ with my brother."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/watch-tv-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "After dinner, I ____ with my brother.",
+          "image": "../../grade/lop4/assets/images/pencil/watch-tv-v1.webp"
         },
         {
           "id": "go-to-school",
@@ -274,8 +290,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "đi học",
           "ipa": "/ɡəʊ tə skuːl/",
           "color": "#3d8783",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><image href=\"../lop4/assets/images/unit3/go-to-school.webp\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid slice\"/></svg>",
-          "context": "On weekdays, I ____ with my backpack."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/go-to-school-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "On weekdays, I ____ with my backpack.",
+          "image": "../../grade/lop4/assets/images/pencil/go-to-school-v1.webp"
         },
         {
           "id": "play-football",
@@ -283,8 +300,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "chơi bóng đá",
           "ipa": "/pleɪ ˈfʊt.bɔːl/",
           "color": "#638753",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><image href=\"../lop4/assets/images/unit3/play-football.webp\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid slice\"/></svg>",
-          "context": "On Sundays, I ____ in the park."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/play-football-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "On Sundays, I ____ in the park.",
+          "image": "../../grade/lop4/assets/images/pencil/play-football-v1.webp"
         }
       ],
       "icon": "📅",
@@ -349,9 +367,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tháng Một",
           "ipa": "/ˈdʒæn.ju.ə.ri/",
           "color": "#438e9b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"20\" y=\"17\" width=\"80\" height=\"88\" rx=\"11\" fill=\"#fff\" stroke=\"#7aa5b5\" stroke-width=\"3\"/><path d=\"M20 30q0-13 11-13h58q11 0 11 13v16H20Z\" fill=\"#ed8a78\"/><path d=\"M39 11v14m42-14v14\" stroke=\"#315b70\" stroke-width=\"6\" stroke-linecap=\"round\"/><text x=\"60\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"39\" font-weight=\"bold\" fill=\"#225d74\">01</text></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/dates/january-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "The first month of the year is ____.",
-          "group": "months"
+          "group": "months",
+          "image": "../../grade/lop2/assets/images/pencil/dates/january-v1.webp"
         },
         {
           "id": "month-2",
@@ -359,9 +378,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tháng Hai",
           "ipa": "/ˈfeb.ru.ə.ri/",
           "color": "#438e9b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"20\" y=\"17\" width=\"80\" height=\"88\" rx=\"11\" fill=\"#fff\" stroke=\"#7aa5b5\" stroke-width=\"3\"/><path d=\"M20 30q0-13 11-13h58q11 0 11 13v16H20Z\" fill=\"#ed8a78\"/><path d=\"M39 11v14m42-14v14\" stroke=\"#315b70\" stroke-width=\"6\" stroke-linecap=\"round\"/><text x=\"60\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"39\" font-weight=\"bold\" fill=\"#225d74\">02</text></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/dates/february-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "The second month of the year is ____.",
-          "group": "months"
+          "group": "months",
+          "image": "../../grade/lop2/assets/images/pencil/dates/february-v1.webp"
         },
         {
           "id": "month-3",
@@ -369,9 +389,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tháng Ba",
           "ipa": "/mɑːtʃ/",
           "color": "#438e9b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"20\" y=\"17\" width=\"80\" height=\"88\" rx=\"11\" fill=\"#fff\" stroke=\"#7aa5b5\" stroke-width=\"3\"/><path d=\"M20 30q0-13 11-13h58q11 0 11 13v16H20Z\" fill=\"#ed8a78\"/><path d=\"M39 11v14m42-14v14\" stroke=\"#315b70\" stroke-width=\"6\" stroke-linecap=\"round\"/><text x=\"60\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"39\" font-weight=\"bold\" fill=\"#225d74\">03</text></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/dates/march-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "The third month of the year is ____.",
-          "group": "months"
+          "group": "months",
+          "image": "../../grade/lop2/assets/images/pencil/dates/march-v1.webp"
         },
         {
           "id": "month-4",
@@ -379,9 +400,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tháng Tư",
           "ipa": "/ˈeɪ.prəl/",
           "color": "#438e9b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"20\" y=\"17\" width=\"80\" height=\"88\" rx=\"11\" fill=\"#fff\" stroke=\"#7aa5b5\" stroke-width=\"3\"/><path d=\"M20 30q0-13 11-13h58q11 0 11 13v16H20Z\" fill=\"#ed8a78\"/><path d=\"M39 11v14m42-14v14\" stroke=\"#315b70\" stroke-width=\"6\" stroke-linecap=\"round\"/><text x=\"60\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"39\" font-weight=\"bold\" fill=\"#225d74\">04</text></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/dates/april-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "The fourth month of the year is ____.",
-          "group": "months"
+          "group": "months",
+          "image": "../../grade/lop2/assets/images/pencil/dates/april-v1.webp"
         },
         {
           "id": "month-5",
@@ -389,9 +411,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tháng Năm",
           "ipa": "/meɪ/",
           "color": "#438e9b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"20\" y=\"17\" width=\"80\" height=\"88\" rx=\"11\" fill=\"#fff\" stroke=\"#7aa5b5\" stroke-width=\"3\"/><path d=\"M20 30q0-13 11-13h58q11 0 11 13v16H20Z\" fill=\"#ed8a78\"/><path d=\"M39 11v14m42-14v14\" stroke=\"#315b70\" stroke-width=\"6\" stroke-linecap=\"round\"/><text x=\"60\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"39\" font-weight=\"bold\" fill=\"#225d74\">05</text></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/dates/may-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "The fifth month of the year is ____.",
-          "group": "months"
+          "group": "months",
+          "image": "../../grade/lop2/assets/images/pencil/dates/may-v1.webp"
         },
         {
           "id": "month-6",
@@ -399,9 +422,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tháng Sáu",
           "ipa": "/dʒuːn/",
           "color": "#438e9b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"20\" y=\"17\" width=\"80\" height=\"88\" rx=\"11\" fill=\"#fff\" stroke=\"#7aa5b5\" stroke-width=\"3\"/><path d=\"M20 30q0-13 11-13h58q11 0 11 13v16H20Z\" fill=\"#ed8a78\"/><path d=\"M39 11v14m42-14v14\" stroke=\"#315b70\" stroke-width=\"6\" stroke-linecap=\"round\"/><text x=\"60\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"39\" font-weight=\"bold\" fill=\"#225d74\">06</text></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/dates/june-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "The sixth month of the year is ____.",
-          "group": "months"
+          "group": "months",
+          "image": "../../grade/lop2/assets/images/pencil/dates/june-v1.webp"
         },
         {
           "id": "month-7",
@@ -409,9 +433,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tháng Bảy",
           "ipa": "/dʒuˈlaɪ/",
           "color": "#438e9b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"20\" y=\"17\" width=\"80\" height=\"88\" rx=\"11\" fill=\"#fff\" stroke=\"#7aa5b5\" stroke-width=\"3\"/><path d=\"M20 30q0-13 11-13h58q11 0 11 13v16H20Z\" fill=\"#ed8a78\"/><path d=\"M39 11v14m42-14v14\" stroke=\"#315b70\" stroke-width=\"6\" stroke-linecap=\"round\"/><text x=\"60\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"39\" font-weight=\"bold\" fill=\"#225d74\">07</text></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/dates/july-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "The seventh month of the year is ____.",
-          "group": "months"
+          "group": "months",
+          "image": "../../grade/lop2/assets/images/pencil/dates/july-v1.webp"
         },
         {
           "id": "month-8",
@@ -419,9 +444,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tháng Tám",
           "ipa": "/ˈɔː.ɡəst/",
           "color": "#438e9b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"20\" y=\"17\" width=\"80\" height=\"88\" rx=\"11\" fill=\"#fff\" stroke=\"#7aa5b5\" stroke-width=\"3\"/><path d=\"M20 30q0-13 11-13h58q11 0 11 13v16H20Z\" fill=\"#ed8a78\"/><path d=\"M39 11v14m42-14v14\" stroke=\"#315b70\" stroke-width=\"6\" stroke-linecap=\"round\"/><text x=\"60\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"39\" font-weight=\"bold\" fill=\"#225d74\">08</text></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/dates/august-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "The eighth month of the year is ____.",
-          "group": "months"
+          "group": "months",
+          "image": "../../grade/lop2/assets/images/pencil/dates/august-v1.webp"
         },
         {
           "id": "month-9",
@@ -429,9 +455,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tháng Chín",
           "ipa": "/sepˈtem.bə/",
           "color": "#438e9b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"20\" y=\"17\" width=\"80\" height=\"88\" rx=\"11\" fill=\"#fff\" stroke=\"#7aa5b5\" stroke-width=\"3\"/><path d=\"M20 30q0-13 11-13h58q11 0 11 13v16H20Z\" fill=\"#ed8a78\"/><path d=\"M39 11v14m42-14v14\" stroke=\"#315b70\" stroke-width=\"6\" stroke-linecap=\"round\"/><text x=\"60\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"39\" font-weight=\"bold\" fill=\"#225d74\">09</text></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/dates/september-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "The ninth month of the year is ____.",
-          "group": "months"
+          "group": "months",
+          "image": "../../grade/lop2/assets/images/pencil/dates/september-v1.webp"
         },
         {
           "id": "month-10",
@@ -439,9 +466,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tháng Mười",
           "ipa": "/ɒkˈtəʊ.bə/",
           "color": "#438e9b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"20\" y=\"17\" width=\"80\" height=\"88\" rx=\"11\" fill=\"#fff\" stroke=\"#7aa5b5\" stroke-width=\"3\"/><path d=\"M20 30q0-13 11-13h58q11 0 11 13v16H20Z\" fill=\"#ed8a78\"/><path d=\"M39 11v14m42-14v14\" stroke=\"#315b70\" stroke-width=\"6\" stroke-linecap=\"round\"/><text x=\"60\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"39\" font-weight=\"bold\" fill=\"#225d74\">10</text></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/dates/october-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "The tenth month of the year is ____.",
-          "group": "months"
+          "group": "months",
+          "image": "../../grade/lop2/assets/images/pencil/dates/october-v1.webp"
         },
         {
           "id": "month-11",
@@ -449,9 +477,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tháng Mười Một",
           "ipa": "/nəʊˈvem.bə/",
           "color": "#438e9b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"20\" y=\"17\" width=\"80\" height=\"88\" rx=\"11\" fill=\"#fff\" stroke=\"#7aa5b5\" stroke-width=\"3\"/><path d=\"M20 30q0-13 11-13h58q11 0 11 13v16H20Z\" fill=\"#ed8a78\"/><path d=\"M39 11v14m42-14v14\" stroke=\"#315b70\" stroke-width=\"6\" stroke-linecap=\"round\"/><text x=\"60\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"39\" font-weight=\"bold\" fill=\"#225d74\">11</text></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/dates/november-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "The eleventh month of the year is ____.",
-          "group": "months"
+          "group": "months",
+          "image": "../../grade/lop2/assets/images/pencil/dates/november-v1.webp"
         },
         {
           "id": "month-12",
@@ -459,9 +488,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tháng Mười Hai",
           "ipa": "/dɪˈsem.bə/",
           "color": "#438e9b",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#f2f8fb\"/><rect x=\"20\" y=\"17\" width=\"80\" height=\"88\" rx=\"11\" fill=\"#fff\" stroke=\"#7aa5b5\" stroke-width=\"3\"/><path d=\"M20 30q0-13 11-13h58q11 0 11 13v16H20Z\" fill=\"#ed8a78\"/><path d=\"M39 11v14m42-14v14\" stroke=\"#315b70\" stroke-width=\"6\" stroke-linecap=\"round\"/><text x=\"60\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"39\" font-weight=\"bold\" fill=\"#225d74\">12</text></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/dates/december-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "The twelfth month of the year is ____.",
-          "group": "months"
+          "group": "months",
+          "image": "../../grade/lop2/assets/images/pencil/dates/december-v1.webp"
         },
         {
           "id": "jam",
@@ -469,9 +499,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "mứt",
           "ipa": "/dʒæm/",
           "color": "#bb4d58",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><image href=\"../lop4/assets/images/unit4/jam.webp\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid slice\"/></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/jam-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "I want some ____ on my bread.",
-          "group": "party"
+          "group": "party",
+          "image": "../../grade/lop4/assets/images/pencil/jam-v1.webp"
         },
         {
           "id": "chips",
@@ -479,9 +510,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "khoai tây chiên",
           "ipa": "/tʃɪps/",
           "color": "#b98138",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><image href=\"../lop4/assets/images/unit4/chips.webp\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid slice\"/></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/chips-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "I want some ____ at the party.",
-          "group": "party"
+          "group": "party",
+          "image": "../../grade/lop4/assets/images/pencil/chips-v1.webp"
         },
         {
           "id": "grapes",
@@ -489,9 +521,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nho",
           "ipa": "/ɡreɪps/",
           "color": "#79588c",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><image href=\"../lop4/assets/images/unit4/grapes.webp\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid slice\"/></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/grapes-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "There are purple ____ on the table.",
-          "group": "party"
+          "group": "party",
+          "image": "../../grade/lop4/assets/images/pencil/grapes-v1.webp"
         },
         {
           "id": "water",
@@ -499,9 +532,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nước lọc",
           "ipa": "/ˈwɔː.tə/",
           "color": "#42829e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><image href=\"../lop4/assets/images/unit4/water.webp\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid slice\"/></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/fooddrinks/water-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "I drink ____ when I am thirsty.",
-          "group": "party"
+          "group": "party",
+          "image": "../../grade/lop2/assets/images/pencil/fooddrinks/water-v1.webp"
         },
         {
           "id": "lemonade",
@@ -509,9 +543,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nước chanh",
           "ipa": "/ˌlem.əˈneɪd/",
           "color": "#b89b39",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><image href=\"../lop4/assets/images/unit4/lemonade.webp\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid slice\"/></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/lemonade-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "I want some ____ with lemon slices.",
-          "group": "party"
+          "group": "party",
+          "image": "../../grade/lop4/assets/images/pencil/lemonade-v1.webp"
         },
         {
           "id": "juice",
@@ -519,9 +554,10 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nước ép",
           "ipa": "/dʒuːs/",
           "color": "#bd7337",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><image href=\"../lop4/assets/images/unit4/juice.webp\" width=\"120\" height=\"120\" preserveAspectRatio=\"xMidYMid slice\"/></svg>",
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/fooddrinks/juice-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
           "context": "I would like some orange ____.",
-          "group": "party"
+          "group": "party",
+          "image": "../../grade/lop2/assets/images/pencil/fooddrinks/juice-v1.webp"
         }
       ],
       "icon": "🎂",
@@ -580,8 +616,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "bơi",
           "ipa": "/swɪm/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏊</text></svg>",
-          "context": "I can ____ across the pool."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/verbs/swim-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I can ____ across the pool.",
+          "image": "../../grade/lop2/assets/images/pencil/verbs/swim-v1.webp"
         },
         {
           "id": "ride-a-bike",
@@ -589,8 +626,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "đi xe đạp",
           "ipa": "/raɪd ə baɪk/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🚴</text></svg>",
-          "context": "I can ____ in the park."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/verbs/ride-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I can ____ in the park.",
+          "image": "../../grade/lop2/assets/images/pencil/verbs/ride-v1.webp"
         },
         {
           "id": "draw",
@@ -598,8 +636,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "vẽ",
           "ipa": "/drɔː/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🎨</text></svg>",
-          "context": "I can ____ a picture of my family."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/verbs/draw-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I can ____ a picture of my family.",
+          "image": "../../grade/lop2/assets/images/pencil/verbs/draw-v1.webp"
         },
         {
           "id": "sing",
@@ -607,8 +646,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "hát",
           "ipa": "/sɪŋ/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🎤</text></svg>",
-          "context": "I can ____ a song for my friends."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/verbs/sing-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I can ____ a song for my friends.",
+          "image": "../../grade/lop2/assets/images/pencil/verbs/sing-v1.webp"
         },
         {
           "id": "dance",
@@ -616,8 +656,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nhảy múa",
           "ipa": "/dɑːns/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">💃</text></svg>",
-          "context": "I can ____ to the music."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/verbs/dance-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I can ____ to the music.",
+          "image": "../../grade/lop2/assets/images/pencil/verbs/dance-v1.webp"
         },
         {
           "id": "play-the-piano",
@@ -625,8 +666,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "chơi đàn piano",
           "ipa": "/pleɪ ðə piˈæn.əʊ/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🎹</text></svg>",
-          "context": "I can ____ at home."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/play-the-piano-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I can ____ at home.",
+          "image": "../../grade/lop4/assets/images/pencil/play-the-piano-v1.webp"
         }
       ],
       "icon": "🏊",
@@ -680,8 +722,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "lớp học",
           "ipa": "/ˈklɑːs.ruːm/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏫</text></svg>",
-          "context": "We study in the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/classroom-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We study in the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/classroom-v1.webp"
         },
         {
           "id": "library",
@@ -689,8 +732,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "thư viện",
           "ipa": "/ˈlaɪ.brər.i/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">📚</text></svg>",
-          "context": "I borrow books from the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/library-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I borrow books from the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/library-v1.webp"
         },
         {
           "id": "playground",
@@ -698,8 +742,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "sân chơi",
           "ipa": "/ˈpleɪ.ɡraʊnd/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 480\" aria-hidden=\"true\"><image href=\"../../shared/assets/vocabulary-3d/playground-3d-v1.webp\" width=\"480\" height=\"480\"/></svg>",
-          "context": "We play on the ____ after class."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/playground-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We play on the ____ after class.",
+          "image": "../../grade/lop4/assets/images/pencil/playground-v1.webp"
         },
         {
           "id": "computer-room",
@@ -707,8 +752,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "phòng máy tính",
           "ipa": "/kəmˈpjuː.tə ruːm/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">💻</text></svg>",
-          "context": "We use computers in the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/computer-room-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We use computers in the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/computer-room-v1.webp"
         },
         {
           "id": "music-room",
@@ -716,8 +762,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "phòng âm nhạc",
           "ipa": "/ˈmjuː.zɪk ruːm/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🎼</text></svg>",
-          "context": "We sing songs in the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/music-room-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We sing songs in the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/music-room-v1.webp"
         },
         {
           "id": "gym",
@@ -725,8 +772,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "phòng thể chất",
           "ipa": "/dʒɪm/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏀</text></svg>",
-          "context": "We play basketball in the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/gym-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We play basketball in the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/gym-v1.webp"
         }
       ],
       "icon": "🏫",
@@ -780,8 +828,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "môn Toán",
           "ipa": "/mæθs/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">➗</text></svg>",
-          "context": "I have ____ on Monday. We learn numbers."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/maths-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I have ____ on Monday. We learn numbers.",
+          "image": "../../grade/lop4/assets/images/pencil/maths-v1.webp"
         },
         {
           "id": "english",
@@ -789,8 +838,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "môn Tiếng Anh",
           "ipa": "/ˈɪŋ.ɡlɪʃ/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><path d=\"M60 30Q38 16 14 27v66q24-11 46 3 22-14 46-3V27Q82 16 60 30Z\" fill=\"#fff\" stroke=\"#5278a5\" stroke-width=\"5\"/><path d=\"M60 30v66\" stroke=\"#5278a5\" stroke-width=\"4\"/><path d=\"M74 13h29v23H91l-8 8v-8h-9Z\" fill=\"#f3ce83\" stroke=\"#a27a35\" stroke-width=\"3\"/></svg>",
-          "context": "I have ____ on Tuesday. We learn new words."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/english-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I have ____ on Tuesday. We learn new words.",
+          "image": "../../grade/lop4/assets/images/pencil/english-v1.webp"
         },
         {
           "id": "music",
@@ -798,8 +848,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "môn Âm nhạc",
           "ipa": "/ˈmjuː.zɪk/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🎵</text></svg>",
-          "context": "I have ____ on Wednesday. We sing songs."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/music-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I have ____ on Wednesday. We sing songs.",
+          "image": "../../grade/lop4/assets/images/pencil/music-v1.webp"
         },
         {
           "id": "art",
@@ -807,8 +858,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "môn Mĩ thuật",
           "ipa": "/ɑːt/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🖌️</text></svg>",
-          "context": "I have ____ on Thursday. We paint pictures."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/art-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I have ____ on Thursday. We paint pictures.",
+          "image": "../../grade/lop4/assets/images/pencil/art-v1.webp"
         },
         {
           "id": "science",
@@ -816,8 +868,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "môn Khoa học",
           "ipa": "/ˈsaɪ.əns/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🔬</text></svg>",
-          "context": "I have ____ on Friday. We learn about plants."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/science-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I have ____ on Friday. We learn about plants.",
+          "image": "../../grade/lop4/assets/images/pencil/science-v1.webp"
         },
         {
           "id": "pe",
@@ -825,8 +878,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "môn Thể dục",
           "ipa": "/ˌpiː ˈiː/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">⚽</text></svg>",
-          "context": "I have ____ in the gym. We play sports."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/pe-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I have ____ in the gym. We play sports.",
+          "image": "../../grade/lop4/assets/images/pencil/pe-v1.webp"
         }
       ],
       "icon": "📚",
@@ -880,8 +934,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "môn Mĩ thuật",
           "ipa": "/ɑːt/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🎨</text></svg>",
-          "context": "My favourite subject is ____. I like painting."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/art-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "My favourite subject is ____. I like painting.",
+          "image": "../../grade/lop4/assets/images/pencil/art-v1.webp"
         },
         {
           "id": "music",
@@ -889,8 +944,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "môn Âm nhạc",
           "ipa": "/ˈmjuː.zɪk/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🎺</text></svg>",
-          "context": "I like ____ because I love singing."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/music-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I like ____ because I love singing.",
+          "image": "../../grade/lop4/assets/images/pencil/music-v1.webp"
         },
         {
           "id": "science",
@@ -898,8 +954,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "môn Khoa học",
           "ipa": "/ˈsaɪ.əns/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🧪</text></svg>",
-          "context": "I like ____ because I enjoy experiments."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/science-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I like ____ because I enjoy experiments.",
+          "image": "../../grade/lop4/assets/images/pencil/science-v1.webp"
         },
         {
           "id": "maths",
@@ -907,8 +964,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "môn Toán",
           "ipa": "/mæθs/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🧮</text></svg>",
-          "context": "I like ____ because I enjoy numbers."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/maths-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I like ____ because I enjoy numbers.",
+          "image": "../../grade/lop4/assets/images/pencil/maths-v1.webp"
         },
         {
           "id": "english",
@@ -916,8 +974,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "môn Tiếng Anh",
           "ipa": "/ˈɪŋ.ɡlɪʃ/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><path d=\"M60 30Q38 16 14 27v66q24-11 46 3 22-14 46-3V27Q82 16 60 30Z\" fill=\"#fff\" stroke=\"#5278a5\" stroke-width=\"5\"/><path d=\"M60 30v66\" stroke=\"#5278a5\" stroke-width=\"4\"/><path d=\"M74 13h29v23H91l-8 8v-8h-9Z\" fill=\"#f3ce83\" stroke=\"#a27a35\" stroke-width=\"3\"/></svg>",
-          "context": "I like ____ because I enjoy new words."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/english-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I like ____ because I enjoy new words.",
+          "image": "../../grade/lop4/assets/images/pencil/english-v1.webp"
         },
         {
           "id": "pe",
@@ -925,8 +984,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "môn Thể dục",
           "ipa": "/ˌpiː ˈiː/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏃</text></svg>",
-          "context": "I like ____ because I enjoy running."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/pe-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I like ____ because I enjoy running.",
+          "image": "../../grade/lop4/assets/images/pencil/pe-v1.webp"
         }
       ],
       "icon": "🎨",
@@ -980,8 +1040,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "bóng đá",
           "ipa": "/ˈfʊt.bɔːl/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">⚽</text></svg>",
-          "context": "We play ____ on the school field."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/play-football-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We play ____ on the school field.",
+          "image": "../../grade/lop4/assets/images/pencil/play-football-v1.webp"
         },
         {
           "id": "badminton",
@@ -989,8 +1050,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "cầu lông",
           "ipa": "/ˈbæd.mɪn.tən/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏸</text></svg>",
-          "context": "I play ____ with a racket."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/badminton-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I play ____ with a racket.",
+          "image": "../../grade/lop4/assets/images/pencil/badminton-v1.webp"
         },
         {
           "id": "basketball",
@@ -998,8 +1060,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "bóng rổ",
           "ipa": "/ˈbɑː.skɪt.bɔːl/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏀</text></svg>",
-          "context": "We throw the ball into a hoop in ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/basketball-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We throw the ball into a hoop in ____.",
+          "image": "../../grade/lop4/assets/images/pencil/basketball-v1.webp"
         },
         {
           "id": "table-tennis",
@@ -1007,8 +1070,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "bóng bàn",
           "ipa": "/ˈteɪ.bəl ˌten.ɪs/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏓</text></svg>",
-          "context": "I play ____ with a small bat."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/table-tennis-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I play ____ with a small bat.",
+          "image": "../../grade/lop4/assets/images/pencil/table-tennis-v1.webp"
         },
         {
           "id": "running",
@@ -1016,8 +1080,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "chạy bộ",
           "ipa": "/ˈrʌn.ɪŋ/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏃</text></svg>",
-          "context": "I enjoy ____ in the race."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/verbs/run-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I enjoy ____ in the race.",
+          "image": "../../grade/lop2/assets/images/pencil/verbs/run-v1.webp"
         },
         {
           "id": "swimming",
@@ -1025,8 +1090,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "bơi lội",
           "ipa": "/ˈswɪm.ɪŋ/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏊</text></svg>",
-          "context": "I practise ____ in the pool."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/verbs/swim-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I practise ____ in the pool.",
+          "image": "../../grade/lop2/assets/images/pencil/verbs/swim-v1.webp"
         }
       ],
       "icon": "🏸",
@@ -1080,8 +1146,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "bãi biển",
           "ipa": "/biːtʃ/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏖️</text></svg>",
-          "context": "We built sandcastles on the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/beach-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We built sandcastles on the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/beach-v1.webp"
         },
         {
           "id": "mountains",
@@ -1089,8 +1156,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "núi",
           "ipa": "/ˈmaʊn.tɪnz/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏔️</text></svg>",
-          "context": "We walked in the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/mountains-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We walked in the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/mountains-v1.webp"
         },
         {
           "id": "island",
@@ -1098,8 +1166,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "hòn đảo",
           "ipa": "/ˈaɪ.lənd/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏝️</text></svg>",
-          "context": "We took a boat to the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/island-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We took a boat to the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/island-v1.webp"
         },
         {
           "id": "museum",
@@ -1107,8 +1176,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "bảo tàng",
           "ipa": "/mjuːˈziː.əm/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏛️</text></svg>",
-          "context": "We saw old objects at the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/museum-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We saw old objects at the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/museum-v1.webp"
         },
         {
           "id": "camping",
@@ -1116,8 +1186,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "cắm trại",
           "ipa": "/ˈkæm.pɪŋ/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">⛺</text></svg>",
-          "context": "We went ____ beside the lake."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/camping-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We went ____ beside the lake.",
+          "image": "../../grade/lop4/assets/images/pencil/camping-v1.webp"
         },
         {
           "id": "sightseeing",
@@ -1125,8 +1196,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tham quan",
           "ipa": "/ˈsaɪtˌsiː.ɪŋ/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">📸</text></svg>",
-          "context": "We went ____ around the city."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/sightseeing-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We went ____ around the city.",
+          "image": "../../grade/lop4/assets/images/pencil/sightseeing-v1.webp"
         }
       ],
       "icon": "🏖️",
@@ -1180,8 +1252,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "phòng khách",
           "ipa": "/ˈlɪv.ɪŋ ruːm/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🛋️</text></svg>",
-          "context": "We watch TV in the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/rooms/living-room-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We watch TV in the ____.",
+          "image": "../../grade/lop2/assets/images/pencil/rooms/living-room-v1.webp"
         },
         {
           "id": "bedroom",
@@ -1189,8 +1262,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "phòng ngủ",
           "ipa": "/ˈbed.ruːm/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🛏️</text></svg>",
-          "context": "I sleep in my ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/rooms/bedroom-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I sleep in my ____.",
+          "image": "../../grade/lop2/assets/images/pencil/rooms/bedroom-v1.webp"
         },
         {
           "id": "kitchen",
@@ -1198,8 +1272,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nhà bếp",
           "ipa": "/ˈkɪtʃ.ən/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🍳</text></svg>",
-          "context": "My father cooks in the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/rooms/kitchen-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "My father cooks in the ____.",
+          "image": "../../grade/lop2/assets/images/pencil/rooms/kitchen-v1.webp"
         },
         {
           "id": "bathroom",
@@ -1207,8 +1282,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "phòng tắm",
           "ipa": "/ˈbɑːθ.ruːm/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🛁</text></svg>",
-          "context": "I brush my teeth in the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/rooms/bathroom-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I brush my teeth in the ____.",
+          "image": "../../grade/lop2/assets/images/pencil/rooms/bathroom-v1.webp"
         },
         {
           "id": "garden",
@@ -1216,8 +1292,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "khu vườn",
           "ipa": "/ˈɡɑː.dən/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🌻</text></svg>",
-          "context": "We grow flowers in the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/garden-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We grow flowers in the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/garden-v1.webp"
         },
         {
           "id": "balcony",
@@ -1225,8 +1302,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "ban công",
           "ipa": "/ˈbæl.kə.ni/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><path d=\"M20 5h80v106H20Z\" fill=\"#f3d4ae\"/><rect x=\"38\" y=\"15\" width=\"44\" height=\"58\" fill=\"#b4d9ef\" stroke=\"#6f6052\" stroke-width=\"4\"/><path d=\"M60 15v58M27 72h66v28H27Zm0 10h66M38 73v26m15-26v26m15-26v26m15-26v26\" fill=\"none\" stroke=\"#70698b\" stroke-width=\"5\"/><path d=\"M19 103h82\" stroke=\"#70698b\" stroke-width=\"8\"/></svg>",
-          "context": "I can see the street from the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/balcony-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I can see the street from the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/balcony-v1.webp"
         }
       ],
       "icon": "🏡",
@@ -1280,8 +1358,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "giáo viên",
           "ipa": "/ˈtiː.tʃə/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">👩‍🏫</text></svg>",
-          "context": "A ____ teaches children at school."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/teacher-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "A ____ teaches children at school.",
+          "image": "../../grade/lop4/assets/images/pencil/teacher-v1.webp"
         },
         {
           "id": "doctor",
@@ -1289,8 +1368,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "bác sĩ",
           "ipa": "/ˈdɒk.tə/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">👨‍⚕️</text></svg>",
-          "context": "A ____ helps sick people."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/doctor-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "A ____ helps sick people.",
+          "image": "../../grade/lop4/assets/images/pencil/doctor-v1.webp"
         },
         {
           "id": "farmer",
@@ -1298,8 +1378,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nông dân",
           "ipa": "/ˈfɑː.mə/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">👩‍🌾</text></svg>",
-          "context": "A ____ grows crops on a farm."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/farmer-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "A ____ grows crops on a farm.",
+          "image": "../../grade/lop4/assets/images/pencil/farmer-v1.webp"
         },
         {
           "id": "firefighter",
@@ -1307,8 +1388,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "lính cứu hỏa",
           "ipa": "/ˈfaɪəˌfaɪ.tə/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">👩‍🚒</text></svg>",
-          "context": "A ____ puts out fires."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/firefighter-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "A ____ puts out fires.",
+          "image": "../../grade/lop4/assets/images/pencil/firefighter-v1.webp"
         },
         {
           "id": "chef",
@@ -1316,8 +1398,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "đầu bếp",
           "ipa": "/ʃef/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">👨‍🍳</text></svg>",
-          "context": "A ____ cooks meals in a restaurant."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/chef-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "A ____ cooks meals in a restaurant.",
+          "image": "../../grade/lop4/assets/images/pencil/chef-v1.webp"
         },
         {
           "id": "pilot",
@@ -1325,8 +1408,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "phi công",
           "ipa": "/ˈpaɪ.lət/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">👩‍✈️</text></svg>",
-          "context": "A ____ flies an aeroplane."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/pilot-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "A ____ flies an aeroplane.",
+          "image": "../../grade/lop4/assets/images/pencil/pilot-v1.webp"
         }
       ],
       "icon": "🧑‍⚕️",
@@ -1380,8 +1464,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tóc xoăn",
           "ipa": "/ˈkɜː.li heə/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"66\" r=\"30\" fill=\"#f6c9a2\" stroke=\"#b77c5b\" stroke-width=\"2\"/><circle cx=\"49\" cy=\"66\" r=\"2\" fill=\"#26384a\"/><circle cx=\"71\" cy=\"66\" r=\"2\" fill=\"#26384a\"/><path d=\"M52 81q8 7 16 0\" fill=\"none\" stroke=\"#9b594f\" stroke-width=\"2\"/><g fill=\"#5b342b\"><circle cx=\"32\" cy=\"42\" r=\"10\"/><circle cx=\"43\" cy=\"42\" r=\"10\"/><circle cx=\"54\" cy=\"42\" r=\"10\"/><circle cx=\"65\" cy=\"42\" r=\"10\"/><circle cx=\"76\" cy=\"42\" r=\"10\"/><circle cx=\"87\" cy=\"42\" r=\"10\"/></g></svg>",
-          "context": "She has ____. Her hair forms curls."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/curly-hair-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "She has ____. Her hair forms curls.",
+          "image": "../../grade/lop4/assets/images/pencil/curly-hair-v1.webp"
         },
         {
           "id": "straight-hair",
@@ -1389,8 +1474,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tóc thẳng",
           "ipa": "/streɪt heə/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><path d=\"M28 49q0-37 32-37t32 37v42h-12V48q-20-19-40 0v43H28Z\" fill=\"#4f3630\"/><circle cx=\"60\" cy=\"66\" r=\"30\" fill=\"#f6c9a2\" stroke=\"#b77c5b\" stroke-width=\"2\"/><circle cx=\"49\" cy=\"66\" r=\"2\" fill=\"#26384a\"/><circle cx=\"71\" cy=\"66\" r=\"2\" fill=\"#26384a\"/><path d=\"M52 81q8 7 16 0\" fill=\"none\" stroke=\"#9b594f\" stroke-width=\"2\"/></svg>",
-          "context": "She has ____. Her hair is not curly."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/straight-hair-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "She has ____. Her hair is not curly.",
+          "image": "../../grade/lop4/assets/images/pencil/straight-hair-v1.webp"
         },
         {
           "id": "glasses",
@@ -1398,8 +1484,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "kính mắt",
           "ipa": "/ˈɡlɑː.sɪz/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"66\" r=\"30\" fill=\"#f6c9a2\" stroke=\"#b77c5b\" stroke-width=\"2\"/><circle cx=\"49\" cy=\"66\" r=\"2\" fill=\"#26384a\"/><circle cx=\"71\" cy=\"66\" r=\"2\" fill=\"#26384a\"/><path d=\"M52 81q8 7 16 0\" fill=\"none\" stroke=\"#9b594f\" stroke-width=\"2\"/><g fill=\"none\" stroke=\"#315e89\" stroke-width=\"4\"><circle cx=\"49\" cy=\"66\" r=\"11\"/><circle cx=\"71\" cy=\"66\" r=\"11\"/><path d=\"M60 63h0M38 63l-9-5m53 5 9-5\"/></g></svg>",
-          "context": "He wears ____ to read."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/glasses-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "He wears ____ to read.",
+          "image": "../../grade/lop4/assets/images/pencil/glasses-v1.webp"
         },
         {
           "id": "blond-hair",
@@ -1407,8 +1494,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tóc vàng",
           "ipa": "/blɒnd heə/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"66\" r=\"30\" fill=\"#f6c9a2\" stroke=\"#b77c5b\" stroke-width=\"2\"/><circle cx=\"49\" cy=\"66\" r=\"2\" fill=\"#26384a\"/><circle cx=\"71\" cy=\"66\" r=\"2\" fill=\"#26384a\"/><path d=\"M52 81q8 7 16 0\" fill=\"none\" stroke=\"#9b594f\" stroke-width=\"2\"/><path d=\"M29 56q-2-43 31-43t31 43q-10-23-24-20-21 18-38 20Z\" fill=\"#e9bd42\" stroke=\"#c49733\" stroke-width=\"2\"/></svg>",
-          "context": "My friend has ____. It is yellow."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/blond-hair-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "My friend has ____. It is yellow.",
+          "image": "../../grade/lop4/assets/images/pencil/blond-hair-v1.webp"
         },
         {
           "id": "beard",
@@ -1416,8 +1504,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "râu quai nón",
           "ipa": "/bɪəd/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"66\" r=\"30\" fill=\"#f6c9a2\" stroke=\"#b77c5b\" stroke-width=\"2\"/><circle cx=\"49\" cy=\"66\" r=\"2\" fill=\"#26384a\"/><circle cx=\"71\" cy=\"66\" r=\"2\" fill=\"#26384a\"/><path d=\"M52 81q8 7 16 0\" fill=\"none\" stroke=\"#9b594f\" stroke-width=\"2\"/><path d=\"M34 75q4 34 26 35t26-35q-9 23-26 24T34 75Z\" fill=\"#633e30\"/></svg>",
-          "context": "My uncle has a ____ on his chin."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/beard-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "My uncle has a ____ on his chin.",
+          "image": "../../grade/lop4/assets/images/pencil/beard-v1.webp"
         },
         {
           "id": "freckles",
@@ -1425,8 +1514,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tàn nhang",
           "ipa": "/ˈfrek.əlz/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"66\" r=\"30\" fill=\"#f6c9a2\" stroke=\"#b77c5b\" stroke-width=\"2\"/><circle cx=\"49\" cy=\"66\" r=\"2\" fill=\"#26384a\"/><circle cx=\"71\" cy=\"66\" r=\"2\" fill=\"#26384a\"/><path d=\"M52 81q8 7 16 0\" fill=\"none\" stroke=\"#9b594f\" stroke-width=\"2\"/><g fill=\"#a86b4d\"><circle cx=\"39\" cy=\"74\" r=\"2\"/><circle cx=\"45\" cy=\"76\" r=\"2\"/><circle cx=\"50\" cy=\"74\" r=\"2\"/><circle cx=\"70\" cy=\"74\" r=\"2\"/><circle cx=\"76\" cy=\"76\" r=\"2\"/><circle cx=\"81\" cy=\"74\" r=\"2\"/></g></svg>",
-          "context": "She has small brown ____ on her face."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/freckles-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "She has small brown ____ on her face.",
+          "image": "../../grade/lop4/assets/images/pencil/freckles-v1.webp"
         }
       ],
       "icon": "😊",
@@ -1480,8 +1570,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "đánh răng",
           "ipa": "/brʌʃ maɪ tiːθ/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 480\" aria-hidden=\"true\"><image href=\"../../shared/assets/vocabulary-3d/brush-my-teeth-3d-v1.webp\" width=\"480\" height=\"480\"/></svg>",
-          "context": "Every morning, I ____ before breakfast."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/brush-my-teeth-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "Every morning, I ____ before breakfast.",
+          "image": "../../grade/lop4/assets/images/pencil/brush-my-teeth-v1.webp"
         },
         {
           "id": "wash-my-face",
@@ -1489,8 +1580,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "rửa mặt",
           "ipa": "/wɒʃ maɪ feɪs/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🧼</text></svg>",
-          "context": "After I get up, I ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/wash-my-face-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "After I get up, I ____.",
+          "image": "../../grade/lop4/assets/images/pencil/wash-my-face-v1.webp"
         },
         {
           "id": "have-breakfast",
@@ -1498,8 +1590,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "ăn sáng",
           "ipa": "/hæv ˈbrek.fəst/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🥣</text></svg>",
-          "context": "I ____ before going to school."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/have-breakfast-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I ____ before going to school.",
+          "image": "../../grade/lop4/assets/images/pencil/have-breakfast-v1.webp"
         },
         {
           "id": "do-homework",
@@ -1507,8 +1600,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "làm bài tập về nhà",
           "ipa": "/duː ˈhəʊm.wɜːk/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">✏️</text></svg>",
-          "context": "After school, I ____ at my desk."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/do-homework-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "After school, I ____ at my desk.",
+          "image": "../../grade/lop4/assets/images/pencil/do-homework-v1.webp"
         },
         {
           "id": "take-a-shower",
@@ -1516,8 +1610,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "tắm vòi sen",
           "ipa": "/teɪk ə ˈʃaʊ.ə/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🚿</text></svg>",
-          "context": "In the evening, I ____ before bed."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/take-a-shower-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "In the evening, I ____ before bed.",
+          "image": "../../grade/lop4/assets/images/pencil/take-a-shower-v1.webp"
         },
         {
           "id": "go-to-bed",
@@ -1525,8 +1620,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "đi ngủ",
           "ipa": "/ɡəʊ tə bed/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🛏️</text></svg>",
-          "context": "At nine o’clock, I ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/go-to-bed-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "At nine o’clock, I ____.",
+          "image": "../../grade/lop4/assets/images/pencil/go-to-bed-v1.webp"
         }
       ],
       "icon": "🌞",
@@ -1580,8 +1676,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "thăm ông bà",
           "ipa": "/ˈvɪz.ɪt ˈɡræn.peə.rənts/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">👵</text></svg>",
-          "context": "On Sunday, we ____ at their house."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/visit-grandparents-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "On Sunday, we ____ at their house.",
+          "image": "../../grade/lop4/assets/images/pencil/visit-grandparents-v1.webp"
         },
         {
           "id": "go-shopping",
@@ -1589,8 +1686,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "đi mua sắm",
           "ipa": "/ɡəʊ ˈʃɒp.ɪŋ/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🛍️</text></svg>",
-          "context": "At the weekend, we ____ at the market."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/go-shopping-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "At the weekend, we ____ at the market.",
+          "image": "../../grade/lop4/assets/images/pencil/go-shopping-v1.webp"
         },
         {
           "id": "have-a-picnic",
@@ -1598,8 +1696,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "đi dã ngoại",
           "ipa": "/hæv ə ˈpɪk.nɪk/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🧺</text></svg>",
-          "context": "On Saturday, we ____ in the park."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/have-a-picnic-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "On Saturday, we ____ in the park.",
+          "image": "../../grade/lop4/assets/images/pencil/have-a-picnic-v1.webp"
         },
         {
           "id": "watch-a-film",
@@ -1607,8 +1706,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "xem phim",
           "ipa": "/wɒtʃ ə fɪlm/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🎬</text></svg>",
-          "context": "We ____ together at the cinema."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/watch-a-film-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We ____ together at the cinema.",
+          "image": "../../grade/lop4/assets/images/pencil/watch-a-film-v1.webp"
         },
         {
           "id": "cook-dinner",
@@ -1616,8 +1716,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nấu bữa tối",
           "ipa": "/kʊk ˈdɪn.ə/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🍲</text></svg>",
-          "context": "My family and I ____ together."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/cook-dinner-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "My family and I ____ together.",
+          "image": "../../grade/lop4/assets/images/pencil/cook-dinner-v1.webp"
         },
         {
           "id": "play-games",
@@ -1625,8 +1726,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "chơi trò chơi",
           "ipa": "/pleɪ ɡeɪmz/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🎲</text></svg>",
-          "context": "We ____ around the table."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/play-games-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We ____ around the table.",
+          "image": "../../grade/lop4/assets/images/pencil/play-games-v1.webp"
         }
       ],
       "icon": "👪",
@@ -1680,8 +1782,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "có nắng",
           "ipa": "/ˈsʌn.i/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">☀️</text></svg>",
-          "context": "It is ____ today. The sun is bright."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/weather/sunny-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "It is ____ today. The sun is bright.",
+          "image": "../../grade/lop2/assets/images/pencil/weather/sunny-v1.webp"
         },
         {
           "id": "rainy",
@@ -1689,8 +1792,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "có mưa",
           "ipa": "/ˈreɪ.ni/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🌧️</text></svg>",
-          "context": "It is ____. Take an umbrella."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/weather/rainy-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "It is ____. Take an umbrella.",
+          "image": "../../grade/lop2/assets/images/pencil/weather/rainy-v1.webp"
         },
         {
           "id": "cloudy",
@@ -1698,8 +1802,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nhiều mây",
           "ipa": "/ˈklaʊ.di/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">☁️</text></svg>",
-          "context": "It is ____. There are many clouds."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/weather/cloudy-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "It is ____. There are many clouds.",
+          "image": "../../grade/lop2/assets/images/pencil/weather/cloudy-v1.webp"
         },
         {
           "id": "windy",
@@ -1707,8 +1812,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "nhiều gió",
           "ipa": "/ˈwɪn.di/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🌬️</text></svg>",
-          "context": "It is ____. The trees are moving."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/weather/windy-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "It is ____. The trees are moving.",
+          "image": "../../grade/lop2/assets/images/pencil/weather/windy-v1.webp"
         },
         {
           "id": "snowy",
@@ -1716,8 +1822,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "có tuyết",
           "ipa": "/ˈsnəʊ.i/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">❄️</text></svg>",
-          "context": "It is ____. Snow is falling."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/weather/snowy-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "It is ____. Snow is falling.",
+          "image": "../../grade/lop2/assets/images/pencil/weather/snowy-v1.webp"
         },
         {
           "id": "stormy",
@@ -1725,8 +1832,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "có bão",
           "ipa": "/ˈstɔː.mi/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">⛈️</text></svg>",
-          "context": "It is ____. We can hear thunder."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/weather/stormy-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "It is ____. We can hear thunder.",
+          "image": "../../grade/lop2/assets/images/pencil/weather/stormy-v1.webp"
         }
       ],
       "icon": "🌦️",
@@ -1780,8 +1888,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "bệnh viện",
           "ipa": "/ˈhɒs.pɪ.təl/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🏥</text></svg>",
-          "context": "A doctor works at the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/hospital-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "A doctor works at the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/hospital-v1.webp"
         },
         {
           "id": "post-office",
@@ -1789,8 +1898,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "bưu điện",
           "ipa": "/ˈpəʊst ˌɒf.ɪs/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">📮</text></svg>",
-          "context": "I send letters at the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/post-office-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I send letters at the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/post-office-v1.webp"
         },
         {
           "id": "cinema",
@@ -1798,8 +1908,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "rạp chiếu phim",
           "ipa": "/ˈsɪn.ə.mə/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🎞️</text></svg>",
-          "context": "We watch a film at the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/cinema-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We watch a film at the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/cinema-v1.webp"
         },
         {
           "id": "park",
@@ -1807,8 +1918,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "công viên",
           "ipa": "/pɑːk/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🌳</text></svg>",
-          "context": "We walk under the trees in the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/park-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We walk under the trees in the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/park-v1.webp"
         },
         {
           "id": "supermarket",
@@ -1816,8 +1928,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "siêu thị",
           "ipa": "/ˈsuː.pəˌmɑː.kɪt/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🛒</text></svg>",
-          "context": "We buy food at the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/supermarket-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We buy food at the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/supermarket-v1.webp"
         },
         {
           "id": "bus-stop",
@@ -1825,8 +1938,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "trạm xe buýt",
           "ipa": "/ˈbʌs stɒp/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🚏</text></svg>",
-          "context": "We wait for the bus at the ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/bus-stop-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We wait for the bus at the ____.",
+          "image": "../../grade/lop4/assets/images/pencil/bus-stop-v1.webp"
         }
       ],
       "icon": "🏙️",
@@ -1880,8 +1994,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "áo phông",
           "ipa": "/ˈtiː.ʃɜːt/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">👕</text></svg>",
-          "context": "I want to buy a blue ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/clothes/t-shirt-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I want to buy a blue ____.",
+          "image": "../../grade/lop2/assets/images/pencil/clothes/t-shirt-v1.webp"
         },
         {
           "id": "dress",
@@ -1889,8 +2004,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "váy liền",
           "ipa": "/dres/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">👗</text></svg>",
-          "context": "She wants to buy a red ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/clothes/dress-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "She wants to buy a red ____.",
+          "image": "../../grade/lop2/assets/images/pencil/clothes/dress-v1.webp"
         },
         {
           "id": "shoes",
@@ -1898,8 +2014,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "giày",
           "ipa": "/ʃuːz/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">👟</text></svg>",
-          "context": "I need new ____ for school."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/clothes/shoes-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I need new ____ for school.",
+          "image": "../../grade/lop2/assets/images/pencil/clothes/shoes-v1.webp"
         },
         {
           "id": "hat",
@@ -1907,8 +2024,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "mũ",
           "ipa": "/hæt/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🧢</text></svg>",
-          "context": "He buys a ____ to wear in the sun."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/clothes/hat-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "He buys a ____ to wear in the sun.",
+          "image": "../../grade/lop2/assets/images/pencil/clothes/hat-v1.webp"
         },
         {
           "id": "bag",
@@ -1916,8 +2034,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "túi xách",
           "ipa": "/bæɡ/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">👜</text></svg>",
-          "context": "She carries her books in a ____."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/bag-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "She carries her books in a ____.",
+          "image": "../../grade/lop4/assets/images/pencil/bag-v1.webp"
         },
         {
           "id": "watch",
@@ -1925,8 +2044,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "đồng hồ đeo tay",
           "ipa": "/wɒtʃ/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">⌚</text></svg>",
-          "context": "I wear a ____ on my wrist."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/watch-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "I wear a ____ on my wrist.",
+          "image": "../../grade/lop4/assets/images/pencil/watch-v1.webp"
         }
       ],
       "icon": "🛍️",
@@ -1980,8 +2100,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "voi",
           "ipa": "/ˈel.ɪ.fənt/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🐘</text></svg>",
-          "context": "An ____ has a long trunk."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/elephant-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "An ____ has a long trunk.",
+          "image": "../../grade/lop4/assets/images/pencil/elephant-v1.webp"
         },
         {
           "id": "giraffe",
@@ -1989,8 +2110,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "hươu cao cổ",
           "ipa": "/dʒɪˈrɑːf/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🦒</text></svg>",
-          "context": "A ____ has a very long neck."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/giraffe-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "A ____ has a very long neck.",
+          "image": "../../grade/lop4/assets/images/pencil/giraffe-v1.webp"
         },
         {
           "id": "dolphin",
@@ -1998,8 +2120,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "cá heo",
           "ipa": "/ˈdɒl.fɪn/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🐬</text></svg>",
-          "context": "A ____ swims in the sea."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/dolphin-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "A ____ swims in the sea.",
+          "image": "../../grade/lop4/assets/images/pencil/dolphin-v1.webp"
         },
         {
           "id": "parrot",
@@ -2007,8 +2130,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "vẹt",
           "ipa": "/ˈpær.ət/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🦜</text></svg>",
-          "context": "A ____ is a colourful bird."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/parrot-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "A ____ is a colourful bird.",
+          "image": "../../grade/lop4/assets/images/pencil/parrot-v1.webp"
         },
         {
           "id": "turtle",
@@ -2016,8 +2140,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "rùa",
           "ipa": "/ˈtɜː.təl/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🐢</text></svg>",
-          "context": "A ____ has a shell."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/turtle-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "A ____ has a shell.",
+          "image": "../../grade/lop4/assets/images/pencil/turtle-v1.webp"
         },
         {
           "id": "butterfly",
@@ -2025,8 +2150,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "bướm",
           "ipa": "/ˈbʌt.ə.flaɪ/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🦋</text></svg>",
-          "context": "A ____ has colourful wings."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/butterfly-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "A ____ has colourful wings.",
+          "image": "../../grade/lop4/assets/images/pencil/butterfly-v1.webp"
         }
       ],
       "icon": "🦒",
@@ -2080,8 +2206,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "làm diều",
           "ipa": "/meɪk ə kaɪt/",
           "color": "#28698e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🪁</text></svg>",
-          "context": "At camp, we ____ with paper and sticks."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/make-a-kite-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "At camp, we ____ with paper and sticks.",
+          "image": "../../grade/lop4/assets/images/pencil/make-a-kite-v1.webp"
         },
         {
           "id": "pitch-a-tent",
@@ -2089,8 +2216,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "dựng lều",
           "ipa": "/pɪtʃ ə tent/",
           "color": "#9b5b85",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">⛺</text></svg>",
-          "context": "We ____ before sleeping outside."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/pitch-a-tent-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We ____ before sleeping outside.",
+          "image": "../../grade/lop4/assets/images/pencil/pitch-a-tent-v1.webp"
         },
         {
           "id": "tell-stories",
@@ -2098,8 +2226,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "kể chuyện",
           "ipa": "/tel ˈstɔː.riz/",
           "color": "#53824e",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">📖</text></svg>",
-          "context": "At night, we ____ around the campfire."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/tell-stories-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "At night, we ____ around the campfire.",
+          "image": "../../grade/lop4/assets/images/pencil/tell-stories-v1.webp"
         },
         {
           "id": "sing-songs",
@@ -2107,8 +2236,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "hát các bài hát",
           "ipa": "/sɪŋ sɒŋz/",
           "color": "#ac713d",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🎶</text></svg>",
-          "context": "We ____ together at camp."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop2/assets/images/pencil/verbs/sing-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We ____ together at camp.",
+          "image": "../../grade/lop2/assets/images/pencil/verbs/sing-v1.webp"
         },
         {
           "id": "take-photos",
@@ -2116,8 +2246,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "chụp ảnh",
           "ipa": "/teɪk ˈfəʊ.təʊz/",
           "color": "#586da5",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">📷</text></svg>",
-          "context": "We ____ of our new friends."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/take-photos-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We ____ of our new friends.",
+          "image": "../../grade/lop4/assets/images/pencil/take-photos-v1.webp"
         },
         {
           "id": "play-games",
@@ -2125,8 +2256,9 @@ window.DanhPrimaryGrade2Course={
           "meaning": "chơi trò chơi",
           "ipa": "/pleɪ ɡeɪmz/",
           "color": "#a35c55",
-          "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\" aria-hidden=\"true\"><rect width=\"120\" height=\"120\" rx=\"22\" fill=\"#eef6f8\"/><circle cx=\"60\" cy=\"60\" r=\"48\" fill=\"#fff\"/><text x=\"60\" y=\"81\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"62\">🎯</text></svg>",
-          "context": "We ____ together in the afternoon."
+          "visual": "<svg class=\"danh-vocabulary-art\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 768 768\" aria-hidden=\"true\"><image href=\"../../grade/lop4/assets/images/pencil/play-games-v1.webp\" width=\"768\" height=\"768\" preserveAspectRatio=\"xMidYMid meet\"/></svg>",
+          "context": "We ____ together in the afternoon.",
+          "image": "../../grade/lop4/assets/images/pencil/play-games-v1.webp"
         }
       ],
       "icon": "⛺",

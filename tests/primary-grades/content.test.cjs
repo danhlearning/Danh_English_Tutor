@@ -18,7 +18,9 @@ for (const [grade,count,wordCount,sentenceCount] of [[1,16,4,3],[5,20,6,4]]) {
       for (const w of u.words) if (/^[a-z-]+$/.test(w.art)) assert.ok(fs.existsSync(path.join(root,`shared/assets/vocabulary-3d/${w.art}-3d-v1.webp`)),w.art);
       const html=fs.readFileSync(path.join(root,`grade/lop${grade}/${u.id}.html`),'utf8');
       assert.ok(html.indexOf('learner-profile-core.js')<html.indexOf('learner-profile.js'));
-      assert.ok(html.indexOf('learner-profile.js')<html.indexOf('primary-template-lesson.js'));
+      const runtime=html.indexOf('primary-grade2-lesson.js');
+      assert.ok(runtime>=0,'Trang công khai dùng bộ game lớp 2');
+      assert.ok(html.indexOf('learner-profile.js')<runtime);
       assert.ok(html.includes(`data-unit="${u.id}"`));
     }
   });

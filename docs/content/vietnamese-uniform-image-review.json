@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-23",
+  "mode": "built-in image_gen",
+  "scope": [
+    "grade",
+    "assets",
+    "shared",
+    "avatar.jpg"
+  ],
+  "filesScreened": 1227,
+  "uniqueImagesScreened": 1226,
+  "contactSheetsReviewed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "rootPortraitReviewed": true,
+  "militaryImagesFound": 1,
+  "repairedImages": 1,
+  "assets": [
+    {
+      "key": "unit7-2",
+      "term": "peacekeeping",
+      "file": "grade/lop10/assets/images/pencil/unit7/2-v4.webp",
+      "compatibilityFile": "grade/lop10/assets/images/pencil/unit7/2-v1.webp",
+      "sha256": "cbad6db3c27d271b1fdda2c3432bcbb25e2a9eb39b9040823238aaf2ea329c18",
+      "previousSha256": "09fd9d691dbfbda713e3e90b15dc3f34140b951cc9c2c64001fb456c9fd06bc7",
+      "source": "C:/Users/Admin/.codex/generated_images/01a167eb-828e-73d0-b75a-5eca4c77c5c4/exec-b29a42a7-8b2e-4254-82f7-8a0392899ab8.png",
+      "prompt": "Use case: illustration-story. Use attached image only as a reference for the two Vietnamese soldiers' faces, traditional olive-green uniforms, green Vietnamese pith helmets (mu coi) with all-around brim, chinstrap and small red front badge with one yellow star, national flag sleeve patches, and warm colored pencil art style. Replace the entire aid delivery situation with the owner's requested scene: the same two adult Vietnamese soldiers standing watch to protect their country's peaceful mountainous land border. Medium-wide full-body scene: one soldier holds binoculars correctly to his eyes with both hands while observing a distant mountain pass; the other stands upright attentively beside a single plain pale stone boundary marker on a safe grounded hillside path. Both wear plain olive-green long-sleeve military shirts with two chest pockets, matching olive trousers, simple dark belts and black rubber sandals. A small Vietnamese flag on a vertical pole nearby: red rectangle with exactly one centered yellow five-pointed star. Clear tranquil green forested mountains and winding frontier path, alert protective duty rather than combat. No mother, no children, no relief box, no village aid handover, no blue military clothing, no blue helmets, no blue vests, no camouflage, no armor, no foreign flags, no guns or violence. Boundary stone completely blank: no letters, numbers or writing. Do not depict an actual disputed border or identifiable geographic map. Natural anatomy, two coherent hands for each person, binoculars held naturally, realistic safe ground and flagpole. Single cohesive square image, colored pencil strokes on warm cream paper, no text or watermark anywhere.",
+      "reviewedVisually": true,
+      "noReadableText": true,
+      "review": "Đã mở xem trực tiếp: hai người lính mặc quân phục xanh trơn, đội mũ cối xanh và đi dép cao su, đứng gác bên cột mốc trên đường biên núi rừng; một người quan sát bằng ống nhòm. Cờ đỏ có một sao vàng, không chữ trong ảnh, tay/người/ống nhòm và mặt đất hợp lý. Thay cảnh trao hàng cứu trợ theo yêu cầu trực tiếp của người dùng; giữ nghĩa peacekeeping là gìn giữ hòa bình."
+    }
+  ],
+  "otherCandidates": [
+    {
+      "file": "grade/lop10/assets/images/pencil/unit10/1-v1.webp",
+      "index": 18,
+      "decision": "kept",
+      "reason": "Nhân vật kiểm lâm/hướng dẫn người đi rừng; không đổi sang quân phục bộ đội."
+    },
+    {
+      "file": "grade/lop10/assets/images/pencil/unit10/7-v1.webp",
+      "index": 27,
+      "decision": "kept",
+      "reason": "Nhân vật kiểm lâm/hướng dẫn người đi rừng; không đổi sang quân phục bộ đội."
+    },
+    {
+      "file": "grade/lop12/assets/images/pencil/unit8/1-v1.webp",
+      "index": 225,
+      "decision": "kept",
+      "reason": "Nhân vật kiểm lâm/hướng dẫn người đi rừng; không đổi sang quân phục bộ đội."
+    },
+    {
+      "file": "grade/lop12/assets/images/pencil/unit8/10-vocab100-v1.webp",
+      "index": 226,
+      "decision": "kept",
+      "reason": "Nhân vật kiểm lâm/hướng dẫn người đi rừng; không đổi sang quân phục bộ đội."
+    },
+    {
+      "file": "grade/lop12/assets/images/pencil/unit8/3-v1.webp",
+      "index": 228,
+      "decision": "kept",
+      "reason": "Nhân vật kiểm lâm/hướng dẫn người đi rừng; không đổi sang quân phục bộ đội."
+    },
+    {
+      "file": "grade/lop12/assets/images/pencil/unit8/6-v1.webp",
+      "index": 231,
+      "decision": "kept",
+      "reason": "Nhân vật kiểm lâm/hướng dẫn người đi rừng; không đổi sang quân phục bộ đội."
+    },
+    {
+      "file": "grade/lop12/assets/images/pencil/unit8/8-v1.webp",
+      "index": 232,
+      "decision": "kept",
+      "reason": "Nhân vật kiểm lâm/hướng dẫn người đi rừng; không đổi sang quân phục bộ đội."
+    },
+    {
+      "file": "grade/lop4/assets/images/pencil/pilot-v1.webp",
+      "index": 624,
+      "decision": "kept",
+      "reason": "Phi công hàng không dân dụng, không phải quân nhân."
+    },
+    {
+      "file": "shared/assets/vocabulary-3d/pilot-3d-v1.webp",
+      "index": 1157,
+      "decision": "kept",
+      "reason": "Phi công hàng không dân dụng, không phải quân nhân."
+    }
+  ],
+  "limitations": "Rà kho tài nguyên ảnh website nội bộ; tệp ảnh tư liệu gốc ngoài repo và ảnh chụp kiểm thử cũ không phải tài nguyên giảng dạy."
+}

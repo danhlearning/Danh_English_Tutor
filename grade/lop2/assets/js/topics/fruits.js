@@ -34,7 +34,7 @@
   }
 
   function speak(text) {
-    if ('speechSynthesis' in window) {
+    if (window.speechSynthesis) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'en-US';

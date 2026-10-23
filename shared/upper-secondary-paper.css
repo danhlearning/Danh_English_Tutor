@@ -25,6 +25,9 @@ body[data-paper-grade="7"][data-effects-mode]{background-size:17px 21px}
 body[data-paper-grade] a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 body[data-effects-mode="automatic"] :is(#sound-toggle,#motion-toggle,.vg-settings){display:none!important}
 body[data-paper-grade] .g6-lesson-hero :is(.g6-kicker,#unit-number){color:var(--accent)}
+body[data-paper-grade] .g6-lesson-main>.g6-note:has(a){display:flex;flex-wrap:wrap;gap:8px;font-size:0}
+body[data-paper-grade] .g6-lesson-main>.g6-note>a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;font-size:1rem;font-weight:800;border:1px solid var(--line);border-radius:12px 15px 11px 14px;background:var(--grain),var(--surface);color:var(--accent);text-decoration:none}
+body[data-paper-grade] .g6-lesson-main>.g6-note>a:hover{background:var(--paper)}
 body[data-paper-grade] :is(.g6-tabs,.gg-info){border-color:var(--line);background:var(--surface)}
 body[data-paper-grade] :is(.g6-tab.active,.gg-segments input:checked+span){background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 3px 0 var(--ink)}
 body[data-paper-grade] .gg-segments span{background:var(--surface);border-color:var(--line);color:var(--accent)}

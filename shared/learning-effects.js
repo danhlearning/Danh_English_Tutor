@@ -8,7 +8,7 @@
   const prefsKey='danh-vocabulary-effects-v1';
   const automatic=document.body.dataset.effectsMode==='automatic';
   let prefs=read(prefsKey,{}) || {};
-  if(automatic) prefs={sound:true,motion:true,shared:true};
+  if(automatic) prefs={sound:prefs.sound!==false,motion:prefs.motion!==false,shared:true};
   else if(prefs.shared!==true){
     const legacy=read('danh-g6-grammar-effects',{}) || {};
     prefs={sound:prefs.sound!==false && legacy.sound!==false,motion:prefs.motion!==false && legacy.motion!==false,shared:true};
@@ -16,21 +16,27 @@
   }
   let sound = prefs.sound !== false, motion = prefs.motion !== false, audio;
   const voices = new Set();
+  let flipNoise;
   let speechTimer;
   let goodVariation = 0;
+  const elementEffects=new WeakMap();
+  const activeEffects=new Set();
+  const stopMotion=()=>{for(const effect of [...activeEffects])effect.cleanup();document.querySelectorAll('.vg-spark').forEach(node=>node.remove());};
   const reduced = () => !motion || matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const stop = () => { clearTimeout(speechTimer);for(const oscillator of voices)try{oscillator.stop();}catch{} voices.clear();audio?.suspend()?.catch(()=>{});window.DanhAnswerSpeech?.stop();window.speechSynthesis?.cancel(); };
+  const stop = () => { stopMotion();clearTimeout(speechTimer);for(const oscillator of voices)try{oscillator.stop();}catch{} voices.clear();audio?.suspend()?.catch(()=>{});window.DanhAnswerSpeech?.stop();window.speechSynthesis?.cancel(); };
   const tone = (kind='tap') => {
     if(!sound || document.hidden)return;
     try {
       const Audio = window.AudioContext || window.webkitAudioContext;if(!Audio)return;
       audio ||= new Audio();if(audio.state==='suspended')audio.resume().catch(()=>{});
+      // Rapid taps must not leave dozens of sound nodes playing at once.
+      while(voices.size>12){const oldest=voices.values().next().value;try{oldest.stop();oldest.disconnect();}catch{}voices.delete(oldest);}
       const melodies = {tap:[740],next:[587,740],start:[392,523,659],good:goodVariation++%2?[587,740,880]:[523,659,784],corrected:[440,554,659],bad:[294,247],help:[392,494],streak:[523,659,784,1047,1319],complete:[392,523,659,784,1047],flip:[380]};
       const notes = melodies[kind] || melodies.tap;
       const step = kind==='streak' || kind==='complete' ? .085 : .065;
       if(kind==='flip') {
-        const buffer=audio.createBuffer(1,Math.ceil(audio.sampleRate*.26),audio.sampleRate),samples=buffer.getChannelData(0);
-        for(let i=0;i<samples.length;i++)samples[i]=(Math.random()*2-1);
+        if(!flipNoise){flipNoise=audio.createBuffer(1,Math.ceil(audio.sampleRate*.26),audio.sampleRate);const samples=flipNoise.getChannelData(0);for(let i=0;i<samples.length;i++)samples[i]=(Math.random()*2-1);}
+        const buffer=flipNoise;
         const source=audio.createBufferSource(),filter=audio.createBiquadFilter(),gain=audio.createGain(),at=audio.currentTime;
         source.buffer=buffer;filter.type='bandpass';filter.frequency.setValueAtTime(1600,at);filter.frequency.exponentialRampToValueAtTime(450,at+.24);filter.Q.value=.6;
         source.connect(filter);filter.connect(gain);gain.connect(audio.destination);
@@ -61,11 +67,22 @@
     const detail={kind,sound,motion:!reduced()};
     document.dispatchEvent(new CustomEvent('danh-learning-feedback',{detail}));
     document.dispatchEvent(new CustomEvent('danh-vocabulary-feedback',{detail}));
-    const rect=target?.getBoundingClientRect();
+    const rect=!reduced()&&kind!=='flip'?target?.getBoundingClientRect():null;
     if(kind!=='flip')sparkle(rect?rect.left+rect.width/2:innerWidth/2,rect?rect.top+Math.min(rect.height/2,150):innerHeight/2,kind);
     if(target && !reduced() && kind!=='flip') {
       const name=kind==='bad'?'vg-shake':kind==='streak'||kind==='complete'?'vg-celebrate':'vg-pop';
-      target.classList.remove('vg-pop','vg-shake','vg-celebrate');void target.offsetWidth;target.classList.add(name);setTimeout(()=>target.classList.remove(name),650);
+      const previous=elementEffects.get(target);previous?.cleanup();
+      target.classList.remove('vg-pop','vg-shake','vg-celebrate');target.classList.add(name);
+      const effect={};elementEffects.set(target,effect);
+      if(target.animate){
+        const frames=name==='vg-shake'?['translateX(0)','translateX(-5px)','translateX(5px)','translateX(-5px)','translateX(5px)','translateX(0)']:
+          name==='vg-celebrate'?['scale(1)','translateY(-5px) scale(1.04)','scale(.98)','scale(1)']:['scale(1)','scale(1.025)','scale(1)'];
+        effect.originalAnimation=previous?.originalAnimation??target.style.animation;
+        target.style.animation='none';
+        effect.animation=target.animate(frames.map(transform=>({transform})),{duration:name==='vg-shake'?340:name==='vg-celebrate'?600:350,easing:'ease-out'});
+      }
+      effect.cleanup=()=>{clearTimeout(effect.timer);effect.animation?.cancel();activeEffects.delete(effect);if(elementEffects.get(target)!==effect)return;target.classList.remove(name);if(effect.originalAnimation!==undefined)target.style.animation=effect.originalAnimation;elementEffects.delete(target);};
+      activeEffects.add(effect);effect.timer=setTimeout(effect.cleanup,650);
     }
   };
   const afterFeedback = callback => {
@@ -81,7 +98,7 @@
   const refresh=()=>{
     document.body.classList.toggle('vg-reduced',!motion);
     document.body.classList.toggle('gg-reduce-motion',!motion);
-    if(!motion)document.querySelectorAll('.vg-spark').forEach(node=>node.remove());
+    if(reduced())stopMotion();
     document.dispatchEvent(new Event('danh-learning-effects-change'));
   };
   const bindSettings=({soundButton,motionButton,compact=false})=>{
@@ -96,5 +113,6 @@
     document.addEventListener('danh-learning-effects-change',update);update();
   };
   refresh();
+  matchMedia('(prefers-reduced-motion: reduce)').addEventListener?.('change',()=>{if(reduced())stopMotion();});
   window.DanhLearningEffects={feedback,afterFeedback,stop,reduced,bindSettings,automatic,soundEnabled:()=>sound,motionEnabled:()=>motion,isMilestone:count=>count===3||count>=5&&count%5===0};
 })();

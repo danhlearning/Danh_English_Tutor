@@ -13,8 +13,16 @@
     const title = document.createElement('h3'); title.textContent = unit.title;
     const meaning = document.createElement('p'); meaning.textContent = unit.vietnamese;
     const bottom = document.createElement('div'); bottom.className = 'g6-card-bottom';
+    const count = document.createElement('span'); count.className='g11-unit-count';count.textContent=`${unit.words.length} từ`;
+    try {
+      const round=JSON.parse(window.DanhLearners.storage.getItem(`danh-g11-spelling-${unit.id}-v1`)||'null');
+      if(round?.version===1&&Array.isArray(round.order)&&round.order.length<=unit.words.length&&round.order.every(id=>unit.words.some(w=>w.id===id))&&Number.isInteger(round.position)&&round.position>=0&&round.position<round.order.length&&Object.values(round.entries||{}).some(e=>e?.draft||e?.outcome||e?.attempts)){
+        count.textContent=`Tiếp tục gõ · ${round.position+1}/${round.order.length}`;
+        card.href=`./${unit.id}.html?activity=spelling`;
+      }
+    }catch{}
     const enter = document.createElement('strong'); enter.textContent = '→'; enter.setAttribute('aria-hidden','true');
-    bottom.append(enter);
+    bottom.append(count,enter);
     card.append(top, title, meaning, bottom);
     list.append(card);
   }

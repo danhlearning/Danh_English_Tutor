@@ -2,6 +2,8 @@
 
 Website học tiếng Anh tĩnh bằng HTML, CSS và JavaScript. Trang chủ là index.html; danh sách bài Lớp 2 là grade/lop2/lop2.html.
 
+Cập nhật 23/10/2026: lớp 10–12 có 100 từ/cụm từ mỗi lớp, kèm tranh và giọng đọc; xem [báo cáo bổ sung từ vựng](docs/reports/upper-secondary-vocabulary-2026-10-23.md).
+
 Định hướng sản phẩm là **game học tiếng Anh**: mỗi hoạt động có mục tiêu học, thử thách, phản hồi, tự sửa và ôn lại; dùng Nunito, phong cách dễ thương, âm thanh và animation phục vụ cách chơi. Khi phát triển, tuân theo [chỉ dẫn chung](AGENTS.md) và [nguyên tắc thiết kế game học tiếng Anh](docs/NGUYEN_TAC_GAME_HOC_TIENG_ANH.md).
 
 ## Mở website
@@ -51,4 +53,6 @@ Phòng ngữ pháp: `node scripts/build-grammar-pages.cjs` tái tạo các trang
 
 ## Trạng thái phát triển
 
-Lớp 2 có 16 Unit luyện từ vựng theo Tiếng Anh 2 – Global Success và 19 chủ đề bổ trợ. Mỗi Unit có từ vựng, câu luyện và tranh do website biên soạn; nội dung chưa đối chiếu từng Lesson với trang sách. Lớp 4 có đủ Unit 1–20 theo chủ đề Tiếng Anh 4 – Global Success, kèm phần ôn từ theo ngày. Unit 3–4 dùng ảnh minh họa phong cách ảnh chụp được tạo bằng AI; Unit 5–20 dùng biểu tượng minh họa. Lớp 6 có 12 Unit theo chủ đề Tiếng Anh 6 – Global Success, với 96 từ và các bài luyện do website biên soạn; phần Ngữ pháp có bài luyện theo Unit và học kỳ, năm dạng câu hỏi và streak. Lớp 7 có 12 Unit, 96 từ, 19 ảnh minh họa theo ngữ cảnh và 432 mục luyện ngữ pháp. Lớp 1 và 5 đã mở với bốn game theo chủ đề tự biên soạn; lớp 3 có 20 chặng, 93 mục từ và 60 câu. Lớp 8 và 9 đã có 12 Unit mỗi lớp, 96 từ/cụm từ và 252 mục luyện ngữ pháp mỗi lớp; các dạng có thể luyện cùng ngữ cảnh. Lớp 10–12 chưa có bài học. Xem [lộ trình](docs/ROADMAP.md).
+Lớp 12 cập nhật ngày 23/10/2026: 10 Unit, 80 từ/cụm từ có tranh bút chì màu và 350 mục ngữ pháp (thêm 60 tình huống độc lập). Gõ từ lưu lượt dở theo hồ sơ, phân biệt đúng ngay/tự sửa/có gợi ý/đã xem và có ôn từ còn khó. Giữ URL, ID và lượt chọn từ/ngữ pháp cũ. [Phạm vi và nghiệm thu](docs/reports/grade12-improvement-2026-10-23.md) · [80 tranh và giao diện](docs/reports/grade12-images-2026-10-23.md).
+
+Lớp 2 có 16 Unit luyện từ vựng theo Tiếng Anh 2 – Global Success và 19 chủ đề bổ trợ. Mỗi Unit có từ vựng, câu luyện và tranh do website biên soạn; nội dung chưa đối chiếu từng Lesson với trang sách. Lớp 4 có đủ Unit 1–20 theo chủ đề Tiếng Anh 4 – Global Success, kèm phần ôn từ theo ngày. Unit 3–4 dùng ảnh minh họa phong cách ảnh chụp được tạo bằng AI; Unit 5–20 dùng biểu tượng minh họa. Lớp 6 có 12 Unit theo chủ đề Tiếng Anh 6 – Global Success, với 96 từ và các bài luyện do website biên soạn; phần Ngữ pháp có bài luyện theo Unit và học kỳ, năm dạng câu hỏi và streak. Lớp 7 có 12 Unit, 96 từ, 19 ảnh minh họa theo ngữ cảnh và 432 mục luyện ngữ pháp. Lớp 1 và 5 đã mở với bốn game theo chủ đề tự biên soạn; lớp 3 có 20 chặng, 93 mục từ và 60 câu. Lớp 8 và 9 đã có 12 Unit mỗi lớp, 96 từ/cụm từ và 252 mục luyện ngữ pháp mỗi lớp; các dạng có thể luyện cùng ngữ cảnh. Lớp 10–12 đã có bài học; xem báo cáo lớp 12 ở trên để biết phạm vi mới nhất. Xem [lộ trình](docs/ROADMAP.md).

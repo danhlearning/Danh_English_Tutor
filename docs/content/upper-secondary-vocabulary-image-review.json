@@ -1,0 +1,785 @@
+{
+  "reviewedOn": "2026-10-23",
+  "assets": [
+    {
+      "key": "10/1/9",
+      "term": "extended family",
+      "file": "grade/lop10/assets/images/pencil/unit1/9-vocab100-v1.webp",
+      "sha256": "0412be2076b0c0f8534f3f2a5f2c33d5b32dd788b11300cb94bcbf24c47e7d40",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-860609ef-c73d-4fed-b410-bde06edf04a4.png",
+      "version": 1
+    },
+    {
+      "key": "10/1/10",
+      "term": "divide the chores",
+      "file": "grade/lop10/assets/images/pencil/unit1/10-vocab100-v1.webp",
+      "sha256": "0be7245918525c7ff6cda10808bb44895e34a9569f6069a06b46d851bcb1cc6d",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-b58eb4e9-fa85-4b9e-aa8d-027f42df9bb0.png",
+      "version": 1
+    },
+    {
+      "key": "10/2/9",
+      "term": "renewable energy",
+      "file": "grade/lop7/assets/images/pencil/unit10/7-v1.webp",
+      "sha256": "cb69d765e662ede58db532b2c97e52c56c5f60e4117a007de88b471ddbc6981e",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 7,
+        "unit": 10,
+        "id": 7,
+        "term": "renewable energy"
+      }
+    },
+    {
+      "key": "10/2/10",
+      "term": "reduce waste",
+      "file": "grade/lop6/assets/images/pencil/unit11/reduce-v1.webp",
+      "sha256": "52463ab0b438b0501eb704e5ecbf3f16e0b2c14d940adfdb930e57bd441578f7",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 6,
+        "unit": 11,
+        "id": 3,
+        "term": "reduce"
+      }
+    },
+    {
+      "key": "10/3/9",
+      "term": "live concert",
+      "file": "grade/lop10/assets/images/pencil/unit3/2-v1.webp",
+      "sha256": "bcb0ceebf1f850d0aa28ff8afdbeba4f9e08e991c7e90c2674faef280743a532",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 10,
+        "unit": 3,
+        "id": 2,
+        "term": "performance"
+      }
+    },
+    {
+      "key": "10/3/10",
+      "term": "rehearsal",
+      "file": "grade/lop10/assets/images/pencil/unit3/10-vocab100-v1.webp",
+      "sha256": "266612b516b1928373f57d33c566e0c9938d4230575e387f8d753f09fdf72f38",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-100702a7-450a-4fc3-9e7d-c079946adf2e.png",
+      "version": 1
+    },
+    {
+      "key": "10/4/9",
+      "term": "nursing home",
+      "file": "grade/lop7/assets/images/pencil/unit3/6-v1.webp",
+      "sha256": "5288b6c14621bef6a1fe9e090577120cc5c00bf0f76638bcd94f2d61d8f12530",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 7,
+        "unit": 3,
+        "id": 6,
+        "term": "nursing home"
+      }
+    },
+    {
+      "key": "10/4/10",
+      "term": "charity sale",
+      "file": "grade/lop10/assets/images/pencil/unit4/10-vocab100-v1.webp",
+      "sha256": "3d5724c5641ac9d214351ff8841d1fb1310cef00873281599627970d14e6145c",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-7c6fb719-82da-4214-9111-4f3a4a3a65ac.png",
+      "version": 1
+    },
+    {
+      "key": "10/5/9",
+      "term": "touchscreen",
+      "file": "grade/lop10/assets/images/pencil/unit5/9-vocab100-v1.webp",
+      "sha256": "ac916147bb37feefebbbae96a18449b1484b0ef69a5780eaefce3e78563eb85c",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-2a70a9e8-bbed-4e4a-be21-f825512bbc66.png",
+      "version": 1
+    },
+    {
+      "key": "10/5/10",
+      "term": "labour-saving",
+      "file": "grade/lop10/assets/images/pencil/unit5/10-vocab100-v1.webp",
+      "sha256": "3deeaccdac1c21be95917cac6f29cec45981d9ae788c5dbca1a960fdc71773a1",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-470a8963-8af9-4a38-bb61-4461deb032ad.png",
+      "version": 1
+    },
+    {
+      "key": "10/6/9",
+      "term": "gender stereotype",
+      "file": "grade/lop10/assets/images/pencil/unit6/9-vocab100-v1.webp",
+      "sha256": "cbcbdd205b61e2f666d0d7ce13df92bd2b3acaaa008decb75bc2a27672ac6000",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-dcfc4856-d372-4fd6-9d4a-81561e36a4f8.png",
+      "version": 1
+    },
+    {
+      "key": "10/6/10",
+      "term": "leadership",
+      "file": "grade/lop11/assets/images/pencil/unit4/6-v1.webp",
+      "sha256": "5c13364c3f6909cb3af8a656396c26899d8b3c8dfdf8f86a7764c5cbc849b899",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 11,
+        "unit": 4,
+        "id": 6,
+        "term": "leadership"
+      }
+    },
+    {
+      "key": "10/7/9",
+      "term": "cultural exchange",
+      "file": "grade/lop11/assets/images/pencil/unit4/1-v1.webp",
+      "sha256": "8cbf2bf0e9a7dae37cc117420d5a83868d355bf72b8d420cf80bd0e2c3cce5cf",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 11,
+        "unit": 4,
+        "id": 1,
+        "term": "cultural exchange"
+      }
+    },
+    {
+      "key": "10/7/10",
+      "term": "member state",
+      "file": "grade/lop10/assets/images/pencil/unit7/10-vocab100-v1.webp",
+      "sha256": "922dd8088bd0659cbf4a4b4a53ad73a3decf7149bdc4ee64c2f31a2ba8197d88",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-96cb4982-4df5-4eea-9db3-cc8e55efa7eb.png",
+      "version": 1
+    },
+    {
+      "key": "10/8/9",
+      "term": "concentrate",
+      "file": "grade/lop10/assets/images/pencil/unit8/9-vocab100-v1.webp",
+      "sha256": "d386221603b1367bd16751b5e058dd4098b5c83a8870f819657f73e0c4bf9f6f",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-c3f20803-7673-4c9f-ad27-65467faf18e0.png",
+      "version": 2
+    },
+    {
+      "key": "10/8/10",
+      "term": "take notes",
+      "file": "grade/lop10/assets/images/pencil/unit8/10-vocab100-v1.webp",
+      "sha256": "6b4640762aaf6ae2bb576fb84201cca6abc72fda8990826856818b5a77add5cd",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-aaabe004-967c-4c60-b9b7-bfec8e04b7e5.png",
+      "version": 1
+    },
+    {
+      "key": "10/9/9",
+      "term": "ecosystem",
+      "file": "grade/lop10/assets/images/pencil/unit9/1-v1.webp",
+      "sha256": "af9cc8afa0aec71f1a499754c8040576d6a3eafd2cac69fdec59f112730d8e3a",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 11,
+        "unit": 10,
+        "id": 1,
+        "term": "ecosystem"
+      }
+    },
+    {
+      "key": "10/9/10",
+      "term": "conservation",
+      "file": "grade/lop11/assets/images/pencil/unit10/4-v1.webp",
+      "sha256": "cfbda9db71a3b95644a463a5b423d2dd947371b32b7e29625f097362a372cfc1",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 11,
+        "unit": 10,
+        "id": 4,
+        "term": "conservation"
+      }
+    },
+    {
+      "key": "10/10/9",
+      "term": "itinerary",
+      "file": "grade/lop10/assets/images/pencil/unit10/9-vocab100-v1.webp",
+      "sha256": "cddc08bac2872a8c5099217a022b8d3fc577a97e63a672d305e7b85a1df709c8",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-ab7a12ca-2d8f-476b-8955-04c16b4df4b4.png",
+      "version": 1
+    },
+    {
+      "key": "10/10/10",
+      "term": "local cuisine",
+      "file": "grade/lop10/assets/images/pencil/unit10/10-vocab100-v1.webp",
+      "sha256": "c48b399b42e3cc8877045fd9fa880544ff918a621eeed346f0518741e7111730",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-da2f7846-66ba-4d28-a3df-80df6418b06a.png",
+      "version": 1
+    },
+    {
+      "key": "11/1/9",
+      "term": "physical activity",
+      "file": "grade/lop11/assets/images/pencil/unit1/2-v1.webp",
+      "sha256": "623610f36dd9bd84db5d06e51ad595675777f2063454e0a837f7224bde40647f",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 11,
+        "unit": 1,
+        "id": 2,
+        "term": "fitness"
+      }
+    },
+    {
+      "key": "11/1/10",
+      "term": "mental health",
+      "file": "grade/lop11/assets/images/pencil/unit1/10-vocab100-v1.webp",
+      "sha256": "2b7e8ce9268fbbeb242e7b8d9a2e6eec3aa0be7875186aa0cc6f2246269f6033",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-5f22d0e2-f0f0-4222-bc61-fe3b440eaa98.png",
+      "version": 1
+    },
+    {
+      "key": "11/2/9",
+      "term": "family gathering",
+      "file": "grade/lop10/assets/images/pencil/unit1/8-v1.webp",
+      "sha256": "b451101938f0d1c5913431b9757bc88c92ecf3ccee2272cb48373e6c53ba0887",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 10,
+        "unit": 1,
+        "id": 8,
+        "term": "family bond"
+      }
+    },
+    {
+      "key": "11/2/10",
+      "term": "privacy",
+      "file": "grade/lop11/assets/images/pencil/unit2/10-vocab100-v1.webp",
+      "sha256": "306f8cc0dc02042dc90f4ed19dc1a9dbeca5d9bcc748dd6862630a0e4441bf73",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-11fea5c1-178a-491d-ab6d-a0ef1137d218.png",
+      "version": 1
+    },
+    {
+      "key": "11/3/9",
+      "term": "green space",
+      "file": "grade/lop11/assets/images/pencil/unit3/9-vocab100-v1.webp",
+      "sha256": "c8638340cdfa0ab9fa6d0f283d7ad8b0bda23036905d48c0ba94831c881b0380",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-e26e6335-d688-4f4a-b46c-49980195c484.png",
+      "version": 1
+    },
+    {
+      "key": "11/3/10",
+      "term": "traffic congestion",
+      "file": "grade/lop7/assets/images/pencil/unit7/8-v1.webp",
+      "sha256": "e23746e0f154714033fcac198b934e8854c0662cb3846720ce5ecaeccd6016ba",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 7,
+        "unit": 7,
+        "id": 8,
+        "term": "traffic jam"
+      }
+    },
+    {
+      "key": "11/4/9",
+      "term": "volunteer",
+      "file": "grade/lop10/assets/images/pencil/unit4/1-v1.webp",
+      "sha256": "381c5a216e0601a139be9639665bcdb9820bfa42cefc4b93ba4f6e6d20b2312e",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 10,
+        "unit": 4,
+        "id": 1,
+        "term": "volunteer"
+      }
+    },
+    {
+      "key": "11/4/10",
+      "term": "partnership",
+      "file": "grade/lop11/assets/images/pencil/unit4/10-vocab100-v1.webp",
+      "sha256": "caf90c8f28e2ce37c860d7482db2feac69a489392971e3925ac7dea639f02977",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-0622787c-399b-46c7-8038-eee8da23d492.png",
+      "version": 1
+    },
+    {
+      "key": "11/5/9",
+      "term": "drought",
+      "file": "grade/lop11/assets/images/pencil/unit5/9-vocab100-v1.webp",
+      "sha256": "0a2b7aae985c1341915f2ab0b6ffdc8d8fa83ba696b51691503527f387f6d7b8",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-10b8fe31-a00d-44f1-b2e6-6d82690afbfb.png",
+      "version": 1
+    },
+    {
+      "key": "11/5/10",
+      "term": "deforestation",
+      "file": "grade/lop10/assets/images/pencil/unit9/3-v1.webp",
+      "sha256": "200d55e24c4289f53e1e94039e25ba91c76549a3a63203d6a300e4660629f3d3",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 10,
+        "unit": 9,
+        "id": 3,
+        "term": "deforestation"
+      }
+    },
+    {
+      "key": "11/6/9",
+      "term": "handicraft",
+      "file": "grade/lop11/assets/images/pencil/unit6/9-vocab100-v1.webp",
+      "sha256": "6b2ae1709595ede5abe45f0be2936d139de9d071d923e87529a26bb7bc077fbd",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-5f6812b4-a072-4369-bbf4-67aa23ce1ef0.png",
+      "version": 1
+    },
+    {
+      "key": "11/6/10",
+      "term": "pass down",
+      "file": "grade/lop11/assets/images/pencil/unit6/10-vocab100-v1.webp",
+      "sha256": "8259f96c769cad7c266711b095a6f90c10bda21934629bc3bc7bc36e55e7160a",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-0dc33b43-440a-4e68-86e1-65f029667abf.png",
+      "version": 1
+    },
+    {
+      "key": "11/7/9",
+      "term": "vocational training",
+      "file": "grade/lop11/assets/images/pencil/unit7/1-v1.webp",
+      "sha256": "23ea56cbaa1c038ae922f5b35405e5f280abe97729fdbef46b86ede18dfed06a",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 11,
+        "unit": 7,
+        "id": 1,
+        "term": "vocational"
+      }
+    },
+    {
+      "key": "11/7/10",
+      "term": "graduate",
+      "file": "grade/lop11/assets/images/pencil/unit7/3-v1.webp",
+      "sha256": "ed0a6739fb5e57c01c816d0b60142d6c448913fae416121d48cf79f28ba03db1",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 11,
+        "unit": 7,
+        "id": 3,
+        "term": "qualification"
+      }
+    },
+    {
+      "key": "11/8/9",
+      "term": "do the laundry",
+      "file": "grade/lop10/assets/images/pencil/unit1/7-v1.webp",
+      "sha256": "db345e4efb9ce259ab00a5686cc6a91c051307874ddec53f1b855e76f4a61ddb",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 10,
+        "unit": 1,
+        "id": 7,
+        "term": "do the laundry"
+      }
+    },
+    {
+      "key": "11/8/10",
+      "term": "self-discipline",
+      "file": "grade/lop11/assets/images/pencil/unit8/10-vocab100-v1.webp",
+      "sha256": "c51e617a3b1bfc71e72aa92e34e4a085f5d35b8db8046f020ef1fd50b1bf8f34",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-221b3e39-518b-4b59-a7d4-3b1f3381fb92.png",
+      "version": 1
+    },
+    {
+      "key": "11/9/9",
+      "term": "discrimination",
+      "file": "grade/lop10/assets/images/pencil/unit6/3-v1.webp",
+      "sha256": "d344339a6857e580b519550411149bbe8f8a828ef10696a162e031e8a3ab53b0",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 10,
+        "unit": 6,
+        "id": 3,
+        "term": "discrimination"
+      }
+    },
+    {
+      "key": "11/9/10",
+      "term": "raise awareness",
+      "file": "grade/lop11/assets/images/pencil/unit9/3-v1.webp",
+      "sha256": "a0bf65474c1a308fbc29adcf668f7a7df96b44dd4aabe9eebcf491856ecdb712",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 11,
+        "unit": 9,
+        "id": 3,
+        "term": "awareness"
+      }
+    },
+    {
+      "key": "11/10/9",
+      "term": "biodiversity",
+      "file": "grade/lop10/assets/images/pencil/unit9/1-v1.webp",
+      "sha256": "af9cc8afa0aec71f1a499754c8040576d6a3eafd2cac69fdec59f112730d8e3a",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 10,
+        "unit": 9,
+        "id": 1,
+        "term": "biodiversity"
+      }
+    },
+    {
+      "key": "11/10/10",
+      "term": "habitat",
+      "file": "grade/lop10/assets/images/pencil/unit9/2-v1.webp",
+      "sha256": "2d143c627fc012b95182718717312712bb8a694939916e79cd4c198da1152e4a",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 10,
+        "unit": 9,
+        "id": 2,
+        "term": "habitat"
+      }
+    },
+    {
+      "key": "12/1/9",
+      "term": "role model",
+      "file": "grade/lop12/assets/images/pencil/unit1/9-vocab100-v1.webp",
+      "sha256": "13f972184406233d360a2d7154df2c769bc4e9ad108eddecceb102e2bb383a4e",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-4c896a90-1ce7-485f-b829-abbe881737a5.png",
+      "version": 1
+    },
+    {
+      "key": "12/1/10",
+      "term": "determination",
+      "file": "grade/lop12/assets/images/pencil/unit1/7-v1.webp",
+      "sha256": "af6f0c5162eb09409b54cf3cfcf455dbe3ca2a5d4b9b3ad82228f768b4c0b294",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 12,
+        "unit": 1,
+        "id": 7,
+        "term": "perseverance"
+      }
+    },
+    {
+      "key": "12/2/9",
+      "term": "cultural heritage",
+      "file": "grade/lop6/assets/images/pencil/unit4/temple-v1.webp",
+      "sha256": "7870474ed1d60e46f830f13c349df883d6b8b0dc2e700c7a497aabdf05bd1292",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 11,
+        "unit": 6,
+        "id": 1,
+        "term": "heritage"
+      }
+    },
+    {
+      "key": "12/2/10",
+      "term": "language barrier",
+      "file": "grade/lop12/assets/images/pencil/unit2/10-vocab100-v1.webp",
+      "sha256": "eb5a2fb559b0e2a5f7a48519ade88f186e6bc1b2534772c7f6a4bf7c7f27f52d",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-0da85dd2-8422-412f-899d-a3fe90f09362.png",
+      "version": 1
+    },
+    {
+      "key": "12/3/9",
+      "term": "recycle",
+      "file": "grade/lop10/assets/images/pencil/unit2/7-v1.webp",
+      "sha256": "2cc42d4b0f7a4aba308f2fc1ef04b45146d09b8ecbd33b7d49d8852b9e2190e7",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 10,
+        "unit": 2,
+        "id": 7,
+        "term": "recycle"
+      }
+    },
+    {
+      "key": "12/3/10",
+      "term": "reusable bag",
+      "file": "grade/lop6/assets/images/pencil/unit11/reduce-v1.webp",
+      "sha256": "52463ab0b438b0501eb704e5ecbf3f16e0b2c14d940adfdb930e57bd441578f7",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 6,
+        "unit": 11,
+        "id": 3,
+        "term": "reduce"
+      }
+    },
+    {
+      "key": "12/4/9",
+      "term": "public transport",
+      "file": "grade/lop7/assets/images/pencil/unit11/6-v1.webp",
+      "sha256": "9c2addbefb366f7ea1ae480e0d87b2b278a7343f1fae356ef70adc6bf84fc006",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 11,
+        "unit": 3,
+        "id": 7,
+        "term": "public transport"
+      }
+    },
+    {
+      "key": "12/4/10",
+      "term": "densely populated",
+      "file": "grade/lop12/assets/images/pencil/unit4/10-vocab100-v1.webp",
+      "sha256": "d694e6582ddae3be94de7520d03660c396dcc2ef82ca0ada71ce06d2f3f714f7",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-d63eb456-d444-4e9a-a150-8aae6256dc42.png",
+      "version": 1
+    },
+    {
+      "key": "12/5/9",
+      "term": "job interview",
+      "file": "grade/lop12/assets/images/pencil/unit5/2-v1.webp",
+      "sha256": "8db9ece4d6d7a5a64f02e097ffdcb83095867d5e2a6605e844eaa25301043c41",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 12,
+        "unit": 5,
+        "id": 2,
+        "term": "applicant"
+      }
+    },
+    {
+      "key": "12/5/10",
+      "term": "employee",
+      "file": "grade/lop12/assets/images/pencil/unit5/4-v1.webp",
+      "sha256": "4d951e0e5e95ac4f6e0dea6eaa81a9dacbd82d61949c985f8822c1644b5927ee",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 12,
+        "unit": 5,
+        "id": 4,
+        "term": "shift"
+      }
+    },
+    {
+      "key": "12/6/9",
+      "term": "facial recognition",
+      "file": "grade/lop12/assets/images/pencil/unit6/9-vocab100-v1.webp",
+      "sha256": "c483fccf31f83bce67fbb14f4f75847181e2e6b09bebaa4b548d8896196b832c",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-0f2b8ed5-19ba-4999-bb54-db4ce72ba295.png",
+      "version": 1
+    },
+    {
+      "key": "12/6/10",
+      "term": "chatbot",
+      "file": "grade/lop12/assets/images/pencil/unit6/10-vocab100-v1.webp",
+      "sha256": "ad92aae1aa04029fc5568781ba5e0de7d107c8b3a1f9a1f23cf5ca29372f0260",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-28acbe03-1762-4b63-828c-a4ac860e23d0.png",
+      "version": 1
+    },
+    {
+      "key": "12/7/9",
+      "term": "journalist",
+      "file": "grade/lop12/assets/images/pencil/unit7/9-vocab100-v1.webp",
+      "sha256": "d9078a2a30287b761681a05943d2b1f847d6fe3be1ed0ddf3f56193cebb8e2f8",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-96d38ecc-894e-4e83-afb6-991180fa43a7.png",
+      "version": 1
+    },
+    {
+      "key": "12/7/10",
+      "term": "audience",
+      "file": "grade/lop10/assets/images/pencil/unit3/1-v1.webp",
+      "sha256": "ab8a0706832736cdaa8a84ed321815d82c060e1e863f203d00ff30ce270598e6",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 10,
+        "unit": 3,
+        "id": 1,
+        "term": "audience"
+      }
+    },
+    {
+      "key": "12/8/9",
+      "term": "conservation",
+      "file": "grade/lop11/assets/images/pencil/unit10/4-v1.webp",
+      "sha256": "cfbda9db71a3b95644a463a5b423d2dd947371b32b7e29625f097362a372cfc1",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 11,
+        "unit": 10,
+        "id": 4,
+        "term": "conservation"
+      }
+    },
+    {
+      "key": "12/8/10",
+      "term": "ranger",
+      "file": "grade/lop12/assets/images/pencil/unit8/10-vocab100-v1.webp",
+      "sha256": "7331204ed18c9886a74c69cb3f9210959e671075ac4ca9176906be982e805eeb",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-4996ffce-78e0-4c07-904f-bb1b885e8732.png",
+      "version": 1
+    },
+    {
+      "key": "12/9/9",
+      "term": "vocational training",
+      "file": "grade/lop11/assets/images/pencil/unit7/1-v1.webp",
+      "sha256": "23ea56cbaa1c038ae922f5b35405e5f280abe97729fdbef46b86ede18dfed06a",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "reference": {
+        "grade": 11,
+        "unit": 7,
+        "id": 1,
+        "term": "vocational"
+      }
+    },
+    {
+      "key": "12/9/10",
+      "term": "strength",
+      "file": "grade/lop12/assets/images/pencil/unit9/10-vocab100-v1.webp",
+      "sha256": "c7b19a4b6e556f9bcedc1bfc8283e319c1b75b7472eb29287780c5b170cf34be",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-f915caf6-9a1d-4c2c-97d7-8defaf6a787a.png",
+      "version": 1
+    },
+    {
+      "key": "12/10/9",
+      "term": "acquire knowledge",
+      "file": "grade/lop12/assets/images/pencil/unit10/9-vocab100-v1.webp",
+      "sha256": "75be65f4241a80b51a56eeaf070a9d27b400c4ce313042382adf7f63c36dc5cf",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-eefed846-7219-4143-a7ef-d8a8553b9ef2.png",
+      "version": 1
+    },
+    {
+      "key": "12/10/10",
+      "term": "critical thinking",
+      "file": "grade/lop12/assets/images/pencil/unit10/10-vocab100-v1.webp",
+      "sha256": "b7c81fcd6f9ae36515aa0f0630383e662810bb8383125bbbec45fb8b103998f2",
+      "reviewed": true,
+      "noReadableText": true,
+      "review": "Đã mở và xem trực tiếp: đúng nghĩa trong ngữ cảnh học, không chữ, người/đồ vật và hành động hợp lý.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a1666b-a547-79f0-b5ed-c9b801614fb0\\exec-8d19058c-8cc6-44a3-a13a-c9d3eb72322b.png",
+      "version": 1
+    }
+  ]
+}
