@@ -5,6 +5,7 @@ for (const [grade,count,wordCount,sentenceCount] of [[1,16,4,3],[5,20,6,4]]) {
   test(`Lớp ${grade}: nội dung, ảnh, ID, câu và trang công khai`,()=>{
     const context={window:{}};
     vm.runInNewContext(fs.readFileSync(path.join(root,`grade/lop${grade}/units.js`),'utf8'),context);
+    vm.runInNewContext(fs.readFileSync(path.join(root,`grade/lop${grade}/assets/js/grade2-course.js`),'utf8'),context);
     const course=context.window.DanhPrimaryCourse;
     assert.equal(course.grade,grade);assert.equal(course.units.length,count);assert.equal(course.zones.length,4);
     for (const [i,u] of course.units.entries()) {
@@ -17,8 +18,16 @@ for (const [grade,count,wordCount,sentenceCount] of [[1,16,4,3],[5,20,6,4]]) {
       for (const s of u.sentences) {assert.match(s.term,/^[A-Z]/);assert.match(s.term,/[.?!]$/);assert.ok(s.term.split(' ').length>=2);}
       for (const w of u.words) if (/^[a-z-]+$/.test(w.art)) assert.ok(fs.existsSync(path.join(root,`shared/assets/vocabulary-3d/${w.art}-3d-v1.webp`)),w.art);
       const html=fs.readFileSync(path.join(root,`grade/lop${grade}/${u.id}.html`),'utf8');
-      assert.ok(html.indexOf('learner-profile-core.js')<html.indexOf('learner-profile.js'));
-      assert.ok(html.indexOf('learner-profile.js')<html.indexOf('primary-template-lesson.js'));
+      const scripts=['learner-profile-core.js','learner-profile.js','learning-core.js','grade2-course.js','primary-grade2-lesson.js'];
+      for(const script of scripts)assert.ok(html.indexOf(script)>=0,`${u.id}: thiếu ${script}`);
+      for(let n=1;n<scripts.length;n++)assert.ok(html.indexOf(scripts[n-1])<html.indexOf(scripts[n]),`${u.id}: thứ tự tải ${scripts[n]}`);
+      const current=context.window.DanhPrimaryGrade2Course.units.find(unit=>unit.id===u.id);
+      assert.ok(current,`${u.id}: thiếu dữ liệu hiện tại`);
+      assert.deepEqual(Array.from(current.words,w=>[w.id,w.name,w.meaning]),Array.from(u.words,w=>[w.id,w.term,w.meaning]));
+      for(const word of current.words){
+        assert.ok(word.image&&word.visual.includes(word.image),`${u.id}/${word.id}: ảnh hiện tại`);
+        assert.ok(fs.existsSync(path.resolve(root,`grade/lop${grade}`,word.image)),word.image);
+      }
       assert.ok(html.includes(`data-unit="${u.id}"`));
     }
   });
