@@ -16,4 +16,6 @@ Một số tính năng đã tồn tại trong bản lưu ban đầu nên không 
 - Tranh bút chì lớp 4: nội dung, định danh và hash tài nguyên.
 - Font tĩnh 322 trang; glyph tiếng Việt và các vùng hồ sơ/footer thực tế khi chặn mạng ngoài.
 
+GitHub xác nhận PR #1 có thể gộp, không xung đột. Đợt CI đầu phát hiện bốn kiểm tra lỗi thời: hồ sơ Body Parts trước bản sửa nhân vật, tên bộ game cũ ở lớp 1/5 và giả định ảnh lớp 10 luôn nằm cùng thư mục. Đã cập nhật kiểm tra đúng bản hiện hành: 18 ảnh thay thế có hồ sơ và hash riêng, giữ đối chiếu bản trước; bộ game công khai phải là primary-grade2-lesson; ảnh dùng chung phải khớp hồ sơ đã duyệt và đường dẫn thực tế. Chạy lại đủ 112 kiểm tra đạt. Kiểm tra liên kết/ID 322 trang, footer 316 trang và font tĩnh đều đạt.
+
 Chưa cập nhật main. Nhánh mới có cùng tổ tiên với main, cho phép xem diff và gộp theo luồng Git thông thường.
