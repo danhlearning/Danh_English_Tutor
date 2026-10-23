@@ -102,15 +102,8 @@
     document.dispatchEvent(new Event('danh-learning-effects-change'));
   };
   const bindSettings=({soundButton,motionButton,compact=false})=>{
-    if(automatic){soundButton.hidden=true;motionButton.hidden=true;return;}
-    const update=()=>{
-      soundButton.textContent=sound?(compact?'🔊 Âm thanh':'🔊 Âm thanh: bật'):(compact?'🔇 Đã tắt âm':'🔇 Âm thanh: tắt');soundButton.setAttribute('aria-pressed',String(sound));
-      motionButton.textContent=motion?(compact?'✨ Chuyển động':'✨ Chuyển động: bật'):'🌱 Giảm chuyển động';motionButton.setAttribute('aria-pressed',String(motion));
-    };
-    const persist=()=>{write(prefsKey,{sound,motion,shared:true});refresh();};
-    soundButton.addEventListener('click',()=>{sound=!sound;if(!sound)stop();persist();if(sound)tone('tap');});
-    motionButton.addEventListener('click',()=>{motion=!motion;persist();});
-    document.addEventListener('danh-learning-effects-change',update);update();
+    // Giữ API cho các trang cũ, không tạo UI điều chỉnh hiệu ứng.
+    soundButton?.remove();motionButton?.remove();
   };
   refresh();
   matchMedia('(prefers-reduced-motion: reduce)').addEventListener?.('change',()=>{if(reduced())stopMotion();});

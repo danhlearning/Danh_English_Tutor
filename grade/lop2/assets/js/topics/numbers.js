@@ -54,8 +54,8 @@
 
   /* 1. Hàm chuyển đổi con số (1-100) thành Tên Tiếng Anh chuẩn */
   function numberToWords(n) {
-    const ones = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 
-                  'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 
+    const ones = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine',
+                  'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen',
                   'Seventeen', 'Eighteen', 'Nineteen'];
     const tens = ['', '', 'Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety'];
 
@@ -155,6 +155,7 @@
 
   /* HÀM ĐỌC GIỌNG NÓI CHUẨN TỐC ĐỘ RẤT CHẬM + TỰ ĐỘNG CHỌN GIỌNG NÓI TỰ NHIÊN */
   function speak(text) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
     if (window.speechSynthesis) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
@@ -210,7 +211,7 @@
 
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
-    
+
     document.getElementById(tabId).classList.add('active');
     if(evt && evt.target) {
       evt.target.classList.add('active');
@@ -512,7 +513,7 @@
       feedback.style.color = '#38A169';
       feedback.innerText = '🎉 Chính xác! Tuyệt vời!';
       inputEl.disabled = true;
-      
+
       countCorrectCount++;
       updateCountScore();
       playSoundEffect('correct'); /* ÂM THANH ĐÚNG */

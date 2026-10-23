@@ -32,6 +32,7 @@
   const normal = value => String(value).trim().toLowerCase().replace(/[’]/g, "'").replace(/\s+/g, ' ');
 
   function speak(value) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(value);
     try {
       if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') {
         window.DanhAnswerSpeech.say(value);

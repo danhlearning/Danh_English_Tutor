@@ -3,8 +3,9 @@
   if (window.DanhLearners) return;
   const C = window.DanhLearnerCore;
   const base = new URL('../', document.currentScript.src);
+  const controls=document.createElement('script');controls.src=new URL('shared/learner-controls.js?v=tidy-unit-cards-20261024',base).href;controls.async=false;document.head.append(controls);
   const preload=document.createElement('script');preload.src=new URL('shared/site-preload.js?v=20261022-1',base).href;preload.async=true;document.head.append(preload);
-  const font=document.createElement('link');font.rel='stylesheet';font.href=new URL('shared/learner-font.css',base).href;document.head.append(font);
+  const font=document.createElement('link');font.rel='stylesheet';font.href=new URL('shared/learner-font.css?v=compact-listen-20261024',base).href;document.head.append(font);
   const gaps=document.createElement('script');gaps.src=new URL('shared/exercise-gaps.js?v=smooth-20261023-1',base).href;gaps.async=false;document.head.append(gaps);
   // Giọng đọc đáp án dùng chung, chỉ được gọi từ thao tác học đã chấm đúng.
   const answerSpeechEnabled=()=>window.DanhLearningEffects?.soundEnabled?.() ?? window.DanhGrammarExperience?.settings.sound ?? true;
@@ -19,23 +20,28 @@
     if(window.DanhYoungSpeech)audio.playbackRate=.85;
     return new Promise(resolve=>{
       let finished=false;
-      const done=()=>{if(finished)return;finished=true;clearTimeout(timeout);if(finishAnswerSpeech===done)finishAnswerSpeech=null;if(answerAudio===audio)answerAudio=null;resolve(true);};
+      const done=(success=true)=>{if(finished)return;finished=true;clearTimeout(timeout);if(finishAnswerSpeech===done)finishAnswerSpeech=null;if(answerAudio===audio)answerAudio=null;resolve(success);};
       const timeout=setTimeout(done,Math.max(20000,text.length*180+4000));finishAnswerSpeech=done;
       audio.onended=()=>{answerSpeechState('ended','audio',text);done();};
       audio.onplaying=()=>answerSpeechState('playing','audio',text);
-      const failed=()=>{document.dispatchEvent(new CustomEvent('danh-answer-speech',{detail:{state:'error',mode:'audio',text}}));const note=document.getElementById('speech-note');if(note)note.textContent='Chưa phát được giọng đọc. Em bấm Nghe từ để thử lại nhé.';done();};
+      const failed=()=>{document.dispatchEvent(new CustomEvent('danh-answer-speech',{detail:{state:'error',mode:'audio',text}}));const note=document.getElementById('speech-note');if(note)note.textContent='Chưa phát được giọng đọc. Em bấm loa để thử lại nhé.';done(false);};
       audio.onerror=failed;audio.play().catch(failed);
     });
   };
   window.DanhAnswerSpeech={
-    say(text){
-      if(!answerSpeechEnabled()||document.hidden)return false;
+    listen(text){return this.say(text,{manual:true});},
+    say(text,{manual=window.DanhListenControls?.isManualRequest() || false,preferSpeech=false}={}){
+      if((!manual&&!answerSpeechEnabled())||document.hidden)return false;
       const clean=cleanAnswerSpeech(text);
       if(!clean)return false;
       try{
         stopAnswerSpeech();
+        if(manual&&!preferSpeech){
+          try{if(navigator.audioSession)navigator.audioSession.type='playback';}catch{}
+          return playAnswerAudio(clean).then(played=>played || (!document.hidden && this.say(clean,{manual:true,preferSpeech:true})));
+        }
         const voices=window.speechSynthesis?.getVoices?.()||[];
-        if(!window.speechSynthesis||!window.SpeechSynthesisUtterance||!voices.some(v=>/^en(?:[-_]|$)/i.test(v.lang)))return playAnswerAudio(clean);
+        if(!window.speechSynthesis||!window.SpeechSynthesisUtterance||!voices.some(v=>/^en(?:[-_]|$)/i.test(v.lang)))return preferSpeech?false:playAnswerAudio(clean);
         const utterance=new window.SpeechSynthesisUtterance(clean);utterance.lang='en-GB';utterance.rate=.82;
         utterance.voice=voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en\b/i.test(v.lang))||null;
         window.DanhYoungSpeech?.configure(utterance);
@@ -45,7 +51,7 @@
           const timeout=setTimeout(done,Math.max(20000,clean.length*180+4000));
           finishAnswerSpeech=done;
           utterance.onstart=()=>answerSpeechState('playing','speech',clean);
-          const fallback=()=>{if(finished)return;if(!answerSpeechEnabled()||document.hidden){done();return;}clearTimeout(timeout);playAnswerAudio(clean).then(done);};
+          const fallback=()=>{if(finished)return;if((!manual&&!answerSpeechEnabled())||document.hidden){done();return;}clearTimeout(timeout);playAnswerAudio(clean).then(done);};
           utterance.onend=()=>{answerSpeechState('ended','speech',clean);done();};utterance.onerror=event=>{if(['canceled','interrupted'].includes(event.error))done();else fallback();};
           try{window.speechSynthesis.speak(utterance);}catch{fallback();}
         });
@@ -126,8 +132,8 @@
     if (!mustReload && (!current || store.get(current.id)) && mode!=='conflict') panel.append(button('Đóng ✕',hide,'close'));
     if (mode==='create' || mode==='edit') {
       const editing=mode==='edit', p=editing?store.get(current.id):null;
-      heading(editing?'Hồ sơ của '+p.name:'Chào em! Mình làm quen nhé 🌱',p?.avatar || '🌟');
-      info(editing?'Đổi tên vẫn giữ nguyên lộ trình đã học.':'Chỉ cần tên là em có thể vào học ngay.');
+      heading(editing?'Hồ sơ của '+p.name:'Đăng nhập',p?.avatar || '🌱');
+      if(editing)info('Đổi tên vẫn giữ nguyên lộ trình đã học.');
       const form=el('form'); const label=el('label','Tên của em');label.htmlFor='learner-name';
       const input=el('input');input.id='learner-name';input.name='learnerName';input.placeholder='Ví dụ: Minh, Hoa, Nam';input.autocomplete='nickname';input.maxLength=80;input.required=true;input.value=p?.name||'';
       form.append(label,input,el('p','Chọn một bạn đồng hành','muted'));
@@ -156,11 +162,10 @@
       mustReload=true;
       heading('Mình cập nhật lộ trình nhé','🌱');info(errorMessage || 'Lộ trình đang được cập nhật ở một tab khác. Tải lại để tiếp tục với kết quả mới nhất.');panel.append(button('Tải lại để tiếp tục',()=>location.reload(),'primary'));
     } else {
-      heading(current?'Chọn người học':'Đăng nhập','🌈');info('Chọn hồ sơ để tiếp tục lộ trình đã lưu trên trình duyệt này.');
-      if(!current && storage.length)info('Lượt học thử trong tab này không tự nhập vào hồ sơ đã chọn.');
+      heading(current?'Chọn người học':'Đăng nhập','🌱');
       const list=el('div',undefined,'profiles'),profiles=store.list();profiles.forEach((p,i)=>{const b=button('',()=>select(p.id),'profile');b.append(el('span',p.avatar,'avatar'),el('strong',p.name));if(p.id===current?.id)b.append(el('small','Đang học'));else if(profiles.some(other=>other.id!==p.id && other.name===p.name && other.avatar===p.avatar))b.append(el('small','Hồ sơ #'+(i+1)));list.append(b);});panel.append(list,button('+ Thêm người học',()=>show('create'),'primary'),button('Khôi phục từ bản sao lưu',importFile,'wide'));
     }
-    info(local?'Hồ sơ được lưu trên trình duyệt này, chưa đồng bộ sang thiết bị khác.':'Trình duyệt đang chặn lưu lâu dài. Hãy tải bản sao lưu trước khi đóng phiên.');
+    if(!local || mode==='manage')info(local?'Hồ sơ được lưu trên trình duyệt này, chưa đồng bộ sang thiết bị khác.':'Trình duyệt đang chặn lưu lâu dài. Hãy tải bản sao lưu trước khi đóng phiên.');
     if(mode!=='create' && mode!=='edit')panel.querySelector('button')?.focus();
   }
   function safePath(path) {try{const u=new URL(path,location.origin);return u.origin===location.origin && /\.html$/.test(u.pathname) && !u.pathname.includes('..');}catch{return false;}}
@@ -173,7 +178,7 @@
   }
   function mount() {
     host=el('danh-learner');shadow=host.attachShadow({mode:'open'});
-    const css=el('link');css.rel='stylesheet';css.href=new URL('shared/learner-profile.css?v=ui-20261022',base).href;shadow.append(css);
+    const css=el('link');css.rel='stylesheet';css.href=new URL('shared/learner-profile.css?v=companions-20261024',base).href;shadow.append(css);
     const bar=el('div',undefined,'bar');bar.append(el('span',current?current.avatar+' '+current.name:'🌱 Học thử','bar-name'));
     if(current)bar.append(button('Đổi người học',()=>show('list')),button('Hồ sơ',()=>show('manage')));
     else bar.append(button('Đăng nhập',window.DanhLearners.open,'primary login'));

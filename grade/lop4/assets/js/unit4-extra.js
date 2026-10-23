@@ -18,17 +18,7 @@
 
   for (const button of document.querySelectorAll('[data-unit4-say]')) {
     button.addEventListener('click', () => {
-      try {
-        if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') throw Error('No speech support');
-        window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(button.dataset.unit4Say);
-        utterance.lang = 'en-GB';
-        window.DanhYoungSpeech.configure(utterance);
-        window.speechSynthesis.speak(utterance);
-        pronunciationNote.textContent = '';
-      } catch {
-        pronunciationNote.textContent = 'Thiết bị này chưa phát được giọng đọc. Em vẫn có thể nhìn từ và luyện đọc.';
-      }
+      window.DanhAnswerSpeech.listen(button.dataset.unit4Say);
     });
   }
 

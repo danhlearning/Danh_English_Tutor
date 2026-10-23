@@ -37,6 +37,7 @@
   let flashcardDeck = [...colorsData];
 
   function speak(text) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
     if (window.speechSynthesis) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
@@ -81,7 +82,7 @@
 
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
-    
+
     document.getElementById(tabId).classList.add('active');
     if(evt && evt.target) {
       evt.target.classList.add('active');
@@ -280,7 +281,7 @@
     const item = colorsData[spellingIdx];
     const preview = document.getElementById('spelling-preview');
     const input = document.getElementById('spelling-input');
-    
+
     if(item.isTransparent) preview.className = 'spelling-img-preview transparent-bg-pattern';
     else preview.className = 'spelling-img-preview';
 

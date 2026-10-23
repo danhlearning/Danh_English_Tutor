@@ -45,8 +45,8 @@
 
   /* BỘ TỪ VỰNG SVG GHÉP ICON CHI TIẾT (PHƯƠNG ÁN A) */
   const emotionsVocabulary = [
-    { 
-      name: 'Thirsty', 
+    {
+      name: 'Thirsty',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Mặt khát -->
         <circle cx="42" cy="50" r="38" fill="#4FC3F7"/>
@@ -59,11 +59,11 @@
         <line x1="78" y1="35" x2="74" y2="76" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
         <!-- Giọt nước -->
         <path d="M 58 28 Q 62 38 58 42 Q 54 38 58 28" fill="#0288D1"/>
-      </svg>`, 
-      ipa: '/ˈθɜːsti/', meaning: 'Khát nước', sentence: 'She is thirsty.', hex: '#29B6F6' 
+      </svg>`,
+      ipa: '/ˈθɜːsti/', meaning: 'Khát nước', sentence: 'She is thirsty.', hex: '#29B6F6'
     },
-    { 
-      name: 'Hungry', 
+    {
+      name: 'Hungry',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Mặt đói thèm thuồng -->
         <circle cx="42" cy="50" r="38" fill="#FF7043"/>
@@ -75,11 +75,11 @@
         <ellipse cx="78" cy="74" rx="18" ry="6" fill="#B0BEC5"/>
         <path d="M 68 68 C 65 52 85 52 86 66 C 86 72 72 74 68 68 Z" fill="#D84315"/>
         <path d="M 85 68 L 94 72" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
-      </svg>`, 
-      ipa: '/ˈhʌŋɡri/', meaning: 'Đói bụng', sentence: 'I am hungry.', hex: '#FF7043' 
+      </svg>`,
+      ipa: '/ˈhʌŋɡri/', meaning: 'Đói bụng', sentence: 'I am hungry.', hex: '#FF7043'
     },
-    { 
-      name: 'Sleepy', 
+    {
+      name: 'Sleepy',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Mặt buồn ngủ -->
         <circle cx="40" cy="45" r="35" fill="#80CBC4"/>
@@ -91,11 +91,11 @@
         <rect x="25" y="65" width="55" height="10" rx="3" fill="#E0F2F1"/>
         <!-- Chữ Zzz -->
         <text x="70" y="30" font-size="20" font-weight="bold" fill="#004D40">Zzz</text>
-      </svg>`, 
-      ipa: '/ˈsliːpi/', meaning: 'Buồn ngủ', sentence: 'I am sleepy.', hex: '#26A69A' 
+      </svg>`,
+      ipa: '/ˈsliːpi/', meaning: 'Buồn ngủ', sentence: 'I am sleepy.', hex: '#26A69A'
     },
-    { 
-      name: 'Tired', 
+    {
+      name: 'Tired',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Mặt mệt mỏi bơ vơ -->
         <circle cx="45" cy="45" r="36" fill="#B0BEC5"/>
@@ -105,11 +105,11 @@
         <!-- Túi chườm đá trên đầu -->
         <ellipse cx="45" cy="12" rx="14" ry="7" fill="#42A5F5"/>
         <path d="M 40 12 L 45 6 L 50 12 Z" fill="#1E88E5"/>
-      </svg>`, 
-      ipa: '/ˈtaɪəd/', meaning: 'Mệt mỏi', sentence: 'I feel tired.', hex: '#78909C' 
+      </svg>`,
+      ipa: '/ˈtaɪəd/', meaning: 'Mệt mỏi', sentence: 'I feel tired.', hex: '#78909C'
     },
-    { 
-      name: 'Hot', 
+    {
+      name: 'Hot',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Mặt nóng đỏ chảy mồ hôi -->
         <circle cx="42" cy="52" r="36" fill="#FFAB91"/>
@@ -123,11 +123,11 @@
         <line x1="80" y1="4" x2="80" y2="8" stroke="#FFA000" stroke-width="3"/>
         <line x1="96" y1="22" x2="92" y2="22" stroke="#FFA000" stroke-width="3"/>
         <line x1="92" y1="10" x2="89" y2="13" stroke="#FFA000" stroke-width="3"/>
-      </svg>`, 
-      ipa: '/hɒt/', meaning: 'Nóng nực', sentence: 'I feel hot.', hex: '#FF5722' 
+      </svg>`,
+      ipa: '/hɒt/', meaning: 'Nóng nực', sentence: 'I feel hot.', hex: '#FF5722'
     },
-    { 
-      name: 'Cold', 
+    {
+      name: 'Cold',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Mặt lạnh run rẩy -->
         <circle cx="45" cy="50" r="36" fill="#80DEEA"/>
@@ -138,11 +138,11 @@
         <path d="M 20 70 Q 45 88 70 70 Q 75 80 60 90 L 30 90 Z" fill="#E53935"/>
         <!-- Băng tuyết -->
         <path d="M 78 20 L 88 30 M 83 18 L 83 32 M 76 25 L 90 25" stroke="#0288D1" stroke-width="3"/>
-      </svg>`, 
-      ipa: '/kəʊld/', meaning: 'Lạnh lẽo', sentence: 'It is cold.', hex: '#00ACC1' 
+      </svg>`,
+      ipa: '/kəʊld/', meaning: 'Lạnh lẽo', sentence: 'It is cold.', hex: '#00ACC1'
     },
-    { 
-      name: 'Sick', 
+    {
+      name: 'Sick',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Mặt ốm đeo khẩu trang -->
         <circle cx="45" cy="45" r="36" fill="#A5D6A7"/>
@@ -153,11 +153,11 @@
         <!-- Nhiệt kế kẹp miệng/bên cạnh -->
         <rect x="70" y="40" width="8" height="35" rx="4" fill="#FFFFFF" stroke="#37474F" stroke-width="2"/>
         <circle cx="74" cy="70" r="7" fill="#E53935"/>
-      </svg>`, 
-      ipa: '/sɪk/', meaning: 'Bị ốm', sentence: 'I feel sick.', hex: '#66BB6A' 
+      </svg>`,
+      ipa: '/sɪk/', meaning: 'Bị ốm', sentence: 'I feel sick.', hex: '#66BB6A'
     },
-    { 
-      name: 'Happy', 
+    {
+      name: 'Happy',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Mặt vui tươi -->
         <circle cx="45" cy="50" r="38" fill="#FFD54F"/>
@@ -166,11 +166,11 @@
         <path d="M 28 58 Q 45 80 62 58" stroke="#3E2723" stroke-width="5" fill="none" stroke-linecap="round"/>
         <!-- Bong bóng trái tim nhỏ -->
         <path d="M 75 25 C 75 18, 85 18, 85 25 C 85 32, 75 38, 75 38 C 75 38, 65 32, 65 25 C 65 18, 75 18, 75 25 Z" fill="#E91E63"/>
-      </svg>`, 
-      ipa: '/ˈhæpi/', meaning: 'Vui vẻ', sentence: 'I feel happy.', hex: '#EC407A' 
+      </svg>`,
+      ipa: '/ˈhæpi/', meaning: 'Vui vẻ', sentence: 'I feel happy.', hex: '#EC407A'
     },
-    { 
-      name: 'Sad', 
+    {
+      name: 'Sad',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Mặt buồn mụ mẫm -->
         <circle cx="45" cy="52" r="38" fill="#90CAF9"/>
@@ -181,11 +181,11 @@
         <path d="M 65 18 Q 72 10 80 16 Q 88 14 90 22 Q 95 28 85 30 L 65 30 Z" fill="#78909C"/>
         <line x1="72" y1="34" x2="70" y2="40" stroke="#29B6F6" stroke-width="2"/>
         <line x1="82" y1="34" x2="80" y2="40" stroke="#29B6F6" stroke-width="2"/>
-      </svg>`, 
-      ipa: '/sæd/', meaning: 'Buồn bã', sentence: 'She is sad.', hex: '#5C6BC0' 
+      </svg>`,
+      ipa: '/sæd/', meaning: 'Buồn bã', sentence: 'She is sad.', hex: '#5C6BC0'
     },
-    { 
-      name: 'Angry', 
+    {
+      name: 'Angry',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <!-- Mặt tức giận bốc hỏa -->
         <circle cx="45" cy="50" r="38" fill="#EF5350"/>
@@ -196,11 +196,11 @@
         <path d="M 28 70 Q 45 58 62 70" stroke="#212121" stroke-width="5" fill="none" stroke-linecap="round"/>
         <!-- Ngọn lửa bốc lên trên đầu -->
         <path d="M 75 22 C 70 12 80 5 80 5 C 80 5 85 12 90 15 C 95 18 90 28 75 22 Z" fill="#FF9800"/>
-      </svg>`, 
-      ipa: '/ˈæŋɡri/', meaning: 'Tức giận', sentence: 'He is angry.', hex: '#E53935' 
+      </svg>`,
+      ipa: '/ˈæŋɡri/', meaning: 'Tức giận', sentence: 'He is angry.', hex: '#E53935'
     },
-    { 
-      name: 'Scared', 
+    {
+      name: 'Scared',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <circle cx="45" cy="50" r="38" fill="#B39DDB"/>
         <ellipse cx="32" cy="40" rx="6" ry="9" fill="#311B92"/>
@@ -208,11 +208,11 @@
         <ellipse cx="45" cy="68" rx="10" ry="14" fill="#311B92"/>
         <!-- Con ma nhỏ ghép góc -->
         <path d="M 75 25 C 75 15 90 15 90 25 L 90 40 L 85 36 L 80 40 L 75 36 Z" fill="#FFFFFF" stroke="#7E57C2" stroke-width="2"/>
-      </svg>`, 
-      ipa: '/skeərd/', meaning: 'Sợ hãi', sentence: 'I am scared.', hex: '#7E57C2' 
+      </svg>`,
+      ipa: '/skeərd/', meaning: 'Sợ hãi', sentence: 'I am scared.', hex: '#7E57C2'
     },
-    { 
-      name: 'Excited', 
+    {
+      name: 'Excited',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <circle cx="45" cy="50" r="38" fill="#CE93D8"/>
         <!-- Mắt hình ngôi sao -->
@@ -221,11 +221,11 @@
         <path d="M 28 58 Q 45 85 62 58 Z" fill="#4A148C"/>
         <!-- Pháo hoa/sao lấp lánh -->
         <path d="M 78 15 L 82 25 L 92 25 L 84 31 L 87 40 L 78 34 L 69 40 L 72 31 L 64 25 L 74 25 Z" fill="#FFD54F"/>
-      </svg>`, 
-      ipa: '/ɪkˈsaɪtɪd/', meaning: 'Hào hứng', sentence: 'We are excited.', hex: '#AB47BC' 
+      </svg>`,
+      ipa: '/ɪkˈsaɪtɪd/', meaning: 'Hào hứng', sentence: 'We are excited.', hex: '#AB47BC'
     },
-    { 
-      name: 'Bored', 
+    {
+      name: 'Bored',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <circle cx="45" cy="50" r="38" fill="#BCAAA4"/>
         <line x1="26" y1="42" x2="38" y2="42" stroke="#3E2723" stroke-width="5" stroke-linecap="round"/>
@@ -233,11 +233,11 @@
         <line x1="30" y1="65" x2="60" y2="65" stroke="#3E2723" stroke-width="5" stroke-linecap="round"/>
         <!-- Đồng hồ cát trôi chậm -->
         <path d="M 75 20 L 91 20 L 83 32 L 91 44 L 75 44 L 83 32 Z" fill="#D7CCC8" stroke="#5D4037" stroke-width="2"/>
-      </svg>`, 
-      ipa: '/bɔːd/', meaning: 'Chán nản', sentence: 'I feel bored.', hex: '#8D6E63' 
+      </svg>`,
+      ipa: '/bɔːd/', meaning: 'Chán nản', sentence: 'I feel bored.', hex: '#8D6E63'
     },
-    { 
-      name: 'Surprised', 
+    {
+      name: 'Surprised',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <circle cx="45" cy="50" r="38" fill="#FFB74D"/>
         <circle cx="32" cy="38" r="7" fill="#E65100"/>
@@ -245,11 +245,11 @@
         <circle cx="45" cy="68" r="13" fill="#E65100"/>
         <!-- Dấu chấm cảm bàng hoàng -->
         <text x="76" y="42" font-size="32" font-weight="900" fill="#E65100">!</text>
-      </svg>`, 
-      ipa: '/səˈpraɪzd/', meaning: 'Bất ngờ', sentence: 'He looks surprised.', hex: '#FFA726' 
+      </svg>`,
+      ipa: '/səˈpraɪzd/', meaning: 'Bất ngờ', sentence: 'He looks surprised.', hex: '#FFA726'
     },
-    { 
-      name: 'Calm', 
+    {
+      name: 'Calm',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <circle cx="45" cy="50" r="38" fill="#80DEEA"/>
         <path d="M 26 42 Q 33 48 40 42" stroke="#006064" stroke-width="4" fill="none"/>
@@ -258,11 +258,11 @@
         <!-- Tách trà thư thái -->
         <path d="M 72 32 L 90 32 L 86 46 L 76 46 Z" fill="#E0F7FA" stroke="#00838F" stroke-width="2"/>
         <path d="M 78 26 Q 81 22 78 18" stroke="#B2EBF2" stroke-width="2" fill="none"/>
-      </svg>`, 
-      ipa: '/kɑːm/', meaning: 'Bình tĩnh', sentence: 'Stay calm.', hex: '#26C6DA' 
+      </svg>`,
+      ipa: '/kɑːm/', meaning: 'Bình tĩnh', sentence: 'Stay calm.', hex: '#26C6DA'
     },
-    { 
-      name: 'Nervous', 
+    {
+      name: 'Nervous',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <circle cx="45" cy="50" r="38" fill="#FFE082"/>
         <circle cx="32" cy="40" r="6" fill="#FF6F00"/>
@@ -270,11 +270,11 @@
         <path d="M 28 65 Q 33 58 38 65 T 48 65 T 58 65" stroke="#FF6F00" stroke-width="4" fill="none"/>
         <!-- Nhịp tim đập loạn -->
         <path d="M 70 25 L 75 25 L 78 15 L 83 35 L 87 20 L 90 25 L 95 25" stroke="#E53935" stroke-width="3" fill="none"/>
-      </svg>`, 
-      ipa: '/ˈnɜːvəs/', meaning: 'Lo lắng', sentence: 'She is nervous.', hex: '#FFA000' 
+      </svg>`,
+      ipa: '/ˈnɜːvəs/', meaning: 'Lo lắng', sentence: 'She is nervous.', hex: '#FFA000'
     },
-    { 
-      name: 'Shy', 
+    {
+      name: 'Shy',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <circle cx="45" cy="50" r="38" fill="#F8BBD0"/>
         <circle cx="32" cy="42" r="5" fill="#880E4F"/>
@@ -282,11 +282,11 @@
         <circle cx="22" cy="50" r="8" fill="#FF4081" opacity="0.6"/>
         <circle cx="68" cy="50" r="8" fill="#FF4081" opacity="0.6"/>
         <path d="M 36 64 Q 45 68 54 64" stroke="#880E4F" stroke-width="4" fill="none"/>
-      </svg>`, 
-      ipa: '/ʃaɪ/', meaning: 'Xấu hổ / Bẽn lẽn', sentence: 'He is shy.', hex: '#FF4081' 
+      </svg>`,
+      ipa: '/ʃaɪ/', meaning: 'Xấu hổ / Bẽn lẽn', sentence: 'He is shy.', hex: '#FF4081'
     },
-    { 
-      name: 'Confused', 
+    {
+      name: 'Confused',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <circle cx="45" cy="50" r="38" fill="#CFD8DC"/>
         <circle cx="32" cy="38" r="7" fill="#263238"/>
@@ -294,11 +294,11 @@
         <path d="M 28 65 Q 45 55 62 68" stroke="#263238" stroke-width="5" fill="none"/>
         <!-- Dấu hỏi xoay quanh -->
         <text x="74" y="36" font-size="30" font-weight="bold" fill="#37474F">?</text>
-      </svg>`, 
-      ipa: '/kənˈfjuːzd/', meaning: 'Bối rối', sentence: 'I am confused.', hex: '#78909C' 
+      </svg>`,
+      ipa: '/kənˈfjuːzd/', meaning: 'Bối rối', sentence: 'I am confused.', hex: '#78909C'
     },
-    { 
-      name: 'Proud', 
+    {
+      name: 'Proud',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <circle cx="45" cy="52" r="38" fill="#E6EE9C"/>
         <!-- Đeo kính râm ngầu -->
@@ -308,11 +308,11 @@
         <path d="M 28 60 Q 45 74 62 60" stroke="#33691E" stroke-width="5" fill="none"/>
         <!-- Vương miện trên đầu -->
         <polygon points="45,8 51,20 61,16 55,26 35,26 29,16 39,20" fill="#FBC02D"/>
-      </svg>`, 
-      ipa: '/praʊd/', meaning: 'Tự hào', sentence: 'I am proud of you.', hex: '#D4E157' 
+      </svg>`,
+      ipa: '/praʊd/', meaning: 'Tự hào', sentence: 'I am proud of you.', hex: '#D4E157'
     },
-    { 
-      name: 'Relaxed', 
+    {
+      name: 'Relaxed',
       svg: `<svg class="svg-icon" viewBox="0 0 100 100">
         <circle cx="45" cy="50" r="38" fill="#A5D6A7"/>
         <path d="M 26 42 Q 33 36 40 42" stroke="#1B5E20" stroke-width="4" fill="none"/>
@@ -322,8 +322,8 @@
         <path d="M 76 25 L 88 20 L 88 38 M 76 30 L 76 42" stroke="#2E7D32" stroke-width="3" fill="none"/>
         <circle cx="72" cy="42" r="4" fill="#2E7D32"/>
         <circle cx="84" cy="38" r="4" fill="#2E7D32"/>
-      </svg>`, 
-      ipa: '/rɪˈlækst/', meaning: 'Thư giãn', sentence: 'I am relaxed.', hex: '#81C784' 
+      </svg>`,
+      ipa: '/rɪˈlækst/', meaning: 'Thư giãn', sentence: 'I am relaxed.', hex: '#81C784'
     }
   ];
   window.DanhPencil?.apply('feeling', emotionsVocabulary);
@@ -358,6 +358,7 @@
   let flashcardDeck = [];
 
   function speak(text) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
     if (window.speechSynthesis) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
@@ -405,7 +406,7 @@
 
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
-    
+
     document.getElementById(tabId).classList.add('active');
     if(evt && evt.target) evt.target.classList.add('active');
 
@@ -691,7 +692,7 @@
       feedback.style.color = '#43A047';
       feedback.innerText = '🎉 Chính xác! Bạn giỏi quá!';
       inputEl.disabled = true;
-      
+
       countCorrectCount++;
       updateCountScore();
       playSoundEffect('correct');

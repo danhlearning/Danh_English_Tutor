@@ -89,6 +89,7 @@
   let flashcardDeck = [];
 
   function speak(text) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
     if (window.speechSynthesis) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
@@ -136,7 +137,7 @@
 
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
-    
+
     document.getElementById(tabId).classList.add('active');
     if(evt && evt.target) evt.target.classList.add('active');
 
@@ -187,7 +188,7 @@
 
     frontEl.className = 'flip-card-front';
     frontEl.style.background = 'linear-gradient(135deg, #4A90E2, #67B26F)';
-    
+
     backEl.className = 'flip-card-back';
     backEl.style.background = item.hex;
 
@@ -421,7 +422,7 @@
       feedback.style.color = '#38A169';
       feedback.innerText = '🎉 Chính xác! Tuyệt vời!';
       inputEl.disabled = true;
-      
+
       countCorrectCount++;
       updateCountScore();
       playSoundEffect('correct');

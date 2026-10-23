@@ -29,13 +29,13 @@ if(!lesson.includes('new URLSearchParams'))lesson=lesson.replace('  showTab(init
 write(base+'assets/js/lesson.js',lesson);
 for(const file of fs.readdirSync(path.join(root,base)).filter(n=>n.endsWith('.html'))){
  let s=read(base+file);
- s=s.replace(/units-data\.js\?[^"']*/g,'units-data.js?v=grade11-20261022').replace(/lesson\.js\?[^"']*/g,'lesson.js?v=grade11-20261022').replace(/catalog\.js\?[^"']*/g,'catalog.js?v=grade11-20261022').replace(/grade11\.css(?:\?[^"']*)?/g,'grade11.css?v=grade11-20261022');
+ s=s.replace(/units-data\.js\?[^"']*/g,'units-data.js?v=grade11-20261022').replace(/lesson\.js\?[^"']*/g,'lesson.js?v=grade11-20261022').replace(/catalog\.js\?[^"']*/g,'catalog.js?v=tidy-unit-cards-20261024').replace(/grade11\.css(?:\?[^"']*)?/g,'grade11.css?v=grade11-20261022');
  if(/^unit\d+\.html$/.test(file)){
   s=s.replace(/<p class="g6-note">(?:Đọc từ, xem tranh[^<]*|Đọc nghĩa tiếng Việt[^<]*|Nhìn nghĩa tiếng Việt[^<]*)<\/p>/g,'');
   s=s.replace('Nhìn từ tiếng Anh rồi thử đoán nghĩa trước khi lật.','Đoán nghĩa rồi chạm thẻ.');
-  if(!s.includes('spelling-game.js'))s=s.replace('  <script src="./assets/js/lesson.js', '  <script src="./assets/js/spelling-game.js?v=grade11-20261022"></script>\n  <script src="./assets/js/lesson.js');
+  if(!s.includes('spelling-game.js'))s=s.replace('  <script src="./assets/js/lesson.js', '  <script src="./assets/js/spelling-game.js?v=compact-listen-20261024"></script>\n  <script src="./assets/js/lesson.js');
  }
- if(file==='grammar.html'&&!s.includes('grammar-improvement-data.js'))s=s.replace(/(  <script src="\.\/assets\/js\/grammar-complete-data.js[^\n]*\n)/,'$1  <script src="./assets/js/grammar-improvement-data.js?v=grade11-20261022"></script>\n');
+ if(file==='grammar.html'&&!s.includes('grammar-improvement-data.js'))s=s.replace(/(  <script src="\.\/assets\/js\/grammar-complete-data.js[^\n]*\n)/,'$1  <script src="./assets/js/grammar-improvement-data.js?v=compact-listen-20261024"></script>\n');
  if(file==='grammar.html'){
   s=s.replace('<p class="g6-overline">CHỌN BÀI LUYỆN</p>','').replace('Bắt đầu theo cách của em','Chọn thử thách');
   s=s.replace(/<p>Chọn dạng bài, phạm vi và độ khó\.[^<]*<\/p>/,'').replace(/<p class="gg-field-note">Luyện từ dễ tới khó[^<]*<\/p>/,'');

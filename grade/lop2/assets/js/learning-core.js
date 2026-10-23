@@ -218,6 +218,7 @@
       try { window.speechSynthesis?.cancel(); } catch { /* Audio is optional. */ }
     };
     const speakWord = word => {
+      if(window.DanhListenControls?.isManualRequest())return Promise.resolve(window.DanhAnswerSpeech.listen(word.name));
       stopSpeech();
       if (!hasGesture || (effects && !effects.soundEnabled()) || document.hidden) return Promise.resolve();
       if (useAnswerSpeech) return Promise.resolve(window.DanhAnswerSpeech.say(word.name));

@@ -12,7 +12,7 @@ const click=l=>l.click();
   await click(p.locator('[data-tab=quiz]'));await click(p.getByRole('button',{name:'Bắt đầu chơi',exact:true}));
   let key=await p.locator('[data-word-key]').getAttribute('data-word-key'),term=(await p.locator(`[data-answer-key="${key}"]`).textContent()).slice(3);
   await played(term,()=>click(p.locator(`[data-answer-key="${key}"]`)));assert.equal(await p.evaluate(()=>audioStarts.length),1);
-  if(g===7){await click(p.locator('[data-next]'));key=await p.locator('[data-word-key]').getAttribute('data-word-key');term=(await p.locator(`[data-answer-key="${key}"]`).textContent()).slice(3);await click(p.locator(`.g6-choice:not([data-answer-key="${key}"])`).first());assert.equal(await p.evaluate(()=>audioStarts.length),1);await played(term,()=>click(p.locator(`[data-answer-key="${key}"]`)));await played(term,()=>click(p.getByRole('button',{name:'🔊 Nghe từ',exact:true})));await p.reload();assert.equal(await p.evaluate(()=>audioStarts.length),0);}
+  if(g===7){await click(p.locator('[data-next]'));key=await p.locator('[data-word-key]').getAttribute('data-word-key');term=(await p.locator(`[data-answer-key="${key}"]`).textContent()).slice(3);await click(p.locator(`.g6-choice:not([data-answer-key="${key}"])`).first());assert.equal(await p.evaluate(()=>audioStarts.length),1);await played(term,()=>click(p.locator(`[data-answer-key="${key}"]`)));await played(term,()=>click(p.getByRole('button',{name:'Nghe từ',exact:true})));await p.reload();assert.equal(await p.evaluate(()=>audioStarts.length),0);}
   console.log('PASS real WAV playback without Web Speech, grade '+g);
  }
  assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);

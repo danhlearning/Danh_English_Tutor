@@ -16,13 +16,6 @@
   const {feedback,afterFeedback,reduced}=effects;
   const settings = () => {
     document.body.classList.add('vg-world');
-    if(effects.automatic)return;
-    const bar=el('div',undefined,'vg-settings');bar.setAttribute('role','group');bar.setAttribute('aria-label','Âm thanh và chuyển động');bar.dataset.vocabSettings='true';
-    const soundButton=button('',()=>{},'g6-secondary');soundButton.id='vocab-sound';
-    const motionButton=button('',()=>{},'g6-secondary');motionButton.id='vocab-motion';
-    effects.bindSettings({soundButton,motionButton});
-    bar.append(el('span','🐱 Cùng gom sao từ vựng!','vg-buddy'),soundButton,motionButton);
-    document.querySelector('main')?.prepend(bar);
   };
   settings();
 
@@ -180,7 +173,7 @@
         status.textContent=round.outcome==='seen'?`Đáp án: ${word.term}. Em hãy ôn lại từ này.`:round.outcome==='first'?`Chính xác! +10 sao. ${word.term} = ${word.meaning}.`:`Em đã tự sửa đúng! +5 sao. ${word.term} = ${word.meaning}.`;
         status.classList.add(round.outcome==='seen'?'vg-help':'vg-good');
         stage.append(el('p',word.example,'vg-example'),button('🔊 Nghe từ',()=>{
-          if(!effects.soundEnabled()){status.textContent='Âm thanh đang tắt. Bật âm thanh để nghe từ nhé.';return;}
+          if(!window.DanhListenControls?.isManualRequest() && !effects.soundEnabled()){status.textContent='Âm thanh đang tắt. Bật âm thanh để nghe từ nhé.';return;}
           window.DanhAnswerSpeech.say(word.term);
         },'g6-secondary'));
         const next=button(round.index===round.items.length-1?'Xem tổng kết →':'Câu tiếp theo →',()=>{

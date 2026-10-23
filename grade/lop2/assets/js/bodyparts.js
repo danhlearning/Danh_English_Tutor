@@ -23,6 +23,7 @@
     try { window.speechSynthesis?.cancel(); } catch { /* Optional audio. */ }
   }
   function speak(text) {
+    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
     return Promise.resolve(window.DanhAnswerSpeech.say(text));
   }
   function sound(kind) {
