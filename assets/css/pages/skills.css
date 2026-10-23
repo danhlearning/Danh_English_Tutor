@@ -1,10 +1,9 @@
-@import url("./index.css");
+@import url("./index.css?v=heading-20261023-1");
 
 .skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:35px}
-.skills-grid .card{padding:24px;min-width:0}
-.skills-grid .card h2{font-size:1.4rem;line-height:1.4}
-.skills-grid .card p{font-size:1rem;line-height:1.6}
-.skills-grid .btn-card{min-height:44px;display:flex;justify-content:center;align-items:center}
-.skills-grid .card:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
-@media(max-width:600px){.skills-grid{grid-template-columns:minmax(0,1fr)}}
+.skills-grid .card{grid-template-columns:56px minmax(0,1fr);gap:16px;padding:24px;min-width:0;min-height:128px}
+.skills-grid .card-icon{display:grid;place-items:center;width:56px;height:56px;font-size:2rem;background:#fcf5e5;border:1px solid var(--pencil);border-radius:16px 19px 15px 18px;box-shadow:inset 0 0 0 3px #e9dcc244}
+.skills-grid .card h2{font-size:clamp(1.3rem,2vw,1.5rem);line-height:1.45;color:var(--ink);margin:0;text-wrap:pretty;overflow-wrap:break-word}
+.skills-grid .card:focus-visible{outline:3px solid var(--green);outline-offset:4px}
+@media(max-width:600px){.skills-grid{grid-template-columns:minmax(0,1fr)}.skills-grid .card{grid-template-columns:48px minmax(0,1fr);gap:12px;padding:18px 14px;min-height:104px}.skills-grid .card-icon{width:48px;height:48px;font-size:1.75rem}.skills-grid .card h2{font-size:1.2rem}}
 @media(prefers-reduced-motion:reduce){.skills-grid .card,.profile-pic{transition:none}}

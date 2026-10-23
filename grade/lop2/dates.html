@@ -2,25 +2,18 @@
 <html lang="vi">
 <head>
 <script src="../../shared/learner-profile-core.js"></script>
-<script src="../../shared/learner-profile.js?v=preload-20261022"></script>
+<script src="../../shared/learner-profile.js?v=smooth-20261023-1"></script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Học Tiếng Anh Chủ Đề Thứ, Ngày, Tháng & Năm (Days, Months, Years)</title>
 <!-- Google Font: Nunito -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="./assets/css/topics/dates.css">
 <link rel="stylesheet" href="./assets/css/learning-shared.css">
-<link rel="stylesheet" href="./assets/css/grade2-theme.css?v=reveal10">
+<link rel="stylesheet" href="./assets/css/grade2-theme.css?v=smooth-20261023-1">
   <link rel="stylesheet" href="../../shared/grade-colors.css?v=all-grades-20261016-2">
-<link rel="stylesheet" href="./assets/css/pencil-illustrations.css?v=pencil-20261019">
-<script src="./assets/js/pencil-images-data.js?v=pencil-20261019"></script>
-<script src="./assets/js/pencil-illustrations.js?v=pencil-20261019-2"></script>
 </head>
-<body class="grade2-topic g2-pencil">
+<body class="grade2-topic">
 
 <header>
   <h1>📅 ENGLISH DAYS, MONTHS & DATES</h1>
@@ -187,15 +180,15 @@
 <script src="./assets/js/grade2-progress.js"></script>
 <script src="./assets/js/legacy-game4.js"></script>
 <script src="../../shared/young-learner-speech.js?v=slow-sync-1"></script>
-  <script src="./assets/js/topics/dates.js?v=pencil-20261019"></script>
+  <script src="./assets/js/topics/dates.js?v=calendar-restored-20261022"></script>
 <script src="./assets/js/legacy-game4-config.js"></script>
 
 <contact-danh></contact-danh>
     <script src="../../shared/contact-footer.js"></script>
-<script src="./assets/js/learning-core.js?v=answer-audio-20261021"></script>
+<script src="./assets/js/learning-core.js?v=smooth-20261023-1"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => DanhLesson.mount({
-    topic: 'dates',
+    topic: 'dates', useAnswerSpeech: true,
     words: daysAndMonthsVocab.map((word, index) => ({
       id: word.name.toLowerCase(), name: word.name, meaning: word.meaning,
       ipa: word.ipa, color: word.hex, visual: word.num
@@ -203,6 +196,6 @@
   }));
 </script>
 
-<script src="./assets/js/grade2-navigation.js?v=primary2-20261022-34"></script>
+<script src="./assets/js/grade2-navigation.js?v=smooth-20261023-1"></script>
 </body>
 </html>

@@ -1,0 +1,739 @@
+{
+  "grade": 4,
+  "style": "colored-pencil",
+  "wordCount": 132,
+  "images": {
+    "america": {
+      "src": "grade/lop4/assets/images/pencil/america-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "149f1b7ad596030cf4741d3a88ffead5485e1dcc8f588112a2abac8b694de69b"
+    },
+    "australia": {
+      "src": "grade/lop4/assets/images/pencil/australia-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "62f43168e195a45356a7a04b408314d9260aa0f23c17ab00ad21ba24949e14b5"
+    },
+    "britain": {
+      "src": "grade/lop4/assets/images/pencil/britain-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "571a7ab269b2fe62e6220203c94b22683834375e903ecf764382e4fd34c95f28"
+    },
+    "japan": {
+      "src": "grade/lop4/assets/images/pencil/japan-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "c1e37eb94d9eeba930632fca4282160a9b6abd5049937b141f85b7df3dd6b1ae"
+    },
+    "malaysia": {
+      "src": "grade/lop4/assets/images/pencil/malaysia-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "b1e662bfdca2011be97dd212c4513774b656c2a8126fb63e6bb782cc777ac63f"
+    },
+    "viet nam": {
+      "src": "grade/lop4/assets/images/pencil/viet-nam-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "db4407ae8c071af8f9be1e7b7967973e47d5ef130638373ce7f75caa240f0ea2"
+    },
+    "get up": {
+      "src": "grade/lop4/assets/images/pencil/get-up-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "f85f35525c1ecc7406e63e46a543997a959ef1336af9598e01752b7fe16dc11f"
+    },
+    "have breakfast": {
+      "src": "grade/lop4/assets/images/pencil/have-breakfast-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "974365554b2ff9e3ce5a49cd1d0200479a7599200b6ac8fcb0378cc25660d34e"
+    },
+    "go to school": {
+      "src": "grade/lop4/assets/images/pencil/go-to-school-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "dcb3594fd65e281d8c0c520e8552f441a18a0e2eb2d321310c9749bbfdf02287"
+    },
+    "have lunch": {
+      "src": "grade/lop4/assets/images/pencil/have-lunch-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "dc9d4b19ecf8c4c859574c4184f91de653f5e0480970516ab8b8b949129ebd57"
+    },
+    "have dinner": {
+      "src": "grade/lop4/assets/images/pencil/have-dinner-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "1a8de9564a343efb10e432d0a467767dce11ad9b3d9cd4ff7c70d7727e1253e0"
+    },
+    "go to bed": {
+      "src": "grade/lop4/assets/images/pencil/go-to-bed-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "eb549313e40b1224044f0649caa35943d492d9763b544eb507ea068b38f8332a"
+    },
+    "study at school": {
+      "src": "grade/lop4/assets/images/pencil/study-at-school-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "fce63edd757a7a023f5daaf0ca878c6291cf57122b076f7bfc7e64310ebc04c1"
+    },
+    "listen to music": {
+      "src": "grade/lop4/assets/images/pencil/listen-to-music-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "a763bff0a6abaf3389cf5ee487225654ae1eae544eca7f60c948e1ec2249ed08"
+    },
+    "do housework": {
+      "src": "grade/lop4/assets/images/pencil/do-housework-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "198db9419d04a2398692d7e80c64e79e6c6b8f44c64567dff246dd1129bda9a6"
+    },
+    "watch tv": {
+      "src": "grade/lop4/assets/images/pencil/watch-tv-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "7cef5a5f3b3dc52eb090855c0af223cad3e50e527a0a0293cab6d309e5668966"
+    },
+    "play football": {
+      "src": "grade/lop4/assets/images/pencil/play-football-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "ded3a73ab042a204bf60a0d2216658bd15425c9ef41fd9e4da629142381790a3"
+    },
+    "january": {
+      "src": "grade/lop2/assets/images/pencil/dates/january-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "8b62195a799d7bb331648279f5ac95767c0ea006fad2fda80955c028b46528b2"
+    },
+    "february": {
+      "src": "grade/lop2/assets/images/pencil/dates/february-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "0d46e5f9082e8e574d34b93970df095abe4581325ee58b4cfefe2f7a535e997e"
+    },
+    "march": {
+      "src": "grade/lop2/assets/images/pencil/dates/march-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "24835f6ebbeb50aeae2c8a893ebe321c80edd6e6036c88e196c4845204bb6005"
+    },
+    "april": {
+      "src": "grade/lop2/assets/images/pencil/dates/april-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "7a058e971bebf97badbc70de9107bc998a1daef8c8c31ad2e387def5b803a40e"
+    },
+    "may": {
+      "src": "grade/lop2/assets/images/pencil/dates/may-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "92d8032b180b5da48e2a37d52639001a94c1b153816e16e0e82e46571ce66a0f"
+    },
+    "june": {
+      "src": "grade/lop2/assets/images/pencil/dates/june-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "bcd0a290c3b473191ec69e2e4399b522d8410f081b9b9cedc5b43692f3ec3832"
+    },
+    "july": {
+      "src": "grade/lop2/assets/images/pencil/dates/july-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "df3aaf2de8dece8c770df72fd3ac9f969d2f126be947ba961488f7d9c50c6c54"
+    },
+    "august": {
+      "src": "grade/lop2/assets/images/pencil/dates/august-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "26dca9322de24cc52502d42cc43bec17c1301a233b879829977547857d9a474e"
+    },
+    "september": {
+      "src": "grade/lop2/assets/images/pencil/dates/september-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "3aa07f582a46ee9bdd5f7a605a20bd91bcc44629d875965470b31f9f6d2a459d"
+    },
+    "october": {
+      "src": "grade/lop2/assets/images/pencil/dates/october-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "d80ab59535701cd220bc4b67b6a0f5d55e07a946ce92955c1a30e9b30a8db798"
+    },
+    "november": {
+      "src": "grade/lop2/assets/images/pencil/dates/november-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "0aba71f67c3b50c2f29a7f8adc99a40e00aefeb3a24934febab65a3e5ff5b867"
+    },
+    "december": {
+      "src": "grade/lop2/assets/images/pencil/dates/december-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "45ea7838df03e8cb7686b11e20dbe2aa20a103a9736b74c44b5e14660a849bd3"
+    },
+    "jam": {
+      "src": "grade/lop4/assets/images/pencil/jam-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "a2f41da8e0d553280fa1a5ef78360ab2a6822ed1f676c417fdcca449c3613613"
+    },
+    "chips": {
+      "src": "grade/lop4/assets/images/pencil/chips-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "621c8505de67ff21616e1de2fa17daaf458029909dfbf72b8338b74299182200"
+    },
+    "grapes": {
+      "src": "grade/lop4/assets/images/pencil/grapes-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "f445977c6748fba548da794514db31fe454bececb0211092b7302ba420bae67c"
+    },
+    "water": {
+      "src": "grade/lop2/assets/images/pencil/fooddrinks/water-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "6045cb98d49e0efa941f9e3bca460c5afb8d2ec195474a8e00a08f2d48971399"
+    },
+    "lemonade": {
+      "src": "grade/lop4/assets/images/pencil/lemonade-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "461577ba78a2bbc82f6e235d00213e2a549b2bebf4d6552cdb184e856905112a"
+    },
+    "juice": {
+      "src": "grade/lop2/assets/images/pencil/fooddrinks/juice-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "e0e8cb6946dbaa9e3203da78a5d2c2b7325f5f6e7e4762b837603bfee65a5127"
+    },
+    "swim": {
+      "src": "grade/lop2/assets/images/pencil/verbs/swim-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "58e773bff1a6b85af4b2378640ca9d76599277f3fb054f76d78896c49b971d2d"
+    },
+    "ride a bike": {
+      "src": "grade/lop2/assets/images/pencil/verbs/ride-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "b82eaecbe9037afe64d3eeb8a6bddd86cbfc391eb96f542930661b248bb67e9e"
+    },
+    "draw": {
+      "src": "grade/lop2/assets/images/pencil/verbs/draw-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "8efdcd1fcf84b4da7bf3c617f84b8835ff932df8c2c53b9341ecfcb033204ce4"
+    },
+    "sing": {
+      "src": "grade/lop2/assets/images/pencil/verbs/sing-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "23fe8974186f6fec3f7630c59cfa5152bfba0a1c7c375ab6a550064cb501c4fa"
+    },
+    "dance": {
+      "src": "grade/lop2/assets/images/pencil/verbs/dance-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "c206e003f238c766e8bb7004e1fd4cb884f5e26bd37ca57827e4f1517c3e3df5"
+    },
+    "play the piano": {
+      "src": "grade/lop4/assets/images/pencil/play-the-piano-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "c801100c939bfd85aadc29c18fe327f924c7b40a1668bbc5345566fcc6ea89c9"
+    },
+    "classroom": {
+      "src": "grade/lop4/assets/images/pencil/classroom-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "a637fd4e44a5008c04458f0b8f4cfba1a1d24d15799a0a80f3d5aa1f75726b73"
+    },
+    "library": {
+      "src": "grade/lop4/assets/images/pencil/library-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "c2e0094d0ca1b0db857a25f4ef326a2245b1708589fe9e71c9abf9525d63a172"
+    },
+    "playground": {
+      "src": "grade/lop4/assets/images/pencil/playground-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "df7d1ad70e0d187bab819b1e31337776f3b0ba21cfb26a6b6a1c77229e9dbb8d"
+    },
+    "computer room": {
+      "src": "grade/lop4/assets/images/pencil/computer-room-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "1a236dfd369071c803cef987b03d74ab135b480efa2856e77a7de3019a7a6262"
+    },
+    "music room": {
+      "src": "grade/lop4/assets/images/pencil/music-room-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "d058884d9f4db806ed5c15e3717e8ff2fed547f7c8610499926bb095bf511534"
+    },
+    "gym": {
+      "src": "grade/lop4/assets/images/pencil/gym-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "ee40daf2f183029f130e6be0af2f9bc570603959a6edba58b57de9a69aaa9a47"
+    },
+    "maths": {
+      "src": "grade/lop4/assets/images/pencil/maths-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "ab2f494d28bfe11366363d94b43551ccf72d10ead6e59ae0591b7c2b4198c5d1"
+    },
+    "english": {
+      "src": "grade/lop4/assets/images/pencil/english-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "70ad4e48a3effda3563cf580146d0d68e3a832563d2a765e665647b0f1632073"
+    },
+    "music": {
+      "src": "grade/lop4/assets/images/pencil/music-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "01becd4bd3653b5b91c7e94e5b0f86077c4856d05a74d762c4670125f3b88b7d"
+    },
+    "art": {
+      "src": "grade/lop4/assets/images/pencil/art-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "7985b037aaa97c4bbe7af1732c95d7cbcd55cf8cb420a30856f552ea68489334"
+    },
+    "science": {
+      "src": "grade/lop4/assets/images/pencil/science-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "305a8180513fa5144543ae11dd1084bda2edf7c19b31ec119926340c895b8af4"
+    },
+    "pe": {
+      "src": "grade/lop4/assets/images/pencil/pe-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "82419333ccd334530b293206edf4de387c901dfc10a943dba3188bdcebddb481"
+    },
+    "football": {
+      "src": "grade/lop4/assets/images/pencil/play-football-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "ded3a73ab042a204bf60a0d2216658bd15425c9ef41fd9e4da629142381790a3"
+    },
+    "badminton": {
+      "src": "grade/lop4/assets/images/pencil/badminton-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "ed9f5bf8e7cb631b454e816e7d6ab3429ba149ca80857876104f16f08719b9d6"
+    },
+    "basketball": {
+      "src": "grade/lop4/assets/images/pencil/basketball-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "8823bdb1aa72371161c5e2c47c431f1ea85cf6bc8123e4547ce9871029ef45f4"
+    },
+    "table tennis": {
+      "src": "grade/lop4/assets/images/pencil/table-tennis-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "3c7495e05c68cd63e5ff3b27b97773f562c64d69a81a96fc4ee27988f8d49ce3"
+    },
+    "running": {
+      "src": "grade/lop2/assets/images/pencil/verbs/run-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "49d3445fe164d9fd01d5483d7c18c91ef4313cbf48ae8d798cbf6ecc040fada0"
+    },
+    "swimming": {
+      "src": "grade/lop2/assets/images/pencil/verbs/swim-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "58e773bff1a6b85af4b2378640ca9d76599277f3fb054f76d78896c49b971d2d"
+    },
+    "beach": {
+      "src": "grade/lop4/assets/images/pencil/beach-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "c1db3d4da5dbb3750a4c2c1bdf9710a417d2710d0e51c1ede12c6e2b98b165ae"
+    },
+    "mountains": {
+      "src": "grade/lop4/assets/images/pencil/mountains-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "cc3901c05804267df242084b39ad17fc787c1cd0ec171f3892a49d1639e9c30a"
+    },
+    "island": {
+      "src": "grade/lop4/assets/images/pencil/island-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "ada875995b7cd6d016f129819b7ccad1c8f786a8358eb580527a5245f5277047"
+    },
+    "museum": {
+      "src": "grade/lop4/assets/images/pencil/museum-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "f2cc7d5efb5185cbe1b53f8584fdd2b49d1a2d59d784f5aefe6b055524ecc483"
+    },
+    "camping": {
+      "src": "grade/lop4/assets/images/pencil/camping-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "f1289a2617ec4640199003fa2c2404066295d1bd09228c3ad02f038d6fa324c3"
+    },
+    "sightseeing": {
+      "src": "grade/lop4/assets/images/pencil/sightseeing-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "b04c8ca295f0634bf7e14feeb5ea694871e3d35f862a9a18bd7aef620660e48f"
+    },
+    "living room": {
+      "src": "grade/lop2/assets/images/pencil/rooms/living-room-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "a4b6bf3e200c37a0656601bb284d3738ee96d0a334b353f406ad7da3faed5bcc"
+    },
+    "bedroom": {
+      "src": "grade/lop2/assets/images/pencil/rooms/bedroom-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "6846e3fd474350a5a46ede2d4e37fe63eab4067de1f8b8b6ec788852e605eb74"
+    },
+    "kitchen": {
+      "src": "grade/lop2/assets/images/pencil/rooms/kitchen-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "bb8c837f21d70697aed954fb772d377fb1a8503e2606d7e62c3485f7353e9ef8"
+    },
+    "bathroom": {
+      "src": "grade/lop2/assets/images/pencil/rooms/bathroom-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "eec1f7b91fdec00a9e2d4cdd6a85aff72d4f3f1a522f47fdd7b44d6eb1083069"
+    },
+    "garden": {
+      "src": "grade/lop4/assets/images/pencil/garden-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "39dc2ea7268d2cf3e6eda113b4966c6eb204088cdffb5b9f657210fe015feae3"
+    },
+    "balcony": {
+      "src": "grade/lop4/assets/images/pencil/balcony-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "16e8a3ed831d3b99edd2ad4aea37bd053da42fa51bad99a9fb2bac26e2317340"
+    },
+    "teacher": {
+      "src": "grade/lop4/assets/images/pencil/teacher-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "3d36940af0028674da8b970527eb1bd9ee486e8f8c429f2b3d2ace2bca9a8282"
+    },
+    "doctor": {
+      "src": "grade/lop4/assets/images/pencil/doctor-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "92cd4cd488c2ee661a4203719262e4d651dfa26d96ccc131b796ab2a8729b1d9"
+    },
+    "farmer": {
+      "src": "grade/lop4/assets/images/pencil/farmer-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "19dd2ca80847f94232886f4c619a1b90c5ab5d2784c0cf1ac0b5b186ab986979"
+    },
+    "firefighter": {
+      "src": "grade/lop4/assets/images/pencil/firefighter-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "6fb2d23459ae33d20800bd71d21d68f4da4885d13cd2ecec35ec804604a84262"
+    },
+    "chef": {
+      "src": "grade/lop4/assets/images/pencil/chef-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "86b72930e44c9634cc9b5008e843604510c1c647fd1f47504348aac9d3a8f9d3"
+    },
+    "pilot": {
+      "src": "grade/lop4/assets/images/pencil/pilot-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "5ac9f5007098ca459e3e7ed63991ee0985e0a74ed3fcc0cc223f2c666eb22043"
+    },
+    "curly hair": {
+      "src": "grade/lop4/assets/images/pencil/curly-hair-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "9eb7ebd2c636c3cc11d986cbd8accda612b116c98722cd5831633a1823f9feb2"
+    },
+    "straight hair": {
+      "src": "grade/lop4/assets/images/pencil/straight-hair-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "91bd1991b05534cf526944aec146a699eee30d65b7f27c478666990ec82b2a37"
+    },
+    "glasses": {
+      "src": "grade/lop4/assets/images/pencil/glasses-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "8fe2ae71cfd1b5128d74ef2a85dedac2cc64edca1d2673d52a60dfa368c7cdaa"
+    },
+    "blond hair": {
+      "src": "grade/lop4/assets/images/pencil/blond-hair-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "1a0576828c3d2726f853f11ac4125c593ec1c82d29c5f133e1cf0b87e8e90919"
+    },
+    "beard": {
+      "src": "grade/lop4/assets/images/pencil/beard-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "3e40e536d977d63ce1ea50431b8e80a70e95d99ea0beb1cc685d01ad21d2ee25"
+    },
+    "freckles": {
+      "src": "grade/lop4/assets/images/pencil/freckles-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "a262355c42174d658606f059ac61ac75a3e99b413a5f3c046c18ccf265339d6b"
+    },
+    "brush my teeth": {
+      "src": "grade/lop4/assets/images/pencil/brush-my-teeth-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "1d09786633cae3e91c969872e7fd793d9355d2c43a6a2f601c6aa49a2b4f965f"
+    },
+    "wash my face": {
+      "src": "grade/lop4/assets/images/pencil/wash-my-face-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "4629267cd095598a50c2a846c3e53d5b85f29220d31c85aa2a33b92145b11814"
+    },
+    "do homework": {
+      "src": "grade/lop4/assets/images/pencil/do-homework-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "abc263e63f6cccddf82975a5aa136c0d984a2304111eddfc38e1d3929ddcd58e"
+    },
+    "take a shower": {
+      "src": "grade/lop4/assets/images/pencil/take-a-shower-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "d8b5692497c945668eedb7708174d3fc387ede93790bb61ccb63ef1de04bbccb"
+    },
+    "visit grandparents": {
+      "src": "grade/lop4/assets/images/pencil/visit-grandparents-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "f72bd3f57425b7910d6e325ddddc39d1fd67e8ddafc079149575d4ac89ff4ad2"
+    },
+    "go shopping": {
+      "src": "grade/lop4/assets/images/pencil/go-shopping-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "a063bd7bdbce91476015d32b730afa4d455ca192a6892993940e92d1e4bcea33"
+    },
+    "have a picnic": {
+      "src": "grade/lop4/assets/images/pencil/have-a-picnic-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "cdc82d2ac40845e0df0f3b9f778f07ee63e6aa96ea7f30a1f4d0e4440fc15a39"
+    },
+    "watch a film": {
+      "src": "grade/lop4/assets/images/pencil/watch-a-film-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "897943b94d965284ca190a162cf71996e759f6b0c8e9848f10296e5cc2270db3"
+    },
+    "cook dinner": {
+      "src": "grade/lop4/assets/images/pencil/cook-dinner-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "a6747bee85521713c9a3a71b5825da8260f401c4307b66074003963828c07222"
+    },
+    "play games": {
+      "src": "grade/lop4/assets/images/pencil/play-games-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "884233bbacf827de4db82bda9c1f943b5d0c4fed32484d0421d2e4e5409da06b"
+    },
+    "sunny": {
+      "src": "grade/lop2/assets/images/pencil/weather/sunny-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "45963a14d7a776449bfd18f784316253ba137daf205af3e8002b237c7bc74d5b"
+    },
+    "rainy": {
+      "src": "grade/lop2/assets/images/pencil/weather/rainy-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "91d4cecf23a0e9e3867c9f1e5f8488b42b729c171d606dfe77bd64c2c5041c40"
+    },
+    "cloudy": {
+      "src": "grade/lop2/assets/images/pencil/weather/cloudy-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "8eee13b41899c420aac485d199624bdc3c50482e9e12146cbe38eb294c40a2c4"
+    },
+    "windy": {
+      "src": "grade/lop2/assets/images/pencil/weather/windy-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "a05c3f5afd6e9136542d75b5b9efd58444d1a2ef1e6fd1320775a7cf51e20c96"
+    },
+    "snowy": {
+      "src": "grade/lop2/assets/images/pencil/weather/snowy-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "a822f022329d147a69fd23bc2aa598a9cf44410c2af0bf653f8a89b4ad98d593"
+    },
+    "stormy": {
+      "src": "grade/lop2/assets/images/pencil/weather/stormy-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "0c667589a66eee35b26191a681c58129cf972d47777a2ea9a7f4e351a884d76d"
+    },
+    "hospital": {
+      "src": "grade/lop4/assets/images/pencil/hospital-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "b36726fd20131ac85d93f82286e399e07be6fa25781d720e2452bb3f1a9a3c5f"
+    },
+    "post office": {
+      "src": "grade/lop4/assets/images/pencil/post-office-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "c02335eef1c574156fe637cc6bb59bfd0c9abed6a616cce67479ecee089fdc1e"
+    },
+    "cinema": {
+      "src": "grade/lop4/assets/images/pencil/cinema-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "32249be56ae3372dfdc248de39cfa0c93f178677c5a983e09cd04ea63b15a8ed"
+    },
+    "park": {
+      "src": "grade/lop4/assets/images/pencil/park-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "cc2497b5a2ab652886954577551cd83d3e309c56e77b1065edc7f2fca105e237"
+    },
+    "supermarket": {
+      "src": "grade/lop4/assets/images/pencil/supermarket-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "4dd848c8f1f02590547353edea09ffa238d81b33d0bdaec822fe799617eaae6b"
+    },
+    "bus stop": {
+      "src": "grade/lop4/assets/images/pencil/bus-stop-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "408ecc6e9c906879f9bcf2f502f4426d472f83b751a56831c7cc74809ed58d16"
+    },
+    "t-shirt": {
+      "src": "grade/lop2/assets/images/pencil/clothes/t-shirt-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "225696e8673c5cb0fad15d5b3ec4774276acd5fcd3f5147f145dbed32573d506"
+    },
+    "dress": {
+      "src": "grade/lop2/assets/images/pencil/clothes/dress-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "743b674edbb416ab32b8f34ec0d9b360f938804e6707f64a54d720bbfed948a3"
+    },
+    "shoes": {
+      "src": "grade/lop2/assets/images/pencil/clothes/shoes-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "13fe84bc5e362a29a2af21081eb6471115c34d86173e50f5334477a21be7e074"
+    },
+    "hat": {
+      "src": "grade/lop2/assets/images/pencil/clothes/hat-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "29ff3f8fa7a8b1b2113b6f9686cc5bd6d4566d9d62f3a6fd8c464608b4ce6af5"
+    },
+    "bag": {
+      "src": "grade/lop4/assets/images/pencil/bag-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "ba46ebc33b87f61737d6901bedf93ba0f4541601c940d913550add94664065ee"
+    },
+    "watch": {
+      "src": "grade/lop4/assets/images/pencil/watch-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "260830ff35e4a9e26fab84e5238a05411a5ff671b567470a57042c0154254f0a"
+    },
+    "elephant": {
+      "src": "grade/lop4/assets/images/pencil/elephant-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "3ba214481d327491eb9b9d8a63f775dd6f0d062d3c9decfb902f8db16896dc8a"
+    },
+    "giraffe": {
+      "src": "grade/lop4/assets/images/pencil/giraffe-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "ee063e47368cdca4620083a7e573ebd3b504a0f1c9225dad0e9980b9f8099925"
+    },
+    "dolphin": {
+      "src": "grade/lop4/assets/images/pencil/dolphin-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "0a7b09a8235f31c8914d47f7c5c5356c2c7f14084a2aa4b74bbaacae9b1b4edc"
+    },
+    "parrot": {
+      "src": "grade/lop4/assets/images/pencil/parrot-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "e299b011f648af28a559eb27ac41fe754421eaa23d065a05d04ece16e060a512"
+    },
+    "turtle": {
+      "src": "grade/lop4/assets/images/pencil/turtle-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "ca642ed4018b85f3a046ef23241b022bff2a2b6da8224a862d3f377a821b39e1"
+    },
+    "butterfly": {
+      "src": "grade/lop4/assets/images/pencil/butterfly-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "ac38460b9c372f552917b60b51953a06a0b75989c84ccaf59a2ec7612d763142"
+    },
+    "make a kite": {
+      "src": "grade/lop4/assets/images/pencil/make-a-kite-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "bf8472c1b0b8c77117691fa76792e3a6b0f528b3ec70907fe1753641f5f2afa0"
+    },
+    "pitch a tent": {
+      "src": "grade/lop4/assets/images/pencil/pitch-a-tent-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "cd9b75feff6245d0af3d5237d62f200688c8a8c54a804a8bf04cf1feb64b1016"
+    },
+    "tell stories": {
+      "src": "grade/lop4/assets/images/pencil/tell-stories-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "912c3ec541500b85758ea6e356f84c46910376c942e8b22e67d77274205ac013"
+    },
+    "sing songs": {
+      "src": "grade/lop2/assets/images/pencil/verbs/sing-v1.webp",
+      "source": "reused",
+      "reviewed": true,
+      "sha256": "23fe8974186f6fec3f7630c59cfa5152bfba0a1c7c375ab6a550064cb501c4fa"
+    },
+    "take photos": {
+      "src": "grade/lop4/assets/images/pencil/take-photos-v1.webp",
+      "source": "generated",
+      "reviewed": true,
+      "sha256": "236d06d97ee8ae04ce8cc5571d66cf1bc4475cc349b987f2926ae47034ff634a"
+    }
+  }
+}

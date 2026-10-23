@@ -1,4 +1,4 @@
-window.DanhGrade10Units=[
+window.DanhGrade10Units = [
   {
     "id": "unit1",
     "number": 1,
@@ -69,6 +69,22 @@ window.DanhGrade10Units=[
         "example": "Sharing meals strengthens our family bond.",
         "icon": "💛",
         "image": "./assets/images/pencil/unit1/8-v1.webp"
+      },
+      {
+        "id": 9,
+        "term": "extended family",
+        "meaning": "đại gia đình",
+        "example": "My extended family includes my grandparents, aunts and cousins.",
+        "icon": "🏡",
+        "image": "./assets/images/pencil/unit1/9-vocab100-v1.webp"
+      },
+      {
+        "id": 10,
+        "term": "divide the chores",
+        "meaning": "phân chia việc nhà",
+        "example": "We divide the chores so that everyone helps at home.",
+        "icon": "🏡",
+        "image": "./assets/images/pencil/unit1/10-vocab100-v1.webp"
       }
     ],
     "color": "#15803d"
@@ -143,6 +159,22 @@ window.DanhGrade10Units=[
         "example": "A green lifestyle includes using less plastic.",
         "icon": "🌿",
         "image": "./assets/images/pencil/unit2/8-v1.webp"
+      },
+      {
+        "id": 9,
+        "term": "renewable energy",
+        "meaning": "năng lượng tái tạo",
+        "example": "Our school uses renewable energy from the sun.",
+        "icon": "🌱",
+        "image": "./../lop7/assets/images/pencil/unit10/7-v1.webp"
+      },
+      {
+        "id": 10,
+        "term": "reduce waste",
+        "meaning": "giảm rác thải",
+        "example": "We use reusable shopping bags to reduce waste.",
+        "icon": "🌱",
+        "image": "./../lop6/assets/images/pencil/unit11/reduce-v1.webp"
       }
     ],
     "color": "#be185d"
@@ -208,7 +240,7 @@ window.DanhGrade10Units=[
         "meaning": "nhà soạn nhạc",
         "example": "The composer writes music for the school play.",
         "icon": "🎼",
-        "image": "./assets/images/pencil/unit3/7-v1.webp"
+        "image": "./assets/images/pencil/unit3/7-v2.webp"
       },
       {
         "id": 8,
@@ -217,6 +249,22 @@ window.DanhGrade10Units=[
         "example": "The flute is my favourite instrument.",
         "icon": "🎻",
         "image": "./assets/images/pencil/unit3/8-v1.webp"
+      },
+      {
+        "id": 9,
+        "term": "live concert",
+        "meaning": "buổi hòa nhạc trực tiếp",
+        "example": "The singer performed at a live concert.",
+        "icon": "🎵",
+        "image": "./assets/images/pencil/unit3/2-v1.webp"
+      },
+      {
+        "id": 10,
+        "term": "rehearsal",
+        "meaning": "buổi tập dượt",
+        "example": "The band has a rehearsal before the school concert.",
+        "icon": "🎵",
+        "image": "./assets/images/pencil/unit3/10-vocab100-v1.webp"
       }
     ],
     "color": "#7c3aed"
@@ -291,6 +339,22 @@ window.DanhGrade10Units=[
         "example": "We sell handmade cards to raise funds for the library.",
         "icon": "🎁",
         "image": "./assets/images/pencil/unit4/8-v1.webp"
+      },
+      {
+        "id": 9,
+        "term": "nursing home",
+        "meaning": "viện dưỡng lão",
+        "example": "Our club visits a nursing home every month.",
+        "icon": "🤝",
+        "image": "./../lop7/assets/images/pencil/unit3/6-v1.webp"
+      },
+      {
+        "id": 10,
+        "term": "charity sale",
+        "meaning": "buổi bán hàng gây quỹ từ thiện",
+        "example": "We held a charity sale to buy books for children.",
+        "icon": "🤝",
+        "image": "./assets/images/pencil/unit4/10-vocab100-v1.webp"
       }
     ],
     "color": "#2563eb"
@@ -332,7 +396,7 @@ window.DanhGrade10Units=[
         "meaning": "thí nghiệm",
         "example": "We repeat the experiment to check the result.",
         "icon": "🧪",
-        "image": "./assets/images/pencil/unit5/4-v1.webp"
+        "image": "./assets/images/pencil/unit5/4-v2.webp"
       },
       {
         "id": 5,
@@ -340,7 +404,7 @@ window.DanhGrade10Units=[
         "meaning": "hiệu quả",
         "example": "This filter is effective at removing dust.",
         "icon": "⚙️",
-        "image": "./assets/images/pencil/unit5/5-v1.webp"
+        "image": "./assets/images/pencil/unit5/5-v2.webp"
       },
       {
         "id": 6,
@@ -365,6 +429,22 @@ window.DanhGrade10Units=[
         "example": "A solar panel turns sunlight into electricity.",
         "icon": "☀️",
         "image": "./assets/images/pencil/unit5/8-v1.webp"
+      },
+      {
+        "id": 9,
+        "term": "touchscreen",
+        "meaning": "màn hình cảm ứng",
+        "example": "Tap the touchscreen to open the learning app.",
+        "icon": "💡",
+        "image": "./assets/images/pencil/unit5/9-vocab100-v1.webp"
+      },
+      {
+        "id": 10,
+        "term": "labour-saving",
+        "meaning": "giúp tiết kiệm công sức lao động",
+        "example": "A washing machine is a labour-saving invention.",
+        "icon": "💡",
+        "image": "./assets/images/pencil/unit5/10-vocab100-v1.webp"
       }
     ],
     "color": "#15803d"
@@ -430,7 +510,7 @@ window.DanhGrade10Units=[
         "meaning": "trả lương bình đẳng",
         "example": "Workers doing the same job deserve equal pay.",
         "icon": "⚖️",
-        "image": "./assets/images/pencil/unit6/7-v1.webp"
+        "image": "./assets/images/pencil/unit6/7-v2.webp"
       },
       {
         "id": 8,
@@ -439,6 +519,22 @@ window.DanhGrade10Units=[
         "example": "The female firefighter checks her safety equipment.",
         "icon": "👩‍🚒",
         "image": "./assets/images/pencil/unit6/8-v1.webp"
+      },
+      {
+        "id": 9,
+        "term": "gender stereotype",
+        "meaning": "định kiến giới",
+        "example": "The story challenges the gender stereotype that only men can be engineers.",
+        "icon": "⚖️",
+        "image": "./assets/images/pencil/unit6/9-vocab100-v1.webp"
+      },
+      {
+        "id": 10,
+        "term": "leadership",
+        "meaning": "khả năng lãnh đạo",
+        "example": "The project helped Mai develop her leadership skills.",
+        "icon": "⚖️",
+        "image": "./../lop11/assets/images/pencil/unit4/6-v1.webp"
       }
     ],
     "color": "#be185d"
@@ -464,7 +560,7 @@ window.DanhGrade10Units=[
         "meaning": "gìn giữ hòa bình",
         "example": "She learns about peacekeeping work abroad.",
         "icon": "🕊️",
-        "image": "./assets/images/pencil/unit7/2-v1.webp"
+        "image": "./assets/images/pencil/unit7/2-v4.webp"
       },
       {
         "id": 3,
@@ -513,6 +609,22 @@ window.DanhGrade10Units=[
         "example": "Our international team learns from different cultures.",
         "icon": "🌏",
         "image": "./assets/images/pencil/unit7/8-v1.webp"
+      },
+      {
+        "id": 9,
+        "term": "cultural exchange",
+        "meaning": "giao lưu văn hóa",
+        "example": "The cultural exchange helped us learn about our neighbours.",
+        "icon": "🌏",
+        "image": "./../lop11/assets/images/pencil/unit4/1-v1.webp"
+      },
+      {
+        "id": 10,
+        "term": "member state",
+        "meaning": "quốc gia thành viên",
+        "example": "Each member state sends representatives to the meeting.",
+        "icon": "🌏",
+        "image": "./assets/images/pencil/unit7/10-vocab100-v1.webp"
       }
     ],
     "color": "#7c3aed"
@@ -554,7 +666,7 @@ window.DanhGrade10Units=[
         "meaning": "truy cập, tiếp cận",
         "example": "Students can access the lesson at home.",
         "icon": "🔑",
-        "image": "./assets/images/pencil/unit8/4-v1.webp"
+        "image": "./assets/images/pencil/unit8/4-v2.webp"
       },
       {
         "id": 5,
@@ -587,6 +699,22 @@ window.DanhGrade10Units=[
         "example": "Our discussion helps us compare different ideas.",
         "icon": "💬",
         "image": "./assets/images/pencil/unit8/8-v1.webp"
+      },
+      {
+        "id": 9,
+        "term": "concentrate",
+        "meaning": "tập trung",
+        "example": "I put my phone away so I can concentrate on the lesson.",
+        "icon": "💻",
+        "image": "./assets/images/pencil/unit8/9-vocab100-v1.webp"
+      },
+      {
+        "id": 10,
+        "term": "take notes",
+        "meaning": "ghi chép",
+        "example": "I take notes while I listen to the lesson.",
+        "icon": "💻",
+        "image": "./assets/images/pencil/unit8/10-vocab100-v1.webp"
       }
     ],
     "color": "#2563eb"
@@ -661,6 +789,22 @@ window.DanhGrade10Units=[
         "example": "Reforestation brings trees back to damaged land.",
         "icon": "🌳",
         "image": "./assets/images/pencil/unit9/8-v1.webp"
+      },
+      {
+        "id": 9,
+        "term": "ecosystem",
+        "meaning": "hệ sinh thái",
+        "example": "A healthy forest ecosystem supports many species.",
+        "icon": "🌳",
+        "image": "./assets/images/pencil/unit9/1-v1.webp"
+      },
+      {
+        "id": 10,
+        "term": "conservation",
+        "meaning": "sự bảo tồn",
+        "example": "Our class joined a wildlife conservation project.",
+        "icon": "🌳",
+        "image": "./../lop11/assets/images/pencil/unit10/4-v1.webp"
       }
     ],
     "color": "#15803d"
@@ -686,7 +830,7 @@ window.DanhGrade10Units=[
         "meaning": "có trách nhiệm",
         "example": "A responsible visitor takes all rubbish home.",
         "icon": "🎒",
-        "image": "./assets/images/pencil/unit10/2-v1.webp"
+        "image": "./assets/images/pencil/unit10/2-v2.webp"
       },
       {
         "id": 3,
@@ -718,7 +862,7 @@ window.DanhGrade10Units=[
         "meaning": "tác động",
         "example": "Small choices can reduce our impact on nature.",
         "icon": "🌱",
-        "image": "./assets/images/pencil/unit10/6-v1.webp"
+        "image": "./assets/images/pencil/unit10/6-v2.webp"
       },
       {
         "id": 7,
@@ -735,6 +879,22 @@ window.DanhGrade10Units=[
         "example": "I buy a handmade souvenir from a local craftsperson.",
         "icon": "🏺",
         "image": "./assets/images/pencil/unit10/8-v1.webp"
+      },
+      {
+        "id": 9,
+        "term": "itinerary",
+        "meaning": "lịch trình chuyến đi",
+        "example": "Our itinerary includes a morning walk and a visit to a village.",
+        "icon": "🏞️",
+        "image": "./assets/images/pencil/unit10/9-vocab100-v1.webp"
+      },
+      {
+        "id": 10,
+        "term": "local cuisine",
+        "meaning": "ẩm thực địa phương",
+        "example": "Visitors can try the local cuisine at family-run restaurants.",
+        "icon": "🏞️",
+        "image": "./assets/images/pencil/unit10/10-vocab100-v1.webp"
       }
     ],
     "color": "#be185d"

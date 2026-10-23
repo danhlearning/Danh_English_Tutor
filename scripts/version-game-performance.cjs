@@ -1,0 +1,6 @@
+const fs=require('node:fs'),path=require('node:path');const root=path.resolve(__dirname,'..'),version='smooth-20261023-1';
+const files=[];function walk(dir){for(const e of fs.readdirSync(path.join(root,dir),{withFileTypes:true})){const file=path.join(dir,e.name);if(e.isDirectory())walk(file);else if(/\.html$/.test(file))files.push(file);}}
+for(const dir of ['grade','templates'])walk(dir);for(const e of fs.readdirSync(root))if(e.endsWith('.html'))files.push(e);
+for(const e of fs.readdirSync(path.join(root,'scripts')))if(e.endsWith('.cjs')&&e!=='version-game-performance.cjs')files.push('scripts/'+e);
+let count=0;for(const name of files){const file=path.join(root,name),old=fs.readFileSync(file,'utf8');const next=old.replace(/((?:src|href)=["'][^"'\s<>]*\/(?:learning-effects\.js|vocabulary-game\.js|learner-profile\.js|learning-core\.js|grade2-navigation\.js|pencil-illustrations\.js|pencil-illustrations\.css|grade2-theme\.css|topics\/(?:animals|familyfriends|verbs|numbers)\.js))(?:\?[^"'\s<>]*)?/g,(_,asset)=>asset+'?v='+(asset.endsWith('pencil-illustrations.css')?'picture-frame-20261023-2':version));if(next!==old){fs.writeFileSync(file,next);count++;}}
+console.log(`${count} trang/mẫu/bộ dựng đã đổi phiên bản tài nguyên game.`);

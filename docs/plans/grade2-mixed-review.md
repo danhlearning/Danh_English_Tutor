@@ -1,5 +1,17 @@
 # Ôn tập tổng hợp lớp 2
 
+## Điều chỉnh ngày 22/10/2026
+
+Giữ mục tiêu ôn nghĩa, nghe, chính tả và dùng câu ở chín dạng hiện có. Trang bắt đầu chỉ giữ hai nút chính “Chọn Unit” và “Chơi”, bộ chọn dạng và tiếp tục lượt dở; bỏ khối giới thiệu/chỉ số/danh sách Unit, hướng dẫn nhận sao và thiết lập hiệu ứng. Âm/chuyển động tự bật trong trang này qua chế độ automatic, vẫn tôn trọng giảm chuyển động của thiết bị; không sửa tùy chọn của bài khác và không tự phát khi mở trang.
+
+Chấm/thưởng tự động theo kết quả hiện có: trắc nghiệm khi chọn, xếp câu khi đủ mảnh, gõ đúng sau khi ngừng gõ ngắn; gõ chưa đúng chỉ chấm khi rời ô hoặc nhấn Enter để không phạt lúc đang gõ dở. Không có nút kiểm tra hoặc thao tác nhận thưởng. Sai vẫn thử lại, đúng vẫn đọc từ/câu, điểm phân biệt đúng ngay/tự sửa/gợi ý/xem/bỏ qua. Mỗi lượt giữ độ dài và điều kiện hoàn thành hiện tại, người học tự chọn câu tiếp theo.
+
+Nút “Xem đáp án” chỉ xuất hiện khi câu chưa hoàn thành sau 30 giây học thực tế. Không tính lúc ẩn tab hoặc ở màn chọn bài; giữ thời gian đã học qua tải lại/tiếp tục trong trường revealWaitMs của đáp án, cùng khóa hồ sơ hiện tại. Sang câu mới tính lại; trả lời sai hoặc dùng gợi ý không đặt lại thời gian. Lượt cũ không có trường này bắt đầu từ 0; không tự chấm nháp hay tự phát âm khi khôi phục.
+
+Đã kiểm tra: 11 kiểm tra mô hình; trình duyệt đủ chín dạng với media playing/ended thật khi vô hiệu Web Speech ở cả đúng ngay và tự sửa; tự chấm gõ/xếp câu, tổng điểm và không cộng lặp; bộ kiểm tra thời gian riêng (29/30 giây, rời màn chơi, ẩn tab, tải lại, tiếp tục, gợi ý, câu mới); bốn chiều rộng 320/390/760/1280 px và chữ 200%; glyph Nunito nội bộ khi chặn mạng ngoài; giảm chuyển động; lượt v1 cũ; hồ sơ, nhiều tab và bộ nhớ bị chặn. Đã xem ảnh bố cục điện thoại/máy tính. Chưa kiểm tra điện thoại vật lý.
+
+Lệnh kiểm tra thời gian: `node grade/lop2/tests/mixed-review-timing.browser.cjs`. Bộ kiểm tra trình duyệt chín dạng: `node grade/lop2/tests/mixed-review.browser.cjs`.
+
 ## Mục tiêu và phạm vi
 
 Ôn nghĩa, nhận biết từ qua nghe, nhớ chính tả và tạo câu từ nội dung đã có của 16 Unit chính. Chọn nhiều Unit bằng hộp chọn tương tự bộ chọn từ trong bài: tìm kiếm, chọn tất cả/bỏ chọn, chọn học kỳ và Áp dụng/Hủy. Không thay nội dung hoặc tiến độ của Unit.

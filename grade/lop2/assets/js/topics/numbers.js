@@ -155,7 +155,7 @@
 
   /* HÀM ĐỌC GIỌNG NÓI CHUẨN TỐC ĐỘ RẤT CHẬM + TỰ ĐỘNG CHỌN GIỌNG NÓI TỰ NHIÊN */
   function speak(text) {
-    if ('speechSynthesis' in window) {
+    if (window.speechSynthesis) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'en-US';
@@ -173,7 +173,7 @@
   }
 
   /* Đảm bảo giọng đọc sẵn sàng khi chuyển đổi */
-  if ('speechSynthesis' in window) {
+  if (window.speechSynthesis) {
     window.speechSynthesis.onvoiceschanged = () => {};
   }
 

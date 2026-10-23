@@ -92,7 +92,7 @@ a:focus-visible { outline: 3px solid #237569; outline-offset: 5px; }
 .card {
   min-width: 0;
   display: grid;
-  grid-template-columns: minmax(110px, .9fr) minmax(0, 1fr) 30px;
+  grid-template-columns: minmax(110px, .9fr) minmax(0, 1fr);
   gap: 16px;
   align-items: center;
   padding: 18px 24px 18px 12px;
@@ -114,16 +114,6 @@ a:focus-visible { outline: 3px solid #237569; outline-offset: 5px; }
   border-radius: 16px;
 }
 .card h2 { font-size: clamp(1.25rem, 1.8vw, 1.5rem); line-height: 1.35; font-weight: 800; text-wrap: balance; }
-.card-arrow {
-  display: grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #adab8d;
-  border-radius: 50%;
-  color: #526e56;
-  font-size: 1.3rem;
-}
 .card:hover { transform: translateY(-3px); box-shadow: 0 7px 0 #d6c5a350, 0 12px 24px #80663f12; }
 .grade-section { padding: 0 0 16px; scroll-margin-top: 24px; }
 .section-header { display: flex; align-items: center; gap: 20px; margin-bottom: 22px; }
@@ -166,9 +156,8 @@ a:focus-visible { outline: 3px solid #237569; outline-offset: 5px; }
   .profile-pic { width: 188px; height: 188px; }
   .hero-text h1 { font-size: 2rem; }
   .hero-text p { font-size: 1.1rem; }
-  .card { grid-template-columns: 96px minmax(0, 1fr) 26px; padding: 16px 12px; gap: 10px; }
-  .card-arrow { width: 26px; height: 26px; }
-  .grade-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .card { grid-template-columns: 96px minmax(0, 1fr); padding: 16px 12px; gap: 10px; }
+    .grade-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 @media (max-width: 600px) {
   .hero, .container, .grade-section { width: calc(100% - 28px); }
@@ -181,16 +170,15 @@ a:focus-visible { outline: 3px solid #237569; outline-offset: 5px; }
   .hero-text h1 { font-size: clamp(1.65rem, 7.2vw, 1.9rem); margin-bottom: 10px; }
   .hero-text p { font-size: 1.05rem; line-height: 1.5; max-width: 310px; margin: auto; color: #425f54; background: #fcf5e5e0; padding: 3px 9px; border-radius: 9px; }
   .container { grid-template-columns: minmax(0, 1fr); gap: 14px; margin-bottom: 28px; }
-  .card { grid-template-columns: 104px minmax(0, 1fr) 28px; gap: 12px; padding: 12px; border-radius: 18px 21px 17px 20px; }
+  .card { grid-template-columns: 104px minmax(0, 1fr); gap: 12px; padding: 12px; border-radius: 18px 21px 17px 20px; }
   .card h2 { font-size: 1.25rem; }
-  .card-arrow { width: 28px; height: 28px; }
-  .section-header { gap: 12px; margin-bottom: 16px; }
+    .section-header { gap: 12px; margin-bottom: 16px; }
   .section-header h2 { font-size: 1.35rem; max-width: 250px; }
   .grade-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
   .grade-btn { min-height: 60px; font-size: 1.1rem; padding: 12px 5px; }
 }
 @media (max-width: 359px) {
-  .card { grid-template-columns: 82px minmax(0, 1fr) 26px; gap: 10px; }
+  .card { grid-template-columns: 82px minmax(0, 1fr); gap: 10px; }
   .card h2 { font-size: 1.15rem; }
 }
 @media (prefers-reduced-motion: reduce) {

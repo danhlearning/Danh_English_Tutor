@@ -1,0 +1,503 @@
+{
+  "cpuSlowdown": 4,
+  "records": [
+    {
+      "url": "grade/lop2/animals.html",
+      "loadMs": 2359,
+      "delta": {
+        "TaskDuration": 1.3738020000000002,
+        "ScriptDuration": 0.111417,
+        "LayoutDuration": 0.22739699999999996,
+        "RecalcStyleDuration": 0.22158199999999997,
+        "LayoutCount": 24,
+        "RecalcStyleCount": 97
+      },
+      "actionMs": [
+        7.100000001490116,
+        8,
+        1.7000000029802322,
+        1.9000000059604645,
+        1.7000000029802322,
+        6.600000001490116,
+        0.4000000059604645,
+        0.5,
+        5.200000002980232,
+        2.399999998509884,
+        6.700000002980232,
+        2.0999999940395355,
+        4.300000004470348,
+        2.2000000029802322,
+        2.399999998509884,
+        4.899999998509884,
+        0.3999999985098839,
+        0.5999999940395355,
+        0.19999999552965164,
+        0.6000000014901161,
+        5.4000000059604645,
+        1.6999999955296516,
+        1.7999999970197678,
+        1.8000000044703484,
+        4.4000000059604645,
+        3.5999999940395355,
+        0.3999999985098839,
+        0.5,
+        0.5,
+        1.6000000014901161
+      ],
+      "framesOver50": 2,
+      "frameCount": 162,
+      "observers": [
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/shared/exercise-gaps.js?v=smooth-20261023-1:44:20\n    at http://127.0.0.1:8000/shared/exercise-gaps.js?v=smooth-20261023-1:60:3",
+          "calls": 30,
+          "records": 224,
+          "ms": 19.599999986588955
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:117:28\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:123:3",
+          "calls": 18,
+          "records": 140,
+          "ms": 0.30000000447034836
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:174:7\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:189:3",
+          "calls": 0,
+          "records": 0,
+          "ms": 0
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:175:7\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:189:3",
+          "calls": 6,
+          "records": 6,
+          "ms": 0.5
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:176:7\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:189:3",
+          "calls": 0,
+          "records": 0,
+          "ms": 0
+        }
+      ],
+      "longTasks": [
+        {
+          "start": 436.8999999985099,
+          "ms": 466
+        },
+        {
+          "start": 2376.1999999955297,
+          "ms": 93
+        }
+      ],
+      "errors": []
+    },
+    {
+      "url": "grade/lop2/clothes.html",
+      "loadMs": 2156,
+      "delta": {
+        "TaskDuration": 1.3833220000000002,
+        "ScriptDuration": 0.14276699999999998,
+        "LayoutDuration": 0.143725,
+        "RecalcStyleDuration": 0.197007,
+        "LayoutCount": 32,
+        "RecalcStyleCount": 97
+      },
+      "actionMs": [
+        10.899999998509884,
+        14.300000004470348,
+        1.6000000014901161,
+        4.600000001490116,
+        2.5,
+        7.5,
+        4.199999995529652,
+        0.8999999985098839,
+        1.0999999940395355,
+        0.7999999970197678,
+        3.399999998509884,
+        2.2000000029802322,
+        5.399999998509884,
+        2.8000000044703484,
+        2.600000001490116,
+        2.100000001490116,
+        1,
+        2,
+        0.8000000044703484,
+        0.5999999940395355,
+        6.299999997019768,
+        1.5999999940395355,
+        2.5,
+        1.8999999985098839,
+        2,
+        3.7000000029802322,
+        0.8999999985098839,
+        1.2000000029802322,
+        1.8000000044703484,
+        2.2000000029802322
+      ],
+      "framesOver50": 2,
+      "frameCount": 165,
+      "observers": [
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/shared/exercise-gaps.js?v=smooth-20261023-1:44:20\n    at http://127.0.0.1:8000/shared/exercise-gaps.js?v=smooth-20261023-1:60:3",
+          "calls": 29,
+          "records": 111,
+          "ms": 17.69999996572733
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:117:28\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:123:3",
+          "calls": 19,
+          "records": 101,
+          "ms": 1.8000000044703484
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:174:7\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:189:3",
+          "calls": 0,
+          "records": 0,
+          "ms": 0
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:175:7\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:189:3",
+          "calls": 6,
+          "records": 6,
+          "ms": 0.19999999552965164
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:176:7\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:189:3",
+          "calls": 0,
+          "records": 0,
+          "ms": 0
+        }
+      ],
+      "longTasks": [
+        {
+          "start": 141.70000000298023,
+          "ms": 68
+        },
+        {
+          "start": 731.2000000029802,
+          "ms": 100
+        },
+        {
+          "start": 2187.8000000044703,
+          "ms": 58
+        }
+      ],
+      "errors": []
+    },
+    {
+      "url": "grade/lop2/verbs.html",
+      "loadMs": 1991,
+      "delta": {
+        "TaskDuration": 1.322873,
+        "ScriptDuration": 0.16774399999999998,
+        "LayoutDuration": 0.12860100000000002,
+        "RecalcStyleDuration": 0.19577999999999998,
+        "LayoutCount": 32,
+        "RecalcStyleCount": 96
+      },
+      "actionMs": [
+        16.899999998509884,
+        7.699999995529652,
+        12.599999994039536,
+        6,
+        3.100000001490116,
+        6.299999997019768,
+        1,
+        0.8000000044703484,
+        6.699999995529652,
+        5.300000004470348,
+        5.5,
+        4.799999997019768,
+        3.5,
+        2.899999998509884,
+        3.3000000044703484,
+        3.7000000029802322,
+        0.7999999970197678,
+        1,
+        1.3999999985098839,
+        0.6000000014901161,
+        2.9000000059604645,
+        5,
+        3.7999999970197678,
+        2,
+        8.700000002980232,
+        2,
+        0.9000000059604645,
+        0.8999999985098839,
+        1.2999999970197678,
+        0.8000000044703484
+      ],
+      "framesOver50": 1,
+      "frameCount": 167,
+      "observers": [
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/shared/exercise-gaps.js?v=smooth-20261023-1:44:20\n    at http://127.0.0.1:8000/shared/exercise-gaps.js?v=smooth-20261023-1:60:3",
+          "calls": 33,
+          "records": 136,
+          "ms": 11.799999967217445
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:117:28\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:123:3",
+          "calls": 19,
+          "records": 101,
+          "ms": 0.29999999701976776
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:174:7\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:189:3",
+          "calls": 0,
+          "records": 0,
+          "ms": 0
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:175:7\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:189:3",
+          "calls": 6,
+          "records": 6,
+          "ms": 0.19999999552965164
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:176:7\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:189:3",
+          "calls": 0,
+          "records": 0,
+          "ms": 0
+        }
+      ],
+      "longTasks": [
+        {
+          "start": 309.20000000298023,
+          "ms": 52
+        },
+        {
+          "start": 611.6000000014901,
+          "ms": 64
+        },
+        {
+          "start": 2017.1000000014901,
+          "ms": 62
+        }
+      ],
+      "errors": []
+    },
+    {
+      "url": "grade/lop2/bodyparts.html",
+      "loadMs": 2202,
+      "delta": {
+        "TaskDuration": 1.350946,
+        "ScriptDuration": 0.15370299999999998,
+        "LayoutDuration": 0.11278199999999994,
+        "RecalcStyleDuration": 0.197275,
+        "LayoutCount": 32,
+        "RecalcStyleCount": 97
+      },
+      "actionMs": [
+        12.200000002980232,
+        3.3000000044703484,
+        2.2999999970197678,
+        6.200000002980232,
+        2.2000000029802322,
+        10.600000001490116,
+        6.5,
+        1.1000000014901161,
+        0.8000000044703484,
+        3.600000001490116,
+        3.2000000029802322,
+        2.3000000044703484,
+        2.100000001490116,
+        2.899999998509884,
+        5.800000004470348,
+        3.2000000029802322,
+        4.5999999940395355,
+        0.7999999970197678,
+        2.6999999955296516,
+        7.5,
+        2.5,
+        3,
+        5.700000002980232,
+        2.1999999955296516,
+        4.5999999940395355,
+        5.5,
+        0.5999999940395355,
+        4.300000004470348,
+        1.5,
+        0.8999999985098839
+      ],
+      "framesOver50": 1,
+      "frameCount": 167,
+      "observers": [
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:117:28\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:123:3",
+          "calls": 19,
+          "records": 113,
+          "ms": 1.5999999940395355
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:174:7\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:189:3",
+          "calls": 0,
+          "records": 0,
+          "ms": 0
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:175:7\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:189:3",
+          "calls": 6,
+          "records": 6,
+          "ms": 0.3999999985098839
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:176:7\n    at http://127.0.0.1:8000/grade/lop2/assets/js/grade2-navigation.js?v=smooth-20261023-1:189:3",
+          "calls": 0,
+          "records": 0,
+          "ms": 0
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/shared/exercise-gaps.js?v=smooth-20261023-1:44:20\n    at http://127.0.0.1:8000/shared/exercise-gaps.js?v=smooth-20261023-1:60:3",
+          "calls": 22,
+          "records": 104,
+          "ms": 14.00000000745058
+        }
+      ],
+      "longTasks": [
+        {
+          "start": 727.5,
+          "ms": 157
+        },
+        {
+          "start": 2223,
+          "ms": 53
+        }
+      ],
+      "errors": []
+    },
+    {
+      "url": "grade/lop6/unit1.html",
+      "loadMs": 1931,
+      "delta": {
+        "TaskDuration": 2.020924,
+        "ScriptDuration": 0.287056,
+        "LayoutDuration": 0.138793,
+        "RecalcStyleDuration": 0.601849,
+        "LayoutCount": 104,
+        "RecalcStyleCount": 237
+      },
+      "actionMs": [
+        95,
+        9.799999997019768,
+        9.700000002980232,
+        14,
+        10.100000001490116,
+        10.899999998509884,
+        9.100000001490116,
+        7.399999998509884,
+        5.799999997019768,
+        5.600000001490116,
+        6.800000004470348,
+        8,
+        8,
+        9,
+        10.299999997019768,
+        20.700000002980232,
+        8.299999997019768,
+        9.399999998509884,
+        9.200000002980232,
+        9.399999998509884,
+        6.700000002980232,
+        9.399999998509884,
+        6.200000002980232,
+        11.199999995529652,
+        9.100000001490116,
+        9.699999995529652,
+        7.399999998509884,
+        7.800000004470348,
+        9,
+        5.9000000059604645
+      ],
+      "framesOver50": 1,
+      "frameCount": 179,
+      "observers": [
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/shared/exercise-gaps.js?v=smooth-20261023-1:44:20\n    at http://127.0.0.1:8000/shared/exercise-gaps.js?v=smooth-20261023-1:60:3",
+          "calls": 86,
+          "records": 147,
+          "ms": 12.69999997317791
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at HTMLDocument.connectTablists (http://127.0.0.1:8000/shared/vocabulary-game.js?v=smooth-20261023-1:43:7)",
+          "calls": 30,
+          "records": 150,
+          "ms": 1.7000000029802322
+        }
+      ],
+      "longTasks": [
+        {
+          "start": 1940.5,
+          "ms": 96
+        }
+      ],
+      "errors": []
+    },
+    {
+      "url": "grade/lop10/unit7.html",
+      "loadMs": 1912,
+      "delta": {
+        "TaskDuration": 2.075005,
+        "ScriptDuration": 0.29753999999999997,
+        "LayoutDuration": 0.15528400000000003,
+        "RecalcStyleDuration": 0.582096,
+        "LayoutCount": 105,
+        "RecalcStyleCount": 236
+      },
+      "actionMs": [
+        87,
+        13.099999994039536,
+        10.299999997019768,
+        11.899999998509884,
+        14.5,
+        10.200000002980232,
+        11.799999997019768,
+        11.299999997019768,
+        10.399999998509884,
+        8.399999998509884,
+        28.100000001490116,
+        18.399999998509884,
+        13.200000002980232,
+        5.5,
+        8.699999995529652,
+        10.399999998509884,
+        8.299999997019768,
+        5.600000001490116,
+        7.200000002980232,
+        10.099999994039536,
+        7.100000001490116,
+        10.100000001490116,
+        5.600000001490116,
+        7.0999999940395355,
+        8.700000002980232,
+        8,
+        8.100000001490116,
+        5.5,
+        7.299999997019768,
+        9.399999998509884
+      ],
+      "framesOver50": 1,
+      "frameCount": 178,
+      "observers": [
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at http://127.0.0.1:8000/shared/exercise-gaps.js?v=smooth-20261023-1:44:20\n    at http://127.0.0.1:8000/shared/exercise-gaps.js?v=smooth-20261023-1:60:3",
+          "calls": 84,
+          "records": 145,
+          "ms": 14.499999970197678
+        },
+        {
+          "source": "Error\n    at new window.MutationObserver (<anonymous>:2:178)\n    at HTMLDocument.connectTablists (http://127.0.0.1:8000/shared/vocabulary-game.js?v=smooth-20261023-1:43:7)",
+          "calls": 30,
+          "records": 150,
+          "ms": 0.8000000044703484
+        }
+      ],
+      "longTasks": [
+        {
+          "start": 1929,
+          "ms": 90
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

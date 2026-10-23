@@ -11,7 +11,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-19c12c60-9cfd-41bf-9cc5-5a5bf13d999e.png",
       "sha256": "320bb689d0d612890e72c448152809ca332a8b54bcced6572651445a9c1ec691",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Quét nhà: cán chổi và tay cầm đúng."
     },
     {
       "key": "unit1-2",
@@ -23,7 +25,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-6c1e238b-a220-4706-ba78-3795025e76d0.png",
       "sha256": "029354ec9d8470e17a0e4e1b83070fb5d847efda4461bfe243a56c4dd313fb96",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Gia đình đi làm về: túi xách, chân tay và cửa hợp lý."
     },
     {
       "key": "unit1-3",
@@ -35,7 +39,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-f8e88911-4886-4cc6-8874-37dad4e85369.png",
       "sha256": "a48787971a733fc05b07d35f046f9822f0753fc65e4000e995f616a10d4755fa",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Cho mèo ăn: bát, thức ăn và mèo hợp lý."
     },
     {
       "key": "unit1-4",
@@ -47,7 +53,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-44d1fad3-d7d0-42d9-9926-197a6b59e245.png",
       "sha256": "891db7abe2642d8af32e160c282a3eb239d2e0923fe3731ef48d375731e66be2",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Tặng hoa cảm ơn: bó hoa và tay nhận hợp lý."
     },
     {
       "key": "unit1-5",
@@ -59,7 +67,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-fdddafa6-c80c-41de-84ac-5de40aa7d18f.png",
       "sha256": "057f57e2d1933ef8b46f5effcf29e413014d22831b58c624b92c19e6921a3742",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Cùng trồng cây: thân/rễ và tay vun đất hợp lý."
     },
     {
       "key": "unit1-6",
@@ -71,7 +81,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-686c2603-aca7-41a6-9ed8-077b1c609dea.png",
       "sha256": "3b6b288c536b9bc49e68ad25f441bf8dc4bc6d039d4f6eb35325f36ff9c36dc1",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Hỗ trợ học: bút, vở và hai nhân vật hợp lý."
     },
     {
       "key": "unit1-7",
@@ -85,7 +97,9 @@
       "repairPrompt": "Remove ALL tiny writing, numerals, symbols and markings from the washing machine control panel. Make the entire control panel smooth plain ivory with a plain blank black display and one unlabelled round knob. Keep the same Vietnamese girl loading laundry, same colored pencil drawing, composition, clothes and natural anatomy. No text anywhere.",
       "sha256": "db345e4efb9ce259ab00a5686cc6a91c051307874ddec53f1b855e76f4a61ddb",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Giặt đồ: cửa máy giặt, lồng và quần áo hợp lý."
     },
     {
       "key": "unit1-8",
@@ -97,7 +111,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-d4cafa6f-e9a2-4d18-bdeb-c057c3b31edd.png",
       "sha256": "b451101938f0d1c5913431b9757bc88c92ecf3ccee2272cb48373e6c53ba0887",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Bữa cơm: bát, đũa và món ăn hợp lý."
     },
     {
       "key": "unit2-1",
@@ -109,7 +125,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png",
       "sha256": "2bd2ecdd9b5d0e139171ecaf759fa4ab3e3bbc55d15b282075bc745872f2fbb8",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Ô tô và xe đạp tách làn; bánh xe và tư thế cầm lái hợp lý."
     },
     {
       "key": "unit2-2",
@@ -121,7 +139,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png",
       "sha256": "88e7ab727b47a5f0b7b5ffd509485600b1b1b04c39adc1f136fc80e4ecc7c65e",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Túi vải chứa rau, quai túi và tay nâng đúng."
     },
     {
       "key": "unit2-3",
@@ -133,7 +153,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png",
       "sha256": "d2d6e5f7ef45ca7ddf146d47edbb0d6dc8584d7e5cf10302e9e1115ffcac3e16",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Bình tái sử dụng có một nắp trên và đáy kín; túi gấp hợp lý."
     },
     {
       "key": "unit2-4",
@@ -145,7 +167,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png",
       "sha256": "bcb2d82e403abd34f31a9890cc1acfd9ddc08a9c75e02a15963267954579c38a",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Tay vặn đúng núm vòi, giọt nước ở miệng vòi."
     },
     {
       "key": "unit2-5",
@@ -157,7 +181,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png",
       "sha256": "dc3bb119d6c94b16de407ce0c3a53168cd0f99b406190eb7574a3c8c75c00319",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Thu hoạch rau, luống và thùng phân hữu cơ hợp lý."
     },
     {
       "key": "unit2-6",
@@ -169,7 +195,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png",
       "sha256": "898cda56c4b64dc94681efc5e281316655bfef8185f6b368dbdd24e333c9f273",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Cốc/rác nằm trên đường; miệng và đáy cốc phân biệt được."
     },
     {
       "key": "unit2-7",
@@ -181,7 +209,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png",
       "sha256": "2cc42d4b0f7a4aba308f2fc1ef04b45146d09b8ecbd33b7d49d8852b9e2190e7",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Giấy đi qua miệng thùng; tay cầm và chồng giấy đúng."
     },
     {
       "key": "unit2-8",
@@ -193,7 +223,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-617fe85c-d3f5-4f3e-b7ab-79af6ac0c78b.png",
       "sha256": "eda0c26937ab8bec75ad7cef9222b555ded14f97eb5705c17aff1fa663c3b0c5",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Xe đạp có bánh, khung, ghi đông và túi/bình hợp lý."
     },
     {
       "key": "unit3-1",
@@ -205,7 +237,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png",
       "sha256": "ab8a0706832736cdaa8a84ed321815d82c060e1e863f203d00ff30ce270598e6",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Khán giả nhìn/vỗ tay về sân khấu; ghế và tay hợp lý."
     },
     {
       "key": "unit3-2",
@@ -217,7 +251,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png",
       "sha256": "bcb0ceebf1f850d0aa28ff8afdbeba4f9e08e991c7e90c2674faef280743a532",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Micro một đầu thu một đầu dây, tư thế hát đúng."
     },
     {
       "key": "unit3-3",
@@ -229,7 +265,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png",
       "sha256": "efb33cb83083cfc1d5cc7f0f3e89ee8e5b31d4028352fb5095e125cb0d03a355",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Giám khảo nghe và ghi chấm; bút, tai nghe và đèn hợp lý."
     },
     {
       "key": "unit3-4",
@@ -241,7 +279,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png",
       "sha256": "57ef38d16b7e3a9a6d9e25bab80050c13b31d397242d53e65b8517ad56e94ec3",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Guitar có thân/cần/ngựa đàn; tư thế gảy và bấm hợp lý."
     },
     {
       "key": "unit3-5",
@@ -253,7 +293,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png",
       "sha256": "deff0e7bd650a7ae96cd5b7e052303ca209dbee6bd0af9d6f2def4b3961dc781",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Đĩa nhạc, vỏ bìa và tay cầm đúng."
     },
     {
       "key": "unit3-6",
@@ -265,19 +307,27 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png",
       "sha256": "813f72bcb88e80d1ae6f9d183847c93fc42eb14eb6ca175062ec9cb763dbd97a",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Thí sinh với cúp và micro; dây là dây micro, không phải bộ phận thừa."
     },
     {
       "key": "unit3-7",
       "unit": 3,
       "wordId": 7,
       "term": "composer",
-      "file": "grade/lop10/assets/images/pencil/unit3/7-v1.webp",
+      "file": "grade/lop10/assets/images/pencil/unit3/7-v2.webp",
       "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese composer thoughtfully working at a piano with a pencil in hand and plain blank music paper on its stand, no notation, symbols or text.",
-      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png",
-      "sha256": "fb415fe0f19af4f17fd52efb59374b0b06d8f91a7db5a29e5b29d2425bf2a0c1",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-c50be2f4-6606-43f4-92e2-59898e3ad76c.png",
+      "sha256": "ae2ba713353495abb745d52aab50b22d1fb52de95aa682460a96b46f05415a64",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "previousFile": "grade/lop10/assets/images/pencil/unit3/7-v1.webp",
+      "previousSha256": "fb415fe0f19af4f17fd52efb59374b0b06d8f91a7db5a29e5b29d2425bf2a0c1",
+      "repairPrompt": "Use case: precise-object-edit. Image 1 is the edit target. Repair ONLY the visible piano keyboard in this coloured-pencil composer illustration. Draw a straight physically correct piano keyboard: consistent parallel rectangular white keys, narrower raised black keys set BACK toward the fallboard in repeating groups of TWO black keys then THREE black keys, separated by the normal gaps; no overlapping, floating, bent or melted keys and no extra row of keys. Match the keyboard's existing diagonal perspective precisely. Preserve the young composer, thinking pose, pencil, grand-piano body, blank music paper, room, lighting, paper texture and square composition. Keep all pages blank and no text anywhere.",
+      "repairInitialPrompt": "Use case: precise-object-edit. Image 1 is the edit target. Repair ONLY the visible piano keyboard in this coloured-pencil composer illustration. Draw a straight physically correct piano keyboard: consistent parallel rectangular white keys, narrower raised black keys set BACK toward the fallboard in repeating groups of TWO black keys then THREE black keys, separated by the normal gaps; no overlapping, floating, bent or melted keys and no extra row of keys. Match the keyboard's existing diagonal perspective precisely. Preserve the young composer, thinking pose, pencil, grand-piano body, blank music paper, room, lighting, paper texture and square composition. Keep all pages blank and no text anywhere.",
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Bàn phím thẳng theo phối cảnh, phím trắng tách đều và phím đen đặt lùi theo nhóm hai–ba, không chồng/loạn hàng như bản cũ."
     },
     {
       "key": "unit3-8",
@@ -289,7 +339,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-8bc28e4f-14e9-41dc-af1f-9e9ea3aa8bdf.png",
       "sha256": "9b62e206c0f8352399c7811f9e432e2e208618c0a9d63c966289a65dc9a5ed6f",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Guitar, sáo và trống có cấu trúc nhìn chung hợp lý; không chữ."
     },
     {
       "key": "unit4-1",
@@ -301,7 +353,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png",
       "sha256": "381c5a216e0601a139be9639665bcdb9820bfa42cefc4b93ba4f6e6d20b2312e",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Đọc sách cho trẻ: sách hai trang, tay giữ và tư thế ngồi hợp lý."
     },
     {
       "key": "unit4-2",
@@ -313,7 +367,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png",
       "sha256": "ecd15fc4ec96fc941ae51fa771d8c3b1ed6b67316d55a882f67bb99c0130ca6e",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Trao thùng quần áo: tay đỡ cùng một thùng, quần áo trong thùng hợp lý."
     },
     {
       "key": "unit4-3",
@@ -325,7 +381,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png",
       "sha256": "33f533c66001e039f0619c6b487e9b5c34fb799b6858eba159c075a9fcd588c9",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Vườn cộng đồng: xẻng, bình tưới và dòng nước từ vòi đúng."
     },
     {
       "key": "unit4-4",
@@ -337,7 +395,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png",
       "sha256": "bab43d2b0b6af6f3158144c3bcb99038dc4614c868feb238d0d31c65db780306",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Hai bạn được hưởng khu vườn, vật thể và giải phẫu không thấy lỗi logic."
     },
     {
       "key": "unit4-5",
@@ -349,7 +409,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png",
       "sha256": "55eac6d669985888e600a181e9a05f5c9228407e359252ee2ef0e38fb782830f",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Trao giỏ rau: giỏ và tay hai người hợp lý."
     },
     {
       "key": "unit4-6",
@@ -361,7 +423,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png",
       "sha256": "9e9f413ae288995cf29e79639d893f618657264de4db67ce8b93b9fcdb5deed0",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Phát súp: muôi, nồi và bát tách biệt hợp lý."
     },
     {
       "key": "unit4-7",
@@ -373,7 +437,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png",
       "sha256": "98f81dd247ca43a21b3fb9cd1e462038f2347ed3320e113e0ce0b0eea79f632a",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Mái ấm: người đón ở cửa, phòng có giường và chăn hợp lý."
     },
     {
       "key": "unit4-8",
@@ -385,7 +451,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-2bdf8155-0636-42cf-bc8f-5c7ca838620a.png",
       "sha256": "4df991b78efff77ee3886d76cf211e90e73b1a43e729c038bba4edf2d6525cb9",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Gây quỹ: đồng xu trên miệng lọ, quầy đồ thủ công hợp lý."
     },
     {
       "key": "unit5-1",
@@ -397,7 +465,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png",
       "sha256": "aaa70c3d45434c459d45e261820b4087ccfc73ccc474d277121edad13be15497",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Thiết bị đặt vững trên bàn, vỏ và màn hình hợp lý."
     },
     {
       "key": "unit5-2",
@@ -409,7 +479,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png",
       "sha256": "60ce3ccc240ba0250868459eef2aee1400e84f4ed538640cea37ec44afa1fd93",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Tay gắp cơ khí có hai ngàm và khớp, khối gỗ trên bàn hợp lý."
     },
     {
       "key": "unit5-3",
@@ -421,31 +493,45 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png",
       "sha256": "542a8e84f04e07fa2916a34d8613c53c6f4a718a6bd7373bffbe180384ce1bba",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Pin dự phòng, cáp USB và điện thoại không thấy bộ phận thừa."
     },
     {
       "key": "unit5-4",
       "unit": 5,
       "wordId": 4,
       "term": "experiment",
-      "file": "grade/lop10/assets/images/pencil/unit5/4-v1.webp",
+      "file": "grade/lop10/assets/images/pencil/unit5/4-v2.webp",
       "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A safe school science experiment: a Vietnamese teenager wearing goggles carefully observing water filtration through gravel and sand in a clear bottle, tidy table.",
-      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png",
-      "sha256": "8311161c7df58a364bab99e3453ede90f2598446c078c77ddf997c16d25b7726",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-5022dbb5-839e-4eb8-825c-66cbf2be9afe.png",
+      "sha256": "5f72d7063dbb7e1529793303a8d783ab44278e2de65c3c8720ec9f0157e4bcda",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "previousFile": "grade/lop10/assets/images/pencil/unit5/4-v1.webp",
+      "previousSha256": "8311161c7df58a364bab99e3453ede90f2598446c078c77ddf997c16d25b7726",
+      "repairPrompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil student water-filtration experiment. Correct the physically unsupported upside-down filter bottle: add a realistic compact laboratory support stand on the tabletop, with a stable heavy base, ONE vertical metal rod placed beside the receiving beaker, and a clearly visible clamp/ring securely gripping the filter bottle around its upper body. The filter must visibly be supported by this stand, not floating. Keep a clear air gap between the downward-facing filter nozzle and the receiving beaker rim. The bottle is cut open at its upper rim to receive water; filter layers are gravel above sand above charcoal, retained by cotton at the neck, with drips leaving a small hole in the cap. Water follows gravity downward into the lower beaker. Preserve the same student, safety goggles, pouring hand, natural anatomy, table, soft coloured-pencil style, warm ivory background and square frame. No labels, letters, numbers or watermark.",
+      "repairInitialPrompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil student water-filtration experiment. Correct the physically unsupported upside-down filter bottle: add a realistic compact laboratory support stand on the tabletop, with a stable heavy base, ONE vertical metal rod placed beside the receiving beaker, and a clearly visible clamp/ring securely gripping the filter bottle around its upper body. The filter must visibly be supported by this stand, not floating. Keep a clear air gap between the downward-facing filter nozzle and the receiving beaker rim. The bottle is cut open at its upper rim to receive water; filter layers are gravel above sand above charcoal, retained by cotton at the neck, with drips leaving a small hole in the cap. Water follows gravity downward into the lower beaker. Preserve the same student, safety goggles, pouring hand, natural anatomy, table, soft coloured-pencil style, warm ivory background and square frame. No labels, letters, numbers or watermark.",
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Chai được giữ bằng vòng kẹp nối cột với chân đế trên bàn; đầu ra ở trên cốc, nước chảy xuống, lớp lọc được giữ bằng bông."
     },
     {
       "key": "unit5-5",
       "unit": 5,
       "wordId": 5,
       "term": "effective",
-      "file": "grade/lop10/assets/images/pencil/unit5/5-v1.webp",
+      "file": "grade/lop10/assets/images/pencil/unit5/5-v2.webp",
       "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A working air filter with visible grey dust particles on one side and clean clear air on the other, no arrows or labels, simple natural visual comparison.",
-      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png",
-      "sha256": "8922375a38e6c102504dc10a127c9e397a4e0f8afc2ca706c7a6af17156ad7a8",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-c414f105-8874-46e4-b81d-d1b976fdc2cd.png",
+      "sha256": "ae5759c11af8690bdefb0a1e7bb64ad1c7d2695173437068f2cbbe47ac414f1a",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "previousFile": "grade/lop10/assets/images/pencil/unit5/5-v1.webp",
+      "previousSha256": "8922375a38e6c102504dc10a127c9e397a4e0f8afc2ca706c7a6af17156ad7a8",
+      "repairPrompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil illustration of an effective air purifier. Repair the physical air path: keep the existing broad front intake/filter grille on the left/front face with dust approaching it from the left. Add a clearly visible clean-air OUTLET GRILLE with narrow horizontal slots on the RIGHT SIDE PANEL of the same device. The soft blue airflow strokes must begin exactly at that outlet grille and travel away to the right, never through a solid casing panel. One coherent device, solid intact outer frame, clearly separate intake and outlet. Preserve its overall size, ivory housing, tabletop, background plant/window, gentle coloured-pencil shading and square composition. No writing, labels, numbers or watermark.",
+      "repairInitialPrompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil illustration of an effective air purifier. Repair the physical air path: keep the existing broad front intake/filter grille on the left/front face with dust approaching it from the left. Add a clearly visible clean-air OUTLET GRILLE with narrow horizontal slots on the RIGHT SIDE PANEL of the same device. The soft blue airflow strokes must begin exactly at that outlet grille and travel away to the right, never through a solid casing panel. One coherent device, solid intact outer frame, clearly separate intake and outlet. Preserve its overall size, ivory housing, tabletop, background plant/window, gentle coloured-pencil shading and square composition. No writing, labels, numbers or watermark.",
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Cửa gió ngang nhìn rõ trên mặt hông, các nét khí sạch xuất phát từ cửa gió; mặt hút phía trước tách biệt."
     },
     {
       "key": "unit5-6",
@@ -457,7 +543,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png",
       "sha256": "6e750c421f75dc1a0493b9ffb78174dc31aefd8520d9519d33b9f07e8d96c783",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Máy tính bảng có bao chống, biểu tượng ứng dụng không chữ, hợp lý."
     },
     {
       "key": "unit5-7",
@@ -469,7 +557,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png",
       "sha256": "6b0689441b33ed966781835d8d669044ddeba6e02bba003a1205cbef639e8e50",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Robot có ngàm gắp và các hộp khối hình đúng nhau."
     },
     {
       "key": "unit5-8",
@@ -481,7 +571,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4ac0796d-56a8-458c-8afe-dfc8a7a85570.png",
       "sha256": "ce3ff33b15191d5d565dacf668b5f485b947acb033984ad83846f964ffa97bc8",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Tấm pin đặt trên mái và dây cáp cấp bóng đèn, hình minh họa đơn giản hợp lý."
     },
     {
       "key": "unit6-1",
@@ -493,7 +585,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png",
       "sha256": "5d27cd4d3cc9e405fef4836b11249418648112d2e8d9f5683af70fb60256e54b",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Hai học sinh trên hai đĩa cân cân bằng là ẩn dụ bình đẳng có chủ đích; không lỗi đồ vật."
     },
     {
       "key": "unit6-2",
@@ -505,7 +599,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png",
       "sha256": "164f4b5dd157a0e5dbd8867104d291c6706c1b5b0ed8cffd7460f518f7be8785",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Cô giáo mở cơ hội vào phòng học; cửa, kính hiển vi và nhóm học sinh hợp lý."
     },
     {
       "key": "unit6-3",
@@ -517,7 +613,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png",
       "sha256": "d344339a6857e580b519550411149bbe8f8a828ef10696a162e031e8a3ab53b0",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Bị chặn ở cửa minh họa phân biệt đối xử; tư thế tay và cửa đúng."
     },
     {
       "key": "unit6-4",
@@ -529,7 +627,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png",
       "sha256": "e72ef56db11f524691bf60f400a3822e2512e1b3f27cfe8ba5ffb0e868c974fb",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Kỹ sư đo mô hình cầu: thước, trụ và dây cầu có cấu trúc hợp lý."
     },
     {
       "key": "unit6-5",
@@ -541,7 +641,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png",
       "sha256": "db49bcbedf7fa0545ed5283be0c111d8cb1ce546c7867e4076be397eaeb9e8e4",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Cô giáo động viên ở bàn thí nghiệm; ống nghiệm và mô hình hợp lý."
     },
     {
       "key": "unit6-6",
@@ -553,19 +655,27 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png",
       "sha256": "bec715ae47718cc23d62742b37de364a7037e998bcb3fbdcb9ccd57c83963c10",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Quyền học: nhóm học sinh, xe lăn và lối vào trường hợp lý."
     },
     {
       "key": "unit6-7",
       "unit": 6,
       "wordId": 7,
       "term": "equal pay",
-      "file": "grade/lop10/assets/images/pencil/unit6/7-v1.webp",
+      "file": "grade/lop10/assets/images/pencil/unit6/7-v2.webp",
       "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese man and woman doing the same office work at neighbouring desks, receiving identical plain coin stacks from a manager; clearly equal pay, no writing or numbers.",
-      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png",
-      "sha256": "85f154db8038d685f27ccc6e41106e167cebfba7219dfb659c56839e6be6c81d",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-1cfd6bed-854c-413d-819b-36807355b0a5.png",
+      "sha256": "f227ebd6d38f757d6ad761007237faef367eaeb14ace3cd44830b30be2429620",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "previousFile": "grade/lop10/assets/images/pencil/unit6/7-v1.webp",
+      "previousSha256": "85f154db8038d685f27ccc6e41106e167cebfba7219dfb659c56839e6be6c81d",
+      "repairPrompt": "Use case: precise-object-edit. Edit target: the attached equal-pay office illustration. Critical correction: DELETE BOTH existing coin stacks completely and redraw them as exactly THREE coins on the man's open palm and exactly THREE coins on the woman's open palm. SIX coins total. The TWO stacks must be identical in physical height and diameter, each showing THREE thick clearly separated gold discs (three visible coin side faces). Place their supporting palms at the SAME horizontal height so equality is visually unmistakable. Neither stack may be higher or contain more discs. The manager holds NO additional coins, both of his empty hands stay open. Keep the same three people, natural hands, faces, clothing, desks, laptops, pencil strokes, warm-paper background and square frame. Do not add currency symbols, writing or watermarks.",
+      "repairInitialPrompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil illustration for EQUAL PAY. Replace ALL existing coins with exactly TWO identical stacks of gold coins: each stack has exactly FIVE equal-sized flat coin discs, exactly the same height, diameter and colour. ONE stack rests visibly on the open receiving palm of the man on the left; ONE stack rests on the open receiving palm of the woman on the right. The manager's two hands are open behind or just above the two stacks as he gives equal rewards, not holding a third stack. No coins anywhere else, no extra column, no floating coin, no unequal amounts. Keep all three adults, clothing, faces, two desks/laptops, office background and warm coloured-pencil paper style. Natural hands with five fingers, no merged arms. No text, currency symbols, labels or watermark.",
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Hai chồng tiền đều đúng ba đồng, cùng đường kính/độ cao, đặt trên hai bàn tay ở cùng mức; quản lý không có chồng thứ ba."
     },
     {
       "key": "unit6-8",
@@ -577,7 +687,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-3498b49a-8353-461f-a043-9dd9a58af673.png",
       "sha256": "67669244f13e6212fb02afa2a99b4cf4fe085d7f0c5bf46ac21da9c57eed1b12",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Lính cứu hỏa kiểm tra khớp nối ống; một miệng nối và các ngàm hợp lý."
     },
     {
       "key": "unit7-1",
@@ -589,19 +701,26 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png",
       "sha256": "5f38c9a3273277627f71d15f44393d589c54a3d6673253551619c39d100d129b",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Mô hình cầu và các thanh được đặt/ghép trên bàn; tay không xuyên vật."
     },
     {
       "key": "unit7-2",
       "unit": 7,
       "wordId": 2,
       "term": "peacekeeping",
-      "file": "grade/lop10/assets/images/pencil/unit7/2-v1.webp",
-      "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: Two peacekeeping workers wearing plain blue helmets delivering a box of supplies near a peaceful village, respectful calm scene, no weapons or insignia or text.",
-      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png",
-      "sha256": "09fd9d691dbfbda713e3e90b15dc3f34140b951cc9c2c64001fb456c9fd06bc7",
+      "file": "grade/lop10/assets/images/pencil/unit7/2-v4.webp",
+      "prompt": "Use case: illustration-story. Use attached image only as a reference for the two Vietnamese soldiers' faces, traditional olive-green uniforms, green Vietnamese pith helmets (mu coi) with all-around brim, chinstrap and small red front badge with one yellow star, national flag sleeve patches, and warm colored pencil art style. Replace the entire aid delivery situation with the owner's requested scene: the same two adult Vietnamese soldiers standing watch to protect their country's peaceful mountainous land border. Medium-wide full-body scene: one soldier holds binoculars correctly to his eyes with both hands while observing a distant mountain pass; the other stands upright attentively beside a single plain pale stone boundary marker on a safe grounded hillside path. Both wear plain olive-green long-sleeve military shirts with two chest pockets, matching olive trousers, simple dark belts and black rubber sandals. A small Vietnamese flag on a vertical pole nearby: red rectangle with exactly one centered yellow five-pointed star. Clear tranquil green forested mountains and winding frontier path, alert protective duty rather than combat. No mother, no children, no relief box, no village aid handover, no blue military clothing, no blue helmets, no blue vests, no camouflage, no armor, no foreign flags, no guns or violence. Boundary stone completely blank: no letters, numbers or writing. Do not depict an actual disputed border or identifiable geographic map. Natural anatomy, two coherent hands for each person, binoculars held naturally, realistic safe ground and flagpole. Single cohesive square image, colored pencil strokes on warm cream paper, no text or watermark anywhere.",
+      "source": "C:/Users/Admin/.codex/generated_images/01a167eb-828e-73d0-b75a-5eca4c77c5c4/exec-b29a42a7-8b2e-4254-82f7-8a0392899ab8.png",
+      "sha256": "cbad6db3c27d271b1fdda2c3432bcbb25e2a9eb39b9040823238aaf2ea329c18",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-23",
+      "logicReview": "Đã mở xem trực tiếp: hai người lính mặc quân phục xanh trơn, đội mũ cối xanh và đi dép cao su, đứng gác bên cột mốc trên đường biên núi rừng; một người quan sát bằng ống nhòm. Cờ đỏ có một sao vàng, không chữ trong ảnh, tay/người/ống nhòm và mặt đất hợp lý. Thay cảnh trao hàng cứu trợ theo yêu cầu trực tiếp của người dùng; giữ nghĩa peacekeeping là gìn giữ hòa bình.",
+      "previousFile": "grade/lop10/assets/images/pencil/unit7/2-v1.webp",
+      "previousSha256": "09fd9d691dbfbda713e3e90b15dc3f34140b951cc9c2c64001fb456c9fd06bc7",
+      "repairPrompt": "Use case: illustration-story. Use attached image only as a reference for the two Vietnamese soldiers' faces, traditional olive-green uniforms, green Vietnamese pith helmets (mu coi) with all-around brim, chinstrap and small red front badge with one yellow star, national flag sleeve patches, and warm colored pencil art style. Replace the entire aid delivery situation with the owner's requested scene: the same two adult Vietnamese soldiers standing watch to protect their country's peaceful mountainous land border. Medium-wide full-body scene: one soldier holds binoculars correctly to his eyes with both hands while observing a distant mountain pass; the other stands upright attentively beside a single plain pale stone boundary marker on a safe grounded hillside path. Both wear plain olive-green long-sleeve military shirts with two chest pockets, matching olive trousers, simple dark belts and black rubber sandals. A small Vietnamese flag on a vertical pole nearby: red rectangle with exactly one centered yellow five-pointed star. Clear tranquil green forested mountains and winding frontier path, alert protective duty rather than combat. No mother, no children, no relief box, no village aid handover, no blue military clothing, no blue helmets, no blue vests, no camouflage, no armor, no foreign flags, no guns or violence. Boundary stone completely blank: no letters, numbers or writing. Do not depict an actual disputed border or identifiable geographic map. Natural anatomy, two coherent hands for each person, binoculars held naturally, realistic safe ground and flagpole. Single cohesive square image, colored pencil strokes on warm cream paper, no text or watermark anywhere."
     },
     {
       "key": "unit7-3",
@@ -613,7 +732,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png",
       "sha256": "59bc316229788b354871366b5bf05602e4c819331504e923ddb95f51cd97eaab",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Trồng cây trước thư viện, cây có thân và gốc đất hợp lý."
     },
     {
       "key": "unit7-4",
@@ -625,7 +746,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png",
       "sha256": "ffe270d6ad80b8115946bc631e266e9289832252a7498383c46a296ee78b6665",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Nhóm trao đổi trên bản đồ khu vực minh họa; bàn và tay hợp lý, không nhãn địa lý."
     },
     {
       "key": "unit7-5",
@@ -637,7 +760,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png",
       "sha256": "6316bc5dffbaa0066f50cb95e630e5f568c729b79f311ffc07a9adeae6f49c4f",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Bình tưới nghiêng, nước từ đầu vòi rơi đúng gốc cây."
     },
     {
       "key": "unit7-6",
@@ -649,7 +774,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png",
       "sha256": "d18e515d8639a81630b3718603d9cecc2763f2ba53bbea0d6c2bd54c66126eea",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Cầu đi bộ có hai đầu, lan can và trụ, dòng suối thông dưới cầu."
     },
     {
       "key": "unit7-7",
@@ -663,7 +790,9 @@
       "repairPrompt": "Remove the visible numeral 9 and ALL other writing or numerals from the man’s backpack straps and any other part of the image. Keep all people, relief supplies, setting, composition and colored pencil style unchanged. All straps and surfaces must be plain without any symbol or text.",
       "sha256": "836c1c599636d3b5e59df5ff42e241741a5fe828072c98ac5cc6c2ebb2edcd36",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Trao hàng viện trợ, chai nước có đáy kín và nắp trên, thùng được đỡ."
     },
     {
       "key": "unit7-8",
@@ -675,7 +804,9 @@
       "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-db2998ea-f711-485c-9735-e73a5c437dba.png",
       "sha256": "02f17955d7b4590d944f1f6a27087446678d9ae23286103abf455908ca4a9df1",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Quả địa cầu có vòng đỡ và chân trên bàn; các tay chỉ đúng bề mặt."
     },
     {
       "key": "unit8-1",
@@ -689,7 +820,9 @@
       "cell": 1,
       "sha256": "2a5822ff183ab1aaecc031b18725d34e58745d7434a3f2b263184d1ae44a85be",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Hai cảnh học trực tuyến/trực tiếp phân chia bằng nét minh họa; laptop và sách hợp lý."
     },
     {
       "key": "unit8-2",
@@ -703,7 +836,9 @@
       "cell": 2,
       "sha256": "17810106312677d3f097b6ee72e2969b2bf80849db02d305769b546412df6fce",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Laptop, tablet và bút cảm ứng đặt trên bàn đúng kết cấu."
     },
     {
       "key": "unit8-3",
@@ -717,21 +852,29 @@
       "cell": 3,
       "sha256": "32d641af1b37cadeafb8c652165b9216915f517be4ef7277e2b33e180982ae47",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Mảnh ghép bay là ký hiệu tương tác có chủ đích, không phải vật thật trong cảnh; tay giữ tablet hợp lý."
     },
     {
       "key": "unit8-4",
       "unit": 8,
       "wordId": 4,
       "term": "access",
-      "file": "grade/lop10/assets/images/pencil/unit8/4-v1.webp",
+      "file": "grade/lop10/assets/images/pencil/unit8/4-v2.webp",
       "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A Vietnamese teenager opening a digital lesson represented by an open laptop with a small unlocked padlock pictogram beside it, screen contains only a book pictogram.",
-      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-4a5aca9b-0860-427a-8d26-3caf5e4957a1.png",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-3f328741-c7ff-4a7c-bcc7-fd5d93a7164e.png",
       "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 8, New Ways to Learn, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A Vietnamese teenager learning with a laptop at home in one part of a cohesive illustration and discussing a book with a teacher in a classroom in the other, connected by flowing pencil line, no words.\n2. An open unbranded laptop, tablet and stylus arranged neatly as digital learning tools, screens have only simple abstract shapes, no letters or numbers.\n3. A Vietnamese teenager tapping a colourful puzzle on a tablet while pictorial puzzle pieces visibly respond, interactive learning, no interface text or digits.\n4. A Vietnamese teenager opening a digital lesson represented by an open laptop with a small unlocked padlock pictogram beside it, screen contains only a book pictogram.\n5. A focused Vietnamese teenager studying alone at a tidy home desk with an open blank notebook, pencil and reading lamp, clear independent self-study.\n6. A useful collection of learning resources: plain books, globe, headphones and an open laptop with only a book pictogram, no text or labels.\n7. A Vietnamese teenager at a home desk taking an online lesson, laptop screen shows only the portrait of a friendly teacher with simple geometric diagrams, no text or digits.\n8. Four Vietnamese teenage students discussing ideas around a shared table with blank notebooks, natural attentive faces and gestures, no speech bubbles or words.",
       "cell": 4,
-      "sha256": "741be524abcbfd960708c61b5b4b7e061bc99348b44035ba357440fa3f172a1d",
+      "sha256": "f8b20251b3dc3c8f535cabd0ee723f8709324bef673fdd79072bdab7f3db8971",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "previousFile": "grade/lop10/assets/images/pencil/unit8/4-v1.webp",
+      "previousSha256": "741be524abcbfd960708c61b5b4b7e061bc99348b44035ba357440fa3f172a1d",
+      "repairPrompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil illustration for access to learning. Correct the person/computer orientation: reposition and angle the ONE open laptop so its screen AND keyboard face the teenage student, not away from her. Show a natural three-quarter side view: the girl sits to the left of the laptop at the desk, looking at the inner display from its front side; one hand can reach its trackpad normally. The viewer may see the inner display obliquely from beside her. Display only a simple open-book picture with blank pages; no text. Keep the same girl, pink sweater, joyful expression, desk, plant, ivory paper background and blue unlocked-padlock symbol as an intentional educational icon. No second laptop, no disconnected extra keyboard, no screens on the back of a lid, no extra fingers. Preserve the coloured-pencil style and square composition.",
+      "repairInitialPrompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil illustration for access to learning. Correct the person/computer orientation: reposition and angle the ONE open laptop so its screen AND keyboard face the teenage student, not away from her. Show a natural three-quarter side view: the girl sits to the left of the laptop at the desk, looking at the inner display from its front side; one hand can reach its trackpad normally. The viewer may see the inner display obliquely from beside her. Display only a simple open-book picture with blank pages; no text. Keep the same girl, pink sweater, joyful expression, desk, plant, ivory paper background and blue unlocked-padlock symbol as an intentional educational icon. No second laptop, no disconnected extra keyboard, no screens on the back of a lid, no extra fingers. Preserve the coloured-pencil style and square composition.",
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Học sinh ngồi bên trái, nhìn được mặt trong màn hình laptop đặt chếch về mình; một bàn phím gắn đúng đế, tay chạm vùng điều khiển."
     },
     {
       "key": "unit8-5",
@@ -745,7 +888,9 @@
       "cell": 5,
       "sha256": "88da5f8b08196658ab40abfee2c029f01c9e10df8e5ecec88079f87f1e62ab62",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Tự học: bút chạm vở, đèn có đế và cần hợp lý."
     },
     {
       "key": "unit8-6",
@@ -761,7 +906,9 @@
       "repairPrompt": "Remove ALL tiny writing, letters, pseudo-letters and title marks from every book spine. All book covers and spines must be completely plain solid colours. Keep the same globe, laptop with book pictogram, headphones, plant, composition and colored pencil style unchanged. No text anywhere.",
       "sha256": "e1fac6430cae6a92bc9c6c8864b2df306cec53a408f5dc10c02b570b4033bc2d",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Nguồn học: chồng sách, tai nghe hai bên và laptop/quả cầu hợp lý."
     },
     {
       "key": "unit8-7",
@@ -775,7 +922,9 @@
       "cell": 7,
       "sha256": "2a8c8c8e9daa876db6134b8efcbb7ecd95dd9406029040a18f372574ace2e487",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Lớp trực tuyến nhìn qua vai: màn hình quay về người học đúng."
     },
     {
       "key": "unit8-8",
@@ -789,7 +938,9 @@
       "cell": 8,
       "sha256": "5926bf884cd4351cdcc481e32dca8bf487aa42cf7740d061e6af895f901ecad1",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Thảo luận: bốn người với sách/vở trên bàn, không tay thừa hoặc đồ xuyên nhau."
     },
     {
       "key": "unit9-1",
@@ -803,7 +954,9 @@
       "cell": 1,
       "sha256": "af9cc8afa0aec71f1a499754c8040576d6a3eafd2cac69fdec59f112730d8e3a",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Đa dạng sinh vật: chim trên cành, ếch trên đá, bướm bay; giải phẫu hợp lý."
     },
     {
       "key": "unit9-2",
@@ -817,7 +970,9 @@
       "cell": 2,
       "sha256": "2d143c627fc012b95182718717312712bb8a694939916e79cd4c198da1152e4a",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Vịt trên tổ và nước, con non trong tổ; vị trí và phản chiếu hợp lý."
     },
     {
       "key": "unit9-3",
@@ -831,7 +986,9 @@
       "cell": 3,
       "sha256": "200d55e24c4289f53e1e94039e25ba91c76549a3a63203d6a300e4660629f3d3",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Gốc cây đã chặt có mặt cắt và rễ, thân gỗ nằm trên đất."
     },
     {
       "key": "unit9-4",
@@ -845,7 +1002,9 @@
       "cell": 4,
       "sha256": "b63b04cb12b7d03c18d19813f3a28801e884fa96c1d7ba4318b54ca7aae071f5",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Rùa có mai và vây bơi, thợ lặn phía sau ở khoảng cách khác; không thấy bộ phận thừa."
     },
     {
       "key": "unit9-5",
@@ -859,7 +1018,9 @@
       "cell": 5,
       "sha256": "a1209446b2ff11350f2060cc4051a2a3e774ba25892e8cf23fcfabc35699c6f6",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Khói thoát đúng từ ba ống nhà máy, bối cảnh hợp lý."
     },
     {
       "key": "unit9-6",
@@ -873,7 +1034,9 @@
       "cell": 6,
       "sha256": "7c2a6492d3bb145c601a9a5bf1198109f46bd29a7504c95afb1c1c4255d06f9e",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Cọc bảo vệ cây có thanh ngang và tay giữ/găng tay hợp lý."
     },
     {
       "key": "unit9-7",
@@ -887,7 +1050,9 @@
       "cell": 7,
       "sha256": "bfcbe500cf3e7bfc33bbb21833bede15e5afa832883baf586f42bc227d89d6e3",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Chim, hươu và sóc ở các khoảng cách khác nhau; chân/đuôi hợp lý."
     },
     {
       "key": "unit9-8",
@@ -901,7 +1066,9 @@
       "cell": 8,
       "sha256": "dd46203b520f3381d168d25c311c3b0fee50eb9712d6f3e1960374b951196bb0",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Trồng lại cây ở khoảng trống giữa gốc cũ; gốc/rễ được đặt xuống đất."
     },
     {
       "key": "unit10-1",
@@ -915,21 +1082,29 @@
       "cell": 1,
       "sha256": "a402eba7a5047fc09720c07cd31dae3df3e78ace3c16c7d499dd32c86093dbfd",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Đường gỗ, lan can, ba lô và tay hướng dẫn viên hợp lý."
     },
     {
       "key": "unit10-2",
       "unit": 10,
       "wordId": 2,
       "term": "responsible",
-      "file": "grade/lop10/assets/images/pencil/unit10/2-v1.webp",
+      "file": "grade/lop10/assets/images/pencil/unit10/2-v2.webp",
       "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: A responsible teenage visitor picking up their own rubbish and putting it in a small reusable bag before leaving a nature trail.",
-      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-5be741ed-b679-4cf6-a26a-db49e7d9d63d.png",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-c45cc0a8-c156-4c46-8844-421ca1ec42f7.png",
       "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 10, Ecotourism, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A small group of teenage visitors quietly following a local guide along a forest boardwalk, protecting the landscape, clearly low impact ecotourism.\n2. A responsible teenage visitor picking up their own rubbish and putting it in a small reusable bag before leaving a nature trail.\n3. A peaceful scenic destination with forested hills, a lake and a small eco lodge, a traveller with a backpack looking toward it, no maps or labels.\n4. A Vietnamese traveller buying fresh fruit directly from a local farmer at a small countryside stand, no currency details or signs.\n5. A narrow winding hiking trail through a green forest with stepping stones, entire path clearly visible, no arrows or signs.\n6. One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison, no arrows, words or borders.\n7. A friendly Vietnamese local tour guide with a backpack explaining a forest tree to three teenage visitors, natural guiding gesture, no microphone or written signs.\n8. A small handmade clay cup and woven miniature basket offered as travel souvenirs at a local craft stall, objects fully visible, no letters or price labels.",
       "cell": 2,
-      "sha256": "75b1f668281710f978746f6936bad46ea0b1dea6b7cb28587b2d7fbf7d083e8d",
+      "sha256": "c0d119ab7b9284cfee07a4e51793dcb4f67d22e477e9356ab12e779598f8679e",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "previousFile": "grade/lop10/assets/images/pencil/unit10/2-v1.webp",
+      "previousSha256": "75b1f668281710f978746f6936bad46ea0b1dea6b7cb28587b2d7fbf7d083e8d",
+      "repairPrompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil vocabulary illustration for responsible tourism. Fix ONLY the plastic water bottle being picked up in the lower left: it must be ONE normal clear PET bottle with ONE short neck and ONE blue screw cap on the upper-right end beside the woman's fingers, and a normal closed, transparent five-lobed PET base at the lower-left end. Completely REMOVE the blue cap/blue circular insert at the bottom. No second mouth, no second cap, no hole at the base, no detached blue cap anywhere. Retain the natural grip, one continuous bottle body, the small reusable bag, the teenage traveller, pose, backpack, forest trail, ivory-paper coloured-pencil texture and square composition unchanged. No text or watermark.",
+      "repairInitialPrompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil vocabulary illustration for responsible tourism. Fix ONLY the plastic water bottle being picked up in the lower left: it must be ONE normal clear PET bottle with ONE short neck and ONE blue screw cap on the upper-right end beside the woman's fingers, and a normal closed, transparent five-lobed PET base at the lower-left end. Completely REMOVE the blue cap/blue circular insert at the bottom. No second mouth, no second cap, no hole at the base, no detached blue cap anywhere. Retain the natural grip, one continuous bottle body, the small reusable bag, the teenage traveller, pose, backpack, forest trail, ivory-paper coloured-pencil texture and square composition unchanged. No text or watermark.",
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Một cổ/nắp xanh duy nhất ở miệng; đáy PET trong suốt kín có năm múi, tay cầm và túi hợp lý."
     },
     {
       "key": "unit10-3",
@@ -943,7 +1118,9 @@
       "cell": 3,
       "sha256": "9283abf21082ba477f8253a991f0c764ab5e5f7f6445106c0a235387db73d6e6",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Du khách nhìn hồ và nhà sàn, kiến trúc và phản chiếu hợp lý."
     },
     {
       "key": "unit10-4",
@@ -957,7 +1134,9 @@
       "cell": 4,
       "sha256": "880a44774e5d596f90983ddae92ecc4e3e6ec2407d59d2c2c15bac67a1c38897",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Trao trái cây ở quầy địa phương; giỏ, quả và tay hợp lý."
     },
     {
       "key": "unit10-5",
@@ -971,21 +1150,29 @@
       "cell": 5,
       "sha256": "324c3008ac12e695697ffb980340675b4981e089ea1f42e01bcd377cfbdf61ca",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Đường mòn bằng đá có mặt tiếp đất và hướng đi liên tục."
     },
     {
       "key": "unit10-6",
       "unit": 10,
       "wordId": 6,
       "term": "impact",
-      "file": "grade/lop10/assets/images/pencil/unit10/6-v1.webp",
+      "file": "grade/lop10/assets/images/pencil/unit10/6-v2.webp",
       "prompt": "Use case: scientific-educational. Asset: ONE square vocabulary illustration for Vietnamese grade 10 English learning, hand drawn coloured pencil with visible fine pencil strokes and soft shading on warm ivory paper, charming and age appropriate high school style. Composition: a single clear cohesive scene, all key subjects fully visible, centred with generous paper margins. No text, letters, numbers, words, logos, labels, flags, watermark, speech bubbles or comic panels. Natural anatomy, simple clear meaning. Scene: One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison, no arrows, words or borders.",
-      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a15913-8625-7860-a776-7cd5da230746\\exec-5be741ed-b679-4cf6-a26a-db49e7d9d63d.png",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a16411-6ac7-74b3-8a9b-d20639ebb1d8\\exec-4b6621bd-450d-4e85-a752-9e2495069b88.png",
       "atlasPrompt": "Use case: scientific-educational. Asset: ONE illustration atlas for Unit 10, Ecotourism, for an English vocabulary website. Create a wide 2048x1024 canvas, exactly 4 equal columns and 2 equal rows, eight separate SQUARE cells, row-major order. Each cell is an independent finished colored-pencil drawing with generous blank ivory paper margin, no borders, no dividers, no labels, absolutely NO TEXT, letters, numbers, logos or watermark anywhere. Exact grid boundaries at 25%, 50%, 75% width and 50% height; never let a drawing cross its cell. Beautiful delicate hand drawn colored pencil strokes, soft warm ivory paper, consistent charming high school educational illustration, natural anatomy, clear visual meaning. Do not combine scenes. Cells in reading order:\n1. A small group of teenage visitors quietly following a local guide along a forest boardwalk, protecting the landscape, clearly low impact ecotourism.\n2. A responsible teenage visitor picking up their own rubbish and putting it in a small reusable bag before leaving a nature trail.\n3. A peaceful scenic destination with forested hills, a lake and a small eco lodge, a traveller with a backpack looking toward it, no maps or labels.\n4. A Vietnamese traveller buying fresh fruit directly from a local farmer at a small countryside stand, no currency details or signs.\n5. A narrow winding hiking trail through a green forest with stepping stones, entire path clearly visible, no arrows or signs.\n6. One side of a stream healthy and clean, the other affected by discarded plastic and damaged plants, one coherent environmental impact comparison, no arrows, words or borders.\n7. A friendly Vietnamese local tour guide with a backpack explaining a forest tree to three teenage visitors, natural guiding gesture, no microphone or written signs.\n8. A small handmade clay cup and woven miniature basket offered as travel souvenirs at a local craft stall, objects fully visible, no letters or price labels.",
       "cell": 6,
-      "sha256": "171d8642650f6b16f621bdb6220ce39a0996b405d763b5a611bb31e141e10d63",
+      "sha256": "6a3fcc07615e1cb4b3bf99b579aeab325594e1b5a10388c82ff58064927e1c32",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "previousFile": "grade/lop10/assets/images/pencil/unit10/6-v1.webp",
+      "previousSha256": "171d8642650f6b16f621bdb6220ce39a0996b405d763b5a611bb31e141e10d63",
+      "repairPrompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil environmental-impact illustration. Fix ONLY the large clear blue-tinted plastic bottle lying diagonally in the lower-right foreground on the bank: make it a normal ONE-neck PET bottle, with ONE blue screw cap at the upper-left end, ONE continuous cylindrical body, and a closed transparent five-lobed plastic base at the lower-right end. Remove the blue cap and neck currently at the lower-right base. The base must be closed, colourless and cannot be a second bottle opening. Keep the rest of the litter, river, healthy left bank, damaged right bank, trees, composition and coloured-pencil paper style unchanged. No text, letters or watermark.",
+      "repairInitialPrompt": "Use case: precise-object-edit. Image 1 is the edit target, a coloured-pencil environmental-impact illustration. Fix ONLY the large clear blue-tinted plastic bottle lying diagonally in the lower-right foreground on the bank: make it a normal ONE-neck PET bottle, with ONE blue screw cap at the upper-left end, ONE continuous cylindrical body, and a closed transparent five-lobed plastic base at the lower-right end. Remove the blue cap and neck currently at the lower-right base. The base must be closed, colourless and cannot be a second bottle opening. Keep the rest of the litter, river, healthy left bank, damaged right bank, trees, composition and coloured-pencil paper style unchanged. No text, letters or watermark.",
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Chai lớn chỉ có nắp xanh ở đầu trái; đầu phải là đáy PET kín trong suốt. Không nắp thứ hai."
     },
     {
       "key": "unit10-7",
@@ -999,7 +1186,9 @@
       "cell": 7,
       "sha256": "ed74b26d9fc1fea3eb47d7ace1fabcd9d4ad205c55df4b4533ab96ee203bb9b5",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Hướng dẫn viên chỉ cây, tay đúng và nhóm đứng trên đường."
     },
     {
       "key": "unit10-8",
@@ -1013,7 +1202,9 @@
       "cell": 8,
       "sha256": "59182ac02173a3da0dbfe94e793ca64d1893a1201009fd40d2a53c7d49c1b55b",
       "reviewedVisually": true,
-      "noReadableText": true
+      "noReadableText": true,
+      "logicReviewedAt": "2026-10-22",
+      "logicReview": "Cốc gốm đáy kín và giỏ quai gắn hai bên hợp lý."
     }
   ]
 }

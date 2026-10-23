@@ -66,7 +66,6 @@
     { num: 'Nov', name: 'November', ipa: '/nəʊˈvɛmbə/', meaning: 'Tháng 11', hex: '#38A169', category: 'month' },
     { num: 'Dec', name: 'December', ipa: '/dɪˈsɛmbə/', meaning: 'Tháng 12', hex: '#9F7AEA', category: 'month' }
   ];
-  window.DanhPencil?.apply('dates', daysAndMonthsVocab);
 
 
   /* DỮ LIỆU GAME 4: BỘ ĐỀ 50 CÂU HỎI */
@@ -123,26 +122,12 @@
     { main: '15/11', sub: 'Ngày 15 tháng 11', target: 'November 15th', answer: 'It is November 15th' },
     { main: '24/12', sub: 'Ngày 24 tháng 12', target: 'December 24th', answer: 'It is December 24th' }
   ];
-  window.DanhPencil?.questions('dates', dateQuestions, daysAndMonthsVocab);
 
 
   let flashcardDeck = [];
 
   function speak(text) {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'en-US';
-
-      const voices = window.speechSynthesis.getVoices();
-      const bestVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Premium') || v.name.includes('Samantha') || v.name.includes('Zira')));
-      if (bestVoice) {
-        utterance.voice = bestVoice;
-      }
-
-      window.DanhYoungSpeech.configure(utterance);
-      window.speechSynthesis.speak(utterance);
-    }
+    return window.DanhAnswerSpeech.say(text);
   }
 
   function renderVocabGrid() {
@@ -443,8 +428,7 @@
     input.style.borderColor = '#CBD5E0';
     input.focus();
 
-    mainBox.innerHTML = window.DanhPencil?.picture('dates', item.target) || '';
-    if (!mainBox.innerHTML) mainBox.textContent = item.main;
+    mainBox.textContent = item.main;
     subBox.innerText = item.sub;
   }
 

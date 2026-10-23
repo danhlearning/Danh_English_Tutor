@@ -53,7 +53,7 @@ body.grade2-topic > .container {
   border-radius: 24px;
   box-shadow: var(--g2-shadow);
 }
-body.grade2-topic .tab-content.active { animation: g2-tab-in 240ms ease-out both; }
+body.grade2-topic .tab-content.active { animation: g2-tab-in 240ms ease-out backwards; }
 @keyframes g2-tab-in {
   from { opacity: 0; transform: translateY(9px); }
   to { opacity: 1; transform: translateY(0); }
@@ -450,6 +450,8 @@ body.grade2-topic .g2-game4-next[hidden] { display: none; }
 body.grade2-topic .g2-game4-next { min-height: 44px; }
 
 /* Answer reveal is unavailable while a child is still trying the current question. */
+body.grade2-topic :is(.g2-audio,.audio-btn){min-width:44px;min-height:44px}
+body.grade2-topic :is(button,a,input,select,summary):focus-visible{outline:3px solid var(--primary,#397667);outline-offset:3px}
 body.grade2-topic .tab-content button:is([onclick^="revealCount"], [onclick^="revealSpelling"], #sentence-reveal, #count-reveal):not([data-reveal-ready="true"]),
 body.grade2-topic .tab-content button[hidden] { display: none !important; }
 

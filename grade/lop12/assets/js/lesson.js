@@ -64,7 +64,11 @@
     vocab.append(card);
   }
   const tabs = [...document.querySelectorAll('[data-tab]')];
+  const tabKey = `danh-g12-${id}-tab-v1`;
   function showTab(name) {
+    window.DanhAnswerSpeech?.stop();
+    try { window.DanhLearners.storage.setItem(tabKey,name); } catch {}
+
     for (const tab of tabs) {
       const active = tab.dataset.tab === name;
       tab.classList.toggle('active', active); tab.setAttribute('aria-selected', String(active));
@@ -72,7 +76,11 @@
     }
   }
   for (const tab of tabs) tab.addEventListener('click', () => { showTab(tab.dataset.tab); window.DanhVocabularyGame.feedback('tap',tab); });
-  showTab('vocabulary');
+  let initialTab='vocabulary';
+  try { const saved=window.DanhLearners.storage.getItem(tabKey); if(tabs.some(t=>t.dataset.tab===saved))initialTab=saved; } catch {}
+  const requestedTab=new URLSearchParams(location.search).get('activity');
+  if(tabs.some(t=>t.dataset.tab===requestedTab))initialTab=requestedTab;
+  showTab(initialTab);
   updateProgress();
 
   const cards = window.DanhVocabularyGame.flashcards({
@@ -81,51 +89,10 @@
   });
   $('#flash-sound').addEventListener('click', () => speak(cards.current().term));
 
-  const randomOrder = () => window.DanhVocabularyGame.shuffle([...unit.words.keys()]);
   window.DanhVocabularyGame.mount({
     stage: $('#quiz-stage'), words: unit.words.map(word => ({...word,unit:unit.number})),
     grade: 12, scope: id, mark
   });
 
-  let spellingOrder = randomOrder(), spellingPosition = 0, spellingScore = 0, spellingStreak = 0;
-  const spellingStage = $('#spelling-stage');
-  function renderSpelling() {
-    spellingStage.replaceChildren();
-    if (spellingPosition >= spellingOrder.length) {
-      const heading = document.createElement('h3'); heading.textContent = `Hoàn thành: ${spellingScore}/${unit.words.length} câu đúng ngay lần đầu`;
-      spellingStage.append(heading, button('Luyện lại', () => { spellingOrder = randomOrder(); spellingPosition = 0; spellingScore = 0; spellingStreak = 0; renderSpelling(); window.DanhVocabularyGame.feedback('start',spellingStage); }, 'g6-primary'));
-      return;
-    }
-    const word = unit.words[spellingOrder[spellingPosition]];
-    const position = document.createElement('p'); position.className = 'g6-card-position'; position.textContent = `Câu ${spellingPosition + 1}/${unit.words.length}`;
-    const streak = document.createElement('p'); streak.className='vg-streak'; streak.textContent=`🔥 ${spellingStreak} câu đúng liên tiếp`;
-    const question = document.createElement('h3'); question.textContent = `Gõ tiếng Anh cho: ${word.meaning}`;
-    const form = document.createElement('form'); form.className = 'g6-answer';
-    const input = document.createElement('input'); input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false; input.setAttribute('aria-label', `Gõ tiếng Anh cho ${word.meaning}`);
-    const submit = document.createElement('button'); submit.type = 'submit'; submit.className = 'g6-primary'; submit.textContent = 'Kiểm tra';
-    const feedback = document.createElement('p'); feedback.className = 'g6-feedback'; feedback.setAttribute('role', 'status');
-    const next = button('Từ tiếp theo →', () => { if (next.disabled) return; next.disabled = true; spellingPosition++; renderSpelling(); window.DanhVocabularyGame.feedback(spellingPosition >= spellingOrder.length ? 'complete' : 'next',spellingStage); }, 'g6-primary'); next.hidden = true;
-    const reveal = button('Hiện đáp án', () => {
-      if (solved) return; solved = true; spellingStreak = 0; streak.textContent = '🔥 0 câu đúng liên tiếp';
-      window.DanhVocabularyGame.feedback('help',spellingStage);
-      feedback.textContent = `Đáp án: ${word.term}. Em hãy đọc và ghi nhớ từ này.`;
-      input.disabled = true; submit.disabled = true; reveal.hidden = true; next.hidden = false;
-    }, 'g6-secondary'); reveal.hidden = true;
-    let attempts = 0, solved = false;
-    form.addEventListener('submit', event => {
-      event.preventDefault();
-      if (solved) return;
-      if (!input.value.trim()) { feedback.textContent = 'Em hãy gõ một từ trước nhé.'; input.focus(); return; }
-      const answer = input.value.trim().toLocaleLowerCase('en').replace(/\s+/g, ' ');
-      if (answer === word.term.toLocaleLowerCase('en')) {
-        solved = true;
-        if (attempts === 0) { spellingScore++; spellingStreak++; } else spellingStreak=0;
-        streak.textContent=`🔥 ${spellingStreak} câu đúng liên tiếp`;
-        window.DanhVocabularyGame.feedback(attempts ? 'corrected' : window.DanhVocabularyGame.isMilestone(spellingStreak) ? 'streak' : 'good',spellingStage); feedback.textContent = 'Đúng rồi! 🌟'; input.disabled = true; submit.disabled = true; reveal.hidden = true; next.hidden = false; window.DanhAnswerSpeech.say(word.term);
-      } else { spellingStreak=0;streak.textContent='🔥 0 câu đúng liên tiếp';window.DanhVocabularyGame.feedback('bad',form); attempts++; feedback.textContent = 'Chưa đúng, em thử lại nhé.'; reveal.hidden = attempts < 2; input.focus(); input.select(); }
-    });
-    form.append(input, submit);
-    spellingStage.append(position, streak, question, form, reveal, feedback, next);
-  }
-  renderSpelling();
+  window.DanhGrade12Spelling({stage:$('#spelling-stage'),words:unit.words,unitId:id});
 })();

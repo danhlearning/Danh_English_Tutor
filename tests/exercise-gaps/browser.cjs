@@ -1,5 +1,5 @@
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
-const root=path.resolve(__dirname,'../..'),base='http://127.0.0.1:8001',out=path.join(root,'artifacts/exercise-gaps');fs.mkdirSync(out,{recursive:true});
+const root=path.resolve(__dirname,'../..'),base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8001',out=path.join(root,'artifacts/exercise-gaps');fs.mkdirSync(out,{recursive:true});
 const click=l=>l.evaluate(e=>e.click());
 const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 async function current(p){return p.evaluate(()=>{const a=JSON.parse(DanhLearners.storage.getItem('danh-g10-grammar-v1')).active;return DanhGrade10Grammar.find(q=>q.id===a.items[a.position]);});}

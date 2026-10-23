@@ -13,11 +13,15 @@
 
 ## Nội dung và giao diện
 
+- Không dùng mũi tên trang trí ở đề mục/thẻ chọn mục. Ưu tiên chữ rõ, khoảng cách cân đối và vùng bấm dễ dùng; giữ các nút điều hướng có chức năng như thẻ trước/thẻ tiếp.
+
 - **Phong cách UI toàn repo là tranh vẽ bút chì màu:** nền giấy, nét viền và chất liệu có cảm giác vẽ tay; áp dụng cho trang, thẻ, nút, biểu tượng và hình minh họa mới hoặc được chỉnh sửa. Giữ chữ Nunito rõ nét, tương phản và vùng bấm dễ dùng trên điện thoại.
 - **Game và UI phải ngắn gọn:** tránh giải thích rườm rà, câu phụ lặp ý tiêu đề và đoạn mô tả thao tác hiển nhiên. Dùng nhãn ngắn, rõ; chỉ đặt hướng dẫn cần thiết ngay tại thao tác, và hiện gợi ý khi người học cần. Áp dụng cho toàn repo.
 - Lớp 1–5 dùng cấu trúc, bốn game và ôn tổng hợp theo phiên bản lớp 2 hiện tại, giữ nội dung, bìa, tông màu, URL và tiến độ riêng từng lớp. Các topic phụ dùng chung một bộ bài ở tất cả các lớp; dẫn về cùng bài thay vì sao chép thành các bản riêng.
 
 - **Nguyên tắc cốt lõi về ảnh:** sau khi tạo ảnh, phải tự mở và xem trực tiếp từng ảnh để kiểm tra tính hợp lý trước khi đưa vào website. Đối chiếu với nghĩa từ, nội dung bài và tình huống cần minh họa; kiểm tra hành động, đồ vật, nhân vật, số lượng, quan hệ không gian và logic thực tế trong ảnh. Nếu ảnh sai nghĩa, mơ hồ, vô lý hoặc có lỗi hình, phải sửa hoặc tạo lại rồi kiểm tra lại; chỉ đưa vào web khi ảnh đã đạt. Không coi việc tạo ảnh thành công là đã kiểm tra chất lượng.
+- **Trang phục người lính:** mọi hình minh họa từ vựng có người lính phải dùng đúng trang phục bộ đội miền Bắc Việt Nam (Bộ đội Cụ Hồ), phù hợp thời kỳ và tình huống. Trước khi tạo hoặc sửa ảnh, tham khảo ảnh tư liệu trên internet để đối chiếu kiểu quân phục, màu sắc, mũ, quân hiệu, giày/dép và trang bị; không dùng quân phục nước ngoài hoặc pha trộn các thời kỳ. Với bối cảnh lịch sử phù hợp, đối chiếu quân phục xanh ô liu, mũ cối và dép cao su. Xem trực tiếp ảnh cuối trước khi đưa vào web. Không áp trang phục quân đội cho nghề khác như kiểm lâm. Nguồn tham khảo chỉ dùng khi biên soạn, không đưa tên hoặc liên kết nguồn vào tệp dự án hay UI.
+- **Sửa đổi trực tiếp ngày 23/10/2026:** hình người lính theo mẫu người dùng phải đội **mũ cối xanh**, mặc quân phục xanh bộ đội; không dùng mũ hoặc áo bảo hộ xanh lam. Áp dụng cả tranh `peacekeeping` lớp 10. Không tự chuyển sang mẫu mũ xanh của lực lượng quốc tế; chỉ thay mẫu khi người dùng yêu cầu rõ.
 
 ### Mẫu thống nhất lớp 6–12
 
