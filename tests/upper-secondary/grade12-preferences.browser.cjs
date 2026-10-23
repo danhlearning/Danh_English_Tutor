@@ -1,0 +1,23 @@
+const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8001',out=path.resolve(__dirname,'../../artifacts/grade12-improvement');
+(async()=>{const b=await chromium.launch({channel:'msedge',headless:true});try{
+ const c=await b.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});
+ await c.route('**/*',r=>r.request().url().startsWith(base)?r.continue():r.abort());
+ await c.addInitScript(()=>{Object.defineProperty(window,'speechSynthesis',{value:undefined});Object.defineProperty(window,'SpeechSynthesisUtterance',{value:undefined});window.events=[];window.audios=[];document.addEventListener('danh-answer-speech',e=>events.push(e.detail));const Native=window.Audio;window.Audio=function(...args){const a=new Native(...args);audios.push(a);return a;};window.Audio.prototype=Native.prototype;});
+ const p=await c.newPage();
+ await p.goto(base+'/grade/lop12/unit2.html?activity=spelling');
+ await p.evaluate(()=>DanhLearners.storage.setItem('danh-vocabulary-effects-v1',JSON.stringify({sound:false,motion:false,shared:true})));
+ await p.reload();assert.equal(await p.evaluate(()=>DanhLearningEffects.soundEnabled()),false);assert.equal(await p.evaluate(()=>DanhLearningEffects.motionEnabled()),false);
+ const word=await p.evaluate(()=>{const s=JSON.parse(DanhLearners.storage.getItem('danh-g12-spelling-unit2-v1'));return DanhGrade12Units[1].words.find(w=>w.id===s.order[0]);});
+ await p.locator('#spelling-stage input').fill(word.term);await p.locator('#spelling-stage button[type=submit]').click();assert.match(await p.locator('#spelling-feedback').innerText(),/Đúng rồi/);assert.deepEqual(await p.evaluate(()=>events),[]);
+ await p.evaluate(()=>DanhLearners.storage.setItem('danh-vocabulary-effects-v1',JSON.stringify({sound:true,motion:true,shared:true})));
+ await p.goto(base+'/grade/lop12/unit3.html?activity=spelling');assert(await p.evaluate(()=>DanhLearningEffects.reduced()));assert.equal(await p.evaluate(()=>events.length),0);
+ const hint=await p.evaluate(()=>{const s=JSON.parse(DanhLearners.storage.getItem('danh-g12-spelling-unit3-v1'));return DanhGrade12Units[2].words.find(w=>w.id===s.order[0]);});
+ await p.getByRole('button',{name:'🔊 Nghe gợi ý',exact:true}).click();await p.waitForFunction(()=>events.some(e=>e.state==='playing'));await p.waitForFunction(()=>events.some(e=>e.state==='ended'));
+ await p.locator('#spelling-stage input').fill('wrong');await p.locator('#spelling-stage button[type=submit]').click();await p.reload();assert.equal(await p.evaluate(()=>events.length),0);
+ await p.locator('#spelling-stage input').fill(hint.term);await p.locator('#spelling-stage button[type=submit]').click();await p.waitForFunction(()=>events.some(e=>e.state==='playing'));
+ assert.equal(await p.evaluate(()=>{const s=JSON.parse(DanhLearners.storage.getItem('danh-g12-spelling-unit3-v1'));return s.entries[s.order[0]].outcome;}),'hinted');
+ await p.locator('[data-tab=grammar]').click();assert(await p.evaluate(()=>audios.every(a=>a.paused)));
+ await p.goto(base+'/grade/lop12/grammar.html');await p.waitForFunction(()=>document.body.dataset.grammarReady==='true');assert.equal(await p.locator('#sound-toggle').isVisible(),false);assert.equal(await p.locator('#motion-toggle').isVisible(),false);
+ fs.writeFileSync(path.join(out,'preferences-results.json'),JSON.stringify({passed:true,savedMuteHonoured:true,reducedMotion:true,noControls:true,hintThenWrongStillHinted:true,stopOnTabChange:true,noSpeechOnRestore:true},null,2));console.log('PASS Grade 12 saved preferences, hinted correction and stopping audio.');
+ }finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1});

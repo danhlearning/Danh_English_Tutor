@@ -54,7 +54,7 @@ for(const grade of targetGrades){
       .replace('<p id="topic-description"></p>','').replace('  <script src="./assets/data/gs-unit1-data.js"></script>','')
       .replace('  <script src="./assets/js/grade2-progress.js"></script>','')
       .replace('  <script src="./assets/js/extended-topic.js?v=slow-sync-1"></script>','')
-      .replace('  <script src="./assets/js/learning-core.js?v=answer-audio-20261021"></script>',`  <script src="../../shared/learning-effects.js?v=${version}"></script>\n  <script src="../lop2/assets/js/learning-core.js?v=${version}"></script>\n  <script src="./assets/js/grade2-course.js?v=${version}"></script>\n  <script src="../../shared/primary-grade2-lesson.js?v=${version}"></script>`)
+      .replace('  <script src="./assets/js/learning-core.js?v=smooth-20261023-1"></script>',`  <script src="../../shared/learning-effects.js?v=smooth-20261023-1"></script>\n  <script src="../lop2/assets/js/learning-core.js?v=smooth-20261023-1"></script>\n  <script src="./assets/js/grade2-course.js?v=${version}"></script>\n  <script src="../../shared/primary-grade2-lesson.js?v=${version}"></script>`)
       .replace(/\.\/assets\/js\/grade2-navigation\.js\?v=[^"\s]+/,`../lop2/assets/js/grade2-navigation.js?v=${version}`)
       .replace('</head>',`<link rel="stylesheet" href="../../shared/primary-grade2.css?v=${version}"></head>`);
     if(grade===4)html=html.replace(`grade2-course.js?v=${version}`,`grade2-course.js?v=${courseVersion}`);

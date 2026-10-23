@@ -7,6 +7,8 @@ const palettes={10:['#e7eadb','#fcfbef','#b7c1a0','#355b43'],11:['#f1dfd6','#fff
 // Lớp 10 đã có bộ dựng hoàn thiện riêng; không ghi đè tranh/ngân hàng đã bổ sung.
 const requested=process.argv.slice(2).map(Number).filter(g=>[11,12].includes(g));
 for(const grade of (requested.length?requested:[11,12])){
+  if(grade===11){require('node:child_process').execFileSync(process.execPath,[path.join(__dirname,'build-grade11-improvement.cjs')],{stdio:'inherit'});continue;}
+  if(grade===12){require('node:child_process').execFileSync(process.execPath,[path.join(__dirname,'build-grade12-improvement.cjs')],{stdio:'inherit'});continue;}
   const [paper,surface,line,accent]=palettes[grade];
   const questions=[];
   const units=content[grade].split('\n\n').map((block,i)=>{
@@ -46,7 +48,7 @@ for(const grade of (requested.length?requested:[11,12])){
     html=html.replace(/<p>Luyện ngữ pháp Unit \d+ từ dễ tới khó\. Mỗi lượt tối đa 10 câu, có chấm điểm và giải thích\.<\/p>/,'');
     html=html.replace('Ảnh minh họa xuất hiện ở mặt nghĩa.','Biểu tượng gợi nhớ xuất hiện ở mặt nghĩa.');
     if(name==='unit10')html=html.replace('<a href="./unit11.html">Unit 11 →</a>','<a href="./vocabulary-review.html?term=2">Ôn học kỳ 2 →</a>');
-    html=html.replace('</head>',`  <link rel="stylesheet" href="../../shared/upper-secondary-paper.css">\n</head>`).replace('<body ',`<body data-paper-grade="${grade}" `);
+    html=html.replace('</head>',`  <link rel="stylesheet" href="../../shared/upper-secondary-paper.css?v=ui-20261022">\n</head>`).replace('<body ',`<body data-paper-grade="${grade}" `);
     write(`grade/lop${grade}/${name}.html`,html);
   }
   let catalog=read('grade/lop6/lop6.html').replaceAll('lớp 6',`lớp ${grade}`).replaceAll('LỚP 6',`LỚP ${grade}`).replaceAll('grade6',`grade${grade}`).replaceAll('12 chủ đề quen thuộc','10 chủ đề').replaceAll('12 Unit','10 Unit').replaceAll('Unit 1–6','Unit 1–5').replaceAll('Unit 7–12','Unit 6–10');
@@ -54,7 +56,7 @@ for(const grade of (requested.length?requested:[11,12])){
   catalog=catalog.replace('./assets/css/catalog.css?v=beige-responsive-2','../lop6/assets/css/catalog.css?v=beige-responsive-2');
   catalog=catalog.replace(/<small>[^<]*<\/small>/g,'').replace('<p>Trộn chủ đề, nhớ lâu hơn.</p>','').replace('<p>Chọn Unit hoặc học kỳ. Mỗi lượt 10 câu, vừa sức để tiến bộ.</p>','');
   catalog=catalog.replace(/alt="Các bạn học sinh[^"]*"/,`alt="Minh họa hành trình học tiếng Anh lớp ${grade} bằng bút chì màu và giấy kraft."`);
-  catalog=catalog.replace('</head>','  <link rel="stylesheet" href="../../shared/upper-secondary-paper.css">\n</head>').replace('<body ',`<body data-paper-grade="${grade}" `).replace('<contact-danh>',nav+'\n  <contact-danh>');
+  catalog=catalog.replace('</head>','  <link rel="stylesheet" href="../../shared/upper-secondary-paper.css?v=ui-20261022">\n</head>').replace('<body ',`<body data-paper-grade="${grade}" `).replace('<contact-danh>',nav+'\n  <contact-danh>');
   write(`grade/lop${grade}/lop${grade}.html`,catalog);
   write(`grade/lop${grade}/assets/css/grade${grade}.css`,read('grade/lop8/assets/css/grade8.css'));
   write(`grade/lop${grade}/assets/css/grammar.css`,read('grade/lop8/assets/css/grammar.css'));

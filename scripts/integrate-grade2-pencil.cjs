@@ -2,8 +2,9 @@
 const fs = require('node:fs'), path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const inventory = JSON.parse(fs.readFileSync(path.join(root, 'artifacts/grade2-pencil/generation.json'), 'utf8').replace(/^\uFEFF/, ''));
-const topics = process.argv.includes('--topics') ? process.argv[process.argv.indexOf('--topics') + 1].split(',') : [...new Set(inventory.assets.map(a => a.topic))].filter(topic => topic !== 'numbers');
-if (topics.includes('numbers')) throw Error('Numbers is excluded from this artwork update.');
+const preservedTopics = ['numbers','dates'];
+const topics = process.argv.includes('--topics') ? process.argv[process.argv.indexOf('--topics') + 1].split(',') : [...new Set(inventory.assets.map(a => a.topic))].filter(topic => !preservedTopics.includes(topic));
+if (topics.some(topic => preservedTopics.includes(topic))) throw Error('Numbers and Dates keep their original number/calendar visuals.');
 const manifest = {};
 for (const asset of inventory.assets) {
   if (asset.topic === 'numbers') continue;
@@ -33,7 +34,7 @@ for (const topic of topics) {
   const htmlFile = path.join(root, `grade/lop2/${topic}.html`);
   let html = fs.readFileSync(htmlFile, 'utf8');
   if (!html.includes('pencil-illustrations.js')) {
-    html = html.replace('</head>', '<link rel="stylesheet" href="./assets/css/pencil-illustrations.css?v=pencil-20261019">\n<script src="./assets/js/pencil-images-data.js?v=pencil-20261019"></script>\n<script src="./assets/js/pencil-illustrations.js?v=pencil-20261019"></script>\n</head>');
+    html = html.replace('</head>', '<link rel="stylesheet" href="./assets/css/pencil-illustrations.css?v=picture-frame-20261023-2">\n<script src="./assets/js/pencil-images-data.js?v=pencil-20261019"></script>\n<script src="./assets/js/pencil-illustrations.js?v=smooth-20261023-1"></script>\n</head>');
     html = html.replace('class="grade2-topic"', 'class="grade2-topic g2-pencil"');
     html = html.replace(/Hình Minh Họa SVG Ghép Chi Tiết/g, 'Tranh bút chì màu');
     html = html.replace(/\((?:Hình Minh Họa )?SVG (?:Ghép )?Chi Tiết\)/g, '(Tranh bút chì màu)');

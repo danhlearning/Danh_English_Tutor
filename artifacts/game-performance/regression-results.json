@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "topics": [
+    "animals",
+    "clothes",
+    "colors",
+    "dates",
+    "familyfriends",
+    "feeling",
+    "fooddrinks",
+    "fruits",
+    "householditems",
+    "numbers",
+    "schoolsupplies",
+    "verbs",
+    "bodyparts",
+    "adjectives",
+    "shapes",
+    "toys",
+    "weather",
+    "rooms",
+    "transport"
+  ],
+  "focusAndResume": true,
+  "realPrimaryWavFirstAndCorrected": true,
+  "animationCleanup": true,
+  "externalNetworkBlocked": true,
+  "errors": [],
+  "missing": []
+}

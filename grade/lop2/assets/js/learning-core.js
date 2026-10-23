@@ -282,7 +282,7 @@
         String(word.visual ?? word.name);
       container.setAttribute('role', 'img');
       container.setAttribute('aria-label', word.meaning);
-      if (value.trimStart().startsWith('<svg')) container.innerHTML = value;
+      if (/^<(svg|img)\b/.test(value.trimStart())) container.innerHTML = value;
       else container.textContent = value;
     };
     const setText = (parent, selector, value) => { parent.querySelector(selector).textContent = value; };
@@ -353,11 +353,15 @@
       const box = panel().querySelector('.learning-feedback');
       box.textContent = message; box.dataset.kind = kind;
     }
+    const toolbarVersions = new WeakMap();
     function toolbar() {
       const area = panel();
-      area.querySelector('.learning-pick').textContent = '⚙️ Chọn từ luyện tập';
-      area.querySelector('.learning-storage').textContent = learning.storageAvailable
+      const storageText = learning.storageAvailable
         ? 'Tiến độ lưu trên thiết bị này.' : 'Không lưu được tiến độ; bạn vẫn có thể học trong phiên này.';
+      const version=JSON.stringify([storageText,learning.state.history.slice(-10)]);
+      if(toolbarVersions.get(area)===version)return;
+      toolbarVersions.set(area,version);
+      area.querySelector('.learning-storage').textContent = storageText;
       const history = area.querySelector('.learning-history ol'); history.replaceChildren();
       for (const entry of learning.state.history.slice(-10).reverse()) {
         const item = document.createElement('li');
@@ -369,6 +373,7 @@
       }
     }
     function show(tab, event) {
+      if(active===tab&&titles[tab])return;
       cancel(); stopSpeech();
       learning.state.lastTab = tab;
       learning.save();
@@ -379,8 +384,8 @@
         return;
       }
       originalSwitchTab('vocab'); // Cancels each page's original timers, including Game 4.
-      document.querySelectorAll('.tab-content').forEach(node => node.classList.remove('active'));
-      document.querySelectorAll('nav .nav-btn').forEach(node => { node.classList.remove('active'); node.setAttribute('aria-pressed', 'false'); });
+      document.querySelectorAll('.tab-content.active').forEach(node => node.classList.remove('active'));
+      document.querySelectorAll('nav .nav-btn.active').forEach(node => { node.classList.remove('active'); node.setAttribute('aria-pressed', 'false'); });
       el(tab).classList.add('active');
       if (event?.currentTarget) { event.currentTarget.classList.add('active'); event.currentTarget.setAttribute('aria-pressed', 'true'); }
       active = tab; renderActive();
@@ -401,50 +406,55 @@
       const control = document.createElement('button'); control.type = 'button'; control.textContent = text;
       control.className = className; control.addEventListener('click', action); return control;
     }
+    let cardView;
     function renderCards() {
-      const cards = learning.cards(), stage = panel().querySelector('.learning-stage'); stage.replaceChildren();
+      const cards = learning.cards(), stage = panel().querySelector('.learning-stage');
       const word = byId.get(cards.deck[cards.index]);
-      stage.append(progress(`Thẻ ${cards.index + 1} / ${cards.deck.length}`));
-      const modes = document.createElement('div'); modes.className = 'learning-controls';
-      const cardModes = initialCardMode === 'picture'
-        ? [['picture', 'Hình, tự nhớ từ'], ['viet', 'Hình & Từ Anh'], ['ipa', 'Hình & IPA']]
-        : [['viet', 'Mặt trước: Hình & Từ Anh'], ['ipa', 'Mặt trước: Hình & IPA']];
-      for (const [mode, label] of cardModes) {
-        modes.append(button(label, () => { cancel(); stopSpeech(); cards.mode = mode; learning.save(); renderCards(); }, cards.mode === mode ? 'is-active' : ''));
+      if (!cardView || cardView.cards !== cards || !stage.contains(cardView.card)) {
+        const view = {cards};
+        view.line = progress('');
+        view.modes = document.createElement('div'); view.modes.className = 'learning-controls';
+        const cardModes = initialCardMode === 'picture'
+          ? [['picture','Hình, tự nhớ từ'],['viet','Hình & Từ Anh'],['ipa','Hình & IPA']]
+          : [['viet','Mặt trước: Hình & Từ Anh'],['ipa','Mặt trước: Hình & IPA']];
+        for(const [mode,label] of cardModes) {
+          const control=button(label,()=>{cancel();stopSpeech();cards.mode=mode;learning.save();renderCards();});
+          control.dataset.cardMode=mode;view.modes.append(control);
+        }
+        view.card=button('',()=>{
+          if(view.card.classList.contains('is-flipped'))return;
+          const current=view.word;
+          view.card.classList.add('is-flipped');view.card.setAttribute('aria-pressed','true');
+          view.front.setAttribute('aria-hidden','true');view.back.setAttribute('aria-hidden','false');
+          if(!cards.seen.includes(current.id))cards.seen.push(current.id);
+          learning.save();speakWord(current);
+          timer=setTimeout(()=>{timer=setTimeout(()=>moveCard(1,true),cardRevealMs);},
+            window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:160);
+        },'learning-card');
+        view.card.setAttribute('aria-label','Lật thẻ xem đáp án');
+        const controls=document.createElement('div');controls.className='learning-controls learning-card-nav';
+        controls.append(button('← Thẻ trước',()=>moveCard(-1)),button('Thẻ tiếp →',()=>moveCard(1)),
+          button('🔊 Nghe lại',()=>speakWord(view.word)));
+        stage.replaceChildren(view.line,view.modes,view.card,controls);cardView=view;
       }
-      stage.append(modes);
-      const card = button('', () => {
-        if (card.classList.contains('is-flipped')) return;
-        card.classList.add('is-flipped');
-        card.setAttribute('aria-pressed', 'true');
-        front.setAttribute('aria-hidden', 'true');
-        back.setAttribute('aria-hidden', 'false');
-        if (!cards.seen.includes(word.id)) cards.seen.push(word.id);
-        learning.save(); speakWord(word);
-        stage.querySelector('.learning-progress').textContent = `Thẻ ${cards.index + 1} / ${cards.deck.length}`;
-        timer = setTimeout(() => {
-          timer = setTimeout(() => moveCard(1, true), cardRevealMs);
-        }, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 160);
-      }, 'learning-card');
-      card.setAttribute('aria-label', 'Lật thẻ xem đáp án');
-      card.setAttribute('aria-pressed', 'false');
-      const inner = document.createElement('span'); inner.className = 'learning-card-inner';
-      const front = document.createElement('span'); front.className = 'learning-card-front'; front.setAttribute('aria-hidden', 'false');
-      const image = document.createElement('span'); image.className = 'learning-visual'; visual(image, word);
-      const label = document.createElement('strong'); label.textContent = cards.mode === 'picture' ? 'Em nhớ từ gì?' : cards.mode === 'ipa' ? (word.ipa || word.name) : word.name;
-      front.append(image, label);
-      const back = document.createElement('span'); back.className = 'learning-card-back'; back.setAttribute('aria-hidden', 'true');
-      const color = /^#[0-9a-f]{6}$/i.test(word.color || '') ? word.color : '#3182CE';
-      back.style.backgroundColor = color;
-      const rgb = [1, 3, 5].map(index => parseInt(color.slice(index, index + 2), 16));
-      back.style.color = rgb[0] * .299 + rgb[1] * .587 + rgb[2] * .114 > 160 ? '#243247' : '#fff';
-      const answer = document.createElement('strong'); answer.textContent = ['ipa', 'picture'].includes(cards.mode) ? word.name : word.meaning;
-      const ipa = document.createElement('small'); ipa.textContent = cards.mode === 'picture' ? `${word.meaning} · ${word.ipa || ''}` : cards.mode === 'ipa' ? word.meaning : word.ipa || '';
-      back.append(answer, ipa); inner.append(front, back); card.append(inner); stage.append(card);
-      const controls = document.createElement('div'); controls.className = 'learning-controls learning-card-nav';
-      controls.append(button('← Thẻ trước', () => moveCard(-1)), button('Thẻ tiếp →', () => moveCard(1)),
-        button('🔊 Nghe lại', () => speakWord(word)));
-      stage.append(controls); feedback(`Chạm vào thẻ để xem đáp án. Đáp án hiện khoảng ${Math.round(cardRevealMs / 1000)} giây rồi tự chuyển thẻ.`);
+      const view=cardView;view.word=word;
+      view.line.textContent=`Thẻ ${cards.index+1} / ${cards.deck.length}`;
+      for(const control of view.modes.children)control.classList.toggle('is-active',control.dataset.cardMode===cards.mode);
+      view.card.classList.remove('is-flipped');view.card.setAttribute('aria-pressed','false');
+      const inner=document.createElement('span');inner.className='learning-card-inner';
+      const front=document.createElement('span');front.className='learning-card-front';front.setAttribute('aria-hidden','false');
+      const image=document.createElement('span');image.className='learning-visual';visual(image,word);
+      for(const img of image.querySelectorAll('img'))img.loading='eager';
+      const label=document.createElement('strong');label.textContent=cards.mode==='picture'?'Em nhớ từ gì?':cards.mode==='ipa'?(word.ipa||word.name):word.name;
+      front.append(image,label);
+      const back=document.createElement('span');back.className='learning-card-back';back.setAttribute('aria-hidden','true');
+      const color=/^#[0-9a-f]{6}$/i.test(word.color||'')?word.color:'#3182CE';back.style.backgroundColor=color;
+      const rgb=[1,3,5].map(index=>parseInt(color.slice(index,index+2),16));
+      back.style.color=rgb[0]*.299+rgb[1]*.587+rgb[2]*.114>160?'#243247':'#fff';
+      const answer=document.createElement('strong');answer.textContent=['ipa','picture'].includes(cards.mode)?word.name:word.meaning;
+      const ipa=document.createElement('small');ipa.textContent=cards.mode==='picture'?`${word.meaning} · ${word.ipa||''}`:cards.mode==='ipa'?word.meaning:word.ipa||'';
+      back.append(answer,ipa);inner.append(front,back);view.card.replaceChildren(inner);view.front=front;view.back=back;
+      feedback(`Chạm vào thẻ để xem đáp án. Đáp án hiện khoảng ${Math.round(cardRevealMs/1000)} giây rồi tự chuyển thẻ.`);
     }
     function moveCard(step, automatic = false) {
       cancel();

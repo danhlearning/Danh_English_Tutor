@@ -26,9 +26,36 @@
   };
   settings();
 
+  function connectTablists() {
+    for (const list of document.querySelectorAll('[role="tablist"]')) {
+      const tabs=[...list.querySelectorAll('[role="tab"][data-tab]')];
+      if(!tabs.length)continue;
+      for(const tab of tabs){
+        const panel=document.getElementById(tab.dataset.tab);
+        if(!panel)continue;
+        if(!tab.id)tab.id=`danh-tab-${tab.dataset.tab}`;
+        tab.setAttribute('aria-controls',panel.id);
+        panel.setAttribute('aria-labelledby',tab.id);
+        panel.tabIndex=0;
+      }
+      const sync=()=>{const selected=tabs.find(tab=>tab.getAttribute('aria-selected')==='true')||tabs[0];for(const tab of tabs)tab.tabIndex=tab===selected?0:-1;};
+      sync();
+      new MutationObserver(sync).observe(list,{subtree:true,attributes:true,attributeFilter:['aria-selected']});
+      list.addEventListener('keydown',event=>{
+        const index=tabs.indexOf(event.target);
+        if(index<0||event.altKey||event.ctrlKey||event.metaKey)return;
+        const next=event.key==='Home'?0:event.key==='End'?tabs.length-1:event.key==='ArrowRight'?(index+1)%tabs.length:event.key==='ArrowLeft'?(index+tabs.length-1)%tabs.length:null;
+        if(next===null)return;
+        event.preventDefault();tabs[next].focus();tabs[next].click();sync();
+      });
+    }
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',connectTablists,{once:true});
+  else connectTablists();
+
   function flashcards({card,words,previous,next,illustration}) {
     let index=0,flipped=false,locked=false,timer;
-    const inner=el('span',undefined,'vg-flip-inner');card.replaceChildren(inner);card.classList.add('vg-flip-card');
+    let inner;card.classList.add('vg-flip-card');
     const side = (word,back) => {
       const face=el('span',undefined,`vg-flip-face ${back?'vg-flip-back':'vg-flip-front'}`);
       face.append(el('span',`THẺ ${index+1}/${words.length}`,'g6-card-position'));
@@ -42,8 +69,9 @@
       card.setAttribute('aria-label',flipped?`${words[index].meaning}. Chạm để xem từ tiếng Anh.`:`${words[index].term}. Chạm để xem nghĩa.`);
     };
     const render=()=>{
-      clearTimeout(timer);locked=false;flipped=false;inner.style.transition='none';card.classList.remove('is-flipped');
-      inner.replaceChildren(side(words[index],false),side(words[index],true));accessible();void inner.offsetWidth;inner.style.transition='';
+      clearTimeout(timer);locked=false;flipped=false;card.classList.remove('is-flipped');
+      // A fresh rotating surface starts at zero without forcing the whole page to lay out.
+      inner=el('span',undefined,'vg-flip-inner');inner.append(side(words[index],false),side(words[index],true));card.replaceChildren(inner);accessible();
     };
     card.addEventListener('click',()=>{
       if(locked)return;

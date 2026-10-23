@@ -72,12 +72,16 @@
 
   function openGame(id) {
     if (!games.some(game => game.id === id)) id = games[0].id;
+    if(container.querySelector(':scope > .tab-content.active')?.id===id)return;
     lastGame = id;
     window.switchTab(id, { target: gamesButton, currentTarget: gamesButton });
     sync();
   }
+  let previousActive;
   function sync() {
     const active = container.querySelector(':scope > .tab-content.active')?.id;
+    if(active===previousActive)return;
+    previousActive=active;
     const inGame = games.some(game => game.id === active);
     if (inGame) lastGame = active;
     switcher.hidden = !inGame;
@@ -110,9 +114,10 @@
     }
   }
 
-  for (const tab of container.querySelectorAll(':scope > .tab-content')) {
-    new MutationObserver(sync).observe(tab, { attributes: true, attributeFilter: ['class'] });
-  }
+  const navigationObserver=new MutationObserver(records=>{
+    if(records.some(record=>record.target.parentElement===container&&record.target.classList.contains('tab-content')))sync();
+  });
+  navigationObserver.observe(container,{subtree:true,attributes:true,attributeFilter:['class']});
   document.addEventListener('DOMContentLoaded', sync);
   sync();
 })();

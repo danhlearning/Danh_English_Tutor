@@ -31,5 +31,5 @@ test('Animals dùng tệp cố định cho từ đơn và tải mã mới', () =
   assert.match(script, /await playWordAudio\(source\)/);
   assert.match(script, /mp3\?v=us-ljspeech-2/);
   const html = fs.readFileSync(path.join(root, 'animals.html'), 'utf8');
-  assert.match(html, /topics\/animals\.js\?v=primary2-20261022(?:-34)?/);
+  assert.match(html, /topics\/animals\.js\?v=(?:primary2-20261022(?:-34)?|smooth-20261023-1)/);
 });
