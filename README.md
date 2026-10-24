@@ -8,7 +8,33 @@ Cập nhật 23/10/2026: lớp 10–12 có 100 từ/cụm từ mỗi lớp, kèm
 
 ## Mở website
 
+### Luyện từ vựng theo cấp độ
+
+`flashcard.html` dùng chung dữ liệu Unit lớp 1–12 qua `shared/vocabulary-library.js`. Có lật thẻ, chọn nghĩa, nghe chọn từ, gõ từ và dùng từ trong câu; lọc cấp độ, lớp, Unit và tìm từ. Tiến độ kỹ năng riêng qua hồ sơ; giữ lượt dở, nháp, gợi ý và kết quả. Sổ tay và lượt cũ ở `flashcard-previous.html`, giữ nguyên khóa lưu.
+
+Mức luyện tham chiếu ở `assets/data/vocabulary-levels.js`; từ chưa phân cấp vẫn có trong kho theo lớp. Không suy cấp độ từ lớp, không xem hoàn thành lượt là kết quả thi. Khi đổi ngân hàng hoặc chỉ mục cần cập nhật phiên bản URL thư viện. Mẫu ở `templates/vocabulary-skills.html` dùng đường dẫn tính từ trang gốc.
+
+Kiểm tra: `node --test tests/vocabulary-skills/core.test.cjs` và `node tests/vocabulary-skills/browser.cjs` với máy chủ cổng 8001.
+
 Mở index.html bằng Chrome hoặc chạy một máy chủ tĩnh từ thư mục gốc repo. Giữ nguyên cấu trúc thư mục để liên kết và tài nguyên hoạt động. Các URL HTML hiện có được giữ để người học vẫn mở được liên kết đã lưu.
+
+### Luyện ngữ pháp theo cấp độ
+
+`grammar-index.html` chọn mức luyện và năm dạng bài, hoặc trộn thử thách. Dùng chung ngân hàng `assets/data/grammar/catalog.js` và `questions.js`; không đổi ID hoặc khóa `danh-grammar-room-v1`. Bộ lọc ở `assets/js/grammar/skills-library.js` dùng bản mức hỗ trợ 2 và mỗi tình huống tối đa một lần trong lượt tám câu. Mức tham chiếu A1–B2 là lộ trình nội bộ, không phải kết quả thi; các mức chưa có bộ riêng không mở lượt.
+
+Trang cũ và ba mức hỗ trợ vẫn hoạt động. Dựng lại bằng `node scripts/build-grammar-pages.cjs`; mẫu trang đầu ở `templates/grammar-skills.html`. Kiểm tra mới: `node --test tests/grammar-room/skills.test.cjs` và `node tests/grammar-room/skills-browser.cjs`. Giọng đọc dùng các WAV đã có, kế hoạch âm thanh bổ sung cả câu nghe lại.
+
+### Thử nghiệm Ghép chữ lớp 2
+
+Thẻ từ và Ghép chữ lớp 2–4 dùng `picture-audio.js` / `picture-audio.css`: bấm trực tiếp hình để nghe, không có nút loa riêng của từ. Dùng cùng ảnh của thẻ từ, giữ tên truy cập và bàn phím; không tự đọc khi mở hay tải lại. Bộ dựng lớp 3/4 giữ các tài nguyên này. Kiểm tra trình duyệt: `node tests/primary-grades/picture-audio.browser.cjs`.
+
+Đã mở rộng cùng game cho 20 Unit mỗi lớp 3/4 và ôn học kỳ tương ứng. Dữ liệu và màu riêng; khóa lưu bắt đầu `danh-g3-letter-ladder-` / `danh-g4-letter-ladder-`, học kỳ chia 1–10 / 11–20. Bộ dựng dùng `scripts/lib/primary-letter-pages.cjs` để giữ các thành phần này khi đồng bộ lại lớp 3/4. Kiểm tra: `node --test tests/primary-grades/letter-games.test.cjs` và `node tests/primary-grades/letter-games.browser.cjs`.
+
+Phần `grade/lop2/review.html` cũng có Ghép chữ: chọn Học kỳ 1, Học kỳ 2 hoặc Unit tùy chọn rồi mở game. Lượt riêng theo bộ Unit, ưu tiên phủ các Unit trong nhóm tám từ. Dùng lại game/bộ từ hiện có qua `letter-review.js`; chín dạng ôn tổng hợp và lượt cũ vẫn độc lập. Kiểm tra bằng `node --test grade/lop2/tests/letter-review.test.cjs` và `node grade/lop2/tests/letter-review.browser.cjs`.
+
+Game 1 của 34 bài lớp 2 dùng `grade/lop2/assets/js/letter-ladder-core.js` và `letter-ladder.js`: cùng nhóm từ qua nấc thiếu 1–2–3 chữ rồi sang tab Chính tả để tự gõ. Từ ngắn bỏ qua nấc không phù hợp. URL xem thử: `grade/lop2/gsunit1.html?game=letters`. Khóa lưu riêng theo hồ sơ; giữ thẻ và lượt chính tả cũ. Topic chung mở từ lớp khác vẫn giữ giao diện cũ. Khi mở rộng sang lớp khác cần bật rõ theo lớp, không bỏ điều kiện phạm vi của bản thử.
+
+Kiểm tra: `node --test grade/lop2/tests/letter-ladder.test.cjs`; các kiểm tra trình duyệt là `letter-ladder.browser.cjs`, `letter-ladder-pages.browser.cjs` và `letter-ladder-mute.browser.cjs` trong cùng thư mục, dùng máy chủ cổng 8001. Quy tắc và nghiệm thu ở `docs/plans/grade2-letter-ladder-2026-10-24.md`.
 
 ## Hồ sơ người học
 

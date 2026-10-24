@@ -205,6 +205,8 @@
     try { storage = (window.DanhLearners?.storage || window.localStorage); }
     catch { storage = { getItem: () => null, setItem: () => { throw Error('Storage blocked'); } }; }
     const learning = new LearningState(topic, words, storage, () => Date.now(), initialCardMode);
+    const pictureMode=window.DanhPictureAudio?.enabled();
+    if(pictureMode){window.DanhPictureAudio.wire(vocabularyGrid,words);document.querySelector('.container')?.classList.add('picture-compact');const title=document.getElementById('vocab-title');if(title)title.textContent='Từ vựng';}
     const originalSwitchTab = window.switchTab;
     let hasGesture = !requireGesture;
     if (requireGesture) document.addEventListener('click', () => { hasGesture = true; }, { capture: true });
@@ -287,7 +289,11 @@
       else container.textContent = value;
     };
     const setText = (parent, selector, value) => { parent.querySelector(selector).textContent = value; };
-    const titles = { 'game-flip': 'Game 1 · Flashcard', 'game-mcq': 'Game 2 · Trắc nghiệm', 'game-spelling': 'Game 3 · Chính tả' };
+    const titles = { 'game-flip': window.DanhLetterLadder?.enabled ? 'Game 1 · Ghép chữ' : 'Game 1 · Flashcard', 'game-mcq': 'Game 2 · Trắc nghiệm', 'game-spelling': 'Game 3 · Chính tả' };
+    const ladder=window.DanhLetterLadder?.enabled?window.DanhLetterLadder.mount({topic,words,storage,selected:()=>learning.state.selected,effects,
+      goSpelling:()=>show('game-spelling',{currentTarget:document.querySelector('[data-game-nav]')}),
+      rerender:tab=>{if(tab)show(tab,{currentTarget:document.querySelector('[data-game-nav]')});else renderActive();}
+    }):null;
 
     for (const tab of Object.keys(titles)) {
       const section = el(tab);
@@ -396,6 +402,10 @@
     function renderActive() {
       if (!active || dialog.open) return;
       toolbar();
+      const inLadder=!!ladder&&(active==='game-flip'||active==='game-spelling'&&ladder.hasFull());
+      panel().querySelector('.learning-history').hidden=inLadder;
+      if(pictureMode){panel().querySelector('h2').hidden=inLadder;panel().querySelector('.learning-pick').textContent='Chọn từ';}
+      if(inLadder)feedback();
       if (active === 'game-flip') renderCards();
       if (active === 'game-mcq') renderQuestion('mcq');
       if (active === 'game-spelling') renderQuestion('spelling');
@@ -409,6 +419,7 @@
     }
     let cardView;
     function renderCards() {
+      if(ladder){ladder.render(panel().querySelector('.learning-stage'));return;}
       const cards = learning.cards(), stage = panel().querySelector('.learning-stage');
       const word = byId.get(cards.deck[cards.index]);
       if (!cardView || cardView.cards !== cards || !stage.contains(cardView.card)) {
@@ -486,6 +497,8 @@
     }
     function renderQuestion(game) {
       const stage = panel().querySelector('.learning-stage'); stage.replaceChildren();
+      if(game==='spelling'&&ladder?.hasFull()){ladder.render(stage,true);return;}
+      stage.classList.remove('letter-ladder');
       if (game === 'mcq' && learning.state.selected.length < 2) {
         stage.append(progress('Game 2 cần ít nhất 2 từ. Hãy chọn thêm một từ.'));
         feedback('Bộ một từ vẫn dùng được ở Game 1 và 3.'); return;
@@ -500,8 +513,8 @@
       const answer = round.answers[round.index], word = byId.get(round.deck[round.index]);
       stage.append(progress(stats(game, round)));
       if (game !== 'mcq' || mcqMode !== 'listen-picture') {
-        const image = document.createElement('div'); image.className = 'learning-visual learning-question-visual';
-        visual(image, word); stage.append(image);
+        const image = pictureMode?window.DanhPictureAudio.make(word,{topic}):document.createElement('div'); image.classList.add('learning-visual','learning-question-visual');
+        if(!pictureMode)visual(image, word);stage.append(image);
       }
       if (game === 'mcq') renderMcq(stage, round, answer, word);
       else renderSpelling(stage, round, answer, word);
@@ -516,8 +529,8 @@
       if (mcqMode === 'listen-picture') {
         const instruction = document.createElement('p');
         instruction.className = 'learning-instruction';
-        instruction.textContent = '🔊 Nghe từ rồi chọn tranh đúng.';
-        stage.append(instruction, button('🔊 Nghe từ', () => speakWord(word)));
+        instruction.textContent = 'Chọn tranh đúng.';
+        stage.append(instruction, button(pictureMode?'Phát âm':'🔊 Nghe từ', () => pictureMode?window.DanhAnswerSpeech.listen(word.name):speakWord(word)));
       }
       if (!Array.isArray(answer.options) || answer.options.length !== Math.min(4, round.deck.length) ||
           !answer.options.includes(word.id) || new Set(answer.options).size !== answer.options.length ||
@@ -611,7 +624,7 @@
       });
       const listen = button('🔊 Nghe', () => speakWord(word));
       listen.disabled = answer.solved;
-      controls.append(input, check, listen);
+      controls.append(input, check);if(!pictureMode)controls.append(listen);
       stage.append(controls);
       if (revealSpellingAfterMs > 0 && !answer.solved) {
         const availableAt = Date.now() + revealSpellingAfterMs;
@@ -636,7 +649,7 @@
       }
       if (!answer.solved) {
         input.focus({ preventScroll: true });
-        speakWord(word);
+        if(!pictureMode)speakWord(word);
       }
     }
     document.addEventListener('visibilitychange', () => {
@@ -648,7 +661,9 @@
       } else renderActive();
     });
     onSelectionChange?.([...learning.state.selected]);
-    if (typeof initialTab === 'string' && el(initialTab)?.classList.contains('tab-content')) {
+    if(ladder&&new URLSearchParams(location.search).get('game')==='letters'){
+      show(ladder.hasFull()?'game-spelling':'game-flip',{currentTarget:document.querySelector('[data-game-nav]')});
+    } else if (typeof initialTab === 'string' && el(initialTab)?.classList.contains('tab-content')) {
       const control = document.querySelector(`nav [data-tab="${initialTab}"]`);
       show(initialTab, { currentTarget: control });
     } else if (learning.state.lastTab && titles[learning.state.lastTab]) {

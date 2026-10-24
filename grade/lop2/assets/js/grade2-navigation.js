@@ -35,7 +35,7 @@
   header.after(links);
 
   const games = gameTabs.map(button => ({ id: tabId(button), label: ({
-    'game-flip': 'Lật thẻ',
+    'game-flip': window.DanhLetterLadder?.enabled ? 'Ghép chữ' : 'Lật thẻ',
     'game-mcq': 'Trắc nghiệm',
     'game-spelling': 'Chính tả',
     'game-count': 'Viết câu'

@@ -1,6 +1,7 @@
 /* Lớp 1/5 dùng khung và bộ chơi lớp 2, giữ dữ liệu từng lớp. */
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
-const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'utf8'),write=(p,s)=>fs.writeFileSync(path.join(root,p),s);
+const {enable:enableLetterPages}=require('./lib/primary-letter-pages.cjs');
+const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'utf8'),write=(p,s)=>{const match=p.match(/^grade\/lop([34])\/(unit\d+|review)\.html$/);fs.writeFileSync(path.join(root,p),match?enableLetterPages(s,Number(match[1]),match[2]==='review'):s);};
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const version='primary2-20261022-34';
 const targetGrades=process.env.PRIMARY_SYNC_GRADES?process.env.PRIMARY_SYNC_GRADES.split(',').map(Number):[1,3,4,5];
@@ -48,13 +49,13 @@ for(const grade of targetGrades){
   const oldIndex=`${dir}/previous.html`;if(!fs.existsSync(path.join(root,oldIndex)))write(oldIndex,read(`${dir}/lop${grade}.html`));
   for(const u of units){
     const old=`${dir}/previous-${u.id}.html`;if(!fs.existsSync(path.join(root,old)))write(old,read(`${dir}/${u.id}.html`));
-    let html=read('grade/lop2/gsunit1.html').replace(/<!--[^]*?-->/g,'').replace(/  <link rel="preconnect"[^\n]*\n/g,'').replace(/  <link href="https:\/\/fonts[^\n]*\n/g,'');
+    let html=read('grade/lop2/gsunit1.html').replace(/<script data-grade2-letter[^>]*><\/script>\s*/g,'').replace(/<link data-grade2-letter[^>]*>/g,'').replace(/<!--[^]*?-->/g,'').replace(/  <link rel="preconnect"[^\n]*\n/g,'').replace(/  <link href="https:\/\/fonts[^\n]*\n/g,'');
     html=html.replace(/<title>[^]*?<\/title>/,`<title>${escape(u.title)} · Lớp ${grade} · Danh English Tutor</title>`)
       .replaceAll('./assets/css/','../lop2/assets/css/').replace('data-topic="gsunit1"',`data-grade="${grade}" data-unit="${u.id}" data-topic="g${grade}${u.id}"`)
       .replace('<p id="topic-description"></p>','').replace('  <script src="./assets/data/gs-unit1-data.js?v=compact-listen-20261024"></script>','')
       .replace('  <script src="./assets/js/grade2-progress.js?v=compact-listen-20261024"></script>','')
       .replace('  <script src="./assets/js/extended-topic.js?v=compact-listen-20261024"></script>','')
-      .replace('  <script src="./assets/js/learning-core.js?v=compact-listen-20261024"></script>',`  <script src="../../shared/learning-effects.js?v=compact-listen-20261024"></script>\n  <script src="../lop2/assets/js/learning-core.js?v=compact-listen-20261024"></script>\n  <script src="./assets/js/grade2-course.js?v=compact-listen-20261024"></script>\n  <script src="../../shared/primary-grade2-lesson.js?v=compact-listen-20261024"></script>`)
+      .replace('  <script src="./assets/js/learning-core.js?v=picture-tap-20261024"></script>',`  <script src="../../shared/learning-effects.js?v=compact-listen-20261024"></script>\n  <script src="../lop2/assets/js/learning-core.js?v=compact-listen-20261024"></script>\n  <script src="./assets/js/grade2-course.js?v=compact-listen-20261024"></script>\n  <script src="../../shared/primary-grade2-lesson.js?v=student-tone-20261024"></script>`)
       .replace(/\.\/assets\/js\/grade2-navigation\.js\?v=[^"\s]+/,`../lop2/assets/js/grade2-navigation.js?v=${version}`)
       .replace('</head>',`<link rel="stylesheet" href="../../shared/primary-grade2.css?v=${version}"></head>`);
     if(grade===4)html=html.replace(`grade2-course.js?v=${version}`,`grade2-course.js?v=${courseVersion}`);
@@ -74,7 +75,7 @@ for(const grade of targetGrades){
     .replace('</head>',`<link rel="stylesheet" href="../../shared/primary-grade2.css?v=${version}"></head>`)
     .replace('</body>',`<script src="../../shared/shared-topics.js?v=compact-listen-20261024"></script><script>if(DanhLearners.storage.getItem('danh-g${grade}-template-review-v1')${grade===4?"||DanhLearners.storage.getItem('danh.grade4.words.v1')":''})document.getElementById('previous-review').hidden=false;</script></body>`);
   write(`${dir}/lop${grade}.html`,index.replace(/[ \t]+$/gm,''));
-  let review=read('grade/lop2/review.html').replaceAll('lớp 2',`lớp ${grade}`).replaceAll('Lớp 2',`Lớp ${grade}`).replace('./lop2.html',`./lop${grade}.html`).replaceAll('./assets/css/','../lop2/assets/css/').replace('Unit 1–8',`Unit 1–${units.length/2}`).replace('Unit 9–16',`Unit ${units.length/2+1}–${units.length}`)
+  let review=read('grade/lop2/review.html').replace(/<script data-grade2-letter-review[^>]*><\/script>\s*/g,'').replace(/<link data-grade2-letter-review[^>]*>/g,'').replace(/<button data-grade2-letter-review[^>]*>[^<]*<\/button>/g,'').replace(/<section data-grade2-letter-review[^]*?<\/section>/g,'').replaceAll('lớp 2',`lớp ${grade}`).replaceAll('Lớp 2',`Lớp ${grade}`).replace('./lop2.html',`./lop${grade}.html`).replaceAll('./assets/css/','../lop2/assets/css/').replace('Unit 1–8',`Unit 1–${units.length/2}`).replace('Unit 9–16',`Unit ${units.length/2+1}–${units.length}`)
     .replace(/  <script src="\.\/assets\/data\/[^\n]+\n/g,'')
     .replace('<p>Chọn nhiều Unit giống như chọn từ trong bài.</p>','')
     .replace('  <script src="./assets/js/mixed-review-core.js',`  <script src="./assets/js/grade2-course.js?v=compact-listen-20261024"></script>\n  <script src="../../shared/primary-grade2-review.js?v=compact-listen-20261024"></script>\n  <script src="../lop2/assets/js/mixed-review-core.js`)

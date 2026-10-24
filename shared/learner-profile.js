@@ -3,7 +3,7 @@
   if (window.DanhLearners) return;
   const C = window.DanhLearnerCore;
   const base = new URL('../', document.currentScript.src);
-  const controls=document.createElement('script');controls.src=new URL('shared/learner-controls.js?v=tidy-unit-cards-20261024',base).href;controls.async=false;document.head.append(controls);
+  const controls=document.createElement('script');controls.src=new URL('shared/learner-controls.js?v=picture-tap-20261024',base).href;controls.async=false;document.head.append(controls);
   const preload=document.createElement('script');preload.src=new URL('shared/site-preload.js?v=20261022-1',base).href;preload.async=true;document.head.append(preload);
   const font=document.createElement('link');font.rel='stylesheet';font.href=new URL('shared/learner-font.css?v=compact-listen-20261024',base).href;document.head.append(font);
   const gaps=document.createElement('script');gaps.src=new URL('shared/exercise-gaps.js?v=smooth-20261023-1',base).href;gaps.async=false;document.head.append(gaps);

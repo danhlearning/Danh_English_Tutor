@@ -27,7 +27,7 @@
   }
   function stop(){window.DanhAnswerSpeech?.stop();for(const v of voices){try{v.gain.gain.value=0;v.oscillator.stop();}catch{}}voices=[];}
   function animate(element,name){if(!element||!moving())return;element.classList.remove(name);void element.offsetWidth;element.classList.add(name);element.addEventListener('animationend',()=>element.classList.remove(name),{once:true});}
-  const messages={start:'Mình cùng luyện từng câu nhé! 🌱',next:'Sẵn sàng cho câu tiếp theo nào! ✨',correct:'Đúng rồi! Một ngôi sao dành cho em ⭐',corrected:'Em đã tự sửa được rồi, giỏi lắm! 🌷',retry:'Thử lại nhé, mình cùng tìm cách đúng 💛',hint:'Một gợi ý nhỏ để em tự tìm ra đáp án 💡',reveal:'Đọc cách dùng rồi thử lại ở lượt ôn nhé 📖'};
+  const messages={start:'Vào lượt thôi, mình làm từng câu nha! 🌱',next:'Sẵn sàng chinh phục câu tiếp theo chưa? ✨',correct:'Chuẩn luôn! Thêm một sao nè ⭐',corrected:'Tự sửa đúng rồi, xịn đó! 🌷',retry:'Chưa đúng rồi, thử lại nha 💛',hint:'Gợi ý nhỏ nè, thử nghĩ tiếp nha 💡',reveal:'Xem cách dùng rồi mình thử lại ở lượt ôn nha 📖'};
   messages.skip='Không sao, mình có thể ôn lại câu này sau 🌼';
   function buddy(name){const el=document.getElementById('learning-buddy');if(!el)return;el.dataset.mood=['correct','corrected'].includes(name)?'correct':name==='retry'?'retry':'neutral';document.getElementById('buddy-message').textContent=messages[name]||messages.start;animate(el.querySelector('img'),name==='retry'?'fx-retry':'fx-pop');}
   let celebrationTimer;

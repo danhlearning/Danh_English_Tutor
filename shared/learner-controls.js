@@ -4,6 +4,7 @@
   let manual = false, reset;
   const speaker = /[🔊🔉🔈📢]/u;
   function prepare(button) {
+    if(button.matches('.word-picture,[data-word-audio]'))return false;
     const text = button.textContent.trim();
     if (!speaker.test(text) && !/^Nghe(?: lại| mẫu| từ| câu mẫu| chậm)?$/u.test(text) && !button.matches('.btn-speaker,[data-speak],[data-unit4-say]')) return false;
     if (!button.hasAttribute('aria-label')) button.setAttribute('aria-label', text.replace(speaker,'').trim() || 'Nghe tiếng Anh');

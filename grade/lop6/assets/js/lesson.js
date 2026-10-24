@@ -22,46 +22,19 @@
     mastered.add(word.id); updateProgress();
     try { window.DanhLearners.storage.setItem(key, JSON.stringify([...mastered])); } catch { /* Không lưu được trên thiết bị này. */ }
   };
-  const speak = term => {
-    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(term);
-    const status = $('#speech-note');
-    if (!window.DanhVocabularyGame.soundEnabled()) { status.textContent = 'Âm thanh đang tắt.'; return; }
-    window.DanhAnswerSpeech.say(term);
-    status.textContent = `Đang đọc: ${term}`;
-  };
   const button = (label, callback, className = '') => {
     const element = document.createElement('button'); element.type = 'button'; element.className = className;
     element.textContent = label; element.addEventListener('click', callback); return element;
   };
-  const illustration = (word, className) => {
-    const frame = document.createElement('span');
-    frame.className = className === 'g6-word-icon' ? 'g6-word-visual' : 'g6-flash-visual';
-    if (word.image) {
-      const image = document.createElement('img');
-      image.className = className; image.src = word.image;
-      image.alt = `Minh họa: ${word.meaning}`;
-      image.width = 768; image.height = 768; image.loading = 'lazy';
-      image.addEventListener('error', () => {
-        image.remove();
-        const fallback = document.createElement('span');
-        fallback.className = `${className} g6-symbol-art`;
-        fallback.textContent = word.icon; fallback.setAttribute('aria-hidden', 'true');
-        frame.append(fallback);
-      }, {once:true});
-      frame.append(image); return frame;
-    }
-    const icon = document.createElement('span'); icon.className = `${className} g6-symbol-art`;
-    icon.textContent = word.icon; icon.classList.toggle('g6-composite-symbol', word.icon.includes('\u200d'));
-    icon.setAttribute('aria-hidden', 'true'); frame.append(icon); return frame;
-  };
+  const picture = window.DanhGrade6Picture;
   const vocab = $('#vocab-grid');
   for (const word of unit.words) {
     const card = document.createElement('article'); card.className = 'g6-word-card';
-    const icon = illustration(word, 'g6-word-icon');
+    const icon = picture(word);
     const title = document.createElement('h3'); title.textContent = word.term;
     const meaning = document.createElement('p'); meaning.className = 'g6-meaning'; meaning.textContent = word.meaning;
     const example = document.createElement('p'); example.className = 'g6-example'; example.textContent = word.example;
-    card.append(icon, title, meaning, example, button('🔊 Nghe từ', () => speak(word.term), 'g6-sound'));
+    card.append(icon, title, meaning, example);
     vocab.append(card);
   }
   const tabs = [...document.querySelectorAll('[data-tab]')];
@@ -76,16 +49,15 @@
   showTab('vocabulary');
   updateProgress();
 
-  const cards = window.DanhVocabularyGame.flashcards({
+  window.DanhVocabularyGame.flashcards({
     card: $('#flashcard'), words: unit.words, previous: $('#flash-prev'), next: $('#flash-next'),
-    illustration: word => illustration(word, 'g6-flash-icon')
+    picture
   });
-  $('#flash-sound').addEventListener('click', () => speak(cards.current().term));
 
   const randomOrder = () => window.DanhVocabularyGame.shuffle([...unit.words.keys()]);
   window.DanhVocabularyGame.mount({
     stage: $('#quiz-stage'), words: unit.words.map(word => ({...word,unit:unit.number})),
-    grade: 6, scope: id, mark
+    grade: 6, scope: id, mark, picture
   });
 
   let spellingOrder = randomOrder(), spellingPosition = 0, spellingScore = 0, spellingStreak = 0;
@@ -126,7 +98,7 @@
       } else { spellingStreak=0;streak.textContent='🔥 0 câu đúng liên tiếp';window.DanhVocabularyGame.feedback('bad',form); attempts++; feedback.textContent = 'Chưa đúng, em thử lại nhé.'; reveal.hidden = attempts < 2; input.focus(); input.select(); }
     });
     form.append(input, submit);
-    spellingStage.append(position, streak, question, form, reveal, feedback, next);
+    spellingStage.append(position, streak, picture(word), question, form, reveal, feedback, next);
   }
   renderSpelling();
 })();

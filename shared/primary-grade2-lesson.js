@@ -29,11 +29,11 @@
     el('sentence-input').value=q?.draft||'';
     if(!q){stage.append(make('h3','🎉 Hoàn thành!'));const again=make('button','Chơi lại','g2-practice-button');again.type='button';again.onclick=()=>{pause();fresh();render();fx.feedback('start');};stage.append(again);return;}
     const p=unit.patterns[q.id];stage.append(make('p',`Câu ${round.index+1}/${round.tasks.length}`,'g2-practice-count'));if(p.context){const context=make('p',p.context,'g2-pattern');context.lang='en';stage.append(context);}stage.append(make('p',p.note,'g2-practice-meaning'));
-    if(q.result){status(q.result==='revealed'?`Đáp án: ${p.question}`:q.result==='retry'?'Em đã sửa đúng!':'Chính xác!',q.result==='revealed'?'revealed':'correct');const listen=make('button','🔊 Nghe lại','g2-audio');listen.type='button';listen.onclick=()=>speak(p.question);stage.append(listen);}
+    if(q.result){status(q.result==='revealed'?`Đáp án: ${p.question}`:q.result==='retry'?'Tự sửa đúng rồi, xịn đó!':'Chuẩn luôn!',q.result==='revealed'?'revealed':'correct');const listen=make('button','🔊 Nghe lại','g2-audio');listen.type='button';listen.onclick=()=>speak(p.question);stage.append(listen);}
     waitReveal();
   }
   function check(){const q=current();if(!q||q.result)return;const text=el('sentence-input').value;if(!text.trim()){status('Gõ câu tiếng Anh nhé.');return;}q.draft=text;
-    if(normal(text)!==normal(unit.patterns[q.id].question)){q.errors++;save();status('Chưa đúng. Thử lại nhé!','wrong');fx.feedback('bad');return;}
+    if(normal(text)!==normal(unit.patterns[q.id].question)){q.errors++;save();status('Chưa đúng rồi, thử lại nha!','wrong');fx.feedback('bad');return;}
     pause();q.result=q.errors?'retry':'first';save();render();fx.feedback(q.errors?'corrected':'good');speak(unit.patterns[q.id].question);
   }
   function switchTab(id,event){pause();tab=id;for(const n of document.querySelectorAll('.tab-content'))n.classList.toggle('active',n.id===id);for(const n of document.querySelectorAll('nav .nav-btn'))n.classList.toggle('active',n===event?.currentTarget);if(id==='game-count')render();}

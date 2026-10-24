@@ -13,6 +13,14 @@
 
 ## Nội dung và giao diện
 
+- **Bấm hình nghe từ, cập nhật 24/10/2026:** trong thẻ từ và game Ghép chữ lớp 2–4, hình minh họa là nút phát âm, dùng được bằng chạm/chuột và Enter/Space. Áp dụng thêm cho lớp 6: thẻ từ, mặt nghĩa của thẻ lật, bài gõ từ và nghe lại sau khi chấm ở Unit/ôn học kỳ; nghe tranh không lật thẻ hoặc cộng điểm. Bỏ nút/icon loa riêng của từ, thu gọn thẻ và khoảng trống nhưng giữ vùng bấm ít nhất 44 px. Gọi `DanhAnswerSpeech.listen` cho thao tác chủ động; không tự đọc khi mở/khôi phục, vẫn đọc khi trả lời đúng. Không biến ảnh đáp án của bài chọn tranh thành nút nghe làm mất thao tác chấm. Mẫu trang/bộ dựng phải giữ thay đổi này.
+
+- **Ghép chữ từ vựng, cập nhật 24/10/2026:** độ khó tăng ngầm. Không hiển thị các nhãn “1 chữ”, “2 chữ”, “3 chữ”, nấc/cấp độ, lộ trình thử thách hoặc nút chọn nấc cho học sinh. Vào game là học; sau mỗi nhóm bài hệ thống tự chuyển mức hỗ trợ rồi sang tự gõ cả từ. Giữ phản hồi học tập, tiến độ câu và tổng kết cuối lượt.
+  Các từ phải trộn thứ tự giữa những lần ôn và tránh lặp ngay từ vừa làm khi còn từ khác phù hợp; không xử lý liên tục các mức của riêng một từ. Giữ thứ tự và nháp của lượt dở qua tải lại.
+  Đã áp dụng cho Unit và ôn học kỳ lớp 2, 3, 4. Lớp 3/4 dùng dữ liệu, màu và khóa lưu riêng; học kỳ chia Unit 1–10 và 11–20. Topic phụ vẫn dùng bài và tiến độ chung theo nguyên tắc hiện có. Không tự bật cho lớp 1/5 khi dựng lại trang.
+
+- **Văn phong được duyệt ngày 24/10/2026:** dùng giọng trẻ trung, gần gũi với học sinh Gen Z trong lời hướng dẫn, nút và phản hồi của bài học/website. Câu ngắn, tự nhiên, động viên như “Chuẩn luôn!”, “Thử lại nha”, “Tự sửa đúng rồi, xịn đó!”. Dùng tiếng lóng vừa phải, dễ hiểu với lứa tuổi; không viết sai chính tả, không trêu chọc khi sai, không gây áp lực hoặc làm mờ cách chấm. Nội dung tiếng Anh, đáp án và giải thích kiến thức vẫn chuẩn xác, rõ ràng. Áp dụng khi biên soạn mới hoặc chỉnh sửa, giữ slogan thương hiệu đã được duyệt.
+
 - **Yêu cầu ngày 24/10/2026:** không hiển thị số lượng từ trên thẻ hoặc phần giới thiệu Unit. Không dùng mũi tên trang trí trong thẻ Unit, thẻ hướng dẫn hoặc thẻ chọn mục; cả thẻ là vùng bấm. Áp dụng cho trang hiện tại, thành phần dùng chung và bộ dựng. Giữ chỉ báo tiến độ lượt đang học và nút điều hướng có chức năng (trước/tiếp).
 
 - **Yêu cầu ngày 24/10/2026:** thẻ Unit mở bài trực tiếp, không thêm nhãn/nút “Vào học”. Nút nghe chỉ hiện biểu tượng loa, giữ tên truy cập bằng `aria-label`. Thao tác chủ động bấm loa được phát độc lập với tùy chọn tắt âm phản hồi đã lưu; ưu tiên media playback khi thiết bị hỗ trợ. Không hứa vượt qua âm lượng media bằng 0 hoặc giới hạn của hệ điều hành.

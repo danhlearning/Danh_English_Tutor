@@ -6,6 +6,7 @@
   const loaded=P.load(storage),state=loaded.state; let saveWarning=false, lastTick=performance.now(), transitionLock=false;
   const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const topicById=id=>C.topics.find(t=>t.id===id);
+  const L=window.DanhGrammarSkills;
   const typeNames={choice:'Chọn đáp án',fill:'Điền từ',order:'Xếp câu',correct:'Sửa lỗi',rewrite:'Viết lại câu'};
   const fx=(name,element)=>window.DanhGrammarExperience?.event(name,element);
   function notice(text){$('notice').textContent=text;}
@@ -46,7 +47,8 @@
     if(mode==='mixed'&&selectedTopics.length<2){notice('Chọn ít nhất hai bài để luyện tổng hợp.');return;}
     if(!pool.length){notice(mode==='review'?'Chưa có câu cần ôn ở bài và cấp độ này.':'Chưa có câu phù hợp. Hãy chọn bài khác.');return;}
     if(state.active&&!confirm('Bắt đầu lượt mới sẽ thay lượt đang làm. Kết quả đã ghi vẫn được giữ. Tiếp tục?'))return;
-    const questions=R.select(pool,{mode,records:state.records});
+    if(L&&params.has('game'))pool=pool.filter(q=>(params.get('game')==='mixed'||q.type===params.get('game'))&&(params.get('band')==='all'||L.band(q)===params.get('band')));
+    const questions=R.select(pool,{mode:params.has('game')?'review':mode,records:state.records}).slice(0,params.has('game')?8:10);
     if(!questions.length){notice('Chưa đủ câu phù hợp để mở lượt này.');return;}
     state.active=S.create(questions,{topic:mode==='mixed'?'mixed':t,level:l,mode,topics:selectedTopics});notice('');persist();
     if($('practice')){showPractice();fx('start',$('practice'));}else location.href='grammar-practice.html?resume=1';
@@ -61,7 +63,7 @@
   function current(){return map[state.active?.questionIds[state.active.index]];}
   function support(){const session=state.active,q=current();if(!session||!q||!$('practice')||$('practice').hidden)return;
     $('hint-btn').disabled=!S.canHint(session,q)||Boolean(S.result(session));$('reveal-btn').disabled=!S.canReveal(session)||Boolean(S.result(session));
-    $('timer-message').textContent=S.result(session)?'':S.canReveal(session)?'Em có thể thử tiếp hoặc chủ động xem đáp án.':session.attempts===1?'Em có thể thử lại. Đáp án vẫn được giữ để em tự giải.':'Gợi ý sẽ mở khi em cần thêm thời gian. Không tính điểm theo tốc độ.';
+    $('timer-message').textContent=S.result(session)?'':S.canReveal(session)?'Thử tiếp hoặc xem mẫu nhé.':session.attempts===1?'Thử lại nha.':'';
   }
   function renderTokens(){const s=state.active,q=current();
     const selected=new Set(s.order);$('selected-tokens').innerHTML=s.order.map(i=>`<button type="button" data-token="${i}" data-remove="1" aria-label="Trả lại từ ${escape(q.tokens[i])}">${escape(q.tokens[i])}</button>`).join('')||'<span class="muted">Câu của em sẽ xuất hiện ở đây</span>';
@@ -71,9 +73,9 @@
   function showPractice(){
     const s=state.active;if(!s)return;
     document.body.classList.add('is-practicing');$('setup-panel').hidden=true;$('resume-panel').hidden=true;$('results').hidden=true;$('practice').hidden=false;const q=current();
-    $('lesson-title').textContent=topicById(q.topic).title;$('lesson-level').textContent=`${C.levels[q.level-1]} · ${s.mode==='review'?'Ôn tập':s.mode==='mixed'?'Ôn tổng hợp':'Luyện theo bài'}`;
+    $('lesson-title').textContent=topicById(q.topic).title;$('lesson-level').textContent=`${s.skill?`${L?.band(q)||''} · ${L?.modes[s.skill.game]||''}`:C.levels[q.level-1]} · ${s.mode==='review'?'Ôn tập':s.mode==='mixed'?'Ôn tổng hợp':'Luyện theo bài'}`;
     $('counter').textContent=`Câu ${s.index+1}/${s.questionIds.length}`;$('progress-fill').style.width=`${s.index/s.questionIds.length*100}%`;
-    $('question-label').textContent=typeNames[q.type];$('instruction').textContent=q.instruction;$('question').textContent=q.prompt;$('question').hidden=q.type==='order';
+    $('question-label').textContent=typeNames[q.type];$('instruction').textContent=q.type==='rewrite'?`Giữ nghĩa, dùng “${q.requiredWord}”.`:q.type==='order'?'Bấm từ để xếp hoặc trả lại.':q.type==='correct'?'Sửa lỗi, viết cả câu.':q.type==='fill'?(q.level===3?'Điền và viết cả câu.':'Điền phần còn thiếu.'):'Chọn phần còn thiếu.';$('question').textContent=q.prompt;$('question').hidden=q.type==='order';
     $('scaffold-text').textContent=q.scaffold;$('scaffold').hidden=!q.scaffold;
     $('cue').textContent=q.cue?`Từ gợi ý: ${q.cue}`:'';$('cue').hidden=!q.cue;
     $('theory-link').href=q.theoryUrl;$('theory-link').textContent='Xem lý thuyết bài này';
@@ -87,26 +89,27 @@
     }else{$('answer-input').value=s.answer;$('answer-input').disabled=Boolean(S.result(s));}
     $('feedback').textContent='';$('feedback').hidden=true;$('explanation').hidden=true;$('hint-text').hidden=!s.hint;$('hint-text').textContent=q.hint;
     $('check-btn').hidden=Boolean(S.result(s));$('next-btn').hidden=!S.result(s);$('skip-btn').disabled=Boolean(S.result(s));
+    if($('answer-listen')){$('answer-listen').hidden=!S.result(s)||S.result(s).kind==='skipped';$('answer-listen').onclick=()=>window.DanhAnswerSpeech.listen(L?.sentence(q)||q.answers[0]);}
     if(S.result(s))showOutcome();else if(s.attempts>0){$('feedback').hidden=false;$('feedback').className='response retry';$('feedback').textContent='Câu trả lời chưa khớp. Em hãy thử lại.';}
     persist();support();lastTick=performance.now();$('question-label').focus({preventScroll:true});
   }
   function showOutcome(){const s=state.active,q=current(),result=S.result(s);if(!result)return;
-    const labels={first:'✅ Đúng ngay lần đầu!',corrected:'✅ Em đã sửa đúng. Câu này sẽ được ôn lại.',seen:'📖 Đã xem đáp án. Em có thể đọc giải thích rồi tiếp tục.',skipped:'↪️ Em đã bỏ qua câu này. Hãy luyện lại khi sẵn sàng.'};
-    $('feedback').hidden=false;$('feedback').className=`response ${['first','corrected'].includes(result.kind)?'good':''}`;$('feedback').textContent=labels[result.kind];
+    const labels={first:'✅ Chuẩn luôn!',corrected:'✅ Sửa đúng rồi nè!',seen:'📖 Đã xem đáp án. Em có thể đọc giải thích rồi tiếp tục.',skipped:'↪️ Em đã bỏ qua câu này. Hãy luyện lại khi sẵn sàng.'};
+    $('feedback').hidden=false;$('feedback').className=`response ${['first','corrected'].includes(result.kind)?'good':''}`;$('feedback').textContent=result.hinted?'✅ Đúng rồi! Có dùng gợi ý.':labels[result.kind];
     if(result.kind!=='skipped'){$('explanation').hidden=false;$('explanation').textContent=q.explanation;}
-    $('next-btn').textContent=s.index===s.questionIds.length-1?'Xem kết quả':'Câu tiếp theo →';support();
+    $('next-btn').textContent=s.index===s.questionIds.length-1?'Xem kết quả':'Câu tiếp';support();
   }
-  function finish(kind){const s=state.active,q=current();if(!S.finishQuestion(s,kind))return;P.record(state,q,S.result(s),s.id);persist();showPractice();fx(kind==='first'?'correct':kind==='corrected'?'corrected':kind==='seen'?'reveal':'skip',$('feedback'));if(kind==='first'||kind==='corrected')window.DanhAnswerSpeech.question(q);}
+  function finish(kind){const s=state.active,q=current();if(!S.finishQuestion(s,kind))return;P.record(state,q,S.result(s),s.id);persist();showPractice();fx(kind==='first'?'correct':kind==='corrected'?'corrected':kind==='seen'?'reveal':'skip',$('feedback'));if(kind==='first'||kind==='corrected')window.DanhAnswerSpeech.say(['order','correct','rewrite'].includes(q.type)||q.level===3?L?.sentence(q)||q.answers[0]:q.answers[0]);}
   function check(){const s=state.active,q=current();if(!s||S.result(s))return;
     if(!A.normalize(s.answer)){$('feedback').hidden=false;$('feedback').className='response retry';$('feedback').textContent=q.type==='choice'?'Em hãy chọn một đáp án.':q.type==='order'?'Em hãy chọn các từ để xếp câu.':'Em hãy nhập câu trả lời.';return;}
-    if(A.accepted(q,s.answer))finish(s.attempts===0?'first':'corrected');
-    else{const normalized=A.normalize(s.answer),changed=s.lastAttempt!==normalized;if(changed){s.attempts++;s.lastAttempt=normalized;}persist();$('feedback').hidden=false;$('feedback').className='response retry';$('feedback').textContent=q.type==='rewrite'?'Câu của em chưa khớp đáp án mẫu. Em hãy giữ nghĩa và dùng đúng từ yêu cầu.':'Chưa đúng. Em hãy đọc lại câu và thử lần nữa.';support();if(changed)fx('retry',$('feedback'));}
+    if(A.accepted(q,s.answer))finish(s.attempts===0&&!s.hint?'first':'corrected');
+    else{const normalized=A.normalize(s.answer),changed=s.lastAttempt!==normalized;if(changed){s.attempts++;s.lastAttempt=normalized;}persist();$('feedback').hidden=false;$('feedback').className='response retry';$('feedback').textContent=q.type==='rewrite'?'Câu của em chưa khớp đáp án mẫu. Em hãy giữ nghĩa và dùng đúng từ yêu cầu.':'Chưa đúng rồi, thử lại nha.';support();if(changed)fx('retry',$('feedback'));}
   }
   function showResults(round){
     document.body.classList.remove('is-practicing');$('practice').hidden=true;$('setup-panel').hidden=true;$('results').hidden=false;
-    const counts={first:0,corrected:0,seen:0,skipped:0};for(const o of round.outcomes)counts[o.kind]++;
+    const counts={first:0,corrected:0,hinted:0,seen:0,skipped:0};for(const o of round.outcomes)counts[o.hinted?'hinted':o.kind]++;
     $('score').textContent=`${counts.first}/${round.total}`;$('result-caption').textContent='Số câu đúng ngay lần đầu';
-    $('result-counts').innerHTML=[['first','Đúng ngay'],['corrected','Đã sửa đúng'],['seen','Đã xem đáp án'],['skipped','Chưa hoàn thành']].map(([key,title])=>`<div class="stat"><strong>${counts[key]}</strong><span>${title}</span></div>`).join('');
+    $('result-counts').innerHTML=[['first','Đúng ngay'],['corrected','Đã sửa đúng'],['hinted','Có gợi ý'],['seen','Đã xem đáp án'],['skipped','Chưa hoàn thành']].map(([key,title])=>`<div class="stat"><strong>${counts[key]}</strong><span>${title}</span></div>`).join('');
     const errors=round.questionIds.filter((id,i)=>round.outcomes[i].kind!=='first').slice(0,3);
     $('errors-heading').textContent=errors.length?'Những phần nên ôn lại':'Em đã hoàn thành tốt lượt này';
     $('error-list').innerHTML=errors.map(id=>{const q=map[id];return `<li><strong>${topicById(q.topic).title}</strong><p>${escape(q.type==='rewrite'?q.prompt:q.type==='order'?'Luyện sắp xếp câu':q.prompt)}</p><a href="${q.theoryUrl}">Đọc lại cách dùng</a></li>`;}).join('');
@@ -114,7 +117,7 @@
     $('mastery-message').textContent=round.topic!=='mixed'&&round.level&&P.mastered(state,round.topic,round.level,Q)?'Đã vững: em đã đạt hai lượt khác nhau và một lượt ôn sau ít nhất 7 ngày.':'Tiếp tục luyện và ôn lại để nhớ lâu. Một lượt hoàn thành chưa phải là đã vững.';
     $('results-heading').focus();fx('finish',$('results'));
   }
-  function next(){if(transitionLock||!state.active)return;transitionLock=true;const s=state.active,changed=S.next(s);
+  function next(){window.DanhAnswerSpeech?.stop();if(transitionLock||!state.active)return;transitionLock=true;const s=state.active,changed=S.next(s);
     if(changed==='complete'){P.completed(state,s);persist();showResults(state.rounds[state.rounds.length-1]);}
     else if(changed){persist();showPractice();fx('next',$('practice'));$('practice').scrollIntoView({block:'start',behavior:'auto'});}
     setTimeout(()=>{transitionLock=false;},300);
@@ -147,7 +150,7 @@
       $('answer-input').oninput=()=>{if(state.active&&!S.result(state.active)){state.active.answer=$('answer-input').value;persist();}};
       $('answer-input').onkeydown=event=>{if(event.key==='Enter'&&!event.shiftKey&&!event.repeat){event.preventDefault();check();}};
       $('leave-practice').onclick=()=>{persist();location.href='grammar-index.html';};
-      $('new-round').onclick=()=>{const last=state.rounds[state.rounds.length-1];$('results').hidden=true;$('setup-panel').hidden=false;if(topicById(last?.topic))$('topic-select').value=last.topic;if(last?.level)$('level-select').value=last.level;$('setup-panel').scrollIntoView({block:'start'});};
+      $('new-round').onclick=()=>{if(params.has('game')){location.href='grammar-index.html';return;}const last=state.rounds[state.rounds.length-1];$('results').hidden=true;$('setup-panel').hidden=false;if(topicById(last?.topic))$('topic-select').value=last.topic;if(last?.level)$('level-select').value=last.level;$('setup-panel').scrollIntoView({block:'start'});};
       $('result-review').onclick=()=>{const last=state.rounds[state.rounds.length-1];if(topicById(last.topic))$('topic-select').value=last.topic;if(last.level)$('level-select').value=last.level;if(last.topic==='mixed'){const qs=R.select(reviewPool(),{mode:'review',records:state.records});state.active=S.create(qs,{topic:'mixed',level:0,mode:'review'});persist();showPractice();}else start('review');};
       const updateReview=()=>{$('setup-review').disabled=reviewPool($('topic-select').value,level()).length===0;};$('topic-select').onchange=updateReview;$('level-select').onchange=updateReview;updateReview();
       if(state.active){$('resume-panel').hidden=false;$('resume-label').textContent=`Lượt đang làm: câu ${state.active.index+1}/${state.active.questionIds.length}`;$('resume-btn').onclick=()=>{showPractice();fx('start',$('practice'));};}
