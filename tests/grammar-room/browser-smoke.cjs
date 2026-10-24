@@ -11,13 +11,13 @@ const out=path.resolve(__dirname,'../../artifacts/grammar-room');fs.mkdirSync(ou
   const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:2});
   await initLearner(context);
   const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
-  await page.goto(`${base}/grammar-index.html`);await page.waitForSelector('.topic-card');
-  assert.equal(await page.locator('.topic-card').count(),7);assert.equal(await page.locator('.topic-links li').count(),25);
+  await page.goto(`${base}/grammar-index.html`);await page.waitForSelector('.word-card');
+  assert.equal(await page.locator('.word-card').count(),7);await page.locator('[data-band=all]').click();assert.equal(await page.locator('.word-card').count(),25);
   await page.screenshot({path:path.join(out,'room-mobile.png'),fullPage:true});
-  await page.locator('#search').fill('mao tu');assert.equal(await page.locator('.topic-links li').count(),1);await page.locator('#search').fill('');
+  await page.locator('#search').fill('mao tu');assert.equal(await page.locator('.word-card').count(),1);await page.locator('#search').fill('');
   const topics=await page.evaluate(()=>DanhGrammarCatalog.topics.map(t=>t.id));
   async function question(){return page.evaluate(()=>{const s=JSON.parse(DanhLearners.storage.getItem(DanhGrammarProgress.KEY)).active;return DanhGrammarQuestions.find(q=>q.id===s.questionIds[s.index]);});}
-  async function answer(q){if(q.type==='choice')await page.locator('[data-option="0"]').click();else if(q.type==='order'){for(let i=0;i<q.tokens.length;i++)await page.locator(`#available-tokens [data-token="${i}"]`).click();}else await page.locator('#answer-input').fill(q.answers[0]);await page.locator('#check-btn').click();assert.match(await page.locator('#feedback').innerText(),/Đúng ngay/);}
+  async function answer(q){if(q.type==='choice')await page.locator('[data-option="0"]').click();else if(q.type==='order'){for(let i=0;i<q.tokens.length;i++)await page.locator(`#available-tokens [data-token="${i}"]`).click();}else await page.locator('#answer-input').fill(q.answers[0]);await page.locator('#check-btn').click();assert.match(await page.locator('#feedback').innerText(),/Chuẩn luôn/);}
   let completed=0;
   if(!process.env.GRAMMAR_SKIP_FULL)for(const topic of topics)for(let level=1;level<=3;level++){
    await page.goto(`${base}/grammar-practice.html?topic=${topic}&level=${level}`);await page.locator('#start-btn').click();
@@ -36,11 +36,11 @@ const out=path.resolve(__dirname,'../../artifacts/grammar-room');fs.mkdirSync(ou
   await page.locator('#answer-input').fill('wrong-two');await page.locator('#check-btn').click();assert.ok(await page.locator('#reveal-btn').isEnabled());
   await page.locator('#reveal-btn').click();assert.match(await page.locator('#feedback').innerText(),/Đã xem đáp án/);
   const stored=await page.evaluate(()=>JSON.parse(DanhLearners.storage.getItem(DanhGrammarProgress.KEY)));assert.equal(stored.active.outcomes[stored.active.index].kind,'seen');assert.equal(stored.records[typed.id].kind,'seen');
-  await page.goto(`${base}/grammar-index.html`);assert.ok(await page.locator('#continue-panel').isVisible());assert.ok(await page.locator('#review-start').isEnabled());
-  page.once('dialog',d=>d.accept());await page.locator('#review-start').click();await page.waitForSelector('#practice:not([hidden])');assert.ok(await page.locator('#counter').innerText());
+  await page.goto(`${base}/grammar-index.html`);assert.ok(await page.locator('#resume').isVisible());assert.ok(await page.locator('#review').isEnabled());
+  page.once('dialog',d=>d.accept());await page.locator('#review').click();await page.waitForSelector('#practice:not([hidden])');assert.ok(await page.locator('#counter').innerText());
   // Five viewports, all five answer types, old URLs and the quick theory checks.
   for(const width of[320,375,390,430,1280]){
-   await page.setViewportSize({width,height:900});await page.goto(`${base}/grammar-index.html`);await page.waitForSelector('.topic-card');assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`home ${width}`);
+   await page.setViewportSize({width,height:900});await page.goto(`${base}/grammar-index.html`);await page.waitForSelector('.word-card');assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`home ${width}`);
    if(width===1280)await page.screenshot({path:path.join(out,'room-desktop.png'),fullPage:true});
    const fixtureContext=await browser.newContext({viewport:{width,height:900},isMobile:width<700,hasTouch:width<700});
    await initLearner(fixtureContext);
@@ -62,8 +62,8 @@ const out=path.resolve(__dirname,'../../artifacts/grammar-room');fs.mkdirSync(ou
   await page.setViewportSize({width:390,height:844});await page.goto(`${base}/grammar-theory.html?topic=passive`);await page.screenshot({path:path.join(out,'theory-mobile.png'),fullPage:true});
   // Storage blocked and corrupt / incompatible session: all remain usable.
   const blocked=await browser.newContext();await blocked.addInitScript(()=>Object.defineProperty(window,'localStorage',{get(){throw new Error('blocked');}}));await initLearner(blocked);const blockedPage=await blocked.newPage();await blockedPage.goto(`${base}/grammar-practice.html?topic=be`);await blockedPage.locator('#start-btn').click();assert.ok(await blockedPage.locator('#practice').isVisible());assert.match(await blockedPage.locator('danh-learner #storage-warning').innerText(),/chặn lưu/);await blocked.close();
-  for(const[value,message]of [['{bad',/Chưa đọc/],[JSON.stringify({...progress.fresh(),active:{version:99}}),/cập nhật/]]){
-   const corrupt=await browser.newContext();await initLearner(corrupt);const corruptPage=await corrupt.newPage();await seedLearning(corruptPage,progress.KEY,value);corruptPage.on('pageerror',e=>errors.push(e.message));await corruptPage.goto(`${base}/grammar-index.html`);await corruptPage.waitForSelector('.topic-card');assert.match(await corruptPage.locator('#notice').innerText(),message);await corrupt.close();
+  for(const[value,message]of [['{bad',/Chưa đọc/],[JSON.stringify({...progress.fresh(),active:{version:99}}),/Lượt cũ/]]){
+   const corrupt=await browser.newContext();await initLearner(corrupt);const corruptPage=await corrupt.newPage();await seedLearning(corruptPage,progress.KEY,value);corruptPage.on('pageerror',e=>errors.push(e.message));await corruptPage.goto(`${base}/grammar-index.html`);await corruptPage.waitForSelector('.word-card');assert.match(await corruptPage.locator('#message').innerText(),message);await corrupt.close();
   }
   assert.deepEqual(errors,[]);console.log(`PASS: ${completed} full rounds / ${completed*10} answers; retries, reveal, resume, old links, theory, storage fallbacks and six viewports.`);
  }finally{await browser.close();}

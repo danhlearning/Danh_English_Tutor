@@ -46,7 +46,22 @@
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',connectTablists,{once:true});
   else connectTablists();
 
-  function flashcards({card,words,previous,next,illustration}) {
+  function flashcards({card,words,previous,next,illustration,picture}) {
+    if(picture){
+      let index=0,flipped=false;
+      card.classList.add('g6-picture-flash');
+      const render=()=>{
+        const word=words[index];card.replaceChildren(el('span',`THẺ ${index+1}/${words.length}`,'g6-card-position'));
+        if(flipped)card.append(picture(word));
+        const flip=button('',()=>{flipped=!flipped;render();card.querySelector('.g6-flip-action').focus({preventScroll:true});feedback('flip',card);},'g6-flip-action');
+        flip.setAttribute('aria-label',flipped?'Xem từ tiếng Anh':'Lật thẻ xem nghĩa');
+        flip.append(el('strong',flipped?word.meaning:word.term),el('span',flipped?word.example:'Lật thẻ'));
+        card.append(flip);
+      };
+      const move=direction=>{index=(index+direction+words.length)%words.length;flipped=false;render();feedback('next',card);};
+      previous.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));render();
+      return {current:()=>words[index]};
+    }
     let index=0,flipped=false,locked=false,timer;
     let inner;card.classList.add('vg-flip-card');
     const side = (word,back) => {
@@ -84,7 +99,7 @@
   };
   const isMilestone = count => count===3 || count>=5 && count%5===0;
 
-  function mount({stage,words,grade,scope,mark=()=>{},length=words.length}) {
+  function mount({stage,words,grade,scope,mark=()=>{},length=words.length,picture}) {
     const all=words.map(word=>({...word,key:word.key || `u${word.unit || 0}-w${word.id}`}));
     const byKey=new Map(all.map(word=>[word.key,word]));
     const key=`danh-g${grade}-vocabulary-game-${scope}-v1`;
@@ -170,9 +185,9 @@
       });
       stage.append(head,progress,question,choices,status);
       if(round.solved){
-        status.textContent=round.outcome==='seen'?`Đáp án: ${word.term}. Em hãy ôn lại từ này.`:round.outcome==='first'?`Chính xác! +10 sao. ${word.term} = ${word.meaning}.`:`Em đã tự sửa đúng! +5 sao. ${word.term} = ${word.meaning}.`;
+        status.textContent=round.outcome==='seen'?`Đáp án: ${word.term}. Em hãy ôn lại từ này.`:round.outcome==='first'?`Chuẩn luôn! +10 sao. ${word.term} = ${word.meaning}.`:`Tự sửa đúng rồi, xịn đó! +5 sao. ${word.term} = ${word.meaning}.`;
         status.classList.add(round.outcome==='seen'?'vg-help':'vg-good');
-        stage.append(el('p',word.example,'vg-example'),button('🔊 Nghe từ',()=>{
+        stage.append(el('p',word.example,'vg-example'),picture?picture(word):button('🔊 Nghe từ',()=>{
           if(!window.DanhListenControls?.isManualRequest() && !effects.soundEnabled()){status.textContent='Âm thanh đang tắt. Bật âm thanh để nghe từ nhé.';return;}
           window.DanhAnswerSpeech.say(word.term);
         },'g6-secondary'));
@@ -181,7 +196,7 @@
           round.results.push({key:word.key,outcome:round.outcome});round.index++;round.attempts=0;round.wrong=[];round.solved=false;round.options=null;delete round.outcome;persist();render();focusQuestion();feedback(round.index===round.items.length?'complete':'next',stage);
         });next.dataset.next='true';stage.append(next);
       } else if(round.attempts){
-        status.textContent='Chưa đúng, em thử lại nhé. Tự sửa cũng giúp em ghi nhớ!';
+        status.textContent='Chưa đúng rồi, thử lại nha. Mình vẫn còn cơ hội tự sửa!';
         if(round.attempts>=2){const reveal=button('Xem đáp án',()=>finish('seen'),'g6-secondary');stage.append(reveal);}
       }
     }

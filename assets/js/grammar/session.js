@@ -14,7 +14,7 @@
   function result(session, index = session.index) { return session.outcomes[index]; }
   function finishQuestion(session,kind) {
     if(result(session)) return false;
-    session.outcomes[session.index] = { kind: session.revealed ? 'seen' : kind, attempts: session.attempts };
+    session.outcomes[session.index] = { kind: session.revealed ? 'seen' : kind, attempts: session.attempts, ...(session.hint&&['first','corrected'].includes(kind)?{hinted:true}: {}) };
     return true;
   }
   function next(session) {
@@ -23,8 +23,8 @@
     session.index++; session.attempts=0;session.revealed=false;session.answer='';session.elapsed=0;session.hint=false;session.order=[];session.optionOrder=[];session.tokenOrder=[];session.lastAttempt='';
     return true;
   }
-  function canReveal(session) { return session.attempts>=2 || session.elapsed>=60000; }
-  function canHint(session,q) { return session.elapsed >= (q.type==='choice' || q.type==='fill' && q.level!==3 ? 20000 : 60000); }
+  function canReveal(session) { return session.skill ? session.hint || session.attempts>=1 : session.attempts>=2 || session.elapsed>=60000; }
+  function canHint(session,q) { return session.skill ? !result(session) : session.elapsed >= (q.type==='choice' || q.type==='fill' && q.level!==3 ? 20000 : 60000); }
   const api={create,compatible,result,finishQuestion,next,canReveal,canHint};
   root.DanhGrammarSession=api;
   if(typeof module!=='undefined') module.exports=api;

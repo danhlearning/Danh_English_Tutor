@@ -37,8 +37,8 @@
   function screen(which) {
     clearTimeout(inputTimer);pauseReveal();
     effects.stop(); el('speech-status').textContent='';
-    for(const id of ['setup','play','result'])el(id).hidden=id!==which;
-    document.body.classList.toggle('is-playing',which==='play');
+    for(const id of ['setup','play','result','letter-review'])if(el(id))el(id).hidden=id!==which;
+    document.body.classList.toggle('is-playing',which==='play'||which==='letter-review');
     storageNotice();
   }
   function setup() {
@@ -46,7 +46,7 @@
     const r=model.round, active=r&&r.index<r.tasks.length;
     el('continue-panel').hidden=!active;
     if(active)el('continue-label').textContent=`Đang ở câu ${r.index+1}/${r.tasks.length}.`;
-    el('mode-summary').textContent=`🎲 ${model.state.selectedModes.length} dạng thử thách`;
+    el('mode-summary').textContent=el('letter-review')?'Chọn kiểu ôn':`🎲 ${model.state.selectedModes.length} dạng thử thách`;
     el('start').disabled=model.roundLength()===0;
     el('mode-notice').textContent=el('start').disabled?'Chọn thêm Unit hoặc dạng khác nhé.':'';
     el('mode-choices').replaceChildren(node('legend','Dạng muốn chơi'));
@@ -232,4 +232,5 @@
   document.addEventListener('visibilitychange',()=>{clearTimeout(inputTimer);pauseReveal();if(!document.hidden)resumeReveal();});
   window.addEventListener('pagehide',()=>{clearTimeout(inputTimer);pauseReveal();effects.stop();model.save();});
   model.save();setup();
+  if(el('letter-review'))window.DanhGrade2LetterReview.connect({units:model.units,selectedUnits:()=>[...model.state.selected],open:()=>screen('letter-review'),back:setup,termSplit:config.termSplit||model.units.length/2});
 })();

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Luyện từ vựng · Danh English Tutor</title>
+ <script src="./shared/learner-profile-core.js?v=compact-listen-20261024"></script>
+ <script src="./shared/learner-profile.js?v=tidy-unit-cards-20261024"></script>
+ <link rel="stylesheet" href="./assets/css/pages/vocabulary-skills.css?v=skills-vocabulary-20261024">
+</head>
+<body>
+ <header class="hero shell"><div><a href="skills.html">Luyện theo kỹ năng</a><h1>Luyện từ vựng</h1></div><span class="hero-art" aria-hidden="true">🌱</span></header>
+ <main class="shell">
+  <section id="setup">
+   <p id="loading" class="loading" role="status">Đang mở kho từ…</p>
+   <div id="workbench" hidden>
+    <section class="workbench" aria-labelledby="level-heading">
+     <div class="heading-row"><h2 id="level-heading">Cấp độ Cambridge</h2><a class="quiet" href="flashcard-previous.html">Sổ tay &amp; lượt cũ</a></div>
+     <div class="levels" role="group" aria-label="Chọn cấp độ">
+      <button type="button" data-level="Pre A1" aria-pressed="true">Pre A1<span>Starters</span></button>
+      <button type="button" data-level="A1" aria-pressed="false">A1<span>Movers</span></button>
+      <button type="button" data-level="A2" aria-pressed="false">A2<span>Flyers / Key</span></button>
+      <button type="button" data-level="B1" aria-pressed="false">B1<span>Preliminary</span></button>
+      <button type="button" data-level="B2" aria-pressed="false">B2<span>First</span></button>
+      <button type="button" data-level="C1" aria-pressed="false">C1<span>Advanced</span></button>
+      <button type="button" data-level="C2" aria-pressed="false">C2<span>Proficiency</span></button>
+      <button type="button" data-level="all" aria-pressed="false">Theo lớp<span>Mọi cấp độ</span></button>
+     </div>
+     <details class="filter-disclosure"><summary>Lọc bộ từ</summary><div class="filters">
+      <label>Lớp<select id="grade-filter"><option value="">Mọi lớp</option><option value="1">Lớp 1</option><option value="2">Lớp 2</option><option value="3">Lớp 3</option><option value="4">Lớp 4</option><option value="5">Lớp 5</option><option value="6">Lớp 6</option><option value="7">Lớp 7</option><option value="8">Lớp 8</option><option value="9">Lớp 9</option><option value="10">Lớp 10</option><option value="11">Lớp 11</option><option value="12">Lớp 12</option></select></label>
+      <label>Unit<select id="unit-filter" disabled><option value="">Mọi Unit</option></select></label>
+      <label>Tìm từ<input id="search" type="search" placeholder="Từ hoặc chủ đề" autocomplete="off"></label>
+     </div></details>
+     <div class="modes" role="group" aria-label="Chọn kiểu chơi">
+      <button type="button" class="mode" data-mode="cards" aria-pressed="false"><span aria-hidden="true">🃏</span>Lật thẻ</button>
+      <button type="button" class="mode" data-mode="meaning" aria-pressed="true"><span aria-hidden="true">🧩</span>Chọn nghĩa</button>
+      <button type="button" class="mode" data-mode="listen" aria-pressed="false"><span aria-hidden="true">🎧</span>Nghe chọn từ</button>
+      <button type="button" class="mode" data-mode="spelling" aria-pressed="false"><span aria-hidden="true">✏️</span>Gõ từ</button>
+      <button type="button" class="mode" data-mode="context" aria-pressed="false"><span aria-hidden="true">💬</span>Dùng trong câu</button>
+     </div>
+     <div class="actions"><button type="button" id="start" class="primary">Chơi thôi!</button><button type="button" id="resume" hidden>Chơi tiếp</button><button type="button" id="review" disabled>Ôn hôm nay</button><button type="button" id="cards-resume" hidden>Tiếp tục lật thẻ</button></div>
+     <p id="message" class="notice" role="status"></p>
+    </section>
+    <div class="library-head"><h2>Khám phá từ</h2><details class="quiet"><summary>Về cấp độ</summary><p>Mức luyện tham chiếu theo từ và nghĩa, không phải kết quả thi. Từ chưa phân cấp nằm trong kho theo lớp.</p></details></div>
+    <div id="word-list" class="word-grid"></div><button type="button" id="more" class="more" hidden>Xem thêm</button>
+   </div>
+  </section>
+  <section id="play" class="play" hidden aria-label="Lượt luyện từ vựng">
+   <div class="play-top"><button type="button" id="back">Chọn bộ khác</button><strong id="round-label"></strong><span id="position"></span></div>
+   <div id="stage" class="task"></div>
+  </section>
+  <nav class="bottom-nav" aria-label="Điều hướng"><a href="skills.html">Luyện theo kỹ năng</a><a href="index.html">Trang chủ</a></nav>
+ </main>
+ <contact-danh></contact-danh><script src="./shared/contact-footer.js"></script>
+ <script src="./shared/learning-effects.js?v=effects-ui-off-20261024"></script>
+ <script src="./assets/data/vocabulary-levels.js?v=skills-vocabulary-20261024"></script>
+ <script src="./shared/vocabulary-library.js?v=skills-vocabulary-20261024"></script>
+ <script src="./assets/js/pages/vocabulary-skills-core.js?v=skills-vocabulary-20261024-2"></script>
+ <script src="./assets/js/pages/vocabulary-skills.js?v=skills-vocabulary-20261024"></script>
+</body>
+</html>

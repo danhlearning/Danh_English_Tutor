@@ -13,10 +13,10 @@
   function record(state,q,result,roundId,now = Date.now()) {
     const previous = state.records[q.id];
     if (previous && previous.roundId === roundId) return false;
-    const success = result.kind === 'first';
+    const success = result.kind === 'first' && !result.hinted;
     const stage = success ? previous ? Math.min((Number.isInteger(previous.stage) ? previous.stage : -1) + 1,2) : 0 : -1;
     const interval = success ? [3,7,14,14][stage] : 1;
-    state.records[q.id] = { kind: result.kind, attempts: result.attempts, topic: q.topic, familyId: q.familyId, level: q.level, stage, due: now + interval*DAY, needsReview: !success || Boolean(previous && previous.needsReview && stage < 2), roundId, last: now };
+    state.records[q.id] = { kind: result.kind, hinted: Boolean(result.hinted), attempts: result.attempts, topic: q.topic, familyId: q.familyId, level: q.level, stage, due: now + interval*DAY, needsReview: !success || Boolean(previous && previous.needsReview && stage < 2), roundId, last: now };
     return true;
   }
   function due(state, now = Date.now()) { return Object.entries(state.records).filter(([,r]) => r && Number.isFinite(r.due) && r.due <= now).map(([id]) => id); }

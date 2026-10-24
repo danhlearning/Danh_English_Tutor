@@ -29,7 +29,7 @@ for(const g of [6,7,8,9,10,11,12]){
  grammar=grammar.replace(/id="library-count">[^<]*/, 'id="library-count">Đang tải bài luyện');
  grammar=grammar.replace('Câu hỏi do website biên soạn, không phải đề thi chính thức.','Bài viết được đối chiếu với đáp án mẫu; các dạng có thể cùng luyện một ngữ cảnh.');
  write(`grade/lop${g}/grammar.html`,pencil(grammar));
- if(g!==6){write(`grade/lop${g}/assets/js/lesson.js`,convert(base.lesson));if(g!==11)write(`grade/lop${g}/assets/js/catalog.js`,convert(base.catalogJS));}
+ if(g!==6){write(`grade/lop${g}/assets/js/lesson.js`,convert(base.lesson));write(`grade/lop${g}/assets/js/picture-audio.js`,convert(read('grade/lop6/assets/js/picture-audio.js')));write(`grade/lop${g}/assets/css/picture-audio.css`,read('grade/lop6/assets/css/picture-audio.css'));if(g!==11)write(`grade/lop${g}/assets/js/catalog.js`,convert(base.catalogJS));}
  write(`grade/lop${g}/assets/js/grammar.js`,`window.DanhGrammarGame({grade:${g},storageKey:'danh-g${g}-grammar-v1',termSplit:${split},pronunciationSummary:'Phân biệt âm, trọng âm và ngữ điệu theo Unit'});\n`);
  if(g===11)require('node:child_process').execFileSync(process.execPath,[path.join(__dirname,'build-grade11-improvement.cjs')],{stdio:'inherit'});
  if(g===12)require('node:child_process').execFileSync(process.execPath,[path.join(__dirname,'build-grade12-improvement.cjs')],{stdio:'inherit'});
