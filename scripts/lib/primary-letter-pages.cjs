@@ -1,4 +1,4 @@
-const version='picture-tap-20261024';
+ const version='picture-tap-20261024';
 function enable(html,grade,review=false){
  if(![3,4].includes(Number(grade)))return html;
  if(!html.includes('letter-ladder.css'))html=html.replace('</head>',`<link data-grade2-letter rel="stylesheet" href="../lop2/assets/css/letter-ladder.css?v=${version}"></head>`);
@@ -15,6 +15,6 @@ function enable(html,grade,review=false){
   if(!html.includes('id="start-letters"'))html=html.replace(/<button id="start"[^>]*>[^<]*<\/button>/,`<button id="start" type="button" class="primary">Ôn tổng hợp</button><button data-grade2-letter-review id="start-letters" type="button" class="primary">Ghép chữ</button>`);
   html=html.replace(/(<body\b)(?![^>]*data-grade=)/,`$1 data-grade="${grade}"`).replace(/(<button id="pick-term1"[^>]*>)[^<]*/, '$1Học kỳ 1').replace(/(<button id="pick-term2"[^>]*>)[^<]*/, '$1Học kỳ 2');
  }
- return html.replace(/((?:letter-ladder(?:-core)?|letter-review|learning-core|grade2-navigation|mixed-review)\.js)\?v=[^" ]+/g,`$1?v=${version}`).replace(/(shared\/primary-grade2-lesson\.js)\?v=[^" ]+/g,`$1?v=${version}`);
+ return html.replace(/((?:letter-ladder(?:-core)?|letter-review|grade2-navigation|mixed-review)\.js)\?v=[^" ]+/g,`$1?v=${version}`).replace(/(shared\/primary-grade2-lesson\.js)\?v=[^" ]+/g,`$1?v=${version}`).replace(/(learning-core\.js)\?v=[^" ]+/g,'$1?v=repo-picture-listen-20261025').replace(/(picture-audio\.js)\?v=[^" ]+/g,'$1?v=all-vocab-picture-20261025');
 }
 module.exports={enable,version};

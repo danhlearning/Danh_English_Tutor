@@ -200,6 +200,9 @@
 
             // A failed image gets one local fallback, including for custom words.
             const imgElement = document.getElementById('img-vocab');
+            window.DanhPictureListen.bind(imgElement.parentElement,data.word,data.meanVi);
+            const pictureSpeaker=document.getElementById('btn-speak-icon');
+            if(pictureSpeaker){pictureSpeaker.style.visibility='hidden';pictureSpeaker.style.pointerEvents='none';pictureSpeaker.tabIndex=-1;pictureSpeaker.setAttribute('aria-hidden','true');}
             imgElement.style.opacity = '0.3';
             imgElement.onload = () => imgElement.style.opacity = '1';
             imgElement.onerror = () => {

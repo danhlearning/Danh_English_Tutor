@@ -55,7 +55,7 @@ for(const grade of targetGrades){
       .replace('<p id="topic-description"></p>','').replace('  <script src="./assets/data/gs-unit1-data.js?v=compact-listen-20261024"></script>','')
       .replace('  <script src="./assets/js/grade2-progress.js?v=compact-listen-20261024"></script>','')
       .replace('  <script src="./assets/js/extended-topic.js?v=compact-listen-20261024"></script>','')
-      .replace('  <script src="./assets/js/learning-core.js?v=picture-tap-20261024"></script>',`  <script src="../../shared/learning-effects.js?v=compact-listen-20261024"></script>\n  <script src="../lop2/assets/js/learning-core.js?v=compact-listen-20261024"></script>\n  <script src="./assets/js/grade2-course.js?v=compact-listen-20261024"></script>\n  <script src="../../shared/primary-grade2-lesson.js?v=student-tone-20261024"></script>`)
+      .replace('  <script src="./assets/js/learning-core.js?v=repo-picture-listen-20261025"></script>',`  <script src="../../shared/learning-effects.js?v=compact-listen-20261024"></script>\n  <script src="../lop2/assets/js/learning-core.js?v=repo-picture-listen-20261025"></script>\n  <script src="./assets/js/grade2-course.js?v=compact-listen-20261024"></script>\n  <script src="../../shared/primary-grade2-lesson.js?v=student-tone-20261024"></script>`)
       .replace(/\.\/assets\/js\/grade2-navigation\.js\?v=[^"\s]+/,`../lop2/assets/js/grade2-navigation.js?v=${version}`)
       .replace('</head>',`<link rel="stylesheet" href="../../shared/primary-grade2.css?v=${version}"></head>`);
     if(grade===4)html=html.replace(`grade2-course.js?v=${version}`,`grade2-course.js?v=${courseVersion}`);
@@ -92,7 +92,7 @@ for(let grade=2;grade<=12;grade++){
 for(const name of fs.readdirSync(path.join(root,'grade/lop2')).filter(n=>n.endsWith('.html'))){
   const file=`grade/lop2/${name}`;let html=read(file);
   html=html.replace(/grade2-navigation\.js\?v=[^"\s]+/g,`grade2-navigation.js?v=${version}`);
-  if(name==='animals.html')html=html.replace(/topics\/animals\.js\?v=[^"\s]+/,`topics/animals.js?v=${version}`);
+  if(name==='animals.html')html=html.replace(/topics\/animals\.js\?v=[^"\s]+/,`topics/animals.js?v=repo-picture-listen-20261025`);
   if(name==='review.html')html=html.replaceAll('v=island-simple-20261022',`v=${version}`);
   write(file,html);
 }

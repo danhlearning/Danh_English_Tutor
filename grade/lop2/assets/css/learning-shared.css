@@ -23,7 +23,7 @@
 .learning-visual { display: inline-flex; align-items: center; justify-content: center; font-size: 4rem; line-height: 1; }
 .learning-visual svg { width: 100%; height: 100%; max-width: 130px; max-height: 130px; }
 .learning-question-visual { width: 150px; height: 140px; margin: 4px auto 20px; }
-.learning-stage > button.learning-card { display: block; width: min(300px, 100%); height: 220px; margin: 18px auto;
+.learning-stage > .learning-card { display: block; width: min(300px, 100%); height: 220px; margin: 18px auto;
   padding: 0; border: 0; background: transparent; font: inherit; cursor: pointer;
   perspective: 1000px; touch-action: manipulation; }
 .learning-card-inner { display: block; position: relative; width: 100%; height: 100%;

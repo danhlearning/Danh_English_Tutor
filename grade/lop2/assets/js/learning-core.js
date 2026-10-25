@@ -433,29 +433,33 @@
           const control=button(label,()=>{cancel();stopSpeech();cards.mode=mode;learning.save();renderCards();});
           control.dataset.cardMode=mode;view.modes.append(control);
         }
-        view.card=button('',()=>{
+        view.card=window.DanhPictureListen.flipSurface(()=>{
           if(view.card.classList.contains('is-flipped'))return;
           const current=view.word;
           view.card.classList.add('is-flipped');view.card.setAttribute('aria-pressed','true');
           view.front.setAttribute('aria-hidden','true');view.back.setAttribute('aria-hidden','false');
+          const picture=view.front.querySelector('[data-danh-picture-listen]');if(picture)picture.tabIndex=-1;
           if(!cards.seen.includes(current.id))cards.seen.push(current.id);
           learning.save();speakWord(current);
+          if(view.listen)view.listen.hidden=false;
           timer=setTimeout(()=>{timer=setTimeout(()=>moveCard(1,true),cardRevealMs);},
             window.matchMedia('(prefers-reduced-motion: reduce)').matches?0:160);
         },'learning-card');
         view.card.setAttribute('aria-label','Lật thẻ xem đáp án');
         const controls=document.createElement('div');controls.className='learning-controls learning-card-nav';
-        controls.append(button('← Thẻ trước',()=>moveCard(-1)),button('Thẻ tiếp →',()=>moveCard(1)),
-          button('🔊 Nghe lại',()=>speakWord(view.word)));
+        view.listen=button('🔊 Nghe lại',()=>speakWord(view.word));view.listen.hidden=true;
+        controls.append(button('← Thẻ trước',()=>moveCard(-1)),button('Thẻ tiếp →',()=>moveCard(1)),view.listen);
         stage.replaceChildren(view.line,view.modes,view.card,controls);cardView=view;
       }
       const view=cardView;view.word=word;
+      view.listen.hidden=true;
       view.line.textContent=`Thẻ ${cards.index+1} / ${cards.deck.length}`;
       for(const control of view.modes.children)control.classList.toggle('is-active',control.dataset.cardMode===cards.mode);
       view.card.classList.remove('is-flipped');view.card.setAttribute('aria-pressed','false');
       const inner=document.createElement('span');inner.className='learning-card-inner';
       const front=document.createElement('span');front.className='learning-card-front';front.setAttribute('aria-hidden','false');
       const image=document.createElement('span');image.className='learning-visual';visual(image,word);
+      window.DanhPictureListen.bind(image,word.name,word.meaning);
       for(const img of image.querySelectorAll('img'))img.loading='eager';
       const label=document.createElement('strong');label.textContent=cards.mode==='picture'?'Em nhớ từ gì?':cards.mode==='ipa'?(word.ipa||word.name):word.name;
       front.append(image,label);
@@ -514,7 +518,7 @@
       stage.append(progress(stats(game, round)));
       if (game !== 'mcq' || mcqMode !== 'listen-picture') {
         const image = pictureMode?window.DanhPictureAudio.make(word,{topic}):document.createElement('div'); image.classList.add('learning-visual','learning-question-visual');
-        if(!pictureMode)visual(image, word);stage.append(image);
+        if(!pictureMode){visual(image, word);window.DanhPictureListen.bind(image,word.name,word.meaning);}stage.append(image);
       }
       if (game === 'mcq') renderMcq(stage, round, answer, word);
       else renderSpelling(stage, round, answer, word);
@@ -624,7 +628,7 @@
       });
       const listen = button('🔊 Nghe', () => speakWord(word));
       listen.disabled = answer.solved;
-      controls.append(input, check);if(!pictureMode)controls.append(listen);
+      controls.append(input, check);
       stage.append(controls);
       if (revealSpellingAfterMs > 0 && !answer.solved) {
         const availableAt = Date.now() + revealSpellingAfterMs;
@@ -649,7 +653,6 @@
       }
       if (!answer.solved) {
         input.focus({ preventScroll: true });
-        if(!pictureMode)speakWord(word);
       }
     }
     document.addEventListener('visibilitychange', () => {

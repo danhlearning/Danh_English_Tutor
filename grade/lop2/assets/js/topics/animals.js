@@ -596,6 +596,10 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
     const surface = cardEl.querySelector('.flip-card-inner');
     // Keep the focusable card; replace only its rotating surface to reset without a layout flush.
     surface.replaceWith(surface.cloneNode(true));
+    cardEl.setAttribute('role','group');
+    window.DanhPictureListen.bind(cardEl.querySelector('#card-front-content h1'),item.name,item.meaning);
+    const cardListen=document.querySelector('[onclick="playSingleCardAudio()"]');
+    if(cardListen){cardListen.style.visibility='hidden';cardListen.tabIndex=-1;cardListen.setAttribute('aria-hidden','true');}
     cardEl.classList.remove('resetting');
     updateViewedCount();
   }
@@ -603,6 +607,9 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
     const el = learningElement('single-card-el');
     if (activeLearningTab !== 'game-flip' || el.classList.contains('flipped') || learningElement('vocabulary-picker').open) return;
     el.classList.add('flipped'); el.setAttribute('aria-pressed','true');
+    const picture=el.querySelector('[data-danh-picture-listen]');if(picture)picture.tabIndex=-1;
+    const cardListen=document.querySelector('[onclick="playSingleCardAudio()"]');
+    if(cardListen){cardListen.style.visibility='';cardListen.tabIndex=0;cardListen.removeAttribute('aria-hidden');}
     learningElement('card-front-content').setAttribute('aria-hidden','true'); learningElement('card-back-content').setAttribute('aria-hidden','false');
     const cards = learning.cards(), id = cards.deck[cards.index];
     if (!cards.seen.includes(id)) cards.seen.push(id);
@@ -694,13 +701,17 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
     }
     const item = wordById(r.deck[r.index]);
     learningElement('spelling-preview').innerHTML = item.emoji;
+    window.DanhPictureListen.bind(learningElement('spelling-preview'),item.name,item.meaning);
+    learningElement('spelling-audio').style.visibility='hidden';
+    learningElement('spelling-audio').tabIndex=-1;
+    learningElement('spelling-audio').setAttribute('aria-hidden','true');
     learningElement('spelling-progress').textContent = 'Câu ' + (r.index + 1) + ' / ' + r.deck.length;
     if (a.solved) {
       input.value = item.name; input.classList.add('correct'); setGameFeedback('spelling-feedback',correctMessage('spelling'),'correct'); scheduleAnswerAdvance('spelling');
     } else {
       input.value = typeof a.draft === 'string' ? a.draft.slice(0,100) : '';
       setGameFeedback('spelling-feedback',a.mistakes ? 'Nghe lại và thử tiếp nhé. Điểm đã kiếm được giữ nguyên.' : '');
-      input.focus({preventScroll:true}); playSpellingAudio();
+      input.focus({preventScroll:true});
     }
   }
   function playSpellingAudio() {
