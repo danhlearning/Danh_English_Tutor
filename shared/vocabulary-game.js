@@ -52,6 +52,7 @@
       card.classList.add('g6-picture-flash');
       const render=()=>{
         const word=words[index];card.replaceChildren(el('span',`THẺ ${index+1}/${words.length}`,'g6-card-position'));
+        window.DanhGameFlow?.prepare(words.slice(index,index+3),card);
         if(flipped)card.append(picture(word));
         const flip=button('',()=>{flipped=!flipped;render();card.querySelector('.g6-flip-action').focus({preventScroll:true});feedback('flip',card);},'g6-flip-action');
         flip.setAttribute('aria-label',flipped?'Xem từ tiếng Anh':'Lật thẻ xem nghĩa');
@@ -84,6 +85,7 @@
     };
     const render=()=>{
       clearTimeout(timer);locked=false;flipped=false;card.classList.remove('is-flipped');
+      window.DanhGameFlow?.prepare(words.slice(index,index+3),card);
       // A fresh rotating surface starts at zero without forcing the whole page to lay out.
       inner=el('span',undefined,'vg-flip-inner');inner.append(side(words[index],false),side(words[index],true));card.replaceChildren(inner);accessible();
     };
@@ -172,6 +174,7 @@
         stage.append(button('Chơi lượt mới',()=>begin(),'g6-secondary'));return;
       }
       const word=current();
+      window.DanhGameFlow?.prepare(round.items.slice(round.index,round.index+3).map(id=>byKey.get(id)),stage);
       if(!round.options){round.options=shuffle([word,...eligible(word).slice(0,3)]).map(choice=>choice.key);persist();}
       const head=el('div',undefined,'vg-round-head');head.append(el('span',`Câu ${round.index+1}/${round.items.length}`),el('strong',`⭐ ${points(round.results)+(round.solved?points([{outcome:round.outcome}]):0)} sao`));
       const streak=el('span',`🔥 ${streakLength(round)} câu đúng liên tiếp`,'vg-streak');streak.dataset.streak=String(streakLength(round));head.append(streak);
@@ -191,7 +194,7 @@
       });
       stage.append(head,progress,question,choices,status);
       if(round.solved){
-        status.textContent=round.outcome==='seen'?`Đáp án: ${word.term}. Em hãy ôn lại từ này.`:round.outcome==='first'?`Chuẩn luôn! +10 sao. ${word.term} = ${word.meaning}.`:`Tự sửa đúng rồi, xịn đó! +5 sao. ${word.term} = ${word.meaning}.`;
+        status.textContent=round.outcome==='seen'?`Đáp án: ${word.term}. Em hãy ôn lại từ này.`:round.outcome==='first'?`+10 sao. ${word.term} = ${word.meaning}.`:`Tự sửa đúng rồi, xịn đó! +5 sao. ${word.term} = ${word.meaning}.`;
         status.classList.add(round.outcome==='seen'?'vg-help':'vg-good');
         stage.append(el('p',word.example,'vg-example'),picture?picture(word):button('🔊 Nghe từ',()=>{
           if(!window.DanhListenControls?.isManualRequest() && !effects.soundEnabled()){status.textContent='Âm thanh đang tắt. Bật âm thanh để nghe từ nhé.';return;}

@@ -177,6 +177,7 @@ window.DanhGrammarGame = config => {
   function renderQuestion(restoring = false) {
     if (!restoring) { round.finished = false; round.elapsed = 0; round.attempts = 0; round.wrongAttempts = 0; round.draft = ''; round.feedback = ''; round.wrongOptions = []; round.order = []; round.optionOrder=null; }
     const question = current();
+    window.DanhGameFlow?.prepare(round.items.slice(round.position,round.position+3).map(q=>({text:window.DanhAnswerSpeech.textForQuestion(q)})),$('question-card'));
     $('question-card').classList.remove('gg-good', 'gg-bad');
     $('feedback').textContent = ''; $('feedback').className = 'gg-feedback';
     clearHelpTimers(); wrongAttempts = round.wrongAttempts || 0; attempts = round.attempts || 0; elapsedBefore = round.elapsed || 0; questionStartedAt = document.hidden ? 0 : Date.now();

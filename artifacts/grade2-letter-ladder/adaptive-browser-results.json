@@ -1,0 +1,42 @@
+[
+  {
+    "grade": 2,
+    "reduced": false,
+    "wrongFeedback": true,
+    "noGreenTickBox": true,
+    "directSpellingBlocked": true,
+    "repeatedHintsStayInPractice": true,
+    "reload": true,
+    "cleanRecallUnlocksFull": true
+  },
+  {
+    "grade": 2,
+    "reduced": true,
+    "wrongFeedback": true,
+    "noGreenTickBox": true,
+    "directSpellingBlocked": true,
+    "repeatedHintsStayInPractice": true,
+    "reload": true,
+    "cleanRecallUnlocksFull": true
+  },
+  {
+    "grade": 3,
+    "reduced": true,
+    "wrongFeedback": true,
+    "noGreenTickBox": true,
+    "directSpellingBlocked": true,
+    "repeatedHintsStayInPractice": true,
+    "reload": true,
+    "cleanRecallUnlocksFull": true
+  },
+  {
+    "grade": 4,
+    "reduced": false,
+    "wrongFeedback": true,
+    "noGreenTickBox": true,
+    "directSpellingBlocked": true,
+    "repeatedHintsStayInPractice": true,
+    "reload": true,
+    "cleanRecallUnlocksFull": true
+  }
+]

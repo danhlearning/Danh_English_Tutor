@@ -1,0 +1,182 @@
+{
+  "first": {
+    "name": "Village",
+    "playback": [
+      {
+        "type": "playing",
+        "src": "blob:http://127.0.0.1:8765/0d5c0f7b-8cb7-4943-bca6-55c0f3c9e39b",
+        "rate": 1.15,
+        "pitch": true,
+        "at": 3040.599999997765
+      },
+      {
+        "type": "ended",
+        "src": "blob:http://127.0.0.1:8765/0d5c0f7b-8cb7-4943-bca6-55c0f3c9e39b",
+        "rate": 1.15,
+        "pitch": true,
+        "at": 4673.199999999255
+      }
+    ],
+    "answerToAudioStartMs": 76.19999999925494,
+    "answerToEndMs": 1724
+  },
+  "second": {
+    "name": "Van",
+    "playback": [
+      {
+        "type": "playing",
+        "src": "blob:http://127.0.0.1:8765/1a899b36-ec62-468d-a96e-ab3d354ffd9b",
+        "rate": 1.15,
+        "pitch": true,
+        "at": 321.5999999977648
+      },
+      {
+        "type": "ended",
+        "src": "blob:http://127.0.0.1:8765/1a899b36-ec62-468d-a96e-ab3d354ffd9b",
+        "rate": 1.15,
+        "pitch": true,
+        "at": 1731.199999999255
+      }
+    ],
+    "answerToAudioStartMs": 65.69999999925494,
+    "answerToEndMs": 1489
+  },
+  "cachedPlaybackNoExtraRequest": true,
+  "automaticNextWaitsForAudioEnd": true,
+  "studyAudioRate": 0.85,
+  "gameAudioRate": 1.15,
+  "noAutoplay": true,
+  "smoke": [
+    {
+      "grade": 1,
+      "stats": {
+        "ready": 3,
+        "pending": 0,
+        "active": 0,
+        "bytes": 145258,
+        "images": 3
+      }
+    },
+    {
+      "grade": 3,
+      "stats": {
+        "ready": 3,
+        "pending": 0,
+        "active": 0,
+        "bytes": 159018,
+        "images": 3
+      }
+    },
+    {
+      "grade": 4,
+      "stats": {
+        "ready": 3,
+        "pending": 0,
+        "active": 0,
+        "bytes": 179338,
+        "images": 3
+      }
+    },
+    {
+      "grade": 5,
+      "stats": {
+        "ready": 3,
+        "pending": 0,
+        "active": 0,
+        "bytes": 170858,
+        "images": 3
+      }
+    },
+    {
+      "grade": 6,
+      "stats": {
+        "ready": 6,
+        "pending": 0,
+        "active": 0,
+        "bytes": 379796,
+        "images": 6
+      }
+    },
+    {
+      "grade": 7,
+      "stats": {
+        "ready": 4,
+        "pending": 0,
+        "active": 0,
+        "bytes": 258424,
+        "images": 4
+      }
+    },
+    {
+      "grade": 8,
+      "stats": {
+        "ready": 5,
+        "pending": 0,
+        "active": 0,
+        "bytes": 284550,
+        "images": 1
+      }
+    },
+    {
+      "grade": 9,
+      "stats": {
+        "ready": 5,
+        "pending": 0,
+        "active": 0,
+        "bytes": 320390,
+        "images": 1
+      }
+    },
+    {
+      "grade": 10,
+      "stats": {
+        "ready": 6,
+        "pending": 0,
+        "active": 0,
+        "bytes": 398516,
+        "images": 6
+      }
+    },
+    {
+      "grade": 11,
+      "stats": {
+        "ready": 5,
+        "pending": 0,
+        "active": 0,
+        "bytes": 316230,
+        "images": 5
+      }
+    },
+    {
+      "grade": 12,
+      "stats": {
+        "ready": 6,
+        "pending": 0,
+        "active": 0,
+        "bytes": 384756,
+        "images": 6
+      }
+    }
+  ],
+  "grammar": {
+    "ready": 3,
+    "pending": 0,
+    "active": 0,
+    "bytes": 286058,
+    "images": 0
+  },
+  "room": {
+    "stats": {
+      "ready": 3,
+      "pending": 0,
+      "active": 0,
+      "bytes": 195658,
+      "images": 0
+    },
+    "playing": true,
+    "media": [],
+    "speechEvents": []
+  },
+  "errors": [],
+  "missing": []
+}

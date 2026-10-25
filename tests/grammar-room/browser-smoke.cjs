@@ -17,7 +17,7 @@ const out=path.resolve(__dirname,'../../artifacts/grammar-room');fs.mkdirSync(ou
   await page.locator('#search').fill('mao tu');assert.equal(await page.locator('.word-card').count(),1);await page.locator('#search').fill('');
   const topics=await page.evaluate(()=>DanhGrammarCatalog.topics.map(t=>t.id));
   async function question(){return page.evaluate(()=>{const s=JSON.parse(DanhLearners.storage.getItem(DanhGrammarProgress.KEY)).active;return DanhGrammarQuestions.find(q=>q.id===s.questionIds[s.index]);});}
-  async function answer(q){if(q.type==='choice')await page.locator('[data-option="0"]').click();else if(q.type==='order'){for(let i=0;i<q.tokens.length;i++)await page.locator(`#available-tokens [data-token="${i}"]`).click();}else await page.locator('#answer-input').fill(q.answers[0]);await page.locator('#check-btn').click();assert.match(await page.locator('#feedback').innerText(),/Chuẩn luôn/);}
+  async function answer(q){if(q.type==='choice')await page.locator('[data-option="0"]').click();else if(q.type==='order'){for(let i=0;i<q.tokens.length;i++)await page.locator(`#available-tokens [data-token="${i}"]`).click();}else await page.locator('#answer-input').fill(q.answers[0]);await page.locator('#check-btn').click();assert.match(await page.locator('#feedback').innerText(),/✅/);}
   let completed=0;
   if(!process.env.GRAMMAR_SKIP_FULL)for(const topic of topics)for(let level=1;level<=3;level++){
    await page.goto(`${base}/grammar-practice.html?topic=${topic}&level=${level}`);await page.locator('#start-btn').click();

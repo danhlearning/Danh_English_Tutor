@@ -135,6 +135,7 @@
     if(model.round.index===model.round.tasks.length)return result();
     screen('play');
     const r=model.round,t=model.task,a=model.answer,w=model.words.get(t.key),record=model.record(),done=!!a.outcome;
+    window.DanhGameFlow?.prepare(r.tasks.slice(r.index,r.index+3).map(task=>({text:model.record(task).answer,visual:model.words.get(task.key)?.visual})),el('play'));
     el('play-title').textContent=`Chặng ${r.index+1} / ${r.tasks.length}`;
     el('round-label').textContent=`${w.unitTitle} · ${model.totals().score} sao`;
     el('round-progress').max=r.tasks.length;el('round-progress').value=r.index+(done?1:0);

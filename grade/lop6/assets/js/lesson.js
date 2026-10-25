@@ -70,6 +70,7 @@
       return;
     }
     const word = unit.words[spellingOrder[spellingPosition]];
+    window.DanhGameFlow?.prepare(spellingOrder.slice(spellingPosition,spellingPosition+3).map(i=>unit.words[i]),spellingStage);
     const position = document.createElement('p'); position.className = 'g6-card-position'; position.textContent = `Câu ${spellingPosition + 1}/${unit.words.length}`;
     const streak = document.createElement('p'); streak.className='vg-streak'; streak.textContent=`🔥 ${spellingStreak} câu đúng liên tiếp`;
     const question = document.createElement('h3'); question.textContent = `Gõ tiếng Anh cho: ${word.meaning}`;

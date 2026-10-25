@@ -55,7 +55,7 @@
     topic, prepare, questions, answers, primary,
     setIndex: value => { countIdx = value; },
     render: () => loadCountQuestion(),
-    speak: value => speak(value),
+    speak: value => window.DanhAnswerSpeech.say(value),
     sound: correct => playSoundEffect(correct ? 'correct' : 'wrong')
   });
   initCountGame = () => game.open();

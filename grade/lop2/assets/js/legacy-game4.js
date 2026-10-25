@@ -37,6 +37,7 @@
     function render() {
       config.setIndex(round.index);
       config.render();
+      window.DanhGameFlow?.prepare(config.questions().slice(round.index,round.index+3).map(q=>({text:config.primary(q)})),find('game-count'));
       input().removeAttribute('aria-invalid');
       actions();
       updateScore();

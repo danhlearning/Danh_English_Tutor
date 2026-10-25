@@ -33,7 +33,7 @@ test('Trang lớp 12 nạp lượt gõ, font/hồ sơ/gap chung và giữ cấu 
   assert(/improvement\.css\?v=(?:grade12|pencil)-20261023/.test(html));
   assert(html.includes(`grammar.html?unit=${u}`));
  }
- assert(read('grade/lop12/grammar.html').includes('grammar-improvement-data.js?v=grade12-20261023'));
+ assert.match(read('grade/lop12/grammar.html'), /src="\.\/assets\/js\/grammar-improvement-data\.js\?v=[^"]+"/);
  assert(read('scripts/sync-secondary-template.cjs').includes("if(g===12)"));
 });
 test('80 tranh lớp 12 đúng tệp đã mở duyệt, không dùng bản bị loại',()=>{

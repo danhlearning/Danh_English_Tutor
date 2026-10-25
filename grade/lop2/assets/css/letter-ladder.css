@@ -10,3 +10,5 @@ body[data-grade] .letter-ladder h3.ll-meaning,body[data-grade] .letter-ladder bu
 body[data-grade] .letter-ladder .ll-primary{background:var(--ll-accent);border-color:var(--ll-accent);color:white;box-shadow:0 3px 0 color-mix(in srgb,var(--ll-accent) 75%,#302530)}
 body[data-grade] .letter-ladder .ll-slot,body[data-grade] .letter-ladder .ll-summary p{background:var(--ll-soft)}
 @media(prefers-reduced-motion:reduce){.letter-ladder *{animation:none!important;transition:none!important}}
+.letter-ladder .ll-practice-note{font-size:15px;line-height:1.45;margin:0 0 10px;color:inherit}
+body .letter-ladder .ll-announcement{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important;background:transparent!important}
