@@ -7,10 +7,10 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8001';
  const topics=fs.readdirSync('grade/lop2').filter(f=>f.endsWith('.html')&&!/^gsunit\d+/.test(f)&&/id=["']vocab-grid-container["']/.test(fs.readFileSync('grade/lop2/'+f,'utf8')));
  let plays=0;
  for(const file of topics){
-  await page.goto(base+'/grade/lop2/'+file);const controls=page.locator('#vocab-grid-container [data-danh-picture-listen],#vocab-grid-container .word-picture');await controls.first().waitFor();assert.equal(await page.evaluate(()=>events.length),0);
+  await page.goto(base+'/grade/lop2/'+file);const controls=page.locator('#vocab-grid-container [data-danh-card-listen]');await controls.first().waitFor();assert.equal(await page.evaluate(()=>events.length),0);
   for(const target of [controls.first(),controls.last()]){
-   const term=await target.evaluate(n=>n.dataset.danhPictureListen||n.closest('#vocab-grid-container > *')?.querySelector('.word-title,h3')?.textContent.trim());assert(term,file);
-   const n=await page.evaluate(()=>events.length);await target.click();await page.waitForFunction(n=>events.slice(n).some(e=>e.state==='ended'&&e.mode==='audio'),n);
+   const term=await target.getAttribute('data-danh-card-listen');assert(term,file);
+   const n=await page.evaluate(()=>events.length);await target.click({position:{x:8,y:8}});assert(await target.evaluate(n=>n.classList.contains('danh-card-pressed')));await page.waitForFunction(n=>events.slice(n).some(e=>e.state==='ended'&&e.mode==='audio'),n);
    const audio=await page.evaluate(n=>events.slice(n),n);assert.equal(audio.filter(e=>e.state==='playing').length,1,file);assert.equal(audio.filter(e=>e.state==='ended').length,1,file);assert.equal(audio.find(e=>e.state==='ended').text.toLowerCase(),term.toLowerCase(),file);plays++;
   }
   console.log('PASS first/last picture real media: '+file);

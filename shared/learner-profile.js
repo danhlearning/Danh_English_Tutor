@@ -3,6 +3,21 @@
   if (window.DanhLearners) return;
   // Chỉ gắn thao tác nghe; giữ nguyên DOM con và kích thước tranh.
   const pictureSelector='[data-danh-picture-listen]';
+  const cardSelector='[data-danh-card-listen]';
+  const cardEffects=new Map();
+  const cardCleanup=card=>{const effect=cardEffects.get(card);if(!effect)return;clearTimeout(effect.timer);effect.animation?.cancel();card.classList.remove('danh-card-pressed');cardEffects.delete(card);};
+  const cardFeedback=card=>{
+    cardCleanup(card);card.classList.add('danh-card-pressed');
+    let motion=!matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(window.DanhLearningEffects)motion=motion&&!window.DanhLearningEffects.reduced();
+    else try{motion=motion&&JSON.parse(window.DanhLearners.storage.getItem('danh-vocabulary-effects-v1')||'{}').motion!==false;}catch{}
+    const effect={};cardEffects.set(card,effect);
+    if(motion&&card.animate)effect.animation=card.animate([{transform:'scale(1)'},{transform:'scale(.985)'},{transform:'scale(1)'}],{duration:220,easing:'ease-out'});
+    effect.timer=setTimeout(()=>cardCleanup(card),320);
+    document.dispatchEvent(new CustomEvent('danh-vocabulary-card-tap',{detail:{term:card.dataset.danhCardListen,motion}}));
+  };
+  const cardStop=()=>{for(const card of [...cardEffects.keys()])cardCleanup(card);};
+  window.addEventListener('pagehide',cardStop);document.addEventListener('visibilitychange',()=>{if(document.hidden)cardStop();});
   const pictureBind=(node,text,label)=>{
     if(!node || node.matches('.word-picture,[data-word-audio]') || node.closest('button,a'))return node;
     node.dataset.danhPictureListen=String(text||'').trim();
@@ -21,11 +36,17 @@
     const selector='#vocab-grid .g6-word-card,#vocab-grid-container > *,#word-list .word-card';
     const cards=[...root.querySelectorAll(selector)];if(root.matches?.(selector))cards.unshift(root);
     for(const card of cards){
+      const cardTitle=card.querySelector('.word-title,h3');
+      if(cardTitle?.textContent.trim()){
+        card.dataset.danhCardListen=cardTitle.textContent.trim();card.tabIndex=0;card.setAttribute('role','group');card.setAttribute('aria-roledescription','Thẻ nghe từ');card.setAttribute('aria-label',`Nghe từ: ${cardTitle.textContent.trim()}`);card.style.cursor='pointer';
+        card.querySelectorAll('[data-danh-picture-listen],.word-picture').forEach(n=>n.tabIndex=-1);
+      }
       if(card.querySelector('.word-picture,[data-word-audio]'))continue;
       const title=card.querySelector('.word-title,h3');
       const picture=card.querySelector('.g6-word-visual,.g4-visual,.g2-vocab-image,.word-image,.real-obj-wrapper,.number-badge-wrapper,.emoji-display,.image-badge-wrapper,[role="img"]') || [...card.children].find(n=>n.querySelector('svg,img'));
       if(!title || !picture || !title.textContent.trim())continue;
       pictureBind(picture,title.textContent,card.querySelector('.g6-meaning')?.textContent||title.textContent);
+      if(card.matches(cardSelector))picture.tabIndex=-1;
       if(!picture.matches(pictureSelector))continue;
       for(const button of card.querySelectorAll('button'))if(button.matches('.g6-sound,.g2-audio,.audio-btn,[data-danh-listen]') || /[🔊🔉🔈]/u.test(button.textContent)){
         button.style.visibility='hidden';button.style.pointerEvents='none';button.tabIndex=-1;button.setAttribute('aria-hidden','true');
@@ -33,6 +54,13 @@
     }
   };
   const picturePlay=event=>{
+    const card=event.target.closest?.(cardSelector);
+    if(card){
+      if(event.type==='keydown'&&(!['Enter',' '].includes(event.key)||(event.target!==card&&!event.target.matches('.word-picture,[data-word-audio],[data-danh-picture-listen]'))))return;
+      if(event.target.closest('a,input,select,textarea,button:not(.word-picture):not([data-word-audio])'))return;
+      event.preventDefault();event.stopImmediatePropagation();
+      if(!event.repeat){cardFeedback(card);window.DanhAnswerSpeech.listen(card.dataset.danhCardListen);}return;
+    }
     const picture=event.target.closest?.(pictureSelector);if(!picture)return;
     if(picture.closest('.word-picture,[data-word-audio]'))return;
     if(event.type==='keydown' && (event.target!==picture || !['Enter',' '].includes(event.key)))return;
@@ -42,7 +70,7 @@
   document.addEventListener('click',picturePlay,true);document.addEventListener('keydown',picturePlay,true);
   window.DanhPictureListen={bind:pictureBind,flipSurface,scan:pictureScan};
   document.addEventListener('DOMContentLoaded',()=>{
-    const style=document.createElement('style');style.textContent='[data-danh-picture-listen]:focus-visible,[data-danh-flip-surface]:focus-visible{outline:3px solid #176d8a;outline-offset:3px}';document.head.append(style);
+    const style=document.createElement('style');style.textContent='[data-danh-card-listen]:focus-visible,[data-danh-picture-listen]:focus-visible,[data-danh-flip-surface]:focus-visible{outline:3px solid #176d8a;outline-offset:3px}.danh-card-pressed{outline:3px solid #d79c37!important;outline-offset:-3px}';document.head.append(style);
     pictureScan(document);
     new MutationObserver(records=>{
       const roots=new Set();
