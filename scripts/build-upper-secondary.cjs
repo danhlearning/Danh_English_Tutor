@@ -64,3 +64,5 @@ for(const grade of (requested.length?requested:[11,12])){
 }
 require('./build-secondary-template-extras.cjs');
 require('./sync-secondary-template.cjs');
+
+require('./install-site-letter-games.cjs').run();

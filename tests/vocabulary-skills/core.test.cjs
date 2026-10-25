@@ -1,6 +1,6 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const L=require('../../shared/vocabulary-library.js'),C=require('../../assets/js/pages/vocabulary-skills-core.js'),root=path.resolve(__dirname,'../..');
-const courses=L.sources.map(s=>{const c={window:{}};for(const f of s.files)vm.runInNewContext(fs.readFileSync(path.join(root,f),'utf8'),c);return {grade:s.grade,data:c.window[s.global]};});
+const courses=L.sources.map(s=>{const c={window:{},URL,document:{currentScript:{src:''}}};for(const f of s.files){c.document.currentScript.src='https://local.invalid/'+f;vm.runInNewContext(fs.readFileSync(path.join(root,f),'utf8'),c);}return {grade:s.grade,data:c.window[s.global]};});
 const c={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,'assets/data/vocabulary-levels.js'),'utf8'),c);
 const words=L.collect(courses,c.window.DanhVocabularyLevels);
 function storage(){const values=new Map();return {getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v),values};}

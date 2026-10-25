@@ -2,15 +2,20 @@
 <html lang="vi">
 <head>
 <script src="../../shared/learner-profile-core.js?v=compact-listen-20261024"></script>
-<script src="../../shared/learner-profile.js?v=compact-gaps-20261025"></script>
+<script src="../../shared/learner-profile.js?v=save-chip-20261025"></script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Học Tiếng Anh Chủ Đề Động Vật (Animals)</title>
 <!-- Google Font: Nunito -->
-<link rel="stylesheet" href="./assets/css/topics/animals.css">
+<link rel="stylesheet" href="./assets/css/topics/animals.css?v=shared-topics-20261025">
+<link rel="stylesheet" href="./assets/css/learning-shared.css?v=repo-picture-listen-20261025">
 <link rel="stylesheet" href="./assets/css/grade2-theme.css?v=smooth-20261023-1">
   <link rel="stylesheet" href="../../shared/grade-colors.css?v=all-grades-20261016-2">
+<link rel="stylesheet" href="../../shared/learning-effects.css?v=site-letters-20261025">
+<link rel="stylesheet" href="../../grade/lop2/assets/css/letter-ladder.css?v=site-letters-20261025">
+<link rel="stylesheet" href="../../grade/lop2/assets/css/picture-audio.css?v=site-letters-20261025">
+<link rel="stylesheet" href="./assets/css/sentence-prompts.css?v=vi-first-20261025">
 </head>
 <body class="grade2-topic">
 
@@ -28,20 +33,7 @@
 </nav>
 
 <div class="container">
-  <section class="learning-toolbar" id="learning-toolbar" hidden aria-label="Cài đặt luyện tập">
-    <div class="learning-toolbar-top">
-      <strong>🌱 Bộ từ của bạn</strong>
-      <button class="btn-action" id="choose-vocabulary" onclick="openVocabularyPicker()">⚙️ Chọn từ luyện tập</button>
-    </div>
-    <p id="storage-note" role="status">Lựa chọn, tiến độ và kỷ lục được lưu trên thiết bị này.</p>
-    <details><summary>⭐ Cách tính điểm và streak</summary>
-      <p>Game 2 và 3: đúng ngay lần đầu +10 điểm, chuỗi đúng +1. Mỗi mốc 5 câu đúng liên tiếp thưởng +20 điểm. Sai: chuỗi về 0, giữ điểm đã kiếm. Sửa đúng vẫn hoàn thành câu nhưng không cộng điểm hoặc chuỗi. Ô trống không bị phạt.</p>
-      <p>Điểm tính riêng từng lượt của mỗi game. Game 1 ghi nhận từ đã xem. Kỷ lục là chuỗi đúng dài nhất của từng game trên thiết bị này.</p>
-    </details>
-    <details ontoggle="if(this.open) renderHistory()"><summary>🕘 Lịch sử lượt học</summary>
-      <p>10 lượt gần nhất; lưu tối đa 50 lượt trên thiết bị này.</p><ul id="learning-history"></ul>
-    </details>
-  </section>
+
 
   <!-- TAB 1: VOCABULARY -->
   <div id="vocab" class="tab-content active">
@@ -89,101 +81,9 @@
     </div>
   </div>
 
-  <!-- TAB 3: GAME 1 FLIP CARD -->
-  <div id="game-flip" class="tab-content">
-    <h2 style="text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Game 1: Lật Thẻ Flashcard Động Vật</h2>
-    <p style="text-align: center; color: #718096; margin-bottom: 10px; font-size: 0.9rem;">Chạm vào thẻ để xem đáp án và nghe phát âm. Đáp án hiện đủ 1 giây rồi tự chuyển thẻ.</p>
-
-    <div class="single-card-container">
-      <div class="card-mode-selector">
-        <button class="mode-btn active" id="mode-viet" onclick="setCardFrontMode('viet', this)">Mặt trước: Hình & Từ Anh</button>
-        <button class="mode-btn" id="mode-ipa" onclick="setCardFrontMode('ipa', this)">Mặt trước: Hình & IPA</button>
-      </div>
-
-      <div class="card-counter" id="card-viewed">📖 Lật thẻ để ôn tập</div>
-      <div class="card-controls">
-        <span class="card-counter" id="card-counter-text">Thẻ 1 / 50</span>
-      </div>
-
-      <div class="flip-card-single" id="single-card-el" role="button" tabindex="0" aria-label="Lật thẻ xem đáp án" aria-pressed="false" onclick="flipSingleCard()">
-        <div class="flip-card-inner">
-          <div class="flip-card-front" id="card-front-content"></div>
-          <div class="flip-card-back" id="card-back-content"></div>
-        </div>
-      </div>
-
-      <div class="card-controls">
-        <button class="nav-btn" onclick="prevSingleCard()">⏮️ Thẻ Trước</button>
-        <button class="nav-btn" onclick="nextSingleCard(false)">Thẻ Tiếp ⏭️</button>
-        <button class="nav-btn" onclick="playSingleCardAudio()">🔊 Nghe lại</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- TAB 4: GAME 2 MCQ -->
-  <div id="game-mcq" class="tab-content">
-    <h2 style="text-align:center;color:#276749;font-size:1.4rem;">Game 2: Ai Tinh Mắt Nhất? (Trắc Nghiệm)</h2>
-    <div class="round-summary" id="mcq-unavailable" hidden>
-      <h3>Chọn thêm một từ nữa nhé!</h3>
-      <p>Game 2 cần ít nhất 2 từ để tạo đáp án lựa chọn. Bạn vẫn có thể học bộ 1 từ ở Game 1 và 3.</p>
-      <button class="btn-action" onclick="openVocabularyPicker()">Chọn thêm từ</button>
-    </div>
-    <div id="mcq-game-content">
-      <p style="text-align:center;color:#718096;margin-top:8px;">Chọn tên tiếng Anh đúng. Đúng: chuyển câu sau 1 giây. Sai: chọn lại nhé!</p>
-      <div class="learning-stats" aria-label="Điểm và chuỗi trả lời đúng">
-  <div>⭐ <strong id="mcq-points">0</strong><span>Điểm lượt này</span></div>
-  <div>🔥 <strong id="mcq-streak">0</strong><span>Chuỗi đúng</span></div>
-  <div>🏆 <strong id="mcq-best">0</strong><span>Kỷ lục chuỗi</span></div>
-</div>
-      <div class="quiz-container">
-        <div class="card-counter" id="mcq-progress"></div>
-        <div class="number-preview-box" id="mcq-number-preview"></div>
-        <div class="mcq-grid" id="mcq-options-container"></div>
-        <div class="game-feedback" id="mcq-feedback" role="status" aria-live="polite"></div>
-      </div>
-      <section id="mcq-summary" class="round-summary" hidden aria-label="Kết quả lượt học">
-  <h3>🎉 Hoàn thành lượt học!</h3>
-  <div class="summary-score" id="mcq-summary-score"></div>
-  <p id="mcq-summary-detail"></p>
-  <p id="mcq-summary-message"></p>
-  <button class="btn-action" id="mcq-restart" onclick="initMcqGame()">Chơi lại</button>
-  <button class="nav-btn" onclick="openVocabularyPicker()">Chọn bộ từ khác</button>
-</section>
-    </div>
-  </div>
-
-  <!-- TAB 5: GAME 3 SPELLING -->
-  <div id="game-spelling" class="tab-content">
-    <h2 style="text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Game 3: Thử Tài Viết Tên Động Vật</h2>
-    <p style="text-align: center; color: #718096; margin-bottom: 12px; font-size: 0.9rem;">Nhìn hình, nghe rồi nhập tên tiếng Anh. Nhấn Enter hoặc Kiểm tra. Đúng: chuyển câu sau 1 giây.</p>
-
-    <div class="learning-stats" aria-label="Điểm và chuỗi trả lời đúng">
-  <div>⭐ <strong id="spelling-points">0</strong><span>Điểm lượt này</span></div>
-  <div>🔥 <strong id="spelling-streak">0</strong><span>Chuỗi đúng</span></div>
-  <div>🏆 <strong id="spelling-best">0</strong><span>Kỷ lục chuỗi</span></div>
-</div>
-    <div class="spelling-box">
-      <div class="score-board" id="spelling-score">🎯 Đã đúng: 0 / 50 câu</div>
-
-      <div class="card-counter" id="spelling-progress"></div>
-      <div id="spelling-preview" class="number-preview-box"></div>
-      <button class="audio-btn" style="width: 44px; height: 44px; font-size: 1.3rem; margin-top:0;" id="spelling-audio" aria-label="Nghe lại tên con vật" onclick="playSpellingAudio()">🔊</button>
-
-      <div class="spelling-input-group">
-        <input type="text" id="spelling-input" class="spelling-input" placeholder="Gõ tên con vật (ví dụ: cat)..." aria-label="Tên con vật bằng tiếng Anh" aria-describedby="spelling-feedback" autocomplete="off" autocapitalize="none" spellcheck="false">
-        <button class="btn-action" id="spelling-check" onclick="checkSpelling()">Kiểm tra</button>
-      </div>
-      <div class="game-feedback" id="spelling-feedback" role="status" aria-live="polite"></div>
-      <section id="spelling-summary" class="round-summary" hidden aria-label="Kết quả lượt học">
-  <h3>🎉 Hoàn thành lượt học!</h3>
-  <div class="summary-score" id="spelling-summary-score"></div>
-  <p id="spelling-summary-detail"></p>
-  <p id="spelling-summary-message"></p>
-  <button class="btn-action" id="spelling-restart" onclick="initSpellingGame()">Chơi lại</button>
-  <button class="nav-btn" onclick="openVocabularyPicker()">Chọn bộ từ khác</button>
-</section>
-    </div>
-  </div>
+  <div id="game-flip" class="tab-content"></div>
+  <div id="game-mcq" class="tab-content"></div>
+  <div id="game-spelling" class="tab-content"></div>
 
   <!-- TAB 6: GAME 4 COUNTING SENTENCES -->
   <div id="game-count" class="tab-content">
@@ -211,33 +111,23 @@
 
 </div>
 
-<dialog class="picker-dialog" id="vocabulary-picker" aria-labelledby="picker-title" aria-describedby="picker-reset-note">
-  <div class="picker-header">
-    <div class="picker-title-row"><h2 id="picker-title">Chọn từ luyện tập</h2><button type="button" aria-label="Đóng bảng chọn từ" onclick="closeVocabularyPicker()">✕</button></div>
-    <input id="vocab-search" type="search" aria-label="Tìm từ tiếng Anh hoặc nghĩa tiếng Việt" placeholder="Tìm: cat, con mèo…" oninput="renderVocabularyPicker()">
-    <div class="picker-actions">
-      <button type="button" onclick="selectAllVocabulary(true)">Chọn tất cả</button>
-      <button type="button" onclick="selectAllVocabulary(false)">Bỏ chọn</button>
-      <strong id="vocab-selected-count" role="status"></strong>
-    </div>
-    <p id="vocab-search-status" role="status"></p>
-  </div>
-  <div class="vocab-choices" id="vocab-choices"></div>
-  <div class="picker-footer">
-    <p id="vocab-selection-hint"></p>
-    <p id="picker-reset-note">Bắt đầu sẽ đặt lại lượt hiện tại của cả ba game. Kỷ lục và lịch sử được giữ nguyên.</p>
-    <div><button class="nav-btn" onclick="closeVocabularyPicker()">Hủy</button><button class="btn-action" id="apply-vocabulary" onclick="applyVocabularySelection()"></button></div>
-  </div>
-</dialog>
+
 
 <script src="./assets/js/grade2-progress.js?v=compact-listen-20261024"></script>
 <script src="./assets/js/legacy-game4.js?v=game-pacing-20261025"></script>
   <script src="../../shared/young-learner-speech.js?v=game-pacing-20261025"></script>
-  <script src="./assets/js/topics/animals.js?v=repo-picture-listen-20261025"></script>
+  <script src="../../shared/learning-effects.js?v=site-letters-20261025"></script>
+<script src="../../grade/lop2/assets/js/letter-ladder-core.js?v=site-letters-20261025"></script>
+<script src="./assets/js/animals-shared.js?v=shared-topics-20261025"></script>
+<script src="../../grade/lop2/assets/js/letter-ladder.js?v=site-letters-20261025"></script>
+<script src="../../grade/lop2/assets/js/picture-audio.js?v=site-letters-20261025"></script>
+<script src="../../shared/site-letter-games.js?v=site-letters-20261025"></script>
+<script src="./assets/js/topics/animals.js?v=shared-topics-20261025"></script>
 <script src="./assets/js/legacy-game4-config.js?v=game-pacing-20261025"></script>
+<script src="./assets/js/learning-core.js?v=site-letters-20261025"></script>
 
 <contact-danh></contact-danh>
-    <script src="../../shared/contact-footer.js?v=compact-listen-20261024"></script>
+    <script src="../../shared/contact-footer.js?v=site-letters-20261025"></script>
 <script src="./assets/js/grade2-navigation.js?v=compact-listen-20261024"></script>
 </body>
 </html>

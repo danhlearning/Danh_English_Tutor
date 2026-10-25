@@ -19,7 +19,7 @@
   return {id:w.id,holes,tiles:shuffle(tiles),draft:holes.map(()=>null),text:'',errors:0,hinted:false,result:null,lastWrong:''};
  }
  function create(storage,topic,words,options={}){
-  const grade=[2,3,4].includes(Number(options.grade))?Number(options.grade):2;
+  const grade=Number.isInteger(Number(options.grade))&&Number(options.grade)>=0&&Number(options.grade)<=12?Number(options.grade):2;
   const key=`danh-g${grade}-letter-ladder-${topic}-v1`,byId=new Map(words.map(w=>[w.id,w])),state={version:1,history:{},active:null,previous:null};let warning='';
   const signature=ids=>ids.map(id=>`${id}:${byId.get(id)?.name}`).join('|');
   function validTask(t,phase){

@@ -19,7 +19,7 @@ const base = process.env.LESSON_BASE_URL || 'http://127.0.0.1:8001';
       };
     });
     await page.goto(`${base}/grade/lop2/animals.html`);
-    if(await page.getByRole('button',{name:'Đăng nhập',exact:true}).isVisible())await page.getByRole('button',{name:'Đăng nhập',exact:true}).click();await page.locator('#learner-name').fill('Kiểm tra giọng');
+    if(await page.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).isVisible())await page.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).click();await page.locator('#learner-name').fill('Kiểm tra giọng');
     await page.getByRole('button', { name: 'Vào học ngay', exact: true }).click();
     await page.waitForFunction(() => typeof speak === 'function');
     assert.equal(await page.evaluate(() => playedWords.length), 0, 'No audio on opening');

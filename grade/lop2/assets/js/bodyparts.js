@@ -135,17 +135,18 @@
     image.setAttribute('aria-hidden', 'true');
     image.innerHTML = byId.get(item.imageWordId).svg;
     const question = document.createElement('div');
-    question.className = 'count-meaning';
+    question.className = 'count-meaning g2-translation-prompt';
+    question.tabIndex = -1;
     question.textContent = `“${item.vietnamese}”`;
     const hint = document.createElement('div');
     hint.className = 'count-hint';
     hint.textContent = `💡 Cấu trúc gợi ý: ${item.hint}`;
-    container.append(image, question, hint);
+    container.append(question, image, hint);
     if (round.locked) {
       input.disabled = check.disabled = reveal.disabled = true;
       next.hidden = false;
       feedback(round.result, round.viewed ? '#A15B00' : '#2E7D32');
-    } else input.focus({ preventScroll: true });
+    } else question.focus({ preventScroll: true });
   }
   function afterCorrect(speechFinished) {
     const currentToken = ++token;

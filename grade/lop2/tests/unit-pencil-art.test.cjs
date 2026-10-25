@@ -20,7 +20,11 @@ test('all 48 Unit words use pencil art or preserved numbers without changing lea
     for (const word of unit.words) {
       const original = before[id].words.find(w => w.id === word.id);
       if (manifest.preservedNumbers.includes(word.id)) {
-        assert.equal(word.visual, original.visual);
+        const number={eleven:11,thirteen:13,fourteen:14,fifteen:15}[word.id];
+        assert.ok(number);const file='shared/assets/vocabulary-reviewed/number-'+number+'.svg';
+        assert.ok(word.image.endsWith('/'+file));const svg=read(file);
+        assert.equal((svg.match(/<circle /g)||[]).length,number);
+        assert.ok(svg.includes('>'+number+'</text>'));
         numbers++;
       } else {
         const image = manifest.images[word.id];
@@ -48,7 +52,7 @@ test('all 16 lessons and mixed review load the same art before starting games', 
     assert.doesNotMatch(html, /src="[^"\n]*vocabulary-3d\.js/);
     const data = html.lastIndexOf('src="./assets/data/gs-unit');
     const art = html.indexOf('src="./assets/js/unit-pencil-art.js');
-    const game = html.indexOf(page === 'review' ? 'src="./assets/js/mixed-review-core.js' : 'src="./assets/js/extended-topic.js?v=game-pacing-20261025');
+    const game = html.indexOf(page === 'review' ? 'src="./assets/js/mixed-review-core.js' : 'src="./assets/js/extended-topic.js');
     assert.ok(data < art && art < game, page + ' script order');
   }
 });

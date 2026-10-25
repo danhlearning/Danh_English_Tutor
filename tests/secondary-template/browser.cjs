@@ -10,7 +10,7 @@ async function answer(p,q,value=q.answer.split('|')[0]){
  else if(q.type==='order'){for(const token of q.parts)await p.locator('.gg-tokens button:not(:disabled)').filter({hasText:new RegExp('^'+token.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'$')}).first().evaluate(b=>b.click());await click(p.getByRole('button',{name:'Kiểm tra câu',exact:true}));}
  else{await p.locator(q.type==='fill'?'#answer-area input':'#sentence-answer').fill(value);await click(p.locator('#answer-area button[type=submit]'));}
 }
-async function profile(p,name){await click(p.getByRole('button',{name:'Đăng nhập',exact:true}));await p.locator('#learner-name').fill(name);await click(p.getByRole('button',{name:'Vào học ngay',exact:true}));await p.waitForFunction(n=>DanhLearners.current?.name===n,name);}
+async function profile(p,name){await click(p.getByRole('button',{name:'Lưu dữ liệu học',exact:true}));await p.locator('#learner-name').fill(name);await click(p.getByRole('button',{name:'Vào học ngay',exact:true}));await p.waitForFunction(n=>DanhLearners.current?.name===n,name);}
 (async()=>{const b=await chromium.launch({channel:'msedge',headless:true});try{
  const c=await b.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});await c.route('**/*',r=>r.request().url().startsWith(base)?r.continue():r.abort());const p=await c.newPage();p.setDefaultTimeout(10000);const errors=[],missing=[],colors=[],records=[];p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)missing.push(r.url());});
  await p.goto(base+'/grade/lop10/lop10.html');await profile(p,'Kiểm tra mẫu lớp 6–12');

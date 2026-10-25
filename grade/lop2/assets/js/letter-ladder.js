@@ -60,8 +60,7 @@
   }
   return {game,render,hasFull:()=>{game.ensure(selected());return game.state.active?.phase===4&&game.state.active.bridge;}};
  }
- const from=Number(new URLSearchParams(location.search).get('fromGrade'));
  const own=Number(document.body.dataset.grade);
- window.DanhLetterLadder={mount,enabled:[3,4].includes(own)||/\/grade\/lop2\//.test(location.pathname)&&!own&&(!from||[2,3,4].includes(from)||from<1||from>12)};
+ window.DanhLetterLadder={mount,enabled:own>=1&&own<=12||/\/grade\/lop2\/(?!animals\.html)/.test(location.pathname)&&!own};
  if(window.DanhLetterLadder.enabled){const sub=document.getElementById('topic-description');if(sub)sub.hidden=true;}
 })();

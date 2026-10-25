@@ -35,3 +35,5 @@ for(const g of [6,7,8,9,10,11,12]){
  if(g===12)require('node:child_process').execFileSync(process.execPath,[path.join(__dirname,'build-grade12-improvement.cjs')],{stdio:'inherit'});
  console.log(`Đồng bộ lớp ${g}: ${units.length} Unit, giữ ngân hàng và tiến độ riêng.`);
 }
+
+require('./install-site-letter-games.cjs').run();

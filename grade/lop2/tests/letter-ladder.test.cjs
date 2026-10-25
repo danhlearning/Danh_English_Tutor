@@ -37,9 +37,8 @@ test('Selection changes retain the previous turn; malformed indices and blocked 
  const s=store(),g=C.create(s,'unit',words);g.start(['pizza']);g.ensure(['popcorn']);assert.equal(g.state.active,null);assert.deepEqual(g.state.previous.ids,['pizza']);g.start(['popcorn']);const raw=JSON.parse(s.getItem(g.key));raw.active.tasks[0].draft=[1000];s.setItem(g.key,JSON.stringify(raw));const bad=C.create(s,'unit',words);assert.equal(bad.state.active,null);assert(bad.warning);
  const blocked=C.create({getItem(){throw Error();},setItem(){throw Error();}},'unit',words);assert(blocked.start(['pizza']));assert.equal(solve(blocked),'first');assert(blocked.warning);
 });
-test('All grade 2 lessons load the pilot before the engine; other grades do not load it',()=>{
- const pages=fs.readdirSync('grade/lop2').filter(p=>p.endsWith('.html')).map(p=>fs.readFileSync('grade/lop2/'+p,'utf8')).filter(s=>s.includes('src="./assets/js/learning-core.js?v=recall-gate-20261025'));
- assert.equal(pages.length,34);for(const html of pages){assert(html.indexOf('letter-ladder-core.js')<html.indexOf('letter-ladder.js?'));assert(html.indexOf('letter-ladder.js?')<html.indexOf('src="./assets/js/learning-core.js?v=recall-gate-20261025'));assert(html.includes('letter-ladder.css'));}
- for(const grade of [1,5,6,7,8,9,10,11,12])for(const p of fs.readdirSync(`grade/lop${grade}`).filter(p=>p.endsWith('.html')))assert(!fs.readFileSync(`grade/lop${grade}/${p}`,'utf8').includes('letter-ladder.js'));
+test('Grade 2 lessons load the shared letter game before the engine',()=>{
+ const pages=fs.readdirSync('grade/lop2').filter(p=>p.endsWith('.html')).map(p=>fs.readFileSync('grade/lop2/'+p,'utf8')).filter(s=>s.includes('src="./assets/js/learning-core.js?v=site-letters-20261025'));
+ assert.equal(pages.length,35);for(const html of pages){assert(html.indexOf('letter-ladder-core.js')<html.indexOf('letter-ladder.js?'));assert(html.indexOf('letter-ladder.js?')<html.indexOf('src="./assets/js/learning-core.js?v=site-letters-20261025'));assert(html.includes('letter-ladder.css'));}
  const source=fs.readFileSync('grade/lop2/assets/js/letter-ladder.js','utf8');for(const [pathname,search,enabled]of [['/grade/lop2/gsunit1.html','',true],['/grade/lop1/unit1.html','',false],['/grade/lop2/bodyparts.html','?fromGrade=4',true]]){const ctx={window:{},document:{body:{dataset:{}},getElementById(){return null;}},location:{pathname,search},URLSearchParams};vm.runInNewContext(source,ctx);assert.equal(ctx.window.DanhLetterLadder.enabled,enabled);}
 });

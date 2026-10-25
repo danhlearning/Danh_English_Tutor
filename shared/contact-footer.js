@@ -1,5 +1,6 @@
 /* One contact footer for the home page and every topic page. */
 (() => {
+  const siteRoot=new URL('../',document.currentScript.src);
   const fonts = new URL('./learner-font.css', document.currentScript.src).href;
   if (![...document.querySelectorAll('link[rel="stylesheet"]')].some(link => link.href === fonts)) {
     const link = document.createElement('link');
@@ -11,6 +12,9 @@
   class ContactDanh extends HTMLElement {
     connectedCallback() {
       if (this.shadowRoot) return;
+      const letters=new URL('flashcard.html?game=letters',siteRoot),grade=Number(new URLSearchParams(location.search).get('fromGrade'))||Number(location.pathname.match(/\/grade\/lop(\d+)\//)?.[1]);
+      if(grade>=1&&grade<=12)letters.searchParams.set('grade',grade);
+      const rawUnit=location.pathname.match(/\/(?:previous-)?((?:gs)?unit\d+)\.html$/)?.[1]||new URLSearchParams(location.search).get('unit'),unit=/^\d+$/.test(rawUnit||'')?'unit'+rawUnit:rawUnit;if(/^(?:gs)?unit\d+$/.test(unit||''))letters.searchParams.set('unit',unit);
       this.attachShadow({ mode: 'open' }).innerHTML = `
         <style>
           :host {
@@ -74,6 +78,7 @@
           }
           footer p { max-width: 640px; margin: 0 auto; text-wrap: balance; }
           footer span { display: inline-block; }
+          .game-entry{text-align:center;margin:24px 16px 0}.game-entry a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 20px;border:1.5px solid #c5b28e;border-radius:15px 12px 17px 13px;color:#34584c;background:#fffaf0;font-weight:800;text-decoration:none}.game-entry a:focus-visible{outline:3px solid #176d8a;outline-offset:3px}
           @media (max-width: 520px) {
             .social-buttons { grid-template-columns: minmax(0, 280px); }
           }
@@ -81,6 +86,7 @@
             .btn-social { transition: none; }
           }
         </style>
+        <nav class="game-entry" aria-label="Trò chơi học từ"><a href="${letters.href.replace(/&/g,'&amp;')}">Ghép chữ · Luyện nhớ từ</a></nav>
         <section class="contact-section" aria-labelledby="contact-title">
           <div class="contact-inner">
           <h2 id="contact-title">Kết nối với thầy Danh</h2>

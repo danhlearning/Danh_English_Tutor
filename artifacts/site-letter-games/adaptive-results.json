@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "kind": "unit",
+      "repeatedHintsStay": true,
+      "independentRecallUnlocksFull": true,
+      "summary": true,
+      "otherProgressUnchanged": true
+    },
+    {
+      "kind": "library",
+      "repeatedHintsStay": true,
+      "independentRecallUnlocksFull": true,
+      "summary": true,
+      "otherProgressUnchanged": true
+    }
+  ],
+  "auxiliaryGrades": [
+    1,
+    5,
+    12
+  ],
+  "buttonContrast": true,
+  "errors": []
+}

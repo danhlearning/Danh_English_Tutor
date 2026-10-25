@@ -142,6 +142,7 @@
     el('task-kind').textContent=labels[t.mode];
     const prompts={meaning:`“${w.name}” có nghĩa là gì?`,listening:'Bấm nghe, rồi chọn từ em nghe được.',spelling:`Từ nào có nghĩa là “${w.meaning}”?`,sentence:record.meaning,writing:record.meaning,gap:'Chọn từ để hoàn thành câu.',letters:`Tìm chữ còn thiếu trong từ có nghĩa là “${w.meaning}”.`,dialogue:record.prompt,'sentence-listening':'Bấm nghe, rồi tìm đúng câu vừa nghe.'};
     el('question').textContent=prompts[t.mode];
+    el('question').classList.toggle('g2-translation-prompt',['sentence','writing'].includes(t.mode));
     el('task-context').hidden=!['gap','dialogue'].includes(t.mode);el('task-context').textContent=t.mode==='dialogue'?record.context:record.meaning;
     el('puzzle').hidden=!['gap','letters'].includes(t.mode);el('puzzle').textContent=record.masked||'';el('puzzle').classList.toggle('letter-puzzle',t.mode==='letters');
     el('listen').hidden=!done&&!['meaning','listening','sentence-listening'].includes(t.mode);

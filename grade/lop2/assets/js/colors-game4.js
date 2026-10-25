@@ -30,11 +30,13 @@
       image.setAttribute('aria-label', question.meaning);
       image.innerHTML = question.visual;
       const meaning = document.createElement('p');
-      meaning.className = 'colors-game4-prompt';
+      meaning.className = 'colors-game4-prompt g2-translation-prompt';
+      meaning.tabIndex = -1;
       meaning.textContent = question.vietnamese;
       const hint = document.createElement('p');
       hint.textContent = 'Gợi ý: It is + màu.';
-      stage.append(image, meaning, hint);
+      stage.append(meaning, image, hint);
+      meaning.focus({preventScroll: true});
       find('count-sentence-input').value = '';
       find('count-feedback').textContent = '';
     },

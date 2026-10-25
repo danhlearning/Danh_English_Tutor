@@ -108,6 +108,7 @@
   const isMilestone = count => count===3 || count>=5 && count%5===0;
 
   function mount({stage,words,grade,scope,mark=()=>{},length=words.length,picture}) {
+    if(window.DanhSiteLetters){const letterWords=words.map(w=>{if(w.image||w.visual||!picture)return w;const frame=picture(w),art=frame.matches('svg,img')?frame:frame.querySelector('svg,img');return art?{...w,visual:art.outerHTML}:w;});const letters=document.getElementById('letters-stage');if(letters&&stage.id==='quiz-stage')window.DanhSiteLetters.bind({stage:letters,words:letterWords,grade,scope});else window.DanhSiteLetters.addEntry({anchor:stage.parentElement,words:letterWords,grade,scope});}
     const all=words.map(word=>({...word,key:word.key || `u${word.unit || 0}-w${word.id}`}));
     const byKey=new Map(all.map(word=>[word.key,word]));
     const key=`danh-g${grade}-vocabulary-game-${scope}-v1`;

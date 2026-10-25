@@ -99,7 +99,7 @@ const server = http.createServer((req, res) => {
     await realPage.goto(base + '/index.html');
     await realPage.waitForFunction(() => !!window.DanhSitePreload && !!window.DanhLearners);
     await realPage.waitForFunction(() => DanhSitePreload.stats.completed > 0);
-    await realPage.getByRole('button', {name: 'Đăng nhập', exact: true}).click();
+    await realPage.getByRole('button', {name: 'Lưu dữ liệu học', exact: true}).click();
     await realPage.locator('#learner-name').fill('Kiểm tra tải trước');
     await realPage.getByRole('button', {name: 'Vào học ngay', exact: true}).click();
     await realPage.waitForFunction(() => DanhLearners.current?.name === 'Kiểm tra tải trước');

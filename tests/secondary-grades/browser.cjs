@@ -3,7 +3,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
 const root=path.resolve(__dirname,'../..'),base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8001';
 const out=path.join(root,'artifacts/secondary-grades');fs.mkdirSync(out,{recursive:true});
 const banks={};for(const g of [8,9]){const c={window:{}};vm.createContext(c);for(const f of ['units-data','grammar-data'])vm.runInContext(fs.readFileSync(path.join(root,`grade/lop${g}/assets/js/${f}.js`),'utf8'),c);banks[g]={units:c.window[`DanhGrade${g}Units`],grammar:c.window[`DanhGrade${g}Grammar`]};}
-async function profile(p,name){if(await p.getByRole('button',{name:'Đăng nhập',exact:true}).isVisible())await p.getByRole('button',{name:'Đăng nhập',exact:true}).click();await p.locator('#learner-name').fill(name);await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await p.waitForFunction(n=>window.DanhLearners?.current?.name===n,name);}
+async function profile(p,name){if(await p.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).isVisible())await p.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).click();await p.locator('#learner-name').fill(name);await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await p.waitForFunction(n=>window.DanhLearners?.current?.name===n,name);}
 async function round(p,g,scope){return p.evaluate(({g,scope})=>JSON.parse(DanhLearners.storage.getItem(`danh-g${g}-vocabulary-game-${scope}-v1`)).active,{g,scope});}
 async function key(p){return p.locator('#quiz-stage h3[data-word-key]').getAttribute('data-word-key');}
 async function grammarActive(p,g){return p.evaluate(g=>JSON.parse(DanhLearners.storage.getItem(`danh-g${g}-grammar-v1`)).active,g);}

@@ -6,7 +6,7 @@ fs.mkdirSync(out,{recursive:true});
 const ctx=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'}),p=await ctx.newPage(),errors=[],bad=[];
 p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)bad.push(r.url());});
 await ctx.route('**/*',r=>new URL(r.request().url()).origin===base?r.continue():r.abort());
-await p.goto(base+'/grade/lop6/unit1.html');if(await p.getByRole('button',{name:'Đăng nhập',exact:true}).isVisible())await p.getByRole('button',{name:'Đăng nhập',exact:true}).click();await p.locator('#learner-name').fill('Rà ảnh lớp 6–7');await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await p.waitForFunction(()=>window.DanhLearners?.current?.name==='Rà ảnh lớp 6–7');
+await p.goto(base+'/grade/lop6/unit1.html');if(await p.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).isVisible())await p.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).click();await p.locator('#learner-name').fill('Rà ảnh lớp 6–7');await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await p.waitForFunction(()=>window.DanhLearners?.current?.name==='Rà ảnh lớp 6–7');
 await p.evaluate(()=>{for(const g of [6,7])DanhLearners.storage.setItem(`danh-g${g}-unit1`,'[1,2]');});
 let photos=0;
 for(const grade of [6,7]){

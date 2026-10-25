@@ -1,0 +1,953 @@
+[
+  {
+    "category": "Sai minh họa xác nhận",
+    "term": "square",
+    "meaning": "quảng trường",
+    "ids": [
+      391
+    ],
+    "note": "Nghĩa đang học là quảng trường, nhưng thư viện lấy tranh hình vuông của lớp 2 do chọn ảnh theo riêng từ “square”, bỏ qua nghĩa. Unit lớp 6 có tranh quảng trường đúng.",
+    "evidence": "evidence-library-square.png",
+    "locations": [
+      "flashcard.html [G6 unit4]"
+    ],
+    "image": "grade/lop6/assets/images/pencil/unit4/square-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Cảnh quảng trường lớp 6, tách khỏi hình vuông lớp 2.",
+    "sha256": "1ce6198ffb0a0aee49982c60ef4443a38e1425950e4329b8f994bba46f7a3f91",
+    "bytes": 254612
+  },
+  {
+    "category": "Sai minh họa xác nhận",
+    "term": "Eleven",
+    "meaning": "mười một",
+    "ids": [
+      102
+    ],
+    "note": "Dùng cùng biểu tượng 🔢 có các chữ số 1, 2, 3, 4; không phải số 11. Unit 13 lớp 2 có hiển thị số đúng.",
+    "evidence": "evidence-library-Eleven.png",
+    "locations": [
+      "flashcard.html [G2 gsunit13]"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/number-11.svg",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Số 11 và 11 chấm đếm.",
+    "sha256": "fed9f293c1a5a4908f35a3f18db3f3f90c83a2419893a8e7d6c7030b8f92f0ca",
+    "bytes": 1185
+  },
+  {
+    "category": "Sai minh họa xác nhận",
+    "term": "Thirteen",
+    "meaning": "mười ba",
+    "ids": [
+      103
+    ],
+    "note": "Dùng cùng biểu tượng 🔢 có các chữ số 1, 2, 3, 4; không phải số 13. Unit 13 lớp 2 có hiển thị số đúng.",
+    "evidence": "evidence-library-Eleven.png",
+    "locations": [
+      "flashcard.html [G2 gsunit13]"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/number-13.svg",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Số 13 và 13 chấm đếm.",
+    "sha256": "6f80ae651d85896baf7c42a53fc05611f7c9451fff1b311634d363e33c7c2d99",
+    "bytes": 1351
+  },
+  {
+    "category": "Sai minh họa xác nhận",
+    "term": "Fourteen",
+    "meaning": "mười bốn",
+    "ids": [
+      104
+    ],
+    "note": "Dùng cùng biểu tượng 🔢 có các chữ số 1, 2, 3, 4; không phải số 14. Unit 13 lớp 2 có hiển thị số đúng.",
+    "evidence": "evidence-library-Eleven.png",
+    "locations": [
+      "flashcard.html [G2 gsunit13]"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/number-14.svg",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Số 14 và 14 chấm đếm.",
+    "sha256": "8d789deecbec44b91e605d4e69be41b27d79db34b75069184a94cce38d4972aa",
+    "bytes": 1434
+  },
+  {
+    "category": "Sai minh họa xác nhận",
+    "term": "Fifteen",
+    "meaning": "mười lăm",
+    "ids": [
+      105
+    ],
+    "note": "Dùng cùng biểu tượng 🔢 có các chữ số 1, 2, 3, 4; không phải số 15. Unit 13 lớp 2 có hiển thị số đúng.",
+    "evidence": "evidence-library-Eleven.png",
+    "locations": [
+      "flashcard.html [G2 gsunit13]"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/number-15.svg",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Số 15 và 15 chấm đếm.",
+    "sha256": "334e78d10c3bdc80ec297912dc6fb76fc824d6a6bb215d6d48e7d7ee13197647",
+    "bytes": 1517
+  },
+  {
+    "category": "Sai minh họa xác nhận",
+    "term": "wardrobe",
+    "meaning": "tủ quần áo",
+    "ids": [
+      383
+    ],
+    "note": "Thư viện dùng hình cánh cửa 🚪 thay cho tủ quần áo. Unit lớp 6 có tranh tủ đúng.",
+    "locations": [
+      "flashcard.html [G6 unit2]"
+    ],
+    "image": "grade/lop6/assets/images/pencil/unit2/wardrobe-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Tủ mở có quần áo treo và đồ gấp.",
+    "sha256": "84095488d652da160ec677cf5ff28e79bd7683e0b8ab73010d6ab0d740837c35",
+    "bytes": 141798
+  },
+  {
+    "category": "Sai minh họa xác nhận",
+    "term": "fridge",
+    "meaning": "tủ lạnh",
+    "ids": [
+      385
+    ],
+    "note": "Thư viện dùng viên đá lạnh 🧊 thay cho tủ lạnh. Unit lớp 6 có tranh tủ lạnh đúng.",
+    "locations": [
+      "flashcard.html [G6 unit2]"
+    ],
+    "image": "grade/lop6/assets/images/pencil/unit2/fridge-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Tủ lạnh mở có ngăn và thực phẩm.",
+    "sha256": "de1353c8bd71f4353cb06defc739ab797960c5bf8e7d6bb1e94dbd0fc1cf4961",
+    "bytes": 157320
+  },
+  {
+    "category": "Sai minh họa xác nhận",
+    "term": "gong",
+    "meaning": "cồng, chiêng",
+    "ids": [
+      551,
+      1594
+    ],
+    "note": "Dùng chuông 🔔 thay cho nhạc cụ cồng/chiêng; khác vật thể đang được học.",
+    "evidence": "evidence-gong.png",
+    "locations": [
+      "flashcard.html [G8 unit4]",
+      "grade/lop8/unit4.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/gong-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Chiêng tròn bằng đồng có núm, giá treo và dùi gõ.",
+    "sha256": "419ce2f0eaff1279be5f910efa0c5e9ca733ed59986d01351b3641b63e11ba51",
+    "bytes": 134324
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "remote control",
+    "meaning": "điều khiển từ xa",
+    "ids": [
+      415
+    ],
+    "note": "Cụm núm điều khiển 🎛️, không thể hiện chiếc điều khiển từ xa. Đây là biểu tượng control knobs, không kết luận là ảnh bếp.",
+    "evidence": "evidence-library-remote-control.png",
+    "locations": [
+      "flashcard.html [G6 unit7]"
+    ],
+    "image": "grade/lop6/assets/images/pencil/unit7/remote-control-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Chiếc điều khiển cầm tay có nút.",
+    "sha256": "a674047de0c5e62ffa0b09522a7ba92869f2225295fe5fa6ad5f9c4a9ccd4ab6",
+    "bytes": 202270
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "apricot blossom",
+    "meaning": "hoa mai",
+    "ids": [
+      405
+    ],
+    "note": "Hoa trắng tâm vàng 🌼 không cho thấy hoa mai vàng; Unit lớp 6 có tranh mai rõ hơn.",
+    "evidence": "evidence-library-apricot-blossom.png",
+    "locations": [
+      "flashcard.html [G6 unit6]"
+    ],
+    "image": "grade/lop6/assets/images/pencil/unit6/apricot-blossom-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Cành mai vàng năm cánh.",
+    "sha256": "168c456bd1a1736da711e558d1adf3d10dd0c836520a36dee592509405b95b12",
+    "bytes": 146594
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "paddy field",
+    "meaning": "ruộng lúa",
+    "ids": [
+      531,
+      1574
+    ],
+    "note": "Chỉ có bông lúa 🌾, chưa thể hiện ruộng lúa. Không kết luận đây là cây ngô.",
+    "evidence": "evidence-paddy-field.png",
+    "locations": [
+      "flashcard.html [G8 unit2]",
+      "grade/lop8/unit2.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/paddy-field-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Cả thửa ruộng ngập nước trồng nhiều hàng lúa.",
+    "sha256": "dfbd7b065c94663176eb898c1e187dcc394837b0cd154210fe14493e224337fb",
+    "bytes": 224712
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "terraced field",
+    "meaning": "ruộng bậc thang",
+    "ids": [
+      550,
+      1593
+    ],
+    "note": "Chỉ có bông lúa, không thấy địa hình ruộng bậc thang.",
+    "evidence": "evidence-terraced-field.png",
+    "locations": [
+      "flashcard.html [G8 unit4]",
+      "grade/lop8/unit4.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/terraced-field-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Các tầng ruộng uốn theo sườn núi.",
+    "sha256": "3e58ebdeb0f41f54a67c7edb968eb4f2b87734520f8c331c71a89ec16eaa1b36",
+    "bytes": 245144
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "stilt house",
+    "meaning": "nhà sàn",
+    "ids": [
+      545,
+      1588
+    ],
+    "note": "Nhà thông thường 🏠 không thể hiện chân cột/nhà sàn.",
+    "locations": [
+      "flashcard.html [G8 unit4]",
+      "grade/lop8/unit4.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/stilt-house-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Nhà gỗ trên cột cao, có khoảng trống dưới sàn và cầu thang.",
+    "sha256": "81a12d970d8086dbc6de78dcbcbd64f8175717f064efa39a0ce1869a785d78dc",
+    "bytes": 238972
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "ancestor",
+    "meaning": "tổ tiên",
+    "ids": [
+      554,
+      1597
+    ],
+    "note": "Cây 🌳 có thể liên tưởng cội nguồn, nhưng không minh họa người tổ tiên hoặc gia phả.",
+    "locations": [
+      "flashcard.html [G8 unit5]",
+      "grade/lop8/unit5.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/ancestor-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Gia phả bằng chân dung nhiều thế hệ.",
+    "sha256": "36b958e556a3eddae0b03b3d11e091e03fb397cbb17475c1fdb45086197f5380",
+    "bytes": 175738
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "custom",
+    "meaning": "phong tục",
+    "ids": [
+      552,
+      1595
+    ],
+    "note": "Giày 👟 có liên hệ ví dụ bỏ giày ở cửa trong Unit lớp 8; đứng riêng dễ được hiểu là shoes thay vì phong tục. Bản cùng từ trong lớp 12 dùng cảnh gia đình.",
+    "locations": [
+      "flashcard.html [G8 unit5, G12 unit2]",
+      "grade/lop8/unit5.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/custom-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Khách tháo giày ở cửa, khớp ví dụ trong bài.",
+    "sha256": "a23798896609b626c17c5222613d4755d1a7a5326bcc1b21a0fd69f86dd2a474",
+    "bytes": 213664
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "tradition",
+    "meaning": "truyền thống",
+    "ids": [
+      553,
+      1596
+    ],
+    "note": "Lá 🍃 khó thể hiện truyền thống khi không có tình huống văn hóa.",
+    "locations": [
+      "flashcard.html [G8 unit5]",
+      "grade/lop8/unit5.html"
+    ],
+    "image": "grade/lop11/assets/images/pencil/unit6/10-vocab100-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Người lớn tuổi truyền nghề dệt cho thế hệ sau.",
+    "sha256": "8259f96c769cad7c266711b095a6f90c10bda21934629bc3bc7bc36e55e7160a",
+    "bytes": 221576
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "customer",
+    "meaning": "khách hàng",
+    "ids": [
+      576,
+      1622
+    ],
+    "note": "Túi mua sắm 🛍️ thể hiện đồ mua, chưa thể hiện người khách hàng.",
+    "locations": [
+      "flashcard.html [G8 unit8]",
+      "grade/lop8/unit8.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/customer-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Người mua cầm giỏ hàng đang thanh toán.",
+    "sha256": "c992cc53707535766cc6eb757e4482654afc15a7ce87e00bd70a45e9154ea697",
+    "bytes": 198872
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "household appliance",
+    "meaning": "đồ gia dụng",
+    "ids": [
+      646,
+      1699
+    ],
+    "note": "Giỏ 🧺 là đồ gia dụng nhưng không diễn đạt rõ nghĩa thiết bị gia dụng của “appliance”.",
+    "evidence": "evidence-household-appliance.png",
+    "locations": [
+      "flashcard.html [G9 unit6]",
+      "grade/lop9/unit6.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/household-appliance-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Máy giặt, tủ lạnh, ấm điện và nồi cơm điện.",
+    "sha256": "2b7546f60159b7d99a9174809a270c607e7e3ac361acdb7303b18d964f2c69ea",
+    "bytes": 182276
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "polar region",
+    "meaning": "vùng cực",
+    "ids": [
+      679,
+      1648
+    ],
+    "note": "Viên đá 🧊 không cho thấy vùng địa lý cực.",
+    "locations": [
+      "flashcard.html [G9 unit10]",
+      "grade/lop9/unit10.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/polar-region-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Cả vùng băng tuyết, sông băng và biển băng.",
+    "sha256": "a6a4373c5699cb19d3ce5b92748eaa318faff1940577fdf60eac3c1ab38bb1d9",
+    "bytes": 197128
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "channel",
+    "meaning": "kênh truyền hình",
+    "ids": [
+      414
+    ],
+    "note": "Biểu tượng 🔢 không thể hiện kênh truyền hình.",
+    "locations": [
+      "flashcard.html [G6 unit7]"
+    ],
+    "image": "grade/lop6/assets/images/pencil/unit7/channel-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Người chọn các chương trình khác nhau trên TV.",
+    "sha256": "667dc0c240dc6fd7645e3bcbfa4cfe641efa7a904c35ad3e4fd0e6e701673b5f",
+    "bytes": 219636
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "timetable",
+    "meaning": "thời khóa biểu",
+    "ids": [
+      380
+    ],
+    "note": "Lịch ngày 🗓️ chưa thể hiện thời khóa biểu có môn học và khung giờ.",
+    "locations": [
+      "flashcard.html [G6 unit1]"
+    ],
+    "image": "grade/lop6/assets/images/pencil/unit1/timetable-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Bảng lưới các môn học theo cột và hàng, dùng tranh Unit đã có.",
+    "sha256": "efc988934dc40cdee1e7ed745fd4bf4b2cec67bc67fae18715e1ec51813c34bb",
+    "bytes": 150128
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "origami",
+    "meaning": "nghệ thuật gấp giấy",
+    "ids": [
+      526,
+      1543
+    ],
+    "note": "Tờ giấy 📄 chưa thể hiện hình gấp hoặc thao tác origami.",
+    "locations": [
+      "flashcard.html [G8 unit1]",
+      "grade/lop8/unit1.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/origami-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Hạc giấy, nếp gấp và bàn tay đang gấp.",
+    "sha256": "e3a0676519a00fe461b260e2ddca39868bd3b751bc4fe7238037f40a8969221e",
+    "bytes": 161798
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "orchard",
+    "meaning": "vườn cây ăn quả",
+    "ids": [
+      534,
+      1577
+    ],
+    "note": "Một quả cam 🍊 chưa thể hiện vườn cây ăn quả.",
+    "locations": [
+      "flashcard.html [G8 unit2]",
+      "grade/lop8/unit2.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/orchard-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Nhiều hàng cây mang quả trong vườn.",
+    "sha256": "8500fc21bf426f7c8d4fd08d53bd26f7e4199edad825e96599cf5675fe896f01",
+    "bytes": 243858
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "peer pressure",
+    "meaning": "áp lực từ bạn bè đồng trang lứa",
+    "ids": [
+      538,
+      1581
+    ],
+    "note": "Trong Unit lớp 8, bắt tay 🤝 không thể hiện áp lực bạn bè. Thư viện cùng từ đã có cảnh tạo áp lực phù hợp hơn.",
+    "locations": [
+      "flashcard.html [G8 unit3]",
+      "grade/lop8/unit3.html"
+    ],
+    "image": "grade/lop11/assets/images/pencil/unit9/1-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Các bạn gây sức ép với học sinh đang lưỡng lự.",
+    "sha256": "fed0a4380509d92caabd3bcf98982f8a7f344972d5fe764a0ba0e75981885b8e",
+    "bytes": 213292
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "bullying",
+    "meaning": "hành vi bắt nạt",
+    "ids": [
+      541,
+      1584
+    ],
+    "note": "Khiên 💔/biểu tượng khiên không thể hiện tình huống bắt nạt.",
+    "locations": [
+      "flashcard.html [G8 unit3, G11 unit9]",
+      "grade/lop8/unit3.html"
+    ],
+    "image": "grade/lop11/assets/images/pencil/unit9/2-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Học sinh bị chế giễu, giáo viên can thiệp.",
+    "sha256": "e72e2fc01a2a2d1f779c01d2595e6c5b83fd98cff4d896446f44b7962506c584",
+    "bytes": 212614
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "ethnic group",
+    "meaning": "nhóm dân tộc",
+    "ids": [
+      547,
+      1590
+    ],
+    "note": "Bắt tay 🤝 không thể hiện nhóm dân tộc hoặc đặc trưng văn hóa.",
+    "locations": [
+      "flashcard.html [G8 unit4]",
+      "grade/lop8/unit4.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/ethnic-group-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Nhóm gia đình có trang phục văn hóa chung; minh họa khái niệm, không phải tư liệu nhận diện một dân tộc.",
+    "sha256": "f605abdd1779405c00fa5995c5db54d53040127b5a8e4a0a16713567a53b7e59",
+    "bytes": 228328
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "habit",
+    "meaning": "thói quen",
+    "ids": [
+      560,
+      1603
+    ],
+    "note": "Sách mở 📖 chỉ gợi thói quen đọc, chưa thể hiện tính lặp của thói quen.",
+    "locations": [
+      "flashcard.html [G8 unit6]",
+      "grade/lop8/unit6.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/habit-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Đánh răng lặp lại qua ba buổi sáng có lịch ngày.",
+    "sha256": "8a02159c44048802629901f325156bc276dc1f9200133485d328324c958a7052",
+    "bytes": 172460
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "independent",
+    "meaning": "tự lập",
+    "ids": [
+      563,
+      1606
+    ],
+    "note": "Trong Unit lớp 8 dùng cơ bắp 💪 cho tự lập; dễ bị hiểu là khỏe. Thư viện có cảnh tự học rõ hơn.",
+    "locations": [
+      "flashcard.html [G8 unit6]",
+      "grade/lop8/unit6.html"
+    ],
+    "image": "grade/lop10/assets/images/pencil/unit8/5-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Học sinh tự học và tự làm bài.",
+    "sha256": "88da5f8b08196658ab40abfee2c029f01c9e10df8e5ecec88079f87f1e62ab62",
+    "bytes": 128322
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "landslide",
+    "meaning": "sạt lở đất",
+    "ids": [
+      582,
+      1629
+    ],
+    "note": "Núi ⛰️ không thể hiện đất đá đang sạt lở.",
+    "locations": [
+      "flashcard.html [G8 unit9]",
+      "grade/lop8/unit9.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/landslide-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Đất đá đang trượt từ sườn núi xuống đường.",
+    "sha256": "a24f431eb54a935ad4395c04bfba09ce2db81a9d6e151035bc74432744a1b740",
+    "bytes": 266258
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "surface",
+    "meaning": "bề mặt",
+    "ids": [
+      605,
+      1571
+    ],
+    "note": "Mặt trăng 🌕 chỉ là một ví dụ bề mặt, thiếu trọng tâm chỉ vào mặt ngoài.",
+    "locations": [
+      "flashcard.html [G8 unit12]",
+      "grade/lop8/unit12.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/surface-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Ngón tay và mũi tên chỉ mặt ngoài của khối gỗ.",
+    "sha256": "c1cff5cf46c52e1d0d40618d3020627819eb79e06ceae3c8e739fddcd9346947",
+    "bytes": 106676
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "ancient",
+    "meaning": "cổ xưa",
+    "ids": [
+      634,
+      1685
+    ],
+    "note": "Gạch 🧱 không thể hiện đặc điểm cổ xưa hoặc tương phản xưa/nay.",
+    "locations": [
+      "flashcard.html [G9 unit4]",
+      "grade/lop9/unit4.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/ancient-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Di tích đá phong hóa, đổ vỡ và rễ cây lâu năm.",
+    "sha256": "432b5fd86d5eb41dc5db3e6d6b1a990639b6f7dbc508774f9d89747529c156ba",
+    "bytes": 266046
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "rainforest",
+    "meaning": "rừng mưa nhiệt đới",
+    "ids": [
+      651,
+      1705
+    ],
+    "note": "Một cây cọ 🌴 chưa cho thấy rừng mưa nhiệt đới.",
+    "locations": [
+      "flashcard.html [G9 unit7]",
+      "grade/lop9/unit7.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/rainforest-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Rừng nhiều tầng tán, dây leo, dương xỉ và mưa.",
+    "sha256": "82f5ec47ed4cebfe6b4a5b4bfa60068a99b6f97b993c6ef70fb5a712ee50bc67",
+    "bytes": 276240
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "bilingual",
+    "meaning": "sử dụng được hai ngôn ngữ",
+    "ids": [
+      669,
+      1722
+    ],
+    "note": "Một người nói 🗣️ không thể hiện hai ngôn ngữ.",
+    "locations": [
+      "flashcard.html [G9 unit9]",
+      "grade/lop9/unit9.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/bilingual-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Cùng người nói dùng Hello! và Xin chào!, thể hiện hai ngôn ngữ.",
+    "sha256": "4544809a196b72c945ac37517ee440656df8579d480d53f89d353697c444a32e",
+    "bytes": 207100
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "mother tongue",
+    "meaning": "tiếng mẹ đẻ",
+    "ids": [
+      670,
+      1723
+    ],
+    "note": "Trái tim 💛 không diễn đạt rõ tiếng mẹ đẻ.",
+    "locations": [
+      "flashcard.html [G9 unit9]",
+      "grade/lop9/unit9.html"
+    ],
+    "image": "shared/assets/vocabulary-reviewed/mother-tongue-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Mẹ và con nhỏ trò chuyện bằng tiếng Việt trong gia đình.",
+    "sha256": "31ab2221d1b51b757658b4b2e7e134a073a9bc45ea97df5464e46a57dbdbebb3",
+    "bytes": 193960
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "strength",
+    "meaning": "điểm mạnh",
+    "ids": [
+      692,
+      1664
+    ],
+    "note": "Cơ bắp 💪 gợi sức mạnh thể chất; nghĩa ở đây là điểm mạnh/năng lực cá nhân.",
+    "locations": [
+      "flashcard.html [G9 unit12, G12 unit9]",
+      "grade/lop9/unit12.html"
+    ],
+    "image": "grade/lop12/assets/images/pencil/unit9/10-vocab100-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Các năng lực và lựa chọn nghề nghiệp, không còn cơ bắp.",
+    "sha256": "c7b19a4b6e556f9bcedc1bfc8283e319c1b75b7472eb29287780c5b170cf34be",
+    "bytes": 183230
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "Grape",
+    "meaning": "Quả nho",
+    "ids": [
+      1219
+    ],
+    "note": "Một quả tím đơn lẻ có dáng gần quả mận; chưa đủ chắc chắn để kết luận sai với “grape”. Cần bạn duyệt riêng hình này.",
+    "evidence": "evidence-Grape.png",
+    "locations": [
+      "grade/lop2/fruits.html"
+    ],
+    "image": "grade/lop2/assets/images/pencil/fruits/grape-v2.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Quả nho, nửa quả có hạt nhỏ và chùm nho giúp phân biệt với mận.",
+    "sha256": "339210a4230a911fc35f3367f470672640cd8dfbe9868b947888b150e16f89c9",
+    "bytes": 162616
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "Damage",
+    "meaning": "Thiệt hại",
+    "note": "Trang flashcard cũ: Máy tính xách tay còn nguyên, không thấy thiệt hại hoặc vật bị hỏng.",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "externalImage": "external-13.jpg",
+    "url": "https://images.unsplash.com/photo-1468436139062-f60a71c5c892?w=500",
+    "image": "shared/assets/vocabulary-reviewed/damage-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Mái nhà và kính cửa bị hỏng sau bão.",
+    "sha256": "806fd8eb535d2a43b6509876837f271b3223194f770da7e99f1af822bfe7aeb5",
+    "bytes": 241004
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "Manage",
+    "meaning": "Quản lý, xoay xở",
+    "note": "Trang flashcard cũ: Trái Đất ban đêm, không thấy hành động quản lý hoặc xoay xở.",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "externalImage": "external-14.jpg",
+    "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500",
+    "image": "shared/assets/vocabulary-reviewed/manage-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Bình tĩnh sắp xếp nhiều nhiệm vụ vào kế hoạch.",
+    "sha256": "70f2eb353a3dc2b0496d7185d360aad74b694e63d319a3daf410c3d9294825a8",
+    "bytes": 145268
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "Reduce",
+    "meaning": "Giảm bớt",
+    "note": "Trang flashcard cũ: Tòa nhà nhìn từ dưới lên, không thấy giảm bớt hay so sánh trước/sau.",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "externalImage": "external-17.jpg",
+    "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500",
+    "image": "shared/assets/vocabulary-reviewed/reduce-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "So sánh trước/sau: ít tiền chi ra và ít túi mua hơn.",
+    "sha256": "a6fd8802e0334f42234419e9bcb3c81f025f8b1b80cdf448b85bea3319db0e37",
+    "bytes": 142530
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "Maintain",
+    "meaning": "Duy trì",
+    "note": "Trang flashcard cũ: Phong cảnh núi, không thấy hoạt động duy trì/bảo dưỡng.",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "externalImage": "external-23.jpg",
+    "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500",
+    "image": "shared/assets/vocabulary-reviewed/maintain-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Giữ liên lạc bạn bè qua thư và cuộc gọi lặp lại theo thời gian, khớp ví dụ duy trì quan hệ.",
+    "sha256": "e39027cf8b104f78fcd8e0b32cdf37be7e23d119f351b1bc78eb5349838ae40a",
+    "bytes": 154302
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "Compensation",
+    "meaning": "Tiền lương, bồi thường",
+    "note": "Trang flashcard cũ: Người dùng máy tính, không thấy tiền lương hay bồi thường.",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "externalImage": "external-32.jpg",
+    "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=500",
+    "image": "grade/lop10/assets/images/pencil/unit6/7-v2.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Người lao động nhận tiền công: nghĩa tiền lương trong định nghĩa/ví dụ, không bao quát mọi nghĩa bồi thường.",
+    "sha256": "f227ebd6d38f757d6ad761007237faef367eaeb14ace3cd44830b30be2429620",
+    "bytes": 111356
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "Termination",
+    "meaning": "Sự chấm dứt, kết thúc",
+    "note": "Trang flashcard cũ: Thư viện và tượng, không thấy chấm dứt hoặc kết thúc.",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "externalImage": "external-39.jpg",
+    "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=500",
+    "image": "shared/assets/vocabulary-reviewed/termination-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Hợp đồng bị hủy, trả lại chìa khóa.",
+    "sha256": "d37db72435ffcb7f16fcc1ddafbba737dd3ddba99d812c732ff971884703745f",
+    "bytes": 170118
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "Negotiate",
+    "meaning": "Đàm phán, thương lượng",
+    "note": "Trang flashcard cũ: Chân dung một người, không thấy hai bên đàm phán.",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "externalImage": "external-36.jpg",
+    "url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500",
+    "image": "shared/assets/vocabulary-reviewed/negotiate-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Hai bên trao đổi đề xuất giá khác nhau.",
+    "sha256": "b096b6fe70c0537e350db8d4eab900c6c187012e55fbeecba979fe211f9d5e98",
+    "bytes": 176244
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "Perspective",
+    "meaning": "Góc nhìn, quan điểm",
+    "note": "Trang flashcard cũ: Máy ảnh tung trên tay có thể gợi góc nhìn nhiếp ảnh; chưa diễn đạt rõ quan điểm.",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "externalImage": "external-26.jpg",
+    "url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500",
+    "image": "shared/assets/vocabulary-reviewed/perspective-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "generated",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Hai người nhìn cùng mô hình từ hai phía, có góc nhìn khác nhau.",
+    "sha256": "c80c8a7a9ffa06066d932928d8d6492ff96493d3e68a94a771a464297aa132c1",
+    "bytes": 150212
+  },
+  {
+    "category": "Cần duyệt về độ rõ nghĩa",
+    "term": "Island",
+    "meaning": "Hòn đảo",
+    "note": "Trang flashcard cũ: Ảnh bờ biển; không thấy vùng đất được nước bao quanh đủ để nhận diện đảo.",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "externalImage": "external-8.jpg",
+    "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500",
+    "image": "grade/lop6/assets/images/pencil/unit5/island-v1.webp",
+    "decision": "replace",
+    "review": "approved",
+    "source": "existing-reviewed-candidate",
+    "reviewedAt": "2026-10-25",
+    "reviewNote": "Vùng đất được nước bao quanh, thấy trọn đường bờ đảo.",
+    "sha256": "2f900218f8f9247c32457cfe145d338524529c5200d265fd14d93a555a5db036",
+    "bytes": 236154
+  }
+]

@@ -130,17 +130,18 @@
     image.setAttribute('aria-label', byId.get(question.imageWordId).meaning);
     image.innerHTML = byId.get(question.imageWordId).visual;
     const meaning = document.createElement('p');
-    meaning.className = 'g2-practice-meaning';
+    meaning.className = 'g2-practice-meaning g2-translation-prompt';
+    meaning.tabIndex = -1;
     meaning.textContent = question.vietnamese;
     const hint = document.createElement('p');
     hint.className = 'g2-practice-hint';
     hint.textContent = `Gợi ý cấu trúc: ${topic.pattern}`;
-    stage.append(count, image, meaning, hint);
+    stage.append(count, meaning, image, hint);
     if (round.locked) {
       input.disabled = check.disabled = reveal.disabled = true;
       next.hidden = false;
       sentenceStatus(round.result, round.viewed ? 'revealed' : 'correct');
-    } else input.focus({ preventScroll: true });
+    } else meaning.focus({ preventScroll: true });
   }
   function nextSentence() {
     if (!round?.locked) return;

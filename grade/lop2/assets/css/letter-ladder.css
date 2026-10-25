@@ -4,6 +4,8 @@ body.grade2-topic .learning-panel .letter-ladder .ll-slot{border-radius:5px;box-
 .ll-slot .danh-exercise-gap{width:100%!important;color:#416c5b}
 .letter-ladder .ll-slot{border-bottom:0;border-radius:5px}
 body[data-grade="3"] .letter-ladder{--ll-accent:#376d8a;--ll-ink:#345267;--ll-soft:#e5edf0;--ll-paper:#fffaf0;--ll-line:#aabdc5}
+body[data-grade="1"] .letter-ladder{--ll-accent:#a95842;--ll-ink:#684539;--ll-soft:#f4e6d9;--ll-paper:#fffaf0;--ll-line:#d6b6a1}
+body[data-grade="5"] .letter-ladder{--ll-accent:#467758;--ll-ink:#35573d;--ll-soft:#e6eedb;--ll-paper:#fffaf0;--ll-line:#b0c3a7}
 body[data-grade="4"] .letter-ladder{--ll-accent:#80608d;--ll-ink:#624b6a;--ll-soft:#eee4ef;--ll-paper:#fffaf0;--ll-line:#c0acc4}
 body[data-grade="3"] .letter-ladder,body[data-grade="4"] .letter-ladder{background:var(--ll-paper);color:var(--ll-ink);border-color:var(--ll-line)}
 body[data-grade] .letter-ladder h3.ll-meaning,body[data-grade] .letter-ladder button,body[data-grade] .letter-ladder .ll-input{color:var(--ll-ink)}
@@ -12,3 +14,4 @@ body[data-grade] .letter-ladder .ll-slot,body[data-grade] .letter-ladder .ll-sum
 @media(prefers-reduced-motion:reduce){.letter-ladder *{animation:none!important;transition:none!important}}
 .letter-ladder .ll-practice-note{font-size:15px;line-height:1.45;margin:0 0 10px;color:inherit}
 body .letter-ladder .ll-announcement{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important;background:transparent!important}
+.site-letter-entry{box-sizing:border-box;margin:16px auto;padding:16px;border:1.5px solid #d6c4a1;border-radius:20px 17px 22px 18px;background:#fffaf0}.site-letter-entry>button,.site-letter-entry>div>button{font:inherit;min-height:48px;padding:10px 18px;border:1.5px solid #2b6954;border-radius:12px;background:#377d65;color:white;font-weight:800;cursor:pointer}.site-letter-entry .letter-ladder{margin-top:12px}body.grade2-topic>.site-letter-entry{width:calc(100% - 28px);max-width:1100px}

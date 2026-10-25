@@ -9,18 +9,18 @@
                 "Friend|/frend/|A person whom one knows well.|Người bạn|A friend in need is a friend indeed.|https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500",
                 "Gather|/ˈɡæð.ər/|To come together or bring things together.|Tập hợp|The children gather flowers in the park.|https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500",
                 "Happy|/ˈhæp.i/|Feeling or showing pleasure.|Hạnh phúc|They lived a very happy life.|https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=500",
-                "Island|/ˈaɪ.lənd/|A piece of land surrounded by water.|Hòn đảo|We spent our vacation on an island.|https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500",
+                "Island|/ˈaɪ.lənd/|A piece of land surrounded by water.|Hòn đảo|We spent our vacation on an island.|grade/lop6/assets/images/pencil/unit5/island-v1.webp",
                 "Journey|/ˈdʒɜː.ni/|An act of traveling from one place to another.|Hành trình|Life is a beautiful journey.|https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500"
             ],
             intermediate: [
                 "Achieve|/əˈtʃiːv/|To succeed in finishing something or reaching an aim.|Đạt được|She finally achieved her ambition to become a pilot.|https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=500",
                 "Capable|/ˈkeɪ.pə.bəl/|Having the ability or power necessary for doing something.|Có khả năng|She is capable of handling the entire project.|https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500",
                 "Challenge|/ˈtʃæl.ɪndʒ/|Something that needs great mental or physical effort.|Thách thức|Learning a new language is a big challenge.|https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=500",
-                "Damage|/ˈdæm.ɪdʒ/|Harm or injury caused to something.|Thiệt hại|The storm caused severe damage to the building.|https://images.unsplash.com/photo-1468436139062-f60a71c5c892?w=500",
-                "Manage|/ˈmæn.ɪdʒ/|To succeed in doing or dealing with something.|Quản lý, xoay xở|How do you manage to stay so calm?|https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500",
+                "Damage|/ˈdæm.ɪdʒ/|Harm or injury caused to something.|Thiệt hại|The storm caused severe damage to the building.|shared/assets/vocabulary-reviewed/damage-v1.webp",
+                "Manage|/ˈmæn.ɪdʒ/|To succeed in doing or dealing with something.|Quản lý, xoay xở|How do you manage to stay so calm?|shared/assets/vocabulary-reviewed/manage-v1.webp",
                 "Provide|/prəˈvaɪd/|To give what is needed; to supply.|Cung cấp|The school provides free books for students.|https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500",
                 "Receive|/rɪˈsiːv/|To get or be given something.|Nhận được|I received a beautiful letter this morning.|https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=500",
-                "Reduce|/rɪˈdʒuːs/|To make something smaller or less in amount.|Giảm bớt|We need to reduce our daily spending.|https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500",
+                "Reduce|/rɪˈdʒuːs/|To make something smaller or less in amount.|Giảm bớt|We need to reduce our daily spending.|shared/assets/vocabulary-reviewed/reduce-v1.webp",
                 "Support|/səˈpɔːt/|To agree with and give encouragement to someone.|Hỗ trợ, ủng hộ|My family always supports my choices.|https://images.unsplash.com/photo-1473643081880-a862c75531ba?w=500",
                 "Various|/ˈveə.ri.əs/|Many different; of several kinds.|Khác nhau, đa dạng|There are various ways to solve this problem.|https://images.unsplash.com/photo-1513151233558-d860c5398176?w=500"
             ],
@@ -28,10 +28,10 @@
                 "Analyze|/ˈæn.əl.aɪz/|To study something methodically and in detail.|Phân tích|We need to analyze the results of the survey.|https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500",
                 "Evaluate|/ɪˈvæl.ju.eɪt/|To judge or calculate the quality or value of something.|Đánh giá|The performance will be evaluated by experts.|https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=500",
                 "Interpret|/ɪnˈtɜː.prɪt/|To explain the meaning of information or actions.|Giải thích, phiên dịch|How do you interpret this passage?|https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500",
-                "Maintain|/meɪnˈteɪn/|To cause or enable a condition or situation to continue.|Duy trì|It is essential to maintain good relationships.|https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500",
+                "Maintain|/meɪnˈteɪn/|To cause or enable a condition or situation to continue.|Duy trì|It is essential to maintain good relationships.|shared/assets/vocabulary-reviewed/maintain-v1.webp",
                 "Objective|/əbˈdʒek.tɪv/|Not influenced by personal feelings or opinions.|Khách quan|Scientists must remain completely objective.|https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=500",
                 "Perceive|/pəˈsiːv/|To become aware or conscious of something; to notice.|Nhận thức, nhìn nhận|Newspapers are perceived as more reliable than blogs.|https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500",
-                "Perspective|/pəˈspek.tɪv/|A particular attitude toward or way of regarding something.|Góc nhìn, quan điểm|The trip gave him a new perspective on life.|https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500",
+                "Perspective|/pəˈspek.tɪv/|A particular attitude toward or way of regarding something.|Góc nhìn, quan điểm|The trip gave him a new perspective on life.|shared/assets/vocabulary-reviewed/perspective-v1.webp",
                 "Precise|/prɪˈsaɪs/|Exact, accurate, and careful about details.|Chính xác, rõ ràng|You need to be precise when measuring ingredients.|https://images.unsplash.com/photo-1532242117833-b930811a79a2?w=500",
                 "Sustain|/səˈsteɪn/|To strengthen or support physically or mentally over time.|Duy trì, chống đỡ|The company cannot sustain such heavy financial losses.|https://images.unsplash.com/photo-1448375240586-882707db888b?w=500",
                 "Theory|/ˈθɪə.ri/|A formal statement of the rules on which a subject is based.|Lý thuyết, giả thuyết|In theory, the project should work perfectly.|https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=500"
@@ -39,14 +39,14 @@
             toeic: [
                 "Agenda|/əˈdʒen.də/|A list of matters to be discussed at a meeting.|Chương trình nghị sự|The next item on the agenda is the budget.|https://images.unsplash.com/photo-1543269865-cbf427effbad?w=500",
                 "Collaborate|/kəˈlæb.ə.reɪt/|To work jointly on an activity or project.|Hợp tác, cộng tác|The two teams collaborated closely on this product.|https://images.unsplash.com/photo-1531535934027-667f687cfe5f?w=500",
-                "Compensation|/ˌkɒm.penˈseɪ.ʃən/|Money that is paid to someone in exchange for work.|Tiền lương, bồi thường|The position offers a competitive compensation package.|https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=500",
+                "Compensation|/ˌkɒm.penˈseɪ.ʃən/|Money that is paid to someone in exchange for work.|Tiền lương, bồi thường|The position offers a competitive compensation package.|grade/lop10/assets/images/pencil/unit6/7-v2.webp",
                 "Delegate|/ˈdel.ɪ.ɡət/|To give a particular job or duty to someone else.|Ủy thác, giao việc|A good manager knows how to delegate tasks.|https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500",
                 "Enterprise|/ˈen.tə.praɪz/|An organization, a company, or a business.|Doanh nghiệp|This is a private enterprise with local operations.|https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500",
                 "Fluctuate|/ˈflʌk.tʃu.eɪt/|To change continuously between one level and another.|Dao động, biến động|Vegetable prices fluctuate depending on the season.|https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500",
-                "Negotiate|/nəˈɡəʊ.ʃi.eɪt/|To try to reach an agreement by formal discussion.|Đàm phán, thương lượng|We managed to negotiate a lower price with the client.|https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500",
+                "Negotiate|/nəˈɡəʊ.ʃi.eɪt/|To try to reach an agreement by formal discussion.|Đàm phán, thương lượng|We managed to negotiate a lower price with the client.|shared/assets/vocabulary-reviewed/negotiate-v1.webp",
                 "Productivity|/ˌprɒd.ʌkˈtɪv.ə.ti/|The rate at which a company produces goods.|Năng suất, hiệu suất|New training programs helped improve productivity.|https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500",
                 "Revenue|/ˈrev.ən.juː/|The total amount of income generated by sales.|Doanh thu|The firm reported a slight decline in quarterly revenue.|https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=500",
-                "Termination|/ˌtɜː.mɪˈneɪ.ʃən/|The act of bringing something to an end.|Sự chấm dứt, kết thúc|The termination of the contract requires a notice period.|https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=500"
+                "Termination|/ˌtɜː.mɪˈneɪ.ʃən/|The act of bringing something to an end.|Sự chấm dứt, kết thúc|The termination of the contract requires a notice period.|shared/assets/vocabulary-reviewed/termination-v1.webp"
             ],
             ielts: [
                 "Acquisition|/ˌæk.wɪˈzɪʃ.ən/|The act of obtaining or learning something.|Sự tích lũy, tiếp thu|Language acquisition is easier for young children.|https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500",

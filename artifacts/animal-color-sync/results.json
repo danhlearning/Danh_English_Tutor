@@ -1,0 +1,14 @@
+{
+  "topics": 2,
+  "wholeCardFirstLast": true,
+  "wrongThenCorrect": true,
+  "numericProgressMigration": true,
+  "letterProgressMigration": true,
+  "gradeContext": 12,
+  "widths": [
+    320,
+    390,
+    1280
+  ],
+  "errors": []
+}

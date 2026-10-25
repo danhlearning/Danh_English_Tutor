@@ -3,7 +3,7 @@ const assert=require('node:assert/strict');
 const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8001';
 (async()=>{const browser=await chromium.launch({headless:true,channel:process.env.BROWSER_CHANNEL||'msedge'});try{
  const ctx=await browser.newContext({viewport:{width:390,height:844}}),p=await ctx.newPage();await ctx.route('**/*',r=>new URL(r.request().url()).origin===base?r.continue():r.abort());
- await p.goto(base+'/grade/lop8/unit12.html');if(await p.getByRole('button',{name:'Đăng nhập',exact:true}).isVisible())await p.getByRole('button',{name:'Đăng nhập',exact:true}).click();await p.locator('#learner-name').fill('Kiểm tra kỹ năng riêng');await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await p.waitForFunction(()=>window.DanhLearners?.current?.name==='Kiểm tra kỹ năng riêng');
+ await p.goto(base+'/grade/lop8/unit12.html');if(await p.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).isVisible())await p.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).click();await p.locator('#learner-name').fill('Kiểm tra kỹ năng riêng');await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await p.waitForFunction(()=>window.DanhLearners?.current?.name==='Kiểm tra kỹ năng riêng');
  for(const grade of [8,9]){
   await p.goto(base+`/grade/lop${grade}/unit12.html`);await p.locator('[data-tab=spelling]').click();
   assert.equal(await p.evaluate(g=>DanhLearners.storage.getItem(`danh-g${g}-unit12`),grade),null);

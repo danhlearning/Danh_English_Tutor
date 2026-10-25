@@ -22,7 +22,7 @@ window.DanhGrade8Units = [
         "meaning": "nghệ thuật gấp giấy",
         "example": "We make paper birds in our origami club.",
         "icon": "📄",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/origami-v1.webp"
       },
       {
         "id": 3,
@@ -88,7 +88,7 @@ window.DanhGrade8Units = [
         "meaning": "ruộng lúa",
         "example": "The paddy field turns golden before harvest.",
         "icon": "🌾",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/paddy-field-v1.webp"
       },
       {
         "id": 2,
@@ -112,7 +112,7 @@ window.DanhGrade8Units = [
         "meaning": "vườn cây ăn quả",
         "example": "We pick ripe oranges in the orchard.",
         "icon": "🍊",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/orchard-v1.webp"
       },
       {
         "id": 5,
@@ -170,7 +170,7 @@ window.DanhGrade8Units = [
         "meaning": "áp lực từ bạn bè đồng trang lứa",
         "example": "Peer pressure can make it hard to say no.",
         "icon": "🤝",
-        "image": null
+        "image": "../lop11/assets/images/pencil/unit9/1-v1.webp"
       },
       {
         "id": 3,
@@ -194,7 +194,7 @@ window.DanhGrade8Units = [
         "meaning": "hành vi bắt nạt",
         "example": "Our class discusses how to stop bullying.",
         "icon": "🛡️",
-        "image": null
+        "image": "../lop11/assets/images/pencil/unit9/2-v1.webp"
       },
       {
         "id": 6,
@@ -236,7 +236,7 @@ window.DanhGrade8Units = [
         "meaning": "nhà sàn",
         "example": "The wooden stilt house stands above the ground.",
         "icon": "🏠",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/stilt-house-v1.webp"
       },
       {
         "id": 2,
@@ -252,7 +252,7 @@ window.DanhGrade8Units = [
         "meaning": "nhóm dân tộc",
         "example": "Each ethnic group has its own traditions.",
         "icon": "🤝",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/ethnic-group-v1.webp"
       },
       {
         "id": 4,
@@ -276,7 +276,7 @@ window.DanhGrade8Units = [
         "meaning": "ruộng bậc thang",
         "example": "The terraced field follows the slope of the hill.",
         "icon": "🌾",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/terraced-field-v1.webp"
       },
       {
         "id": 7,
@@ -284,7 +284,7 @@ window.DanhGrade8Units = [
         "meaning": "cồng, chiêng",
         "example": "The musician strikes a large bronze gong.",
         "icon": "🔔",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/gong-v1.webp"
       },
       {
         "id": 8,
@@ -310,7 +310,7 @@ window.DanhGrade8Units = [
         "meaning": "phong tục",
         "example": "Removing shoes at the door is a family custom.",
         "icon": "👟",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/custom-v1.webp"
       },
       {
         "id": 2,
@@ -318,7 +318,7 @@ window.DanhGrade8Units = [
         "meaning": "truyền thống",
         "example": "Making rice cakes is a tradition in our family.",
         "icon": "🍃",
-        "image": null
+        "image": "../lop11/assets/images/pencil/unit6/10-vocab100-v1.webp"
       },
       {
         "id": 3,
@@ -326,7 +326,7 @@ window.DanhGrade8Units = [
         "meaning": "tổ tiên",
         "example": "We tell stories about an ancestor from long ago.",
         "icon": "🌳",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/ancestor-v1.webp"
       },
       {
         "id": 4,
@@ -392,7 +392,7 @@ window.DanhGrade8Units = [
         "meaning": "thói quen",
         "example": "Reading before bed is a useful habit.",
         "icon": "📖",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/habit-v1.webp"
       },
       {
         "id": 3,
@@ -416,7 +416,7 @@ window.DanhGrade8Units = [
         "meaning": "tự lập",
         "example": "He is independent and cooks his own lunch.",
         "icon": "💪",
-        "image": null
+        "image": "../lop10/assets/images/pencil/unit8/5-v1.webp"
       },
       {
         "id": 6,
@@ -564,7 +564,7 @@ window.DanhGrade8Units = [
         "meaning": "khách hàng",
         "example": "The customer asks for a larger size.",
         "icon": "🛍️",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/customer-v1.webp"
       },
       {
         "id": 6,
@@ -630,7 +630,7 @@ window.DanhGrade8Units = [
         "meaning": "sạt lở đất",
         "example": "A landslide blocked the mountain road.",
         "icon": "⛰️",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/landslide-v1.webp"
       },
       {
         "id": 5,
@@ -868,7 +868,7 @@ window.DanhGrade8Units = [
         "meaning": "bề mặt",
         "example": "The surface of the moon has many craters.",
         "icon": "🌕",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/surface-v1.webp"
       },
       {
         "id": 7,

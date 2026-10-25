@@ -55,7 +55,7 @@ for(const grade of targetGrades){
       .replace('<p id="topic-description"></p>','').replace('  <script src="./assets/data/gs-unit1-data.js?v=compact-listen-20261024"></script>','')
       .replace('  <script src="./assets/js/grade2-progress.js?v=compact-listen-20261024"></script>','')
       .replace('  <script src="./assets/js/extended-topic.js?v=game-pacing-20261025"></script>','')
-      .replace('  <script src="./assets/js/learning-core.js?v=recall-gate-20261025"></script>',`  <script src="../../shared/learning-effects.js?v=recall-gate-20261025"></script>\n  <script src="../lop2/assets/js/learning-core.js?v=recall-gate-20261025"></script>\n  <script src="./assets/js/grade2-course.js?v=compact-listen-20261024"></script>\n  <script src="../../shared/primary-grade2-lesson.js?v=feedback-20261025"></script>`)
+      .replace('  <script src="./assets/js/learning-core.js?v=site-letters-20261025"></script>',`  <script src="../../shared/learning-effects.js?v=site-letters-20261025"></script>\n  <script src="../lop2/assets/js/learning-core.js?v=site-letters-20261025"></script>\n  <script src="./assets/js/grade2-course.js?v=compact-listen-20261024"></script>\n  <script src="../../shared/primary-grade2-lesson.js?v=feedback-20261025"></script>`)
       .replace(/\.\/assets\/js\/grade2-navigation\.js\?v=[^"\s]+/,`../lop2/assets/js/grade2-navigation.js?v=${version}`)
       .replace('</head>',`<link rel="stylesheet" href="../../shared/primary-grade2.css?v=${version}"></head>`);
     if(grade===4)html=html.replace(`grade2-course.js?v=${version}`,`grade2-course.js?v=${courseVersion}`);
@@ -97,3 +97,5 @@ for(const name of fs.readdirSync(path.join(root,'grade/lop2')).filter(n=>n.endsW
   write(file,html);
 }
 console.log(`Đã đồng bộ lớp ${targetGrades.join(', ')} theo lớp 2.`);
+
+require('./install-site-letter-games.cjs').run();

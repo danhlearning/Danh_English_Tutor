@@ -521,3 +521,11 @@
     .learning-stats strong { font-size: 1.25rem; }
     .learning-stats span { font-size: 0.75rem; }
   }
+/* Shared letter-game colors also cover Grade 2 and linked topic contexts. */
+body.grade2-topic[data-grade] {
+  --ll-accent: #377d65;
+  --ll-ink: #34584c;
+  --ll-soft: #f2e8ce;
+  --ll-paper: #fffaf0;
+  --ll-line: #d6c4a1;
+}

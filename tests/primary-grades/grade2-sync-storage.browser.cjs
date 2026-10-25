@@ -1,6 +1,6 @@
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),path=require('node:path');
 const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8015';
-const create=async(p,name)=>{await p.getByRole('button',{name:'Đăng nhập',exact:true}).click();await p.locator('#learner-name').fill(name);await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await p.waitForFunction(n=>window.DanhLearners?.current?.name===n,name);};
+const create=async(p,name)=>{await p.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).click();await p.locator('#learner-name').fill(name);await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await p.waitForFunction(n=>window.DanhLearners?.current?.name===n,name);};
 const game=async p=>{await p.getByRole('button',{name:'Trò chơi',exact:true}).click();await p.locator('[data-game=game-count]').click();};
 (async()=>{const b=await chromium.launch({channel:'msedge',headless:true});try{
  const c=await b.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'}),p=await c.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));

@@ -1,0 +1,431 @@
+[
+  {
+    "term": "square",
+    "meaning": "quảng trường",
+    "image": "grade/lop6/assets/images/pencil/unit4/square-v1.webp",
+    "locations": [
+      "flashcard.html [G6 unit4]"
+    ],
+    "reviewNote": "Cảnh quảng trường lớp 6, tách khỏi hình vuông lớp 2."
+  },
+  {
+    "term": "Eleven",
+    "meaning": "mười một",
+    "image": "shared/assets/vocabulary-reviewed/number-11.svg",
+    "locations": [
+      "flashcard.html [G2 gsunit13]"
+    ],
+    "reviewNote": "Số 11 và 11 chấm đếm."
+  },
+  {
+    "term": "Thirteen",
+    "meaning": "mười ba",
+    "image": "shared/assets/vocabulary-reviewed/number-13.svg",
+    "locations": [
+      "flashcard.html [G2 gsunit13]"
+    ],
+    "reviewNote": "Số 13 và 13 chấm đếm."
+  },
+  {
+    "term": "Fourteen",
+    "meaning": "mười bốn",
+    "image": "shared/assets/vocabulary-reviewed/number-14.svg",
+    "locations": [
+      "flashcard.html [G2 gsunit13]"
+    ],
+    "reviewNote": "Số 14 và 14 chấm đếm."
+  },
+  {
+    "term": "Fifteen",
+    "meaning": "mười lăm",
+    "image": "shared/assets/vocabulary-reviewed/number-15.svg",
+    "locations": [
+      "flashcard.html [G2 gsunit13]"
+    ],
+    "reviewNote": "Số 15 và 15 chấm đếm."
+  },
+  {
+    "term": "wardrobe",
+    "meaning": "tủ quần áo",
+    "image": "grade/lop6/assets/images/pencil/unit2/wardrobe-v1.webp",
+    "locations": [
+      "flashcard.html [G6 unit2]"
+    ],
+    "reviewNote": "Tủ mở có quần áo treo và đồ gấp."
+  },
+  {
+    "term": "fridge",
+    "meaning": "tủ lạnh",
+    "image": "grade/lop6/assets/images/pencil/unit2/fridge-v1.webp",
+    "locations": [
+      "flashcard.html [G6 unit2]"
+    ],
+    "reviewNote": "Tủ lạnh mở có ngăn và thực phẩm."
+  },
+  {
+    "term": "gong",
+    "meaning": "cồng, chiêng",
+    "image": "shared/assets/vocabulary-reviewed/gong-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit4]",
+      "grade/lop8/unit4.html"
+    ],
+    "reviewNote": "Chiêng tròn bằng đồng có núm, giá treo và dùi gõ."
+  },
+  {
+    "term": "remote control",
+    "meaning": "điều khiển từ xa",
+    "image": "grade/lop6/assets/images/pencil/unit7/remote-control-v1.webp",
+    "locations": [
+      "flashcard.html [G6 unit7]"
+    ],
+    "reviewNote": "Chiếc điều khiển cầm tay có nút."
+  },
+  {
+    "term": "apricot blossom",
+    "meaning": "hoa mai",
+    "image": "grade/lop6/assets/images/pencil/unit6/apricot-blossom-v1.webp",
+    "locations": [
+      "flashcard.html [G6 unit6]"
+    ],
+    "reviewNote": "Cành mai vàng năm cánh."
+  },
+  {
+    "term": "paddy field",
+    "meaning": "ruộng lúa",
+    "image": "shared/assets/vocabulary-reviewed/paddy-field-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit2]",
+      "grade/lop8/unit2.html"
+    ],
+    "reviewNote": "Cả thửa ruộng ngập nước trồng nhiều hàng lúa."
+  },
+  {
+    "term": "terraced field",
+    "meaning": "ruộng bậc thang",
+    "image": "shared/assets/vocabulary-reviewed/terraced-field-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit4]",
+      "grade/lop8/unit4.html"
+    ],
+    "reviewNote": "Các tầng ruộng uốn theo sườn núi."
+  },
+  {
+    "term": "stilt house",
+    "meaning": "nhà sàn",
+    "image": "shared/assets/vocabulary-reviewed/stilt-house-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit4]",
+      "grade/lop8/unit4.html"
+    ],
+    "reviewNote": "Nhà gỗ trên cột cao, có khoảng trống dưới sàn và cầu thang."
+  },
+  {
+    "term": "ancestor",
+    "meaning": "tổ tiên",
+    "image": "shared/assets/vocabulary-reviewed/ancestor-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit5]",
+      "grade/lop8/unit5.html"
+    ],
+    "reviewNote": "Gia phả bằng chân dung nhiều thế hệ."
+  },
+  {
+    "term": "custom",
+    "meaning": "phong tục",
+    "image": "shared/assets/vocabulary-reviewed/custom-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit5, G12 unit2]",
+      "grade/lop8/unit5.html"
+    ],
+    "reviewNote": "Khách tháo giày ở cửa, khớp ví dụ trong bài."
+  },
+  {
+    "term": "tradition",
+    "meaning": "truyền thống",
+    "image": "grade/lop11/assets/images/pencil/unit6/10-vocab100-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit5]",
+      "grade/lop8/unit5.html"
+    ],
+    "reviewNote": "Người lớn tuổi truyền nghề dệt cho thế hệ sau."
+  },
+  {
+    "term": "customer",
+    "meaning": "khách hàng",
+    "image": "shared/assets/vocabulary-reviewed/customer-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit8]",
+      "grade/lop8/unit8.html"
+    ],
+    "reviewNote": "Người mua cầm giỏ hàng đang thanh toán."
+  },
+  {
+    "term": "household appliance",
+    "meaning": "đồ gia dụng",
+    "image": "shared/assets/vocabulary-reviewed/household-appliance-v1.webp",
+    "locations": [
+      "flashcard.html [G9 unit6]",
+      "grade/lop9/unit6.html"
+    ],
+    "reviewNote": "Máy giặt, tủ lạnh, ấm điện và nồi cơm điện."
+  },
+  {
+    "term": "polar region",
+    "meaning": "vùng cực",
+    "image": "shared/assets/vocabulary-reviewed/polar-region-v1.webp",
+    "locations": [
+      "flashcard.html [G9 unit10]",
+      "grade/lop9/unit10.html"
+    ],
+    "reviewNote": "Cả vùng băng tuyết, sông băng và biển băng."
+  },
+  {
+    "term": "channel",
+    "meaning": "kênh truyền hình",
+    "image": "grade/lop6/assets/images/pencil/unit7/channel-v1.webp",
+    "locations": [
+      "flashcard.html [G6 unit7]"
+    ],
+    "reviewNote": "Người chọn các chương trình khác nhau trên TV."
+  },
+  {
+    "term": "timetable",
+    "meaning": "thời khóa biểu",
+    "image": "grade/lop6/assets/images/pencil/unit1/timetable-v1.webp",
+    "locations": [
+      "flashcard.html [G6 unit1]"
+    ],
+    "reviewNote": "Bảng lưới các môn học theo cột và hàng, dùng tranh Unit đã có."
+  },
+  {
+    "term": "origami",
+    "meaning": "nghệ thuật gấp giấy",
+    "image": "shared/assets/vocabulary-reviewed/origami-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit1]",
+      "grade/lop8/unit1.html"
+    ],
+    "reviewNote": "Hạc giấy, nếp gấp và bàn tay đang gấp."
+  },
+  {
+    "term": "orchard",
+    "meaning": "vườn cây ăn quả",
+    "image": "shared/assets/vocabulary-reviewed/orchard-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit2]",
+      "grade/lop8/unit2.html"
+    ],
+    "reviewNote": "Nhiều hàng cây mang quả trong vườn."
+  },
+  {
+    "term": "peer pressure",
+    "meaning": "áp lực từ bạn bè đồng trang lứa",
+    "image": "grade/lop11/assets/images/pencil/unit9/1-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit3]",
+      "grade/lop8/unit3.html"
+    ],
+    "reviewNote": "Các bạn gây sức ép với học sinh đang lưỡng lự."
+  },
+  {
+    "term": "bullying",
+    "meaning": "hành vi bắt nạt",
+    "image": "grade/lop11/assets/images/pencil/unit9/2-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit3, G11 unit9]",
+      "grade/lop8/unit3.html"
+    ],
+    "reviewNote": "Học sinh bị chế giễu, giáo viên can thiệp."
+  },
+  {
+    "term": "ethnic group",
+    "meaning": "nhóm dân tộc",
+    "image": "shared/assets/vocabulary-reviewed/ethnic-group-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit4]",
+      "grade/lop8/unit4.html"
+    ],
+    "reviewNote": "Nhóm gia đình có trang phục văn hóa chung; minh họa khái niệm, không phải tư liệu nhận diện một dân tộc."
+  },
+  {
+    "term": "habit",
+    "meaning": "thói quen",
+    "image": "shared/assets/vocabulary-reviewed/habit-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit6]",
+      "grade/lop8/unit6.html"
+    ],
+    "reviewNote": "Đánh răng lặp lại qua ba buổi sáng có lịch ngày."
+  },
+  {
+    "term": "independent",
+    "meaning": "tự lập",
+    "image": "grade/lop10/assets/images/pencil/unit8/5-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit6]",
+      "grade/lop8/unit6.html"
+    ],
+    "reviewNote": "Học sinh tự học và tự làm bài."
+  },
+  {
+    "term": "landslide",
+    "meaning": "sạt lở đất",
+    "image": "shared/assets/vocabulary-reviewed/landslide-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit9]",
+      "grade/lop8/unit9.html"
+    ],
+    "reviewNote": "Đất đá đang trượt từ sườn núi xuống đường."
+  },
+  {
+    "term": "surface",
+    "meaning": "bề mặt",
+    "image": "shared/assets/vocabulary-reviewed/surface-v1.webp",
+    "locations": [
+      "flashcard.html [G8 unit12]",
+      "grade/lop8/unit12.html"
+    ],
+    "reviewNote": "Ngón tay và mũi tên chỉ mặt ngoài của khối gỗ."
+  },
+  {
+    "term": "ancient",
+    "meaning": "cổ xưa",
+    "image": "shared/assets/vocabulary-reviewed/ancient-v1.webp",
+    "locations": [
+      "flashcard.html [G9 unit4]",
+      "grade/lop9/unit4.html"
+    ],
+    "reviewNote": "Di tích đá phong hóa, đổ vỡ và rễ cây lâu năm."
+  },
+  {
+    "term": "rainforest",
+    "meaning": "rừng mưa nhiệt đới",
+    "image": "shared/assets/vocabulary-reviewed/rainforest-v1.webp",
+    "locations": [
+      "flashcard.html [G9 unit7]",
+      "grade/lop9/unit7.html"
+    ],
+    "reviewNote": "Rừng nhiều tầng tán, dây leo, dương xỉ và mưa."
+  },
+  {
+    "term": "bilingual",
+    "meaning": "sử dụng được hai ngôn ngữ",
+    "image": "shared/assets/vocabulary-reviewed/bilingual-v1.webp",
+    "locations": [
+      "flashcard.html [G9 unit9]",
+      "grade/lop9/unit9.html"
+    ],
+    "reviewNote": "Cùng người nói dùng Hello! và Xin chào!, thể hiện hai ngôn ngữ."
+  },
+  {
+    "term": "mother tongue",
+    "meaning": "tiếng mẹ đẻ",
+    "image": "shared/assets/vocabulary-reviewed/mother-tongue-v1.webp",
+    "locations": [
+      "flashcard.html [G9 unit9]",
+      "grade/lop9/unit9.html"
+    ],
+    "reviewNote": "Mẹ và con nhỏ trò chuyện bằng tiếng Việt trong gia đình."
+  },
+  {
+    "term": "strength",
+    "meaning": "điểm mạnh",
+    "image": "grade/lop12/assets/images/pencil/unit9/10-vocab100-v1.webp",
+    "locations": [
+      "flashcard.html [G9 unit12, G12 unit9]",
+      "grade/lop9/unit12.html"
+    ],
+    "reviewNote": "Các năng lực và lựa chọn nghề nghiệp, không còn cơ bắp."
+  },
+  {
+    "term": "Grape",
+    "meaning": "Quả nho",
+    "image": "grade/lop2/assets/images/pencil/fruits/grape-v2.webp",
+    "locations": [
+      "grade/lop2/fruits.html"
+    ],
+    "reviewNote": "Quả nho, nửa quả có hạt nhỏ và chùm nho giúp phân biệt với mận."
+  },
+  {
+    "term": "Damage",
+    "meaning": "Thiệt hại",
+    "image": "shared/assets/vocabulary-reviewed/damage-v1.webp",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "reviewNote": "Mái nhà và kính cửa bị hỏng sau bão."
+  },
+  {
+    "term": "Manage",
+    "meaning": "Quản lý, xoay xở",
+    "image": "shared/assets/vocabulary-reviewed/manage-v1.webp",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "reviewNote": "Bình tĩnh sắp xếp nhiều nhiệm vụ vào kế hoạch."
+  },
+  {
+    "term": "Reduce",
+    "meaning": "Giảm bớt",
+    "image": "shared/assets/vocabulary-reviewed/reduce-v1.webp",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "reviewNote": "So sánh trước/sau: ít tiền chi ra và ít túi mua hơn."
+  },
+  {
+    "term": "Maintain",
+    "meaning": "Duy trì",
+    "image": "shared/assets/vocabulary-reviewed/maintain-v1.webp",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "reviewNote": "Giữ liên lạc bạn bè qua thư và cuộc gọi lặp lại theo thời gian, khớp ví dụ duy trì quan hệ."
+  },
+  {
+    "term": "Compensation",
+    "meaning": "Tiền lương, bồi thường",
+    "image": "grade/lop10/assets/images/pencil/unit6/7-v2.webp",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "reviewNote": "Người lao động nhận tiền công: nghĩa tiền lương trong định nghĩa/ví dụ, không bao quát mọi nghĩa bồi thường."
+  },
+  {
+    "term": "Termination",
+    "meaning": "Sự chấm dứt, kết thúc",
+    "image": "shared/assets/vocabulary-reviewed/termination-v1.webp",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "reviewNote": "Hợp đồng bị hủy, trả lại chìa khóa."
+  },
+  {
+    "term": "Negotiate",
+    "meaning": "Đàm phán, thương lượng",
+    "image": "shared/assets/vocabulary-reviewed/negotiate-v1.webp",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "reviewNote": "Hai bên trao đổi đề xuất giá khác nhau."
+  },
+  {
+    "term": "Perspective",
+    "meaning": "Góc nhìn, quan điểm",
+    "image": "shared/assets/vocabulary-reviewed/perspective-v1.webp",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "reviewNote": "Hai người nhìn cùng mô hình từ hai phía, có góc nhìn khác nhau."
+  },
+  {
+    "term": "Island",
+    "meaning": "Hòn đảo",
+    "image": "grade/lop6/assets/images/pencil/unit5/island-v1.webp",
+    "locations": [
+      "flashcard-previous.html · assets/js/pages/flashcard.js"
+    ],
+    "reviewNote": "Vùng đất được nước bao quanh, thấy trọn đường bờ đảo."
+  }
+]

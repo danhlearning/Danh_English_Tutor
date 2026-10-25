@@ -2,7 +2,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict'),path
 const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8000',out=path.resolve(__dirname,'../../artifacts/upper-secondary-vocabulary');
 (async()=>{const b=await chromium.launch({channel:'msedge',headless:true});try{
  const c=await b.newContext({reducedMotion:'reduce'});await c.route('**/*',r=>r.request().url().startsWith(base)?r.continue():r.abort());const p=await c.newPage();
- await p.goto(base+'/index.html');await p.getByRole('button',{name:'Đăng nhập',exact:true}).click();await p.locator('#learner-name').fill('Kiểm tra tranh và dấu');await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();
+ await p.goto(base+'/index.html');await p.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).click();await p.locator('#learner-name').fill('Kiểm tra tranh và dấu');await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();
  await p.waitForFunction(()=>window.DanhLearners?.current?.name==='Kiểm tra tranh và dấu');
  for(const g of [10,11,12]){
   await p.goto(`${base}/grade/lop${g}/unit1.html`);await p.locator('[data-tab=vocabulary]').click();

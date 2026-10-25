@@ -453,13 +453,13 @@
     input.value = '';
     input.disabled = false;
     input.style.borderColor = '#B39DDB';
-    input.focus();
 
     container.innerHTML = `
+      <div class="g2-translation-prompt" tabindex="-1">${item.vietnamese}</div>
       <div style="width:110px; height:90px; border-radius:12px; overflow:hidden; box-shadow:0 4px 8px rgba(0,0,0,0.1); background:white; padding:6px; display:flex; align-items:center; justify-content:center;">${item.svg}</div>
-      <div style="font-size: 1.3rem; font-weight: 800; color: #4527A0;">"${item.vietnamese}"</div>
       <div style="font-size: 0.9rem; font-weight: 600; color: #311B92; background: #EDE7F6; padding: 4px 12px; border-radius: 8px;">💡 Cấu trúc gợi ý: ${item.hint}</div>
     `;
+    container.querySelector('.g2-translation-prompt').focus({preventScroll: true});
   }
 
   function normalizeSentence(str) {

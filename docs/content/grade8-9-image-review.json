@@ -1,5 +1,5 @@
 {
-  "note": "Đã xem trực tiếp 18 ảnh trong hai bảng duyệt. Nghĩa Việt nằm ngoài ảnh; không có chữ trong ảnh. Dấu kiểm chỉ áp dụng cho đúng nội dung có SHA-256 này.",
+  "note": "Ảnh được xem trực tiếp, khóa bằng SHA-256. Hai ảnh ngôn ngữ có lời thoại đã duyệt và ghi rõ trong allowedText; các ảnh còn lại không có chữ.",
   "images": [
     {
       "path": "shared/assets/vocabulary-3d/ride-a-bike-3d-v1.webp",
@@ -260,6 +260,352 @@
           "grade": 9,
           "unit": 12,
           "term": "chef"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/origami-v1.webp",
+      "sha256": "e3a0676519a00fe461b260e2ddca39868bd3b751bc4fe7238037f40a8969221e",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 1,
+          "term": "origami"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/paddy-field-v1.webp",
+      "sha256": "dfbd7b065c94663176eb898c1e187dcc394837b0cd154210fe14493e224337fb",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 2,
+          "term": "paddy field"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/orchard-v1.webp",
+      "sha256": "8500fc21bf426f7c8d4fd08d53bd26f7e4199edad825e96599cf5675fe896f01",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 2,
+          "term": "orchard"
+        }
+      ]
+    },
+    {
+      "path": "grade/lop11/assets/images/pencil/unit9/1-v1.webp",
+      "sha256": "fed0a4380509d92caabd3bcf98982f8a7f344972d5fe764a0ba0e75981885b8e",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 3,
+          "term": "peer pressure"
+        }
+      ]
+    },
+    {
+      "path": "grade/lop11/assets/images/pencil/unit9/2-v1.webp",
+      "sha256": "e72e2fc01a2a2d1f779c01d2595e6c5b83fd98cff4d896446f44b7962506c584",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 3,
+          "term": "bullying"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/stilt-house-v1.webp",
+      "sha256": "81a12d970d8086dbc6de78dcbcbd64f8175717f064efa39a0ce1869a785d78dc",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 4,
+          "term": "stilt house"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/ethnic-group-v1.webp",
+      "sha256": "f605abdd1779405c00fa5995c5db54d53040127b5a8e4a0a16713567a53b7e59",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 4,
+          "term": "ethnic group"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/terraced-field-v1.webp",
+      "sha256": "3e58ebdeb0f41f54a67c7edb968eb4f2b87734520f8c331c71a89ec16eaa1b36",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 4,
+          "term": "terraced field"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/gong-v1.webp",
+      "sha256": "419ce2f0eaff1279be5f910efa0c5e9ca733ed59986d01351b3641b63e11ba51",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 4,
+          "term": "gong"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/custom-v1.webp",
+      "sha256": "a23798896609b626c17c5222613d4755d1a7a5326bcc1b21a0fd69f86dd2a474",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 5,
+          "term": "custom"
+        }
+      ]
+    },
+    {
+      "path": "grade/lop11/assets/images/pencil/unit6/10-vocab100-v1.webp",
+      "sha256": "8259f96c769cad7c266711b095a6f90c10bda21934629bc3bc7bc36e55e7160a",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 5,
+          "term": "tradition"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/ancestor-v1.webp",
+      "sha256": "36b958e556a3eddae0b03b3d11e091e03fb397cbb17475c1fdb45086197f5380",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 5,
+          "term": "ancestor"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/habit-v1.webp",
+      "sha256": "8a02159c44048802629901f325156bc276dc1f9200133485d328324c958a7052",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 6,
+          "term": "habit"
+        }
+      ]
+    },
+    {
+      "path": "grade/lop10/assets/images/pencil/unit8/5-v1.webp",
+      "sha256": "88da5f8b08196658ab40abfee2c029f01c9e10df8e5ecec88079f87f1e62ab62",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 6,
+          "term": "independent"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/customer-v1.webp",
+      "sha256": "c992cc53707535766cc6eb757e4482654afc15a7ce87e00bd70a45e9154ea697",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 8,
+          "term": "customer"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/landslide-v1.webp",
+      "sha256": "a24f431eb54a935ad4395c04bfba09ce2db81a9d6e151035bc74432744a1b740",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 9,
+          "term": "landslide"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/surface-v1.webp",
+      "sha256": "c1cff5cf46c52e1d0d40618d3020627819eb79e06ceae3c8e739fddcd9346947",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 8,
+          "unit": 12,
+          "term": "surface"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/ancient-v1.webp",
+      "sha256": "432b5fd86d5eb41dc5db3e6d6b1a990639b6f7dbc508774f9d89747529c156ba",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 4,
+          "term": "ancient"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/household-appliance-v1.webp",
+      "sha256": "2b7546f60159b7d99a9174809a270c607e7e3ac361acdb7303b18d964f2c69ea",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 6,
+          "term": "household appliance"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/rainforest-v1.webp",
+      "sha256": "82f5ec47ed4cebfe6b4a5b4bfa60068a99b6f97b993c6ef70fb5a712ee50bc67",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 7,
+          "term": "rainforest"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/bilingual-v1.webp",
+      "sha256": "4544809a196b72c945ac37517ee440656df8579d480d53f89d353697c444a32e",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": false,
+      "allowedText": [
+        "Hello!",
+        "Xin chào!"
+      ],
+      "textReason": "Lời thoại ngắn cần thiết để phân biệt ngôn ngữ đang dùng.",
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 9,
+          "term": "bilingual"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/mother-tongue-v1.webp",
+      "sha256": "31ab2221d1b51b757658b4b2e7e134a073a9bc45ea97df5464e46a57dbdbebb3",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": false,
+      "allowedText": [
+        "Chào mẹ!",
+        "Chào con!"
+      ],
+      "textReason": "Lời thoại ngắn cần thiết để phân biệt ngôn ngữ đang dùng.",
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 9,
+          "term": "mother tongue"
+        }
+      ]
+    },
+    {
+      "path": "shared/assets/vocabulary-reviewed/polar-region-v1.webp",
+      "sha256": "a6a4373c5699cb19d3ce5b92748eaa318faff1940577fdf60eac3c1ab38bb1d9",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 10,
+          "term": "polar region"
+        }
+      ]
+    },
+    {
+      "path": "grade/lop12/assets/images/pencil/unit9/10-vocab100-v1.webp",
+      "sha256": "c7b19a4b6e556f9bcedc1bfc8283e319c1b75b7472eb29287780c5b170cf34be",
+      "reviewed": "2026-10-25",
+      "method": "visual",
+      "noTextInside": true,
+      "placements": [
+        {
+          "grade": 9,
+          "unit": 12,
+          "term": "strength"
         }
       ]
     }

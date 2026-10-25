@@ -1,7 +1,7 @@
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const assert=require('node:assert/strict'),path=require('node:path'),fs=require('node:fs');
 const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8001',out=path.resolve(__dirname,'../../artifacts/vocabulary-feedback');fs.mkdirSync(out,{recursive:true});
-async function profile(page){if(await page.getByRole('button',{name:'Đăng nhập',exact:true}).isVisible())await page.getByRole('button',{name:'Đăng nhập',exact:true}).click();await page.locator('#learner-name').fill('Phản hồi');await page.getByRole('button',{name:'Vào học ngay',exact:true}).click();await page.waitForFunction(()=>!!window.DanhVocabularyGame);}
+async function profile(page){if(await page.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).isVisible())await page.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).click();await page.locator('#learner-name').fill('Phản hồi');await page.getByRole('button',{name:'Vào học ngay',exact:true}).click();await page.waitForFunction(()=>!!window.DanhVocabularyGame);}
 const last=page=>page.evaluate(()=>testCues.at(-1));
 const correctKey=(page,grade,scope)=>page.evaluate(({grade,scope})=>{const r=JSON.parse(DanhLearners.storage.getItem(`danh-g${grade}-vocabulary-game-${scope}-v1`)).active;return r.items[r.index];},{grade,scope});
 (async()=>{const browser=await chromium.launch({headless:true,channel:'msedge'});try{

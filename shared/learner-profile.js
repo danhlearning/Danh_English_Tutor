@@ -287,7 +287,8 @@
     if (!mustReload && (!current || store.get(current.id)) && mode!=='conflict') panel.append(button('Đóng ✕',hide,'close'));
     if (mode==='create' || mode==='edit') {
       const editing=mode==='edit', p=editing?store.get(current.id):null;
-      heading(editing?'Hồ sơ của '+p.name:'Đăng nhập',p?.avatar || '🌱');
+      heading(editing?'Hồ sơ của '+p.name:'Lưu dữ liệu học',p?.avatar || '🌱');
+      if(!editing)info('Đặt tên để giữ và tiếp tục dữ liệu học trên trình duyệt này.');
       if(editing)info('Đổi tên vẫn giữ nguyên lộ trình đã học.');
       const form=el('form'); const label=el('label','Tên của em');label.htmlFor='learner-name';
       const input=el('input');input.id='learner-name';input.name='learnerName';input.placeholder='Ví dụ: Minh, Hoa, Nam';input.autocomplete='nickname';input.maxLength=80;input.required=true;input.value=p?.name||'';
@@ -317,7 +318,7 @@
       mustReload=true;
       heading('Mình cập nhật lộ trình nhé','🌱');info(errorMessage || 'Lộ trình đang được cập nhật ở một tab khác. Tải lại để tiếp tục với kết quả mới nhất.');panel.append(button('Tải lại để tiếp tục',()=>location.reload(),'primary'));
     } else {
-      heading(current?'Chọn người học':'Đăng nhập','🌱');
+      heading(current?'Chọn người học':'Lưu dữ liệu học','🌱');
       const list=el('div',undefined,'profiles'),profiles=store.list();profiles.forEach((p,i)=>{const b=button('',()=>select(p.id),'profile');b.append(el('span',p.avatar,'avatar'),el('strong',p.name));if(p.id===current?.id)b.append(el('small','Đang học'));else if(profiles.some(other=>other.id!==p.id && other.name===p.name && other.avatar===p.avatar))b.append(el('small','Hồ sơ #'+(i+1)));list.append(b);});panel.append(list,button('+ Thêm người học',()=>show('create'),'primary'),button('Khôi phục từ bản sao lưu',importFile,'wide'));
     }
     if(!local || mode==='manage')info(local?'Hồ sơ được lưu trên trình duyệt này, chưa đồng bộ sang thiết bị khác.':'Trình duyệt đang chặn lưu lâu dài. Hãy tải bản sao lưu trước khi đóng phiên.');
@@ -333,10 +334,11 @@
   }
   function mount() {
     host=el('danh-learner');shadow=host.attachShadow({mode:'open'});
-    const css=el('link');css.rel='stylesheet';css.href=new URL('shared/learner-profile.css?v=companions-20261024',base).href;shadow.append(css);
-    const bar=el('div',undefined,'bar');bar.append(el('span',current?current.avatar+' '+current.name:'🌱 Học thử','bar-name'));
+    const css=el('link');css.rel='stylesheet';css.href=new URL('shared/learner-profile.css?v=save-chip-20261025',base).href;shadow.append(css);
+    const bar=el('div',undefined,current?'bar':'bar is-guest');
+    if(current)bar.append(el('span',current.avatar+' '+current.name,'bar-name'));
     if(current)bar.append(button('Đổi người học',()=>show('list')),button('Hồ sơ',()=>show('manage')));
-    else bar.append(button('Đăng nhập',window.DanhLearners.open,'primary login'));
+    else bar.append(button('Lưu dữ liệu học',window.DanhLearners.open,'primary login'));
     const notice=el('p',local?'': 'Trình duyệt chặn lưu lâu dài. Tiến độ chỉ giữ trong phiên này.','warning');notice.id='storage-warning';notice.role='status';notice.hidden=!!local;shadow.append(bar,notice);
     overlay=el('div',undefined,'overlay');overlay.hidden=true;panel=el('section',undefined,'sheet');panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','true');panel.setAttribute('aria-label','Hồ sơ người học');overlay.append(panel);shadow.append(overlay);document.body.prepend(host);
     shadow.addEventListener('keydown',e=>{if(overlay.hidden)return;if(e.key==='Escape'){e.preventDefault();hide();}if(e.key==='Tab'){const items=[...panel.querySelectorAll('button,input,a[href]')].filter(x=>!x.hidden && !x.disabled);const first=items[0],last=items.at(-1),active=shadow.activeElement;if(e.shiftKey && active===first){e.preventDefault();last?.focus();}else if(!e.shiftKey && active===last){e.preventDefault();first?.focus();}}});

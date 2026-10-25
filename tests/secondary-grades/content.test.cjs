@@ -9,7 +9,7 @@ for(const grade of [8,9])test(`Lớp ${grade}: nội dung, đáp án, hình và 
   assert.equal(units.length,12);assert.equal(bank.length,252);assert.equal(new Set(bank.map(q=>q.id)).size,252);
   for(const u of units){
     assert.equal(u.words.length,8);assert.equal(new Set(u.words.map(w=>w.term)).size,8);
-    for(const w of u.words){for(const field of ['term','meaning','example','icon'])assert.ok(w[field]);if(w.image){const file=path.resolve(root,`grade/lop${grade}`,w.image);assert.ok(fs.existsSync(file),w.image);const review=imageReview.images.find(r=>path.resolve(root,r.path)===file);assert.ok(review?.noTextInside,'Ảnh chưa được xem trực tiếp: '+w.image);assert.equal(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'),review.sha256,'Ảnh đã thay đổi; cần xem và duyệt lại.');}}
+    for(const w of u.words){for(const field of ['term','meaning','example','icon'])assert.ok(w[field]);if(w.image){const file=path.resolve(root,`grade/lop${grade}`,w.image);assert.ok(fs.existsSync(file),w.image);const review=imageReview.images.find(r=>path.resolve(root,r.path)===file);assert.ok(review&&(review.noTextInside||(['bilingual','mother tongue'].includes(w.term)&&JSON.stringify(review.allowedText)===JSON.stringify(w.term==='bilingual'?['Hello!','Xin chào!']:['Chào mẹ!','Chào con!']))),'Ảnh chưa được xem trực tiếp: '+w.image);assert.equal(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'),review.sha256,'Ảnh đã thay đổi; cần xem và duyệt lại.');}}
     for(const level of ['easy','medium','hard']){
       const group=bank.filter(q=>q.unit===u.number&&q.level===level);assert.equal(group.length,7);
       assert.equal(new Set(group.map(q=>q.type)).size,5);

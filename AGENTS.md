@@ -13,6 +13,8 @@
 
 ## Nội dung và giao diện
 
+- **Ghép chữ toàn website, ngày 25/10/2026:** dùng game chung cho Unit lớp 1–12, topic phụ, thư viện và ôn tập theo bộ đang chọn. Lượt tối đa 8 từ, đi từ ghép 1–2–3 chữ đến gõ cả từ; từ sai hoặc dùng gợi ý/xem mẫu phải tự làm đúng lại trước khi tăng mức. Giữ lượt ghép riêng với tiến độ các game khác, tải trước âm/ảnh, không hộp tick xanh và tôn trọng giảm chuyển động. Mẫu/bộ dựng phải giữ các lối vào và chạy tích hợp `scripts/install-site-letter-games.cjs` khi sinh trang. Chi tiết: [Ghép chữ trên toàn website](docs/SITE_LETTER_GAME_20261025.md).
+
 - **Tải trước âm thanh toàn website, xác nhận ngày 25/10/2026:** áp dụng cho lớp 1–12, toàn bộ topic phụ, thư viện kỹ năng, game, ôn tập, trang cũ và mẫu trang/bộ dựng. Khi có lượt học, chuẩn bị im lặng âm thanh của câu hiện tại và tối đa hai câu kế tiếp theo đúng thứ tự đã chọn; chuẩn bị cả ảnh của câu tiếp theo khi có. Với danh sách thẻ, chỉ ưu tiên nhóm thẻ đang xem/sắp xem, không tải cả thư viện.
 - Dùng lại `DanhGameFlow.prepare` và `DanhAnswerSpeech` khi phù hợp. Tệp đã tải phải được dùng khi phát thật; gộp yêu cầu trùng và giới hạn hàng đợi, tải đồng thời, bộ nhớ. Tải trước không tự phát tiếng, không lộ đáp án, không chấm điểm, không chuyển câu hoặc thay đổi lượt/tiến độ. Game tự chuyển phải đợi giọng đáp án kết thúc.
 - Tôn trọng âm tắt và tiết kiệm dữ liệu; tạm dừng tải nền khi mất mạng hoặc tab ẩn, tiếp tục phần cần thiết khi quay lại. Lỗi tải trước không chặn học; có thể tải bình thường hoặc dùng giọng dự phòng khi người học yêu cầu nghe. Dừng giọng khi rời/ẩn trang, tránh tiếng chồng và phát lặp.

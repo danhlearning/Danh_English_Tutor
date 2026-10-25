@@ -2,6 +2,10 @@
 (() => {
   'use strict';
   const images = {
+  "fifteen": "shared/assets/vocabulary-reviewed/number-15.svg",
+  "fourteen": "shared/assets/vocabulary-reviewed/number-14.svg",
+  "thirteen": "shared/assets/vocabulary-reviewed/number-13.svg",
+  "eleven": "shared/assets/vocabulary-reviewed/number-11.svg",
   "grapes": "grade/lop2/assets/images/pencil/units/grapes-v1.webp",
   "fox": "grade/lop2/assets/images/pencil/units/fox-v1.webp",
   "volleyball": "grade/lop2/assets/images/pencil/units/volleyball-v1.webp",
@@ -51,7 +55,7 @@
   for (const unit of Object.values(window.grade2Units || {})) {
     for (const word of unit.words) {
       const file = images[word.id];
-      if (!file) continue; // Keep the original, legible number diagrams in Unit 13.
+      if (!file) continue; // Keep original artwork when no reviewed file is provided.
       const href = new URL(file, root).href;
       word.image = href;
       word.visual = '<svg class="danh-vocabulary-art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" aria-hidden="true"><image href="' + href + '" width="360" height="360" preserveAspectRatio="xMidYMid meet"/></svg>';

@@ -415,13 +415,13 @@
     input.value = '';
     input.disabled = false;
     input.style.borderColor = '#BCAAA4';
-    input.focus();
 
     container.innerHTML = `
+      <div class="g2-translation-prompt" tabindex="-1">${item.vietnamese}</div>
       <div class="item-emoji">${item.emoji}</div>
-      <div style="font-size: 1.4rem; font-weight: 800; color: #E65100;">"${item.vietnamese}"</div>
       <div style="font-size: 0.95rem; font-weight: 600; color: #6D4C41; background: #FFE0B2; padding: 4px 12px; border-radius: 8px;">💡 Cấu trúc gợi ý: ${item.hint}</div>
     `;
+    container.querySelector('.g2-translation-prompt').focus({preventScroll: true});
   }
 
   function normalizeSentence(str) {

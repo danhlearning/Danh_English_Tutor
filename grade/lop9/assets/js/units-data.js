@@ -268,7 +268,7 @@ window.DanhGrade9Units = [
         "meaning": "cổ xưa",
         "example": "The ancient wall is made of stone.",
         "icon": "🧱",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/ancient-v1.webp"
       },
       {
         "id": 6,
@@ -408,7 +408,7 @@ window.DanhGrade9Units = [
         "meaning": "đồ gia dụng",
         "example": "A washing machine is a household appliance.",
         "icon": "🧺",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/household-appliance-v1.webp"
       },
       {
         "id": 5,
@@ -482,7 +482,7 @@ window.DanhGrade9Units = [
         "meaning": "rừng mưa nhiệt đới",
         "example": "Many unusual plants grow in the rainforest.",
         "icon": "🌴",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/rainforest-v1.webp"
       },
       {
         "id": 5,
@@ -646,7 +646,7 @@ window.DanhGrade9Units = [
         "meaning": "sử dụng được hai ngôn ngữ",
         "example": "My bilingual friend speaks Vietnamese and English.",
         "icon": "🗣️",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/bilingual-v1.webp"
       },
       {
         "id": 7,
@@ -654,7 +654,7 @@ window.DanhGrade9Units = [
         "meaning": "tiếng mẹ đẻ",
         "example": "Vietnamese is my mother tongue.",
         "icon": "💛",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/mother-tongue-v1.webp"
       },
       {
         "id": 8,
@@ -736,7 +736,7 @@ window.DanhGrade9Units = [
         "meaning": "vùng cực",
         "example": "The polar region is cold for much of the year.",
         "icon": "🧊",
-        "image": null
+        "image": "../../shared/assets/vocabulary-reviewed/polar-region-v1.webp"
       }
     ]
   },
@@ -876,7 +876,7 @@ window.DanhGrade9Units = [
         "meaning": "điểm mạnh",
         "example": "Working well in a team is her strength.",
         "icon": "💪",
-        "image": null
+        "image": "../lop12/assets/images/pencil/unit9/10-vocab100-v1.webp"
       },
       {
         "id": 8,

@@ -1,7 +1,7 @@
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8001',out=path.resolve(__dirname,'../../artifacts/primary-template');fs.mkdirSync(out,{recursive:true});
-const create=async(p,name)=>{if(await p.getByRole('button',{name:'Đăng nhập',exact:true}).isVisible())await p.getByRole('button',{name:'Đăng nhập',exact:true}).click();await p.locator('#learner-name').fill(name);await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await p.waitForFunction(n=>window.DanhLearners?.current?.name===n,name);};
+const create=async(p,name)=>{if(await p.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).isVisible())await p.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).click();await p.locator('#learner-name').fill(name);await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await p.waitForFunction(n=>window.DanhLearners?.current?.name===n,name);};
 const read=(p,key)=>p.evaluate(k=>JSON.parse(DanhLearners.storage.getItem(k)),key);
 const width=async(p,label)=>assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),label);
 const shot=async(p,name)=>{await p.evaluate(()=>document.fonts.ready);await p.screenshot({path:path.join(out,name),fullPage:true});};

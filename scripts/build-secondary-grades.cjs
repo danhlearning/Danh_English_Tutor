@@ -16,6 +16,7 @@ for (const grade of [8,9]) {
       return {id:i+1,term,meaning,example,icon,image:asset?`../../shared/assets/vocabulary-3d/${asset}-3d-v1.webp`:null};
     })};
   });
+  require('./reviewed-vocabulary-images.cjs').apply(grade,units);
   const questions=[];
   grammar[grade].split('\n\n').forEach((block,index)=>{
     const [head,...lines]=block.split('\n'), [topic,rule]=head.split('|');
@@ -74,3 +75,5 @@ for (const grade of [8,9]) {
 }
 require('./build-secondary-template-extras.cjs');
 require('./sync-secondary-template.cjs');
+
+require('./install-site-letter-games.cjs').run();

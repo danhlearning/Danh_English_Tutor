@@ -11,7 +11,7 @@ const out=path.join(root,'artifacts/upper-secondary-vocabulary');
    window.media=[];const Native=window.Audio;window.Audio=function(...args){const a=new Native(...args);for(const type of ['playing','ended'])a.addEventListener(type,()=>media.push({type,src:a.src}));return a;};window.Audio.prototype=Native.prototype;
   });
   const p=await c.newPage(),errors=[],failed=[],results=[];p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)failed.push(r.url());});
-  await p.goto(base+'/index.html');await p.getByRole('button',{name:'Đăng nhập',exact:true}).click();await p.locator('#learner-name').fill('Mở rộng từ vựng');await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();
+  await p.goto(base+'/index.html');await p.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).click();await p.locator('#learner-name').fill('Mở rộng từ vựng');await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();
   await p.waitForFunction(()=>window.DanhLearners?.current?.name==='Mở rộng từ vựng');
   async function active(g,scope='unit1'){return p.evaluate(({g,scope})=>JSON.parse(DanhLearners.storage.getItem(`danh-g${g}-vocabulary-game-${scope}-v1`)).active,{g,scope});}
   const click=locator=>locator.evaluate(el=>el.click());

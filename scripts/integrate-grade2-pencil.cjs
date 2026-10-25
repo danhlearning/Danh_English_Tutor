@@ -19,6 +19,8 @@ if (fs.existsSync(bodyReviewFile)) {
     (manifest.bodyparts ||= {})[asset.name.toLowerCase()] = asset.file.replace('grade/lop2/assets/images/pencil/', '');
   }
 }
+// Preserve the reviewed single-grape illustration when rebuilding topic art.
+manifest.fruits.grape = 'fruits/grape-v2.webp';
 fs.writeFileSync(path.join(root, 'grade/lop2/assets/js/pencil-images-data.js'), '/* Local, reviewed pencil artwork. */\nwindow.DanhGrade2PencilManifest = ' + JSON.stringify(manifest, null, 2) + ';\n');
 const vars = {clothes:'clothesVocabulary',dates:'daysAndMonthsVocab',familyfriends:'familyVocabulary',feeling:'emotionsVocabulary',fooddrinks:'foodVocabulary',fruits:'fruitVocab',numbers:'vocabNumbers',schoolsupplies:'schoolSupplies',householditems:'vocabList',verbs:'verbVocabulary'};
 function afterArray(source, name, statement) {

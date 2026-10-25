@@ -33,7 +33,7 @@ async function answer(page){const a=await active(page);const q=bank.find(q=>q.id
     const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
     await context.route('**/*',r=>new URL(r.request().url()).origin===base?r.continue():r.abort());
     await page.goto(base+`/grade/lop${grade}/grammar.html`);
-    if(await page.getByRole('button',{name:'Đăng nhập',exact:true}).isVisible())await page.getByRole('button',{name:'Đăng nhập',exact:true}).click();await page.locator('#learner-name').fill(`Kiểm tra lớp ${grade}`);await page.getByRole('button',{name:'Vào học ngay',exact:true}).click();
+    if(await page.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).isVisible())await page.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).click();await page.locator('#learner-name').fill(`Kiểm tra lớp ${grade}`);await page.getByRole('button',{name:'Vào học ngay',exact:true}).click();
     await page.waitForFunction(()=>window.DanhLearners?.current && document.body.dataset.grammarReady==='true');
     await page.clock.install();
     await choose(page,'activity','rewrite');await page.locator('#start').click();
@@ -83,7 +83,7 @@ async function answer(page){const a=await active(page);const q=bank.find(q=>q.id
     assert.deepEqual(errors,[]);
     await context.close();
     const blocked=await browser.newContext();await blocked.addInitScript(()=>{for(const key of ['localStorage','sessionStorage'])Object.defineProperty(window,key,{get(){throw Error('blocked');}});});
-    const bp=await blocked.newPage();await bp.goto(base+`/grade/lop${grade}/grammar.html`);if(await bp.getByRole('button',{name:'Đăng nhập',exact:true}).isVisible())await bp.getByRole('button',{name:'Đăng nhập',exact:true}).click();await bp.locator('#learner-name').fill('Học tạm');await bp.getByRole('button',{name:'Vào học ngay',exact:true}).click();await bp.locator('#start').click();assert.ok(await bp.locator('#play').isVisible());await blocked.close();
+    const bp=await blocked.newPage();await bp.goto(base+`/grade/lop${grade}/grammar.html`);if(await bp.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).isVisible())await bp.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).click();await bp.locator('#learner-name').fill('Học tạm');await bp.getByRole('button',{name:'Vào học ngay',exact:true}).click();await bp.locator('#start').click();assert.ok(await bp.locator('#play').isVisible());await blocked.close();
     console.log('PASS: four unique options; Unit coverage; 120s active-time hints; wrong/retry; drafts and completed reload without duplicate points; continuous passage and scoring; underlined sounds; preferences; four widths; blocked storage.');
   } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

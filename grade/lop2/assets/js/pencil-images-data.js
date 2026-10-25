@@ -113,7 +113,7 @@ window.DanhGrade2PencilManifest = {
     "apple": "fruits/apple-v1.webp",
     "banana": "fruits/banana-v1.webp",
     "orange": "fruits/orange-v1.webp",
-    "grape": "fruits/grape-v1.webp",
+    "grape": "fruits/grape-v2.webp",
     "watermelon": "fruits/watermelon-v1.webp",
     "strawberry": "fruits/strawberry-v1.webp",
     "mango": "fruits/mango-v1.webp",
