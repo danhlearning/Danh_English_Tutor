@@ -7,6 +7,7 @@
   const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const topicById=id=>C.topics.find(t=>t.id===id);
   const L=window.DanhGrammarSkills;
+  const spokenQuestion=q=>['order','correct','rewrite'].includes(q.type)||q.level===3?L?.sentence(q)||q.answers[0]:q.answers[0];
   const typeNames={choice:'Chọn đáp án',fill:'Điền từ',order:'Xếp câu',correct:'Sửa lỗi',rewrite:'Viết lại câu'};
   const fx=(name,element)=>window.DanhGrammarExperience?.event(name,element);
   function notice(text){$('notice').textContent=text;}
@@ -72,6 +73,7 @@
   }
   function showPractice(){
     const s=state.active;if(!s)return;
+    window.DanhGameFlow?.prepare(s.questionIds.slice(s.index,s.index+3).map(id=>({text:spokenQuestion(map[id])})),$('practice'));
     document.body.classList.add('is-practicing');$('setup-panel').hidden=true;$('resume-panel').hidden=true;$('results').hidden=true;$('practice').hidden=false;const q=current();
     $('lesson-title').textContent=topicById(q.topic).title;$('lesson-level').textContent=`${s.skill?`${L?.band(q)||''} · ${L?.modes[s.skill.game]||''}`:C.levels[q.level-1]} · ${s.mode==='review'?'Ôn tập':s.mode==='mixed'?'Ôn tổng hợp':'Luyện theo bài'}`;
     $('counter').textContent=`Câu ${s.index+1}/${s.questionIds.length}`;$('progress-fill').style.width=`${s.index/s.questionIds.length*100}%`;
@@ -94,12 +96,12 @@
     persist();support();lastTick=performance.now();$('question-label').focus({preventScroll:true});
   }
   function showOutcome(){const s=state.active,q=current(),result=S.result(s);if(!result)return;
-    const labels={first:'✅ Chuẩn luôn!',corrected:'✅ Sửa đúng rồi nè!',seen:'📖 Đã xem đáp án. Em có thể đọc giải thích rồi tiếp tục.',skipped:'↪️ Em đã bỏ qua câu này. Hãy luyện lại khi sẵn sàng.'};
+    const labels={first:'✅',corrected:'✅ Sửa đúng rồi nè!',seen:'📖 Đã xem đáp án. Em có thể đọc giải thích rồi tiếp tục.',skipped:'↪️ Em đã bỏ qua câu này. Hãy luyện lại khi sẵn sàng.'};
     $('feedback').hidden=false;$('feedback').className=`response ${['first','corrected'].includes(result.kind)?'good':''}`;$('feedback').textContent=result.hinted?'✅ Đúng rồi! Có dùng gợi ý.':labels[result.kind];
     if(result.kind!=='skipped'){$('explanation').hidden=false;$('explanation').textContent=q.explanation;}
     $('next-btn').textContent=s.index===s.questionIds.length-1?'Xem kết quả':'Câu tiếp';support();
   }
-  function finish(kind){const s=state.active,q=current();if(!S.finishQuestion(s,kind))return;P.record(state,q,S.result(s),s.id);persist();showPractice();fx(kind==='first'?'correct':kind==='corrected'?'corrected':kind==='seen'?'reveal':'skip',$('feedback'));if(kind==='first'||kind==='corrected')window.DanhAnswerSpeech.say(['order','correct','rewrite'].includes(q.type)||q.level===3?L?.sentence(q)||q.answers[0]:q.answers[0]);}
+  function finish(kind){const s=state.active,q=current();if(!S.finishQuestion(s,kind))return;P.record(state,q,S.result(s),s.id);persist();showPractice();fx(kind==='first'?'correct':kind==='corrected'?'corrected':kind==='seen'?'reveal':'skip',$('feedback'));if(kind==='first'||kind==='corrected')window.DanhAnswerSpeech.say(spokenQuestion(q));}
   function check(){const s=state.active,q=current();if(!s||S.result(s))return;
     if(!A.normalize(s.answer)){$('feedback').hidden=false;$('feedback').className='response retry';$('feedback').textContent=q.type==='choice'?'Em hãy chọn một đáp án.':q.type==='order'?'Em hãy chọn các từ để xếp câu.':'Em hãy nhập câu trả lời.';return;}
     if(A.accepted(q,s.answer))finish(s.attempts===0&&!s.hint?'first':'corrected');

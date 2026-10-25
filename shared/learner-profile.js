@@ -86,26 +86,96 @@
   const base = new URL('../', document.currentScript.src);
   const controls=document.createElement('script');controls.src=new URL('shared/learner-controls.js?v=repo-picture-listen-20261025',base).href;controls.async=false;document.head.append(controls);
   const preload=document.createElement('script');preload.src=new URL('shared/site-preload.js?v=20261022-1',base).href;preload.async=true;document.head.append(preload);
-  const font=document.createElement('link');font.rel='stylesheet';font.href=new URL('shared/learner-font.css?v=compact-listen-20261024',base).href;document.head.append(font);
-  const gaps=document.createElement('script');gaps.src=new URL('shared/exercise-gaps.js?v=smooth-20261023-1',base).href;gaps.async=false;document.head.append(gaps);
+  const font=document.createElement('link');font.rel='stylesheet';font.href=new URL('shared/learner-font.css?v=compact-gaps-20261025',base).href;document.head.append(font);
+  const gaps=document.createElement('script');gaps.src=new URL('shared/exercise-gaps.js?v=compact-gaps-20261025',base).href;gaps.async=false;document.head.append(gaps);
   // Giọng đọc đáp án dùng chung, chỉ được gọi từ thao tác học đã chấm đúng.
   const answerSpeechEnabled=()=>window.DanhLearningEffects?.soundEnabled?.() ?? window.DanhGrammarExperience?.settings.sound ?? true;
   const cleanAnswerSpeech=s=>String(s||'').replace(/[\[\]]/g,'').replace(/·/g,',').replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim();
   const answerAudioKey=s=>{let hash=2166136261;for(const c of cleanAnswerSpeech(s).toLowerCase())hash=Math.imul(hash^c.charCodeAt(0),16777619);return(hash>>>0).toString(16).padStart(8,'0');};
+  // Prepare only the current task and the next two in its already chosen order.
+  const gameAudio = new Map(), gameImages = new Map(), mediaQueue = [], preparedWindows = new Map();
+  const mediaControllers = new Set();
+  const connection = navigator.connection;
+  let mediaBytes = 0, mediaBusy = 0, mediaTimer, mediaClosed = false;
+  const gamePlaying = () => [...document.querySelectorAll('[data-danh-game-surface],.tab-content.active[id^="game-"]')]
+    .some(node => !node.closest('[hidden]') && node.getClientRects().length > 0);
+  const mediaAllowed = () => !mediaClosed && !document.hidden && navigator.onLine !== false && !connection?.saveData && !/^(slow-2g|2g)$/.test(connection?.effectiveType || '');
+  const audioURL = text => new URL(`shared/answer-audio/${answerAudioKey(text)}.wav`,base).href;
+  const localMedia = value => {try {const url=new URL(value,document.baseURI);return url.origin===base.origin && url.pathname.startsWith(base.pathname) && /^https?:$/.test(url.protocol) && /\.(?:webp|png|jpe?g|svg|avif)$/i.test(url.pathname) ? url.href : null;}catch{return null;}};
+  function trimGameAudio() {
+    for (const [key, entry] of gameAudio) {
+      if (gameAudio.size <= 12 && mediaBytes <= 2 * 1024 * 1024) break;
+      if (!entry.url || entry.url === answerAudio?.src) continue;
+      URL.revokeObjectURL(entry.url);mediaBytes-=entry.bytes;gameAudio.delete(key);
+    }
+  }
+  function pumpGameMedia() {
+    if (!mediaAllowed()) return;
+    while (mediaBusy < 2 && mediaQueue.length) {
+      const entry=mediaQueue.shift();
+      if (entry.kind === 'audio' && !answerSpeechEnabled()) {gameAudio.delete(entry.key);continue;}
+      mediaBusy++;
+      const controller=new AbortController();mediaControllers.add(controller);
+      const timer=setTimeout(()=>controller.abort(),5000);
+      (async()=>{
+        try {
+          const response=await fetch(entry.src,{signal:controller.signal,credentials:'same-origin',priority:'low',cache:'default',redirect:'error'});
+          if(!response.ok || Number(response.headers.get('content-length'))>1024*1024) {await response.body?.cancel();throw Error('media');}
+          const reader=response.body?.getReader();if(!reader)throw Error('body');
+          const chunks=[];let bytes=0;
+          while(true){const part=await reader.read();if(part.done)break;bytes+=part.value.byteLength;if(bytes>1024*1024){await reader.cancel();throw Error('size');}chunks.push(part.value);}
+          if(controller.signal.aborted || !mediaAllowed())throw Error('paused');
+          entry.url=URL.createObjectURL(new Blob(chunks,{type:'audio/wav'}));entry.bytes=bytes;mediaBytes+=bytes;trimGameAudio();
+        } catch {if(gameAudio.get(entry.key)===entry)gameAudio.delete(entry.key);}
+        finally {clearTimeout(timer);mediaControllers.delete(controller);mediaBusy--;pumpGameMedia();}
+      })();
+    }
+  }
+  function prepareGameMedia(items, surface) {
+    if(surface)surface.dataset.danhGameSurface='';
+    const upcoming=(items || []).filter(Boolean).slice(0,3);
+    preparedWindows.set(surface || null,upcoming);
+    if(preparedWindows.size>8)preparedWindows.delete(preparedWindows.keys().next().value);
+    if(!mediaAllowed())return;
+    for(const item of upcoming){
+      const text=cleanAnswerSpeech(typeof item==='string'?item:item.text || item.name || item.term || '');
+      if(text && answerSpeechEnabled() && !gameAudio.has(answerAudioKey(text)) && mediaQueue.length<9){
+        const entry={kind:'audio',key:answerAudioKey(text),src:audioURL(text)};gameAudio.set(entry.key,entry);mediaQueue.push(entry);trimGameAudio();
+      }
+      const sources=[item.image,...String(item.visual || item.photo || '').matchAll(/(?:href|src)=["']([^"']+)["']/g)].map(v=>typeof v==='string'?v:v?.[1]).filter(Boolean);
+      for(const value of sources.slice(0,2)){
+        const src=localMedia(value);if(!src || gameImages.has(src))continue;
+        const image=new Image();image.decoding='async';image.fetchPriority='low';gameImages.set(src,image);image.src=src;image.decode?.().catch(()=>{if(gameImages.get(src)===image)gameImages.delete(src);});
+        if(gameImages.size>6)gameImages.delete(gameImages.keys().next().value);
+      }
+    }
+    clearTimeout(mediaTimer);mediaTimer=setTimeout(pumpGameMedia,0);
+  }
+  const pauseGameMedia = () => {clearTimeout(mediaTimer);for(const c of mediaControllers)c.abort();mediaQueue.length=0;for(const [key,e] of gameAudio)if(!e.url)gameAudio.delete(key);for(const [src,image] of gameImages)if(!image.complete){image.src='';gameImages.delete(src);}};
+  const resumeGameMedia = () => {if(!mediaAllowed())return;for(const [surface,items] of preparedWindows)if(!surface || surface.isConnected!==false && !surface.closest('[hidden]') && surface.getClientRects().length)prepareGameMedia(items,surface);};
+  window.DanhGameFlow={prepare:prepareGameMedia,isPlaying:gamePlaying,speechRate:.95,audioRate:1.15,
+    get stats(){return {ready:[...gameAudio.values()].filter(e=>e.url).length,pending:mediaQueue.length,active:mediaBusy,bytes:mediaBytes,images:gameImages.size};}};
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseGameMedia();else resumeGameMedia();});
+  window.addEventListener('offline',pauseGameMedia);
+  window.addEventListener('online',resumeGameMedia);
+  connection?.addEventListener?.('change',()=>{if(!mediaAllowed())pauseGameMedia();else resumeGameMedia();});
+  window.addEventListener('pagehide',()=>{mediaClosed=true;pauseGameMedia();for(const e of gameAudio.values())if(e.url)URL.revokeObjectURL(e.url);gameAudio.clear();gameImages.clear();mediaBytes=0;});
+  window.addEventListener('pageshow',()=>{mediaClosed=false;resumeGameMedia();});
   document.documentElement.dataset.answerSpeechVersion='audio-1';
   const answerSpeechState=(state,mode,text)=>{document.documentElement.dataset.answerSpeechState=state;document.documentElement.dataset.answerSpeechMode=mode;document.documentElement.dataset.answerSpeechText=text;document.dispatchEvent(new CustomEvent('danh-answer-speech',{detail:{state,mode,text}}));};
-  let finishAnswerSpeech,answerAudio;
-  const stopAnswerSpeech=()=>{if(answerAudio){answerAudio.pause();answerAudio.src='';answerAudio=null;}finishAnswerSpeech?.();try{window.speechSynthesis?.cancel();}catch{}};
+  let finishAnswerSpeech,answerAudio,answerSpeechToken=0;
+  const stopAnswerSpeech=()=>{answerSpeechToken++;if(answerAudio){answerAudio.onended=answerAudio.onplaying=answerAudio.onerror=null;answerAudio.pause();answerAudio.removeAttribute('src');answerAudio.load();answerAudio=null;}finishAnswerSpeech?.();try{window.speechSynthesis?.cancel();}catch{}};
   const playAnswerAudio=text=>{
-    const audio=new Audio(new URL(`shared/answer-audio/${answerAudioKey(text)}.wav`,base));answerAudio=audio;
-    if(window.DanhYoungSpeech)audio.playbackRate=.85;
+    const audio=new Audio(gameAudio.get(answerAudioKey(text))?.url || audioURL(text));answerAudio=audio;
+    audio.playbackRate=gamePlaying()?window.DanhGameFlow.audioRate:(window.DanhYoungSpeech ? .85 : 1);
+    audio.preservesPitch=true;
     return new Promise(resolve=>{
       let finished=false;
       const done=(success=true)=>{if(finished)return;finished=true;clearTimeout(timeout);if(finishAnswerSpeech===done)finishAnswerSpeech=null;if(answerAudio===audio)answerAudio=null;resolve(success);};
       const timeout=setTimeout(done,Math.max(20000,text.length*180+4000));finishAnswerSpeech=done;
       audio.onended=()=>{answerSpeechState('ended','audio',text);done();};
-      audio.onplaying=()=>answerSpeechState('playing','audio',text);
-      const failed=()=>{document.dispatchEvent(new CustomEvent('danh-answer-speech',{detail:{state:'error',mode:'audio',text}}));const note=document.getElementById('speech-note');if(note)note.textContent='Chưa phát được giọng đọc. Em bấm loa để thử lại nhé.';done(false);};
+      audio.onplaying=()=>{if(!finished)answerSpeechState('playing','audio',text);};
+      const failed=()=>{if(finished)return;document.dispatchEvent(new CustomEvent('danh-answer-speech',{detail:{state:'error',mode:'audio',text}}));done(false);};
       audio.onerror=failed;audio.play().catch(failed);
     });
   };
@@ -117,13 +187,14 @@
       if(!clean)return false;
       try{
         stopAnswerSpeech();
-        if(manual&&!preferSpeech){
+        const speechToken=answerSpeechToken;
+        if((manual||gamePlaying())&&!preferSpeech){
           try{if(navigator.audioSession)navigator.audioSession.type='playback';}catch{}
-          return playAnswerAudio(clean).then(played=>played || (!document.hidden && this.say(clean,{manual:true,preferSpeech:true})));
+          return playAnswerAudio(clean).then(played=>played || (speechToken===answerSpeechToken && !document.hidden && this.say(clean,{manual,preferSpeech:true})));
         }
         const voices=window.speechSynthesis?.getVoices?.()||[];
         if(!window.speechSynthesis||!window.SpeechSynthesisUtterance||!voices.some(v=>/^en(?:[-_]|$)/i.test(v.lang)))return preferSpeech?false:playAnswerAudio(clean);
-        const utterance=new window.SpeechSynthesisUtterance(clean);utterance.lang='en-GB';utterance.rate=.82;
+        const utterance=new window.SpeechSynthesisUtterance(clean);utterance.lang='en-GB';utterance.rate=gamePlaying()?window.DanhGameFlow.speechRate:.82;
         utterance.voice=voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en\b/i.test(v.lang))||null;
         window.DanhYoungSpeech?.configure(utterance);
         return new Promise(resolve=>{
@@ -132,17 +203,20 @@
           const timeout=setTimeout(done,Math.max(20000,clean.length*180+4000));
           finishAnswerSpeech=done;
           utterance.onstart=()=>answerSpeechState('playing','speech',clean);
-          const fallback=()=>{if(finished)return;if((!manual&&!answerSpeechEnabled())||document.hidden){done();return;}clearTimeout(timeout);playAnswerAudio(clean).then(done);};
+          const fallback=()=>{if(finished)return;if(speechToken!==answerSpeechToken||(!manual&&!answerSpeechEnabled())||document.hidden){done();return;}clearTimeout(timeout);playAnswerAudio(clean).then(done);};
           utterance.onend=()=>{answerSpeechState('ended','speech',clean);done();};utterance.onerror=event=>{if(['canceled','interrupted'].includes(event.error))done();else fallback();};
           try{window.speechSynthesis.speak(utterance);}catch{fallback();}
         });
       }catch{return false;}
     },
-    question(question){
+    textForQuestion(question){
       const answer=String(question.answer??question.answers?.[0]??'').split('|')[0];
       // Ngữ điệu/nhịp và nhãn âm cần nghe câu tiếng Anh mẫu, không đọc nhãn tiếng Việt.
       const example=String(question.prompt||'').match(/[“"]([^”"]+)[”"]/)?.[1];
-      return this.say(/[\u00c0-\u1ef9↗↘→]/.test(answer)||/^\/[^/]+\/$/.test(answer)?example:answer);
+      return /[\u00c0-\u1ef9↗↘→]/.test(answer)||/^\/[^/]+\/$/.test(answer)?example:answer;
+    },
+    question(question){
+      return this.say(this.textForQuestion(question));
     },
     stop:stopAnswerSpeech
   };

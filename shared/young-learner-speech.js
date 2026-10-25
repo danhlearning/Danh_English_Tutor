@@ -1,11 +1,11 @@
-/* Shared slow, natural-pitch reading for Grade 2 and Grade 4. */
+/* Slow study reading and a livelier game voice, both at natural pitch. */
 (() => {
   'use strict';
   const rate = 0.5;
   const audioRate = 0.6;
   const normalize = value => String(value || '').replace(/_/g, '-').toLowerCase();
   function configure(utterance) {
-    utterance.rate = rate;
+    utterance.rate = window.DanhGameFlow?.isPlaying() ? window.DanhGameFlow.speechRate : rate;
     utterance.pitch = 1;
     utterance.volume = 1;
     const voices = window.speechSynthesis?.getVoices() || [];

@@ -1,0 +1,129 @@
+{
+  "results": [
+    {
+      "unit": 1,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 2,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 3,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 4,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 5,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 6,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 7,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 8,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 9,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 10,
+      "cards": 2,
+      "images": 2,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 11,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 12,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 13,
+      "cards": 4,
+      "images": 0,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 14,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 15,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    },
+    {
+      "unit": 16,
+      "cards": 3,
+      "images": 3,
+      "noAutoplay": true,
+      "firstLastCardSpeech": true
+    }
+  ],
+  "errors": [],
+  "missing": [],
+  "gamePicture": true,
+  "reviewPencilWords": 44,
+  "actualAudio": [
+    "Fox",
+    "Volleyball"
+  ],
+  "widths": [
+    320,
+    390,
+    1280
+  ]
+}

@@ -68,20 +68,21 @@
     document.dispatchEvent(new CustomEvent('danh-learning-feedback',{detail}));
     document.dispatchEvent(new CustomEvent('danh-vocabulary-feedback',{detail}));
     const rect=!reduced()&&kind!=='flip'?target?.getBoundingClientRect():null;
-    if(kind!=='flip')sparkle(rect?rect.left+rect.width/2:innerWidth/2,rect?rect.top+Math.min(rect.height/2,150):innerHeight/2,kind);
-    if(target && !reduced() && kind!=='flip') {
+    if(kind!=='flip'&&kind!=='bad'){const count=['good','corrected','streak'].includes(kind)?5:1;for(let i=0;i<count;i++)sparkle((rect?rect.left+rect.width/2:innerWidth/2)+(i-(count-1)/2)*24,rect?(count>1?rect.top-18:rect.top+Math.min(rect.height/2,150)):innerHeight/2,kind);}
+    if(target && kind!=='flip') {
       const name=kind==='bad'?'vg-shake':kind==='streak'||kind==='complete'?'vg-celebrate':'vg-pop';
       const previous=elementEffects.get(target);previous?.cleanup();
-      target.classList.remove('vg-pop','vg-shake','vg-celebrate');target.classList.add(name);
+      const answerClass=kind==='bad'?'vg-answer-bad':['good','corrected','streak'].includes(kind)?'vg-answer-good':null;
+      target.classList.remove('vg-pop','vg-shake','vg-celebrate');if(!reduced())target.classList.add(name);if(answerClass)target.classList.add(answerClass);
       const effect={};elementEffects.set(target,effect);
-      if(target.animate){
-        const frames=name==='vg-shake'?['translateX(0)','translateX(-5px)','translateX(5px)','translateX(-5px)','translateX(5px)','translateX(0)']:
-          name==='vg-celebrate'?['scale(1)','translateY(-5px) scale(1.04)','scale(.98)','scale(1)']:['scale(1)','scale(1.025)','scale(1)'];
+      if(target.animate&&!reduced()){
+        const frames=name==='vg-shake'?['translateX(0)','translateX(-10px)','translateX(9px)','translateX(-7px)','translateX(5px)','translateX(0)']:
+          name==='vg-celebrate'?['scale(1)','translateY(-5px) scale(1.04)','scale(.98)','scale(1)']:['scale(1)','scale(1.075)','scale(.985)','scale(1)'];
         effect.originalAnimation=previous?.originalAnimation??target.style.animation;
         target.style.animation='none';
         effect.animation=target.animate(frames.map(transform=>({transform})),{duration:name==='vg-shake'?340:name==='vg-celebrate'?600:350,easing:'ease-out'});
       }
-      effect.cleanup=()=>{clearTimeout(effect.timer);effect.animation?.cancel();activeEffects.delete(effect);if(elementEffects.get(target)!==effect)return;target.classList.remove(name);if(effect.originalAnimation!==undefined)target.style.animation=effect.originalAnimation;elementEffects.delete(target);};
+      effect.cleanup=()=>{clearTimeout(effect.timer);effect.animation?.cancel();activeEffects.delete(effect);if(elementEffects.get(target)!==effect)return;target.classList.remove(name);if(answerClass)target.classList.remove(answerClass);if(effect.originalAnimation!==undefined)target.style.animation=effect.originalAnimation;elementEffects.delete(target);};
       activeEffects.add(effect);effect.timer=setTimeout(effect.cleanup,650);
     }
   };

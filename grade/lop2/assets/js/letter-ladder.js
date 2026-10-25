@@ -5,7 +5,7 @@
   effects=effects||window.DanhLearningEffects;
   const game=window.DanhLetterLadderCore.create(storage,topic,words,{chooseGroup,grade});
   const button=(text,action,cls='')=>{const n=make('button',text,cls);n.type='button';n.onclick=action;return n;};
-  const fx=kind=>effects?.feedback(kind);
+  const fx=(kind,target)=>effects?.feedback(kind,target);
   function navigate(action){window.DanhAnswerSpeech?.stop();action();rerender();}
   function render(stage,full=false){
    game.ensure(selected());stage.replaceChildren();stage.classList.add('letter-ladder');
@@ -22,14 +22,16 @@
     return;
    }
    const t=game.entry(),w=game.word();
+   window.DanhGameFlow?.prepare(a.tasks.slice(a.index,a.index+3).map(t=>words.find(w=>w.id===t.id)),stage);
    const head=make('div',undefined,'ll-head');head.append(make('span',`Từ ${a.index+1}/${a.tasks.length}`));stage.append(head);
+   if(a.recallPass)stage.append(make('p','Luyện lại từ cần nhớ. Tự ghép đúng để chơi tiếp.','ll-practice-note'));
    const meaning=make('h3',w.meaning,'ll-meaning');meaning.tabIndex=-1;const prompt=make('div',undefined,'ll-prompt');prompt.append(window.DanhPictureAudio.make(w,{topic}),meaning);stage.append(prompt);
    const status=make('p','', 'll-status');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
    const refresh=()=>render(stage,full);
    function check(){const result=game.check();if(!result)return;
     if(result==='empty'){status.textContent=a.phase===4?'Gõ từ trước nha.':'Điền đủ các ô nhé.';return;}
-    if(result==='wrong'||result==='repeat'){status.textContent='Chưa khớp rồi, sửa lại nha.';status.dataset.kind='wrong';stage.querySelector('.ll-slots')?.classList.add('ll-wrong');if(result==='wrong')fx('bad');const reveal=stage.querySelector('.ll-reveal');if(reveal)reveal.hidden=false;return;}
-    refresh();fx(result==='first'?'good':'corrected');window.DanhAnswerSpeech.say(w.name);
+    if(result==='wrong'||result==='repeat'){status.textContent='Chưa khớp rồi, sửa lại nha.';status.dataset.kind='wrong';stage.querySelector('.ll-slots')?.classList.add('ll-wrong');if(result==='wrong')fx('bad',stage.querySelector('.ll-slots,.ll-input'));const reveal=stage.querySelector('.ll-reveal');if(reveal)reveal.hidden=false;return;}
+    refresh();fx(result==='first'?'good':'corrected',stage.querySelector('.ll-slots,.ll-input'));window.DanhAnswerSpeech.say(w.name);
    }
    if(a.phase<4){
     const slots=make('div',undefined,'ll-slots');slots.setAttribute('aria-label','Từ cần điền');
@@ -46,7 +48,8 @@
    stage.append(status);
    const controls=make('div',undefined,'ll-actions');
    if(t.result){
-    status.textContent={first:'✅ Chuẩn luôn!',corrected:'✅ Tự sửa đúng rồi!',hinted:'✅ Đúng rồi! Có dùng gợi ý.',seen:`Mẫu: ${w.name}`}[t.result];status.dataset.kind=t.result==='seen'?'help':'correct';
+    status.textContent={first:'Đúng.',corrected:'Đã tự sửa đúng.',hinted:'Đúng với gợi ý.',seen:`Mẫu: ${w.name}`}[t.result];status.dataset.kind=t.result==='seen'?'help':'correct';
+    if(t.result!=='seen')status.className='ll-announcement';
     controls.append(button(a.phase===4&&a.index===a.tasks.length-1?'Xem kết quả':'Từ tiếp',()=>navigate(()=>game.next()),'ll-primary'));
    }else{
     controls.append(button('Kiểm tra',check,'ll-primary'),button('Gợi ý',()=>{const letter=game.hint();status.textContent=`Gợi ý: ${letter}`;const reveal=stage.querySelector('.ll-reveal');if(reveal)reveal.hidden=false;fx('help');}));

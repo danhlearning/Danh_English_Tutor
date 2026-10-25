@@ -4,14 +4,16 @@
  const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
  const positions=w=>Array.from(w.name).flatMap((c,i)=>/[a-z]/i.test(c)?[i]:[]);
  const kinds=['first','corrected','hinted','seen'];
+ const recalled=t=>t && (t.result==='first'||t.recalled===true);
  function wordOrder(ids,previous=[]){
   const order=shuffle(ids),last=previous[previous.length-1];
   if(order.length>1&&order[0]===last){const i=1+Math.floor(Math.random()*(order.length-1));[order[0],order[i]]=[order[i],order[0]];}
   if(order.length>2&&order.length===previous.length&&order.every((id,i)=>id===previous[i]))order.push(order.shift());
   return order;
  }
- function task(w,phase){
+ function task(w,phase,previous){
   const holes=phase===4?[]:shuffle(positions(w)).slice(0,phase).sort((a,b)=>a-b),letters=Array.from(w.name);
+  if(phase<4&&previous?.holes.length===phase&&holes.every((n,i)=>n===previous.holes[i])){const other=positions(w).find(i=>!holes.includes(i));if(other!==undefined){holes[0]=other;holes.sort((a,b)=>a-b);}}
   const tiles=holes.map(i=>letters[i].toLowerCase());
   if(phase!==4){const extras=shuffle(Array.from('abcdefghijklmnopqrstuvwxyz').filter(c=>!tiles.includes(c))).slice(0,3);tiles.push(...extras);}
   return {id:w.id,holes,tiles:shuffle(tiles),draft:holes.map(()=>null),text:'',errors:0,hinted:false,result:null,lastWrong:''};
@@ -29,7 +31,11 @@
   function valid(a){
    if(!a||!Array.isArray(a.selected)||!a.selected.length||a.selected.some(id=>!byId.has(id))||new Set(a.selected).size!==a.selected.length||!Array.isArray(a.ids)||!a.ids.length||a.ids.length>8||new Set(a.ids).size!==a.ids.length||a.ids.some(id=>!a.selected.includes(id))||a.signature!==signature(a.selected)||![1,2,3,4].includes(a.phase)||typeof a.bridge!=='boolean'||!Array.isArray(a.tasks)||!a.tasks.length||!Array.isArray(a.completed)||!Number.isInteger(a.index)||a.index<0||a.index>a.tasks.length)return false;
    const expected=a.ids.filter(id=>a.phase===4||positions(byId.get(id)).length>=a.phase);
-   return a.tasks.length===expected.length&&new Set(a.tasks.map(t=>t?.id)).size===expected.length&&a.tasks.every((t,i)=>expected.includes(t.id)&&validTask(t,a.phase)&&(i>=a.index||t.result!==null)&&(i<=a.index||t.result===null))&&a.completed.length<=24&&a.completed.every(t=>[1,2,3].includes(t.phase)&&a.ids.includes(t.id)&&kinds.includes(t.result));
+   if(a.completed.length>24||a.completed.some(t=>![1,2,3].includes(t.phase)||!a.ids.includes(t.id)||!kinds.includes(t.result)||t.recalled!==undefined&&typeof t.recalled!=='boolean')||new Set(a.completed.map(t=>`${t.id}:${t.phase}`)).size!==a.completed.length)return false;
+   if(a.recallPass!==undefined&&(!Number.isSafeInteger(a.recallPass)||a.recallPass<0))return false;
+   const pending=a.recallPass?expected.filter(id=>!recalled(a.completed.find(t=>t.id===id&&t.phase===a.phase))):expected;
+   if(a.phase===4&&a.recallPolicy===true&&a.ids.some(id=>[1,2,3].some(phase=>positions(byId.get(id)).length>=phase&&!recalled(a.completed.find(t=>t.id===id&&t.phase===phase)))))return false;
+   return a.tasks.length===pending.length&&new Set(a.tasks.map(t=>t?.id)).size===pending.length&&a.tasks.every((t,i)=>pending.includes(t.id)&&validTask(t,a.phase)&&(i>=a.index||t.result!==null)&&(i<=a.index||t.result===null));
   }
   try{const saved=JSON.parse(storage.getItem(key)||'null');if(saved?.version===1){if(saved.history&&typeof saved.history==='object'&&!Array.isArray(saved.history))state.history=saved.history;if(valid(saved.active))state.active=saved.active;else if(saved.active)warning='Lượt cũ cần mở lại. Kết quả đã học vẫn được giữ.';state.previous=saved.previous||null;}}catch{warning='Chưa đọc được lượt đã lưu. Bạn vẫn chơi trong tab này nhé.';}
   const save=()=>{try{storage.setItem(key,JSON.stringify(state));return true;}catch{warning='Chưa lưu được. Giữ tab này để chơi tiếp nhé.';return false;}};
@@ -45,7 +51,7 @@
    let ids=options.chooseGroup?options.chooseGroup([...ranked]):ranked.slice(0,8);
    if(!Array.isArray(ids)||!ids.length||ids.length>8||new Set(ids).size!==ids.length||ids.some(id=>!ranked.includes(id)))ids=ranked.slice(0,8);
    const order=wordOrder(ids,state.active?.tasks.map(t=>t.id));
-   state.active={selected:[...selected],signature:signature(selected),ids,phase:1,index:0,tasks:order.map(id=>task(byId.get(id),1)),completed:[],bridge:false};save();return true;
+   state.active={selected:[...selected],signature:signature(selected),ids,phase:1,index:0,tasks:order.map(id=>task(byId.get(id),1)),completed:[],bridge:false,recallPolicy:true,recallPass:0};save();return true;
   }
   const entry=()=>state.active?.tasks[state.active.index],word=()=>byId.get(entry()?.id);
   function choose(tile){const t=entry();if(!t||t.result||state.active.phase===4||!Number.isInteger(tile)||tile<0||tile>=t.tiles.length||t.draft.includes(tile))return false;const i=t.draft.indexOf(null);if(i<0)return false;t.draft[i]=tile;save();return true;}
@@ -62,7 +68,26 @@
   function hint(){const t=entry();if(!t||t.result)return '';t.hinted=true;save();return state.active.phase===4?Array.from(word().name)[0]:Array.from(word().name)[t.holes[t.draft.findIndex(n=>n===null)]??t.holes[0]];}
   function reveal(){const t=entry();if(!t||t.result||!t.hinted&&!t.errors)return false;t.text=word().name;const used=new Set();t.draft=t.holes.map(i=>{const n=t.tiles.findIndex((c,n)=>!used.has(n)&&c===Array.from(word().name)[i].toLowerCase());used.add(n);return n;});return finish('seen');}
   function next(){const a=state.active;if(!entry()?.result)return false;a.index++;save();return true;}
-  function advance(){const a=state.active;if(!a||a.index!==a.tasks.length||a.phase===4)return false;const previous=a.tasks.map(t=>t.id);a.completed.push(...a.tasks.map(t=>({id:t.id,phase:a.phase,result:t.result})));do{a.phase++;a.tasks=wordOrder(a.ids.filter(id=>a.phase===4||positions(byId.get(id)).length>=a.phase),previous).map(id=>task(byId.get(id),a.phase));}while(!a.tasks.length&&a.phase<4);a.index=0;a.bridge=a.phase===4;save();return true;}
+  function advance(){
+   const a=state.active;if(!a||a.index!==a.tasks.length||a.phase===4)return false;
+   const previous=a.tasks.map(t=>t.id),oldPhase=a.phase;
+   for(const t of a.tasks){
+    const record=a.completed.find(row=>row.id===t.id&&row.phase===a.phase);
+    if(record){record.recalls=(record.recalls||0)+1;if(t.result==='first')record.recalled=true;}
+    else a.completed.push({id:t.id,phase:a.phase,result:t.result,recalled:t.result==='first',recalls:0});
+   }
+   // Find the earliest missing independent recall, including assisted old rounds.
+   let phase=1,ids=[];
+   for(;phase<=3;phase++){
+    ids=a.ids.filter(id=>positions(byId.get(id)).length>=phase&&!recalled(a.completed.find(row=>row.id===id&&row.phase===phase)));
+    if(ids.length)break;
+   }
+   a.recallPolicy=true;
+   a.recallPass=phase<=3&&a.completed.some(row=>row.phase===phase)?(phase===oldPhase?(a.recallPass||0)+1:1):0;
+   const lastTasks=a.tasks;
+   a.phase=phase;a.tasks=wordOrder(phase===4?a.ids:ids,previous).map(id=>task(byId.get(id),phase,lastTasks.find(t=>t.id===id)));
+   a.index=0;a.bridge=phase===4;save();return true;
+  }
   function standalone(){if(state.active){state.active.bridge=false;save();}}
   return {key,state,byId,ensure,start,entry,word,choose,remove,text,check,hint,reveal,next,advance,standalone,save,get warning(){return warning;}};
  }

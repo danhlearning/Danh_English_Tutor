@@ -53,7 +53,7 @@ for(const file of fs.readdirSync(path.join(root,base)).filter(n=>n.endsWith('.ht
  if(/^unit\d+\.html$/.test(file)){
   s=s.replace(/<p class="g6-note">(?:Đọc từ, xem tranh[^<]*|Đọc nghĩa tiếng Việt[^<]*|Nhìn nghĩa tiếng Việt[^<]*)<\/p>/g,'');
   s=s.replace('Nhìn từ tiếng Anh rồi thử đoán nghĩa trước khi lật.','Đoán nghĩa rồi chạm thẻ.');
-  if(!s.includes('spelling-game.js'))s=s.replace('  <script src="./assets/js/lesson.js','  <script src="./assets/js/spelling-game.js?v=compact-listen-20261024"></script>\n  <script src="./assets/js/lesson.js');
+  if(!s.includes('spelling-game.js'))s=s.replace('  <script src="./assets/js/lesson.js?v=game-pacing-20261025','  <script src="./assets/js/spelling-game.js?v=game-pacing-20261025"></script>\n  <script src="./assets/js/lesson.js?v=game-pacing-20261025');
  }
  if(file==='grammar.html'){
   if(!s.includes('grammar-improvement-data.js'))s=s.replace(/(  <script src="\.\/assets\/js\/grammar-complete-data.js[^\n]*\n)/,'$1  <script src="./assets/js/grammar-improvement-data.js?v=compact-listen-20261024"></script>\n');

@@ -46,6 +46,7 @@ window.DanhGrade11Spelling = function ({stage, words, unitId}) {
       return;
     }
     const id=state.order[state.position],w=byId.get(id);
+    window.DanhGameFlow?.prepare(state.order.slice(state.position,state.position+3).map(id=>byId.get(id)),stage);
     const entry=state.entries[id] ||= {draft:'',attempts:0,outcome:null};
     save();
     const position=el('p',`Từ ${state.position+1}/${state.order.length}`,'g6-card-position');

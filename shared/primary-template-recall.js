@@ -28,6 +28,7 @@
         stage.append(button('Chơi lượt mới',()=>start()));update();return;
       }
       const task=q(),word=byId.get(task.id);
+      window.DanhGameFlow?.prepare(round.tasks.slice(round.index,round.index+3).map(t=>byId.get(t.id)),stage);
       stage.append(el('p',`Câu ${round.index+1}/${round.tasks.length}`,'g4-question-count'));
       const picture=el('span',undefined,'g4-visual g4-question-art');picture.innerHTML=word.visual;window.DanhPictureListen.bind(picture,word.name,word.meaning);stage.append(picture);
       const prompt=el('p',context?word.context.replace('____','_____'):word.meaning,'g4-context-prompt');stage.append(prompt);

@@ -57,7 +57,16 @@ Trước khi triển khai, ghi rõ:
 - Dùng lại các thành phần đang ổn định, điều chỉnh theo cơ chế chơi; kiểm tra âm thanh và chuyển động cùng luồng học.
 - Quy tắc toàn repo: trả lời đúng phải kèm giọng đọc tiếng Anh của từ/cụm từ đã học, kể cả tự sửa đúng; nhiệm vụ cả câu đọc câu đúng. Âm correct không thay thế giọng đọc. Không đọc nhãn đáp án, tiếng Việt hoặc IPA thay từ mẫu. Giữ lựa chọn tắt âm; không tự đọc khi tải/khôi phục trang, không đọc lặp do chấm lại, dừng khi rời hoặc ẩn trang.
 
+### Tải trước âm thanh trên toàn website
+
+- Quy tắc xác nhận ngày 25/10/2026, áp dụng cho toàn bộ lớp 1–12, topic phụ, thư viện kỹ năng, game, ôn tập, trang cũ và các mẫu/bộ dựng sau này.
+- Khi có thứ tự câu/lượt đã chọn, chuẩn bị im lặng âm thanh của câu hiện tại và tối đa hai câu kế tiếp; chuẩn bị cả ảnh liên quan để chuyển câu mượt. Danh sách thẻ ưu tiên nhóm đang xem/sắp xem, không tải toàn bộ ngân hàng.
+- Ưu tiên dùng chung `DanhGameFlow.prepare` và `DanhAnswerSpeech`; phát bằng tài nguyên đã tải sẵn, gộp yêu cầu trùng, giới hạn tải đồng thời và bộ nhớ. Tải trước không tự đọc, lộ đáp án, thay thứ tự, tạo lượt, cộng điểm hoặc ghi nhận thành thạo. Game tự chuyển vẫn đợi giọng đáp án kết thúc.
+- Tôn trọng âm tắt, tiết kiệm dữ liệu, mất mạng và tab ẩn; tiếp tục phần cần thiết khi quay lại. Nếu chuẩn bị thất bại, người học vẫn chơi được và có thể nghe bằng tải thông thường/giọng dự phòng. Dừng giọng khi rời/ẩn trang, không để tiếng chồng hoặc phát lặp.
+- Nghiệm thu phải chứng minh câu tiếp dùng được âm thanh đã chuẩn bị, không tự đọc khi mở/khôi phục và không đổi tiến độ. Kiểm tra thêm thao tác lặp, đổi tab, âm tắt, mạng lỗi và giới hạn tài nguyên. Tham khảo [Nhịp game và chuẩn bị câu tiếp](GAME_PACING_20261025.md).
+
 ## 5. Phản hồi giúp học và cách ghi điểm
+
 
 - Đúng: xác nhận, giải thích ngắn hoặc ví dụ khi phù hợp, rồi cho tiếp tục.
 - Sai: giữ cơ hội tự suy nghĩ và thử lại trước khi chủ động xem đáp án. Gợi ý nhắc cách giải thay vì lập tức đưa đáp án.

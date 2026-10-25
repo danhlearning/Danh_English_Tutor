@@ -33,6 +33,7 @@
 
   function speak(value) {
     if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(value);
+    if(window.DanhGameFlow?.isPlaying())return window.DanhAnswerSpeech.say(value);
     try {
       if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') {
         window.DanhAnswerSpeech.say(value);
@@ -128,6 +129,7 @@
       return;
     }
     const word = wordsById.get(round.deck[round.index]);
+    window.DanhGameFlow?.prepare(round.deck.slice(round.index,round.index+3).map(id=>wordsById.get(id)),stage);
     const progress = document.createElement('p'); progress.className = 'g4-question-count';
     progress.textContent = `Câu ${round.index + 1}/${round.deck.length}`;
     stage.append(progress, visual(word, 'g4-question-art'));

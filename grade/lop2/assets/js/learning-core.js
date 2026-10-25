@@ -223,7 +223,7 @@
       if(window.DanhListenControls?.isManualRequest())return Promise.resolve(window.DanhAnswerSpeech.listen(word.name));
       stopSpeech();
       if (!hasGesture || (effects && !effects.soundEnabled()) || document.hidden) return Promise.resolve();
-      if (useAnswerSpeech) return Promise.resolve(window.DanhAnswerSpeech.say(word.name));
+      if (useAnswerSpeech || window.DanhGameFlow?.isPlaying()) return Promise.resolve(window.DanhAnswerSpeech.say(word.name));
       if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined' || !window.speechSynthesis.getVoices().some(v=>/^en(?:[-_]|$)/i.test(v.lang))) return Promise.resolve(window.DanhAnswerSpeech.say(word.name));
       return new Promise(resolve => {
         let finished = false;
@@ -291,7 +291,7 @@
     const setText = (parent, selector, value) => { parent.querySelector(selector).textContent = value; };
     const titles = { 'game-flip': window.DanhLetterLadder?.enabled ? 'Game 1 · Ghép chữ' : 'Game 1 · Flashcard', 'game-mcq': 'Game 2 · Trắc nghiệm', 'game-spelling': 'Game 3 · Chính tả' };
     const ladder=window.DanhLetterLadder?.enabled?window.DanhLetterLadder.mount({topic,words,storage,selected:()=>learning.state.selected,effects,
-      goSpelling:()=>show('game-spelling',{currentTarget:document.querySelector('[data-game-nav]')}),
+      goSpelling:()=>active==='game-spelling'?renderActive():show('game-spelling',{currentTarget:document.querySelector('[data-game-nav]')}),
       rerender:tab=>{if(tab)show(tab,{currentTarget:document.querySelector('[data-game-nav]')});else renderActive();}
     }):null;
 
@@ -402,7 +402,7 @@
     function renderActive() {
       if (!active || dialog.open) return;
       toolbar();
-      const inLadder=!!ladder&&(active==='game-flip'||active==='game-spelling'&&ladder.hasFull());
+      const inLadder=!!ladder&&(active==='game-flip'||active==='game-spelling'&&(ladder.hasFull()||ladder.game.state.active?.phase!==4));
       panel().querySelector('.learning-history').hidden=inLadder;
       if(pictureMode){panel().querySelector('h2').hidden=inLadder;panel().querySelector('.learning-pick').textContent='Chọn từ';}
       if(inLadder)feedback();
@@ -422,6 +422,7 @@
       if(ladder){ladder.render(panel().querySelector('.learning-stage'));return;}
       const cards = learning.cards(), stage = panel().querySelector('.learning-stage');
       const word = byId.get(cards.deck[cards.index]);
+      window.DanhGameFlow?.prepare(cards.deck.slice(cards.index,cards.index+3).map(id=>byId.get(id)),stage);
       if (!cardView || cardView.cards !== cards || !stage.contains(cardView.card)) {
         const view = {cards};
         view.line = progress('');
@@ -501,7 +502,7 @@
     }
     function renderQuestion(game) {
       const stage = panel().querySelector('.learning-stage'); stage.replaceChildren();
-      if(game==='spelling'&&ladder?.hasFull()){ladder.render(stage,true);return;}
+      if(game==='spelling'&&ladder&&(ladder.hasFull()||ladder.game.state.active?.phase!==4)){ladder.render(stage,ladder.hasFull());return;}
       stage.classList.remove('letter-ladder');
       if (game === 'mcq' && learning.state.selected.length < 2) {
         stage.append(progress('Game 2 cần ít nhất 2 từ. Hãy chọn thêm một từ.'));
@@ -515,6 +516,7 @@
         toolbar(); feedback('Bạn đã hoàn thành bộ từ.'); return;
       }
       const answer = round.answers[round.index], word = byId.get(round.deck[round.index]);
+      window.DanhGameFlow?.prepare(round.deck.slice(round.index,round.index+3).map(id=>byId.get(id)),stage);
       stage.append(progress(stats(game, round)));
       if (game !== 'mcq' || mcqMode !== 'listen-picture') {
         const image = pictureMode?window.DanhPictureAudio.make(word,{topic}):document.createElement('div'); image.classList.add('learning-visual','learning-question-visual');

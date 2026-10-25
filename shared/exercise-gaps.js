@@ -21,7 +21,7 @@
       gap.className = 'danh-exercise-gap';
       gap.setAttribute('role', 'img');
       gap.setAttribute('aria-label', 'chỗ trống');
-      gap.style.setProperty('--danh-gap-width', `${Math.min(8, Math.max(3, match[0].length * .6))}em`);
+      gap.style.setProperty('--danh-gap-width', '1ch');
       const source = document.createElement('span');
       source.className = 'danh-exercise-gap-source';
       source.setAttribute('aria-hidden', 'true');

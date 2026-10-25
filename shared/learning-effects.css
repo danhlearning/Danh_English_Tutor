@@ -2,6 +2,8 @@
 .vg-pop{animation:vg-pop .35s ease-out}
 .vg-shake{animation:vg-shake .34s ease-in-out}
 .vg-celebrate{animation:vg-celebrate .6s ease-out}
+.vg-answer-good{outline:3px solid #2d8a60!important;outline-offset:4px;box-shadow:0 0 0 8px #55b98224!important;border-radius:10px}
+.vg-answer-bad{outline:3px solid #bc5149!important;outline-offset:4px;box-shadow:0 0 0 8px #d8786324!important;border-radius:10px}
 @keyframes vg-shake{20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}100%{transform:translateX(0)}}
 @keyframes vg-celebrate{35%{transform:translateY(-5px) scale(1.04)}65%{transform:translateY(0) scale(.98)}100%{transform:scale(1)}}
 @keyframes vg-spark{from{opacity:1;transform:translate(-50%,-50%) scale(.6)}to{opacity:0;transform:translate(-50%,-180%) scale(1.7) rotate(45deg)}}

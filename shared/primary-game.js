@@ -31,6 +31,7 @@
   function notify(text){document.querySelector('#feedback').textContent=text;}
   function speak(text){
     if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
+    if(window.DanhGameFlow?.isPlaying())return window.DanhAnswerSpeech.say(text);
     if(!fx.soundEnabled()){notify('Em hãy bật âm thanh rồi bấm nghe nhé.');return;}
     if(!window.speechSynthesis||!window.SpeechSynthesisUtterance){window.DanhAnswerSpeech.say(text);return;}
     speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(text);utterance.lang='en-US';window.DanhYoungSpeech.configure(utterance);
@@ -52,12 +53,14 @@
   function render(){
     if(round.index===round.questions.length){summary();return;}
     const {q,w}=current(),done=!!q.result;
+    const upcoming=round.questions.slice(round.index,round.index+3).map(q=>items(unit,mode).find(w=>w.id===q.id));
     const prompt=mode==='listen'?'Bấm nghe và tìm từ đúng':mode==='sentence'?w.meaning:`Từ nào có nghĩa “${w.meaning}”?`;
     app.innerHTML=header()+`<section class="panel"><div class="round-top"><span>Nhiệm vụ ${round.index+1}/${round.questions.length}</span><span>⭐ ${round.questions.filter(q=>q.result==='first').length} sao</span></div><progress max="${round.questions.length}" value="${round.index}" aria-label="Tiến trình lượt chơi"></progress><h2 id="question" tabindex="-1">${esc(prompt)}</h2>${mode!=='listen'&&mode!=='sentence'?`<div class="question-art">${image(w)}</div>`:''}${mode==='listen'?'<button class="listen" data-action="listen">🔊 Nghe từ bí mật</button>':''}${mode==='meaning'||mode==='listen'?`<div class="choices">${q.order.map(id=>{const a=unit.words.find(w=>w.id===id);return `<button data-answer="${id}" ${done?'disabled':''}>${esc(a.term)}</button>`;}).join('')}</div>`:mode==='spelling'?`<label for="answer">Gõ từ tiếng Anh</label><input id="answer" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(q.draft)}" ${done?'disabled':''}><button class="primary" data-action="check" ${done?'disabled':''}>Kiểm tra</button>`:`<p>Bấm mảnh đã chọn để trả lại.</p><div class="sentence-built" aria-label="Câu em ghép">${q.picks.map((n,i)=>`<button data-remove="${i}" ${done?'disabled':''}>${esc(w.term.split(' ')[n])}</button>`).join('')||'<span>Câu của em sẽ ở đây…</span>'}</div><div class="tokens">${q.order.map(n=>`<button data-token="${n}" ${done||q.picks.includes(n)?'disabled':''}>${esc(w.term.split(' ')[n])}</button>`).join('')}</div><button class="primary" data-action="check" ${done?'disabled':''}>Kiểm tra câu</button>`}
       <div id="feedback" class="feedback" role="status" aria-live="polite">${done?`${labels[q.result]} · ${esc(w.term)} — ${esc(w.meaning)}`:q.hint?hintText(w):q.errors?'🌱 Em đã thử rồi. Hãy suy nghĩ và thử lại nhé!':''}</div>
       ${done?`<button class="primary" data-action="next">${round.index+1===round.questions.length?'Xem tổng kết':'Nhiệm vụ tiếp theo →'}</button>`:`<div class="helpers"><button data-action="hint">💡 Gợi ý</button><button data-action="reveal">Xem đáp án</button><button data-action="skip">Bỏ qua</button></div>`}</section>`;
+    window.DanhGameFlow?.prepare(upcoming,app.querySelector('#question'));
   }
-  function hintText(w){return mode==='sentence'?`💡 Câu bắt đầu bằng “${esc(w.term.split(' ')[0])}”.`:mode==='listen'?'💡 Nghe lại chậm và chú ý âm đầu của từ.':`💡 Từ hoặc cụm từ bắt đầu bằng “${esc(w.term[0])}”, gồm ${w.term.replace(/[^a-z]/gi,'').length} chữ cái.`;}
+  function hintText(w){return mode==='sentence'?`💡 Câu bắt đầu bằng “${esc(w.term.split(' ')[0])}”.`:mode==='listen'?'💡 Nghe lại và chú ý âm đầu của từ.':`💡 Từ hoặc cụm từ bắt đầu bằng “${esc(w.term[0])}”, gồm ${w.term.replace(/[^a-z]/gi,'').length} chữ cái.`;}
   function answer(value){const {q,w}=current();if(q.result)return;if(!value.trim()){notify('Em hãy thử trả lời trước nhé.');return;}
     if(normalize(value)===normalize(w.term)){q.result=q.hint?'helped':q.errors?'corrected':'first';persist();fx.feedback(q.result==='first'?'good':'corrected');render();window.DanhAnswerSpeech.say(w.term);}
     else{q.errors++;persist();fx.feedback('bad');notify(mode==='sentence'?'🌱 Chưa khớp câu mẫu. Em thử đổi thứ tự; nhớ chủ ngữ đứng trước động từ nhé.':'🌱 Chưa đúng rồi. Em thử lại hoặc dùng gợi ý nhé!');}

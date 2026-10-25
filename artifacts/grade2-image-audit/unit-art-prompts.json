@@ -1,0 +1,155 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "grapes",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: exactly one bunch of many purple grapes attached together to a small branching stem, one green grapevine leaf. Clearly a cluster of grapes, not a single grape, not a plum.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-dc6ab456-66c9-4199-9efd-8ce3d164cb05.png"
+    },
+    {
+      "id": "fox",
+      "prompt": "Use case: scientific-educational. One square vocabulary illustration for Vietnamese grade 2 English children. Subject: exactly one red fox, full body, recognizable pointed ears, long bushy orange tail with white tip, natural animal anatomy, standing calmly. Traditional colored-pencil drawing on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Centered with generous white margins. No text, letters, numbers, borders, collage, costume, speech bubble, human hands or 3D rendering. This is a reusable standalone word picture, not a scene.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-dcad7351-7d94-47c7-9e70-b262b76de5fe.png"
+    },
+    {
+      "id": "volleyball",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: Exactly one ordinary volleyball, white with blue and yellow curved stitched panels. It is a real sports ball without a face, arms or legs.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-50cd3f8b-4ec5-47fb-9409-c1daa06b8d5b.png"
+    },
+    {
+      "id": "pasta",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: A white plate of cooked spaghetti with tomato sauce, a small basil leaf on top, clearly recognizable pasta.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-c1bd5130-469d-4868-abb8-5e2ccf298330.png"
+    },
+    {
+      "id": "popcorn",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: One plain red-and-white striped open paper tub filled with fluffy popped corn, a few popped kernels nearby. No branding.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-455908f7-df0c-4b2e-8ade-c883e19c4ef7.png"
+    },
+    {
+      "id": "kitten",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: One small playful domestic kitten, full body, soft striped ginger fur, sitting with its tail curled beside it. Natural feline anatomy.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-29076fd4-b627-4efb-9d3e-f46e0cdd335c.png"
+    },
+    {
+      "id": "sail",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: One small sailboat on a little patch of blue water, with large triangular white and yellow sails, the sails clearly dominant.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-76251145-6e76-42cc-931b-27246ce0f37b.png"
+    },
+    {
+      "id": "sand",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: A small mound of golden beach sand with a plain sand bucket and a little scoop, no sea or people.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-4f34b2af-7d0d-41d3-9546-2e7688a17979.png"
+    },
+    {
+      "id": "sea",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: A simple broad expanse of turquoise sea with gentle rolling waves stretching to a low horizon, narrow sandy shoreline at bottom. No boats, animals or people.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-7aeed064-e5ef-4b42-a735-4bcbe1fe5537.png"
+    },
+    {
+      "id": "rainbow",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: A single complete natural rainbow arch showing seven clear bands red orange yellow green blue indigo violet, over two small soft white clouds.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-d2ae8fdb-6b48-4b8e-847a-9a57e38fba05.png"
+    },
+    {
+      "id": "river",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: A winding freshwater river running between green grassy banks and a few trees, simple peaceful countryside vignette. The river is clearly the central subject.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-50c2d18f-8a94-4b96-b0e8-613074208d33.png"
+    },
+    {
+      "id": "road",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: A simple grey paved country road curving into the distance, grassy verges, white dashed center markings, no vehicles or buildings.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-0a09f133-f6be-4f39-a9b1-67295f89d68b.png"
+    },
+    {
+      "id": "question",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: A Vietnamese schoolchild raising one hand politely to ask a question, curious questioning expression, open plain exercise book on desk. No question marks, no text or speech bubbles.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-fcfc70c4-5813-48fb-8b64-2a096c497d62.png"
+    },
+    {
+      "id": "quiz",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: Two Vietnamese primary schoolchildren completing a short picture quiz on one sheet, three tiny animal drawings with empty answer circles on paper, one child holding a pencil and thinking. No letters, ticks, numbers or speech bubbles.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-e11868f2-9a6d-4af9-80f9-5bc29d5376ee.png"
+    },
+    {
+      "id": "box",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: Exactly one simple open brown cardboard box, empty interior visible, three-quarter view, clearly folded flaps, no labels.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-e42f8521-77a0-4ab8-8abb-996642e06561.png"
+    },
+    {
+      "id": "ox",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: Exactly one full-bodied adult ox, a sturdy brown domestic male bovine with broad shoulders, short curved horns, four sturdy legs and a tufted tail. Calm standing pose, natural animal anatomy, no farming equipment.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-97d8cb3d-a58a-4949-9f4f-8782ad6114d1.png"
+    },
+    {
+      "id": "jelly",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: One translucent red fruit jelly pudding, a small fluted dome on a plain white saucer, clearly wobbly gelatin dessert, no jar.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-afa301be-c10f-4cfb-be27-97d4f2e80f01.png"
+    },
+    {
+      "id": "village",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: A peaceful small Vietnamese rural village, a cluster of modest tiled-roof houses along a narrow lane with green trees and distant rice fields. No tall city buildings.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-22c2634d-32b9-435b-95d6-dc14c44ff43c.png"
+    },
+    {
+      "id": "van",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: Exactly one passenger van, blue compact minivan with a tall boxy roof, sliding side door, windows and four wheels, three-quarter view. Ordinary vehicle, not toy, no face, no branding.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-171b9d0f-4e6d-43be-9a6b-d42e53ab9a6f.png"
+    },
+    {
+      "id": "yogurt",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: One small plain white yogurt cup open with foil lid peeled back, creamy white yogurt inside and a spoon resting beside it, one small strawberry next to cup. No packaging text or logos.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-f463bf32-6087-4490-819a-4fba16cd2dd4.png"
+    },
+    {
+      "id": "yams",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: Exactly three whole edible yams, long irregular brown rough-skinned tropical tubers, one cut end revealing pale creamy flesh. Not orange carrots, not potatoes with eyes. Grouped neatly.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-88d894a8-5338-4278-a9e3-bf0b51883326.png"
+    },
+    {
+      "id": "yo-yos",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: Exactly two ordinary yo-yo toys, one red and one blue, each showing two circular halves around a central axle and a clearly attached string curling beside it. No hands, no people.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-59d340c2-9ffe-4c97-9827-e3ba42d73045.png"
+    },
+    {
+      "id": "zoo",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: A small friendly zoo entrance with open gates, beyond it a giraffe in a spacious grassy enclosure on one side and a zebra in another. Clearly a zoo, child-friendly, no text or signs with writing.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-1dd4e5a8-4691-431a-b131-d626d0b7c93e.png"
+    },
+    {
+      "id": "zebra",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: Exactly one zebra, full body standing, clearly defined black and white stripes, four legs with hooves, upright mane, long natural tail, realistic recognizable animal proportions.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-2410e543-1be8-48a3-9737-2114d0e82bfe.png"
+    },
+    {
+      "id": "slide",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: One Vietnamese primary schoolchild sliding down a low playground slide, sitting feet first safely, happy expression. Show complete child and small slide, motion implied naturally, no arrows.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-8c6eb4de-bf1c-4714-a37a-8c7269b0e94b.png"
+    },
+    {
+      "id": "drive",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: One Vietnamese father sitting at the driver's seat inside a simple red passenger car, hands holding steering wheel, seat belt visible. Side three-quarter cutaway view makes the adult driver and car clearly visible. No child driving, no text.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-2c551c7b-b732-43a2-9228-b57663ba71bd.png"
+    },
+    {
+      "id": "shirts",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: Exactly three neatly arranged button-up collared shirts, blue, pale yellow and green. Show each shirt fully, clearly separated, no people, no hangers, no text.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-22ca0952-370f-42eb-b45c-aa67cd141bf6.png"
+    },
+    {
+      "id": "tent",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: Exactly one small dome camping tent, warm orange fabric with green trim, front doorway open showing empty inside, natural canvas and simple poles, isolated on a tiny grassy patch.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-18537466-9d5b-451c-b620-31d0fbd9bd70.png"
+    },
+    {
+      "id": "teapot",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: Exactly one ceramic teapot, pale turquoise with a rounded body, clear curved pouring spout, loop handle and lid. Ordinary teapot, no face, no cup, no electric kettle.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-d8f1aca3-92a4-4b9b-8424-2fe74e3fb6af.png"
+    },
+    {
+      "id": "blanket",
+      "prompt": "Traditional colored-pencil illustration on clean white paper, visible fine pencil strokes, softly shaded warm colors, delicate graphite outlines, charming children's textbook style. Square, centered with generous white margins. No text, letters, borders, collage, watermark, photorealism or 3D rendering. Single standalone educational vocabulary picture for grade 2. Subject: Exactly one soft folded plaid blanket with a corner draped loosely forward and short fringe, warm cream and coral colors. Clearly thick bedding blanket, not a towel or scarf, no bed or people.",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a17156-2ac7-7b62-b349-84b5e7d4ddbc\\exec-cea7adc5-74a8-43b2-84a5-0066369e0c4d.png"
+    }
+  ]
+}

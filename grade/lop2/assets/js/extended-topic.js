@@ -33,6 +33,7 @@
   }
   function speak(value) {
     if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(value);
+    if(window.DanhGameFlow?.isPlaying())return Promise.resolve(window.DanhAnswerSpeech.say(value));
     if (finishSpeech) finishSpeech();
     try { window.speechSynthesis?.cancel(); } catch { /* Audio is optional. */ }
     if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') return Promise.resolve();
@@ -119,6 +120,7 @@
       return;
     }
     const question = round.deck[round.index];
+    window.DanhGameFlow?.prepare(round.deck.slice(round.index,round.index+3).map(q=>({text:q.answer,visual:byId.get(q.imageWordId)?.visual})),stage);
     const count = document.createElement('p');
     count.className = 'g2-practice-count';
     count.textContent = `Câu ${round.index + 1} / ${round.deck.length}`;

@@ -29,7 +29,8 @@
     el('sentence-input').value=q?.draft||'';
     if(!q){stage.append(make('h3','🎉 Hoàn thành!'));const again=make('button','Chơi lại','g2-practice-button');again.type='button';again.onclick=()=>{pause();fresh();render();fx.feedback('start');};stage.append(again);return;}
     const p=unit.patterns[q.id];stage.append(make('p',`Câu ${round.index+1}/${round.tasks.length}`,'g2-practice-count'));if(p.context){const context=make('p',p.context,'g2-pattern');context.lang='en';stage.append(context);}stage.append(make('p',p.note,'g2-practice-meaning'));
-    if(q.result){status(q.result==='revealed'?`Đáp án: ${p.question}`:q.result==='retry'?'Tự sửa đúng rồi, xịn đó!':'Chuẩn luôn!',q.result==='revealed'?'revealed':'correct');const listen=make('button','🔊 Nghe lại','g2-audio');listen.type='button';listen.onclick=()=>speak(p.question);stage.append(listen);}
+    window.DanhGameFlow?.prepare(round.tasks.slice(round.index,round.index+3).map(t=>({text:unit.patterns[t.id].question})),stage);
+    if(q.result){status(q.result==='revealed'?`Đáp án: ${p.question}`:q.result==='retry'?'Tự sửa đúng rồi, xịn đó!':'✅',q.result==='revealed'?'revealed':'correct');const listen=make('button','🔊 Nghe lại','g2-audio');listen.type='button';listen.onclick=()=>speak(p.question);stage.append(listen);}
     waitReveal();
   }
   function check(){const q=current();if(!q||q.result)return;const text=el('sentence-input').value;if(!text.trim()){status('Gõ câu tiếng Anh nhé.');return;}q.draft=text;
