@@ -11,8 +11,8 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8001';
    const record=await page.evaluate(()=>[...document.querySelector('#vocab-grid-container,#vocab-grid').children].filter(card=>card.querySelector('.word-title,h3')).map((card,index)=>{
     const name=card.querySelector('.word-title,h3')?.textContent.trim(),picture=card.querySelector('[data-danh-picture-listen],.word-picture');
     const readings=[],listen=window.DanhAnswerSpeech.listen;
-    try{window.DanhAnswerSpeech.listen=text=>{readings.push(text);return Promise.resolve(true);};picture?.click();}finally{window.DanhAnswerSpeech.listen=listen;}
-    return {index,name,bound:!!picture,term:picture?.dataset.danhPictureListen||name,handler:readings.length===1&&readings[0].trim().toLowerCase()===name.toLowerCase(),nested:card.querySelectorAll('.word-picture [data-danh-picture-listen]').length};
+    try{window.DanhAnswerSpeech.listen=text=>{readings.push(text);return Promise.resolve(true);};for(const target of [card,card.querySelector('.word-title,h3'),picture])target?.click();}finally{window.DanhAnswerSpeech.listen=listen;}
+    return {index,name,bound:!!picture&&card.dataset.danhCardListen===name,term:card.dataset.danhCardListen,handler:readings.length===3&&readings.every(text=>text.trim().toLowerCase()===name.toLowerCase()),nested:card.querySelectorAll('.word-picture [data-danh-picture-listen]').length};
    }));
    const missing=record.filter(r=>!r.bound||!r.handler||r.nested);
    const audioMissing=record.filter(r=>{if(!r.term)return true;let hash=2166136261;for(const c of r.term.replace(/[\[\]]/g,'').replace(/·/g,',').replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim().toLowerCase())hash=Math.imul(hash^c.charCodeAt(0),16777619);return !fs.existsSync(`shared/answer-audio/${(hash>>>0).toString(16).padStart(8,'0')}.wav`);});
