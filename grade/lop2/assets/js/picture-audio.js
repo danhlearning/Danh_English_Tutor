@@ -9,6 +9,8 @@
   else if(word.image){const img=document.createElement('img');img.src=word.image;img.alt='';button.append(img);}
   else{const span=document.createElement('span');span.textContent=source&&!/[a-z]/i.test(source)?source:word.meaning;button.append(span);}
   button.querySelectorAll('script,foreignObject').forEach(n=>n.remove());if(conceal)button.querySelectorAll('svg text').forEach(n=>n.remove());
+  // Tranh sao chép từ thẻ đã gắn nghe không được mang vùng nghe con vào nút mới.
+  button.querySelectorAll('[data-danh-picture-listen]').forEach(n=>{for(const attr of ['data-danh-picture-listen','role','tabindex','aria-label'])n.removeAttribute(attr);n.setAttribute('aria-hidden','true');});
   button.querySelectorAll('img').forEach(n=>{n.alt='';n.draggable=false;});button.querySelectorAll('svg').forEach(n=>n.setAttribute('aria-hidden','true'));
   button.onclick=event=>{event.stopPropagation();window.DanhAnswerSpeech.listen(word.name);};return button;
  }

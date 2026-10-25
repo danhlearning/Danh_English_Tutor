@@ -1,9 +1,62 @@
 (function () {
   'use strict';
   if (window.DanhLearners) return;
+  // Chỉ gắn thao tác nghe; giữ nguyên DOM con và kích thước tranh.
+  const pictureSelector='[data-danh-picture-listen]';
+  const pictureBind=(node,text,label)=>{
+    if(!node || node.matches('.word-picture,[data-word-audio]') || node.closest('button,a'))return node;
+    node.dataset.danhPictureListen=String(text||'').trim();
+    node.setAttribute('role','button');node.tabIndex=0;node.removeAttribute('aria-hidden');
+    node.setAttribute('aria-label',`Phát âm: ${label||text}`);node.style.cursor='pointer';
+    return node;
+  };
+  const flipSurface=(action,className='')=>{
+    const node=document.createElement('div');node.className=className;node.tabIndex=0;
+    node.setAttribute('role','group');node.setAttribute('aria-roledescription','Thẻ lật');node.dataset.danhFlipSurface='';
+    node.addEventListener('click',action);
+    node.addEventListener('keydown',event=>{if(event.target===node && ['Enter',' '].includes(event.key)){event.preventDefault();if(!event.repeat)node.click();}});
+    return node;
+  };
+  const pictureScan=root=>{
+    const selector='#vocab-grid .g6-word-card,#vocab-grid-container > *,#word-list .word-card';
+    const cards=[...root.querySelectorAll(selector)];if(root.matches?.(selector))cards.unshift(root);
+    for(const card of cards){
+      if(card.querySelector('.word-picture,[data-word-audio]'))continue;
+      const title=card.querySelector('.word-title,h3');
+      const picture=card.querySelector('.g6-word-visual,.g4-visual,.g2-vocab-image,.word-image,.real-obj-wrapper,.number-badge-wrapper,.emoji-display,.image-badge-wrapper,[role="img"]') || [...card.children].find(n=>n.querySelector('svg,img'));
+      if(!title || !picture || !title.textContent.trim())continue;
+      pictureBind(picture,title.textContent,card.querySelector('.g6-meaning')?.textContent||title.textContent);
+      if(!picture.matches(pictureSelector))continue;
+      for(const button of card.querySelectorAll('button'))if(button.matches('.g6-sound,.g2-audio,.audio-btn,[data-danh-listen]') || /[🔊🔉🔈]/u.test(button.textContent)){
+        button.style.visibility='hidden';button.style.pointerEvents='none';button.tabIndex=-1;button.setAttribute('aria-hidden','true');
+      }
+    }
+  };
+  const picturePlay=event=>{
+    const picture=event.target.closest?.(pictureSelector);if(!picture)return;
+    if(picture.closest('.word-picture,[data-word-audio]'))return;
+    if(event.type==='keydown' && (event.target!==picture || !['Enter',' '].includes(event.key)))return;
+    event.preventDefault();event.stopImmediatePropagation();
+    if(!event.repeat)window.DanhAnswerSpeech.listen(picture.dataset.danhPictureListen);
+  };
+  document.addEventListener('click',picturePlay,true);document.addEventListener('keydown',picturePlay,true);
+  window.DanhPictureListen={bind:pictureBind,flipSurface,scan:pictureScan};
+  document.addEventListener('DOMContentLoaded',()=>{
+    const style=document.createElement('style');style.textContent='[data-danh-picture-listen]:focus-visible,[data-danh-flip-surface]:focus-visible{outline:3px solid #176d8a;outline-offset:3px}';document.head.append(style);
+    pictureScan(document);
+    new MutationObserver(records=>{
+      const roots=new Set();
+      for(const record of records){
+        const target=record.target.nodeType===1?record.target:record.target.parentElement;
+        const card=target?.closest('#vocab-grid .g6-word-card,#vocab-grid-container > *,#word-list .word-card');if(card)roots.add(card);
+        for(const node of record.addedNodes)if(node.nodeType===1)roots.add(node);
+      }
+      for(const root of roots)pictureScan(root);
+    }).observe(document.body,{childList:true,characterData:true,subtree:true});
+  },{once:true});
   const C = window.DanhLearnerCore;
   const base = new URL('../', document.currentScript.src);
-  const controls=document.createElement('script');controls.src=new URL('shared/learner-controls.js?v=picture-tap-20261024',base).href;controls.async=false;document.head.append(controls);
+  const controls=document.createElement('script');controls.src=new URL('shared/learner-controls.js?v=repo-picture-listen-20261025',base).href;controls.async=false;document.head.append(controls);
   const preload=document.createElement('script');preload.src=new URL('shared/site-preload.js?v=20261022-1',base).href;preload.async=true;document.head.append(preload);
   const font=document.createElement('link');font.rel='stylesheet';font.href=new URL('shared/learner-font.css?v=compact-listen-20261024',base).href;document.head.append(font);
   const gaps=document.createElement('script');gaps.src=new URL('shared/exercise-gaps.js?v=smooth-20261023-1',base).href;gaps.async=false;document.head.append(gaps);

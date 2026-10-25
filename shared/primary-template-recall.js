@@ -29,7 +29,7 @@
       }
       const task=q(),word=byId.get(task.id);
       stage.append(el('p',`Câu ${round.index+1}/${round.tasks.length}`,'g4-question-count'));
-      const picture=el('span',undefined,'g4-visual g4-question-art');picture.innerHTML=word.visual;picture.setAttribute('aria-hidden','true');stage.append(picture);
+      const picture=el('span',undefined,'g4-visual g4-question-art');picture.innerHTML=word.visual;window.DanhPictureListen.bind(picture,word.name,word.meaning);stage.append(picture);
       const prompt=el('p',context?word.context.replace('____','_____'):word.meaning,'g4-context-prompt');stage.append(prompt);
       const line=el('div',undefined,'g4-answer-line'),input=el('input');
       input.type='text';input.id='recall-answer';input.autocomplete='off';input.autocapitalize='off';input.spellcheck=false;input.value=task.result?word.name:task.draft;input.disabled=!!task.result;input.placeholder='Gõ từ hoặc cụm từ tiếng Anh';input.setAttribute('aria-label',context?'Điền từ vào câu':'Gõ từ tiếng Anh cần ôn');

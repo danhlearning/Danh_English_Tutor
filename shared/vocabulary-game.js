@@ -62,18 +62,24 @@
       previous.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));render();
       return {current:()=>words[index]};
     }
+    if(card.tagName==='BUTTON'){
+      const surface=window.DanhPictureListen.flipSurface(()=>{},card.className);
+      for(const attribute of card.attributes)if(attribute.name!=='type')surface.setAttribute(attribute.name,attribute.value);
+      card.replaceWith(surface);card=surface;
+    }
     let index=0,flipped=false,locked=false,timer;
     let inner;card.classList.add('vg-flip-card');
     const side = (word,back) => {
       const face=el('span',undefined,`vg-flip-face ${back?'vg-flip-back':'vg-flip-front'}`);
       face.append(el('span',`THẺ ${index+1}/${words.length}`,'g6-card-position'));
-      if(back)face.append(illustration(word));
+      if(back){const art=illustration(word);window.DanhPictureListen.bind(art,word.term,word.meaning);face.append(art);}
       face.append(el('strong',back?word.meaning:word.term),el('span',back?word.example:'Đoán nghĩa rồi chạm để lật','vg-flip-prompt'));
       return face;
     };
     const accessible=()=>{
       inner.children[0].setAttribute('aria-hidden',String(flipped));inner.children[1].setAttribute('aria-hidden',String(!flipped));
-      card.setAttribute('aria-pressed',String(flipped));
+      for(const picture of inner.querySelectorAll('[data-danh-picture-listen]'))picture.tabIndex=flipped?0:-1;
+      const listen=document.getElementById('flash-sound');if(listen)listen.hidden=flipped;
       card.setAttribute('aria-label',flipped?`${words[index].meaning}. Chạm để xem từ tiếng Anh.`:`${words[index].term}. Chạm để xem nghĩa.`);
     };
     const render=()=>{
