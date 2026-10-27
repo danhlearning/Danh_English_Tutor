@@ -1,0 +1,3 @@
+# Download bundles must keep their exact bytes on Windows and on the host.
+offline-packs/*.bin binary
+shared/answer-audio/*.mp3 binary

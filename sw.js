@@ -15,6 +15,36 @@ const entries = new Map(catalog.files.map((file, index) => [absolute(file.url), 
 const digest = async buffer => Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', buffer)), b => b.toString(16).padStart(2, '0')).join('');
 const controllers = new Set();
 let paused = false;
+const packBuffers=new Map(), failedPacks=new Set();
+const MAX_PACK_BUFFERS=3, MAX_PACK_BYTES=8*1024*1024;
+const mime=file=>({html:'text/html; charset=utf-8',js:'text/javascript; charset=utf-8',css:'text/css; charset=utf-8',json:'application/json',webmanifest:'application/manifest+json',svg:'image/svg+xml',mp3:'audio/mpeg',wav:'audio/wav',woff2:'font/woff2',webp:'image/webp',png:'image/png',jpg:'image/jpeg',jpeg:'image/jpeg'}[file.url.split('.').pop().toLowerCase()]||'application/octet-stream');
+async function boundedBody(response,limit){
+  if(Number(response.headers.get('content-length'))>limit){await response.body?.cancel();throw Error('FILE_CHANGED');}
+  const reader=response.body?.getReader();
+  if(!reader){const data=await response.arrayBuffer();if(data.byteLength>limit)throw Error('FILE_CHANGED');return data;}
+  const chunks=[];let bytes=0;
+  while(true){const part=await reader.read();if(part.done)break;bytes+=part.value.byteLength;if(bytes>limit){await reader.cancel();throw Error('FILE_CHANGED');}chunks.push(part.value);}
+  const data=new Uint8Array(bytes);let offset=0;for(const chunk of chunks){data.set(chunk,offset);offset+=chunk.byteLength;}return data.buffer;
+}
+async function packData(index){
+  const pack=catalog.packs?.[index];
+  if(!pack||!Number.isInteger(pack.bytes)||pack.bytes<=0||pack.bytes>MAX_PACK_BYTES)throw Error('FILE_CHANGED');
+  if(packBuffers.has(index)){const value=packBuffers.get(index);packBuffers.delete(index);packBuffers.set(index,value);return value.promise;}
+  for(const [key,value]of packBuffers){if(packBuffers.size<MAX_PACK_BUFFERS)break;if(value.ready)packBuffers.delete(key);}
+  const record={ready:false};
+  record.promise=(async()=>{
+    const controller=new AbortController();controllers.add(controller);const timer=setTimeout(()=>controller.abort(),45000);
+    try{
+      const response=await fetch(absolute(pack.url),{cache:'no-store',credentials:'same-origin',redirect:'error',signal:controller.signal});
+      if(!response.ok||response.status!==200||response.redirected)throw Error('PACK_UNAVAILABLE');
+      const data=await boundedBody(response,pack.bytes);
+      if(data.byteLength!==pack.bytes||await digest(data)!==pack.hash)throw Error('FILE_CHANGED');
+      record.ready=true;return data;
+    }catch(error){if(packBuffers.get(index)===record)packBuffers.delete(index);throw error;}
+    finally{clearTimeout(timer);controllers.delete(controller);}
+  })();
+  packBuffers.set(index,record);return record.promise;
+}
 const shell = [
   'index.html', 'offline.html', 'manifest.webmanifest', 'avatar.jpg',
   'assets/css/pages/index.css', 'assets/images/home/skills-pencil-v1.webp', 'assets/images/home/grades-pencil-v1.webp',
@@ -27,7 +57,7 @@ const shell = [
 
 async function verifiedResponse(response, file) {
   if (!response.ok || response.status !== 200 || response.type === 'opaque' || response.redirected) throw Error('FILE_UNAVAILABLE');
-  let data = await response.arrayBuffer();
+  let data = await boundedBody(response,file.text?file.bytes*2+4:file.bytes);
   // Git/hosts may convert Windows CRLF to LF. Hash and store one canonical UTF-8 representation.
   if (file.text) data = new TextEncoder().encode(new TextDecoder('utf-8', {ignoreBOM:true}).decode(data).replace(/\r\n/g, '\n')).buffer;
   if (data.byteLength !== file.bytes || await digest(data) !== file.hash) throw Error('FILE_CHANGED');
@@ -36,7 +66,17 @@ async function verifiedResponse(response, file) {
   headers.set('content-length', String(data.byteLength)); headers.set('x-danh-sha256', file.hash);
   return new Response(data, {status: 200, headers});
 }
-async function fetchFile(file) {
+async function fetchFile(file, usePack = true) {
+  if(usePack&&Number.isInteger(file.pack)&&catalog.packs&&!failedPacks.has(file.pack)){
+    try{
+      const data=await packData(file.pack);
+      if(!Number.isInteger(file.offset)||file.offset<0||file.offset+file.bytes>data.byteLength)throw Error('FILE_CHANGED');
+      return await verifiedResponse(new Response(data.slice(file.offset,file.offset+file.bytes),{headers:{'Content-Type':mime(file)}}),file);
+    }catch(error){
+      if(error.message==='FILE_CHANGED'||paused)throw error;
+      failedPacks.add(file.pack); // A missing pack never prevents learning or a normal-file retry.
+    }
+  }
   const controller = new AbortController();
   controllers.add(controller);
   const timer = setTimeout(() => controller.abort(), 20000);
@@ -51,7 +91,7 @@ self.addEventListener('install', event => {
     for (const url of shell) {
       const file = entries.get(absolute(url));
       if (!file) throw Error('Missing shell file: ' + url);
-      await cache.put(absolute(url), await fetchFile(file));
+      await cache.put(absolute(url), await fetchFile(file, false));
     }
   })());
 });
@@ -62,6 +102,7 @@ async function status() {
   const urls = new Set((await cache.keys()).map(request => request.url));
   const saved = catalog.files.flatMap((file, index) => urls.has(fileKey(file)) ? [index] : []);
   return {version: catalog.version, files: catalog.files.length, bytes: catalog.bytes, saved,
+    fileBytes:catalog.files.map(file=>file.bytes),
     savedBytes: saved.reduce((sum, index) => sum + catalog.files[index].bytes, 0)};
 }
 let busy = false;
@@ -70,7 +111,7 @@ async function batch(indexes, verify) {
   busy = true;
   paused = false;
   try {
-    if (!Array.isArray(indexes) || indexes.length > 6 || indexes.some(i => !Number.isInteger(i) || !catalog.files[i])) throw Error('INVALID_BATCH');
+    if (!Array.isArray(indexes) || indexes.length > 12 || indexes.some(i => !Number.isInteger(i) || !catalog.files[i])) throw Error('INVALID_BATCH');
     const cache = await caches.open(packageCache);
     const oldNames = (await caches.keys()).filter(name => name.startsWith(prefix) && name !== packageCache && name !== stateCache);
     const result = {saved: [], failed: []};
@@ -103,7 +144,7 @@ async function batch(indexes, verify) {
         }
       }
     };
-    await Promise.all([run(), run()]);
+    await Promise.all([run(), run(), run()]);
     return result;
   } finally { busy = false; }
 }
@@ -135,7 +176,7 @@ self.addEventListener('message', event => {
         case 'STATUS': data = await status(); break;
         case 'BATCH': data = await batch(event.data.indexes, !!event.data.verify); break;
         case 'CLEANUP': await cleanup(); data = {}; break;
-        case 'PAUSE': paused = true; for (const controller of controllers) controller.abort(); data = {}; break;
+        case 'PAUSE': paused = true; for (const controller of controllers) controller.abort(); packBuffers.clear(); data = {}; break;
         case 'ACTIVATE': await self.skipWaiting(); data = {}; break;
         default: throw Error('UNKNOWN_COMMAND');
       }

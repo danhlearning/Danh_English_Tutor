@@ -10,11 +10,11 @@ Cập nhật 23/10/2026: lớp 10–12 có 100 từ/cụm từ mỗi lớp, kèm
 
 ### Cài trên iPad và học offline
 
-Website đã có PWA và trang [Học offline](offline.html). Sau khi triển khai qua **HTTPS**, mở bằng Safari → Chia sẻ → Thêm vào Màn hình chính → mở ứng dụng vừa thêm → Học offline → **Tải toàn bộ**. Kho hiện khoảng **515 MB**, gồm lớp 1–12, kỹ năng, bài cũ, ảnh, font và giọng đọc thu sẵn. Giữ ứng dụng mở khi tải; có tạm dừng, tải tiếp và kiểm tra từng tệp. Khi báo đủ, có thể tắt mạng và mở bài chưa từng học.
+Website đã có PWA và trang [Học offline](offline.html). Sau khi triển khai qua **HTTPS**, mở bằng Safari → Chia sẻ → Thêm vào Màn hình chính → mở ứng dụng vừa thêm → Học offline → **Tải toàn bộ**. Kho hiện khoảng **233 MB**, gồm lớp 1–12, kỹ năng, bài cũ, ảnh, font và giọng đọc thu sẵn. Giọng MP3 và khoảng 120 gói tải giúp giảm dung lượng và lượt kết nối. Giữ ứng dụng mở khi tải; có tạm dừng, tải tiếp và kiểm tra từng tệp. Khi báo đủ, có thể tắt mạng và mở bài chưa từng học.
 
 Hồ sơ/lượt dở được giữ trên thiết bị. iPad có thể thu hồi dữ liệu web khi thiếu bộ nhớ; nên sao lưu hồ sơ và kiểm tra bản tải trước khi đi xa. Từ/câu tự nhập phụ thuộc giọng tiếng Anh có sẵn của thiết bị; Zalo/Facebook cần mạng. Không mở tệp HTML trong Files để cài PWA. Xem [hướng dẫn và vận hành](docs/IPAD_OFFLINE.md).
 
-**Sau mọi lần đổi nội dung, ảnh, âm thanh, HTML/CSS/JS hoặc chạy bộ dựng**, chạy `node scripts/build-offline-catalog.cjs` trước khi phát hành và đưa `sw.js`, `offline-catalog.js`, `manifest.webmanifest` cùng các tệp website lên host. CI kiểm tra danh mục không bị cũ. Worker mới chờ người học chọn cập nhật trên trang offline; bổ sung kho mới trước khi tắt mạng. Tệp không đổi được lưu một lần và dùng chung giữa các phiên bản; chỉ dọn phần cũ không còn dùng sau khi đã đủ bản mới, không dọn hồ sơ.
+**Sau mọi lần đổi nội dung, ảnh, âm thanh, HTML/CSS/JS hoặc chạy bộ dựng**, chạy `node scripts/build-offline-catalog.cjs` trước khi phát hành và đưa `sw.js`, `offline-catalog.js`, `offline-packs/`, `manifest.webmanifest` cùng các tệp website lên host. Nếu thêm WAV, chạy `scripts/compress-answer-audio.cjs` với `FFMPEG_PATH` trước khi dựng danh mục; giữ WAV gốc, ứng dụng dùng MP3. CI kiểm tra danh mục và gói tải không bị cũ. Worker mới chờ người học chọn cập nhật trên trang offline; bổ sung kho mới trước khi tắt mạng. Tệp không đổi được lưu một lần và dùng chung giữa các phiên bản; chỉ dọn phần cũ không còn dùng sau khi đã đủ bản mới, không dọn hồ sơ.
 
 Kiểm tra: `node --test tests/offline/*.test.cjs`; kiểm tra trình duyệt với máy chủ tự khởi động: `node tests/offline/browser.cjs` (Playwright/Edge, có thể đặt `PLAYWRIGHT_MODULE` và `BROWSER_CHANNEL`).
 

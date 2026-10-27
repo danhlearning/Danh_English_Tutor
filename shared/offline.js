@@ -10,7 +10,7 @@
   function rpc(type, extra = {}, target = worker) {
     return new Promise((resolve, reject) => {
       const channel = new MessageChannel();
-      const timer = setTimeout(() => {channel.port1.close(); reject(Error('TIMEOUT'));}, 65000);
+      const timer = setTimeout(() => {channel.port1.close(); reject(Error('TIMEOUT'));}, 150000);
       channel.port1.onmessage = event => {
         clearTimeout(timer); channel.port1.close();
         event.data.ok ? resolve(event.data.data) : reject(Error(event.data.error));
@@ -27,8 +27,9 @@
     if (saved.size === info?.files) ui.download.textContent = 'Bắt đầu học';
   }
   function render() {
-    ui.progress.max = info.files; ui.progress.value = saved.size;
-    ui.counts.textContent = `${saved.size.toLocaleString('vi-VN')} / ${info.files.toLocaleString('vi-VN')} tệp đã lưu`;
+    const bytes=info.fileBytes?[...saved].reduce((sum,index)=>sum+info.fileBytes[index],0):null;
+    ui.progress.max = bytes===null?info.files:info.bytes; ui.progress.value = bytes===null?saved.size:bytes;
+    ui.counts.textContent = `${saved.size.toLocaleString('vi-VN')} / ${info.files.toLocaleString('vi-VN')} tệp đã lưu`+(bytes===null?'':` · ${size(bytes)} / ${size(info.bytes)}`);
     controls();
   }
   async function refresh() {
@@ -67,9 +68,9 @@
       await refresh();
       const indexes = Array.from({length: info.files}, (_, i) => i).filter(i => verify || !saved.has(i));
       let checked = 0;
-      for (let offset = 0; offset < indexes.length && !stopped; offset += 4) {
+      for (let offset = 0; offset < indexes.length && !stopped; offset += 12) {
         ui.status.textContent = verify ? 'Đang kiểm tra các tệp đã lưu…' : 'Đang tải kho học. Bạn có thể tạm dừng và tải tiếp.';
-        const result = await rpc('BATCH', {indexes: indexes.slice(offset, offset + 4), verify});
+        const result = await rpc('BATCH', {indexes: indexes.slice(offset, offset + 12), verify});
         for (const index of result.saved) saved.add(index);
         for (const item of result.failed) saved.delete(item.index);
         checked += result.saved.length + result.failed.length;

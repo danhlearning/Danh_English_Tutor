@@ -15,10 +15,18 @@ test('offline release covers every deployed page, image, voice and local font, e
     assert(urls.has(`grade/lop${grade}/${grade === 2 ? 'gsunit1' : 'unit1'}.html`));
   }
   assert(catalog.files.filter(file => file.url.startsWith('shared/answer-audio/')).length >= 4515);
+  assert(catalog.files.filter(file=>file.url.startsWith('shared/answer-audio/')).every(file=>file.url.endsWith('.mp3')));
   assert(urls.has('assets/fonts/nunito/vietnamese.woff2'));
   assert(urls.has('offline.html'));
   assert(catalog.files.every(file => !/(?:^|\/)(?:tests|artifacts|tmp|node_modules)\//.test(file.url)));
   assert(catalog.files.every(file => /^[a-f0-9]{64}$/.test(file.hash) && file.bytes > 0));
+});
+test('bounded download packs cover every file with exact bytes and digest',()=>{
+ const crypto=require('node:crypto'),catalog=build();
+ assert(catalog.packs.length<150,'download request count is reduced from thousands');
+ assert(catalog.bytes<250*1024*1024,'compressed speech replaces WAV in the full offline download');
+ const packs=catalog.packs.map(pack=>{const data=fs.readFileSync(path.join(root,pack.url));assert(data.length<=8*1024*1024);assert.equal(crypto.createHash('sha256').update(data).digest('hex'),pack.hash);return data;});
+ for(const file of catalog.files){const data=packs[file.pack].subarray(file.offset,file.offset+file.bytes);assert.equal(data.length,file.bytes,file.url);assert.equal(crypto.createHash('sha256').update(data).digest('hex'),file.hash,file.url);}
 });
 test('packaged lessons have no remote media dependencies', () => {
   const catalog = build();

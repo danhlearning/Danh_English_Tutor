@@ -100,7 +100,7 @@
   const gamePlaying = () => [...document.querySelectorAll('[data-danh-game-surface],.tab-content.active[id^="game-"]')]
     .some(node => !node.closest('[hidden]') && node.getClientRects().length > 0);
   const mediaAllowed = () => !mediaClosed && !document.hidden && navigator.onLine !== false && !connection?.saveData && !/^(slow-2g|2g)$/.test(connection?.effectiveType || '');
-  const audioURL = text => new URL(`shared/answer-audio/${answerAudioKey(text)}.wav`,base).href;
+  const audioURL = text => new URL(`shared/answer-audio/${answerAudioKey(text)}.mp3`,base).href;
   const localMedia = value => {try {const url=new URL(value,document.baseURI);return url.origin===base.origin && url.pathname.startsWith(base.pathname) && /^https?:$/.test(url.protocol) && /\.(?:webp|png|jpe?g|svg|avif)$/i.test(url.pathname) ? url.href : null;}catch{return null;}};
   function trimGameAudio() {
     for (const [key, entry] of gameAudio) {
@@ -125,7 +125,7 @@
           const chunks=[];let bytes=0;
           while(true){const part=await reader.read();if(part.done)break;bytes+=part.value.byteLength;if(bytes>1024*1024){await reader.cancel();throw Error('size');}chunks.push(part.value);}
           if(controller.signal.aborted || !mediaAllowed())throw Error('paused');
-          entry.url=URL.createObjectURL(new Blob(chunks,{type:'audio/wav'}));entry.bytes=bytes;mediaBytes+=bytes;trimGameAudio();
+          entry.url=URL.createObjectURL(new Blob(chunks,{type:response.headers.get('content-type')||'audio/mpeg'}));entry.bytes=bytes;mediaBytes+=bytes;trimGameAudio();
         } catch {if(gameAudio.get(entry.key)===entry)gameAudio.delete(entry.key);}
         finally {clearTimeout(timer);mediaControllers.delete(controller);mediaBusy--;pumpGameMedia();}
       })();

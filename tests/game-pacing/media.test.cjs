@@ -51,7 +51,7 @@ test('save-data, hidden/offline and mute do not start speculative audio or autom
 
 test('failed warming never blocks direct playback; late rejection cannot restart stopped speech', async()=>{
   const s=setup({fail:true,hold:true});s.window.DanhGameFlow.prepare(['fox']);await flush();assert.equal(s.window.DanhGameFlow.stats.ready,0);
-  const result=s.window.DanhAnswerSpeech.listen('fox');const a=s.audio[0];assert.match(a.src,/\/answer-audio\/.+\.wav$/);
+  const result=s.window.DanhAnswerSpeech.listen('fox');const a=s.audio[0];assert.match(a.src,/\/answer-audio\/.+\.mp3$/);
   s.window.DanhAnswerSpeech.stop();a.reject(Error('interrupted'));await result;await flush();
   assert.equal(s.audio.length,1);assert.equal(s.window.utterance,undefined);assert(!s.events.some(e=>e.state==='error'));
 });

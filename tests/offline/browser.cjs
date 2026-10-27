@@ -5,7 +5,11 @@ fs.mkdirSync(out, {recursive:true});
 const types = {'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.webmanifest':'application/manifest+json','.png':'image/png','.jpg':'image/jpeg','.svg':'image/svg+xml','.webp':'image/webp','.wav':'audio/wav','.mp3':'audio/mpeg','.woff2':'font/woff2','.json':'application/json'};
 let corrupt = false, upgrade = false;
 const upgradedIndex = fs.readFileSync(path.join(root,'index.html'),'utf8').replace(/\r\n/g,'\n')+'\n<!-- Offline update fixture -->\n';
-const audio = 'shared/answer-audio/' + fs.readdirSync(path.join(root, 'shared/answer-audio')).find(file=>file.endsWith('.wav'));
+const audio = 'shared/answer-audio/' + fs.readdirSync(path.join(root, 'shared/answer-audio')).find(file=>file.endsWith('.mp3'));
+const initialCatalog={self:{}};require('node:vm').runInNewContext(fs.readFileSync(path.join(root,'offline-catalog.js'),'utf8'),initialCatalog);
+const audioRecord=initialCatalog.self.DANH_OFFLINE_CATALOG.files.find(file=>file.url===audio);
+const audioPack=initialCatalog.self.DANH_OFFLINE_CATALOG.packs[audioRecord.pack].url;
+let packRequests=0;
 const server = http.createServer((request,response) => {
   const url = new URL(request.url, 'http://localhost');
   if (!url.pathname.startsWith('/course/')) {response.writeHead(404).end();return;}
@@ -23,7 +27,8 @@ const server = http.createServer((request,response) => {
     response.end('self.DANH_OFFLINE_CATALOG='+JSON.stringify(catalog)+';');return;
   }
   if(upgrade && relative==='index.html'){response.end(upgradedIndex);return;}
-  if (corrupt && relative === audio) {response.end('incorrect deployment response');return;}
+  if(relative.startsWith('offline-packs/'))packRequests++;
+  if (corrupt && (relative === audio || relative === audioPack)) {response.end('incorrect deployment response');return;}
   response.setHeader('Content-Length', fs.statSync(file).size);
   fs.createReadStream(file).pipe(response);
 });
@@ -74,6 +79,7 @@ async function main() {
     await page.locator('#download').click();
     await waitDownload();
     const full = await rpc(page,'STATUS');assert.equal(full.saved.length,full.files);
+    assert(packRequests<200,'fewer than 200 bundle requests for the full library');
     console.log(`PASS full package: ${full.files} files, ${full.bytes} bytes; pause/resume and integrity`);
     // Real deletion and corruption must be detected and repaired.
     await page.evaluate(async ({base,hash})=>{
@@ -155,7 +161,7 @@ async function main() {
     await context.setOffline(true);await page.reload();await page.locator('#download:enabled').waitFor();
     await page.locator('#download').click();await page.waitForURL(base+'index.html');
     assert.deepEqual(errors,[]);
-    fs.writeFileSync(path.join(out,'results.json'),JSON.stringify({files:full.files,bytes:full.bytes,pauseResume:true,integrity:true,fullOfflineVerification:true,grades:12,deepLinks:true,workerRestart:true,range:media,cachedAudio:true,legacyPronunciationAudio:true,roundResume:true,updatePreservesProgress:true,errors},null,2));
+    fs.writeFileSync(path.join(out,'results.json'),JSON.stringify({files:full.files,bytes:full.bytes,packRequests,pauseResume:true,integrity:true,fullOfflineVerification:true,grades:12,deepLinks:true,workerRestart:true,range:media,cachedAudio:true,legacyPronunciationAudio:true,roundResume:true,updatePreservesProgress:true,errors},null,2));
     console.log('PASS offline all 12 grades, library, old pages, range audio, worker restart, subdirectory deployment and responsive layout');
   } finally {await browser.close();}
 }

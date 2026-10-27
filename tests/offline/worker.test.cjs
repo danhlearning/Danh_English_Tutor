@@ -6,7 +6,7 @@ function fixture(stores = new Map(), version = 'new') {
   const listeners = {}, origin = 'https://example.test/course/';
   let text = 'sample audio data';
   const file = {url:'sample.wav',bytes:Buffer.byteLength(text),hash:hash(text)};
-  let downloads = 0, corrupt = false, quota = false;
+  let downloads = 0, corrupt = false, quota = false, missingPack = false;
   const cacheApi = {
     async open(name) {
       if (!stores.has(name)) stores.set(name, new Map());
@@ -22,14 +22,14 @@ function fixture(stores = new Map(), version = 'new') {
   };
   const context = vm.createContext({URL, Request, Response, Headers, DOMException, AbortController, TextEncoder, TextDecoder, setTimeout, clearTimeout,
     crypto:crypto.webcrypto, caches:cacheApi, importScripts() {},
-    fetch:async () => {downloads++;return new Response(corrupt ? 'bad file' : text, {headers:{'content-type':'audio/wav'}});},
+    fetch:async url => {downloads++;if(missingPack&&url.endsWith('.bin'))return new Response('',{status:404});return new Response(corrupt ? 'bad file' : text, {headers:{'content-type':'audio/wav'}});},
     self:{DANH_OFFLINE_CATALOG:{version,bytes:file.bytes,files:[file]},location:{href:origin+'sw.js'},
       clients:{claim:async()=>{}},skipWaiting:async()=>{},addEventListener:(name, fn)=>listeners[name]=fn}
   });
   vm.runInContext(source, context);
   return {context, stores, cacheApi, file, origin, listeners, get downloads(){return downloads;},
     get key(){return origin+'__danh_offline_files__/'+file.hash;},
-    set corrupt(value){corrupt=value;}, set quota(value){quota=value;}, set content(value){text=value;},
+    set corrupt(value){corrupt=value;}, set quota(value){quota=value;}, set content(value){text=value;},set missingPack(value){missingPack=value;},
     async rpc(type, extra={}) {
       let result, wait;
       listeners.message({data:{type,...extra},source:{url:origin+'offline.html'},ports:[{postMessage:value=>result=value}],waitUntil:p=>wait=p});
@@ -97,7 +97,22 @@ test('Safari audio ranges include suffix, open end and invalid range responses',
 test('batch limits and concurrency protect the queue', async () => {
   const app = fixture();
   assert.equal((await app.rpc('BATCH', {indexes:[-1]})).error, 'INVALID_BATCH');
-  assert.equal((await app.rpc('BATCH', {indexes:Array(7).fill(0)})).error, 'INVALID_BATCH');
+  assert.equal((await app.rpc('BATCH', {indexes:Array(13).fill(0)})).error, 'INVALID_BATCH');
   const results = await Promise.all([app.rpc('BATCH', {indexes:[0]}),app.rpc('BATCH', {indexes:[0]})]);
   assert(results.some(result=>result.error === 'BUSY'));
+});
+function usePack(app){app.file.pack=0;app.file.offset=0;app.context.self.DANH_OFFLINE_CATALOG.packs=[{url:'offline-packs/test.bin',hash:app.file.hash,bytes:app.file.bytes}];}
+test('packed downloads share one request, verify both digests and keep normal cache/range behavior', async()=>{
+ const app=fixture();usePack(app);
+ assert.deepEqual((await app.rpc('BATCH',{indexes:[0,0,0]})).data.saved,[0,0,0]);
+ assert.equal(app.downloads,1);assert.deepEqual((await app.rpc('STATUS')).data.saved,[0]);
+ assert.equal(vm.runInContext('packBuffers.size',app.context),1);
+ await app.rpc('PAUSE');assert.equal(vm.runInContext('packBuffers.size',app.context),0);
+});
+test('corrupt packs never count as saved; unavailable packs fall back to individual files',async()=>{
+ const corrupt=fixture();usePack(corrupt);corrupt.corrupt=true;
+ assert.equal((await corrupt.rpc('BATCH',{indexes:[0]})).data.failed[0].code,'FILE_CHANGED');
+ assert.deepEqual((await corrupt.rpc('STATUS')).data.saved,[]);
+ const fallback=fixture();usePack(fallback);fallback.missingPack=true;
+ assert.deepEqual((await fallback.rpc('BATCH',{indexes:[0]})).data.saved,[0]);assert.equal(fallback.downloads,2);
 });
