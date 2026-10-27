@@ -55,7 +55,7 @@
       const response = await fetch(item.url.href, {
         signal: controller.signal, credentials: 'same-origin', priority: 'low',
         // Keep the server's normal freshness/revalidation rules; no forced
-        // permanent cache and no service worker holding on to older lessons.
+        // permanent HTTP cache. Explicit offline packages are managed by the PWA.
         cache: 'default', redirect: 'error',
         headers: item.kind === 'page' ? {Accept: 'text/html'} : undefined
       });

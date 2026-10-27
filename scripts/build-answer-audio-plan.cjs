@@ -29,5 +29,13 @@ for(const [name,field] of [['daysAndMonthsVocab','name'],['dateQuestions','answe
 const reviewUnits=vm.createContext({window:{}});run(reviewUnits,'grade/lop2/assets/data/gs-unit1-data.js');run(reviewUnits,'grade/lop2/assets/data/gs-units-data.js');const {Review}=require('../grade/lop2/assets/js/mixed-review-core.js');const review=new Review(reviewUnits.window.grade2Units,{getItem:()=>null,setItem(){}});for(const record of review.bank.values())add(record.answer,'grade2-review');
 for(const q of require('../assets/data/grammar/questions.js')){question(q,'grammar-room');add(require('../assets/js/grammar/skills-library.js').sentence(q),'grammar-room');}for(const t of require('../assets/data/grammar/catalog.js').topics)for(const seed of t.seeds)add(seed.focus,'grammar-room');
 const ipa=vm.createContext({window:{}});let source=fs.readFileSync(path.join(root,'assets/js/pages/ipa-practice.js'),'utf8').split('// Trạng thái ứng dụng')[0];vm.runInContext(source+';window.words=[...basicWords,...intermediateWords,...toeicWords];',ipa);for(const w of ipa.window.words)for(const text of w.word.split('/'))add(text,'ipa');
+// Old pronunciation theory and the original vocabulary notebook remain public offline lessons.
+for(const file of fs.readdirSync(root).filter(name=>name.endsWith('.html'))){
+ const html=fs.readFileSync(path.join(root,file),'utf8');
+ for(const match of html.matchAll(/speakWord\('([^']+)'\)/g))add(match[1],'legacy-listen');
+}
+const legacyVocabulary=vm.createContext({window:{}}),legacySource=fs.readFileSync(path.join(root,'assets/js/pages/flashcard.js'),'utf8').split('const database =')[0];
+vm.runInContext(legacySource+';window.rawData=rawData;',legacyVocabulary);
+for(const words of Object.values(legacyVocabulary.window.rawData))for(const record of words)add(record.split('|')[0],'legacy-vocabulary');
 const plan=[...entries.values()].sort((a,b)=>Number(b.groups.includes('grade7'))-Number(a.groups.includes('grade7'))||a.id.localeCompare(b.id));
 fs.mkdirSync(path.join(root,'artifacts/correct-answer-speech'),{recursive:true});fs.writeFileSync(path.join(root,'artifacts/correct-answer-speech/audio-plan.json'),JSON.stringify(plan,null,2));console.log(`${plan.length} English audio files; ${plan.filter(a=>a.groups.includes('grade7')).length} for grade 7.`);

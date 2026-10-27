@@ -188,7 +188,7 @@
       try{
         stopAnswerSpeech();
         const speechToken=answerSpeechToken;
-        if((manual||gamePlaying())&&!preferSpeech){
+        if((manual||gamePlaying()||navigator.onLine===false)&&!preferSpeech){
           try{if(navigator.audioSession)navigator.audioSession.type='playback';}catch{}
           return playAnswerAudio(clean).then(played=>played || (speechToken===answerSpeechToken && !document.hidden && this.say(clean,{manual,preferSpeech:true})));
         }

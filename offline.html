@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffaf0">
+  <title>Học offline · Danh English Tutor</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./assets/icons/app-180.png">
+  <link rel="stylesheet" href="./shared/learner-font.css">
+  <link rel="stylesheet" href="./shared/offline.css">
+  <script src="./shared/pwa.js" defer></script>
+  <script src="./shared/offline.js" defer></script>
+</head>
+<body>
+  <main class="offline-paper">
+    <a class="back" href="./index.html">← Về trang chủ</a>
+    <p class="eyebrow">Ba lô học tập</p>
+    <h1>Mang cả kho học theo bạn</h1>
+    <p>Tải bài học, trò chơi, hình và giọng đọc để học khi không có Wi-Fi.</p>
+    <section aria-labelledby="install-title">
+      <h2 id="install-title">Cài trên iPad</h2>
+      <ol>
+        <li>Mở website bằng Safari, bấm <strong>Chia sẻ → Thêm vào Màn hình chính</strong>. Bật “Mở dưới dạng ứng dụng web” nếu có.</li>
+        <li>Mở biểu tượng <strong>Học cùng Danh</strong> vừa thêm, rồi vào <strong>Học offline</strong> để tải kho học trong ứng dụng.</li>
+        <li>Giữ ứng dụng mở khi tải. Khi báo đã đủ, bật chế độ máy bay và mở thử bài học.</li>
+      </ol>
+      <p id="install-state" class="note"></p>
+    </section>
+    <section aria-labelledby="download-title">
+      <h2 id="download-title">Tải toàn bộ kho học</h2>
+      <p id="package-size">Đang xem dung lượng kho học…</p>
+      <p id="status" role="status" aria-live="polite">Đang chuẩn bị…</p>
+      <progress id="progress" value="0" max="1" aria-label="Tiến trình tải kho học"></progress>
+      <p id="counts" class="note"></p>
+      <div class="actions">
+        <button id="download" disabled>Tải toàn bộ</button>
+        <button id="pause" class="secondary" hidden>Tạm dừng</button>
+        <button id="verify" class="secondary" disabled>Kiểm tra bản tải</button>
+        <button id="update" class="secondary" hidden>Cập nhật ứng dụng</button>
+      </div>
+      <p id="storage" class="note"></p>
+      <p class="note">Tạm dừng hoặc đóng ứng dụng vẫn giữ phần đã tải. Khi thiếu mạng, dung lượng hoặc chuyển sang ứng dụng khác, hãy quay lại và bấm “Tải tiếp”.</p>
+    </section>
+    <section aria-labelledby="keep-title">
+      <h2 id="keep-title">Giữ bài học và tiến độ</h2>
+      <p>Hồ sơ, lượt đang chơi và tiến độ được lưu trên thiết bị. Bạn có thể sao lưu trong phần Hồ sơ người học của trang học.</p>
+      <p>iPad có thể dọn dữ liệu web khi thiếu dung lượng. Hãy giữ bộ nhớ trống, sao lưu tiến độ định kỳ và kiểm tra bản tải trước khi đi xa.</p>
+      <p class="note">Kho offline gồm các tệp học có sẵn. Giọng đọc cho từ/câu tự nhập tùy giọng tiếng Anh đã tải trên iPad. Liên kết Zalo và Facebook cần mạng.</p>
+    </section>
+  </main>
+  <contact-danh></contact-danh>
+  <script src="./shared/contact-footer.js"></script>
+</body>
+</html>

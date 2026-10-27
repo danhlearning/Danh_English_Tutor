@@ -8,6 +8,16 @@ Cập nhật 23/10/2026: lớp 10–12 có 100 từ/cụm từ mỗi lớp, kèm
 
 ## Mở website
 
+### Cài trên iPad và học offline
+
+Website đã có PWA và trang [Học offline](offline.html). Sau khi triển khai qua **HTTPS**, mở bằng Safari → Chia sẻ → Thêm vào Màn hình chính → mở ứng dụng vừa thêm → Học offline → **Tải toàn bộ**. Kho hiện khoảng **515 MB**, gồm lớp 1–12, kỹ năng, bài cũ, ảnh, font và giọng đọc thu sẵn. Giữ ứng dụng mở khi tải; có tạm dừng, tải tiếp và kiểm tra từng tệp. Khi báo đủ, có thể tắt mạng và mở bài chưa từng học.
+
+Hồ sơ/lượt dở được giữ trên thiết bị. iPad có thể thu hồi dữ liệu web khi thiếu bộ nhớ; nên sao lưu hồ sơ và kiểm tra bản tải trước khi đi xa. Từ/câu tự nhập phụ thuộc giọng tiếng Anh có sẵn của thiết bị; Zalo/Facebook cần mạng. Không mở tệp HTML trong Files để cài PWA. Xem [hướng dẫn và vận hành](docs/IPAD_OFFLINE.md).
+
+**Sau mọi lần đổi nội dung, ảnh, âm thanh, HTML/CSS/JS hoặc chạy bộ dựng**, chạy `node scripts/build-offline-catalog.cjs` trước khi phát hành và đưa `sw.js`, `offline-catalog.js`, `manifest.webmanifest` cùng các tệp website lên host. CI kiểm tra danh mục không bị cũ. Worker mới chờ người học chọn cập nhật trên trang offline; bổ sung kho mới trước khi tắt mạng. Tệp không đổi được lưu một lần và dùng chung giữa các phiên bản; chỉ dọn phần cũ không còn dùng sau khi đã đủ bản mới, không dọn hồ sơ.
+
+Kiểm tra: `node --test tests/offline/*.test.cjs`; kiểm tra trình duyệt với máy chủ tự khởi động: `node tests/offline/browser.cjs` (Playwright/Edge, có thể đặt `PLAYWRIGHT_MODULE` và `BROWSER_CHANNEL`).
+
 ### Luyện từ vựng theo cấp độ
 
 `flashcard.html` dùng chung dữ liệu Unit lớp 1–12 qua `shared/vocabulary-library.js`. Có lật thẻ, chọn nghĩa, nghe chọn từ, gõ từ và dùng từ trong câu; lọc cấp độ, lớp, Unit và tìm từ. Tiến độ kỹ năng riêng qua hồ sơ; giữ lượt dở, nháp, gợi ý và kết quả. Sổ tay và lượt cũ ở `flashcard-previous.html`, giữ nguyên khóa lưu.
