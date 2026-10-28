@@ -19,6 +19,13 @@ const g2=vm.createContext({window:{}});for(const name of fs.readdirSync(path.joi
 const bodyparts=vm.createContext({window:{}});run(bodyparts,'grade/lop2/assets/data/bodyparts-data.js');for(const w of bodyparts.window.bodyPartsLesson.vocabulary){add(w.name,'grade2-bodyparts');add(w.sentence,'grade2-bodyparts');}for(const q of bodyparts.window.bodyPartsLesson.questions)add(q.answer,'grade2-bodyparts');
 const topicArt=vm.createContext({window:{}});run(topicArt,'grade/lop2/assets/js/pencil-images-data.js');for(const [topic,words] of Object.entries(topicArt.window.DanhGrade2PencilManifest))for(const name of Object.keys(words))add(name,`grade2-topic-${topic}`);
 for(const file of fs.readdirSync(path.join(root,'grade/lop2/assets/js/topics')).filter(n=>n.endsWith('.js'))){const source=fs.readFileSync(path.join(root,'grade/lop2/assets/js/topics',file),'utf8');for(const match of source.matchAll(/\bname:\s*(['"])((?:\\.|(?!\1).)*)\1/g))add(vm.runInNewContext(match[0].slice(match[0].indexOf(':')+1)),`grade2-topic-${file.replace('.js','')}`);}
+// Legacy sentence games use these exact English strings, including punctuation.
+// A word-only plan leaves their answer prefetches missing on the public site.
+for(const file of fs.readdirSync(path.join(root,'grade/lop2/assets/js/topics')).filter(n=>n.endsWith('.js'))){
+ const source=fs.readFileSync(path.join(root,'grade/lop2/assets/js/topics',file),'utf8');
+ for(const match of source.matchAll(/\b(?:answer|altAnswer|targetSentence|sentence):\s*(['"])((?:\\.|(?!\1).)*)\1/g))add(vm.runInNewContext(match[0].slice(match[0].indexOf(':')+1)),`grade2-sentences-${file.replace('.js','')}`);
+}
+for(const color of ['red','blue','yellow','green','orange','purple','pink','black','white','gray','silver','brown','transparent'])add(`It is ${color}.`,'grade2-colors-sentences');
 const numberSource=fs.readFileSync(path.join(root,'grade/lop2/assets/js/topics/numbers.js'),'utf8');const numberToWords=vm.runInNewContext('('+numberSource.match(/function numberToWords\(n\) \{[\s\S]*?\n  \}/)[0]+')');for(let n=1;n<=100;n++)add(numberToWords(n),'grade2-topic-numbers');
 const datesSource=fs.readFileSync(path.join(root,'grade/lop2/assets/js/topics/dates.js'),'utf8');
 for(const [name,field] of [['daysAndMonthsVocab','name'],['dateQuestions','answer']]){

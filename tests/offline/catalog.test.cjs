@@ -1,61 +1,30 @@
-const test = require('node:test'), assert = require('node:assert/strict');
-const fs = require('node:fs'), path = require('node:path'), vm = require('node:vm');
-const {build, serialize, canonical} = require('../../scripts/build-offline-catalog.cjs');
-const root = path.resolve(__dirname, '../..');
-test('text hashes survive Git newline conversion while binary media bytes remain unchanged', () => {
-  assert.deepEqual(canonical(Buffer.from('Tiếng Anh\r\nline\r\n'), true), Buffer.from('Tiếng Anh\nline\n'));
-  const binary = Buffer.from([0,13,10,255]); assert.deepEqual(canonical(binary, false), binary);
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const source=fs.readFileSync('shared/pwa.js','utf8');
+function setup(registration,{failUpdate=false}={}){
+ const calls={register:0,updated:0,unregistered:0,deleted:[]};
+ if(registration){registration.update=async()=>{calls.updated++;if(failUpdate)throw Error('network');};registration.unregister=async()=>{calls.unregistered++;};}
+ const context={window:{},document:{currentScript:{src:'https://lesson.test/course/shared/pwa.js'}},URL,
+  navigator:{serviceWorker:{getRegistration:async()=>registration,register(){calls.register++;}}},
+  caches:{keys:async()=>['danh-offline:%2Fcourse%2F:files','danh-offline:%2Fother%2F:files','other-app'],delete:async name=>calls.deleted.push(name)}};
+ context.window.caches=context.caches;vm.runInNewContext(source,context);return {context,calls};
+}
+test('fresh visitors do not register a worker, prefetch pages or download a package',async()=>{
+ const s=setup(null);await s.context.window.DanhPWA.ready;assert.equal(s.calls.register,0);assert.equal(s.calls.updated,0);assert.deepEqual(s.calls.deleted,[]);assert.equal(s.context.window.DanhPWA.retired,true);
+ assert(!fs.existsSync('offline-catalog.js'));assert(!fs.existsSync('offline-packs'));
+ assert(!fs.readFileSync('shared/learner-profile.js','utf8').includes("new URL('shared/site-preload.js"));
+ assert(!fs.readFileSync('index.html','utf8').includes('offline.html'));assert(!fs.readFileSync('shared/contact-footer.js','utf8').includes('offline.html'));
 });
-test('offline release covers every deployed page, image, voice and local font, excludes development files', () => {
-  const catalog = build(), urls = new Set(catalog.files.map(file => file.url));
-  assert.equal(fs.readFileSync(path.join(root, 'offline-catalog.js'), 'utf8').replace(/\r\n/g, '\n'), serialize(catalog), 'rebuild offline catalog');
-  assert.equal(urls.size, catalog.files.length);
-  for (let grade = 1; grade <= 12; grade++) {
-    assert(urls.has(`grade/lop${grade}/lop${grade}.html`));
-    assert(urls.has(`grade/lop${grade}/${grade === 2 ? 'gsunit1' : 'unit1'}.html`));
-  }
-  assert(catalog.files.filter(file => file.url.startsWith('shared/answer-audio/')).length >= 4515);
-  assert(catalog.files.filter(file=>file.url.startsWith('shared/answer-audio/')).every(file=>file.url.endsWith('.mp3')));
-  assert(urls.has('assets/fonts/nunito/vietnamese.woff2'));
-  assert(urls.has('offline.html'));
-  assert(catalog.files.every(file => !/(?:^|\/)(?:tests|artifacts|tmp|node_modules)\//.test(file.url)));
-  assert(catalog.files.every(file => /^[a-f0-9]{64}$/.test(file.hash) && file.bytes > 0));
+test('retires only this exact worker and cache scope without touching learner storage',async()=>{
+ const s=setup({scope:'https://lesson.test/course/',active:{scriptURL:'https://lesson.test/course/sw.js'}});await s.context.window.DanhPWA.ready;
+ assert.equal(s.calls.updated,1);assert.equal(s.calls.unregistered,1);assert.deepEqual(s.calls.deleted,['danh-offline:%2Fcourse%2F:files']);
+ assert(!/localStorage|sessionStorage|indexedDB|\.clear\(/.test(source));
 });
-test('bounded download packs cover every file with exact bytes and digest',()=>{
- const crypto=require('node:crypto'),catalog=build();
- assert(catalog.packs.length<150,'download request count is reduced from thousands');
- assert(catalog.bytes<250*1024*1024,'compressed speech replaces WAV in the full offline download');
- const packs=catalog.packs.map(pack=>{const data=fs.readFileSync(path.join(root,pack.url));assert(data.length<=8*1024*1024);assert.equal(crypto.createHash('sha256').update(data).digest('hex'),pack.hash);return data;});
- for(const file of catalog.files){const data=packs[file.pack].subarray(file.offset,file.offset+file.bytes);assert.equal(data.length,file.bytes,file.url);assert.equal(crypto.createHash('sha256').update(data).digest('hex'),file.hash,file.url);}
+test('other apps and nested scopes are not unregistered or cleared',async()=>{
+ for(const registration of [{scope:'https://lesson.test/',active:{scriptURL:'https://lesson.test/sw.js'}},{scope:'https://lesson.test/course/',active:{scriptURL:'https://lesson.test/course/another-app.js'}}]){
+  const s=setup(registration);await s.context.window.DanhPWA.ready;assert.equal(s.calls.updated,0);assert.equal(s.calls.unregistered,0);assert.deepEqual(s.calls.deleted,[]);
+ }
 });
-test('packaged lessons have no remote media dependencies', () => {
-  const catalog = build();
-  for (const file of catalog.files.filter(file => /\.(?:html|js|css)$/.test(file.url))) {
-    const source = fs.readFileSync(path.join(root, file.url), 'utf8');
-    assert(!/https?:\/\/(?:images\.unsplash\.com|fonts\.googleapis\.com|fonts\.gstatic\.com)/.test(source), file.url);
-  }
-});
-test('old pronunciation examples and notebook words have their own offline voice files', () => {
-  const audioKey=text=>{let value=2166136261;for(const c of text.trim().toLowerCase())value=Math.imul(value^c.charCodeAt(0),16777619);return(value>>>0).toString(16).padStart(8,'0');};
-  const words=new Set();
-  for(const file of fs.readdirSync(root).filter(name=>name.endsWith('.html'))){
-    for(const match of fs.readFileSync(path.join(root,file),'utf8').matchAll(/speakWord\('([^']+)'\)/g))words.add(match[1]);
-  }
-  const context=vm.createContext({window:{}});
-  vm.runInContext(fs.readFileSync(path.join(root,'assets/js/pages/flashcard.js'),'utf8').split('const database =')[0]+';window.rawData=rawData;',context);
-  for(const records of Object.values(context.window.rawData))for(const record of records)words.add(record.split('|')[0]);
-  for(const word of words)assert(fs.statSync(path.join(root,`shared/answer-audio/${audioKey(word)}.wav`)).size>1000,word);
-});
-test('shell resources exist in the full catalog and installation reaches old/generated pages', () => {
-  const catalog = build(), urls = new Set(catalog.files.map(file => file.url));
-  const source = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
-  const shellSource = source.match(/const shell = (\[[\s\S]*?\n\]);/)[1];
-  for (const file of vm.runInNewContext(shellSource)) assert(urls.has(file), file);
-  assert(fs.readFileSync(path.join(root, 'shared/contact-footer.js'), 'utf8').includes('shared/pwa.js'));
-  for (const size of [180, 192, 512]) {
-    const png = fs.readFileSync(path.join(root, `assets/icons/app-${size}.png`));
-    assert.equal(png.readUInt32BE(16), size); assert.equal(png.readUInt32BE(20), size);
-  }
-  const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.webmanifest')));
-  assert.equal(manifest.scope, './'); assert.equal(manifest.start_url, './index.html');
+test('an unavailable update still unregisters this old offline worker',async()=>{
+ const s=setup({scope:'https://lesson.test/course/',active:{scriptURL:'https://lesson.test/course/sw.js'}},{failUpdate:true});
+ await s.context.window.DanhPWA.ready;assert.equal(s.calls.updated,1);assert.equal(s.calls.unregistered,1);assert.deepEqual(s.calls.deleted,['danh-offline:%2Fcourse%2F:files']);
 });

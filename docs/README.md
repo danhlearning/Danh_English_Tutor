@@ -1,5 +1,7 @@
 # Tài liệu dự án
 
+- [Chuyển sang tải trực tuyến](IPAD_OFFLINE.md): gỡ worker/cache offline cũ, giữ hồ sơ và ưu tiên ảnh/giọng đọc.
+
 - [Hồ sơ người học](LEARNER_PROFILES.md): chọn tên, lưu lộ trình riêng, phiên/tab, chuyển đổi và sao lưu.
 
 - [Nguyên tắc thiết kế game học tiếng Anh](NGUYEN_TAC_GAME_HOC_TIENG_ANH.md): định hướng chung, vòng học, giao diện Nunito, âm thanh, animation, tiến độ và nghiệm thu cho toàn website.

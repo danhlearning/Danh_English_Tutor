@@ -1,5 +1,7 @@
 # Nhịp game và chuẩn bị câu tiếp — 25/10/2026
 
+Cập nhật 28/10/2026: bỏ tải kho offline và tải trước trang. Nhóm tối đa tám thẻ gần màn hình được chuẩn bị MP3 im lặng bằng cache giới hạn trong phiên và phát lại bằng phần tử audio đã nạp; không đánh dấu thẻ từ là game. Lớp 2 thống nhất MP3 học từ/mẫu câu 0.85×, TTS 0.82; trong game giữ MP3 1.15×, TTS 0.95. Ảnh WebP nhỏ có tải sau, giữ ảnh gốc trong `srcset`. Chi tiết và kết quả mới: [tải trực tuyến và nghe ngay](reports/online-audio-2026-10-28.md). Các kết quả dưới đây là nghiệm thu ngày 25/10.
+
 - Mục tiêu học: giữ hoạt động nhận nghĩa, nghe, ghép chữ, chọn, gõ và viết câu của các game hiện có; giảm chờ tài nguyên để người học duy trì hứng thú.
 - Cách chơi: giữ nút nghe lại và quyền tự chuyển câu; ở game đang tự chuyển, chờ giọng đáp án kết thúc rồi mới chuyển.
 - Giọng game: TTS 0.95; tệp đọc 1.15×, giữ cao độ. Phần học thẻ và mẫu câu giữ nhịp đọc hiện có.

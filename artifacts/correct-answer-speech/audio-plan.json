@@ -3037,6 +3037,13 @@
     ]
   },
   {
+    "id": "027bee49",
+    "text": "I sleep on my bed.",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "0293a798",
     "text": "Fifty-Four",
     "groups": [
@@ -3057,6 +3064,13 @@
       "grade2-topic-adjectives",
       "grammar-room",
       "ipa"
+    ]
+  },
+  {
+    "id": "0297e13b",
+    "text": "A red scarf around her neck",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -3326,6 +3340,13 @@
     ]
   },
   {
+    "id": "04c1fd09",
+    "text": "sit down.",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "04d33a22",
     "text": "studying",
     "groups": [
@@ -3392,6 +3413,13 @@
     ]
   },
   {
+    "id": "0569aeb1",
+    "text": "I am confused.",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "0571c3f5",
     "text": "We have some bananas for the celebration.",
     "groups": [
@@ -3427,6 +3455,13 @@
     ]
   },
   {
+    "id": "05ae0b75",
+    "text": "I drink milk.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "05af456a",
     "text": "This bridge is longer than that bridge.",
     "groups": [
@@ -3438,7 +3473,8 @@
     "text": "This is my mother.",
     "groups": [
       "grade3",
-      "grade3-review"
+      "grade3-review",
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -3558,6 +3594,13 @@
     ]
   },
   {
+    "id": "06c7cd78",
+    "text": "a brown leather belt.",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "06d5a845",
     "text": "Question",
     "groups": [
@@ -3593,6 +3636,13 @@
     ]
   },
   {
+    "id": "076c9d31",
+    "text": "She is their daughter",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "07842673",
     "text": "My shoes are new.",
     "groups": [
@@ -3604,6 +3654,13 @@
     "text": "What day is it today?",
     "groups": [
       "grade4"
+    ]
+  },
+  {
+    "id": "07981092",
+    "text": "Please sit on the chair",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -3660,6 +3717,13 @@
       "grade10",
       "grade5",
       "grade5-review"
+    ]
+  },
+  {
+    "id": "07fac28b",
+    "text": "He looks surprised",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -3741,6 +3805,13 @@
       "grade3-review",
       "grade4",
       "grade4-review"
+    ]
+  },
+  {
+    "id": "0866b4d8",
+    "text": "He is my grandfather",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -3920,6 +3991,13 @@
     "text": "robot M is the cleanest.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "09d1603d",
+    "text": "Put on your pyjamas before sleep",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -4295,10 +4373,24 @@
     ]
   },
   {
+    "id": "0c8624e0",
+    "text": "The clock is on the wall",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "0c90c785",
     "text": "deserve",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "0c9158a7",
+    "text": "The cat is black.",
+    "groups": [
+      "grade2-sentences-colors"
     ]
   },
   {
@@ -4443,6 +4535,13 @@
     "text": "to win",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "0ddd72cf",
+    "text": "I love my parents.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -4604,6 +4703,13 @@
     "text": "limestone",
     "groups": [
       "grade9"
+    ]
+  },
+  {
+    "id": "0f768d01",
+    "text": "These are my friends",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -4780,7 +4886,15 @@
     "id": "10af3913",
     "text": "It is April 30th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
+    ]
+  },
+  {
+    "id": "10ba224f",
+    "text": "Take a raincoat, it is raining.",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -4971,6 +5085,13 @@
     ]
   },
   {
+    "id": "11b60b04",
+    "text": "He is my brother.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "11c48644",
     "text": "You will feel fitter if you walk every day.",
     "groups": [
@@ -5012,6 +5133,13 @@
     "groups": [
       "grade4",
       "grade4-review"
+    ]
+  },
+  {
+    "id": "11f1d876",
+    "text": "He is their son",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -5108,7 +5236,8 @@
       "grade1",
       "grade3",
       "grade1-review",
-      "grade3-review"
+      "grade3-review",
+      "grade2-colors-sentences"
     ]
   },
   {
@@ -5256,6 +5385,7 @@
     "id": "13e2af69",
     "text": "It is August 22nd",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -5345,6 +5475,13 @@
     ]
   },
   {
+    "id": "14315b08",
+    "text": "She can sing very well.",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "14608411",
     "text": "ethnic group",
     "groups": [
@@ -5400,6 +5537,13 @@
     ]
   },
   {
+    "id": "14bed2a0",
+    "text": "He wears a white shirt",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "14e1ffee",
     "text": "Do not run on the stairs.",
     "groups": [
@@ -5412,6 +5556,13 @@
     "text": "Resilience",
     "groups": [
       "legacy-vocabulary"
+    ]
+  },
+  {
+    "id": "150659fa",
+    "text": "It is a red apple.",
+    "groups": [
+      "grade2-sentences-colors"
     ]
   },
   {
@@ -5552,6 +5703,7 @@
     "id": "162d0983",
     "text": "It is September 2nd",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -5560,6 +5712,13 @@
     "text": "solar energy",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "163d8a85",
+    "text": "he is my classmate.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -5712,10 +5871,31 @@
     ]
   },
   {
+    "id": "17761ee1",
+    "text": "Open the window for fresh air",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
+    "id": "17864021",
+    "text": "The baby is sleeping.",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "1792a4b3",
     "text": "How do you go to school?",
     "groups": [
       "grade5"
+    ]
+  },
+  {
+    "id": "179b800e",
+    "text": "I drink tea.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -5730,6 +5910,13 @@
     "text": "begins",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "17b9856e",
+    "text": "I want a hamburger",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -5761,6 +5948,13 @@
     "text": "Music can bring people from different cultures together.",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "181105a7",
+    "text": "She is sad",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -6125,6 +6319,7 @@
     "id": "1ad92453",
     "text": "It is October 31st",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -6240,7 +6435,8 @@
     "text": "stand up",
     "groups": [
       "grade3",
-      "grade3-review"
+      "grade3-review",
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -6318,6 +6514,13 @@
     "text": "The hotel which stands by the lake is small.",
     "groups": [
       "grade9"
+    ]
+  },
+  {
+    "id": "1cacc915",
+    "text": "these are my parents.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -6461,6 +6664,7 @@
     "id": "1dd4c61a",
     "text": "It is July 4th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -6487,6 +6691,13 @@
     ]
   },
   {
+    "id": "1dfe1623",
+    "text": "He is my uncle.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "1e3d51a3",
     "text": "Duy's",
     "groups": [
@@ -6498,6 +6709,13 @@
     "text": "Paradigm",
     "groups": [
       "legacy-vocabulary"
+    ]
+  },
+  {
+    "id": "1e4654b2",
+    "text": "Mom cooks dinner for us.",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -6654,6 +6872,13 @@
     ]
   },
   {
+    "id": "1f427606",
+    "text": "I feel tired",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "1f47a245",
     "text": "application",
     "groups": [
@@ -6731,6 +6956,13 @@
     "text": "communicate",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "1fec1915",
+    "text": "I want a cookie.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -6857,9 +7089,24 @@
     ]
   },
   {
+    "id": "211e5f33",
+    "text": "I feel hot",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
+    "id": "212fa526",
+    "text": "I love my family",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "21340a44",
     "text": "It is September 9th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -7147,6 +7394,13 @@
     ]
   },
   {
+    "id": "23842056",
+    "text": "stand up.",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "2386abed",
     "text": "I see yo-yos.",
     "groups": [
@@ -7183,6 +7437,13 @@
       "grade4-review",
       "grade4",
       "grade2-review"
+    ]
+  },
+  {
+    "id": "23d35399",
+    "text": "These are my parents",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -7319,6 +7580,13 @@
     ]
   },
   {
+    "id": "24db0b1a",
+    "text": "I feel bored",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "24deeb3a",
     "text": "This is a useful tool.",
     "groups": [
@@ -7338,6 +7606,13 @@
     "text": "This map is his.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "2533d16b",
+    "text": "The dog is white.",
+    "groups": [
+      "grade2-sentences-colors"
     ]
   },
   {
@@ -7371,6 +7646,13 @@
     ]
   },
   {
+    "id": "258ab203",
+    "text": "This sweater is very warm.",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "25a3906d",
     "text": "These are my eyelashes.",
     "groups": [
@@ -7401,6 +7683,20 @@
     ]
   },
   {
+    "id": "25d4969b",
+    "text": "He wears a cool hat.",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
+    "id": "25eb72ae",
+    "text": "He is my neighbor",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "25ee7b37",
     "text": "Did Duy ride his bike to the park last Friday?",
     "groups": [
@@ -7412,6 +7708,13 @@
     "text": "The zebra is big.",
     "groups": [
       "grade2-review"
+    ]
+  },
+  {
+    "id": "26181250",
+    "text": "write your name.",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -7599,6 +7902,13 @@
     "text": "robot C is the fastest.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "273b2855",
+    "text": "Please sit down.",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -7793,6 +8103,7 @@
     "id": "292ffc14",
     "text": "It is November 20th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -7856,6 +8167,7 @@
     "id": "29853fc5",
     "text": "It is August 8th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -7863,7 +8175,15 @@
     "id": "29a63ab8",
     "text": "It is December 25th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
+    ]
+  },
+  {
+    "id": "29a63fa8",
+    "text": "Put on your baseball cap.",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -7889,9 +8209,17 @@
     ]
   },
   {
+    "id": "29f7abb4",
+    "text": "I wear a red T-shirt.",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "29fa8b44",
     "text": "It is Sunday",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -7917,10 +8245,24 @@
     ]
   },
   {
+    "id": "2a17540f",
+    "text": "A red scarf around her neck.",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "2a1f64d4",
     "text": "If we do not act, the problem will get worse.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "2a303946",
+    "text": "Who is that",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -7942,6 +8284,13 @@
     "text": "This is a blanket.",
     "groups": [
       "grade2-review"
+    ]
+  },
+  {
+    "id": "2a799d0f",
+    "text": "do not run in the classroom",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -8129,6 +8478,13 @@
     "text": "didn't go",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "2bbc1021",
+    "text": "He wears a tie to work",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -8436,6 +8792,13 @@
     ]
   },
   {
+    "id": "2e30565e",
+    "text": "Write your name",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "2e3e57fb",
     "text": "reading",
     "groups": [
@@ -8637,6 +9000,13 @@
     ]
   },
   {
+    "id": "2faedf42",
+    "text": "He is my grandfather.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "2fb537a7",
     "text": "was telling",
     "groups": [
@@ -8674,11 +9044,25 @@
     ]
   },
   {
+    "id": "30229cd3",
+    "text": "The leaf is green.",
+    "groups": [
+      "grade2-sentences-colors"
+    ]
+  },
+  {
     "id": "30394878",
     "text": "Where is the hospital?",
     "groups": [
       "grade4",
       "grade4-review"
+    ]
+  },
+  {
+    "id": "303a823e",
+    "text": "She is my classmate",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -8757,6 +9141,13 @@
     "text": "The lights went out while Nam was cooking dinner.",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "30ae4b21",
+    "text": "I drink water.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -8885,6 +9276,13 @@
     "text": "emerge",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "31a53f80",
+    "text": "He is my neighbor.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -9099,6 +9497,13 @@
     ]
   },
   {
+    "id": "332c52cf",
+    "text": "She is my neighbor",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "33329348",
     "text": "If it is sunny tomorrow, we will have a picnic.",
     "groups": [
@@ -9202,6 +9607,13 @@
     "text": "Binh will use a robot to clean the floor one day.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "340dc7ee",
+    "text": "I like chicken.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -9309,6 +9721,13 @@
     ]
   },
   {
+    "id": "34c069bf",
+    "text": "He looks surprised.",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "34d03e9c",
     "text": "visit",
     "groups": [
@@ -9400,6 +9819,7 @@
     "id": "3582b92d",
     "text": "It is January 5th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -9476,10 +9896,24 @@
     ]
   },
   {
+    "id": "3665758a",
+    "text": "He wears a white shirt.",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "3672bd54",
     "text": "attractive",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "367ceba7",
+    "text": "Stay calm.",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -9582,6 +10016,13 @@
     "text": "Twenty-Seven",
     "groups": [
       "grade2-topic-numbers"
+    ]
+  },
+  {
+    "id": "3768d3d4",
+    "text": "he is my best friend.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -9765,6 +10206,13 @@
     ]
   },
   {
+    "id": "38d2a2dc",
+    "text": "I feel bored.",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "38df0375",
     "text": "building",
     "groups": [
@@ -9830,6 +10278,13 @@
     ]
   },
   {
+    "id": "3946377e",
+    "text": "I feel happy",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "3946a365",
     "text": "They told us that they were waiting.",
     "groups": [
@@ -9869,6 +10324,13 @@
     ]
   },
   {
+    "id": "39837064",
+    "text": "It is purple.",
+    "groups": [
+      "grade2-colors-sentences"
+    ]
+  },
+  {
     "id": "398ca88e",
     "text": "broke",
     "groups": [
@@ -9895,6 +10357,13 @@
     "text": "Visitors must stay with the group at the valley.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "3a0b0589",
+    "text": "She is nervous.",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -9965,6 +10434,13 @@
     ]
   },
   {
+    "id": "3aad4786",
+    "text": "A brown leather belt",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "3ab3749c",
     "text": "I see the sun.",
     "groups": [
@@ -9983,6 +10459,7 @@
     "id": "3ace21bf",
     "text": "It is March 8th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -10136,6 +10613,13 @@
     ]
   },
   {
+    "id": "3c2ce798",
+    "text": "This is an apple.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "3c375cf5",
     "text": "He answers politely.",
     "groups": [
@@ -10281,10 +10765,24 @@
     ]
   },
   {
+    "id": "3d2c5bf7",
+    "text": "He wears a cool hat",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "3d41ab38",
     "text": "They will call us as soon as they reach the river.",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "3d43dee7",
+    "text": "Who is this",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -10377,6 +10875,13 @@
     ]
   },
   {
+    "id": "3e541088",
+    "text": "I feel sick.",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "3e58c421",
     "text": "fork",
     "groups": [
@@ -10433,6 +10938,13 @@
     "groups": [
       "grade5",
       "grade5-review"
+    ]
+  },
+  {
+    "id": "3f15742d",
+    "text": "I have a happy family.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -10498,6 +11010,13 @@
     "text": "The garden is beautiful.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "3fcfbaa7",
+    "text": "I feel hot.",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -11016,6 +11535,13 @@
     ]
   },
   {
+    "id": "43f16eb4",
+    "text": "I drink water every day",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "43f668a5",
     "text": "The baby was sleeping at midnight.",
     "groups": [
@@ -11055,6 +11581,13 @@
     "text": "We have lived here for five years.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "44772692",
+    "text": "They are sitting on the sofa.",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -11111,6 +11644,7 @@
     "id": "45029ab1",
     "text": "It is October 10th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -11247,6 +11781,13 @@
     ]
   },
   {
+    "id": "4600cb98",
+    "text": "i love my family.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "46017545",
     "text": "are preparing",
     "groups": [
@@ -11341,6 +11882,7 @@
     "id": "466a0174",
     "text": "It is Wednesday",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -11356,6 +11898,13 @@
     "text": "Fifty-Six",
     "groups": [
       "grade2-topic-numbers"
+    ]
+  },
+  {
+    "id": "46843b98",
+    "text": "We watch television in the evening.",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -11470,6 +12019,13 @@
     "text": "will not go",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "474b78af",
+    "text": "It is a gray elephant.",
+    "groups": [
+      "grade2-sentences-colors"
     ]
   },
   {
@@ -11590,6 +12146,13 @@
     ]
   },
   {
+    "id": "487b4534",
+    "text": "I like chicken",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "488d4f97",
     "text": "papaya",
     "groups": [
@@ -11653,7 +12216,8 @@
     "text": "Can you swim?",
     "groups": [
       "grade4",
-      "grade4-review"
+      "grade4-review",
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -11744,6 +12308,13 @@
     ]
   },
   {
+    "id": "49a7e91f",
+    "text": "Mom is cooking on the stove.",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "49b74432",
     "text": "friday",
     "groups": [
@@ -11774,6 +12345,13 @@
     "text": "This is the app which checks my spelling.",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "49d7ce08",
+    "text": "who is this?",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -11910,6 +12488,13 @@
     "groups": [
       "grade4-review",
       "grade4"
+    ]
+  },
+  {
+    "id": "4aacecf6",
+    "text": "I watch TV every day",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -12057,10 +12642,24 @@
     ]
   },
   {
+    "id": "4bfe4f23",
+    "text": "I eat salad",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "4c097285",
     "text": "The new market is more modern than the old market.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "4c2a2276",
+    "text": "I feel sick",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -12298,6 +12897,13 @@
     ]
   },
   {
+    "id": "4d47036c",
+    "text": "He is my friend",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "4d502ac8",
     "text": "was talking",
     "groups": [
@@ -12363,6 +12969,13 @@
     ]
   },
   {
+    "id": "4df3e3b7",
+    "text": "This is my grandfather",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "4df62eac",
     "text": "are singing",
     "groups": [
@@ -12418,6 +13031,7 @@
     "id": "4e65b1f5",
     "text": "It is February 3rd",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -12427,6 +13041,20 @@
     "groups": [
       "grade6",
       "grammar-room"
+    ]
+  },
+  {
+    "id": "4e759507",
+    "text": "I like noodles",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
+    "id": "4e7f05c5",
+    "text": "She wears leather boots.",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -12553,6 +13181,13 @@
     ]
   },
   {
+    "id": "4f465fda",
+    "text": "Put on your cap",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "4f4f2bba",
     "text": "has stopped",
     "groups": [
@@ -12598,7 +13233,8 @@
     "id": "4f8cd6b4",
     "text": "I walk to school.",
     "groups": [
-      "grade6"
+      "grade6",
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -12677,6 +13313,13 @@
     "text": "defend",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "4fef49db",
+    "text": "this is my grandfather.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -12801,6 +13444,13 @@
     ]
   },
   {
+    "id": "512c1aee",
+    "text": "It is blue.",
+    "groups": [
+      "grade2-colors-sentences"
+    ]
+  },
+  {
     "id": "513a40c1",
     "text": "will not be",
     "groups": [
@@ -12857,6 +13507,13 @@
     "text": "clinic",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "51777a30",
+    "text": "These shoes are comfortable.",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -12959,6 +13616,13 @@
     ]
   },
   {
+    "id": "52167556",
+    "text": "Wash your hands in the sink.",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "521d0429",
     "text": "family",
     "groups": [
@@ -12995,6 +13659,13 @@
     "groups": [
       "grade4",
       "grade4-review"
+    ]
+  },
+  {
+    "id": "5244d6fb",
+    "text": "Wear gloves to keep warm",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -13192,6 +13863,13 @@
       "grade9",
       "grammar-room",
       "legacy-listen"
+    ]
+  },
+  {
+    "id": "54194776",
+    "text": "I eat an egg.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -13545,6 +14223,13 @@
     ]
   },
   {
+    "id": "575e314f",
+    "text": "Wear gloves to keep warm.",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "576cc974",
     "text": "told",
     "groups": [
@@ -13555,6 +14240,7 @@
     "id": "5771947f",
     "text": "It is Friday",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -13676,6 +14362,13 @@
     "text": "We do not have to get up early tomorrow.",
     "groups": [
       "grade11"
+    ]
+  },
+  {
+    "id": "58ff0a33",
+    "text": "Stay calm",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -13984,6 +14677,13 @@
     ]
   },
   {
+    "id": "5b9890fb",
+    "text": "Turn on the fan it's hot",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "5b98d260",
     "text": "work",
     "groups": [
@@ -14040,6 +14740,13 @@
     "text": "Minh has breakfast.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "5c2db85d",
+    "text": "We are excited.",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -14292,10 +14999,24 @@
     ]
   },
   {
+    "id": "5da000f8",
+    "text": "I feel tired.",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "5dc2ab16",
     "text": "He wants to learn English.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "5dec9172",
+    "text": "He is my best friend",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -14440,7 +15161,8 @@
     "text": "It is yellow.",
     "groups": [
       "grade1",
-      "grade1-review"
+      "grade1-review",
+      "grade2-colors-sentences"
     ]
   },
   {
@@ -14462,6 +15184,13 @@
     "text": "exceed",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "5eea7dd9",
+    "text": "She is my best friend",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -14549,6 +15278,13 @@
       "grade5-review",
       "grade2-topic-transport",
       "ipa"
+    ]
+  },
+  {
+    "id": "5fe585fb",
+    "text": "I read books every night.",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -14755,6 +15491,7 @@
     "id": "61398cc9",
     "text": "It is April 18th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -14777,6 +15514,13 @@
     "text": "divide",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "61539676",
+    "text": "She looks in the mirror",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -14881,6 +15625,13 @@
     ]
   },
   {
+    "id": "62008da8",
+    "text": "The watch is silver.",
+    "groups": [
+      "grade2-sentences-colors"
+    ]
+  },
+  {
     "id": "621a1e73",
     "text": "green lifestyle",
     "groups": [
@@ -14892,6 +15643,13 @@
     "text": "I have a box.",
     "groups": [
       "grade2-review"
+    ]
+  },
+  {
+    "id": "62244bd5",
+    "text": "She is my best friend.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -14935,6 +15693,13 @@
     ]
   },
   {
+    "id": "626f11f8",
+    "text": "I need a pair of warm socks.",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "6274fe12",
     "text": "They have worked on the design since September.",
     "groups": [
@@ -14956,6 +15721,13 @@
     ]
   },
   {
+    "id": "629840d5",
+    "text": "I drink water",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "629842eb",
     "text": "was made",
     "groups": [
@@ -14974,6 +15746,13 @@
     "text": "Eleven balls.",
     "groups": [
       "grade2-review"
+    ]
+  },
+  {
+    "id": "62b8a52b",
+    "text": "I like to play football",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -15002,6 +15781,13 @@
     "text": "My juice is cold.",
     "groups": [
       "grade2-review"
+    ]
+  },
+  {
+    "id": "630cb31f",
+    "text": "He is my uncle",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -15087,6 +15873,13 @@
     ]
   },
   {
+    "id": "638cd210",
+    "text": "I ride my bike to school.",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "639b2284",
     "text": "If Lan uses a reusable bag, Lan will reduce plastic waste.",
     "groups": [
@@ -15169,6 +15962,13 @@
     ]
   },
   {
+    "id": "64175f1c",
+    "text": "Read loudly",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "6438c9ef",
     "text": "Yams",
     "groups": [
@@ -15187,6 +15987,13 @@
     "text": "narrower",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "6464e80f",
+    "text": "It is green.",
+    "groups": [
+      "grade2-colors-sentences"
     ]
   },
   {
@@ -15268,6 +16075,20 @@
     ]
   },
   {
+    "id": "651ef3bf",
+    "text": "He wears a blue tie to work.",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
+    "id": "6525c106",
+    "text": "I need a pair of warm socks",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "652f2c70",
     "text": "thirsty",
     "groups": [
@@ -15301,6 +16122,13 @@
     "text": "chatbot",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "6595e869",
+    "text": "this is my aunt.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -15391,6 +16219,13 @@
     "text": "What time is it? It is seven thirty.",
     "groups": [
       "grade4"
+    ]
+  },
+  {
+    "id": "6638d808",
+    "text": "I watch TV every day.",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -15505,6 +16340,13 @@
     ]
   },
   {
+    "id": "66d865ba",
+    "text": "I am scared",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "66dc170b",
     "text": "Stay behind the line.",
     "groups": [
@@ -15596,6 +16438,13 @@
     "text": "The guide who welcomed us speaks two languages.",
     "groups": [
       "grade9"
+    ]
+  },
+  {
+    "id": "6789e894",
+    "text": "My favorite food is ice cream",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -15708,6 +16557,7 @@
     "id": "6857f272",
     "text": "It is October 20th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -15737,6 +16587,13 @@
     "text": "My village is small.",
     "groups": [
       "grade2-review"
+    ]
+  },
+  {
+    "id": "68c2ed92",
+    "text": "It is cold",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -15814,6 +16671,13 @@
     ]
   },
   {
+    "id": "6945acda",
+    "text": "This is my cousin.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "695799cc",
     "text": "Damaged by the storm, the trees blocked the road.",
     "groups": [
@@ -15831,6 +16695,7 @@
     "id": "69718f38",
     "text": "It is July 21st",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -15863,6 +16728,13 @@
     "text": "stress",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "6999c94c",
+    "text": "Close the door, please.",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -15946,6 +16818,20 @@
     ]
   },
   {
+    "id": "6a40808a",
+    "text": "I eat a banana",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
+    "id": "6a866ca8",
+    "text": "This is the baby",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "6a86dd83",
     "text": "The book was written by Mai. It is very popular.",
     "groups": [
@@ -15978,6 +16864,13 @@
     "text": "Lan walks to school every day.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "6ab9d166",
+    "text": "I am wearing a red T-shirt",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -16057,6 +16950,13 @@
     "groups": [
       "grade8",
       "grade11"
+    ]
+  },
+  {
+    "id": "6bcbb6ab",
+    "text": "She is sad.",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -16146,6 +17046,27 @@
     ]
   },
   {
+    "id": "6d0c780b",
+    "text": "I like fish",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
+    "id": "6d1be6a3",
+    "text": "The kite flies high in the sky.",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
+    "id": "6d387066",
+    "text": "Can you swim",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "6d3a0633",
     "text": "homework",
     "groups": [
@@ -16164,6 +17085,13 @@
     "text": "This shop is cleaner than that shop.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "6d6cbaac",
+    "text": "This is my uncle",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -16339,6 +17267,13 @@
     ]
   },
   {
+    "id": "6ef82836",
+    "text": "she can dance well.",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "6ef95b63",
     "text": "My shorts are green.",
     "groups": [
@@ -16469,6 +17404,13 @@
     "text": "melts",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "6fc67833",
+    "text": "she is my neighbor.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -16812,10 +17754,31 @@
     ]
   },
   {
+    "id": "723fc905",
+    "text": "I am confused",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
+    "id": "724add44",
+    "text": "listen to the teacher.",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "727ab826",
     "text": "We cancelled the trip because of the rain.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "72aa66f1",
+    "text": "It is cold wear a coat",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -16878,6 +17841,13 @@
     ]
   },
   {
+    "id": "7342255e",
+    "text": "She is my mother",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "737e061e",
     "text": "invitation",
     "groups": [
@@ -16924,7 +17894,15 @@
     "id": "73d018e6",
     "text": "It is January 2nd",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
+    ]
+  },
+  {
+    "id": "73da4f62",
+    "text": "i like playing football",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -17039,6 +18017,13 @@
     ]
   },
   {
+    "id": "74974220",
+    "text": "what can you do?",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "7499948f",
     "text": "zebra",
     "groups": [
@@ -17098,6 +18083,20 @@
     ]
   },
   {
+    "id": "7504963c",
+    "text": "It is transparent.",
+    "groups": [
+      "grade2-colors-sentences"
+    ]
+  },
+  {
+    "id": "750bbb3e",
+    "text": "These shoes are comfortable",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "751d7a4c",
     "text": "My name is Nam.",
     "groups": [
@@ -17141,6 +18140,7 @@
     "id": "7582cbf9",
     "text": "It is May 1st",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -17207,6 +18207,13 @@
     "text": "Fifty-Nine",
     "groups": [
       "grade2-topic-numbers"
+    ]
+  },
+  {
+    "id": "75ebd725",
+    "text": "It is silver.",
+    "groups": [
+      "grade2-colors-sentences"
     ]
   },
   {
@@ -17325,6 +18332,13 @@
     ]
   },
   {
+    "id": "76f03df6",
+    "text": "She can sing very well",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "76fc123b",
     "text": "Jelly",
     "groups": [
@@ -17343,7 +18357,8 @@
     "text": "sit down",
     "groups": [
       "grade3",
-      "grade3-review"
+      "grade3-review",
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -17544,6 +18559,13 @@
     ]
   },
   {
+    "id": "78905ef5",
+    "text": "She is my sister",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "78930c82",
     "text": "bilingual",
     "groups": [
@@ -17616,6 +18638,13 @@
     ]
   },
   {
+    "id": "79514036",
+    "text": "I eat fish.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "7963705e",
     "text": "When does the quiz show air? — On Friday.",
     "groups": [
@@ -17627,6 +18656,20 @@
     "text": "We did not buy anything yesterday.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "798912f0",
+    "text": "I feel happy.",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
+    "id": "798c8fe8",
+    "text": "Mom cooks dinner for us",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -17687,6 +18730,13 @@
     ]
   },
   {
+    "id": "7a2e2a1b",
+    "text": "He is wearing blue pants",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "7a60a058",
     "text": "These are my eyebrows",
     "groups": [
@@ -17697,6 +18747,7 @@
     "id": "7a7b2d80",
     "text": "It is September 23rd",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -17708,10 +18759,24 @@
     ]
   },
   {
+    "id": "7a865fd3",
+    "text": "This is my father.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "7a930b5b",
     "text": "Twenty-Four",
     "groups": [
       "grade2-topic-numbers"
+    ]
+  },
+  {
+    "id": "7a9486d0",
+    "text": "I play football with my friends",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -17720,6 +18785,13 @@
     "groups": [
       "grade5",
       "grade5-review"
+    ]
+  },
+  {
+    "id": "7aa7e7fc",
+    "text": "I am scared.",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -17795,7 +18867,8 @@
       "grade1",
       "grade3",
       "grade1-review",
-      "grade3-review"
+      "grade3-review",
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -17859,6 +18932,13 @@
     "text": "He said the programme would start at eight.",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "7b98c68f",
+    "text": "Turn on the lamp, it's dark.",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -18132,6 +19212,13 @@
     ]
   },
   {
+    "id": "7e7f309a",
+    "text": "I like soup",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "7ea33ce1",
     "text": "did not come",
     "groups": [
@@ -18226,6 +19313,13 @@
     ]
   },
   {
+    "id": "7f4e31a2",
+    "text": "Look at the baby.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "7f5f6abe",
     "text": "scarf",
     "groups": [
@@ -18280,6 +19374,7 @@
     "id": "7fce8548",
     "text": "It is Monday",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -18287,6 +19382,7 @@
     "id": "7fd9c5a5",
     "text": "It is July 27th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -18474,6 +19570,13 @@
     ]
   },
   {
+    "id": "81091b95",
+    "text": "My clothes are in the wardrobe",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "8121b550",
     "text": "The bag is under the chair.",
     "groups": [
@@ -18552,10 +19655,24 @@
     ]
   },
   {
+    "id": "8198ffed",
+    "text": "Turn on the fan, it's hot.",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "81ac3bde",
     "text": "The chef is cutting vegetables now.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "81bc89d6",
+    "text": "I eat bread.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -18843,6 +19960,13 @@
     ]
   },
   {
+    "id": "8456d7fe",
+    "text": "It is pink.",
+    "groups": [
+      "grade2-colors-sentences"
+    ]
+  },
+  {
     "id": "8463e1a0",
     "text": "install",
     "groups": [
@@ -18974,6 +20098,13 @@
     "text": "The girl who won the debate is in my study group.",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "852bf04a",
+    "text": "The clock is on the wall.",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -19188,6 +20319,13 @@
     ]
   },
   {
+    "id": "86a040fd",
+    "text": "these are my friends.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "86b33408",
     "text": "Yes, there is.",
     "groups": [
@@ -19280,6 +20418,13 @@
     ]
   },
   {
+    "id": "879a3de9",
+    "text": "Put on your pyjamas before sleep.",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "87aadff8",
     "text": "charming",
     "groups": [
@@ -19287,10 +20432,24 @@
     ]
   },
   {
+    "id": "87b24054",
+    "text": "I drink tea",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "87e202b4",
     "text": "The number is thirteen.",
     "groups": [
       "grade2-review"
+    ]
+  },
+  {
+    "id": "87ec38df",
+    "text": "I can run fast.",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -19340,6 +20499,7 @@
     "id": "886a55cc",
     "text": "It is June 1st",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -19380,6 +20540,13 @@
       "grade3",
       "grade1-review",
       "grade3-review"
+    ]
+  },
+  {
+    "id": "88cbc90c",
+    "text": "I am proud of you.",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -19562,6 +20729,13 @@
     ]
   },
   {
+    "id": "8a779703",
+    "text": "Take a raincoat it is raining",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "8aa1fba8",
     "text": "did not watch",
     "groups": [
@@ -19658,6 +20832,13 @@
     ]
   },
   {
+    "id": "8b3d9c31",
+    "text": "It is white.",
+    "groups": [
+      "grade2-colors-sentences"
+    ]
+  },
+  {
     "id": "8b41cc63",
     "text": "I enjoy reading.",
     "groups": [
@@ -19695,6 +20876,13 @@
     ]
   },
   {
+    "id": "8ba304b4",
+    "text": "It is orange.",
+    "groups": [
+      "grade2-colors-sentences"
+    ]
+  },
+  {
     "id": "8ba8ed1a",
     "text": "eye",
     "groups": [
@@ -19703,6 +20891,13 @@
       "grade1-review",
       "grade3-review",
       "ipa"
+    ]
+  },
+  {
+    "id": "8bac716f",
+    "text": "He is wearing blue pants.",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -19724,6 +20919,7 @@
     "id": "8c05a883",
     "text": "It is February 14th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -19974,6 +21170,13 @@
     ]
   },
   {
+    "id": "8e535461",
+    "text": "We are excited",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "8e6eada0",
     "text": "Will he come to the meeting?",
     "groups": [
@@ -19985,6 +21188,13 @@
     "text": "I did worse in this race than in the last one.",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "8e95ac88",
+    "text": "She looks in the mirror.",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -20073,6 +21283,13 @@
     ]
   },
   {
+    "id": "8f111c6e",
+    "text": "I drink water every day.",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "8f309a77",
     "text": "The forum is useful, but I do not use it during lessons.",
     "groups": [
@@ -20120,6 +21337,13 @@
     "text": "client",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "8f9b26bb",
+    "text": "It is gray.",
+    "groups": [
+      "grade2-colors-sentences"
     ]
   },
   {
@@ -20238,6 +21462,13 @@
     ]
   },
   {
+    "id": "9078a760",
+    "text": "This is a cake",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "90934445",
     "text": "They said that they would help us.",
     "groups": [
@@ -20254,6 +21485,13 @@
       "grade11",
       "grade12",
       "grammar-room"
+    ]
+  },
+  {
+    "id": "90ce66ef",
+    "text": "I draw a picture.",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -20355,6 +21593,13 @@
     ]
   },
   {
+    "id": "917cd269",
+    "text": "She wears leather boots",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "918d404a",
     "text": "nose",
     "groups": [
@@ -20410,6 +21655,20 @@
     ]
   },
   {
+    "id": "920b473c",
+    "text": "I am sleepy",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
+    "id": "920c2322",
+    "text": "I drink juice",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "92343da0",
     "text": "ancestor",
     "groups": [
@@ -20435,6 +21694,13 @@
     "text": "below",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "925f3834",
+    "text": "I eat a sandwich.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -20586,6 +21852,7 @@
     "id": "9301458b",
     "text": "It is March 15th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -20881,6 +22148,7 @@
     "id": "96a49890",
     "text": "It is November 15th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -21010,6 +22278,13 @@
     ]
   },
   {
+    "id": "97b79288",
+    "text": "He is their son.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "97c25bbb",
     "text": "The cat is small.",
     "groups": [
@@ -21043,6 +22318,13 @@
     "text": "If she does not call, I will send a message.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "9836f1c9",
+    "text": "She is my aunt.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -21133,6 +22415,13 @@
     ]
   },
   {
+    "id": "990cc3c0",
+    "text": "I want a hamburger.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "992f4654",
     "text": "There are a few chairs here.",
     "groups": [
@@ -21191,6 +22480,13 @@
     "text": "The market is noisier than the park.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "99ca25ef",
+    "text": "She can swim well",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -21289,6 +22585,13 @@
     ]
   },
   {
+    "id": "9a847526",
+    "text": "We watch television in the evening",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "9ab62774",
     "text": "They worked quietly.",
     "groups": [
@@ -21299,6 +22602,7 @@
     "id": "9ab7f0b3",
     "text": "It is December 24th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -21325,6 +22629,13 @@
     ]
   },
   {
+    "id": "9b0899f8",
+    "text": "Put on your jacket",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "9b21fbf6",
     "text": "brand",
     "groups": [
@@ -21336,6 +22647,13 @@
     "text": "case",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "9b2a2dad",
+    "text": "I like pizza",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -21469,6 +22787,13 @@
     ]
   },
   {
+    "id": "9c319c5c",
+    "text": "I eat an egg",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "9c33c586",
     "text": "washes",
     "groups": [
@@ -21504,6 +22829,13 @@
     "text": "best",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "9c976ce3",
+    "text": "Turn on the lamp it's dark",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -21634,6 +22966,13 @@
       "grade3-review",
       "grade2-topic-schoolsupplies",
       "ipa"
+    ]
+  },
+  {
+    "id": "9dd1d8fe",
+    "text": "The girl wears a yellow skirt.",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -21773,6 +23112,13 @@
     ]
   },
   {
+    "id": "9e95bb42",
+    "text": "He is my brother",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "9ea5de9c",
     "text": "Finger",
     "groups": [
@@ -21851,6 +23197,13 @@
     "text": "more modern",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "9f474972",
+    "text": "He is shy.",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -22046,6 +23399,7 @@
     "id": "a0abb75b",
     "text": "It is March 4th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -22492,6 +23846,7 @@
     "id": "a30c8a4a",
     "text": "It is Thursday",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -22553,6 +23908,13 @@
     "text": "the more",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "a382cad7",
+    "text": "I read books every night",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -22764,6 +24126,13 @@
     ]
   },
   {
+    "id": "a55bb986",
+    "text": "He is her husband",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "a55ca648",
     "text": "wider",
     "groups": [
@@ -22877,6 +24246,13 @@
     ]
   },
   {
+    "id": "a6240a26",
+    "text": "I have a yellow banana.",
+    "groups": [
+      "grade2-sentences-colors"
+    ]
+  },
+  {
     "id": "a62bba20",
     "text": "I like my grandmother.",
     "groups": [
@@ -22908,6 +24284,7 @@
     "id": "a64552c1",
     "text": "She is my sister.",
     "groups": [
+      "grade2-sentences-familyfriends",
       "grammar-room"
     ]
   },
@@ -22990,6 +24367,13 @@
     "text": "pyjamas",
     "groups": [
       "grade2-topic-clothes"
+    ]
+  },
+  {
+    "id": "a6dc3ef4",
+    "text": "It is cold.",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -23363,6 +24747,7 @@
     "id": "a9c1a26e",
     "text": "It is June 20th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -23583,6 +24968,13 @@
     ]
   },
   {
+    "id": "ab1693ff",
+    "text": "This sweater is very warm",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "ab1a365f",
     "text": "out",
     "groups": [
@@ -23685,6 +25077,7 @@
     "id": "abbf6f51",
     "text": "It is May 19th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -23708,6 +25101,13 @@
     "groups": [
       "grade5",
       "grade5-review"
+    ]
+  },
+  {
+    "id": "ac19cf8b",
+    "text": "I like noodles.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -23780,6 +25180,13 @@
     ]
   },
   {
+    "id": "ac68c399",
+    "text": "I want a cookie",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "ac77af53",
     "text": "We look after the shared garden.",
     "groups": [
@@ -23791,6 +25198,13 @@
     "text": "grape",
     "groups": [
       "grade2-topic-fruits"
+    ]
+  },
+  {
+    "id": "ac7a61eb",
+    "text": "Mom is cooking on the stove",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -23865,6 +25279,13 @@
       "grade10",
       "grade11",
       "grade12"
+    ]
+  },
+  {
+    "id": "acfdced2",
+    "text": "I walk to school",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -23968,6 +25389,13 @@
     ]
   },
   {
+    "id": "adcd6c6e",
+    "text": "The telephone is ringing",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "add432fd",
     "text": "Visitors must not feed wild birds at the island.",
     "groups": [
@@ -24029,6 +25457,13 @@
     "text": "Damaged",
     "groups": [
       "grade11"
+    ]
+  },
+  {
+    "id": "ae567177",
+    "text": "I eat salad.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -24315,10 +25750,24 @@
     ]
   },
   {
+    "id": "b06257f4",
+    "text": "Please sit on the chair.",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "b074712b",
     "text": "the most",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "b07b9bbd",
+    "text": "This is my aunt",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -24333,6 +25782,13 @@
     "text": "model",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "b0a5895f",
+    "text": "What can you do",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -24386,6 +25842,13 @@
     "text": "carefully",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "b129bd56",
+    "text": "Close the door please",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -24781,6 +26244,13 @@
     ]
   },
   {
+    "id": "b46720b4",
+    "text": "The glass bottle is transparent.",
+    "groups": [
+      "grade2-sentences-colors"
+    ]
+  },
+  {
     "id": "b4780ebf",
     "text": "has not completed",
     "groups": [
@@ -24849,6 +26319,20 @@
     "text": "When's your birthday? It's in March.",
     "groups": [
       "grade4"
+    ]
+  },
+  {
+    "id": "b4f3ce9b",
+    "text": "I draw a picture",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
+    "id": "b4f9c89d",
+    "text": "She is my aunt",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -24977,6 +26461,13 @@
     "text": "The scientist won her first award in 2010.",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "b5f18fd0",
+    "text": "This is my cousin",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -25473,6 +26964,7 @@
     "id": "b9719ca7",
     "text": "It is Saturday",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -25480,6 +26972,7 @@
     "id": "b98d7bc7",
     "text": "It is June 12th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -25577,6 +27070,13 @@
     "text": "whether",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "ba53afa7",
+    "text": "I listen to music",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -25688,6 +27188,13 @@
     ]
   },
   {
+    "id": "bb23c028",
+    "text": "He is shy",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "bb323378",
     "text": "duck",
     "groups": [
@@ -25768,6 +27275,13 @@
     ]
   },
   {
+    "id": "bbef5fca",
+    "text": "This is a cake.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "bbfcefbb",
     "text": "board game",
     "groups": [
@@ -25780,6 +27294,20 @@
     "groups": [
       "grade6",
       "grade9"
+    ]
+  },
+  {
+    "id": "bc130fe0",
+    "text": "She is his wife",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
+    "id": "bc188ebf",
+    "text": "It is black.",
+    "groups": [
+      "grade2-colors-sentences"
     ]
   },
   {
@@ -25798,6 +27326,13 @@
     "groups": [
       "grade2",
       "grade2-review"
+    ]
+  },
+  {
+    "id": "bc746c28",
+    "text": "I like ice cream.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -25908,6 +27443,13 @@
     ]
   },
   {
+    "id": "bd555923",
+    "text": "The girl likes wearing a skirt",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "bd56e0d5",
     "text": "This is my teacher.",
     "groups": [
@@ -25951,6 +27493,13 @@
     ]
   },
   {
+    "id": "bdb5017a",
+    "text": "I wear shorts in summer",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "bdb7f303",
     "text": "beautifully",
     "groups": [
@@ -25962,6 +27511,13 @@
     "text": "pension",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "bdd0aa1d",
+    "text": "I sleep on my bed",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -25987,6 +27543,13 @@
     ]
   },
   {
+    "id": "bdf27fdd",
+    "text": "Open the window for fresh air.",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "be148163",
     "text": "Sand",
     "groups": [
@@ -26006,6 +27569,13 @@
     "text": "Visitors should not throw rubbish on the street.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "be17ba4e",
+    "text": "The umbrella is blue.",
+    "groups": [
+      "grade2-sentences-colors"
     ]
   },
   {
@@ -26075,6 +27645,13 @@
     "text": "There is not much water in the cave.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "beb60476",
+    "text": "do not stand up",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -26192,6 +27769,13 @@
     "groups": [
       "grade5",
       "grade5-review"
+    ]
+  },
+  {
+    "id": "bfa8464a",
+    "text": "He can jump high.",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -26506,6 +28090,13 @@
     ]
   },
   {
+    "id": "c203a6ae",
+    "text": "It is brown.",
+    "groups": [
+      "grade2-colors-sentences"
+    ]
+  },
+  {
     "id": "c2075ec9",
     "text": "have dinner",
     "groups": [
@@ -26524,6 +28115,7 @@
     "id": "c20b94ff",
     "text": "It is February 10th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -26539,6 +28131,13 @@
     "text": "He asked me if I would visit the museum.",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "c21a32a9",
+    "text": "He is my classmate",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -26637,6 +28236,13 @@
     ]
   },
   {
+    "id": "c2cadbb6",
+    "text": "read loudly.",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "c2d8738d",
     "text": "puzzle",
     "groups": [
@@ -26725,6 +28331,13 @@
     ]
   },
   {
+    "id": "c37bf09f",
+    "text": "The kite flies high in the sky",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "c38dd028",
     "text": "We do not waste water.",
     "groups": [
@@ -26763,6 +28376,13 @@
     ]
   },
   {
+    "id": "c3a40818",
+    "text": "I write my name.",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "c3be79f2",
     "text": "singing",
     "groups": [
@@ -26796,6 +28416,7 @@
     "id": "c4227536",
     "text": "It is May 10th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -26811,6 +28432,13 @@
     "text": "harvest",
     "groups": [
       "grade8"
+    ]
+  },
+  {
+    "id": "c4299aa6",
+    "text": "this is my uncle.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -27072,6 +28700,7 @@
     "text": "I like pizza.",
     "groups": [
       "grade2",
+      "grade2-sentences-fooddrinks",
       "grade2-review"
     ]
   },
@@ -27080,6 +28709,13 @@
     "text": "Visitors must not throw plastic into the sea at the bay.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "c6a84931",
+    "text": "We eat dinner on the table",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -27237,6 +28873,13 @@
     "text": "The dog was barking when I woke up.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "c7f41029",
+    "text": "They dance every night",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -27488,9 +29131,17 @@
     ]
   },
   {
+    "id": "c9d6b09c",
+    "text": "She can dance well",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "c9e06a2c",
     "text": "It is November 11th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -27572,6 +29223,13 @@
     "text": "This book is more interesting than that one.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "cb4d16e5",
+    "text": "She wears a pink dress.",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -27704,6 +29362,7 @@
     "id": "cc03aca2",
     "text": "It is January 1st",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -27715,10 +29374,24 @@
     ]
   },
   {
+    "id": "cc353b05",
+    "text": "They dance every night.",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "cc449005",
     "text": "I am not using that chair.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "cc53646a",
+    "text": "I eat breakfast every day",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -27883,6 +29556,13 @@
     ]
   },
   {
+    "id": "cd8e4610",
+    "text": "She is thirsty",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "cd96ca30",
     "text": "peaceful",
     "groups": [
@@ -28006,6 +29686,13 @@
     ]
   },
   {
+    "id": "cea0bddd",
+    "text": "She is nervous",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "cea5ae86",
     "text": "Mai asked me if I liked waterfalls.",
     "groups": [
@@ -28061,6 +29748,13 @@
     ]
   },
   {
+    "id": "cefb57cd",
+    "text": "She is their daughter.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "cf087b63",
     "text": "foggy",
     "groups": [
@@ -28073,6 +29767,13 @@
     "groups": [
       "grade1",
       "grade1-review"
+    ]
+  },
+  {
+    "id": "cf17e5df",
+    "text": "He is angry",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -28116,6 +29817,7 @@
     "id": "cf58592f",
     "text": "It is Tuesday",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -28236,6 +29938,7 @@
     "id": "d023b742",
     "text": "It is December 31st",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -28258,6 +29961,13 @@
     "text": "She applied because the job matched her skills.",
     "groups": [
       "grade12"
+    ]
+  },
+  {
+    "id": "d06d97d5",
+    "text": "The baby is sleeping",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -28324,6 +30034,7 @@
     "id": "d0ba5ead",
     "text": "It is August 15th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -28369,6 +30080,13 @@
       "grade2-topic-shapes",
       "ipa",
       "legacy-listen"
+    ]
+  },
+  {
+    "id": "d13bb745",
+    "text": "It is cold, wear a coat.",
+    "groups": [
+      "grade2-sentences-clothes"
     ]
   },
   {
@@ -28487,6 +30205,13 @@
     ]
   },
   {
+    "id": "d28120bf",
+    "text": "I eat rice",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "d2987a78",
     "text": "I have never visited this cave before.",
     "groups": [
@@ -28563,6 +30288,13 @@
     "text": "You were talking when the teacher entered.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "d30e5698",
+    "text": "She is my grandmother.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -28739,6 +30471,13 @@
     ]
   },
   {
+    "id": "d4f8939a",
+    "text": "She is thirsty.",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "d4fa8470",
     "text": "Eight",
     "groups": [
@@ -28787,10 +30526,24 @@
     ]
   },
   {
+    "id": "d54ece26",
+    "text": "She is my grandmother",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "d55a211e",
     "text": "What does your family do at weekends? We visit our grandparents.",
     "groups": [
       "grade4"
+    ]
+  },
+  {
+    "id": "d55b2248",
+    "text": "They are sitting on the sofa",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -28886,6 +30639,13 @@
     "text": "What does she look like? She has curly hair.",
     "groups": [
       "grade4"
+    ]
+  },
+  {
+    "id": "d639ab5c",
+    "text": "I like soup.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -29213,6 +30973,13 @@
     ]
   },
   {
+    "id": "d9eb1bcd",
+    "text": "We eat dinner on the table.",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "d9f2d696",
     "text": "He asked for help because the messages upset him.",
     "groups": [
@@ -29263,6 +31030,7 @@
     "id": "da396ed3",
     "text": "She can swim well.",
     "groups": [
+      "grade2-sentences-verbs",
       "grammar-room"
     ]
   },
@@ -29271,6 +31039,13 @@
     "text": "We have some letters at Tet.",
     "groups": [
       "grade6"
+    ]
+  },
+  {
+    "id": "da6168c0",
+    "text": "The telephone is ringing.",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -29306,6 +31081,13 @@
     "text": "Our teacher explains each new word.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "dabd54ab",
+    "text": "I listen to music.",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -29482,6 +31264,13 @@
     ]
   },
   {
+    "id": "dc56a761",
+    "text": "My clothes are in the wardrobe.",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "dc65ec4e",
     "text": "Sixty-Eight",
     "groups": [
@@ -29581,6 +31370,13 @@
     "text": "Having finished the course, Nam applied for a job.",
     "groups": [
       "grade11"
+    ]
+  },
+  {
+    "id": "dd3096c3",
+    "text": "I like the pink flower.",
+    "groups": [
+      "grade2-sentences-colors"
     ]
   },
   {
@@ -29727,6 +31523,13 @@
       "grade3-review",
       "grade2-topic-colors",
       "ipa"
+    ]
+  },
+  {
+    "id": "de05ab2b",
+    "text": "I can run fast",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -29902,6 +31705,13 @@
     ]
   },
   {
+    "id": "df0a8ae1",
+    "text": "It is an orange fruit.",
+    "groups": [
+      "grade2-sentences-colors"
+    ]
+  },
+  {
     "id": "df3d6be2",
     "text": "While Mai was reading, the lights went out.",
     "groups": [
@@ -29989,6 +31799,13 @@
     ]
   },
   {
+    "id": "dfb803f9",
+    "text": "I drink milk",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "dfd07e91",
     "text": "The instructions are helpful.",
     "groups": [
@@ -30007,6 +31824,13 @@
     "text": "If I knew the answer, I would tell you.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "e001e14a",
+    "text": "She is his wife.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -30160,6 +31984,13 @@
     ]
   },
   {
+    "id": "e120ef50",
+    "text": "she is my mother.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "e13a4ce3",
     "text": "The students were taking a test at nine.",
     "groups": [
@@ -30213,6 +32044,13 @@
     "text": "convey",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "e18b114a",
+    "text": "The grapes are purple.",
+    "groups": [
+      "grade2-sentences-colors"
     ]
   },
   {
@@ -30340,6 +32178,13 @@
     ]
   },
   {
+    "id": "e2ea797b",
+    "text": "who is that?",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "e2ed521b",
     "text": "Using less energy, we lower our emissions.",
     "groups": [
@@ -30427,6 +32272,13 @@
     "text": "strengthen",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "e3b0a3c7",
+    "text": "i cannot jump high",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -30559,6 +32411,13 @@
     ]
   },
   {
+    "id": "e48a2be2",
+    "text": "Put on your jacket.",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "e499163f",
     "text": "affordable",
     "groups": [
@@ -30578,6 +32437,13 @@
     "text": "was carrying",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "e4a636e0",
+    "text": "He can jump high",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -30709,6 +32575,7 @@
     "id": "e589782f",
     "text": "It is April 5th",
     "groups": [
+      "grade2-sentences-dates",
       "grade2-dates"
     ]
   },
@@ -30972,6 +32839,13 @@
     ]
   },
   {
+    "id": "e714f211",
+    "text": "She is wearing a beautiful dress",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "e7218002",
     "text": "Where is the hospital? It is next to the bank.",
     "groups": [
@@ -31019,6 +32893,20 @@
     "text": "apprenticeship",
     "groups": [
       "grade11"
+    ]
+  },
+  {
+    "id": "e77a15fb",
+    "text": "It is a brown bear.",
+    "groups": [
+      "grade2-sentences-colors"
+    ]
+  },
+  {
+    "id": "e78a822c",
+    "text": "I eat a banana.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -31122,6 +33010,13 @@
     "text": "My blanket is soft.",
     "groups": [
       "grade2-review"
+    ]
+  },
+  {
+    "id": "e8ca20e6",
+    "text": "He is my friend.",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -31425,6 +33320,13 @@
     ]
   },
   {
+    "id": "eb46d70c",
+    "text": "I eat breakfast every day.",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "eb4871c5",
     "text": "What day is it today? It is Thursday.",
     "groups": [
@@ -31673,6 +33575,13 @@
     ]
   },
   {
+    "id": "ed1746a6",
+    "text": "I write my name",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "ed24b3f2",
     "text": "The work will be finished by us tomorrow.",
     "groups": [
@@ -31772,10 +33681,24 @@
     ]
   },
   {
+    "id": "ee2c4cbc",
+    "text": "I eat bread",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "ee2ef132",
     "text": "had cleaned",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "ee44d752",
+    "text": "I eat a sandwich",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -32098,6 +34021,13 @@
     ]
   },
   {
+    "id": "f1199c5f",
+    "text": "I am hungry",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "f13b9d3d",
     "text": "What did you do there? I swam in the sea.",
     "groups": [
@@ -32223,6 +34153,13 @@
     ]
   },
   {
+    "id": "f2464443",
+    "text": "I eat rice.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "f270048e",
     "text": "rectangle",
     "groups": [
@@ -32315,6 +34252,13 @@
     ]
   },
   {
+    "id": "f2f7cea0",
+    "text": "Put the milk in the refrigerator.",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "f31ea7f7",
     "text": "April",
     "groups": [
@@ -32368,6 +34312,13 @@
     ]
   },
   {
+    "id": "f36cbda5",
+    "text": "I am relaxed.",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "f374985d",
     "text": "Visitors must not write on the rocks at the national park.",
     "groups": [
@@ -32393,6 +34344,13 @@
     "text": "The student who studies with me speaks two languages.",
     "groups": [
       "grade9"
+    ]
+  },
+  {
+    "id": "f39efa63",
+    "text": "He is angry.",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -32474,6 +34432,13 @@
     ]
   },
   {
+    "id": "f419ea6a",
+    "text": "I am proud of you",
+    "groups": [
+      "grade2-sentences-feeling"
+    ]
+  },
+  {
     "id": "f42b68f3",
     "text": "If Nam recycles old bottles, Nam will save materials.",
     "groups": [
@@ -32499,6 +34464,13 @@
     "text": "I know the way to the station.",
     "groups": [
       "grade11"
+    ]
+  },
+  {
+    "id": "f46410ef",
+    "text": "This is my father",
+    "groups": [
+      "grade2-sentences-familyfriends"
     ]
   },
   {
@@ -32654,6 +34626,13 @@
     ]
   },
   {
+    "id": "f51b2be4",
+    "text": "I drink juice.",
+    "groups": [
+      "grade2-sentences-fooddrinks"
+    ]
+  },
+  {
     "id": "f52724e8",
     "text": "The children found a shell yesterday.",
     "groups": [
@@ -32681,6 +34660,13 @@
     "text": "truck",
     "groups": [
       "grade2-topic-transport"
+    ]
+  },
+  {
+    "id": "f5549926",
+    "text": "This is an apple",
+    "groups": [
+      "grade2-sentences-fooddrinks"
     ]
   },
   {
@@ -32752,6 +34738,13 @@
     ]
   },
   {
+    "id": "f599ae3b",
+    "text": "We are classmates.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "f5ba3432",
     "text": "People who speak two languages can be called bilingual.",
     "groups": [
@@ -32775,7 +34768,8 @@
     "text": "I play football with my friends.",
     "groups": [
       "grade4",
-      "grade4-review"
+      "grade4-review",
+      "grade2-sentences-verbs"
     ]
   },
   {
@@ -32985,6 +34979,13 @@
     ]
   },
   {
+    "id": "f7654378",
+    "text": "He is her husband.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "f77d30e9",
     "text": "Yes, I can.",
     "groups": [
@@ -33041,6 +35042,13 @@
     ]
   },
   {
+    "id": "f7f1173c",
+    "text": "I wear shorts in summer.",
+    "groups": [
+      "grade2-sentences-clothes"
+    ]
+  },
+  {
     "id": "f7f1b61b",
     "text": "coverage",
     "groups": [
@@ -33091,6 +35099,13 @@
     "text": "They study English on Mondays.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "f86c9ace",
+    "text": "Put the milk in the refrigerator",
+    "groups": [
+      "grade2-sentences-householditems"
     ]
   },
   {
@@ -33161,6 +35176,13 @@
     ]
   },
   {
+    "id": "f92be33c",
+    "text": "Wash your hands in the sink",
+    "groups": [
+      "grade2-sentences-householditems"
+    ]
+  },
+  {
     "id": "f944e95b",
     "text": "cry",
     "groups": [
@@ -33207,6 +35229,13 @@
     "text": "She sings beautifully.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "f9c0e156",
+    "text": "I am sleepy.",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -33529,6 +35558,13 @@
     ]
   },
   {
+    "id": "fc1abf30",
+    "text": "she is my classmate.",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "fc1b3ace",
     "text": "chapel",
     "groups": [
@@ -33554,6 +35590,13 @@
     "text": "employ",
     "groups": [
       "ipa"
+    ]
+  },
+  {
+    "id": "fc5145e3",
+    "text": "I am hungry.",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -33738,6 +35781,13 @@
     ]
   },
   {
+    "id": "fdd8bdb8",
+    "text": "this is a baby",
+    "groups": [
+      "grade2-sentences-familyfriends"
+    ]
+  },
+  {
     "id": "fe170730",
     "text": "villages",
     "groups": [
@@ -33804,6 +35854,13 @@
     "text": "Lan, who speaks English well, will help us.",
     "groups": [
       "grammar-room"
+    ]
+  },
+  {
+    "id": "fec2a6c9",
+    "text": "I am relaxed",
+    "groups": [
+      "grade2-sentences-feeling"
     ]
   },
   {
@@ -33946,6 +36003,13 @@
     ]
   },
   {
+    "id": "ff8a0802",
+    "text": "Listen to the teacher",
+    "groups": [
+      "grade2-sentences-verbs"
+    ]
+  },
+  {
     "id": "ff9d82fe",
     "text": "There are three boxes on the shelf.",
     "groups": [
@@ -33972,6 +36036,13 @@
     "text": "I see a zoo.",
     "groups": [
       "grade2-review"
+    ]
+  },
+  {
+    "id": "ffcf6f9e",
+    "text": "I ride my bike to school",
+    "groups": [
+      "grade2-sentences-verbs"
     ]
   },
   {

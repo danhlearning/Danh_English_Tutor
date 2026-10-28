@@ -1,20 +1,25 @@
+/* Retire this site's old offline worker; never install an offline package. */
 (function () {
   'use strict';
   if (window.DanhPWA) return;
   const root = new URL('../', document.currentScript.src);
-  function link(rel, href) {
-    if (document.querySelector(`link[rel="${rel}"]`)) return;
-    const node = document.createElement('link'); node.rel = rel; node.href = new URL(href, root).href; document.head.append(node);
+  async function retire() {
+    if (!('serviceWorker' in navigator)) return null;
+    const registration = await navigator.serviceWorker.getRegistration(root.href);
+    if (!registration || registration.scope !== root.href) return null;
+    const worker = registration.active || registration.waiting || registration.installing;
+    if (!worker || new URL(worker.scriptURL).href !== new URL('sw.js', root).href) return null;
+    // Updating reaches the small retirement worker, which claims already-open
+    // pages without reloading a game. Failure must not prevent unregistering.
+    try { await registration.update(); } catch {}
+    await registration.unregister();
+    if ('caches' in window) {
+      const prefix = 'danh-offline:' + encodeURIComponent(root.pathname) + ':';
+      const names = await caches.keys();
+      await Promise.all(names.filter(name => name.startsWith(prefix)).map(name => caches.delete(name)));
+    }
+    return null;
   }
-  link('manifest', 'manifest.webmanifest');
-  link('apple-touch-icon', 'assets/icons/app-180.png');
-  for (const [name, content] of Object.entries({'theme-color':'#fffaf0','apple-mobile-web-app-capable':'yes','apple-mobile-web-app-title':'Học cùng Danh'})) {
-    if (document.querySelector(`meta[name="${name}"]`)) continue;
-    const node = document.createElement('meta'); node.name = name; node.content = content; document.head.append(node);
-  }
-  const supported = window.isSecureContext && 'serviceWorker' in navigator;
-  // Waiting updates are applied only from the offline page, never during a game.
-  const ready = supported ? navigator.serviceWorker.register(new URL('sw.js', root).href, {scope: root.pathname, updateViaCache: 'none'}) : Promise.resolve(null);
-  ready.catch(() => {});
-  window.DanhPWA = {root: root.href, supported, ready};
+  const ready = retire().catch(() => null);
+  window.DanhPWA = {root: root.href, supported: false, retired: true, ready};
 })();

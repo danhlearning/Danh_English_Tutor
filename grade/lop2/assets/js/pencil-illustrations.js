@@ -7,7 +7,9 @@
     const key = normalize(name);
     const file = manifest[topic]?.[key] || (topic === 'dates' ? manifest.dates?.[key.split(/\s+/)[0]] : null);
     if (!file) return null;
-    return `<svg class="pencil-art" viewBox="0 0 768 768" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><image href="./assets/images/pencil/${file}" width="768" height="768" preserveAspectRatio="xMidYMid meet"/></svg>`;
+    // Native lazy images keep long word grids from downloading every illustration
+    // before the learner reaches it. The existing frame and artwork stay intact.
+    return `<img class="pencil-art" src="./assets/images/pencil/compact/${file}" srcset="./assets/images/pencil/compact/${file} 480w, ./assets/images/pencil/${file} 768w" sizes="(max-width:480px) 220px, 240px" width="768" height="768" alt="" loading="lazy" decoding="async" draggable="false">`;
   }
   function apply(topic, words) {
     if (!manifest[topic]) return;

@@ -9,12 +9,12 @@ function enable(html,grade,review=false){
   if(!match)throw Error('Missing lesson engine for grade '+grade);
   html=html.replace(match[0],scripts+(review?`<script data-grade2-letter src="../lop2/assets/js/letter-review.js?v=${version}"></script>\n`:'')+match[0]);
  }
- if(!html.includes('picture-audio.js'))html=html.replace(/(<script[^>]*src="[^\"]*letter-ladder-core\.js[^>]*><\/script>)/,`<script data-grade2-letter src="../lop2/assets/js/picture-audio.js?v=${version}"></script>\n$1`);
+ if(!html.includes('picture-audio.js'))html=html.replace(/(<script[^>]*src="[^\"]*letter-ladder-core\.js[^>]*><\/script>)/,`<script data-grade2-letter src="../lop2/assets/js/picture-audio.js?v=loading-smooth-20261028"></script>\n$1`);
  if(review){
   if(!html.includes('id="letter-review"'))html=html.replace('<section id="play"',`<section data-grade2-letter-review id="letter-review" class="panel" hidden aria-labelledby="letter-review-title"><div class="play-heading"><h2 id="letter-review-title" tabindex="-1">Ghép chữ</h2><button id="leave-letters" type="button">Chọn bài</button></div><div id="letter-review-stage"></div></section>\n<section id="play"`);
   if(!html.includes('id="start-letters"'))html=html.replace(/<button id="start"[^>]*>[^<]*<\/button>/,`<button id="start" type="button" class="primary">Ôn tổng hợp</button><button data-grade2-letter-review id="start-letters" type="button" class="primary">Ghép chữ</button>`);
   html=html.replace(/(<body\b)(?![^>]*data-grade=)/,`$1 data-grade="${grade}"`).replace(/(<button id="pick-term1"[^>]*>)[^<]*/, '$1Học kỳ 1').replace(/(<button id="pick-term2"[^>]*>)[^<]*/, '$1Học kỳ 2');
  }
- return html.replace(/((?:letter-ladder-core|letter-review|grade2-navigation)\.js)\?v=[^" ]+/g,`$1?v=${version}`).replace(/((?:letter-ladder|mixed-review|learning-core|shared\/primary-grade2-lesson)\.js)\?v=[^" ]+/g,'$1?v=game-pacing-20261025').replace(/(picture-audio\.js)\?v=[^" ]+/g,'$1?v=all-vocab-picture-20261025').replace(/((?:letter-ladder|primary-grade2-lesson)\.js)\?v=[^" ]+/g,'$1?v=feedback-20261025').replace(/((?:letter-ladder(?:-core)?|learning-core|learning-effects)\.(?:js|css))\?v=[^" ]+/g,'$1?v=site-letters-20261025');
+ return html.replace(/((?:letter-ladder-core|letter-review|grade2-navigation)\.js)\?v=[^" ]+/g,`$1?v=${version}`).replace(/((?:letter-ladder|mixed-review|learning-core|shared\/primary-grade2-lesson)\.js)\?v=[^" ]+/g,'$1?v=game-pacing-20261025').replace(/((?:letter-ladder|primary-grade2-lesson)\.js)\?v=[^" ]+/g,'$1?v=feedback-20261025').replace(/((?:letter-ladder(?:-core)?|learning-core|learning-effects)\.(?:js|css))\?v=[^" ]+/g,'$1?v=site-letters-20261025').replace(/((?:picture-audio|learning-effects)\.js)\?v=[^" ]+/g,'$1?v=loading-smooth-20261028');
 }
 module.exports={enable,version};

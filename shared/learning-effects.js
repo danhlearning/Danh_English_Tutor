@@ -67,7 +67,9 @@
     const detail={kind,sound,motion:!reduced()};
     document.dispatchEvent(new CustomEvent('danh-learning-feedback',{detail}));
     document.dispatchEvent(new CustomEvent('danh-vocabulary-feedback',{detail}));
-    const rect=!reduced()&&kind!=='flip'?target?.getBoundingClientRect():null;
+    // Navigation follows DOM updates. Reading layout here forces a full page
+    // layout on every next/tap, even though these only need a small viewport cue.
+    const rect=!reduced()&&['good','corrected','bad','streak','complete'].includes(kind)?target?.getBoundingClientRect():null;
     if(kind!=='flip'&&kind!=='bad'){const count=['good','corrected','streak'].includes(kind)?5:1;for(let i=0;i<count;i++)sparkle((rect?rect.left+rect.width/2:innerWidth/2)+(i-(count-1)/2)*24,rect?(count>1?rect.top-18:rect.top+Math.min(rect.height/2,150)):innerHeight/2,kind);}
     if(target && kind!=='flip') {
       const name=kind==='bad'?'vg-shake':kind==='streak'||kind==='complete'?'vg-celebrate':'vg-pop';

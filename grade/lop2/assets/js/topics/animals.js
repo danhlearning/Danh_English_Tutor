@@ -251,6 +251,7 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
 
   async function speak(text) {
     if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
+    if(window.DanhAnswerSpeech)return window.DanhAnswerSpeech.say(text);
     stopSpeech();
     setAudioNote('Nghe chậm · Giọng Anh–Mỹ');
     const serial = speechSerial;

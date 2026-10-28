@@ -3,7 +3,7 @@
   const siteRoot=new URL('../',document.currentScript.src);
   if (!window.DanhPWA && !document.querySelector('script[data-danh-pwa]')) {
     const pwa = document.createElement('script');
-    pwa.src = new URL('shared/pwa.js', siteRoot).href; pwa.dataset.danhPwa = '';
+    pwa.src = new URL('shared/pwa.js?v=online-audio-20261028', siteRoot).href; pwa.dataset.danhPwa = '';
     document.head.append(pwa);
   }
   const fonts = new URL('./learner-font.css', document.currentScript.src).href;
@@ -92,7 +92,6 @@
           }
         </style>
         <nav class="game-entry" aria-label="Trò chơi học từ"><a href="${letters.href.replace(/&/g,'&amp;')}">Ghép chữ · Luyện nhớ từ</a></nav>
-        <nav class="game-entry" aria-label="Ứng dụng học offline"><a href="${new URL('offline.html',siteRoot).href}">Học offline · Cài trên iPad</a></nav>
         <section class="contact-section" aria-labelledby="contact-title">
           <div class="contact-inner">
           <h2 id="contact-title">Kết nối với thầy Danh</h2>

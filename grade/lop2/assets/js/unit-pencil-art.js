@@ -57,6 +57,12 @@
       const file = images[word.id];
       if (!file) continue; // Keep original artwork when no reviewed file is provided.
       const href = new URL(file, root).href;
+      if(file.startsWith('grade/lop2/assets/images/pencil/') && /\.webp$/.test(file)){
+        const compact=new URL(file.replace('/pencil/','/pencil/compact/'),root).href;
+        word.image=compact;
+        word.visual=`<img class="danh-vocabulary-art" src="${compact}" srcset="${compact} 480w, ${href} 768w" sizes="130px" width="360" height="360" alt="" loading="lazy" decoding="async" draggable="false">`;
+        continue;
+      }
       word.image = href;
       word.visual = '<svg class="danh-vocabulary-art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" aria-hidden="true"><image href="' + href + '" width="360" height="360" preserveAspectRatio="xMidYMid meet"/></svg>';
     }

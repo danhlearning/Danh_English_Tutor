@@ -13,6 +13,10 @@
 
 ## Nội dung và giao diện
 
+- **Khung chơi iPad, ngày 28/10/2026:** trên máy tính bảng cảm ứng, game dùng khung cố định để tránh cuộn/trượt trang ngoài ý muốn. Game điền/gõ dùng bàn phím tiếng Anh trong vùng riêng, không che đề/ô nhập/phản hồi, không tự mở bàn phím hệ thống; vẫn hỗ trợ bàn phím ngoài và sửa tại con trỏ. Giữ game DOM, nháp, chấm điểm và lượt đang học. Có lối quay về chọn hoạt động và chủ động xem nội dung quá dài; dọc/ngang đều phải được kiểm tra. Dùng chung `shared/tablet-game.js` / `.css`, không gắn bàn phím lên ô tìm kiếm hoặc hồ sơ ngoài game.
+
+- **Tải trực tuyến và giọng lớp 2, ngày 28/10/2026:** bỏ tải kho offline và tải trước trang; không đăng ký service worker cho người dùng mới. Giữ `sw.js` chỉ để gỡ worker/cache offline cũ, không xóa hồ sơ hoặc tiến độ. Ảnh và MP3 được chuẩn bị theo nhóm thẻ đang xem/sắp xem, dùng lại khi chạm, giới hạn bộ nhớ/hàng đợi và không tự đọc. Lớp 2 thống nhất tốc độ MP3 0.85× khi học từ/mẫu câu và 1.15× trong game; giọng thiết bị tương ứng 0.82/0.95, giữ cao độ. Không dựng lại `offline-catalog.js` hay `offline-packs/`.
+
 - **Ghép chữ toàn website, ngày 25/10/2026:** dùng game chung cho Unit lớp 1–12, topic phụ, thư viện và ôn tập theo bộ đang chọn. Lượt tối đa 8 từ, đi từ ghép 1–2–3 chữ đến gõ cả từ; từ sai hoặc dùng gợi ý/xem mẫu phải tự làm đúng lại trước khi tăng mức. Giữ lượt ghép riêng với tiến độ các game khác, tải trước âm/ảnh, không hộp tick xanh và tôn trọng giảm chuyển động. Mẫu/bộ dựng phải giữ các lối vào và chạy tích hợp `scripts/install-site-letter-games.cjs` khi sinh trang. Chi tiết: [Ghép chữ trên toàn website](docs/SITE_LETTER_GAME_20261025.md).
 
 - **Tải trước âm thanh toàn website, xác nhận ngày 25/10/2026:** áp dụng cho lớp 1–12, toàn bộ topic phụ, thư viện kỹ năng, game, ôn tập, trang cũ và mẫu trang/bộ dựng. Khi có lượt học, chuẩn bị im lặng âm thanh của câu hiện tại và tối đa hai câu kế tiếp theo đúng thứ tự đã chọn; chuẩn bị cả ảnh của câu tiếp theo khi có. Với danh sách thẻ, chỉ ưu tiên nhóm thẻ đang xem/sắp xem, không tải cả thư viện.

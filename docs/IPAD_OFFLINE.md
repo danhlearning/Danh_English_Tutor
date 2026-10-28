@@ -1,40 +1,11 @@
-# Danh English Tutor trên iPad, dùng offline
+# Chuyển sang tải trực tuyến — 28/10/2026
 
-## Người dùng
+Theo yêu cầu mới, website không còn tải kho offline, cài service worker cho người dùng mới, hoặc tải trước trang khác. Ảnh và MP3 dùng cache HTTP bình thường và bộ nhớ giới hạn trong phiên.
 
-1. Mở địa chỉ website HTTPS bằng Safari. Trong Chia sẻ, chọn Thêm vào Màn hình chính, bật Mở dưới dạng ứng dụng web nếu có.
-2. Mở biểu tượng vừa thêm. Chọn **Học offline** trên trang chủ hoặc cuối bất kỳ bài học.
-3. Bấm **Tải toàn bộ** bằng Wi-Fi. Giữ ứng dụng mở, có thể cắm sạc. Kho hiện khoảng 233 MB (6.524 tệp), gồm mọi trang HTML đang triển khai, hình, mã game, font và âm thanh nội bộ. Các tệp được chuyển qua khoảng 120 gói nhỏ để tải nhanh hơn. Hệ thống có thể cần thêm chỗ trống khi cập nhật.
-4. Chỉ khi báo đủ kho mới tắt mạng. Bấm **Bắt đầu học**, mở thử Unit và nghe từ. Bấm **Kiểm tra bản tải** nếu cần kiểm tra lại từng tệp.
-5. Khi tải gián đoạn/đóng app/ẩn app, phần đã lưu vẫn giữ. Mở lại và bấm **Tải tiếp**. Chỉ tải toàn kho khi bạn chọn thao tác này.
+- Giữ `sw.js` tại URL cũ khi phát hành: đây chỉ là worker chuyển đổi, không có fetch handler, tự nhận các trang đang mở, xóa đúng cache `danh-offline:<phạm vi website>:` và tự gỡ đăng ký.
+- `shared/pwa.js` chỉ tìm worker của đúng website để cập nhật/gỡ; không đăng ký worker mới. Không chạm localStorage, sessionStorage hoặc dữ liệu hồ sơ.
+- Không đưa `offline-catalog.js` hoặc `offline-packs/` lên host nữa. Lệnh dựng cũ chỉ thông báo cơ chế đã dừng. Trang `offline.html` giữ đường dẫn cũ và chuyển về trang chủ.
+- Ứng dụng đã thêm vào màn hình chính vẫn có thể mở website trực tuyến; không còn cam kết học khi mất mạng.
+- Ảnh nhỏ có tải sau; âm của nhóm thẻ gần màn hình được chuẩn bị im lặng. Không tải toàn bộ thư viện và không tự phát âm khi mở/khôi phục.
 
-Hãy tải từ chính biểu tượng ứng dụng đã cài; không giả định dữ liệu của Safari đã chuyển sang ứng dụng trên màn hình chính. Nếu từng học trong Safari, có thể sao lưu hồ sơ ở Safari và khôi phục trong ứng dụng.
-
-Không cần đăng nhập để tải/học. Hồ sơ, lượt dở và cách chấm hiện có tiếp tục hoạt động offline. Tải kho không tạo kết quả học, không đọc tiếng và không sửa tiến độ. Giọng đọc từ/câu có sẵn dùng các WAV/MP3 nội bộ; từ/câu tự thêm cần giọng tiếng Anh đã tải trên thiết bị. Các liên kết Zalo/Facebook cần Internet.
-
-iPad quản lý dữ liệu web và có thể thu hồi khi thiếu bộ nhớ. Ứng dụng yêu cầu lưu bền vững khi bắt đầu tải, nhưng quyền này do thiết bị quyết định. Giữ bộ nhớ trống, sao lưu hồ sơ JSON định kỳ, không xóa dữ liệu website nếu cần giữ tiến độ. Kiểm tra lại trước chuyến đi. Mở trực tiếp HTML từ Files không cài được chế độ này.
-
-## Cập nhật và phát hành
-
-- Giữ nguyên thư mục website và các URL cũ; dùng HTTPS. Hỗ trợ gốc tên miền hoặc thư mục dự án, ví dụ GitHub Pages `/repo/`.
-- Sau khi chạy mọi bộ dựng/chỉnh nội dung, chạy `node scripts/build-offline-catalog.cjs`. Lệnh này tạo cả `offline-packs/`; đưa toàn bộ thư mục gói, `offline-catalog.js`, `sw.js`, manifest và các tệp được liệt kê lên host trong cùng đợt phát hành. Gói có tên theo hash, khoảng 2 MiB; danh mục ghi vị trí và SHA-256 từng tệp. Không nhận đủ kho khi nội dung sai hash. Khi thêm âm thanh, giữ WAV nguồn và chạy bộ nén MP3 trước khi dựng danh mục.
-- Không đặt xác thực/redirect cho các tài nguyên này. Nên cho `sw.js` và `offline-catalog.js` được kiểm tra cập nhật thường xuyên. Không dùng CDN sửa nội dung JS/CSS/HTML tự động sau khi tính hash.
-- Một worker mới chỉ tải bộ khung nhỏ rồi chờ; không kích hoạt giữa lượt chơi. Người dùng vào trang offline và chọn **Cập nhật ứng dụng**; tải tiếp để bổ sung kho của phiên bản mới. Tệp được lưu theo hash nội dung, dùng chung giữa các phiên bản; ảnh không đổi được giữ khi nâng từ bản WAV cũ sang MP3. Giữ tệp cũ đến khi đủ kho mới, rồi dọn phần không còn dùng; không dọn bộ khung của worker đang chờ, dữ liệu app khác hoặc hồ sơ.
-- Tải theo lô tối đa 12 tệp, ba tác vụ đồng thời. Bộ nhớ đệm giữ tối đa ba gói, gộp yêu cầu cùng gói, kiểm tra cả gói/tệp trước khi lưu. Gói thiếu có thể chuyển sang tải tệp lẻ; gói sai hash dừng để tránh trộn phiên bản. Dừng khi ẩn trang/mất mạng hoặc người dùng bấm tạm dừng. Không phụ thuộc tải nền kéo dài trên iPad; không giữ cả kho trong RAM.
-- Khi khởi động, số tệp thực có trong cache quyết định trạng thái. Kiểm tra bản tải đọc lại và đối chiếu SHA-256, loại bản lỗi. Range audio trả 206/416 phù hợp cho Safari.
-- Ảnh từ thẻ cũ trước đây dùng Unsplash đã chuyển về `assets/images/legacy-vocabulary/`. Sáu URL gốc trả 404, dùng biểu tượng dự phòng nội bộ hiện có. Không đổi thành ảnh khác nghĩa. Bộ dựng kế hoạch âm thanh đã bổ sung ví dụ `speakWord` trong HTML cũ và từ của sổ tay cũ; tạo các WAV còn thiếu bằng giọng Windows như kho hiện có.
-- `shared/contact-footer.js` nạp PWA cho toàn bộ trang hiện có và trang sinh lại dùng footer chung. Trang chủ có sẵn manifest/icon và lối vào. Bộ dựng chỉ cần tiếp tục giữ footer, sau đó tạo lại danh mục cuối cùng.
-
-Kiểm tra tự động:
-
-```text
-node scripts/build-offline-catalog.cjs --check
-node --test tests/offline/*.test.cjs
-node tests/offline/browser.cjs
-```
-
-Bài trình duyệt tự mở máy chủ dưới `/course/`, tải cả kho thật (khoảng 233 MB vào hồ sơ trình duyệt tạm), đếm số yêu cầu gói, dừng/tải tiếp, hash sai, thiếu tệp, kiểm tra lại toàn bộ khi offline, 12 lớp, thư viện/bài cũ, MP3/range, worker khởi động lại, cập nhật giữ tiến độ và màn hình 390/768 px. Báo cáo/screenshot ở `artifacts/offline/`. Có thể đặt `PLAYWRIGHT_MODULE` và `BROWSER_CHANNEL` cho môi trường cục bộ.
-
-Đã kiểm tra bằng Edge/Chromium với kích thước iPad mô phỏng; **chưa nghiệm thu Safari trên iPad vật lý**. Cần kiểm tra thao tác thêm vào màn hình chính, nghe thực tế, đóng/mở lại app trong chế độ máy bay và giữ dữ liệu sau khi iPad khởi động lại.
-
-Nguồn: [Apple — thêm website thành ứng dụng](https://support.apple.com/guide/ipad/ipad8f1f7a29/ipados), [WebKit — chính sách lưu trữ](https://webkit.org/blog/14403/updates-to-storage-policy/).
+Kiểm tra: `node --test tests/offline/*.test.cjs`, `node tests/offline/browser.cjs`, `node --test tests/game-pacing/media.test.cjs`.

@@ -28,7 +28,7 @@
  if(typeof module!=='undefined'&&module.exports)module.exports=api;
  if(typeof document==='undefined')return;
  const base=new URL('../',document.currentScript.src);let pending;
- const script=file=>new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=new URL(file+'?v=meaning-images-20261025',base);s.onload=resolve;s.onerror=()=>{s.remove();reject(Error('Chưa tải được bộ từ. Thử lại nha.'));};document.head.append(s);});
+ const script=file=>new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=new URL(file+'?v=online-audio-20261028',base);s.onload=resolve;s.onerror=()=>{s.remove();reject(Error('Chưa tải được bộ từ. Thử lại nha.'));};document.head.append(s);});
  api.load=()=>pending||(pending=(async()=>{
   const courses=[];
   for(const source of sources){for(const file of source.files)await script(file);courses.push({grade:source.grade,data:root[source.global]});}
