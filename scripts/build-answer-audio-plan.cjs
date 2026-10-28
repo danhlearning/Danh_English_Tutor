@@ -26,6 +26,9 @@ for(const file of fs.readdirSync(path.join(root,'grade/lop2/assets/js/topics')).
  for(const match of source.matchAll(/\b(?:answer|altAnswer|targetSentence|sentence):\s*(['"])((?:\\.|(?!\1).)*)\1/g))add(vm.runInNewContext(match[0].slice(match[0].indexOf(':')+1)),`grade2-sentences-${file.replace('.js','')}`);
 }
 for(const color of ['red','blue','yellow','green','orange','purple','pink','black','white','gray','silver','brown','transparent'])add(`It is ${color}.`,'grade2-colors-sentences');
+const animalsSource=fs.readFileSync(path.join(root,'grade/lop2/assets/js/topics/animals.js'),'utf8');
+const animalCounts=vm.runInNewContext(animalsSource.match(/const countGameQuestions = (\[[\s\S]*?\n  \]);/)[1]);
+for(const q of animalCounts)add(`There ${q.count===1?'is':'are'} ${q.count} ${q.count===1?q.itemSingular:q.itemPlural}`,'grade2-animals-counting');
 const numberSource=fs.readFileSync(path.join(root,'grade/lop2/assets/js/topics/numbers.js'),'utf8');const numberToWords=vm.runInNewContext('('+numberSource.match(/function numberToWords\(n\) \{[\s\S]*?\n  \}/)[0]+')');for(let n=1;n<=100;n++)add(numberToWords(n),'grade2-topic-numbers');
 const datesSource=fs.readFileSync(path.join(root,'grade/lop2/assets/js/topics/dates.js'),'utf8');
 for(const [name,field] of [['daysAndMonthsVocab','name'],['dateQuestions','answer']]){

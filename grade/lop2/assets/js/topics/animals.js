@@ -128,6 +128,17 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
     { count: 3, itemSingular: 'kangaroo', itemPlural: 'kangaroos', emoji: '🦘' }
   ];
 
+  /* Use one lightweight pencil picture for vocabulary and every game. */
+  animalsList.forEach(word => {
+    word.image = './assets/images/pencil/animals/' + word.name.toLowerCase() + '-pencil-v1.svg';
+    word.emoji = `<img class="animals-pencil-art" src="${word.image}" alt="" width="360" height="360" loading="lazy" decoding="async">`;
+  });
+  countGameQuestions.forEach(question => {
+    const word = animalsList.find(word => word.name.toLowerCase() === question.itemSingular);
+    question.emoji = word.emoji;
+    question.image = word.image;
+  });
+
   let flashcardDeck = [];
   let finishCurrentSpeech = null;
   let activeWordAudio = null;
@@ -338,7 +349,7 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
     for(let i = 0; i < item.count; i++) {
       const span = document.createElement('span');
       span.className = 'item-emoji';
-      span.innerText = item.emoji;
+      span.innerHTML = item.emoji;
       container.appendChild(span);
     }
   }

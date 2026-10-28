@@ -3,7 +3,7 @@
  'use strict';
  if(window.DanhTabletGame)return;
  const root=new URL('../',document.currentScript.src);
- const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=ipados-layout-20261028',root).href;document.head.append(sheet);
+ const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=animals-pencil-20261029',root).href;document.head.append(sheet);
  const tablet=()=>navigator.maxTouchPoints>0 && Math.min(screen.width||innerWidth,innerWidth)>=600 && innerWidth>=600;
  const selectors='.tab-content.active[id^="game-"],#play:not([hidden]),#practice:not([hidden]),[data-danh-game-surface]';
  let panel,input,saved,bar,keyboard,backdrop,scheduled=false,suppressed=null,caps=false,symbols=false,moreSymbols=false,keyboardDismissed=false;
@@ -34,6 +34,12 @@
   bar=element('nav',null,'tg-bar');bar.setAttribute('aria-label','Khung chơi');
   bar.append(makeButton('← Chọn hoạt động',leave));
   const title=element('strong','Cùng luyện tiếng Anh','tg-title');bar.append(title);
+  const choices=[...document.querySelectorAll('.g2-game-choice[data-game]')];
+  if(choices.length){
+   const picker=element('select',null,'tg-game-picker');picker.setAttribute('aria-label','Chọn trò chơi');
+   for(const choice of choices){const option=element('option',choice.textContent);option.value=choice.dataset.game;option.selected=option.value===panel.id;picker.append(option);}
+   picker.addEventListener('change',()=>choices.find(choice=>choice.dataset.game===picker.value)?.click());bar.append(picker);
+  }
   const show=makeButton('Hiện bàn phím',()=>{keyboardDismissed=false;schedule();});show.className='tg-show-keyboard';show.hidden=true;bar.append(show);
   const expand=makeButton('Xem đầy đủ',()=>{const reading=panel.classList.toggle('tg-reading');if(!reading)panel.scrollTop=0;expand.textContent=reading?'Về khung chơi':'Xem đầy đủ';});expand.className='tg-expand';expand.hidden=true;bar.append(expand);
   keyboard=element('section',null,'tg-keyboard');keyboard.setAttribute('aria-label','Bàn phím tiếng Anh');keyboard.hidden=true;
