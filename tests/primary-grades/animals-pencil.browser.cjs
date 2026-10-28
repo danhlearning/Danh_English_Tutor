@@ -14,6 +14,8 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8765',out='artifacts/a
  for(let index=0;index<16;index++){
   const q=await p.evaluate(()=>({...countList[countIdx],emoji:undefined})),answer=`There ${q.count===1?'is':'are'} ${q.count} ${q.count===1?q.itemSingular:q.itemPlural}`;
   assert.equal(await p.locator('#count-items-container img').count(),q.count);
+  await p.locator('#count-items-container img').evaluateAll(ns=>Promise.all(ns.map(n=>n.decode())));
+  assert(await p.locator('#count-items-container img').first().evaluate(n=>n.getBoundingClientRect().width>=40));
   const before=await p.evaluate(()=>reads.length);
   if(index===0)await p.screenshot({path:out+'/keyboard-ipad.png'});
   await p.locator('#count-sentence-input').fill(answer);await p.locator('.tg-keyboard [data-action=submit]').click();await p.waitForFunction(n=>reads.slice(n).some(e=>e.state==='ended'),before);

@@ -547,3 +547,4 @@ body.grade2-topic.animals-pencil{--primary:#3c7a67;background-color:#f6f0e3;back
 body.animals-pencil.tg-playing #count-items-container{gap:3px;margin:4px auto;padding:4px;max-width:520px}
 body.animals-pencil.tg-playing .item-emoji{width:48px;height:48px;margin:1px}
 @media(max-width:600px){.animals-pencil .number-display{width:110px;height:110px}.animals-pencil .item-emoji{width:48px;height:48px}}
+@media(prefers-reduced-motion:reduce){.animals-pencil *{animation:none!important;transition:none!important}}
