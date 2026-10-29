@@ -8,15 +8,15 @@ Cập nhật 23/10/2026: lớp 10–12 có 100 từ/cụm từ mỗi lớp, kèm
 
 ## Mở website
 
-### Cài trên iPad và học offline
+### Tải ảnh và phát âm trực tuyến
 
-Website đã có PWA và trang [Học offline](offline.html). Sau khi triển khai qua **HTTPS**, mở bằng Safari → Chia sẻ → Thêm vào Màn hình chính → mở ứng dụng vừa thêm → Học offline → **Tải toàn bộ**. Kho hiện khoảng **233 MB**, gồm lớp 1–12, kỹ năng, bài cũ, ảnh, font và giọng đọc thu sẵn. Giọng MP3 và khoảng 120 gói tải giúp giảm dung lượng và lượt kết nối. Giữ ứng dụng mở khi tải; có tạm dừng, tải tiếp và kiểm tra từng tệp. Khi báo đủ, có thể tắt mạng và mở bài chưa từng học.
+Từ 28/10/2026, đã bỏ tải kho offline và tải trước trang. Ảnh WebP nhỏ được tải theo vùng đang xem; âm MP3 của tối đa tám thẻ gần màn hình được chuẩn bị im lặng và dùng lại khi chạm. Cache trong phiên giới hạn 12 tệp / 2 MiB, hai lượt tải đồng thời; không tạo tiến độ học. Game chuẩn bị câu hiện tại và hai câu tiếp theo.
 
-Hồ sơ/lượt dở được giữ trên thiết bị. iPad có thể thu hồi dữ liệu web khi thiếu bộ nhớ; nên sao lưu hồ sơ và kiểm tra bản tải trước khi đi xa. Từ/câu tự nhập phụ thuộc giọng tiếng Anh có sẵn của thiết bị; Zalo/Facebook cần mạng. Không mở tệp HTML trong Files để cài PWA. Xem [hướng dẫn và vận hành](docs/IPAD_OFFLINE.md).
+Lớp 2 dùng cùng tốc độ đọc giữa các topic: học từ/mẫu câu MP3 0.85×, giọng thiết bị 0.82; trong game MP3 1.15×, giọng thiết bị 0.95. Giữ cao độ. Chuẩn bị không tự phát tiếng; thao tác nghe chủ động vẫn có thể tải bình thường khi chưa chuẩn bị xong.
 
-**Sau mọi lần đổi nội dung, ảnh, âm thanh, HTML/CSS/JS hoặc chạy bộ dựng**, chạy `node scripts/build-offline-catalog.cjs` trước khi phát hành và đưa `sw.js`, `offline-catalog.js`, `offline-packs/`, `manifest.webmanifest` cùng các tệp website lên host. Nếu thêm WAV, chạy `scripts/compress-answer-audio.cjs` với `FFMPEG_PATH` trước khi dựng danh mục; giữ WAV gốc, ứng dụng dùng MP3. CI kiểm tra danh mục và gói tải không bị cũ. Worker mới chờ người học chọn cập nhật trên trang offline; bổ sung kho mới trước khi tắt mạng. Tệp không đổi được lưu một lần và dùng chung giữa các phiên bản; chỉ dọn phần cũ không còn dùng sau khi đã đủ bản mới, không dọn hồ sơ.
+Không dựng hay phát hành `offline-catalog.js` và `offline-packs/`. Giữ `sw.js` trên host làm tệp chuyển đổi nhỏ để gỡ worker và cache offline cũ; không xóa hồ sơ/tiến độ. Trang `offline.html` cũ chuyển về trang chủ. Xem [chuyển sang tải trực tuyến](docs/IPAD_OFFLINE.md).
 
-Kiểm tra: `node --test tests/offline/*.test.cjs`; kiểm tra trình duyệt với máy chủ tự khởi động: `node tests/offline/browser.cjs` (Playwright/Edge, có thể đặt `PLAYWRIGHT_MODULE` và `BROWSER_CHANNEL`).
+Dựng bản ảnh nhỏ bằng `scripts/build-compact-pencil-images.py` (Pillow). Khi sửa âm/ảnh/mã dùng chung, cập nhật phiên bản URL ở trang, mẫu và bộ dựng. Kiểm tra gỡ offline: `node --test tests/offline/*.test.cjs` và `node tests/offline/browser.cjs`.
 
 ### Luyện từ vựng theo cấp độ
 

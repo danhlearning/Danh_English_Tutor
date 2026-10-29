@@ -1,8 +1,8 @@
 /* Slow study reading and a livelier game voice, both at natural pitch. */
 (() => {
   'use strict';
-  const rate = 0.5;
-  const audioRate = 0.6;
+  const rate = 0.82;
+  const audioRate = 0.85;
   const normalize = value => String(value || '').replace(/_/g, '-').toLowerCase();
   function configure(utterance) {
     utterance.rate = window.DanhGameFlow?.isPlaying() ? window.DanhGameFlow.speechRate : rate;

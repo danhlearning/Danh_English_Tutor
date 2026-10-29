@@ -1,0 +1,402 @@
+[
+  {
+    "id": "dog",
+    "file": "grade/lop2/assets/images/pencil/animals/dog-pencil-v1.svg",
+    "bytes": 4816,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f415.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "cat",
+    "file": "grade/lop2/assets/images/pencil/animals/cat-pencil-v1.svg",
+    "bytes": 5055,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f408.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "mouse",
+    "file": "grade/lop2/assets/images/pencil/animals/mouse-pencil-v1.svg",
+    "bytes": 2750,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f401.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "rabbit",
+    "file": "grade/lop2/assets/images/pencil/animals/rabbit-pencil-v1.svg",
+    "bytes": 2994,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f407.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "hamster",
+    "file": "grade/lop2/assets/images/pencil/animals/hamster-pencil-v1.svg",
+    "bytes": 4722,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f439.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "fox",
+    "file": "grade/lop2/assets/images/pencil/animals/fox-pencil-v1.svg",
+    "bytes": 4191,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f98a.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "bear",
+    "file": "grade/lop2/assets/images/pencil/animals/bear-pencil-v1.svg",
+    "bytes": 2830,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f43b.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "panda",
+    "file": "grade/lop2/assets/images/pencil/animals/panda-pencil-v1.svg",
+    "bytes": 3350,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f43c.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "tiger",
+    "file": "grade/lop2/assets/images/pencil/animals/tiger-pencil-v1.svg",
+    "bytes": 2621,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f405.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "lion",
+    "file": "grade/lop2/assets/images/pencil/animals/lion-pencil-v1.svg",
+    "bytes": 5494,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f981.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "cow",
+    "file": "grade/lop2/assets/images/pencil/animals/cow-pencil-v1.svg",
+    "bytes": 2296,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f404.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "pig",
+    "file": "grade/lop2/assets/images/pencil/animals/pig-pencil-v1.svg",
+    "bytes": 2158,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f416.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "frog",
+    "file": "grade/lop2/assets/images/pencil/animals/frog-pencil-v1.svg",
+    "bytes": 2842,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f438.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "monkey",
+    "file": "grade/lop2/assets/images/pencil/animals/monkey-pencil-v1.svg",
+    "bytes": 3477,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f412.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "chicken",
+    "file": "grade/lop2/assets/images/pencil/animals/chicken-pencil-v1.svg",
+    "bytes": 3114,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f414.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "duck",
+    "file": "grade/lop2/assets/images/pencil/animals/duck-pencil-v1.svg",
+    "bytes": 4045,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f986.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "bird",
+    "file": "grade/lop2/assets/images/pencil/animals/bird-pencil-v1.svg",
+    "bytes": 3905,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f426.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "eagle",
+    "file": "grade/lop2/assets/images/pencil/animals/eagle-pencil-v1.svg",
+    "bytes": 2417,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f985.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "owl",
+    "file": "grade/lop2/assets/images/pencil/animals/owl-pencil-v1.svg",
+    "bytes": 5305,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f989.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "penguin",
+    "file": "grade/lop2/assets/images/pencil/animals/penguin-pencil-v1.svg",
+    "bytes": 2756,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f427.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "bat",
+    "file": "grade/lop2/assets/images/pencil/animals/bat-pencil-v1.svg",
+    "bytes": 3625,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f987.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "wolf",
+    "file": "grade/lop2/assets/images/pencil/animals/wolf-pencil-v1.svg",
+    "bytes": 3789,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f43a.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "horse",
+    "file": "grade/lop2/assets/images/pencil/animals/horse-pencil-v1.svg",
+    "bytes": 4437,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f40e.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "zebra",
+    "file": "grade/lop2/assets/images/pencil/animals/zebra-pencil-v1.svg",
+    "bytes": 4805,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f993.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "giraffe",
+    "file": "grade/lop2/assets/images/pencil/animals/giraffe-pencil-v1.svg",
+    "bytes": 5230,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f992.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "elephant",
+    "file": "grade/lop2/assets/images/pencil/animals/elephant-pencil-v1.svg",
+    "bytes": 2497,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f418.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "rhinoceros",
+    "file": "grade/lop2/assets/images/pencil/animals/rhinoceros-pencil-v1.svg",
+    "bytes": 3576,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f98f.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "hippopotamus",
+    "file": "grade/lop2/assets/images/pencil/animals/hippopotamus-pencil-v1.svg",
+    "bytes": 4120,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f99b.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "crocodile",
+    "file": "grade/lop2/assets/images/pencil/animals/crocodile-pencil-v1.svg",
+    "bytes": 3237,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f40a.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "snake",
+    "file": "grade/lop2/assets/images/pencil/animals/snake-pencil-v1.svg",
+    "bytes": 2503,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f40d.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "turtle",
+    "file": "grade/lop2/assets/images/pencil/animals/turtle-pencil-v1.svg",
+    "bytes": 2933,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f422.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "whale",
+    "file": "grade/lop2/assets/images/pencil/animals/whale-pencil-v1.svg",
+    "bytes": 2173,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f40b.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "dolphin",
+    "file": "grade/lop2/assets/images/pencil/animals/dolphin-pencil-v1.svg",
+    "bytes": 2470,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f42c.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "seal",
+    "file": "grade/lop2/assets/images/pencil/animals/seal-pencil-v1.svg",
+    "bytes": 6939,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f9ad.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "fish",
+    "file": "grade/lop2/assets/images/pencil/animals/fish-pencil-v1.svg",
+    "bytes": 2850,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f41f.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "shark",
+    "file": "grade/lop2/assets/images/pencil/animals/shark-pencil-v1.svg",
+    "bytes": 2855,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f988.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "octopus",
+    "file": "grade/lop2/assets/images/pencil/animals/octopus-pencil-v1.svg",
+    "bytes": 2613,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f419.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "crab",
+    "file": "grade/lop2/assets/images/pencil/animals/crab-pencil-v1.svg",
+    "bytes": 6652,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f980.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "butterfly",
+    "file": "grade/lop2/assets/images/pencil/animals/butterfly-pencil-v1.svg",
+    "bytes": 6550,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f98b.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "bee",
+    "file": "grade/lop2/assets/images/pencil/animals/bee-pencil-v1.svg",
+    "bytes": 3536,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f41d.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "ant",
+    "file": "grade/lop2/assets/images/pencil/animals/ant-pencil-v1.svg",
+    "bytes": 3037,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f41c.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "spider",
+    "file": "grade/lop2/assets/images/pencil/animals/spider-pencil-v1.svg",
+    "bytes": 3258,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f577.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "kangaroo",
+    "file": "grade/lop2/assets/images/pencil/animals/kangaroo-pencil-v1.svg",
+    "bytes": 3739,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f998.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "camel",
+    "file": "grade/lop2/assets/images/pencil/animals/camel-pencil-v1.svg",
+    "bytes": 2689,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f42b.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "sheep",
+    "file": "grade/lop2/assets/images/pencil/animals/sheep-pencil-v1.svg",
+    "bytes": 2869,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f411.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "goat",
+    "file": "grade/lop2/assets/images/pencil/animals/goat-pencil-v1.svg",
+    "bytes": 3144,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f410.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "deer",
+    "file": "grade/lop2/assets/images/pencil/animals/deer-pencil-v1.svg",
+    "bytes": 3990,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f98c.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "squirrel",
+    "file": "grade/lop2/assets/images/pencil/animals/squirrel-pencil-v1.svg",
+    "bytes": 3598,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f43f.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "snail",
+    "file": "grade/lop2/assets/images/pencil/animals/snail-pencil-v1.svg",
+    "bytes": 3132,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f40c.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  },
+  {
+    "id": "koala",
+    "file": "grade/lop2/assets/images/pencil/animals/koala-pencil-v1.svg",
+    "bytes": 2565,
+    "source": "https://github.com/twitter/twemoji/blob/v14.0.2/assets/svg/1f428.svg",
+    "credit": "Twitter and contributors; pencil adaptation by Danh English Tutor",
+    "license": "CC-BY-4.0"
+  }
+]

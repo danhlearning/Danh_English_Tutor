@@ -1,0 +1,67 @@
+/* Scoped to the active tablet game; desktop, phones and lesson lists keep their layout. */
+.tg-backdrop{position:fixed;inset:0;z-index:100100;background:#fffaf0}
+.tg-bar{position:fixed;top:var(--tg-top,0px);left:0;right:0;z-index:100103;display:flex!important;align-items:center;gap:14px;width:100%!important;max-width:none!important;box-sizing:border-box;height:56px;padding:6px max(16px,env(safe-area-inset-left));margin:0!important;background:#f3ecd9;border-bottom:1px solid #cfbea0;font:800 16px 'Danh Nunito',Nunito,sans-serif;color:#34584c}
+.tg-bar button,.tg-keyboard button{font:800 18px 'Danh Nunito',Nunito,sans-serif;min-height:44px;border:1px solid #bfae8b;border-radius:10px;background:#fffdf6;color:#34584c;padding:5px 12px;touch-action:manipulation;cursor:pointer}
+.tg-bar .tg-title{flex:1;text-align:center}.tg-bar [hidden],.tg-keyboard[hidden]{display:none!important}
+body.tg-playing .tg-panel{position:fixed!important;z-index:100102;top:calc(var(--tg-top,0px) + 56px)!important;left:0!important;right:0!important;bottom:auto!important;width:100%!important;max-width:none!important;height:calc(var(--tg-height,100dvh) - 56px)!important;max-height:none!important;margin:0!important;padding:12px 24px!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:#fffaf0!important;overflow:hidden!important;overscroll-behavior:none;animation:none!important;transform:none!important;box-sizing:border-box;touch-action:pinch-zoom}
+body.tg-typing .tg-panel{height:calc(var(--tg-height,100dvh) - 56px - 224px - env(safe-area-inset-bottom,0px))!important}
+body.tg-playing .tg-panel.tg-reading{overflow-y:auto!important;touch-action:pan-y pinch-zoom}
+body.tg-playing .tg-panel.tg-reading :is(.item-display-box,#spelling-preview){max-height:none!important;overflow:visible}
+.tg-keyboard{position:fixed;z-index:100104;left:0;right:0;top:calc(var(--tg-top,0px) + var(--tg-height,100dvh) - 224px - env(safe-area-inset-bottom,0px));height:calc(224px + env(safe-area-inset-bottom,0px));box-sizing:border-box;padding:7px max(16px,env(safe-area-inset-left)) calc(7px + env(safe-area-inset-bottom,0px));background:#e8e2d3;border-top:1px solid #bfae8b;display:flex;flex-direction:column;gap:6px;touch-action:manipulation}
+.tg-key-row{display:flex;justify-content:center;gap:7px;flex:1;min-height:44px;max-width:1000px;width:100%;margin:auto}
+.tg-key-row button{flex:1;min-width:0;max-width:86px;padding:4px;font-size:22px;box-shadow:0 2px 0 #c4b79b}
+.tg-key-actions button{font-size:16px;max-width:none}.tg-key-actions [data-action=space]{flex:4}.tg-key-actions [data-action=submit]{flex:2;background:#377d65;color:white;border-color:#28654e}.tg-keyboard button:disabled{opacity:.5}.tg-keyboard button:active{background:#dbe9d4}.tg-keyboard button:focus-visible,.tg-bar button:focus-visible{outline:3px solid #176d8a;outline-offset:1px}
+/* Full-size iPad-style English layout, within the existing 224px game dock. */
+.tg-keyboard{padding-left:max(10px,env(safe-area-inset-left));padding-right:max(10px,env(safe-area-inset-right));background:rgba(211,215,221,.97);border-top:1px solid #b9bec6;color:#181a1f}
+.tg-key-row{max-width:1200px;gap:7px;align-items:stretch}
+.tg-keyboard button{position:relative;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:400;color:#111318;background:#fff;border:0;border-radius:7px;box-shadow:0 1px 0 #8d949e;line-height:1.1;max-width:none;flex:1;padding:4px 6px;font-size:24px;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.tg-key-primary{display:block;line-height:1.1}.tg-key-alt{position:absolute;top:3px;right:7px;font-size:11px;font-weight:400;color:#777f88;line-height:1}.tg-key-alt:empty{display:none}
+.tg-keyboard .tg-key-special{background:#b8bec8;font-size:22px}
+.tg-keyboard [data-action=delete]{flex:1.5;font-size:27px}
+.tg-keyboard [data-action=shift]{flex:1.25;font-size:29px}
+.tg-keyboard [data-action=shift][aria-pressed=true]{background:#fff;color:#111;box-shadow:inset 0 -3px 0 #454c55,0 1px 0 #8d949e}
+.tg-keyboard [data-action=submit]{flex:2;display:flex;align-items:center;justify-content:space-between;gap:5px;background:#007aff;color:white;font-size:17px;padding-inline:12px}
+.tg-return-symbol{font-size:24px}.tg-key-spacer{flex:.5;pointer-events:none}
+.tg-key-actions [data-action=symbols],.tg-key-actions [data-action=hide]{flex:1.5;font-size:18px}
+.tg-key-actions [data-action=space]{flex:7;font-size:17px;background:#fff}
+.tg-keyboard button:active{background:#e9edf2;box-shadow:0 0 0 1px #7e8793}
+.tg-keyboard [data-action=submit]:active{background:#0063d1}
+body.tg-playing .tg-panel :is(.learning-panel,.learning-stage,.letter-ladder,.g6-stage,.gg-question-card,.task){padding:10px!important;margin:0 auto!important;max-width:980px;width:100%;box-sizing:border-box;box-shadow:none!important}
+body.tg-playing .tg-panel :is(h2,h3){font-size:24px!important;line-height:1.3!important;margin:4px 0 8px!important}
+body.tg-playing .tg-panel p{margin-top:5px;margin-bottom:7px;line-height:1.4}
+body.tg-playing .tg-panel :is(button,input,textarea){box-sizing:border-box;min-height:44px;font-size:18px}
+body.tg-playing .tg-panel :is(input:not([type=checkbox]):not([type=radio]),textarea){max-width:100%;width:100%;min-height:46px;height:48px;padding:8px 12px;scroll-margin:0}
+body.tg-playing .tg-panel textarea{resize:none}
+body.tg-playing .tg-panel :is(.learning-toolbar,.learning-panel>h2,.learning-storage,.learning-buddy,.lesson-links,.g6-unit-footer){display:none!important}
+body.tg-playing .tg-panel :is(.learning-visual,.g2-practice-image,.word-image,.ll-prompt .word-picture,.g6-flash-visual,.learning-question-visual){width:90px!important;height:90px!important;min-width:80px!important;min-height:80px!important;margin:4px auto!important}
+body.tg-playing .tg-panel :is(.count-game-container,.spelling-box,.item-display-box,.g2-practice-controls){margin:4px auto!important;padding:8px!important}
+body.tg-playing .tg-panel .count-game-container{gap:8px!important}
+body.tg-playing .tg-panel .spelling-input-group{flex-direction:row!important;flex-wrap:wrap!important;gap:8px!important;width:100%;max-width:900px}
+body.tg-playing .tg-panel .spelling-input-group input{flex:1;min-width:240px;width:auto!important}
+body.tg-playing .tg-panel :is(#count-items-container,#spelling-preview){height:auto!important;max-height:140px!important;min-height:0!important;overflow:hidden;font-size:24px!important;line-height:1.35!important}
+body.tg-playing .tg-panel #count-items-container :is(div,p,h3){font-size:24px!important;line-height:1.35!important;margin:0!important}
+body.tg-playing .tg-panel :is(.ll-route,.ll-head,.learning-progress,.g6-card-position){margin:2px 0 5px!important;font-size:15px}
+body.tg-playing .tg-panel .ll-route span:not([aria-current]){display:none}
+body.tg-playing .tg-panel .ll-prompt{margin:4px auto!important;gap:14px;justify-content:center;max-width:600px}
+body.tg-playing .tg-panel .ll-prompt .word-picture{margin:0!important}
+body.tg-playing .tg-panel :is(.ll-bank,.ll-slots){margin:8px 0!important;min-height:44px;gap:8px}
+body.tg-playing .tg-panel :is(.ll-slot,.ll-tile){min-height:46px!important;height:46px!important;padding:5px!important}
+body.tg-playing .tg-panel :is(.ll-actions,.learning-controls,.practice-actions,.help-actions,.gg-answer-actions,.actions){margin:6px 0!important;gap:8px;flex-wrap:wrap}
+body.tg-playing .tg-panel :is(.ll-input-label,.field-label){margin:4px 0;font-size:16px}
+body.tg-playing .tg-panel :is(.learning-options,.g6-options,.answer-options,.choices){gap:9px;margin:8px 0}
+body.tg-playing .tg-panel :is(.gg-question-meta,.lesson-head,.play-top,.gg-play-top){margin:0 0 6px;gap:8px}
+body.tg-playing .tg-panel .lesson-head>div{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+body.tg-playing .tg-panel .lesson-head h2{margin:0!important}
+body.tg-playing .tg-panel .practice-actions{display:flex!important;flex-wrap:wrap}
+body.tg-playing .tg-panel :is(.practice-actions,.help-actions) button{width:auto!important;min-width:0;min-height:44px;line-height:1.3;padding:7px 12px;margin:0!important}
+body.tg-playing .tg-panel :is(.field-label,.ll-input-label){line-height:1.3;padding:0}
+body.tg-playing .tg-panel textarea{margin:0!important}
+body.tg-playing .tg-panel .progress-track{margin:4px 0;height:6px}
+body.tg-playing .tg-panel :is(.ll-status,.feedback,.response,.learning-feedback,.gg-feedback){font-size:18px;margin:5px 0;min-height:0;padding:5px 8px}
+body.tg-playing .tg-panel :is(.ll-status,.feedback,.response,.learning-feedback,.gg-feedback):empty{display:none}
+body.tg-playing .tg-panel .feedback-msg:empty{display:none}
+body.tg-playing .tg-panel .g2-practice-feedback:empty{display:none}
+body.tg-playing .tg-panel .g2-translation-prompt{font-size:24px!important;line-height:1.35!important;padding:10px 14px!important;margin:6px 0!important}
+body.tg-playing .tg-panel .g2-translation-prompt::before{margin-bottom:4px;font-size:14px;line-height:1.3}
+@media(max-height:820px) and (min-width:900px){body.tg-playing .tg-panel :is(.learning-stage,.letter-ladder,.gg-question-card,.task){padding:5px 12px!important}body.tg-playing .tg-panel :is(.ll-prompt .word-picture,.word-image,.g6-flash-visual){width:76px!important;height:76px!important;min-height:72px!important;min-width:72px!important}body.tg-playing .tg-panel :is(.question,#question-prompt,#instruction){font-size:22px;line-height:1.35;margin:5px 0}body.tg-playing .tg-panel .learning-card{max-height:340px!important}}
+.tg-bar .tg-game-picker{max-width:170px;min-height:44px;border:1px solid #bfae8b;border-radius:10px;background:#fffdf6;color:#34584c;font:700 16px inherit;padding:5px 9px}

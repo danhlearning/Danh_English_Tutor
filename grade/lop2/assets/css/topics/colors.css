@@ -87,9 +87,9 @@
   /* Pattern Caro biểu thị Transparent */
   .transparent-bg-pattern {
     background-color: #ffffff !important;
-    background-image: linear-gradient(45deg, #e2e8f0 25%, transparent 25%), 
-                      linear-gradient(-45deg, #e2e8f0 25%, transparent 25%), 
-                      linear-gradient(45deg, transparent 75%, #e2e8f0 75%), 
+    background-image: linear-gradient(45deg, #e2e8f0 25%, transparent 25%),
+                      linear-gradient(-45deg, #e2e8f0 25%, transparent 25%),
+                      linear-gradient(45deg, transparent 75%, #e2e8f0 75%),
                       linear-gradient(-45deg, transparent 75%, #e2e8f0 75%) !important;
     background-size: 16px 16px !important;
     background-position: 0 0, 0 8px, 8px -8px, -8px 0px !important;
@@ -410,9 +410,36 @@
 #game-count .score-board { margin:14px 0; font-weight:800; }
 .colors-game4-image { width:120px; height:120px; margin:14px auto; display:flex; align-items:center; justify-content:center; }
 .colors-game4-image svg { width:100%; height:100%; }
+.colors-game4-image img { width:100%; height:100%; object-fit:contain; }
 .colors-game4-prompt { font-size:1.25rem; font-weight:800; }
 .colors-game4-controls { flex-wrap:wrap; justify-content:center; margin-top:16px; }
 .colors-game4-controls .spelling-input { flex:1 1 210px; max-width:340px; text-transform:none; letter-spacing:normal; }
 .colors-game4-controls button { min-height:44px; }
 .colors-game4-controls .btn-reveal { border:0; border-radius:10px; padding:10px 16px; background:#9b6124; color:#fff; font:inherit; font-weight:800; cursor:pointer; }
 #game-count #count-feedback { min-height:1.5em; font-weight:800; }
+
+/* Cream paper, visible pencil strokes and colour chips outside the artwork. */
+body.colors-pencil{background:#f6f0e3;color:#34584c}
+.colors-pencil header h1{color:#376c5b;text-shadow:none}
+.colors-pencil #vocab-grid-container{gap:16px;grid-template-columns:repeat(auto-fit,minmax(225px,1fr))}
+.colors-pencil .colors-pencil-card{position:relative;background:#fffdf5!important;color:#34584c!important;border:1.5px solid #cdbd9c!important;border-radius:24px 19px 25px 21px;box-shadow:0 4px 0 #b7a58824;overflow:hidden;padding:16px 14px}
+.colors-pencil .colors-pencil-card::before{content:'';display:block;width:calc(100% - 12px);height:7px;flex:none;border:1px solid #cdbd9c;border-radius:4px 3px 5px 2px;background:var(--color-swatch);margin:0 6px 12px;opacity:.9}
+.colors-pencil .real-obj-wrapper{width:150px;height:150px;padding:0;margin:0 auto 9px;background:none;box-shadow:none;transform:none}
+.colors-pencil .colors-pencil-art{display:block;width:100%;height:100%;object-fit:contain}
+.colors-pencil .word-title{color:#34584c;font-size:25px;margin:5px 0}
+.colors-pencil .phonetic{color:#5b6a63;font-size:17px;margin:4px 0}
+.colors-pencil .meaning{background:none;color:#34584c;font-size:19px;margin:5px 0;padding:0}
+.colors-pencil .example-box{background:#f5efdf;color:#405d50;border-radius:13px;border:1px dashed #d5c5a3;font-size:16px;line-height:1.45;padding:10px;margin-top:12px}
+.colors-pencil .example-box p{margin:5px 0 0;font-size:16px}
+.colors-pencil .colors-game4-image{width:96px;height:96px;margin:7px auto}
+body.colors-pencil.tg-playing #count-items-container{display:grid;grid-template-columns:100px minmax(0,1fr);align-items:center;gap:4px 12px}
+body.colors-pencil.tg-playing #count-items-container .colors-game4-image{grid-column:1;grid-row:1 / span 2;width:80px;height:80px;margin:0}
+body.colors-pencil.tg-playing #count-items-container .colors-game4-prompt{grid-column:2;grid-row:1}
+body.colors-pencil.tg-playing #count-items-container>p:last-child{grid-column:2;grid-row:2}
+@media(max-width:600px){.colors-pencil #vocab-grid-container{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.colors-pencil .colors-pencil-card{padding:12px 8px}.colors-pencil .real-obj-wrapper{width:110px;height:110px}.colors-pencil .word-title{font-size:22px}.colors-pencil .example-box{font-size:15px;padding:8px}}
+@media(prefers-reduced-motion:reduce){.colors-pencil *{animation:none!important;transition:none!important}}
+body.grade2-topic.colors-pencil{--primary:#3c7a67;background-color:#f6f0e3;background-image:radial-gradient(#af946024 .7px,transparent .7px);background-size:7px 7px}
+body.grade2-topic.colors-pencil header h1{color:#376c5b;text-shadow:1px 1px 0 #fffdf5}
+body.grade2-topic.colors-pencil .g2-main-nav .nav-btn.active{background:#3c7a67!important;color:#fff}
+body.grade2-topic.colors-pencil :is(.g2-page-links a,.g2-game-choice,.tab-content){border-color:#cfbf9f}
+body.grade2-topic.colors-pencil :is(.tab-content>h2,#game-count h2){color:#376c5b!important}

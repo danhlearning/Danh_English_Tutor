@@ -3,7 +3,7 @@
   "name": "Danh English Tutor",
   "short_name": "Học cùng Danh",
   "lang": "vi",
-  "description": "Chơi và học tiếng Anh cùng thầy Danh, có tải kho học để dùng offline.",
+  "description": "Chơi và học tiếng Anh cùng thầy Danh.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

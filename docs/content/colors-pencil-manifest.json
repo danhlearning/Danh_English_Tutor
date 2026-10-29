@@ -1,0 +1,93 @@
+[
+  {
+    "id": "red",
+    "term": "Red",
+    "file": "grade/lop2/assets/images/pencil/colors/red-pencil-v1.svg",
+    "bytes": 1644,
+    "nativeVector": true
+  },
+  {
+    "id": "blue",
+    "term": "Blue",
+    "file": "grade/lop2/assets/images/pencil/colors/blue-pencil-v1.svg",
+    "bytes": 1677,
+    "nativeVector": true
+  },
+  {
+    "id": "yellow",
+    "term": "Yellow",
+    "file": "grade/lop2/assets/images/pencil/colors/yellow-pencil-v1.svg",
+    "bytes": 1375,
+    "nativeVector": true
+  },
+  {
+    "id": "green",
+    "term": "Green",
+    "file": "grade/lop2/assets/images/pencil/colors/green-pencil-v1.svg",
+    "bytes": 1302,
+    "nativeVector": true
+  },
+  {
+    "id": "orange",
+    "term": "Orange",
+    "file": "grade/lop2/assets/images/pencil/colors/orange-pencil-v1.svg",
+    "bytes": 1671,
+    "nativeVector": true
+  },
+  {
+    "id": "purple",
+    "term": "Purple",
+    "file": "grade/lop2/assets/images/pencil/colors/purple-pencil-v1.svg",
+    "bytes": 2696,
+    "nativeVector": true
+  },
+  {
+    "id": "pink",
+    "term": "Pink",
+    "file": "grade/lop2/assets/images/pencil/colors/pink-pencil-v1.svg",
+    "bytes": 1382,
+    "nativeVector": true
+  },
+  {
+    "id": "black",
+    "term": "Black",
+    "file": "grade/lop2/assets/images/pencil/colors/black-pencil-v1.svg",
+    "bytes": 1632,
+    "nativeVector": true
+  },
+  {
+    "id": "white",
+    "term": "White",
+    "file": "grade/lop2/assets/images/pencil/colors/white-pencil-v1.svg",
+    "bytes": 1767,
+    "nativeVector": true
+  },
+  {
+    "id": "gray",
+    "term": "Gray",
+    "file": "grade/lop2/assets/images/pencil/colors/gray-pencil-v1.svg",
+    "bytes": 1739,
+    "nativeVector": true
+  },
+  {
+    "id": "silver",
+    "term": "Silver",
+    "file": "grade/lop2/assets/images/pencil/colors/silver-pencil-v1.svg",
+    "bytes": 1381,
+    "nativeVector": true
+  },
+  {
+    "id": "brown",
+    "term": "Brown",
+    "file": "grade/lop2/assets/images/pencil/colors/brown-pencil-v1.svg",
+    "bytes": 2029,
+    "nativeVector": true
+  },
+  {
+    "id": "transparent",
+    "term": "Transparent",
+    "file": "grade/lop2/assets/images/pencil/colors/transparent-pencil-v1.svg",
+    "bytes": 1187,
+    "nativeVector": true
+  }
+]

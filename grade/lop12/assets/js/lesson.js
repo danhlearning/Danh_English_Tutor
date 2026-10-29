@@ -76,7 +76,7 @@
       document.getElementById(tab.dataset.tab).hidden = !active;
     }
   }
-  for (const tab of tabs) tab.addEventListener('click', () => { showTab(tab.dataset.tab); window.DanhVocabularyGame.feedback('tap',tab); });
+  for (const tab of tabs) tab.addEventListener('click', () => { if(tab.getAttribute('aria-selected')==='true')return; showTab(tab.dataset.tab); window.DanhVocabularyGame.feedback('tap',tab); });
   let initialTab='vocabulary';
   try { const saved=window.DanhLearners.storage.getItem(tabKey); if(tabs.some(t=>t.dataset.tab===saved))initialTab=saved; } catch {}
   const requestedTab=new URLSearchParams(location.search).get('activity');

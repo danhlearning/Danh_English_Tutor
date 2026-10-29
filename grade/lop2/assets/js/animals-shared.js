@@ -9,7 +9,7 @@
     const byName = new Map(animalsList.map(word => [word.name, word]));
     const words = bank.map(word => {
       const original = byName.get(word.name);
-      return {...word, color: original.hex, visual: original.emoji};
+      return {...word, color: original.hex, visual: original.emoji, image: original.image};
     });
     const byNumber = new Map(animalsList.map(word => [word.num, words.find(w => w.name === word.name).id]));
     let storage;

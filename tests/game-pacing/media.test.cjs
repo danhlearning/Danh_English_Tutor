@@ -19,6 +19,7 @@ function setup({playing=true, saveData=false, muted=false, fail=false, hold=fals
     CustomEvent:class{constructor(type,{detail}){this.type=type;this.detail=detail;}},
     setTimeout:(fn,ms)=>{const t=setTimeout(fn,ms);t.unref();return t;},clearTimeout,
     fetch:async(url,opts)=>{requests.push({url,opts});if(fail)throw Error('offline');if(network.blocked)return new Promise((resolve,reject)=>opts.signal.addEventListener('abort',()=>reject(Error('aborted')),{once:true}));return new Response(new Uint8Array(size),{headers:{'content-length':String(size)}});}};
+  vm.runInNewContext(fs.readFileSync('shared/young-learner-speech.js','utf8'),ctx);
   vm.runInNewContext(code,ctx);
   return {window,document,navigator,network,requests,audio,events,revoked,windowEvents,documentEvents,setPlaying:v=>playing=v};
 }
@@ -37,7 +38,7 @@ test('prepares current + two next silently, deduplicates, and plays the cached f
 
 test('game TTS is faster while study TTS keeps its slow reading', async()=>{
   const s=setup();await s.window.DanhAnswerSpeech.say('fox',{preferSpeech:true});assert.equal(s.window.utterance.rate,.95);
-  s.setPlaying(false);await s.window.DanhAnswerSpeech.say('fox',{preferSpeech:true});assert.equal(s.window.utterance.rate,.5);
+  s.setPlaying(false);await s.window.DanhAnswerSpeech.say('fox',{preferSpeech:true});assert.equal(s.window.utterance.rate,.82);
 });
 
 test('save-data, hidden/offline and mute do not start speculative audio or automatic speech', async()=>{
@@ -45,6 +46,7 @@ test('save-data, hidden/offline and mute do not start speculative audio or autom
     const s=setup({saveData:kind==='saveData',muted:kind==='muted'});
     if(kind==='hidden')s.document.hidden=true;if(kind==='offline')s.navigator.onLine=false;
     s.window.DanhGameFlow.prepare(['fox','van']);await flush();assert.equal(s.requests.length,0,kind);assert.equal(s.audio.length,0);
+    s.window.DanhAnswerSpeech.prepare(['fox','van']);await flush();assert.equal(s.requests.length,0,kind);assert.equal(s.audio.length,0);
     if(kind==='hidden'||kind==='muted')assert.equal(s.window.DanhAnswerSpeech.say('fox'),false);
   }
 });
@@ -76,4 +78,17 @@ test('oversized audio and external/invalid images do not enter the cache', async
   const s=setup({size:1024*1024+1});
   s.window.DanhGameFlow.prepare([{text:'fox',image:'https://other.test/a.png',visual:'<image href="javascript:bad"/>'}]);await flush();
   assert.equal(s.window.DanhGameFlow.stats.ready,0);assert.equal(s.window.DanhGameFlow.stats.images,0);
+});
+
+test('visible-card audio prepares silently and reuses the same ready player for repeated taps',async()=>{
+  const s=setup({playing:false});s.window.DanhAnswerSpeech.prepare(['fox','van','fox']);await flush();
+  assert.equal(s.requests.length,2);assert.equal(s.audio.length,2);assert.equal(s.events.length,0);
+  const player=s.audio[0],src=player.src;
+  for(let i=0;i<3;i++){
+    const result=s.window.DanhAnswerSpeech.listen('fox');assert.equal(s.audio.length,2);assert.equal(player.playbackRate,.85);assert.equal(player.src,src);
+    player.onended();await result;
+  }
+  assert.equal(s.requests.length,2);assert.equal(s.events.filter(e=>e.state==='playing').length,3);
+  const result=s.window.DanhAnswerSpeech.listen('fox');s.window.DanhAnswerSpeech.stop();await result;assert.equal(player.src,src,'stopping preserves the prepared source');
+  for(const fn of s.windowEvents.pagehide)fn();assert(s.audio.every(a=>a.src===''));assert.equal(s.window.DanhGameFlow.stats.bytes,0);
 });

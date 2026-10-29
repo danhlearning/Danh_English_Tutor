@@ -34,285 +34,32 @@
     { name: 'Transparent', ipa: '/trænˈspærənt/', meaning: 'Trong suốt', isTransparent: true, textColor: '#2D3748', border: '2px solid #A0AEC0', icon: svgIcons.bottle, example: 'Transparent glass bottle 🫙', sentence: 'The glass bottle is transparent.' }
   ];
 
-  let flashcardDeck = [...colorsData];
-
-  function speak(text) {
-    if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
-    if (window.speechSynthesis) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'en-US';
-      window.DanhYoungSpeech.configure(utterance);
-      window.speechSynthesis.speak(utterance);
-    }
+  /* Pencil artwork is shared by vocabulary, letter practice and sentences. */
+  for (const word of colorsData) {
+    word.sourceIcon = word.icon;
+    word.image = `./assets/images/pencil/colors/${word.name.toLowerCase()}-pencil-v1.svg`;
+    word.icon = `<img class="colors-pencil-art" src="${word.image}" width="360" height="360" alt="" loading="lazy" decoding="async" draggable="false">`;
   }
-
+  function speak(text) {
+    return window.DanhListenControls?.isManualRequest()
+      ? window.DanhAnswerSpeech.listen(text) : window.DanhAnswerSpeech.say(text);
+  }
   function renderVocabGrid() {
     const grid = document.getElementById('vocab-grid-container');
-    grid.innerHTML = '';
-    colorsData.forEach(item => {
-      const card = document.createElement('div');
-      card.className = 'color-card' + (item.isTransparent ? ' transparent-bg-pattern' : '');
-      if(!item.isTransparent) {
-        card.style.background = item.hex;
-      }
-      if(item.textColor) card.style.color = item.textColor;
-      if(item.border) card.style.border = item.border;
-
-      card.innerHTML = `
-        <div class="real-obj-wrapper">${item.icon}</div>
-        <div class="word-title">${item.name}</div>
-        <div class="phonetic">${item.ipa}</div>
-        <div class="meaning">${item.meaning}</div>
-        <div class="example-box">
-          <b>Ví dụ:</b> ${item.example}<br>
-          <i>"${item.sentence}"</i>
-        </div>
-        <button class="audio-btn" onclick="speak('${item.name}. ${item.sentence}')">🔊</button>
-      `;
-      grid.appendChild(card);
-    });
+    grid.replaceChildren();
+    for (const item of colorsData) {
+      const card = document.createElement('article');
+      card.className = 'color-card colors-pencil-card';
+      card.style.setProperty('--color-swatch', item.hex || '#90a4ae');
+      card.innerHTML = `<div class="real-obj-wrapper">${item.icon}</div>
+        <h3 class="word-title">${item.name}</h3><p class="phonetic">${item.ipa}</p>
+        <p class="meaning">${item.meaning}</p><div class="example-box"><span>${item.example}</span><p lang="en">${item.sentence}</p></div>`;
+      grid.append(card);
+    }
   }
   renderVocabGrid();
-
-  function switchTab(tabId, evt) {
-    clearTimeout(singleCardTimer);
-    clearTimeout(mcqTimer);
-    clearTimeout(spellingTimer);
-
-    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
-
-    document.getElementById(tabId).classList.add('active');
-    if(evt && evt.target) {
-      evt.target.classList.add('active');
-    }
-
-    if(tabId === 'game-flip') initSingleCardGame();
-    if(tabId === 'game-mcq') initMcqGame();
-    if(tabId === 'game-spelling') initSpellingGame();
-  }
-
-  /* GAME 1: FLASHCARD */
-  let singleCardIdx = 0;
-  let singleCardTimer = null;
-  let cardFrontMode = 'viet';
-
-  function setCardFrontMode(mode, btnEl) {
-    cardFrontMode = mode;
-    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-    if(btnEl) btnEl.classList.add('active');
-    renderSingleCardContent();
-  }
-
-  function shuffleCards() {
-    clearTimeout(singleCardTimer);
-    for (let i = flashcardDeck.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [flashcardDeck[i], flashcardDeck[j]] = [flashcardDeck[j], flashcardDeck[i]];
-    }
-    singleCardIdx = 0;
-    changeCardWithAnimation();
-  }
-
-  function initSingleCardGame() {
-    singleCardIdx = 0;
-    flashcardDeck = [...colorsData];
-    renderSingleCardContent();
-  }
-
-  function changeCardWithAnimation() {
-    clearTimeout(singleCardTimer);
-    const cardEl = document.getElementById('single-card-el');
-
-    if (cardEl.classList.contains('flipped')) {
-      cardEl.classList.remove('flipped');
-      setTimeout(() => {
-        renderSingleCardContent();
-      }, 600);
-    } else {
-      renderSingleCardContent();
-    }
-  }
-
-  function renderSingleCardContent() {
-    const item = flashcardDeck[singleCardIdx];
-    const cardEl = document.getElementById('single-card-el');
-    const frontEl = document.getElementById('card-front-content');
-    const backEl = document.getElementById('card-back-content');
-    const counterEl = document.getElementById('card-counter-text');
-
-    cardEl.classList.remove('flipped');
-    counterEl.innerText = `Thẻ ${singleCardIdx + 1} / ${flashcardDeck.length}`;
-
-    frontEl.className = 'flip-card-front';
-    frontEl.style.background = 'linear-gradient(135deg, #4A90E2, #67B26F)';
-    frontEl.style.color = 'white';
-
-    if(cardFrontMode === 'viet') {
-      frontEl.innerHTML = `
-        <h2 style="font-size: 1.8rem; margin-bottom: 8px; font-weight:800;">${item.meaning}</h2>
-        <p style="font-size: 0.85rem; opacity: 0.85;">(Chạm vào thẻ để lật)</p>
-      `;
-    } else {
-      frontEl.innerHTML = `
-        <h2 style="font-size: 2.1rem; margin-bottom: 8px; font-weight:700;">${item.ipa}</h2>
-        <p style="font-size: 0.85rem; opacity: 0.85;">(Chạm vào thẻ để xem đáp án)</p>
-      `;
-    }
-
-    backEl.className = 'flip-card-back' + (item.isTransparent ? ' transparent-bg-pattern' : '');
-    if(!item.isTransparent) {
-      backEl.style.background = item.hex;
-    } else {
-      backEl.style.background = 'transparent';
-    }
-    backEl.style.color = item.textColor || 'white';
-    if(item.border) backEl.style.border = item.border;
-    else backEl.style.border = '3px solid white';
-
-    backEl.innerHTML = `
-      <h2 style="font-size: 2.3rem; margin-bottom: 4px; font-weight:800;">${item.name}</h2>
-      <p style="font-size: 1.2rem; font-weight:700;">${item.ipa}</p>
-    `;
-  }
-
-  function flipSingleCard() {
-    const cardEl = document.getElementById('single-card-el');
-    if(!cardEl.classList.contains('flipped')) {
-      cardEl.classList.add('flipped');
-      const item = flashcardDeck[singleCardIdx];
-      speak(item.name);
-
-      clearTimeout(singleCardTimer);
-      singleCardTimer = setTimeout(() => {
-        nextSingleCard(true);
-      }, 3000);
-    }
-  }
-
-  function nextSingleCard(isAuto = false) {
-    clearTimeout(singleCardTimer);
-    singleCardIdx = (singleCardIdx + 1) % flashcardDeck.length;
-    changeCardWithAnimation();
-  }
-
-  function prevSingleCard() {
-    clearTimeout(singleCardTimer);
-    singleCardIdx = (singleCardIdx - 1 + flashcardDeck.length) % flashcardDeck.length;
-    changeCardWithAnimation();
-  }
-
-  /* GAME 2: TRẮC NGHIỆM */
-  let mcqIdx = 0;
-  let mcqTimer = null;
-
-  function initMcqGame() {
-    mcqIdx = 0;
-    loadMcqQuestion();
-  }
-
-  function loadMcqQuestion() {
-    clearTimeout(mcqTimer);
-    const item = colorsData[mcqIdx];
-    const previewBox = document.getElementById('mcq-color-preview');
-    const optionsGrid = document.getElementById('mcq-options-container');
-    const mcqFeedback = document.getElementById('mcq-feedback');
-    mcqFeedback.textContent = '';
-
-    if(item.isTransparent) previewBox.className = 'color-preview-box transparent-bg-pattern';
-    else previewBox.className = 'color-preview-box';
-
-    previewBox.innerHTML = item.icon;
-
-    let options = [item.name];
-    let otherColors = colorsData.filter(c => c.name !== item.name);
-    otherColors.sort(() => Math.random() - 0.5);
-    for(let i = 0; i < 5; i++) {
-      options.push(otherColors[i].name);
-    }
-    options.sort(() => Math.random() - 0.5);
-
-    optionsGrid.innerHTML = '';
-    options.forEach(optName => {
-      const btn = document.createElement('button');
-      btn.className = 'mcq-btn';
-      btn.innerText = optName;
-      btn.onclick = () => handleMcqChoice(btn, optName, item.name);
-      optionsGrid.appendChild(btn);
-    });
-  }
-
-  function handleMcqChoice(btn, selectedName, correctName) {
-    const allBtns = document.querySelectorAll('#mcq-options-container .mcq-btn');
-    const feedback = document.getElementById('mcq-feedback');
-    if (selectedName !== correctName) {
-      btn.disabled = true;
-      btn.classList.add('wrong');
-      feedback.style.color = '#C53030';
-      feedback.textContent = '❌ Chưa đúng. Thử lựa chọn khác nhé!';
-      playSoundEffect('wrong');
-      return;
-    }
-
-    allBtns.forEach(button => { button.disabled = true; });
-    btn.classList.add('correct');
-    feedback.style.color = '#276749';
-    feedback.textContent = '✅ Chính xác!';
-    playSoundEffect('correct');
-    speak(correctName);
-    mcqTimer = setTimeout(() => {
-      mcqIdx = (mcqIdx + 1) % mcqList.length;
-      loadMcqQuestion();
-    }, 2000);
-  }
-
-  /* GAME 3: CHÍNH TẢ */
-  let spellingIdx = 0;
-  let spellingTimer = null;
-
-  function initSpellingGame() {
-    spellingIdx = 0;
-    loadSpellingQuestion();
-  }
-
-  function loadSpellingQuestion() {
-    clearTimeout(spellingTimer);
-    const item = colorsData[spellingIdx];
-    const preview = document.getElementById('spelling-preview');
-    const input = document.getElementById('spelling-input');
-
-    if(item.isTransparent) preview.className = 'spelling-img-preview transparent-bg-pattern';
-    else preview.className = 'spelling-img-preview';
-
-    preview.innerHTML = item.icon;
-
-    input.value = '';
-    input.disabled = false;
-    speak(item.name);
-  }
-
-  function playSpellingAudio() {
-    speak(colorsData[spellingIdx].name);
-  }
-
-  function checkSpelling() {
-    const inputEl = document.getElementById('spelling-input');
-    const inputVal = inputEl.value.trim().toLowerCase();
-    const correctVal = colorsData[spellingIdx].name.toLowerCase();
-
-    if(inputVal === correctVal) {
-      inputEl.disabled = true;
-      speak(colorsData[spellingIdx].name);
-
-      spellingTimer = setTimeout(() => {
-        spellingIdx = (spellingIdx + 1) % colorsData.length;
-        loadSpellingQuestion();
-      }, 1000);
-    } else {
-      inputEl.style.borderColor = '#E53E3E';
-      setTimeout(() => {
-        inputEl.style.borderColor = '#CBD5E0';
-      }, 1000);
-    }
+  function switchTab(id, event) {
+    window.DanhAnswerSpeech.stop();
+    for (const panel of document.querySelectorAll('.tab-content')) panel.classList.toggle('active', panel.id === id);
+    for (const button of document.querySelectorAll('.nav-btn')) button.classList.toggle('active', button === (event?.currentTarget || event?.target));
   }

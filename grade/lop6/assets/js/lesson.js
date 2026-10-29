@@ -45,7 +45,7 @@
       document.getElementById(tab.dataset.tab).hidden = !active;
     }
   }
-  for (const tab of tabs) tab.addEventListener('click', () => { showTab(tab.dataset.tab); window.DanhVocabularyGame.feedback('tap',tab); });
+  for (const tab of tabs) tab.addEventListener('click', () => { if(tab.getAttribute('aria-selected')==='true')return; showTab(tab.dataset.tab); window.DanhVocabularyGame.feedback('tap',tab); });
   showTab('vocabulary');
   updateProgress();
 

@@ -13,9 +13,9 @@
   width:240px; max-width:100%; height:240px; padding:0; margin:0 auto;
   border:0; border-radius:16px; overflow:visible; background:none; box-shadow:none; transform:none;
 }
-.g2-pencil svg.pencil-art {
+.g2-pencil .pencil-art {
   display:block; width:100%; height:100%; max-width:none; max-height:none;
-  border-radius:12px; background:#fff; transform:none;
+  border-radius:12px; background:#fff; transform:none; object-fit:contain;
 }
 .g2-pencil :is(.learning-visual,.g2-practice-image,.count-image,div.item-emoji):has(.pencil-art) {
   width:180px; height:180px; max-width:100%; margin-inline:auto; padding:0;
@@ -28,7 +28,7 @@
   width:120px; height:120px; max-width:120px; max-height:120px;
 }
 /* Older sentence stages set their picture dimensions inline. */
-.g2-pencil #count-items-container > div:has(> svg.pencil-art) {
+.g2-pencil #count-items-container > div:has(> .pencil-art) {
   width:180px !important; height:180px !important; padding:0 !important;
   margin-inline:auto;
 }

@@ -86,10 +86,11 @@ test('Bộ game chung nhớ lựa chọn Body Parts và không cộng điểm sa
 test('Cả 32 hình Body Parts không chứa chữ; tên và nghĩa hiển thị bên ngoài', () => {
   assert.equal(lesson.vocabulary.length, 32);
   for (const word of lesson.vocabulary) {
-    assert.match(word.diagramSvg, /<svg[^>]*bodyparts-diagram/);
+    assert.match(word.diagramSvg, /<img[^>]*bodyparts-diagram/);
     assert.doesNotMatch(word.diagramSvg, /<text\b/i);
-    assert.match(word.diagramSvg, /preserveAspectRatio="xMidYMid meet"/);
-    assert.match(word.svg, /<svg[^>]*svg-icon/);
+    assert.match(word.diagramSvg, /loading="lazy" decoding="async"/);
+    assert.match(word.diagramSvg, /srcset="[^"\n]+480w,[^"\n]+768w"/);
+    assert.match(word.svg, /<img[^>]*svg-icon/);
     assert.doesNotMatch(word.svg, /<text\b/i);
   }
 });

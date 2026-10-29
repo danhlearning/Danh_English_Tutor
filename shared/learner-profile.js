@@ -5,6 +5,11 @@
   const pictureSelector='[data-danh-picture-listen]';
   const cardSelector='[data-danh-card-listen]';
   const cardEffects=new Map();
+  const scannedCards=new WeakMap();
+  let cardObserver;
+  const nearbyCards=new Set();
+  const warmNearbyCards=()=>window.DanhAnswerSpeech?.prepare([...nearbyCards].filter(card=>card.isConnected && !card.closest('[hidden],.tab-content:not(.active)')).map(card=>({card,rect:card.getBoundingClientRect()})).filter(({rect})=>rect.bottom>0).sort((a,b)=>(a.rect.top>=innerHeight)-(b.rect.top>=innerHeight)).slice(0,8).map(({card})=>card.dataset.danhCardListen));
+  window.DanhVocabularyCards={warm:warmNearbyCards};
   const cardCleanup=card=>{const effect=cardEffects.get(card);if(!effect)return;clearTimeout(effect.timer);effect.animation?.cancel();card.classList.remove('danh-card-pressed');cardEffects.delete(card);};
   const cardFeedback=card=>{
     cardCleanup(card);card.classList.add('danh-card-pressed');
@@ -37,11 +42,17 @@
     const cards=[...root.querySelectorAll(selector)];if(root.matches?.(selector))cards.unshift(root);
     for(const card of cards){
       const cardTitle=card.querySelector('.word-title,h3');
+      // Game feedback and unrelated DOM changes must not rewrite every label,
+      // style and tabindex on an already prepared vocabulary card.
+      const titleText=cardTitle?.textContent.trim(),previous=scannedCards.get(card);
+      if(previous && previous.text===titleText && previous.title===cardTitle && previous.picture===card.querySelector('.word-picture,[data-word-audio],[data-danh-picture-listen]') && card.dataset.danhCardListen===titleText)continue;
       if(cardTitle?.textContent.trim()){
         card.dataset.danhCardListen=cardTitle.textContent.trim();card.tabIndex=0;card.setAttribute('role','group');card.setAttribute('aria-roledescription','Thẻ nghe từ');card.setAttribute('aria-label',`Nghe từ: ${cardTitle.textContent.trim()}`);card.style.cursor='pointer';
         card.querySelectorAll('[data-danh-picture-listen],.word-picture').forEach(n=>n.tabIndex=-1);
+        cardObserver?.observe(card);
+        if(nearbyCards.has(card))warmNearbyCards();
       }
-      if(card.querySelector('.word-picture,[data-word-audio]'))continue;
+      if(card.querySelector('.word-picture,[data-word-audio]')){scannedCards.set(card,{text:titleText,title:cardTitle,picture:card.querySelector('.word-picture,[data-word-audio]')});continue;}
       const title=card.querySelector('.word-title,h3');
       const picture=card.querySelector('.g6-word-visual,.g4-visual,.g2-vocab-image,.word-image,.real-obj-wrapper,.number-badge-wrapper,.emoji-display,.image-badge-wrapper,[role="img"]') || [...card.children].find(n=>n.querySelector('svg,img'));
       if(!title || !picture || !title.textContent.trim())continue;
@@ -51,6 +62,7 @@
       for(const button of card.querySelectorAll('button'))if(button.matches('.g6-sound,.g2-audio,.audio-btn,[data-danh-listen]') || /[🔊🔉🔈]/u.test(button.textContent)){
         button.style.visibility='hidden';button.style.pointerEvents='none';button.tabIndex=-1;button.setAttribute('aria-hidden','true');
       }
+      scannedCards.set(card,{text:titleText,title:cardTitle,picture});
     }
   };
   const picturePlay=event=>{
@@ -70,6 +82,8 @@
   document.addEventListener('click',picturePlay,true);document.addEventListener('keydown',picturePlay,true);
   window.DanhPictureListen={bind:pictureBind,flipSurface,scan:pictureScan};
   document.addEventListener('DOMContentLoaded',()=>{
+    if(window.IntersectionObserver)cardObserver=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting)nearbyCards.add(entry.target);else {nearbyCards.delete(entry.target);if(!entry.target.isConnected)cardObserver.unobserve(entry.target);}}warmNearbyCards();},{rootMargin:'0px 0px 240px 0px'});
+    else {let timer;const warm=()=>{clearTimeout(timer);timer=setTimeout(()=>{nearbyCards.clear();for(const card of document.querySelectorAll(cardSelector)){const rect=card.getBoundingClientRect();if(rect.width && rect.bottom>0 && rect.top<innerHeight+240)nearbyCards.add(card);}warmNearbyCards();},80);};window.addEventListener('scroll',warm,{passive:true});warm();}
     const style=document.createElement('style');style.textContent='[data-danh-card-listen]:focus-visible,[data-danh-picture-listen]:focus-visible,[data-danh-flip-surface]:focus-visible{outline:3px solid #176d8a;outline-offset:3px}.danh-card-pressed{outline:3px solid #d79c37!important;outline-offset:-3px}';document.head.append(style);
     pictureScan(document);
     new MutationObserver(records=>{
@@ -77,15 +91,15 @@
       for(const record of records){
         const target=record.target.nodeType===1?record.target:record.target.parentElement;
         const card=target?.closest('#vocab-grid .g6-word-card,#vocab-grid-container > *,#word-list .word-card');if(card)roots.add(card);
-        for(const node of record.addedNodes)if(node.nodeType===1)roots.add(node);
+        for(const node of record.addedNodes)if(node.nodeType===1 && !node.matches('script,style,.vg-spark,.danh-exercise-gap'))roots.add(node);
       }
-      for(const root of roots)pictureScan(root);
+      for(const root of roots){if(!root.isConnected)continue;let parent=root.parentElement,nested=false;while(parent){if(roots.has(parent)){nested=true;break;}parent=parent.parentElement;}if(!nested)pictureScan(root);}
     }).observe(document.body,{childList:true,characterData:true,subtree:true});
   },{once:true});
   const C = window.DanhLearnerCore;
   const base = new URL('../', document.currentScript.src);
+  const tablet=document.createElement('script');tablet.src=new URL('shared/tablet-game.js?v=animals-pencil-20261029',base).href;tablet.async=false;document.head.append(tablet);
   const controls=document.createElement('script');controls.src=new URL('shared/learner-controls.js?v=repo-picture-listen-20261025',base).href;controls.async=false;document.head.append(controls);
-  const preload=document.createElement('script');preload.src=new URL('shared/site-preload.js?v=20261022-1',base).href;preload.async=true;document.head.append(preload);
   const font=document.createElement('link');font.rel='stylesheet';font.href=new URL('shared/learner-font.css?v=compact-gaps-20261025',base).href;document.head.append(font);
   const gaps=document.createElement('script');gaps.src=new URL('shared/exercise-gaps.js?v=compact-gaps-20261025',base).href;gaps.async=false;document.head.append(gaps);
   // Giọng đọc đáp án dùng chung, chỉ được gọi từ thao tác học đã chấm đúng.
@@ -100,13 +114,25 @@
   const gamePlaying = () => [...document.querySelectorAll('[data-danh-game-surface],.tab-content.active[id^="game-"]')]
     .some(node => !node.closest('[hidden]') && node.getClientRects().length > 0);
   const mediaAllowed = () => !mediaClosed && !document.hidden && navigator.onLine !== false && !connection?.saveData && !/^(slow-2g|2g)$/.test(connection?.effectiveType || '');
+  const surfaceVisible = surface => !surface || surface.isConnected!==false && !surface.closest('[hidden]') && !surface.closest('.tab-content:not(.active)');
+  const mediaPanelObserver = typeof MutationObserver==='undefined' ? null : new MutationObserver(()=>resumeGameMedia());
   const audioURL = text => new URL(`shared/answer-audio/${answerAudioKey(text)}.mp3`,base).href;
+  const grade2Speech = /\/grade\/lop2\//.test(document.baseURI);
+  function preparePlayer(entry){if(!entry.url || entry.player)return;const player=new Audio(entry.url);player.preload='auto';entry.player=player;player.load();}
+  function releasePlayer(entry){if(!entry.player)return;entry.player.pause();entry.player.removeAttribute('src');entry.player.load();entry.player=null;}
+  function queueAudio(text,player=false){
+    const clean=cleanAnswerSpeech(text);if(!clean || !answerSpeechEnabled())return;
+    const key=answerAudioKey(clean),existing=gameAudio.get(key);
+    if(existing){if(player){existing.preloadPlayer=true;preparePlayer(existing);}gameAudio.delete(key);gameAudio.set(key,existing);return;}
+    if(mediaQueue.length>=9)return;
+    const entry={kind:'audio',key,src:audioURL(clean),preloadPlayer:player};gameAudio.set(key,entry);mediaQueue.push(entry);trimGameAudio();
+  }
   const localMedia = value => {try {const url=new URL(value,document.baseURI);return url.origin===base.origin && url.pathname.startsWith(base.pathname) && /^https?:$/.test(url.protocol) && /\.(?:webp|png|jpe?g|svg|avif)$/i.test(url.pathname) ? url.href : null;}catch{return null;}};
   function trimGameAudio() {
     for (const [key, entry] of gameAudio) {
       if (gameAudio.size <= 12 && mediaBytes <= 2 * 1024 * 1024) break;
       if (!entry.url || entry.url === answerAudio?.src) continue;
-      URL.revokeObjectURL(entry.url);mediaBytes-=entry.bytes;gameAudio.delete(key);
+      releasePlayer(entry);URL.revokeObjectURL(entry.url);mediaBytes-=entry.bytes;gameAudio.delete(key);
     }
   }
   function pumpGameMedia() {
@@ -119,13 +145,13 @@
       const timer=setTimeout(()=>controller.abort(),5000);
       (async()=>{
         try {
-          const response=await fetch(entry.src,{signal:controller.signal,credentials:'same-origin',priority:'low',cache:'default',redirect:'error'});
+          const response=await fetch(entry.src,{signal:controller.signal,credentials:'same-origin',priority:entry.preloadPlayer?'high':'low',cache:'default',redirect:'error'});
           if(!response.ok || Number(response.headers.get('content-length'))>1024*1024) {await response.body?.cancel();throw Error('media');}
           const reader=response.body?.getReader();if(!reader)throw Error('body');
           const chunks=[];let bytes=0;
           while(true){const part=await reader.read();if(part.done)break;bytes+=part.value.byteLength;if(bytes>1024*1024){await reader.cancel();throw Error('size');}chunks.push(part.value);}
           if(controller.signal.aborted || !mediaAllowed())throw Error('paused');
-          entry.url=URL.createObjectURL(new Blob(chunks,{type:response.headers.get('content-type')||'audio/mpeg'}));entry.bytes=bytes;mediaBytes+=bytes;trimGameAudio();
+          entry.url=URL.createObjectURL(new Blob(chunks,{type:response.headers.get('content-type')||'audio/mpeg'}));entry.bytes=bytes;mediaBytes+=bytes;if(entry.preloadPlayer)preparePlayer(entry);trimGameAudio();
         } catch {if(gameAudio.get(entry.key)===entry)gameAudio.delete(entry.key);}
         finally {clearTimeout(timer);mediaControllers.delete(controller);mediaBusy--;pumpGameMedia();}
       })();
@@ -133,41 +159,49 @@
   }
   function prepareGameMedia(items, surface) {
     if(surface)surface.dataset.danhGameSurface='';
+    const panel=surface?.closest('.tab-content,[role="tabpanel"],.g6-panel');
+    if(panel)mediaPanelObserver?.observe(panel,{attributes:true,attributeFilter:['hidden','class']});
+    if(surface && surface!==panel)mediaPanelObserver?.observe(surface,{attributes:true,attributeFilter:['hidden']});
+    const hiddenParent=surface?.closest('[hidden]');
+    if(hiddenParent && hiddenParent!==panel && hiddenParent!==surface)mediaPanelObserver?.observe(hiddenParent,{attributes:true,attributeFilter:['hidden']});
     const upcoming=(items || []).filter(Boolean).slice(0,3);
     preparedWindows.set(surface || null,upcoming);
     if(preparedWindows.size>8)preparedWindows.delete(preparedWindows.keys().next().value);
-    if(!mediaAllowed())return;
+    if(!mediaAllowed() || !surfaceVisible(surface))return;
     for(const item of upcoming){
       const text=cleanAnswerSpeech(typeof item==='string'?item:item.text || item.name || item.term || '');
-      if(text && answerSpeechEnabled() && !gameAudio.has(answerAudioKey(text)) && mediaQueue.length<9){
-        const entry={kind:'audio',key:answerAudioKey(text),src:audioURL(text)};gameAudio.set(entry.key,entry);mediaQueue.push(entry);trimGameAudio();
-      }
+      queueAudio(text);
       const sources=[item.image,...String(item.visual || item.photo || '').matchAll(/(?:href|src)=["']([^"']+)["']/g)].map(v=>typeof v==='string'?v:v?.[1]).filter(Boolean);
       for(const value of sources.slice(0,2)){
         const src=localMedia(value);if(!src || gameImages.has(src))continue;
         const image=new Image();image.decoding='async';image.fetchPriority='low';gameImages.set(src,image);image.src=src;image.decode?.().catch(()=>{if(gameImages.get(src)===image)gameImages.delete(src);});
-        if(gameImages.size>6)gameImages.delete(gameImages.keys().next().value);
+        if(gameImages.size>6){const oldest=gameImages.keys().next().value,previous=gameImages.get(oldest);gameImages.delete(oldest);if(!previous.complete)previous.src='';}
       }
     }
     clearTimeout(mediaTimer);mediaTimer=setTimeout(pumpGameMedia,0);
   }
   const pauseGameMedia = () => {clearTimeout(mediaTimer);for(const c of mediaControllers)c.abort();mediaQueue.length=0;for(const [key,e] of gameAudio)if(!e.url)gameAudio.delete(key);for(const [src,image] of gameImages)if(!image.complete){image.src='';gameImages.delete(src);}};
-  const resumeGameMedia = () => {if(!mediaAllowed())return;for(const [surface,items] of preparedWindows)if(!surface || surface.isConnected!==false && !surface.closest('[hidden]') && surface.getClientRects().length)prepareGameMedia(items,surface);};
+  const resumeGameMedia = () => {if(!mediaAllowed())return;for(const [surface,items] of preparedWindows){if(surface?.isConnected===false){preparedWindows.delete(surface);continue;}if(surfaceVisible(surface))prepareGameMedia(items,surface);}};
+  // Only observe game panels: button feedback and animation classes elsewhere
+  // must not schedule another media preparation pass.
   window.DanhGameFlow={prepare:prepareGameMedia,isPlaying:gamePlaying,speechRate:.95,audioRate:1.15,
     get stats(){return {ready:[...gameAudio.values()].filter(e=>e.url).length,pending:mediaQueue.length,active:mediaBusy,bytes:mediaBytes,images:gameImages.size};}};
-  document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseGameMedia();else resumeGameMedia();});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseGameMedia();else {resumeGameMedia();window.DanhVocabularyCards?.warm();}});
   window.addEventListener('offline',pauseGameMedia);
-  window.addEventListener('online',resumeGameMedia);
-  connection?.addEventListener?.('change',()=>{if(!mediaAllowed())pauseGameMedia();else resumeGameMedia();});
-  window.addEventListener('pagehide',()=>{mediaClosed=true;pauseGameMedia();for(const e of gameAudio.values())if(e.url)URL.revokeObjectURL(e.url);gameAudio.clear();gameImages.clear();mediaBytes=0;});
-  window.addEventListener('pageshow',()=>{mediaClosed=false;resumeGameMedia();});
+  window.addEventListener('online',()=>{resumeGameMedia();window.DanhVocabularyCards?.warm();});
+  document.addEventListener('danh-learning-effects-change',()=>{if(!answerSpeechEnabled())pauseGameMedia();else {resumeGameMedia();window.DanhVocabularyCards?.warm();}});
+  connection?.addEventListener?.('change',()=>{if(!mediaAllowed())pauseGameMedia();else {resumeGameMedia();window.DanhVocabularyCards?.warm();}});
+  window.addEventListener('pagehide',()=>{mediaClosed=true;pauseGameMedia();for(const e of gameAudio.values())if(e.url){releasePlayer(e);URL.revokeObjectURL(e.url);}gameAudio.clear();gameImages.clear();mediaBytes=0;});
+  window.addEventListener('pageshow',()=>{mediaClosed=false;resumeGameMedia();window.DanhVocabularyCards?.warm();});
   document.documentElement.dataset.answerSpeechVersion='audio-1';
   const answerSpeechState=(state,mode,text)=>{document.documentElement.dataset.answerSpeechState=state;document.documentElement.dataset.answerSpeechMode=mode;document.documentElement.dataset.answerSpeechText=text;document.dispatchEvent(new CustomEvent('danh-answer-speech',{detail:{state,mode,text}}));};
   let finishAnswerSpeech,answerAudio,answerSpeechToken=0;
-  const stopAnswerSpeech=()=>{answerSpeechToken++;if(answerAudio){answerAudio.onended=answerAudio.onplaying=answerAudio.onerror=null;answerAudio.pause();answerAudio.removeAttribute('src');answerAudio.load();answerAudio=null;}finishAnswerSpeech?.();try{window.speechSynthesis?.cancel();}catch{}};
+  const stopAnswerSpeech=()=>{answerSpeechToken++;if(answerAudio){answerAudio.onended=answerAudio.onplaying=answerAudio.onerror=null;answerAudio.pause();if([...gameAudio.values()].some(entry=>entry.player===answerAudio)){try{answerAudio.currentTime=0;}catch{}}else {answerAudio.removeAttribute('src');answerAudio.load();}answerAudio=null;}finishAnswerSpeech?.();try{window.speechSynthesis?.cancel();}catch{}};
   const playAnswerAudio=text=>{
-    const audio=new Audio(gameAudio.get(answerAudioKey(text))?.url || audioURL(text));answerAudio=audio;
-    audio.playbackRate=gamePlaying()?window.DanhGameFlow.audioRate:(window.DanhYoungSpeech ? .85 : 1);
+    const cached=gameAudio.get(answerAudioKey(text));
+    const audio=cached?.player || new Audio(cached?.url || audioURL(text));answerAudio=audio;
+    try{audio.currentTime=0;}catch{}
+    audio.playbackRate=gamePlaying()?window.DanhGameFlow.audioRate:(grade2Speech ? .85 : window.DanhYoungSpeech?.audioRate || 1);
     audio.preservesPitch=true;
     return new Promise(resolve=>{
       let finished=false;
@@ -180,6 +214,7 @@
     });
   };
   window.DanhAnswerSpeech={
+    prepare(texts){if(!mediaAllowed())return;for(const text of (texts || []).slice(0,8))queueAudio(text,true);clearTimeout(mediaTimer);mediaTimer=setTimeout(pumpGameMedia,0);},
     listen(text){return this.say(text,{manual:true});},
     say(text,{manual=window.DanhListenControls?.isManualRequest() || false,preferSpeech=false}={}){
       if((!manual&&!answerSpeechEnabled())||document.hidden)return false;
@@ -188,7 +223,7 @@
       try{
         stopAnswerSpeech();
         const speechToken=answerSpeechToken;
-        if((manual||gamePlaying()||navigator.onLine===false)&&!preferSpeech){
+        if((manual||grade2Speech||gamePlaying()||navigator.onLine===false)&&!preferSpeech){
           try{if(navigator.audioSession)navigator.audioSession.type='playback';}catch{}
           return playAnswerAudio(clean).then(played=>played || (speechToken===answerSpeechToken && !document.hidden && this.say(clean,{manual,preferSpeech:true})));
         }

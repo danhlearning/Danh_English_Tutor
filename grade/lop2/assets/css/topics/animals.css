@@ -529,3 +529,22 @@ body.grade2-topic[data-grade] {
   --ll-paper: #fffaf0;
   --ll-line: #d6c4a1;
 }
+/* Pencil animals share the Colors paper palette and keep existing card frames. */
+body.grade2-topic.animals-pencil{--primary:#3c7a67;background-color:#f6f0e3;background-image:radial-gradient(#af946024 .7px,transparent .7px);background-size:7px 7px;color:#34584c}
+.animals-pencil header h1{color:#376c5b;text-shadow:none}
+.animals-pencil .picture-word-card{background:#fffdf5!important;color:#34584c!important;border:1.5px solid #cdbd9c!important;border-radius:24px 19px 25px 21px;box-shadow:0 4px 0 #b7a58824}
+.animals-pencil .picture-word-card .word-title{color:#34584c}
+.animals-pencil .picture-word-card .phonetic{color:#5b6a63}
+.animals-pencil .picture-word-card .meaning{color:#34584c;background:none}
+.animals-pencil .picture-word-card .example-box{background:#f5efdf;color:#405d50;border:1px dashed #d5c5a3}
+.animals-pencil .animals-pencil-art{display:block;width:100%;height:100%;object-fit:contain}
+.animals-pencil .number-display{display:block;width:140px;height:140px;margin:auto}
+.animals-pencil .choice-emoji{width:48px;height:48px;flex:none}
+.animals-pencil .item-emoji{display:inline-block;width:68px;height:68px;margin:3px}
+.animals-pencil .g2-main-nav .nav-btn.active{background:#3c7a67!important;color:white}
+.animals-art-credit{text-align:center;color:#5b6a63;font-size:12px;padding:14px}
+.animals-art-credit a{color:inherit}
+body.animals-pencil.tg-playing #count-items-container{gap:3px;margin:4px auto;padding:4px;max-width:520px}
+body.animals-pencil.tg-playing .item-emoji{width:48px;height:48px;margin:1px}
+@media(max-width:600px){.animals-pencil .number-display{width:110px;height:110px}.animals-pencil .item-emoji{width:48px;height:48px}}
+@media(prefers-reduced-motion:reduce){.animals-pencil *{animation:none!important;transition:none!important}}

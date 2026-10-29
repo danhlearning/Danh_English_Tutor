@@ -13,7 +13,7 @@ function transform(html,file){
  const grade=Number(file.match(/^grade\/lop(\d+)\//)?.[1]);
  if(file==='grade/lop2/animals.html'){
   const before=/<script[^>]*src="[^"\n]*topics\/animals\.js[^>]*><\/script>/;
-  if(!html.includes('shared/learning-effects.js'))html=html.replace(before,'<script src="../../shared/learning-effects.js?v=site-letters-20261025'+version+'"></script>\n$&');
+  if(!html.includes('shared/learning-effects.js'))html=html.replace(before,'<script src="../../shared/learning-effects.js?v=loading-smooth-20261028"></script>\n$&');
   if(!html.includes('shared/learning-effects.css'))html=html.replace('</head>','<link rel="stylesheet" href="../../shared/learning-effects.css?v=site-letters-20261025'+version+'">\n</head>');
   html=dependencies(html,'../../',before);
  }
@@ -30,7 +30,7 @@ function transform(html,file){
   const prefix=html.match(/src="([^"\n]*?)assets\/js\/pages\/vocabulary-skills\.js/)?.[1]||'./';
   html=dependencies(html,prefix,/<script[^>]*src="[^"\n]*assets\/js\/pages\/vocabulary-skills\.js[^>]*><\/script>/);
  }
- return html.replace(/((?:src|href)=["'][^"'\s<>]*\/(?:site-letter-games|contact-footer|vocabulary-library|vocabulary-game|vocabulary-skills|letter-ladder(?:-core)?|learning-core|learning-effects|animals)\.(?:js|css))(?:\?[^"'\s<>]*)?/g,(_,asset)=>asset+'?v='+(/\/vocabulary-library\.js$/.test(asset)?'meaning-images-20261025':/\/topics\/animals\.(?:js|css)$/.test(asset)&&html.includes('animals-shared.js')?'shared-topics-20261025':version));
+ return html.replace(/((?:src|href)=["'][^"'\s<>]*\/(?:site-letter-games|contact-footer|vocabulary-library|vocabulary-game|vocabulary-skills|letter-ladder(?:-core)?|learning-core|learning-effects|animals)\.(?:js|css))(?:\?[^"'\s<>]*)?/g,(_,asset)=>asset+'?v='+(/\/animals\.js$/.test(asset)?'animals-pencil-20261029':/\/contact-footer\.js$/.test(asset)?'online-audio-20261028':/\/learning-effects\.js$/.test(asset)?'loading-smooth-20261028':/\/vocabulary-library\.js$/.test(asset)?'online-audio-20261028':/\/topics\/animals\.css$/.test(asset)&&html.includes('animals-shared.js')?'animals-pencil-20261029':version)).replace(/(picture-audio\.js)\?v=[^" ]+/g,'$1?v=loading-smooth-20261028');
 }
 function run(){
  const files=[];for(const folder of ['grade','templates']){const walk=dir=>{for(const e of fs.readdirSync(path.join(root,dir),{withFileTypes:true})){const f=path.posix.join(dir,e.name);if(e.isDirectory())walk(f);else if(f.endsWith('.html'))files.push(f);}};walk(folder);}
