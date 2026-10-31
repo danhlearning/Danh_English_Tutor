@@ -10,10 +10,10 @@
   document.querySelector('#review-title').textContent=`Đảo từ vựng · Học kỳ ${term}`;
   const description=document.querySelector('#review-description');
   description.hidden=grade===6;
-  description.textContent=grade===6?'':`Unit ${term===1?`1–${split}`:`${split+1}–${units.length}`} · Mỗi lượt tối đa 10 câu.`;
+  description.textContent=grade===6?'':`Unit ${term===1?`1–${split}`:`${split+1}–${units.length}`} · Mỗi lượt tối đa 10 câu và chặng ghép chữ 8 từ.`;
   document.querySelector(`[data-term="${term}"]`).setAttribute('aria-current','page');
   if(window.DanhLearners.current)try{
     window.DanhLearners.storage.setItem('danh:learner-route:v1',JSON.stringify({path:location.pathname+location.search,title:document.title,at:Date.now()}));
   }catch{}
-  window.DanhVocabularyGame.mount({stage:document.querySelector('#quiz-stage'),words,grade,scope:`term${term}`,length:10,picture:grade===6?window.DanhGrade6Picture:undefined});
+  window.DanhVocabularyGame.mount({stage:document.querySelector('#quiz-stage'),words,grade,scope:`term${term}`,length:10,integrateLetters:true,picture:grade===6?window.DanhGrade6Picture:undefined});
 })();

@@ -8,6 +8,7 @@
   const node = (tag,text,className) => { const n=document.createElement(tag); if(text!==undefined)n.textContent=text; if(className)n.className=className; return n; };
   const labels = {meaning:'🌼 Chọn nghĩa',listening:'🎧 Nghe chọn từ',spelling:'✏️ Gõ từ',sentence:'🧩 Xếp câu',gap:'🌉 Điền từ vào câu',letters:'🔎 Tìm chữ thiếu',dialogue:'💬 Chọn lời đáp','sentence-listening':'🐚 Nghe chọn câu',writing:'📝 Viết câu'};
   const outcomes = {first:'Đúng ngay',retry:'Tự sửa đúng',hinted:'Đúng có gợi ý',revealed:'Đã xem đáp án',skipped:'Bỏ qua'};
+  let letterReview;
   let draft = new Set(model.state.selected), pickerTrigger;
   const REVEAL_DELAY=30000;
   let revealTimer, waitAnswer, waitStarted=0, inputTimer;
@@ -43,10 +44,10 @@
   }
   function setup() {
     screen('setup');
-    const r=model.round, active=r&&r.index<r.tasks.length;
+    const r=model.round, active=r&&(r.index<r.tasks.length||r.letterRequired&&!r.letterDone);
     el('continue-panel').hidden=!active;
     if(active)el('continue-label').textContent=`Đang ở câu ${r.index+1}/${r.tasks.length}.`;
-    el('mode-summary').textContent=el('letter-review')?'Chọn kiểu ôn':`🎲 ${model.state.selectedModes.length} dạng thử thách`;
+    el('mode-summary').textContent=`🎲 ${model.state.selectedModes.length} dạng thử thách`;
     el('start').disabled=model.roundLength()===0;
     el('mode-notice').textContent=el('start').disabled?'Chọn thêm Unit hoặc dạng khác nhé.':'';
     el('mode-choices').replaceChildren(node('legend','Dạng muốn chơi'));
@@ -132,6 +133,8 @@
   }
   function play(focus=false) {
     if(!model.round)return setup();
+    model.round.letterRequired=true;model.save();
+    if(model.round.index>=Math.min(3,model.round.tasks.length)&&!model.round.letterDone){letterReview.launch(model.round);return;}
     if(model.round.index===model.round.tasks.length)return result();
     screen('play');
     const r=model.round,t=model.task,a=model.answer,w=model.words.get(t.key),record=model.record(),done=!!a.outcome;
@@ -212,7 +215,7 @@
   });
   function result() {
     screen('result');const totals=model.totals();
-    el('result-score').textContent=`${totals.score} sao · ${totals.total} câu đã kết thúc`;
+    el('result-score').textContent=`${totals.score} sao · ${totals.total} câu đã kết thúc${model.round.letterDone?' · Đã hoàn thành chặng ghép chữ':''}`;
     el('result-stats').replaceChildren();
     for(const [kind,label] of Object.entries(outcomes)){const box=node('div');box.append(node('strong',String(totals[kind])),node('span',label));el('result-stats').append(box);}
     const list=el('review-list');list.replaceChildren();
@@ -234,5 +237,6 @@
   document.addEventListener('visibilitychange',()=>{clearTimeout(inputTimer);pauseReveal();if(!document.hidden)resumeReveal();});
   window.addEventListener('pagehide',()=>{clearTimeout(inputTimer);pauseReveal();effects.stop();model.save();});
   model.save();setup();
-  if(el('letter-review'))window.DanhGrade2LetterReview.connect({units:model.units,selectedUnits:()=>[...model.state.selected],open:()=>screen('letter-review'),back:setup,termSplit:config.termSplit||model.units.length/2});
+  letterReview=window.DanhGrade2LetterReview.connect({units:model.units,open:()=>screen('letter-review'),back:setup,termSplit:config.termSplit||model.units.length/2,complete:result=>{if(!model.round||model.round.letterDone)return;model.round.letterDone=true;model.round.letterResult=result;model.finishRound();play(true);}});
+  if(new URLSearchParams(location.search).get('game')==='letters'){if(!model.round||model.round.index===model.round.tasks.length)model.start();play(true);}
 })();

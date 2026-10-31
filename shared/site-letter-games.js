@@ -21,14 +21,15 @@
  if(typeof document==='undefined')return;
  const mounted=new WeakMap(),entries=new WeakMap();
  const make=(tag,text,cls)=>{const n=document.createElement(tag);if(text)n.textContent=text;if(cls)n.className=cls;return n;};
- function mount({stage,words,grade=0,scope='bank'}){
+ function mount({stage,words,grade=0,scope='bank',roundId,onComplete}){
   const bank=normalize(words),identity=`site-${scope}-${fingerprint(bank)}`;
-  const prior=mounted.get(stage);if(prior?.identity===identity&&prior.grade===grade)return prior;
+  const prior=mounted.get(stage);if(prior?.identity===identity&&prior.grade===grade&&prior.roundId===roundId)return prior;
   const selected=bank.map(w=>w.id);
   const instance=root.DanhLetterLadder.mount({topic:identity,words:bank,grade,storage:root.DanhLearners.storage,selected:()=>selected,effects:root.DanhLearningEffects,allowStandalone:false,
-   goSpelling:()=>render(),rerender:()=>render()});
-  const render=()=>{if(!bank.length){stage.textContent='Bộ này chưa có từ để ghép. Em chọn bộ khác nhé.';return;}instance.render(stage,instance.game.state.active?.phase===4);};
-  const result={identity,grade,render,game:instance.game};mounted.set(stage,result);stage.dataset.letterStorage=instance.game.key;return result;
+   goSpelling:()=>render(),rerender:()=>render(),onComplete,chooseGroup:onComplete?ids=>root.DanhLetterLadderCore.reviewGroup(ids,instance.game.state.history):undefined});
+  if(roundId&&instance.game.state.active?.integratedRound!==roundId){const a=instance.game.state.active;if(a?.integratedRound||a?.phase===4&&a.index===a.tasks.length)instance.game.start(selected);}
+  const render=()=>{if(!bank.length){stage.textContent='Bộ này chưa có từ để ghép. Em chọn bộ khác nhé.';return;}instance.render(stage,instance.game.state.active?.phase===4);if(roundId){instance.game.state.active.integratedRound=roundId;instance.game.save();}};
+  const result={identity,grade,roundId,render,game:instance.game};mounted.set(stage,result);stage.dataset.letterStorage=instance.game.key;return result;
  }
  function bind(config){
   const button=document.querySelector('[data-tab="letters"]');if(!config.stage||!button)return;

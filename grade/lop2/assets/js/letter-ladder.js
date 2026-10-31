@@ -2,7 +2,7 @@
  'use strict';
  const make=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
  const advances=new WeakMap();
- function mount({topic,words,storage,selected,goSpelling,rerender,effects,chooseGroup,allowStandalone=true,grade=Number(document.body.dataset.grade)||2}){
+ function mount({topic,words,storage,selected,goSpelling,rerender,effects,chooseGroup,allowStandalone=true,onComplete,grade=Number(document.body.dataset.grade)||2}){
   effects=effects||window.DanhLearningEffects;
   const game=window.DanhLetterLadderCore.create(storage,topic,words,{chooseGroup,grade});
   const button=(text,action,cls='')=>{const n=make('button',text,cls);n.type='button';n.onclick=event=>{if(n.isConnected&&!n.disabled)action(event);};return n;};
@@ -46,12 +46,12 @@
     const counts={first:0,corrected:0,hinted:0,seen:0};for(const t of a.tasks)counts[t.result]++;
     stage.append(make('h3','Xong lượt rồi nè!'));
     const summary=make('div',undefined,'ll-summary');for(const [k,label]of [['first','Đúng ngay'],['corrected','Sửa đúng'],['hinted','Có gợi ý'],['seen','Đã xem']]){const cell=make('p');cell.append(make('strong',counts[k]),make('span',label));summary.append(cell);}stage.append(summary);
-    stage.append(button('Chơi tiếp',()=>{game.start(selected());rerender('game-flip');},'ll-primary'));if(allowStandalone)stage.append(button('Chính tả riêng',()=>navigate(()=>game.standalone())));
+    stage.append(button(onComplete?'Tiếp tục ôn tổng hợp →':'Chơi tiếp',()=>{if(onComplete)onComplete({counts,completed:[...a.completed],tasks:[...a.tasks]});else {game.start(selected());rerender('game-flip');}},'ll-primary'));if(allowStandalone)stage.append(button('Chính tả riêng',()=>navigate(()=>game.standalone())));
     return;
    }
    const t=game.entry(),w=game.word();
    window.DanhGameFlow?.prepare(a.tasks.slice(a.index,a.index+3).map(t=>words.find(w=>w.id===t.id)),stage);
-   const head=make('div',undefined,'ll-head');head.append(make('span',`Từ ${a.index+1}/${a.tasks.length}`));stage.append(head);
+   const head=make('div',undefined,'ll-head');head.append(make('span',`Từ ${a.index+1}/${a.tasks.length}`),make('span',a.phase===4?'Gõ cả từ':`Ghép ${a.phase} chữ`));stage.append(head);
    if(a.recallPass)stage.append(make('p','Luyện lại từ cần nhớ. Tự ghép đúng để chơi tiếp.','ll-practice-note'));
    const meaning=make('h3',w.meaning,'ll-meaning');meaning.tabIndex=-1;const prompt=make('div',undefined,'ll-prompt');prompt.append(window.DanhPictureAudio.make(w,{topic}),meaning);stage.append(prompt);
    const status=make('p','', 'll-status');status.setAttribute('role','status');status.setAttribute('aria-live','polite');

@@ -26,7 +26,7 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8765',out='artifacts/i
   async function check(){await p.locator('.letter-ladder').getByRole('button',{name:'Kiểm tra',exact:true}).click();}
   async function release(){await p.evaluate(()=>finishSpeech.shift()?.(true));}
   await p.goto(base+'/grade/lop2/gsunit1.html?game=letters');await fixture(true);
-  assert(await p.locator('script[src*="shared/tablet-game.js"]').evaluate(n=>new URL(n.src).searchParams.get('v')==='ipad-balanced-20261031'),'returning users receive the new controller');
+  assert(await p.locator('script[src*="shared/tablet-game.js"]').evaluate(n=>new URL(n.src).searchParams.get('v')==='review-letters-20261031'),'returning users receive the new controller');
   await p.waitForFunction(()=>document.body.classList.contains('tg-roomy'));
   assert(await p.locator('.ll-slot').first().evaluate(n=>n.getBoundingClientRect().height>=60));
   assert(await p.locator('.ll-meaning').evaluate(n=>parseFloat(getComputedStyle(n).fontSize)>=32));

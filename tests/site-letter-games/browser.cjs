@@ -26,19 +26,7 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8765',out='artifacts/s
   if([1,5,6,12].includes(grade))await page.screenshot({path:`${out}/grade${grade}-390.png`,fullPage:true});
   results.push({kind:'unit',grade,realAudio:true,resume:true});console.log('PASS Unit grade '+grade);
  }
- for(let grade=1;grade<=12;grade++){
-  if(grade<=5){
-   await page.goto(`${base}/grade/lop${grade}/review.html`);await page.locator('#start-letters').click();await page.locator('#letter-review-stage .ll-slot').first().waitFor();
-   const key=await page.evaluate(grade=>{const list=[];for(let i=0;i<DanhLearners.storage.length;i++){const k=DanhLearners.storage.key(i);if(k?.startsWith(`danh-g${grade}-letter-ladder-review-`))list.push(k);}return list;},grade);
-   assert(await page.locator('#letter-review').isVisible());results.push({kind:'review',grade});
-  }else{
-   await page.goto(`${base}/grade/lop${grade}/vocabulary-review.html?term=2`);await page.locator('.site-letter-entry>button').click();
-   const stage=page.locator('.site-letter-entry .letter-ladder');await stage.locator('.ll-slot').first().waitFor();
-   const info=await page.evaluate(grade=>{const units=window['DanhGrade'+grade+'Units'],pool=units.filter(u=>u.number>Math.ceil(units.length/2)).flatMap(u=>u.words);const bank=DanhSiteLetters.normalize(pool),key=document.querySelector('.site-letter-entry [data-letter-storage]').dataset.letterStorage;return {bank,active:JSON.parse(DanhLearners.storage.getItem(key)).active,key};},grade);
-   assert(info.key.startsWith(`danh-g${grade}-`));assert(info.active.selected.every(id=>info.bank.some(w=>w.id===id)));assert(info.active.ids.length<=8);results.push({kind:'review-term2',grade});
-  }
-  assert.equal(await page.evaluate(()=>media.length),0);console.log('PASS review grade '+grade);
- }
+ // Review flows are exercised end-to-end in integrated-review.browser.cjs (all 12 grades).
  await page.goto(base+'/flashcard.html?game=letters&grade=12&unit=unit2');await page.locator('#stage .ll-slot').first().waitFor();
  const library=await page.evaluate(async()=>{const all=await DanhVocabularyLibrary.load(),pool=all.filter(w=>w.sources.some(s=>s.grade===12&&s.unit==='unit2')),bank=DanhSiteLetters.normalize(pool),key=document.querySelector('#stage').dataset.letterStorage;return {bank,key,active:JSON.parse(DanhLearners.storage.getItem(key)).active};});
  assert(library.key.startsWith('danh-g12-'));assert(library.active.selected.every(id=>library.bank.some(w=>w.id===id)));assert.equal(await page.locator('#grade-filter').inputValue(),'12');assert.equal(await page.locator('#unit-filter').inputValue(),'unit2');

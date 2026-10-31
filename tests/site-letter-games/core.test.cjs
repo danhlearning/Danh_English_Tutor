@@ -23,7 +23,7 @@ test('every active Unit and review page has the shared game and integration is r
    assert.equal(I.transform(html,file),html,file+' is not stable after rebuild');unitsChecked++;
   }
   const review=`grade/lop${grade}/${grade<=5?'review':'vocabulary-review'}.html`,html=read(review);
-  assert(html.includes(grade<=5?'id="start-letters"':'site-letter-games.js'),review);assert.equal(I.transform(html,review),html);
+  assert(html.includes(grade<=5?'letter-review.js':'site-letter-games.js')&&!html.includes('id="start-letters"'),review);assert.equal(I.transform(html,review),html);
  }
  assert(unitsChecked>=160);
 });

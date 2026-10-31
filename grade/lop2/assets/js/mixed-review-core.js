@@ -128,7 +128,8 @@
     }
     resolve(outcome){if(!this.answer||this.answer.outcome||!['revealed','skipped'].includes(outcome))return false;this.answer.outcome=outcome;this.save();return true;}
     totals(round=this.round){const total=Object.fromEntries(outcomes.map(k=>[k,0]));for(const answer of round.answers)if(answer.outcome)total[answer.outcome]++;return {...total,score:total.first*10+total.retry*5+total.hinted*3,total:round.tasks.length};}
-    next(){if(!this.answer?.outcome)return false;this.round.index++;if(this.round.index===this.round.tasks.length&&!this.state.history.some(h=>h.id===this.round.id)){this.state.history.push({id:this.round.id,completedAt:Date.now(),...this.totals()});this.state.history=this.state.history.slice(-20);}this.save();return true;}
+    finishRound(){if(this.round.index===this.round.tasks.length&&(!this.round.letterRequired||this.round.letterDone)&&!this.state.history.some(h=>h.id===this.round.id)){this.state.history.push({id:this.round.id,completedAt:Date.now(),...this.totals()});this.state.history=this.state.history.slice(-20);}this.save();}
+    next(){if(!this.answer?.outcome)return false;this.round.index++;this.finishRound();return true;}
     needsReview(){return this.round.tasks.filter((t,i)=>this.round.answers[i].outcome!=='first');}
   }
   const api={Review,KEY,modes,choiceModes,normalize,search};if(typeof module!=='undefined'&&module.exports)module.exports=api;else window.DanhGrade2Review=api;

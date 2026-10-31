@@ -22,9 +22,8 @@ const hash=s=>{let h=2166136261;for(const c of s.replace(/[\[\]]/g,'').replace(/
    if(a.phase===4&&!full){full=true;await stage().locator('.ll-input').fill('draft');await p.reload();await stage().waitFor();assert.equal(await stage().locator('.ll-input').inputValue(),'draft');assert.equal(await p.evaluate(()=>mediaEvents.length),0);}
    assert.equal(await stage().locator('.ll-route').count(),0);await correct();const now=(await state()).active;await advanceIfWaiting(stage());
   }assert(full);console.log('PASS grade '+grade+': real correct/corrected audio, silent resume, draft and automatic full spelling');
-  await p.goto(`${base}/grade/lop${grade}/review.html`);await p.locator('#start').click();await p.locator('#leave').click();const legacy=await p.evaluate(g=>JSON.parse(DanhLearners.storage.getItem(`danh-g${g}-mixed-review-v1`)).active,grade);
-  let first;for(const term of [1,2,1]){await p.locator('#pick-units').click();await p.locator('#pick-term'+term).click();await p.locator('#apply-units').click();await p.locator('#start-letters').click();key=`danh-g${grade}-letter-ladder-review-term${term}-v1`;await stage().waitFor();const s=(await state()).active;const selected=await p.evaluate(g=>JSON.parse(DanhLearners.storage.getItem(`danh-g${g}-mixed-review-v1`)).selected,grade);assert.deepEqual(selected,Array.from({length:10},(_,i)=>'unit'+(i+1+(term===2?10:0))));if(term===1){if(first)assert.deepEqual(s,first);else first=s;}await p.locator('#leave-letters').click();}
-  assert.deepEqual(await p.evaluate(g=>JSON.parse(DanhLearners.storage.getItem(`danh-g${g}-mixed-review-v1`)).active,grade),legacy);assert.equal(await p.evaluate(()=>DanhLearners.storage.getItem('danh-g2-letter-ladder-review-term1-v1')),null);console.log('PASS grade '+grade+': 1–10 / 11–20 semesters, separate keys and unchanged legacy review');
+  // Integrated review semesters, continuation and drafts are covered by integrated-review.browser.cjs.
+
  }
  assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);console.log('PASS both grades, no runtime errors or missing assets');
  }finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -9,7 +9,7 @@ test('Grades 3 and 4 have independent letter rounds and ten-Unit semesters using
 });
 test('All primary Unit and review pages enable the shared game and retain legacy lesson data',()=>{
  for(const grade of [1,3,4,5]){const {units}=course(grade);for(const u of units){const html=fs.readFileSync(`grade/lop${grade}/${u.id}.html`,'utf8');assert(html.includes('letter-ladder-core.js'));assert(html.indexOf('letter-ladder.js?')<html.indexOf('assets/js/learning-core.js'));assert(html.includes(`data-grade="${grade}"`));assert.equal(B.enable(html,grade),html);}
-  const review=fs.readFileSync(`grade/lop${grade}/review.html`,'utf8');assert(review.includes('id="start-letters"'));assert(review.includes('letter-review.js'));assert.equal(B.enable(review,grade,true),review);assert(fs.readFileSync(`grade/lop${grade}/previous-unit1.html`,'utf8').includes('letter-ladder-core.js'));
+  const review=fs.readFileSync(`grade/lop${grade}/review.html`,'utf8');assert(!review.includes('id="start-letters"'));assert(review.includes('letter-review.js'));assert.equal(B.enable(review,grade,true),review);assert(fs.readFileSync(`grade/lop${grade}/previous-unit1.html`,'utf8').includes('letter-ladder-core.js'));
  }
  for(const grade of [1,5])assert(fs.readFileSync(`grade/lop${grade}/unit1.html`,'utf8').includes('letter-ladder-core.js'));
 });

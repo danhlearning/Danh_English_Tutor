@@ -7,7 +7,7 @@
  // Use the physical screen's short edge: phones remain phones when rotated,
  // while an iPad keeps its game frame in Split View and Stage Manager.
  const tablet=()=>navigator.maxTouchPoints>0 && Math.min(screen.width||innerWidth,screen.height||innerHeight)>=600 && innerWidth>=320;
- const selectors='.tab-content.active[id^="game-"],#play:not([hidden]),#practice:not([hidden]),[data-danh-game-surface]';
+ const selectors='.tab-content.active[id^="game-"],#play:not([hidden]),#practice:not([hidden]),#letter-review:not([hidden]),[data-danh-game-surface]';
  let panel,input,saved,bar,keyboard,backdrop,gameDialog,scheduled=false,suppressed=null,caps=false,symbols=false,moreSymbols=false,keyboardDismissed=false,keyboardRequested=false;
  const originals=new Map();
  const visible=node=>node?.isConnected && !node.closest('[hidden],.tab-content:not(.active)') && node.getClientRects().length>0;
@@ -17,7 +17,7 @@
  function findPanel(){
   for(const surface of document.querySelectorAll(selectors)){
    if(!visible(surface))continue;
-   const target=surface.closest('#play,#practice,.tab-content,.g6-panel,#app')||surface;
+   const target=surface.closest('#play,#practice,#letter-review,.tab-content,.g6-panel,#app')||surface;
    if(target.id==='app'&&!target.querySelector('[data-danh-game-surface]'))continue;
    return target;
   }
@@ -79,7 +79,7 @@
    gameDialog.append(heading,grid);picker.setAttribute('aria-expanded','true');gameDialog.showModal();
   },'Chọn trò chơi');
   picker.className='tg-game-picker';if(choices.length){picker.setAttribute('aria-haspopup','dialog');picker.setAttribute('aria-expanded','false');}
-  const currentName=current?.label||document.getElementById('round-label')?.textContent.trim()||document.getElementById('question-label')?.textContent.trim()||'Chọn hoạt động';
+  const currentName=(panel.id==='letter-review'?'Ôn tổng hợp · Ghép chữ':null)||current?.label||document.getElementById('round-label')?.textContent.trim()||document.getElementById('question-label')?.textContent.trim()||'Chọn hoạt động';
   const icon=element('span','🎮','tg-picker-icon');icon.setAttribute('aria-hidden','true');const text=element('span',null,'tg-picker-copy');text.append(element('small','Chọn game'),element('strong',currentName));
   const arrow=element('span','⌄','tg-picker-arrow');arrow.setAttribute('aria-hidden','true');picker.append(icon,text,arrow);bar.append(picker);
   gameDialog=element('dialog',null,'tg-game-dialog');gameDialog.setAttribute('aria-labelledby','tg-game-title');

@@ -1,0 +1,66 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "grade": 1,
+      "pool": 32,
+      "group": 8
+    },
+    {
+      "grade": 2,
+      "pool": 24,
+      "group": 8
+    },
+    {
+      "grade": 3,
+      "pool": 47,
+      "group": 8
+    },
+    {
+      "grade": 4,
+      "pool": 59,
+      "group": 8
+    },
+    {
+      "grade": 5,
+      "pool": 60,
+      "group": 8
+    },
+    {
+      "grade": 6,
+      "pool": 47,
+      "group": 8
+    },
+    {
+      "grade": 7,
+      "pool": 48,
+      "group": 8
+    },
+    {
+      "grade": 8,
+      "pool": 48,
+      "group": 8
+    },
+    {
+      "grade": 9,
+      "pool": 48,
+      "group": 8
+    },
+    {
+      "grade": 10,
+      "pool": 50,
+      "group": 8
+    },
+    {
+      "grade": 11,
+      "pool": 50,
+      "group": 8
+    },
+    {
+      "grade": 12,
+      "pool": 50,
+      "group": 8
+    }
+  ],
+  "errors": []
+}

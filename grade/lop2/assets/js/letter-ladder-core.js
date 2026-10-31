@@ -3,6 +3,7 @@
  const normal=s=>String(s||'').normalize('NFKC').replace(/[’‘]/g,"'").toLowerCase().trim().replace(/\s+/g,' ');
  const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
  const positions=w=>Array.from(w.name).flatMap((c,i)=>/[a-z]/i.test(c)?[i]:[]);
+ function reviewGroup(ids,history){const count=id=>Number.isSafeInteger(history?.[id+':4']?.count)?Math.max(0,history[id+':4'].count):0;const least=Math.min(...ids.map(count));return ids.filter(id=>count(id)===least).slice(0,8);}
  const kinds=['first','corrected','hinted','seen'];
  const recalled=t=>t && (t.result==='first'||t.recalled===true);
  function wordOrder(ids,previous=[]){
@@ -91,5 +92,5 @@
   function standalone(){if(state.active){state.active.bridge=false;save();}}
   return {key,state,byId,ensure,start,entry,word,choose,remove,text,check,hint,reveal,next,advance,standalone,save,get warning(){return warning;}};
  }
- const api={create,normal,positions,kinds};root.DanhLetterLadderCore=api;if(typeof module!=='undefined')module.exports=api;
+ const api={create,normal,positions,kinds,reviewGroup};root.DanhLetterLadderCore=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

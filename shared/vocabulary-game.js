@@ -107,8 +107,9 @@
   };
   const isMilestone = count => count===3 || count>=5 && count%5===0;
 
-  function mount({stage,words,grade,scope,mark=()=>{},length=words.length,picture}) {
-    if(window.DanhSiteLetters){const letterWords=words.map(w=>{if(w.image||w.visual||!picture)return w;const frame=picture(w),art=frame.matches('svg,img')?frame:frame.querySelector('svg,img');return art?{...w,visual:art.outerHTML}:w;});const letters=document.getElementById('letters-stage');if(letters&&stage.id==='quiz-stage')window.DanhSiteLetters.bind({stage:letters,words:letterWords,grade,scope});else window.DanhSiteLetters.addEntry({anchor:stage.parentElement,words:letterWords,grade,scope});}
+  function mount({stage,words,grade,scope,mark=()=>{},length=words.length,picture,integrateLetters=false}) {
+    if(!integrateLetters&&window.DanhSiteLetters){const letterWords=words.map(w=>{if(w.image||w.visual||!picture)return w;const frame=picture(w),art=frame.matches('svg,img')?frame:frame.querySelector('svg,img');return art?{...w,visual:art.outerHTML}:w;});const letters=document.getElementById('letters-stage');if(letters&&stage.id==='quiz-stage')window.DanhSiteLetters.bind({stage:letters,words:letterWords,grade,scope});else window.DanhSiteLetters.addEntry({anchor:stage.parentElement,words:letterWords,grade,scope});}
+    const letterStage=el('div');
     const all=words.map(word=>({...word,key:word.key || `u${word.unit || 0}-w${word.id}`}));
     const byKey=new Map(all.map(word=>[word.key,word]));
     const key=`danh-g${grade}-vocabulary-game-${scope}-v1`;
@@ -137,7 +138,7 @@
     };
     const begin = (pool=all) => {
       const items=select(pool);if(!items.length){stage.replaceChildren(el('p','Chưa đủ từ khác nhau để tạo lượt trắc nghiệm.'));return;}
-      state.active={items,index:0,results:[],attempts:0,wrong:[],solved:false,options:null};persist();render();focusQuestion();feedback('start',stage);
+      state.active={id:globalThis.crypto?.randomUUID?.()||String(Date.now()),items,index:0,results:[],attempts:0,wrong:[],solved:false,options:null};persist();render();focusQuestion();feedback('start',stage);
     };
     const current = () => byKey.get(state.active.items[state.active.index]);
     const finish = outcome => {
@@ -159,19 +160,31 @@
       if(question){question.tabIndex=-1;question.focus({preventScroll:true});stage.scrollIntoView({block:'start',behavior:reduced()?'auto':'smooth'});}
     };
     function welcome() {
+      if(integrateLetters)stage.removeAttribute('data-danh-game-surface');
       stage.replaceChildren();
-      const card=el('div',undefined,'vg-welcome');card.append(el('span','🐱','vg-mascot'),el('h3',scope.startsWith('term')?'Thử thách từ vựng học kỳ':'Sẵn sàng gom sao?'),el('p',`Đọc nghĩa tiếng Việt, chọn một trong 4 từ tiếng Anh. Mỗi lượt ${Math.min(length,all.length)} câu. Đúng ngay: 10 sao · tự sửa: 5 sao · xem đáp án: 0 sao.`));
+      const card=el('div',undefined,'vg-welcome');card.append(el('span','🐱','vg-mascot'),el('h3',scope.startsWith('term')?'Thử thách từ vựng học kỳ':'Sẵn sàng gom sao?'),el('p',`Đọc nghĩa tiếng Việt, chọn một trong 4 từ tiếng Anh. Mỗi lượt ${Math.min(length,all.length)} câu${integrateLetters?' và chặng ghép chữ tối đa 8 từ, từ dễ đến khó':''}. Đúng ngay: 10 sao · tự sửa: 5 sao · xem đáp án: 0 sao.`));
       if(state.active)card.append(button(state.active.index===state.active.items.length?'Xem tổng kết lượt trước':'Tiếp tục lượt dở',()=>{render();focusQuestion();}));
       card.append(button(state.active?'Chơi lượt mới':'Bắt đầu chơi',()=>begin(),state.active?'g6-secondary':'g6-primary'));stage.append(card);
     }
     function render() {
       const round=state.active;if(!round){welcome();return;}
+      if(integrateLetters){
+       stage.setAttribute('data-danh-game-surface','');
+       if(round.index<round.items.length&&!round.letterRequired){round.letterRequired=true;persist();}
+       if(round.letterRequired&&round.index>=Math.min(3,round.items.length)&&!round.letterDone){
+        const back=button('← Chọn lượt ôn',()=>{window.DanhAnswerSpeech.stop();welcome();},'g6-secondary');back.dataset.action='leave';
+        stage.replaceChildren(back,el('h3','Chặng ghép chữ · Ôn tổng hợp'),letterStage);
+        if(!round.id){round.id='saved-'+Date.now();persist();}
+        window.DanhSiteLetters.mount({stage:letterStage,words,grade,scope,roundId:round.id,onComplete:result=>{if(state.active!==round||round.letterDone)return;round.letterDone=true;round.letterResult=result;persist();render();focusQuestion();}}).render();return;
+       }
+      }
       stage.replaceChildren();
       if(round.index>=round.items.length){
         const first=round.results.filter(result=>result.outcome==='first').length,corrected=round.results.filter(result=>result.outcome==='corrected').length,seen=round.results.filter(result=>result.outcome==='seen').length;
         stage.append(el('span','🏆','vg-mascot'),el('h3',`Em đã hoàn thành ${round.items.length} câu!`),el('p',`⭐ ${points(round.results)} sao · Đúng ngay: ${first} · Tự sửa đúng: ${corrected} · Đã xem: ${seen}`));
         const weak=round.results.filter(result=>result.outcome!=='first').map(result=>byKey.get(result.key));
         if(weak.length){stage.append(el('p',`Cần ôn: ${weak.map(word=>word.term).join(', ')}`),button('Ôn lại từ cần luyện',()=>begin(weak)));}
+        if(integrateLetters&&round.letterDone)stage.append(el('p','Đã hoàn thành chặng ghép chữ. Kết quả ghép được lưu riêng để chọn từ ôn tiếp.'));
         stage.append(button('Chơi lượt mới',()=>begin(),'g6-secondary'));return;
       }
       const word=current();
@@ -193,6 +206,7 @@
         if(round.solved){option.disabled=true;if(id===word.key)option.classList.add('correct');}
         choices.append(option);
       });
+      if(integrateLetters){const back=button('← Chọn lượt ôn',()=>{window.DanhAnswerSpeech.stop();welcome();},'g6-secondary');back.dataset.action='leave';stage.append(back);}
       stage.append(head,progress,question,choices,status);
       if(round.solved){
         status.textContent=round.outcome==='seen'?`Đáp án: ${word.term}. Em hãy ôn lại từ này.`:round.outcome==='first'?`+10 sao. ${word.term} = ${word.meaning}.`:`Tự sửa đúng rồi, xịn đó! +5 sao. ${word.term} = ${word.meaning}.`;
