@@ -3,12 +3,12 @@
  'use strict';
  if(window.DanhTabletGame)return;
  const root=new URL('../',document.currentScript.src);
- const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=ipad-large-input-20261031',root).href;document.head.append(sheet);
+ const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=ipad-navigation-20261031',root).href;document.head.append(sheet);
  // Use the physical screen's short edge: phones remain phones when rotated,
  // while an iPad keeps its game frame in Split View and Stage Manager.
  const tablet=()=>navigator.maxTouchPoints>0 && Math.min(screen.width||innerWidth,screen.height||innerHeight)>=600 && innerWidth>=320;
  const selectors='.tab-content.active[id^="game-"],#play:not([hidden]),#practice:not([hidden]),[data-danh-game-surface]';
- let panel,input,saved,bar,keyboard,backdrop,scheduled=false,suppressed=null,caps=false,symbols=false,moreSymbols=false,keyboardDismissed=false,keyboardRequested=false;
+ let panel,input,saved,bar,keyboard,backdrop,gameDialog,scheduled=false,suppressed=null,caps=false,symbols=false,moreSymbols=false,keyboardDismissed=false,keyboardRequested=false;
  const originals=new Map();
  const visible=node=>node?.isConnected && !node.closest('[hidden],.tab-content:not(.active)') && node.getClientRects().length>0;
  const textInput=node=>node?.matches('textarea,input:not([type]),input[type=text],input[type=search],input[type=number],input[type=tel],input[type=url],input[type=email]');
@@ -34,25 +34,68 @@
  }
  function leave(){
   if(!panel)return;const old=panel;close();suppressed=old;
-  const exit=old.querySelector('#back,#exit-play,#leave-practice,#leave,#leave-letters,[data-action="leave"]')||document.querySelector('[data-tab="vocabulary"],.g2-main-nav .nav-btn:not([data-game-nav])');
+  const exit=old.querySelector('#back,#exit-play,#leave-practice,#leave,#leave-letters,[data-action="leave"],[data-action="learn"]')||document.querySelector('[data-tab="vocabulary"],.g2-main-nav .nav-btn:not([data-game-nav])');
   if(exit && !exit.disabled)exit.click();
+ }
+ function gameChoices(){
+  const primary=[...document.querySelectorAll('.g2-game-choice[data-game]')];
+  const tabs=primary.length?primary:[...document.querySelectorAll('.g6-tab[data-tab]')].filter(n=>['flashcards','letters','quiz','spelling'].includes(n.dataset.tab));
+  return tabs.map(node=>({node,id:node.dataset.game||node.dataset.tab,label:node.textContent.trim()}));
+ }
+ function gameStyle(id){
+  if(/flip|flashcards/.test(id))return {icon:'🃏',detail:'Lật tranh và ôn nghĩa của từ.',tone:'peach'};
+  if(/letter/.test(id))return {icon:'🧩',detail:'Chọn chữ để hoàn thành từ.',tone:'green'};
+  if(/spelling/.test(id))return {icon:'✏️',detail:'Gõ từ tiếng Anh em nhớ.',tone:'blue'};
+  if(/count/.test(id))return {icon:'📝',detail:'Điền từ và viết câu ngắn.',tone:'pink'};
+  return {icon:'🎯',detail:'Nghe hoặc đọc rồi chọn đáp án.',tone:'yellow'};
+ }
+ function addNavigation(){
+  const links=element('div',null,'tg-nav-links');links.setAttribute('role','group');links.setAttribute('aria-label','Điều hướng bài học');
+  const requested=Number(new URLSearchParams(location.search).get('fromGrade'));
+  const grade=[Number(document.body.dataset.grade),requested,Number(location.pathname.match(/\/grade\/lop(\d+)\//)?.[1]),Number(document.getElementById('grade-filter')?.value)].find(n=>Number.isInteger(n)&&n>=1&&n<=12);
+  const targets=[['🏠','Trang chủ','index.html']];
+  if(Number.isInteger(grade)&&grade>=1&&grade<=12)targets.push(['📚',`Lớp ${grade}`,`grade/lop${grade}/lop${grade}.html`],['🌈','Ôn tập',`grade/lop${grade}/${grade<=5?'review':'vocabulary-review'}.html`]);
+  else targets.push(['📚','Kỹ năng','skills.html']);
+  for(const [icon,label,path]of targets){const link=element('a',null,'tg-nav-link');link.href=new URL(path,root).href;link.setAttribute('aria-label',label);const symbol=element('span',icon,'tg-nav-icon');symbol.setAttribute('aria-hidden','true');link.append(symbol,element('span',label,'tg-nav-text'));links.append(link);}
+  bar.append(links);
+ }
+ function addGamePicker(){
+  const choices=gameChoices(),current=choices.find(choice=>choice.id===panel.id);
+  const picker=makeButton('',()=>{
+   if(!choices.length){leave();return;}
+   gameDialog.replaceChildren();
+   const heading=element('div',null,'tg-game-dialog-head'),title=element('h2','Em muốn chơi game nào?');title.id='tg-game-title';
+   const dismiss=makeButton('Đóng ✕',()=>gameDialog.close(),'Đóng bảng chọn game');dismiss.className='tg-game-close';heading.append(title,dismiss);
+   const grid=element('div',null,'tg-game-grid');
+   for(const choice of choices){
+    const info=gameStyle(choice.id==='game-flip'&&/ghép/i.test(choice.label)?'letters':choice.id),selected=choice.id===panel.id;
+    const card=makeButton('',()=>{if(!card.isConnected||!gameDialog?.open)return;gameDialog.close();if(selected)return;window.DanhAnswerSpeech?.stop();choice.node.click();schedule();},choice.label);
+    card.className='tg-game-card';card.dataset.game=choice.id;card.dataset.tone=info.tone;
+    if(selected)card.setAttribute('aria-current','true');
+    const icon=element('span',info.icon,'tg-game-icon');icon.setAttribute('aria-hidden','true');
+    const copy=element('span',null,'tg-game-copy'),detail=element('small',info.detail);detail.id=`tg-game-detail-${choice.id}`;card.setAttribute('aria-describedby',detail.id);copy.append(element('strong',choice.label),detail);
+    card.append(icon,copy);if(selected)card.append(element('span','Đang chơi','tg-game-current'));grid.append(card);
+   }
+   gameDialog.append(heading,grid);picker.setAttribute('aria-expanded','true');gameDialog.showModal();
+  },'Chọn trò chơi');
+  picker.className='tg-game-picker';if(choices.length){picker.setAttribute('aria-haspopup','dialog');picker.setAttribute('aria-expanded','false');}
+  const currentName=current?.label||document.getElementById('round-label')?.textContent.trim()||document.getElementById('question-label')?.textContent.trim()||'Chọn hoạt động';
+  const icon=element('span','🎮','tg-picker-icon');icon.setAttribute('aria-hidden','true');const text=element('span',null,'tg-picker-copy');text.append(element('small','Chọn game'),element('strong',currentName));
+  const arrow=element('span','⌄','tg-picker-arrow');arrow.setAttribute('aria-hidden','true');picker.append(icon,text,arrow);bar.append(picker);
+  gameDialog=element('dialog',null,'tg-game-dialog');gameDialog.setAttribute('aria-labelledby','tg-game-title');
+  gameDialog.addEventListener('close',event=>{const open=event.currentTarget.open;picker.setAttribute('aria-expanded',String(open));if(!open&&picker.isConnected)picker.focus({preventScroll:true});});
+  gameDialog.addEventListener('click',event=>{if(event.target!==gameDialog)return;const r=gameDialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)gameDialog.close();});
  }
  function mount(){
   backdrop=element('div',null,'tg-backdrop');backdrop.setAttribute('aria-hidden','true');
   bar=element('nav',null,'tg-bar');bar.setAttribute('aria-label','Khung chơi');
-  bar.append(makeButton('← Chọn hoạt động',leave));
-  const title=element('strong','Cùng luyện tiếng Anh','tg-title');bar.append(title);
-  const choices=[...document.querySelectorAll('.g2-game-choice[data-game]')];
-  if(choices.length){
-   const picker=element('select',null,'tg-game-picker');picker.setAttribute('aria-label','Chọn trò chơi');
-   for(const choice of choices){const option=element('option',choice.textContent);option.value=choice.dataset.game;option.selected=option.value===panel.id;picker.append(option);}
-   picker.addEventListener('change',()=>choices.find(choice=>choice.dataset.game===picker.value)?.click());bar.append(picker);
-  }
-  const show=makeButton('Hiện bàn phím',()=>{keyboardDismissed=false;keyboardRequested=true;schedule();});show.className='tg-show-keyboard';show.hidden=true;bar.append(show);
-  const expand=makeButton('Xem đầy đủ',()=>{const reading=panel.classList.toggle('tg-reading');if(!reading)panel.scrollTop=0;expand.textContent=reading?'Về khung chơi':'Xem đầy đủ';});expand.className='tg-expand';expand.hidden=true;bar.append(expand);
+  const back=makeButton('← Hoạt động',leave,'Quay về chọn hoạt động');back.className='tg-back';bar.append(back);addNavigation();addGamePicker();
+  const tools=element('div',null,'tg-tools');tools.hidden=true;bar.append(tools);
+  const show=makeButton('Hiện bàn phím',()=>{keyboardDismissed=false;keyboardRequested=true;schedule();});show.className='tg-show-keyboard';show.hidden=true;tools.append(show);
+  const expand=makeButton('Xem đầy đủ',()=>{const reading=panel.classList.toggle('tg-reading');if(!reading)panel.scrollTop=0;expand.textContent=reading?'Về khung chơi':'Xem đầy đủ';});expand.className='tg-expand';expand.hidden=true;tools.append(expand);
   keyboard=element('section',null,'tg-keyboard');keyboard.setAttribute('aria-label','Bàn phím tiếng Anh');keyboard.hidden=true;
   keyboard.addEventListener('pointerdown',event=>{if(event.target.closest('button'))event.preventDefault();});
-  document.body.append(backdrop,bar,keyboard);buildKeys();
+  document.body.append(backdrop,bar,keyboard,gameDialog);buildKeys();
   frameObserver?.observe(bar);frameObserver?.observe(keyboard);frameObserver?.observe(panel);
  }
  function buildKeys(){
@@ -84,6 +127,7 @@
   actions.append(mode(),space,mode(),hide);keyboard.append(actions);updateKeys();
  }
  function updateKeys(){if(!keyboard)return;const disabled=!input||input.disabled||input.readOnly;for(const b of keyboard.querySelectorAll('button')){const locked=b.dataset.action==='hide'?false:disabled;if(b.disabled!==locked)b.disabled=locked;}}
+ function updateTools(){const tools=bar?.querySelector('.tg-tools');if(tools)tools.hidden=[...tools.children].every(node=>node.hidden);}
  function type(text){
   if(!input || input.disabled || input.readOnly || !visible(input))return;
   const field=input;field.focus({preventScroll:true});const start=field.selectionStart??field.value.length,end=field.selectionEnd??start;
@@ -107,6 +151,7 @@
  function close(){
   if(!panel)return;
   frameObserver?.disconnect();panel.classList.remove('tg-panel','tg-reading','tg-word-input');panel.scrollTop=0;panel=null;input=null;keyboardRequested=false;restoreInputs();
+  if(gameDialog?.open)gameDialog.close();gameDialog?.remove();gameDialog=null;
   backdrop?.remove();bar?.remove();keyboard?.remove();bar=keyboard=backdrop=null;
   document.body.classList.remove('tg-playing','tg-typing','tg-roomy');
   for(const [key,value]of Object.entries(saved.style))document.body.style[key]=value;
@@ -132,12 +177,12 @@
   if(input && input.type==='number'&&!symbols){symbols=true;buildKeys();}
   const shortViewport=(window.visualViewport?.height||innerHeight)<520;
   const typing=!!input&&!keyboardDismissed&&(!shortViewport||keyboardRequested);
-  keyboard.hidden=!typing;document.body.classList.toggle('tg-typing',typing);bar.querySelector('.tg-show-keyboard').hidden=!input||typing;updateKeys();
+  keyboard.hidden=!typing;document.body.classList.toggle('tg-typing',typing);bar.querySelector('.tg-show-keyboard').hidden=!input||typing;updateKeys();updateTools();
   document.documentElement.style.setProperty('--tg-bar-height',`${bar.getBoundingClientRect().height}px`);
   document.documentElement.style.setProperty('--tg-keyboard-height',`${typing?keyboard.getBoundingClientRect().height:0}px`);
   const available=(window.visualViewport?.height||innerHeight)-bar.getBoundingClientRect().height-(typing?keyboard.getBoundingClientRect().height:0);
   document.documentElement.style.setProperty('--tg-scale',String(Math.max(1,Math.min(1.5,available/400))));
-  requestAnimationFrame(()=>{if(!panel||!bar)return;const expand=bar.querySelector('.tg-expand');const overflow=panel.classList.contains('tg-reading')||panel.scrollHeight>panel.clientHeight+4||[...panel.querySelectorAll('.item-display-box,#spelling-preview')].some(node=>node.clientHeight>0&&node.scrollHeight>node.clientHeight+4);if(expand.hidden===overflow)expand.hidden=!overflow;});
+  requestAnimationFrame(()=>{if(!panel||!bar)return;const expand=bar.querySelector('.tg-expand');const overflow=panel.classList.contains('tg-reading')||panel.scrollHeight>panel.clientHeight+4||[...panel.querySelectorAll('.item-display-box,#spelling-preview')].some(node=>node.clientHeight>0&&node.scrollHeight>node.clientHeight+4);if(expand.hidden===overflow)expand.hidden=!overflow;updateTools();});
  }
  function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(sync);}}
  const frameObserver=typeof ResizeObserver==='function'?new ResizeObserver(schedule):null;

@@ -133,3 +133,24 @@ body.tg-playing .tg-panel .timer-message:empty{display:none}
  body.tg-roomy.tg-typing .tg-panel :is(.ll-input-label,.ll-input,.ll-status,.ll-actions){grid-column:2}
  body.tg-roomy.tg-typing .tg-panel .ll-actions{margin:4px 0!important}
 }
+/* Paper navigation and a large, touch-friendly game chooser. */
+body.tg-playing .tg-bar{justify-content:flex-start;gap:8px;background:#f4ecd9;background-image:radial-gradient(#b2996c18 .6px,transparent .6px);background-size:7px 7px}
+.tg-bar .tg-back{min-height:48px;flex:none;font-size:16px;padding:8px 12px;border-radius:14px 11px 15px 12px}
+.tg-nav-links{display:flex;align-items:center;gap:6px;flex:none}
+.tg-nav-link{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;box-sizing:border-box;width:64px;min-height:52px;border:1px solid #d8c7a5;border-radius:14px 11px 15px 12px;background:#fffdf5;color:#43634f;text-decoration:none;font:800 13px 'Danh Nunito',Nunito,sans-serif;line-height:1.1;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.tg-nav-icon{font-size:22px;line-height:1}.tg-nav-text{white-space:nowrap}
+.tg-nav-link:hover{background:#edf1dd}.tg-nav-link:focus-visible,.tg-game-card:focus-visible,.tg-game-close:focus-visible{outline:3px solid #176d8a;outline-offset:2px}
+body.tg-playing .tg-bar .tg-game-picker{display:flex;align-items:center;gap:12px;flex:1;min-width:200px;max-width:340px;min-height:56px;padding:6px 14px;border:1.5px solid #82a487;border-radius:19px 15px 20px 16px;background:#e4efdb;color:#315b44;box-shadow:0 3px 0 #b6c9a4;font-family:'Danh Nunito',Nunito,sans-serif;text-align:left}
+.tg-picker-icon{font-size:29px;line-height:1}.tg-picker-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:2px}.tg-picker-copy small{font-size:12px;line-height:1.2;font-weight:800;letter-spacing:.03em}.tg-picker-copy strong{font-size:23px;line-height:1.15;overflow-wrap:anywhere}.tg-picker-arrow{font-size:27px;line-height:1}
+.tg-tools{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-left:auto}.tg-tools button{font-size:15px;padding:7px 10px}
+.tg-game-dialog{position:fixed;inset:0;margin:auto;box-sizing:border-box;width:min(820px,calc(100% - 32px));height:fit-content;max-height:calc(100dvh - 32px);padding:24px;border:2px solid #c7b38c;border-radius:28px 23px 30px 24px;background:#fffaf0;color:#34584c;box-shadow:0 14px 50px #35463440;font-family:'Danh Nunito',Nunito,sans-serif;overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y pinch-zoom}
+.tg-game-dialog::backdrop{background:#263d3980}
+.tg-game-dialog *{box-sizing:border-box}
+.tg-game-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}.tg-game-dialog h2{font-size:28px;line-height:1.25;margin:0}.tg-game-close{flex:none;min-height:44px;padding:8px 14px;border:1px solid #c7b38c;border-radius:13px;background:#f4ecd9;color:#34584c;font-family:inherit;font-size:16px;font-weight:800;cursor:pointer}
+.tg-game-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.tg-game-card{position:relative;display:flex;align-items:center;gap:16px;min-height:126px;padding:22px 18px;border:1.5px solid #c8bb99;border-radius:23px 18px 25px 19px;background:#edf2df;color:#34584c;box-shadow:0 4px 0 #c6b58a33;font-family:inherit;text-align:left;cursor:pointer;touch-action:manipulation}
+.tg-game-card[data-tone=peach]{background:#f9eadb}.tg-game-card[data-tone=blue]{background:#e4eff5}.tg-game-card[data-tone=pink]{background:#f5e7ee}.tg-game-card[data-tone=yellow]{background:#faf0cc}
+.tg-game-card[aria-current=true]{border-color:#548462;background:#e0eed6}.tg-game-icon{flex:none;font-size:38px;line-height:1}.tg-game-copy{display:flex;flex-direction:column;gap:8px;min-width:0}.tg-game-copy strong{font-size:24px;line-height:1.2}.tg-game-copy small{font-size:16px;line-height:1.4}.tg-game-current{position:absolute;top:6px;right:12px;font-size:12px;font-weight:900;color:#376a4b}
+body.tg-roomy .tg-panel :is(.question-label,#instruction,#cue){margin:3px 0}
+@media(max-width:900px){.tg-nav-link{width:50px;min-height:50px}.tg-nav-text{font-size:11px}.tg-nav-links{gap:4px}.tg-bar .tg-back{padding-inline:9px;font-size:15px}body.tg-playing .tg-bar .tg-game-picker{min-width:190px;max-width:300px}.tg-picker-copy strong{font-size:21px}}
+@media(max-width:599px){body.tg-playing .tg-bar{gap:6px;padding-inline:8px}.tg-nav-link{width:44px;min-height:44px}.tg-nav-text{display:none}.tg-nav-icon{font-size:21px}.tg-bar .tg-back{min-height:44px;font-size:14px;padding-inline:7px}body.tg-playing .tg-bar .tg-game-picker{min-width:170px;max-width:none;min-height:52px}.tg-picker-copy strong{font-size:19px}.tg-picker-icon{font-size:25px}.tg-game-dialog{padding:16px}.tg-game-dialog h2{font-size:23px}.tg-game-grid{grid-template-columns:1fr;gap:12px}.tg-game-card{min-height:104px;padding:20px 16px}.tg-game-copy strong{font-size:22px}}

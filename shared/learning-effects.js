@@ -98,8 +98,8 @@
     activeEffects.add(effect);effect.timer=setTimeout(effect.cleanup,220);
   };
   document.addEventListener('pointerdown',event=>{
-    const target=event.target.closest?.('button');
-    if(event.isPrimary!==false&&target&&!target.disabled&&target.closest('.tg-panel,.tg-keyboard,.tg-bar,.letter-ladder,[data-danh-game-surface]'))press(target);
+    const target=event.target.closest?.('button,.tg-nav-link');
+    if(event.isPrimary!==false&&target&&!target.disabled&&target.closest('.tg-panel,.tg-keyboard,.tg-bar,.tg-game-dialog,.letter-ladder,[data-danh-game-surface]'))press(target);
   },{passive:true});
   const afterFeedback = callback => {
     clearTimeout(speechTimer);speechTimer=setTimeout(()=>{if(sound && !document.hidden)callback();},650);

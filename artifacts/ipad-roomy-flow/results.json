@@ -11,7 +11,7 @@
       "inputFont": 30,
       "enterWidth": 245.765625,
       "letterWidth": 73.078125,
-      "actionsBottom": 401.15625
+      "actionsBottom": 409.921875
     },
     {
       "width": 768,
@@ -19,11 +19,11 @@
       "keyboard": 369,
       "panelBottom": 655,
       "keyboardTop": 655,
-      "inputHeight": 104,
-      "inputFont": 41.86,
+      "inputHeight": 102.546875,
+      "inputFont": 41.02,
       "enterWidth": 176.84375,
       "letterWidth": 53.390625,
-      "actionsBottom": 547
+      "actionsBottom": 549.875
     },
     {
       "width": 744,
@@ -35,7 +35,7 @@
       "inputFont": 42,
       "enterWidth": 170.390625,
       "letterWidth": 51.546875,
-      "actionsBottom": 548.140625
+      "actionsBottom": 560.140625
     },
     {
       "width": 1133,
@@ -47,7 +47,7 @@
       "inputFont": 30,
       "enterWidth": 275.109375,
       "letterWidth": 81.453125,
-      "actionsBottom": 397.09375
+      "actionsBottom": 409.921875
     },
     {
       "width": 820,
@@ -59,7 +59,7 @@
       "inputFont": 42,
       "enterWidth": 190.84375,
       "letterWidth": 57.390625,
-      "actionsBottom": 548.140625
+      "actionsBottom": 560.140625
     },
     {
       "width": 1180,
@@ -67,11 +67,11 @@
       "keyboard": 304,
       "panelBottom": 516,
       "keyboardTop": 516,
-      "inputHeight": 80.3125,
-      "inputFont": 32.13,
+      "inputHeight": 78.078125,
+      "inputFont": 31.232,
       "enterWidth": 287.765625,
       "letterWidth": 85.078125,
-      "actionsBottom": 438.125
+      "actionsBottom": 440.5625
     },
     {
       "width": 1024,
@@ -83,7 +83,7 @@
       "inputFont": 42,
       "enterWidth": 245.765625,
       "letterWidth": 73.078125,
-      "actionsBottom": 548.140625
+      "actionsBottom": 560.96875
     },
     {
       "width": 1366,
@@ -91,11 +91,11 @@
       "keyboard": 369,
       "panelBottom": 655,
       "keyboardTop": 655,
-      "inputHeight": 104,
-      "inputFont": 41.86,
+      "inputHeight": 102.390625,
+      "inputFont": 40.962,
       "enterWidth": 298.53125,
       "letterWidth": 88.140625,
-      "actionsBottom": 547
+      "actionsBottom": 550.078125
     },
     {
       "width": 1024,
@@ -107,7 +107,7 @@
       "inputFont": 30,
       "enterWidth": 245.765625,
       "letterWidth": 73.078125,
-      "actionsBottom": 306.015625
+      "actionsBottom": 318.84375
     },
     {
       "width": 507,
@@ -119,7 +119,7 @@
       "inputFont": 18,
       "enterWidth": 80.171875,
       "letterWidth": 40.078125,
-      "actionsBottom": 331.796875
+      "actionsBottom": 340.03125
     }
   ],
   "waitsForSpeech": true,

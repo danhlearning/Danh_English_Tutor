@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "layouts": [
+    {
+      "width": 1024,
+      "height": 768,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "passed": true
+    },
+    {
+      "width": 744,
+      "height": 1133,
+      "passed": true
+    },
+    {
+      "width": 1366,
+      "height": 1024,
+      "passed": true
+    },
+    {
+      "width": 600,
+      "height": 744,
+      "passed": true
+    },
+    {
+      "width": 507,
+      "height": 768,
+      "passed": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "passed": true
+    }
+  ],
+  "wholeAndSentenceDrafts": true,
+  "currentGameKeepsDOM": true,
+  "secondaryGameKeepsInput": true,
+  "gradeContext": true,
+  "validNavigationLinks": true,
+  "keyboardAndBackdropClose": true,
+  "silentChooser": true,
+  "libraryResume": true,
+  "phoneUnchanged": true,
+  "errors": []
+}
