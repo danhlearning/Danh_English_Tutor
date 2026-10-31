@@ -83,7 +83,7 @@ body.tg-playing .tg-panel .ll-meaning{min-width:0;overflow-wrap:anywhere}
 /* Large iPads use the available space; narrow/short windows retain the compact frame. */
 body.tg-roomy .tg-panel :is(.learning-panel,.learning-stage,.letter-ladder,.g6-stage,.gg-question-card,.task){max-width:1280px;padding:calc(12px * var(--tg-scale))!important}
 body.tg-roomy .tg-panel :is(h2,h3){font-size:calc(24px * var(--tg-scale))!important}
-body.tg-roomy .tg-panel :is(button,input,textarea){font-size:calc(18px * var(--tg-scale));min-height:calc(46px * var(--tg-scale))}
+body.tg-roomy .tg-panel :is(button,input,textarea){font-size:clamp(18px,calc(16px * var(--tg-scale)),24px);min-height:clamp(44px,calc(40px * var(--tg-scale)),60px)}
 body.tg-roomy .tg-panel :is(input:not([type=checkbox]):not([type=radio]),textarea){height:calc(48px * var(--tg-scale));min-height:calc(48px * var(--tg-scale));padding:10px 16px}
 body.tg-roomy .tg-panel :is(.learning-visual,.g2-practice-image,.word-image,.ll-prompt .word-picture,.g6-flash-visual,.learning-question-visual){width:calc(100px * var(--tg-scale))!important;height:calc(100px * var(--tg-scale))!important}
 body.tg-roomy .tg-panel .ll-prompt{max-width:1100px;gap:calc(20px * var(--tg-scale));margin:calc(10px * var(--tg-scale)) auto!important}
@@ -94,7 +94,7 @@ body.tg-roomy .tg-panel .ll-tile{font-size:calc(27px * var(--tg-scale))}
 body.tg-roomy .tg-panel :is(.ll-slots,.ll-bank){margin:calc(12px * var(--tg-scale)) 0!important;gap:calc(10px * var(--tg-scale))}
 body.tg-roomy .tg-panel :is(.ll-actions,.learning-controls,.practice-actions){gap:calc(10px * var(--tg-scale));margin:calc(10px * var(--tg-scale)) 0!important}
 body.tg-roomy .tg-panel :is(.ll-head,.ll-input-label,.ll-status,.learning-feedback){font-size:calc(17px * var(--tg-scale))}
-body.tg-roomy .tg-keyboard button{font-size:clamp(26px,2.7vw,34px)}
+body.tg-roomy .tg-keyboard button{font-size:clamp(24px,2.5vw,31px)}
 body.tg-roomy .tg-keyboard :is([data-action=submit],[data-action=space],[data-action=symbols],[data-action=hide]){font-size:20px}
 body.tg-roomy .tg-panel#game-count{padding-top:8px!important;padding-bottom:8px!important}
 body.tg-roomy .tg-panel .g2-practice-hint{margin:3px 0;padding:4px 8px}
@@ -102,13 +102,13 @@ body.tg-roomy .tg-word-input #stage{display:grid;grid-template-columns:minmax(10
 body.tg-roomy .tg-word-input #stage>*{grid-column:1 / -1}
 body.tg-roomy .tg-word-input #stage>h2{grid-column:2;grid-row:1;text-align:left}
 body.tg-roomy .tg-word-input #stage>.word-image{grid-column:1;grid-row:1}
-/* Bigger entry targets for children; leave room for the taller keyboard. */
-body.tg-roomy .tg-panel :is(input:not([type=checkbox]):not([type=radio]),textarea){height:clamp(76px,calc(70px * var(--tg-scale)),104px);min-height:clamp(76px,calc(70px * var(--tg-scale)),104px);font-size:clamp(30px,calc(28px * var(--tg-scale)),42px);font-weight:800;line-height:1.3;padding:12px 20px}
-body.tg-roomy .tg-panel :is(.ll-slot,.ll-tile){min-width:clamp(64px,calc(56px * var(--tg-scale)),88px);width:clamp(64px,calc(56px * var(--tg-scale)),88px)}
-body.tg-roomy .tg-panel .ll-slot{height:clamp(68px,calc(64px * var(--tg-scale)),96px)!important;min-height:clamp(68px,calc(64px * var(--tg-scale)),96px)!important}
-body.tg-roomy .tg-panel :is(.ll-fixed,.ll-slot){font-size:clamp(38px,calc(36px * var(--tg-scale)),54px)!important}
-body.tg-roomy .tg-keyboard [data-action=submit]{flex:3.5;font-size:clamp(23px,2.5vw,29px);font-weight:600;padding-inline:16px;border-radius:10px}
-body.tg-roomy .tg-keyboard .tg-return-symbol{font-size:34px}
+/* Balanced entry targets: readable text with more room around the task. */
+body.tg-roomy .tg-panel :is(input:not([type=checkbox]):not([type=radio]),textarea){height:clamp(66px,calc(60px * var(--tg-scale)),90px);min-height:clamp(66px,calc(60px * var(--tg-scale)),90px);font-size:clamp(27px,calc(24px * var(--tg-scale)),36px);font-weight:800;line-height:1.3;padding:10px 16px}
+body.tg-roomy .tg-panel :is(.ll-slot,.ll-tile){min-width:clamp(56px,calc(48px * var(--tg-scale)),76px);width:clamp(56px,calc(48px * var(--tg-scale)),76px)}
+body.tg-roomy .tg-panel .ll-slot{height:clamp(60px,calc(56px * var(--tg-scale)),84px)!important;min-height:clamp(60px,calc(56px * var(--tg-scale)),84px)!important}
+body.tg-roomy .tg-panel :is(.ll-fixed,.ll-slot){font-size:clamp(34px,calc(31px * var(--tg-scale)),47px)!important}
+body.tg-roomy .tg-keyboard [data-action=submit]{flex:2.8;font-size:clamp(21px,2.3vw,26px);font-weight:600;padding-inline:16px;border-radius:10px}
+body.tg-roomy .tg-keyboard .tg-return-symbol{font-size:30px}
 body.tg-roomy .tg-panel #spelling-stage{display:grid;grid-template-columns:minmax(100px,150px) minmax(0,1fr);gap:6px 18px;align-items:center}
 body.tg-roomy .tg-panel #spelling-stage>*{grid-column:1 / -1}
 body.tg-roomy .tg-panel #spelling-stage>.g6-card-position{grid-column:1;grid-row:1}
@@ -123,7 +123,7 @@ body.tg-roomy .tg-panel #sentence-stage>.g2-practice-hint{grid-column:2;grid-row
 body.tg-roomy .tg-word-input #stage>form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 12px;align-items:stretch}
 body.tg-roomy .tg-word-input #stage>form>label{grid-column:1 / -1}
 body.tg-roomy .tg-word-input #stage>form>input{grid-column:1;min-width:0}
-body.tg-roomy .tg-word-input #stage>form>button{grid-column:2;font-size:24px;padding-inline:20px}
+body.tg-roomy .tg-word-input #stage>form>button{grid-column:2;font-size:22px;padding-inline:16px}
 body.tg-roomy .tg-panel :is(.practice-actions,.help-actions){display:inline-flex!important;vertical-align:top;max-width:100%}
 body.tg-playing .tg-panel .timer-message:empty{display:none}
 @media(min-width:700px) and (max-height:699px){
