@@ -3,7 +3,7 @@
  'use strict';
  if(window.DanhTabletGame)return;
  const root=new URL('../',document.currentScript.src);
- const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=ipad-balanced-20261031',root).href;document.head.append(sheet);
+ const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=ipad97-fit-20261031',root).href;document.head.append(sheet);
  // Use the physical screen's short edge: phones remain phones when rotated,
  // while an iPad keeps its game frame in Split View and Stage Manager.
  const tablet=()=>navigator.maxTouchPoints>0 && Math.min(screen.width||innerWidth,screen.height||innerHeight)>=600 && innerWidth>=320;
@@ -30,7 +30,9 @@
   document.documentElement.style.setProperty('--tg-height',`${height}px`);document.documentElement.style.setProperty('--tg-top',`${v?.offsetTop||0}px`);
   const roomy=innerWidth>=700&&height>=600;
   document.body.classList.toggle('tg-roomy',!!panel&&roomy);
-  document.documentElement.style.setProperty('--tg-keyboard-size',`${roomy?(height>=700?Math.round(Math.max(272,Math.min(368,height*.32))):240):224}px`);
+  const compact=roomy&&innerWidth<=1100&&height<=1100;
+  document.body.classList.toggle('tg-compact',!!panel&&compact);
+  document.documentElement.style.setProperty('--tg-keyboard-size',`${compact?(height<=800?224:264):roomy?(height>=700?Math.round(Math.max(272,Math.min(368,height*.32))):240):224}px`);
  }
  function leave(){
   if(!panel)return;const old=panel;close();suppressed=old;
@@ -153,7 +155,7 @@
   frameObserver?.disconnect();panel.classList.remove('tg-panel','tg-reading','tg-word-input');panel.scrollTop=0;panel=null;input=null;keyboardRequested=false;restoreInputs();
   if(gameDialog?.open)gameDialog.close();gameDialog?.remove();gameDialog=null;
   backdrop?.remove();bar?.remove();keyboard?.remove();bar=keyboard=backdrop=null;
-  document.body.classList.remove('tg-playing','tg-typing','tg-roomy');
+  document.body.classList.remove('tg-playing','tg-typing','tg-roomy','tg-compact');
   for(const [key,value]of Object.entries(saved.style))document.body.style[key]=value;
   document.documentElement.style.overflow=saved.htmlOverflow;window.scrollTo(saved.x,saved.y);saved=null;
  }

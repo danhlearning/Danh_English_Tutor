@@ -21,7 +21,7 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8765',out='artifacts/i
   await p.goto(base+'/grade/lop2/colors.html');await p.getByRole('button',{name:'Trò chơi',exact:true}).click();await p.locator('.ll-slot').first().waitFor();await nav(2);
   await p.locator('.ll-tile').first().click();const before=await p.locator('.letter-ladder').evaluate(n=>{window.savedStage=n;return DanhLearners.storage.getItem(n.dataset.letterStorage);});
   await picker().click();assert.equal(await dialog().locator('.tg-game-card').count(),4);assert.equal(await dialog().locator('[aria-current=true]').count(),1);
-  assert((await picker().boundingBox()).height>=56);for(const card of await dialog().locator('.tg-game-card').all())assert((await card.boundingBox()).height>=104);
+  assert((await picker().boundingBox()).height>=48);for(const card of await dialog().locator('.tg-game-card').all())assert((await card.boundingBox()).height>=104);
   await p.keyboard.press('Tab');assert(await dialog().evaluate(n=>n.contains(document.activeElement)));
   await p.keyboard.press('Escape');await p.waitForFunction(()=>document.querySelector('.tg-game-picker')?.getAttribute('aria-expanded')==='false');assert(await picker().evaluate(n=>n===document.activeElement));
   assert.equal(await p.evaluate(()=>savedStage===document.querySelector('.letter-ladder')),true);assert.equal(await p.locator('.letter-ladder').evaluate(n=>DanhLearners.storage.getItem(n.dataset.letterStorage)),before);
