@@ -3,7 +3,7 @@
  'use strict';
  if(window.DanhTabletGame)return;
  const root=new URL('../',document.currentScript.src);
- const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=letter-responsive-20261031',root).href;document.head.append(sheet);
+ const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=ipad-roomy-20261031',root).href;document.head.append(sheet);
  // Use the physical screen's short edge: phones remain phones when rotated,
  // while an iPad keeps its game frame in Split View and Stage Manager.
  const tablet=()=>navigator.maxTouchPoints>0 && Math.min(screen.width||innerWidth,screen.height||innerHeight)>=600 && innerWidth>=320;
@@ -25,7 +25,13 @@
  }
  const element=(tag,text,className)=>{const n=document.createElement(tag);if(text)n.textContent=text;if(className)n.className=className;return n;};
  function makeButton(text,action,label){const b=element('button',text);b.type='button';if(label)b.setAttribute('aria-label',label);b.addEventListener('click',action);return b;}
- function viewport(){const v=window.visualViewport;document.documentElement.style.setProperty('--tg-height',`${v?.height||innerHeight}px`);document.documentElement.style.setProperty('--tg-top',`${v?.offsetTop||0}px`);}
+ function viewport(){
+  const v=window.visualViewport,height=v?.height||innerHeight;
+  document.documentElement.style.setProperty('--tg-height',`${height}px`);document.documentElement.style.setProperty('--tg-top',`${v?.offsetTop||0}px`);
+  const roomy=innerWidth>=700&&height>=600;
+  document.body.classList.toggle('tg-roomy',!!panel&&roomy);
+  document.documentElement.style.setProperty('--tg-keyboard-size',`${roomy?(height>=700?Math.round(Math.max(264,Math.min(360,height*.31))):240):224}px`);
+ }
  function leave(){
   if(!panel)return;const old=panel;close();suppressed=old;
   const exit=old.querySelector('#back,#exit-play,#leave-practice,#leave,#leave-letters,[data-action="leave"]')||document.querySelector('[data-tab="vocabulary"],.g2-main-nav .nav-btn:not([data-game-nav])');
@@ -77,7 +83,7 @@
   const hide=special('⌨⌄',()=>{keyboardDismissed=true;schedule();},'hide','Ẩn bàn phím');
   actions.append(mode(),space,mode(),hide);keyboard.append(actions);updateKeys();
  }
- function updateKeys(){if(!keyboard)return;const disabled=!input||input.disabled||input.readOnly;for(const b of keyboard.querySelectorAll('button'))if(b.disabled!==disabled)b.disabled=disabled;}
+ function updateKeys(){if(!keyboard)return;const disabled=!input||input.disabled||input.readOnly;for(const b of keyboard.querySelectorAll('button')){const locked=b.dataset.action==='hide'?false:disabled;if(b.disabled!==locked)b.disabled=locked;}}
  function type(text){
   if(!input || input.disabled || input.readOnly || !visible(input))return;
   const field=input;field.focus({preventScroll:true});const start=field.selectionStart??field.value.length,end=field.selectionEnd??start;
@@ -100,9 +106,9 @@
  }
  function close(){
   if(!panel)return;
-  frameObserver?.disconnect();panel.classList.remove('tg-panel','tg-reading');panel.scrollTop=0;panel=null;input=null;keyboardRequested=false;restoreInputs();
+  frameObserver?.disconnect();panel.classList.remove('tg-panel','tg-reading','tg-word-input');panel.scrollTop=0;panel=null;input=null;keyboardRequested=false;restoreInputs();
   backdrop?.remove();bar?.remove();keyboard?.remove();bar=keyboard=backdrop=null;
-  document.body.classList.remove('tg-playing','tg-typing');
+  document.body.classList.remove('tg-playing','tg-typing','tg-roomy');
   for(const [key,value]of Object.entries(saved.style))document.body.style[key]=value;
   document.documentElement.style.overflow=saved.htmlOverflow;window.scrollTo(saved.x,saved.y);saved=null;
  }
@@ -117,8 +123,9 @@
    Object.assign(document.body.style,{position:'fixed',top:`-${saved.y}px`,left:'0',width:'100%',overflow:'hidden',overscrollBehavior:'none'});document.documentElement.style.overflow='hidden';document.body.classList.add('tg-playing');panel.classList.add('tg-panel');mount();
   }
   viewport();
+  panel.classList.toggle('tg-word-input',!!panel.querySelector('#word-answer'));
   for(const node of panel.querySelectorAll('input,textarea'))if(textInput(node))configure(node);
-  const candidates=[...panel.querySelectorAll('input,textarea')].filter(node=>textInput(node)&&visible(node)&&!node.disabled&&!node.readOnly);
+  const candidates=[...panel.querySelectorAll('input,textarea')].filter(node=>textInput(node)&&visible(node)&&!node.readOnly&&(!node.disabled||node.closest('[data-letter-auto="waiting"]')));
   const nextInput=candidates.includes(document.activeElement)?document.activeElement:candidates[0]||null;
   if(input!==nextInput){keyboardDismissed=false;keyboardRequested=false;}
   input=nextInput;
@@ -128,6 +135,8 @@
   keyboard.hidden=!typing;document.body.classList.toggle('tg-typing',typing);bar.querySelector('.tg-show-keyboard').hidden=!input||typing;updateKeys();
   document.documentElement.style.setProperty('--tg-bar-height',`${bar.getBoundingClientRect().height}px`);
   document.documentElement.style.setProperty('--tg-keyboard-height',`${typing?keyboard.getBoundingClientRect().height:0}px`);
+  const available=(window.visualViewport?.height||innerHeight)-bar.getBoundingClientRect().height-(typing?keyboard.getBoundingClientRect().height:0);
+  document.documentElement.style.setProperty('--tg-scale',String(Math.max(1,Math.min(1.5,available/400))));
   requestAnimationFrame(()=>{if(!panel||!bar)return;const expand=bar.querySelector('.tg-expand');const overflow=panel.classList.contains('tg-reading')||panel.scrollHeight>panel.clientHeight+4||[...panel.querySelectorAll('.item-display-box,#spelling-preview')].some(node=>node.clientHeight>0&&node.scrollHeight>node.clientHeight+4);if(expand.hidden===overflow)expand.hidden=!overflow;});
  }
  function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(sync);}}
@@ -138,7 +147,7 @@
  window.addEventListener('resize',schedule);window.visualViewport?.addEventListener('resize',schedule);window.visualViewport?.addEventListener('scroll',viewport);
  window.addEventListener('pagehide',close);
  document.fonts?.ready.then(schedule);
- const start=()=>{new MutationObserver(records=>{if(records.some(r=>!r.target.closest?.('.tg-keyboard,.tg-bar')))schedule();}).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['hidden','class','disabled','readonly']});schedule();};
+ const start=()=>{new MutationObserver(records=>{if(records.some(r=>!r.target.closest?.('.tg-keyboard,.tg-bar')))schedule();}).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['hidden','class','disabled','readonly','data-letter-auto']});schedule();};
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
  window.DanhTabletGame={refresh:schedule,get active(){return !!panel;}};
 })();

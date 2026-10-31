@@ -79,7 +79,7 @@
       const effect={};elementEffects.set(target,effect);
       if(target.animate&&!reduced()){
         const frames=name==='vg-shake'?['translateX(0)','translateX(-10px)','translateX(9px)','translateX(-7px)','translateX(5px)','translateX(0)']:
-          name==='vg-celebrate'?['scale(1)','translateY(-5px) scale(1.04)','scale(.98)','scale(1)']:['scale(1)','scale(1.075)','scale(.985)','scale(1)'];
+          name==='vg-celebrate'?['scale(1)','translateY(-5px) scale(1.04)','scale(.98)','scale(1)']:['translateY(0) scale(1)','translateY(-6px) scale(1.04)','translateY(1px) scale(.99)','translateY(0) scale(1)'];
         effect.originalAnimation=previous?.originalAnimation??target.style.animation;
         target.style.animation='none';
         effect.animation=target.animate(frames.map(transform=>({transform})),{duration:name==='vg-shake'?340:name==='vg-celebrate'?600:350,easing:'ease-out'});
@@ -88,6 +88,19 @@
       activeEffects.add(effect);effect.timer=setTimeout(effect.cleanup,650);
     }
   };
+  const press = target => {
+    if(!target||reduced()||document.hidden)return;
+    elementEffects.get(target)?.cleanup();
+    const effect={};elementEffects.set(target,effect);
+    if(target.animate)effect.animation=target.animate([{transform:'translateY(0) scale(1)'},{transform:'translateY(-4px) scale(1.04)',offset:.4},{transform:'translateY(0) scale(1)'}],{duration:190,easing:'ease-out'});
+    else target.classList.add('vg-press');
+    effect.cleanup=()=>{clearTimeout(effect.timer);effect.animation?.cancel();target.classList.remove('vg-press');activeEffects.delete(effect);if(elementEffects.get(target)===effect)elementEffects.delete(target);};
+    activeEffects.add(effect);effect.timer=setTimeout(effect.cleanup,220);
+  };
+  document.addEventListener('pointerdown',event=>{
+    const target=event.target.closest?.('button');
+    if(event.isPrimary!==false&&target&&!target.disabled&&target.closest('.tg-panel,.tg-keyboard,.tg-bar,.letter-ladder,[data-danh-game-surface]'))press(target);
+  },{passive:true});
   const afterFeedback = callback => {
     clearTimeout(speechTimer);speechTimer=setTimeout(()=>{if(sound && !document.hidden)callback();},650);
   };
@@ -110,5 +123,5 @@
   };
   refresh();
   matchMedia('(prefers-reduced-motion: reduce)').addEventListener?.('change',()=>{if(reduced())stopMotion();});
-  window.DanhLearningEffects={feedback,afterFeedback,stop,reduced,bindSettings,automatic,soundEnabled:()=>sound,motionEnabled:()=>motion,isMilestone:count=>count===3||count>=5&&count%5===0};
+  window.DanhLearningEffects={feedback,press,afterFeedback,stop,reduced,bindSettings,automatic,soundEnabled:()=>sound,motionEnabled:()=>motion,isMilestone:count=>count===3||count>=5&&count%5===0};
 })();

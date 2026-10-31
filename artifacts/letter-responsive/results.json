@@ -14,12 +14,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
-        "y": 79,
-        "width": 724,
-        "height": 322.5625,
-        "bottom": 401.5625,
-        "right": 746
+        "x": 30,
+        "y": 87,
+        "width": 708,
+        "height": 627,
+        "bottom": 714,
+        "right": 738
       },
       "panel": {
         "x": 0,
@@ -49,12 +49,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 32,
-        "y": 79,
-        "width": 960,
-        "height": 312.5625,
-        "bottom": 391.5625,
-        "right": 992
+        "x": 30,
+        "y": 87,
+        "width": 964,
+        "height": 627,
+        "bottom": 714,
+        "right": 994
       },
       "panel": {
         "x": 0,
@@ -84,12 +84,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
-        "y": 79,
-        "width": 700,
-        "height": 368.0625,
-        "bottom": 447.0625,
-        "right": 722
+        "x": 30,
+        "y": 87,
+        "width": 684,
+        "height": 627,
+        "bottom": 714,
+        "right": 714
       },
       "panel": {
         "x": 0,
@@ -119,12 +119,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 86.5,
-        "y": 79,
-        "width": 960,
-        "height": 312.5625,
-        "bottom": 391.5625,
-        "right": 1046.5
+        "x": 30,
+        "y": 87,
+        "width": 1073,
+        "height": 609,
+        "bottom": 696,
+        "right": 1103
       },
       "panel": {
         "x": 0,
@@ -154,12 +154,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
-        "y": 79,
-        "width": 776,
-        "height": 322.5625,
-        "bottom": 401.5625,
-        "right": 798
+        "x": 30,
+        "y": 87,
+        "width": 760,
+        "height": 627,
+        "bottom": 714,
+        "right": 790
       },
       "panel": {
         "x": 0,
@@ -189,12 +189,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 110,
-        "y": 79,
-        "width": 960,
-        "height": 312.5625,
-        "bottom": 391.5625,
-        "right": 1070
+        "x": 30,
+        "y": 87,
+        "width": 1120,
+        "height": 609,
+        "bottom": 696,
+        "right": 1150
       },
       "panel": {
         "x": 0,
@@ -224,12 +224,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
-        "y": 79,
-        "width": 790,
-        "height": 322.5625,
-        "bottom": 401.5625,
-        "right": 812
+        "x": 30,
+        "y": 87,
+        "width": 774,
+        "height": 627,
+        "bottom": 714,
+        "right": 804
       },
       "panel": {
         "x": 0,
@@ -259,12 +259,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 117,
-        "y": 79,
-        "width": 960,
-        "height": 322.5625,
-        "bottom": 401.5625,
-        "right": 1077
+        "x": 30,
+        "y": 87,
+        "width": 1134,
+        "height": 609,
+        "bottom": 696,
+        "right": 1164
       },
       "panel": {
         "x": 0,
@@ -294,12 +294,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 32,
-        "y": 79,
-        "width": 960,
-        "height": 322.5625,
-        "bottom": 401.5625,
-        "right": 992
+        "x": 30,
+        "y": 87,
+        "width": 964,
+        "height": 627,
+        "bottom": 714,
+        "right": 994
       },
       "panel": {
         "x": 0,
@@ -329,12 +329,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 203,
-        "y": 79,
-        "width": 960,
-        "height": 322.5625,
-        "bottom": 401.5625,
-        "right": 1163
+        "x": 61,
+        "y": 87,
+        "width": 1244,
+        "height": 534,
+        "bottom": 621,
+        "right": 1305
       },
       "panel": {
         "x": 0,
@@ -463,7 +463,7 @@
           }
         },
         {
-          "text": "l",
+          "text": "q",
           "rect": {
             "x": 164,
             "y": 523.75,
@@ -543,7 +543,18 @@
           }
         },
         {
-          "text": "y",
+          "text": "____",
+          "rect": {
+            "x": 236,
+            "y": 280.5625,
+            "width": 44,
+            "height": 46,
+            "bottom": 326.5625,
+            "right": 280
+          }
+        },
+        {
+          "text": "e",
           "rect": {
             "x": 102,
             "y": 334.5625,
@@ -554,7 +565,7 @@
           }
         },
         {
-          "text": "r",
+          "text": "n",
           "rect": {
             "x": 164,
             "y": 334.5625,
@@ -576,7 +587,7 @@
           }
         },
         {
-          "text": "u",
+          "text": "g",
           "rect": {
             "x": 288,
             "y": 334.5625,
@@ -598,7 +609,7 @@
           }
         },
         {
-          "text": "l",
+          "text": "q",
           "rect": {
             "x": 412,
             "y": 334.5625,
@@ -702,7 +713,7 @@
       "overflow": false,
       "clipped": [
         {
-          "text": "y",
+          "text": "e",
           "rect": {
             "x": 151.5,
             "y": 330.0625,
@@ -713,7 +724,7 @@
           }
         },
         {
-          "text": "r",
+          "text": "n",
           "rect": {
             "x": 213.5,
             "y": 330.0625,
@@ -735,7 +746,7 @@
           }
         },
         {
-          "text": "u",
+          "text": "g",
           "rect": {
             "x": 337.5,
             "y": 330.0625,
@@ -757,7 +768,7 @@
           }
         },
         {
-          "text": "l",
+          "text": "q",
           "rect": {
             "x": 461.5,
             "y": 330.0625,
@@ -948,12 +959,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 32,
-        "y": 79,
-        "width": 960,
-        "height": 312.5625,
-        "bottom": 391.5625,
-        "right": 992
+        "x": 28.28125,
+        "y": 85.28125,
+        "width": 967.4375,
+        "height": 550.734375,
+        "bottom": 636.015625,
+        "right": 995.71875
       },
       "panel": {
         "x": 0,
@@ -964,7 +975,30 @@
         "right": 1024
       },
       "overflow": false,
-      "clipped": [],
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 389.890625,
+            "y": 542.734375,
+            "width": 136.609375,
+            "height": 62.4375,
+            "bottom": 605.171875,
+            "right": 526.5
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 540.0625,
+            "y": 542.734375,
+            "width": 94.03125,
+            "height": 62.4375,
+            "bottom": 605.171875,
+            "right": 634.09375
+          }
+        }
+      ],
       "bar": {
         "width": 1024,
         "scroll": 1024
@@ -1018,19 +1052,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
-        "y": 79,
-        "width": 724,
-        "height": 289.359375,
-        "bottom": 368.359375,
-        "right": 746
+        "x": 30,
+        "y": 87,
+        "width": 708,
+        "height": 463.140625,
+        "bottom": 550.140625,
+        "right": 738
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 768,
-        "height": 743,
-        "bottom": 800,
+        "height": 650,
+        "bottom": 707,
         "right": 768
       },
       "overflow": false,
@@ -1053,19 +1087,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 32,
-        "y": 79,
-        "width": 960,
-        "height": 279.359375,
-        "bottom": 358.359375,
-        "right": 992
+        "x": 25.40625,
+        "y": 82.40625,
+        "width": 973.1875,
+        "height": 346.953125,
+        "bottom": 429.359375,
+        "right": 998.59375
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1024,
-        "height": 487,
-        "bottom": 544,
+        "height": 447,
+        "bottom": 504,
         "right": 1024
       },
       "overflow": false,
@@ -1088,19 +1122,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
-        "y": 79,
-        "width": 700,
-        "height": 289.359375,
-        "bottom": 368.359375,
-        "right": 722
+        "x": 30,
+        "y": 87,
+        "width": 684,
+        "height": 463.140625,
+        "bottom": 550.140625,
+        "right": 714
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 744,
-        "height": 852,
-        "bottom": 909,
+        "height": 725,
+        "bottom": 782,
         "right": 744
       },
       "overflow": false,
@@ -1123,19 +1157,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 86.5,
-        "y": 79,
-        "width": 960,
-        "height": 279.359375,
-        "bottom": 358.359375,
-        "right": 1046.5
+        "x": 24.6875,
+        "y": 81.6875,
+        "width": 1083.625,
+        "height": 328.140625,
+        "bottom": 409.828125,
+        "right": 1108.3125
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1133,
-        "height": 463,
-        "bottom": 520,
+        "height": 423,
+        "bottom": 480,
         "right": 1133
       },
       "overflow": false,
@@ -1158,19 +1192,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
-        "y": 79,
-        "width": 776,
-        "height": 289.359375,
-        "bottom": 368.359375,
-        "right": 798
+        "x": 30,
+        "y": 87,
+        "width": 760,
+        "height": 463.140625,
+        "bottom": 550.140625,
+        "right": 790
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 820,
-        "height": 899,
-        "bottom": 956,
+        "height": 763,
+        "bottom": 820,
         "right": 820
       },
       "overflow": false,
@@ -1193,19 +1227,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 110,
-        "y": 79,
-        "width": 960,
-        "height": 279.359375,
-        "bottom": 358.359375,
-        "right": 1070
+        "x": 26.96875,
+        "y": 83.96875,
+        "width": 1126.0625,
+        "height": 385.375,
+        "bottom": 469.34375,
+        "right": 1153.03125
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1180,
-        "height": 539,
-        "bottom": 596,
+        "height": 499,
+        "bottom": 556,
         "right": 1180
       },
       "overflow": false,
@@ -1228,19 +1262,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
-        "y": 79,
-        "width": 790,
-        "height": 289.359375,
-        "bottom": 368.359375,
-        "right": 812
+        "x": 30,
+        "y": 87,
+        "width": 774,
+        "height": 463.140625,
+        "bottom": 550.140625,
+        "right": 804
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 834,
-        "height": 913,
-        "bottom": 970,
+        "height": 777,
+        "bottom": 834,
         "right": 834
       },
       "overflow": false,
@@ -1263,19 +1297,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 117,
-        "y": 79,
-        "width": 960,
-        "height": 289.359375,
-        "bottom": 368.359375,
-        "right": 1077
+        "x": 27.375,
+        "y": 84.375,
+        "width": 1139.25,
+        "height": 397.109375,
+        "bottom": 481.484375,
+        "right": 1166.625
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1194,
-        "height": 553,
-        "bottom": 610,
+        "height": 513,
+        "bottom": 570,
         "right": 1194
       },
       "overflow": false,
@@ -1298,19 +1332,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 32,
-        "y": 79,
-        "width": 960,
-        "height": 289.359375,
-        "bottom": 368.359375,
-        "right": 992
+        "x": 30,
+        "y": 87,
+        "width": 964,
+        "height": 463.140625,
+        "bottom": 550.140625,
+        "right": 994
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1024,
-        "height": 1085,
-        "bottom": 1142,
+        "height": 949,
+        "bottom": 1006,
         "right": 1024
       },
       "overflow": false,
@@ -1333,19 +1367,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 203,
-        "y": 79,
-        "width": 960,
-        "height": 289.359375,
-        "bottom": 368.359375,
-        "right": 1163
+        "x": 61,
+        "y": 87,
+        "width": 1244,
+        "height": 463.140625,
+        "bottom": 550.140625,
+        "right": 1305
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1366,
-        "height": 743,
-        "bottom": 800,
+        "height": 650,
+        "bottom": 707,
         "right": 1366
       },
       "overflow": false,
@@ -1764,23 +1798,46 @@
       ],
       "active": true,
       "stage": {
-        "x": 32,
-        "y": 79,
-        "width": 960,
-        "height": 279.359375,
-        "bottom": 358.359375,
-        "right": 992
+        "x": 24,
+        "y": 81,
+        "width": 976,
+        "height": 311.09375,
+        "bottom": 392.09375,
+        "right": 1000
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1024,
-        "height": 319,
-        "bottom": 376,
+        "height": 303,
+        "bottom": 360,
         "right": 1024
       },
       "overflow": false,
-      "clipped": [],
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 413.078125,
+            "y": 323.09375,
+            "width": 109.609375,
+            "height": 46,
+            "bottom": 369.09375,
+            "right": 522.6875
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 532.6875,
+            "y": 323.09375,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 369.09375,
+            "right": 610.921875
+          }
+        }
+      ],
       "bar": {
         "width": 1024,
         "scroll": 1024
@@ -1860,8 +1917,8 @@
         "x": 12,
         "y": 69,
         "width": 744,
-        "height": 322.5625,
-        "bottom": 391.5625,
+        "height": 627,
+        "bottom": 696,
         "right": 756
       },
       "panel": {
@@ -1892,12 +1949,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
+        "x": 12,
         "y": 69,
-        "width": 980,
-        "height": 312.5625,
-        "bottom": 381.5625,
-        "right": 1002
+        "width": 1000,
+        "height": 609,
+        "bottom": 678,
+        "right": 1012
       },
       "panel": {
         "x": 0,
@@ -1930,8 +1987,8 @@
         "x": 12,
         "y": 69,
         "width": 720,
-        "height": 376.5625,
-        "bottom": 445.5625,
+        "height": 627,
+        "bottom": 696,
         "right": 732
       },
       "panel": {
@@ -1962,12 +2019,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 76.5,
+        "x": 12,
         "y": 69,
-        "width": 980,
-        "height": 312.5625,
-        "bottom": 381.5625,
-        "right": 1056.5
+        "width": 1109,
+        "height": 609,
+        "bottom": 678,
+        "right": 1121
       },
       "panel": {
         "x": 0,
@@ -2000,8 +2057,8 @@
         "x": 12,
         "y": 69,
         "width": 796,
-        "height": 322.5625,
-        "bottom": 391.5625,
+        "height": 627,
+        "bottom": 696,
         "right": 808
       },
       "panel": {
@@ -2032,12 +2089,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 100,
+        "x": 12,
         "y": 69,
-        "width": 980,
-        "height": 312.5625,
-        "bottom": 381.5625,
-        "right": 1080
+        "width": 1156,
+        "height": 609,
+        "bottom": 678,
+        "right": 1168
       },
       "panel": {
         "x": 0,
@@ -2070,8 +2127,8 @@
         "x": 12,
         "y": 69,
         "width": 810,
-        "height": 322.5625,
-        "bottom": 391.5625,
+        "height": 627,
+        "bottom": 696,
         "right": 822
       },
       "panel": {
@@ -2102,12 +2159,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 107,
+        "x": 12,
         "y": 69,
-        "width": 980,
-        "height": 322.5625,
-        "bottom": 391.5625,
-        "right": 1087
+        "width": 1170,
+        "height": 609,
+        "bottom": 678,
+        "right": 1182
       },
       "panel": {
         "x": 0,
@@ -2137,12 +2194,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
+        "x": 12,
         "y": 69,
-        "width": 980,
-        "height": 322.5625,
-        "bottom": 391.5625,
-        "right": 1002
+        "width": 1000,
+        "height": 609,
+        "bottom": 678,
+        "right": 1012
       },
       "panel": {
         "x": 0,
@@ -2172,12 +2229,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 193,
+        "x": 43,
         "y": 69,
-        "width": 980,
-        "height": 322.5625,
-        "bottom": 391.5625,
-        "right": 1173
+        "width": 1280,
+        "height": 534,
+        "bottom": 603,
+        "right": 1323
       },
       "panel": {
         "x": 0,
@@ -2210,8 +2267,8 @@
         "x": 12,
         "y": 69,
         "width": 576,
-        "height": 376.5625,
-        "bottom": 445.5625,
+        "height": 368.0625,
+        "bottom": 437.0625,
         "right": 588
       },
       "panel": {
@@ -2280,8 +2337,8 @@
         "x": 12,
         "y": 69,
         "width": 296,
-        "height": 565.75,
-        "bottom": 634.75,
+        "height": 553.5,
+        "bottom": 622.5,
         "right": 308
       },
       "panel": {
@@ -2298,10 +2355,10 @@
           "text": "Gợi ý",
           "rect": {
             "x": 120.875,
-            "y": 573.75,
+            "y": 561.5,
             "width": 78.234375,
             "height": 46,
-            "bottom": 619.75,
+            "bottom": 607.5,
             "right": 199.109375
           }
         }
@@ -2327,8 +2384,8 @@
         "x": 12,
         "y": 69,
         "width": 544,
-        "height": 372.5625,
-        "bottom": 441.5625,
+        "height": 364.0625,
+        "bottom": 433.0625,
         "right": 556
       },
       "panel": {
@@ -2342,68 +2399,68 @@
       "overflow": false,
       "clipped": [
         {
-          "text": "e",
+          "text": "o",
           "rect": {
             "x": 102,
-            "y": 326.5625,
+            "y": 318.0625,
             "width": 54,
             "height": 46,
-            "bottom": 372.5625,
+            "bottom": 364.0625,
             "right": 156
           }
         },
         {
-          "text": "v",
+          "text": "h",
           "rect": {
             "x": 164,
-            "y": 326.5625,
+            "y": 318.0625,
             "width": 54,
             "height": 46,
-            "bottom": 372.5625,
+            "bottom": 364.0625,
             "right": 218
+          }
+        },
+        {
+          "text": "f",
+          "rect": {
+            "x": 226,
+            "y": 318.0625,
+            "width": 54,
+            "height": 46,
+            "bottom": 364.0625,
+            "right": 280
           }
         },
         {
           "text": "y",
           "rect": {
-            "x": 226,
-            "y": 326.5625,
-            "width": 54,
-            "height": 46,
-            "bottom": 372.5625,
-            "right": 280
-          }
-        },
-        {
-          "text": "s",
-          "rect": {
             "x": 288,
-            "y": 326.5625,
+            "y": 318.0625,
             "width": 54,
             "height": 46,
-            "bottom": 372.5625,
+            "bottom": 364.0625,
             "right": 342
-          }
-        },
-        {
-          "text": "b",
-          "rect": {
-            "x": 350,
-            "y": 326.5625,
-            "width": 54,
-            "height": 46,
-            "bottom": 372.5625,
-            "right": 404
           }
         },
         {
           "text": "t",
           "rect": {
-            "x": 412,
-            "y": 326.5625,
+            "x": 350,
+            "y": 318.0625,
             "width": 54,
             "height": 46,
-            "bottom": 372.5625,
+            "bottom": 364.0625,
+            "right": 404
+          }
+        },
+        {
+          "text": "a",
+          "rect": {
+            "x": 412,
+            "y": 318.0625,
+            "width": 54,
+            "height": 46,
+            "bottom": 364.0625,
             "right": 466
           }
         },
@@ -2411,10 +2468,10 @@
           "text": "Kiểm tra",
           "rect": {
             "x": 186.078125,
-            "y": 380.5625,
+            "y": 372.0625,
             "width": 109.609375,
             "height": 46,
-            "bottom": 426.5625,
+            "bottom": 418.0625,
             "right": 295.6875
           }
         },
@@ -2422,10 +2479,10 @@
           "text": "Gợi ý",
           "rect": {
             "x": 303.6875,
-            "y": 380.5625,
+            "y": 372.0625,
             "width": 78.234375,
             "height": 46,
-            "bottom": 426.5625,
+            "bottom": 418.0625,
             "right": 381.921875
           }
         }
@@ -2486,8 +2543,8 @@
         "x": 12,
         "y": 69,
         "width": 643,
-        "height": 376.5625,
-        "bottom": 445.5625,
+        "height": 368.0625,
+        "bottom": 437.0625,
         "right": 655
       },
       "panel": {
@@ -2504,10 +2561,10 @@
           "text": "Kiểm tra",
           "rect": {
             "x": 235.578125,
-            "y": 382.5625,
+            "y": 374.0625,
             "width": 109.609375,
             "height": 46,
-            "bottom": 428.5625,
+            "bottom": 420.0625,
             "right": 345.1875
           }
         },
@@ -2515,10 +2572,10 @@
           "text": "Gợi ý",
           "rect": {
             "x": 353.1875,
-            "y": 382.5625,
+            "y": 374.0625,
             "width": 78.234375,
             "height": 46,
-            "bottom": 428.5625,
+            "bottom": 420.0625,
             "right": 431.421875
           }
         }
@@ -2681,12 +2738,12 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
+        "x": 12,
         "y": 69,
-        "width": 980,
-        "height": 312.5625,
-        "bottom": 381.5625,
-        "right": 1002
+        "width": 1000,
+        "height": 550.734375,
+        "bottom": 619.734375,
+        "right": 1012
       },
       "panel": {
         "x": 0,
@@ -2719,8 +2776,8 @@
         "x": 12,
         "y": 69,
         "width": 576,
-        "height": 376.5625,
-        "bottom": 445.5625,
+        "height": 368.0625,
+        "bottom": 437.0625,
         "right": 588
       },
       "panel": {
@@ -2754,16 +2811,16 @@
         "x": 12,
         "y": 69,
         "width": 744,
-        "height": 289.359375,
-        "bottom": 358.359375,
+        "height": 463.140625,
+        "bottom": 532.140625,
         "right": 756
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 768,
-        "height": 743,
-        "bottom": 800,
+        "height": 650,
+        "bottom": 707,
         "right": 768
       },
       "overflow": false,
@@ -2786,19 +2843,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
+        "x": 12,
         "y": 69,
-        "width": 980,
-        "height": 279.359375,
-        "bottom": 348.359375,
-        "right": 1002
+        "width": 1000,
+        "height": 346.953125,
+        "bottom": 415.953125,
+        "right": 1012
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1024,
-        "height": 487,
-        "bottom": 544,
+        "height": 447,
+        "bottom": 504,
         "right": 1024
       },
       "overflow": false,
@@ -2824,16 +2881,16 @@
         "x": 12,
         "y": 69,
         "width": 720,
-        "height": 289.359375,
-        "bottom": 358.359375,
+        "height": 463.140625,
+        "bottom": 532.140625,
         "right": 732
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 744,
-        "height": 852,
-        "bottom": 909,
+        "height": 725,
+        "bottom": 782,
         "right": 744
       },
       "overflow": false,
@@ -2856,19 +2913,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 76.5,
+        "x": 12,
         "y": 69,
-        "width": 980,
-        "height": 279.359375,
-        "bottom": 348.359375,
-        "right": 1056.5
+        "width": 1109,
+        "height": 328.140625,
+        "bottom": 397.140625,
+        "right": 1121
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1133,
-        "height": 463,
-        "bottom": 520,
+        "height": 423,
+        "bottom": 480,
         "right": 1133
       },
       "overflow": false,
@@ -2894,16 +2951,16 @@
         "x": 12,
         "y": 69,
         "width": 796,
-        "height": 289.359375,
-        "bottom": 358.359375,
+        "height": 463.140625,
+        "bottom": 532.140625,
         "right": 808
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 820,
-        "height": 899,
-        "bottom": 956,
+        "height": 763,
+        "bottom": 820,
         "right": 820
       },
       "overflow": false,
@@ -2926,19 +2983,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 100,
+        "x": 12,
         "y": 69,
-        "width": 980,
-        "height": 279.359375,
-        "bottom": 348.359375,
-        "right": 1080
+        "width": 1156,
+        "height": 385.375,
+        "bottom": 454.375,
+        "right": 1168
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1180,
-        "height": 539,
-        "bottom": 596,
+        "height": 499,
+        "bottom": 556,
         "right": 1180
       },
       "overflow": false,
@@ -2964,16 +3021,16 @@
         "x": 12,
         "y": 69,
         "width": 810,
-        "height": 289.359375,
-        "bottom": 358.359375,
+        "height": 463.140625,
+        "bottom": 532.140625,
         "right": 822
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 834,
-        "height": 913,
-        "bottom": 970,
+        "height": 777,
+        "bottom": 834,
         "right": 834
       },
       "overflow": false,
@@ -2996,19 +3053,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 107,
+        "x": 12,
         "y": 69,
-        "width": 980,
-        "height": 289.359375,
-        "bottom": 358.359375,
-        "right": 1087
+        "width": 1170,
+        "height": 397.109375,
+        "bottom": 466.109375,
+        "right": 1182
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1194,
-        "height": 553,
-        "bottom": 610,
+        "height": 513,
+        "bottom": 570,
         "right": 1194
       },
       "overflow": false,
@@ -3031,19 +3088,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
+        "x": 12,
         "y": 69,
-        "width": 980,
-        "height": 289.359375,
-        "bottom": 358.359375,
-        "right": 1002
+        "width": 1000,
+        "height": 463.140625,
+        "bottom": 532.140625,
+        "right": 1012
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1024,
-        "height": 1085,
-        "bottom": 1142,
+        "height": 949,
+        "bottom": 1006,
         "right": 1024
       },
       "overflow": false,
@@ -3066,19 +3123,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 193,
+        "x": 43,
         "y": 69,
-        "width": 980,
-        "height": 289.359375,
-        "bottom": 358.359375,
-        "right": 1173
+        "width": 1280,
+        "height": 463.140625,
+        "bottom": 532.140625,
+        "right": 1323
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1366,
-        "height": 743,
-        "bottom": 800,
+        "height": 650,
+        "bottom": 707,
         "right": 1366
       },
       "overflow": false,
@@ -3497,19 +3554,19 @@
       ],
       "active": true,
       "stage": {
-        "x": 22,
+        "x": 12,
         "y": 69,
-        "width": 980,
-        "height": 279.359375,
-        "bottom": 348.359375,
-        "right": 1002
+        "width": 1000,
+        "height": 311.09375,
+        "bottom": 380.09375,
+        "right": 1012
       },
       "panel": {
         "x": 0,
         "y": 57,
         "width": 1024,
-        "height": 319,
-        "bottom": 376,
+        "height": 303,
+        "bottom": 360,
         "right": 1024
       },
       "overflow": false,

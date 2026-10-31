@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "layouts": [
+    {
+      "width": 1024,
+      "height": 768,
+      "keyboard": 264,
+      "panelBottom": 504,
+      "keyboardTop": 504,
+      "inputHeight": 53.625,
+      "actionsBottom": 403.78125
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "keyboard": 317,
+      "panelBottom": 707,
+      "keyboardTop": 707,
+      "inputHeight": 72,
+      "actionsBottom": 516.140625
+    },
+    {
+      "width": 744,
+      "height": 1133,
+      "keyboard": 351,
+      "panelBottom": 782,
+      "keyboardTop": 782,
+      "inputHeight": 72,
+      "actionsBottom": 516.140625
+    },
+    {
+      "width": 1133,
+      "height": 744,
+      "keyboard": 264,
+      "panelBottom": 480,
+      "keyboardTop": 480,
+      "inputHeight": 50.75,
+      "actionsBottom": 385.578125
+    },
+    {
+      "width": 820,
+      "height": 1180,
+      "keyboard": 360,
+      "panelBottom": 820,
+      "keyboardTop": 820,
+      "inputHeight": 72,
+      "actionsBottom": 516.140625
+    },
+    {
+      "width": 1180,
+      "height": 820,
+      "keyboard": 264,
+      "panelBottom": 556,
+      "keyboardTop": 556,
+      "inputHeight": 59.875,
+      "actionsBottom": 440.90625
+    },
+    {
+      "width": 1024,
+      "height": 1366,
+      "keyboard": 360,
+      "panelBottom": 1006,
+      "keyboardTop": 1006,
+      "inputHeight": 72,
+      "actionsBottom": 516.140625
+    },
+    {
+      "width": 1366,
+      "height": 1024,
+      "keyboard": 317,
+      "panelBottom": 707,
+      "keyboardTop": 707,
+      "inputHeight": 72,
+      "actionsBottom": 516.140625
+    },
+    {
+      "width": 1024,
+      "height": 620,
+      "keyboard": 240,
+      "panelBottom": 380,
+      "keyboardTop": 380,
+      "inputHeight": 48,
+      "actionsBottom": 369.09375
+    },
+    {
+      "width": 507,
+      "height": 768,
+      "keyboard": 224,
+      "panelBottom": 544,
+      "keyboardTop": 544,
+      "inputHeight": 48,
+      "actionsBottom": 331.796875
+    }
+  ],
+  "waitsForSpeech": true,
+  "replayPauses": true,
+  "repeatSafe": true,
+  "hiddenAndReloadSafe": true,
+  "correctedAutoNext": true,
+  "summaryStops": true,
+  "pressBounce": true,
+  "reducedMotion": true,
+  "mutedAndFailedSpeech": true,
+  "leaveCancels": true,
+  "errors": []
+}

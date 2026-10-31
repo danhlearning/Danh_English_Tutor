@@ -1,14 +1,42 @@
 (function(){
  'use strict';
  const make=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
+ const advances=new WeakMap();
  function mount({topic,words,storage,selected,goSpelling,rerender,effects,chooseGroup,allowStandalone=true,grade=Number(document.body.dataset.grade)||2}){
   effects=effects||window.DanhLearningEffects;
   const game=window.DanhLetterLadderCore.create(storage,topic,words,{chooseGroup,grade});
-  const button=(text,action,cls='')=>{const n=make('button',text,cls);n.type='button';n.onclick=action;return n;};
+  const button=(text,action,cls='')=>{const n=make('button',text,cls);n.type='button';n.onclick=event=>{if(n.isConnected&&!n.disabled)action(event);};return n;};
   const fx=(kind,target)=>effects?.feedback(kind,target);
+  let cancelAdvance=()=>{};
+  function queueAdvance(stage,round,task,speech){
+   advances.get(stage)?.();const next=stage.querySelector('.ll-actions .ll-primary');if(!next)return;
+   let canceled=false,cleaned=false,timer,release;
+   const visible=()=>stage.isConnected&&!document.hidden&&!stage.closest('[hidden],[inert],.tab-content:not(.active)')&&!document.querySelector('dialog[open]')&&stage.getClientRects().length>0;
+   const cleanup=()=>{if(cleaned)return;cleaned=true;clearTimeout(timer);release?.();document.removeEventListener('visibilitychange',hidden);window.removeEventListener('pagehide',cancel);stage.removeEventListener('click',listenAgain,true);if(advances.get(stage)===cancel){advances.delete(stage);if(stage.dataset.letterAuto==='waiting')delete stage.dataset.letterAuto;}if(cancelAdvance===cancel)cancelAdvance=()=>{};};
+   const cancel=()=>{canceled=true;cleanup();};
+   const hidden=()=>{if(document.hidden)cancel();};
+   const listenAgain=event=>{if(event.target.closest?.('.word-picture,[data-danh-picture-listen]'))cancel();};
+   cancelAdvance=cancel;advances.set(stage,cancel);stage.dataset.letterAuto='waiting';
+   document.addEventListener('visibilitychange',hidden);window.addEventListener('pagehide',cancel,{once:true});stage.addEventListener('click',listenAgain,true);
+   const wait=new Promise(resolve=>{release=resolve;timer=setTimeout(resolve,650);});
+   Promise.allSettled([wait,Promise.resolve(speech)]).then(()=>{
+    const ready=!canceled&&visible()&&next.isConnected&&stage.contains(next)&&game.state.active===round&&game.entry()===task&&task.result&&task.result!=='seen';
+    cleanup();if(ready){
+     next.click();
+     // Let the tablet controller configure the new field before focusing it,
+     // so external typing continues without opening the system keyboard.
+     if(window.DanhTabletGame?.active)requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      if(document.hidden||!window.DanhTabletGame?.active)return;
+      const field=[...document.querySelectorAll('.tg-panel .letter-ladder .ll-input:not(:disabled)')].find(n=>n.closest('.letter-ladder').dataset.letterStorage===game.key&&n.getAttribute('inputmode')==='none'&&n.getClientRects().length);
+      field?.focus({preventScroll:true});
+     }));
+    }
+   });
+  }
   function navigate(action){window.DanhAnswerSpeech?.stop();action();rerender();}
   function render(stage,full=false){
-   game.ensure(selected());stage.replaceChildren();stage.classList.add('letter-ladder');
+   cancelAdvance();advances.get(stage)?.();
+   game.ensure(selected());stage.replaceChildren();stage.classList.add('letter-ladder');stage.dataset.letterStorage=game.key;
    const a=game.state.active;
    const note=make('p',game.warning,'ll-warning');note.setAttribute('role','status');stage.append(note);
    if(!a){if(game.start(selected()))render(stage,full);return;}
@@ -31,17 +59,17 @@
    function check(){const result=game.check();if(!result)return;
     if(result==='empty'){status.textContent=a.phase===4?'Gõ từ trước nha.':'Điền đủ các ô nhé.';return;}
     if(result==='wrong'||result==='repeat'){status.textContent='Chưa khớp rồi, sửa lại nha.';status.dataset.kind='wrong';stage.querySelector('.ll-slots')?.classList.add('ll-wrong');if(result==='wrong')fx('bad',stage.querySelector('.ll-slots,.ll-input'));const reveal=stage.querySelector('.ll-reveal');if(reveal)reveal.hidden=false;return;}
-    refresh();fx(result==='first'?'good':'corrected',stage.querySelector('.ll-slots,.ll-input'));window.DanhAnswerSpeech.say(w.name);
+    refresh();fx(result==='first'?'good':'corrected',stage.querySelector('.ll-slots,.ll-input'));queueAdvance(stage,a,t,window.DanhAnswerSpeech.say(w.name));
    }
    if(a.phase<4){
     const slots=make('div',undefined,'ll-slots');slots.setAttribute('aria-label','Từ cần điền');
     Array.from(w.name).forEach((c,i)=>{
      const hole=t.holes.indexOf(i);if(hole<0){slots.append(make('span',c===' '?'\u00a0':c,'ll-fixed'));return;}
      const value=t.draft[hole]===null?'':t.tiles[t.draft[hole]],display=c===c.toUpperCase()?value.toUpperCase():value;
-     const b=button(display,()=>{if(game.remove(hole)){refresh();stage.querySelector(`[data-slot="${hole}"]`)?.focus();}},'ll-slot');b.dataset.slot=hole;b.disabled=!!t.result;b.setAttribute('aria-label',value?`Trả chữ ${value}`:`Ô chữ ${hole+1}`);if(!value){b.textContent='____';window.DanhExerciseGaps?.format(b);}if(t.result)b.classList.add('ll-solved');slots.append(b);
+     const b=button(display,event=>{if(game.remove(hole)){refresh();const slot=stage.querySelector(`[data-slot="${hole}"]`);effects?.press?.(slot);if(event.detail===0)slot?.focus({preventScroll:true});}},'ll-slot');b.dataset.slot=hole;b.disabled=!!t.result;b.setAttribute('aria-label',value?`Trả chữ ${value}`:`Ô chữ ${hole+1}`);if(!value){b.textContent='____';window.DanhExerciseGaps?.format(b);}if(t.result)b.classList.add('ll-solved');slots.append(b);
     });stage.append(slots);
     const bank=make('div',undefined,'ll-bank');bank.setAttribute('role','group');bank.setAttribute('aria-label','Chữ cái để chọn');
-    t.tiles.forEach((letter,i)=>{const b=button(letter,()=>{if(game.choose(i)){refresh();stage.querySelector('.ll-bank button:not(:disabled)')?.focus();}},'ll-tile');b.dataset.tile=i;b.disabled=!!t.result||t.draft.includes(i);b.setAttribute('aria-label',`Chọn chữ ${letter}`);bank.append(b);});stage.append(bank);
+    t.tiles.forEach((letter,i)=>{const b=button(letter,event=>{const hole=t.draft.indexOf(null);if(game.choose(i)){refresh();effects?.press?.(stage.querySelector(`[data-slot="${hole}"]`));if(event.detail===0)stage.querySelector('.ll-bank button:not(:disabled)')?.focus({preventScroll:true});}},'ll-tile');b.dataset.tile=i;b.disabled=!!t.result||t.draft.includes(i);b.setAttribute('aria-label',`Chọn chữ ${letter}`);bank.append(b);});stage.append(bank);
    }else{
     const label=make('label','Gõ từ tiếng Anh','ll-input-label'),input=make('input',undefined,'ll-input');input.id='letter-ladder-input';label.htmlFor=input.id;input.type='text';input.autocomplete='off';input.autocapitalize='off';input.spellcheck=false;input.maxLength=150;input.value=t.text;input.disabled=!!t.result;input.oninput=()=>game.text(input.value);input.onkeydown=e=>{if(e.key==='Enter'&&!e.repeat&&!e.isComposing){e.preventDefault();check();}};stage.append(label,input);
    }

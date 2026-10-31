@@ -1,6 +1,6 @@
 /* Invalidate the shared loader in live pages and keep page builders in sync. */
 const fs=require('node:fs'),path=require('node:path');
-const root=path.resolve(__dirname,'..'),version='letter-responsive-20261031',files=[];
+const root=path.resolve(__dirname,'..'),version='ipad-roomy-20261031',files=[];
 function walk(dir){for(const e of fs.readdirSync(path.join(root,dir),{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())walk(p);else if(/\.(html|cjs)$/.test(e.name))files.push(p);}}
 for(const dir of ['grade','templates','scripts'])walk(dir);
 for(const file of fs.readdirSync(root))if(file.endsWith('.html'))files.push(file);

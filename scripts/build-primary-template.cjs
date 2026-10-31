@@ -8,7 +8,7 @@ const known=Object.fromEntries(Object.values(reference.window.DanhGrade4Units).f
 const palette=['#28698e','#9b5b85','#53824e','#ac713d','#586da5','#a35c55'];
 const scripts=`  <script src="../../shared/contact-footer.js?v=online-audio-20261028"></script>
   <script src="../../shared/young-learner-speech.js?v=online-audio-20261028"></script>
-  <script src="../../shared/learning-effects.js?v=loading-smooth-20261028"></script>
+  <script src="../../shared/learning-effects.js?v=ipad-roomy-20261031"></script>
   <script src="./assets/js/course.js?v=compact-listen-20261024"></script>
   <script src="../../shared/primary-template-progress.js?v=compact-listen-20261024"></script>
   <script src="../../shared/primary-template-recall.js?v=game-pacing-20261025"></script>`;
@@ -32,7 +32,7 @@ for(const grade of [1,3,5]){
   let lesson=read('grade/lop4/unit1.html')
     .replace(/  <link rel="preconnect"[^\n]*\n/g,'').replace(/  <link href="https:\/\/fonts[^\n]*\n/g,'')
     .replace('./assets/css/grade4.css','../lop4/assets/css/grade4.css')
-    .replace('  <link rel="stylesheet" href="../../shared/vocabulary-3d.css?v=3d-1">',`  <link rel="stylesheet" href="../../shared/primary-template.css?v=colors-20261016">\n  <link rel="stylesheet" href="../../shared/learning-effects.css?v=site-letters-20261025">`)
+    .replace('  <link rel="stylesheet" href="../../shared/vocabulary-3d.css?v=3d-1">',`  <link rel="stylesheet" href="../../shared/primary-template.css?v=colors-20261016">\n  <link rel="stylesheet" href="../../shared/learning-effects.css?v=ipad-roomy-20261031">`)
     .replace('<body data-unit="unit1">',`<body data-grade="${grade}" data-unit="UNIT_ID">`)
     .replace('href="./lop4.html"',`href="./lop${grade}.html"`).replace('← Tiếng Anh lớp 4',`← Tiếng Anh lớp ${grade}`)
     .replace('<p class="g4-eyebrow" id="unit-number">',`<p class="g4-eyebrow" id="unit-number">`)
@@ -46,7 +46,7 @@ for(const grade of [1,3,5]){
   let catalog=read('grade/lop4/lop4.html')
     .replace(/  <link rel="preconnect"[^\n]*\n/g,'').replace(/  <link href="https:\/\/fonts[^\n]*\n/g,'')
     .replace('./assets/css/grade4.css','../lop4/assets/css/grade4.css')
-    .replace('  <link rel="stylesheet" href="../../shared/vocabulary-3d.css?v=3d-1">','  <link rel="stylesheet" href="../../shared/primary-template.css?v=colors-20261016">\n  <link rel="stylesheet" href="../../shared/learning-effects.css?v=site-letters-20261025">')
+    .replace('  <link rel="stylesheet" href="../../shared/vocabulary-3d.css?v=3d-1">','  <link rel="stylesheet" href="../../shared/primary-template.css?v=colors-20261016">\n  <link rel="stylesheet" href="../../shared/learning-effects.css?v=ipad-roomy-20261031">')
     .replace('<body>',`<body data-grade="${grade}">`).replace('grade="4"',`grade="${grade}"`)
     .replace(/ · Global Success/g,'').replace('Global Success · Unit 1–20',`Unit 1–${units.length} · Luyện theo chủ đề`)
     .replaceAll('lớp 4',`lớp ${grade}`).replaceAll('Lớp 4',`Lớp ${grade}`)
@@ -56,7 +56,7 @@ for(const grade of [1,3,5]){
   <script src="../../shared/primary-template-index.js?v=compact-listen-20261024"></script>
 </body>`);
   fs.writeFileSync(path.join(dir,`lop${grade}.html`),catalog);
-  const legacy=`<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lượt trước · Lớp ${grade} · Danh English Tutor</title><script src="../../shared/learner-profile-core.js?v=compact-listen-20261024"></script><script src="../../shared/learner-profile.js?v=letter-responsive-20261031"></script><link rel="stylesheet" href="../../shared/primary-game.css"><link rel="stylesheet" href="../../shared/learning-effects.css?v=site-letters-20261025"><link rel="stylesheet" href="../../shared/grade-colors.css?v=all-grades-20261016-2"></head><body><header class="topbar"><a class="brand" href="lop${grade}.html">Danh English Tutor · Lớp ${grade}</a></header><main id="app"></main><contact-danh></contact-danh><script src="../../shared/contact-footer.js?v=online-audio-20261028"></script><script src="../../shared/young-learner-speech.js?v=online-audio-20261028"></script><script src="../../shared/learning-effects.js?v=loading-smooth-20261028"></script><script src="units.js?v=compact-listen-20261024"></script>${grade===3?'<script src="game.js?v=compact-listen-20261024"></script>':''}<script src="../../shared/primary-game.js?v=game-pacing-20261025"></script></body></html>`;
+  const legacy=`<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lượt trước · Lớp ${grade} · Danh English Tutor</title><script src="../../shared/learner-profile-core.js?v=compact-listen-20261024"></script><script src="../../shared/learner-profile.js?v=ipad-roomy-20261031"></script><link rel="stylesheet" href="../../shared/primary-game.css"><link rel="stylesheet" href="../../shared/learning-effects.css?v=ipad-roomy-20261031"><link rel="stylesheet" href="../../shared/grade-colors.css?v=all-grades-20261016-2"></head><body><header class="topbar"><a class="brand" href="lop${grade}.html">Danh English Tutor · Lớp ${grade}</a></header><main id="app"></main><contact-danh></contact-danh><script src="../../shared/contact-footer.js?v=online-audio-20261028"></script><script src="../../shared/young-learner-speech.js?v=online-audio-20261028"></script><script src="../../shared/learning-effects.js?v=ipad-roomy-20261031"></script><script src="units.js?v=compact-listen-20261024"></script>${grade===3?'<script src="game.js?v=compact-listen-20261024"></script>':''}<script src="../../shared/primary-game.js?v=game-pacing-20261025"></script></body></html>`;
   fs.writeFileSync(path.join(dir,'legacy.html'),legacy.replace('<script src="../../shared/primary-game.js?v=game-pacing-20261025">','<script src="assets/js/course.js?v=compact-listen-20261024"></script><script src="../../shared/primary-game.js?v=game-pacing-20261025">'));
   console.log(`Lớp ${grade}: ${units.length} Unit theo mẫu lớp 4.`);
 }

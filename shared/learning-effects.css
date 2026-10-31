@@ -7,7 +7,12 @@
 @keyframes vg-shake{20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}100%{transform:translateX(0)}}
 @keyframes vg-celebrate{35%{transform:translateY(-5px) scale(1.04)}65%{transform:translateY(0) scale(.98)}100%{transform:scale(1)}}
 @keyframes vg-spark{from{opacity:1;transform:translate(-50%,-50%) scale(.6)}to{opacity:0;transform:translate(-50%,-180%) scale(1.7) rotate(45deg)}}
-@keyframes vg-pop{50%{transform:scale(1.025)}}
+@keyframes vg-pop{45%{transform:translateY(-6px) scale(1.04)}75%{transform:translateY(1px) scale(.99)}100%{transform:translateY(0) scale(1)}}
+.vg-press{animation:vg-press .19s ease-out}
+@keyframes vg-press{40%{transform:translateY(-4px) scale(1.04)}100%{transform:translateY(0) scale(1)}}
+:is(.tg-panel,.tg-keyboard,.tg-bar,.letter-ladder,[data-danh-game-surface]) button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+:is(.tg-panel,.tg-keyboard,.tg-bar,.letter-ladder,[data-danh-game-surface]) button:focus:not(:focus-visible){outline:none!important}
+body .letter-ladder :is(.vg-answer-good,.vg-answer-bad),body.tg-playing .tg-panel :is(.vg-answer-good,.vg-answer-bad){outline:none!important;box-shadow:none!important}
 .vg-reduced *,.vg-reduced *::before,.vg-reduced *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 .vg-reduced .vg-spark{display:none}
-@media(prefers-reduced-motion:reduce){.vg-world *,.vg-world *::before,.vg-world *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.vg-spark{display:none}}
+@media(prefers-reduced-motion:reduce){.vg-world *,.vg-world *::before,.vg-world *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.vg-spark{display:none}.vg-press{animation:none!important}}

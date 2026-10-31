@@ -1,4 +1,5 @@
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright'),assert=require('node:assert/strict'),fs=require('node:fs');
+async function advanceIfWaiting(stage){await stage.locator('.ll-actions .ll-primary').evaluateAll(buttons=>{const next=buttons.find(b=>/^(?:Từ tiếp|Xem kết quả)$/.test(b.textContent.trim())&&b.getClientRects().length);next?.click();});}
 const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8001',oldKey='danh-g2-mixed-review-v1';
 (async()=>{const b=await chromium.launch({channel:'msedge',headless:true});try{
  const c=await b.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});await c.route('**/*',r=>r.request().url().startsWith(base)?r.continue():r.abort());await c.addInitScript(()=>{Object.defineProperty(window,'speechSynthesis',{value:undefined,configurable:true});Object.defineProperty(window,'SpeechSynthesisUtterance',{value:undefined,configurable:true});window.mediaEvents=[];document.addEventListener('danh-answer-speech',e=>mediaEvents.push(e.detail));});
@@ -19,7 +20,7 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8001',oldKey='danh-g2-
  let firstTask=true,fullDraft=false;while((await state()).active.index<(await state()).active.tasks.length){
   const {a,t,w}=await current();if(firstTask){const wrong=t.tiles.findIndex(c=>c!==Array.from(w.name)[t.holes[0]].toLowerCase());await stage().locator(`[data-tile="${wrong}"]`).click();await stage().getByRole('button',{name:'Kiểm tra',exact:true}).click();firstTask=false;}
   if(a.phase===4&&!fullDraft){fullDraft=true;assert.equal(await stage().locator('.ll-tile').count(),0);await stage().locator('.ll-input').fill('draft');await p.reload();await play('review-set-gsunit1');assert.equal(await stage().locator('.ll-input').inputValue(),'draft');assert.equal(await p.evaluate(()=>mediaEvents.length),0);}
-  await correct();const now=(await state()).active;await stage().getByRole('button',{name:now.phase===4&&now.index===now.tasks.length-1?'Xem kết quả':'Từ tiếp',exact:true}).click();
+  await correct();const now=(await state()).active;await advanceIfWaiting(stage());
  }
  assert((await stage().innerText()).includes('Xong lượt'));assert.equal(await stage().getByRole('button',{name:'Chính tả riêng',exact:true}).count(),0);assert.deepEqual(await p.evaluate(k=>JSON.parse(DanhLearners.storage.getItem(k)).active,oldKey),old);console.log('PASS automatic letter recall to full spelling, correction media, draft restore and legacy mixed turn unchanged');
  await leave();await p.getByRole('button',{name:'Lưu dữ liệu học',exact:true}).click();await p.locator('#learner-name').fill('An');await p.getByRole('button',{name:'Vào học ngay',exact:true}).click();await play('review-all');await stage().locator('[data-tile="0"]').click();const an=(await state()).active;
