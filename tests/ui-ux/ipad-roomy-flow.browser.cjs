@@ -26,7 +26,7 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8765',out='artifacts/i
   async function check(){await p.locator('.letter-ladder').getByRole('button',{name:'Kiểm tra',exact:true}).click();}
   async function release(){await p.evaluate(()=>finishSpeech.shift()?.(true));}
   await p.goto(base+'/grade/lop2/gsunit1.html?game=letters');await fixture(true);
-  assert(await p.locator('script[src*="shared/tablet-game.js"]').evaluate(n=>new URL(n.src).searchParams.get('v')==='ipad-roomy-20261031'),'returning users receive the new controller');
+  assert(await p.locator('script[src*="shared/tablet-game.js"]').evaluate(n=>new URL(n.src).searchParams.get('v')==='ipad-large-input-20261031'),'returning users receive the new controller');
   await p.waitForFunction(()=>document.body.classList.contains('tg-roomy'));
   assert(await p.locator('.ll-slot').first().evaluate(n=>n.getBoundingClientRect().height>=65));
   assert(await p.locator('.ll-meaning').evaluate(n=>parseFloat(getComputedStyle(n).fontSize)>=32));
@@ -62,10 +62,10 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8765',out='artifacts/i
   });
   for(const [width,height]of [[1024,768],[768,1024],[744,1133],[1133,744],[820,1180],[1180,820],[1024,1366],[1366,1024],[1024,620],[507,768]]){
    await p.setViewportSize({width,height});await p.waitForFunction(()=>document.body.classList.contains('tg-typing'));await p.waitForTimeout(120);
-   const result=await p.evaluate(()=>{const k=document.querySelector('.tg-keyboard').getBoundingClientRect(),panel=document.querySelector('.tg-panel').getBoundingClientRect(),input=document.querySelector('.ll-input').getBoundingClientRect(),actions=document.querySelector('.ll-actions').getBoundingClientRect();return {keyboard:k.height,panelBottom:panel.bottom,keyboardTop:k.top,inputHeight:input.height,actionsBottom:actions.bottom,width:document.documentElement.scrollWidth};});
+   const result=await p.evaluate(()=>{const k=document.querySelector('.tg-keyboard').getBoundingClientRect(),panel=document.querySelector('.tg-panel').getBoundingClientRect(),field=document.querySelector('.ll-input'),input=field.getBoundingClientRect(),actions=document.querySelector('.ll-actions').getBoundingClientRect(),enter=document.querySelector('.tg-keyboard [data-action=submit]').getBoundingClientRect(),letter=document.querySelector('.tg-keyboard [data-key=a]').getBoundingClientRect();return {keyboard:k.height,panelBottom:panel.bottom,keyboardTop:k.top,inputHeight:input.height,inputFont:parseFloat(getComputedStyle(field).fontSize),enterWidth:enter.width,letterWidth:letter.width,actionsBottom:actions.bottom,width:document.documentElement.scrollWidth};});
    assert(result.panelBottom<=result.keyboardTop+1);assert(result.actionsBottom<=result.keyboardTop+1);assert(result.width<=width+1);
-   assert.equal(result.keyboard,width>=700&&height>=600?(height>=700?Math.round(Math.max(264,Math.min(360,height*.31))):240):224);
-   if(width>=700&&height>=700)assert(result.inputHeight>48);layouts.push({width,height,...result});await p.screenshot({path:`${out}/typing-${width}-${height}.png`});
+   assert.equal(result.keyboard,width>=700&&height>=600?(height>=700?Math.round(Math.max(304,Math.min(420,height*.36))):260):224);
+   if(width>=700&&height>=600){assert(result.inputHeight>=76);assert(result.inputFont>=30);assert(result.enterWidth>=result.letterWidth*3,'large Enter key');}layouts.push({width,height,...result});await p.screenshot({path:`${out}/typing-${width}-${height}.png`});
   }
   await p.setViewportSize({width:1024,height:768});await p.waitForTimeout(100);
   await p.locator('.ll-input').fill('wrong');await check();const wrong=await state();await p.waitForTimeout(750);assert.deepEqual(await state(),wrong);

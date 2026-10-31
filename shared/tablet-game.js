@@ -3,7 +3,7 @@
  'use strict';
  if(window.DanhTabletGame)return;
  const root=new URL('../',document.currentScript.src);
- const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=ipad-roomy-20261031',root).href;document.head.append(sheet);
+ const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=ipad-large-input-20261031',root).href;document.head.append(sheet);
  // Use the physical screen's short edge: phones remain phones when rotated,
  // while an iPad keeps its game frame in Split View and Stage Manager.
  const tablet=()=>navigator.maxTouchPoints>0 && Math.min(screen.width||innerWidth,screen.height||innerHeight)>=600 && innerWidth>=320;
@@ -30,7 +30,7 @@
   document.documentElement.style.setProperty('--tg-height',`${height}px`);document.documentElement.style.setProperty('--tg-top',`${v?.offsetTop||0}px`);
   const roomy=innerWidth>=700&&height>=600;
   document.body.classList.toggle('tg-roomy',!!panel&&roomy);
-  document.documentElement.style.setProperty('--tg-keyboard-size',`${roomy?(height>=700?Math.round(Math.max(264,Math.min(360,height*.31))):240):224}px`);
+  document.documentElement.style.setProperty('--tg-keyboard-size',`${roomy?(height>=700?Math.round(Math.max(304,Math.min(420,height*.36))):260):224}px`);
  }
  function leave(){
   if(!panel)return;const old=panel;close();suppressed=old;
