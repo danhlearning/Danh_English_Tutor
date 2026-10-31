@@ -3,10 +3,12 @@
  'use strict';
  if(window.DanhTabletGame)return;
  const root=new URL('../',document.currentScript.src);
- const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=animals-pencil-20261029',root).href;document.head.append(sheet);
- const tablet=()=>navigator.maxTouchPoints>0 && Math.min(screen.width||innerWidth,innerWidth)>=600 && innerWidth>=600;
+ const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=letter-responsive-20261031',root).href;document.head.append(sheet);
+ // Use the physical screen's short edge: phones remain phones when rotated,
+ // while an iPad keeps its game frame in Split View and Stage Manager.
+ const tablet=()=>navigator.maxTouchPoints>0 && Math.min(screen.width||innerWidth,screen.height||innerHeight)>=600 && innerWidth>=320;
  const selectors='.tab-content.active[id^="game-"],#play:not([hidden]),#practice:not([hidden]),[data-danh-game-surface]';
- let panel,input,saved,bar,keyboard,backdrop,scheduled=false,suppressed=null,caps=false,symbols=false,moreSymbols=false,keyboardDismissed=false;
+ let panel,input,saved,bar,keyboard,backdrop,scheduled=false,suppressed=null,caps=false,symbols=false,moreSymbols=false,keyboardDismissed=false,keyboardRequested=false;
  const originals=new Map();
  const visible=node=>node?.isConnected && !node.closest('[hidden],.tab-content:not(.active)') && node.getClientRects().length>0;
  const textInput=node=>node?.matches('textarea,input:not([type]),input[type=text],input[type=search],input[type=number],input[type=tel],input[type=url],input[type=email]');
@@ -40,11 +42,12 @@
    for(const choice of choices){const option=element('option',choice.textContent);option.value=choice.dataset.game;option.selected=option.value===panel.id;picker.append(option);}
    picker.addEventListener('change',()=>choices.find(choice=>choice.dataset.game===picker.value)?.click());bar.append(picker);
   }
-  const show=makeButton('Hiện bàn phím',()=>{keyboardDismissed=false;schedule();});show.className='tg-show-keyboard';show.hidden=true;bar.append(show);
+  const show=makeButton('Hiện bàn phím',()=>{keyboardDismissed=false;keyboardRequested=true;schedule();});show.className='tg-show-keyboard';show.hidden=true;bar.append(show);
   const expand=makeButton('Xem đầy đủ',()=>{const reading=panel.classList.toggle('tg-reading');if(!reading)panel.scrollTop=0;expand.textContent=reading?'Về khung chơi':'Xem đầy đủ';});expand.className='tg-expand';expand.hidden=true;bar.append(expand);
   keyboard=element('section',null,'tg-keyboard');keyboard.setAttribute('aria-label','Bàn phím tiếng Anh');keyboard.hidden=true;
   keyboard.addEventListener('pointerdown',event=>{if(event.target.closest('button'))event.preventDefault();});
   document.body.append(backdrop,bar,keyboard);buildKeys();
+  frameObserver?.observe(bar);frameObserver?.observe(keyboard);frameObserver?.observe(panel);
  }
  function buildKeys(){
   if(!keyboard)return;keyboard.replaceChildren();
@@ -97,7 +100,7 @@
  }
  function close(){
   if(!panel)return;
-  panel.classList.remove('tg-panel','tg-reading');panel.scrollTop=0;panel=null;input=null;restoreInputs();
+  frameObserver?.disconnect();panel.classList.remove('tg-panel','tg-reading');panel.scrollTop=0;panel=null;input=null;keyboardRequested=false;restoreInputs();
   backdrop?.remove();bar?.remove();keyboard?.remove();bar=keyboard=backdrop=null;
   document.body.classList.remove('tg-playing','tg-typing');
   for(const [key,value]of Object.entries(saved.style))document.body.style[key]=value;
@@ -117,19 +120,24 @@
   for(const node of panel.querySelectorAll('input,textarea'))if(textInput(node))configure(node);
   const candidates=[...panel.querySelectorAll('input,textarea')].filter(node=>textInput(node)&&visible(node)&&!node.disabled&&!node.readOnly);
   const nextInput=candidates.includes(document.activeElement)?document.activeElement:candidates[0]||null;
-  if(input!==nextInput)keyboardDismissed=false;
+  if(input!==nextInput){keyboardDismissed=false;keyboardRequested=false;}
   input=nextInput;
   if(input && input.type==='number'&&!symbols){symbols=true;buildKeys();}
-  const typing=!!input&&!keyboardDismissed;
-  keyboard.hidden=!typing;document.body.classList.toggle('tg-typing',typing);bar.querySelector('.tg-show-keyboard').hidden=!input||!keyboardDismissed;updateKeys();
+  const shortViewport=(window.visualViewport?.height||innerHeight)<520;
+  const typing=!!input&&!keyboardDismissed&&(!shortViewport||keyboardRequested);
+  keyboard.hidden=!typing;document.body.classList.toggle('tg-typing',typing);bar.querySelector('.tg-show-keyboard').hidden=!input||typing;updateKeys();
+  document.documentElement.style.setProperty('--tg-bar-height',`${bar.getBoundingClientRect().height}px`);
+  document.documentElement.style.setProperty('--tg-keyboard-height',`${typing?keyboard.getBoundingClientRect().height:0}px`);
   requestAnimationFrame(()=>{if(!panel||!bar)return;const expand=bar.querySelector('.tg-expand');const overflow=panel.classList.contains('tg-reading')||panel.scrollHeight>panel.clientHeight+4||[...panel.querySelectorAll('.item-display-box,#spelling-preview')].some(node=>node.clientHeight>0&&node.scrollHeight>node.clientHeight+4);if(expand.hidden===overflow)expand.hidden=!overflow;});
  }
  function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(sync);}}
- document.addEventListener('focusin',event=>{if(tablet()&&textInput(event.target)&&event.target.closest('.tab-content,[data-danh-game-surface],#play,#practice,#app'))configure(event.target);schedule();});
+ const frameObserver=typeof ResizeObserver==='function'?new ResizeObserver(schedule):null;
+ document.addEventListener('focusin',event=>{if(tablet()&&textInput(event.target)&&(panel||findPanel())?.contains(event.target))configure(event.target);schedule();});
  document.addEventListener('pointerdown',event=>{if(panel&&textInput(event.target)&&panel.contains(event.target)){keyboardDismissed=false;schedule();}},{passive:true});
  document.addEventListener('touchmove',event=>{if(panel && event.touches.length===1 && !event.target.closest('.tg-reading,dialog,[role=dialog]') && !textInput(event.target))event.preventDefault();},{passive:false});
  window.addEventListener('resize',schedule);window.visualViewport?.addEventListener('resize',schedule);window.visualViewport?.addEventListener('scroll',viewport);
  window.addEventListener('pagehide',close);
+ document.fonts?.ready.then(schedule);
  const start=()=>{new MutationObserver(records=>{if(records.some(r=>!r.target.closest?.('.tg-keyboard,.tg-bar')))schedule();}).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['hidden','class','disabled','readonly']});schedule();};
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
  window.DanhTabletGame={refresh:schedule,get active(){return !!panel;}};

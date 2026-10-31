@@ -1,93 +1,106 @@
 [
   {
-    "id": "red",
-    "term": "Red",
-    "file": "grade/lop2/assets/images/pencil/colors/red-pencil-v1.svg",
-    "bytes": 1644,
-    "nativeVector": true
-  },
-  {
-    "id": "blue",
-    "term": "Blue",
-    "file": "grade/lop2/assets/images/pencil/colors/blue-pencil-v1.svg",
-    "bytes": 1677,
-    "nativeVector": true
-  },
-  {
-    "id": "yellow",
-    "term": "Yellow",
-    "file": "grade/lop2/assets/images/pencil/colors/yellow-pencil-v1.svg",
-    "bytes": 1375,
-    "nativeVector": true
-  },
-  {
-    "id": "green",
-    "term": "Green",
-    "file": "grade/lop2/assets/images/pencil/colors/green-pencil-v1.svg",
-    "bytes": 1302,
-    "nativeVector": true
-  },
-  {
-    "id": "orange",
-    "term": "Orange",
-    "file": "grade/lop2/assets/images/pencil/colors/orange-pencil-v1.svg",
-    "bytes": 1671,
-    "nativeVector": true
-  },
-  {
-    "id": "purple",
-    "term": "Purple",
-    "file": "grade/lop2/assets/images/pencil/colors/purple-pencil-v1.svg",
-    "bytes": 2696,
-    "nativeVector": true
-  },
-  {
-    "id": "pink",
-    "term": "Pink",
-    "file": "grade/lop2/assets/images/pencil/colors/pink-pencil-v1.svg",
-    "bytes": 1382,
-    "nativeVector": true
-  },
-  {
+    "topic": "colors",
     "id": "black",
-    "term": "Black",
-    "file": "grade/lop2/assets/images/pencil/colors/black-pencil-v1.svg",
-    "bytes": 1632,
-    "nativeVector": true
+    "file": "grade/lop2/assets/images/pencil/colors/black-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/black-pencil-v2.webp",
+    "bytes": 62806,
+    "generatedWith": "built-in image_gen"
   },
   {
-    "id": "white",
-    "term": "White",
-    "file": "grade/lop2/assets/images/pencil/colors/white-pencil-v1.svg",
-    "bytes": 1767,
-    "nativeVector": true
+    "topic": "colors",
+    "id": "blue",
+    "file": "grade/lop2/assets/images/pencil/colors/blue-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/blue-pencil-v2.webp",
+    "bytes": 67556,
+    "generatedWith": "built-in image_gen"
   },
   {
-    "id": "gray",
-    "term": "Gray",
-    "file": "grade/lop2/assets/images/pencil/colors/gray-pencil-v1.svg",
-    "bytes": 1739,
-    "nativeVector": true
-  },
-  {
-    "id": "silver",
-    "term": "Silver",
-    "file": "grade/lop2/assets/images/pencil/colors/silver-pencil-v1.svg",
-    "bytes": 1381,
-    "nativeVector": true
-  },
-  {
+    "topic": "colors",
     "id": "brown",
-    "term": "Brown",
-    "file": "grade/lop2/assets/images/pencil/colors/brown-pencil-v1.svg",
-    "bytes": 2029,
-    "nativeVector": true
+    "file": "grade/lop2/assets/images/pencil/colors/brown-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/brown-pencil-v2.webp",
+    "bytes": 107982,
+    "generatedWith": "built-in image_gen"
   },
   {
+    "topic": "colors",
+    "id": "gray",
+    "file": "grade/lop2/assets/images/pencil/colors/gray-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/gray-pencil-v2.webp",
+    "bytes": 72022,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "green",
+    "file": "grade/lop2/assets/images/pencil/colors/green-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/green-pencil-v2.webp",
+    "bytes": 80644,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "orange",
+    "file": "grade/lop2/assets/images/pencil/colors/orange-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/orange-pencil-v2.webp",
+    "bytes": 83070,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "pink",
+    "file": "grade/lop2/assets/images/pencil/colors/pink-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/pink-pencil-v2.webp",
+    "bytes": 70368,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "purple",
+    "file": "grade/lop2/assets/images/pencil/colors/purple-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/purple-pencil-v2.webp",
+    "bytes": 81574,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "red",
+    "file": "grade/lop2/assets/images/pencil/colors/red-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/red-pencil-v2.webp",
+    "bytes": 102740,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "silver",
+    "file": "grade/lop2/assets/images/pencil/colors/silver-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/silver-pencil-v2.webp",
+    "bytes": 56564,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
     "id": "transparent",
-    "term": "Transparent",
-    "file": "grade/lop2/assets/images/pencil/colors/transparent-pencil-v1.svg",
-    "bytes": 1187,
-    "nativeVector": true
+    "file": "grade/lop2/assets/images/pencil/colors/transparent-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/transparent-pencil-v2.webp",
+    "bytes": 27436,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "white",
+    "file": "grade/lop2/assets/images/pencil/colors/white-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/white-pencil-v2.webp",
+    "bytes": 39886,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "yellow",
+    "file": "grade/lop2/assets/images/pencil/colors/yellow-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/yellow-pencil-v2.webp",
+    "bytes": 45288,
+    "generatedWith": "built-in image_gen"
   }
 ]

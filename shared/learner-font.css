@@ -15,8 +15,8 @@ button,input,select,textarea{font-family:inherit}
 .danh-exercise-gap::after{content:"";position:absolute;left:0;right:0;bottom:0;border-bottom:2px solid currentColor}
 .danh-exercise-gap>.danh-exercise-gap-source{font-size:0!important;line-height:0!important;color:transparent!important;letter-spacing:0!important}
 
-/* A missing letter occupies the same space as its neighbouring letters. */
-body .letter-ladder .ll-slot{width:1.2ch;min-width:1.2ch;padding-inline:0}
+/* Keep missing letters easy to touch, including on small touch screens. */
+body .letter-ladder .ll-slot{width:44px;min-width:44px;flex-shrink:0;padding-inline:0}
 body .letter-ladder .ll-fixed{min-width:1ch}
 body .ll-slot .danh-exercise-gap{width:1ch!important}
 

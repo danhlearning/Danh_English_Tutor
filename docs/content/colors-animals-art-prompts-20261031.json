@@ -1,0 +1,507 @@
+[
+  {
+    "topic": "colors",
+    "name": "red",
+    "source": "artifacts/colors-animals-20261031/originals/colors-red.png",
+    "file": "grade/lop2/assets/images/pencil/colors/red-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Create ONE square vocabulary illustration for a Vietnamese children's English learning game. Subject: one ripe RED APPLE, immediately recognizable as the color RED; rich clear red skin covers almost all the apple, short brown stem, at most one tiny green leaf. Hand drawn colored-pencil illustration with fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style, restrained shading and accurate simple shape. Single object centered fully visible, occupying 72 percent of the square, 14 percent clean margin, plain warm ivory paper background (#fffaf0). No other objects, no scene, no border. Absolutely no letters, numbers, words, captions, logos or watermark. This is the first in a matching set of small vocabulary card illustrations; prioritize recognizability at 120 pixels."
+  },
+  {
+    "topic": "colors",
+    "name": "blue",
+    "source": "artifacts/colors-animals-20261031/originals/colors-blue.png",
+    "file": "grade/lop2/assets/images/pencil/colors/blue-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one open BLUE umbrella, broad vivid blue fabric canopy, slim neutral handle; almost all colored area is clearly blue. This image teaches the named color; preserve clear dominant color."
+  },
+  {
+    "topic": "colors",
+    "name": "yellow",
+    "source": "artifacts/colors-animals-20261031/originals/colors-yellow.png",
+    "file": "grade/lop2/assets/images/pencil/colors/yellow-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one ripe YELLOW banana, curved single banana with bright yellow peel and tiny brown stem. This image teaches the named color; preserve clear dominant color."
+  },
+  {
+    "topic": "colors",
+    "name": "green",
+    "source": "artifacts/colors-animals-20261031/originals/colors-green.png",
+    "file": "grade/lop2/assets/images/pencil/colors/green-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one fresh GREEN leaf with clear veins, rich natural green color. This image teaches the named color; preserve clear dominant color."
+  },
+  {
+    "topic": "colors",
+    "name": "orange",
+    "source": "artifacts/colors-animals-20261031/originals/colors-orange.png",
+    "file": "grade/lop2/assets/images/pencil/colors/orange-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one whole ORANGE fruit with pebbled bright orange peel, a short stem and at most one tiny leaf. This image teaches the named color; preserve clear dominant color."
+  },
+  {
+    "topic": "colors",
+    "name": "purple",
+    "source": "artifacts/colors-animals-20261031/originals/colors-purple.png",
+    "file": "grade/lop2/assets/images/pencil/colors/purple-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one bunch of PURPLE grapes, round ripe purple berries, minimal tiny stem. This image teaches the named color; preserve clear dominant color."
+  },
+  {
+    "topic": "colors",
+    "name": "pink",
+    "source": "artifacts/colors-animals-20261031/originals/colors-pink.png",
+    "file": "grade/lop2/assets/images/pencil/colors/pink-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one PINK flower with soft clear pink petals and a small yellow center, no pot, no scenery. This image teaches the named color; preserve clear dominant color."
+  },
+  {
+    "topic": "colors",
+    "name": "black",
+    "source": "artifacts/colors-animals-20261031/originals/colors-black.png",
+    "file": "grade/lop2/assets/images/pencil/colors/black-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one BLACK cat sitting, full body and tail visible, black fur clearly distinct from paper background, subtle graphite highlights, anatomically correct. This image teaches the named color; preserve clear dominant color."
+  },
+  {
+    "topic": "colors",
+    "name": "white",
+    "source": "artifacts/colors-animals-20261031/originals/colors-white.png",
+    "file": "grade/lop2/assets/images/pencil/colors/white-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one WHITE dog sitting, full body visible, clearly white fur with very light warm gray outlines and soft shadow so silhouette reads on ivory paper, no colored patches. This image teaches the named color; preserve clear dominant color."
+  },
+  {
+    "topic": "colors",
+    "name": "gray",
+    "source": "artifacts/colors-animals-20261031/originals/colors-gray.png",
+    "file": "grade/lop2/assets/images/pencil/colors/gray-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one GRAY elephant in side three-quarter view, full body, four legs, two ears and long trunk clear, uniform medium gray skin. This image teaches the named color; preserve clear dominant color."
+  },
+  {
+    "topic": "colors",
+    "name": "silver",
+    "source": "artifacts/colors-animals-20261031/originals/colors-silver.png",
+    "file": "grade/lop2/assets/images/pencil/colors/silver-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one SILVER wristwatch with plain silver metal link bracelet and metallic silver round case, subtle cool gray pencil shading and bright white glints clearly conveying silver metal. Watch face BLANK, absolutely no numbers, lettering, symbols, hands or marks. This image teaches the named color; preserve clear dominant color."
+  },
+  {
+    "topic": "colors",
+    "name": "brown",
+    "source": "artifacts/colors-animals-20261031/originals/colors-brown.png",
+    "file": "grade/lop2/assets/images/pencil/colors/brown-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one BROWN bear standing on four legs in three-quarter side view, full body visible, clearly warm brown fur, rounded ears and short tail. This image teaches the named color; preserve clear dominant color."
+  },
+  {
+    "topic": "colors",
+    "name": "transparent",
+    "source": "artifacts/colors-animals-20261031/originals/colors-transparent.png",
+    "file": "grade/lop2/assets/images/pencil/colors/transparent-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one empty TRANSPARENT clear glass bottle with a narrow neck, uncapped, thin light gray outlines, subtle edge highlights and minimal glass refraction; ivory paper visible through the entire bottle, absolutely no label, no liquid, no colored fill. This image teaches the named color; preserve clear dominant color."
+  },
+  {
+    "topic": "animals",
+    "name": "dog",
+    "source": "artifacts/colors-animals-20261031/originals/animals-dog.png",
+    "file": "grade/lop2/assets/images/pencil/animals/dog-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: friendly golden-brown domestic dog sitting, floppy ears, muzzle, four legs and a single tail"
+  },
+  {
+    "topic": "animals",
+    "name": "cat",
+    "source": "artifacts/colors-animals-20261031/originals/animals-cat.png",
+    "file": "grade/lop2/assets/images/pencil/animals/cat-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: orange tabby domestic cat sitting, triangular ears, whiskers, four legs, one curled tail"
+  },
+  {
+    "topic": "animals",
+    "name": "mouse",
+    "source": "artifacts/colors-animals-20261031/originals/animals-mouse.png",
+    "file": "grade/lop2/assets/images/pencil/animals/mouse-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: small gray mouse with a pointed snout, large round ears, four tiny feet and one long thin tail"
+  },
+  {
+    "topic": "animals",
+    "name": "rabbit",
+    "source": "artifacts/colors-animals-20261031/originals/animals-rabbit.png",
+    "file": "grade/lop2/assets/images/pencil/animals/rabbit-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: white and light brown rabbit, long upright ears, short fluffy tail and strong hind legs"
+  },
+  {
+    "topic": "animals",
+    "name": "hamster",
+    "source": "artifacts/colors-animals-20261031/originals/animals-hamster.png",
+    "file": "grade/lop2/assets/images/pencil/animals/hamster-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: plump golden hamster with tiny rounded ears, cheek pouches, tiny paws and almost invisible short tail; clearly not a mouse"
+  },
+  {
+    "topic": "animals",
+    "name": "fox",
+    "source": "artifacts/colors-animals-20261031/originals/animals-fox.png",
+    "file": "grade/lop2/assets/images/pencil/animals/fox-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: red fox, orange coat, pointed muzzle and ears, black lower legs and one large bushy white-tipped tail"
+  },
+  {
+    "topic": "animals",
+    "name": "bear",
+    "source": "artifacts/colors-animals-20261031/originals/animals-bear.png",
+    "file": "grade/lop2/assets/images/pencil/animals/bear-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: brown bear standing on four legs, rounded ears, broad muzzle, short tail"
+  },
+  {
+    "topic": "animals",
+    "name": "panda",
+    "source": "artifacts/colors-animals-20261031/originals/animals-panda.png",
+    "file": "grade/lop2/assets/images/pencil/animals/panda-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: giant panda sitting, correct black and white markings, black eye patches and black ears"
+  },
+  {
+    "topic": "animals",
+    "name": "tiger",
+    "source": "artifacts/colors-animals-20261031/originals/animals-tiger.png",
+    "file": "grade/lop2/assets/images/pencil/animals/tiger-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: tiger, orange fur with black stripes, white muzzle, full body and long striped tail"
+  },
+  {
+    "topic": "animals",
+    "name": "lion",
+    "source": "artifacts/colors-animals-20261031/originals/animals-lion.png",
+    "file": "grade/lop2/assets/images/pencil/animals/lion-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: male lion, tawny coat, thick brown mane framing face, full body and tufted tail"
+  },
+  {
+    "topic": "animals",
+    "name": "cow",
+    "source": "artifacts/colors-animals-20261031/originals/animals-cow.png",
+    "file": "grade/lop2/assets/images/pencil/animals/cow-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: black and white dairy cow, full body with four legs, hooves, small horns and visible udder"
+  },
+  {
+    "topic": "animals",
+    "name": "pig",
+    "source": "artifacts/colors-animals-20261031/originals/animals-pig.png",
+    "file": "grade/lop2/assets/images/pencil/animals/pig-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: pink farm pig, round body, snout with two nostrils, four legs and curly tail"
+  },
+  {
+    "topic": "animals",
+    "name": "frog",
+    "source": "artifacts/colors-animals-20261031/originals/animals-frog.png",
+    "file": "grade/lop2/assets/images/pencil/animals/frog-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: green frog sitting, four limbs, large eyes and webbed hind feet"
+  },
+  {
+    "topic": "animals",
+    "name": "monkey",
+    "source": "artifacts/colors-animals-20261031/originals/animals-monkey.png",
+    "file": "grade/lop2/assets/images/pencil/animals/monkey-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: brown monkey sitting, visible hands and feet and one long curved tail"
+  },
+  {
+    "topic": "animals",
+    "name": "chicken",
+    "source": "artifacts/colors-animals-20261031/originals/animals-chicken.png",
+    "file": "grade/lop2/assets/images/pencil/animals/chicken-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: farm hen, red comb, pale brown feathers, two wings, two legs, short beak"
+  },
+  {
+    "topic": "animals",
+    "name": "duck",
+    "source": "artifacts/colors-animals-20261031/originals/animals-duck.png",
+    "file": "grade/lop2/assets/images/pencil/animals/duck-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: white domestic duck, yellow-orange bill, two orange webbed feet, full body"
+  },
+  {
+    "topic": "animals",
+    "name": "bird",
+    "source": "artifacts/colors-animals-20261031/originals/animals-bird.png",
+    "file": "grade/lop2/assets/images/pencil/animals/bird-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: small blue songbird, one short beak, two folded wings, two legs, short tail; recognizable generic bird"
+  },
+  {
+    "topic": "animals",
+    "name": "eagle",
+    "source": "artifacts/colors-animals-20261031/originals/animals-eagle.png",
+    "file": "grade/lop2/assets/images/pencil/animals/eagle-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: bald eagle, white head, brown body and wings, hooked yellow beak and yellow talons"
+  },
+  {
+    "topic": "animals",
+    "name": "owl",
+    "source": "artifacts/colors-animals-20261031/originals/animals-owl.png",
+    "file": "grade/lop2/assets/images/pencil/animals/owl-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: brown owl perched on its two feet, large forward-facing eyes, short hooked beak and rounded wings"
+  },
+  {
+    "topic": "animals",
+    "name": "penguin",
+    "source": "artifacts/colors-animals-20261031/originals/animals-penguin.png",
+    "file": "grade/lop2/assets/images/pencil/animals/penguin-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: penguin standing, black back and white belly, two flippers, orange feet"
+  },
+  {
+    "topic": "animals",
+    "name": "bat",
+    "source": "artifacts/colors-animals-20261031/originals/animals-bat.png",
+    "file": "grade/lop2/assets/images/pencil/animals/bat-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: small bat with two broad membranous wings extended symmetrically, visible finger bones, small furry body and ears; accurately a mammal"
+  },
+  {
+    "topic": "animals",
+    "name": "wolf",
+    "source": "artifacts/colors-animals-20261031/originals/animals-wolf.png",
+    "file": "grade/lop2/assets/images/pencil/animals/wolf-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: gray wolf standing, long muzzle, pointed ears, full body and bushy downward tail; clearly wild wolf"
+  },
+  {
+    "topic": "animals",
+    "name": "horse",
+    "source": "artifacts/colors-animals-20261031/originals/animals-horse.png",
+    "file": "grade/lop2/assets/images/pencil/animals/horse-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: chestnut horse standing in side three-quarter view, four slender legs and hooves, flowing mane, one long tail"
+  },
+  {
+    "topic": "animals",
+    "name": "zebra",
+    "source": "artifacts/colors-animals-20261031/originals/animals-zebra.png",
+    "file": "grade/lop2/assets/images/pencil/animals/zebra-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: zebra with correct black and white striped coat, short upright mane, full body and tail"
+  },
+  {
+    "topic": "animals",
+    "name": "giraffe",
+    "source": "artifacts/colors-animals-20261031/originals/animals-giraffe.png",
+    "file": "grade/lop2/assets/images/pencil/animals/giraffe-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: giraffe standing, long neck, tan patch markings, two short ossicones, four long legs and tail"
+  },
+  {
+    "topic": "animals",
+    "name": "elephant",
+    "source": "artifacts/colors-animals-20261031/originals/animals-elephant.png",
+    "file": "grade/lop2/assets/images/pencil/animals/elephant-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: gray elephant, large ears, full body with four sturdy legs and a long curved trunk"
+  },
+  {
+    "topic": "animals",
+    "name": "rhinoceros",
+    "source": "artifacts/colors-animals-20261031/originals/animals-rhinoceros.png",
+    "file": "grade/lop2/assets/images/pencil/animals/rhinoceros-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: gray rhinoceros standing, thick folded skin, sturdy body and clear nasal horn on snout"
+  },
+  {
+    "topic": "animals",
+    "name": "hippopotamus",
+    "source": "artifacts/colors-animals-20261031/originals/animals-hippopotamus.png",
+    "file": "grade/lop2/assets/images/pencil/animals/hippopotamus-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: gray-purple hippopotamus standing, barrel body, broad muzzle, small ears and eyes high on head, four short legs"
+  },
+  {
+    "topic": "animals",
+    "name": "crocodile",
+    "source": "artifacts/colors-animals-20261031/originals/animals-crocodile.png",
+    "file": "grade/lop2/assets/images/pencil/animals/crocodile-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: green crocodile seen in side three-quarter view, long narrow snout, four short legs, armored back and one long tapering tail"
+  },
+  {
+    "topic": "animals",
+    "name": "snake",
+    "source": "artifacts/colors-animals-20261031/originals/animals-snake.png",
+    "file": "grade/lop2/assets/images/pencil/animals/snake-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: green snake in a relaxed loose coil, clear single head with two eyes, continuous tapering body and one tail, no legs"
+  },
+  {
+    "topic": "animals",
+    "name": "turtle",
+    "source": "artifacts/colors-animals-20261031/originals/animals-turtle.png",
+    "file": "grade/lop2/assets/images/pencil/animals/turtle-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: green and brown land turtle, domed patterned shell, small head and four visible legs"
+  },
+  {
+    "topic": "animals",
+    "name": "whale",
+    "source": "artifacts/colors-animals-20261031/originals/animals-whale.png",
+    "file": "grade/lop2/assets/images/pencil/animals/whale-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: large blue-gray baleen whale, full body, horizontal tail flukes, two pectoral fins and correct whale proportions, no water scene"
+  },
+  {
+    "topic": "animals",
+    "name": "dolphin",
+    "source": "artifacts/colors-animals-20261031/originals/animals-dolphin.png",
+    "file": "grade/lop2/assets/images/pencil/animals/dolphin-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: gray dolphin in a gentle swimming pose, curved dorsal fin, long beak, two pectoral flippers and horizontal tail flukes"
+  },
+  {
+    "topic": "animals",
+    "name": "seal",
+    "source": "artifacts/colors-animals-20261031/originals/animals-seal.png",
+    "file": "grade/lop2/assets/images/pencil/animals/seal-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: gray seal lying relaxed, round whiskered head, small front flippers and two rear flippers, no external ear flaps"
+  },
+  {
+    "topic": "animals",
+    "name": "fish",
+    "source": "artifacts/colors-animals-20261031/originals/animals-fish.png",
+    "file": "grade/lop2/assets/images/pencil/animals/fish-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one orange freshwater fish in side view, round visible eye, gill cover, dorsal and pectoral fins and a fan tail"
+  },
+  {
+    "topic": "animals",
+    "name": "shark",
+    "source": "artifacts/colors-animals-20261031/originals/animals-shark.png",
+    "file": "grade/lop2/assets/images/pencil/animals/shark-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one blue-gray shark in side view, streamlined body, clear triangular dorsal fin, visible gill slits, pectoral fins and vertical tail"
+  },
+  {
+    "topic": "animals",
+    "name": "octopus",
+    "revisionPrompt": "Edit this colored-pencil octopus vocabulary illustration. Fix ONE anatomical error: the current image has only SEVEN arm tips. Add the missing EIGHTH arm on the RIGHT side, in the empty upper-right area, rising from the octopus body beside the head and curling outward, clearly separate from the existing right-side raised arm. Final image must have EXACTLY EIGHT distinct arms: FOUR tips on the left half and FOUR tips on the right half, all individually readable with visible gaps between them. Count the eight tips before finishing. Preserve the existing seven arms, warm orange-pink pencil texture, friendly face, ivory paper background, square composition, fully visible subject and no words or labels. Do not add any ninth arm or disconnected tentacles.",
+    "source": "artifacts/colors-animals-20261031/originals/animals-octopus.png",
+    "file": "grade/lop2/assets/images/pencil/animals/octopus-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one friendly pink-orange octopus with a rounded mantle and exactly EIGHT distinct arms with suction cups, all eight readable and separate, no additional limbs"
+  },
+  {
+    "topic": "animals",
+    "name": "crab",
+    "source": "artifacts/colors-animals-20261031/originals/animals-crab.png",
+    "file": "grade/lop2/assets/images/pencil/animals/crab-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one orange-red crab with one carapace, TWO claws and EIGHT walking legs, ten appendages total, side limbs readable and not fused"
+  },
+  {
+    "topic": "animals",
+    "name": "butterfly",
+    "source": "artifacts/colors-animals-20261031/originals/animals-butterfly.png",
+    "file": "grade/lop2/assets/images/pencil/animals/butterfly-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one butterfly viewed from above, four orange wings with dark edges in two symmetrical pairs, slender body and exactly TWO antennae and SIX tiny legs"
+  },
+  {
+    "topic": "animals",
+    "name": "bee",
+    "source": "artifacts/colors-animals-20261031/originals/animals-bee.png",
+    "file": "grade/lop2/assets/images/pencil/animals/bee-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one honey bee, golden yellow and black striped abdomen, exactly SIX legs, TWO antennae, FOUR translucent wings arranged as two pairs, natural insect anatomy"
+  },
+  {
+    "topic": "animals",
+    "name": "ant",
+    "source": "artifacts/colors-animals-20261031/originals/animals-ant.png",
+    "file": "grade/lop2/assets/images/pencil/animals/ant-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one reddish-brown ant, clearly three body segments, exactly SIX legs attached to thorax and TWO elbowed antennae"
+  },
+  {
+    "topic": "animals",
+    "name": "spider",
+    "source": "artifacts/colors-animals-20261031/originals/animals-spider.png",
+    "file": "grade/lop2/assets/images/pencil/animals/spider-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one small friendly brown spider, exactly EIGHT legs attached to cephalothorax, two main body sections, no antennae, legs separated and countable"
+  },
+  {
+    "topic": "animals",
+    "name": "kangaroo",
+    "source": "artifacts/colors-animals-20261031/originals/animals-kangaroo.png",
+    "file": "grade/lop2/assets/images/pencil/animals/kangaroo-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: tan kangaroo upright, two short forearms, two large strong hind legs, long thick tail and visible pouch"
+  },
+  {
+    "topic": "animals",
+    "name": "camel",
+    "source": "artifacts/colors-animals-20261031/originals/animals-camel.png",
+    "file": "grade/lop2/assets/images/pencil/animals/camel-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: tan two-humped Bactrian camel standing, exactly TWO humps, four long legs, long curved neck and padded feet"
+  },
+  {
+    "topic": "animals",
+    "name": "sheep",
+    "source": "artifacts/colors-animals-20261031/originals/animals-sheep.png",
+    "file": "grade/lop2/assets/images/pencil/animals/sheep-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: white woolly sheep with dense curly fleece, small ears, four legs and dark hooves"
+  },
+  {
+    "topic": "animals",
+    "name": "goat",
+    "source": "artifacts/colors-animals-20261031/originals/animals-goat.png",
+    "file": "grade/lop2/assets/images/pencil/animals/goat-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: white and tan goat standing, short coat, beard, two curved horns, four legs and a short upright tail"
+  },
+  {
+    "topic": "animals",
+    "name": "deer",
+    "source": "artifacts/colors-animals-20261031/originals/animals-deer.png",
+    "file": "grade/lop2/assets/images/pencil/animals/deer-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: brown male deer standing, slender legs, cloven hooves, two branching antlers, white underside and short tail"
+  },
+  {
+    "topic": "animals",
+    "name": "squirrel",
+    "source": "artifacts/colors-animals-20261031/originals/animals-squirrel.png",
+    "file": "grade/lop2/assets/images/pencil/animals/squirrel-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: reddish-brown squirrel sitting, small round ears, tiny forepaws and a single large bushy tail curved behind"
+  },
+  {
+    "topic": "animals",
+    "name": "snail",
+    "source": "artifacts/colors-animals-20261031/originals/animals-snail.png",
+    "file": "grade/lop2/assets/images/pencil/animals/snail-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: one garden snail in side three-quarter view, one spiral shell, one continuous soft foot, two long eye stalks and two short feelers"
+  },
+  {
+    "topic": "animals",
+    "name": "koala",
+    "source": "artifacts/colors-animals-20261031/originals/animals-koala.png",
+    "file": "grade/lop2/assets/images/pencil/animals/koala-pencil-v2.webp",
+    "generatedWith": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset: ONE square vocabulary card illustration for a Vietnamese children's English learning game. Hand drawn colored-pencil illustration, fine graphite outlines, layered pencil hatching and visible paper grain, warm friendly storybook style. Accurate natural anatomy and silhouette, gently cute without human clothes or accessories. Single subject fully visible and centered, occupies about 72 percent of square with generous clean margin on every side. Plain warm ivory paper background (#fffaf0), subtle ground shadow only. No scenery, no frame, no other objects. Absolutely NO text, letters, numbers, labels, logos or watermark. Must be immediately recognizable at 120 pixels. Subject: gray koala sitting, large round fuzzy ears, broad dark oval nose and pale belly, four limbs and no visible long tail"
+  }
+]

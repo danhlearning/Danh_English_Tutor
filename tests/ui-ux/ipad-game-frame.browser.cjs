@@ -58,7 +58,8 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8765',out='artifacts/i
   await page.evaluate(()=>{const p=document.createElement('p');p.textContent='Giải thích dài. '.repeat(500);document.querySelector('.tg-panel').append(p);});
   await page.locator('.tg-expand').waitFor({state:'visible'});await page.locator('.tg-expand').click();assert(await page.locator('.tg-panel').evaluate(n=>n.classList.contains('tg-reading')));
   await page.locator('.tg-expand').click();assert(!(await page.locator('.tg-panel').evaluate(n=>n.classList.contains('tg-reading'))));
-  // Phone and desktop layouts do not get the tablet lock or custom keyboard.
+  // A narrow phone-sized viewport has a phone screen in this emulation;
+  // the dedicated responsive test separately retains the iPad screen in Split View.
   await page.setViewportSize({width:390,height:844});await page.waitForFunction(()=>!DanhTabletGame.active);assert.equal(await page.locator('.tg-keyboard').count(),0);
   const desktop=await browser.newContext({viewport:{width:1280,height:900}}),d=await desktop.newPage();await d.goto(base+'/grade/lop6/unit1.html');await d.locator('[data-tab=spelling]').click();await d.waitForFunction(()=>window.DanhTabletGame);assert.equal(await d.evaluate(()=>DanhTabletGame.active),false);await desktop.close();
   assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.writeFileSync(out+'/results.json',JSON.stringify({passed:true,results,editingAndSelection:true,physicalKeyboard:true,swipeLocked:true,phoneAndDesktopUnchanged:true,errors,missing},null,2));console.log('PASS '+results.length+' tablet layouts, keyboard editing/checking, physical typing, swipe lock, long explanation and normal phone/desktop layouts');

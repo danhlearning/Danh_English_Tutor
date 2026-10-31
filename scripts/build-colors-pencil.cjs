@@ -1,6 +1,11 @@
 /* Extend the existing native SVG artwork with light pencil hatching, no filters. */
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..'),source=fs.readFileSync(path.join(root,'grade/lop2/assets/js/topics/colors.js'),'utf8');
+const current=JSON.parse(fs.readFileSync(path.join(root,'docs/content/colors-pencil-manifest.json'),'utf8'));
+if(current.length===13&&current.every(item=>item.generatedWith==='built-in image_gen')){
+ for(const item of current)for(const file of [item.file,item.compact])if(!fs.existsSync(path.join(root,file)))throw Error('Missing generated artwork: '+file);
+ console.log('Validated 13 generated Colors illustrations; preserved the selected v2 artwork.');return;
+}
 const prefix=source.slice(0,source.indexOf('  /* Pencil artwork'));
 const context={window:{}};vm.runInNewContext(prefix+';window.words=colorsData;',context);
 const directory=path.join(root,'grade/lop2/assets/images/pencil/colors');fs.mkdirSync(directory,{recursive:true});

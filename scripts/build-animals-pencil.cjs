@@ -4,6 +4,12 @@ const root=path.resolve(__dirname,'..');
 const codes='dog:1f415 cat:1f408 mouse:1f401 rabbit:1f407 hamster:1f439 fox:1f98a bear:1f43b panda:1f43c tiger:1f405 lion:1f981 cow:1f404 pig:1f416 frog:1f438 monkey:1f412 chicken:1f414 duck:1f986 bird:1f426 eagle:1f985 owl:1f989 penguin:1f427 bat:1f987 wolf:1f43a horse:1f40e zebra:1f993 giraffe:1f992 elephant:1f418 rhinoceros:1f98f hippopotamus:1f99b crocodile:1f40a snake:1f40d turtle:1f422 whale:1f40b dolphin:1f42c seal:1f9ad fish:1f41f shark:1f988 octopus:1f419 crab:1f980 butterfly:1f98b bee:1f41d ant:1f41c spider:1f577 kangaroo:1f998 camel:1f42b sheep:1f411 goat:1f410 deer:1f98c squirrel:1f43f snail:1f40c koala:1f428'.split(' ').map(s=>s.split(':'));
 const sourceDir=path.join(root,'docs/content/animals-pencil-source'),output=path.join(root,'grade/lop2/assets/images/pencil/animals');
 async function main(){
+ const manifestFile=path.join(root,'docs/content/animals-pencil-manifest.json');
+ const current=fs.existsSync(manifestFile)?JSON.parse(fs.readFileSync(manifestFile,'utf8')):[];
+ if(current.length===50&&current.every(item=>item.generatedWith==='built-in image_gen')){
+  for(const item of current)for(const file of [item.file,item.compact])if(!fs.existsSync(path.join(root,file)))throw Error('Missing generated artwork: '+file);
+  console.log('Validated 50 generated Animals illustrations; preserved the selected v2 artwork.');return;
+ }
  fs.mkdirSync(sourceDir,{recursive:true});fs.mkdirSync(output,{recursive:true});
  if(process.argv.includes('--fetch')){
   for(let i=0;i<codes.length;i+=5)await Promise.all(codes.slice(i,i+5).map(async([name,code])=>{const r=await fetch(`https://raw.githubusercontent.com/twitter/twemoji/v14.0.2/assets/svg/${code}.svg`);if(!r.ok)throw Error(name+': '+r.status);fs.writeFileSync(path.join(sourceDir,name+'.svg'),await r.text());}));

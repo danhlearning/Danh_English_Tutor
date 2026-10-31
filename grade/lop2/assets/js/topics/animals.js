@@ -130,8 +130,9 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
 
   /* Use one lightweight pencil picture for vocabulary and every game. */
   animalsList.forEach(word => {
-    word.image = './assets/images/pencil/animals/' + word.name.toLowerCase() + '-pencil-v1.svg';
-    word.emoji = `<img class="animals-pencil-art" src="${word.image}" alt="" width="360" height="360" loading="lazy" decoding="async">`;
+    const file = word.name.toLowerCase() + '-pencil-v2.webp';
+    word.image = './assets/images/pencil/animals/' + file;
+    word.emoji = `<img class="animals-pencil-art" src="./assets/images/pencil/animals/compact/${file}" srcset="./assets/images/pencil/animals/compact/${file} 384w, ${word.image} 768w" sizes="(max-width:600px) 110px, 140px" alt="" width="360" height="360" loading="lazy" decoding="async">`;
   });
   countGameQuestions.forEach(question => {
     const word = animalsList.find(word => word.name.toLowerCase() === question.itemSingular);

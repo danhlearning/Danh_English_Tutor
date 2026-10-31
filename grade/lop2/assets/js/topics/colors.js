@@ -37,8 +37,9 @@
   /* Pencil artwork is shared by vocabulary, letter practice and sentences. */
   for (const word of colorsData) {
     word.sourceIcon = word.icon;
-    word.image = `./assets/images/pencil/colors/${word.name.toLowerCase()}-pencil-v1.svg`;
-    word.icon = `<img class="colors-pencil-art" src="${word.image}" width="360" height="360" alt="" loading="lazy" decoding="async" draggable="false">`;
+    const file = `${word.name.toLowerCase()}-pencil-v2.webp`;
+    word.image = `./assets/images/pencil/colors/${file}`;
+    word.icon = `<img class="colors-pencil-art" src="./assets/images/pencil/colors/compact/${file}" srcset="./assets/images/pencil/colors/compact/${file} 384w, ${word.image} 768w" sizes="(max-width:600px) 110px, 160px" width="360" height="360" alt="" loading="lazy" decoding="async" draggable="false">`;
   }
   function speak(text) {
     return window.DanhListenControls?.isManualRequest()

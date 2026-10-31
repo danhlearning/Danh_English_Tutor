@@ -11,7 +11,7 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8765',out='artifacts/c
  await p.waitForFunction(()=>document.querySelector('#game-count').classList.contains('tg-panel')&&document.body.classList.contains('tg-typing'));
  const answers=[];
  for(let index=0;index<13;index++){
-  const color=await p.locator('#count-items-container img').getAttribute('src').then(src=>src.match(/\/([^/]+)-pencil-v1\.svg$/)[1]);
+  const color=await p.locator('#count-items-container img').getAttribute('src').then(src=>src.match(/\/([^/]+)-pencil-v2\.webp$/)[1]);
   const answer=`It is ${color}.`,before=await p.evaluate(()=>reads.length);
   if(index===0){for(const char of answer.toLowerCase()){if(char===' ')await p.locator('.tg-keyboard [data-action=space]').click();else await p.locator(`.tg-keyboard [data-key="${char}"]`).click();}}
   else await p.locator('#count-sentence-input').fill(answer);

@@ -4,7 +4,7 @@ test('all 13 Colors use distinct text-free lightweight pencil artwork and shared
  const source=read('grade/lop2/assets/js/topics/colors.js'),ctx={window:{}};
  vm.runInNewContext(source.slice(0,source.indexOf('  function speak'))+';window.words=colorsData;',ctx);
  const words=ctx.window.words;assert.equal(words.length,13);assert.equal(new Set(words.map(w=>w.image)).size,13);
- for(const word of words){const file=path.join(root,'grade/lop2',word.image),svg=fs.readFileSync(file,'utf8');assert(svg.includes('viewBox="0 0 360 360"'));assert(svg.includes('<pattern'));assert.doesNotMatch(svg,/<(?:text|script|filter)\b/i);assert(Buffer.byteLength(svg)<12000);assert(word.meaning&&word.ipa&&word.sentence);}
+ for(const word of words){const file=path.join(root,'grade/lop2',word.image),bytes=fs.readFileSync(file);assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,12),'WEBP');assert(bytes.length<250000);assert(word.icon.includes('srcset=')&&word.icon.includes('loading="lazy"'));assert(word.meaning&&word.ipa&&word.sentence);}
  const page=read('grade/lop2/colors.html');assert(page.includes("topic: 'colors'"));assert(page.includes('DanhLesson.mount'));assert(page.includes('onSelectionChange'));assert(page.includes('colors-game4.js?v=colors-pencil-20261029'));assert.doesNotMatch(source,/function initMcqGame|setTimeout\(/);
 });
 test('the entire legacy Clothes answer bank and known online failures have real MP3 files',()=>{

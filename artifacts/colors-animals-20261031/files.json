@@ -1,0 +1,506 @@
+[
+  {
+    "topic": "animals",
+    "id": "ant",
+    "file": "grade/lop2/assets/images/pencil/animals/ant-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/ant-pencil-v2.webp",
+    "bytes": 55772,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "bat",
+    "file": "grade/lop2/assets/images/pencil/animals/bat-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/bat-pencil-v2.webp",
+    "bytes": 65192,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "bear",
+    "file": "grade/lop2/assets/images/pencil/animals/bear-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/bear-pencil-v2.webp",
+    "bytes": 95712,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "bee",
+    "file": "grade/lop2/assets/images/pencil/animals/bee-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/bee-pencil-v2.webp",
+    "bytes": 81766,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "bird",
+    "file": "grade/lop2/assets/images/pencil/animals/bird-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/bird-pencil-v2.webp",
+    "bytes": 63062,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "butterfly",
+    "file": "grade/lop2/assets/images/pencil/animals/butterfly-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/butterfly-pencil-v2.webp",
+    "bytes": 97482,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "camel",
+    "file": "grade/lop2/assets/images/pencil/animals/camel-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/camel-pencil-v2.webp",
+    "bytes": 79996,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "cat",
+    "file": "grade/lop2/assets/images/pencil/animals/cat-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/cat-pencil-v2.webp",
+    "bytes": 78864,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "chicken",
+    "file": "grade/lop2/assets/images/pencil/animals/chicken-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/chicken-pencil-v2.webp",
+    "bytes": 82182,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "cow",
+    "file": "grade/lop2/assets/images/pencil/animals/cow-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/cow-pencil-v2.webp",
+    "bytes": 74306,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "crab",
+    "file": "grade/lop2/assets/images/pencil/animals/crab-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/crab-pencil-v2.webp",
+    "bytes": 90890,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "crocodile",
+    "file": "grade/lop2/assets/images/pencil/animals/crocodile-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/crocodile-pencil-v2.webp",
+    "bytes": 63702,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "deer",
+    "file": "grade/lop2/assets/images/pencil/animals/deer-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/deer-pencil-v2.webp",
+    "bytes": 54162,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "dog",
+    "file": "grade/lop2/assets/images/pencil/animals/dog-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/dog-pencil-v2.webp",
+    "bytes": 67048,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "dolphin",
+    "file": "grade/lop2/assets/images/pencil/animals/dolphin-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/dolphin-pencil-v2.webp",
+    "bytes": 54420,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "duck",
+    "file": "grade/lop2/assets/images/pencil/animals/duck-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/duck-pencil-v2.webp",
+    "bytes": 43148,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "eagle",
+    "file": "grade/lop2/assets/images/pencil/animals/eagle-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/eagle-pencil-v2.webp",
+    "bytes": 73676,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "elephant",
+    "file": "grade/lop2/assets/images/pencil/animals/elephant-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/elephant-pencil-v2.webp",
+    "bytes": 86870,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "fish",
+    "file": "grade/lop2/assets/images/pencil/animals/fish-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/fish-pencil-v2.webp",
+    "bytes": 66388,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "fox",
+    "file": "grade/lop2/assets/images/pencil/animals/fox-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/fox-pencil-v2.webp",
+    "bytes": 85536,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "frog",
+    "file": "grade/lop2/assets/images/pencil/animals/frog-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/frog-pencil-v2.webp",
+    "bytes": 70316,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "giraffe",
+    "file": "grade/lop2/assets/images/pencil/animals/giraffe-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/giraffe-pencil-v2.webp",
+    "bytes": 38426,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "goat",
+    "file": "grade/lop2/assets/images/pencil/animals/goat-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/goat-pencil-v2.webp",
+    "bytes": 65464,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "hamster",
+    "file": "grade/lop2/assets/images/pencil/animals/hamster-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/hamster-pencil-v2.webp",
+    "bytes": 93308,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "hippopotamus",
+    "file": "grade/lop2/assets/images/pencil/animals/hippopotamus-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/hippopotamus-pencil-v2.webp",
+    "bytes": 96972,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "horse",
+    "file": "grade/lop2/assets/images/pencil/animals/horse-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/horse-pencil-v2.webp",
+    "bytes": 65474,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "kangaroo",
+    "file": "grade/lop2/assets/images/pencil/animals/kangaroo-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/kangaroo-pencil-v2.webp",
+    "bytes": 52184,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "koala",
+    "file": "grade/lop2/assets/images/pencil/animals/koala-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/koala-pencil-v2.webp",
+    "bytes": 100982,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "lion",
+    "file": "grade/lop2/assets/images/pencil/animals/lion-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/lion-pencil-v2.webp",
+    "bytes": 86262,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "monkey",
+    "file": "grade/lop2/assets/images/pencil/animals/monkey-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/monkey-pencil-v2.webp",
+    "bytes": 87494,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "mouse",
+    "file": "grade/lop2/assets/images/pencil/animals/mouse-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/mouse-pencil-v2.webp",
+    "bytes": 74226,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "octopus",
+    "file": "grade/lop2/assets/images/pencil/animals/octopus-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/octopus-pencil-v2.webp",
+    "bytes": 91094,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "owl",
+    "file": "grade/lop2/assets/images/pencil/animals/owl-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/owl-pencil-v2.webp",
+    "bytes": 72504,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "panda",
+    "file": "grade/lop2/assets/images/pencil/animals/panda-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/panda-pencil-v2.webp",
+    "bytes": 89048,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "penguin",
+    "file": "grade/lop2/assets/images/pencil/animals/penguin-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/penguin-pencil-v2.webp",
+    "bytes": 50362,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "pig",
+    "file": "grade/lop2/assets/images/pencil/animals/pig-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/pig-pencil-v2.webp",
+    "bytes": 72560,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "rabbit",
+    "file": "grade/lop2/assets/images/pencil/animals/rabbit-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/rabbit-pencil-v2.webp",
+    "bytes": 66098,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "rhinoceros",
+    "file": "grade/lop2/assets/images/pencil/animals/rhinoceros-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/rhinoceros-pencil-v2.webp",
+    "bytes": 94552,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "seal",
+    "file": "grade/lop2/assets/images/pencil/animals/seal-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/seal-pencil-v2.webp",
+    "bytes": 70584,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "shark",
+    "file": "grade/lop2/assets/images/pencil/animals/shark-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/shark-pencil-v2.webp",
+    "bytes": 46646,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "sheep",
+    "file": "grade/lop2/assets/images/pencil/animals/sheep-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/sheep-pencil-v2.webp",
+    "bytes": 59864,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "snail",
+    "file": "grade/lop2/assets/images/pencil/animals/snail-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/snail-pencil-v2.webp",
+    "bytes": 77928,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "snake",
+    "file": "grade/lop2/assets/images/pencil/animals/snake-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/snake-pencil-v2.webp",
+    "bytes": 83926,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "spider",
+    "file": "grade/lop2/assets/images/pencil/animals/spider-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/spider-pencil-v2.webp",
+    "bytes": 79760,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "squirrel",
+    "file": "grade/lop2/assets/images/pencil/animals/squirrel-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/squirrel-pencil-v2.webp",
+    "bytes": 99688,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "tiger",
+    "file": "grade/lop2/assets/images/pencil/animals/tiger-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/tiger-pencil-v2.webp",
+    "bytes": 91798,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "turtle",
+    "file": "grade/lop2/assets/images/pencil/animals/turtle-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/turtle-pencil-v2.webp",
+    "bytes": 91458,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "whale",
+    "file": "grade/lop2/assets/images/pencil/animals/whale-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/whale-pencil-v2.webp",
+    "bytes": 54258,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "wolf",
+    "file": "grade/lop2/assets/images/pencil/animals/wolf-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/wolf-pencil-v2.webp",
+    "bytes": 85942,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "animals",
+    "id": "zebra",
+    "file": "grade/lop2/assets/images/pencil/animals/zebra-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/animals/compact/zebra-pencil-v2.webp",
+    "bytes": 70146,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "black",
+    "file": "grade/lop2/assets/images/pencil/colors/black-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/black-pencil-v2.webp",
+    "bytes": 62806,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "blue",
+    "file": "grade/lop2/assets/images/pencil/colors/blue-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/blue-pencil-v2.webp",
+    "bytes": 67556,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "brown",
+    "file": "grade/lop2/assets/images/pencil/colors/brown-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/brown-pencil-v2.webp",
+    "bytes": 107982,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "gray",
+    "file": "grade/lop2/assets/images/pencil/colors/gray-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/gray-pencil-v2.webp",
+    "bytes": 72022,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "green",
+    "file": "grade/lop2/assets/images/pencil/colors/green-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/green-pencil-v2.webp",
+    "bytes": 80644,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "orange",
+    "file": "grade/lop2/assets/images/pencil/colors/orange-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/orange-pencil-v2.webp",
+    "bytes": 83070,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "pink",
+    "file": "grade/lop2/assets/images/pencil/colors/pink-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/pink-pencil-v2.webp",
+    "bytes": 70368,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "purple",
+    "file": "grade/lop2/assets/images/pencil/colors/purple-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/purple-pencil-v2.webp",
+    "bytes": 81574,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "red",
+    "file": "grade/lop2/assets/images/pencil/colors/red-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/red-pencil-v2.webp",
+    "bytes": 102740,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "silver",
+    "file": "grade/lop2/assets/images/pencil/colors/silver-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/silver-pencil-v2.webp",
+    "bytes": 56564,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "transparent",
+    "file": "grade/lop2/assets/images/pencil/colors/transparent-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/transparent-pencil-v2.webp",
+    "bytes": 27436,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "white",
+    "file": "grade/lop2/assets/images/pencil/colors/white-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/white-pencil-v2.webp",
+    "bytes": 39886,
+    "generatedWith": "built-in image_gen"
+  },
+  {
+    "topic": "colors",
+    "id": "yellow",
+    "file": "grade/lop2/assets/images/pencil/colors/yellow-pencil-v2.webp",
+    "compact": "grade/lop2/assets/images/pencil/colors/compact/yellow-pencil-v2.webp",
+    "bytes": 45288,
+    "generatedWith": "built-in image_gen"
+  }
+]

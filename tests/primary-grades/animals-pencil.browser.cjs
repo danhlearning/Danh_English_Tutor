@@ -6,7 +6,7 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8765',out='artifacts/a
  const p=await context.newPage(),errors=[],missing=[];p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.status()>=400)missing.push(r.url());});
  await p.goto(base+'/grade/lop2/animals.html');await p.locator('.picture-word-card').first().waitFor();assert.equal(await p.evaluate(()=>reads.length),0);
  const images=p.locator('#vocab-grid-container img');assert.equal(await images.count(),50);
- for(const img of await images.all()){await img.scrollIntoViewIfNeeded();await img.evaluate(n=>n.decode());assert.match(await img.getAttribute('src'),/pencil\/animals\/.*-pencil-v1.svg/);}
+ for(const img of await images.all()){await img.scrollIntoViewIfNeeded();await img.evaluate(n=>n.decode());assert.match(await img.getAttribute('src'),/pencil\/animals\/.*-pencil-v2.webp/);}
  await p.screenshot({path:out+'/vocabulary-ipad.png'});
  const sheet=await context.newPage();await sheet.goto(base+'/grade/lop2/animals.html');await sheet.evaluate(()=>{document.body.innerHTML='<div id="sheet" style="display:grid;grid-template-columns:repeat(10,1fr);gap:6px">'+animalsList.map(w=>`<div style="text-align:center;font:14px sans-serif"><img src="${w.image}" style="width:100%;height:95px;object-fit:contain"><br>${w.name}</div>`).join('')+'</div>';});await sheet.locator('img').evaluateAll(ns=>Promise.all(ns.map(n=>n.decode())));await sheet.screenshot({path:out+'/all-50.png',fullPage:true});await sheet.close();
  await p.getByRole('button',{name:'Trò chơi',exact:true}).click();await p.waitForFunction(()=>DanhTabletGame.active);await p.getByRole('combobox',{name:'Chọn trò chơi'}).selectOption('game-count');await p.waitForFunction(()=>document.body.classList.contains('tg-typing'));
