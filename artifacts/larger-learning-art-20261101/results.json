@@ -1,0 +1,310 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "label": "g2-vocab-768",
+      "width": 240,
+      "height": 240,
+      "artWidth": 228,
+      "artHeight": 228,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g2-vocab-1024",
+      "width": 245.75,
+      "height": 245.75,
+      "artWidth": 233.75,
+      "artHeight": 233.75,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g2-vocab-1032",
+      "width": 247.671875,
+      "height": 247.671875,
+      "artWidth": 235.671875,
+      "artHeight": 235.671875,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g2-vocab-1376",
+      "width": 262,
+      "height": 262,
+      "artWidth": 250,
+      "artHeight": 250,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g2-letters-768",
+      "width": 176,
+      "height": 176,
+      "artWidth": 150,
+      "artHeight": 160,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g2-letters-1024",
+      "width": 245.75,
+      "height": 245.75,
+      "artWidth": 219.75,
+      "artHeight": 229.75,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g2-letters-1032",
+      "width": 224,
+      "height": 224,
+      "artWidth": 194,
+      "artHeight": 204,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g2-letters-1376",
+      "width": 304,
+      "height": 304,
+      "artWidth": 274,
+      "artHeight": 284,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g2-typing-768",
+      "width": 112,
+      "height": 112,
+      "artWidth": 112,
+      "artHeight": 112,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g2-typing-1024",
+      "width": 184.3125,
+      "height": 184.3125,
+      "artWidth": 184.3125,
+      "artHeight": 184.3125,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g2-typing-1032",
+      "width": 144,
+      "height": 144,
+      "artWidth": 144,
+      "artHeight": 144,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g2-typing-1376",
+      "width": 232,
+      "height": 232,
+      "artWidth": 232,
+      "artHeight": 232,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g6-vocab-768",
+      "width": 240,
+      "height": 240,
+      "artWidth": 228,
+      "artHeight": 228,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g6-vocab-1024",
+      "width": 245.75,
+      "height": 245.75,
+      "artWidth": 233.75,
+      "artHeight": 233.75,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g6-vocab-1032",
+      "width": 247.671875,
+      "height": 247.671875,
+      "artWidth": 235.671875,
+      "artHeight": 235.671875,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g6-vocab-1376",
+      "width": 300,
+      "height": 300,
+      "artWidth": 288,
+      "artHeight": 288,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g6-letters-768",
+      "width": 176,
+      "height": 176,
+      "artWidth": 176,
+      "artHeight": 176,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g6-letters-1024",
+      "width": 245.75,
+      "height": 245.75,
+      "artWidth": 245.75,
+      "artHeight": 245.75,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g6-letters-1032",
+      "width": 224,
+      "height": 224,
+      "artWidth": 224,
+      "artHeight": 224,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g6-letters-1376",
+      "width": 304,
+      "height": 304,
+      "artWidth": 304,
+      "artHeight": 304,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g6-typing-768",
+      "width": 176,
+      "height": 176,
+      "artWidth": 150,
+      "artHeight": 160,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g6-typing-1024",
+      "width": 245.75,
+      "height": 245.75,
+      "artWidth": 219.75,
+      "artHeight": 229.75,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g6-typing-1032",
+      "width": 224,
+      "height": 224,
+      "artWidth": 194,
+      "artHeight": 204,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g6-typing-1376",
+      "width": 304,
+      "height": 304,
+      "artWidth": 274,
+      "artHeight": 284,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g12-vocab-768",
+      "width": 240,
+      "height": 240,
+      "artWidth": 240,
+      "artHeight": 240,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g12-vocab-1024",
+      "width": 245.75,
+      "height": 245.75,
+      "artWidth": 245.75,
+      "artHeight": 245.75,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g12-vocab-1032",
+      "width": 247.671875,
+      "height": 247.671875,
+      "artWidth": 247.671875,
+      "artHeight": 247.671875,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g12-vocab-1376",
+      "width": 300,
+      "height": 300,
+      "artWidth": 300,
+      "artHeight": 300,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g12-letters-768",
+      "width": 176,
+      "height": 176,
+      "artWidth": 176,
+      "artHeight": 176,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g12-letters-1024",
+      "width": 245.75,
+      "height": 245.75,
+      "artWidth": 245.75,
+      "artHeight": 245.75,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g12-letters-1032",
+      "width": 224,
+      "height": 224,
+      "artWidth": 224,
+      "artHeight": 224,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g12-letters-1376",
+      "width": 304,
+      "height": 304,
+      "artWidth": 304,
+      "artHeight": 304,
+      "overflow": false,
+      "overlap": false
+    },
+    {
+      "label": "g12-typing-768",
+      "absent": true
+    },
+    {
+      "label": "g12-typing-1024",
+      "absent": true
+    },
+    {
+      "label": "g12-typing-1032",
+      "absent": true
+    },
+    {
+      "label": "g12-typing-1376",
+      "absent": true
+    }
+  ],
+  "errors": []
+}

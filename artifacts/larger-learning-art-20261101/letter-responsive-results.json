@@ -1,0 +1,3964 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 768,
+      "height": 1024,
+      "screen": [
+        768,
+        1024,
+        1,
+        768
+      ],
+      "active": true,
+      "stage": {
+        "x": 22,
+        "y": 69,
+        "width": 724,
+        "height": 483.78125,
+        "bottom": 552.78125,
+        "right": 746
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 768,
+        "height": 971,
+        "bottom": 1024,
+        "right": 768
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 768,
+        "scroll": 768
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 1024,
+      "height": 768,
+      "screen": [
+        768,
+        1024,
+        1,
+        1024
+      ],
+      "active": true,
+      "stage": {
+        "x": 52,
+        "y": 69,
+        "width": 920,
+        "height": 428.46875,
+        "bottom": 497.46875,
+        "right": 972
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1024,
+        "height": 715,
+        "bottom": 768,
+        "right": 1024
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1024,
+        "scroll": 1024
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 744,
+      "height": 1133,
+      "screen": [
+        768,
+        1024,
+        1,
+        744
+      ],
+      "active": true,
+      "stage": {
+        "x": 30,
+        "y": 83,
+        "width": 684,
+        "height": 808.71875,
+        "bottom": 891.71875,
+        "right": 714
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 744,
+        "height": 1080,
+        "bottom": 1133,
+        "right": 744
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 744,
+        "scroll": 744
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 1133,
+      "height": 744,
+      "screen": [
+        768,
+        1024,
+        1,
+        1133
+      ],
+      "active": true,
+      "stage": {
+        "x": 30,
+        "y": 83,
+        "width": 1073,
+        "height": 612.71875,
+        "bottom": 695.71875,
+        "right": 1103
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1133,
+        "height": 691,
+        "bottom": 744,
+        "right": 1133
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1133,
+        "scroll": 1133
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 820,
+      "height": 1180,
+      "screen": [
+        768,
+        1024,
+        1,
+        820
+      ],
+      "active": true,
+      "stage": {
+        "x": 30,
+        "y": 83,
+        "width": 760,
+        "height": 808.71875,
+        "bottom": 891.71875,
+        "right": 790
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 820,
+        "height": 1127,
+        "bottom": 1180,
+        "right": 820
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 820,
+        "scroll": 820
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 1180,
+      "height": 820,
+      "screen": [
+        768,
+        1024,
+        1,
+        1180
+      ],
+      "active": true,
+      "stage": {
+        "x": 30,
+        "y": 83,
+        "width": 1120,
+        "height": 612.71875,
+        "bottom": 695.71875,
+        "right": 1150
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1180,
+        "height": 767,
+        "bottom": 820,
+        "right": 1180
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1180,
+        "scroll": 1180
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 834,
+      "height": 1194,
+      "screen": [
+        768,
+        1024,
+        1,
+        834
+      ],
+      "active": true,
+      "stage": {
+        "x": 30,
+        "y": 83,
+        "width": 774,
+        "height": 808.71875,
+        "bottom": 891.71875,
+        "right": 804
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 834,
+        "height": 1141,
+        "bottom": 1194,
+        "right": 834
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 834,
+        "scroll": 834
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 1194,
+      "height": 834,
+      "screen": [
+        768,
+        1024,
+        1,
+        1194
+      ],
+      "active": true,
+      "stage": {
+        "x": 30,
+        "y": 83,
+        "width": 1134,
+        "height": 612.71875,
+        "bottom": 695.71875,
+        "right": 1164
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1194,
+        "height": 781,
+        "bottom": 834,
+        "right": 1194
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1194,
+        "scroll": 1194
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 1024,
+      "height": 1366,
+      "screen": [
+        768,
+        1024,
+        1,
+        1024
+      ],
+      "active": true,
+      "stage": {
+        "x": 32,
+        "y": 375.203125,
+        "width": 960,
+        "height": 668.59375,
+        "bottom": 1043.796875,
+        "right": 992
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1024,
+        "height": 1313,
+        "bottom": 1366,
+        "right": 1024
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1024,
+        "scroll": 1024
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 1366,
+      "height": 1024,
+      "screen": [
+        768,
+        1024,
+        1,
+        1366
+      ],
+      "active": true,
+      "stage": {
+        "x": 183,
+        "y": 291.203125,
+        "width": 1000,
+        "height": 494.59375,
+        "bottom": 785.796875,
+        "right": 1183
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1366,
+        "height": 971,
+        "bottom": 1024,
+        "right": 1366
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1366,
+        "scroll": 1366
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 600,
+      "height": 744,
+      "screen": [
+        768,
+        1024,
+        1,
+        600
+      ],
+      "active": true,
+      "stage": {
+        "x": 22,
+        "y": 75,
+        "width": 556,
+        "height": 594.5625,
+        "bottom": 669.5625,
+        "right": 578
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 600,
+        "height": 691,
+        "bottom": 744,
+        "right": 600
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 600,
+        "scroll": 600
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 507,
+      "height": 768,
+      "screen": [
+        768,
+        1024,
+        1,
+        507
+      ],
+      "active": true,
+      "stage": {
+        "x": 20,
+        "y": 73,
+        "width": 467,
+        "height": 582.0625,
+        "bottom": 655.0625,
+        "right": 487
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 507,
+        "height": 715,
+        "bottom": 768,
+        "right": 507
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 507,
+        "scroll": 507
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 320,
+      "height": 568,
+      "screen": [
+        768,
+        1024,
+        1,
+        320
+      ],
+      "active": true,
+      "stage": {
+        "x": 20,
+        "y": 73,
+        "width": 280,
+        "height": 740.3125,
+        "bottom": 813.3125,
+        "right": 300
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 320,
+        "height": 515,
+        "bottom": 568,
+        "right": 320
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "w",
+          "rect": {
+            "x": 50,
+            "y": 584.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 630.3125,
+            "right": 99
+          }
+        },
+        {
+          "text": "r",
+          "rect": {
+            "x": 107,
+            "y": 584.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 630.3125,
+            "right": 156
+          }
+        },
+        {
+          "text": "f",
+          "rect": {
+            "x": 164,
+            "y": 584.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 630.3125,
+            "right": 213
+          }
+        },
+        {
+          "text": "y",
+          "rect": {
+            "x": 221,
+            "y": 584.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 630.3125,
+            "right": 270
+          }
+        },
+        {
+          "text": "l",
+          "rect": {
+            "x": 107,
+            "y": 638.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 684.3125,
+            "right": 156
+          }
+        },
+        {
+          "text": "e",
+          "rect": {
+            "x": 164,
+            "y": 638.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 684.3125,
+            "right": 213
+          }
+        },
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 29,
+            "y": 698.3125,
+            "width": 262,
+            "height": 46,
+            "bottom": 744.3125,
+            "right": 291
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 120.875,
+            "y": 752.3125,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 798.3125,
+            "right": 199.109375
+          }
+        }
+      ],
+      "bar": {
+        "width": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 568,
+      "height": 320,
+      "screen": [
+        768,
+        1024,
+        1,
+        568
+      ],
+      "active": true,
+      "stage": {
+        "x": 20,
+        "y": 73,
+        "width": 528,
+        "height": 462.875,
+        "bottom": 535.875,
+        "right": 548
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 568,
+        "height": 267,
+        "bottom": 320,
+        "right": 568
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "____",
+          "rect": {
+            "x": 207.5,
+            "y": 298.875,
+            "width": 44,
+            "height": 46,
+            "bottom": 344.875,
+            "right": 251.5
+          }
+        },
+        {
+          "text": "w",
+          "rect": {
+            "x": 207.5,
+            "y": 360.875,
+            "width": 54,
+            "height": 46,
+            "bottom": 406.875,
+            "right": 261.5
+          }
+        },
+        {
+          "text": "r",
+          "rect": {
+            "x": 269.5,
+            "y": 360.875,
+            "width": 54,
+            "height": 46,
+            "bottom": 406.875,
+            "right": 323.5
+          }
+        },
+        {
+          "text": "f",
+          "rect": {
+            "x": 331.5,
+            "y": 360.875,
+            "width": 54,
+            "height": 46,
+            "bottom": 406.875,
+            "right": 385.5
+          }
+        },
+        {
+          "text": "y",
+          "rect": {
+            "x": 393.5,
+            "y": 360.875,
+            "width": 54,
+            "height": 46,
+            "bottom": 406.875,
+            "right": 447.5
+          }
+        },
+        {
+          "text": "l",
+          "rect": {
+            "x": 455.5,
+            "y": 360.875,
+            "width": 54,
+            "height": 46,
+            "bottom": 406.875,
+            "right": 509.5
+          }
+        },
+        {
+          "text": "e",
+          "rect": {
+            "x": 207.5,
+            "y": 414.875,
+            "width": 54,
+            "height": 46,
+            "bottom": 460.875,
+            "right": 261.5
+          }
+        },
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 275.328125,
+            "y": 474.875,
+            "width": 109.609375,
+            "height": 46,
+            "bottom": 520.875,
+            "right": 384.9375
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 392.9375,
+            "y": 474.875,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 520.875,
+            "right": 471.171875
+          }
+        }
+      ],
+      "bar": {
+        "width": 568,
+        "scroll": 568
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 375,
+      "height": 667,
+      "screen": [
+        768,
+        1024,
+        1,
+        375
+      ],
+      "active": true,
+      "stage": {
+        "x": 20,
+        "y": 73,
+        "width": 335,
+        "height": 740.3125,
+        "bottom": 813.3125,
+        "right": 355
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 375,
+        "height": 614,
+        "bottom": 667,
+        "right": 375
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "e",
+          "rect": {
+            "x": 163,
+            "y": 638.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 684.3125,
+            "right": 212
+          }
+        },
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 29,
+            "y": 698.3125,
+            "width": 317,
+            "height": 46,
+            "bottom": 744.3125,
+            "right": 346
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 148.375,
+            "y": 752.3125,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 798.3125,
+            "right": 226.609375
+          }
+        }
+      ],
+      "bar": {
+        "width": 375,
+        "scroll": 375
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 667,
+      "height": 375,
+      "screen": [
+        768,
+        1024,
+        1,
+        667
+      ],
+      "active": true,
+      "stage": {
+        "x": 22,
+        "y": 75,
+        "width": 623,
+        "height": 358.875,
+        "bottom": 433.875,
+        "right": 645
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 667,
+        "height": 322,
+        "bottom": 375,
+        "right": 667
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 340.75,
+            "y": 370.875,
+            "width": 109.609375,
+            "height": 46,
+            "bottom": 416.875,
+            "right": 450.359375
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 458.359375,
+            "y": 370.875,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 416.875,
+            "right": 536.59375
+          }
+        }
+      ],
+      "bar": {
+        "width": 667,
+        "scroll": 667
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 390,
+      "height": 844,
+      "screen": [
+        768,
+        1024,
+        1,
+        390
+      ],
+      "active": true,
+      "stage": {
+        "x": 20,
+        "y": 73,
+        "width": 350,
+        "height": 728.0625,
+        "bottom": 801.0625,
+        "right": 370
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 390,
+        "height": 791,
+        "bottom": 844,
+        "right": 390
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 844,
+      "height": 390,
+      "screen": [
+        768,
+        1024,
+        1,
+        844
+      ],
+      "active": true,
+      "stage": {
+        "x": 22,
+        "y": 75,
+        "width": 800,
+        "height": 367.375,
+        "bottom": 442.375,
+        "right": 822
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 844,
+        "height": 337,
+        "bottom": 390,
+        "right": 844
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 460.21875,
+            "y": 379.375,
+            "width": 109.609375,
+            "height": 46,
+            "bottom": 425.375,
+            "right": 569.828125
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 577.828125,
+            "y": 379.375,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 425.375,
+            "right": 656.0625
+          }
+        }
+      ],
+      "bar": {
+        "width": 844,
+        "scroll": 844
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 430,
+      "height": 932,
+      "screen": [
+        768,
+        1024,
+        1,
+        430
+      ],
+      "active": true,
+      "stage": {
+        "x": 20,
+        "y": 73,
+        "width": 390,
+        "height": 632.3125,
+        "bottom": 705.3125,
+        "right": 410
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 430,
+        "height": 879,
+        "bottom": 932,
+        "right": 430
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 430,
+        "scroll": 430
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 932,
+      "height": 430,
+      "screen": [
+        768,
+        1024,
+        1,
+        932
+      ],
+      "active": true,
+      "stage": {
+        "x": 22,
+        "y": 75,
+        "width": 888,
+        "height": 326.1875,
+        "bottom": 401.1875,
+        "right": 910
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 932,
+        "height": 377,
+        "bottom": 430,
+        "right": 932
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 932,
+        "scroll": 932
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 1024,
+      "height": 600,
+      "screen": [
+        768,
+        1024,
+        1,
+        1024
+      ],
+      "active": true,
+      "stage": {
+        "x": 52,
+        "y": 69,
+        "width": 920,
+        "height": 428.46875,
+        "bottom": 497.46875,
+        "right": 972
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1024,
+        "height": 547,
+        "bottom": 600,
+        "right": 1024
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1024,
+        "scroll": 1024
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 3,
+      "width": 600,
+      "height": 520,
+      "screen": [
+        768,
+        1024,
+        1,
+        600
+      ],
+      "active": true,
+      "stage": {
+        "x": 22,
+        "y": 75,
+        "width": 556,
+        "height": 458.375,
+        "bottom": 533.375,
+        "right": 578
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 600,
+        "height": 467,
+        "bottom": 520,
+        "right": 600
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 600,
+        "scroll": 600
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 768,
+      "height": 1024,
+      "screen": [
+        768,
+        1024,
+        1,
+        768
+      ],
+      "active": true,
+      "stage": {
+        "x": 22,
+        "y": 69,
+        "width": 724,
+        "height": 435.375,
+        "bottom": 504.375,
+        "right": 746
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 768,
+        "height": 683,
+        "bottom": 736,
+        "right": 768
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 768,
+        "scroll": 768
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 1024,
+      "height": 768,
+      "screen": [
+        768,
+        1024,
+        1,
+        1024
+      ],
+      "active": true,
+      "stage": {
+        "x": 52,
+        "y": 69,
+        "width": 920,
+        "height": 283.75,
+        "bottom": 352.75,
+        "right": 972
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1024,
+        "height": 467,
+        "bottom": 520,
+        "right": 1024
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1024,
+        "scroll": 1024
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 744,
+      "height": 1133,
+      "screen": [
+        768,
+        1024,
+        1,
+        744
+      ],
+      "active": true,
+      "stage": {
+        "x": 30,
+        "y": 83,
+        "width": 684,
+        "height": 632.734375,
+        "bottom": 715.734375,
+        "right": 714
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 744,
+        "height": 695,
+        "bottom": 748,
+        "right": 744
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 744,
+        "scroll": 744
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 1133,
+      "height": 744,
+      "screen": [
+        768,
+        1024,
+        1,
+        1133
+      ],
+      "active": true,
+      "stage": {
+        "x": 24,
+        "y": 77,
+        "width": 1085,
+        "height": 317.90625,
+        "bottom": 394.90625,
+        "right": 1109
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1133,
+        "height": 395,
+        "bottom": 448,
+        "right": 1133
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1133,
+        "scroll": 1133
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 820,
+      "height": 1180,
+      "screen": [
+        768,
+        1024,
+        1,
+        820
+      ],
+      "active": true,
+      "stage": {
+        "x": 30,
+        "y": 83,
+        "width": 760,
+        "height": 632.734375,
+        "bottom": 715.734375,
+        "right": 790
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 820,
+        "height": 735,
+        "bottom": 788,
+        "right": 820
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 820,
+        "scroll": 820
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 1180,
+      "height": 820,
+      "screen": [
+        768,
+        1024,
+        1,
+        1180
+      ],
+      "active": true,
+      "stage": {
+        "x": 26.125,
+        "y": 79.125,
+        "width": 1127.75,
+        "height": 333.4375,
+        "bottom": 412.5625,
+        "right": 1153.875
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1180,
+        "height": 471,
+        "bottom": 524,
+        "right": 1180
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1180,
+        "scroll": 1180
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 834,
+      "height": 1194,
+      "screen": [
+        768,
+        1024,
+        1,
+        834
+      ],
+      "active": true,
+      "stage": {
+        "x": 30,
+        "y": 83,
+        "width": 774,
+        "height": 632.734375,
+        "bottom": 715.734375,
+        "right": 804
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 834,
+        "height": 749,
+        "bottom": 802,
+        "right": 834
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 834,
+        "scroll": 834
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 1194,
+      "height": 834,
+      "screen": [
+        768,
+        1024,
+        1,
+        1194
+      ],
+      "active": true,
+      "stage": {
+        "x": 26.546875,
+        "y": 79.546875,
+        "width": 1140.90625,
+        "height": 337.640625,
+        "bottom": 417.1875,
+        "right": 1167.453125
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1194,
+        "height": 485,
+        "bottom": 538,
+        "right": 1194
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1194,
+        "scroll": 1194
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 1024,
+      "height": 1366,
+      "screen": [
+        768,
+        1024,
+        1,
+        1024
+      ],
+      "active": true,
+      "stage": {
+        "x": 32,
+        "y": 247.515625,
+        "width": 960,
+        "height": 587.984375,
+        "bottom": 835.5,
+        "right": 992
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1024,
+        "height": 977,
+        "bottom": 1030,
+        "right": 1024
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1024,
+        "scroll": 1024
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 1366,
+      "height": 1024,
+      "screen": [
+        768,
+        1024,
+        1,
+        1366
+      ],
+      "active": true,
+      "stage": {
+        "x": 183,
+        "y": 211.5,
+        "width": 1000,
+        "height": 358,
+        "bottom": 569.5,
+        "right": 1183
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1366,
+        "height": 675,
+        "bottom": 728,
+        "right": 1366
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1366,
+        "scroll": 1366
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 600,
+      "height": 744,
+      "screen": [
+        768,
+        1024,
+        1,
+        600
+      ],
+      "active": true,
+      "stage": {
+        "x": 22,
+        "y": 75,
+        "width": 556,
+        "height": 493.359375,
+        "bottom": 568.359375,
+        "right": 578
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 600,
+        "height": 467,
+        "bottom": 520,
+        "right": 600
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 202.078125,
+            "y": 505.359375,
+            "width": 109.609375,
+            "height": 46,
+            "bottom": 551.359375,
+            "right": 311.6875
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 319.6875,
+            "y": 505.359375,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 551.359375,
+            "right": 397.921875
+          }
+        }
+      ],
+      "bar": {
+        "width": 600,
+        "scroll": 600
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 507,
+      "height": 768,
+      "screen": [
+        768,
+        1024,
+        1,
+        507
+      ],
+      "active": true,
+      "stage": {
+        "x": 20,
+        "y": 73,
+        "width": 467,
+        "height": 489.359375,
+        "bottom": 562.359375,
+        "right": 487
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 507,
+        "height": 491,
+        "bottom": 544,
+        "right": 507
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 155.578125,
+            "y": 501.359375,
+            "width": 109.609375,
+            "height": 46,
+            "bottom": 547.359375,
+            "right": 265.1875
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 273.1875,
+            "y": 501.359375,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 547.359375,
+            "right": 351.421875
+          }
+        }
+      ],
+      "bar": {
+        "width": 507,
+        "scroll": 507
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 320,
+      "height": 568,
+      "screen": [
+        768,
+        1024,
+        1,
+        320
+      ],
+      "active": true,
+      "stage": {
+        "x": 20,
+        "y": 73,
+        "width": 280,
+        "height": 543.359375,
+        "bottom": 616.359375,
+        "right": 300
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 320,
+        "height": 291,
+        "bottom": 344,
+        "right": 320
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 29,
+            "y": 501.359375,
+            "width": 262,
+            "height": 46,
+            "bottom": 547.359375,
+            "right": 291
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 120.875,
+            "y": 555.359375,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 601.359375,
+            "right": 199.109375
+          }
+        }
+      ],
+      "bar": {
+        "width": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 568,
+      "height": 320,
+      "screen": [
+        768,
+        1024,
+        1,
+        568
+      ],
+      "active": true,
+      "stage": {
+        "x": 20,
+        "y": 73,
+        "width": 528,
+        "height": 262.171875,
+        "bottom": 335.171875,
+        "right": 548
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 568,
+        "height": 267,
+        "bottom": 320,
+        "right": 568
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 568,
+        "scroll": 568
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 375,
+      "height": 667,
+      "screen": [
+        768,
+        1024,
+        1,
+        375
+      ],
+      "active": true,
+      "stage": {
+        "x": 20,
+        "y": 73,
+        "width": 335,
+        "height": 543.359375,
+        "bottom": 616.359375,
+        "right": 355
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 375,
+        "height": 390,
+        "bottom": 443,
+        "right": 375
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 29,
+            "y": 501.359375,
+            "width": 317,
+            "height": 46,
+            "bottom": 547.359375,
+            "right": 346
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 148.375,
+            "y": 555.359375,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 601.359375,
+            "right": 226.609375
+          }
+        }
+      ],
+      "bar": {
+        "width": 375,
+        "scroll": 375
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 667,
+      "height": 375,
+      "screen": [
+        768,
+        1024,
+        1,
+        667
+      ],
+      "active": true,
+      "stage": {
+        "x": 22,
+        "y": 75,
+        "width": 623,
+        "height": 266.171875,
+        "bottom": 341.171875,
+        "right": 645
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 667,
+        "height": 322,
+        "bottom": 375,
+        "right": 667
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 667,
+        "scroll": 667
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 390,
+      "height": 844,
+      "screen": [
+        768,
+        1024,
+        1,
+        390
+      ],
+      "active": true,
+      "stage": {
+        "x": 20,
+        "y": 73,
+        "width": 350,
+        "height": 543.359375,
+        "bottom": 616.359375,
+        "right": 370
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 390,
+        "height": 567,
+        "bottom": 620,
+        "right": 390
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 844,
+      "height": 390,
+      "screen": [
+        768,
+        1024,
+        1,
+        844
+      ],
+      "active": true,
+      "stage": {
+        "x": 22,
+        "y": 75,
+        "width": 800,
+        "height": 266.171875,
+        "bottom": 341.171875,
+        "right": 822
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 844,
+        "height": 337,
+        "bottom": 390,
+        "right": 844
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 844,
+        "scroll": 844
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 430,
+      "height": 932,
+      "screen": [
+        768,
+        1024,
+        1,
+        430
+      ],
+      "active": true,
+      "stage": {
+        "x": 20,
+        "y": 73,
+        "width": 390,
+        "height": 543.359375,
+        "bottom": 616.359375,
+        "right": 410
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 430,
+        "height": 655,
+        "bottom": 708,
+        "right": 430
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 430,
+        "scroll": 430
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 932,
+      "height": 430,
+      "screen": [
+        768,
+        1024,
+        1,
+        932
+      ],
+      "active": true,
+      "stage": {
+        "x": 22,
+        "y": 75,
+        "width": 888,
+        "height": 255.671875,
+        "bottom": 330.671875,
+        "right": 910
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 932,
+        "height": 377,
+        "bottom": 430,
+        "right": 932
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 932,
+        "scroll": 932
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 1024,
+      "height": 600,
+      "screen": [
+        768,
+        1024,
+        1,
+        1024
+      ],
+      "active": true,
+      "stage": {
+        "x": 52,
+        "y": 69,
+        "width": 920,
+        "height": 283.75,
+        "bottom": 352.75,
+        "right": 972
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1024,
+        "height": 299,
+        "bottom": 352,
+        "right": 1024
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1024,
+        "scroll": 1024
+      }
+    },
+    {
+      "path": "/grade/lop2/gsunit1.html?game=letters",
+      "phase": 4,
+      "width": 600,
+      "height": 520,
+      "screen": [
+        768,
+        1024,
+        1,
+        600
+      ],
+      "active": true,
+      "stage": {
+        "x": 22,
+        "y": 75,
+        "width": 556,
+        "height": 266.171875,
+        "bottom": 341.171875,
+        "right": 578
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 600,
+        "height": 243,
+        "bottom": 296,
+        "right": 600
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 295.515625,
+            "y": 278.171875,
+            "width": 109.609375,
+            "height": 46,
+            "bottom": 324.171875,
+            "right": 405.125
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 413.125,
+            "y": 278.171875,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 324.171875,
+            "right": 491.359375
+          }
+        }
+      ],
+      "bar": {
+        "width": 600,
+        "scroll": 600
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 768,
+      "height": 1024,
+      "screen": [
+        768,
+        1024,
+        1,
+        768
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 61,
+        "width": 744,
+        "height": 483.78125,
+        "bottom": 544.78125,
+        "right": 756
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 768,
+        "height": 971,
+        "bottom": 1024,
+        "right": 768
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 768,
+        "scroll": 768
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 1024,
+      "height": 768,
+      "screen": [
+        768,
+        1024,
+        1,
+        1024
+      ],
+      "active": true,
+      "stage": {
+        "x": 42,
+        "y": 61,
+        "width": 940,
+        "height": 428.46875,
+        "bottom": 489.46875,
+        "right": 982
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1024,
+        "height": 715,
+        "bottom": 768,
+        "right": 1024
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1024,
+        "scroll": 1024
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 744,
+      "height": 1133,
+      "screen": [
+        768,
+        1024,
+        1,
+        744
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 720,
+        "height": 834.59375,
+        "bottom": 899.59375,
+        "right": 732
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 744,
+        "height": 1080,
+        "bottom": 1133,
+        "right": 744
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 744,
+        "scroll": 744
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 1133,
+      "height": 744,
+      "screen": [
+        768,
+        1024,
+        1,
+        1133
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 1109,
+        "height": 638.59375,
+        "bottom": 703.59375,
+        "right": 1121
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1133,
+        "height": 691,
+        "bottom": 744,
+        "right": 1133
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1133,
+        "scroll": 1133
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 820,
+      "height": 1180,
+      "screen": [
+        768,
+        1024,
+        1,
+        820
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 796,
+        "height": 834.59375,
+        "bottom": 899.59375,
+        "right": 808
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 820,
+        "height": 1127,
+        "bottom": 1180,
+        "right": 820
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 820,
+        "scroll": 820
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 1180,
+      "height": 820,
+      "screen": [
+        768,
+        1024,
+        1,
+        1180
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 1156,
+        "height": 638.59375,
+        "bottom": 703.59375,
+        "right": 1168
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1180,
+        "height": 767,
+        "bottom": 820,
+        "right": 1180
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1180,
+        "scroll": 1180
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 834,
+      "height": 1194,
+      "screen": [
+        768,
+        1024,
+        1,
+        834
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 810,
+        "height": 834.59375,
+        "bottom": 899.59375,
+        "right": 822
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 834,
+        "height": 1141,
+        "bottom": 1194,
+        "right": 834
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 834,
+        "scroll": 834
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 1194,
+      "height": 834,
+      "screen": [
+        768,
+        1024,
+        1,
+        1194
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 1170,
+        "height": 638.59375,
+        "bottom": 703.59375,
+        "right": 1182
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1194,
+        "height": 781,
+        "bottom": 834,
+        "right": 1194
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1194,
+        "scroll": 1194
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 1024,
+      "height": 1366,
+      "screen": [
+        768,
+        1024,
+        1,
+        1024
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 375.203125,
+        "width": 1000,
+        "height": 668.59375,
+        "bottom": 1043.796875,
+        "right": 1012
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1024,
+        "height": 1313,
+        "bottom": 1366,
+        "right": 1024
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1024,
+        "scroll": 1024
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 1366,
+      "height": 1024,
+      "screen": [
+        768,
+        1024,
+        1,
+        1366
+      ],
+      "active": true,
+      "stage": {
+        "x": 163,
+        "y": 308.6875,
+        "width": 1040,
+        "height": 459.625,
+        "bottom": 768.3125,
+        "right": 1203
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1366,
+        "height": 971,
+        "bottom": 1024,
+        "right": 1366
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1366,
+        "scroll": 1366
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 600,
+      "height": 744,
+      "screen": [
+        768,
+        1024,
+        1,
+        600
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 576,
+        "height": 594.5625,
+        "bottom": 659.5625,
+        "right": 588
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 600,
+        "height": 691,
+        "bottom": 744,
+        "right": 600
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 600,
+        "scroll": 600
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 507,
+      "height": 768,
+      "screen": [
+        768,
+        1024,
+        1,
+        507
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 483,
+        "height": 590.5625,
+        "bottom": 655.5625,
+        "right": 495
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 507,
+        "height": 715,
+        "bottom": 768,
+        "right": 507
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 507,
+        "scroll": 507
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 320,
+      "height": 568,
+      "screen": [
+        768,
+        1024,
+        1,
+        320
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 296,
+        "height": 740.3125,
+        "bottom": 805.3125,
+        "right": 308
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 320,
+        "height": 515,
+        "bottom": 568,
+        "right": 320
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "c",
+          "rect": {
+            "x": 21.5,
+            "y": 576.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 622.3125,
+            "right": 70.5
+          }
+        },
+        {
+          "text": "l",
+          "rect": {
+            "x": 78.5,
+            "y": 576.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 622.3125,
+            "right": 127.5
+          }
+        },
+        {
+          "text": "n",
+          "rect": {
+            "x": 135.5,
+            "y": 576.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 622.3125,
+            "right": 184.5
+          }
+        },
+        {
+          "text": "r",
+          "rect": {
+            "x": 192.5,
+            "y": 576.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 622.3125,
+            "right": 241.5
+          }
+        },
+        {
+          "text": "j",
+          "rect": {
+            "x": 249.5,
+            "y": 576.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 622.3125,
+            "right": 298.5
+          }
+        },
+        {
+          "text": "p",
+          "rect": {
+            "x": 135.5,
+            "y": 630.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 676.3125,
+            "right": 184.5
+          }
+        },
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 21,
+            "y": 690.3125,
+            "width": 278,
+            "height": 46,
+            "bottom": 736.3125,
+            "right": 299
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 120.875,
+            "y": 744.3125,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 790.3125,
+            "right": 199.109375
+          }
+        }
+      ],
+      "bar": {
+        "width": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 568,
+      "height": 320,
+      "screen": [
+        768,
+        1024,
+        1,
+        568
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 544,
+        "height": 462.875,
+        "bottom": 527.875,
+        "right": 556
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 568,
+        "height": 267,
+        "bottom": 320,
+        "right": 568
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "c",
+          "rect": {
+            "x": 205.09375,
+            "y": 352.875,
+            "width": 54,
+            "height": 46,
+            "bottom": 398.875,
+            "right": 259.09375
+          }
+        },
+        {
+          "text": "l",
+          "rect": {
+            "x": 267.09375,
+            "y": 352.875,
+            "width": 54,
+            "height": 46,
+            "bottom": 398.875,
+            "right": 321.09375
+          }
+        },
+        {
+          "text": "n",
+          "rect": {
+            "x": 329.09375,
+            "y": 352.875,
+            "width": 54,
+            "height": 46,
+            "bottom": 398.875,
+            "right": 383.09375
+          }
+        },
+        {
+          "text": "r",
+          "rect": {
+            "x": 391.09375,
+            "y": 352.875,
+            "width": 54,
+            "height": 46,
+            "bottom": 398.875,
+            "right": 445.09375
+          }
+        },
+        {
+          "text": "j",
+          "rect": {
+            "x": 453.09375,
+            "y": 352.875,
+            "width": 54,
+            "height": 46,
+            "bottom": 398.875,
+            "right": 507.09375
+          }
+        },
+        {
+          "text": "p",
+          "rect": {
+            "x": 205.09375,
+            "y": 406.875,
+            "width": 54,
+            "height": 46,
+            "bottom": 452.875,
+            "right": 259.09375
+          }
+        },
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 278.125,
+            "y": 466.875,
+            "width": 109.609375,
+            "height": 46,
+            "bottom": 512.875,
+            "right": 387.734375
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 395.734375,
+            "y": 466.875,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 512.875,
+            "right": 473.96875
+          }
+        }
+      ],
+      "bar": {
+        "width": 568,
+        "scroll": 568
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 375,
+      "height": 667,
+      "screen": [
+        768,
+        1024,
+        1,
+        375
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 351,
+        "height": 740.3125,
+        "bottom": 805.3125,
+        "right": 363
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 375,
+        "height": 614,
+        "bottom": 667,
+        "right": 375
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "p",
+          "rect": {
+            "x": 163,
+            "y": 630.3125,
+            "width": 49,
+            "height": 46,
+            "bottom": 676.3125,
+            "right": 212
+          }
+        },
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 21,
+            "y": 690.3125,
+            "width": 333,
+            "height": 46,
+            "bottom": 736.3125,
+            "right": 354
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 148.375,
+            "y": 744.3125,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 790.3125,
+            "right": 226.609375
+          }
+        }
+      ],
+      "bar": {
+        "width": 375,
+        "scroll": 375
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 667,
+      "height": 375,
+      "screen": [
+        768,
+        1024,
+        1,
+        667
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 643,
+        "height": 367.375,
+        "bottom": 432.375,
+        "right": 655
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 667,
+        "height": 322,
+        "bottom": 375,
+        "right": 667
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 344.25,
+            "y": 369.375,
+            "width": 109.609375,
+            "height": 46,
+            "bottom": 415.375,
+            "right": 453.859375
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 461.859375,
+            "y": 369.375,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 415.375,
+            "right": 540.09375
+          }
+        }
+      ],
+      "bar": {
+        "width": 667,
+        "scroll": 667
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 390,
+      "height": 844,
+      "screen": [
+        768,
+        1024,
+        1,
+        390
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 366,
+        "height": 644.5625,
+        "bottom": 709.5625,
+        "right": 378
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 390,
+        "height": 791,
+        "bottom": 844,
+        "right": 390
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 844,
+      "height": 390,
+      "screen": [
+        768,
+        1024,
+        1,
+        844
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 820,
+        "height": 367.375,
+        "bottom": 432.375,
+        "right": 832
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 844,
+        "height": 337,
+        "bottom": 390,
+        "right": 844
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 463.71875,
+            "y": 369.375,
+            "width": 109.609375,
+            "height": 46,
+            "bottom": 415.375,
+            "right": 573.328125
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 581.328125,
+            "y": 369.375,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 415.375,
+            "right": 659.5625
+          }
+        }
+      ],
+      "bar": {
+        "width": 844,
+        "scroll": 844
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 430,
+      "height": 932,
+      "screen": [
+        768,
+        1024,
+        1,
+        430
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 406,
+        "height": 644.5625,
+        "bottom": 709.5625,
+        "right": 418
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 430,
+        "height": 879,
+        "bottom": 932,
+        "right": 430
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 430,
+        "scroll": 430
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 932,
+      "height": 430,
+      "screen": [
+        768,
+        1024,
+        1,
+        932
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 908,
+        "height": 326.1875,
+        "bottom": 391.1875,
+        "right": 920
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 932,
+        "height": 377,
+        "bottom": 430,
+        "right": 932
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 932,
+        "scroll": 932
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 1024,
+      "height": 600,
+      "screen": [
+        768,
+        1024,
+        1,
+        1024
+      ],
+      "active": true,
+      "stage": {
+        "x": 42,
+        "y": 61,
+        "width": 940,
+        "height": 428.46875,
+        "bottom": 489.46875,
+        "right": 982
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1024,
+        "height": 547,
+        "bottom": 600,
+        "right": 1024
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1024,
+        "scroll": 1024
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 3,
+      "width": 600,
+      "height": 520,
+      "screen": [
+        768,
+        1024,
+        1,
+        600
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 576,
+        "height": 421.375,
+        "bottom": 486.375,
+        "right": 588
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 600,
+        "height": 467,
+        "bottom": 520,
+        "right": 600
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 600,
+        "scroll": 600
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 768,
+      "height": 1024,
+      "screen": [
+        768,
+        1024,
+        1,
+        768
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 61,
+        "width": 744,
+        "height": 435.375,
+        "bottom": 496.375,
+        "right": 756
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 768,
+        "height": 683,
+        "bottom": 736,
+        "right": 768
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 768,
+        "scroll": 768
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 1024,
+      "height": 768,
+      "screen": [
+        768,
+        1024,
+        1,
+        1024
+      ],
+      "active": true,
+      "stage": {
+        "x": 42,
+        "y": 61,
+        "width": 940,
+        "height": 283.75,
+        "bottom": 344.75,
+        "right": 982
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1024,
+        "height": 467,
+        "bottom": 520,
+        "right": 1024
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1024,
+        "scroll": 1024
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 744,
+      "height": 1133,
+      "screen": [
+        768,
+        1024,
+        1,
+        744
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 720,
+        "height": 632.734375,
+        "bottom": 697.734375,
+        "right": 732
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 744,
+        "height": 695,
+        "bottom": 748,
+        "right": 744
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 744,
+        "scroll": 744
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 1133,
+      "height": 744,
+      "screen": [
+        768,
+        1024,
+        1,
+        1133
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 1109,
+        "height": 317.90625,
+        "bottom": 382.90625,
+        "right": 1121
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1133,
+        "height": 395,
+        "bottom": 448,
+        "right": 1133
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1133,
+        "scroll": 1133
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 820,
+      "height": 1180,
+      "screen": [
+        768,
+        1024,
+        1,
+        820
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 796,
+        "height": 632.734375,
+        "bottom": 697.734375,
+        "right": 808
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 820,
+        "height": 735,
+        "bottom": 788,
+        "right": 820
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 820,
+        "scroll": 820
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 1180,
+      "height": 820,
+      "screen": [
+        768,
+        1024,
+        1,
+        1180
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 1156,
+        "height": 333.4375,
+        "bottom": 398.4375,
+        "right": 1168
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1180,
+        "height": 471,
+        "bottom": 524,
+        "right": 1180
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1180,
+        "scroll": 1180
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 834,
+      "height": 1194,
+      "screen": [
+        768,
+        1024,
+        1,
+        834
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 810,
+        "height": 632.734375,
+        "bottom": 697.734375,
+        "right": 822
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 834,
+        "height": 749,
+        "bottom": 802,
+        "right": 834
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 834,
+        "scroll": 834
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 1194,
+      "height": 834,
+      "screen": [
+        768,
+        1024,
+        1,
+        1194
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 1170,
+        "height": 337.640625,
+        "bottom": 402.640625,
+        "right": 1182
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1194,
+        "height": 485,
+        "bottom": 538,
+        "right": 1194
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1194,
+        "scroll": 1194
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 1024,
+      "height": 1366,
+      "screen": [
+        768,
+        1024,
+        1,
+        1024
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 247.515625,
+        "width": 1000,
+        "height": 587.984375,
+        "bottom": 835.5,
+        "right": 1012
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1024,
+        "height": 977,
+        "bottom": 1030,
+        "right": 1024
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1024,
+        "scroll": 1024
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 1366,
+      "height": 1024,
+      "screen": [
+        768,
+        1024,
+        1,
+        1366
+      ],
+      "active": true,
+      "stage": {
+        "x": 163,
+        "y": 211.5,
+        "width": 1040,
+        "height": 358,
+        "bottom": 569.5,
+        "right": 1203
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1366,
+        "height": 675,
+        "bottom": 728,
+        "right": 1366
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1366,
+        "scroll": 1366
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 600,
+      "height": 744,
+      "screen": [
+        768,
+        1024,
+        1,
+        600
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 576,
+        "height": 493.359375,
+        "bottom": 558.359375,
+        "right": 588
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 600,
+        "height": 467,
+        "bottom": 520,
+        "right": 600
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 202.078125,
+            "y": 495.359375,
+            "width": 109.609375,
+            "height": 46,
+            "bottom": 541.359375,
+            "right": 311.6875
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 319.6875,
+            "y": 495.359375,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 541.359375,
+            "right": 397.921875
+          }
+        }
+      ],
+      "bar": {
+        "width": 600,
+        "scroll": 600
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 507,
+      "height": 768,
+      "screen": [
+        768,
+        1024,
+        1,
+        507
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 483,
+        "height": 489.359375,
+        "bottom": 554.359375,
+        "right": 495
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 507,
+        "height": 491,
+        "bottom": 544,
+        "right": 507
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 507,
+        "scroll": 507
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 320,
+      "height": 568,
+      "screen": [
+        768,
+        1024,
+        1,
+        320
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 296,
+        "height": 543.359375,
+        "bottom": 608.359375,
+        "right": 308
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 320,
+        "height": 291,
+        "bottom": 344,
+        "right": 320
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 21,
+            "y": 493.359375,
+            "width": 278,
+            "height": 46,
+            "bottom": 539.359375,
+            "right": 299
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 120.875,
+            "y": 547.359375,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 593.359375,
+            "right": 199.109375
+          }
+        }
+      ],
+      "bar": {
+        "width": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 568,
+      "height": 320,
+      "screen": [
+        768,
+        1024,
+        1,
+        568
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 544,
+        "height": 262.171875,
+        "bottom": 327.171875,
+        "right": 556
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 568,
+        "height": 267,
+        "bottom": 320,
+        "right": 568
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 568,
+        "scroll": 568
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 375,
+      "height": 667,
+      "screen": [
+        768,
+        1024,
+        1,
+        375
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 351,
+        "height": 543.359375,
+        "bottom": 608.359375,
+        "right": 363
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 375,
+        "height": 390,
+        "bottom": 443,
+        "right": 375
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 21,
+            "y": 493.359375,
+            "width": 333,
+            "height": 46,
+            "bottom": 539.359375,
+            "right": 354
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 148.375,
+            "y": 547.359375,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 593.359375,
+            "right": 226.609375
+          }
+        }
+      ],
+      "bar": {
+        "width": 375,
+        "scroll": 375
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 667,
+      "height": 375,
+      "screen": [
+        768,
+        1024,
+        1,
+        667
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 643,
+        "height": 266.171875,
+        "bottom": 331.171875,
+        "right": 655
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 667,
+        "height": 322,
+        "bottom": 375,
+        "right": 667
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 667,
+        "scroll": 667
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 390,
+      "height": 844,
+      "screen": [
+        768,
+        1024,
+        1,
+        390
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 366,
+        "height": 543.359375,
+        "bottom": 608.359375,
+        "right": 378
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 390,
+        "height": 567,
+        "bottom": 620,
+        "right": 390
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 844,
+      "height": 390,
+      "screen": [
+        768,
+        1024,
+        1,
+        844
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 820,
+        "height": 266.171875,
+        "bottom": 331.171875,
+        "right": 832
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 844,
+        "height": 337,
+        "bottom": 390,
+        "right": 844
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 844,
+        "scroll": 844
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 430,
+      "height": 932,
+      "screen": [
+        768,
+        1024,
+        1,
+        430
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 406,
+        "height": 543.359375,
+        "bottom": 608.359375,
+        "right": 418
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 430,
+        "height": 655,
+        "bottom": 708,
+        "right": 430
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 430,
+        "scroll": 430
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 932,
+      "height": 430,
+      "screen": [
+        768,
+        1024,
+        1,
+        932
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 908,
+        "height": 255.671875,
+        "bottom": 320.671875,
+        "right": 920
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 932,
+        "height": 377,
+        "bottom": 430,
+        "right": 932
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 932,
+        "scroll": 932
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 1024,
+      "height": 600,
+      "screen": [
+        768,
+        1024,
+        1,
+        1024
+      ],
+      "active": true,
+      "stage": {
+        "x": 42,
+        "y": 61,
+        "width": 940,
+        "height": 283.75,
+        "bottom": 344.75,
+        "right": 982
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 1024,
+        "height": 299,
+        "bottom": 352,
+        "right": 1024
+      },
+      "overflow": false,
+      "clipped": [],
+      "bar": {
+        "width": 1024,
+        "scroll": 1024
+      }
+    },
+    {
+      "path": "/grade/lop6/unit1.html?game=letters",
+      "phase": 4,
+      "width": 600,
+      "height": 520,
+      "screen": [
+        768,
+        1024,
+        1,
+        600
+      ],
+      "active": true,
+      "stage": {
+        "x": 12,
+        "y": 65,
+        "width": 576,
+        "height": 266.171875,
+        "bottom": 331.171875,
+        "right": 588
+      },
+      "panel": {
+        "x": 0,
+        "y": 53,
+        "width": 600,
+        "height": 243,
+        "bottom": 296,
+        "right": 600
+      },
+      "overflow": false,
+      "clipped": [
+        {
+          "text": "Kiểm tra",
+          "rect": {
+            "x": 299.015625,
+            "y": 268.171875,
+            "width": 109.609375,
+            "height": 46,
+            "bottom": 314.171875,
+            "right": 408.625
+          }
+        },
+        {
+          "text": "Gợi ý",
+          "rect": {
+            "x": 416.625,
+            "y": 268.171875,
+            "width": 78.234375,
+            "height": 46,
+            "bottom": 314.171875,
+            "right": 494.859375
+          }
+        }
+      ],
+      "bar": {
+        "width": 600,
+        "scroll": 600
+      }
+    },
+    {
+      "grade": 1,
+      "device": "iPad",
+      "realEntry": true,
+      "passed": true
+    },
+    {
+      "grade": 2,
+      "device": "iPad",
+      "realEntry": true,
+      "passed": true
+    },
+    {
+      "grade": 3,
+      "device": "iPad",
+      "realEntry": true,
+      "passed": true
+    },
+    {
+      "grade": 4,
+      "device": "iPad",
+      "realEntry": true,
+      "passed": true
+    },
+    {
+      "grade": 5,
+      "device": "iPad",
+      "realEntry": true,
+      "passed": true
+    },
+    {
+      "grade": 6,
+      "device": "iPad",
+      "realEntry": true,
+      "passed": true
+    },
+    {
+      "grade": 7,
+      "device": "iPad",
+      "realEntry": true,
+      "passed": true
+    },
+    {
+      "grade": 8,
+      "device": "iPad",
+      "realEntry": true,
+      "passed": true
+    },
+    {
+      "grade": 9,
+      "device": "iPad",
+      "realEntry": true,
+      "passed": true
+    },
+    {
+      "grade": 10,
+      "device": "iPad",
+      "realEntry": true,
+      "passed": true
+    },
+    {
+      "grade": 11,
+      "device": "iPad",
+      "realEntry": true,
+      "passed": true
+    },
+    {
+      "grade": 12,
+      "device": "iPad",
+      "realEntry": true,
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "width": 320,
+      "height": 568,
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "width": 568,
+      "height": 320,
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "width": 375,
+      "height": 667,
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "width": 667,
+      "height": 375,
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "width": 390,
+      "height": 844,
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "width": 844,
+      "height": 390,
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "width": 430,
+      "height": 932,
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "width": 932,
+      "height": 430,
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "width": 360,
+      "height": 800,
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "width": 800,
+      "height": 360,
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "width": 412,
+      "height": 915,
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "width": 915,
+      "height": 412,
+      "passed": true
+    }
+  ],
+  "errors": []
+}

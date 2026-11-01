@@ -1,7 +1,7 @@
 /* Shared presentation only: original game buttons, forms and round state stay in place. */
 (() => {
  'use strict';if(window.DanhGameLayout)return;
- const root=new URL('../',document.currentScript.src),css=document.createElement('link');css.rel='stylesheet';css.href=new URL('shared/game-layout.css?v=ipad-orientation-20261101',root).href;document.head.append(css);
+ const root=new URL('../',document.currentScript.src),css=document.createElement('link');css.rel='stylesheet';css.href=new URL('shared/game-layout.css?v=larger-learning-art-20261101',root).href;document.head.append(css);
  const menus=new Map();let pending=false,tabArrow=false;
  const visible=n=>n?.getClientRects().length>0&&!n.closest('[hidden],.tab-content:not(.active)');
  const make=(tag,cls,text)=>{const n=document.createElement(tag);n.className=cls;if(text)n.textContent=text;return n;};

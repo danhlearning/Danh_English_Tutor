@@ -1,0 +1,2158 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "label": "g1-letters-768",
+      "portrait": true,
+      "image": {
+        "x": 296,
+        "y": 116.59375,
+        "right": 472,
+        "bottom": 292.59375
+      },
+      "answer": {
+        "x": 360,
+        "y": 363.78125,
+        "right": 408,
+        "bottom": 413.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g1-letters-1024",
+      "portrait": false,
+      "image": {
+        "x": 97.265625,
+        "y": 132.359375,
+        "right": 343.015625,
+        "bottom": 378.109375
+      },
+      "answer": {
+        "x": 401.296875,
+        "y": 167.78125,
+        "right": 449.296875,
+        "bottom": 217.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g1-letters-1032",
+      "portrait": true,
+      "image": {
+        "x": 404,
+        "y": 457.109375,
+        "right": 628,
+        "bottom": 681.109375
+      },
+      "answer": {
+        "x": 488,
+        "y": 778.90625,
+        "right": 544,
+        "bottom": 838.90625
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g1-letters-1376",
+      "portrait": false,
+      "image": {
+        "x": 224.640625,
+        "y": 390.5,
+        "right": 528.640625,
+        "bottom": 694.5
+      },
+      "answer": {
+        "x": 575.890625,
+        "y": 483.484375,
+        "right": 631.890625,
+        "bottom": 543.484375
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g1-typing-768",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 32,
+        "y": 233.15625,
+        "right": 630.65625,
+        "bottom": 287.15625
+      },
+      "bar": 53,
+      "rows": [
+        63.75,
+        63.75,
+        63.75,
+        63.75
+      ],
+      "enter": 63.75,
+      "delete": 63.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g1-typing-1024",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 160,
+        "y": 233.15625,
+        "right": 758.65625,
+        "bottom": 287.15625
+      },
+      "bar": 53,
+      "rows": [
+        53.75,
+        53.75,
+        53.75,
+        53.75
+      ],
+      "enter": 53.75,
+      "delete": 53.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g1-typing-1032",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 164,
+        "y": 241.765625,
+        "right": 750.515625,
+        "bottom": 305.765625
+      },
+      "bar": 53,
+      "rows": [
+        75.75,
+        75.75,
+        75.75,
+        75.75
+      ],
+      "enter": 75.75,
+      "delete": 75.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g1-typing-1376",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 336,
+        "y": 241.765625,
+        "right": 922.515625,
+        "bottom": 305.765625
+      },
+      "bar": 53,
+      "rows": [
+        65.75,
+        65.75,
+        65.75,
+        65.75
+      ],
+      "enter": 65.75,
+      "delete": 65.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g2-letters-768",
+      "portrait": true,
+      "image": {
+        "x": 296,
+        "y": 116.59375,
+        "right": 472,
+        "bottom": 292.59375
+      },
+      "answer": {
+        "x": 384.5,
+        "y": 363.78125,
+        "right": 432.5,
+        "bottom": 413.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g2-letters-1024",
+      "portrait": false,
+      "image": {
+        "x": 97.265625,
+        "y": 132.359375,
+        "right": 343.015625,
+        "bottom": 378.109375
+      },
+      "answer": {
+        "x": 474.296875,
+        "y": 167.78125,
+        "right": 522.296875,
+        "bottom": 217.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g2-letters-1032",
+      "portrait": true,
+      "image": {
+        "x": 404,
+        "y": 457.109375,
+        "right": 628,
+        "bottom": 681.109375
+      },
+      "answer": {
+        "x": 520.1875,
+        "y": 778.90625,
+        "right": 576.1875,
+        "bottom": 838.90625
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g2-letters-1376",
+      "portrait": false,
+      "image": {
+        "x": 224.640625,
+        "y": 390.5,
+        "right": 528.640625,
+        "bottom": 694.5
+      },
+      "answer": {
+        "x": 671.875,
+        "y": 483.484375,
+        "right": 727.875,
+        "bottom": 543.484375
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g2-typing-768",
+      "portrait": true,
+      "image": {
+        "x": 328,
+        "y": 146.578125,
+        "right": 440,
+        "bottom": 258.578125
+      },
+      "answer": {
+        "x": 169.828125,
+        "y": 422.9375,
+        "right": 492.828125,
+        "bottom": 476.9375
+      },
+      "bar": 53,
+      "rows": [
+        63.75,
+        63.75,
+        63.75,
+        63.75
+      ],
+      "enter": 63.75,
+      "delete": 63.75,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g2-typing-1024",
+      "portrait": false,
+      "image": {
+        "x": 185.84375,
+        "y": 137.40625,
+        "right": 370.15625,
+        "bottom": 321.71875
+      },
+      "answer": {
+        "x": 423.8125,
+        "y": 290.9375,
+        "right": 746.8125,
+        "bottom": 344.9375
+      },
+      "bar": 53,
+      "rows": [
+        53.75,
+        53.75,
+        53.75,
+        53.75
+      ],
+      "enter": 53.75,
+      "delete": 53.75,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g2-typing-1032",
+      "portrait": true,
+      "image": {
+        "x": 444,
+        "y": 155.1875,
+        "right": 588,
+        "bottom": 299.1875
+      },
+      "answer": {
+        "x": 264.25,
+        "y": 478.953125,
+        "right": 650.25,
+        "bottom": 542.953125
+      },
+      "bar": 53,
+      "rows": [
+        75.75,
+        75.75,
+        75.75,
+        75.75
+      ],
+      "enter": 75.75,
+      "delete": 75.75,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g2-typing-1376",
+      "portrait": false,
+      "image": {
+        "x": 338,
+        "y": 134.875,
+        "right": 570,
+        "bottom": 366.875
+      },
+      "answer": {
+        "x": 588,
+        "y": 314.953125,
+        "right": 922.5,
+        "bottom": 378.953125
+      },
+      "bar": 53,
+      "rows": [
+        65.75,
+        65.75,
+        65.75,
+        65.75
+      ],
+      "enter": 65.75,
+      "delete": 65.75,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g3-letters-768",
+      "portrait": true,
+      "image": {
+        "x": 296,
+        "y": 116.59375,
+        "right": 472,
+        "bottom": 292.59375
+      },
+      "answer": {
+        "x": 384,
+        "y": 363.78125,
+        "right": 432,
+        "bottom": 413.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g3-letters-1024",
+      "portrait": false,
+      "image": {
+        "x": 97.265625,
+        "y": 132.359375,
+        "right": 343.015625,
+        "bottom": 378.109375
+      },
+      "answer": {
+        "x": 473.296875,
+        "y": 167.78125,
+        "right": 521.296875,
+        "bottom": 217.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g3-letters-1032",
+      "portrait": true,
+      "image": {
+        "x": 404,
+        "y": 457.109375,
+        "right": 628,
+        "bottom": 681.109375
+      },
+      "answer": {
+        "x": 519.59375,
+        "y": 778.90625,
+        "right": 575.59375,
+        "bottom": 838.90625
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g3-letters-1376",
+      "portrait": false,
+      "image": {
+        "x": 224.640625,
+        "y": 390.5,
+        "right": 528.640625,
+        "bottom": 694.5
+      },
+      "answer": {
+        "x": 670.671875,
+        "y": 483.484375,
+        "right": 726.671875,
+        "bottom": 543.484375
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g3-typing-768",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 32,
+        "y": 233.15625,
+        "right": 630.65625,
+        "bottom": 287.15625
+      },
+      "bar": 53,
+      "rows": [
+        63.75,
+        63.75,
+        63.75,
+        63.75
+      ],
+      "enter": 63.75,
+      "delete": 63.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g3-typing-1024",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 160,
+        "y": 233.15625,
+        "right": 758.65625,
+        "bottom": 287.15625
+      },
+      "bar": 53,
+      "rows": [
+        53.75,
+        53.75,
+        53.75,
+        53.75
+      ],
+      "enter": 53.75,
+      "delete": 53.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g3-typing-1032",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 164,
+        "y": 241.765625,
+        "right": 750.515625,
+        "bottom": 305.765625
+      },
+      "bar": 53,
+      "rows": [
+        75.75,
+        75.75,
+        75.75,
+        75.75
+      ],
+      "enter": 75.75,
+      "delete": 75.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g3-typing-1376",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 336,
+        "y": 241.765625,
+        "right": 922.515625,
+        "bottom": 305.765625
+      },
+      "bar": 53,
+      "rows": [
+        65.75,
+        65.75,
+        65.75,
+        65.75
+      ],
+      "enter": 65.75,
+      "delete": 65.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g4-letters-768",
+      "portrait": true,
+      "image": {
+        "x": 296,
+        "y": 116.59375,
+        "right": 472,
+        "bottom": 292.59375
+      },
+      "answer": {
+        "x": 419.59375,
+        "y": 363.78125,
+        "right": 467.59375,
+        "bottom": 413.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g4-letters-1024",
+      "portrait": false,
+      "image": {
+        "x": 97.265625,
+        "y": 132.359375,
+        "right": 343.015625,
+        "bottom": 378.109375
+      },
+      "answer": {
+        "x": 528.171875,
+        "y": 167.78125,
+        "right": 576.171875,
+        "bottom": 217.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g4-letters-1032",
+      "portrait": true,
+      "image": {
+        "x": 404,
+        "y": 457.109375,
+        "right": 628,
+        "bottom": 681.109375
+      },
+      "answer": {
+        "x": 566.5,
+        "y": 778.90625,
+        "right": 622.5,
+        "bottom": 838.90625
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g4-letters-1376",
+      "portrait": false,
+      "image": {
+        "x": 224.640625,
+        "y": 390.5,
+        "right": 528.640625,
+        "bottom": 694.5
+      },
+      "answer": {
+        "x": 742.125,
+        "y": 483.484375,
+        "right": 798.125,
+        "bottom": 543.484375
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g4-typing-768",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 32,
+        "y": 233.15625,
+        "right": 630.65625,
+        "bottom": 287.15625
+      },
+      "bar": 53,
+      "rows": [
+        63.75,
+        63.75,
+        63.75,
+        63.75
+      ],
+      "enter": 63.75,
+      "delete": 63.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g4-typing-1024",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 160,
+        "y": 233.15625,
+        "right": 758.65625,
+        "bottom": 287.15625
+      },
+      "bar": 53,
+      "rows": [
+        53.75,
+        53.75,
+        53.75,
+        53.75
+      ],
+      "enter": 53.75,
+      "delete": 53.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g4-typing-1032",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 164,
+        "y": 241.765625,
+        "right": 750.515625,
+        "bottom": 305.765625
+      },
+      "bar": 53,
+      "rows": [
+        75.75,
+        75.75,
+        75.75,
+        75.75
+      ],
+      "enter": 75.75,
+      "delete": 75.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g4-typing-1376",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 336,
+        "y": 241.765625,
+        "right": 922.515625,
+        "bottom": 305.765625
+      },
+      "bar": 53,
+      "rows": [
+        65.75,
+        65.75,
+        65.75,
+        65.75
+      ],
+      "enter": 65.75,
+      "delete": 65.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g5-letters-768",
+      "portrait": true,
+      "image": {
+        "x": 296,
+        "y": 116.59375,
+        "right": 472,
+        "bottom": 292.59375
+      },
+      "answer": {
+        "x": 312,
+        "y": 363.78125,
+        "right": 360,
+        "bottom": 413.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g5-letters-1024",
+      "portrait": false,
+      "image": {
+        "x": 97.265625,
+        "y": 132.359375,
+        "right": 343.015625,
+        "bottom": 378.109375
+      },
+      "answer": {
+        "x": 401.296875,
+        "y": 167.78125,
+        "right": 449.296875,
+        "bottom": 217.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g5-letters-1032",
+      "portrait": true,
+      "image": {
+        "x": 404,
+        "y": 457.109375,
+        "right": 628,
+        "bottom": 681.109375
+      },
+      "answer": {
+        "x": 424.8125,
+        "y": 778.90625,
+        "right": 480.8125,
+        "bottom": 838.90625
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g5-letters-1376",
+      "portrait": false,
+      "image": {
+        "x": 224.640625,
+        "y": 390.5,
+        "right": 528.640625,
+        "bottom": 694.5
+      },
+      "answer": {
+        "x": 575.890625,
+        "y": 483.484375,
+        "right": 631.890625,
+        "bottom": 543.484375
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g5-typing-768",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 32,
+        "y": 233.15625,
+        "right": 630.65625,
+        "bottom": 287.15625
+      },
+      "bar": 53,
+      "rows": [
+        63.75,
+        63.75,
+        63.75,
+        63.75
+      ],
+      "enter": 63.75,
+      "delete": 63.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g5-typing-1024",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 160,
+        "y": 233.15625,
+        "right": 758.65625,
+        "bottom": 287.15625
+      },
+      "bar": 53,
+      "rows": [
+        53.75,
+        53.75,
+        53.75,
+        53.75
+      ],
+      "enter": 53.75,
+      "delete": 53.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g5-typing-1032",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 164,
+        "y": 241.765625,
+        "right": 750.515625,
+        "bottom": 305.765625
+      },
+      "bar": 53,
+      "rows": [
+        75.75,
+        75.75,
+        75.75,
+        75.75
+      ],
+      "enter": 75.75,
+      "delete": 75.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g5-typing-1376",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 336,
+        "y": 241.765625,
+        "right": 922.515625,
+        "bottom": 305.765625
+      },
+      "bar": 53,
+      "rows": [
+        65.75,
+        65.75,
+        65.75,
+        65.75
+      ],
+      "enter": 65.75,
+      "delete": 65.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g6-letters-768",
+      "portrait": true,
+      "image": {
+        "x": 296,
+        "y": 108.59375,
+        "right": 472,
+        "bottom": 284.59375
+      },
+      "answer": {
+        "x": 284.15625,
+        "y": 355.78125,
+        "right": 332.15625,
+        "bottom": 405.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g6-letters-1024",
+      "portrait": false,
+      "image": {
+        "x": 90.765625,
+        "y": 124.359375,
+        "right": 336.515625,
+        "bottom": 370.109375
+      },
+      "answer": {
+        "x": 374.296875,
+        "y": 159.78125,
+        "right": 422.296875,
+        "bottom": 209.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g6-letters-1032",
+      "portrait": true,
+      "image": {
+        "x": 404,
+        "y": 457.109375,
+        "right": 628,
+        "bottom": 681.109375
+      },
+      "answer": {
+        "x": 388.59375,
+        "y": 778.90625,
+        "right": 444.59375,
+        "bottom": 838.90625
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g6-letters-1376",
+      "portrait": false,
+      "image": {
+        "x": 211.640625,
+        "y": 390.5,
+        "right": 515.640625,
+        "bottom": 694.5
+      },
+      "answer": {
+        "x": 538.296875,
+        "y": 483.484375,
+        "right": 594.296875,
+        "bottom": 543.484375
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g6-typing-768",
+      "portrait": true,
+      "image": {
+        "x": 296,
+        "y": 201.578125,
+        "right": 472,
+        "bottom": 377.578125
+      },
+      "answer": {
+        "x": 167.6875,
+        "y": 428.765625,
+        "right": 490.6875,
+        "bottom": 482.765625
+      },
+      "bar": 53,
+      "rows": [
+        63.75,
+        63.75,
+        63.75,
+        63.75
+      ],
+      "enter": 63.75,
+      "delete": 63.75,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g6-typing-1024",
+      "portrait": false,
+      "image": {
+        "x": 92.0625,
+        "y": 123.1875,
+        "right": 337.8125,
+        "bottom": 368.9375
+      },
+      "answer": {
+        "x": 374.890625,
+        "y": 232.765625,
+        "right": 859.390625,
+        "bottom": 286.765625
+      },
+      "bar": 53,
+      "rows": [
+        53.75,
+        53.75,
+        53.75,
+        53.75
+      ],
+      "enter": 53.75,
+      "delete": 53.75,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g6-typing-1032",
+      "portrait": true,
+      "image": {
+        "x": 404,
+        "y": 435.703125,
+        "right": 628,
+        "bottom": 659.703125
+      },
+      "answer": {
+        "x": 262,
+        "y": 719.5,
+        "right": 648,
+        "bottom": 783.5
+      },
+      "bar": 53,
+      "rows": [
+        75.75,
+        75.75,
+        75.75,
+        75.75
+      ],
+      "enter": 75.75,
+      "delete": 75.75,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g6-typing-1376",
+      "portrait": false,
+      "image": {
+        "x": 212.9375,
+        "y": 267.40625,
+        "right": 516.9375,
+        "bottom": 571.40625
+      },
+      "answer": {
+        "x": 538.890625,
+        "y": 385.59375,
+        "right": 1063,
+        "bottom": 449.59375
+      },
+      "bar": 53,
+      "rows": [
+        65.75,
+        65.75,
+        65.75,
+        65.75
+      ],
+      "enter": 65.75,
+      "delete": 65.75,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g7-letters-768",
+      "portrait": true,
+      "image": {
+        "x": 296,
+        "y": 108.59375,
+        "right": 472,
+        "bottom": 284.59375
+      },
+      "answer": {
+        "x": 408,
+        "y": 355.78125,
+        "right": 456,
+        "bottom": 405.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g7-letters-1024",
+      "portrait": false,
+      "image": {
+        "x": 90.765625,
+        "y": 124.359375,
+        "right": 336.515625,
+        "bottom": 370.109375
+      },
+      "answer": {
+        "x": 518.296875,
+        "y": 159.78125,
+        "right": 566.296875,
+        "bottom": 209.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g7-letters-1032",
+      "portrait": true,
+      "image": {
+        "x": 404,
+        "y": 457.109375,
+        "right": 628,
+        "bottom": 681.109375
+      },
+      "answer": {
+        "x": 551.1875,
+        "y": 778.90625,
+        "right": 607.1875,
+        "bottom": 838.90625
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g7-letters-1376",
+      "portrait": false,
+      "image": {
+        "x": 211.640625,
+        "y": 390.5,
+        "right": 515.640625,
+        "bottom": 694.5
+      },
+      "answer": {
+        "x": 727.859375,
+        "y": 483.484375,
+        "right": 783.859375,
+        "bottom": 543.484375
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g7-typing-768",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 25,
+        "y": 242.15625,
+        "right": 633.390625,
+        "bottom": 296.15625
+      },
+      "bar": 53,
+      "rows": [
+        63.75,
+        63.75,
+        63.75,
+        63.75
+      ],
+      "enter": 63.75,
+      "delete": 63.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g7-typing-1024",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 55,
+        "y": 242.15625,
+        "right": 859.390625,
+        "bottom": 296.15625
+      },
+      "bar": 53,
+      "rows": [
+        53.75,
+        53.75,
+        53.75,
+        53.75
+      ],
+      "enter": 53.75,
+      "delete": 53.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g7-typing-1032",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 35,
+        "y": 606.6875,
+        "right": 875,
+        "bottom": 670.6875
+      },
+      "bar": 53,
+      "rows": [
+        75.75,
+        75.75,
+        75.75,
+        75.75
+      ],
+      "enter": 75.75,
+      "delete": 75.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g7-typing-1376",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 191,
+        "y": 454.6875,
+        "right": 1063,
+        "bottom": 518.6875
+      },
+      "bar": 53,
+      "rows": [
+        65.75,
+        65.75,
+        65.75,
+        65.75
+      ],
+      "enter": 65.75,
+      "delete": 65.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g8-letters-768",
+      "portrait": true,
+      "image": {
+        "x": 296,
+        "y": 108.59375,
+        "right": 472,
+        "bottom": 284.59375
+      },
+      "answer": {
+        "x": 264,
+        "y": 355.78125,
+        "right": 312,
+        "bottom": 405.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g8-letters-1024",
+      "portrait": false,
+      "image": {
+        "x": 90.765625,
+        "y": 124.359375,
+        "right": 336.515625,
+        "bottom": 370.109375
+      },
+      "answer": {
+        "x": 374.296875,
+        "y": 159.78125,
+        "right": 422.296875,
+        "bottom": 209.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g8-letters-1032",
+      "portrait": true,
+      "image": {
+        "x": 404,
+        "y": 457.109375,
+        "right": 628,
+        "bottom": 681.109375
+      },
+      "answer": {
+        "x": 361.625,
+        "y": 778.90625,
+        "right": 417.625,
+        "bottom": 838.90625
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g8-letters-1376",
+      "portrait": false,
+      "image": {
+        "x": 211.640625,
+        "y": 390.5,
+        "right": 515.640625,
+        "bottom": 694.5
+      },
+      "answer": {
+        "x": 538.296875,
+        "y": 483.484375,
+        "right": 594.296875,
+        "bottom": 543.484375
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g8-typing-768",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 25,
+        "y": 242.15625,
+        "right": 633.390625,
+        "bottom": 296.15625
+      },
+      "bar": 53,
+      "rows": [
+        63.75,
+        63.75,
+        63.75,
+        63.75
+      ],
+      "enter": 63.75,
+      "delete": 63.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g8-typing-1024",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 55,
+        "y": 242.15625,
+        "right": 859.390625,
+        "bottom": 296.15625
+      },
+      "bar": 53,
+      "rows": [
+        53.75,
+        53.75,
+        53.75,
+        53.75
+      ],
+      "enter": 53.75,
+      "delete": 53.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g8-typing-1032",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 35,
+        "y": 606.6875,
+        "right": 875,
+        "bottom": 670.6875
+      },
+      "bar": 53,
+      "rows": [
+        75.75,
+        75.75,
+        75.75,
+        75.75
+      ],
+      "enter": 75.75,
+      "delete": 75.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g8-typing-1376",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 191,
+        "y": 454.6875,
+        "right": 1063,
+        "bottom": 518.6875
+      },
+      "bar": 53,
+      "rows": [
+        65.75,
+        65.75,
+        65.75,
+        65.75
+      ],
+      "enter": 65.75,
+      "delete": 65.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g9-letters-768",
+      "portrait": true,
+      "image": {
+        "x": 296,
+        "y": 108.59375,
+        "right": 472,
+        "bottom": 284.59375
+      },
+      "answer": {
+        "x": 288,
+        "y": 355.78125,
+        "right": 336,
+        "bottom": 405.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g9-letters-1024",
+      "portrait": false,
+      "image": {
+        "x": 90.765625,
+        "y": 124.359375,
+        "right": 336.515625,
+        "bottom": 370.109375
+      },
+      "answer": {
+        "x": 422.296875,
+        "y": 159.78125,
+        "right": 470.296875,
+        "bottom": 209.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g9-letters-1032",
+      "portrait": true,
+      "image": {
+        "x": 404,
+        "y": 457.109375,
+        "right": 628,
+        "bottom": 681.109375
+      },
+      "answer": {
+        "x": 393.21875,
+        "y": 778.90625,
+        "right": 449.21875,
+        "bottom": 838.90625
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g9-letters-1376",
+      "portrait": false,
+      "image": {
+        "x": 211.640625,
+        "y": 390.5,
+        "right": 515.640625,
+        "bottom": 694.5
+      },
+      "answer": {
+        "x": 601.484375,
+        "y": 483.484375,
+        "right": 657.484375,
+        "bottom": 543.484375
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g9-typing-768",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 25,
+        "y": 242.15625,
+        "right": 633.390625,
+        "bottom": 296.15625
+      },
+      "bar": 53,
+      "rows": [
+        63.75,
+        63.75,
+        63.75,
+        63.75
+      ],
+      "enter": 63.75,
+      "delete": 63.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g9-typing-1024",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 55,
+        "y": 242.15625,
+        "right": 859.390625,
+        "bottom": 296.15625
+      },
+      "bar": 53,
+      "rows": [
+        53.75,
+        53.75,
+        53.75,
+        53.75
+      ],
+      "enter": 53.75,
+      "delete": 53.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g9-typing-1032",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 35,
+        "y": 606.6875,
+        "right": 875,
+        "bottom": 670.6875
+      },
+      "bar": 53,
+      "rows": [
+        75.75,
+        75.75,
+        75.75,
+        75.75
+      ],
+      "enter": 75.75,
+      "delete": 75.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g9-typing-1376",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 191,
+        "y": 454.6875,
+        "right": 1063,
+        "bottom": 518.6875
+      },
+      "bar": 53,
+      "rows": [
+        65.75,
+        65.75,
+        65.75,
+        65.75
+      ],
+      "enter": 65.75,
+      "delete": 65.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g10-letters-768",
+      "portrait": true,
+      "image": {
+        "x": 296,
+        "y": 108.59375,
+        "right": 472,
+        "bottom": 284.59375
+      },
+      "answer": {
+        "x": 276,
+        "y": 355.78125,
+        "right": 324,
+        "bottom": 405.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g10-letters-1024",
+      "portrait": false,
+      "image": {
+        "x": 90.765625,
+        "y": 124.359375,
+        "right": 336.515625,
+        "bottom": 370.109375
+      },
+      "answer": {
+        "x": 446.296875,
+        "y": 159.78125,
+        "right": 494.296875,
+        "bottom": 209.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g10-letters-1032",
+      "portrait": true,
+      "image": {
+        "x": 404,
+        "y": 457.109375,
+        "right": 628,
+        "bottom": 681.109375
+      },
+      "answer": {
+        "x": 377.421875,
+        "y": 778.90625,
+        "right": 433.421875,
+        "bottom": 838.90625
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g10-letters-1376",
+      "portrait": false,
+      "image": {
+        "x": 211.640625,
+        "y": 390.5,
+        "right": 515.640625,
+        "bottom": 694.5
+      },
+      "answer": {
+        "x": 633.078125,
+        "y": 483.484375,
+        "right": 689.078125,
+        "bottom": 543.484375
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g10-typing-768",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 25,
+        "y": 242.15625,
+        "right": 633.390625,
+        "bottom": 296.15625
+      },
+      "bar": 53,
+      "rows": [
+        63.75,
+        63.75,
+        63.75,
+        63.75
+      ],
+      "enter": 63.75,
+      "delete": 63.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g10-typing-1024",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 55,
+        "y": 242.15625,
+        "right": 859.390625,
+        "bottom": 296.15625
+      },
+      "bar": 53,
+      "rows": [
+        53.75,
+        53.75,
+        53.75,
+        53.75
+      ],
+      "enter": 53.75,
+      "delete": 53.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g10-typing-1032",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 35,
+        "y": 606.6875,
+        "right": 875,
+        "bottom": 670.6875
+      },
+      "bar": 53,
+      "rows": [
+        75.75,
+        75.75,
+        75.75,
+        75.75
+      ],
+      "enter": 75.75,
+      "delete": 75.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g10-typing-1376",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 191,
+        "y": 454.6875,
+        "right": 1063,
+        "bottom": 518.6875
+      },
+      "bar": 53,
+      "rows": [
+        65.75,
+        65.75,
+        65.75,
+        65.75
+      ],
+      "enter": 65.75,
+      "delete": 65.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g11-letters-768",
+      "portrait": true,
+      "image": {
+        "x": 296,
+        "y": 108.59375,
+        "right": 472,
+        "bottom": 284.59375
+      },
+      "answer": {
+        "x": 243.84375,
+        "y": 355.78125,
+        "right": 291.84375,
+        "bottom": 405.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g11-letters-1024",
+      "portrait": false,
+      "image": {
+        "x": 90.765625,
+        "y": 124.359375,
+        "right": 336.515625,
+        "bottom": 370.109375
+      },
+      "answer": {
+        "x": 405.984375,
+        "y": 159.78125,
+        "right": 453.984375,
+        "bottom": 209.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g11-letters-1032",
+      "portrait": true,
+      "image": {
+        "x": 404,
+        "y": 457.109375,
+        "right": 628,
+        "bottom": 681.109375
+      },
+      "answer": {
+        "x": 334.640625,
+        "y": 778.90625,
+        "right": 390.640625,
+        "bottom": 838.90625
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g11-letters-1376",
+      "portrait": false,
+      "image": {
+        "x": 211.640625,
+        "y": 390.5,
+        "right": 515.640625,
+        "bottom": 694.5
+      },
+      "answer": {
+        "x": 579.125,
+        "y": 483.484375,
+        "right": 635.125,
+        "bottom": 543.484375
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g11-typing-768",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 24,
+        "y": 189.375,
+        "right": 634.390625,
+        "bottom": 243.375
+      },
+      "bar": 53,
+      "rows": [
+        63.75,
+        63.75,
+        63.75,
+        63.75
+      ],
+      "enter": 63.75,
+      "delete": 63.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g11-typing-1024",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 54,
+        "y": 189.375,
+        "right": 860.390625,
+        "bottom": 243.375
+      },
+      "bar": 53,
+      "rows": [
+        53.75,
+        53.75,
+        53.75,
+        53.75
+      ],
+      "enter": 53.75,
+      "delete": 53.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g11-typing-1032",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 34,
+        "y": 542.796875,
+        "right": 876,
+        "bottom": 606.796875
+      },
+      "bar": 53,
+      "rows": [
+        75.75,
+        75.75,
+        75.75,
+        75.75
+      ],
+      "enter": 75.75,
+      "delete": 75.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g11-typing-1376",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 190,
+        "y": 390.796875,
+        "right": 1064,
+        "bottom": 454.796875
+      },
+      "bar": 53,
+      "rows": [
+        65.75,
+        65.75,
+        65.75,
+        65.75
+      ],
+      "enter": 65.75,
+      "delete": 65.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g12-letters-768",
+      "portrait": true,
+      "image": {
+        "x": 296,
+        "y": 108.59375,
+        "right": 472,
+        "bottom": 284.59375
+      },
+      "answer": {
+        "x": 360,
+        "y": 355.78125,
+        "right": 408,
+        "bottom": 405.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g12-letters-1024",
+      "portrait": false,
+      "image": {
+        "x": 90.765625,
+        "y": 124.359375,
+        "right": 336.515625,
+        "bottom": 370.109375
+      },
+      "answer": {
+        "x": 446.296875,
+        "y": 159.78125,
+        "right": 494.296875,
+        "bottom": 209.78125
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g12-letters-1032",
+      "portrait": true,
+      "image": {
+        "x": 404,
+        "y": 457.109375,
+        "right": 628,
+        "bottom": 681.109375
+      },
+      "answer": {
+        "x": 488,
+        "y": 778.90625,
+        "right": 544,
+        "bottom": 838.90625
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g12-letters-1376",
+      "portrait": false,
+      "image": {
+        "x": 211.640625,
+        "y": 390.5,
+        "right": 515.640625,
+        "bottom": 694.5
+      },
+      "answer": {
+        "x": 633.078125,
+        "y": 483.484375,
+        "right": 689.078125,
+        "bottom": 543.484375
+      },
+      "bar": 53,
+      "rows": [],
+      "enter": 0,
+      "delete": 0,
+      "overflow": false,
+      "hostCount": 1
+    },
+    {
+      "label": "g12-typing-768",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 24,
+        "y": 189.375,
+        "right": 634.390625,
+        "bottom": 243.375
+      },
+      "bar": 53,
+      "rows": [
+        63.75,
+        63.75,
+        63.75,
+        63.75
+      ],
+      "enter": 63.75,
+      "delete": 63.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g12-typing-1024",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 54,
+        "y": 189.375,
+        "right": 860.390625,
+        "bottom": 243.375
+      },
+      "bar": 53,
+      "rows": [
+        53.75,
+        53.75,
+        53.75,
+        53.75
+      ],
+      "enter": 53.75,
+      "delete": 53.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g12-typing-1032",
+      "portrait": true,
+      "image": null,
+      "answer": {
+        "x": 34,
+        "y": 542.796875,
+        "right": 876,
+        "bottom": 606.796875
+      },
+      "bar": 53,
+      "rows": [
+        75.75,
+        75.75,
+        75.75,
+        75.75
+      ],
+      "enter": 75.75,
+      "delete": 75.75,
+      "overflow": false,
+      "hostCount": 0
+    },
+    {
+      "label": "g12-typing-1376",
+      "portrait": false,
+      "image": null,
+      "answer": {
+        "x": 190,
+        "y": 390.796875,
+        "right": 1064,
+        "bottom": 454.796875
+      },
+      "bar": 53,
+      "rows": [
+        65.75,
+        65.75,
+        65.75,
+        65.75
+      ],
+      "enter": 65.75,
+      "delete": 65.75,
+      "overflow": false,
+      "hostCount": 0
+    }
+  ],
+  "errors": []
+}

@@ -278,3 +278,11 @@ body.gl-tablet .gl-picture-stage[data-gl-picture] :is(.ll-prompt,#sentence-stage
 body.tg-playing .tg-nav-menu .tg-tools{margin:0;width:100%;display:flex;flex-direction:column;align-items:stretch;gap:6px}
 body.tg-playing .tg-nav-menu .tg-tools button{width:100%;min-height:44px}
 .tg-nav-menu>.tg-nav-links{max-height:max(88px,calc(var(--tg-height,100dvh) - var(--tg-bar-height,52px) - var(--tg-keyboard-height,0px) - 16px));overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y pinch-zoom}
+
+/* Enlarge question art for word games only. Sentence practice is deliberately excluded. */
+body.gl-tablet{--gl-game-art-size:176px}
+@media(orientation:portrait){body.gl-tablet.tg-large{--gl-game-art-size:224px}}
+@media(orientation:landscape){body.gl-tablet{--gl-game-art-size:clamp(200px,24vw,304px)}}
+body.gl-tablet .gl-picture-stage[data-gl-picture]:is(.letter-ladder,.learning-stage,#spelling-stage,#quiz-stage,#stage:has(#word-answer))>.gl-task-picture>:is(.word-picture,.learning-visual,.word-image,.g6-flash-visual,[data-danh-picture-listen]){width:min(100%,var(--gl-game-art-size))!important;height:auto!important;min-width:0!important;min-height:0!important;aspect-ratio:1;box-sizing:border-box}
+
+body.gl-tablet .gl-picture-stage[data-gl-picture]:is(.letter-ladder,.learning-stage,#spelling-stage,#quiz-stage,#stage:has(#word-answer))>.gl-task-picture{width:100%;box-sizing:border-box}

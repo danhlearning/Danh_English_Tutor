@@ -50,3 +50,14 @@ body.gl-tablet .gl-vocab-grid p{font-size:19px;line-height:1.5}
 body.gl-tablet .gl-vocab-grid>:is([hidden],.gl-card-page-hidden){display:none!important}
 
 @media(max-width:599px){.gl-vocab-pager{gap:6px}.gl-vocab-pager button{min-width:64px;padding:7px 8px;font-size:16px}.gl-vocab-position{min-width:0;flex:1;font-size:16px}}
+
+/* Larger learning illustrations; the card itself remains the listening target. */
+body{--gl-vocab-art-size:260px}
+body :is(#vocab-grid-container,#vocab-grid,#word-list,.word-grid)>*>:is(.word-picture,.g2-vocab-image,.g4-visual,.g6-word-visual,.g6-word-icon,.word-image,.learning-visual){box-sizing:border-box;width:min(100%,var(--gl-vocab-art-size))!important;height:auto!important;min-width:0!important;min-height:0!important;max-width:100%;aspect-ratio:1;flex-shrink:0;font-size:clamp(72px,12vw,140px)}
+body :is(#vocab-grid-container,#vocab-grid,#word-list,.word-grid)>*>:is(.word-picture,.g2-vocab-image,.g4-visual,.g6-word-visual,.word-image,.learning-visual)>:is(img,svg){display:block;width:100%!important;height:100%!important;max-width:none;max-height:none;object-fit:contain}
+body.gl-tablet{--gl-vocab-art-size:clamp(240px,24vw,300px)}
+@media(max-width:599px){body:not(.gl-tablet){--gl-vocab-art-size:180px}}
+/* Only word games: sentence illustrations keep their existing size. */
+body:not(.gl-tablet) :is(.letter-ladder .ll-prompt>.word-picture,.learning-stage>.learning-question-visual,#spelling-stage>.word-picture,#spelling-stage>.g6-flash-visual,#spelling-stage>[data-danh-picture-listen],#quiz-stage>.word-picture,#quiz-stage>.g6-flash-visual,#quiz-stage>[data-danh-picture-listen],#stage:has(#word-answer)>.word-image){width:min(100%,260px)!important;height:auto!important;min-width:0!important;min-height:0!important;aspect-ratio:1;flex-shrink:0}
+body #game-mcq .learning-options .learning-picture-option>.learning-visual{width:min(100%,180px)!important;height:auto!important;min-width:0!important;min-height:0!important;aspect-ratio:1}
+@media(max-width:599px){body:not(.gl-tablet) :is(.letter-ladder .ll-prompt>.word-picture,.learning-stage>.learning-question-visual){width:min(40vw,180px)!important}}

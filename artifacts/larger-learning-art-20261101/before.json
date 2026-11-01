@@ -1,0 +1,306 @@
+[
+  {
+    "label": "g2-vocab-768",
+    "width": 112,
+    "height": 112,
+    "artWidth": 100,
+    "artHeight": 100,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g2-vocab-1024",
+    "width": 112,
+    "height": 112,
+    "artWidth": 100,
+    "artHeight": 100,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g2-vocab-1032",
+    "width": 112,
+    "height": 112,
+    "artWidth": 100,
+    "artHeight": 100,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g2-vocab-1376",
+    "width": 112,
+    "height": 112,
+    "artWidth": 100,
+    "artHeight": 100,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g2-letters-768",
+    "width": 112,
+    "height": 112,
+    "artWidth": 86,
+    "artHeight": 96,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g2-letters-1024",
+    "width": 184.3125,
+    "height": 184.3125,
+    "artWidth": 158.3125,
+    "artHeight": 168.3125,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g2-letters-1032",
+    "width": 144,
+    "height": 144,
+    "artWidth": 114,
+    "artHeight": 124,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g2-letters-1376",
+    "width": 232,
+    "height": 232,
+    "artWidth": 202,
+    "artHeight": 212,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g2-typing-768",
+    "width": 112,
+    "height": 112,
+    "artWidth": 112,
+    "artHeight": 112,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g2-typing-1024",
+    "width": 184.3125,
+    "height": 184.3125,
+    "artWidth": 184.3125,
+    "artHeight": 184.3125,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g2-typing-1032",
+    "width": 144,
+    "height": 144,
+    "artWidth": 144,
+    "artHeight": 144,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g2-typing-1376",
+    "width": 232,
+    "height": 232,
+    "artWidth": 232,
+    "artHeight": 232,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g6-vocab-768",
+    "width": 112,
+    "height": 112,
+    "artWidth": 100,
+    "artHeight": 100,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g6-vocab-1024",
+    "width": 112,
+    "height": 112,
+    "artWidth": 100,
+    "artHeight": 100,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g6-vocab-1032",
+    "width": 112,
+    "height": 112,
+    "artWidth": 100,
+    "artHeight": 100,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g6-vocab-1376",
+    "width": 112,
+    "height": 112,
+    "artWidth": 100,
+    "artHeight": 100,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g6-letters-768",
+    "width": 112,
+    "height": 112,
+    "artWidth": 112,
+    "artHeight": 112,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g6-letters-1024",
+    "width": 184.3125,
+    "height": 184.3125,
+    "artWidth": 184.3125,
+    "artHeight": 184.3125,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g6-letters-1032",
+    "width": 144,
+    "height": 144,
+    "artWidth": 144,
+    "artHeight": 144,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g6-letters-1376",
+    "width": 232,
+    "height": 232,
+    "artWidth": 232,
+    "artHeight": 232,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g6-typing-768",
+    "width": 112,
+    "height": 112,
+    "artWidth": 86,
+    "artHeight": 96,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g6-typing-1024",
+    "width": 184.3125,
+    "height": 184.3125,
+    "artWidth": 158.3125,
+    "artHeight": 168.3125,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g6-typing-1032",
+    "width": 144,
+    "height": 144,
+    "artWidth": 114,
+    "artHeight": 124,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g6-typing-1376",
+    "width": 232,
+    "height": 232,
+    "artWidth": 202,
+    "artHeight": 212,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g12-vocab-768",
+    "width": 240,
+    "height": 240,
+    "artWidth": 144,
+    "artHeight": 144,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g12-vocab-1024",
+    "width": 240,
+    "height": 240,
+    "artWidth": 144,
+    "artHeight": 144,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g12-vocab-1032",
+    "width": 240,
+    "height": 240,
+    "artWidth": 144,
+    "artHeight": 144,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g12-vocab-1376",
+    "width": 240,
+    "height": 240,
+    "artWidth": 144,
+    "artHeight": 144,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g12-letters-768",
+    "width": 112,
+    "height": 112,
+    "artWidth": 112,
+    "artHeight": 112,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g12-letters-1024",
+    "width": 184.3125,
+    "height": 184.3125,
+    "artWidth": 184.3125,
+    "artHeight": 184.3125,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g12-letters-1032",
+    "width": 144,
+    "height": 144,
+    "artWidth": 144,
+    "artHeight": 144,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g12-letters-1376",
+    "width": 232,
+    "height": 232,
+    "artWidth": 232,
+    "artHeight": 232,
+    "overflow": false,
+    "overlap": false
+  },
+  {
+    "label": "g12-typing-768",
+    "absent": true
+  },
+  {
+    "label": "g12-typing-1024",
+    "absent": true
+  },
+  {
+    "label": "g12-typing-1032",
+    "absent": true
+  },
+  {
+    "label": "g12-typing-1376",
+    "absent": true
+  }
+]

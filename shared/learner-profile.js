@@ -98,8 +98,8 @@
   },{once:true});
   const C = window.DanhLearnerCore;
   const base = new URL('../', document.currentScript.src);
-  const layout=document.createElement('script');layout.src=new URL('shared/game-layout.js?v=ipad-orientation-20261101',base).href;layout.async=false;document.head.append(layout);
-  const tablet=document.createElement('script');tablet.src=new URL('shared/tablet-game.js?v=ipad-orientation-20261101',base).href;tablet.async=false;document.head.append(tablet);
+  const layout=document.createElement('script');layout.src=new URL('shared/game-layout.js?v=larger-learning-art-20261101',base).href;layout.async=false;document.head.append(layout);
+  const tablet=document.createElement('script');tablet.src=new URL('shared/tablet-game.js?v=larger-learning-art-20261101',base).href;tablet.async=false;document.head.append(tablet);
   const controls=document.createElement('script');controls.src=new URL('shared/learner-controls.js?v=repo-picture-listen-20261025',base).href;controls.async=false;document.head.append(controls);
   const font=document.createElement('link');font.rel='stylesheet';font.href=new URL('shared/learner-font.css?v=ipad-balanced-20261031',base).href;document.head.append(font);
   const gaps=document.createElement('script');gaps.src=new URL('shared/exercise-gaps.js?v=compact-gaps-20261025',base).href;gaps.async=false;document.head.append(gaps);
