@@ -1,0 +1,268 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "label": "writing-g2-1024-768",
+      "height": 462,
+      "total": 3207,
+      "overflow": "auto",
+      "touch": "pan-y pinch-zoom",
+      "keys": {
+        "enterHeight": 70.0625,
+        "deleteHeight": 44,
+        "enterWidth": 185.75,
+        "deleteWidth": 60
+      }
+    },
+    {
+      "label": "writing-g2-768-1024",
+      "height": 678,
+      "total": 3207,
+      "overflow": "auto",
+      "touch": "pan-y pinch-zoom",
+      "keys": {
+        "enterHeight": 83.09375,
+        "deleteHeight": 44,
+        "enterWidth": 134.125,
+        "deleteWidth": 51.859375
+      }
+    },
+    {
+      "label": "writing-g2-1024-672",
+      "height": 366,
+      "total": 3207,
+      "overflow": "auto",
+      "touch": "pan-y pinch-zoom",
+      "keys": {
+        "enterHeight": 70.0625,
+        "deleteHeight": 44,
+        "enterWidth": 185.75,
+        "deleteWidth": 60
+      }
+    },
+    {
+      "label": "spelling-g6-1024-768",
+      "height": 462,
+      "total": 2116,
+      "overflow": "auto",
+      "touch": "pan-y pinch-zoom",
+      "keys": {
+        "enterHeight": 70.0625,
+        "deleteHeight": 44,
+        "enterWidth": 185.75,
+        "deleteWidth": 60
+      }
+    },
+    {
+      "label": "spelling-g6-768-1024",
+      "height": 678,
+      "total": 2646,
+      "overflow": "auto",
+      "touch": "pan-y pinch-zoom",
+      "keys": {
+        "enterHeight": 83.09375,
+        "deleteHeight": 44,
+        "enterWidth": 134.125,
+        "deleteWidth": 51.859375
+      }
+    },
+    {
+      "label": "spelling-g6-1024-672",
+      "height": 366,
+      "total": 2116,
+      "overflow": "auto",
+      "touch": "pan-y pinch-zoom",
+      "keys": {
+        "enterHeight": 70.0625,
+        "deleteHeight": 44,
+        "enterWidth": 185.75,
+        "deleteWidth": 60
+      }
+    },
+    {
+      "label": "spelling-g12-1024-768",
+      "height": 462,
+      "total": 2154,
+      "overflow": "auto",
+      "touch": "pan-y pinch-zoom",
+      "keys": {
+        "enterHeight": 70.0625,
+        "deleteHeight": 44,
+        "enterWidth": 185.75,
+        "deleteWidth": 60
+      }
+    },
+    {
+      "label": "spelling-g12-768-1024",
+      "height": 678,
+      "total": 2684,
+      "overflow": "auto",
+      "touch": "pan-y pinch-zoom",
+      "keys": {
+        "enterHeight": 83.09375,
+        "deleteHeight": 44,
+        "enterWidth": 134.125,
+        "deleteWidth": 51.859375
+      }
+    },
+    {
+      "label": "spelling-g12-1024-672",
+      "height": 366,
+      "total": 2154,
+      "overflow": "auto",
+      "touch": "pan-y pinch-zoom",
+      "keys": {
+        "enterHeight": 70.0625,
+        "deleteHeight": 44,
+        "enterWidth": 185.75,
+        "deleteWidth": 60
+      }
+    },
+    {
+      "grade": 1,
+      "center": 512,
+      "outerCenter": 512,
+      "align": [
+        "center",
+        "center",
+        "center",
+        "center"
+      ],
+      "count": 4
+    },
+    {
+      "grade": 2,
+      "center": 512,
+      "outerCenter": 512,
+      "align": [
+        "center",
+        "center",
+        "center",
+        "center"
+      ],
+      "count": 4
+    },
+    {
+      "grade": 3,
+      "center": 512,
+      "outerCenter": 512,
+      "align": [
+        "center",
+        "center",
+        "center",
+        "center"
+      ],
+      "count": 4
+    },
+    {
+      "grade": 4,
+      "center": 512,
+      "outerCenter": 512,
+      "align": [
+        "center",
+        "center",
+        "center",
+        "center"
+      ],
+      "count": 4
+    },
+    {
+      "grade": 5,
+      "center": 512,
+      "outerCenter": 512,
+      "align": [
+        "center",
+        "center",
+        "center",
+        "center"
+      ],
+      "count": 4
+    },
+    {
+      "grade": 6,
+      "center": 512,
+      "outerCenter": 512,
+      "align": [
+        "center",
+        "center",
+        "center",
+        "center"
+      ],
+      "count": 4
+    },
+    {
+      "grade": 7,
+      "center": 512,
+      "outerCenter": 512,
+      "align": [
+        "center",
+        "center",
+        "center",
+        "center"
+      ],
+      "count": 4
+    },
+    {
+      "grade": 8,
+      "center": 512,
+      "outerCenter": 512,
+      "align": [
+        "center",
+        "center",
+        "center",
+        "center"
+      ],
+      "count": 4
+    },
+    {
+      "grade": 9,
+      "center": 512,
+      "outerCenter": 512,
+      "align": [
+        "center",
+        "center",
+        "center",
+        "center"
+      ],
+      "count": 4
+    },
+    {
+      "grade": 10,
+      "center": 512,
+      "outerCenter": 512,
+      "align": [
+        "center",
+        "center",
+        "center",
+        "center"
+      ],
+      "count": 4
+    },
+    {
+      "grade": 11,
+      "center": 512,
+      "outerCenter": 512,
+      "align": [
+        "center",
+        "center",
+        "center",
+        "center"
+      ],
+      "count": 4
+    },
+    {
+      "grade": 12,
+      "center": 512,
+      "outerCenter": 512,
+      "align": [
+        "center",
+        "center",
+        "center",
+        "center"
+      ],
+      "count": 4
+    }
+  ],
+  "errors": [],
+  "engine": "Edge touch emulation"
+}

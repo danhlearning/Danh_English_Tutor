@@ -80,3 +80,10 @@
 .vg-reduced .vg-spark{display:none}
 @media(prefers-reduced-motion:reduce){.vg-world *,.vg-world *::before,.vg-world *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.vg-spark{display:none}}
 @media(max-width:600px){.vg-review-grid,.vg-world .g6-choices{grid-template-columns:1fr}.vg-world .g6-stage{padding:18px;border-radius:24px}.vg-world .g6-choice{font-size:1.125rem;min-height:56px}.vg-settings{padding:12px;gap:8px}.vg-buddy{width:100%}.vg-settings button{font-size:.94rem;padding:9px 10px}.vg-world .g6-tabs{gap:8px;padding:10px}.vg-world .g6-tab{flex:1 1 130px}.vg-review-hero{padding:18px}.vg-world .g6-stage>button{max-width:100%}.vg-world .g6-answer{flex-wrap:wrap}.vg-world .g6-answer input{min-width:0;width:100%}.vg-world .g6-flash-controls{flex-wrap:wrap;gap:8px}}
+
+/* A centered reading area for Unit and semester multiple-choice review. */
+.vg-world #quiz-stage{max-width:800px!important;margin-inline:auto!important;text-align:center}
+.vg-world #quiz-stage :is(h3,.g6-feedback,.vg-example){text-align:center}
+.vg-world #quiz-stage .g6-choices{max-width:760px;margin-inline:auto}
+.vg-world #quiz-stage .g6-choice{text-align:center}
+.vg-world #quiz-stage .vg-round-head{justify-content:center}

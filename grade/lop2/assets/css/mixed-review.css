@@ -51,3 +51,9 @@ body { --danh-profile-background:#fcf5e5;--danh-profile-border:#e9dcc2;--danh-pr
  .island-preview span { width:40px;height:40px;flex-shrink:0;font-size:1.3rem; }
  .puzzle { padding:14px 10px; }
 }
+
+/* Center multiple-choice review; typing labels retain their own layout. */
+#play:has(#choices:not(:empty)){text-align:center}
+#play:has(#choices:not(:empty)) :is(#question,#task-context,#puzzle,#feedback,#choices,#round-progress){max-width:760px;margin-inline:auto}
+#play:has(#choices:not(:empty)) #choices button{text-align:center}
+#play:has(#choices:not(:empty)) :is(#journey,#help){justify-content:center}

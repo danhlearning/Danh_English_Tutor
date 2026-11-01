@@ -3,7 +3,7 @@
  'use strict';
  if(window.DanhTabletGame)return;
  const root=new URL('../',document.currentScript.src);
- const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=ipad97-fit-20261031',root).href;document.head.append(sheet);
+ const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=review-scroll-20261101',root).href;document.head.append(sheet);
  // Use the physical screen's short edge: phones remain phones when rotated,
  // while an iPad keeps its game frame in Split View and Stage Manager.
  const tablet=()=>navigator.maxTouchPoints>0 && Math.min(screen.width||innerWidth,screen.height||innerHeight)>=600 && innerWidth>=320;
@@ -32,7 +32,7 @@
   document.body.classList.toggle('tg-roomy',!!panel&&roomy);
   const compact=roomy&&innerWidth<=1100&&height<=1100;
   document.body.classList.toggle('tg-compact',!!panel&&compact);
-  document.documentElement.style.setProperty('--tg-keyboard-size',`${compact?(height<=800?224:264):roomy?(height>=700?Math.round(Math.max(272,Math.min(368,height*.32))):240):224}px`);
+  document.documentElement.style.setProperty('--tg-keyboard-size',`${compact?(height<=800?248:288):roomy?(height>=700?Math.round(Math.max(296,Math.min(392,height*.34))):264):224}px`);
  }
  function leave(){
   if(!panel)return;const old=panel;close();suppressed=old;
@@ -190,7 +190,7 @@
  const frameObserver=typeof ResizeObserver==='function'?new ResizeObserver(schedule):null;
  document.addEventListener('focusin',event=>{if(tablet()&&textInput(event.target)&&(panel||findPanel())?.contains(event.target))configure(event.target);schedule();});
  document.addEventListener('pointerdown',event=>{if(panel&&textInput(event.target)&&panel.contains(event.target)){keyboardDismissed=false;schedule();}},{passive:true});
- document.addEventListener('touchmove',event=>{if(panel && event.touches.length===1 && !event.target.closest('.tg-reading,dialog,[role=dialog]') && !textInput(event.target))event.preventDefault();},{passive:false});
+ document.addEventListener('touchmove',event=>{if(panel && event.touches.length===1 && !event.target.closest('.tg-panel,dialog,[role=dialog]') && !textInput(event.target))event.preventDefault();},{passive:false});
  window.addEventListener('resize',schedule);window.visualViewport?.addEventListener('resize',schedule);window.visualViewport?.addEventListener('scroll',viewport);
  window.addEventListener('pagehide',close);
  document.fonts?.ready.then(schedule);

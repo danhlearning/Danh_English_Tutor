@@ -199,3 +199,13 @@ body.tg-compact .tg-picker-icon{font-size:24px}
  body.tg-compact.tg-typing .tg-panel .letter-ladder:has(.ll-input)>:is(.ll-status,.ll-announcement){grid-column:2;grid-row:4}
  body.tg-compact.tg-typing .tg-panel .letter-ladder:has(.ll-input)>.ll-actions{grid-column:2;grid-row:5}
 }
+
+/* Long review tasks scroll naturally inside the game, above the docked keyboard. */
+body.tg-playing .tg-panel{overflow-y:auto!important;overflow-x:hidden!important;touch-action:pan-y pinch-zoom!important;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch;scroll-padding-block:12px}
+body.tg-playing .tg-panel :is(.item-display-box,#spelling-preview,#count-items-container,.learning-card){max-height:none!important;overflow:visible!important}
+body.tg-playing .tg-panel :is(.learning-panel,.learning-stage,.letter-ladder,.g6-stage,.gg-question-card,.task){min-width:0;overflow-wrap:anywhere}
+
+/* A taller Return row and a small Backspace target reduce accidental deletion. */
+.tg-keyboard .tg-key-row-2{flex:1.45}
+.tg-keyboard [data-action=delete]{flex:.8;min-width:44px;max-width:60px;height:44px;min-height:44px;align-self:center;font-size:23px;margin-inline:4px}
+body.tg-roomy .tg-keyboard [data-action=submit]{min-height:64px}
