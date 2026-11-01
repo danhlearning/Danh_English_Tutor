@@ -35,3 +35,18 @@ body :is(.tokens button,.sentence-built button,.gg-tokens button,.gg-built butto
  body.gl-playing.grade2-topic .g2-translation-prompt::before{font-size:13px;line-height:1.3;margin-bottom:4px}
  body.gl-playing.grade2-topic .g2-practice-hint{font-size:14px;line-height:1.4;padding:6px 8px;margin:4px 0}
 }
+/* Tablet vocabulary is read in small groups; original cards retain their listeners. */
+.gl-card-page-hidden{display:none!important}
+.gl-vocab-pager[hidden]{display:none!important}
+.gl-vocab-pager{display:flex;justify-content:center;align-items:center;gap:16px;margin:18px auto;max-width:100%;font-weight:800}
+.gl-vocab-pager button{min-width:88px;min-height:44px;padding:9px 14px;border:1px solid #bba67e;border-radius:12px;background:#fffaf0;color:#34584c;font:800 18px 'Danh Nunito',Nunito,sans-serif;cursor:pointer}
+.gl-vocab-pager button:disabled{opacity:.45;cursor:default}.gl-vocab-position{min-width:110px;text-align:center}
+body.gl-tablet .gl-vocab-grid{display:grid!important;grid-template-columns:repeat(var(--gl-card-columns,2),minmax(0,1fr))!important;gap:20px!important;max-width:1200px;margin-inline:auto}
+body.gl-tablet .gl-vocab-grid>:not(.gl-card-page-hidden){min-width:0;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px;box-sizing:border-box}
+body.gl-tablet .gl-vocab-grid h3{font-size:26px;line-height:1.35}
+body.gl-tablet .gl-vocab-grid :is(.g2-vocab-image,.g6-word-icon,.g4-visual){width:144px;height:144px;max-width:100%;font-size:80px}
+body.gl-tablet .gl-vocab-grid img{max-width:100%;object-fit:contain}
+body.gl-tablet .gl-vocab-grid p{font-size:19px;line-height:1.5}
+body.gl-tablet .gl-vocab-grid>:is([hidden],.gl-card-page-hidden){display:none!important}
+
+@media(max-width:599px){.gl-vocab-pager{gap:6px}.gl-vocab-pager button{min-width:64px;padding:7px 8px;font-size:16px}.gl-vocab-position{min-width:0;flex:1;font-size:16px}}

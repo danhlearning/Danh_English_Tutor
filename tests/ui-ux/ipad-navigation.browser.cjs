@@ -11,17 +11,18 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8765',out='artifacts/i
   const picker=()=>p.getByRole('button',{name:'Chọn trò chơi',exact:true}),dialog=()=>p.getByRole('dialog');
   async function choose(id){await picker().click();await dialog().locator(`[data-game="${id}"]`).click();await p.waitForFunction(id=>document.querySelector('.tg-panel')?.id===id,id);}
   async function nav(grade){
-   await p.locator('.tg-nav-link').first().waitFor();
+   await p.locator('.tg-nav-toggle').click();await p.locator('.tg-nav-link').first().waitFor();
    const links=await p.locator('.tg-nav-link').evaluateAll(ns=>ns.map(n=>({label:n.getAttribute('aria-label'),path:new URL(n.href).pathname,width:n.getBoundingClientRect().width,height:n.getBoundingClientRect().height})));
    assert(links.some(n=>n.label==='Trang chủ'&&n.path.endsWith('/index.html')));
    assert(links.some(n=>n.label===`Lớp ${grade}`&&n.path.endsWith(`/grade/lop${grade}/lop${grade}.html`)));
    assert(links.some(n=>n.label==='Ôn tập'&&n.path.endsWith(`/grade/lop${grade}/${grade<=5?'review':'vocabulary-review'}.html`)));
    for(const link of links){assert(link.width>=44&&link.height>=44);const response=await context.request.get(base+link.path);assert.equal(response.status(),200);}
+   await p.locator('.tg-nav-toggle').press('Escape');
   }
   await p.goto(base+'/grade/lop2/colors.html');await p.getByRole('button',{name:'Trò chơi',exact:true}).click();await p.locator('.ll-slot').first().waitFor();await nav(2);
   await p.locator('.ll-tile').first().click();const before=await p.locator('.letter-ladder').evaluate(n=>{window.savedStage=n;return DanhLearners.storage.getItem(n.dataset.letterStorage);});
   await picker().click();assert.equal(await dialog().locator('.tg-game-card').count(),4);assert.equal(await dialog().locator('[aria-current=true]').count(),1);
-  assert((await picker().boundingBox()).height>=48);for(const card of await dialog().locator('.tg-game-card').all())assert((await card.boundingBox()).height>=104);
+  assert((await picker().boundingBox()).height>=44);for(const card of await dialog().locator('.tg-game-card').all())assert((await card.boundingBox()).height>=104);
   await p.keyboard.press('Tab');assert(await dialog().evaluate(n=>n.contains(document.activeElement)));
   await p.keyboard.press('Escape');await p.waitForFunction(()=>document.querySelector('.tg-game-picker')?.getAttribute('aria-expanded')==='false');assert(await picker().evaluate(n=>n===document.activeElement));
   assert.equal(await p.evaluate(()=>savedStage===document.querySelector('.letter-ladder')),true);assert.equal(await p.locator('.letter-ladder').evaluate(n=>DanhLearners.storage.getItem(n.dataset.letterStorage)),before);

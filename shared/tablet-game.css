@@ -126,13 +126,6 @@ body.tg-roomy .tg-word-input #stage>form>input{grid-column:1;min-width:0}
 body.tg-roomy .tg-word-input #stage>form>button{grid-column:2;font-size:22px;padding-inline:16px}
 body.tg-roomy .tg-panel :is(.practice-actions,.help-actions){display:inline-flex!important;vertical-align:top;max-width:100%}
 body.tg-playing .tg-panel .timer-message:empty{display:none}
-@media(min-width:700px) and (max-height:699px){
- body.tg-roomy.tg-typing .tg-panel .letter-ladder{display:grid;grid-template-columns:minmax(140px,.65fr) minmax(0,1.35fr);gap:6px 18px}
- body.tg-roomy.tg-typing .tg-panel .letter-ladder>:is(.ll-head,.ll-warning,.ll-practice-note){grid-column:1 / -1}
- body.tg-roomy.tg-typing .tg-panel .ll-prompt{grid-column:1;grid-row:span 4;flex-direction:column;gap:8px;margin:0!important}
- body.tg-roomy.tg-typing .tg-panel :is(.ll-input-label,.ll-input,.ll-status,.ll-actions){grid-column:2}
- body.tg-roomy.tg-typing .tg-panel .ll-actions{margin:4px 0!important}
-}
 /* Paper navigation and a large, touch-friendly game chooser. */
 body.tg-playing .tg-bar{justify-content:flex-start;gap:8px;background:#f4ecd9;background-image:radial-gradient(#b2996c18 .6px,transparent .6px);background-size:7px 7px}
 .tg-bar .tg-back{min-height:48px;flex:none;font-size:16px;padding:8px 12px;border-radius:14px 11px 15px 12px}
@@ -190,16 +183,6 @@ body.tg-compact .tg-nav-icon{font-size:20px}
 body.tg-compact .tg-bar .tg-game-picker{min-height:48px;max-width:320px;gap:8px;padding:5px 10px}
 body.tg-compact .tg-picker-copy strong{font-size:18px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 body.tg-compact .tg-picker-icon{font-size:24px}
-@media(max-height:800px){
- body.tg-compact.tg-typing .tg-panel .letter-ladder:has(.ll-input){display:grid;grid-template-columns:minmax(160px,.8fr) minmax(0,1.2fr);gap:4px 16px;align-items:center}
- body.tg-compact.tg-typing .tg-panel .letter-ladder:has(.ll-input)>:is(.ll-head,.ll-warning,.ll-practice-note){grid-column:1 / -1}
- body.tg-compact.tg-typing .tg-panel .letter-ladder:has(.ll-input)>.ll-prompt{grid-column:1;grid-row:2 / span 4;flex-direction:row;margin:0!important;gap:10px}
- body.tg-compact.tg-typing .tg-panel .letter-ladder:has(.ll-input)>.ll-input-label{grid-column:2;grid-row:2}
- body.tg-compact.tg-typing .tg-panel .letter-ladder:has(.ll-input)>.ll-input{grid-column:2;grid-row:3}
- body.tg-compact.tg-typing .tg-panel .letter-ladder:has(.ll-input)>:is(.ll-status,.ll-announcement){grid-column:2;grid-row:4}
- body.tg-compact.tg-typing .tg-panel .letter-ladder:has(.ll-input)>.ll-actions{grid-column:2;grid-row:5}
-}
-
 /* Long review tasks scroll naturally inside the game, above the docked keyboard. */
 body.tg-playing .tg-panel{overflow-y:auto!important;overflow-x:hidden!important;touch-action:pan-y pinch-zoom!important;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch;scroll-padding-block:12px}
 body.tg-playing .tg-panel :is(.item-display-box,#spelling-preview,#count-items-container,.learning-card){max-height:none!important;overflow:visible!important}
@@ -237,3 +220,61 @@ body.tg-large .tg-panel .ll-announcement{position:static!important;width:auto!im
 /* Center a short task in the large reading area; long tasks start at the top and scroll. */
 body.tg-large .tg-panel:is(#game-flip,#game-mcq,#game-spelling,#letters,#quiz,#spelling){display:flex!important;flex-direction:column}
 body.tg-large .tg-panel:is(#game-flip,#game-mcq,#game-spelling,#letters,#quiz,#spelling)>:is(.learning-panel,.g6-stage,.letter-ladder){flex:0 0 auto;margin-block:auto!important}
+/* Compact iPad chrome: navigation links live behind one accessible menu. */
+body.tg-playing .tg-bar{min-height:52px;gap:6px;padding-top:max(4px,env(safe-area-inset-top));padding-bottom:4px}
+body.tg-playing .tg-bar .tg-back{display:flex;align-items:center;gap:6px;order:0;min-height:44px;padding:6px 10px;font-size:15px}
+body.tg-playing .tg-bar .tg-game-picker{order:1;flex:1;min-width:0;max-width:280px;min-height:44px;padding:6px 10px;gap:8px;border-radius:13px;box-shadow:none}
+body.tg-playing .tg-picker-copy small{display:none}
+body.tg-playing .tg-picker-copy strong{display:block;font-size:17px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;line-height:1.3}
+body.tg-playing .tg-picker-icon{font-size:22px}body.tg-playing .tg-picker-arrow{font-size:20px}
+.tg-nav-menu{position:relative;order:2;flex:none}.tg-nav-toggle{display:flex;align-items:center;justify-content:center;list-style:none;width:44px;height:44px;border:1px solid #c9b58e;border-radius:12px;background:#fffdf6;color:#34584c;font-size:23px;cursor:pointer}.tg-nav-toggle::-webkit-details-marker{display:none}.tg-nav-toggle:focus-visible{outline:3px solid #176d8a;outline-offset:2px}
+.tg-nav-menu>.tg-nav-links{position:absolute;top:calc(100% + 8px);right:0;z-index:1;display:flex;flex-direction:column;gap:6px;width:220px;max-width:calc(100vw - 24px);padding:10px;background:#fffaf0;border:1px solid #c9b58e;border-radius:14px;box-shadow:0 8px 24px #304d3d33}
+body.tg-playing .tg-nav-menu .tg-nav-link{width:100%;min-height:44px;flex-direction:row;justify-content:flex-start;gap:10px;font-size:16px;padding:8px 12px}
+body.tg-playing .tg-tools{order:3}
+@media(max-width:599px){body.tg-playing .tg-back-text{display:none}body.tg-playing .tg-bar .tg-back{width:44px;justify-content:center;padding:6px}}
+/* Every keyboard row has the same share of the dock, including Return and Space. */
+body.tg-playing .tg-keyboard .tg-key-row{flex:1 1 0;min-height:44px}
+body.tg-playing .tg-keyboard [data-action=submit]{min-height:44px}
+body.tg-playing .tg-keyboard [data-action=delete]{height:auto;min-height:44px;align-self:stretch;max-width:60px}
+/* The renderer's illustration node is moved, never cloned or separated from an answer option. */
+body.gl-tablet .gl-picture-stage[data-gl-picture]{gap:0!important;min-width:0}
+body.gl-tablet .gl-picture-stage[data-gl-picture]>:not(.gl-task-picture){min-width:0;grid-row:auto!important}
+body.gl-tablet .gl-picture-stage[data-gl-picture]>.gl-task-picture{display:flex;align-items:center;justify-content:center;min-width:0;padding:10px;margin:0}
+body.gl-tablet .gl-picture-stage[data-gl-picture]>.gl-task-picture>:is(.word-picture,.g2-practice-image,.learning-visual,.word-image,.word-art,.emoji,.g6-flash-visual,[data-danh-picture-listen]){display:flex;align-items:center;justify-content:center;object-fit:contain;max-width:100%;margin:0!important;flex:none}
+body.gl-tablet .gl-picture-stage[hidden]{display:none!important}
+body.gl-tablet .gl-picture-stage[data-gl-picture] :is(.ll-prompt,#sentence-stage){display:block!important;max-width:none!important}
+@media(orientation:portrait){
+ body.gl-tablet .gl-picture-stage[data-gl-picture]{display:flex!important;flex-direction:column!important;align-items:stretch}
+ body.gl-tablet .gl-picture-stage[data-gl-picture]>.gl-task-picture{align-self:center}
+ body.gl-tablet .gl-picture-stage[data-gl-picture]>.gl-task-picture>:is(.word-picture,.g2-practice-image,.learning-visual,.word-image,.word-art,.emoji,.g6-flash-visual,[data-danh-picture-listen]){width:112px!important;height:112px!important;min-width:0!important;min-height:0!important}
+ body.gl-tablet.tg-large .gl-picture-stage[data-gl-picture]>.gl-task-picture>:is(.word-picture,.g2-practice-image,.learning-visual,.word-image,.word-art,.emoji,.g6-flash-visual,[data-danh-picture-listen]){width:144px!important;height:144px!important}
+ body.gl-tablet .gl-picture-stage[data-gl-picture]>.ll-prompt{text-align:center}
+ body.gl-tablet .gl-picture-stage[data-gl-picture]>.ll-prompt .ll-meaning{margin-inline:auto!important;text-align:center}
+}
+@media(orientation:landscape){
+ body.gl-tablet .gl-picture-stage[data-gl-picture]{display:grid!important;grid-template-columns:minmax(140px,.7fr) minmax(0,1.3fr)!important;align-items:center}
+ body.gl-tablet .gl-picture-stage[data-gl-picture]>:not(.gl-task-picture){grid-column:2!important}
+ body.gl-tablet .gl-picture-stage[data-gl-picture]>.gl-task-picture{grid-column:1!important;grid-row:1 / span 20!important;align-self:stretch}
+ body.gl-tablet .gl-picture-stage[data-gl-picture]>.gl-task-picture>:is(.word-picture,.g2-practice-image,.learning-visual,.word-image,.word-art,.emoji,.g6-flash-visual,[data-danh-picture-listen]){width:clamp(128px,18vw,232px)!important;height:clamp(128px,18vw,232px)!important;min-width:0!important;min-height:0!important}
+ body.gl-tablet .gl-picture-stage[data-gl-picture]>.ll-prompt .ll-meaning{max-width:none;text-align:left}
+ body.gl-tablet .gl-picture-stage[data-gl-picture]>:is(.ll-slots,.ll-bank){justify-content:flex-start}
+ body.gl-tablet .vg-flip-back{display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,1.4fr);align-items:center}
+ body.gl-tablet .vg-flip-back>:is(img,svg,.word-picture,.g6-flash-icon,.g6-flash-visual,[data-danh-picture-listen]){grid-column:1;grid-row:1 / span 4}
+ body.gl-tablet .vg-flip-back>:not(img):not(svg):not(.word-picture):not(.g6-flash-icon):not(.g6-flash-visual):not([data-danh-picture-listen]){grid-column:2}
+}
+
+@media(orientation:portrait){body.gl-tablet .flip-card:has(>.word-image){display:flex;flex-direction:column;align-items:center}}
+@media(orientation:landscape){
+ body.gl-tablet .flip-card:has(>.word-image){display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,1.4fr);align-items:center;gap:16px}
+ body.gl-tablet .flip-card>.word-image{grid-column:1;grid-row:1 / span 4}
+ body.gl-tablet .flip-card:has(>.word-image)>:not(.word-image){grid-column:2}
+ body.gl-tablet .vg-flip-back>[data-danh-picture-listen]{grid-column:1;grid-row:1 / span 4}
+ body.gl-tablet .learning-stage>.learning-card{width:min(100%,720px)!important;height:260px!important}
+ body.gl-tablet .learning-card :is(.learning-card-front,.learning-card-back){display:grid;grid-template-columns:minmax(100px,1fr) minmax(0,1.4fr);align-items:center}
+ body.gl-tablet .learning-card :is(.learning-card-front,.learning-card-back)>.learning-visual{grid-column:1;grid-row:1 / span 3}
+ body.gl-tablet .learning-card :is(.learning-card-front,.learning-card-back)>:not(.learning-visual){grid-column:2}
+}
+
+body.tg-playing .tg-nav-menu .tg-tools{margin:0;width:100%;display:flex;flex-direction:column;align-items:stretch;gap:6px}
+body.tg-playing .tg-nav-menu .tg-tools button{width:100%;min-height:44px}
+.tg-nav-menu>.tg-nav-links{max-height:max(88px,calc(var(--tg-height,100dvh) - var(--tg-bar-height,52px) - var(--tg-keyboard-height,0px) - 16px));overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y pinch-zoom}

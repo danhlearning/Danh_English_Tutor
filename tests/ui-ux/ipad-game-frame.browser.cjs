@@ -22,7 +22,7 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8765',out='artifacts/i
   await page.setViewportSize({width:768,height:1024});await frame('grade6-typing-portrait',true);await page.screenshot({path:out+'/typing-portrait.png'});await page.setViewportSize({width:1024,height:768});await frame('grade6-typing-rotated-back',true);
   const input=page.locator('#spelling-stage input');assert.equal(await input.getAttribute('inputmode'),'none');
   assert.equal(await page.locator('.tg-key-row-1 [data-action=delete]').count(),1);assert.equal(await page.locator('.tg-key-row-2 [data-action=submit]').count(),1);assert.equal(await page.locator('.tg-key-row-3 [data-action=shift]').count(),2);
-  await action('hide');await page.waitForFunction(()=>!document.body.classList.contains('tg-typing'));assert.equal(await page.locator('.tg-show-keyboard').isVisible(),true);await page.locator('.tg-show-keyboard').click();await page.waitForFunction(()=>document.body.classList.contains('tg-typing'));
+  await action('hide');await page.waitForFunction(()=>!document.body.classList.contains('tg-typing'));await page.locator('.tg-nav-toggle').click();assert.equal(await page.locator('.tg-show-keyboard').isVisible(),true);await page.locator('.tg-show-keyboard').click();await page.waitForFunction(()=>document.body.classList.contains('tg-typing'));await page.keyboard.press('Escape');
   await key('c');await key('a');await key('t');assert.equal(await input.inputValue(),'cat');
   await input.evaluate(n=>n.setSelectionRange(1,2));await key('u');assert.equal(await input.inputValue(),'cut');
   await action('delete');assert.equal(await input.inputValue(),'ct');await action('space');
@@ -56,7 +56,7 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8765',out='artifacts/i
   await page.screenshot({path:out+'/grammar-landscape.png'});
   // A deliberately long explanation is available through an explicit reading mode.
   await page.evaluate(()=>{const p=document.createElement('p');p.textContent='Giải thích dài. '.repeat(500);document.querySelector('.tg-panel').append(p);});
-  await page.locator('.tg-expand').waitFor({state:'visible'});await page.locator('.tg-expand').click();assert(await page.locator('.tg-panel').evaluate(n=>n.classList.contains('tg-reading')));
+  await page.locator('.tg-nav-toggle').click();await page.locator('.tg-expand').waitFor({state:'visible'});await page.locator('.tg-expand').click();assert(await page.locator('.tg-panel').evaluate(n=>n.classList.contains('tg-reading')));
   await page.locator('.tg-expand').click();assert(!(await page.locator('.tg-panel').evaluate(n=>n.classList.contains('tg-reading'))));
   // A narrow phone-sized viewport has a phone screen in this emulation;
   // the dedicated responsive test separately retains the iPad screen in Split View.

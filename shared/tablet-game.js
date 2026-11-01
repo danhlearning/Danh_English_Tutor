@@ -3,7 +3,7 @@
  'use strict';
  if(window.DanhTabletGame)return;
  const root=new URL('../',document.currentScript.src);
- const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=game-layout-20261101',root).href;document.head.append(sheet);
+ const sheet=document.createElement('link');sheet.rel='stylesheet';sheet.href=new URL('shared/tablet-game.css?v=ipad-orientation-20261101',root).href;document.head.append(sheet);
  // Use the physical screen's short edge: phones remain phones when rotated,
  // while an iPad keeps its game frame in Split View and Stage Manager.
  const tablet=()=>navigator.maxTouchPoints>0 && Math.min(screen.width||innerWidth,screen.height||innerHeight)>=600 && innerWidth>=320;
@@ -61,7 +61,7 @@
   if(Number.isInteger(grade)&&grade>=1&&grade<=12)targets.push(['📚',`Lớp ${grade}`,`grade/lop${grade}/lop${grade}.html`],['🌈','Ôn tập',`grade/lop${grade}/${grade<=5?'review':'vocabulary-review'}.html`]);
   else targets.push(['📚','Kỹ năng','skills.html']);
   for(const [icon,label,path]of targets){const link=element('a',null,'tg-nav-link');link.href=new URL(path,root).href;link.setAttribute('aria-label',label);const symbol=element('span',icon,'tg-nav-icon');symbol.setAttribute('aria-hidden','true');link.append(symbol,element('span',label,'tg-nav-text'));links.append(link);}
-  bar.append(links);
+  const menu=element('details',null,'tg-nav-menu'),toggle=element('summary','☰','tg-nav-toggle');toggle.setAttribute('aria-label','Điều hướng');menu.append(toggle,links);menu.addEventListener('keydown',event=>{if(event.key==='Escape'&&menu.open){event.preventDefault();event.stopPropagation();menu.open=false;toggle.focus();}});bar.append(menu);
  }
  function addGamePicker(){
   const choices=gameChoices(),current=choices.find(choice=>choice.id===panel.id);
@@ -93,8 +93,8 @@
  function mount(){
   backdrop=element('div',null,'tg-backdrop');backdrop.setAttribute('aria-hidden','true');
   bar=element('nav',null,'tg-bar');bar.setAttribute('aria-label','Khung chơi');
-  const back=makeButton('← Hoạt động',leave,'Quay về chọn hoạt động');back.className='tg-back';bar.append(back);addNavigation();addGamePicker();
-  const tools=element('div',null,'tg-tools');tools.hidden=true;bar.append(tools);
+  const back=makeButton('← Hoạt động',leave,'Quay về chọn hoạt động');back.className='tg-back';back.replaceChildren(element('span','←'),element('span','Hoạt động','tg-back-text'));bar.append(back);addNavigation();addGamePicker();
+  const tools=element('div',null,'tg-tools');tools.hidden=true;bar.querySelector('.tg-nav-links').append(tools);
   const show=makeButton('Hiện bàn phím',()=>{keyboardDismissed=false;keyboardRequested=true;schedule();});show.className='tg-show-keyboard';show.hidden=true;tools.append(show);
   const expand=makeButton('Xem đầy đủ',()=>{const reading=panel.classList.toggle('tg-reading');if(!reading)panel.scrollTop=0;expand.textContent=reading?'Về khung chơi':'Xem đầy đủ';});expand.className='tg-expand';expand.hidden=true;tools.append(expand);
   keyboard=element('section',null,'tg-keyboard');keyboard.setAttribute('aria-label','Bàn phím tiếng Anh');keyboard.hidden=true;
@@ -192,7 +192,8 @@
  const frameObserver=typeof ResizeObserver==='function'?new ResizeObserver(schedule):null;
  document.addEventListener('focusin',event=>{if(tablet()&&textInput(event.target)&&(panel||findPanel())?.contains(event.target))configure(event.target);schedule();});
  document.addEventListener('pointerdown',event=>{if(panel&&textInput(event.target)&&panel.contains(event.target)){keyboardDismissed=false;schedule();}},{passive:true});
- document.addEventListener('touchmove',event=>{if(panel && event.touches.length===1 && !event.target.closest('.tg-panel,dialog,[role=dialog]') && !textInput(event.target))event.preventDefault();},{passive:false});
+ document.addEventListener('touchmove',event=>{if(panel && event.touches.length===1 && !event.target.closest('.tg-panel,.tg-nav-menu,dialog,[role=dialog]') && !textInput(event.target))event.preventDefault();},{passive:false});
+ document.addEventListener('pointerdown',event=>{const menu=bar?.querySelector('.tg-nav-menu[open]');if(menu&&!menu.contains(event.target))menu.open=false;});
  window.addEventListener('resize',schedule);window.visualViewport?.addEventListener('resize',schedule);window.visualViewport?.addEventListener('scroll',viewport);
  window.addEventListener('pagehide',close);
  document.fonts?.ready.then(schedule);

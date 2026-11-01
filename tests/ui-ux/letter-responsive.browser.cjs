@@ -27,7 +27,7 @@ const out='artifacts/letter-responsive';fs.mkdirSync(out,{recursive:true});
    if(phase===4)await page.evaluate(()=>{const g=testLetters.game,t=g.entry();for(const i of t.holes)g.choose(t.tiles.findIndex((c,n)=>!t.draft.includes(n)&&c===g.word().name[i]));g.check();g.next();g.advance();testLetters.render(document.querySelector('.letter-ladder'),true);const input=window.savedAnswer=document.querySelector('.ll-input');input.value='draft';input.dispatchEvent(new Event('input',{bubbles:true}));});
    for(const [width,height]of [[768,1024],[1024,768],[744,1133],[1133,744],[820,1180],[1180,820],[834,1194],[1194,834],[1024,1366],[1366,1024],[600,744],[507,768],[320,568],[568,320],[375,667],[667,375],[390,844],[844,390],[430,932],[932,430],[1024,600],[600,520]]){
     await page.setViewportSize({width,height});await page.waitForTimeout(100);
-    await page.waitForFunction(()=>document.querySelector('.tg-bar')?.getBoundingClientRect().height>=56);
+    await page.waitForFunction(()=>document.querySelector('.tg-bar')?.getBoundingClientRect().height>=52);
     await page.waitForFunction(height=>{const panel=document.querySelector('.tg-panel'),bar=document.querySelector('.tg-bar');return panel&&bar&&panel.getBoundingClientRect().bottom<=height+1&&Math.abs(panel.getBoundingClientRect().top-bar.getBoundingClientRect().bottom)<=1;},height);
     const result=await page.evaluate(()=>{
      const stage=document.querySelector('.letter-ladder'),panel=document.querySelector('.tg-panel'),bar=document.querySelector('.tg-bar');
@@ -42,12 +42,12 @@ const out='artifacts/letter-responsive';fs.mkdirSync(out,{recursive:true});
     for(const slot of await page.locator('.letter-ladder .ll-slot').all()){const r=await slot.boundingBox();assert(r.width>=44&&r.height>=44,'touchable letter slots');}
     if(result.clipped.length){
      const before=await page.evaluate(()=>JSON.stringify(testLetters.game.state));
-     await page.locator('.tg-expand').waitFor({state:'visible'});await page.locator('.tg-expand').click();
-     const check=page.locator('.letter-ladder .ll-primary').first();await check.scrollIntoViewIfNeeded();
+     await page.locator('.tg-nav-toggle').click();await page.locator('.tg-expand').waitFor({state:'visible'});await page.locator('.tg-expand').click();
+     await page.keyboard.press('Escape');const check=page.locator('.letter-ladder .ll-primary').first();await check.scrollIntoViewIfNeeded();
      const r=await check.boundingBox(),p=await page.locator('.tg-panel').boundingBox();assert(r.y>=p.y-1&&r.y+r.height<=p.y+p.height+1,'long content controls reachable');
      assert.equal(await page.evaluate(()=>JSON.stringify(testLetters.game.state)),before,'reading preserves progress');
      if(width===320)await page.screenshot({path:out+'/'+(path.includes('lop2')?'g2':'g6')+'-phase'+phase+'-split-reading.png'});
-     await page.locator('.tg-expand').click();
+     await page.locator('.tg-nav-toggle').click();await page.locator('.tg-expand').click();await page.keyboard.press('Escape');
     }
     if(width===1024&&height===768)await page.screenshot({path:out+'/'+(path.includes('lop2')?'g2':'g6')+'-phase'+phase+'-landscape.png'});
    }

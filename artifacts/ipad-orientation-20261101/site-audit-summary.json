@@ -1,0 +1,23 @@
+{
+  "revision": "ipad-orientation-20261101",
+  "engine": "Edge touch/desktop emulation, not physical iPad Safari",
+  "pages": 324,
+  "jobs": 331,
+  "layouts": 7525,
+  "devices": {
+    "phone320": 1505,
+    "phone390": 1505,
+    "ipad-portrait": 1505,
+    "ipad-landscape": 1505,
+    "desktop": 1505
+  },
+  "findings": {
+    "overflow": 0,
+    "panelClipped": 0,
+    "overlap": 0,
+    "clipped": 0,
+    "small": 0,
+    "badImages": 0
+  },
+  "failures": []
+}
