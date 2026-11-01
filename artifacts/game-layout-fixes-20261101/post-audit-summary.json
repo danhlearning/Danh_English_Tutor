@@ -1,0 +1,24 @@
+{
+  "sourcePages": 324,
+  "routes": 331,
+  "layouts": 7515,
+  "smallTargetStates": 0,
+  "horizontalOverflowStates": 0,
+  "clippedStates": 0,
+  "keyboardOverlapStates": 0,
+  "brokenImageStates": 0,
+  "notices": [
+    {
+      "path": "condition-pratice.html",
+      "touch": true,
+      "kind": "audit-step",
+      "message": "page.evaluate: Execution context was destroyed, most likely because of a navigation"
+    },
+    {
+      "path": "condition-pratice.html",
+      "touch": false,
+      "kind": "audit-step",
+      "message": "page.evaluate: Execution context was destroyed, most likely because of a navigation"
+    }
+  ]
+}

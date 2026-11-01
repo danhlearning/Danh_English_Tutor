@@ -1,0 +1,37 @@
+/* Touch targets remain comfortable without enlarging the whole game. */
+body :is(.learning-toolbar button,.learning-controls button,.learning-picker button,.g2-practice-button,.btn-action,#sentence-check,#count-check,#unit-select){min-height:44px!important;min-width:44px!important;box-sizing:border-box}
+body :is(.tokens button,.sentence-built button,.gg-tokens button,.gg-built button,#available-tokens button,#ordered-tokens button,#assembled button){min-width:44px!important;min-height:44px!important;box-sizing:border-box}
+.gl-game-bar{min-width:0}.gl-game-menu{min-width:0}.gl-game-summary{cursor:pointer;list-style:none;min-height:44px;padding:9px 12px;border:1px solid #a9bd9e;border-radius:12px;background:#edf2df;color:#34584c;font:800 17px 'Danh Nunito',Nunito,sans-serif;line-height:1.4}.gl-game-summary::-webkit-details-marker{display:none}.gl-game-summary:focus-visible,.gl-back:focus-visible{outline:3px solid #176d8a;outline-offset:3px}.gl-back{min-height:44px;padding:8px 10px;border:1px solid #c9b48e;border-radius:12px;background:#fffaf0;color:#34584c;font:800 16px 'Danh Nunito',Nunito,sans-serif;cursor:pointer;white-space:nowrap}.gl-game-summary[hidden],.gl-back[hidden]{display:none!important}
+@media(max-width:600px){
+ body.gl-primary-ready.gl-playing.grade2-topic>header,body.gl-primary-ready.gl-playing.grade2-topic>h1,body.gl-primary-ready.gl-playing.grade2-topic>.g2-page-links,body.gl-primary-ready.gl-playing.grade2-topic>nav.g2-main-nav{display:none!important}
+ body.gl-primary-ready.gl-playing.grade2-topic>.container{padding-top:8px!important;margin-top:0!important}
+ body.gl-primary-ready.gl-playing.grade2-topic .g2-game-switcher{margin:0 0 8px!important;padding:6px!important}
+ .gl-compact-menu{display:flex;align-items:flex-start;gap:6px;margin:6px 0 10px;scroll-margin-top:8px}
+ .gl-compact-menu>.gl-game-menu{flex:1}
+ .gl-compact-menu>.gl-back{flex:none}
+ .gl-compact-menu .gl-game-summary{display:block}
+ .gl-compact-menu .g2-game-choices,.gl-compact-menu .g6-tabs{margin:8px 0 0!important;padding:6px!important}
+ .gl-compact-menu .g6-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+ body.gl-playing .g6-lesson-hero{padding:8px 0 10px}
+ body.gl-playing .g6-lesson-hero-inner{margin-top:8px;gap:8px}
+ body.gl-playing .g6-lesson-hero h1{font-size:22px;line-height:1.3;margin:3px 0}
+ body.gl-playing .g6-lesson-hero :is(.g6-lesson-icon,.g6-kicker,.g6-lesson-hero-inner p){display:none}
+ body.gl-playing .g6-lesson-main{padding-top:10px}
+ body.gl-playing .vg-review-hero{padding:10px}
+ body.gl-playing .vg-review-hero h1{font-size:24px;margin:6px 0}
+ body.gl-playing .vg-review-hero p{display:none}
+ body.gl-playing .vg-term-picks{gap:6px;margin:6px 0}
+ body.gl-playing .vg-term-picks a{min-height:44px;padding:6px 9px;font-size:15px}
+}
+
+@media(max-width:600px){
+ body.gl-playing.grade2-topic .g2-topic-heading{font-size:21px;margin:6px 0!important}
+ body.gl-playing.grade2-topic .g2-practice-score{font-size:14px;line-height:1.4;margin:6px 0}
+ body.gl-playing.grade2-topic #sentence-stage:has(.g2-practice-image){display:grid;grid-template-columns:64px minmax(0,1fr);grid-auto-flow:row dense;gap:6px 8px;align-items:center}
+ body.gl-playing.grade2-topic #sentence-stage>:is(.g2-practice-count,.g2-practice-hint,.g2-pattern){grid-column:1 / -1}
+ body.gl-playing.grade2-topic #sentence-stage>.g2-practice-image{grid-column:1;width:64px;height:64px;min-width:64px;margin:0}
+ body.gl-playing.grade2-topic #sentence-stage>.g2-practice-meaning{grid-column:2;min-width:0}
+ body.gl-playing.grade2-topic .g2-translation-prompt{font-size:24px!important;line-height:1.35!important;padding:8px 10px!important;margin:4px 0!important}
+ body.gl-playing.grade2-topic .g2-translation-prompt::before{font-size:13px;line-height:1.3;margin-bottom:4px}
+ body.gl-playing.grade2-topic .g2-practice-hint{font-size:14px;line-height:1.4;padding:6px 8px;margin:4px 0}
+}

@@ -209,3 +209,31 @@ body.tg-playing .tg-panel :is(.learning-panel,.learning-stage,.letter-ladder,.g6
 .tg-keyboard .tg-key-row-2{flex:1.45}
 .tg-keyboard [data-action=delete]{flex:.8;min-width:44px;max-width:60px;height:44px;min-height:44px;align-self:center;font-size:23px;margin-inline:4px}
 body.tg-roomy .tg-keyboard [data-action=submit]{min-height:64px}
+
+/* A measured reading area for 13-inch iPads; avoid stretching controls to the screen. */
+body.tg-large .tg-panel{padding-top:20px!important;padding-bottom:20px!important}
+body.tg-large .tg-panel :is(.learning-panel,.learning-stage,.letter-ladder,.g6-stage,.gg-question-card,.task){max-width:1040px;padding:16px 20px!important;margin-inline:auto!important}
+body.tg-large .tg-panel :is(h2,h3){font-size:28px!important;line-height:1.35!important}
+body.tg-large .tg-panel :is(button,input,textarea){font-size:20px;min-height:48px;padding:9px 14px}
+body.tg-large .tg-panel :is(input:not([type=checkbox]):not([type=radio]),textarea){height:64px;min-height:64px;font-size:28px;padding:10px 16px}
+body.tg-large .tg-panel :is(.learning-visual,.g2-practice-image,.word-image,.ll-prompt .word-picture,.g6-flash-visual,.learning-question-visual){width:112px!important;height:112px!important;min-width:96px!important;min-height:96px!important}
+body.tg-large .tg-panel .ll-prompt{gap:24px;margin:12px auto!important}
+body.tg-large .tg-panel :is(.ll-fixed,.ll-slot){font-size:36px!important}
+body.tg-large .tg-panel :is(.ll-slot,.ll-tile){width:56px;min-width:56px;height:60px!important;min-height:60px!important;padding:7px!important}
+body.tg-large .tg-panel .ll-tile{font-size:29px}
+body.tg-large .tg-panel :is(.ll-slots,.ll-bank){gap:10px;margin:14px 0!important}
+body.tg-large .tg-panel :is(.ll-actions,.learning-controls,.practice-actions){margin:12px 0!important;gap:12px}
+body.tg-large .tg-panel :is(.ll-head,.ll-input-label,.ll-status,.learning-feedback){font-size:18px}
+body.tg-large .tg-panel #quiz-stage{max-width:1040px!important}
+body.tg-large .tg-panel #choices{max-width:960px}
+body.tg-large .tg-panel .g2-translation-prompt{font-size:28px!important}
+body.tg-large .tg-keyboard button{font-size:26px}
+body.tg-large .tg-keyboard [data-action=submit]{font-size:23px;flex:2.8}
+body.tg-large .tg-keyboard :is([data-action=space],[data-action=symbols],[data-action=hide]){font-size:18px}
+body.tg-large .tg-keyboard [data-action=delete]{font-size:23px}
+body.tg-large .tg-panel .ll-announcement{position:static!important;width:auto!important;height:auto!important;padding:0!important;margin:5px 0!important;overflow:visible!important;clip-path:none!important;white-space:normal!important;font-size:18px;color:#28654d}
+@media(orientation:portrait){body.tg-large .tg-panel .ll-prompt .word-picture{width:136px!important;height:136px!important}}
+
+/* Center a short task in the large reading area; long tasks start at the top and scroll. */
+body.tg-large .tg-panel:is(#game-flip,#game-mcq,#game-spelling,#letters,#quiz,#spelling){display:flex!important;flex-direction:column}
+body.tg-large .tg-panel:is(#game-flip,#game-mcq,#game-spelling,#letters,#quiz,#spelling)>:is(.learning-panel,.g6-stage,.letter-ladder){flex:0 0 auto;margin-block:auto!important}
