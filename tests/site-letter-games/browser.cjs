@@ -20,7 +20,7 @@ const base=process.env.LESSON_BASE_URL||'http://127.0.0.1:8765',out='artifacts/s
   const data=await page.evaluate(grade=>{const topic=document.body.dataset.topic,raw=grade===2?grade2Units[topic].words:grade<=5?DanhPrimaryGrade2Course.units.find(u=>u.id===document.body.dataset.unit).words:window['DanhGrade'+grade+'Units'].find(u=>u.id===document.body.dataset.unit).words;return {bank:grade<=5?raw:DanhSiteLetters.normalize(raw),key:grade<=5?`danh-g${grade}-letter-ladder-${topic}-v1`:document.querySelector('#letters-stage').dataset.letterStorage};},grade);
   assert(data.key.startsWith(`danh-g${grade}-`));await solve(stage,data.key,data.bank);
   const saved=await page.evaluate(k=>JSON.parse(DanhLearners.storage.getItem(k)).active,data.key);assert(saved.ids.every(id=>data.bank.some(w=>w.id===id)));
-  await page.reload();if(grade>=6)await page.locator('[data-tab="letters"]').click();await stage.waitFor();assert.equal(await page.evaluate(()=>media.length),0);
+  await page.reload();if(grade>=6&&!await stage.isVisible())await page.locator('[data-tab="letters"]').click();await stage.waitFor();assert.equal(await page.evaluate(()=>media.length),0);
   assert.deepEqual(await page.evaluate(k=>JSON.parse(DanhLearners.storage.getItem(k)).active,data.key),saved);
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   if([1,5,6,12].includes(grade))await page.screenshot({path:`${out}/grade${grade}-390.png`,fullPage:true});

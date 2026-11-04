@@ -2019,7 +2019,8 @@
     "groups": [
       "grade7",
       "grade9",
-      "grade11"
+      "grade11",
+      "food-vocabulary"
     ]
   },
   {
@@ -11552,6 +11553,13 @@
     ]
   },
   {
+    "id": "43d02f23",
+    "text": "Nutritious",
+    "groups": [
+      "food-vocabulary"
+    ]
+  },
+  {
     "id": "43e36503",
     "text": "shirt",
     "groups": [
@@ -17066,6 +17074,13 @@
     ]
   },
   {
+    "id": "6c8a47e0",
+    "text": "Authentic flavor",
+    "groups": [
+      "food-vocabulary"
+    ]
+  },
+  {
     "id": "6ca4df49",
     "text": "This is my dog.",
     "groups": [
@@ -18252,6 +18267,13 @@
     ]
   },
   {
+    "id": "75d152b1",
+    "text": "Cuisine",
+    "groups": [
+      "food-vocabulary"
+    ]
+  },
+  {
     "id": "75d2edac",
     "text": "Fifty-Nine",
     "groups": [
@@ -19254,6 +19276,13 @@
     ]
   },
   {
+    "id": "7e711bf3",
+    "text": "Signature dish",
+    "groups": [
+      "food-vocabulary"
+    ]
+  },
+  {
     "id": "7e71e1eb",
     "text": "The funny song made us laugh.",
     "groups": [
@@ -19602,6 +19631,13 @@
     "groups": [
       "grade9",
       "grammar-room"
+    ]
+  },
+  {
+    "id": "80eb2e7f",
+    "text": "Home-cooked meal",
+    "groups": [
+      "food-vocabulary"
     ]
   },
   {
@@ -31499,6 +31535,13 @@
     ]
   },
   {
+    "id": "dd897036",
+    "text": "Grab a bite",
+    "groups": [
+      "food-vocabulary"
+    ]
+  },
+  {
     "id": "dda68ee4",
     "text": "The window was broken yesterday.",
     "groups": [
@@ -34949,6 +34992,13 @@
     "text": "My sister has owned this laptop for three years.",
     "groups": [
       "grade10"
+    ]
+  },
+  {
+    "id": "f6517b62",
+    "text": "Have a sweet tooth",
+    "groups": [
+      "food-vocabulary"
     ]
   },
   {

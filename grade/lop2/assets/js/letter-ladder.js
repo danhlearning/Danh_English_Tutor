@@ -55,33 +55,57 @@
    if(a.recallPass)stage.append(make('p','Luyện lại từ cần nhớ. Tự ghép đúng để chơi tiếp.','ll-practice-note'));
    const meaning=make('h3',w.meaning,'ll-meaning');meaning.tabIndex=-1;const prompt=make('div',undefined,'ll-prompt');prompt.append(window.DanhPictureAudio.make(w,{topic}),meaning);stage.append(prompt);
    const status=make('p','', 'll-status');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
-   const refresh=()=>render(stage,full);
+   const controls=make('div',undefined,'ll-actions');
+   let drawAnswer;
+   function showResult(){
+    drawAnswer();
+    for(const field of stage.querySelectorAll('.ll-slot,.ll-tile,.ll-input'))field.disabled=true;
+    for(const slot of stage.querySelectorAll('.ll-slot'))slot.classList.add('ll-solved');
+    status.textContent={first:'Đúng.',corrected:'Đã tự sửa đúng.',hinted:'Đúng với gợi ý.',seen:`Mẫu: ${w.name}`}[t.result];status.dataset.kind=t.result==='seen'?'help':'correct';
+    if(t.result!=='seen')status.className='ll-announcement';
+    controls.replaceChildren(button(a.phase===4&&a.index===a.tasks.length-1?'Xem kết quả':'Từ tiếp',()=>navigate(()=>game.next()),'ll-primary'));
+   }
    function check(){const result=game.check();if(!result)return;
     if(result==='empty'){status.textContent=a.phase===4?'Gõ từ trước nha.':'Điền đủ các ô nhé.';return;}
     if(result==='wrong'||result==='repeat'){status.textContent='Chưa khớp rồi, sửa lại nha.';status.dataset.kind='wrong';stage.querySelector('.ll-slots')?.classList.add('ll-wrong');if(result==='wrong')fx('bad',stage.querySelector('.ll-slots,.ll-input'));const reveal=stage.querySelector('.ll-reveal');if(reveal)reveal.hidden=false;return;}
-    refresh();fx(result==='first'?'good':'corrected',stage.querySelector('.ll-slots,.ll-input'));queueAdvance(stage,a,t,window.DanhAnswerSpeech.say(w.name));
+    showResult();fx(result==='first'?'good':'corrected',stage.querySelector('.ll-slots,.ll-input'));queueAdvance(stage,a,t,window.DanhAnswerSpeech.say(w.name));
    }
    if(a.phase<4){
     const slots=make('div',undefined,'ll-slots');slots.setAttribute('aria-label','Từ cần điền');
+    const slotButtons=[];
     Array.from(w.name).forEach((c,i)=>{
      const hole=t.holes.indexOf(i);if(hole<0){slots.append(make('span',c===' '?'\u00a0':c,'ll-fixed'));return;}
-     const value=t.draft[hole]===null?'':t.tiles[t.draft[hole]],display=c===c.toUpperCase()?value.toUpperCase():value;
-     const b=button(display,event=>{if(game.remove(hole)){refresh();const slot=stage.querySelector(`[data-slot="${hole}"]`);effects?.press?.(slot);if(event.detail===0)slot?.focus({preventScroll:true});}},'ll-slot');b.dataset.slot=hole;b.disabled=!!t.result;b.setAttribute('aria-label',value?`Trả chữ ${value}`:`Ô chữ ${hole+1}`);if(!value){b.textContent='____';window.DanhExerciseGaps?.format(b);}if(t.result)b.classList.add('ll-solved');slots.append(b);
+     const b=button('',()=>{if(t.draft[hole]!==null&&game.remove(hole))drawLetters();},'ll-slot');
+     b.dataset.slot=hole;b.disabled=!!t.result;if(t.result)b.classList.add('ll-solved');slots.append(b);
+     slotButtons.push({b,c,hole});
     });stage.append(slots);
     const bank=make('div',undefined,'ll-bank');bank.setAttribute('role','group');bank.setAttribute('aria-label','Chữ cái để chọn');
-    t.tiles.forEach((letter,i)=>{const b=button(letter,event=>{const hole=t.draft.indexOf(null);if(game.choose(i)){refresh();effects?.press?.(stage.querySelector(`[data-slot="${hole}"]`));if(event.detail===0)stage.querySelector('.ll-bank button:not(:disabled)')?.focus({preventScroll:true});}},'ll-tile');b.dataset.tile=i;b.disabled=!!t.result||t.draft.includes(i);b.setAttribute('aria-label',`Chọn chữ ${letter}`);bank.append(b);});stage.append(bank);
+    const tiles=t.tiles.map((letter,i)=>{
+     const b=button(letter,event=>{if(game.choose(i)){drawLetters();if(event.detail===0)bank.querySelector('button:not(:disabled)')?.focus({preventScroll:true});}},'ll-tile');
+     b.dataset.tile=i;b.setAttribute('aria-label',`Chọn chữ ${letter}`);bank.append(b);return b;
+    });stage.append(bank);
+    function drawLetters(){
+     for(const {b,c,hole} of slotButtons){
+      const value=t.draft[hole]===null?'':t.tiles[t.draft[hole]],display=c===c.toUpperCase()?value.toUpperCase():value;
+      if(b.textContent!==(display||'____')){
+       b.textContent=display||'____';if(!value)window.DanhExerciseGaps?.format(b);
+       b.setAttribute('aria-label',value?`Trả chữ ${value}`:`Ô chữ ${hole+1}`);
+      }
+     }
+     tiles.forEach((b,i)=>{const disabled=!!t.result||t.draft.includes(i);if(b.disabled!==disabled)b.disabled=disabled;});
+     if(slots.classList.contains('ll-wrong'))slots.classList.remove('ll-wrong');
+    }
+    drawAnswer=drawLetters;
    }else{
     const label=make('label','Gõ từ tiếng Anh','ll-input-label'),input=make('input',undefined,'ll-input');input.id='letter-ladder-input';label.htmlFor=input.id;input.type='text';input.autocomplete='off';input.autocapitalize='off';input.spellcheck=false;input.maxLength=150;input.value=t.text;input.disabled=!!t.result;input.oninput=()=>game.text(input.value);input.onkeydown=e=>{if(e.key==='Enter'&&!e.repeat&&!e.isComposing){e.preventDefault();check();}};stage.append(label,input);
+    drawAnswer=()=>{if(input.value!==t.text)input.value=t.text;};
    }
    stage.append(status);
-   const controls=make('div',undefined,'ll-actions');
-   if(t.result){
-    status.textContent={first:'Đúng.',corrected:'Đã tự sửa đúng.',hinted:'Đúng với gợi ý.',seen:`Mẫu: ${w.name}`}[t.result];status.dataset.kind=t.result==='seen'?'help':'correct';
-    if(t.result!=='seen')status.className='ll-announcement';
-    controls.append(button(a.phase===4&&a.index===a.tasks.length-1?'Xem kết quả':'Từ tiếp',()=>navigate(()=>game.next()),'ll-primary'));
-   }else{
+   if(t.result)showResult();
+   else{
+    drawAnswer();
     controls.append(button('Kiểm tra',check,'ll-primary'),button('Gợi ý',()=>{const letter=game.hint();status.textContent=`Gợi ý: ${letter}`;const reveal=stage.querySelector('.ll-reveal');if(reveal)reveal.hidden=false;fx('help');}));
-    const reveal=button('Xem mẫu',()=>{if(game.reveal()){refresh();fx('help');}},'ll-reveal');reveal.hidden=!t.errors&&!t.hinted;controls.append(reveal);
+    const reveal=button('Xem mẫu',()=>{if(game.reveal()){showResult();fx('help');}},'ll-reveal');reveal.hidden=!t.errors&&!t.hinted;controls.append(reveal);
     if(t.hinted)status.textContent='Đã dùng gợi ý.';else if(t.errors)status.textContent='Thử lại nha.';
    }
    stage.append(controls);

@@ -11,9 +11,15 @@
  let panel,input,saved,bar,keyboard,backdrop,gameDialog,scheduled=false,suppressed=null,caps=false,symbols=false,moreSymbols=false,keyboardDismissed=false,keyboardRequested=false;
  const originals=new Map();
  const visible=node=>node?.isConnected && !node.closest('[hidden],.tab-content:not(.active)') && node.getClientRects().length>0;
- const textInput=node=>node?.matches('textarea,input:not([type]),input[type=text],input[type=search],input[type=number],input[type=tel],input[type=url],input[type=email]');
- function configure(node){if(!originals.has(node))originals.set(node,{inputmode:node.getAttribute('inputmode'),policy:node.getAttribute('virtualkeyboardpolicy')});node.setAttribute('inputmode','none');node.setAttribute('virtualkeyboardpolicy','manual');}
- function restoreInputs(){for(const [node,attrs]of originals){for(const [key,value]of [['inputmode',attrs.inputmode],['virtualkeyboardpolicy',attrs.policy]]){if(value===null)node.removeAttribute(key);else node.setAttribute(key,value);}}originals.clear();}
+ const textInput=node=>node?.matches('textarea,input:not([type]),input[type=text],input[type=number],input[type=tel],input[type=url],input[type=email]');
+ function configure(node){
+  if(!originals.has(node))originals.set(node,{inputmode:node.getAttribute('inputmode'),policy:node.getAttribute('virtualkeyboardpolicy')});
+  if(node.getAttribute('inputmode')!=='none')node.setAttribute('inputmode','none');
+  if(node.getAttribute('virtualkeyboardpolicy')!=='manual')node.setAttribute('virtualkeyboardpolicy','manual');
+ }
+ function restoreInput(node,attrs){for(const [key,value]of [['inputmode',attrs.inputmode],['virtualkeyboardpolicy',attrs.policy]]){if(value===null)node.removeAttribute(key);else node.setAttribute(key,value);}originals.delete(node);}
+ function canEdit(node){return textInput(node)&&panel?.contains(node)&&!node.disabled&&!node.readOnly&&visible(node);}
+ function currentField(){return canEdit(document.activeElement)?document.activeElement:canEdit(input)?input:null;}
  function findPanel(){
   for(const surface of document.querySelectorAll(selectors)){
    if(!visible(surface))continue;
@@ -98,7 +104,8 @@
   const show=makeButton('Hiện bàn phím',()=>{keyboardDismissed=false;keyboardRequested=true;schedule();});show.className='tg-show-keyboard';show.hidden=true;tools.append(show);
   const expand=makeButton('Xem đầy đủ',()=>{const reading=panel.classList.toggle('tg-reading');if(!reading)panel.scrollTop=0;expand.textContent=reading?'Về khung chơi':'Xem đầy đủ';});expand.className='tg-expand';expand.hidden=true;tools.append(expand);
   keyboard=element('section',null,'tg-keyboard');keyboard.setAttribute('aria-label','Bàn phím tiếng Anh');keyboard.hidden=true;
-  keyboard.addEventListener('pointerdown',event=>{if(event.target.closest('button'))event.preventDefault();});
+  // Keep mouse clicks from stealing the caret. Touch uses native tap activation.
+  keyboard.addEventListener('mousedown',event=>{if(event.target.closest('button'))event.preventDefault();});
   document.body.append(backdrop,bar,keyboard,gameDialog);buildKeys();
   frameObserver?.observe(bar);frameObserver?.observe(keyboard);frameObserver?.observe(panel);
  }
@@ -133,28 +140,29 @@
  function updateKeys(){if(!keyboard)return;const disabled=!input||input.disabled||input.readOnly;for(const b of keyboard.querySelectorAll('button')){const locked=b.dataset.action==='hide'?false:disabled;if(b.disabled!==locked)b.disabled=locked;}}
  function updateTools(){const tools=bar?.querySelector('.tg-tools');if(tools)tools.hidden=[...tools.children].every(node=>node.hidden);}
  function type(text){
-  if(!input || input.disabled || input.readOnly || !visible(input))return;
-  const field=input;field.focus({preventScroll:true});const start=field.selectionStart??field.value.length,end=field.selectionEnd??start;
+  const field=currentField();if(!field)return;
+  if(document.activeElement!==field)field.focus({preventScroll:true});
+  const start=field.selectionStart??field.value.length,end=field.selectionEnd??start;
   let from=start,to=end,value=text;
   if(text===null){if(from===to)from=Math.max(0,from-1);value='';}
   const next=field.value.slice(0,from)+value+field.value.slice(to);
   if(field.maxLength>=0 && next.length>field.maxLength)return;
   const event=new InputEvent('beforeinput',{bubbles:true,cancelable:true,inputType:text===null?'deleteContentBackward':'insertText',data:value});
-  if(!field.dispatchEvent(event))return;
+  if(!field.dispatchEvent(event)||!canEdit(field))return;
   try{field.setRangeText(value,from,to,'end');}catch{field.value=next;}
   field.dispatchEvent(new InputEvent('input',{bubbles:true,inputType:text===null?'deleteContentBackward':'insertText',data:value}));
  }
  function submit(){
-  if(!input||input.disabled||input.readOnly)return;
-  const form=input.form;
+  const field=currentField();if(!field)return;
+  const form=field.form;
   const button=(form && [...form.querySelectorAll('button[type=submit],input[type=submit]')].find(b=>visible(b)&&!b.disabled))||[...panel.querySelectorAll('button')].find(b=>visible(b)&&!b.disabled&&(/^(?:Kiểm tra|Chấm|Check)(?:\s|$)/i.test(b.textContent.trim())||b.matches('#check,#check-btn,#sentence-check')));
   if(button)button.click();
   else if(form)form.requestSubmit();
-  else {input.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',code:'Enter',bubbles:true,cancelable:true}));}
+  else {field.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',code:'Enter',bubbles:true,cancelable:true}));}
  }
  function close(){
   if(!panel)return;
-  frameObserver?.disconnect();panel.classList.remove('tg-panel','tg-reading','tg-word-input');panel.scrollTop=0;panel=null;input=null;keyboardRequested=false;restoreInputs();
+  frameObserver?.disconnect();panel.classList.remove('tg-panel','tg-reading','tg-word-input');panel.scrollTop=0;panel=null;input=null;keyboardRequested=false;for(const [node,attrs]of originals)restoreInput(node,attrs);
   if(gameDialog?.open)gameDialog.close();gameDialog?.remove();gameDialog=null;
   backdrop?.remove();bar?.remove();keyboard?.remove();bar=keyboard=backdrop=null;
   document.body.classList.remove('tg-playing','tg-typing','tg-roomy','tg-compact','tg-large');
@@ -173,9 +181,11 @@
   }
   viewport();
   panel.classList.toggle('tg-word-input',!!panel.querySelector('#word-answer'));
-  for(const node of panel.querySelectorAll('input,textarea'))if(textInput(node))configure(node);
-  const candidates=[...panel.querySelectorAll('input,textarea')].filter(node=>textInput(node)&&visible(node)&&!node.readOnly&&(!node.disabled||node.closest('[data-letter-auto="waiting"]')));
-  const nextInput=candidates.includes(document.activeElement)?document.activeElement:candidates[0]||null;
+  for(const [node,attrs]of originals)if(!panel.contains(node))restoreInput(node,attrs);
+  const fields=[...panel.querySelectorAll('input,textarea')].filter(textInput);
+  for(const node of fields)configure(node);
+  const candidates=fields.filter(node=>visible(node)&&!node.readOnly&&(!node.disabled||node.closest('[data-letter-auto="waiting"]')));
+  const nextInput=candidates.includes(document.activeElement)?document.activeElement:candidates.includes(input)?input:candidates[0]||null;
   if(input!==nextInput){keyboardDismissed=false;keyboardRequested=false;}
   input=nextInput;
   if(input && input.type==='number'&&!symbols){symbols=true;buildKeys();}
@@ -190,14 +200,18 @@
  }
  function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(sync);}}
  const frameObserver=typeof ResizeObserver==='function'?new ResizeObserver(schedule):null;
- document.addEventListener('focusin',event=>{if(tablet()&&textInput(event.target)&&(panel||findPanel())?.contains(event.target))configure(event.target);schedule();});
- document.addEventListener('pointerdown',event=>{if(panel&&textInput(event.target)&&panel.contains(event.target)){keyboardDismissed=false;schedule();}},{passive:true});
- document.addEventListener('touchmove',event=>{if(panel && event.touches.length===1 && !event.target.closest('.tg-panel,.tg-nav-menu,dialog,[role=dialog]') && !textInput(event.target))event.preventDefault();},{passive:false});
+ document.addEventListener('focusin',event=>{if(tablet()&&textInput(event.target)&&(panel||findPanel())?.contains(event.target)){configure(event.target);schedule();}});
+ document.addEventListener('pointerdown',event=>{
+  const field=event.target;
+  if(!canEdit(field))return;
+  configure(field);input=field;keyboardDismissed=false;keyboardRequested=true;schedule();
+ },{passive:true});
+ document.addEventListener('touchmove',event=>{if(panel && event.touches.length===1 && !event.target.closest('.tg-panel,.tg-keyboard,.tg-bar,dialog,[role=dialog]') && !textInput(event.target))event.preventDefault();},{passive:false});
  document.addEventListener('pointerdown',event=>{const menu=bar?.querySelector('.tg-nav-menu[open]');if(menu&&!menu.contains(event.target))menu.open=false;});
  window.addEventListener('resize',schedule);window.visualViewport?.addEventListener('resize',schedule);window.visualViewport?.addEventListener('scroll',viewport);
  window.addEventListener('pagehide',close);
  document.fonts?.ready.then(schedule);
- const start=()=>{new MutationObserver(records=>{if(records.some(r=>!r.target.closest?.('.tg-keyboard,.tg-bar')))schedule();}).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['hidden','class','disabled','readonly','data-letter-auto']});schedule();};
+ const start=()=>{new MutationObserver(records=>{if(records.some(r=>!r.target.closest?.('.tg-keyboard,.tg-bar,.ll-bank,.ll-slots')))schedule();}).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['hidden','class','disabled','readonly','data-letter-auto']});schedule();};
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
  window.DanhTabletGame={refresh:schedule,get active(){return !!panel;}};
 })();

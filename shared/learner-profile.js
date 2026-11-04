@@ -4,21 +4,28 @@
   // Chỉ gắn thao tác nghe; giữ nguyên DOM con và kích thước tranh.
   const pictureSelector='[data-danh-picture-listen]';
   const cardSelector='[data-danh-card-listen]';
+  const cardGridSelector='#vocab-grid .g6-word-card,#vocab-grid-container > *,#word-list .word-card,#app .word-grid .word-card,.vocab-grid .vocab-item';
   const cardEffects=new Map();
   const scannedCards=new WeakMap();
   let cardObserver;
   const nearbyCards=new Set();
   const warmNearbyCards=()=>window.DanhAnswerSpeech?.prepare([...nearbyCards].filter(card=>card.isConnected && !card.closest('[hidden],.tab-content:not(.active)')).map(card=>({card,rect:card.getBoundingClientRect()})).filter(({rect})=>rect.bottom>0).sort((a,b)=>(a.rect.top>=innerHeight)-(b.rect.top>=innerHeight)).slice(0,8).map(({card})=>card.dataset.danhCardListen));
   window.DanhVocabularyCards={warm:warmNearbyCards};
-  const cardCleanup=card=>{const effect=cardEffects.get(card);if(!effect)return;clearTimeout(effect.timer);effect.animation?.cancel();card.classList.remove('danh-card-pressed');cardEffects.delete(card);};
+  const cardCleanup=card=>{cardEffects.get(card)?.cancel();cardEffects.delete(card);};
   const cardFeedback=card=>{
-    cardCleanup(card);card.classList.add('danh-card-pressed');
+    cardCleanup(card);
     let motion=!matchMedia('(prefers-reduced-motion: reduce)').matches;
     if(window.DanhLearningEffects)motion=motion&&!window.DanhLearningEffects.reduced();
     else try{motion=motion&&JSON.parse(window.DanhLearners.storage.getItem('danh-vocabulary-effects-v1')||'{}').motion!==false;}catch{}
-    const effect={};cardEffects.set(card,effect);
-    if(motion&&card.animate)effect.animation=card.animate([{transform:'scale(1)'},{transform:'scale(.985)'},{transform:'scale(1)'}],{duration:220,easing:'ease-out'});
-    effect.timer=setTimeout(()=>cardCleanup(card),320);
+    if(motion&&card.animate){
+      const animation=card.animate([
+        {translate:'0 0',scale:'1'},
+        {translate:'0 -8px',scale:'1.025',offset:.45},
+        {translate:'0 0',scale:'1'}
+      ],{duration:260,easing:'ease-out'});
+      cardEffects.set(card,animation);
+      animation.onfinish=animation.oncancel=()=>{if(cardEffects.get(card)===animation)cardEffects.delete(card);};
+    }
     document.dispatchEvent(new CustomEvent('danh-vocabulary-card-tap',{detail:{term:card.dataset.danhCardListen,motion}}));
   };
   const cardStop=()=>{for(const card of [...cardEffects.keys()])cardCleanup(card);};
@@ -38,10 +45,9 @@
     return node;
   };
   const pictureScan=root=>{
-    const selector='#vocab-grid .g6-word-card,#vocab-grid-container > *,#word-list .word-card';
-    const cards=[...root.querySelectorAll(selector)];if(root.matches?.(selector))cards.unshift(root);
+    const cards=[...root.querySelectorAll(cardGridSelector)];if(root.matches?.(cardGridSelector))cards.unshift(root);
     for(const card of cards){
-      const cardTitle=card.querySelector('.word-title,h3');
+      const cardTitle=card.querySelector('.word-title,.vocab-word,h3');
       // Game feedback and unrelated DOM changes must not rewrite every label,
       // style and tabindex on an already prepared vocabulary card.
       const titleText=cardTitle?.textContent.trim(),previous=scannedCards.get(card);
@@ -53,10 +59,9 @@
         if(nearbyCards.has(card))warmNearbyCards();
       }
       if(card.querySelector('.word-picture,[data-word-audio]')){scannedCards.set(card,{text:titleText,title:cardTitle,picture:card.querySelector('.word-picture,[data-word-audio]')});continue;}
-      const title=card.querySelector('.word-title,h3');
-      const picture=card.querySelector('.g6-word-visual,.g4-visual,.g2-vocab-image,.word-image,.real-obj-wrapper,.number-badge-wrapper,.emoji-display,.image-badge-wrapper,[role="img"]') || [...card.children].find(n=>n.querySelector('svg,img'));
-      if(!title || !picture || !title.textContent.trim())continue;
-      pictureBind(picture,title.textContent,card.querySelector('.g6-meaning')?.textContent||title.textContent);
+      const picture=card.querySelector('.g6-word-visual,.g4-visual,.g2-vocab-image,.word-image,.real-obj-wrapper,.number-badge-wrapper,.emoji-display,.image-badge-wrapper,.word-art,.emoji,[role="img"]') || [...card.children].find(n=>n.querySelector('svg,img'));
+      if(!titleText || !picture)continue;
+      pictureBind(picture,titleText,card.querySelector('.g6-meaning')?.textContent||titleText);
       if(card.matches(cardSelector))picture.tabIndex=-1;
       if(!picture.matches(pictureSelector))continue;
       for(const button of card.querySelectorAll('button'))if(button.matches('.g6-sound,.g2-audio,.audio-btn,[data-danh-listen]') || /[🔊🔉🔈]/u.test(button.textContent)){
@@ -71,7 +76,11 @@
       if(event.type==='keydown'&&(!['Enter',' '].includes(event.key)||(event.target!==card&&!event.target.matches('.word-picture,[data-word-audio],[data-danh-picture-listen]'))))return;
       if(event.target.closest('a,input,select,textarea,button:not(.word-picture):not([data-word-audio])'))return;
       event.preventDefault();event.stopImmediatePropagation();
-      if(!event.repeat){cardFeedback(card);window.DanhAnswerSpeech.listen(card.dataset.danhCardListen);}return;
+      if(!event.repeat){
+        cardFeedback(card);
+        window.DanhAnswerSpeech.listen(card.dataset.danhCardListen);
+        if(event.isTrusted)playCardTap();
+      }return;
     }
     const picture=event.target.closest?.(pictureSelector);if(!picture)return;
     if(picture.closest('.word-picture,[data-word-audio]'))return;
@@ -84,13 +93,13 @@
   document.addEventListener('DOMContentLoaded',()=>{
     if(window.IntersectionObserver)cardObserver=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting)nearbyCards.add(entry.target);else {nearbyCards.delete(entry.target);if(!entry.target.isConnected)cardObserver.unobserve(entry.target);}}warmNearbyCards();},{rootMargin:'0px 0px 240px 0px'});
     else {let timer;const warm=()=>{clearTimeout(timer);timer=setTimeout(()=>{nearbyCards.clear();for(const card of document.querySelectorAll(cardSelector)){const rect=card.getBoundingClientRect();if(rect.width && rect.bottom>0 && rect.top<innerHeight+240)nearbyCards.add(card);}warmNearbyCards();},80);};window.addEventListener('scroll',warm,{passive:true});warm();}
-    const style=document.createElement('style');style.textContent='[data-danh-card-listen]:focus-visible,[data-danh-picture-listen]:focus-visible,[data-danh-flip-surface]:focus-visible{outline:3px solid #176d8a;outline-offset:3px}.danh-card-pressed{outline:3px solid #d79c37!important;outline-offset:-3px}';document.head.append(style);
+    const style=document.createElement('style');style.textContent='[data-danh-card-listen]:focus-visible,[data-danh-picture-listen]:focus-visible,[data-danh-flip-surface]:focus-visible{outline:3px solid #176d8a;outline-offset:3px}';document.head.append(style);
     pictureScan(document);
     new MutationObserver(records=>{
       const roots=new Set();
       for(const record of records){
         const target=record.target.nodeType===1?record.target:record.target.parentElement;
-        const card=target?.closest('#vocab-grid .g6-word-card,#vocab-grid-container > *,#word-list .word-card');if(card)roots.add(card);
+        const card=target?.closest(cardGridSelector);if(card)roots.add(card);
         for(const node of record.addedNodes)if(node.nodeType===1 && !node.matches('script,style,.vg-spark,.danh-exercise-gap'))roots.add(node);
       }
       for(const root of roots){if(!root.isConnected)continue;let parent=root.parentElement,nested=false;while(parent){if(roots.has(parent)){nested=true;break;}parent=parent.parentElement;}if(!nested)pictureScan(root);}
@@ -197,16 +206,68 @@
   document.documentElement.dataset.answerSpeechVersion='audio-1';
   const answerSpeechState=(state,mode,text)=>{document.documentElement.dataset.answerSpeechState=state;document.documentElement.dataset.answerSpeechMode=mode;document.documentElement.dataset.answerSpeechText=text;document.dispatchEvent(new CustomEvent('danh-answer-speech',{detail:{state,mode,text}}));};
   let finishAnswerSpeech,answerAudio,answerSpeechToken=0;
+  let voiceContext,voiceGain,cardTap;
+  const voiceSources=new WeakMap();
+  function prepareVoiceOutput(){
+    const Context=window.AudioContext||window.webkitAudioContext;
+    if(!Context)return false;
+    try{
+      if(!voiceContext){
+        const context=new Context(),gain=context.createGain(),compressor=context.createDynamicsCompressor();
+        gain.gain.value=2.5;
+        compressor.threshold.value=-9;
+        compressor.knee.value=6;
+        compressor.ratio.value=12;
+        compressor.attack.value=.003;
+        compressor.release.value=.15;
+        gain.connect(compressor);compressor.connect(context.destination);
+        voiceContext=context;voiceGain=gain;
+      }
+      if(voiceContext.state!=='running')voiceContext.resume().catch(()=>{});
+      return voiceContext.state==='running';
+    }catch{return false;}
+  }
+  function connectVoice(audio){
+    try{
+      let source=voiceSources.get(audio);
+      if(!source){source=voiceContext.createMediaElementSource(audio);voiceSources.set(audio,source);}
+      source.connect(voiceGain);
+      return source;
+    }catch{return null;}
+  }
+  function stopCardTap(){if(cardTap){cardTap.stop();cardTap=null;}}
+  function playCardTap(){
+    if(document.hidden||!answerSpeechEnabled())return;
+    try{
+      if(!window.DanhLearningEffects&&C.parse(window.DanhLearners.storage.getItem('danh-vocabulary-effects-v1'),{})?.sound===false)return;
+      if(!voiceContext)prepareVoiceOutput();
+      if(!voiceContext)return;
+      stopCardTap();
+      const tone=voiceContext.createOscillator(),volume=voiceContext.createGain(),start=voiceContext.currentTime;
+      tone.frequency.setValueAtTime(700,start);
+      tone.frequency.exponentialRampToValueAtTime(480,start+.045);
+      volume.gain.setValueAtTime(.0001,start);
+      volume.gain.exponentialRampToValueAtTime(.025,start+.004);
+      volume.gain.exponentialRampToValueAtTime(.0001,start+.055);
+      tone.connect(volume);volume.connect(voiceContext.destination);
+      tone.onended=()=>{if(cardTap===tone)cardTap=null;tone.disconnect();volume.disconnect();};
+      tone.start(start);tone.stop(start+.055);cardTap=tone;
+    }catch{}
+  }
   const stopAnswerSpeech=()=>{answerSpeechToken++;if(answerAudio){answerAudio.onended=answerAudio.onplaying=answerAudio.onerror=null;answerAudio.pause();if([...gameAudio.values()].some(entry=>entry.player===answerAudio)){try{answerAudio.currentTime=0;}catch{}}else {answerAudio.removeAttribute('src');answerAudio.load();}answerAudio=null;}finishAnswerSpeech?.();try{window.speechSynthesis?.cancel();}catch{}};
+  const stopListening=()=>{stopCardTap();stopAnswerSpeech();};
   const playAnswerAudio=text=>{
     const cached=gameAudio.get(answerAudioKey(text));
-    const audio=cached?.player || new Audio(cached?.url || audioURL(text));answerAudio=audio;
+    const boost=prepareVoiceOutput(),player=cached?.player;
+    // An element already routed through a suspended context would play silently.
+    const audio=(player&&(boost||!voiceSources.has(player))?player:null)||new Audio(cached?.url || audioURL(text));
+    const source=boost?connectVoice(audio):null;answerAudio=audio;
     try{audio.currentTime=0;}catch{}
     audio.playbackRate=gamePlaying()?window.DanhGameFlow.audioRate:(grade2Speech ? .85 : window.DanhYoungSpeech?.audioRate || 1);
     audio.preservesPitch=true;
     return new Promise(resolve=>{
       let finished=false;
-      const done=(success=true)=>{if(finished)return;finished=true;clearTimeout(timeout);if(finishAnswerSpeech===done)finishAnswerSpeech=null;if(answerAudio===audio)answerAudio=null;resolve(success);};
+      const done=(success=true)=>{if(finished)return;finished=true;clearTimeout(timeout);source?.disconnect();if(finishAnswerSpeech===done)finishAnswerSpeech=null;if(answerAudio===audio)answerAudio=null;resolve(success);};
       const timeout=setTimeout(done,Math.max(20000,text.length*180+4000));finishAnswerSpeech=done;
       audio.onended=()=>{answerSpeechState('ended','audio',text);done();};
       audio.onplaying=()=>{if(!finished)answerSpeechState('playing','audio',text);};
@@ -254,10 +315,10 @@
     question(question){
       return this.say(this.textForQuestion(question));
     },
-    stop:stopAnswerSpeech
+    stop:stopListening
   };
-  window.addEventListener('pagehide',stopAnswerSpeech);
-  document.addEventListener('visibilitychange',()=>{if(document.hidden)stopAnswerSpeech();});
+  window.addEventListener('pagehide',stopListening);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)stopListening();});
   const memory = () => { const map = new Map(); return {get length(){return map.size;},key(i){return [...map.keys()][i]??null;},getItem(k){return map.get(k)??null;},setItem(k,v){map.set(k,String(v));},removeItem(k){map.delete(k);}}; };
   function available(type) { try { const s=window[type], k='danh-profile-check'; s.setItem(k,'1');s.removeItem(k);return s; } catch { return null; } }
   const local = available('localStorage'), session = available('sessionStorage');

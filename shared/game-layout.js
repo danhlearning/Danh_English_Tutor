@@ -77,7 +77,7 @@
   if(tabArrow){schedule();return;}
   schedule();requestAnimationFrame(()=>{if(window.DanhTabletGame?.active)return;for(const menu of menus.values()){if(!menu.compact)continue;menu.details.open=false;menu.summary.focus({preventScroll:true});menu.bar.scrollIntoView({block:'start',behavior:'auto'});}});
  });
- const start=()=>{new MutationObserver(records=>{if(records.some(r=>!r.target.closest?.('.tg-keyboard,.tg-bar,.gl-game-summary')))schedule();}).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class','hidden','aria-selected','aria-pressed']});sync();};
+ const start=()=>{new MutationObserver(records=>{if(records.some(r=>!r.target.closest?.('.tg-keyboard,.tg-bar,.gl-game-summary,.ll-bank,.ll-slots')))schedule();}).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['class','hidden','aria-selected','aria-pressed']});sync();};
  window.addEventListener('resize',schedule);if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
  window.DanhGameLayout={refresh:schedule};
 })();

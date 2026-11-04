@@ -99,6 +99,8 @@
   };
   document.addEventListener('pointerdown',event=>{
     const target=event.target.closest?.('button,.tg-nav-link');
+    // Keep typing and letter targets in place until the native click is delivered.
+    if(target?.matches('.ll-slot,.ll-tile,.tg-keyboard button'))return;
     if(event.isPrimary!==false&&target&&!target.disabled&&target.closest('.tg-panel,.tg-keyboard,.tg-bar,.tg-game-dialog,.letter-ladder,[data-danh-game-surface]'))press(target);
   },{passive:true});
   const afterFeedback = callback => {

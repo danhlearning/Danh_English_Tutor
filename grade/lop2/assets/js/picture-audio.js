@@ -12,7 +12,7 @@
   // Tranh sao chép từ thẻ đã gắn nghe không được mang vùng nghe con vào nút mới.
   button.querySelectorAll('[data-danh-picture-listen]').forEach(n=>{for(const attr of ['data-danh-picture-listen','role','tabindex','aria-label'])n.removeAttribute(attr);n.setAttribute('aria-hidden','true');});
   button.querySelectorAll('img').forEach(n=>{n.alt='';n.draggable=false;n.decoding='async';n.loading=lazy?'lazy':'eager';});button.querySelectorAll('svg').forEach(n=>n.setAttribute('aria-hidden','true'));
-  button.onclick=event=>{event.stopPropagation();window.DanhAnswerSpeech.listen(word.name);};return button;
+  button.onclick=event=>{event.preventDefault();event.stopPropagation();window.DanhAnswerSpeech.listen(word.name);};return button;
  }
  function wire(grid,words){
   if(!grid||!enabled())return;grid.classList.add('picture-word-grid');

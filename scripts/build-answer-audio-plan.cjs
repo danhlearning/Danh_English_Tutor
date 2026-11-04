@@ -47,5 +47,6 @@ for(const file of fs.readdirSync(root).filter(name=>name.endsWith('.html'))){
 const legacyVocabulary=vm.createContext({window:{}}),legacySource=fs.readFileSync(path.join(root,'assets/js/pages/flashcard.js'),'utf8').split('const database =')[0];
 vm.runInContext(legacySource+';window.rawData=rawData;',legacyVocabulary);
 for(const words of Object.values(legacyVocabulary.window.rawData))for(const record of words)add(record.split('|')[0],'legacy-vocabulary');
+for(const match of fs.readFileSync(path.join(root,'food.html'),'utf8').matchAll(/class="vocab-word">([^<]+)/g))add(match[1],'food-vocabulary');
 const plan=[...entries.values()].sort((a,b)=>Number(b.groups.includes('grade7'))-Number(a.groups.includes('grade7'))||a.id.localeCompare(b.id));
 fs.mkdirSync(path.join(root,'artifacts/correct-answer-speech'),{recursive:true});fs.writeFileSync(path.join(root,'artifacts/correct-answer-speech/audio-plan.json'),JSON.stringify(plan,null,2));console.log(`${plan.length} English audio files; ${plan.filter(a=>a.groups.includes('grade7')).length} for grade 7.`);

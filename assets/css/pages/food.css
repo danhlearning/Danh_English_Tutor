@@ -122,12 +122,6 @@
             border: 1px solid #e2e8f0;
             padding: 15px;
             border-radius: 12px;
-            transition: all 0.3s;
-        }
-
-        .vocab-item:hover {
-            border-color: var(--accent);
-            background: #fffbeb;
         }
 
         .vocab-word {
