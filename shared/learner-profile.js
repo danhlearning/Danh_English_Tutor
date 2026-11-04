@@ -206,50 +206,24 @@
   document.documentElement.dataset.answerSpeechVersion='audio-1';
   const answerSpeechState=(state,mode,text)=>{document.documentElement.dataset.answerSpeechState=state;document.documentElement.dataset.answerSpeechMode=mode;document.documentElement.dataset.answerSpeechText=text;document.dispatchEvent(new CustomEvent('danh-answer-speech',{detail:{state,mode,text}}));};
   let finishAnswerSpeech,answerAudio,answerSpeechToken=0;
-  let voiceContext,voiceGain,cardTap;
-  const voiceSources=new WeakMap();
-  function prepareVoiceOutput(){
-    const Context=window.AudioContext||window.webkitAudioContext;
-    if(!Context)return false;
-    try{
-      if(!voiceContext){
-        const context=new Context(),gain=context.createGain(),compressor=context.createDynamicsCompressor();
-        gain.gain.value=2.5;
-        compressor.threshold.value=-9;
-        compressor.knee.value=6;
-        compressor.ratio.value=12;
-        compressor.attack.value=.003;
-        compressor.release.value=.15;
-        gain.connect(compressor);compressor.connect(context.destination);
-        voiceContext=context;voiceGain=gain;
-      }
-      if(voiceContext.state!=='running')voiceContext.resume().catch(()=>{});
-      return voiceContext.state==='running';
-    }catch{return false;}
-  }
-  function connectVoice(audio){
-    try{
-      let source=voiceSources.get(audio);
-      if(!source){source=voiceContext.createMediaElementSource(audio);voiceSources.set(audio,source);}
-      source.connect(voiceGain);
-      return source;
-    }catch{return null;}
-  }
+  let tapContext,cardTap;
   function stopCardTap(){if(cardTap){cardTap.stop();cardTap=null;}}
   function playCardTap(){
     if(document.hidden||!answerSpeechEnabled())return;
     try{
       if(!window.DanhLearningEffects&&C.parse(window.DanhLearners.storage.getItem('danh-vocabulary-effects-v1'),{})?.sound===false)return;
-      if(!voiceContext)prepareVoiceOutput();
-      if(!voiceContext)return;
+      const Context=window.AudioContext||window.webkitAudioContext;
+      if(!Context)return;
+      tapContext ||= new Context();
+      if(tapContext.state==='suspended')tapContext.resume().catch(()=>{});
       stopCardTap();
-      const tone=voiceContext.createOscillator(),volume=voiceContext.createGain(),start=voiceContext.currentTime;
+      const tone=tapContext.createOscillator(),volume=tapContext.createGain(),start=tapContext.currentTime;
       tone.frequency.setValueAtTime(700,start);
       tone.frequency.exponentialRampToValueAtTime(480,start+.045);
       volume.gain.setValueAtTime(.0001,start);
       volume.gain.exponentialRampToValueAtTime(.025,start+.004);
       volume.gain.exponentialRampToValueAtTime(.0001,start+.055);
-      tone.connect(volume);volume.connect(voiceContext.destination);
+      tone.connect(volume);volume.connect(tapContext.destination);
       tone.onended=()=>{if(cardTap===tone)cardTap=null;tone.disconnect();volume.disconnect();};
       tone.start(start);tone.stop(start+.055);cardTap=tone;
     }catch{}
@@ -258,16 +232,13 @@
   const stopListening=()=>{stopCardTap();stopAnswerSpeech();};
   const playAnswerAudio=text=>{
     const cached=gameAudio.get(answerAudioKey(text));
-    const boost=prepareVoiceOutput(),player=cached?.player;
-    // An element already routed through a suspended context would play silently.
-    const audio=(player&&(boost||!voiceSources.has(player))?player:null)||new Audio(cached?.url || audioURL(text));
-    const source=boost?connectVoice(audio):null;answerAudio=audio;
+    const audio=cached?.player || new Audio(cached?.url || audioURL(text));answerAudio=audio;
     try{audio.currentTime=0;}catch{}
     audio.playbackRate=gamePlaying()?window.DanhGameFlow.audioRate:(grade2Speech ? .85 : window.DanhYoungSpeech?.audioRate || 1);
     audio.preservesPitch=true;
     return new Promise(resolve=>{
       let finished=false;
-      const done=(success=true)=>{if(finished)return;finished=true;clearTimeout(timeout);source?.disconnect();if(finishAnswerSpeech===done)finishAnswerSpeech=null;if(answerAudio===audio)answerAudio=null;resolve(success);};
+      const done=(success=true)=>{if(finished)return;finished=true;clearTimeout(timeout);if(finishAnswerSpeech===done)finishAnswerSpeech=null;if(answerAudio===audio)answerAudio=null;resolve(success);};
       const timeout=setTimeout(done,Math.max(20000,text.length*180+4000));finishAnswerSpeech=done;
       audio.onended=()=>{answerSpeechState('ended','audio',text);done();};
       audio.onplaying=()=>{if(!finished)answerSpeechState('playing','audio',text);};
@@ -289,11 +260,18 @@
           try{if(navigator.audioSession)navigator.audioSession.type='playback';}catch{}
           return playAnswerAudio(clean).then(played=>played || (speechToken===answerSpeechToken && !document.hidden && this.say(clean,{manual,preferSpeech:true})));
         }
-        const voices=window.speechSynthesis?.getVoices?.()||[];
-        if(!window.speechSynthesis||!window.SpeechSynthesisUtterance||!voices.some(v=>/^en(?:[-_]|$)/i.test(v.lang)))return preferSpeech?false:playAnswerAudio(clean);
+        const voices=(window.speechSynthesis?.getVoices?.()||[]).filter(v=>/^en(?:[-_]|$)/i.test(v.lang));
+        if(!window.SpeechSynthesisUtterance||!voices.length)return preferSpeech?false:playAnswerAudio(clean);
         const utterance=new window.SpeechSynthesisUtterance(clean);utterance.lang='en-GB';utterance.rate=gamePlaying()?window.DanhGameFlow.speechRate:.82;
-        utterance.voice=voices.find(v=>/^en[-_]GB$/i.test(v.lang))||voices.find(v=>/^en\b/i.test(v.lang))||null;
-        window.DanhYoungSpeech?.configure(utterance);
+        if(window.DanhYoungSpeech){
+          window.DanhYoungSpeech.configure(utterance);
+        }else{
+          const british=voices.filter(v=>/^en[-_]GB$/i.test(v.lang));
+          const candidates=british.length?british:voices;
+          utterance.voice=candidates.find(v=>/Natural|Google|Samantha/i.test(v.name||''))||candidates[0];
+          utterance.pitch=1;
+          utterance.volume=1;
+        }
         return new Promise(resolve=>{
           let finished=false;
           const done=()=>{if(finished)return;finished=true;clearTimeout(timeout);if(finishAnswerSpeech===done)finishAnswerSpeech=null;resolve(true);};

@@ -8,7 +8,7 @@ function setup({playing=true, saveData=false, muted=false, fail=false, hold=fals
   const surface={closest:()=>null,getClientRects:()=>[{}]};
   const document={hidden:false,baseURI:'https://lesson.test/grade/lop2/gsunit8.html',documentElement:{dataset:{}},querySelectorAll:()=>playing?[surface]:[],
     addEventListener:(name,fn)=>{(documentEvents[name] ||= []).push(fn);},dispatchEvent:e=>events.push(e.detail)};
-  class Media { constructor(src){this.src=src;audio.push(this);}play(){this.onplaying?.();return hold?new Promise((resolve,reject)=>this.reject=reject):Promise.resolve();}pause(){this.paused=true;}removeAttribute(){this.src='';}load(){} }
+  class Media { constructor(src){this.src=src;this.volume=1;audio.push(this);}play(){this.onplaying?.();return hold?new Promise((resolve,reject)=>this.reject=reject):Promise.resolve();}pause(){this.paused=true;}removeAttribute(){this.src='';}load(){} }
   class MediaURL extends URL { static createObjectURL(){return 'blob:lesson-'+Math.random();}static revokeObjectURL(url){revoked.push(url);} }
   const window={DanhLearningEffects:{soundEnabled:()=>!muted},DanhYoungSpeech:{configure:u=>{u.rate=window.DanhGameFlow.isPlaying()?.95:.5;}},
     speechSynthesis:{getVoices:()=>[{lang:'en-GB'}],cancel(){},speak(u){window.utterance=u;u.onend?.();}},SpeechSynthesisUtterance:function(text){this.text=text;},
@@ -39,6 +39,22 @@ test('prepares current + two next silently, deduplicates, and plays the cached f
 test('game TTS is faster while study TTS keeps its slow reading', async()=>{
   const s=setup();await s.window.DanhAnswerSpeech.say('fox',{preferSpeech:true});assert.equal(s.window.utterance.rate,.95);
   s.setPlaying(false);await s.window.DanhAnswerSpeech.say('fox',{preferSpeech:true});assert.equal(s.window.utterance.rate,.82);
+});
+
+test('device speech uses a natural English voice at full volume without the young learner helper', async()=>{
+  const {window}=setup({playing:false});
+  delete window.DanhYoungSpeech;
+  window.speechSynthesis.getVoices=()=>[
+    {lang:'vi-VN',name:'Vietnamese'},
+    {lang:'en-GB',name:'UK basic'},
+    {lang:'en_GB',name:'UK Natural'}
+  ];
+  const text='Is there a playground? Yes, there is.';
+  await window.DanhAnswerSpeech.say(text,{preferSpeech:true});
+  assert.equal(window.utterance.text,text);
+  assert.equal(window.utterance.voice.name,'UK Natural');
+  assert.equal(window.utterance.volume,1);
+  assert.equal(window.utterance.pitch,1);
 });
 
 test('save-data, hidden/offline and mute do not start speculative audio or automatic speech', async()=>{
@@ -82,12 +98,16 @@ test('oversized audio and external/invalid images do not enter the cache', async
 
 test('visible-card audio prepares silently and reuses the same ready player for repeated taps',async()=>{
   const s=setup({playing:false});s.window.DanhAnswerSpeech.prepare(['fox','van','fox']);await flush();
+  let audioContexts=0;
+  s.window.AudioContext=class{constructor(){audioContexts++;}};
   assert.equal(s.requests.length,2);assert.equal(s.audio.length,2);assert.equal(s.events.length,0);
   const player=s.audio[0],src=player.src;
   for(let i=0;i<3;i++){
     const result=s.window.DanhAnswerSpeech.listen('fox');assert.equal(s.audio.length,2);assert.equal(player.playbackRate,.85);assert.equal(player.src,src);
     player.onended();await result;
   }
+  assert.equal(audioContexts,0,'speech uses the original media output');
+  assert.equal(player.volume,1);
   assert.equal(s.requests.length,2);assert.equal(s.events.filter(e=>e.state==='playing').length,3);
   const result=s.window.DanhAnswerSpeech.listen('fox');s.window.DanhAnswerSpeech.stop();await result;assert.equal(player.src,src,'stopping preserves the prepared source');
   for(const fn of s.windowEvents.pagehide)fn();assert(s.audio.every(a=>a.src===''));assert.equal(s.window.DanhGameFlow.stats.bytes,0);
