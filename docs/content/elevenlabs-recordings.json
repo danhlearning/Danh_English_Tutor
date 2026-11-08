@@ -1,0 +1,809 @@
+{
+  "provider": "ElevenLabs",
+  "voice": "Adam - Dominant, Firm",
+  "language": "en",
+  "batches": [
+    {
+      "date": "2026-11-06",
+      "models": {
+        "Animals dialogue": "Eleven v4",
+        "default": "Eleven Multilingual v2"
+      },
+      "recordings": [
+        {
+          "id": "e3a640c6",
+          "text": "What animal is this?",
+          "group": "Animals dialogue"
+        },
+        {
+          "id": "78c73ef6",
+          "text": "It is an elephant.",
+          "group": "Animals dialogue"
+        },
+        {
+          "id": "a971a6bd",
+          "text": "What is your favorite animal?",
+          "group": "Animals dialogue"
+        },
+        {
+          "id": "853a6e82",
+          "text": "I like dogs and cats.",
+          "group": "Animals dialogue"
+        },
+        {
+          "id": "6470123b",
+          "text": "What can a bird do?",
+          "group": "Animals dialogue"
+        },
+        {
+          "id": "8160fe7a",
+          "text": "A bird can fly. It lives in the tree.",
+          "group": "Animals dialogue"
+        },
+        {
+          "id": "eedc7d46",
+          "text": "I like pasta.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "bc517874",
+          "text": "I like popcorn.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "c665a539",
+          "text": "I like pizza.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "f6106c2b",
+          "text": "This is a kite.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "a645779d",
+          "text": "This is a bike.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "92873d4b",
+          "text": "This is a kitten.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "dd4f20ff",
+          "text": "I can sail.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "ab8fbff7",
+          "text": "I see sand.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "ec4c5307",
+          "text": "I see the sea.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "20640d28",
+          "text": "I see a rainbow.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "9399a408",
+          "text": "I see a river.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "b6931614",
+          "text": "I see a road.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "a11aa602",
+          "text": "This is a question.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "59e8aef7",
+          "text": "This is a square.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "655c7f59",
+          "text": "This is a quiz.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "74d4a8d9",
+          "text": "This is a box.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "32a9a285",
+          "text": "This is a fox.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "eaf53719",
+          "text": "This is an ox.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "b444ffbb",
+          "text": "I like juice.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "9c30fbe7",
+          "text": "I like jelly.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "74f86207",
+          "text": "I like jam.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "5c79f78e",
+          "text": "This is a village.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "28032f5d",
+          "text": "This is a van.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "563bd362",
+          "text": "This is a volleyball.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "dc419047",
+          "text": "I see yogurt.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "f2b3fd93",
+          "text": "I see yams.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "2386abed",
+          "text": "I see yo-yos.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "ffcb3a0a",
+          "text": "I see a zoo.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "1973dc6e",
+          "text": "I see a zebra.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "91506a13",
+          "text": "I can slide.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "533b289a",
+          "text": "I can ride.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "0f5eaa66",
+          "text": "My dad can drive.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "5e418fd5",
+          "text": "I see grapes.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "80cca7ca",
+          "text": "I see a cake.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "b3993c62",
+          "text": "I see a table.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "67b8ad9e",
+          "text": "The number is eleven.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "87e202b4",
+          "text": "The number is thirteen.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "2bf019c9",
+          "text": "The number is fourteen.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "d861cd18",
+          "text": "The number is fifteen.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "710ce865",
+          "text": "This is my brother.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "ba1b6ce1",
+          "text": "This is my sister.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "46a0bb38",
+          "text": "This is my grandmother.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "8cac231a",
+          "text": "I see shirts.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "2cb84587",
+          "text": "I see shoes.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "2461cdf4",
+          "text": "I see shorts.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "3fe8ba71",
+          "text": "This is a tent.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "67f95b91",
+          "text": "This is a teapot.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "2a714cb7",
+          "text": "This is a blanket.",
+          "group": "Grade 2 Units 1–16"
+        },
+        {
+          "id": "dd3530ce",
+          "text": "What color is it?",
+          "group": "Colors and Body Parts"
+        },
+        {
+          "id": "ea947bc2",
+          "text": "It is red. It is blue.",
+          "group": "Colors and Body Parts"
+        },
+        {
+          "id": "04ed0197",
+          "text": "It is a transparent glass bottle.",
+          "group": "Colors and Body Parts"
+        },
+        {
+          "id": "8c33244d",
+          "text": "This is my nose. These are my eyes.",
+          "group": "Colors and Body Parts"
+        },
+        {
+          "id": "768b8ce1",
+          "text": "I have two arms and two legs.",
+          "group": "Colors and Body Parts"
+        },
+        {
+          "id": "f1bac8ab",
+          "text": "I have ten fingers.",
+          "group": "Colors and Body Parts"
+        },
+        {
+          "id": "ac361238",
+          "text": "What is wrong? My stomach hurts.",
+          "group": "Colors and Body Parts"
+        },
+        {
+          "id": "7573067c",
+          "text": "This is my foot. These are my feet.",
+          "group": "Colors and Body Parts"
+        },
+        {
+          "id": "dfe6c9a5",
+          "text": "I listen with my ears. I smell with my nose.",
+          "group": "Colors and Body Parts"
+        },
+        {
+          "id": "9dc705bf",
+          "text": "What are you wearing? I am wearing a blue shirt.",
+          "group": "Clothes, Food & Drinks and Fruits"
+        },
+        {
+          "id": "4523a200",
+          "text": "I like wearing a sweater in winter.",
+          "group": "Clothes, Food & Drinks and Fruits"
+        },
+        {
+          "id": "282fab61",
+          "text": "She put on her coat.",
+          "group": "Clothes, Food & Drinks and Fruits"
+        },
+        {
+          "id": "68eefdec",
+          "text": "Are you wearing a hat? Yes, I am.",
+          "group": "Clothes, Food & Drinks and Fruits"
+        },
+        {
+          "id": "0e2e76b0",
+          "text": "My favorite food is chicken.",
+          "group": "Clothes, Food & Drinks and Fruits"
+        },
+        {
+          "id": "990cc3c0",
+          "text": "I want a hamburger.",
+          "group": "Clothes, Food & Drinks and Fruits"
+        },
+        {
+          "id": "05ae0b75",
+          "text": "I drink milk.",
+          "group": "Clothes, Food & Drinks and Fruits"
+        },
+        {
+          "id": "3c2ce798",
+          "text": "This is an apple.",
+          "group": "Clothes, Food & Drinks and Fruits"
+        },
+        {
+          "id": "05f5f6ba",
+          "text": "How many apples are there?",
+          "group": "Clothes, Food & Drinks and Fruits"
+        },
+        {
+          "id": "87b14ede",
+          "text": "There are 20 apples.",
+          "group": "Clothes, Food & Drinks and Fruits"
+        },
+        {
+          "id": "98ae6775",
+          "text": "This is my best friend.",
+          "group": "Family & Friends and Body Parts"
+        },
+        {
+          "id": "e2ea797b",
+          "text": "Who is that?",
+          "group": "Family & Friends and Body Parts"
+        },
+        {
+          "id": "d30e5698",
+          "text": "She is my grandmother.",
+          "group": "Family & Friends and Body Parts"
+        },
+        {
+          "id": "366416f4",
+          "text": "How many people are there in your family?",
+          "group": "Family & Friends and Body Parts"
+        },
+        {
+          "id": "9d3d2135",
+          "text": "There are four people in my family.",
+          "group": "Family & Friends and Body Parts"
+        },
+        {
+          "id": "eaab5dd3",
+          "text": "I have black hair. She has a long neck. My eyes are brown. My legs are strong.",
+          "group": "Family & Friends and Body Parts"
+        },
+        {
+          "id": "42655654",
+          "text": "Open your mouth, please. Brush your teeth every day. Wash your hands before eating. Put your hand on my shoulder.",
+          "group": "Family & Friends and Body Parts"
+        },
+        {
+          "id": "a868a303",
+          "text": "There are 3 cats",
+          "group": "Animals counting"
+        },
+        {
+          "id": "18ec6a7d",
+          "text": "There is 1 elephant",
+          "group": "Animals counting"
+        },
+        {
+          "id": "15ef9e5b",
+          "text": "There are 4 mice",
+          "group": "Animals counting"
+        },
+        {
+          "id": "3aeeb9d3",
+          "text": "There are 5 dogs",
+          "group": "Animals counting"
+        },
+        {
+          "id": "ef599bf0",
+          "text": "There are 2 foxes",
+          "group": "Animals counting"
+        },
+        {
+          "id": "f94b84bf",
+          "text": "There is 1 tiger",
+          "group": "Animals counting"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "models": {
+        "default": "Eleven Multilingual v2"
+      },
+      "recordings": [
+        {
+          "id": "0789415e",
+          "text": "What day is it today?",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "05cc8ffa",
+          "text": "It is Friday!",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "f2212d98",
+          "text": "What is the date today?",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "d3e6e375",
+          "text": "It is May 1st.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "3b613ac0",
+          "text": "When is your birthday?",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "646ab2be",
+          "text": "It is on August 15th.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "f2c53697",
+          "text": "How do you feel? I feel happy.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "7f1b2d65",
+          "text": "I am thirsty.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "fc5145e3",
+          "text": "I am hungry.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "e8f2ac6a",
+          "text": "Are you scared? No, I am not.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "f62b2b8b",
+          "text": "Where is the clock? It is on the wall.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "3375b9e1",
+          "text": "There is a sofa in the living room.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "a9299d13",
+          "text": "There are two chairs in the kitchen.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "39fad501",
+          "text": "Turn on the fan please. It is hot.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "8f34b6a4",
+          "text": "There are twelve apples!",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "69fbf9e8",
+          "text": "I am ten years old.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "82742da8",
+          "text": "What is this?",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "dfc872a2",
+          "text": "It is a pencil.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "4726e47b",
+          "text": "How many books do you have?",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "f4774e66",
+          "text": "I have three books.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "f5f2999c",
+          "text": "May I borrow your ruler, please?",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "34d03bd9",
+          "text": "Here you are!",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "87ec38df",
+          "text": "I can run fast.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "48d8dc1b",
+          "text": "Can you swim?",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "3bd437ee",
+          "text": "Yes, I can. I can swim well.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "09c8f523",
+          "text": "Sit down, please.",
+          "group": "Grade 2 topic dialogues"
+        },
+        {
+          "id": "333f2d3b",
+          "text": "There are 8 fish",
+          "group": "Grade 2 Animals counting"
+        },
+        {
+          "id": "351e87cf",
+          "text": "There are 7 bees",
+          "group": "Grade 2 Animals counting"
+        },
+        {
+          "id": "416261ea",
+          "text": "There are 2 turtles",
+          "group": "Grade 2 Animals counting"
+        },
+        {
+          "id": "60c41205",
+          "text": "There are 3 sheep",
+          "group": "Grade 2 Animals counting"
+        },
+        {
+          "id": "7a118ea6",
+          "text": "There are 2 butterflies",
+          "group": "Grade 2 Animals counting"
+        },
+        {
+          "id": "890ca1a2",
+          "text": "There are 9 ants",
+          "group": "Grade 2 Animals counting"
+        },
+        {
+          "id": "a1a10669",
+          "text": "There are 6 birds",
+          "group": "Grade 2 Animals counting"
+        },
+        {
+          "id": "b3b29235",
+          "text": "There are 4 monkeys",
+          "group": "Grade 2 Animals counting"
+        },
+        {
+          "id": "cae0e5fd",
+          "text": "There are 3 kangaroos",
+          "group": "Grade 2 Animals counting"
+        },
+        {
+          "id": "f076a6b9",
+          "text": "There are 5 penguins",
+          "group": "Grade 2 Animals counting"
+        },
+        {
+          "id": "81244c7d",
+          "text": "The ball is big.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "b6bc30ee",
+          "text": "The ball is small.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "dbdc46f7",
+          "text": "The pencil is long.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "d40eef91",
+          "text": "The pencil is short.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "e8dcc8c4",
+          "text": "The box is old.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "38efe519",
+          "text": "The box is new.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "b2d10961",
+          "text": "It is a circle.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "7c8f2ee4",
+          "text": "It is a square.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "4804b6f5",
+          "text": "It is a triangle.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "a382c2f4",
+          "text": "It is a rectangle.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "186928a9",
+          "text": "It is an oval.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "08c35d31",
+          "text": "It is a star.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "77923064",
+          "text": "I have a ball.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "bab8653c",
+          "text": "I have a doll.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "dde86fc7",
+          "text": "I have a teddy bear.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "f5834d06",
+          "text": "I have a kite.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "bf075081",
+          "text": "I have a robot.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "9fcd06cf",
+          "text": "I have a toy car.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "2d563094",
+          "text": "It is sunny today.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "6eea48ca",
+          "text": "It is rainy today.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "cdac000d",
+          "text": "It is cloudy today.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "8cce955a",
+          "text": "It is windy today.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "1bd21f2f",
+          "text": "It is snowy today.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "dd05bf45",
+          "text": "It is stormy today.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "a13d0a1e",
+          "text": "This is the bedroom.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "26786ad4",
+          "text": "This is the bathroom.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "48b84176",
+          "text": "This is the kitchen.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "2108b136",
+          "text": "This is the living room.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "ac45a2c6",
+          "text": "This is the dining room.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "4558366d",
+          "text": "This is the study.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "f9b1a53c",
+          "text": "This is a car.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "978ea144",
+          "text": "This is a bus.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "f84f1810",
+          "text": "This is a train.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "9f126c48",
+          "text": "This is a plane.",
+          "group": "Grade 2 extra topic samples"
+        },
+        {
+          "id": "3bfbff54",
+          "text": "This is a boat.",
+          "group": "Grade 2 extra topic samples"
+        }
+      ]
+    }
+  ]
+}
