@@ -9,6 +9,14 @@ await p.evaluate(()=>document.fonts.ready);await p.screenshot({path:path.join(ou
 await p.getByRole('button',{name:'Trò chơi',exact:true}).click();
 for(const width of [320,390,1280]){await p.setViewportSize({width,height:844});for(const id of ['game-flip','game-mcq','game-spelling','game-count']){await p.locator(`[data-game=${id}]`).click();assert(await p.locator('#'+id).isVisible());assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${id}/${width}`);}}
 const read=()=>p.evaluate(()=>JSON.parse(DanhLearners.storage.getItem('danh.learning.dates.v1')));
+for(const game of ['game-mcq','game-spelling']){
+  await p.locator(`[data-game=${game}]`).click();
+  const calendar=p.locator(`#${game} .learning-stage .word-picture svg`);
+  assert(await calendar.isVisible(),game);
+  const [label,number]=await calendar.locator('text').allTextContents();
+  assert.match(label,/^(THỨ|THÁNG)$/);
+  assert.match(number,label==='THỨ'?/^(CN|[2-7])$/:/^(?:[1-9]|1[0-2])$/);
+}
 async function play(text,action){await p.evaluate(()=>media=[]);await action();await p.waitForFunction(()=>media.some(e=>e.mode==='audio'&&e.state==='playing'));await p.waitForFunction(()=>media.some(e=>e.mode==='audio'&&e.state==='ended'));assert.equal(await p.evaluate(()=>media.find(e=>e.state==='playing').text),text);}
 await p.locator('[data-game=game-mcq]').click();let saved=await read(),r=saved.rounds.mcq;let target=await p.evaluate(id=>daysAndMonthsVocab.find(w=>w.name.toLowerCase()===id).name,r.deck[r.index]);
 await play(target,()=>p.locator('.learning-options').getByRole('button',{name:target,exact:true}).click());await p.waitForFunction(()=>JSON.parse(DanhLearners.storage.getItem('danh.learning.dates.v1')).rounds.mcq.index===1);

@@ -82,8 +82,8 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
     { num: 24, name: 'Zebra', ipa: '/ˈziː.brə/', meaning: 'Ngựa vằn', emoji: '🦓', hex: '#4A5568' },
     { num: 25, name: 'Giraffe', ipa: '/dʒɪˈræf/', meaning: 'Hươu cao cổ', emoji: '🦒', hex: '#ECC94B' },
     { num: 26, name: 'Elephant', ipa: '/ˈel.ə.fənt/', meaning: 'Con voi', emoji: '🐘', hex: '#718096' },
-    { num: 27, name: 'Rhinoceros', ipa: '/raɪˈnɑː.sɚ.əs/', meaning: 'Tê giác', emoji: '🦏', hex: '#A0AEC0' },
-    { num: 28, name: 'Hippopotamus', ipa: '/ˌhɪp.əˈpɑː.t̬ə.məs/', meaning: 'Hà mã', emoji: '🦛', hex: '#718096' },
+    { num: 27, name: 'Rhinoceros', ipa: '/raɪˈnɑː.sɚ.əs/', cardName: 'Rhino', cardIpa: '/ˈraɪ.noʊ/', meaning: 'Tê giác', emoji: '🦏', hex: '#A0AEC0' },
+    { num: 28, name: 'Hippopotamus', ipa: '/ˌhɪp.əˈpɑː.t̬ə.məs/', cardName: 'Hippo', cardIpa: '/ˈhɪp.oʊ/', meaning: 'Hà mã', emoji: '🦛', hex: '#718096' },
     { num: 29, name: 'Crocodile', ipa: '/ˈkrɑː.kə.daɪl/', meaning: 'Cá sấu', emoji: '🐊', hex: '#38A169' },
     { num: 30, name: 'Snake', ipa: '/sneɪk/', meaning: 'Con rắn', emoji: '🐍', hex: '#48BB78' },
     { num: 31, name: 'Turtle', ipa: '/ˈtɝː.t̬əl/', meaning: 'Con rùa', emoji: '🐢', hex: '#38A169' },
@@ -280,6 +280,7 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
     const grid = document.getElementById('vocab-grid-container');
     grid.innerHTML = '';
     animalsList.forEach(item => {
+      const name = item.cardName || item.name;
       const card = document.createElement('div');
       card.className = 'number-card';
       card.style.background = item.hex;
@@ -288,13 +289,13 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
         <div class="number-badge-wrapper">
           <span class="number-display">${item.emoji}</span>
         </div>
-        <div class="word-title">${item.name}</div>
-        <div class="phonetic">${item.ipa}</div>
+        <div class="word-title">${name}</div>
+        <div class="phonetic">${item.cardIpa || item.ipa}</div>
         <div class="meaning">${item.meaning}</div>
         <div class="example-box">
-          <b>Ví dụ:</b> <i>"The ${item.name.toLowerCase()} is cute."</i>
+          <b>Ví dụ:</b> <i>"The ${name.toLowerCase()} is cute."</i>
         </div>
-        <button class="audio-btn" onclick="speak('${item.name}')">🔊</button>
+        <button class="audio-btn" onclick="speak('${name}')">🔊</button>
       `;
       grid.appendChild(card);
     });
