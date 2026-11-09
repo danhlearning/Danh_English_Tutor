@@ -86,7 +86,7 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
     { num: 28, name: 'Hippopotamus', ipa: '/ˌhɪp.əˈpɑː.t̬ə.məs/', cardName: 'Hippo', cardIpa: '/ˈhɪp.oʊ/', meaning: 'Hà mã', emoji: '🦛', hex: '#718096' },
     { num: 29, name: 'Crocodile', ipa: '/ˈkrɑː.kə.daɪl/', meaning: 'Cá sấu', emoji: '🐊', hex: '#38A169' },
     { num: 30, name: 'Snake', ipa: '/sneɪk/', meaning: 'Con rắn', emoji: '🐍', hex: '#48BB78' },
-    { num: 31, name: 'Turtle', ipa: '/ˈtɝː.t̬əl/', meaning: 'Con rùa', emoji: '🐢', hex: '#38A169' },
+    { num: 31, name: 'Turtle', ipa: '/ˈtɝː.t̬əl/', meaning: 'Rùa biển', emoji: '🐢', hex: '#38A169' },
     { num: 32, name: 'Whale', ipa: '/weɪl/', meaning: 'Cá voi', emoji: '🐳', hex: '#3182CE' },
     { num: 33, name: 'Dolphin', ipa: '/ˈdɑːl.fɪn/', meaning: 'Cá heo', emoji: '🐬', hex: '#4A90E2' },
     { num: 34, name: 'Seal', ipa: '/siːl/', meaning: 'Hải cẩu', emoji: '🦭', hex: '#A0AEC0' },
@@ -130,7 +130,7 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
 
   /* Use one lightweight pencil picture for vocabulary and every game. */
   animalsList.forEach(word => {
-    const file = word.name.toLowerCase() + '-pencil-v2.webp';
+    const file = word.name.toLowerCase() + (word.name === 'Turtle' ? '-pencil-v3.webp' : '-pencil-v2.webp');
     word.image = './assets/images/pencil/animals/' + file;
     word.emoji = `<img class="animals-pencil-art" src="./assets/images/pencil/animals/compact/${file}" srcset="./assets/images/pencil/animals/compact/${file} 384w, ${word.image} 768w" sizes="(max-width:600px) 110px, 140px" alt="" width="360" height="360" loading="lazy" decoding="async">`;
   });
@@ -258,14 +258,20 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
 
   function setAudioNote(message) {
     const note = document.getElementById('animals-audio-note');
-    if (note) note.textContent = message;
+    if (note) {
+      note.textContent = message;
+      note.hidden = !message;
+    }
   }
+
+  const sentenceRecordings = [...document.querySelectorAll('#sentences [data-answer-recording]')]
+    .map(button => button.dataset.answerRecording);
 
   async function speak(text) {
     if(window.DanhListenControls?.isManualRequest())return window.DanhAnswerSpeech.listen(text);
     if(window.DanhAnswerSpeech)return window.DanhAnswerSpeech.say(text);
     stopSpeech();
-    setAudioNote('Nghe chậm · Giọng Anh–Mỹ');
+    setAudioNote('');
     const serial = speechSerial;
     const source = wordAudioFiles.get(String(text).trim().toLowerCase());
     if (source) {
@@ -311,6 +317,7 @@ const speechTimeoutMs = window.DanhYoungSpeech.timeoutFor();
     document.querySelectorAll('nav .nav-btn').forEach(el => el.classList.remove('active'));
     document.getElementById(tabId).classList.add('active');
     (evt?.currentTarget || evt?.target)?.classList.add('active');
+    if (tabId === 'sentences') window.DanhAnswerSpeech?.prepare(sentenceRecordings);
     if (tabId === 'game-count') initCountGame();
   }
 

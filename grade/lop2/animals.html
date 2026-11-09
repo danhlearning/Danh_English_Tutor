@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
 <script src="../../shared/learner-profile-core.js?v=compact-listen-20261024"></script>
-<script src="../../shared/learner-profile.js?v=larger-learning-art-20261101"></script>
+<script src="../../shared/learner-profile.js?v=adam-hippo-20261109"></script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,8 +38,7 @@
   <!-- TAB 1: VOCABULARY -->
   <div id="vocab" class="tab-content active">
     <h2 style="margin-bottom: 16px; text-align: center; color: #276749; font-weight: 800; font-size: 1.4rem;">Từ Vựng Loài Động Vật Phổ Biến</h2>
-    <p style="text-align:center; color:#276749; margin:0;">Phiên âm và giọng đọc Anh-Mỹ (US).</p>
-    <p id="animals-audio-note" role="status" style="text-align:center; color:#9c461c; margin:0 0 18px;">Nghe chậm · Giọng Anh–Mỹ</p>
+    <p id="animals-audio-note" role="status" hidden style="text-align:center; color:#9c461c; margin:0 0 18px;"></p>
     <div class="vocab-grid" id="vocab-grid-container"></div>
   </div>
 
@@ -53,8 +52,8 @@
         <p><b>Hỏi:</b> What animal is this? / What is that?</p>
         <p><b>Trả lời:</b> It is a/an + [Tên con vật].</p>
         <div class="dialogue">
-          <p><span class="speaker">Mom:</span> What animal is this? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What animal is this?')">🔊</button></p>
-          <p><span class="speaker">Kid:</span> It is an elephant. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('It is an elephant.')">🔊</button></p>
+          <p><span class="speaker">Mom:</span> What animal is this? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" data-answer-recording="What animal is this?" onclick="speak(this.dataset.answerRecording)">🔊</button></p>
+          <p><span class="speaker">Kid:</span> It is an elephant. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" data-answer-recording="It is an elephant." onclick="speak(this.dataset.answerRecording)">🔊</button></p>
         </div>
       </div>
 
@@ -63,8 +62,8 @@
         <p><b>Hỏi:</b> What is your favorite animal?</p>
         <p><b>Trả lời:</b> My favorite animal is [Tên số ít] / I like [Tên số nhiều].</p>
         <div class="dialogue">
-          <p><span class="speaker">Alex:</span> What is your favorite animal? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What is your favorite animal?')">🔊</button></p>
-          <p><span class="speaker">Ben:</span> I like dogs and cats. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('I like dogs and cats.')">🔊</button></p>
+          <p><span class="speaker">Alex:</span> What is your favorite animal? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" data-answer-recording="What is your favorite animal?" onclick="speak(this.dataset.answerRecording)">🔊</button></p>
+          <p><span class="speaker">Ben:</span> I like dogs and cats. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" data-answer-recording="I like dogs and cats." onclick="speak(this.dataset.answerRecording)">🔊</button></p>
         </div>
       </div>
 
@@ -73,8 +72,8 @@
         <p><b>Nơi sống:</b> Where does it live? -> It lives in the [forest / ocean / farm].</p>
         <p><b>Khả năng:</b> What can it do? -> It can [fly / swim / run].</p>
         <div class="dialogue">
-          <p><span class="speaker">Teacher:</span> What can a bird do? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('What can a bird do?')">🔊</button></p>
-          <p><span class="speaker">Student:</span> A bird can fly. It lives in the tree. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" onclick="speak('A bird can fly. It lives in the tree.')">🔊</button></p>
+          <p><span class="speaker">Teacher:</span> What can a bird do? <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" data-answer-recording="What can a bird do?" onclick="speak(this.dataset.answerRecording)">🔊</button></p>
+          <p><span class="speaker">Student:</span> A bird can fly. It lives in the tree. <button class="audio-btn" style="display:inline-flex; width:28px; height:28px; font-size:0.75rem;" data-answer-recording="A bird can fly. It lives in the tree." onclick="speak(this.dataset.answerRecording)">🔊</button></p>
         </div>
       </div>
 
@@ -122,7 +121,7 @@
 <script src="../../grade/lop2/assets/js/letter-ladder.js?v=review-letters-20261031"></script>
 <script src="../../grade/lop2/assets/js/picture-audio.js?v=calendar-cues-20261108"></script>
 <script src="../../shared/site-letter-games.js?v=review-letters-20261031"></script>
-<script src="./assets/js/topics/animals.js?v=hippo-rhino-20261108"></script>
+<script src="./assets/js/topics/animals.js?v=sea-turtle-20261109"></script>
 <script src="./assets/js/legacy-game4-config.js?v=game-pacing-20261025"></script>
 <script src="./assets/js/learning-core.js?v=site-letters-20261025"></script>
 

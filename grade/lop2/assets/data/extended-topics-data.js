@@ -158,9 +158,128 @@
     ['Helicopter','trực thăng','/ˈhel.ɪˌkɒp.tə/',photoVisual('transport/helicopter')], ['Scooter','xe trượt','/ˈskuː.tə/',photoVisual('transport/scooter')]
   ];
   const names = entries => entries.map(([name, meaning]) => [name.toLowerCase().replace(/[^a-z0-9]+/g, '-'), meaning]);
+  const art = path => svg(`<image href="${path}" x="7" y="7" width="106" height="106"/>`);
+  const primary = id => art(`../../shared/assets/primary-vocabulary/${id}-v1.webp`);
+  const pencil = id => art(`./assets/images/pencil/${id}-v1.webp`);
+  const gradeFour = id => art(`../lop4/assets/images/pencil/${id}-v1.webp`);
+
+  function clockFace(hour, minute) {
+    const marks = Array.from({length: 12}, (_, index) =>
+      `<line x1="60" y1="19" x2="60" y2="25" stroke="#526575" stroke-width="2" transform="rotate(${index * 30} 60 60)"/>`).join('');
+    return svg(circle(60, 60, 46, '#fff9e6', stroke) + marks +
+      `<path d="M60 60V38" stroke="#40566b" stroke-width="7" stroke-linecap="round" transform="rotate(${hour * 30 + minute / 2} 60 60)"/>` +
+      `<path d="M60 60V30" stroke="#b55547" stroke-width="4" stroke-linecap="round" transform="rotate(${minute * 6} 60 60)"/>` +
+      circle(60, 60, 4, '#40566b'), '#f8eacf');
+  }
+
+  const guitar = svg('<g transform="rotate(37 60 60)"><path d="M53 56c-22-7-32 18-24 35 8 20 38 22 53 7 13-13 9-42-14-39" fill="#d8a26e" stroke="#5f4735" stroke-width="3"/><circle cx="59" cy="81" r="9" fill="#6c4b37"/><path d="M54 21h12v62H54z" fill="#a26e49" stroke="#5f4735" stroke-width="3"/><path d="M51 13h18v18H51z" fill="#b8855a" stroke="#5f4735" stroke-width="3"/><path d="M55 31v63m5-63v63m5-63v63" stroke="#fff1c7"/></g>', '#f8eacf');
+  const flute = svg('<g transform="rotate(-32 60 60)"><rect x="14" y="51" width="92" height="17" rx="7" fill="#c1d6e0" stroke="#506677" stroke-width="3"/><path d="M37 51v17M89 51v17" stroke="#506677" stroke-width="3"/><ellipse cx="25" cy="59" rx="5" ry="3" fill="#526674"/><g fill="#f2f7fa" stroke="#506677" stroke-width="2"><circle cx="48" cy="59" r="4"/><circle cx="60" cy="59" r="4"/><circle cx="72" cy="59" r="4"/><circle cx="83" cy="59" r="4"/></g></g>');
+  const trumpet = svg('<path d="M12 55h17q10 0 10 14v10q0 13 12 13h23q16 0 16-13T74 66H49" fill="none" stroke="#936535" stroke-width="12" stroke-linecap="round"/><path d="M12 55h17q10 0 10 14v10q0 13 12 13h23q16 0 16-13T74 66H49" fill="none" stroke="#e6b65d" stroke-width="7" stroke-linecap="round"/><path d="M45 60h24q21 0 34-14v33Q90 65 69 65H45z" fill="#efc36f" stroke="#936535" stroke-width="3"/><path d="M51 61V44m10 17V41m10 20V44" stroke="#936535" stroke-width="4"/>', '#f7ead4');
+  const tambourine = svg('<ellipse cx="60" cy="59" rx="38" ry="34" fill="#d59a6c" stroke="#6f5341" stroke-width="3"/><ellipse cx="60" cy="57" rx="32" ry="26" fill="#fbedd0" stroke="#9c7758" stroke-width="3"/><path d="M27 50l-9-4m12 32-8 6m36 5v10m33-20 9 6m-4-35 9-4" stroke="#87939d" stroke-width="7" stroke-linecap="round"/>', '#f9f0dc');
+  const trafficLight = svg(rect(54, 55, 12, 49, '#7a8184') + rect(38, 13, 44, 68, '#58626b', 9, stroke) +
+    circle(60, 28, 8, '#c95751') + circle(60, 47, 8, '#e7b45a') + circle(60, 66, 8, '#82a66e'));
+  const noCycling = svg('<circle cx="60" cy="60" r="43" fill="#fff9eb" stroke="#b94e47" stroke-width="8"/><g fill="none" stroke="#40566b" stroke-width="3"><circle cx="42" cy="69" r="10"/><circle cx="79" cy="69" r="10"/><path d="M42 69l14-23 11 23H42m14-23h15l8 23m-26-24h-5m21 0 5-5"/></g><path d="M30 30l60 60" stroke="#b94e47" stroke-width="7"/>', '#f7e7e1');
+  const crossing = svg('<path d="M10 88l36-45h30l34 45z" fill="#70777b"/><path d="M27 79h66m-59-9h53m-46-9h39m-32-8h25" stroke="#fff7e5" stroke-width="4"/>', '#e8f1e6');
+  const wetFloor = svg('<path d="M60 16l44 79H16z" fill="#efd184" stroke="#9c773e" stroke-width="4"/><circle cx="69" cy="43" r="6" fill="#44535a"/><path d="M60 53l-12 15 15 7 14 10m-14-10-12 12m9-34 14 6 8-6" fill="none" stroke="#44535a" stroke-width="5" stroke-linecap="round"/>', '#fbf1db');
+  const seatBelt = svg('<path d="M39 29h34v57H39z" fill="#a7bec4" stroke="#536a71" stroke-width="3"/><path d="M33 91h58v13H33z" fill="#a7bec4" stroke="#536a71" stroke-width="3"/><path d="M40 28l43 68" stroke="#536a71" stroke-width="10"/><rect x="73" y="84" width="17" height="14" rx="3" fill="#d7856e" stroke="#7d5149" stroke-width="3"/>');
+  const seed = svg('<path d="M33 84c-11-25 21-51 53-51 0 26-18 53-37 57-7 2-12 0-16-6z" fill="#c19570" stroke="#765a45" stroke-width="4"/><path d="M40 80q20-21 35-36" fill="none" stroke="#e3c19d" stroke-width="4"/>', '#f8eddc');
+  const soil = svg('<path d="M16 87Q28 71 42 64q8-16 21-18 17 1 21 17 14 7 22 24z" fill="#aa7b56" stroke="#6b5344" stroke-width="4"/><g fill="#704f3b"><circle cx="48" cy="72" r="3"/><circle cx="64" cy="62" r="3"/><circle cx="77" cy="76" r="3"/><circle cx="57" cy="83" r="2"/></g>', '#faeedc');
+  const leaf = svg('<path d="M29 81q-7-45 67-55-2 56-52 62z" fill="#97b484" stroke="#57744d" stroke-width="4"/><path d="M23 96q30-31 61-55M52 70l-3-16m15 8 16-2" stroke="#57744d" stroke-width="3" fill="none"/>', '#ecf3de');
+  const wateringCan = svg('<path d="M25 51q-20-5-16 18t22 7m48-5 25-27 10 8-27 35" fill="none" stroke="#4c727c" stroke-width="8"/><path d="M27 53q28-12 53 0l9 31q0 13-29 14t-34-12z" fill="#91bdc6" stroke="#4c727c" stroke-width="4"/><path d="M40 49v-9q18-13 33 0v9" fill="none" stroke="#4c727c" stroke-width="5"/>');
+  const ticket = svg('<g transform="rotate(-18 60 60)"><path d="M16 37h88v15a8 8 0 0 0 0 16v15H16V68a8 8 0 0 0 0-16z" fill="#e9ac82" stroke="#976248" stroke-width="3"/><path d="M75 39v42" stroke="#976248" stroke-width="2" stroke-dasharray="3 4"/><path d="M31 52h28m-28 12h19" stroke="#fff5dc" stroke-width="4" stroke-linecap="round"/></g>', '#f9eee0');
+  const suitcase = svg('<path d="M46 36v-8q14-10 28 0v8" fill="none" stroke="#735e56" stroke-width="5"/><rect x="21" y="36" width="78" height="56" rx="11" fill="#b98a78" stroke="#735e56" stroke-width="4"/><path d="M41 38v52m37-52v52" stroke="#f4cf9d" stroke-width="6"/>', '#f7ebdf');
+  const passport = svg('<path d="M34 23h48v75H34q-7-2-7-8V30q0-7 7-7z" fill="#6e8e86" stroke="#47645d" stroke-width="4"/><circle cx="56" cy="57" r="14" fill="none" stroke="#f2d4a0" stroke-width="3"/><path d="M42 57h28m-14-13c-8 9-8 17 0 26 8-9 8-17 0-26" fill="none" stroke="#f2d4a0" stroke-width="2"/>');
+  const lantern = svg('<path d="M55 28V17q5-7 10 0v11m-5 65v13" fill="none" stroke="#9a653e" stroke-width="4"/><path d="M49 30h22v9H49zM49 81h22v9H49z" fill="#daa360" stroke="#9a653e" stroke-width="3"/><path d="M50 39q-27 8-23 21t23 21h20q25-7 23-21t-23-21z" fill="#ce7467" stroke="#a24f49" stroke-width="3"/><path d="M52 40q-12 20 0 40m16-40q12 20 0 40" fill="none" stroke="#f2b27b" stroke-width="3"/>', '#faead7');
+
+  function extraTopic(id, title, icon, description, pattern, rows) {
+    const entries = rows.map(row => row.slice(0, 4));
+    const sentences = names(entries).map(([target], index) => [target, ...rows[index].slice(4)]);
+    return make(id, title, icon, description, pattern, entries, sentences);
+  }
+
   const catalog = {
+    clocks: extraTopic('clocks', 'Time & Clocks', '🕒', 'Nhìn kim đồng hồ và nói giờ bằng tiếng Anh.', 'It is + cách đọc giờ.', [
+      ["Two o'clock", 'hai giờ đúng', '/tuː əˈklɒk/', clockFace(2, 0), 'Bây giờ là hai giờ đúng.', "It is two o'clock.", ["It's two o'clock."]],
+      ["Five o'clock", 'năm giờ đúng', '/faɪv əˈklɒk/', clockFace(5, 0), 'Bây giờ là năm giờ đúng.', "It is five o'clock.", ["It's five o'clock."]],
+      ["Eight o'clock", 'tám giờ đúng', '/eɪt əˈklɒk/', clockFace(8, 0), 'Bây giờ là tám giờ đúng.', "It is eight o'clock.", ["It's eight o'clock."]],
+      ['Half past seven', 'bảy giờ rưỡi', '/hɑːf pɑːst ˈsev.ən/', clockFace(7, 30), 'Bây giờ là bảy giờ rưỡi.', 'It is half past seven.', ["It's half past seven."]],
+      ['Quarter past nine', 'chín giờ mười lăm', '/ˈkwɔː.tə pɑːst naɪn/', clockFace(9, 15), 'Bây giờ là chín giờ mười lăm.', 'It is quarter past nine.', ["It's quarter past nine."]],
+      ['Quarter to six', 'sáu giờ kém mười lăm', '/ˈkwɔː.tə tə sɪks/', clockFace(5, 45), 'Bây giờ là sáu giờ kém mười lăm.', 'It is quarter to six.', ["It's quarter to six."]],
+    ]),
+    jobs: extraTopic('jobs', 'Jobs & Workplaces', '🧑‍🍳', 'Nói về công việc và nơi làm việc.', 'A/An + nghề + works at/in + nơi làm việc.', [
+      ['Doctor', 'bác sĩ', '/ˈdɒk.tə/', gradeFour('doctor'), 'Một bác sĩ làm việc ở bệnh viện.', 'A doctor works at a hospital.', ['A doctor works in a hospital.']],
+      ['Chef', 'đầu bếp', '/ʃef/', gradeFour('chef'), 'Một đầu bếp làm việc trong nhà bếp.', 'A chef works in a kitchen.'],
+      ['Farmer', 'nông dân', '/ˈfɑː.mə/', gradeFour('farmer'), 'Một nông dân làm việc ở nông trại.', 'A farmer works on a farm.'],
+      ['Firefighter', 'lính cứu hỏa', '/ˈfaɪəˌfaɪ.tə/', gradeFour('firefighter'), 'Một lính cứu hỏa làm việc ở trạm cứu hỏa.', 'A firefighter works at a fire station.'],
+      ['Pilot', 'phi công', '/ˈpaɪ.lət/', gradeFour('pilot'), 'Một phi công lái máy bay.', 'A pilot flies a plane.'],
+      ['Dentist', 'nha sĩ', '/ˈden.tɪst/', primary('dentist'), 'Một nha sĩ chăm sóc răng.', 'A dentist takes care of teeth.'],
+    ]),
+    music: extraTopic('music', 'Music & Instruments', '🎸', 'Gọi tên nhạc cụ và nói em biết chơi nhạc cụ nào.', 'I can play the + nhạc cụ.', [
+      ['Guitar', 'đàn ghi-ta', '/ɡɪˈtɑː/', guitar, 'Tôi biết chơi ghi-ta.', 'I can play the guitar.'],
+      ['Piano', 'đàn pi-a-nô', '/piˈæn.əʊ/', gradeFour('play-the-piano'), 'Bạn ấy biết chơi đàn pi-a-nô.', 'She can play the piano.'],
+      ['Drum', 'cái trống', '/drʌm/', pencil('toys/drum'), 'Tôi có một cái trống.', 'I have a drum.'],
+      ['Flute', 'sáo', '/fluːt/', flute, 'Bạn nam biết thổi sáo.', 'He can play the flute.'],
+      ['Trumpet', 'kèn trumpet', '/ˈtrʌm.pɪt/', trumpet, 'Tôi nghe thấy tiếng kèn trumpet.', 'I can hear the trumpet.'],
+      ['Tambourine', 'trống lục lạc', '/ˌtæm.bəˈriːn/', tambourine, 'Đây là một chiếc trống lục lạc.', 'This is a tambourine.'],
+    ]),
+    health: extraTopic('health', 'Health & Symptoms', '🩺', 'Nói với người lớn khi em thấy không khỏe.', 'I have a + triệu chứng. / I need to + động từ.', [
+      ['Headache', 'đau đầu', '/ˈhed.eɪk/', primary('headache'), 'Tôi bị đau đầu.', 'I have a headache.'],
+      ['Toothache', 'đau răng', '/ˈtuːθ.eɪk/', primary('toothache'), 'Tôi bị đau răng.', 'I have a toothache.'],
+      ['Sore throat', 'đau họng', '/sɔː θrəʊt/', primary('sore-throat'), 'Tôi bị đau họng.', 'I have a sore throat.'],
+      ['Fever', 'sốt', '/ˈfiː.və/', primary('fever'), 'Tôi bị sốt.', 'I have a fever.'],
+      ['Rest', 'nghỉ ngơi', '/rest/', primary('rest'), 'Tôi cần nghỉ ngơi.', 'I need to rest.'],
+      ['Dentist', 'nha sĩ', '/ˈden.tɪst/', primary('dentist'), 'Tôi cần gặp nha sĩ.', 'I need to see a dentist.'],
+    ]),
+    safety: extraTopic('safety', 'Safety Signs', '⚠️', 'Hiểu biển báo và nói cách giữ an toàn.', 'You must/must not + hành động.', [
+      ['Wet floor', 'sàn ướt', '/wet flɔː/', wetFloor, 'Hãy đi cẩn thận trên sàn ướt.', 'Walk carefully on the wet floor.'],
+      ['No cycling', 'cấm đi xe đạp', '/nəʊ ˈsaɪ.klɪŋ/', noCycling, 'Bạn không được đi xe đạp ở đây.', 'You must not ride a bike here.', ["You mustn't ride a bike here."]],
+      ['Crossing', 'vạch sang đường', '/ˈkrɒs.ɪŋ/', crossing, 'Hãy qua đường ở vạch sang đường.', 'Cross the road at the crossing.'],
+      ['Traffic light', 'đèn giao thông', '/ˈtræf.ɪk laɪt/', trafficLight, 'Hãy dừng lại khi đèn giao thông màu đỏ.', 'Stop when the traffic light is red.'],
+      ['Helmet', 'mũ bảo hiểm', '/ˈhel.mɪt/', primary('helmet'), 'Bạn phải đội mũ bảo hiểm.', 'You must wear a helmet.'],
+      ['Seat belt', 'dây an toàn', '/ˈsiːt belt/', seatBelt, 'Hãy thắt dây an toàn.', 'Fasten your seat belt.'],
+    ]),
+    plants: extraTopic('plants', 'Plants & Growing', '🌱', 'Gọi tên cây và những thứ cần để trồng cây.', 'Plant / water / look at + đối tượng.', [
+      ['Seed', 'hạt giống', '/siːd/', seed, 'Hãy gieo hạt giống.', 'Plant the seed.'],
+      ['Soil', 'đất trồng', '/sɔɪl/', soil, 'Hãy tưới nước vào đất.', 'Water the soil.'],
+      ['Leaf', 'chiếc lá', '/liːf/', leaf, 'Hãy nhìn chiếc lá xanh.', 'Look at the green leaf.'],
+      ['Watering can', 'bình tưới cây', '/ˈwɔː.tər.ɪŋ kæn/', wateringCan, 'Hãy dùng bình tưới cây.', 'Use the watering can.'],
+      ['Flower', 'bông hoa', '/ˈflaʊ.ə/', primary('flower'), 'Đây là một bông hoa.', 'This is a flower.'],
+      ['Tree', 'cây thân gỗ', '/triː/', primary('tree'), 'Chúng ta hãy trồng một cái cây.', "Let's plant a tree.", ['Let us plant a tree.']],
+    ]),
+    stories: extraTopic('stories', 'Stories & Characters', '📖', 'Nói về nhân vật, tính cách và đoạn kết của truyện.', 'The character is + tính từ. / The story has + đoạn kết.', [
+      ['Story', 'câu chuyện', '/ˈstɔː.ri/', primary('story'), 'Tôi thích câu chuyện này.', 'I like this story.'],
+      ['Character', 'nhân vật', '/ˈkær.ək.tə/', primary('character'), 'Cô ấy là nhân vật chính.', 'She is the main character.'],
+      ['Ending', 'đoạn kết', '/ˈen.dɪŋ/', primary('ending'), 'Câu chuyện có đoạn kết vui.', 'The story has a happy ending.'],
+      ['Brave', 'dũng cảm', '/breɪv/', primary('brave'), 'Nhân vật này rất dũng cảm.', 'This character is very brave.'],
+      ['Gentle', 'hiền dịu', '/ˈdʒen.təl/', primary('gentle'), 'Người khổng lồ hiền dịu.', 'The giant is gentle.'],
+      ['Book', 'quyển sách', '/bʊk/', pencil('schoolsupplies/book'), 'Hãy mở sách ra và đọc câu chuyện.', 'Open the book and read the story.'],
+    ]),
+    tickets: extraTopic('tickets', 'Travel & Tickets', '🎫', 'Nói về vé, hành lý và nơi khởi hành.', 'I need + vật. / The + phương tiện + leaves at + giờ.', [
+      ['Ticket', 'vé', '/ˈtɪk.ɪt/', ticket, 'Tôi cần một vé đi Huế.', 'I need a ticket to Hue.'],
+      ['Suitcase', 'va li', '/ˈsuːt.keɪs/', suitcase, 'Va li của tôi nặng.', 'My suitcase is heavy.'],
+      ['Passport', 'hộ chiếu', '/ˈpɑːs.pɔːt/', passport, 'Đây là hộ chiếu của tôi.', 'This is my passport.'],
+      ['Station', 'nhà ga', '/ˈsteɪ.ʃən/', art('../lop6/assets/images/pencil/unit4/railway-station-v1.webp'), 'Chúng ta hãy gặp nhau ở nhà ga.', "Let's meet at the station.", ['Let us meet at the station.']],
+      ['Airport', 'sân bay', '/ˈeə.pɔːt/', primary('airport'), 'Chúng ta đang ở sân bay.', 'We are at the airport.', ["We're at the airport."]],
+      ['Bus stop', 'trạm xe buýt', '/ˈbʌs stɒp/', gradeFour('bus-stop'), 'Hãy đợi ở trạm xe buýt.', 'Wait at the bus stop.'],
+    ]),
+    cooking: extraTopic('cooking', 'Cooking & Recipes', '🥣', 'Đọc nguyên liệu và làm theo các bước nấu ăn.', 'Add / pour / put + nguyên liệu.', [
+      ['Bowl', 'cái bát', '/bəʊl/', primary('bowl'), 'Hãy cho gạo vào bát.', 'Put the rice in the bowl.', ['Put the rice into the bowl.']],
+      ['Egg', 'quả trứng', '/eɡ/', pencil('fooddrinks/egg'), 'Hãy đập một quả trứng vào bát.', 'Crack an egg into the bowl.'],
+      ['Milk', 'sữa', '/mɪlk/', pencil('fooddrinks/milk'), 'Hãy rót sữa vào bát.', 'Pour the milk into the bowl.'],
+      ['Bread', 'bánh mì', '/bred/', pencil('fooddrinks/bread'), 'Hãy cắt hai lát bánh mì.', 'Cut two slices of bread.'],
+      ['Rice', 'cơm, gạo', '/raɪs/', pencil('fooddrinks/rice'), 'Cơm đã chín rồi.', 'The rice is ready.'],
+      ['Water', 'nước', '/ˈwɔː.tə/', pencil('fooddrinks/water'), 'Hãy thêm một cốc nước.', 'Add a cup of water.'],
+    ]),
+    celebrations: extraTopic('celebrations', 'Celebrations & Traditions', '🏮', 'Nói về hoạt động và đồ vật trong dịp lễ.', 'We + hoạt động. / I have + đồ vật.', [
+      ['Lantern', 'đèn lồng', '/ˈlæn.tən/', lantern, 'Chúng tôi rước đèn lồng vào dịp Trung thu.', 'We carry lanterns at the Mid-Autumn Festival.'],
+      ['Present', 'món quà', '/ˈprez.ənt/', primary('present'), 'Tôi có một món quà cho bạn.', 'I have a present for you.'],
+      ['Balloon', 'bóng bay', '/bəˈluːn/', primary('balloon'), 'Hãy trang trí phòng bằng bóng bay.', "Let's decorate the room with balloons.", ['Let us decorate the room with balloons.']],
+      ['Invitation', 'thiệp mời', '/ˌɪn.vɪˈteɪ.ʃən/', primary('invitation'), 'Tôi có thiệp mời dự tiệc.', 'I have an invitation to the party.'],
+      ['Cake', 'bánh kem', '/keɪk/', pencil('fooddrinks/cake'), 'Chúng tôi ăn bánh kem trong bữa tiệc.', 'We eat cake at the party.'],
+      ['Fireworks', 'pháo hoa', '/ˈfaɪə.wɜːks/', art('../lop6/assets/images/pencil/unit6/fireworks-v1.webp'), 'Chúng tôi xem pháo hoa vào đêm giao thừa.', "We watch fireworks on New Year's Eve."],
+    ]),
     adjectives: make('adjectives','Basic Adjectives','⭐','Tính từ cơ bản · 6 cặp đối lập','The + vật + is + tính từ.',adjectives,adjectiveSentences),
-    shapes: make('shapes','Shapes','🔷','Nhận biết 8 hình cơ bản','It is a + tên hình.',shapes,names(shapes).map(([id, meaning]) => [id,`Đây là ${meaning}.`,`It is a ${id}.`])),
+    shapes: make('shapes','Shapes','🔷','Nhận biết 8 hình cơ bản','It is a/an + tên hình.',shapes,names(shapes).map(([id, meaning]) => [id,`Đây là ${meaning}.`,`It is ${id === 'oval' ? 'an' : 'a'} ${id}.`])),
     toys: make('toys','Toys','🧸','Đồ chơi quen thuộc quanh em','I have a/an + đồ chơi; với nhiều món dùng some.',toys,names(toys).map(([id, meaning]) => [id,`Tôi có ${meaning}.`,`I have ${id === 'blocks' ? 'some ' : 'a '}${id === 'yo-yo' ? 'yo-yo' : id.replaceAll('-', ' ')}.`])),
     weather: make('weather','Weather','☀️','Nói về thời tiết hôm nay','It is + thời tiết + today.',weather,names(weather).map(([id, meaning]) => [id,`Hôm nay trời ${meaning}.`,`It is ${id} today.`])),
     rooms: make('rooms','Rooms in a House','🏡','Các phòng quen thuộc trong nhà','This is the + tên phòng.',rooms,names(rooms).map(([id, meaning]) => [id,`Đây là ${meaning}.`,`This is the ${id.replaceAll('-', ' ')}.`])),

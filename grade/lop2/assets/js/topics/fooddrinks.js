@@ -66,6 +66,7 @@
     { name: 'Tea', emoji: '🍵', ipa: '/tiː/', meaning: 'Trà', sentence: 'I drink tea.', hex: '#4CAF50' },
     { name: 'Cookie', emoji: '🍪', ipa: '/ˈkʊki/', meaning: 'Bánh Quy', sentence: 'I want a cookie.', hex: '#8D6E63' }
   ];
+  window.DanhAdamVocabulary = foodVocabulary;
   window.DanhPencil?.apply('fooddrinks', foodVocabulary);
 
 

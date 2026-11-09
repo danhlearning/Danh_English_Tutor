@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chủ đề bổ trợ · Danh English Tutor</title>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const topic = params.get('topic');
+    const grade = params.get('fromGrade');
+    const topics = ['clocks', 'jobs', 'music', 'health', 'safety', 'plants', 'stories', 'tickets', 'cooking', 'celebrations'];
+    if (topics.includes(topic)) {
+      location.replace(topic + '.html?fromGrade=' + (/^[1-5]$/.test(grade) ? grade : '2'));
+    }
+  </script>
+</head>
+<body>
+  <p><a href="lop2.html#supplementary-topics">Về chủ đề bổ trợ lớp 2</a></p>
+  <contact-danh></contact-danh>
+  <script src="../../shared/contact-footer.js?v=online-audio-20261028"></script>
+</body>
+</html>

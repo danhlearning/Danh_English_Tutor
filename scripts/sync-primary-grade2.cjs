@@ -73,7 +73,7 @@ for(const grade of targetGrades){
     .replace(/<main class="main-container">[^]*?<\/main>/,`<main class="main-container"><section class="g2-review-entry"><h2>🏝️ Ôn tập tổng hợp lớp ${grade}</h2><a href="review.html" class="btn-study">Chơi →</a><a href="previous.html" class="previous-round" id="previous-review" hidden>Tiếp tục lượt ôn trước</a></section><section><h2>📖 Unit lớp ${grade}</h2><div class="lesson-grid unit-grid">${cards}</div></section></main>`)
     .replace('    <script src="./assets/js/grade2-progress.js?v=compact-listen-20261024"></script>','')
     .replace('</head>',`<link rel="stylesheet" href="../../shared/primary-grade2.css?v=${version}"></head>`)
-    .replace('</body>',`<script src="../../shared/shared-topics.js?v=compact-listen-20261024"></script><script>if(DanhLearners.storage.getItem('danh-g${grade}-template-review-v1')${grade===4?"||DanhLearners.storage.getItem('danh.grade4.words.v1')":''})document.getElementById('previous-review').hidden=false;</script></body>`);
+    .replace('</body>',`<script src="../../shared/shared-topics.js?v=primary-topics-20261108"></script><script>if(DanhLearners.storage.getItem('danh-g${grade}-template-review-v1')${grade===4?"||DanhLearners.storage.getItem('danh.grade4.words.v1')":''})document.getElementById('previous-review').hidden=false;</script></body>`);
   write(`${dir}/lop${grade}.html`,index.replace(/[ \t]+$/gm,''));
   let review=read('grade/lop2/review.html').replace(/<script data-grade2-letter-review[^>]*><\/script>\s*/g,'').replace(/<link data-grade2-letter-review[^>]*>/g,'').replace(/<button data-grade2-letter-review[^>]*>[^<]*<\/button>/g,'').replace(/<section data-grade2-letter-review[^]*?<\/section>/g,'').replaceAll('lớp 2',`lớp ${grade}`).replaceAll('Lớp 2',`Lớp ${grade}`).replace('./lop2.html',`./lop${grade}.html`).replaceAll('./assets/css/','../lop2/assets/css/').replace('Unit 1–8',`Unit 1–${units.length/2}`).replace('Unit 9–16',`Unit ${units.length/2+1}–${units.length}`)
     .replace(/  <script src="\.\/assets\/data\/[^\n]+\n/g,'')
@@ -86,7 +86,7 @@ for(const grade of targetGrades){
 // Mọi danh mục lớp cùng dùng một bộ topic. Lớp 2 giữ các liên kết đang có.
 for(let grade=2;grade<=12;grade++){
   if(grade===5)continue;const file=`grade/lop${grade}/lop${grade}.html`;let html=read(file);
-  if(!html.includes('shared/shared-topics.js'))html=html.replace('</body>',`<script src="../../shared/shared-topics.js?v=compact-listen-20261024"></script>\n</body>`);
+  if(!html.includes('shared/shared-topics.js'))html=html.replace('</body>',`<script src="../../shared/shared-topics.js?v=primary-topics-20261108"></script>\n</body>`);
   write(file,html);
 }
 for(const name of fs.readdirSync(path.join(root,'grade/lop2')).filter(n=>n.endsWith('.html'))){

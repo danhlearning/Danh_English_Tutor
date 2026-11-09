@@ -1,0 +1,1000 @@
+{
+  "provider": "ElevenLabs",
+  "voice": "Adam - Dominant, Firm",
+  "language": "en",
+  "date": "2026-11-08",
+  "speed": 0.7,
+  "directory": "shared/answer-audio/adam-vocabulary",
+  "recordings": [
+    {
+      "id": "c0b061df",
+      "text": "Hippo",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, separately regenerated on 2026-11-09 at speed 0.7"
+    },
+    {
+      "id": "545ff999",
+      "text": "Rhino",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "57455801",
+      "text": "Two o'clock",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "676d13fd",
+      "text": "Five o'clock",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "64a903d0",
+      "text": "Eight o'clock",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "e168bc25",
+      "text": "Half past seven",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "ddd64be7",
+      "text": "Quarter past nine",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "f7fd1a1c",
+      "text": "Quarter to six",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "a1f02512",
+      "text": "Doctor",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "a4430275",
+      "text": "Chef",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "808e8652",
+      "text": "Farmer",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "2f4cf9ce",
+      "text": "Firefighter",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "10066ae1",
+      "text": "Pilot",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "3f14f4e4",
+      "text": "Dentist",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "af274f0f",
+      "text": "Guitar",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "45e7afde",
+      "text": "Piano",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "c26f9aed",
+      "text": "Drum",
+      "group": "Grade 2 supplementary vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "b5ed4791",
+      "text": "Flute",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "98e54786",
+      "text": "Trumpet",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "d471e7b1",
+      "text": "Tambourine",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "e40ddc70",
+      "text": "Headache",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "2fcfa76e",
+      "text": "Toothache",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "60442894",
+      "text": "Sore throat",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "809e3f91",
+      "text": "Fever",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "eabd3d97",
+      "text": "Rest",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "a1f5169d",
+      "text": "Wet floor",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "fb0921db",
+      "text": "No cycling",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "a2c26afd",
+      "text": "Crossing",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "a71d0816",
+      "text": "Traffic light",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "8d7a7c20",
+      "text": "Helmet",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "d8714169",
+      "text": "Seat belt",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "5045bcac",
+      "text": "Seed",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "0a6a3b02",
+      "text": "Soil",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "2648cd55",
+      "text": "Leaf",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "bbf3363a",
+      "text": "Watering can",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "d1df8006",
+      "text": "Flower",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "6d8b34d5",
+      "text": "Tree",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "b3e79cb2",
+      "text": "Story",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "8b3aa710",
+      "text": "Character",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "6b532a96",
+      "text": "Ending",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "ac0cfc01",
+      "text": "Brave",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "948625b8",
+      "text": "Gentle",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "c1948a38",
+      "text": "Book",
+      "group": "Grade 2 supplementary vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "6517b3e5",
+      "text": "Ticket",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "c0dc1dac",
+      "text": "Suitcase",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "604808e3",
+      "text": "Passport",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "aed72c13",
+      "text": "Station",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "96972cb0",
+      "text": "Airport",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "514ef933",
+      "text": "Bus stop",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "c87f7a85",
+      "text": "Bowl",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "597d11c6",
+      "text": "Egg",
+      "group": "Grade 2 supplementary vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "888e7aa2",
+      "text": "Milk",
+      "group": "Grade 2 supplementary vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "c8647fe5",
+      "text": "Bread",
+      "group": "Grade 2 supplementary vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "0552c2b0",
+      "text": "Rice",
+      "group": "Grade 2 supplementary vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "49c69a10",
+      "text": "Water",
+      "group": "Grade 2 supplementary vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "a86c592f",
+      "text": "Lantern",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "1e801cec",
+      "text": "Present",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "bdeebd1c",
+      "text": "Balloon",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "737e061e",
+      "text": "Invitation",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "8aea8859",
+      "text": "Cake",
+      "group": "Grade 2 supplementary vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "25570d85",
+      "text": "Fireworks",
+      "group": "Grade 2 supplementary vocabulary",
+      "provenance": "Eleven Multilingual v2, speed 0.7"
+    },
+    {
+      "id": "97a76a65",
+      "text": "Pizza",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "d60b58a8",
+      "text": "Hamburger",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "02a57704",
+      "text": "Sandwich",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "4e12908f",
+      "text": "Noodles",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "f161ff1c",
+      "text": "Chicken",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "afad8963",
+      "text": "Fish",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "f624f702",
+      "text": "Soup",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "73a6862a",
+      "text": "Salad",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "6f531b1e",
+      "text": "Ice cream",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "10bc2abf",
+      "text": "Apple",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "d9889f50",
+      "text": "Banana",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "ebb76fff",
+      "text": "Juice",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "b401e629",
+      "text": "Tea",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "77a740bf",
+      "text": "Cookie",
+      "group": "Food & Drinks vocabulary (reused)",
+      "provenance": "Reused Adam MP3, tempo adjusted to 0.7"
+    },
+    {
+      "id": "e668bd09",
+      "text": "Dog",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "06745c07",
+      "text": "Cat",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "592318c4",
+      "text": "Mouse",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "cb619ce5",
+      "text": "Rabbit",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "fd67f4cd",
+      "text": "Hamster",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "b6f3934e",
+      "text": "Fox",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "8a524c53",
+      "text": "Bear",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "ebfc3e7b",
+      "text": "Panda",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "f270b0b8",
+      "text": "Tiger",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "f2dead7f",
+      "text": "Lion",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "f78ddc50",
+      "text": "Cow",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "6840fb8f",
+      "text": "Pig",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "9bcd89e7",
+      "text": "Frog",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "6a164f08",
+      "text": "Monkey",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "bb323378",
+      "text": "Duck",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "977128b2",
+      "text": "Bird",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "4eb1f8ef",
+      "text": "Eagle",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "a715b2e5",
+      "text": "Owl",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "2efc387f",
+      "text": "Penguin",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "70b773a8",
+      "text": "Bat",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "78bb9249",
+      "text": "Wolf",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "9b8951a6",
+      "text": "Horse",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "7499948f",
+      "text": "Zebra",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "ec22362f",
+      "text": "Giraffe",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "e5f12404",
+      "text": "Elephant",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "6aea8bcb",
+      "text": "Crocodile",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "aff5e25b",
+      "text": "Snake",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "b5bda71f",
+      "text": "Turtle",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "670001f6",
+      "text": "Whale",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "0f93019f",
+      "text": "Dolphin",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "585056a0",
+      "text": "Seal",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "a7c9f912",
+      "text": "Shark",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "bebfab0e",
+      "text": "Octopus",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "90407463",
+      "text": "Crab",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "03d5b964",
+      "text": "Butterfly",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "51ae487f",
+      "text": "Bee",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "1f29dbd6",
+      "text": "Ant",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "69185f08",
+      "text": "Spider",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "9f8658ab",
+      "text": "Kangaroo",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "a162d305",
+      "text": "Camel",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "07cc25f4",
+      "text": "Sheep",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "0e6f5bde",
+      "text": "Goat",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "9be98f95",
+      "text": "Deer",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "26dd8f5e",
+      "text": "Squirrel",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "8afbb84a",
+      "text": "Snail",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "85bb2c19",
+      "text": "Koala",
+      "group": "Animals vocabulary (reused)",
+      "provenance": "Reused verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "397aa226",
+      "text": "T-shirt",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "43e36503",
+      "text": "Shirt",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "68e41ef0",
+      "text": "Dress",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "be2f5538",
+      "text": "Skirt",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "de2337e1",
+      "text": "Pants",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "aa2f7652",
+      "text": "Shorts",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "100e165b",
+      "text": "Jacket",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "dc398e12",
+      "text": "Coat",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "19519f98",
+      "text": "Sweater",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "f2bf17c2",
+      "text": "Hat",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "027455bb",
+      "text": "Cap",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "9e725352",
+      "text": "Socks",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "b3068a53",
+      "text": "Shoes",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "fffa7852",
+      "text": "Boots",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "9afb6297",
+      "text": "Gloves",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "7f5f6abe",
+      "text": "Scarf",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "c80b0001",
+      "text": "Tie",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "8a6e22d0",
+      "text": "Belt",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "a6d4117e",
+      "text": "Pyjamas",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "32ec3830",
+      "text": "Raincoat",
+      "group": "Clothes vocabulary (reused)",
+      "provenance": "Verified Adam recording, tempo adjusted to 0.7"
+    },
+    {
+      "id": "6ab9d166",
+      "text": "I am wearing a red T-shirt",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "14bed2a0",
+      "text": "He wears a white shirt",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "e714f211",
+      "text": "She is wearing a beautiful dress",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "bd555923",
+      "text": "The girl likes wearing a skirt",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "7a2e2a1b",
+      "text": "He is wearing blue pants",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "bdb5017a",
+      "text": "I wear shorts in summer",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "9b0899f8",
+      "text": "Put on your jacket",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "72aa66f1",
+      "text": "It is cold wear a coat",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "ab1693ff",
+      "text": "This sweater is very warm",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "3d2c5bf7",
+      "text": "He wears a cool hat",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "4f465fda",
+      "text": "Put on your cap",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "6525c106",
+      "text": "I need a pair of warm socks",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "750bbb3e",
+      "text": "These shoes are comfortable",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "917cd269",
+      "text": "She wears leather boots",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "5244d6fb",
+      "text": "Wear gloves to keep warm",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "0297e13b",
+      "text": "A red scarf around her neck",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "2bbc1021",
+      "text": "He wears a tie to work",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "3aad4786",
+      "text": "A brown leather belt",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "09d1603d",
+      "text": "Put on your pyjamas before sleep",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "8a779703",
+      "text": "Take a raincoat it is raining",
+      "group": "Clothes sentences",
+      "provenance": "ElevenLabs 0.7 individual"
+    },
+    {
+      "id": "9dc705bf",
+      "text": "What are you wearing? I am wearing a blue shirt.",
+      "group": "Clothes sentences",
+      "provenance": "Reused verified Adam, slowed to 0.7"
+    },
+    {
+      "id": "4523a200",
+      "text": "I like wearing a sweater in winter.",
+      "group": "Clothes sentences",
+      "provenance": "Reused verified Adam, slowed to 0.7"
+    },
+    {
+      "id": "282fab61",
+      "text": "She put on her coat.",
+      "group": "Clothes sentences",
+      "provenance": "Reused verified Adam, slowed to 0.7"
+    },
+    {
+      "id": "68eefdec",
+      "text": "Are you wearing a hat? Yes, I am.",
+      "group": "Clothes sentences",
+      "provenance": "Reused verified Adam, slowed to 0.7"
+    }
+  ]
+}

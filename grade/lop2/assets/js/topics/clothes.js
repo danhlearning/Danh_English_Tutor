@@ -343,6 +343,7 @@
       ipa: '/ˈreɪn.kəʊt/', meaning: 'Áo mưa', sentence: 'Take a raincoat, it is raining.', hex: '#FBC02D'
     }
   ];
+  window.DanhAdamVocabulary = clothesVocabulary;
   window.DanhPencil?.apply('clothes', clothesVocabulary);
 
 
@@ -368,6 +369,13 @@
     { svg: clothesVocabulary[17].svg, vietnamese: 'Một chiếc thắt lưng da màu nâu.', hint: 'Một chiếc [Phụ kiện] + da màu nâu', answer: 'A brown leather belt' },
     { svg: clothesVocabulary[18].svg, vietnamese: 'Mặc bộ đồ ngủ trước khi đi ngủ.', hint: 'Mặc vào + [Trang phục] + trước khi đi ngủ', answer: 'Put on your pyjamas before sleep' },
     { svg: clothesVocabulary[19].svg, vietnamese: 'Mang theo áo mưa, trời đang mưa.', hint: 'Mang theo + [Trang phục] + trời đang mưa', answer: 'Take a raincoat it is raining' }
+  ];
+  window.DanhAdamSentences = [
+    ...sentenceQuestions.map(question => question.answer),
+    'What are you wearing? I am wearing a blue shirt.',
+    'I like wearing a sweater in winter.',
+    'She put on her coat.',
+    'Are you wearing a hat? Yes, I am.'
   ];
   window.DanhPencil?.questions('clothes', sentenceQuestions, clothesVocabulary);
 
@@ -426,6 +434,8 @@
 
     document.getElementById(tabId).classList.add('active');
     if(evt && evt.target) evt.target.classList.add('active');
+
+    if (tabId === 'sentences') window.DanhAnswerSpeech?.prepare(window.DanhAdamSentences.slice(-4));
 
     if(tabId === 'game-flip') initSingleCardGame();
     if(tabId === 'game-mcq') initMcqGame();

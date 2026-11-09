@@ -113,7 +113,7 @@ test('Mọi trang Lớp 2 có đúng một footer và không gọi components.js
   const linkedPages = [...menu.matchAll(/<a\s+href="([^"]+\.html)"\s+class="lesson-card"/g)].map(match => match[1]);
   assert.equal(new Set(linkedPages).size, linkedPages.length);
   assert.ok(menu.includes('href="./review.html"'), 'Có lối vào ôn tập tổng hợp');
-  assert.deepEqual(pages.slice().sort(), ['lop2.html', 'review.html', ...linkedPages].sort());
+  assert.deepEqual(pages.slice().sort(), ['lop2.html', 'review.html', 'mission.html', ...linkedPages].sort());
   for (const page of pages) {
     const html = fs.readFileSync(path.join(root, page), 'utf8');
     assert.equal((html.match(/<contact-danh>/g) || []).length, 1, page);

@@ -3,6 +3,9 @@
   'use strict';
   const topic = window.grade2Units?.[document.body.dataset.topic] || window.grade2ExtendedTopics?.[document.body.dataset.topic];
   if (!topic) throw new Error('Không tìm thấy dữ liệu chủ đề Lớp 2.');
+  const sourceGrade = document.body.hasAttribute?.('data-progress-by-grade')
+    ? new URLSearchParams(location.search).get('fromGrade') : null;
+  const progressTopic = /^[1345]$/.test(sourceGrade) ? `g${sourceGrade}${topic.id}` : topic.id;
   window.DanhPencil?.apply(topic.id, topic.words);
   const byId = new Map(topic.words.map(word => [word.id, word]));
   const shuffle = items => {
@@ -107,7 +110,7 @@
     }
     if (round.index >= round.deck.length) {
       if (!round.saved) {
-        window.DanhGrade2Progress?.record(topic.id, { total: round.deck.length, first: round.first, retry: round.retry, revealed: round.revealed });
+        window.DanhGrade2Progress?.record(progressTopic, { total: round.deck.length, first: round.first, retry: round.retry, revealed: round.revealed });
         round.saved = true;
       }
       stage.textContent = 'Hoàn thành lượt luyện câu!';
@@ -261,6 +264,6 @@
     el('sentence-check').addEventListener('click', checkSentence);
     el('sentence-reveal').addEventListener('click', revealSentence);
     el('sentence-next').addEventListener('click', nextSentence);
-    window.DanhLesson.mount({ topic: topic.id, words: topic.words, speechLocale: 'en-GB', onSelectionChange });
+    window.DanhLesson.mount({ topic: progressTopic, words: topic.words, speechLocale: 'en-GB', onSelectionChange });
   });
 })();

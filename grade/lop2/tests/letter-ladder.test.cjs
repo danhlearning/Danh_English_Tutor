@@ -39,6 +39,6 @@ test('Selection changes retain the previous turn; malformed indices and blocked 
 });
 test('Grade 2 lessons load the shared letter game before the engine',()=>{
  const pages=fs.readdirSync('grade/lop2').filter(p=>p.endsWith('.html')).map(p=>fs.readFileSync('grade/lop2/'+p,'utf8')).filter(s=>s.includes('src="./assets/js/learning-core.js?v=site-letters-20261025'));
- assert.equal(pages.length,35);for(const html of pages){assert(html.indexOf('letter-ladder-core.js')<html.indexOf('letter-ladder.js?'));assert(html.indexOf('letter-ladder.js?')<html.indexOf('src="./assets/js/learning-core.js?v=site-letters-20261025'));assert(html.includes('letter-ladder.css'));}
+ assert.equal(pages.length,45);for(const html of pages){assert(html.indexOf('letter-ladder-core.js')<html.indexOf('letter-ladder.js?'));assert(html.indexOf('letter-ladder.js?')<html.indexOf('src="./assets/js/learning-core.js?v=site-letters-20261025'));assert(html.includes('letter-ladder.css'));}
  const source=fs.readFileSync('grade/lop2/assets/js/letter-ladder.js','utf8');for(const [pathname,search,enabled]of [['/grade/lop2/gsunit1.html','',true],['/grade/lop1/unit1.html','',false],['/grade/lop2/bodyparts.html','?fromGrade=4',true]]){const ctx={window:{},document:{body:{dataset:{}},getElementById(){return null;}},location:{pathname,search},URLSearchParams};vm.runInNewContext(source,ctx);assert.equal(ctx.window.DanhLetterLadder.enabled,enabled);}
 });

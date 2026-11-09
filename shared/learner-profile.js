@@ -126,7 +126,24 @@
   const mediaAllowed = () => !mediaClosed && !document.hidden && navigator.onLine !== false && !connection?.saveData && !/^(slow-2g|2g)$/.test(connection?.effectiveType || '');
   const surfaceVisible = surface => !surface || surface.isConnected!==false && !surface.closest('[hidden]') && !surface.closest('.tab-content:not(.active)');
   const mediaPanelObserver = typeof MutationObserver==='undefined' ? null : new MutationObserver(()=>resumeGameMedia());
-  const audioURL = text => new URL(`shared/answer-audio/${answerAudioKey(text)}.mp3`,base).href;
+  const animalsPage = /\/grade\/lop2\/animals\.html$/i.test(new URL(document.baseURI).pathname);
+  const animalWords = new Set('dog cat mouse rabbit hamster fox bear panda tiger lion cow pig frog monkey chicken duck bird eagle owl penguin bat wolf horse zebra giraffe elephant crocodile snake turtle whale dolphin seal fish shark octopus crab butterfly bee ant spider kangaroo camel sheep goat deer squirrel snail koala hippo rhino'.split(' '));
+  const adamVocabulary = text => {
+    const word = text.toLowerCase();
+    if (animalsPage && animalWords.has(word)) return true;
+    const page = document.body;
+    return page?.dataset.adamVocabulary !== undefined &&
+      (window.DanhAdamVocabulary?.some(entry => entry.name.toLowerCase() === word) ||
+       window.DanhAdamSentences?.some(entry => cleanAnswerSpeech(entry).toLowerCase() === word) ||
+       window.grade2ExtendedTopics?.[page.dataset.topic]?.words.some(entry => entry.name.toLowerCase() === word));
+  };
+  const clothesVocabulary = text => /\/grade\/lop2\/clothes\.html$/i.test(new URL(document.baseURI).pathname) &&
+    window.DanhAdamVocabulary?.some(entry => entry.name.toLowerCase() === text.toLowerCase());
+  const audioURL = text => new URL(clothesVocabulary(text)
+    ? `shared/answer-audio/clothes-adam-20261109/${answerAudioKey(text)}${text.toLowerCase() === 'tie' ? '-v2' : ''}.mp3`
+    : adamVocabulary(text)
+    ? `shared/answer-audio/adam-vocabulary/${answerAudioKey(text)}.mp3${animalsPage && text.toLowerCase() === 'hippo' ? '?v=adam-hippo-20261109' : ''}`
+    : `shared/answer-audio/${answerAudioKey(text)}.mp3`,base).href;
   const grade2Speech = /\/grade\/lop2\//.test(document.baseURI);
   function preparePlayer(entry){if(!entry.url || entry.player)return;const player=new Audio(entry.url);player.preload='auto';entry.player=player;player.load();}
   function releasePlayer(entry){if(!entry.player)return;entry.player.pause();entry.player.removeAttribute('src');entry.player.load();entry.player=null;}
@@ -234,7 +251,7 @@
     const cached=gameAudio.get(answerAudioKey(text));
     const audio=cached?.player || new Audio(cached?.url || audioURL(text));answerAudio=audio;
     try{audio.currentTime=0;}catch{}
-    audio.playbackRate=gamePlaying()?window.DanhGameFlow.audioRate:(grade2Speech ? .85 : window.DanhYoungSpeech?.audioRate || 1);
+    audio.playbackRate=adamVocabulary(text)?1:gamePlaying()?window.DanhGameFlow.audioRate:(grade2Speech ? .85 : window.DanhYoungSpeech?.audioRate || 1);
     audio.preservesPitch=true;
     return new Promise(resolve=>{
       let finished=false;

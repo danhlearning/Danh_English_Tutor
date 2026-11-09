@@ -1,0 +1,132 @@
+{
+  "provider": "ElevenLabs",
+  "voice": "Adam - Dominant, Firm",
+  "model": "Eleven Multilingual v2",
+  "speed": 0.7,
+  "directory": "shared/answer-audio/clothes-adam-20261109",
+  "recordings": [
+    {
+      "id": "397aa226",
+      "text": "T-shirt",
+      "source": "ElevenLabs_2026-11-09T15_48_13_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "43e36503",
+      "text": "Shirt",
+      "source": "ElevenLabs_2026-11-09T15_48_16_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "68e41ef0",
+      "text": "Dress",
+      "source": "ElevenLabs_2026-11-09T15_48_19_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "be2f5538",
+      "text": "Skirt",
+      "source": "ElevenLabs_2026-11-09T15_48_22_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "de2337e1",
+      "text": "Pants",
+      "source": "ElevenLabs_2026-11-09T15_48_28_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "aa2f7652",
+      "text": "Shorts",
+      "source": "ElevenLabs_2026-11-09T15_48_32_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "100e165b",
+      "text": "Jacket",
+      "source": "ElevenLabs_2026-11-09T15_48_37_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "dc398e12",
+      "text": "Coat",
+      "source": "ElevenLabs_2026-11-09T15_48_44_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "19519f98",
+      "text": "Sweater",
+      "source": "ElevenLabs_2026-11-09T15_48_51_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "f2bf17c2",
+      "text": "Hat",
+      "source": "ElevenLabs_2026-11-09T15_48_54_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "027455bb",
+      "text": "Cap",
+      "source": "ElevenLabs_2026-11-09T15_49_16_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "9e725352",
+      "text": "Socks",
+      "source": "ElevenLabs_2026-11-09T15_49_28_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "b3068a53",
+      "text": "Shoes",
+      "source": "ElevenLabs_2026-11-09T15_51_11_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "fffa7852",
+      "text": "Boots",
+      "source": "ElevenLabs_2026-11-09T15_51_14_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "9afb6297",
+      "text": "Gloves",
+      "source": "ElevenLabs_2026-11-09T15_51_18_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "7f5f6abe",
+      "text": "Scarf",
+      "source": "ElevenLabs_2026-11-09T15_51_21_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "c80b0001",
+      "text": "Tie",
+      "source": "ElevenLabs_2026-11-09T16_00_37_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Whisper recognized the homophone Thai; manual listening review pending",
+      "file": "c80b0001-v2.mp3",
+      "synthesisText": "Thai",
+      "note": "Homophone used to obtain /taɪ/ for the English word tie (cà vạt)."
+    },
+    {
+      "id": "8a6e22d0",
+      "text": "Belt",
+      "source": "ElevenLabs_2026-11-09T15_51_28_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "a6d4117e",
+      "text": "Pyjamas",
+      "source": "ElevenLabs_2026-11-09T15_51_32_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    },
+    {
+      "id": "32ec3830",
+      "text": "Raincoat",
+      "source": "ElevenLabs_2026-11-09T15_51_36_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by at least one speech recognizer"
+    }
+  ]
+}
