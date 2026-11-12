@@ -326,6 +326,7 @@
       ipa: '/rɪˈlækst/', meaning: 'Thư giãn', sentence: 'I am relaxed.', hex: '#81C784'
     }
   ];
+  window.DanhAdamVocabulary = emotionsVocabulary;
   window.DanhPencil?.apply('feeling', emotionsVocabulary);
 
 

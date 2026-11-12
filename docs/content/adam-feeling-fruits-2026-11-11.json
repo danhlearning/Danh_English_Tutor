@@ -1,0 +1,277 @@
+{
+  "provider": "ElevenLabs",
+  "voice": "Adam - Dominant, Firm",
+  "model": "Eleven Multilingual v2",
+  "speed": 0.7,
+  "directory": "shared/answer-audio/feeling-fruits-adam-20261111",
+  "processing": "loudnorm; no speed change",
+  "recordings": [
+    {
+      "id": "652f2c70",
+      "text": "Thirsty",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_30_26_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "10f5d87c",
+      "text": "Hungry",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_30_30_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "8d8512e3",
+      "text": "Sleepy",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_30_33_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "720c3fd5",
+      "text": "Tired",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_30_36_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "fec3a7d4",
+      "text": "Hot",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_30_39_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "ea44dd0f",
+      "text": "Cold",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_30_41_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "31b23887",
+      "text": "Sick",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_30_52_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "99863551",
+      "text": "Happy",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_30_55_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "e61cac07",
+      "text": "Sad",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_30_58_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "b50aaefe",
+      "text": "Angry",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_31_02_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "3f32c75d",
+      "text": "Scared",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_31_05_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "264281a5",
+      "text": "Excited",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_31_08_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "eda17c15",
+      "text": "Bored",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_31_10_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "f7372cda",
+      "text": "Surprised",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_31_13_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "b2f18316",
+      "text": "Calm",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_37_11_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Windows recognizer: Calm; Whisper: Come. Manual listening required.",
+      "input": "kahm"
+    },
+    {
+      "id": "9280b53d",
+      "text": "Nervous",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_31_19_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "d52dda65",
+      "text": "Shy",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_31_27_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "9e85caee",
+      "text": "Confused",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_31_30_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "8ec274c9",
+      "text": "Proud",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_31_33_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "49ef4c1c",
+      "text": "Relaxed",
+      "topic": "feeling",
+      "source": "ElevenLabs_2026-11-11T09_31_36_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "10bc2abf",
+      "text": "Apple",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_31_38_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "d9889f50",
+      "text": "Banana",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_31_41_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "45b473eb",
+      "text": "Orange",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_31_44_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "ac77f1d0",
+      "text": "Grape",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_31_46_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "b3f501b7",
+      "text": "Watermelon",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_31_49_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "843a155c",
+      "text": "Strawberry",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_31_52_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "0e74ffd5",
+      "text": "Mango",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_32_00_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "cd8347b1",
+      "text": "Pineapple",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_32_03_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "b880535e",
+      "text": "Avocado",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_32_06_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "a0d51666",
+      "text": "Peach",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_32_08_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "497ae878",
+      "text": "Cherry",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_32_11_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "c8c141d0",
+      "text": "Lemon",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_32_14_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "72e25d5c",
+      "text": "Melon",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_32_16_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "d01fc26d",
+      "text": "Pear",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_32_19_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "bffdf499",
+      "text": "Kiwi",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_32_22_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "794ddd9c",
+      "text": "Coconut",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_32_24_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    },
+    {
+      "id": "488d4f97",
+      "text": "Papaya",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_32_27_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Whisper: Papaya; Windows uncertain. Manual listening required."
+    },
+    {
+      "id": "08dbb7b1",
+      "text": "Guava",
+      "topic": "fruits",
+      "source": "ElevenLabs_2026-11-11T09_32_30_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Matched by speech recognition; manual listening required."
+    }
+  ]
+}

@@ -139,7 +139,11 @@
   };
   const clothesVocabulary = text => /\/grade\/lop2\/clothes\.html$/i.test(new URL(document.baseURI).pathname) &&
     window.DanhAdamVocabulary?.some(entry => entry.name.toLowerCase() === text.toLowerCase());
-  const audioURL = text => new URL(clothesVocabulary(text)
+  const feelingFruitVocabulary = text => /\/grade\/lop2\/(?:feeling|fruits)\.html$/i.test(new URL(document.baseURI).pathname) &&
+    window.DanhAdamVocabulary?.some(entry => entry.name.toLowerCase() === text.toLowerCase());
+  const audioURL = text => new URL(feelingFruitVocabulary(text)
+    ? `shared/answer-audio/feeling-fruits-adam-20261111/${answerAudioKey(text)}.mp3`
+    : clothesVocabulary(text)
     ? `shared/answer-audio/clothes-adam-20261109/${answerAudioKey(text)}${text.toLowerCase() === 'tie' ? '-v2' : ''}.mp3`
     : adamVocabulary(text)
     ? `shared/answer-audio/adam-vocabulary/${answerAudioKey(text)}.mp3${animalsPage && text.toLowerCase() === 'hippo' ? '?v=adam-hippo-20261109' : ''}`
