@@ -1,0 +1,81 @@
+{
+  "provider": "ElevenLabs",
+  "voice": "Adam - Dominant, Firm",
+  "model": "Eleven Multilingual v2",
+  "speed": 0.7,
+  "processing": "Loudness normalization, playback at 1x",
+  "recordings": [
+    {
+      "text": "farmer",
+      "file": "shared/answer-audio/adam-grade2-grade3-20261114/farmer-v2.mp3",
+      "source": "ElevenLabs_2026-11-14T10_30_12_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "processing": "loudnorm I=-18 TP=-1.5; playback 1x",
+      "verification": "Chưa nghe xác nhận nội dung"
+    },
+    {
+      "text": "vet",
+      "group": "grade2",
+      "file": "shared/answer-audio/adam-grade2-grade3-20261114/vet.mp3",
+      "source": "ElevenLabs_2026-11-14T10_09_24_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Chưa nghe xác nhận nội dung"
+    },
+    {
+      "text": "teacher",
+      "group": "grade3",
+      "file": "shared/answer-audio/adam-grade2-grade3-20261114/teacher.mp3",
+      "source": "ElevenLabs_2026-11-14T10_10_10_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Chưa nghe xác nhận nội dung"
+    },
+    {
+      "text": "nurse",
+      "group": "grade3",
+      "file": "shared/answer-audio/adam-grade2-grade3-20261114/nurse.mp3",
+      "source": "ElevenLabs_2026-11-14T10_16_16_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Chưa nghe xác nhận nội dung"
+    },
+    {
+      "text": "mechanic",
+      "group": "grade3",
+      "file": "shared/answer-audio/adam-grade2-grade3-20261114/mechanic.mp3",
+      "source": "ElevenLabs_2026-11-14T10_16_18_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Chưa nghe xác nhận nội dung"
+    },
+    {
+      "text": "bus driver",
+      "group": "grade3",
+      "file": "shared/answer-audio/adam-grade2-grade3-20261114/bus-driver.mp3",
+      "source": "ElevenLabs_2026-11-14T10_16_21_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Chưa nghe xác nhận nội dung"
+    },
+    {
+      "text": "artist",
+      "file": "shared/answer-audio/jobs-adam-20261114/artist.mp3",
+      "source": "ElevenLabs_2026-11-14T11_08_20_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Tệp xuất đúng mục và giải mã được. Chưa nghe xác nhận nội dung."
+    },
+    {
+      "text": "baker",
+      "file": "shared/answer-audio/jobs-adam-20261114/baker.mp3",
+      "source": "ElevenLabs_2026-11-14T11_08_23_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Tệp xuất đúng mục và giải mã được. Chưa nghe xác nhận nội dung."
+    },
+    {
+      "text": "police officer",
+      "file": "shared/answer-audio/jobs-adam-20261114/police-officer.mp3",
+      "source": "ElevenLabs_2026-11-14T11_08_26_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Tệp xuất đúng mục và giải mã được. Chưa nghe xác nhận nội dung."
+    },
+    {
+      "text": "singer",
+      "file": "shared/answer-audio/jobs-adam-20261114/singer.mp3",
+      "source": "ElevenLabs_2026-11-14T11_08_29_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Tệp xuất đúng mục và giải mã được. Chưa nghe xác nhận nội dung."
+    },
+    {
+      "text": "dancer",
+      "file": "shared/answer-audio/jobs-adam-20261114/dancer.mp3",
+      "source": "ElevenLabs_2026-11-14T11_08_32_Adam - Dominant, Firm_pre_sp70_s50_sb75_se0_b_m2.mp3",
+      "verification": "Tệp xuất đúng mục và giải mã được. Chưa nghe xác nhận nội dung."
+    }
+  ]
+}

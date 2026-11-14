@@ -162,6 +162,7 @@
   const primary = id => art(`../../shared/assets/primary-vocabulary/${id}-v1.webp`);
   const pencil = id => art(`./assets/images/pencil/${id}-v1.webp`);
   const gradeFour = id => art(`../lop4/assets/images/pencil/${id}-v1.webp`);
+  const jobArt = id => art(`./assets/images/pencil/jobs/${id}-v1.webp`);
 
   function clockFace(hour, minute) {
     const marks = Array.from({length: 12}, (_, index) =>
@@ -213,6 +214,16 @@
       ['Firefighter', 'lính cứu hỏa', '/ˈfaɪəˌfaɪ.tə/', gradeFour('firefighter'), 'Một lính cứu hỏa làm việc ở trạm cứu hỏa.', 'A firefighter works at a fire station.'],
       ['Pilot', 'phi công', '/ˈpaɪ.lət/', gradeFour('pilot'), 'Một phi công lái máy bay.', 'A pilot flies a plane.'],
       ['Dentist', 'nha sĩ', '/ˈden.tɪst/', primary('dentist'), 'Một nha sĩ chăm sóc răng.', 'A dentist takes care of teeth.'],
+      ['Teacher', 'giáo viên', '/ˈtiː.tʃə/', gradeFour('teacher'), 'Một giáo viên dạy ở trường.', 'A teacher teaches at a school.'],
+      ['Nurse', 'điều dưỡng', '/nɜːs/', jobArt('nurse'), 'Một điều dưỡng chăm sóc người bệnh.', 'A nurse helps sick people.'],
+      ['Bus driver', 'tài xế xe buýt', '/ˈbʌs ˌdraɪ.və/', jobArt('bus-driver'), 'Một tài xế xe buýt lái xe buýt.', 'A bus driver drives a bus.'],
+      ['Mechanic', 'thợ sửa xe', '/məˈkæn.ɪk/', jobArt('mechanic'), 'Một thợ sửa xe sửa ô tô.', 'A mechanic fixes cars.'],
+      ['Baker', 'thợ làm bánh', '/ˈbeɪ.kə/', jobArt('baker'), 'Một thợ làm bánh nướng bánh mì.', 'A baker bakes bread.'],
+      ['Police officer', 'cảnh sát', '/pəˈliːs ˌɒf.ɪ.sə/', jobArt('police-officer'), 'Một cảnh sát giữ an toàn cho mọi người.', 'A police officer keeps people safe.'],
+      ['Singer', 'ca sĩ', '/ˈsɪŋ.ə/', jobArt('singer'), 'Một ca sĩ hát trên sân khấu.', 'A singer sings on a stage.'],
+      ['Dancer', 'vũ công', '/ˈdɑːn.sə/', jobArt('dancer'), 'Một vũ công nhảy theo nhạc.', 'A dancer dances to music.'],
+      ['Vet', 'bác sĩ thú y', '/vet/', jobArt('vet'), 'Một bác sĩ thú y chăm sóc động vật.', 'A vet takes care of animals.'],
+      ['Artist', 'họa sĩ', '/ˈɑː.tɪst/', primary('artist'), 'Một họa sĩ vẽ tranh.', 'An artist paints pictures.'],
     ]),
     music: extraTopic('music', 'Music & Instruments', '🎸', 'Gọi tên nhạc cụ và nói em biết chơi nhạc cụ nào.', 'I can play the + nhạc cụ.', [
       ['Guitar', 'đàn ghi-ta', '/ɡɪˈtɑː/', guitar, 'Tôi biết chơi ghi-ta.', 'I can play the guitar.'],
@@ -284,6 +295,20 @@
     weather: make('weather','Weather','☀️','Nói về thời tiết hôm nay','It is + thời tiết + today.',weather,names(weather).map(([id, meaning]) => [id,`Hôm nay trời ${meaning}.`,`It is ${id} today.`])),
     rooms: make('rooms','Rooms in a House','🏡','Các phòng quen thuộc trong nhà','This is the + tên phòng.',rooms,names(rooms).map(([id, meaning]) => [id,`Đây là ${meaning}.`,`This is the ${id.replaceAll('-', ' ')}.`])),
     transport: make('transport','Transport','🚲','Tên các phương tiện đi lại','This is a + phương tiện.',transport,names(transport).map(([id, meaning]) => [id,`Đây là ${meaning}.`,`This is a ${id}.`]))
+  };
+  catalog.jobs.supplementaryWordIds = catalog.jobs.words.slice(6).map(word => word.id);
+  catalog.jobs.wordRecordings = {
+    farmer: 'shared/answer-audio/adam-grade2-grade3-20261114/farmer-v2.mp3',
+    teacher: 'shared/answer-audio/adam-grade2-grade3-20261114/teacher.mp3',
+    nurse: 'shared/answer-audio/adam-grade2-grade3-20261114/nurse.mp3',
+    'bus driver': 'shared/answer-audio/adam-grade2-grade3-20261114/bus-driver.mp3',
+    mechanic: 'shared/answer-audio/adam-grade2-grade3-20261114/mechanic.mp3',
+    vet: 'shared/answer-audio/adam-grade2-grade3-20261114/vet.mp3',
+    artist: 'shared/answer-audio/jobs-adam-20261114/artist.mp3',
+    baker: 'shared/answer-audio/jobs-adam-20261114/baker.mp3',
+    'police officer': 'shared/answer-audio/jobs-adam-20261114/police-officer.mp3',
+    singer: 'shared/answer-audio/jobs-adam-20261114/singer.mp3',
+    dancer: 'shared/answer-audio/jobs-adam-20261114/dancer.mp3'
   };
   window.grade2ExtendedTopics = Object.freeze(catalog);
 })();

@@ -4,7 +4,7 @@
   // Chỉ gắn thao tác nghe; giữ nguyên DOM con và kích thước tranh.
   const pictureSelector='[data-danh-picture-listen]';
   const cardSelector='[data-danh-card-listen]';
-  const cardGridSelector='#vocab-grid .g6-word-card,#vocab-grid-container > *,#word-list .word-card,#app .word-grid .word-card,.vocab-grid .vocab-item';
+  const cardGridSelector='#vocab-grid .g6-word-card,#vocab-grid-container > *,.g2-vocab-supplementary > .g2-vocab-card,#word-list .word-card,#app .word-grid .word-card,.vocab-grid .vocab-item';
   const cardEffects=new Map();
   const scannedCards=new WeakMap();
   let cardObserver;
@@ -141,13 +141,19 @@
     window.DanhAdamVocabulary?.some(entry => entry.name.toLowerCase() === text.toLowerCase());
   const feelingFruitVocabulary = text => /\/grade\/lop2\/(?:feeling|fruits)\.html$/i.test(new URL(document.baseURI).pathname) &&
     window.DanhAdamVocabulary?.some(entry => entry.name.toLowerCase() === text.toLowerCase());
-  const audioURL = text => new URL(feelingFruitVocabulary(text)
+  const topicWordRecording = text => {
+    const topic = document.body?.dataset.topic;
+    const recordings = window.grade2ExtendedTopics?.[topic]?.wordRecordings;
+    const word = text.toLowerCase();
+    return recordings && Object.hasOwn(recordings, word) ? recordings[word] : null;
+  };
+  const audioURL = text => new URL(topicWordRecording(text) || (feelingFruitVocabulary(text)
     ? `shared/answer-audio/feeling-fruits-adam-20261111/${answerAudioKey(text)}.mp3`
     : clothesVocabulary(text)
     ? `shared/answer-audio/clothes-adam-20261109/${answerAudioKey(text)}${text.toLowerCase() === 'tie' ? '-v2' : ''}.mp3`
     : adamVocabulary(text)
     ? `shared/answer-audio/adam-vocabulary/${answerAudioKey(text)}.mp3${animalsPage && text.toLowerCase() === 'hippo' ? '?v=adam-hippo-20261109' : ''}`
-    : `shared/answer-audio/${answerAudioKey(text)}.mp3`,base).href;
+    : `shared/answer-audio/${answerAudioKey(text)}.mp3`),base).href;
   const grade2Speech = /\/grade\/lop2\//.test(document.baseURI);
   function preparePlayer(entry){if(!entry.url || entry.player)return;const player=new Audio(entry.url);player.preload='auto';entry.player=player;player.load();}
   function releasePlayer(entry){if(!entry.player)return;entry.player.pause();entry.player.removeAttribute('src');entry.player.load();entry.player=null;}
@@ -255,7 +261,7 @@
     const cached=gameAudio.get(answerAudioKey(text));
     const audio=cached?.player || new Audio(cached?.url || audioURL(text));answerAudio=audio;
     try{audio.currentTime=0;}catch{}
-    audio.playbackRate=adamVocabulary(text)?1:gamePlaying()?window.DanhGameFlow.audioRate:(grade2Speech ? .85 : window.DanhYoungSpeech?.audioRate || 1);
+    audio.playbackRate=topicWordRecording(text)||adamVocabulary(text)?1:gamePlaying()?window.DanhGameFlow.audioRate:(grade2Speech ? .85 : window.DanhYoungSpeech?.audioRate || 1);
     audio.preservesPitch=true;
     return new Promise(resolve=>{
       let finished=false;

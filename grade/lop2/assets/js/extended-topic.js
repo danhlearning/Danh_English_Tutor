@@ -82,7 +82,8 @@
   }
   function newRound() {
     const questions = topic.questions.filter(question => question.targetWordIds.every(id => selected.includes(id)));
-    round = { deck: shuffle(questions), index: 0, first: 0, retry: 0, revealed: 0,
+    const deck = shuffle(questions);
+    round = { deck: topic.supplementaryWordIds ? deck.slice(0, 8) : deck, index: 0, first: 0, retry: 0, revealed: 0,
       mistakes: 0, locked: false, viewed: false, draft: '', result: '' };
   }
   function sentenceStatus(message, type = '') {
@@ -225,7 +226,17 @@
     el('vocab-title').textContent = `Từ vựng · ${topic.title}`;
     el('sentences-title').textContent = `Mẫu câu · ${topic.title}`;
     const grid = el('vocab-grid-container');
+    let currentGrid = grid;
     for (const word of topic.words) {
+      if (word.id === topic.supplementaryWordIds?.[0]) {
+        const heading = document.createElement('h2');
+        heading.className = 'g2-topic-heading';
+        heading.classList.add('g2-supplementary-heading');
+        heading.textContent = 'Nghề nghiệp bổ sung';
+        currentGrid = document.createElement('div');
+        currentGrid.className = `${grid.className} g2-vocab-supplementary`;
+        grid.after(heading, currentGrid);
+      }
       const card = document.createElement('article'); card.className = 'vocab-card g2-vocab-card';
       const image = document.createElement('div'); image.className = 'g2-vocab-image';
       image.setAttribute('role', 'img'); image.setAttribute('aria-label', word.meaning);
@@ -236,11 +247,12 @@
       const audio = document.createElement('button'); audio.type = 'button'; audio.className = 'g2-audio';
       audio.textContent = '🔊 Nghe'; audio.setAttribute('aria-label', `Nghe từ ${word.name}`);
       audio.addEventListener('click', () => speak(word.name));
-      card.append(image, english, ipa, meaning, audio); grid.append(card);
+      card.append(image, english, ipa, meaning, audio); currentGrid.append(card);
     }
     el('sentence-pattern').textContent = topic.pattern;
     const list = el('sentence-examples');
-    for (const question of topic.questions.slice(0, 6)) {
+    const examples = topic.supplementaryWordIds ? topic.questions : topic.questions.slice(0, 6);
+    for (const question of examples) {
       const card = document.createElement('li'); card.className = 'g2-example';
       const english = document.createElement('strong'); english.textContent = question.answer;
       const vietnamese = document.createElement('span'); vietnamese.textContent = question.vietnamese;

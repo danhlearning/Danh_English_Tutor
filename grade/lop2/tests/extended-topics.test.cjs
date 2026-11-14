@@ -8,7 +8,7 @@ const root = path.resolve(__dirname, '..');
 const context = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'assets/data/extended-topics-data.js'), 'utf8'), context);
 const catalog = context.window.grade2ExtendedTopics;
-const expected = { adjectives: 12, shapes: 8, toys: 12, weather: 8, rooms: 7, transport: 12, clocks: 6, jobs: 6, music: 6, health: 6, safety: 6, plants: 6, stories: 6, tickets: 6, cooking: 6, celebrations: 6 };
+const expected = { adjectives: 12, shapes: 8, toys: 12, weather: 8, rooms: 7, transport: 12, clocks: 6, jobs: 16, music: 6, health: 6, safety: 6, plants: 6, stories: 6, tickets: 6, cooking: 6, celebrations: 6 };
 
 for (const [id, count] of Object.entries(expected)) {
   test(`${id}: dữ liệu từ, câu và hình thống nhất`, () => {

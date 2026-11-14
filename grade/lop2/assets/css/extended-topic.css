@@ -10,6 +10,7 @@ body.grade2-topic > .container { margin:0 auto 32px; background:#ffffffed; min-h
 .tab-content { display:none; }
 .tab-content.active { display:block; }
 .g2-topic-heading { color:var(--primary); text-align:center; margin:0 0 18px; font-size:1.45rem; }
+.g2-supplementary-heading { margin-top:28px; }
 .g2-vocab-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(175px,1fr)); gap:15px; }
 .g2-vocab-card { border:1px solid #dbe9e4; background:#fff; padding:15px; text-align:center; min-height:226px; }
 .g2-vocab-image { width:100px; height:100px; margin:0 auto 5px; }
